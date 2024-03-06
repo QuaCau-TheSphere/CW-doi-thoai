@@ -1,8 +1,6 @@
 import { TênChiều } from "./Hàm liên quan tới chiều.ts";
-import { VậtThểKếtQuả } from "./Kiểu cho việc xử lý.ts"
+import { VậtThểKếtQuảPhânLoại } from "./Kiểu cho việc xử lý.ts"
 type CấuHìnhĐượcNhập = DữLiệuCấuHình | string
-
-type DanhSáchVậtThểKếtQuả = Array<VậtThểKếtQuả>
 
 type DữLiệuTựNhậnDạngCủaMộtChiều = Record<string, string[]>[]
 type Falsy = false | "" | null | undefined 
@@ -38,5 +36,4 @@ export type {
     DữLiệuCấuHình,
     CâuNhập,
     Falsy,
-    DanhSáchVậtThểKếtQuả, 
-    }
+}

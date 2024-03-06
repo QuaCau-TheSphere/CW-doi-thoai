@@ -15,11 +15,11 @@ type KếtQuảHiểnThị = {
 /**
  * Cần để kiểu `Câu nhập rỗng` vào `VậtThểKếtQuả` vì khi chạy số lượng lớn thì sẽ muốn hàm `tạoKếtQuả()` vẫn chạy được, và `DanhSáchVậtThểKếtQuả` đơn giản là `VậtThểKếtQuả[]`
  */
-interface VậtThểKếtQuả {
+interface VậtThểKếtQuảPhânLoại {
     'Câu nhập': CâuNhập | Falsy
     [key: string]: string | number | Debug | Falsy,
     'Số tiền'?: number | null,
-    debug: Debug | 'Câu nhập rỗng'
+    debug?: Debug | 'Câu nhập rỗng'
 }
 
 class Debug {
@@ -49,7 +49,7 @@ export {
 };
 
 export type {
-    VậtThểKếtQuả,
+    VậtThểKếtQuảPhânLoại,
     KếtQuảHiểnThị,
     KhốiKếtQuả,
 

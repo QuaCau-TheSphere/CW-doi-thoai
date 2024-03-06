@@ -1,6 +1,6 @@
 import { làRỗng }                          from "../Code hỗ trợ/Hàm liên quan tới cấu hình.ts"
 import { lấyTênChiều, lấyTênNhãn }         from '../Code hỗ trợ/Hàm liên quan tới chiều.ts'
-import {Debug, VậtThểKếtQuả, KhốiKếtQuả}   from '../Code hỗ trợ/Kiểu cho việc xử lý.ts'
+import {Debug, VậtThểKếtQuảPhânLoại, KhốiKếtQuả}   from '../Code hỗ trợ/Kiểu cho việc xử lý.ts'
 import { CâuNhập, DữLiệuCấuHình, Falsy }   from '../Code hỗ trợ/Kiểu cho dữ liệu nhập vào.ts'
 import xửLýDấuThanhVàViếtTắt               from '../2. Tiền xử lý/2.1 Xử lý dấu thanh và viết tắt.ts'
 import tạoKhốiKhaiBáo                      from "../2. Tiền xử lý/2.2 Tạo khối khai báo.ts"
@@ -10,9 +10,18 @@ import xửLýChiềuĐặcThù                     from '../3. Lọc dữ liệ
 
 /**
  * Tạo kết quả từ câu nhập
- * @description Đầu tiên nó tạo ra một khốiKếtQuả rỗng, sau đó chạy tất cả các hàm đã được xây dựng.
+ * @description Đầu tiên nó tạo ra một khốiKếtQuả rỗng, sau đó lần lượt chạy các hàm sau:
+ * - Kiểm tra xem câu nhập có rỗng hay không
+ * - Tạo khối kết quả và debug
+ * 2. Tiền xử lý: 
+ *   2.1 Xử lý dấu thanh và viết tắt
+ *   2.2 Tạo khối khai báo
+ * 3. Lọc dữ liệu: 
+ *   3.1 Lọc dữ liệu từ câu nhập
+ *   3.2 Làm sách kết quả
+ *   3.3 Xử lý chiều đặc thù
  */
-function tạoKếtQuả(câuNhậpGốc: CâuNhập | Falsy, dữLiệuCấuHình: DữLiệuCấuHình): VậtThểKếtQuả {
+function tạoKếtQuảPhânLoại(câuNhậpGốc: CâuNhập | Falsy, dữLiệuCấuHình: DữLiệuCấuHình): VậtThểKếtQuảPhânLoại {
     if (làRỗng(câuNhậpGốc) ) {
         console.log('Câu nhập rỗng. Bỏ qua')
         return {
@@ -39,7 +48,7 @@ function tạoKếtQuả(câuNhậpGốc: CâuNhập | Falsy, dữLiệuCấuHì
     xửLýChiềuĐặcThù(câuNhập, khaiBáo, khốiKếtQuả, debug.xửLýChiềuĐặcThù)
 
     /* Nhập khốiKếtQuả và debug và vậtThểKếtQuả */
-    const vậtThểKếtQuả: VậtThểKếtQuả = {
+    const vậtThểKếtQuả: VậtThểKếtQuảPhânLoại = {
         'Câu nhập': câuNhậpGốc,
         debug: debug
     }
@@ -67,4 +76,4 @@ function tạoKếtQuả(câuNhậpGốc: CâuNhập | Falsy, dữLiệuCấuHì
     return vậtThểKếtQuả
 }
 
-export default tạoKếtQuả
+export default tạoKếtQuảPhânLoại

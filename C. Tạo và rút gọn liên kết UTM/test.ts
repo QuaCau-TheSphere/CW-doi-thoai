@@ -1,5 +1,5 @@
-import tạoKếtQuả from './core/4. Tạo kết quả/4.1 Tạo kết quả.ts'
-import lấyDữLiệuCấuHình, { lấyCấuHìnhHợpLệ } from  './core/Code%20h%E1%BB%97%20tr%E1%BB%A3/H%C3%A0m%20li%C3%AAn%20quan%20t%E1%BB%9Bi%20c%E1%BA%A5u%20h%C3%ACnh.ts'
+import tạoKếtQuả from '../B.%20Ph%C3%A2n%20lo%E1%BA%A1i/4.%20T%E1%BA%A1o%20k%E1%BA%BFt%20qu%E1%BA%A3/4.1%20T%E1%BA%A1o%20k%E1%BA%BFt%20qu%E1%BA%A3.ts'
+import lấyDữLiệuCấuHình, { lấyCấuHìnhHợpLệ } from  '../B.%20Ph%C3%A2n%20lo%E1%BA%A1i/Code%20h%E1%BB%97%20tr%E1%BB%A3/H%C3%A0m%20li%C3%AAn%20quan%20t%E1%BB%9Bi%20c%E1%BA%A5u%20h%C3%ACnh.ts'
 import builder from 'npm:utm-builder';
 import { writeText } from "https://deno.land/x/copy_paste/mod.ts";
 
