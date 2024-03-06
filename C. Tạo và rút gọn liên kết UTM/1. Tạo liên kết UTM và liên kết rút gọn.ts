@@ -20,23 +20,23 @@ function tạoSource(vậtThểNộiDung: VậtThểNộiDung): Source{
     }     
 } 
 function tạoMedium(vậtThểNộiDung: VậtThểNộiDung): Medium{
-switch (vậtThểNộiDung['Loại nơi đăng']){
-    case 'Nhóm Facebook':
-    case 'Trang Facebook':
-    case 'Tài khoản Facebook':
-    case 'Reddit':
-        return 'social'
+    switch (vậtThểNộiDung['Loại nơi đăng']){
+        case 'Nhóm Facebook':
+        case 'Trang Facebook':
+        case 'Tài khoản Facebook':
+        case 'Reddit':
+            return 'social'
 
-    case 'Discord':
-    case 'Zalo':
-        return 'chat'
+        case 'Discord':
+        case 'Zalo':
+            return 'chat'
 
-    case 'Email':
-        return 'email'
-    case 'quacau.deno.dev':
-        return 'redirect'
-    default:
-        return 'Không tạo được medium'
+        case 'Email':
+            return 'email'
+        case 'quacau.deno.dev':
+            return 'redirect'
+        default:
+            return 'Không tạo được medium'
     }     
 } 
 /**
