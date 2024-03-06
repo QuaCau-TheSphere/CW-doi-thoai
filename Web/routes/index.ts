@@ -5,7 +5,7 @@ export const handler: Handlers = {
 	GET(_req, ctx) {
     try {
       const utmLink = builder('https://quảcầu.cc', 'quacau.deno.dev', 'redirect', 'A Vùng đất Quả Cầu');
-      return Response.redirect(utmLink, 307);
+      // return Response.redirect(utmLink, 307);
     } catch {
       return ctx.renderNotFound() 
     } 

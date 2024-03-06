@@ -1,32 +1,16 @@
 import { Handlers } from "$fresh/server.ts"
-import builder from 'npm:utm-builder';
+import VậtThểChiaSẻ from "../../Ki%E1%BB%83u.ts" 
 
-interface UtmParam {
-  slug: string,
-  source: string,
-  medium: string,
-  content?: string
-  term?: string,
-} 
-const slugs: UtmParam[] = [
-  {
-    slug: "qcpg",
-    source: "F Pg Quả Cầu",
-    medium: "social" 
-  },
-  {
-    slug: "qcpr",
-    source: "F Pr Quả Cầu",
-    medium: "social" 
-  },
-] 
 export const handler: Handlers = {
-	GET(req, ctx) {
+  async GET(req, ctx) {
+    const kv = await Deno.openKv();
+    const kếtQuảTruyVấn = await kv.get(['Phần rút gọn', 'chưaLàmLiênKếtRútGọn']);
+    const vậtThểChiaSẻ = kếtQuảTruyVấn.value as VậtThểChiaSẻ
+    const liênKếtUTM = vậtThểChiaSẻ["Liên kết UTM"]
+
+    console.log(liênKếtUTM)
     try {
-      const slug = ctx.params.slug
-      const utmParam = slugs.filter(paramSet => paramSet.slug === slug)[0] 
-      const utmLink = builder('https://quảcầu.cc', utmParam.source, utmParam.medium, 'A Vùng đất Quả Cầu', utmParam.content, utmParam.term);
-      return Response.redirect(utmLink, 307);
+      return Response.redirect(liênKếtUTM, 307);
     } catch {
       return ctx.renderNotFound() 
     } 
