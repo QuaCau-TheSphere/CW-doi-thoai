@@ -1,5 +1,9 @@
 import { CâuNhập } from "./B.%20X%C3%A1c%20%C4%91%E1%BB%8Bnh%20th%C3%B4ng%20tin%20chia%20s%E1%BA%BB%20t%E1%BB%AB%20c%C3%A2u%20nh%E1%BA%ADp/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20d%E1%BB%AF%20li%E1%BB%87u%20nh%E1%BA%ADp%20v%C3%A0o.ts";
-
+export interface VậtThểBàiViết {
+    title: string,
+    url: string,
+    description?: string
+} 
 export interface VậtThểNộiDung {
     url: string,
     'Câu nhập': CâuNhập

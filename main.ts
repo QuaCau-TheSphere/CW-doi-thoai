@@ -3,8 +3,9 @@ import { lấyCấuHìnhHợpLệ } from "./B.%20X%C3%A1c%20%C4%91%E1%BB%8Bnh%20
 import { CâuNhập } from "./B.%20X%C3%A1c%20%C4%91%E1%BB%8Bnh%20th%C3%B4ng%20tin%20chia%20s%E1%BA%BB%20t%E1%BB%AB%20c%C3%A2u%20nh%E1%BA%ADp/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20d%E1%BB%AF%20li%E1%BB%87u%20nh%E1%BA%ADp%20v%C3%A0o.ts";
 import tạoVậtThểChiaSẻ from "./C.%20T%E1%BA%A1o%20v%C3%A0%20r%C3%BAt%20g%E1%BB%8Dn%20li%C3%AAn%20k%E1%BA%BFt%20UTM/1.%20T%E1%BA%A1o%20li%C3%AAn%20k%E1%BA%BFt%20UTM%20v%C3%A0%20li%C3%AAn%20k%E1%BA%BFt%20r%C3%BAt%20g%E1%BB%8Dn.ts";
 import { writeText } from "https://deno.land/x/copy_paste/mod.ts";
-import { DanhSáchVậtThểBàiViết, VậtThểNộiDung } from "./Ki%E1%BB%83u.ts";
+import { VậtThểBàiViết, VậtThểNộiDung } from "./Ki%E1%BB%83u.ts";
 import { VậtThểKếtQuảPhânLoại } from "./B.%20X%C3%A1c%20%C4%91%E1%BB%8Bnh%20th%C3%B4ng%20tin%20chia%20s%E1%BA%BB%20t%E1%BB%AB%20c%C3%A2u%20nh%E1%BA%ADp/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20vi%E1%BB%87c%20x%E1%BB%AD%20l%C3%BD.ts";
+import tạoDanhSáchVậtThểBàiViết from "./A.%20T%E1%BA%A1o%20danh%20s%C3%A1ch%20t%E1%BA%A5t%20c%E1%BA%A3%20v%E1%BA%ADt%20th%E1%BB%83%20b%C3%A0i%20vi%E1%BA%BFt/T%E1%BA%A1o%20danh%20s%C3%A1ch%20t%E1%BA%A5t%20c%E1%BA%A3%20v%E1%BA%ADt%20th%E1%BB%83%20b%C3%A0i%20vi%E1%BA%BFt.ts";
 
 // const cấuHìnhNhậpVào = await Deno.readTextFile('Cấu hình.yaml')
 // const cấuHìnhCóVẻHợpLệ = lấyCấuHìnhHợpLệ(cấuHìnhNhậpVào)
@@ -18,14 +19,18 @@ const vậtThểKếtQuảPhânLoại = {
 } satisfies VậtThểKếtQuảPhânLoại //todo
 
 const tiêuĐềTrang = vậtThểKếtQuảPhânLoại["Bài viết"] as string
-
-const danhSáchVậtThểBàiViết = [
-    {
-        title: 'Trấn Kỳ — Phân loại câu nhập bằng tiếng Việt tự nhiên',
-        url: 'https://tranky.deno.dev'
-    } 
+const đườngDẫnĐếnCácVault = [
+    "D:\\QC supplements\\Vaults\\C Obsidian, quản lý dự án và công cụ nghĩ"
 ] //todo
-function lấyURL(tiêuĐềTrang: string, danhSáchVậtThểBàiViết: DanhSáchVậtThểBàiViết) {
+
+const danhSáchVậtThểBàiViết = await tạoDanhSáchVậtThểBàiViết("D:\\QC supplements\\Vaults\\C Obsidian, quản lý dự án và công cụ nghĩ", 'https://obsidian.quảcầu.cc') 
+// const danhSáchVậtThểBàiViết = [
+//     {
+//         title: 'Trấn Kỳ — Phân loại câu nhập bằng tiếng Việt tự nhiên',
+//         url: 'https://tranky.deno.dev'
+//     } 
+// ] //todo
+function lấyURL(tiêuĐềTrang: string, danhSáchVậtThểBàiViết: VậtThểBàiViết[] ) {
     const vậtThểBàiViết = danhSáchVậtThểBàiViết.find(vậtThểBàiViết => vậtThểBàiViết.title = tiêuĐềTrang)
     if (vậtThểBàiViết != undefined) {
         return vậtThểBàiViết.url
