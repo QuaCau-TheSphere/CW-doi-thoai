@@ -1,5 +1,5 @@
 import { TênChiều } from "./Hàm liên quan tới chiều.ts";
-import { VậtThểKếtQuảPhânLoại } from "./Kiểu cho việc xử lý.ts"
+import { KếtQuảPhânLoại } from "./Kiểu cho việc xử lý.ts"
 type CấuHìnhĐượcNhập = DữLiệuCấuHình | string
 
 type DữLiệuTựNhậnDạngCủaMộtChiều = Record<string, string[]>[]

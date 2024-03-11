@@ -15,7 +15,7 @@ type KếtQuảHiểnThị = {
 /**
  * Cần để kiểu `Câu nhập rỗng` vào `VậtThểKếtQuả` vì khi chạy số lượng lớn thì sẽ muốn hàm `tạoKếtQuả()` vẫn chạy được, và `DanhSáchVậtThểKếtQuả` đơn giản là `VậtThểKếtQuả[]`
  */
-interface VậtThểKếtQuảPhânLoại {
+interface KếtQuảPhânLoại {
     'Câu nhập': CâuNhập | Falsy
     [key: string]: string | number | Debug | Falsy,
     'Số tiền'?: number | null,
@@ -49,7 +49,7 @@ export {
 };
 
 export type {
-    VậtThểKếtQuảPhânLoại,
+    KếtQuảPhânLoại,
     KếtQuảHiểnThị,
     KhốiKếtQuả,
 

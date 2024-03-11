@@ -1,8 +1,8 @@
 import builder from 'npm:utm-builder';
-import VậtThểChiaSẻ, { VậtThểNộiDung, Source, Medium, LiênKếtUTM, PhầnRútGọn } from "../Ki%E1%BB%83u.ts";
+import VậtThểChiaSẻ, { VậtThểTiếpThị, Source, Medium, LiênKếtUTM, PhầnRútGọn } from "../Ki%E1%BB%83u.ts";
 import { ThamSốUTM } from "../Ki%E1%BB%83u.ts";
 
-function tạoSource(vậtThểNộiDung: VậtThểNộiDung): Source{
+function tạoSource(vậtThểNộiDung: VậtThểTiếpThị): Source{
     switch (vậtThểNộiDung['Loại nơi đăng']){
         case 'Nhóm Facebook':
             return 'F G'
@@ -19,7 +19,7 @@ function tạoSource(vậtThểNộiDung: VậtThểNộiDung): Source{
             return 'Không tạo được source'
     }     
 } 
-function tạoMedium(vậtThểNộiDung: VậtThểNộiDung): Medium{
+function tạoMedium(vậtThểNộiDung: VậtThểTiếpThị): Medium{
     switch (vậtThểNộiDung['Loại nơi đăng']){
         case 'Nhóm Facebook':
         case 'Trang Facebook':
@@ -42,27 +42,27 @@ function tạoMedium(vậtThểNộiDung: VậtThểNộiDung): Medium{
 /**
  * Tên dự án chính là tên chiến dịch
  */
-function tạoCampaign(vậtThểNộiDung: VậtThểNộiDung){
+function tạoCampaign(vậtThểNộiDung: VậtThểTiếpThị){
     return vậtThểNộiDung['Loại bài viết'] 
 } 
-function tạoContent(vậtThểNộiDung: VậtThểNộiDung){
+function tạoContent(vậtThểNộiDung: VậtThểTiếpThị){
     return vậtThểNộiDung['Dự án'] //TODO
 } 
-function tạoTerm(vậtThểNộiDung: VậtThểNộiDung){
+function tạoTerm(vậtThểNộiDung: VậtThểTiếpThị){
     return vậtThểNộiDung['Dự án'] //TODO
 } 
 
-function tạoLiênKếtUTM(vậtThểNộiDung: VậtThểNộiDung, thamSốUTM: ThamSốUTM): LiênKếtUTM{
+function tạoLiênKếtUTM(vậtThểNộiDung: VậtThểTiếpThị, thamSốUTM: ThamSốUTM): LiênKếtUTM{
     console.log("🚀 ~ tạoLiênKếtUTM ~ thamSốUTM:", thamSốUTM)
     console.log("🚀 ~ tạoLiênKếtUTM ~ vậtThểNộiDung:", vậtThểNộiDung)
     
     return builder(vậtThểNộiDung.url, thamSốUTM.source, thamSốUTM.medium, thamSốUTM.campaign, thamSốUTM.content, thamSốUTM.term)
 }  
-function tạoLiênKếtRútGọn(vậtThểNộiDung: VậtThểNộiDung, thamSốUTM: ThamSốUTM): PhầnRútGọn{
+function tạoLiênKếtRútGọn(vậtThểNộiDung: VậtThểTiếpThị, thamSốUTM: ThamSốUTM): PhầnRútGọn{
     return 'chưaLàmLiênKếtRútGọn' //TODO
 }  
 
-export default function tạoVậtThểChiaSẻ(vậtThểNộiDung: VậtThểNộiDung): VậtThểChiaSẻ{
+export default function tạoVậtThểChiaSẻ(vậtThểNộiDung: VậtThểTiếpThị): VậtThểChiaSẻ{
     const thamSốUTM = {
         source: tạoSource(vậtThểNộiDung),
         medium: tạoMedium(vậtThểNộiDung),
