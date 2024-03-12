@@ -16,7 +16,7 @@ const kếtQuảPhânLoạiCâuNhập = {
     'Nơi đăng': 'Vùng đất Quả Cầu',
     'Loại nơi đăng': 'Nhóm Facebook'
 } satisfies KếtQuảPhânLoạiCâuNhập //todo
-
+const THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT = "" 
 
 const vậtThểTiếpThị = await tạoVậtThểTiếpThị(kếtQuảPhânLoạiCâuNhập) 
 const vậtThểChiaSẻ = tạoVậtThểChiaSẻ(vậtThểTiếpThị) 

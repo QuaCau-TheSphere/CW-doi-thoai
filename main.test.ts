@@ -1,6 +1,40 @@
-import { assertEquals } from "https://deno.land/std@0.219.0/assert/mod.ts";
-import tạoDanhSáchVậtThểBàiViết from "./A.%20T%E1%BA%A1o%20danh%20s%C3%A1ch%20t%E1%BA%A5t%20c%E1%BA%A3%20v%E1%BA%ADt%20th%E1%BB%83%20b%C3%A0i%20vi%E1%BA%BFt/a.%20T%E1%BA%A1o%20theo%20vault.ts";
+import { assertEquals, assert } from "https://deno.land/std@0.219.0/assert/mod.ts";
+import { Vault} from "./Ki%E1%BB%83u.ts";
+import tạoDanhSáchVậtThểBàiĐăng, { tạoDanhSáchThôngTinTấtCảCácVault } from "./A.%20T%E1%BA%A1o%20danh%20s%C3%A1ch%20t%E1%BA%A5t%20c%E1%BA%A3%20b%C3%A0i%20%C4%91%C4%83ng/a.%20T%E1%BA%A1o%20theo%20vault.ts";
 import { KếtQuảPhânLoại } from "./B.%20X%C3%A1c%20%C4%91%E1%BB%8Bnh%20th%C3%B4ng%20tin%20chia%20s%E1%BA%BB%20t%E1%BB%AB%20c%C3%A2u%20nh%E1%BA%ADp/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20vi%E1%BB%87c%20x%E1%BB%AD%20l%C3%BD.ts";
+
+const thưMụcChứaTấtCảCácVault = "D:\\QC supplements\\Vaults"
+
+const danhSáchThôngTinTấtCảCácVaultDựKiến = [
+  {
+    "Tên vault": "Obsidian, quản lý dự án và công cụ nghĩ",
+    "Mã vault": "C1",
+    "Mô tả": "Hiểu biết sâu về các môi trường nơi sự suy nghĩ diễn ra, và cách ứng dụng chúng vào quản lý dự án", 
+    URL: "https://obsidian.quảcầu.cc",
+    "Nơi lưu": "D:\\QC supplements\\Vaults\\C Obsidian, quản lý dự án và công cụ nghĩ"
+  },
+  {
+    "Tên vault": "Tiếp thị số, xử lý dữ liệu và lập trình",
+    "Mã vault": "C2",
+    "Mô tả": "Những thứ giúp xây dựng mental model khi phải code một cái gì đó",
+    URL: "https://lậptrình.quảcầu.cc",
+    "Nơi lưu": "D:\\QC supplements\\Vaults\\C Tiếp thị số, xử lý dữ liệu và lập trình"
+  }
+] satisfies Vault[] 
+
+Deno.test("tạoDanhSáchThôngTinTấtCảCácVault", async () => {
+  const danhSáchThôngTinTấtCảCácVaultThựcTế = await tạoDanhSáchThôngTinTấtCảCácVault(thưMụcChứaTấtCảCácVault);
+  assertEquals(danhSáchThôngTinTấtCảCácVaultThựcTế, danhSáchThôngTinTấtCảCácVaultDựKiến);
+});
+
+Deno.test("tạoDanhSáchVậtThểBàiĐăng", async () => {
+  const danhSáchVậtThểBàiĐăng = await tạoDanhSáchVậtThểBàiĐăng(thưMụcChứaTấtCảCácVault)
+  assert(danhSáchVậtThểBàiĐăng.some(e => (
+    e.title === "AI là định dạng ảnh mờ của web" &&
+    e.url === "https://obsidian.quảcầu.cc/⚡Hiểu biết sâu/Công nghệ thông tin/AI/AI là định dạng ảnh mờ của web" &&
+    e["Dự án"] === "C1 Obsidian, quản lý dự án và công cụ nghĩ"
+  ) ))
+});
 
 const vậtThểKếtQuảPhânLoại = {
   'Câu nhập': 'c31',
@@ -9,46 +43,3 @@ const vậtThểKếtQuảPhânLoại = {
   'Nơi đăng': 'Vùng đất Quả Cầu',
   'Loại nơi đăng': 'Nhóm Facebook'
 } satisfies KếtQuảPhânLoại
-
-// Compact form: name and function
-Deno.test("hello world #1", () => {
-  const x = 1 + 2;
-  assertEquals(x, 3);
-});
-
-// Compact form: named function.
-Deno.test(async function helloWorld3() {
-  const x = await tạoDanhSáchVậtThểBàiViết("D:\\QC supplements\\Vaults\\C Obsidian, quản lý dự án và công cụ nghĩ", 'https://obsidian.quảcầu.cc') 
-  ;
-  assertEquals(x, 3);
-});
-
-// Longer form: test definition.
-Deno.test({
-  name: "hello world #2",
-  fn: () => {
-    const x = 1 + 2;
-    assertEquals(x, 3);
-  },
-});
-
-// Similar to compact form, with additional configuration as a second argument.
-Deno.test("hello world #4", { permissions: { read: true } }, () => {
-  const x = 1 + 2;
-  assertEquals(x, 3);
-});
-
-// Similar to longer form, with test function as a second argument.
-Deno.test(
-  { name: "hello world #5", permissions: { read: true } },
-  () => {
-    const x = 1 + 2;
-    assertEquals(x, 3);
-  },
-);
-
-// Similar to longer form, with a named test function as a second argument.
-Deno.test({ permissions: { read: true } }, function helloWorld6() {
-  const x = 1 + 2;
-  assertEquals(x, 3);
-});
