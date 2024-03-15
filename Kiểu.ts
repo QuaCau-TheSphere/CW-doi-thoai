@@ -1,5 +1,7 @@
 import { ParsedPath, parse } from "$std/path/mod.ts";
 import { KếtQuảPhânLoại } from "./B.%20X%C3%A1c%20%C4%91%E1%BB%8Bnh%20th%C3%B4ng%20tin%20chia%20s%E1%BA%BB%20t%E1%BB%AB%20c%C3%A2u%20nh%E1%BA%ADp/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20vi%E1%BB%87c%20x%E1%BB%AD%20l%C3%BD.ts";
+
+/** Đường dẫn */
 export type URLString = string
 export type ĐườngDẫnTuyệtĐối = string
 export type ĐườngDẫnTươngĐối = string
@@ -13,16 +15,21 @@ export function đọcĐườngDẫn(path: string): VậtThểĐườngDẫnTuy�
 
 /** Vault */
 export type TênVault = string
+export type MãVault = string
 export interface Vault {
     'Tên vault': TênVault,
-    'Mã vault': string,
+    'Mã vault': MãVault,
     URL: URLString,
     'Nơi lưu vault': ĐườngDẫnTuyệtĐối,
     'Mô tả vault'?: string
 } 
 
+/** Dự án */
+export type TênDựÁn = string
+export type MãDựÁn = string
+
 /** Bài đăng */
-export interface YAMLAttributes {
+export interface YAMLCủaGhiChú {
     title?: string,
     description?: string,
     alias?: string | string[]
@@ -30,12 +37,14 @@ export interface YAMLAttributes {
     updated?: string
     share?: boolean
 } 
-export type TênDựÁn = string
 export interface BàiĐăng {
     'Tiêu đề': string,
     url: URLString,
     'Mô tả bài đăng'?: string,
-    'Dự án': TênDựÁn,
+    'Dự án': {
+        'Tên dự án': TênDựÁn,
+        'Mã dự án': MãDựÁn
+    } 
     'Mã bài đăng'?: string
 } 
 

@@ -4,8 +4,8 @@
 import { extract } from "$std/front_matter/yaml.ts";
 import { SEPARATOR_PATTERN, basename, extname, join } from "$std/path/mod.ts";
 import { buildUrl } from "https://deno.land/x/url_builder/mod.ts";
-import { TênDựÁn, URLString, Vault, BàiĐăng, YAMLAttributes, ĐườngDẫnTươngĐối } from "../Ki%E1%BB%83u.ts";
-import { type ĐườngDẫnTuyệtĐối } from "../Ki%E1%BB%83u.ts";
+import { ĐườngDẫnTươngĐối, TênDựÁn, URLString, Vault, BàiĐăng, YAMLCủaGhiChú, type ĐườngDẫnTuyệtĐối } from "../Ki%E1%BB%83u.ts";
+import { THƯ_MỤC_DỰ_ÁN, THƯ_MỤC_THIẾT_LẬP, THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT, TẬP_TIN_THIẾT_LẬP } from "../H%E1%BA%B1ng.ts";
 
 async function cóThưMụcObsidianBênTrong(thưMục: string) {
     try {
@@ -26,7 +26,7 @@ export async function tạoDanhSáchThôngTinTấtCảCácVault(thưMụcChứaT
         for await (const dirEntry of Deno.readDir(thưMục)) {
             const đườngDẫnTớiThưMụcCon = join(thưMục, dirEntry.name)
             if (await cóThưMụcObsidianBênTrong(đườngDẫnTớiThưMụcCon)) {
-                const đườngDẫnTớiTậpTinThiếtLập = join(đườngDẫnTớiThưMụcCon, 'Ξ Thiết lập/Ξ Thiết lập.md')
+                const đườngDẫnTớiTậpTinThiếtLập = join(đườngDẫnTớiThưMụcCon, TẬP_TIN_THIẾT_LẬP)
                 try {
                     await nạpThiếtLậpCủaVaultVàoDanhSách(đườngDẫnTớiTậpTinThiếtLập, đườngDẫnTớiThưMụcCon); 
                     continue
@@ -52,16 +52,16 @@ export async function tạoDanhSáchThôngTinTấtCảCácVault(thưMụcChứaT
     }
 } 
 /**
- * 
+ * Bài đăng là những ghi chú được chia sẻ (có `share: true` trên frontmatter)
  * @param đườngDẫnTớiVault Đường dẫn đầy đủ của một vault
  * @returns danh sách đường dẫn đầy đủ tất cả các bài viết được chia sẻ trong vault đó
  */
-export async function tạoDanhSáchĐườngDẫnCủaTấtCảCácGhiChúĐượcChiaSẻTrongVault(đườngDẫnTớiVault: ĐườngDẫnTuyệtĐối): Promise<ĐườngDẫnTuyệtĐối[]> {
-    const danhSáchĐườngDẫnCủaTấtCảCácGhiChúĐượcChiaSẻTrongVault: ĐườngDẫnTuyệtĐối[] = [] 
+export async function tạoDanhSáchĐườngDẫnCủaTấtCảCácBàiĐăngTrongVault(đườngDẫnTớiVault: ĐườngDẫnTuyệtĐối): Promise<ĐườngDẫnTuyệtĐối[]> {
+    const danhSáchĐườngDẫnCủaTấtCảCácBàiĐăngTrongVault: ĐườngDẫnTuyệtĐối[] = [] 
     async function xétTừngTậpTinVàThưMụcBênTrong(thưMục: ĐườngDẫnTuyệtĐối) {
         for await (const dirEntry of Deno.readDir(thưMục)) {
             /** Loại các thư mục thiết lập (Ξ Thiết lập, .obsidian, .git, .vscode, .stfolder, v.v.) */
-            if (dirEntry.name[0] === '.' || dirEntry.name === 'Ξ Thiết lập') continue
+            if (dirEntry.name[0] === '.' || dirEntry.name === THƯ_MỤC_THIẾT_LẬP) continue
             
             if (dirEntry.isDirectory) {
                 const đườngDẫnTớiThưMụcCon = join(thưMục, dirEntry.name)
@@ -77,7 +77,7 @@ export async function tạoDanhSáchĐườngDẫnCủaTấtCảCácGhiChúĐư�
                     try {
                         const frontmatter = extract(text).attrs;
                         if (frontmatter.share === true) {
-                            danhSáchĐườngDẫnCủaTấtCảCácGhiChúĐượcChiaSẻTrongVault.push(đườngDẫnTớiGhiChú)
+                            danhSáchĐườngDẫnCủaTấtCảCácBàiĐăngTrongVault.push(đườngDẫnTớiGhiChú)
                         }
                     } catch {
                         continue
@@ -88,7 +88,7 @@ export async function tạoDanhSáchĐườngDẫnCủaTấtCảCácGhiChúĐư�
     };
 
     await xétTừngTậpTinVàThưMụcBênTrong(đườngDẫnTớiVault);
-    return danhSáchĐườngDẫnCủaTấtCảCácGhiChúĐượcChiaSẻTrongVault
+    return danhSáchĐườngDẫnCủaTấtCảCácBàiĐăngTrongVault
 }
 
 function xácĐịnhURLCủaGhiChú(đườngDẫnTớiGhiChú: ĐườngDẫnTuyệtĐối, đườngDẫnTớiVault: ĐườngDẫnTuyệtĐối, urlVault: URLString) {
@@ -104,14 +104,14 @@ function xácĐịnhURLCủaGhiChú(đườngDẫnTớiGhiChú: ĐườngDẫnTu
     const url = buildUrl(urlVault, {
         path: đườngDẫnTươngĐốiTớiTậpTinHTMLCủaGhiChú
     });
-    // console.log("Đường dẫn:", format(đườngDẫnTớiGhiChú));
+    // console.log("Đường dẫn:", đườngDẫnTớiGhiChú);
     // console.log('URL:', url);
     return url;
 }
 
 async function xácĐịnhTiêuĐềGhiChú(đườngDẫnTớiGhiChú: ĐườngDẫnTuyệtĐối): Promise<string>{
     const text = await Deno.readTextFile(đườngDẫnTớiGhiChú);
-    const frontmatter = extract(text).attrs as YAMLAttributes
+    const frontmatter = extract(text).attrs as YAMLCủaGhiChú
     if (frontmatter.title) {
         return frontmatter.title
     } else {
@@ -119,30 +119,41 @@ async function xácĐịnhTiêuĐềGhiChú(đườngDẫnTớiGhiChú: Đườn
     } 
 } 
 
-async function xácĐịnhTênDựÁn(đườngDẫnTớiGhiChú: ĐườngDẫnTuyệtĐối): Promise<TênDựÁn> {
-    return ''
-} 
+function xácĐịnhTênDựÁn(đườngDẫnTớiGhiChú: ĐườngDẫnTuyệtĐối, vault: Vault): TênDựÁn {
+    if (đườngDẫnTớiGhiChú.includes(THƯ_MỤC_DỰ_ÁN)) {
+        const đườngDẫnTớiGhiChúDạngMảng = đườngDẫnTớiGhiChú.split(SEPARATOR_PATTERN) 
+        const vịTríCuảThưMụcDựÁnTrongMảng = đườngDẫnTớiGhiChúDạngMảng.indexOf(THƯ_MỤC_DỰ_ÁN) 
+        return đườngDẫnTớiGhiChúDạngMảng[vịTríCuảThưMụcDựÁnTrongMảng + 1] //
+    } else {
+        return vault["Tên vault"]
+    } 
+}
+
 export default async function tạoDanhSáchVậtThểBàiĐăng(thưMụcChứaTấtCảCácVault: ĐườngDẫnTuyệtĐối): Promise<BàiĐăng[]> {
     const danhSáchBàiĐăng: BàiĐăng[] = [] 
     const danhSáchTấtCảCácVault = await tạoDanhSáchThôngTinTấtCảCácVault(thưMụcChứaTấtCảCácVault) 
     for (const vault of danhSáchTấtCảCácVault) {
-        const danhSáchĐườngDẫnTấtCảCácGhiChúĐượcChiaSẻTrongVault: ĐườngDẫnTuyệtĐối[] = await tạoDanhSáchĐườngDẫnCủaTấtCảCácGhiChúĐượcChiaSẻTrongVault(vault["Nơi lưu vault"])
+        /** Bài đăng là những ghi chú được chia sẻ (có `share: true` trên frontmatter) */
+        const danhSáchĐườngDẫnTấtCảCácBàiĐăngTrongVault: ĐườngDẫnTuyệtĐối[] = await tạoDanhSáchĐườngDẫnCủaTấtCảCácBàiĐăngTrongVault(vault["Nơi lưu vault"])
         
-        for (const đườngDẫnTớiGhiChú of danhSáchĐườngDẫnTấtCảCácGhiChúĐượcChiaSẻTrongVault) {
+        for (const đườngDẫnTớiGhiChú of danhSáchĐườngDẫnTấtCảCácBàiĐăngTrongVault) {
             const tiêuĐề = await xácĐịnhTiêuĐềGhiChú(đườngDẫnTớiGhiChú) 
             const url = xácĐịnhURLCủaGhiChú(đườngDẫnTớiGhiChú, vault["Nơi lưu vault"], vault.URL);        
-            const tênDựÁn: TênDựÁn = vault["Mã vault"] + ' ' + vault["Tên vault"]
+            const tênDựÁn: TênDựÁn = xácĐịnhTênDựÁn(đườngDẫnTớiGhiChú, vault) 
+
             danhSáchBàiĐăng.push({
                 'Tiêu đề': tiêuĐề,
                 url: url,
-                'Dự án': tênDựÁn
+                'Dự án': {
+                    "Tên dự án": tênDựÁn,
+                    "Mã dự án": vault["Mã vault"]
+                } 
             })
         } 
     } 
     return danhSáchBàiĐăng
 } 
 
-// const thưMụcChứaTấtCảCácVault = "D:\\QC supplements\\Vaults"
-// const danhSáchVậtThểBàiĐăng = await tạoDanhSáchVậtThểBàiĐăng(thưMụcChứaTấtCảCácVault)
+// const danhSáchVậtThểBàiĐăng = await tạoDanhSáchVậtThểBàiĐăng(THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT)
 // console.log(danhSáchVậtThểBàiĐăng)
 // console.log(danhSáchVậtThểBàiĐăng.some(e => e["Tiêu đề"] === "AI là định dạng ảnh mờ của web"))
