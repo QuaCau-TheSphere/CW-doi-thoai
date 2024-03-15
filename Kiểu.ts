@@ -1,5 +1,15 @@
+import { ParsedPath, parse } from "$std/path/mod.ts";
 import { KếtQuảPhânLoại } from "./B.%20X%C3%A1c%20%C4%91%E1%BB%8Bnh%20th%C3%B4ng%20tin%20chia%20s%E1%BA%BB%20t%E1%BB%AB%20c%C3%A2u%20nh%E1%BA%ADp/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20vi%E1%BB%87c%20x%E1%BB%AD%20l%C3%BD.ts";
 export type URLString = string
+export type ĐườngDẫnTuyệtĐối = string
+export type ĐườngDẫnTươngĐối = string
+export type VậtThểĐườngDẫnTuyệtĐối = Readonly<ParsedPath> & { readonly isAbsolute: true };
+export type VậtThểĐườngDẫnTươngĐối = Readonly<ParsedPath> & { readonly isAbsolute: false };
+
+export function đọcĐườngDẫn(path: string): VậtThểĐườngDẫnTuyệtĐối | VậtThểĐườngDẫnTươngĐối {
+	const parsed = parse(path);
+	return Object.assign(parsed, { isAbsolute: parsed.root.length > 0 });
+}
 
 /** Vault */
 export type TênVault = string
@@ -7,8 +17,8 @@ export interface Vault {
     'Tên vault': TênVault,
     'Mã vault': string,
     URL: URLString,
-    'Nơi lưu': string,
-    'Mô tả'?: string
+    'Nơi lưu vault': ĐườngDẫnTuyệtĐối,
+    'Mô tả vault'?: string
 } 
 
 /** Bài đăng */
@@ -22,10 +32,11 @@ export interface YAMLAttributes {
 } 
 export type TênDựÁn = string
 export interface BàiĐăng {
-    title: string,
+    'Tiêu đề': string,
     url: URLString,
-    description?: string,
-    'Dự án': TênDựÁn
+    'Mô tả bài đăng'?: string,
+    'Dự án': TênDựÁn,
+    'Mã bài đăng'?: string
 } 
 
 /** Câu nhập */
