@@ -62,12 +62,8 @@ export interface VậtThểTiếpThị {
     'Nơi đăng': string,
     'Loại nơi đăng': string,
 } 
-export default interface VậtThểChiaSẻ {
-    'Tham số UTM': ThamSốUTM
-    'Liên kết UTM': LiênKếtUTM,
-    'Phần rút gọn': PhầnRútGọn
-} 
 
+/** Tham số */
 type SocailSource = 'F G' | 'F Pg' | 'F Pr' | 'LinkedIn'
 type ChatSource = 'Messenger' | 'Discord' | 'Zalo' | 'Telegram'
 
@@ -86,3 +82,8 @@ export interface ThamSốUTM {
 }  
 export type LiênKếtUTM = URL
 export type PhầnRútGọn = string
+export default interface ThamSố {
+    'Tham số UTM': ThamSốUTM
+    'Liên kết UTM': LiênKếtUTM,
+    'Phần rút gọn': PhầnRútGọn
+} 

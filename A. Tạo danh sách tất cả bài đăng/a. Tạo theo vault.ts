@@ -4,8 +4,8 @@
 import { extract } from "$std/front_matter/yaml.ts";
 import { SEPARATOR_PATTERN, basename, extname, join } from "$std/path/mod.ts";
 import { buildUrl } from "https://deno.land/x/url_builder/mod.ts";
-import { ĐườngDẫnTươngĐối, TênDựÁn, URLString, Vault, BàiĐăng, YAMLCủaGhiChú, type ĐườngDẫnTuyệtĐối } from "../Ki%E1%BB%83u.ts";
-import { THƯ_MỤC_DỰ_ÁN, THƯ_MỤC_THIẾT_LẬP, THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT, TẬP_TIN_THIẾT_LẬP } from "../H%E1%BA%B1ng.ts";
+import { ĐườngDẫnTươngĐối, TênDựÁn, URLString, Vault, BàiĐăng, YAMLCủaGhiChú, type ĐườngDẫnTuyệtĐối } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u.ts";
+import { THƯ_MỤC_DỰ_ÁN, THƯ_MỤC_THIẾT_LẬP, THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT, TẬP_TIN_THIẾT_LẬP } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/H%E1%BA%B1ng.ts";
 
 async function cóThưMụcObsidianBênTrong(thưMục: string) {
     try {
@@ -129,7 +129,7 @@ function xácĐịnhTênDựÁn(đườngDẫnTớiGhiChú: ĐườngDẫnTuyệ
     } 
 }
 
-export default async function tạoDanhSáchVậtThểBàiĐăng(thưMụcChứaTấtCảCácVault: ĐườngDẫnTuyệtĐối): Promise<BàiĐăng[]> {
+export default async function tạoDanhSáchVậtThểBàiĐăngTrênVault(thưMụcChứaTấtCảCácVault: ĐườngDẫnTuyệtĐối): Promise<BàiĐăng[]> {
     const danhSáchBàiĐăng: BàiĐăng[] = [] 
     const danhSáchTấtCảCácVault = await tạoDanhSáchThôngTinTấtCảCácVault(thưMụcChứaTấtCảCácVault) 
     for (const vault of danhSáchTấtCảCácVault) {
@@ -146,7 +146,7 @@ export default async function tạoDanhSáchVậtThểBàiĐăng(thưMụcChứa
                 url: url,
                 'Dự án': {
                     "Tên dự án": tênDựÁn,
-                    "Mã dự án": vault["Mã vault"]
+                    "Mã dự án": vault["Mã vault"] //todo
                 } 
             })
         } 

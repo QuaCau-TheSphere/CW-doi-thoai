@@ -3,8 +3,7 @@ import { lấyCấuHìnhHợpLệ } from "./B.%20X%C3%A1c%20%C4%91%E1%BB%8Bnh%20
 import { CâuNhập } from "./B.%20X%C3%A1c%20%C4%91%E1%BB%8Bnh%20th%C3%B4ng%20tin%20chia%20s%E1%BA%BB%20t%E1%BB%AB%20c%C3%A2u%20nh%E1%BA%ADp/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20d%E1%BB%AF%20li%E1%BB%87u%20nh%E1%BA%ADp%20v%C3%A0o.ts";
 import tạoVậtThểChiaSẻ from "./C.%20T%E1%BA%A1o%20v%C3%A0%20r%C3%BAt%20g%E1%BB%8Dn%20li%C3%AAn%20k%E1%BA%BFt%20UTM/2.%20T%E1%BA%A1o%20li%C3%AAn%20k%E1%BA%BFt%20UTM%20v%C3%A0%20li%C3%AAn%20k%E1%BA%BFt%20r%C3%BAt%20g%E1%BB%8Dn.ts";
 import { writeText } from "https://deno.land/x/copy_paste/mod.ts";
-import { KếtQuảPhânLoạiCâuNhập } from "./Ki%E1%BB%83u.ts";
-import tạoVậtThểTiếpThị from "./C.%20T%E1%BA%A1o%20v%C3%A0%20r%C3%BAt%20g%E1%BB%8Dn%20li%C3%AAn%20k%E1%BA%BFt%20UTM/1.%20T%E1%BA%A1o%20v%E1%BA%ADt%20th%E1%BB%83%20ti%E1%BA%BFp%20th%E1%BB%8B.ts";
+import { KếtQuảPhânLoạiCâuNhập } from "./Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u.ts";
 
 // const cấuHìnhNhậpVào = await Deno.readTextFile('Cấu hình.yaml')
 // const cấuHìnhCóVẻHợpLệ = lấyCấuHìnhHợpLệ(cấuHìnhNhậpVào)

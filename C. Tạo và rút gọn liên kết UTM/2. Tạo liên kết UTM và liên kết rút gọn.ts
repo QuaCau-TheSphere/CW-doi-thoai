@@ -1,9 +1,9 @@
 import builder from 'npm:utm-builder';
-import VậtThểChiaSẻ, { VậtThểTiếpThị, Source, Medium, LiênKếtUTM, PhầnRútGọn } from "../Ki%E1%BB%83u.ts";
-import { ThamSốUTM } from "../Ki%E1%BB%83u.ts";
+import ThamSố, { VậtThểTiếpThị, Source, Medium, LiênKếtUTM, PhầnRútGọn } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u.ts";
+import { ThamSốUTM } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u.ts";
 
-function tạoSource(vậtThểNộiDung: VậtThểTiếpThị): Source{
-    switch (vậtThểNộiDung['Loại nơi đăng']){
+function tạoSource(vậtThểTiếpThị: VậtThểTiếpThị): Source{
+    switch (vậtThểTiếpThị['Loại nơi đăng']){
         case 'Nhóm Facebook':
             return 'F G'
         
@@ -19,8 +19,8 @@ function tạoSource(vậtThểNộiDung: VậtThểTiếpThị): Source{
             return 'Không tạo được source'
     }     
 } 
-function tạoMedium(vậtThểNộiDung: VậtThểTiếpThị): Medium{
-    switch (vậtThểNộiDung['Loại nơi đăng']){
+function tạoMedium(vậtThểTiếpThị: VậtThểTiếpThị): Medium{
+    switch (vậtThểTiếpThị['Loại nơi đăng']){
         case 'Nhóm Facebook':
         case 'Trang Facebook':
         case 'Tài khoản Facebook':
@@ -42,37 +42,37 @@ function tạoMedium(vậtThểNộiDung: VậtThểTiếpThị): Medium{
 /**
  * Tên dự án chính là tên chiến dịch
  */
-function tạoCampaign(vậtThểNộiDung: VậtThểTiếpThị){
-    return vậtThểNộiDung['Loại bài viết'] 
+function tạoCampaign(vậtThểTiếpThị: VậtThểTiếpThị){
+    return vậtThểTiếpThị['Loại bài viết'] 
 } 
-function tạoContent(vậtThểNộiDung: VậtThểTiếpThị){
-    return vậtThểNộiDung['Dự án'] //TODO
+function tạoContent(vậtThểTiếpThị: VậtThểTiếpThị){
+    return vậtThểTiếpThị['Dự án'] //TODO
 } 
-function tạoTerm(vậtThểNộiDung: VậtThểTiếpThị){
-    return vậtThểNộiDung['Dự án'] //TODO
+function tạoTerm(vậtThểTiếpThị: VậtThểTiếpThị){
+    return vậtThểTiếpThị['Dự án'] //TODO
 } 
 
-function tạoLiênKếtUTM(vậtThểNộiDung: VậtThểTiếpThị, thamSốUTM: ThamSốUTM): LiênKếtUTM{
+function tạoLiênKếtUTM(vậtThểTiếpThị: VậtThểTiếpThị, thamSốUTM: ThamSốUTM): LiênKếtUTM{
     console.log("🚀 ~ tạoLiênKếtUTM ~ thamSốUTM:", thamSốUTM)
-    console.log("🚀 ~ tạoLiênKếtUTM ~ vậtThểNộiDung:", vậtThểNộiDung)
+    console.log("🚀 ~ tạoLiênKếtUTM ~ vậtThểTiếpThị:", vậtThểTiếpThị)
     
-    return builder(vậtThểNộiDung.url, thamSốUTM.source, thamSốUTM.medium, thamSốUTM.campaign, thamSốUTM.content, thamSốUTM.term)
+    return builder(vậtThểTiếpThị.url, thamSốUTM.source, thamSốUTM.medium, thamSốUTM.campaign, thamSốUTM.content, thamSốUTM.term)
 }  
-function tạoLiênKếtRútGọn(vậtThểNộiDung: VậtThểTiếpThị, thamSốUTM: ThamSốUTM): PhầnRútGọn{
+function tạoLiênKếtRútGọn(vậtThểTiếpThị: VậtThểTiếpThị, thamSốUTM: ThamSốUTM): PhầnRútGọn{
     return 'chưaLàmLiênKếtRútGọn' //TODO
 }  
 
-export default function tạoVậtThểChiaSẻ(vậtThểNộiDung: VậtThểTiếpThị): VậtThểChiaSẻ{
+export default function tạoVậtThểChiaSẻ(vậtThểTiếpThị: VậtThểTiếpThị): ThamSố{
     const thamSốUTM = {
-        source: tạoSource(vậtThểNộiDung),
-        medium: tạoMedium(vậtThểNộiDung),
-        campaign: tạoCampaign(vậtThểNộiDung),
-        content: tạoContent(vậtThểNộiDung),
-        term: tạoTerm(vậtThểNộiDung),
+        source: tạoSource(vậtThểTiếpThị),
+        medium: tạoMedium(vậtThểTiếpThị),
+        campaign: tạoCampaign(vậtThểTiếpThị),
+        content: tạoContent(vậtThểTiếpThị),
+        term: tạoTerm(vậtThểTiếpThị),
     }
     return {
         'Tham số UTM': thamSốUTM,
-        'Liên kết UTM': tạoLiênKếtUTM(vậtThểNộiDung, thamSốUTM),
-        'Phần rút gọn': tạoLiênKếtRútGọn(vậtThểNộiDung, thamSốUTM),
+        'Liên kết UTM': tạoLiênKếtUTM(vậtThểTiếpThị, thamSốUTM),
+        'Phần rút gọn': tạoLiênKếtRútGọn(vậtThểTiếpThị, thamSốUTM),
     } 
 } 
