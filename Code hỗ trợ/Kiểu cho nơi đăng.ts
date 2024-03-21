@@ -2,6 +2,7 @@ export type DanhSáchNơiĐăng = {
   'Tên nơi đăng': string
   'Tên cộng đồng'?: string
   'Loại nơi đăng': string
+  'Tên nền tảng': string
 }[] 
 
 /** Mạng xã hội */
@@ -14,25 +15,22 @@ interface VậtThểNơiĐăngMXH {
 type MạngXãHội = Record<TênMXH, VậtThểNơiĐăngMXH>;
 
 /** Chat */
-type TênCộngĐồngMessenger = string;
-type TênPhòngChatCộngĐồngMessenger = string;
-type CộngĐồngMessenger = Record<TênCộngĐồngMessenger, TênPhòngChatCộngĐồngMessenger[]>;
 
-type TênMáyChủDiscord = string;
+type TênMáyChủ = string;
 type TênThreadHoặcTopic = string;
-type TênKênhMáyChủDiscord = string;
-type KênhMáyChủDiscord = TênKênhMáyChủDiscord | Record<TênKênhMáyChủDiscord, TênThreadHoặcTopic[] | null>;
-type MáyChủDiscord = Record<TênMáyChủDiscord, KênhMáyChủDiscord[]>;
+type TênKênhMáyChủ = string;
+type KênhMáyChủ = TênKênhMáyChủ | Record<TênKênhMáyChủ, TênThreadHoặcTopic[] | null>;
+export type MáyChủ = Record<TênMáyChủ, KênhMáyChủ[]>;
 
-interface VậtThểNơiĐăngChat {
+export interface VậtThểNơiĐăngChat {
   'Cá nhân'?: string[];
   Nhóm?: string[];
 }
 
 interface Chat {
-  Messenger: VậtThểNơiĐăngChat & { 'Cộng đồng': CộngĐồngMessenger[]; };
-  Discord: VậtThểNơiĐăngChat & { 'Máy chủ': MáyChủDiscord[]; };
-  Telegram: VậtThểNơiĐăngChat & { Kênh: string[]; };
+  Messenger: VậtThểNơiĐăngChat & { 'Cộng đồng': MáyChủ[]; };
+  Discord: VậtThểNơiĐăngChat & { 'Máy chủ': MáyChủ[]; };
+  Telegram: { 'Cá nhân': string[], Kênh: string[], Nhóm: MáyChủ[] };
 
   Zalo: VậtThểNơiĐăngChat;
   Viber: VậtThểNơiĐăngChat;
