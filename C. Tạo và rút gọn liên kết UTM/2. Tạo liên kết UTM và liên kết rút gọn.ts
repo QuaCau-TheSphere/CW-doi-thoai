@@ -1,24 +1,24 @@
 import "npm:@total-typescript/ts-reset";
 import builder from 'npm:utm-builder';
-import { danhSáchMXH, danhSáchNềnTảngChat } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/H%E1%BA%B1ng.ts";
+import { danhSáchDiễnĐàn, danhSáchNềnTảngChat } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/H%E1%BA%B1ng.ts";
 import { BàiĐăng, DựÁn } from    "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
 import { LoạiNềnTảng, NơiĐăng, TênNềnTảng, LoạiNơiĐăng, TênNơiĐăng } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
-import ThamSố, { KýHiệuMXH, KýHiệuNềnTảngChat, Campaign, Content, Term, LiênKếtUTM, Medium, PhầnRútGọn, Source, ThamSốUTM } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91.ts";
+import ThamSố, { KýHiệuDiễnĐàn, KýHiệuNềnTảngChat, Campaign, Content, Term, LiênKếtUTM, Medium, PhầnRútGọn, Source, ThamSốUTM } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91.ts";
 
 function tạoSource(loạiNềnTảng: LoạiNềnTảng, tênNềnTảng: TênNềnTảng, loạiNơiĐăng: LoạiNơiĐăng, tênNơiĐăng: TênNơiĐăng): Source{
     switch (loạiNềnTảng) {
-        case "Mạng xã hội": {
-            let kýHiệuMXH
-            danhSáchMXH.includes(tênNềnTảng) ? kýHiệuMXH = tênNềnTảng[0] : kýHiệuMXH = tênNềnTảng
+        case "Diễn đàn": {
+            let kýHiệuDiễnĐàn
+            danhSáchDiễnĐàn.includes(tênNềnTảng) ? kýHiệuDiễnĐàn = tênNềnTảng[0] : kýHiệuDiễnĐàn = tênNềnTảng
             switch (loạiNơiĐăng) {
                 case "Trang":
-                    return `${kýHiệuMXH} Pg ${tênNơiĐăng}`
+                    return `${kýHiệuDiễnĐàn} Pg ${tênNơiĐăng}`
                 case "Tài khoản":
-                    return `${kýHiệuMXH} Pr ${tênNơiĐăng}`
+                    return `${kýHiệuDiễnĐàn} Pr ${tênNơiĐăng}`
                 case "Nhóm":
-                    return `${kýHiệuMXH} G ${tênNơiĐăng}`
+                    return `${kýHiệuDiễnĐàn} G ${tênNơiĐăng}`
                 case "Subreddit":
-                    return `${kýHiệuMXH} Sub ${tênNơiĐăng}`
+                    return `${kýHiệuDiễnĐàn} Sub ${tênNơiĐăng}`
             }
             break
         }
@@ -35,15 +35,12 @@ function tạoSource(loạiNềnTảng: LoạiNềnTảng, tênNềnTảng: Tên
             }
             break
         }
-        case "Diễn đàn": {
-            return 
-        } 
     }
 } 
 
 function tạoMedium(loạiNềnTảng: LoạiNềnTảng): Medium{
     switch (loạiNềnTảng){
-        case "Mạng xã hội":
+        case "Diễn đàn":
             return 'social'
 
         case "Chat":

@@ -1,6 +1,6 @@
 import { parse } from "$std/yaml/mod.ts";
 import * as path from "$std/path/mod.ts";
-import CấuHìnhNơiĐăng, { NơiĐăng, MáyChủ, VậtThểNơiĐăngChat, TênNềnTảngChat, TênMXH, VậtThểNơiĐăngMXH, LoạiNơiĐăngMXH } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
+import CấuHìnhNơiĐăng, { NơiĐăng, MáyChủ, VậtThểNơiĐăngChat, TênNềnTảngChat, TênDiễnĐàn, VậtThểNơiĐăngDiễnĐàn, LoạiNơiĐăngDiễnĐàn } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
 import { LoạiNơiĐăngKhác, LoạiNơiĐăngChat } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
 function đọcCấuHìnhNơiĐăng(): CấuHìnhNơiĐăng{
     const thưMụcHiệnTại = path.dirname(path.fromFileUrl(import.meta.url))
@@ -14,16 +14,16 @@ export default function tạoDanhSáchNơiĐăng() {
     const cấuHìnhNơiĐăng = đọcCấuHìnhNơiĐăng() 
     const danhSáchNơiĐăng: NơiĐăng[] = [] 
 
-    /** Mạng xã hội */
-    for (const [tênMXH, vậtThểNơiĐăngMXH] of Object.entries(cấuHìnhNơiĐăng["Mạng xã hội"]) as [TênMXH, VậtThểNơiĐăngMXH][]) {
-        for (const [loạiNơiĐăngMXH, danhSáchNơiĐăngMXH] of Object.entries(vậtThểNơiĐăngMXH) as [LoạiNơiĐăngMXH, string[]][]) {
-            if (!danhSáchNơiĐăngMXH) continue
-            for (const tênNơiĐăngMXH of danhSáchNơiĐăngMXH) {
+    /** Diễn đàn */
+    for (const [tênDiễnĐàn, vậtThểNơiĐăngDiễnĐàn] of Object.entries(cấuHìnhNơiĐăng["Diễn đàn"]) as [TênDiễnĐàn, VậtThểNơiĐăngDiễnĐàn][]) {
+        for (const [loạiNơiĐăngDiễnĐàn, danhSáchNơiĐăngDiễnĐàn] of Object.entries(vậtThểNơiĐăngDiễnĐàn) as [LoạiNơiĐăngDiễnĐàn, string[]][]) {
+            if (!danhSáchNơiĐăngDiễnĐàn) continue
+            for (const tênNơiĐăngDiễnĐàn of danhSáchNơiĐăngDiễnĐàn) {
                 danhSáchNơiĐăng.push({
-                    'Tên nơi đăng': tênNơiĐăngMXH,
-                    'Loại nơi đăng': loạiNơiĐăngMXH,
-                    "Tên nền tảng": tênMXH,
-                    "Loại nền tảng": "Mạng xã hội"
+                    'Tên nơi đăng': tênNơiĐăngDiễnĐàn,
+                    'Loại nơi đăng': loạiNơiĐăngDiễnĐàn,
+                    "Tên nền tảng": tênDiễnĐàn,
+                    "Loại nền tảng": "Diễn đàn"
                 }) 
             } 
         } 

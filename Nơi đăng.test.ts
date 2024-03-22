@@ -7,7 +7,7 @@ Deno.test("tạoDanhSáchNơiĐăng", () => {
         "Tên nơi đăng": "Một đám mây chim sáo",
         "Loại nơi đăng": "Nhóm",
         "Tên nền tảng": "Facebook",
-        "Loại nền tảng": "Mạng xã hội"
+        "Loại nền tảng": "Diễn đàn"
       }
     assertArrayIncludes(check, tạoDanhSáchNơiĐăng()) 
 } )

@@ -1,4 +1,4 @@
-Mạng xã hội:
+Diễn đàn:
   Facebook:
     Nhóm:
       # Quả Cầu
@@ -30,7 +30,16 @@ Mạng xã hội:
   YouTube:
     Tài khoản:
       - Quả Cầu
-
+  Zalo:
+    Tài khoản:
+      - Lý Minh Nhật
+  
+  'Tinh tế':
+    Tài khoản:
+      - ooker777
+  'Stack Exchange':
+    Tài khoản:
+      - ooker777
 
 Chat:
   Messenger:
@@ -100,13 +109,7 @@ Chat:
   Reddit:
   LinkedIn:
 
-Diễn đàn:
-  'Tinh tế':
-    Tài khoản:
-      - ooker777
-  'Stack Exchange':
-    Tài khoản:
-      - ooker777
+Vault:
 
 Khác:
   Website:
@@ -115,4 +118,15 @@ Khác:
     - quacau.thesphere@gmail.com
   Ảnh:
 
-Vault:
+
+Viết tắt:
+  - Facebook: F
+  - YouTube: Y
+  - Messenger: M
+  - Discord: D
+  - GitHub: G 
+  - Telegram: T
+  - Zalo: Z
+  - LinkedIn: L
+  - Reddit: R
+  - Stack Exchange: SE

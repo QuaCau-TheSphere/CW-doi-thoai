@@ -1,14 +1,14 @@
-import { danhSáchMXH, danhSáchNềnTảngChat } from "./H%E1%BA%B1ng.ts";
+import { danhSáchDiễnĐàn, danhSáchNềnTảngChat } from "./H%E1%BA%B1ng.ts";
 
 export default interface CấuHìnhNơiĐăng {
-  'Mạng xã hội': CấuHìnhMXH;
+  'Diễn đàn': CấuHìnhDiễnĐàn;
   Chat: CấuHìnhChat;
   Khác: NơiĐăngKhác;
 }
 
-export type LoạiNềnTảng = 'Mạng xã hội' | 'Chat' | 'Diễn đàn' | 'Vault' | 'Khác'
-export type TênNềnTảng = TênMXH | TênNềnTảngChat | LoạiNơiĐăngKhác //| TênDiễnĐàn | TênVault 
-export type LoạiNơiĐăng = LoạiNơiĐăngMXH | LoạiNơiĐăngChat | LoạiNơiĐăngKhác
+export type LoạiNềnTảng = 'Diễn đàn' | 'Chat' | 'Diễn đàn' | 'Vault' | 'Khác'
+export type TênNềnTảng = TênDiễnĐàn | TênNềnTảngChat | LoạiNơiĐăngKhác //| TênVault 
+export type LoạiNơiĐăng = LoạiNơiĐăngDiễnĐàn | LoạiNơiĐăngChat | LoạiNơiĐăngKhác
 export type TênNơiĐăng = string
 export type NơiĐăng = {
   'Tên nơi đăng': TênNơiĐăng
@@ -22,14 +22,14 @@ export type NơiĐăng = {
 
 
 /**
- * Mạng xã hội 
+ * Diễn đàn 
  * 
  * Không xem subreddit là nhóm hay cộng đồng là máy chủ luôn được vì muốn sau đó xuất ra vẫn giữ tên là subreddit hay cộng động
  */
-export type TênMXH = typeof danhSáchMXH[number]
-export type LoạiNơiĐăngMXH = 'Nhóm' | 'Trang' | 'Tài khoản' | 'Subreddit'
-export type VậtThểNơiĐăngMXH = Record<LoạiNơiĐăngMXH, string[]>
-type CấuHìnhMXH = Record<TênMXH, VậtThểNơiĐăngMXH>;
+export type TênDiễnĐàn = typeof danhSáchDiễnĐàn[number]
+export type LoạiNơiĐăngDiễnĐàn = 'Nhóm' | 'Trang' | 'Tài khoản' | 'Subreddit'
+export type VậtThểNơiĐăngDiễnĐàn = Record<LoạiNơiĐăngDiễnĐàn, string[]>
+type CấuHìnhDiễnĐàn = Record<TênDiễnĐàn, VậtThểNơiĐăngDiễnĐàn>;
 
 /** 
  * Chat
@@ -60,7 +60,7 @@ interface CấuHìnhChat {
 }
 
 /** 
- * Diễn đàn, vault 
+ * Vault 
  */
 
 // type TênVault = ''
