@@ -4,9 +4,10 @@ export default interface CấuHìnhNơiĐăng {
   'Diễn đàn': CấuHìnhDiễnĐàn;
   Chat: CấuHìnhChat;
   Khác: NơiĐăngKhác;
+  'Viết tắt'?: Record<string, string>[] 
 }
 
-export type LoạiNềnTảng = 'Diễn đàn' | 'Chat' | 'Diễn đàn' | 'Vault' | 'Khác'
+export type LoạiNềnTảng = 'Diễn đàn' | 'Chat' | 'Vault' | 'Khác'
 export type TênNềnTảng = TênDiễnĐàn | TênNềnTảngChat | LoạiNơiĐăngKhác //| TênVault 
 export type LoạiNơiĐăng = LoạiNơiĐăngDiễnĐàn | LoạiNơiĐăngChat | LoạiNơiĐăngKhác
 export type TênNơiĐăng = string

@@ -1,17 +1,11 @@
-import { parse } from "$std/yaml/mod.ts";
-import * as path from "$std/path/mod.ts";
+import { đọcCấuHìnhNơiĐăng } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Code%20h%E1%BB%97%20tr%E1%BB%A3.ts";
 import CấuHìnhNơiĐăng, { NơiĐăng, MáyChủ, VậtThểNơiĐăngChat, TênNềnTảngChat, TênDiễnĐàn, VậtThểNơiĐăngDiễnĐàn, LoạiNơiĐăngDiễnĐàn } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
 import { LoạiNơiĐăngKhác, LoạiNơiĐăngChat } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
-function đọcCấuHìnhNơiĐăng(): CấuHìnhNơiĐăng{
-    const thưMụcHiệnTại = path.dirname(path.fromFileUrl(import.meta.url))
-    return parse(Deno.readTextFileSync(thưMụcHiệnTại+'/Nơi đăng.yaml')) as CấuHìnhNơiĐăng
-} 
 
 /**
  * Lấy dữ liệu từ `Nơi đăng.yaml`
  */
-export default function tạoDanhSáchNơiĐăng() {
-    const cấuHìnhNơiĐăng = đọcCấuHìnhNơiĐăng() 
+export default function tạoDanhSáchNơiĐăng(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng) {
     const danhSáchNơiĐăng: NơiĐăng[] = [] 
 
     /** Diễn đàn */
@@ -137,6 +131,7 @@ export default function tạoDanhSáchNơiĐăng() {
         }
     }
 } 
-const danhSáchNơiĐăng = tạoDanhSáchNơiĐăng()
-console.log(JSON.stringify(danhSáchNơiĐăng, null, 2))
-console.log(JSON.stringify(danhSáchNơiĐăng[0], null, 2))
+// const cấuHìnhNơiĐăng = đọcCấuHìnhNơiĐăng()
+// const danhSáchNơiĐăng = tạoDanhSáchNơiĐăng(cấuHìnhNơiĐăng)
+// console.log(JSON.stringify(danhSáchNơiĐăng, null, 2))
+// console.log(JSON.stringify(danhSáchNơiĐăng[0], null, 2))

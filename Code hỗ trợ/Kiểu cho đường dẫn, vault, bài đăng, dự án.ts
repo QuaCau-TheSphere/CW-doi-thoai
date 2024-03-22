@@ -25,7 +25,7 @@ export interface Vault {
 
 /** Dự án */
 export type TênDựÁn = string
-type MãDựÁn = string
+export type MãDựÁn = string
 export interface DựÁn {
     'Tên dự án': TênDựÁn,
     'Mã dự án': MãDựÁn
