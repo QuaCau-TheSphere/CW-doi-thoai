@@ -97,11 +97,14 @@ function tạoTerm(nơiĐăng: NơiĐăng, bàiĐăng: BàiĐăng): Term{
 function tạoLiênKếtUTM(url: URLString, thamSốUTM: ThamSốUTM): LiênKếtUTM {
     return builder(url, thamSốUTM.source, thamSốUTM.medium, thamSốUTM.campaign, thamSốUTM.content, thamSốUTM.term)
 }  
-/** Nếu có ký hiệu viết tắt thì dùng, còn không thì viết tắt tên nơi đăng */
+
+/** Nếu ký hiệu viết tắt có ít hơn 8 ký tự thì dùng trong đuôi rút gọn luôn, còn không thì tạo ngẫu nhiên 3 ký tự */
 function tạoĐuôiRútGọn(mãDựÁn: MãDựÁn, tênNơiĐăng: TênNơiĐăng, lầnĐăng: number, cấuHìnhNơiĐăng: CấuHìnhNơiĐăng): ĐuôiRútGọn{
+    const tênNơiĐăngViếtTắt = lấyKýHiệuViếtTắt(tênNơiĐăng, cấuHìnhNơiĐăng)
+    
     let tênNơiĐăngRútGọn: string = ''
-    if (tênNơiĐăng !== lấyKýHiệuViếtTắt(tênNơiĐăng, cấuHìnhNơiĐăng)) {
-        tênNơiĐăngRútGọn = lấyKýHiệuViếtTắt(tênNơiĐăng, cấuHìnhNơiĐăng) 
+    if (tênNơiĐăngViếtTắt.length < 7) {
+        tênNơiĐăngRútGọn = tênNơiĐăngViếtTắt
     } else {
         const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
         const charactersLength = characters.length;

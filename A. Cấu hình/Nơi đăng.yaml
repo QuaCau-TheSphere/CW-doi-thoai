@@ -10,7 +10,11 @@ Diễn đàn:
       - SNPO
       - Kingdom of Cubes
     Trang:
-      - Quả Cầu
+      - Quả Cầu:
+        - Câu giới thiệu ngắn
+        - Đoạn giới thiệu chi tiết
+        - Ảnh bìa
+        - Ảnh đại diện
     Tài khoản:
       - Quả Cầu
       - Lý Minh Nhật
@@ -57,20 +61,20 @@ Chat:
         - "#tiếng-việt":
       - Quả Cầu:
         ## A Một đám mây chim sáo:
-        - A Vùng đất Quả Cầu:
+        - "#a-vùng-đất-quả-cầu":
 
         ## B Mạng kết nối nhu cầu:
-        - B Nền kinh tế không dùng tiền:
-        - B Nhu cầu thường gặp:
+        - "#b-nền-kinh-tế-không-dùng-tiền":
+        - "#b-nhu-cầu-thường-gặp":
           - Ăn uống
           - Tiền bạc
           - Nơi chốn
 
-        - B Sự kiện, cơ hội, tuyển dụng, rao vặt:
+        - "#b-sự-kiện-cơ-hội-tuyển-dụng-rao-vặt":
 
         ## C Quản lý dự án và công cụ nghĩ:
-        - C Hệ thống tri thức cộng đồng:
-        - C Nhu cầu công việc và nhu cầu công nghệ:
+        - "#c-hệ-thống-tri-thức-cộng-đồng":
+        - "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ":
           - Các buổi đáp ứng nhu cầu học lập trình hoặc quản lý dự án
           - Tạo liên kết tiếp thị và báo cáo lượng truy cập
           - Quản lý chi tiêu cá nhân. Tạo hạch toán kế toán và báo công nợ tự động
@@ -80,18 +84,18 @@ Chat:
           - Tổng hợp những sự kiện sẽ diễn ra
 
         ## D Học kỹ năng, phát triển bản thân:
-        - D Phát triển bản thân, học kỹ năng:
+        - "#d-phát-triển-bản-thân-học-kỹ-năng":
           - Học tiếng Anh
 
         ## E Giải quyết sự bất lực học được:
-        - E Mạng lưới người thân, bạn bè của người có niềm tin tiêu cực:
+        - "#e-mạng-lưới-người-thân-bạn-bè-của-người-có-niềm-tin-tiêu-cực":
 
         ## F Niềm tin và đối thoại:
-        - F Cùng suy tư:
-        - F Tạo môi trường thúc đẩy sự đối thoại và khoẻ mạnh:
+        - "#f-cùng-suy-tư":
+        - "#f-tạo-môi-trường-thúc-đẩy-sự-đối-thoại-và-khoẻ-mạnh":
 
         ## G Nghiên cứu liên ngành:
-        - G Nghiên cứu liên ngành:
+        - "#g-nghiên-cứu-liên-ngành":
           - Dịch thuật
           - Lý tính, khoa học, diễn ngôn
           - Khoa học sự sống, khoa học nhận thức, khoa học phức hợp
@@ -110,6 +114,9 @@ Chat:
   LinkedIn:
 
 Vault:
+  - A Vùng đất Quả Cầu
+  - B Mạng kết nối nhu cầu
+  - C Obsidian, quản lý dự án và công cụ nghĩ
 
 Khác:
   Website:

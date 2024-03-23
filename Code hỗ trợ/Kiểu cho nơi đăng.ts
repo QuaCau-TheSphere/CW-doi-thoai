@@ -20,7 +20,13 @@ export type NơiĐăng = {
 }
 
 
-
+/** 
+ * | Diễn đàn                    | Discord                    | Messenger      | Telegram |
+ * | --------------------------- | -------------------------- | -------------- | -------- |
+ * | Tài khoản, trang, nhóm      | Server                     | Community      | Group    |
+ * | Ảnh bìa, ảnh đại diện, v.v. | Text Channel/Forum Channel | Community Chat | Topic    |
+ * | ❌                          | Channel Thread/Forum Post  | Sidechat       | ❌       |
+ */
 
 /**
  * Diễn đàn 
@@ -29,7 +35,21 @@ export type NơiĐăng = {
  */
 export type TênDiễnĐàn = typeof danhSáchDiễnĐàn[number]
 export type LoạiNơiĐăngDiễnĐàn = 'Nhóm' | 'Trang' | 'Tài khoản' | 'Subreddit'
-export type VậtThểNơiĐăngDiễnĐàn = Record<LoạiNơiĐăngDiễnĐàn, string[]>
+type ThànhPhần = 'Câu giới thiệu ngắn' | 'Đoạn giới thiệu chi tiết' | 'Ảnh bìa' | 'Ảnh đại diện'
+type TênTàiKhoảnTrangHoặcNhóm = string
+
+/** 
+ * ```yaml
+ * - Tên tài khoản         # Kiểu `TênTàiKhoảnTrangHoặcNhóm`
+ * - Tên trang:            # Kiểu `Record<TênTàiKhoảnTrangHoặcNhóm, ThànhPhần[]>`
+ *   - Thành phần 1    
+ *   - Thành phần 2    
+ * - Tên nhóm:             # Kiểu `Record<TênTàiKhoảnTrangHoặcNhóm, null>
+ * ```
+ */
+type TàiKhoảnHoặcTrangHoặcNhóm = TênTàiKhoảnTrangHoặcNhóm | Record<TênTàiKhoảnTrangHoặcNhóm, ThànhPhần[] | null>
+export type VậtThểNơiĐăngDiễnĐàn = Record<LoạiNơiĐăngDiễnĐàn, TàiKhoảnHoặcTrangHoặcNhóm[]>
+
 type CấuHìnhDiễnĐàn = Record<TênDiễnĐàn, VậtThểNơiĐăngDiễnĐàn>;
 
 /** 
@@ -39,9 +59,20 @@ type CấuHìnhDiễnĐàn = Record<TênDiễnĐàn, VậtThểNơiĐăngDiễn�
 export type TênNềnTảngChat = typeof danhSáchNềnTảngChat[number] 
 type TênMáyChủ = string;
 type TênThreadHoặcTopic = string;
-type TênKênhMáyChủ = string;
-type KênhMáyChủ = TênKênhMáyChủ | Record<TênKênhMáyChủ, TênThreadHoặcTopic[] | null>;
-export type MáyChủ = Record<TênMáyChủ, KênhMáyChủ[]>;
+type TênKênh = string;
+/** 
+ * ```yaml
+ * - Tên cộng đồng 1       # Kiểu `string`
+ * - Tên máy chủ:          # Kiểu `Record<string, string[]>`
+ *   - Kênh 1                   # Kiểu `string`
+ *   - Kênh 2:                  # Kiểu `Record<TênKênh, TênThreadHoặcTopic[]>`
+ *     - Thread 1
+ *   - Kênh 3:                  # Kiểu `Record<TênKênh, null>`
+ * - Tên cộng đồng 2:      # Kiểu `Record<string, null>
+ * ```
+ */
+type Kênh = TênKênh | Record<TênKênh, TênThreadHoặcTopic[] | null>;
+export type MáyChủ = Record<TênMáyChủ, Kênh[]>;
 
 export type LoạiNơiĐăngChat = 'Cá nhân' | 'Cộng đồng' | 'Máy chủ' | 'Kênh' | 'Nhóm'
 export interface VậtThểNơiĐăngChat {
@@ -64,8 +95,7 @@ interface CấuHìnhChat {
  * Vault 
  */
 
-// type TênVault = ''
-// type TênDiễnĐàn = ''
+type TênVault = string
 
 /** 
  * Nơi đăng khác 
