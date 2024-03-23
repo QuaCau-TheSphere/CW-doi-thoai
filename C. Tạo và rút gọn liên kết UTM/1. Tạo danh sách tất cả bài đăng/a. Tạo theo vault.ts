@@ -99,6 +99,7 @@ function xácĐịnhURLCủaGhiChú(đườngDẫnTớiGhiChú: ĐườngDẫnTu
     /** Nếu đường dẫn bài viết là a/a.md, thì url là a. Nếu đường dẫn bài viết là a/b.md, thì url là a/b */
     const đườngDẫnTươngĐốiTớiTậpTinHTMLCủaGhiChú: string[] = đườngDẫnTươngĐốiCủaGhiChúTrongVault.split(SEPARATOR_PATTERN)
     if (tênTậpTin !== thưMụcMẹTrựcTiếp) {
+        đườngDẫnTươngĐốiTớiTậpTinHTMLCủaGhiChú.pop()
         đườngDẫnTươngĐốiTớiTậpTinHTMLCủaGhiChú.push(tênTậpTin);
     } else đườngDẫnTươngĐốiTớiTậpTinHTMLCủaGhiChú.pop();
     const url = buildUrl(urlVault, {
@@ -154,6 +155,6 @@ export default async function tạoDanhSáchVậtThểBàiĐăngTrênVault(thưM
     return danhSáchBàiĐăng
 } 
 
-// const danhSáchVậtThểBàiĐăng = await tạoDanhSáchVậtThểBàiĐăng(THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT)
+// const danhSáchVậtThểBàiĐăng = await tạoDanhSáchVậtThểBàiĐăngTrênVault(THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT)
 // console.log(danhSáchVậtThểBàiĐăng)
 // console.log(danhSáchVậtThểBàiĐăng.some(e => e["Tiêu đề"] === "AI là định dạng ảnh mờ của web"))

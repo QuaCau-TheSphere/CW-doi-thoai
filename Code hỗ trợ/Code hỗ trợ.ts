@@ -1,11 +1,4 @@
-import { parse } from "$std/yaml/mod.ts";
-import * as path from "$std/path/mod.ts";
 import CấuHìnhNơiĐăng from "./Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
-
-export function đọcCấuHìnhNơiĐăng(): CấuHìnhNơiĐăng{
-    const thưMụcHiệnTại = path.dirname(path.fromFileUrl(import.meta.url))
-    return parse(Deno.readTextFileSync(thưMụcHiệnTại+'/Nơi đăng.yaml')) as CấuHìnhNơiĐăng
-} 
 
 export function lấyKýHiệuViếtTắt(từĐượcKiểmTra: string, cấuHìnhNơiĐăng: CấuHìnhNơiĐăng) {
     if (cấuHìnhNơiĐăng["Viết tắt"]) {

@@ -2,7 +2,7 @@
 import builder from 'npm:utm-builder';
 import { BàiĐăng, DựÁn, MãDựÁn, URLString } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
 import CấuHìnhNơiĐăng, { LoạiNềnTảng, NơiĐăng, TênNềnTảng, LoạiNơiĐăng, TênNơiĐăng } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
-import ThamSốUTMVàLiênKếtRútGọn, { Campaign, Content, Term, LiênKếtUTM, Medium, PhầnRútGọn, Source, ThamSốUTM, SourceKhác } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91%20UTM.ts";
+import ThamSốUTMVàLiênKếtRútGọn, { Campaign, Content, Term, LiênKếtUTM, Medium, ĐuôiRútGọn, Source, ThamSốUTM, SourceKhác } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91%20UTM.ts";
 import { SourceDiễnĐàn } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91%20UTM.ts";
 import { SourceNềnTảngChat } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91%20UTM.ts";
 import { lấyKýHiệuViếtTắt } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Code%20h%E1%BB%97%20tr%E1%BB%A3.ts";
@@ -97,20 +97,22 @@ function tạoTerm(nơiĐăng: NơiĐăng, bàiĐăng: BàiĐăng): Term{
 function tạoLiênKếtUTM(url: URLString, thamSốUTM: ThamSốUTM): LiênKếtUTM {
     return builder(url, thamSốUTM.source, thamSốUTM.medium, thamSốUTM.campaign, thamSốUTM.content, thamSốUTM.term)
 }  
-function tạoĐuôiRútGọn(mãDựÁn: MãDựÁn, tênNơiĐăng: TênNơiĐăng, cấuHìnhNơiĐăng: CấuHìnhNơiĐăng): PhầnRútGọn{
+/** Nếu có ký hiệu viết tắt thì dùng, còn không thì viết tắt tên nơi đăng */
+function tạoĐuôiRútGọn(mãDựÁn: MãDựÁn, tênNơiĐăng: TênNơiĐăng, lầnĐăng: number, cấuHìnhNơiĐăng: CấuHìnhNơiĐăng): ĐuôiRútGọn{
     let tênNơiĐăngRútGọn: string = ''
     if (tênNơiĐăng !== lấyKýHiệuViếtTắt(tênNơiĐăng, cấuHìnhNơiĐăng)) {
         tênNơiĐăngRútGọn = lấyKýHiệuViếtTắt(tênNơiĐăng, cấuHìnhNơiĐăng) 
     } else {
-        for (const i of tênNơiĐăng.split(' ')) {
-            if (i.length > 0 && i !== '') tênNơiĐăngRútGọn += i[0]
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+        const charactersLength = characters.length;
+        for (let i = 0; i < 3; i++) {
+            tênNơiĐăngRútGọn += characters.charAt(Math.floor(Math.random() * charactersLength));
         }
     } 
-    const sốCuối = Math.floor(Math.random() * 100) //todo: đổi thành bộ đếm
-    return `${mãDựÁn}${tênNơiĐăngRútGọn}${sốCuối}`
+    return `${mãDựÁn}${tênNơiĐăngRútGọn}${lầnĐăng}`
 }  
 
-export default function tạoThamSốUTMVàLiênKếtRútGọn(nơiĐăng: NơiĐăng, bàiĐăng: BàiĐăng, cấuHìnhNơiĐăng): ThamSốUTMVàLiênKếtRútGọn{
+export default function tạoThamSốUTMVàLiênKếtRútGọn(nơiĐăng: NơiĐăng, bàiĐăng: BàiĐăng, lầnĐăng: number, cấuHìnhNơiĐăng: CấuHìnhNơiĐăng): ThamSốUTMVàLiênKếtRútGọn{
     const tênNềnTảng = nơiĐăng["Tên nền tảng"]
     const loạiNơiĐăng = nơiĐăng["Loại nơi đăng"]
     const tênNơiĐăng = nơiĐăng["Tên nơi đăng"];
@@ -129,6 +131,6 @@ export default function tạoThamSốUTMVàLiênKếtRútGọn(nơiĐăng: Nơi�
     return {
         'Tham số UTM': thamSốUTM,
         'Liên kết UTM': tạoLiênKếtUTM(url, thamSốUTM),
-        'Phần rút gọn': tạoĐuôiRútGọn(mãDựÁn, tênNơiĐăng, cấuHìnhNơiĐăng),
+        'Đuôi rút gọn': tạoĐuôiRútGọn(mãDựÁn, tênNơiĐăng, lầnĐăng, cấuHìnhNơiĐăng),
     } 
 } 

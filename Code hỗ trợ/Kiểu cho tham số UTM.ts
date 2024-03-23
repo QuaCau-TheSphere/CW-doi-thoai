@@ -25,9 +25,9 @@ export interface ThamSốUTM {
     term?: Term
 }  
 export type LiênKếtUTM = URL
-export type PhầnRútGọn = string
+export type ĐuôiRútGọn = string
 export default interface ThamSốUTMVàLiênKếtRútGọn {
     'Tham số UTM': ThamSốUTM
     'Liên kết UTM': LiênKếtUTM,
-    'Phần rút gọn': PhầnRútGọn
+    'Đuôi rút gọn': ĐuôiRútGọn
 } 
