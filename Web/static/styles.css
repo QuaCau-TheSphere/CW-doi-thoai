@@ -2,16 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-li.selected {
+.cursor {
   background: yellow;
 }
-li:hover {
-  background: yellow;
-}
-#result {
+/* .result {
   font-weight: bold;
   font-size: 40px;
-}
+} */
 
 
 *,

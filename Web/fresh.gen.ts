@@ -10,7 +10,6 @@ import * as $index from "./routes/index.tsx";
 import * as $lmn from "./routes/lmn.ts";
 import * as $lậptrình from "./routes/lậptrình.ts";
 import * as $ngụngôn from "./routes/ngụngôn.ts";
-import * as $script from "./islands/script.tsx";
 import * as $search from "./islands/search.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
@@ -26,7 +25,6 @@ const manifest = {
     "./routes/ngụngôn.ts": $ngụngôn,
   },
   islands: {
-    "./islands/script.tsx": $script,
     "./islands/search.tsx": $search,
   },
   baseUrl: import.meta.url,

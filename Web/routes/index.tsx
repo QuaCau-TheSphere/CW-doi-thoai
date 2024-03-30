@@ -24,8 +24,10 @@ export default async function App(prop: PageProps) {
   ) as CấuHìnhNơiĐăng) as NơiĐăng[];
   return (
     <body>
-      <SearchBar danhSách={danhSáchBàiĐăng} làBàiĐăng />
-      <SearchBar danhSách={danhSáchNơiĐăng} />
+      <SearchBar
+        danhSáchBàiĐăng={danhSáchBàiĐăng}
+        danhSáchNơiĐăng={danhSáchNơiĐăng}
+      />
     </body>
   );
 }
