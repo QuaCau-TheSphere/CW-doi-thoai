@@ -5,8 +5,9 @@ import { BàiĐăng } from "../../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%2
 import CấuHìnhNơiĐăng, {
   NơiĐăng,
 } from "../../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
-import SearchBar from "../islands/search.tsx";
+import KhungKiếmBênTrái from "../islands/KhungKi%E1%BA%BFmB%C3%AAnTr%C3%A1i.tsx";
 import tạoDanhSáchNơiĐăng from "../../B.%20T%E1%BA%A1o%20k%E1%BA%BFt%20qu%E1%BA%A3/2.%20T%E1%BA%A1o%20danh%20s%C3%A1ch%20n%C6%A1i%20%C4%91%C4%83ng.ts";
+import Main from "../islands/Main.tsx";
 
 export const handler: Handlers = {
   GET(req, ctx) {
@@ -19,14 +20,16 @@ export default async function App(prop: PageProps) {
   const danhSáchBàiĐăng = JSON.parse(
     await Deno.readTextFile("A. Cấu hình/Bài đăng.json"),
   ) as BàiĐăng[];
-  const danhSáchNơiĐăng = tạoDanhSáchNơiĐăng(parse(
+  const cấuHìnhNơiĐăng = parse(
     await Deno.readTextFile("A. Cấu hình/Nơi đăng.yaml"),
-  ) as CấuHìnhNơiĐăng) as NơiĐăng[];
+  ) as CấuHìnhNơiĐăng;
+  const danhSáchNơiĐăng = tạoDanhSáchNơiĐăng(cấuHìnhNơiĐăng) as NơiĐăng[];
   return (
     <body>
-      <SearchBar
+      <Main
         danhSáchBàiĐăng={danhSáchBàiĐăng}
         danhSáchNơiĐăng={danhSáchNơiĐăng}
+        cấuHìnhNơiĐăng={cấuHìnhNơiĐăng}
       />
     </body>
   );

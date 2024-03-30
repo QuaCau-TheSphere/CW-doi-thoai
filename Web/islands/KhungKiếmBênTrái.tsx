@@ -1,22 +1,15 @@
 import { StateUpdater, useState } from "preact/hooks";
 import Fuse from "https://deno.land/x/fuse/dist/fuse.esm.js";
-import { FuseResult } from "https://deno.land/x/fuse/dist/fuse.d.ts";
 import { BàiĐăng } from "../../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
 import { NơiĐăng } from "../../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
-import { json } from "$std/yaml/schema/json.ts";
-interface danhSáchProp {
-  danhSáchNơiĐăng: NơiĐăng[];
-  danhSáchBàiĐăng: BàiĐăng[];
-}
-
-type SearchList = FuseResult<NơiĐăng> | FuseResult<BàiĐăng> | null;
-type SelectedItem = string | null;
-/** Cursor is the current highlighted item in the search list. It's null when the mouse leaves */
-type Cursor = number | null;
-
-/** Active list is used to determine whether the search list should be popup or not */
-type ListName = "nơi đăng" | "bài đăng" | null;
-type ActiveList = ListName;
+import {
+  ActiveList,
+  Cursor,
+  KhungKiếmBênTráiProps,
+  ListName,
+  SearchList,
+  SelectedItem,
+} from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20web.ts";
 
 function SearchList({
   listName,
@@ -41,7 +34,7 @@ function SearchList({
           className={cursor === index ? "cursor" : ""}
           onClick={() => setSelectedItem(item)}
           onMouseEnter={() => setCursor(index)}
-          onMouseLeave={() => setCursor(null)}
+          onMouseLeave={() => setCursor(undefined)}
         >
           <Item item={item.item} />
         </li>
@@ -72,16 +65,19 @@ function SearchList({
 }
 
 function SearchDiv(
-  { listName, fuse, activeList, setActiveList }: {
+  { listName, fuse, activeList, setActiveList, chọnBàiĐăngHoặcNơiĐăng }: {
     listName: ListName;
     fuse: Fuse;
     activeList: ActiveList;
     setActiveList: StateUpdater<ActiveList>;
+    chọnBàiĐăngHoặcNơiĐăng:
+      | StateUpdater<BàiĐăng | undefined>
+      | StateUpdater<NơiĐăng | undefined>;
   },
 ) {
-  const [searchList, setSearchList] = useState<null | SearchList>(null);
+  const [searchList, setSearchList] = useState<SearchList>(undefined);
   const [cursor, setCursor] = useState<Cursor>(0);
-  const [selectedItem, setSelectedItem] = useState<null | SelectedItem>(null);
+  const [selectedItem, setSelectedItem] = useState<SelectedItem>(undefined);
 
   function handleKeyDown(e: KeyboardEvent) {
     if (!searchList) return;
@@ -91,10 +87,11 @@ function SearchDiv(
     } else if (e.key === "ArrowUp") {
       const newCursor = Math.max(0, cursor! - 1);
       setCursor(newCursor);
-    } else if (e.key === "Enter" && cursor) {
+    } else if (e.key === "Enter" && cursor !== undefined) {
       setSelectedItem(searchList[cursor]);
     }
   }
+  chọnBàiĐăngHoặcNơiĐăng(selectedItem?.item);
 
   const searchListNode = (
     <SearchList
@@ -119,10 +116,10 @@ function SearchDiv(
           );
         }}
         onFocus={() => setActiveList(listName)}
-        onKeyDown={(e) => handleKeyDown(e)}
+        onKeyDown={handleKeyDown}
       />
       <br />
-      {activeList === listName ? searchListNode : null}
+      {activeList === listName ? searchListNode : undefined}
       Cursor: {cursor}
       <br />
       Selected item of list {listName}:{" "}
@@ -134,11 +131,13 @@ function SearchDiv(
   );
 }
 
-export default function SearchBar(
-  { danhSáchNơiĐăng, danhSáchBàiĐăng }: danhSáchProp,
+export default function KhungKiếmBênTrái(
+  { danhSáchNơiĐăng, danhSáchBàiĐăng, chọnBàiĐăng, chọnNơiĐăng }:
+    KhungKiếmBênTráiProps,
 ) {
   /** Active list is used to determine whether the search list should be popup or not */
-  const [activeList, setActiveList] = useState<ActiveList>(null);
+  const [activeList, setActiveList] = useState<ActiveList>(undefined);
+
   const fuseBàiĐăng = new Fuse(danhSáchBàiĐăng, {
     // minMatchCharLength: 3,
     ignoreLocation: true,
@@ -165,12 +164,14 @@ export default function SearchBar(
         fuse={fuseBàiĐăng}
         activeList={activeList}
         setActiveList={setActiveList}
+        chọnBàiĐăngHoặcNơiĐăng={chọnBàiĐăng}
       />
       <SearchDiv
         listName="nơi đăng"
         fuse={fuseNơiĐăng}
         activeList={activeList}
         setActiveList={setActiveList}
+        chọnBàiĐăngHoặcNơiĐăng={chọnNơiĐăng}
       />
     </>
   );
