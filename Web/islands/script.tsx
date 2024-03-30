@@ -1,7 +1,10 @@
-export function script(list) {
+export function script(loại: "bài đăng" | "nơi đăng") {
   if (window !== undefined) {
-    const ul = document.getElementById(list);
-    const result = document.getElementById("result");
+    document.addEventListener("focusout", (event) => {
+      return;
+    });
+    const ul = document.getElementById(`Danh sách ${loại}`);
+    const result = document.getElementById(`Kết quả chọn ${loại}`);
     let liSelected;
     let index = -1;
     let prevIndex;
