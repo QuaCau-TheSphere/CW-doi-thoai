@@ -1,5 +1,3 @@
-// import "npm:@total-typescript/ts-reset";
-import builder from "npm:utm-builder";
 import {
   BàiĐăng,
   DựÁn,
@@ -120,15 +118,32 @@ function tạoTerm(nơiĐăng: NơiĐăng, bàiĐăng: BàiĐăng): Term {
   return; //TODO
 }
 
-function tạoLiênKếtUTM(url: URLString, thamSốUTM: ThamSốUTM): LiênKếtUTM {
-  return builder(
-    url,
-    thamSốUTM.source,
-    thamSốUTM.medium,
-    thamSốUTM.campaign,
-    thamSốUTM.content,
-    thamSốUTM.term,
-  );
+function tạoLiênKếtUTM(link: URLString, thamSốUTM: ThamSốUTM): LiênKếtUTM {
+  const url = new URL(link);
+  const { source, medium, campaign, content, term } = thamSốUTM;
+  if (source) {
+    url.searchParams.set("utm_source", source);
+  } else {
+    throw new Error("Không có source");
+  }
+  if (medium) {
+    url.searchParams.set("utm_medium", medium);
+  } else {
+    throw new Error("Không có medium");
+  }
+  if (campaign) {
+    url.searchParams.set("utm_campaign", campaign);
+  } else {
+    throw new Error("Không có campaign");
+  }
+  if (content !== undefined) {
+    url.searchParams.set("utm_content", content);
+  }
+  if (term !== undefined) {
+    url.searchParams.set("utm_term", term);
+  }
+
+  return url;
 }
 
 /** Nếu ký hiệu viết tắt có ít hơn 8 ký tự thì dùng trong đuôi rút gọn luôn, còn không thì tạo ngẫu nhiên 3 ký tự */
