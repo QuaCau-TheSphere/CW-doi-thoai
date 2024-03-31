@@ -36,7 +36,7 @@ const thamSốUTMVàLiênKếtRútGọn = tạoThamSốUTMVàLiênKếtRútGọn
 
 const liênKếtUTM = thamSốUTMVàLiênKếtRútGọn["Liên kết UTM"];
 const đuôiRútGọn = thamSốUTMVàLiênKếtRútGọn["Đuôi rút gọn"];
-const liênKếtRútGọn = TÊN_MIỀN_RÚT_GỌN + "/" + đuôiRútGọn;
+const liênKếtRútGọn = `${TÊN_MIỀN_RÚT_GỌN}/${đuôiRútGọn}`;
 
 // await kv.set(['Đuôi rút gọn', đuôiRútGọn], thamSốUTMVàLiênKếtRútGọn);
 
