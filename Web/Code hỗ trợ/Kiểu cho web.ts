@@ -27,11 +27,14 @@ export type KếtQuả = {
 } | undefined;
 
 export type TạoKếtQuả = StateUpdater<KếtQuả>;
-export type SearchList = FuseResult<NơiĐăng> | FuseResult<BàiĐăng> | undefined;
-export type SelectedItem = BàiĐăng | NơiĐăng | undefined;
+export type DanhSáchKếtQuảTìmKiếm =
+  | FuseResult<NơiĐăng>
+  | FuseResult<BàiĐăng>
+  | undefined;
+export type MụcĐượcChọn = BàiĐăng | NơiĐăng | undefined;
 /** Cursor is the current highlighted item in the search list. It's undefined when the mouse leaves */
 export type Cursor = number;
 
 export type TênDanhSách = "nơi đăng" | "bài đăng";
 /** Active list is used to determine whether the search list should be popup or not */
-export type ActiveList = TênDanhSách | undefined;
+export type DanhSáchĐangActive = TênDanhSách | undefined;
