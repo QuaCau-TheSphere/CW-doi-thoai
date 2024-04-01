@@ -38,13 +38,23 @@ Diễn đàn:
     Tài khoản:
       - Lý Minh Nhật
   # GitHub:
+  #   Tài khoản:
+  #     - ooker777:
+  #         - Readme
+  #         - Link
+  #   Org:
+  #     - Quả Cầu
+  #   Repo:
+
   # Spiderum:
   "Tinh tế":
     Tài khoản:
       - ooker777
-  "Stack Exchange":
-    Tài khoản:
-      - ooker777
+  # "Stack Exchange":
+  #   Tài khoản:
+  #     - ooker777:
+  #         - Link
+  #         - Description
 
 Chat:
   Messenger:

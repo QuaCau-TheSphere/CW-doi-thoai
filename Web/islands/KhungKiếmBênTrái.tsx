@@ -1,4 +1,3 @@
-import { stringify } from "https://deno.land/std@0.207.0/yaml/mod.ts";
 import { StateUpdater, useState } from "preact/hooks";
 import Fuse from "https://deno.land/x/fuse/dist/fuse.esm.js";
 import { BàiĐăng } from "../../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
@@ -35,7 +34,7 @@ function DanhSáchKếtQuảTìmKiếm({
           class={cursor === index ? "cursor bg-secondary" : ""}
           onClick={() => setSelectedItem(item)}
           onMouseEnter={() => setCursor(index)}
-          onMouseLeave={() => setCursor(undefined)}
+          onMouseLeave={() => setCursor(-1)}
         >
           <Item item={item.item} />
         </li>
@@ -91,9 +90,7 @@ function SearchDiv(
     fuse: Fuse;
     activeList: DanhSáchĐangActive;
     setActiveList: StateUpdater<DanhSáchĐangActive>;
-    chọnBàiĐăngHoặcNơiĐăng:
-      | StateUpdater<BàiĐăng | undefined>
-      | StateUpdater<NơiĐăng | undefined>;
+    chọnBàiĐăngHoặcNơiĐăng: any;
   },
 ) {
   const [searchList, setSearchList] = useState<DanhSáchKếtQuảTìmKiếm>(
@@ -102,7 +99,8 @@ function SearchDiv(
   const [cursor, setCursor] = useState<Cursor>(0);
   const [selectedItem, setSelectedItem] = useState<MụcĐượcChọn>(undefined);
 
-  chọnBàiĐăngHoặcNơiĐăng(selectedItem?.item);
+  //@ts-ignore:
+  chọnBàiĐăngHoặcNơiĐăng(selectedItem);
   const searchListNode = (
     <DanhSáchKếtQuảTìmKiếm
       listName={listName}
@@ -153,14 +151,12 @@ function SearchDiv(
       setCursor(newCursor);
     } else if (e.key === "Enter") {
       setSelectedItem(searchList[cursor].item);
-      const inputNơiĐăng = document.getElementById("input-nơi-đăng");
+      const inputNơiĐăng = document.getElementById("input-nơi-đăng")!;
 
       if (activeList === "bài đăng") {
-        // setSearchInput((selectedItem as BàiĐăng)["Tiêu đề"]);
         setActiveList("nơi đăng");
         inputNơiĐăng.focus();
       } else if (activeList === "nơi đăng") {
-        // setSearchInput((selectedItem as NơiĐăng)["Tên nơi đăng"]);
         setActiveList(undefined);
       }
     }
