@@ -15,7 +15,7 @@ export default function Main(
     undefined,
   );
   return (
-    <>
+    <main class="grid grid-cols-1 grid-cols-2 gap-5 h-full">
       <KhungKiếmBênTrái
         danhSáchNơiĐăng={danhSáchNơiĐăng}
         danhSáchBàiĐăng={danhSáchBàiĐăng}
@@ -26,6 +26,6 @@ export default function Main(
         kếtQuả={{ bàiĐăng: bàiĐăngĐượcChọn, nơiĐăng: nơiĐăngĐượcChọn }}
         cấuHìnhNơiĐăng={cấuHìnhNơiĐăng}
       />
-    </>
+    </main>
   );
 }

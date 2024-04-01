@@ -45,11 +45,13 @@ export interface YAMLCủaGhiChú {
   created?: string;
   updated?: string;
   share?: boolean;
+  "Mã bài đăng"?: string;
 }
 export interface BàiĐăng {
   "Tiêu đề": string;
   url: URLString;
   "Mô tả bài đăng"?: string;
   "Dự án": DựÁn;
+  Vault: string;
   "Mã bài đăng"?: string;
 }

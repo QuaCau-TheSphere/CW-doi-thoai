@@ -6,9 +6,9 @@ import type {
   ActiveList,
   Cursor,
   KhungKiếmBênTráiProps,
-  ListName,
   SearchList,
   SelectedItem,
+  TênDanhSách,
 } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20web.ts";
 
 function SearchList({
@@ -18,7 +18,7 @@ function SearchList({
   setCursor,
   setSelectedItem,
 }: {
-  listName: ListName;
+  listName: TênDanhSách;
   searchList: SearchList;
   cursor: Cursor;
   setCursor: StateUpdater<Cursor>;
@@ -27,11 +27,11 @@ function SearchList({
   if (!searchList) return;
   const id = `Search list ${listName}`;
   return (
-    <ul id={id} className="active">
+    <ul id={id} class="active">
       {searchList.map((item, index) => (
         <li
           key={index}
-          className={cursor === index ? "cursor" : ""}
+          class={cursor === index ? "cursor bg-secondary" : ""}
           onClick={() => setSelectedItem(item)}
           onMouseEnter={() => setCursor(index)}
           onMouseLeave={() => setCursor(undefined)}
@@ -44,19 +44,35 @@ function SearchList({
 
   function Item({ item }: { item: BàiĐăng | NơiĐăng }) {
     switch (listName) {
-      case "bài đăng":
+      case "bài đăng": {
         item = item as BàiĐăng;
+        let dòngPhụ;
+        if (item["Dự án"]["Tên dự án"]) {
+          dòngPhụ = (
+            <span class="dòng-phụ font-xs text-slate-400">
+              <span class="nơi-lưu-bài-đăng">Dự án:</span>{" "}
+              {item["Dự án"]["Tên dự án"]}
+            </span>
+          );
+        } else if (item.Vault) {
+          dòngPhụ = (
+            <span class="dòng-phụ font-xs text-slate-400">
+              <span class="nơi-lưu-bài-đăng">Vault:</span> {item.Vault}
+            </span>
+          );
+        }
         return (
           <>
-            <h4>{item["Tiêu đề"]}</h4>
-            <span>{item["Dự án"]["Tên dự án"]}</span>
+            <h4 class="h4 tiêu-đề">{item["Tiêu đề"]}</h4>
+            {dòngPhụ}
           </>
         );
+      }
       case "nơi đăng":
         item = item as NơiĐăng;
         return (
           <>
-            <h4>{item["Tên nơi đăng"]}</h4>
+            <h4 class="h4">{item["Tên nơi đăng"]}</h4>
             {item["Tên nền tảng"]}
           </>
         );
@@ -66,7 +82,7 @@ function SearchList({
 
 function SearchDiv(
   { listName, fuse, activeList, setActiveList, chọnBàiĐăngHoặcNơiĐăng }: {
-    listName: ListName;
+    listName: TênDanhSách;
     fuse: Fuse;
     activeList: ActiveList;
     setActiveList: StateUpdater<ActiveList>;
@@ -75,6 +91,7 @@ function SearchDiv(
       | StateUpdater<NơiĐăng | undefined>;
   },
 ) {
+  const [searchInput, setSearchInput] = useState<string | undefined>(undefined);
   const [searchList, setSearchList] = useState<SearchList>(undefined);
   const [cursor, setCursor] = useState<Cursor>(0);
   const [selectedItem, setSelectedItem] = useState<SelectedItem>(undefined);
@@ -87,12 +104,21 @@ function SearchDiv(
     } else if (e.key === "ArrowUp") {
       const newCursor = Math.max(0, cursor! - 1);
       setCursor(newCursor);
-    } else if (e.key === "Enter" && cursor !== undefined) {
-      setSelectedItem(searchList[cursor]);
+    } else if (e.key === "Enter") {
+      setSelectedItem(searchList[cursor].item);
+      const inputNơiĐăng = document.getElementById("input-nơi-đăng");
+      if (activeList === "bài đăng") {
+        // setSearchInput((selectedItem as BàiĐăng)["Tiêu đề"]);
+        setActiveList("nơi đăng");
+        inputNơiĐăng.focus();
+      } else if (activeList === "nơi đăng") {
+        // setSearchInput((selectedItem as NơiĐăng)["Tên nơi đăng"]);
+        setActiveList(undefined);
+      }
     }
+    //@ts-ignore:
+    chọnBàiĐăngHoặcNơiĐăng(selectedItem);
   }
-  chọnBàiĐăngHoặcNơiĐăng(selectedItem?.item);
-
   const searchListNode = (
     <SearchList
       listName={listName}
@@ -104,39 +130,50 @@ function SearchDiv(
   );
   return (
     <div
-      id={`search-div-${listName}`}
-      className="search-bar-container"
+      id={`div-${listName.replace(" ", "-")}`}
+      class="search-bar-container"
     >
-      <input
-        type="text"
-        placeholder={`Tìm ${listName}`}
-        onInput={(e) => {
-          setSearchList(
-            fuse.search((e.target as HTMLTextAreaElement).value).slice(0, 10),
-          );
-        }}
-        onFocus={() => setActiveList(listName)}
-        onKeyDown={handleKeyDown}
-      />
+      <label class="input input-bordered flex items-center gap-2">
+        {listName.replace(/^(.)/g, (x) => x.toUpperCase())}
+        <input
+          type="text"
+          class="grow"
+          autoFocus
+          value={searchInput}
+          id={`input-${listName?.replace(" ", "-")}`}
+          placeholder={`Nhập ${listName}`}
+          onInput={(e) => {
+            setSearchInput((e.target as HTMLTextAreaElement).value);
+            setSearchList(
+              fuse.search(searchInput).slice(0, 10),
+            );
+          }}
+          onFocus={() => setActiveList(listName)}
+          onKeyDown={handleKeyDown}
+        />
+      </label>
       <br />
       {activeList === listName ? searchListNode : undefined}
-      Cursor: {cursor}
       <br />
-      Selected item of list {listName}:{" "}
-      <span id={`Item ${listName}`} className={"result"}>
-        {JSON.stringify(selectedItem)}
-      </span>
+      <ul id={`${listName.replace(" ", "-")}-được-chọn`} class={"result"}>
+        {selectedItem
+          ? Object.entries(selectedItem).map((i) => (
+            <li>
+              <span class="font-bold">{i[0]}</span>: {i[1]}
+            </li>
+          ))
+          : ""}
+      </ul>
       <br />
     </div>
   );
 }
-
 export default function KhungKiếmBênTrái(
   { danhSáchNơiĐăng, danhSáchBàiĐăng, chọnBàiĐăng, chọnNơiĐăng }:
     KhungKiếmBênTráiProps,
 ) {
   /** Active list is used to determine whether the search list should be popup or not */
-  const [activeList, setActiveList] = useState<ActiveList>(undefined);
+  const [activeList, setActiveList] = useState<ActiveList>("bài đăng");
 
   const fuseBàiĐăng = new Fuse(danhSáchBàiĐăng, {
     // minMatchCharLength: 3,
@@ -158,7 +195,7 @@ export default function KhungKiếmBênTrái(
     ],
   });
   return (
-    <>
+    <section>
       <SearchDiv
         listName="bài đăng"
         fuse={fuseBàiĐăng}
@@ -173,6 +210,6 @@ export default function KhungKiếmBênTrái(
         setActiveList={setActiveList}
         chọnBàiĐăngHoặcNơiĐăng={chọnNơiĐăng}
       />
-    </>
+    </section>
   );
 }

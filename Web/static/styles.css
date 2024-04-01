@@ -1,16 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.cursor {
-  background: yellow;
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h4 {
+    @apply text-xl;
+  }
 }
+
+.nơi-lưu-bài-đăng {
+  font-style: italic;
+} 
+.tiêu {
+  font-style: italic;
+} 
+/* .cursor {
+  background: bg-secondary;
+} */
 /* .result {
   font-weight: bold;
   font-size: 40px;
 } */
 
-
+/* 
 *,
 *::before,
 *::after {
@@ -138,4 +152,4 @@ html {
 }
 .tabular-nums {
   font-variant-numeric: tabular-nums;
-}
+} */

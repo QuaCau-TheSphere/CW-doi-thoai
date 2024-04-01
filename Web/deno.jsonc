@@ -20,9 +20,14 @@
     "$std/": "https://deno.land/std@0.218.2/",
     "lunchbox": "https://deno.land/x/lunchbox/mod.ts",
     "resin": "https://deno.land/x/resin/mod.ts",
+    "gfm": "https://deno.land/x/gfm@0.2.5/mod.ts",
+    "typography": "npm:@tailwindcss/typography",
+    "daisyui": "npm:daisyui@4.4.19",
+    "daisyui/": "npm:/daisyui@4.4.19/",
     "tailwindcss": "npm:tailwindcss@3.4.1",
     "tailwindcss/": "npm:/tailwindcss@3.4.1/",
     "tailwindcss/plugin": "npm:/tailwindcss@3.4.1/plugin.js"
   },
-  "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" }
+  "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" },
+  "nodeModulesDir": true
 }
