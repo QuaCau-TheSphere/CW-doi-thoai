@@ -13,11 +13,12 @@ import {
   TÊN_MIỀN_RÚT_GỌN,
   ĐƯỜNG_DẪN_ĐẾN_TẬP_TIN_CSV,
 } from "./H%E1%BA%B1ng.ts";
+import tạoThamSốUTMVàLiênKếtRútGọn from "../B.%20T%E1%BA%A1o%20k%E1%BA%BFt%20qu%E1%BA%A3/3.%20T%E1%BA%A1o%20tham%20s%E1%BB%91%20UTM%20v%C3%A0%20li%C3%AAn%20k%E1%BA%BFt%20r%C3%BAt%20g%E1%BB%8Dn.ts";
 
 const cấuHìnhNơiĐăng = parse(
   Deno.readTextFileSync("./A. Cấu hình/Nơi đăng.yaml"),
 ) as CấuHìnhNơiĐăng;
-const danhSáchVậtThểBàiĐăng =
+const danhSáchBàiĐăng =
   (await tạoDanhSáchBàiĐăngTrênVault(THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT)).concat(
     await tạoDanhSáchBàiĐăngTrênWordPress(ĐƯỜNG_DẪN_ĐẾN_TẬP_TIN_CSV),
   );
@@ -29,10 +30,42 @@ Deno.test("tạoDanhSáchNơiĐăng", () => {
   );
   assert(danhSáchNơiĐăng.some((e) => e["Tên nơi đăng"] === "Ảnh bìa Quả Cầu"));
 });
+
 Deno.test("danhSáchVậtThểBàiĐăng", () => {
   assert(
-    danhSáchVậtThểBàiĐăng.some((e) =>
+    danhSáchBàiĐăng.some((e) =>
       e["Tiêu đề"] === "AI là định dạng ảnh mờ của web"
     ),
+  );
+});
+
+const bàiĐăng = {
+  "Tiêu đề": "Cloudflare",
+  "url": "https://lậptrình.quảcầu.cc/✍️Lập trình/Web/Quản trị mạng/Cloudflare",
+  "Vault": "Tiếp thị số, xử lý dữ liệu và lập trình",
+  "Dự án": {
+    "Tên dự án": "Tiếp thị số, xử lý dữ liệu và lập trình",
+    "Mã dự án": "C2",
+  },
+};
+const nơiĐăng = {
+  "Tên nơi đăng": "#tiếng-việt",
+  "Tên cộng đồng": "Obsidian",
+  "Loại nơi đăng": "Máy chủ",
+  "Tên nền tảng": "Discord",
+  "Loại nền tảng": "Chat",
+};
+
+Deno.test("tạo tham số UTM", () => {
+  const thamSốUTMVàLiênKếtRútGọn = {
+    source: "D Sv #tiếng-việt",
+    medium: "chat",
+    campaign: "C2 Tiếp thị số, xử lý dữ liệu và lập trình",
+    content: undefined,
+    term: undefined,
+  };
+  assertEquals(
+    tạoThamSốUTMVàLiênKếtRútGọn(bàiĐăng, nơiĐăng, 3, cấuHìnhNơiĐăng),
+    thamSốUTMVàLiênKếtRútGọn,
   );
 });
