@@ -18,25 +18,9 @@ import {
 export default function tạoDanhSáchNơiĐăng(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng) {
   const danhSáchNơiĐăng: NơiĐăng[] = [];
 
-  tạoDanhSáchNơiĐăngDiễnĐàn();
-  tạoDanhSáchNơiĐăngTrênChat();
-
-  /** Khác */
-  for (
-    const [loạiNơiĐăngKhác, danhSáchNơiĐăngKhác] of Object.entries(
-      cấuHìnhNơiĐăng.Khác,
-    ) as [LoạiNơiĐăngKhác, string[]][]
-  ) {
-    if (!danhSáchNơiĐăngKhác) continue;
-    for (const tênNơiĐăngKhác of danhSáchNơiĐăngKhác) {
-      danhSáchNơiĐăng.push({
-        "Tên nơi đăng": tênNơiĐăngKhác,
-        "Loại nơi đăng": loạiNơiĐăngKhác,
-        "Tên nền tảng": loạiNơiĐăngKhác,
-        "Loại nền tảng": "Khác",
-      });
-    }
-  }
+  if (cấuHìnhNơiĐăng["Diễn đàn"]) tạoDanhSáchNơiĐăngDiễnĐàn();
+  if (cấuHìnhNơiĐăng.Chat) tạoDanhSáchNơiĐăngTrênChat();
+  if (cấuHìnhNơiĐăng.Khác) tạoDanhSáchNơiĐăngKhác();
 
   return danhSáchNơiĐăng;
 
@@ -92,7 +76,6 @@ export default function tạoDanhSáchNơiĐăng(cấuHìnhNơiĐăng: CấuHìn
       }
     }
   }
-
   function tạoDanhSáchNơiĐăngTrênChat() {
     for (
       const [tênNềnTảngChat, vậtThểNơiĐăngChat] of Object.entries(
@@ -129,85 +112,85 @@ export default function tạoDanhSáchNơiĐăng(cấuHìnhNơiĐăng: CấuHìn
         }
       }
     }
-  }
 
-  /**
-   * Cấu trúc của cộng đồng chat trong `Nơi đăng.yaml` có dạng:
-   * ```yaml
-   * - Tên cộng đồng 1       # Kiểu `string`
-   * - Tên máy chủ:          # Kiểu `Record<string, string[]>`
-   *   - Kênh 1                   # Kiểu `string`
-   *   - Kênh 2:                  # Kiểu `Record<TênKênh, TênThreadHoặcTopic[]>`
-   *     - Thread 1
-   *   - Kênh 3:                  # Kiểu `Record<TênKênh, null>`
-   * - Tên cộng đồng 2:      # Kiểu `Record<string, null>
-   * ```
-   *
-   * Về mặt phân cấp thì Messenger và Discord là như nhau. Chỉ khác nhau ở cái tên. Không gom chung lại thành cùng một tên biến để sau này debug cho dễ, đỡ phải nhớ nhiều tên biến
-   * | Discord                    | Messenger      | Telegram |
-   * | -------------------------- | -------------- | -------- |
-   * | Server                     | Community      | Group    |
-   * | Text Channel/Forum Channel | Community Chat | Topic    |
-   * | Channel Thread/Forum Post  | Sidechat       | ❌       |
-   */
-  function lấyNơiĐăngTừCộngĐồngChat(
-    tênNềnTảng: "Discord" | "Messenger" | "Telegram",
-  ) {
-    let loạiNơiĐăng: "Cộng đồng" | "Máy chủ" | "Nhóm";
-    let danhSáchMáyChủ: MáyChủ[];
+    /**
+     * Cấu trúc của cộng đồng chat trong `Nơi đăng.yaml` có dạng:
+     * ```yaml
+     * - Tên cộng đồng 1       # Kiểu `string`
+     * - Tên máy chủ:          # Kiểu `Record<string, string[]>`
+     *   - Kênh 1                   # Kiểu `string`
+     *   - Kênh 2:                  # Kiểu `Record<TênKênh, TênThreadHoặcTopic[]>`
+     *     - Thread 1
+     *   - Kênh 3:                  # Kiểu `Record<TênKênh, null>`
+     * - Tên cộng đồng 2:      # Kiểu `Record<string, null>
+     * ```
+     *
+     * Về mặt phân cấp thì Messenger và Discord là như nhau. Chỉ khác nhau ở cái tên. Không gom chung lại thành cùng một tên biến để sau này debug cho dễ, đỡ phải nhớ nhiều tên biến
+     * | Discord                    | Messenger      | Telegram |
+     * | -------------------------- | -------------- | -------- |
+     * | Server                     | Community      | Group    |
+     * | Text Channel/Forum Channel | Community Chat | Topic    |
+     * | Channel Thread/Forum Post  | Sidechat       | ❌       |
+     */
+    function lấyNơiĐăngTừCộngĐồngChat(
+      tênNềnTảng: "Discord" | "Messenger" | "Telegram",
+    ) {
+      let loạiNơiĐăng: "Cộng đồng" | "Máy chủ" | "Nhóm";
+      let danhSáchMáyChủ: MáyChủ[];
 
-    if (tênNềnTảng === "Messenger") {
-      loạiNơiĐăng = "Cộng đồng";
-      danhSáchMáyChủ = cấuHìnhNơiĐăng.Chat.Messenger["Cộng đồng"];
-    } else if (tênNềnTảng === "Discord") {
-      loạiNơiĐăng = "Máy chủ";
-      danhSáchMáyChủ = cấuHìnhNơiĐăng.Chat.Discord["Máy chủ"];
-    } else if (tênNềnTảng === "Telegram") {
-      loạiNơiĐăng = "Nhóm";
-      danhSáchMáyChủ = cấuHìnhNơiĐăng.Chat.Telegram.Nhóm;
-    } else {
-      console.error(
-        "Không phải là máy chủ Discord, Messenger cộng đồng hoặc nhóm Telegram",
-      );
-      return;
-    }
-    for (const MáyChủ of danhSáchMáyChủ) {
-      for (const [tênMáyChủ, danhSáchKênh] of Object.entries(MáyChủ)) {
-        if (!danhSáchKênh) continue;
-        for (const kênh of danhSáchKênh) {
-          /** Trường hợp người dùng chỉ khai báo kênh chứ không khai báo thread hoặc topic nhỏ hơn, và không để dấu `:` đằng sau tên kênh */
-          if (typeof kênh === "string") {
-            danhSáchNơiĐăng.push({
-              "Tên nơi đăng": kênh,
-              "Tên cộng đồng": tênMáyChủ,
-              "Loại nơi đăng": loạiNơiĐăng,
-              "Tên nền tảng": tênNềnTảng,
-              "Loại nền tảng": "Chat",
-            });
-          } else {
-            for (
-              const [tênKênh, danhSáchThreadHoặcTopic] of Object.entries(kênh)
-            ) {
-              /** Trường hợp người dùng chỉ khai báo kênh chứ không khai báo thread hoặc topic nhỏ hơn, nhưng vẫn để dấu `:` đằng sau tên kênh */
-              if (danhSáchThreadHoặcTopic === null) {
-                danhSáchNơiĐăng.push({
-                  "Tên nơi đăng": tênKênh,
-                  "Tên cộng đồng": tênMáyChủ,
-                  "Loại nơi đăng": loạiNơiĐăng,
-                  "Tên nền tảng": tênNềnTảng,
-                  "Loại nền tảng": "Chat",
-                });
-
-                /** Trường hợp kênh có thread hoặc topic nhỏ hơn*/
-              } else {
-                for (const threadHoặcTopic of danhSáchThreadHoặcTopic) {
+      if (tênNềnTảng === "Messenger") {
+        loạiNơiĐăng = "Cộng đồng";
+        danhSáchMáyChủ = cấuHìnhNơiĐăng.Chat.Messenger["Cộng đồng"];
+      } else if (tênNềnTảng === "Discord") {
+        loạiNơiĐăng = "Máy chủ";
+        danhSáchMáyChủ = cấuHìnhNơiĐăng.Chat.Discord["Máy chủ"];
+      } else if (tênNềnTảng === "Telegram") {
+        loạiNơiĐăng = "Nhóm";
+        danhSáchMáyChủ = cấuHìnhNơiĐăng.Chat.Telegram.Nhóm;
+      } else {
+        console.error(
+          "Không phải là máy chủ Discord, Messenger cộng đồng hoặc nhóm Telegram",
+        );
+        return;
+      }
+      for (const MáyChủ of danhSáchMáyChủ) {
+        for (const [tênMáyChủ, danhSáchKênh] of Object.entries(MáyChủ)) {
+          if (!danhSáchKênh) continue;
+          for (const kênh of danhSáchKênh) {
+            /** Trường hợp người dùng chỉ khai báo kênh chứ không khai báo thread hoặc topic nhỏ hơn, và không để dấu `:` đằng sau tên kênh */
+            if (typeof kênh === "string") {
+              danhSáchNơiĐăng.push({
+                "Tên nơi đăng": kênh,
+                "Tên cộng đồng": tênMáyChủ,
+                "Loại nơi đăng": loạiNơiĐăng,
+                "Tên nền tảng": tênNềnTảng,
+                "Loại nền tảng": "Chat",
+              });
+            } else {
+              for (
+                const [tênKênh, danhSáchThreadHoặcTopic] of Object.entries(kênh)
+              ) {
+                /** Trường hợp người dùng chỉ khai báo kênh chứ không khai báo thread hoặc topic nhỏ hơn, nhưng vẫn để dấu `:` đằng sau tên kênh */
+                if (danhSáchThreadHoặcTopic === null) {
                   danhSáchNơiĐăng.push({
-                    "Tên nơi đăng": `${threadHoặcTopic} (${tênKênh})`,
+                    "Tên nơi đăng": tênKênh,
                     "Tên cộng đồng": tênMáyChủ,
                     "Loại nơi đăng": loạiNơiĐăng,
                     "Tên nền tảng": tênNềnTảng,
                     "Loại nền tảng": "Chat",
                   });
+
+                  /** Trường hợp kênh có thread hoặc topic nhỏ hơn*/
+                } else {
+                  for (const threadHoặcTopic of danhSáchThreadHoặcTopic) {
+                    danhSáchNơiĐăng.push({
+                      "Tên nơi đăng": `${threadHoặcTopic} (${tênKênh})`,
+                      "Tên cộng đồng": tênMáyChủ,
+                      "Loại nơi đăng": loạiNơiĐăng,
+                      "Tên nền tảng": tênNềnTảng,
+                      "Loại nền tảng": "Chat",
+                    });
+                  }
                 }
               }
             }
@@ -216,7 +199,25 @@ export default function tạoDanhSáchNơiĐăng(cấuHìnhNơiĐăng: CấuHìn
       }
     }
   }
+  function tạoDanhSáchNơiĐăngKhác() {
+    for (
+      const [loạiNơiĐăngKhác, danhSáchNơiĐăngKhác] of Object.entries(
+        cấuHìnhNơiĐăng.Khác,
+      ) as [LoạiNơiĐăngKhác, string[]][]
+    ) {
+      if (!danhSáchNơiĐăngKhác) continue;
+      for (const tênNơiĐăngKhác of danhSáchNơiĐăngKhác) {
+        danhSáchNơiĐăng.push({
+          "Tên nơi đăng": tênNơiĐăngKhác,
+          "Loại nơi đăng": loạiNơiĐăngKhác,
+          "Tên nền tảng": loạiNơiĐăngKhác,
+          "Loại nền tảng": "Khác",
+        });
+      }
+    }
+  }
 }
+
 // import { parse } from "$std/yaml/mod.ts";
 // const cấuHìnhNơiĐăng = parse(Deno.readTextFileSync('./A. Cấu hình/Nơi đăng.yaml')) as CấuHìnhNơiĐăng
 // const danhSáchNơiĐăng = tạoDanhSáchNơiĐăng(cấuHìnhNơiĐăng)

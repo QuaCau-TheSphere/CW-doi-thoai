@@ -1,3 +1,2 @@
-export const TÊN_TRANG = "Vault2Link";
-export const MÔ_TẢ_TRANG =
-  "Tự động tạo liên kết UTM và rút gọn từ vault của bạn";
+export const TÊN_TRANG = "đối ⊷ thoại";
+export const MÔ_TẢ_TRANG = "Seed bài để làm gì nếu không phải là để đối thoại?";
