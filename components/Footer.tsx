@@ -1,7 +1,7 @@
-import IconSphere from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/sphere.tsx";
-import IconBrandFacebook from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/brand-facebook.tsx";
 import IconBrandDiscord from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/brand-discord.tsx";
-import { TÊN_TRANG } from "../Code hỗ trợ/Hằng.ts";
+import IconBrandFacebook from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/brand-facebook.tsx";
+import IconSphere from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/sphere.tsx";
+import { TÊN_TRANG } from "../utils/H%E1%BA%B1ng.ts";
 
 export default function Footer() {
   const danhSáchBàiViết = [

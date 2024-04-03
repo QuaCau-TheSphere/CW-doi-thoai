@@ -11,6 +11,6 @@ const danhSáchBàiĐăng =
       await tạoDanhSáchBàiĐăngTrênWordPress(ĐƯỜNG_DẪN_ĐẾN_TẬP_TIN_CSV),
     );
 Deno.writeTextFileSync(
-  "A. Cấu hình/Danh sách tất cả bài đăng.json",
+  "core/A. Cấu hình/Danh sách tất cả bài đăng.json",
   JSON.stringify(danhSáchBàiĐăng),
 );

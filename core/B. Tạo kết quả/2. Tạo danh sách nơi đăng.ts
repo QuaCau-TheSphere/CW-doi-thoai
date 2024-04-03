@@ -219,7 +219,7 @@ export default function tạoDanhSáchNơiĐăng(cấuHìnhNơiĐăng: CấuHìn
 }
 
 // import { parse } from "$std/yaml/mod.ts";
-// const cấuHìnhNơiĐăng = parse(Deno.readTextFileSync('./A. Cấu hình/Nơi đăng.yaml')) as CấuHìnhNơiĐăng
+// const cấuHìnhNơiĐăng = parse(Deno.readTextFileSync('./core/A. Cấu hình/Nơi đăng.yaml')) as CấuHìnhNơiĐăng
 // const danhSáchNơiĐăng = tạoDanhSáchNơiĐăng(cấuHìnhNơiĐăng)
 // console.log(JSON.stringify(danhSáchNơiĐăng, null, 2))
 // console.log(JSON.stringify(danhSáchNơiĐăng[0], null, 2))

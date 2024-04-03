@@ -16,7 +16,7 @@ import {
 import tạoThamSốUTMVàLiênKếtRútGọn from "../B.%20T%E1%BA%A1o%20k%E1%BA%BFt%20qu%E1%BA%A3/3.%20T%E1%BA%A1o%20tham%20s%E1%BB%91%20UTM%20v%C3%A0%20li%C3%AAn%20k%E1%BA%BFt%20r%C3%BAt%20g%E1%BB%8Dn.ts";
 
 const cấuHìnhNơiĐăng = parse(
-  Deno.readTextFileSync("./A. Cấu hình/Nơi đăng.yaml"),
+  Deno.readTextFileSync("./core/A. Cấu hình/Nơi đăng.yaml"),
 ) as CấuHìnhNơiĐăng;
 const danhSáchBàiĐăng =
   (await tạoDanhSáchBàiĐăngTrênVault(THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT)).concat(

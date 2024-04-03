@@ -1,10 +1,9 @@
-import { FuseResult } from "https://deno.land/x/fuse/dist/fuse.d.ts";
-import { StateUpdater } from "https://esm.sh/v128/preact@10.19.6/hooks/src/index.js";
-import { BàiĐăng } from "../../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
+import { StateUpdater } from "preact/hooks";
+import { BàiĐăng } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import CấuHìnhNơiĐăng, {
   NơiĐăng,
-} from "../../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
-import ThamSốUTMVàLiênKếtRútGọn from "../../Code hỗ trợ/Kiểu cho tham số UTM.ts";
+} from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import ThamSốUTMVàLiênKếtRútGọn from "../core/Code hỗ trợ/Kiểu cho tham số UTM.ts";
 
 export interface KhungKiếmBênTráiProps {
   danhSáchNơiĐăng: NơiĐăng[];
