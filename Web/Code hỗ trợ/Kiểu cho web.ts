@@ -4,6 +4,7 @@ import { BàiĐăng } from "../../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%2
 import CấuHìnhNơiĐăng, {
   NơiĐăng,
 } from "../../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
+import ThamSốUTMVàLiênKếtRútGọn from "../../Code hỗ trợ/Kiểu cho tham số UTM.ts";
 
 export interface KhungKiếmBênTráiProps {
   danhSáchNơiĐăng: NơiĐăng[];
@@ -12,7 +13,8 @@ export interface KhungKiếmBênTráiProps {
   chọnNơiĐăng: StateUpdater<NơiĐăng | undefined>;
 }
 export interface KhungKếtQuảBênPhảiProps {
-  kếtQuả: KếtQuả;
+  bàiĐăngĐượcChọn: BàiĐăng;
+  nơiĐăngĐượcChọn: NơiĐăng;
   cấuHìnhNơiĐăng: CấuHìnhNơiĐăng;
 }
 export interface MainProps {
@@ -38,3 +40,8 @@ export type Cursor = number;
 export type TênDanhSách = "nơi đăng" | "bài đăng";
 /** Active list is used to determine whether the search list should be popup or not */
 export type DanhSáchĐangActive = TênDanhSách | undefined;
+
+export interface VậtThểTiếpThị extends ThamSốUTMVàLiênKếtRútGọn {
+  "Bài đăng": BàiĐăng;
+  "Nơi đăng": NơiĐăng;
+}
