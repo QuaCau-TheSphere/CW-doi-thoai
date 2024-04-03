@@ -9,11 +9,30 @@ import Main from "../islands/Main.tsx";
 import Footer from "../components/Footer.tsx";
 import { TÊN_MIỀN_RÚT_GỌN } from "../../Code hỗ trợ/Hằng.ts";
 import Meta from "../components/Meta.tsx";
+import { VậtThểTiếpThị } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20web.ts";
 
-export const handler: Handlers = {
-  GET(req, ctx) {
-    const a = { req };
-    return ctx.render(a);
+export const handler: Promise<Handlers> = {
+  async GET(req, ctx) {
+    const urlReq = new URL(req.url);
+    const đuôiRútGọn = urlReq.searchParams.get("q");
+    // return new Response(JSON.stringify(đuôiRútGọn, null, 2));
+
+    if (đuôiRútGọn) {
+      const TÊN_MIỀN_RÚT_GỌN = "https://localhost:8000";
+      const restUrl = `${TÊN_MIỀN_RÚT_GỌN}/k~v/?key=${đuôiRútGọn}`;
+      const res = await fetch(restUrl);
+      const clientGet = await res.json();
+      const vậtThểTiếpThị = clientGet.value as VậtThểTiếpThị;
+
+      if (vậtThểTiếpThị) {
+        const liênKếtUTM = vậtThểTiếpThị["Liên kết UTM"];
+        return new Response(JSON.stringify(liênKếtUTM, null, 2));
+      } else {
+        return ctx.renderNotFound();
+      }
+    } else {
+      return ctx.render();
+    }
   },
 };
 

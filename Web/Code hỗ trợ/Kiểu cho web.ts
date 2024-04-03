@@ -44,4 +44,5 @@ export type DanhSáchĐangActive = TênDanhSách | undefined;
 export interface VậtThểTiếpThị extends ThamSốUTMVàLiênKếtRútGọn {
   "Bài đăng": BàiĐăng;
   "Nơi đăng": NơiĐăng;
+  "Thời điểm tạo": Date;
 }

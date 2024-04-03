@@ -4,13 +4,14 @@ import ThamSốUTMVàLiênKếtRútGọn from "../../Code hỗ trợ/Kiểu cho 
 export const handler: Handlers = {
   async GET(req, ctx) {
     const kv = await Deno.openKv();
-    const đuôiRútGọn = new URL(req.url).pathname;
-    const thamSốUTMVàLiênKếtRútGọn =
-      (await kv.get(["Đuôi rút gọn", đuôiRútGọn]))
-        .value as ThamSốUTMVàLiênKếtRútGọn;
-    if (thamSốUTMVàLiênKếtRútGọn) {
-      const liênKếtUTM = thamSốUTMVàLiênKếtRútGọn["Liên kết UTM"];
-      return Response.redirect(liênKếtUTM, 307);
+    const đuôiRútGọn = new URL(req.url).searchParams.get(q);
+    const vậtThểTiếpThị = (await kv.get(["Đuôi rút gọn", đuôiRútGọn]))
+      .value as VậtThểTiếpThị;
+    return new Response(JSON.stringify(vậtThểTiếpThị, null, 2));
+    if (vậtThểTiếpThị) {
+      const liênKếtUTM = vậtThểTiếpThị["Liên kết UTM"];
+      return new Response(liênKếtUTM);
+      // return Response.redirect(liênKếtUTM, 307);
     } else return ctx.renderNotFound();
   },
 };
