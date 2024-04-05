@@ -49,13 +49,16 @@ export default function KhungKếtQuảBênPhải(
       <ul>
         {Object.entries(thamSốUTMVàLiênKếtRútGọn["Tham số UTM"]).map((
           i,
-        ) => <li>{i[0]}: {i[1]}</li>)}
+        ) => (
+          <li>
+            <span class="font-bold">{i[0]}</span>: {i[1]}
+          </li>
+        ))}
       </ul>
       <br />
 
-      Liên kết rút gọn: <pre id="liên-kết-rút-gọn">{liênKếtRútGọn}</pre>
-      <br />
-      (✅Đã copy)<br />
+      Liên kết rút gọn (đã được sao chép ✅):{" "}
+      <pre id="liên-kết-rút-gọn">{liênKếtRútGọn}</pre>
     </div>
   );
 }

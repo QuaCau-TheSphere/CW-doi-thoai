@@ -1,6 +1,5 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { parse } from "$std/yaml/mod.ts";
-import Footer from "../components/Footer.tsx";
 import Meta from "../components/Meta.tsx";
 import tạoDanhSáchNơiĐăng from "../core/B.%20T%E1%BA%A1o%20k%E1%BA%BFt%20qu%E1%BA%A3/2.%20T%E1%BA%A1o%20danh%20s%C3%A1ch%20n%C6%A1i%20%C4%91%C4%83ng.ts";
 import { TÊN_MIỀN_RÚT_GỌN } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/H%E1%BA%B1ng.ts";
@@ -19,7 +18,7 @@ export default async function App(prop: PageProps) {
   ) as CấuHìnhNơiĐăng;
   const danhSáchNơiĐăng = tạoDanhSáchNơiĐăng(cấuHìnhNơiĐăng) as NơiĐăng[];
   return (
-    <body class="bg-base-100 flex flex-col h-screen">
+    <body class="bg-base-100">
       <Meta
         imageUrl="platos1.gif"
         href={TÊN_MIỀN_RÚT_GỌN}
@@ -30,7 +29,6 @@ export default async function App(prop: PageProps) {
         danhSáchNơiĐăng={danhSáchNơiĐăng}
         cấuHìnhNơiĐăng={cấuHìnhNơiĐăng}
       />
-      <Footer />
     </body>
   );
 }

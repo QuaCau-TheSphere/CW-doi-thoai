@@ -4,14 +4,7 @@ import { NơiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u
 import { KếtQuả, MainProps } from "../utils/Kiểu cho web.ts";
 import KhungKếtQuảBênPhải from "./KhungK%E1%BA%BFtQu%E1%BA%A3B%C3%AAnPh%E1%BA%A3i.tsx";
 import KhungKiếmBênTrái from "./KhungKi%E1%BA%BFmB%C3%AAnTr%C3%A1i.tsx";
-
-function KhungThôngTinKhiKhôngCóKếtQuả() {
-  return (
-    <div id="khung-thông-tin-khi-không-có-kết-quả">
-      <h2>Viết bài để làm gì nếu không phải là để đối thoại?</h2>
-    </div>
-  );
-}
+import KhungThôngTinKhiKhôngCóKếtQuả from "../components/KhungThôngTinKhiKhôngCóKếtQuả.tsx";
 
 export default function Main(
   { danhSáchNơiĐăng, danhSáchBàiĐăng, cấuHìnhNơiĐăng }: MainProps,
@@ -23,7 +16,7 @@ export default function Main(
     undefined,
   );
   return (
-    <main class="grid grid-cols-1 grid-cols-2 gap-5 h-full">
+    <main class="prose grid grid-cols-2 gap-3 w-screen">
       <KhungKiếmBênTrái
         danhSáchBàiĐăng={danhSáchBàiĐăng}
         danhSáchNơiĐăng={danhSáchNơiĐăng}
