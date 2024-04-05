@@ -111,7 +111,6 @@ function SearchDiv(
   return (
     <div
       id={`div-${listName.replace(" ", "-")}`}
-      class="search-bar-container"
     >
       <label class="input input-bordered flex items-center gap-2">
         {listName.replace(/^(.)/g, (x) => x.toUpperCase())}
@@ -125,6 +124,7 @@ function SearchDiv(
             setSearchList(
               fuse.search((e.target as HTMLTextAreaElement).value).slice(0, 10),
             );
+            setActiveList(listName);
           }}
           onFocus={() => setActiveList(listName)}
           onKeyDown={handleKeyDown}
@@ -176,15 +176,17 @@ function SearchDiv(
       }
     };
     return (
-      <ul id={`${listName.replace(" ", "-")}-được-chọn`} class={"result"}>
-        {selectedItem
-          ? Object.entries(selectedItem).map((i) => (
-            <li>
-              <span class="font-bold">{i[0]}</span>: {lấyGiáTrị(i[1])}
-            </li>
-          ))
-          : ""}
-      </ul>
+      <div class="prose result">
+        <ul id={`${listName.replace(" ", "-")}-được-chọn`}>
+          {selectedItem
+            ? Object.entries(selectedItem).map((i) => (
+              <li>
+                <span class="font-bold">{i[0]}</span>: {lấyGiáTrị(i[1])}
+              </li>
+            ))
+            : ""}
+        </ul>
+      </div>
     );
   }
 }

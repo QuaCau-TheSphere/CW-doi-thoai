@@ -45,7 +45,7 @@ export default function KhungKếtQuảBênPhải(
   navigator.clipboard.writeText(liênKếtRútGọn);
 
   return (
-    <div id="khung-bên-phải-khi-có-kết-quả">
+    <div id="khung-bên-phải-khi-có-kết-quả" class="prose">
       <ul>
         {Object.entries(thamSốUTMVàLiênKếtRútGọn["Tham số UTM"]).map((
           i,

@@ -5,7 +5,7 @@ import { TÊN_TRANG } from "../utils/H%E1%BA%B1ng.ts";
 
 export default function KhungThôngTinKhiKhôngCóKếtQuả() {
   return (
-    <div id="khung-thông-tin-khi-không-có-kết-quả">
+    <article id="khung-thông-tin-khi-không-có-kết-quả" class="prose">
       <h1>{TÊN_TRANG}</h1>
       <p>
         Đây là chương trình giúp bạn tự động tạo và rút gọn liên kết UTM trên
@@ -16,10 +16,13 @@ export default function KhungThôngTinKhiKhôngCóKếtQuả() {
         Website của bạn cần cài sẵn Google Analytics để có thể nhận dữ liệu.
       </p>
       <p>
-        Liên lạc với chúng tôi để nhập bài đăng và nơi đăng của bạn, hoặc tải mã
-        nguồn để dùng riêng với hệ thống của bạn. Trong tương lai chúng tôi cũng
-        sẽ tạo một plugin Obsidian để bạn có thể tạo bài đăng ngay trên vault
-        của mình. Tất cả đều miễn phí.
+        Liên lạc với chúng tôi để nhập bài đăng và nơi đăng của bạn, hoặc tải
+        <a href="https://github.com/QuaCau-TheSphere/CW-rut-gon-utm">
+          {" "}mã nguồn{" "}
+        </a>
+        để dùng riêng với hệ thống của bạn. Trong tương lai chúng tôi cũng sẽ
+        tạo một plugin Obsidian để bạn có thể tạo bài đăng ngay trên vault của
+        mình. Tất cả đều miễn phí.
       </p>
       <p>Sản phẩm khác:</p>
       <ul>
@@ -39,48 +42,17 @@ export default function KhungThôngTinKhiKhôngCóKếtQuả() {
       </ul>
       <p>Viết bởi Quả Cầu.</p>
 
-      <a href="https://quảcầu.com">
-        <IconSphere class="w-6 h-6" />
-      </a>
-      <a href="https://discord.gg/jWTk4EHFK2">
-        <IconBrandDiscord class="w-6 h-6" />
-      </a>
-      <a href="https://www.facebook.com/quacau.sphere/">
-        <IconBrandFacebook class="w-6 h-6" />
-      </a>
-    </div>
-  );
-}
-
-function Footer() {
-  const danhSáchBàiViết = [
-    { bài: `${TÊN_TRANG} là gì?`, href: "/lagi" },
-    {
-      bài: `Biến ${TÊN_TRANG} thành của bạn`,
-      href: "https://quảcầu.cc/tich-hop-tran-ky-vao-he-thong-cua-ban/",
-    },
-    {
-      bài: "Các buổi đáp ứng nhu cầu tự học lập trình",
-      href:
-        "https://quảcầu.cc/cac-buoi-dap-ung-nhu-cau-hoc-cach-su-dung-cong-cu-va-tu-duy-lap-trinh-cho-nhu-cau-ca-nhan-hoac-nghien-cuu/",
-    },
-    {
-      bài: "Trấn kỳ",
-      href: "https://tranky.deno.dev",
-    },
-  ];
-  return (
-    <footer class="footer items-center p-4 bg-neutral text-neutral-content gap-8">
-      <aside className="grid items-center gap-8 md:grid-cols-1
-                lg:grid-cols-[minmax(min-content,max-content)_minmax(min-content,max-content)_minmax(min-content,max-content)_minmax(min-content,max-content)_minmax(min-content,max-content)_minmax(min-content,max-content)]">
-        <a class="text-2xl italic font-mono font-bold tracking-wide" href="/">
+      <nav class="flex gap-5">
+        <a href="https://quảcầu.com">
+          <IconSphere class="w-6 h-6" />
         </a>
-        {danhSáchBàiViết.map((liênKết) => (
-          <a class="link link-hover" href={liênKết.href}>{liênKết.bài}</a>
-        ))}
-      </aside>
-      <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+        <a href="https://discord.gg/jWTk4EHFK2">
+          <IconBrandDiscord class="w-6 h-6" />
+        </a>
+        <a href="https://www.facebook.com/quacau.sphere/">
+          <IconBrandFacebook class="w-6 h-6" />
+        </a>
       </nav>
-    </footer>
+    </article>
   );
 }

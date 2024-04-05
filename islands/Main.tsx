@@ -16,22 +16,26 @@ export default function Main(
     undefined,
   );
   return (
-    <main class="prose grid grid-cols-2 gap-3 w-screen">
-      <KhungKiếmBênTrái
-        danhSáchBàiĐăng={danhSáchBàiĐăng}
-        danhSáchNơiĐăng={danhSáchNơiĐăng}
-        chọnBàiĐăng={chọnBàiĐăng}
-        chọnNơiĐăng={chọnNơiĐăng}
-      />
-      {bàiĐăngĐượcChọn && nơiĐăngĐượcChọn
-        ? (
-          <KhungKếtQuảBênPhải
-            bàiĐăngĐượcChọn={bàiĐăngĐượcChọn}
-            nơiĐăngĐượcChọn={nơiĐăngĐượcChọn}
-            cấuHìnhNơiĐăng={cấuHìnhNơiĐăng}
-          />
-        )
-        : <KhungThôngTinKhiKhôngCóKếtQuả />}
+    <main class="flex flex-row gap-3 w-full">
+      <div class="basis-1/2 p-10">
+        <KhungKiếmBênTrái
+          danhSáchBàiĐăng={danhSáchBàiĐăng}
+          danhSáchNơiĐăng={danhSáchNơiĐăng}
+          chọnBàiĐăng={chọnBàiĐăng}
+          chọnNơiĐăng={chọnNơiĐăng}
+        />
+      </div>
+      <div class="basis-1/2 p-10">
+        {bàiĐăngĐượcChọn && nơiĐăngĐượcChọn
+          ? (
+            <KhungKếtQuảBênPhải
+              bàiĐăngĐượcChọn={bàiĐăngĐượcChọn}
+              nơiĐăngĐượcChọn={nơiĐăngĐượcChọn}
+              cấuHìnhNơiĐăng={cấuHìnhNơiĐăng}
+            />
+          )
+          : <KhungThôngTinKhiKhôngCóKếtQuả />}
+      </div>
     </main>
   );
 }
