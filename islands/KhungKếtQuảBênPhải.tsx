@@ -1,35 +1,14 @@
 import { useEffect, useState } from "preact/hooks";
 import tạoThamSốUTMVàLiênKếtRútGọn from "../core/B.%20T%E1%BA%A1o%20k%E1%BA%BFt%20qu%E1%BA%A3/3.%20T%E1%BA%A1o%20tham%20s%E1%BB%91%20UTM%20v%C3%A0%20li%C3%AAn%20k%E1%BA%BFt%20r%C3%BAt%20g%E1%BB%8Dn.ts";
-import { ĐuôiRútGọn } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91%20UTM.ts";
 import {
   KhungKếtQuảBênPhảiProps,
   VậtThểTiếpThị,
 } from "../utils/Kiểu cho web.ts";
 import { TÊN_MIỀN_RÚT_GỌN } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/H%E1%BA%B1ng.ts";
 
-async function ghiLênKV(đuôiRútGọn: ĐuôiRútGọn, vậtThểTiếpThị: VậtThểTiếpThị) {
-  const urlToPost = new URL(`${TÊN_MIỀN_RÚT_GỌN}/kv`);
-  urlToPost.searchParams.set("key", `Đuôi rút gọn,${đuôiRútGọn}`);
-  console.log(JSON.stringify(urlToPost, null, 2));
-
-  const postResponse = await fetch(urlToPost.href, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(vậtThểTiếpThị),
-  });
-  return {
-    urlToPost: urlToPost,
-    postResponse: postResponse,
-  };
-}
-
 export default function KhungKếtQuảBênPhải(
   { bàiĐăngĐượcChọn, nơiĐăngĐượcChọn, cấuHìnhNơiĐăng }: KhungKếtQuảBênPhảiProps,
 ) {
-  const [urlToPost, setUrlToPost] = useState<URL | undefined>(undefined);
-
   const thamSốUTMVàLiênKếtRútGọn = tạoThamSốUTMVàLiênKếtRútGọn(
     bàiĐăngĐượcChọn,
     nơiĐăngĐượcChọn,
@@ -37,7 +16,7 @@ export default function KhungKếtQuảBênPhải(
     cấuHìnhNơiĐăng,
   );
   const đuôiRútGọn = thamSốUTMVàLiênKếtRútGọn["Đuôi rút gọn"];
-  const liênKếtRútGọn = `${TÊN_MIỀN_RÚT_GỌN}?q=${đuôiRútGọn}`;
+  const liênKếtRútGọn = `${TÊN_MIỀN_RÚT_GỌN}/${đuôiRútGọn}`;
   const thờiĐiểmTạo = new Date();
   const vậtThểTiếpThị: VậtThểTiếpThị = {
     ...{
@@ -47,24 +26,24 @@ export default function KhungKếtQuảBênPhải(
     },
     ...thamSốUTMVàLiênKếtRútGọn,
   };
-  console.log("🚀 ~ vậtThểTiếpThị:", vậtThểTiếpThị);
+  console.table(vậtThểTiếpThị);
 
   useEffect(() => {
-    async function ghi() {
-      const { urlToPost, postResponse } = await ghiLênKV(
-        đuôiRútGọn,
-        vậtThểTiếpThị,
-      );
-      setUrlToPost(urlToPost);
-      console.log("🚀 ~ ghi ~ postResponse:", postResponse);
+    async function ghiLênKV() {
+      const res = await fetch(liênKếtRútGọn, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(vậtThểTiếpThị),
+      });
+      console.log("Response:", res);
     }
-
-    ghi()
+    ghiLênKV()
       .catch(console.error);
   }, []);
   // navigator.clipboard.writeText(liênKếtRútGọn);
 
-  console.log("🚀 ~ ghi ~ urlToPost:", urlToPost);
   return (
     <div id="khung-bên-phải-khi-có-kết-quả">
       <ul>
@@ -77,7 +56,6 @@ export default function KhungKếtQuảBênPhải(
       Liên kết rút gọn: <pre id="liên-kết-rút-gọn">{liênKếtRútGọn}</pre>
       <br />
       (✅Đã copy)<br />
-      {urlToPost?.href}
     </div>
   );
 }

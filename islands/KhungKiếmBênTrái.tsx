@@ -131,7 +131,7 @@ function SearchDiv(
         />
       </label>
       <br />
-      {activeList === listName ? searchListNode : undefined}
+      {listName === activeList ? searchListNode : undefined}
       <KếtQuảĐượcChọn />
       <br />
     </div>
@@ -139,15 +139,23 @@ function SearchDiv(
 
   function handleKeyDown(e: KeyboardEvent) {
     if (!searchList) return;
+    if (e.key === "Escape") {
+      setActiveList(undefined);
+    }
+
     if (e.key === "ArrowDown") {
       e.preventDefault();
-      const newCursor = Math.min(cursor! + 1, searchList.length - 1);
+      const newCursor = cursor < searchList.length - 1 ? cursor + 1 : 0;
       setCursor(newCursor);
-    } else if (e.key === "ArrowUp") {
+    }
+
+    if (e.key === "ArrowUp") {
       e.preventDefault();
-      const newCursor = Math.max(0, cursor! - 1);
+      const newCursor = cursor > 0 ? cursor - 1 : searchList.length - 1;
       setCursor(newCursor);
-    } else if (e.key === "Enter") {
+    }
+
+    if (e.key === "Enter") {
       setSelectedItem(searchList[cursor].item);
       const inputNơiĐăng = document.getElementById("input-nơi-đăng")!;
 
@@ -207,7 +215,7 @@ export default function KhungKiếmBênTrái(
     ],
   });
   return (
-    <section>
+    <section id="khung-nhập-bên-phải">
       <SearchDiv
         listName="bài đăng"
         fuse={fuseBàiĐăng}
@@ -222,6 +230,19 @@ export default function KhungKiếmBênTrái(
         setActiveList={setActiveList}
         chọnBàiĐăngHoặcNơiĐăng={chọnNơiĐăng}
       />
+      {
+        /* <label class="input input-bordered flex items-center gap-2">
+        Content
+        <input
+          type="text"
+          class="grow"
+          id={"input-content"}
+          placeholder={`Nhập content`}
+          onInput={(e) => {
+          }}
+        />
+      </label> */
+      }
     </section>
   );
 }

@@ -2,7 +2,6 @@ import {
   BàiĐăng,
   DựÁn,
   MãDựÁn,
-  URLString,
 } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
 import CấuHìnhNơiĐăng, {
   LoạiNơiĐăng,
@@ -14,7 +13,6 @@ import CấuHìnhNơiĐăng, {
 import ThamSốUTMVàLiênKếtRútGọn, {
   Campaign,
   Content,
-  LiênKếtUTM,
   Medium,
   Source,
   SourceKhác,
@@ -24,7 +22,10 @@ import ThamSốUTMVàLiênKếtRútGọn, {
 } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91%20UTM.ts";
 import { SourceDiễnĐàn } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91%20UTM.ts";
 import { SourceNềnTảngChat } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91%20UTM.ts";
-import { lấyKýHiệuViếtTắt } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Code%20h%E1%BB%97%20tr%E1%BB%A3.ts";
+import {
+  lấyKýHiệuViếtTắt,
+  tạoLiênKếtUTM,
+} from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Code%20h%E1%BB%97%20tr%E1%BB%A3.ts";
 
 export function tạoSource(
   loạiNềnTảng: LoạiNềnTảng,
@@ -116,34 +117,6 @@ function tạoContent(nơiĐăng: NơiĐăng, bàiĐăng: BàiĐăng): Content {
 
 function tạoTerm(nơiĐăng: NơiĐăng, bàiĐăng: BàiĐăng): Term {
   return; //TODO
-}
-
-function tạoLiênKếtUTM(link: URLString, thamSốUTM: ThamSốUTM): LiênKếtUTM {
-  const url = new URL(link);
-  const { source, medium, campaign, content, term } = thamSốUTM;
-  if (source) {
-    url.searchParams.set("utm_source", source);
-  } else {
-    throw new Error("Không có source");
-  }
-  if (medium) {
-    url.searchParams.set("utm_medium", medium);
-  } else {
-    throw new Error("Không có medium");
-  }
-  if (campaign) {
-    url.searchParams.set("utm_campaign", campaign);
-  } else {
-    throw new Error("Không có campaign");
-  }
-  if (content !== undefined) {
-    url.searchParams.set("utm_content", content);
-  }
-  if (term !== undefined) {
-    url.searchParams.set("utm_term", term);
-  }
-
-  return url;
 }
 
 /** Nếu ký hiệu viết tắt có ít hơn 8 ký tự thì dùng trong đuôi rút gọn luôn, còn không thì tạo ngẫu nhiên 3 ký tự */
