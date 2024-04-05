@@ -41,8 +41,8 @@ export default function KhungKếtQuảBênPhải(
     }
     ghiLênKV()
       .catch(console.error);
-  }, []);
-  // navigator.clipboard.writeText(liênKếtRútGọn);
+  }, [bàiĐăngĐượcChọn, nơiĐăngĐượcChọn]);
+  navigator.clipboard.writeText(liênKếtRútGọn);
 
   return (
     <div id="khung-bên-phải-khi-có-kết-quả">

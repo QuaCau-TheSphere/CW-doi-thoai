@@ -25,5 +25,5 @@ export const danhSáchNềnTảngChat = [
   "LinkedIn",
 ] as const;
 
-// export const TÊN_MIỀN_RÚT_GỌN = "https://quacau.deno.dev";
-export const TÊN_MIỀN_RÚT_GỌN = "http://localhost:8000";
+export const TÊN_MIỀN_RÚT_GỌN = "https://quacau.deno.dev";
+// export const TÊN_MIỀN_RÚT_GỌN = "http://localhost:8000";
