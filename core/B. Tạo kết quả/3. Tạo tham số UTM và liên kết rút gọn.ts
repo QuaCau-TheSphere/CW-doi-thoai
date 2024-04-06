@@ -56,6 +56,10 @@ export function tạoSource(
         return `${kýHiệuNềnTảng} Pr ${tênNơiĐăng}`;
       case "Nhóm":
         return `${kýHiệuNềnTảng} G ${tênNơiĐăng}`;
+      case "Repo":
+        return `${kýHiệuNềnTảng} ${tênNơiĐăng}`;
+      case "Subreddit":
+        return `${kýHiệuNềnTảng} ${tênNơiĐăng}`;
       default:
         return undefined;
     }
@@ -170,10 +174,10 @@ export default function tạoThamSốUTMVàLiênKếtRútGọn(
     content: tạoContent(nơiĐăng, bàiĐăng),
     term: tạoTerm(nơiĐăng, bàiĐăng),
   };
-  console.log("🚀 ~ thamSốUTM:", thamSốUTM);
   return {
     "Tham số UTM": thamSốUTM,
     "Liên kết UTM": tạoLiênKếtUTM(url, thamSốUTM),
+    "Lần đăng": lầnĐăng,
     "Đuôi rút gọn": tạoĐuôiRútGọn(mãDựÁn, tênNơiĐăng, lầnĐăng, cấuHìnhNơiĐăng),
   };
 }

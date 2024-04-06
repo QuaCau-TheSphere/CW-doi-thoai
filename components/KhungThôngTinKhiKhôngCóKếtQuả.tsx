@@ -10,24 +10,34 @@ export default function KhungThôngTinKhiKhôngCóKếtQuả() {
       <p>
         Đây là chương trình giúp bạn tự động tạo và rút gọn liên kết UTM trên
         website của bạn chỉ bằng việc nhập bài đăng và nơi đăng. Điều này sẽ
-        giúp bạn đo lường tính hiệu quả sự đối thoại của bạn bằng dữ liệu.
+        giúp bạn có thêm dữ liệu về các cuộc đối thoại trực tuyến của bạn, từ đó
+        bạn có thể{" "}
+        <a href="https://worrydream.com/LadderOfAbstraction/">
+          kiểm tra giả thiết và thiết kế giải pháp một cách nhanh chóng và tự
+          tin
+        </a>.
       </p>
       <p>
-        Website của bạn cần cài sẵn Google Analytics để có thể nhận dữ liệu.
+        Website của bạn cần có sẵn một dịch vụ phân tích web (VD: Google
+        Analytics) để có thể nhận dữ liệu.
       </p>
+
       <p>
-        Liên lạc với chúng tôi để nhập bài đăng và nơi đăng của bạn, hoặc tải
+        Liên lạc với chúng tôi để thêm bài đăng và nơi đăng của bạn vào chương
+        trình với số lượng lớn, hoặc tải{" "}
         <a href="https://github.com/QuaCau-TheSphere/CW-rut-gon-utm">
-          {" "}mã nguồn{" "}
-        </a>
-        để dùng riêng với hệ thống của bạn. Trong tương lai chúng tôi cũng sẽ
+          mã nguồn
+        </a>{" "}
+        để dùng riêng cho hệ thống của bạn. Trong tương lai chúng tôi cũng sẽ
         tạo một plugin Obsidian để bạn có thể tạo bài đăng ngay trên vault của
         mình. Tất cả đều miễn phí.
       </p>
       <p>Sản phẩm khác:</p>
       <ul>
         <li>
-          <a href="https://tranky.deno.dev">Trấn Kỳ</a>
+          <a href="https://tranky.deno.dev">
+            Trấn Kỳ — Phân loại dữ liệu bằng tiếng Việt tự nhiên
+          </a>
         </li>
         <li>
           <a href="https://quảcầu.cc/cac-buoi-dap-ung-nhu-cau-hoc-cach-su-dung-cong-cu-va-tu-duy-lap-trinh-cho-nhu-cau-ca-nhan-hoac-nghien-cuu/">

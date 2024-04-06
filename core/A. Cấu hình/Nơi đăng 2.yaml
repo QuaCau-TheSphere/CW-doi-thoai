@@ -9,6 +9,7 @@ Diễn đàn:
       - Product Maker Vietnam
       - SNPO
       - Kingdom of Cubes
+      - Obsidian - Second Brain
     Trang:
       - Quả Cầu:
           - Câu giới thiệu ngắn
@@ -28,8 +29,9 @@ Diễn đàn:
 
   Reddit:
     Tài khoản:
-      - ooker777
+      - u/ooker777
     Subreddit:
+      - r/googlekeep
 
   YouTube:
     Tài khoản:
@@ -37,24 +39,20 @@ Diễn đàn:
   Zalo:
     Tài khoản:
       - Lý Minh Nhật
-  # GitHub:
-  #   Tài khoản:
-  #     - ooker777:
-  #         - Readme
-  #         - Link
-  #   Org:
-  #     - Quả Cầu
-  #   Repo:
+  GitHub:
+    - ooker777
+    - orgs/QuaCau-TheSphere
+    - QuaCau-TheSphere/CW-rut-gon-utm
 
   # Spiderum:
   "Tinh tế":
     Tài khoản:
       - ooker777
-  # "Stack Exchange":
-  #   Tài khoản:
-  #     - ooker777:
-  #         - Link
-  #         - Description
+  "Stack Exchange":
+    Tài khoản:
+      - ooker777:
+          - Link
+          - Description
 
 Chat:
   Messenger:
@@ -124,16 +122,17 @@ Chat:
   Reddit:
   LinkedIn:
 
-Vault:
-  - A Vùng đất Quả Cầu
-  - B Mạng kết nối nhu cầu
-  - C Obsidian, quản lý dự án và công cụ nghĩ
-
 Khác:
   Website:
-    - lyminhnhat.com
+    - https://lyminhnhat.com
+    - https://quảcầu.cc
+    - https://obsidian.quảcầu.cc
+    - https://lậptrình.quảcầu.cc
+    - https://quacau.deno.dev
+    - https://tranky.deno.dev
   Email:
-    - lyminhnhat911@gmail.com
+    - lyminhnhat911@gmail.com:
+        - Chữ ký
     - quacau.thesphere@gmail.com
   Ảnh:
 

@@ -12,7 +12,7 @@ export default function KhungKếtQuảBênPhải(
   const thamSốUTMVàLiênKếtRútGọn = tạoThamSốUTMVàLiênKếtRútGọn(
     bàiĐăngĐượcChọn,
     nơiĐăngĐượcChọn,
-    3,
+    1,
     cấuHìnhNơiĐăng,
   );
   const đuôiRútGọn = thamSốUTMVàLiênKếtRútGọn["Đuôi rút gọn"];

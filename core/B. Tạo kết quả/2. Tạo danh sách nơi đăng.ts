@@ -1,11 +1,13 @@
 import CấuHìnhNơiĐăng, {
+  EmailWebsiteHoặcẢnh,
   LoạiNơiĐăngDiễnĐàn,
   MáyChủ,
   NơiĐăng,
   TênDiễnĐàn,
   TênNềnTảngChat,
+  TênRepo,
+  VậtThểLàmGiáTrịChoTênDiễnĐàn,
   VậtThểNơiĐăngChat,
-  VậtThểNơiĐăngDiễnĐàn,
 } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
 import {
   LoạiNơiĐăngChat,
@@ -26,48 +28,62 @@ export default function tạoDanhSáchNơiĐăng(cấuHìnhNơiĐăng: CấuHìn
 
   function tạoDanhSáchNơiĐăngDiễnĐàn() {
     for (
-      const [tênDiễnĐàn, vậtThểNơiĐăngDiễnĐàn] of Object.entries(
+      const [tênDiễnĐàn, vậtThểLàmGiáTrịChoTênDiễnĐàn] of Object.entries(
         cấuHìnhNơiĐăng["Diễn đàn"],
-      ) as [TênDiễnĐàn, VậtThểNơiĐăngDiễnĐàn][]
+      ) as [TênDiễnĐàn | "GitHub", VậtThểLàmGiáTrịChoTênDiễnĐàn][]
     ) {
-      for (
-        const [loạiNơiĐăngDiễnĐàn, danhSáchNơiĐăngDiễnĐàn] of Object.entries(
-          vậtThểNơiĐăngDiễnĐàn,
-        )
-      ) {
-        if (!danhSáchNơiĐăngDiễnĐàn) continue;
-        for (const nơiĐăngDiễnĐàn of danhSáchNơiĐăngDiễnĐàn) {
-          /** Trường hợp người dùng chỉ khai báo tên tài khoản/trang/nhóm chứ không khai báo thành phần nhỏ hơn, và không để dấu `:` đằng sau tên tên tài khoản/trang/nhóm */
-          if (typeof nơiĐăngDiễnĐàn === "string") {
-            danhSáchNơiĐăng.push({
-              "Tên nơi đăng": nơiĐăngDiễnĐàn,
-              "Loại nơi đăng": loạiNơiĐăngDiễnĐàn as LoạiNơiĐăngDiễnĐàn,
-              "Tên nền tảng": tênDiễnĐàn,
-              "Loại nền tảng": "Diễn đàn",
-            });
-          } else {
-            for (
-              const [tênTàiKhoảnHoặcTrangHoặcNhóm, danhSáchThànhPhần] of Object
-                .entries(nơiĐăngDiễnĐàn)
-            ) {
-              /** Trường hợp người dùng chỉ khai báo tên tài khoản/trang/nhóm chứ không khai báo thành phần nhỏ hơn, nhưng vẫn để dấu `:` đằng sau tên tên tài khoản/trang/nhóm */
-              if (!danhSáchThànhPhần) {
-                danhSáchNơiĐăng.push({
-                  "Tên nơi đăng": tênTàiKhoảnHoặcTrangHoặcNhóm,
-                  "Loại nơi đăng": loạiNơiĐăngDiễnĐàn as LoạiNơiĐăngDiễnĐàn,
-                  "Tên nền tảng": tênDiễnĐàn,
-                  "Loại nền tảng": "Diễn đàn",
-                });
-                /** Trường hợp tài khoản/trang/nhóm có thành phần nhỏ hơn */
-              } else {
-                for (const thànhPhần of danhSáchThànhPhần) {
+      if (tênDiễnĐàn === "GitHub") {
+        const danhSáchRepo =
+          vậtThểLàmGiáTrịChoTênDiễnĐàn as unknown as TênRepo[];
+        for (const tênRepo of danhSáchRepo) {
+          danhSáchNơiĐăng.push({
+            "Tên nơi đăng": tênRepo,
+            "Loại nơi đăng": "Repo",
+            "Tên nền tảng": "GitHub",
+            "Loại nền tảng": "Diễn đàn",
+          });
+        }
+      } else {
+        for (
+          const [loạiNơiĐăngDiễnĐàn, danhSáchNơiĐăngDiễnĐàn] of Object.entries(
+            vậtThểLàmGiáTrịChoTênDiễnĐàn,
+          )
+        ) {
+          if (!danhSáchNơiĐăngDiễnĐàn) continue;
+          for (const nơiĐăngDiễnĐàn of danhSáchNơiĐăngDiễnĐàn) {
+            /** Trường hợp người dùng chỉ khai báo tên tài khoản/trang/nhóm chứ không khai báo thành phần nhỏ hơn, và không để dấu `:` đằng sau tên tên tài khoản/trang/nhóm */
+            if (typeof nơiĐăngDiễnĐàn === "string") {
+              danhSáchNơiĐăng.push({
+                "Tên nơi đăng": nơiĐăngDiễnĐàn,
+                "Loại nơi đăng": loạiNơiĐăngDiễnĐàn as LoạiNơiĐăngDiễnĐàn,
+                "Tên nền tảng": tênDiễnĐàn,
+                "Loại nền tảng": "Diễn đàn",
+              });
+            } else {
+              for (
+                const [tênTàiKhoảnHoặcTrangHoặcNhóm, danhSáchThànhPhần]
+                  of Object
+                    .entries(nơiĐăngDiễnĐàn)
+              ) {
+                /** Trường hợp người dùng chỉ khai báo tên tài khoản/trang/nhóm chứ không khai báo thành phần nhỏ hơn, nhưng vẫn để dấu `:` đằng sau tên tên tài khoản/trang/nhóm */
+                if (!danhSáchThànhPhần) {
                   danhSáchNơiĐăng.push({
-                    "Tên nơi đăng":
-                      `${thànhPhần} ${tênTàiKhoảnHoặcTrangHoặcNhóm}`,
+                    "Tên nơi đăng": tênTàiKhoảnHoặcTrangHoặcNhóm,
                     "Loại nơi đăng": loạiNơiĐăngDiễnĐàn as LoạiNơiĐăngDiễnĐàn,
                     "Tên nền tảng": tênDiễnĐàn,
                     "Loại nền tảng": "Diễn đàn",
                   });
+                  /** Trường hợp tài khoản/trang/nhóm có thành phần nhỏ hơn */
+                } else {
+                  for (const thànhPhần of danhSáchThànhPhần) {
+                    danhSáchNơiĐăng.push({
+                      "Tên nơi đăng":
+                        `${thànhPhần} ${tênTàiKhoảnHoặcTrangHoặcNhóm}`,
+                      "Loại nơi đăng": loạiNơiĐăngDiễnĐàn as LoạiNơiĐăngDiễnĐàn,
+                      "Tên nền tảng": tênDiễnĐàn,
+                      "Loại nền tảng": "Diễn đàn",
+                    });
+                  }
                 }
               }
             }
@@ -203,23 +219,52 @@ export default function tạoDanhSáchNơiĐăng(cấuHìnhNơiĐăng: CấuHìn
     for (
       const [loạiNơiĐăngKhác, danhSáchNơiĐăngKhác] of Object.entries(
         cấuHìnhNơiĐăng.Khác,
-      ) as [LoạiNơiĐăngKhác, string[]][]
+      ) as [LoạiNơiĐăngKhác, EmailWebsiteHoặcẢnh[]][]
     ) {
       if (!danhSáchNơiĐăngKhác) continue;
-      for (const tênNơiĐăngKhác of danhSáchNơiĐăngKhác) {
-        danhSáchNơiĐăng.push({
-          "Tên nơi đăng": tênNơiĐăngKhác,
-          "Loại nơi đăng": loạiNơiĐăngKhác,
-          "Tên nền tảng": loạiNơiĐăngKhác,
-          "Loại nền tảng": "Khác",
-        });
+      for (const nơiĐăngKhác of danhSáchNơiĐăngKhác) {
+        if (typeof nơiĐăngKhác === "string") {
+          danhSáchNơiĐăng.push({
+            "Tên nơi đăng": nơiĐăngKhác,
+            "Loại nơi đăng": loạiNơiĐăngKhác,
+            "Tên nền tảng": loạiNơiĐăngKhác,
+            "Loại nền tảng": "Khác",
+          });
+        } else {
+          const tênEmailWebsiteHoặcẢnh = Object.keys(nơiĐăngKhác)[0];
+          const danhSáchThànhPhần = Object.values(nơiĐăngKhác)[0];
+          /** Trường hợp người dùng chỉ khai báo email/website/ảnh chứ không khai báo thành phần nhỏ hơn, nhưng vẫn để dấu `:` đằng sau email/website/ảnh */
+          if (!danhSáchThànhPhần) {
+            danhSáchNơiĐăng.push({
+              "Tên nơi đăng": tênEmailWebsiteHoặcẢnh,
+              "Loại nơi đăng": loạiNơiĐăngKhác as LoạiNơiĐăngDiễnĐàn,
+              "Tên nền tảng": loạiNơiĐăngKhác,
+              "Loại nền tảng": "Diễn đàn",
+            });
+            /** Trường hợp email/website/ảnh có thành phần nhỏ hơn */
+          } else {
+            for (const thànhPhần of danhSáchThànhPhần) {
+              danhSáchNơiĐăng.push({
+                "Tên nơi đăng": `${tênEmailWebsiteHoặcẢnh} (${thànhPhần})`,
+                "Loại nơi đăng": loạiNơiĐăngKhác as LoạiNơiĐăngDiễnĐàn,
+                "Tên nền tảng": loạiNơiĐăngKhác,
+                "Loại nền tảng": "Diễn đàn",
+              });
+            }
+          }
+        }
       }
     }
   }
 }
 
 // import { parse } from "$std/yaml/mod.ts";
-// const cấuHìnhNơiĐăng = parse(Deno.readTextFileSync('./core/A. Cấu hình/Nơi đăng.yaml')) as CấuHìnhNơiĐăng
-// const danhSáchNơiĐăng = tạoDanhSáchNơiĐăng(cấuHìnhNơiĐăng)
-// console.log(JSON.stringify(danhSáchNơiĐăng, null, 2))
-// console.log(JSON.stringify(danhSáchNơiĐăng[0], null, 2))
+// const cấuHìnhNơiĐăng = parse(
+//   // Deno.readTextFileSync("./core/A. Cấu hình/Nơi đăng.yaml"),
+//   Deno.readTextFileSync("./core/A. Cấu hình/Nơi đăng 2.yaml"),
+// ) as CấuHìnhNơiĐăng;
+// const danhSáchNơiĐăng = tạoDanhSáchNơiĐăng(cấuHìnhNơiĐăng);
+// console.log(JSON.stringify(danhSáchNơiĐăng, null, 2));
+
+// const a = danhSáchNơiĐăng.filter((i) => i["Tên nền tảng"] === "GitHub");
+// console.log(JSON.stringify(a, null, 2));

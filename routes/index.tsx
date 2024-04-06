@@ -14,7 +14,7 @@ export default async function App(prop: PageProps) {
     await Deno.readTextFile("core/A. Cấu hình/Danh sách tất cả bài đăng.json"),
   ) as BàiĐăng[];
   const cấuHìnhNơiĐăng = parse(
-    await Deno.readTextFile("core/A. Cấu hình/Nơi đăng.yaml"),
+    await Deno.readTextFile("core/A. Cấu hình/Nơi đăng 2.yaml"),
   ) as CấuHìnhNơiĐăng;
   const danhSáchNơiĐăng = tạoDanhSáchNơiĐăng(cấuHìnhNơiĐăng) as NơiĐăng[];
   return (
