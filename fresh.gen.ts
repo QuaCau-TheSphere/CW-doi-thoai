@@ -9,9 +9,10 @@ import * as $index from "./routes/index.tsx";
 import * as $lmn from "./routes/lmn.ts";
 import * as $lậptrình from "./routes/lậptrình.ts";
 import * as $ngụngôn from "./routes/ngụngôn.ts";
-import * as $KhungKiếmBênTrái from "./islands/KhungKiếmBênTrái.tsx";
 import * as $KhungKếtQuảBênPhải from "./islands/KhungKếtQuảBênPhải.tsx";
+import * as $KhungNhậpBênTrái from "./islands/KhungNhậpBênTrái.tsx";
 import * as $Main from "./islands/Main.tsx";
+import * as $SearchDiv from "./islands/SearchDiv.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -25,9 +26,10 @@ const manifest = {
     "./routes/ngụngôn.ts": $ngụngôn,
   },
   islands: {
-    "./islands/KhungKiếmBênTrái.tsx": $KhungKiếmBênTrái,
     "./islands/KhungKếtQuảBênPhải.tsx": $KhungKếtQuảBênPhải,
+    "./islands/KhungNhậpBênTrái.tsx": $KhungNhậpBênTrái,
     "./islands/Main.tsx": $Main,
+    "./islands/SearchDiv.tsx": $SearchDiv,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

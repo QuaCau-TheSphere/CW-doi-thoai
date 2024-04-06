@@ -65,7 +65,12 @@ Deno.test("tạo tham số UTM", () => {
     term: undefined,
   };
   assertEquals(
-    tạoThamSốUTMVàLiênKếtRútGọn(bàiĐăng, nơiĐăng, 3, cấuHìnhNơiĐăng),
+    tạoThamSốUTMVàLiênKếtRútGọn({
+      bàiĐăng,
+      nơiĐăng,
+      bốiCảnh: 3,
+      lầnĐăng: cấuHìnhNơiĐăng,
+    }),
     thamSốUTMVàLiênKếtRútGọn,
   );
 });

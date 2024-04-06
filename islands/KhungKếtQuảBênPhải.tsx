@@ -5,30 +5,43 @@ import {
   VậtThểTiếpThị,
 } from "../utils/Kiểu cho web.ts";
 import { TÊN_MIỀN_RÚT_GỌN } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/H%E1%BA%B1ng.ts";
+import ThamSốUTMVàLiênKếtRútGọn from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91%20UTM.ts";
 
 export default function KhungKếtQuảBênPhải(
-  { bàiĐăngĐượcChọn, nơiĐăngĐượcChọn, cấuHìnhNơiĐăng }: KhungKếtQuảBênPhảiProps,
-) {
-  const thamSốUTMVàLiênKếtRútGọn = tạoThamSốUTMVàLiênKếtRútGọn(
+  {
     bàiĐăngĐượcChọn,
     nơiĐăngĐượcChọn,
-    1,
+    bốiCảnh,
     cấuHìnhNơiĐăng,
-  );
-  const đuôiRútGọn = thamSốUTMVàLiênKếtRútGọn["Đuôi rút gọn"];
-  const liênKếtRútGọn = `${TÊN_MIỀN_RÚT_GỌN}/${đuôiRútGọn}`;
-  const thờiĐiểmTạo = new Date();
-  const vậtThểTiếpThị: VậtThểTiếpThị = {
-    ...{
-      "Bài đăng": bàiĐăngĐượcChọn,
-      "Nơi đăng": nơiĐăngĐượcChọn,
-      "Thời điểm tạo": thờiĐiểmTạo,
-    },
-    ...thamSốUTMVàLiênKếtRútGọn,
-  };
-  console.table(vậtThểTiếpThị);
-
+    lầnBấmEnter,
+  }: KhungKếtQuảBênPhảiProps,
+) {
+  const [thamSốUTMVàLiênKếtRútGọn, setThamSốUTMVàLiênKếtRútGọn] = useState<
+    ThamSốUTMVàLiênKếtRútGọn | undefined
+  >(undefined);
   useEffect(() => {
+    const thamSốUTMVàLiênKếtRútGọn = tạoThamSốUTMVàLiênKếtRútGọn(
+      {
+        bàiĐăng: bàiĐăngĐượcChọn,
+        nơiĐăng: nơiĐăngĐượcChọn,
+        bốiCảnh: bốiCảnh,
+        lầnĐăng: 1,
+        cấuHìnhNơiĐăng: cấuHìnhNơiĐăng,
+      },
+    );
+    const đuôiRútGọn = thamSốUTMVàLiênKếtRútGọn["Đuôi rút gọn"];
+    const liênKếtRútGọn = `${TÊN_MIỀN_RÚT_GỌN}/${đuôiRútGọn}`;
+    const thờiĐiểmTạo = new Date();
+    const vậtThểTiếpThị: VậtThểTiếpThị = {
+      ...{
+        "Bài đăng": bàiĐăngĐượcChọn,
+        "Nơi đăng": nơiĐăngĐượcChọn,
+        "Thời điểm tạo": thờiĐiểmTạo,
+      },
+      ...thamSốUTMVàLiênKếtRútGọn,
+    };
+    console.table(vậtThểTiếpThị);
+
     async function ghiLênKV() {
       const res = await fetch(liênKếtRútGọn, {
         method: "POST",
@@ -41,13 +54,26 @@ export default function KhungKếtQuảBênPhải(
     }
     ghiLênKV()
       .catch(console.error);
-  }, [bàiĐăngĐượcChọn, nơiĐăngĐượcChọn]);
-  navigator.clipboard.writeText(liênKếtRútGọn);
+    if (!window.location.href.includes("http://localhost")) {
+      navigator.clipboard.writeText(liênKếtRútGọn);
+    }
+    setThamSốUTMVàLiênKếtRútGọn(thamSốUTMVàLiênKếtRútGọn);
+    console.log(
+      "🚀 ~ useEffect ~ thamSốUTMVàLiênKếtRútGọn:",
+      thamSốUTMVàLiênKếtRútGọn,
+    );
+  }, [lầnBấmEnter]);
+
+  if (thamSốUTMVàLiênKếtRútGọn === undefined) return <></>;
+  const thamSốUTM = thamSốUTMVàLiênKếtRútGọn["Tham số UTM"];
+  const liênKếtRútGọn = `${TÊN_MIỀN_RÚT_GỌN}/${
+    thamSốUTMVàLiênKếtRútGọn["Đuôi rút gọn"]
+  }`;
 
   return (
     <div id="khung-bên-phải-khi-có-kết-quả" class="prose">
       <ul>
-        {Object.entries(thamSốUTMVàLiênKếtRútGọn["Tham số UTM"]).map((
+        {Object.entries(thamSốUTM).map((
           i,
         ) => (
           <li>

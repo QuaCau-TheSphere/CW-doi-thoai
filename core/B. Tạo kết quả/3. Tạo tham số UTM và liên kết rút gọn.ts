@@ -26,6 +26,7 @@ import {
   lấyKýHiệuViếtTắt,
   tạoLiênKếtUTM,
 } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Code%20h%E1%BB%97%20tr%E1%BB%A3.ts";
+import { BốiCảnh } from "../../utils/Ki%E1%BB%83u%20cho%20web.ts";
 
 export function tạoSource(
   loạiNềnTảng: LoạiNềnTảng,
@@ -115,8 +116,8 @@ function tạoCampaign(dựÁn: DựÁn): Campaign {
   return `${dựÁn["Mã dự án"]} ${dựÁn["Tên dự án"]}`;
 }
 
-function tạoContent(nơiĐăng: NơiĐăng, bàiĐăng: BàiĐăng): Content {
-  return; //TODO
+function tạoContent(bốiCảnh: BốiCảnh): Content {
+  return bốiCảnh;
 }
 
 function tạoTerm(nơiĐăng: NơiĐăng, bàiĐăng: BàiĐăng): Term {
@@ -148,10 +149,13 @@ function tạoĐuôiRútGọn(
 }
 
 export default function tạoThamSốUTMVàLiênKếtRútGọn(
-  bàiĐăng: BàiĐăng,
-  nơiĐăng: NơiĐăng,
-  lầnĐăng: number,
-  cấuHìnhNơiĐăng: CấuHìnhNơiĐăng,
+  { bàiĐăng, nơiĐăng, bốiCảnh, lầnĐăng, cấuHìnhNơiĐăng }: {
+    bàiĐăng: BàiĐăng;
+    nơiĐăng: NơiĐăng;
+    bốiCảnh: BốiCảnh;
+    lầnĐăng: number;
+    cấuHìnhNơiĐăng: CấuHìnhNơiĐăng;
+  },
 ): ThamSốUTMVàLiênKếtRútGọn {
   const tênNềnTảng = nơiĐăng["Tên nền tảng"];
   const loạiNơiĐăng = nơiĐăng["Loại nơi đăng"];
@@ -171,7 +175,7 @@ export default function tạoThamSốUTMVàLiênKếtRútGọn(
     ),
     medium: tạoMedium(loạiNơiĐăng, loạiNềnTảng),
     campaign: tạoCampaign(dựÁn),
-    content: tạoContent(nơiĐăng, bàiĐăng),
+    content: tạoContent(bốiCảnh),
     term: tạoTerm(nơiĐăng, bàiĐăng),
   };
   return {

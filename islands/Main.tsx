@@ -3,7 +3,7 @@ import { BàiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u
 import { NơiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
 import { KếtQuả, MainProps } from "../utils/Kiểu cho web.ts";
 import KhungKếtQuảBênPhải from "./KhungK%E1%BA%BFtQu%E1%BA%A3B%C3%AAnPh%E1%BA%A3i.tsx";
-import KhungKiếmBênTrái from "./KhungKi%E1%BA%BFmB%C3%AAnTr%C3%A1i.tsx";
+import KhungNhậpBênTrái from "./KhungNhậpBênTrái.tsx";
 import KhungThôngTinKhiKhôngCóKếtQuả from "../components/KhungThôngTinKhiKhôngCóKếtQuả.tsx";
 
 export default function Main(
@@ -15,23 +15,33 @@ export default function Main(
   const [nơiĐăngĐượcChọn, chọnNơiĐăng] = useState<NơiĐăng | undefined>(
     undefined,
   );
+  const [bốiCảnh, setBốiCảnh] = useState<string | undefined>(
+    undefined,
+  );
+  const [lầnBấmEnter, đổiSốLầnBấmEnter] = useState<number>(0);
+  console.log("🚀 ~ lầnBấmEnter:", lầnBấmEnter);
   return (
     <main class="flex flex-row gap-3 w-full">
       <div class="basis-1/2 p-10">
-        <KhungKiếmBênTrái
+        <KhungNhậpBênTrái
           danhSáchBàiĐăng={danhSáchBàiĐăng}
           danhSáchNơiĐăng={danhSáchNơiĐăng}
           chọnBàiĐăng={chọnBàiĐăng}
           chọnNơiĐăng={chọnNơiĐăng}
+          setBốiCảnh={setBốiCảnh}
+          đổiSốLầnBấmEnter={đổiSốLầnBấmEnter}
+          lầnBấmEnter={lầnBấmEnter}
         />
       </div>
       <div class="basis-1/2 p-10">
-        {bàiĐăngĐượcChọn && nơiĐăngĐượcChọn
+        {lầnBấmEnter && bàiĐăngĐượcChọn && nơiĐăngĐượcChọn
           ? (
             <KhungKếtQuảBênPhải
               bàiĐăngĐượcChọn={bàiĐăngĐượcChọn}
               nơiĐăngĐượcChọn={nơiĐăngĐượcChọn}
+              bốiCảnh={bốiCảnh}
               cấuHìnhNơiĐăng={cấuHìnhNơiĐăng}
+              lầnBấmEnter={lầnBấmEnter}
             />
           )
           : <KhungThôngTinKhiKhôngCóKếtQuả />}

@@ -28,10 +28,12 @@ const nơiĐăng = danhSáchNơiĐăng.find((e) =>
   e["Tên nơi đăng"].includes("Các buổi")
 );
 const thamSốUTMVàLiênKếtRútGọn = tạoThamSốUTMVàLiênKếtRútGọn(
-  bàiĐăng!,
-  nơiĐăng!,
-  await chỉSốLầnĐăngTrước() + 1,
-  cấuHìnhNơiĐăng,
+  {
+    bàiĐăng: bàiĐăng!,
+    nơiĐăng: nơiĐăng!,
+    bốiCảnh: await chỉSốLầnĐăngTrước() + 1,
+    lầnĐăng: cấuHìnhNơiĐăng,
+  },
 );
 
 const liênKếtUTM = thamSốUTMVàLiênKếtRútGọn["Liên kết UTM"];

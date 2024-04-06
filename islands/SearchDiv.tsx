@@ -1,14 +1,15 @@
 import Fuse from "https://deno.land/x/fuse/dist/fuse.esm.js";
 import { StateUpdater, useState } from "preact/hooks";
-import { BàiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
-import { NơiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
-import {
+import type {
   Cursor,
+  DanhSáchKếtQuảTìmKiếm,
   DanhSáchĐangActive,
-  KhungKiếmBênTráiProps,
   MụcĐượcChọn,
   TênDanhSách,
 } from "../utils/Kiểu cho web.ts";
+import { BàiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
+import { NơiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
+
 function DanhSáchKếtQuảTìmKiếm({
   listName,
   searchList,
@@ -81,14 +82,23 @@ function DanhSáchKếtQuảTìmKiếm({
     );
   }
 }
-
-function SearchDiv(
-  { listName, fuse, activeList, setActiveList, chọnBàiĐăngHoặcNơiĐăng }: {
+export default function SearchDiv(
+  {
+    listName,
+    fuse,
+    activeList,
+    setActiveList,
+    chọnBàiĐăngHoặcNơiĐăng,
+    đổiSốLầnBấmEnter,
+    lầnBấmEnter,
+  }: {
     listName: TênDanhSách;
     fuse: Fuse;
     activeList: DanhSáchĐangActive;
     setActiveList: StateUpdater<DanhSáchĐangActive>;
     chọnBàiĐăngHoặcNơiĐăng: any;
+    đổiSốLầnBấmEnter: StateUpdater<number>;
+    lầnBấmEnter: number;
   },
 ) {
   const [searchList, setSearchList] = useState<DanhSáchKếtQuảTìmKiếm>(
@@ -139,16 +149,20 @@ function SearchDiv(
 
   function handleKeyDown(e: KeyboardEvent) {
     if (!searchList) return;
+    const inputBàiĐăng = document.getElementById("input-bài-đăng")!;
+    const inputNơiĐăng = document.getElementById("input-nơi-đăng")!;
+    const inputBốiCảnh = document.getElementById("input-bối-cảnh")!;
+
     if (e.key === "Escape") {
       setActiveList(undefined);
+      inputBàiĐăng.blur();
+      inputNơiĐăng.blur();
     }
-
     if (e.key === "ArrowDown") {
       e.preventDefault();
       const newCursor = cursor < searchList.length - 1 ? cursor + 1 : 0;
       setCursor(newCursor);
     }
-
     if (e.key === "ArrowUp") {
       e.preventDefault();
       const newCursor = cursor > 0 ? cursor - 1 : searchList.length - 1;
@@ -157,13 +171,15 @@ function SearchDiv(
 
     if (e.key === "Enter") {
       setSelectedItem(searchList[cursor].item);
-      const inputNơiĐăng = document.getElementById("input-nơi-đăng")!;
-
+      đổiSốLầnBấmEnter(lầnBấmEnter + 1);
       if (activeList === "bài đăng") {
         setActiveList("nơi đăng");
         inputNơiĐăng.focus();
       } else if (activeList === "nơi đăng") {
-        setActiveList(undefined);
+        setActiveList("bối cảnh");
+        inputBốiCảnh.focus();
+      } else if (activeList === "bối cảnh") {
+        //todo
       }
     }
   }
@@ -189,62 +205,4 @@ function SearchDiv(
       </div>
     );
   }
-}
-export default function KhungKiếmBênTrái(
-  { danhSáchNơiĐăng, danhSáchBàiĐăng, chọnBàiĐăng, chọnNơiĐăng }:
-    KhungKiếmBênTráiProps,
-) {
-  /** Active list is used to determine whether the search list should be popup or not */
-  const [activeList, setActiveList] = useState<DanhSáchĐangActive>("bài đăng");
-
-  const fuseBàiĐăng = new Fuse(danhSáchBàiĐăng, {
-    // minMatchCharLength: 3,
-    ignoreLocation: true,
-    keys: [{
-      name: "Tiêu đề",
-      weight: 2,
-    }, "Mô tả bài đăng"],
-  });
-  const fuseNơiĐăng = new Fuse(danhSáchNơiĐăng, {
-    // minMatchCharLength: 2,
-    ignoreLocation: true,
-    keys: [
-      "Tên nơi đăng",
-      "Tên cộng đồng",
-      "Loại nơi đăng",
-      "Tên nền tảng",
-      "Loại nền tảng",
-    ],
-  });
-  return (
-    <section id="khung-nhập-bên-phải">
-      <SearchDiv
-        listName="bài đăng"
-        fuse={fuseBàiĐăng}
-        activeList={activeList}
-        setActiveList={setActiveList}
-        chọnBàiĐăngHoặcNơiĐăng={chọnBàiĐăng}
-      />
-      <SearchDiv
-        listName="nơi đăng"
-        fuse={fuseNơiĐăng}
-        activeList={activeList}
-        setActiveList={setActiveList}
-        chọnBàiĐăngHoặcNơiĐăng={chọnNơiĐăng}
-      />
-      {
-        /* <label class="input input-bordered flex items-center gap-2">
-        Content
-        <input
-          type="text"
-          class="grow"
-          id={"input-content"}
-          placeholder={`Nhập content`}
-          onInput={(e) => {
-          }}
-        />
-      </label> */
-      }
-    </section>
-  );
 }

@@ -5,16 +5,22 @@ import CấuHìnhNơiĐăng, {
 } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import ThamSốUTMVàLiênKếtRútGọn from "../core/Code hỗ trợ/Kiểu cho tham số UTM.ts";
 
+export type BốiCảnh = string | undefined;
 export interface KhungKiếmBênTráiProps {
-  danhSáchNơiĐăng: NơiĐăng[];
   danhSáchBàiĐăng: BàiĐăng[];
-  chọnBàiĐăng: StateUpdater<BàiĐăng | undefined>;
+  danhSáchNơiĐăng: NơiĐăng[];
   chọnNơiĐăng: StateUpdater<NơiĐăng | undefined>;
+  chọnBàiĐăng: StateUpdater<BàiĐăng | undefined>;
+  setBốiCảnh: StateUpdater<BốiCảnh>;
+  lầnBấmEnter: number;
+  đổiSốLầnBấmEnter: StateUpdater<number>;
 }
 export interface KhungKếtQuảBênPhảiProps {
   bàiĐăngĐượcChọn: BàiĐăng;
   nơiĐăngĐượcChọn: NơiĐăng;
+  bốiCảnh: BốiCảnh;
   cấuHìnhNơiĐăng: CấuHìnhNơiĐăng;
+  lầnBấmEnter: number;
 }
 export interface MainProps {
   danhSáchNơiĐăng: NơiĐăng[];
@@ -27,7 +33,7 @@ export type KếtQuả = {
   nơiĐăng: NơiĐăng | undefined;
 } | undefined;
 
-export type TạoKếtQuả = StateUpdater<KếtQuả>;
+export type đổiSốLầnBấmEnter = StateUpdater<KếtQuả>;
 export type DanhSáchKếtQuảTìmKiếm =
   | FuseResult<NơiĐăng>
   | FuseResult<BàiĐăng>
@@ -36,7 +42,7 @@ export type MụcĐượcChọn = BàiĐăng | NơiĐăng | undefined;
 /** Cursor is the current highlighted item in the search list. It's undefined when the mouse leaves */
 export type Cursor = number;
 
-export type TênDanhSách = "nơi đăng" | "bài đăng";
+export type TênDanhSách = "nơi đăng" | "bài đăng" | "bối cảnh";
 /** Active list is used to determine whether the search list should be popup or not */
 export type DanhSáchĐangActive = TênDanhSách | undefined;
 
