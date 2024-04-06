@@ -27,27 +27,11 @@ export function tạoLiênKếtUTM(
 ): LiênKếtUTM {
   const url = new URL(link);
   const { source, medium, campaign, content, term } = thamSốUTM;
-  if (source) {
-    url.searchParams.set("utm_source", source);
-  } else {
-    throw new Error("Không có source");
-  }
-  if (medium) {
-    url.searchParams.set("utm_medium", medium);
-  } else {
-    throw new Error("Không có medium");
-  }
-  if (campaign) {
-    url.searchParams.set("utm_campaign", campaign);
-  } else {
-    throw new Error("Không có campaign");
-  }
-  if (content !== undefined) {
-    url.searchParams.set("utm_content", content);
-  }
-  if (term !== undefined) {
-    url.searchParams.set("utm_term", term);
-  }
+  url.searchParams.set("utm_source", source || "");
+  url.searchParams.set("utm_medium", medium || "");
+  url.searchParams.set("utm_campaign", campaign || "");
+  url.searchParams.set("utm_content", content || "");
+  url.searchParams.set("utm_term", term || "");
 
   return url;
 }
