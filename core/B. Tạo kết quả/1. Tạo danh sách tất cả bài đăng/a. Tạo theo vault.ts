@@ -166,7 +166,6 @@ async function xácĐịnhTiêuĐềGhiChú(
 
 function xácĐịnhTênDựÁn(
   đườngDẫnTớiGhiChú: ĐườngDẫnTuyệtĐối,
-  vault: Vault,
 ): TênDựÁn {
   if (đườngDẫnTớiGhiChú.includes(THƯ_MỤC_DỰ_ÁN)) {
     const đườngDẫnTớiGhiChúDạngMảng = đườngDẫnTớiGhiChú.split(
@@ -177,7 +176,7 @@ function xácĐịnhTênDựÁn(
     );
     return đườngDẫnTớiGhiChúDạngMảng[vịTríCuảThưMụcDựÁnTrongMảng + 1]; //
   } else {
-    return vault["Tên vault"];
+    return undefined;
   }
 }
 
@@ -204,7 +203,7 @@ export default async function tạoDanhSáchBàiĐăngTrênVault(
         vault["Nơi lưu vault"],
         vault.URL,
       );
-      const tênDựÁn: TênDựÁn = xácĐịnhTênDựÁn(đườngDẫnTớiGhiChú, vault);
+      const tênDựÁn: TênDựÁn = xácĐịnhTênDựÁn(đườngDẫnTớiGhiChú);
 
       danhSáchBàiĐăng.push({
         "Tiêu đề": tiêuĐề,

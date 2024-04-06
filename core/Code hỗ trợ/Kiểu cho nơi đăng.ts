@@ -13,7 +13,7 @@ export default interface CấuHìnhNơiĐăng {
   "Viết tắt"?: Record<string, string>[];
 }
 
-export type LoạiNềnTảng = "Diễn đàn" | "Chat" | "Vault" | "Khác";
+export type LoạiNềnTảng = "Diễn đàn" | "Chat" | "Khác";
 export type TênNềnTảng = TênDiễnĐàn | TênNềnTảngChat | LoạiNơiĐăngKhác; //| TênVault
 export type LoạiNơiĐăng =
   | LoạiNơiĐăngDiễnĐàn
