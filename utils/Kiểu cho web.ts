@@ -6,22 +6,6 @@ import CấuHìnhNơiĐăng, {
 import ThamSốUTMVàLiênKếtRútGọn from "../core/Code hỗ trợ/Kiểu cho tham số UTM.ts";
 
 export type BốiCảnh = string | undefined;
-export interface KhungKiếmBênTráiProps {
-  danhSáchBàiĐăng: BàiĐăng[];
-  danhSáchNơiĐăng: NơiĐăng[];
-  chọnNơiĐăng: StateUpdater<NơiĐăng | undefined>;
-  chọnBàiĐăng: StateUpdater<BàiĐăng | undefined>;
-  setBốiCảnh: StateUpdater<BốiCảnh>;
-  lầnBấmEnter: number;
-  đổiSốLầnBấmEnter: StateUpdater<number>;
-}
-export interface KhungKếtQuảBênPhảiProps {
-  bàiĐăngĐượcChọn: BàiĐăng;
-  nơiĐăngĐượcChọn: NơiĐăng;
-  bốiCảnh: BốiCảnh;
-  cấuHìnhNơiĐăng: CấuHìnhNơiĐăng;
-  lầnBấmEnter: number;
-}
 export interface MainProps {
   danhSáchNơiĐăng: NơiĐăng[];
   danhSáchBàiĐăng: BàiĐăng[];

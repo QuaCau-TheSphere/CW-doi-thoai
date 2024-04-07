@@ -1,3 +1,4 @@
+import { useSignal } from "@preact/signals";
 import { useState } from "preact/hooks";
 import { BàiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
 import { NơiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
@@ -18,8 +19,8 @@ export default function Main(
   const [bốiCảnh, setBốiCảnh] = useState<string | undefined>(
     undefined,
   );
-  const [lầnBấmEnter, đổiSốLầnBấmEnter] = useState<number>(0);
-  console.log("🚀 ~ lầnBấmEnter:", lầnBấmEnter);
+  const count = useSignal(0);
+
   return (
     <main class="flex flex-row gap-3 w-full">
       <div class="basis-1/2 p-10">
@@ -29,19 +30,18 @@ export default function Main(
           chọnBàiĐăng={chọnBàiĐăng}
           chọnNơiĐăng={chọnNơiĐăng}
           setBốiCảnh={setBốiCảnh}
-          đổiSốLầnBấmEnter={đổiSốLầnBấmEnter}
-          lầnBấmEnter={lầnBấmEnter}
+          count={count}
         />
       </div>
       <div class="basis-1/2 p-10">
-        {lầnBấmEnter && bàiĐăngĐượcChọn && nơiĐăngĐượcChọn
+        {count.value > 0 && bàiĐăngĐượcChọn && nơiĐăngĐượcChọn
           ? (
             <KhungKếtQuảBênPhải
               bàiĐăngĐượcChọn={bàiĐăngĐượcChọn}
               nơiĐăngĐượcChọn={nơiĐăngĐượcChọn}
               bốiCảnh={bốiCảnh}
               cấuHìnhNơiĐăng={cấuHìnhNơiĐăng}
-              lầnBấmEnter={lầnBấmEnter}
+              count={count}
             />
           )
           : <KhungThôngTinKhiKhôngCóKếtQuả />}

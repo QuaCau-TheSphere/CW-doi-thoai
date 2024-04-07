@@ -102,16 +102,12 @@ export default function SearchDiv(
     activeList,
     setActiveList,
     chọnBàiĐăngHoặcNơiĐăng,
-    đổiSốLầnBấmEnter,
-    lầnBấmEnter,
   }: {
     listName: TênDanhSách;
     fuse: Fuse;
     activeList: DanhSáchĐangActive;
     setActiveList: StateUpdater<DanhSáchĐangActive>;
     chọnBàiĐăngHoặcNơiĐăng: any;
-    đổiSốLầnBấmEnter: StateUpdater<number>;
-    lầnBấmEnter: number;
   },
 ) {
   const [searchList, setSearchList] = useState<DanhSáchKếtQuảTìmKiếm>(
@@ -153,7 +149,6 @@ export default function SearchDiv(
           onKeyDown={handleKeyDown}
         />
       </label>
-      <br />
       {listName === activeList ? searchListNode : undefined}
       <KếtQuảĐượcChọn />
       <br />
@@ -184,7 +179,6 @@ export default function SearchDiv(
 
     if (e.key === "Enter") {
       setSelectedItem(searchList[cursor].item);
-      đổiSốLầnBấmEnter(lầnBấmEnter + 1);
       if (activeList === "bài đăng") {
         setActiveList("nơi đăng");
         inputNơiĐăng.focus();

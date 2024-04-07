@@ -1,11 +1,13 @@
 import { useEffect, useState } from "preact/hooks";
 import tạoThamSốUTMVàLiênKếtRútGọn from "../core/B.%20T%E1%BA%A1o%20k%E1%BA%BFt%20qu%E1%BA%A3/3.%20T%E1%BA%A1o%20tham%20s%E1%BB%91%20UTM%20v%C3%A0%20li%C3%AAn%20k%E1%BA%BFt%20r%C3%BAt%20g%E1%BB%8Dn.ts";
-import {
-  KhungKếtQuảBênPhảiProps,
-  VậtThểTiếpThị,
-} from "../utils/Kiểu cho web.ts";
+import { BốiCảnh, VậtThểTiếpThị } from "../utils/Kiểu cho web.ts";
 import { TÊN_MIỀN_RÚT_GỌN } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/H%E1%BA%B1ng.ts";
 import ThamSốUTMVàLiênKếtRútGọn from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91%20UTM.ts";
+import { BàiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
+import CấuHìnhNơiĐăng, {
+  NơiĐăng,
+} from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
+import { Signal } from "@preact/signals";
 
 export default function KhungKếtQuảBênPhải(
   {
@@ -13,8 +15,14 @@ export default function KhungKếtQuảBênPhải(
     nơiĐăngĐượcChọn,
     bốiCảnh,
     cấuHìnhNơiĐăng,
-    lầnBấmEnter,
-  }: KhungKếtQuảBênPhảiProps,
+    count,
+  }: {
+    bàiĐăngĐượcChọn: BàiĐăng;
+    nơiĐăngĐượcChọn: NơiĐăng;
+    bốiCảnh: BốiCảnh;
+    cấuHìnhNơiĐăng: CấuHìnhNơiĐăng;
+    count: Signal<number>;
+  },
 ) {
   const [thamSốUTMVàLiênKếtRútGọn, setThamSốUTMVàLiênKếtRútGọn] = useState<
     ThamSốUTMVàLiênKếtRútGọn | undefined
@@ -62,7 +70,7 @@ export default function KhungKếtQuảBênPhải(
       "🚀 ~ useEffect ~ thamSốUTMVàLiênKếtRútGọn:",
       thamSốUTMVàLiênKếtRútGọn,
     );
-  }, [lầnBấmEnter]);
+  }, [count.value]);
 
   if (thamSốUTMVàLiênKếtRútGọn === undefined) return <></>;
   const thamSốUTM = thamSốUTMVàLiênKếtRútGọn["Tham số UTM"];

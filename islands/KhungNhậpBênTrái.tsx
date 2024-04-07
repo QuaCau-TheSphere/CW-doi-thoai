@@ -1,10 +1,10 @@
 import Fuse from "https://deno.land/x/fuse/dist/fuse.esm.js";
-import { useState } from "preact/hooks";
-import {
-  DanhSáchĐangActive,
-  KhungKiếmBênTráiProps,
-} from "../utils/Kiểu cho web.ts";
+import { StateUpdater, useState } from "preact/hooks";
+import { BốiCảnh, DanhSáchĐangActive } from "../utils/Kiểu cho web.ts";
 import SearchDiv from "./SearchDiv.tsx";
+import { BàiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
+import { NơiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
+import { Signal } from "@preact/signals";
 
 export default function KhungNhậpBênTrái(
   {
@@ -13,9 +13,15 @@ export default function KhungNhậpBênTrái(
     chọnBàiĐăng,
     chọnNơiĐăng,
     setBốiCảnh,
-    lầnBấmEnter,
-    đổiSốLầnBấmEnter,
-  }: KhungKiếmBênTráiProps,
+    count,
+  }: {
+    danhSáchBàiĐăng: BàiĐăng[];
+    danhSáchNơiĐăng: NơiĐăng[];
+    chọnNơiĐăng: StateUpdater<NơiĐăng | undefined>;
+    chọnBàiĐăng: StateUpdater<BàiĐăng | undefined>;
+    setBốiCảnh: StateUpdater<BốiCảnh>;
+    count: Signal<number>;
+  },
 ) {
   /** Active list is used to determine whether the search list should be popup or not */
   const [activeList, setActiveList] = useState<DanhSáchĐangActive>("bài đăng");
@@ -47,8 +53,6 @@ export default function KhungNhậpBênTrái(
         activeList={activeList}
         setActiveList={setActiveList}
         chọnBàiĐăngHoặcNơiĐăng={chọnBàiĐăng}
-        đổiSốLầnBấmEnter={đổiSốLầnBấmEnter}
-        lầnBấmEnter={lầnBấmEnter}
       />
       <SearchDiv
         listName="nơi đăng"
@@ -56,8 +60,6 @@ export default function KhungNhậpBênTrái(
         activeList={activeList}
         setActiveList={setActiveList}
         chọnBàiĐăngHoặcNơiĐăng={chọnNơiĐăng}
-        đổiSốLầnBấmEnter={đổiSốLầnBấmEnter}
-        lầnBấmEnter={lầnBấmEnter}
       />
       <label class="input input-bordered flex items-center gap-2">
         Bối cảnh
@@ -70,11 +72,18 @@ export default function KhungNhậpBênTrái(
             setBốiCảnh((e.target as HTMLInputElement).value);
           }}
           onFocus={() => setActiveList("bối cảnh")}
-          onKeyDown={(e) => {
-            if (e.key === "Enter") đổiSốLầnBấmEnter(lầnBấmEnter + 1);
-          }}
         />
       </label>
+      <br />
+      <button
+        class="btn btn-secondary gap-2"
+        onClick={() => {
+          count.value += 1;
+          console.log(count.value);
+        }}
+      >
+        Tạo liên kết
+      </button>
     </section>
   );
 }
