@@ -9,8 +9,30 @@ import type {
 } from "../utils/Kiểu cho web.ts";
 import { BàiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
 import { NơiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
-import { SwitchStatement } from "https://deno.land/x/ts_morph@21.0.1/ts_morph.js";
+import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/plus.tsx";
 
+function NhậpMới({ activeList }: { activeList: DanhSáchĐangActive }) {
+  let dữLiệuMới = {};
+  if (activeList === "bài đăng") dữLiệuMới = new BàiĐăng();
+  else if (activeList === "nơi đăng") dữLiệuMới = new NơiĐăng();
+  return (
+    <dialog id="model-nhập-mới" className="modal">
+      <div className="modal-box">
+        <h3 className="font-bold text-lg">Thêm {activeList} mới</h3>
+        {Object.entries(dữLiệuMới).map((i) => (
+          <label className="input input-bordered flex items-center gap-2">
+            {i[0]}
+            <input type="text" className="grow" placeholder={i[1]} />
+          </label>
+        ))}
+        <p className="py-4">Bấm ESC hoặc bấm chuột ở ngoài để thoát</p>
+      </div>
+      <form method="dialog" className="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+  );
+}
 function DanhSáchKếtQuảTìmKiếm({
   tênDanhSách,
   searchList,
@@ -24,7 +46,14 @@ function DanhSáchKếtQuảTìmKiếm({
   setCursor: StateUpdater<Cursor>;
   setSelectedItem: StateUpdater<MụcĐượcChọn>;
 }) {
-  if (!searchList) return;
+  if (!searchList) return <></>;
+  if (searchList.length === 0) {
+    return (
+      <h4 class="h4 tiêu-đề cursor bg-secondary">
+        <IconPlus class="w-5 h-5" /> Tạo mới
+      </h4>
+    );
+  }
   const id = `Search list ${tênDanhSách}`;
   return (
     <ul id={id} class="active">
@@ -151,6 +180,7 @@ export default function SearchDiv(
       </label>
       {tênDanhSách === activeList ? searchListNode : undefined}
       <KếtQuảĐượcChọn />
+      <NhậpMới activeList={activeList} />
       <br />
     </div>
   );
@@ -162,6 +192,7 @@ export default function SearchDiv(
     const inputBốiCảnh = document.getElementById("input-bối-cảnh")!;
 
     if (e.key === "Escape") {
+      e.preventDefault();
       setActiveList(undefined);
       inputBàiĐăng.blur();
       inputNơiĐăng.blur();
@@ -176,8 +207,16 @@ export default function SearchDiv(
       const newCursor = cursor > 0 ? cursor - 1 : searchList.length - 1;
       setCursor(newCursor);
     }
-
-    if (e.key === "Enter") {
+    if (
+      e.key === "Enter" && e.ctrlKey ||
+      e.key === "Enter" && searchList.length === 0
+    ) {
+      e.preventDefault();
+      console.log("ctrl enter");
+      (document.getElementById("model-nhập-mới") as HTMLDialogElement)
+        .showModal();
+    }
+    if (e.key === "Enter" || e.key === "Tab") {
       setSelectedItem(searchList[cursor].item);
       if (activeList === "bài đăng") {
         setActiveList("nơi đăng");
