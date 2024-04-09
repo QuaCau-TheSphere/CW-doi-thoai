@@ -12,20 +12,20 @@ import { NơiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u
 import { SwitchStatement } from "https://deno.land/x/ts_morph@21.0.1/ts_morph.js";
 
 function DanhSáchKếtQuảTìmKiếm({
-  listName,
+  tênDanhSách,
   searchList,
   cursor,
   setCursor,
   setSelectedItem,
 }: {
-  listName: TênDanhSách;
+  tênDanhSách: TênDanhSách;
   searchList: DanhSáchKếtQuảTìmKiếm;
   cursor: Cursor;
   setCursor: StateUpdater<Cursor>;
   setSelectedItem: StateUpdater<MụcĐượcChọn>;
 }) {
   if (!searchList) return;
-  const id = `Search list ${listName}`;
+  const id = `Search list ${tênDanhSách}`;
   return (
     <ul id={id} class="active">
       {searchList.map((item, index) => (
@@ -44,7 +44,7 @@ function DanhSáchKếtQuảTìmKiếm({
 
   function Item({ item }: { item: BàiĐăng | NơiĐăng }) {
     let dòngChính, dòngPhụ;
-    switch (listName) {
+    switch (tênDanhSách) {
       case "bài đăng": {
         item = item as BàiĐăng;
         dòngChính = <h4 class="h4 tiêu-đề">{item["Tiêu đề"]}</h4>;
@@ -97,13 +97,13 @@ function DanhSáchKếtQuảTìmKiếm({
 }
 export default function SearchDiv(
   {
-    listName,
+    tênDanhSách,
     fuse,
     activeList,
     setActiveList,
     chọnBàiĐăngHoặcNơiĐăng,
   }: {
-    listName: TênDanhSách;
+    tênDanhSách: TênDanhSách;
     fuse: Fuse;
     activeList: DanhSáchĐangActive;
     setActiveList: StateUpdater<DanhSáchĐangActive>;
@@ -120,7 +120,7 @@ export default function SearchDiv(
   chọnBàiĐăngHoặcNơiĐăng(selectedItem);
   const searchListNode = (
     <DanhSáchKếtQuảTìmKiếm
-      listName={listName}
+      tênDanhSách={tênDanhSách}
       searchList={searchList}
       cursor={cursor}
       setCursor={setCursor}
@@ -129,27 +129,27 @@ export default function SearchDiv(
   );
   return (
     <div
-      id={`div-${listName.replace(" ", "-")}`}
+      id={`div-${tênDanhSách.replace(" ", "-")}`}
     >
       <label class="input input-bordered flex items-center gap-2">
-        {listName.replace(/^(.)/g, (x) => x.toUpperCase())}
+        {tênDanhSách.replace(/^(.)/g, (x) => x.toUpperCase())}
         <input
           type="text"
           class="grow"
           autoFocus
-          id={`input-${listName?.replace(" ", "-")}`}
-          placeholder={`Nhập ${listName}`}
+          id={`input-${tênDanhSách?.replace(" ", "-")}`}
+          placeholder={`Nhập ${tênDanhSách}`}
           onInput={(e) => {
             setSearchList(
               fuse.search((e.target as HTMLTextAreaElement).value).slice(0, 10),
             );
-            setActiveList(listName);
+            setActiveList(tênDanhSách);
           }}
-          onFocus={() => setActiveList(listName)}
+          onFocus={() => setActiveList(tênDanhSách)}
           onKeyDown={handleKeyDown}
         />
       </label>
-      {listName === activeList ? searchListNode : undefined}
+      {tênDanhSách === activeList ? searchListNode : undefined}
       <KếtQuảĐượcChọn />
       <br />
     </div>
@@ -200,7 +200,7 @@ export default function SearchDiv(
     };
     return (
       <div class="prose result">
-        <ul id={`${listName.replace(" ", "-")}-được-chọn`}>
+        <ul id={`${tênDanhSách.replace(" ", "-")}-được-chọn`}>
           {selectedItem
             ? Object.entries(selectedItem).map((i) => (
               <li>

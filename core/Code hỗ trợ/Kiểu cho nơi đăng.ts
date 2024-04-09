@@ -20,13 +20,30 @@ export type LoạiNơiĐăng =
   | LoạiNơiĐăngChat
   | LoạiNơiĐăngKhác;
 export type TênNơiĐăng = string;
-export type NơiĐăng = {
+export class NơiĐăng {
   "Tên nơi đăng": TênNơiĐăng;
   "Tên cộng đồng"?: string;
   "Loại nơi đăng": LoạiNơiĐăng;
   "Tên nền tảng": TênNềnTảng;
   "Loại nền tảng": LoạiNềnTảng;
-};
+  URL: URLString;
+
+  constructor(
+    tênNơiĐăng: TênNơiĐăng = "",
+    tênCộngĐồng: string = "",
+    loạiNơiĐăng: LoạiNơiĐăng = "Nhóm",
+    tênNềnTảng: TênNềnTảng = "Facebook",
+    loạiNềnTảng: LoạiNềnTảng = "Diễn đàn",
+    url: URLString = "",
+  ) {
+    this["Tên nơi đăng"] = tênNơiĐăng;
+    this["Tên cộng đồng"] = tênCộngĐồng;
+    this["Loại nơi đăng"] = loạiNơiĐăng;
+    this["Tên nền tảng"] = tênNềnTảng;
+    this["Loại nền tảng"] = loạiNềnTảng;
+    this.URL = url;
+  }
+}
 
 /**
  * | Diễn đàn                    | Discord                    | Messenger      | Telegram |

@@ -47,11 +47,30 @@ export interface YAMLCủaGhiChú {
   share?: boolean;
   "Mã bài đăng"?: string;
 }
-export interface BàiĐăng {
+export class BàiĐăng {
   "Tiêu đề": string;
   url: URLString;
   "Mô tả bài đăng"?: string;
   "Dự án": DựÁn;
   Vault: string;
   "Mã bài đăng"?: string;
+
+  constructor(
+    tiêuĐề: string = "",
+    url: URLString = "",
+    môTảBàiĐăng: string = "",
+    dựÁn: DựÁn = {
+      "Mã dự án": "",
+      "Tên dự án": "",
+    },
+    vault: string = "",
+    mãBàiĐăng: string = "",
+  ) {
+    this["Tiêu đề"] = tiêuĐề;
+    this.url = url;
+    this["Mô tả bài đăng"] = môTảBàiĐăng;
+    this["Dự án"] = dựÁn;
+    this.Vault = vault;
+    this["Mã bài đăng"] = mãBàiĐăng;
+  }
 }

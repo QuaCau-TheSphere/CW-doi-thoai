@@ -48,14 +48,14 @@ export default function KhungNhậpBênTrái(
   return (
     <section id="khung-nhập-bên-phải">
       <SearchDiv
-        listName="bài đăng"
+        tênDanhSách="bài đăng"
         fuse={fuseBàiĐăng}
         activeList={activeList}
         setActiveList={setActiveList}
         chọnBàiĐăngHoặcNơiĐăng={chọnBàiĐăng}
       />
       <SearchDiv
-        listName="nơi đăng"
+        tênDanhSách="nơi đăng"
         fuse={fuseNơiĐăng}
         activeList={activeList}
         setActiveList={setActiveList}
