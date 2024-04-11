@@ -37,3 +37,12 @@ export interface VậtThểTiếpThị extends ThamSốUTMVàLiênKếtRútGọn
   "Nơi đăng": NơiĐăng;
   "Thời điểm tạo": Date;
 }
+
+export type CorsProxyRes = {
+  "Nếu là bài đăng": BàiĐăng;
+  "Nếu là nơi đăng": NơiĐăng;
+  lỗi?:
+    | "Không lấy được dữ liệu thẻ og:title, og:description hoặc og:site_name Open Graph"
+    | `${string} không phải là URL hợp lệ`;
+  html?: string | null;
+};

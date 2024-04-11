@@ -1,78 +1,11 @@
 import { useEffect, useState } from "preact/hooks";
 import {
-  BàiĐăng,
-  URLString,
-} from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
-import { NơiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
-import { DanhSáchĐangActive } from "../utils/Ki%E1%BB%83u%20cho%20web.ts";
+  CorsProxyRes,
+  DanhSáchĐangActive,
+} from "../utils/Ki%E1%BB%83u%20cho%20web.ts";
 import { TÊN_MIỀN_RÚT_GỌN } from "../core/Code hỗ trợ/Hằng.ts";
 import { kebabCase, viếtHoa } from "../utils/Hàm.ts";
 import { TênDanhSách } from "../utils/Kiểu cho web.ts";
-import { LoạiNơiĐăng } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
-import { TênNềnTảng } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
-import { LoạiNềnTảng } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
-import { getMetaTags } from "https://deno.land/x/opengraph@v1.0.0/mod.ts";
-
-async function tạoBàiĐăngTừURL(url: string): Promise<BàiĐăng> {
-  const { title, description } = (await getMetaTags(url)).og as {
-    title: string;
-    description: string;
-  };
-  return {
-    "Tiêu đề": title as string,
-    url: url,
-    "Mô tả bài đăng": description as string,
-  };
-}
-
-async function tạoNơiĐăngTừURL(url: string): Promise<void | NơiĐăng> {
-  try {
-    const { title, description } = (await getMetaTags(url)).og as {
-      title: string;
-      description: string;
-    };
-
-    const { hostname, pathname } = new URL(url);
-    let tênNềnTảng: TênNềnTảng;
-    let loạiNềnTảng: LoạiNềnTảng;
-    let loạiNơiĐăng: LoạiNơiĐăng;
-    let tênCộngĐồng: string = "";
-
-    if (hostname.includes("facebook")) {
-      loạiNềnTảng = "Diễn đàn";
-      tênNềnTảng = "Facebook";
-      if (pathname.includes("group")) {
-        loạiNơiĐăng = "Nhóm";
-        tênCộngĐồng = ""; //todo
-      } else {
-        loạiNơiĐăng = "Trang";
-      }
-    } else if (hostname.includes("discord")) {
-      loạiNềnTảng = "Chat";
-      tênNềnTảng = "Discord";
-      loạiNơiĐăng = "Máy chủ";
-    } else {
-      //@ts-ignore: todo
-      loạiNềnTảng = "";
-      //@ts-ignore: todo
-      tênNềnTảng = "";
-      //@ts-ignore: todo
-      loạiNơiĐăng = "";
-    }
-
-    return {
-      "Tên nơi đăng": title,
-      URL: url,
-      "Mô tả nơi đăng": description,
-      "Loại nơi đăng": loạiNơiĐăng,
-      "Loại nền tảng": loạiNềnTảng,
-      "Tên nền tảng": tênNềnTảng,
-      "Tên cộng đồng": tênCộngĐồng,
-    };
-  } catch (err) {
-    console.error(err);
-  }
-}
 
 function handleSubmit(event: FormDataEvent, tênDanhSách: TênDanhSách) {
   event.preventDefault();
@@ -99,51 +32,96 @@ function handleSubmit(event: FormDataEvent, tênDanhSách: TênDanhSách) {
 function CácTrườngNhậpMới(
   { tênDanhSách, url }: { tênDanhSách: TênDanhSách; url: string },
 ) {
+  const [corsProxyRes, setCorsProxyRes] = useState<CorsProxyRes | undefined>(
+    undefined,
+  );
+  useEffect(() => {
+    async function a() {
+      const corsProxyRes = (await (await fetch(url)).json()) as CorsProxyRes;
+      setCorsProxyRes(corsProxyRes);
+    }
+    a();
+    //todo
+  }, []);
+  if (corsProxyRes === undefined || corsProxyRes.lỗi) return <></>;
+
   if (tênDanhSách === "bài đăng") {
-    const [bàiĐăng, setBàiĐăng] = useState<BàiĐăng | undefined>(undefined);
-    useEffect(() => {
-      async function a() {
-        const bàiĐăng = (await tạoBàiĐăngTừURL(url))!;
-        setBàiĐăng(bàiĐăng);
-      }
-      a();
-      //todo
-    }, []);
-    if (bàiĐăng === undefined) return <></>;
-    const { "Tiêu đề": tiêuĐề, "Mô tả bài đăng": môTảBàiĐăng } = bàiĐăng;
+    const {
+      "Tiêu đề": tiêuĐề,
+      "Mô tả bài đăng": môTảBàiĐăng,
+      "Dự án": dựÁn,
+      Vault: vault,
+      url,
+    } = corsProxyRes["Nếu là bài đăng"];
     return (
       <>
-        <label className="input input-bordered flex items-center gap-2">
-          URL
-          <input id="URL" type="text" name="URL" value={url} />
-        </label>
-        <label className="input input-bordered flex items-center gap-2">
-          Tiêu đề
-          <input id="tiêu-đề" type="text" name="Tiêu đề" value={tiêuĐề} />
-        </label>
-        <label className="input input-bordered flex items-center gap-2">
-          Mô tả bài đăng
+        <label className="form-control w-full max-w-xs">
+          <div className="label">
+            <span className="label-text font-bold">URL</span>
+          </div>
           <input
+            className="input input-bordered input-primary w-full max-w-xs"
+            id="URL"
+            type="text"
+            name="URL"
+            value={url as string}
+          />
+        </label>
+
+        <label className="form-control w-full max-w-xs">
+          <div className="label">
+            <span className="label-text font-bold">Tiêu đề</span>
+          </div>
+          <input
+            className="input input-bordered input-primary w-full max-w-xs"
+            id="tiêu-đề"
+            type="text"
+            name="Tiêu đề"
+            value={tiêuĐề}
+          />
+        </label>
+
+        <label className="form-control w-full max-w-xs">
+          <div className="label">
+            <span className="label-text font-bold">Mô tả bài đăng</span>
+          </div>
+          <input
+            className="input input-bordered input-primary w-full max-w-xs"
             id="mô-tả"
             type="text"
             name="Mô tả bài đăng"
             value={môTảBàiĐăng}
           />
         </label>
+
+        <label className="form-control w-full max-w-xs">
+          <div className="label">
+            <span className="label-text font-bold">Dự án</span>
+          </div>
+          <input
+            className="input input-bordered input-primary w-full max-w-xs"
+            id="dự-án"
+            type="text"
+            name="Dự án"
+            value={dựÁn?.["Tên dự án"]}
+          />
+        </label>
+
+        <label className="form-control w-full max-w-xs">
+          <div className="label">
+            <span className="label-text font-bold">Vault</span>
+          </div>
+          <input
+            className="input input-bordered input-primary w-full max-w-xs"
+            id="vault"
+            type="text"
+            name="Vault"
+            value={vault}
+          />
+        </label>
       </>
     );
   } else if (tênDanhSách === "nơi đăng") {
-    const [nơiĐăng, setnơiĐăng] = useState<NơiĐăng | undefined>(undefined);
-    useEffect(() => {
-      async function a() {
-        const nơiĐăng = (await tạoNơiĐăngTừURL(url))!;
-        setnơiĐăng(nơiĐăng);
-      }
-      a();
-      //todo
-    });
-
-    if (nơiĐăng === undefined) return <></>;
     const {
       "Tên nơi đăng": tênNơiĐăng,
       "Mô tả nơi đăng": môTảNơiĐăng,
@@ -151,64 +129,103 @@ function CácTrườngNhậpMới(
       "Loại nền tảng": loạiNềnTảng,
       "Tên cộng đồng": tênCộngĐồng,
       "Tên nền tảng": tênNềnTảng,
-    } = nơiĐăng;
+      URL,
+    } = corsProxyRes["Nếu là nơi đăng"];
     return (
       <>
-        <label className="input input-bordered flex items-center gap-2">
-          URL
-          <input id="URL" type="text" name="URL" placeholder={url} />
-        </label>
-        <label className="input input-bordered flex items-center gap-2">
-          Tên nơi đăng
+        <label className="form-control w-full max-w-xs">
+          <div className="label">
+            <span className="label-text font-bold">URL</span>
+          </div>
           <input
+            className="input input-bordered input-primary w-full max-w-xs"
+            id="URL"
+            type="text"
+            name="URL"
+            value={URL as string}
+          />
+        </label>
+
+        <label className="form-control w-full max-w-xs">
+          <div className="label">
+            <span className="label-text font-bold">Tên nơi đăng</span>
+          </div>
+          <input
+            className="input input-bordered input-primary w-full max-w-xs"
             id="tên"
             type="text"
             name="Tên nơi đăng"
+            value={tênNơiĐăng}
             placeholder={tênNơiĐăng}
           />
         </label>
-        <label className="input input-bordered flex items-center gap-2">
-          Mô tả nơi đăng
+
+        <label className="form-control w-full max-w-xs">
+          <div className="label">
+            <span className="label-text font-bold">Mô tả nơi đăng</span>
+          </div>
           <input
+            className="input input-bordered input-primary w-full max-w-xs"
             id="mô-tả"
             type="text"
             name="Mô tả nơi đăng"
+            value={môTảNơiĐăng}
             placeholder={môTảNơiĐăng}
           />
         </label>
-        <label className="input input-bordered flex items-center gap-2">
-          Loại nơi đăng
+
+        <label className="form-control w-full max-w-xs">
+          <div className="label">
+            <span className="label-text font-bold">Loại nơi đăng</span>
+          </div>
           <input
+            className="input input-bordered input-primary w-full max-w-xs"
             id="loại"
             type="text"
             name="Loại nơi đăng"
+            value={loạiNơiĐăng}
             placeholder={loạiNơiĐăng}
           />
         </label>
-        <label className="input input-bordered flex items-center gap-2">
-          Loại nền tảng
+
+        <label className="form-control w-full max-w-xs">
+          <div className="label">
+            <span className="label-text font-bold">Loại nền tảng</span>
+          </div>
           <input
+            className="input input-bordered input-primary w-full max-w-xs"
             id="loại-nền-tảng"
             type="text"
             name="Loại nền tảng"
+            value={loạiNềnTảng}
             placeholder={loạiNềnTảng}
           />
         </label>
-        <label className="input input-bordered flex items-center gap-2">
-          Tên cộng đồng
+
+        <label className="form-control w-full max-w-xs">
+          <div className="label">
+            <span className="label-text font-bold">Tên cộng đồng</span>
+          </div>
           <input
+            className="input input-bordered input-primary w-full max-w-xs"
             id="tên-cộng-đồng"
             type="text"
             name="Tên cộng đồng"
+            value={tênCộngĐồng}
             placeholder={tênCộngĐồng}
           />
         </label>
-        <label className="input input-bordered flex items-center gap-2">
-          Tên nền tảng
+
+        <label className="form-control w-full max-w-xs">
+          <div className="label">
+            <span className="label-text font-bold">Tên nền tảng</span>
+          </div>
           <input
+            className="input input-bordered input-primary w-full max-w-xs"
             id="tên-nền-tảng"
             type="text"
             name="Tên nền tảng"
+            value={tênNềnTảng}
             placeholder={tênNềnTảng}
           />
         </label>
