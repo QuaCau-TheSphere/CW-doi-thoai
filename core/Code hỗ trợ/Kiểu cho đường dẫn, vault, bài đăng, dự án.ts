@@ -51,8 +51,8 @@ export class BàiĐăng {
   "Tiêu đề": string;
   url: URLString;
   "Mô tả bài đăng"?: string;
-  "Dự án": DựÁn;
-  Vault: string;
+  "Dự án"?: DựÁn;
+  Vault?: string;
   "Mã bài đăng"?: string;
 
   constructor(

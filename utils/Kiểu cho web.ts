@@ -26,9 +26,11 @@ export type MụcĐượcChọn = BàiĐăng | NơiĐăng | undefined;
 /** Cursor is the current highlighted item in the search list. It's undefined when the mouse leaves */
 export type Cursor = number;
 
-export type TênDanhSách = "nơi đăng" | "bài đăng" | "bối cảnh";
+export type TênDanhSách = "nơi đăng" | "bài đăng";
+export type TênTrường = TênDanhSách | "bối cảnh";
 /** Active list is used to determine whether the search list should be popup or not */
 export type DanhSáchĐangActive = TênDanhSách | undefined;
+export type TrườngĐangActive = TênTrường | undefined;
 
 export interface VậtThểTiếpThị extends ThamSốUTMVàLiênKếtRútGọn {
   "Bài đăng": BàiĐăng;

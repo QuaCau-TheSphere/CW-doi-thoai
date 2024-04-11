@@ -10,29 +10,30 @@ import type {
 import { BàiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
 import { NơiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
 import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/plus.tsx";
+import NhậpMới from "./Nh%E1%BA%ADp%20m%E1%BB%9Bi.tsx";
 
-function NhậpMới({ activeList }: { activeList: DanhSáchĐangActive }) {
-  let dữLiệuMới = {};
-  if (activeList === "bài đăng") dữLiệuMới = new BàiĐăng();
-  else if (activeList === "nơi đăng") dữLiệuMới = new NơiĐăng();
-  return (
-    <dialog id="model-nhập-mới" className="modal">
-      <div className="modal-box">
-        <h3 className="font-bold text-lg">Thêm {activeList} mới</h3>
-        {Object.entries(dữLiệuMới).map((i) => (
-          <label className="input input-bordered flex items-center gap-2">
-            {i[0]}
-            <input type="text" className="grow" placeholder={i[1]} />
-          </label>
-        ))}
-        <p className="py-4">Bấm ESC hoặc bấm chuột ở ngoài để thoát</p>
-      </div>
-      <form method="dialog" className="modal-backdrop">
-        <button>close</button>
-      </form>
-    </dialog>
-  );
-}
+// function NhậpMới({ activeList }: { activeList: DanhSáchĐangActive }) {
+//   let dữLiệuMới = {};
+//   if (activeList === "bài đăng") dữLiệuMới = new BàiĐăng();
+//   else if (activeList === "nơi đăng") dữLiệuMới = new NơiĐăng();
+//   return (
+//     <dialog id="model-nhập-mới" className="modal">
+//       <div className="modal-box">
+//         <h3 className="font-bold text-lg">Thêm {activeList} mới</h3>
+//         {Object.entries(dữLiệuMới).map((i) => (
+//           <label className="input input-bordered flex items-center gap-2">
+//             {i[0]}
+//             <input type="text" className="grow" placeholder={i[1]} />
+//           </label>
+//         ))}
+//         <p className="py-4">Bấm ESC hoặc bấm chuột ở ngoài để thoát</p>
+//       </div>
+//       <form method="dialog" className="modal-backdrop">
+//         <button>close</button>
+//       </form>
+//     </dialog>
+//   );
+// }
 function DanhSáchKếtQuảTìmKiếm({
   tênDanhSách,
   searchList,
@@ -144,6 +145,7 @@ export default function SearchDiv(
   );
   const [cursor, setCursor] = useState<Cursor>(0);
   const [selectedItem, setSelectedItem] = useState<MụcĐượcChọn>(undefined);
+  const [query, setQuery] = useState<string>("");
 
   //@ts-ignore:
   chọnBàiĐăngHoặcNơiĐăng(selectedItem);
@@ -166,25 +168,33 @@ export default function SearchDiv(
           type="text"
           class="grow"
           autoFocus
+          value={query}
           id={`input-${tênDanhSách?.replace(" ", "-")}`}
           placeholder={`Nhập ${tênDanhSách}`}
-          onInput={(e) => {
-            setSearchList(
-              fuse.search((e.target as HTMLTextAreaElement).value).slice(0, 10),
-            );
-            setActiveList(tênDanhSách);
-          }}
+          onInput={handleInput}
           onFocus={() => setActiveList(tênDanhSách)}
           onKeyDown={handleKeyDown}
         />
       </label>
       {tênDanhSách === activeList ? searchListNode : undefined}
+      <NhậpMới activeList={activeList} url={query} />
       <KếtQuảĐượcChọn />
-      <NhậpMới activeList={activeList} />
       <br />
     </div>
   );
 
+  function handleInput(e: InputEvent) {
+    setActiveList(tênDanhSách);
+    const query = (e.target as HTMLTextAreaElement).value;
+    setQuery(query);
+    try {
+      new URL(query);
+      (document.getElementById("model-nhập-mới") as HTMLDialogElement)
+        .showModal();
+    } catch {
+      setSearchList(fuse.search(query).slice(0, 10));
+    }
+  }
   function handleKeyDown(e: KeyboardEvent) {
     if (!searchList) return;
     const inputBàiĐăng = document.getElementById("input-bài-đăng")!;

@@ -29,6 +29,7 @@ export class NơiĐăng {
   "Tên nền tảng": TênNềnTảng;
   "Loại nền tảng": LoạiNềnTảng;
   URL: URLString;
+  "Mô tả nơi đăng"?: string;
 
   constructor(
     tênNơiĐăng: TênNơiĐăng = "",
@@ -37,6 +38,7 @@ export class NơiĐăng {
     tênNềnTảng: TênNềnTảng = "Facebook",
     loạiNềnTảng: LoạiNềnTảng = "Diễn đàn",
     url: URLString = "",
+    môTảNơiĐăng: string,
   ) {
     this["Tên nơi đăng"] = tênNơiĐăng;
     this["Tên cộng đồng"] = tênCộngĐồng;
@@ -44,6 +46,7 @@ export class NơiĐăng {
     this["Tên nền tảng"] = tênNềnTảng;
     this["Loại nền tảng"] = loạiNềnTảng;
     this.URL = url;
+    this["Mô tả nơi đăng"] = môTảNơiĐăng;
   }
 }
 
