@@ -11,6 +11,7 @@ import { BàiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u
 import { NơiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
 import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/plus.tsx";
 import NhậpMới from "./Nh%E1%BA%ADp%20m%E1%BB%9Bi.tsx";
+import { isURL } from "https://deno.land/x/deno_validator@v0.0.5/mod.ts";
 
 // function NhậpMới({ activeList }: { activeList: DanhSáchĐangActive }) {
 //   let dữLiệuMới = {};
@@ -177,7 +178,7 @@ export default function SearchDiv(
         />
       </label>
       {tênDanhSách === activeList ? searchListNode : undefined}
-      <NhậpMới activeList={activeList} url={query} />
+      {isURL(query) ? <NhậpMới activeList={activeList} url={query} /> : null}
       <KếtQuảĐượcChọn />
       <br />
     </div>
@@ -187,11 +188,10 @@ export default function SearchDiv(
     setActiveList(tênDanhSách);
     const query = (e.target as HTMLTextAreaElement).value;
     setQuery(query);
-    try {
-      new URL(query);
+    if (isURL(query)) {
       (document.getElementById("model-nhập-mới") as HTMLDialogElement)
         .showModal();
-    } catch {
+    } else {
       setSearchList(fuse.search(query).slice(0, 10));
     }
   }

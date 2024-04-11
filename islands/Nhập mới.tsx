@@ -8,27 +8,29 @@ import { DanhSáchĐangActive } from "../utils/Ki%E1%BB%83u%20cho%20web.ts";
 import { TÊN_MIỀN_RÚT_GỌN } from "../core/Code hỗ trợ/Hằng.ts";
 import { kebabCase, viếtHoa } from "../utils/Hàm.ts";
 import { TênDanhSách } from "../utils/Kiểu cho web.ts";
-// import { extract } from "npm:@extractus/article-extractor";
 import { LoạiNơiĐăng } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { TênNềnTảng } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { LoạiNềnTảng } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { getMetaTags } from "https://deno.land/x/opengraph@v1.0.0/mod.ts";
 
-async function tạoBàiĐăngTừURL(url: string): Promise<void | BàiĐăng> {
-  try {
-    const article = await extract(url);
-    return {
-      "Tiêu đề": article!.title!,
-      url: url,
-      "Mô tả bài đăng": article!.description,
-    };
-  } catch (err) {
-    console.error(err);
-  }
+async function tạoBàiĐăngTừURL(url: string): Promise<BàiĐăng> {
+  const { title, description } = (await getMetaTags(url)).og as {
+    title: string;
+    description: string;
+  };
+  return {
+    "Tiêu đề": title as string,
+    url: url,
+    "Mô tả bài đăng": description as string,
+  };
 }
 
 async function tạoNơiĐăngTừURL(url: string): Promise<void | NơiĐăng> {
   try {
-    const { title, description } = await extract(url);
+    const { title, description } = (await getMetaTags(url)).og as {
+      title: string;
+      description: string;
+    };
 
     const { hostname, pathname } = new URL(url);
     let tênNềnTảng: TênNềnTảng;
@@ -106,18 +108,18 @@ function CácTrườngNhậpMới(
       }
       a();
       //todo
-    });
+    }, []);
     if (bàiĐăng === undefined) return <></>;
     const { "Tiêu đề": tiêuĐề, "Mô tả bài đăng": môTảBàiĐăng } = bàiĐăng;
     return (
       <>
         <label className="input input-bordered flex items-center gap-2">
           URL
-          <input id="URL" type="text" name="URL" placeholder={url} />
+          <input id="URL" type="text" name="URL" value={url} />
         </label>
         <label className="input input-bordered flex items-center gap-2">
           Tiêu đề
-          <input id="tiêu-đề" type="text" name="Tiêu đề" placeholder={tiêuĐề} />
+          <input id="tiêu-đề" type="text" name="Tiêu đề" value={tiêuĐề} />
         </label>
         <label className="input input-bordered flex items-center gap-2">
           Mô tả bài đăng
@@ -125,7 +127,7 @@ function CácTrườngNhậpMới(
             id="mô-tả"
             type="text"
             name="Mô tả bài đăng"
-            placeholder={môTảBàiĐăng}
+            value={môTảBàiĐăng}
           />
         </label>
       </>
@@ -217,13 +219,14 @@ function CácTrườngNhậpMới(
 export default function NhậpMới(
   { activeList, url }: { activeList: DanhSáchĐangActive; url: string },
 ) {
-  if (activeList === undefined) return <></>;
+  if (activeList === undefined || url === "") return <></>;
+  const corsProxy = `${TÊN_MIỀN_RÚT_GỌN}/cors-proxy/${url}`;
   return (
     <dialog id="model-nhập-mới" className="modal">
       <div className="modal-box">
         <h3 className="font-bold text-lg">Thêm {activeList} mới</h3>
         <form onSubmit={handleSubmit}>
-          <CácTrườngNhậpMới tênDanhSách={activeList} url={url} />
+          <CácTrườngNhậpMới tênDanhSách={activeList} url={corsProxy} />
           <button class="btn btn-secondary gap-2" type="submit">
             Thêm mới
           </button>

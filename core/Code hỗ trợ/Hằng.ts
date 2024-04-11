@@ -5,5 +5,5 @@ export const THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT = "D:\\QC supplements\\Vaul
 
 export const ĐƯỜNG_DẪN_ĐẾN_TẬP_TIN_CSV = "./core/A. Cấu hình/wpd9_posts.csv";
 
-export const TÊN_MIỀN_RÚT_GỌN = "https://quacau.deno.dev";
-// export const TÊN_MIỀN_RÚT_GỌN = "http://localhost:8000";
+// export const TÊN_MIỀN_RÚT_GỌN = "https://quacau.deno.dev";
+export const TÊN_MIỀN_RÚT_GỌN = "http://localhost:8000";
