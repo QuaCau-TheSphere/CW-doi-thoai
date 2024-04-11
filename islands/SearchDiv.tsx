@@ -4,6 +4,7 @@ import type {
   Cursor,
   DanhSáchKếtQuảTìmKiếm,
   DanhSáchĐangActive,
+  KhungNhậpĐangActive,
   MụcĐượcChọn,
   TênDanhSách,
 } from "../utils/Kiểu cho web.ts";
@@ -13,28 +14,6 @@ import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/plus.tsx";
 import NhậpMới from "./Nh%E1%BA%ADp%20m%E1%BB%9Bi.tsx";
 import { isURL } from "https://deno.land/x/deno_validator@v0.0.5/mod.ts";
 
-// function NhậpMới({ activeList }: { activeList: DanhSáchĐangActive }) {
-//   let dữLiệuMới = {};
-//   if (activeList === "bài đăng") dữLiệuMới = new BàiĐăng();
-//   else if (activeList === "nơi đăng") dữLiệuMới = new NơiĐăng();
-//   return (
-//     <dialog id="model-nhập-mới" className="modal">
-//       <div className="modal-box">
-//         <h3 className="font-bold text-lg">Thêm {activeList} mới</h3>
-//         {Object.entries(dữLiệuMới).map((i) => (
-//           <label className="input input-bordered flex items-center gap-2">
-//             {i[0]}
-//             <input type="text" className="grow" placeholder={i[1]} />
-//           </label>
-//         ))}
-//         <p className="py-4">Bấm ESC hoặc bấm chuột ở ngoài để thoát</p>
-//       </div>
-//       <form method="dialog" className="modal-backdrop">
-//         <button>close</button>
-//       </form>
-//     </dialog>
-//   );
-// }
 function DanhSáchKếtQuảTìmKiếm({
   tênDanhSách,
   searchList,
@@ -130,14 +109,14 @@ export default function SearchDiv(
   {
     tênDanhSách,
     fuse,
-    activeList,
-    setActiveList,
+    khungNhậpĐangActive,
+    setKhungNhậpActive,
     chọnBàiĐăngHoặcNơiĐăng,
   }: {
     tênDanhSách: TênDanhSách;
     fuse: Fuse;
-    activeList: DanhSáchĐangActive;
-    setActiveList: StateUpdater<DanhSáchĐangActive>;
+    khungNhậpĐangActive: KhungNhậpĐangActive;
+    setKhungNhậpActive: StateUpdater<KhungNhậpĐangActive>;
     chọnBàiĐăngHoặcNơiĐăng: any;
   },
 ) {
@@ -173,19 +152,21 @@ export default function SearchDiv(
           id={`input-${tênDanhSách?.replace(" ", "-")}`}
           placeholder={`Nhập ${tênDanhSách}`}
           onInput={handleInput}
-          onFocus={() => setActiveList(tênDanhSách)}
+          onFocus={() => setKhungNhậpActive(tênDanhSách)}
           onKeyDown={handleKeyDown}
         />
       </label>
-      {tênDanhSách === activeList ? searchListNode : undefined}
-      {isURL(query) ? <NhậpMới activeList={activeList} url={query} /> : null}
+      {tênDanhSách === khungNhậpĐangActive ? searchListNode : undefined}
+      {isURL(query)
+        ? <NhậpMới activeList={khungNhậpĐangActive} url={query} />
+        : null}
       <KếtQuảĐượcChọn />
       <br />
     </div>
   );
 
   function handleInput(e: InputEvent) {
-    setActiveList(tênDanhSách);
+    setKhungNhậpActive(tênDanhSách);
     const query = (e.target as HTMLTextAreaElement).value;
     setQuery(query);
     if (isURL(query)) {
@@ -203,7 +184,7 @@ export default function SearchDiv(
 
     if (e.key === "Escape") {
       e.preventDefault();
-      setActiveList(undefined);
+      setKhungNhậpActive(undefined);
       inputBàiĐăng.blur();
       inputNơiĐăng.blur();
     }
@@ -217,24 +198,15 @@ export default function SearchDiv(
       const newCursor = cursor > 0 ? cursor - 1 : searchList.length - 1;
       setCursor(newCursor);
     }
-    if (
-      e.key === "Enter" && e.ctrlKey ||
-      e.key === "Enter" && searchList.length === 0
-    ) {
-      e.preventDefault();
-      console.log("ctrl enter");
-      (document.getElementById("model-nhập-mới") as HTMLDialogElement)
-        .showModal();
-    }
     if (e.key === "Enter" || e.key === "Tab") {
       setSelectedItem(searchList[cursor].item);
-      if (activeList === "bài đăng") {
-        setActiveList("nơi đăng");
+      if (khungNhậpĐangActive === "bài đăng") {
+        setKhungNhậpActive("nơi đăng");
         inputNơiĐăng.focus();
-      } else if (activeList === "nơi đăng") {
-        setActiveList("bối cảnh");
+      } else if (khungNhậpĐangActive === "nơi đăng") {
+        setKhungNhậpActive("bối cảnh");
         inputBốiCảnh.focus();
-      } else if (activeList === "bối cảnh") {
+      } else if (khungNhậpĐangActive === "bối cảnh") {
         //todo
       }
     }

@@ -4,40 +4,21 @@ import {
   DanhSáchĐangActive,
 } from "../utils/Ki%E1%BB%83u%20cho%20web.ts";
 import { TÊN_MIỀN_RÚT_GỌN } from "../core/Code hỗ trợ/Hằng.ts";
-import { kebabCase, viếtHoa } from "../utils/Hàm.ts";
 import { TênDanhSách } from "../utils/Kiểu cho web.ts";
 
-function handleSubmit(event: FormDataEvent, tênDanhSách: TênDanhSách) {
-  event.preventDefault();
-  const formData = new FormData(event.currentTarget);
-  const dữLiệuMới = Object.fromEntries(formData);
-  console.log("🚀 ~ handleSubmit ~ dữLiệuMới:", dữLiệuMới);
-  useEffect(() => {
-    async function ghiLênKV() {
-      const url = `${TÊN_MIỀN_RÚT_GỌN}/${kebabCase(tênDanhSách)}`;
-      const res = await fetch(url, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(dữLiệuMới),
-      });
-      console.log("Response:", res);
-    }
-    ghiLênKV()
-      .catch(console.error);
-  }, [formData]);
-}
-
 function CácTrườngNhậpMới(
-  { tênDanhSách, url }: { tênDanhSách: TênDanhSách; url: string },
+  { tênDanhSách, corsProxyUrl }: {
+    tênDanhSách: TênDanhSách;
+    corsProxyUrl: string;
+  },
 ) {
   const [corsProxyRes, setCorsProxyRes] = useState<CorsProxyRes | undefined>(
     undefined,
   );
   useEffect(() => {
     async function a() {
-      const corsProxyRes = (await (await fetch(url)).json()) as CorsProxyRes;
+      const corsProxyRes =
+        (await (await fetch(corsProxyUrl)).json()) as CorsProxyRes;
       setCorsProxyRes(corsProxyRes);
     }
     a();
@@ -233,19 +214,42 @@ function CácTrườngNhậpMới(
     );
   } else return <></>;
 }
+function handleSubmit(event: FormDataEvent, tênDanhSách: TênDanhSách) {
+  event.preventDefault();
+  const formData = new FormData(event.currentTarget);
+  const dữLiệuMới = {
+    "Tên danh sách": tênDanhSách,
+    "Dữ liệu": Object.fromEntries(formData),
+  };
+  const url = `${TÊN_MIỀN_RÚT_GỌN}/api/newData`;
+
+  fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(dữLiệuMới),
+  }).then((res) => res.json())
+    .then((data) => console.log(data))
+    .catch(console.error);
+}
+
 export default function NhậpMới(
   { activeList, url }: { activeList: DanhSáchĐangActive; url: string },
 ) {
   if (activeList === undefined || url === "") return <></>;
-  const corsProxy = `${TÊN_MIỀN_RÚT_GỌN}/cors-proxy/${url}`;
+  const corsProxyUrl = `${TÊN_MIỀN_RÚT_GỌN}/api/cors-proxy/${url}`;
   return (
     <dialog id="model-nhập-mới" className="modal">
       <div className="modal-box">
         <h3 className="font-bold text-lg">Thêm {activeList} mới</h3>
-        <form onSubmit={handleSubmit}>
-          <CácTrườngNhậpMới tênDanhSách={activeList} url={corsProxy} />
+        <form onSubmit={(e: FormDataEvent) => handleSubmit(e, activeList)}>
+          <CácTrườngNhậpMới
+            tênDanhSách={activeList}
+            corsProxyUrl={corsProxyUrl}
+          />
           <button class="btn btn-secondary gap-2" type="submit">
-            Thêm mới
+            Thêm mới (<kbd>Enter</kbd>)
           </button>
         </form>
       </div>

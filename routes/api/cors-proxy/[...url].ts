@@ -1,12 +1,12 @@
 import { Handlers } from "$fresh/server.ts";
 import { getMetaTags } from "https://deno.land/x/opengraph@v1.0.0/mod.ts";
-import { BàiĐăng } from "../../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
+import { BàiĐăng } from "../../../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import {
   LoạiNơiĐăng,
   LoạiNềnTảng,
   NơiĐăng,
   TênNềnTảng,
-} from "../../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
+} from "../../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 
 async function lấyMetaTag(url: URL) {
   return (await getMetaTags(url.href)).og as {

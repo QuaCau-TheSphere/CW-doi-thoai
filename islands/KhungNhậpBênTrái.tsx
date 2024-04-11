@@ -50,15 +50,15 @@ export default function KhungNhậpBênTrái(
       <SearchDiv
         tênDanhSách="bài đăng"
         fuse={fuseBàiĐăng}
-        activeList={activeList}
-        setActiveList={setActiveList}
+        khungNhậpĐangActive={activeList}
+        setKhungNhậpActive={setActiveList}
         chọnBàiĐăngHoặcNơiĐăng={chọnBàiĐăng}
       />
       <SearchDiv
         tênDanhSách="nơi đăng"
         fuse={fuseNơiĐăng}
-        activeList={activeList}
-        setActiveList={setActiveList}
+        khungNhậpĐangActive={activeList}
+        setKhungNhậpActive={setActiveList}
         chọnBàiĐăngHoặcNơiĐăng={chọnNơiĐăng}
       />
       <label class="input input-bordered flex items-center gap-2">

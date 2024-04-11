@@ -5,11 +5,11 @@
 import * as $_slug_ from "./routes/[slug].ts";
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
-import * as $cors_proxy_url_ from "./routes/cors-proxy/[...url].ts";
+import * as $api_cors_proxy_url_ from "./routes/api/cors-proxy/[...url].ts";
+import * as $api_newData from "./routes/api/newData.ts";
 import * as $index from "./routes/index.tsx";
 import * as $lmn from "./routes/lmn.ts";
 import * as $lậptrình from "./routes/lậptrình.ts";
-import * as $newData from "./routes/newData.ts";
 import * as $ngụngôn from "./routes/ngụngôn.ts";
 import * as $KhungKếtQuảBênPhải from "./islands/KhungKếtQuảBênPhải.tsx";
 import * as $KhungNhậpBênTrái from "./islands/KhungNhậpBênTrái.tsx";
@@ -23,11 +23,11 @@ const manifest = {
     "./routes/[slug].ts": $_slug_,
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
-    "./routes/cors-proxy/[...url].ts": $cors_proxy_url_,
+    "./routes/api/cors-proxy/[...url].ts": $api_cors_proxy_url_,
+    "./routes/api/newData.ts": $api_newData,
     "./routes/index.tsx": $index,
     "./routes/lmn.ts": $lmn,
     "./routes/lậptrình.ts": $lậptrình,
-    "./routes/newData.ts": $newData,
     "./routes/ngụngôn.ts": $ngụngôn,
   },
   islands: {
