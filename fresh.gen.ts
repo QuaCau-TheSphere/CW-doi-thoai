@@ -15,7 +15,7 @@ import * as $Khung_tìm_bài_đăng_hoặc_nơi_đăng from "./islands/Khung tì
 import * as $KhungKếtQuảBênPhải from "./islands/KhungKếtQuảBênPhải.tsx";
 import * as $KhungNhậpBênTrái from "./islands/KhungNhậpBênTrái.tsx";
 import * as $Main from "./islands/Main.tsx";
-import * as $Nhập_mới from "./islands/Nhập mới.tsx";
+import * as $Modal_tạo_mới from "./islands/Modal tạo mới.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -36,7 +36,7 @@ const manifest = {
     "./islands/KhungKếtQuảBênPhải.tsx": $KhungKếtQuảBênPhải,
     "./islands/KhungNhậpBênTrái.tsx": $KhungNhậpBênTrái,
     "./islands/Main.tsx": $Main,
-    "./islands/Nhập mới.tsx": $Nhập_mới,
+    "./islands/Modal tạo mới.tsx": $Modal_tạo_mới,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

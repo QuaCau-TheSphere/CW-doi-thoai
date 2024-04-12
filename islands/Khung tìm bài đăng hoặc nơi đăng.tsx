@@ -1,4 +1,4 @@
-import Fuse from "https://deno.land/x/fuse/dist/fuse.esm.js";
+import Fuse from "https://deno.land/x/fuse@v6.4.1/dist/fuse.esm.js";
 import { StateUpdater, useState } from "preact/hooks";
 import type {
   Cursor,
@@ -10,9 +10,12 @@ import type {
 import { BàiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
 import { NơiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
 import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/plus.tsx";
-import NhậpMới from "./Nh%E1%BA%ADp%20m%E1%BB%9Bi.tsx";
-import { isURL } from "https://deno.land/x/deno_validator@v0.0.5/mod.ts";
-import { kebabCase } from "../utils/Hàm.ts";
+import ModalTạoMới from "./Modal tạo mới.tsx";
+import {
+  kebabCase,
+  đổiKhungNhậpNgược,
+  đổiKhungNhậpXuôi,
+} from "../utils/Hàm.ts";
 
 function DanhSáchKếtQuảTìmKiếm({
   tênDanhSách,
@@ -35,9 +38,8 @@ function DanhSáchKếtQuảTìmKiếm({
       </h4>
     );
   }
-  const id = `Search list ${tênDanhSách}`;
   return (
-    <ul id={id} class="active">
+    <ul id={`danh-sách-${kebabCase(tênDanhSách)}-tìm-được`} class="active">
       {searchList.map((item, index) => (
         <li
           key={index}
@@ -117,7 +119,9 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
     fuse: Fuse;
     khungNhậpĐangActive: KhungNhậpĐangActive;
     setKhungNhậpActive: StateUpdater<KhungNhậpĐangActive>;
-    setBàiĐăngHoặcNơiĐăng: any;
+    setBàiĐăngHoặcNơiĐăng:
+      | StateUpdater<BàiĐăng | undefined>
+      | StateUpdater<NơiĐăng | undefined>;
   },
 ) {
   const [searchList, setSearchList] = useState<DanhSáchKếtQuảTìmKiếm>(
@@ -140,7 +144,7 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
           class="grow"
           autoFocus
           value={query}
-          id={`input-${tênDanhSách?.replace(" ", "-")}`}
+          id={`khung-nhập-${tênDanhSách?.replace(" ", "-")}`}
           placeholder={`Nhập ${tênDanhSách}`}
           onInput={handleInput}
           onFocus={() => setKhungNhậpActive(tênDanhSách)}
@@ -157,10 +161,11 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
               setCursor={setCursor}
               setSelectedItem={setMục}
             />
-            <NhậpMới
-              activeList={tênDanhSách}
+            <ModalTạoMới
+              danhSáchĐangActive={tênDanhSách}
               url={query}
               setSelectedItem={setMục}
+              setKhungNhậpActive={setKhungNhậpActive}
             />
           </>
         )
@@ -174,25 +179,11 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
     setKhungNhậpActive(tênDanhSách);
     const query = (e.target as HTMLTextAreaElement).value;
     setQuery(query);
-    if (isURL(query)) {
-      (document.getElementById("model-nhập-mới") as HTMLDialogElement)
-        .showModal();
-    } else {
-      setSearchList(fuse.search(query).slice(0, 10));
-    }
+    setSearchList(fuse.search(query).slice(0, 10));
   }
   function handleKeyDown(e: KeyboardEvent) {
     if (!searchList) return;
-    const inputBàiĐăng = document.getElementById("input-bài-đăng")!;
-    const inputNơiĐăng = document.getElementById("input-nơi-đăng")!;
-    const inputBốiCảnh = document.getElementById("input-bối-cảnh")!;
 
-    if (e.key === "Escape") {
-      e.preventDefault();
-      setKhungNhậpActive(undefined);
-      inputBàiĐăng.blur();
-      inputNơiĐăng.blur();
-    }
     if (e.key === "ArrowDown") {
       e.preventDefault();
       const newCursor = cursor < searchList.length - 1 ? cursor + 1 : 0;
@@ -203,17 +194,24 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
       const newCursor = cursor > 0 ? cursor - 1 : searchList.length - 1;
       setCursor(newCursor);
     }
-    if (e.key === "Enter" || e.key === "Tab") {
-      setMục(searchList[cursor].item);
-      if (khungNhậpĐangActive === "bài đăng") {
-        setKhungNhậpActive("nơi đăng");
-        inputNơiĐăng.focus();
-      } else if (khungNhậpĐangActive === "nơi đăng") {
-        setKhungNhậpActive("bối cảnh");
-        inputBốiCảnh.focus();
-      } else if (khungNhậpĐangActive === "bối cảnh") {
-        //todo
+    if (e.key === "Enter") {
+      e.preventDefault();
+      if (searchList.length === 0) {
+        (document.getElementById("model-tạo-mới") as HTMLDialogElement)
+          .showModal();
+      } else {
+        setMục(searchList[cursor].item);
+        đổiKhungNhậpXuôi(khungNhậpĐangActive, setKhungNhậpActive);
       }
+    }
+    if (e.key === "Tab") {
+      e.preventDefault();
+      đổiKhungNhậpXuôi(khungNhậpĐangActive, setKhungNhậpActive);
+    }
+
+    if (e.key === "Tab" && e.shiftKey) {
+      e.preventDefault();
+      đổiKhungNhậpNgược(khungNhậpĐangActive, setKhungNhậpActive);
     }
   }
   function KếtQuảĐượcChọn() {

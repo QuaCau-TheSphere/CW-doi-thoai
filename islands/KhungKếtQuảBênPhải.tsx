@@ -48,7 +48,6 @@ export default function KhungKếtQuảBênPhải(
       },
       ...thamSốUTMVàLiênKếtRútGọn,
     };
-    console.table(vậtThểTiếpThị);
 
     async function ghiLênKV() {
       const res = await fetch(liênKếtRútGọn, {
@@ -66,10 +65,7 @@ export default function KhungKếtQuảBênPhải(
       navigator.clipboard.writeText(liênKếtRútGọn);
     }
     setThamSốUTMVàLiênKếtRútGọn(thamSốUTMVàLiênKếtRútGọn);
-    console.log(
-      "🚀 ~ useEffect ~ thamSốUTMVàLiênKếtRútGọn:",
-      thamSốUTMVàLiênKếtRútGọn,
-    );
+    console.info("Tham số UTM và liên kết rút gọn:", thamSốUTMVàLiênKếtRútGọn);
   }, [count.value]);
 
   if (thamSốUTMVàLiênKếtRútGọn === undefined) return <></>;
@@ -77,6 +73,9 @@ export default function KhungKếtQuảBênPhải(
   const liênKếtRútGọn = `${TÊN_MIỀN_RÚT_GỌN}/${
     thamSốUTMVàLiênKếtRútGọn["Đuôi rút gọn"]
   }`;
+
+  console.info("Bài đăng được chọn:", bàiĐăngĐượcChọn);
+  console.info("Nơi đăng được chọn:", nơiĐăngĐượcChọn);
 
   return (
     <div id="khung-bên-phải-khi-có-kết-quả" class="prose">

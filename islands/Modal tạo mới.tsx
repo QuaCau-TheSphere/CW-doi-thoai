@@ -2,10 +2,12 @@ import { StateUpdater, useEffect, useState } from "preact/hooks";
 import {
   CorsProxyRes,
   DanhSáchĐangActive,
+  KhungNhậpĐangActive,
   MụcĐượcChọn,
 } from "../utils/Ki%E1%BB%83u%20cho%20web.ts";
 import { TÊN_MIỀN_RÚT_GỌN } from "../core/Code hỗ trợ/Hằng.ts";
 import { TênDanhSách } from "../utils/Kiểu cho web.ts";
+import { đổiKhungNhậpXuôi } from "../utils/Hàm.ts";
 
 function CácTrườngNhậpMới(
   { tênDanhSách, corsProxyUrl }: {
@@ -219,6 +221,7 @@ function handleSubmit(
   event: FormDataEvent,
   tênDanhSách: TênDanhSách,
   setSelectedItem: StateUpdater<MụcĐượcChọn>,
+  setKhungNhậpActive: StateUpdater<KhungNhậpĐangActive>,
 ) {
   event.preventDefault();
   const formData = new FormData(event.currentTarget);
@@ -240,31 +243,39 @@ function handleSubmit(
       setSelectedItem(data.value);
     })
     .catch(console.error);
+  (document.getElementById("model-tạo-mới") as HTMLDialogElement).close();
+  đổiKhungNhậpXuôi(tênDanhSách, setKhungNhậpActive);
 }
 
-export default function NhậpMới(
-  { activeList, url, setSelectedItem }: {
-    activeList: DanhSáchĐangActive;
+export default function ModalTạoMới(
+  { danhSáchĐangActive, url, setSelectedItem, setKhungNhậpActive }: {
+    danhSáchĐangActive: DanhSáchĐangActive;
     url: string;
     setSelectedItem: StateUpdater<MụcĐượcChọn>;
+    setKhungNhậpActive: StateUpdater<KhungNhậpĐangActive>;
   },
 ) {
-  if (activeList === undefined || url === "") return <></>;
+  if (danhSáchĐangActive === undefined || url === "") return <></>;
   const corsProxyUrl = `${TÊN_MIỀN_RÚT_GỌN}/api/cors-proxy/${url}`;
   return (
-    <dialog id="model-nhập-mới" className="modal">
+    <dialog id="model-tạo-mới" className="modal">
       <div className="modal-box">
-        <h3 className="font-bold text-lg">Thêm {activeList} mới</h3>
+        <h3 className="font-bold text-lg">Tạo {danhSáchĐangActive} mới</h3>
         <form
           onSubmit={(e: FormDataEvent) =>
-            handleSubmit(e, activeList, setSelectedItem)}
+            handleSubmit(
+              e,
+              danhSáchĐangActive,
+              setSelectedItem,
+              setKhungNhậpActive,
+            )}
         >
           <CácTrườngNhậpMới
-            tênDanhSách={activeList}
+            tênDanhSách={danhSáchĐangActive}
             corsProxyUrl={corsProxyUrl}
           />
           <button class="btn btn-secondary gap-2" type="submit">
-            Thêm mới (<kbd>Enter</kbd>)
+            Tạo (<kbd>Enter</kbd>)
           </button>
         </form>
       </div>
