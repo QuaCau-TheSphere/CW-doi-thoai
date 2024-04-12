@@ -20,6 +20,8 @@ export default function Main(
     undefined,
   );
   const count = useSignal(0);
+  console.log("🚀 ~ bàiĐăngĐượcChọn:", bàiĐăngĐượcChọn);
+  console.log("🚀 ~ nơiĐăngĐượcChọn:", nơiĐăngĐượcChọn);
 
   return (
     <main class="flex flex-row gap-3 w-full">
@@ -27,8 +29,8 @@ export default function Main(
         <KhungNhậpBênTrái
           danhSáchBàiĐăng={danhSáchBàiĐăng}
           danhSáchNơiĐăng={danhSáchNơiĐăng}
-          chọnBàiĐăng={chọnBàiĐăng}
-          chọnNơiĐăng={chọnNơiĐăng}
+          setBàiĐăng={chọnBàiĐăng}
+          setNơiĐăng={chọnNơiĐăng}
           setBốiCảnh={setBốiCảnh}
           count={count}
         />

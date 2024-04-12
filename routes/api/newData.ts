@@ -46,30 +46,23 @@ function tạoKey(
   }
 }
 
+interface ReqBàiĐăngHoặcNơiĐăngTạoMới {
+  "Tên danh sách": TênDanhSách;
+  "Dữ liệu": BàiĐăng | NơiĐăng;
+}
 export const handler: Handlers = {
   async POST(req, ctx) {
     const kv = await Deno.openKv();
-    const {
-      "Tên danh sách": tênDanhSách,
-      "Dữ liệu": dữLiệu,
-    } = await req.json() as {
-      "Tên danh sách": TênDanhSách;
-      "Dữ liệu": BàiĐăng | NơiĐăng;
-    };
-    const thờiĐiểmTạo = new Date();
+    const bàiĐăngHoặcNơiĐăngTạoMới = await req
+      .json() as ReqBàiĐăngHoặcNơiĐăngTạoMới;
+    const { "Tên danh sách": tênDanhSách, "Dữ liệu": dữLiệu } =
+      bàiĐăngHoặcNơiĐăngTạoMới;
     const key = tạoKey(tênDanhSách, dữLiệu);
     const value = {
       ...dữLiệu,
-      "Thời điểm tạo": thờiĐiểmTạo,
+      "Thời điểm tạo": new Date(),
     };
-    console.log("🚀 ~ POST ~ key:", key);
-    await kv.set(key, value);
-    const kvValue = (await kv.get(key)).value;
-    const isOk = JSON.stringify(value) === JSON.stringify(kvValue);
-    return Response.json({
-      isOk: isOk,
-      postValue: value,
-      kvValue: kvValue,
-    });
+    await kv.set(key, value)
+    return Response.json(await kv.get(key));
   },
 };

@@ -11,11 +11,11 @@ import * as $index from "./routes/index.tsx";
 import * as $lmn from "./routes/lmn.ts";
 import * as $lậptrình from "./routes/lậptrình.ts";
 import * as $ngụngôn from "./routes/ngụngôn.ts";
+import * as $Khung_tìm_bài_đăng_hoặc_nơi_đăng from "./islands/Khung tìm bài đăng hoặc nơi đăng.tsx";
 import * as $KhungKếtQuảBênPhải from "./islands/KhungKếtQuảBênPhải.tsx";
 import * as $KhungNhậpBênTrái from "./islands/KhungNhậpBênTrái.tsx";
 import * as $Main from "./islands/Main.tsx";
 import * as $Nhập_mới from "./islands/Nhập mới.tsx";
-import * as $SearchDiv from "./islands/SearchDiv.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -31,11 +31,12 @@ const manifest = {
     "./routes/ngụngôn.ts": $ngụngôn,
   },
   islands: {
+    "./islands/Khung tìm bài đăng hoặc nơi đăng.tsx":
+      $Khung_tìm_bài_đăng_hoặc_nơi_đăng,
     "./islands/KhungKếtQuảBênPhải.tsx": $KhungKếtQuảBênPhải,
     "./islands/KhungNhậpBênTrái.tsx": $KhungNhậpBênTrái,
     "./islands/Main.tsx": $Main,
     "./islands/Nhập mới.tsx": $Nhập_mới,
-    "./islands/SearchDiv.tsx": $SearchDiv,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

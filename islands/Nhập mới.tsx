@@ -1,7 +1,8 @@
-import { useEffect, useState } from "preact/hooks";
+import { StateUpdater, useEffect, useState } from "preact/hooks";
 import {
   CorsProxyRes,
   DanhSáchĐangActive,
+  MụcĐượcChọn,
 } from "../utils/Ki%E1%BB%83u%20cho%20web.ts";
 import { TÊN_MIỀN_RÚT_GỌN } from "../core/Code hỗ trợ/Hằng.ts";
 import { TênDanhSách } from "../utils/Kiểu cho web.ts";
@@ -214,7 +215,11 @@ function CácTrườngNhậpMới(
     );
   } else return <></>;
 }
-function handleSubmit(event: FormDataEvent, tênDanhSách: TênDanhSách) {
+function handleSubmit(
+  event: FormDataEvent,
+  tênDanhSách: TênDanhSách,
+  setSelectedItem: StateUpdater<MụcĐượcChọn>,
+) {
   event.preventDefault();
   const formData = new FormData(event.currentTarget);
   const dữLiệuMới = {
@@ -230,12 +235,19 @@ function handleSubmit(event: FormDataEvent, tênDanhSách: TênDanhSách) {
     },
     body: JSON.stringify(dữLiệuMới),
   }).then((res) => res.json())
-    .then((data) => console.log(data))
+    .then((data) => {
+      console.log(data);
+      setSelectedItem(data.value);
+    })
     .catch(console.error);
 }
 
 export default function NhậpMới(
-  { activeList, url }: { activeList: DanhSáchĐangActive; url: string },
+  { activeList, url, setSelectedItem }: {
+    activeList: DanhSáchĐangActive;
+    url: string;
+    setSelectedItem: StateUpdater<MụcĐượcChọn>;
+  },
 ) {
   if (activeList === undefined || url === "") return <></>;
   const corsProxyUrl = `${TÊN_MIỀN_RÚT_GỌN}/api/cors-proxy/${url}`;
@@ -243,7 +255,10 @@ export default function NhậpMới(
     <dialog id="model-nhập-mới" className="modal">
       <div className="modal-box">
         <h3 className="font-bold text-lg">Thêm {activeList} mới</h3>
-        <form onSubmit={(e: FormDataEvent) => handleSubmit(e, activeList)}>
+        <form
+          onSubmit={(e: FormDataEvent) =>
+            handleSubmit(e, activeList, setSelectedItem)}
+        >
           <CácTrườngNhậpMới
             tênDanhSách={activeList}
             corsProxyUrl={corsProxyUrl}

@@ -3,7 +3,6 @@ import { StateUpdater, useState } from "preact/hooks";
 import type {
   Cursor,
   DanhSáchKếtQuảTìmKiếm,
-  DanhSáchĐangActive,
   KhungNhậpĐangActive,
   MụcĐượcChọn,
   TênDanhSách,
@@ -13,6 +12,7 @@ import { NơiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u
 import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/plus.tsx";
 import NhậpMới from "./Nh%E1%BA%ADp%20m%E1%BB%9Bi.tsx";
 import { isURL } from "https://deno.land/x/deno_validator@v0.0.5/mod.ts";
+import { kebabCase } from "../utils/Hàm.ts";
 
 function DanhSáchKếtQuảTìmKiếm({
   tênDanhSách,
@@ -105,39 +105,30 @@ function DanhSáchKếtQuảTìmKiếm({
     );
   }
 }
-export default function SearchDiv(
+export default function KhungTìmBàiĐăngHoặcNơiĐăng(
   {
     tênDanhSách,
     fuse,
     khungNhậpĐangActive,
     setKhungNhậpActive,
-    chọnBàiĐăngHoặcNơiĐăng,
+    setBàiĐăngHoặcNơiĐăng,
   }: {
     tênDanhSách: TênDanhSách;
     fuse: Fuse;
     khungNhậpĐangActive: KhungNhậpĐangActive;
     setKhungNhậpActive: StateUpdater<KhungNhậpĐangActive>;
-    chọnBàiĐăngHoặcNơiĐăng: any;
+    setBàiĐăngHoặcNơiĐăng: any;
   },
 ) {
   const [searchList, setSearchList] = useState<DanhSáchKếtQuảTìmKiếm>(
     undefined,
   );
   const [cursor, setCursor] = useState<Cursor>(0);
-  const [selectedItem, setSelectedItem] = useState<MụcĐượcChọn>(undefined);
+  const [mụcĐượcChọn, setMục] = useState<MụcĐượcChọn>(undefined);
   const [query, setQuery] = useState<string>("");
 
   //@ts-ignore:
-  chọnBàiĐăngHoặcNơiĐăng(selectedItem);
-  const searchListNode = (
-    <DanhSáchKếtQuảTìmKiếm
-      tênDanhSách={tênDanhSách}
-      searchList={searchList}
-      cursor={cursor}
-      setCursor={setCursor}
-      setSelectedItem={setSelectedItem}
-    />
-  );
+  setBàiĐăngHoặcNơiĐăng(mụcĐượcChọn);
   return (
     <div
       id={`div-${tênDanhSách.replace(" ", "-")}`}
@@ -156,10 +147,22 @@ export default function SearchDiv(
           onKeyDown={handleKeyDown}
         />
       </label>
-      {tênDanhSách === khungNhậpĐangActive ? searchListNode : undefined}
-      {isURL(query)
-        ? <NhậpMới activeList={khungNhậpĐangActive} url={query} />
+      {tênDanhSách === khungNhậpĐangActive
+        ? (
+          <DanhSáchKếtQuảTìmKiếm
+            tênDanhSách={tênDanhSách}
+            searchList={searchList}
+            cursor={cursor}
+            setCursor={setCursor}
+            setSelectedItem={setMục}
+          />
+        )
         : null}
+      <NhậpMới
+        activeList={tênDanhSách}
+        url={query}
+        setSelectedItem={setMục}
+      />
       <KếtQuảĐượcChọn />
       <br />
     </div>
@@ -199,7 +202,7 @@ export default function SearchDiv(
       setCursor(newCursor);
     }
     if (e.key === "Enter" || e.key === "Tab") {
-      setSelectedItem(searchList[cursor].item);
+      setMục(searchList[cursor].item);
       if (khungNhậpĐangActive === "bài đăng") {
         setKhungNhậpActive("nơi đăng");
         inputNơiĐăng.focus();
@@ -212,20 +215,22 @@ export default function SearchDiv(
     }
   }
   function KếtQuảĐượcChọn() {
-    const lấyGiáTrị = (giáTrị: string | {}) => {
+    function lấyGiáTrị(giáTrị: string | Record<string, string>) {
       if (typeof giáTrị === "object") {
-        return Object.entries(giáTrị).map((j) => <li>{j[0]}: {j[1]}</li>);
+        return Object.entries(giáTrị).map(([key, value]) => (
+          <li>{key}: {value}</li>
+        ));
       } else {
         return giáTrị;
       }
-    };
+    }
     return (
       <div class="prose result">
-        <ul id={`${tênDanhSách.replace(" ", "-")}-được-chọn`}>
-          {selectedItem
-            ? Object.entries(selectedItem).map((i) => (
+        <ul id={`${kebabCase(tênDanhSách)}-được-chọn`}>
+          {mụcĐượcChọn
+            ? Object.entries(mụcĐượcChọn).map(([key, value]) => (
               <li>
-                <span class="font-bold">{i[0]}</span>: {lấyGiáTrị(i[1])}
+                <span class="font-bold">{key}</span>: {lấyGiáTrị(value)}
               </li>
             ))
             : ""}

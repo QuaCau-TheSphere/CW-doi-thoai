@@ -1,7 +1,7 @@
 import Fuse from "https://deno.land/x/fuse/dist/fuse.esm.js";
 import { StateUpdater, useState } from "preact/hooks";
 import { BốiCảnh, DanhSáchĐangActive } from "../utils/Kiểu cho web.ts";
-import SearchDiv from "./SearchDiv.tsx";
+import KhungTìmBàiĐăngHoặcNơiĐăng from "./Khung tìm bài đăng hoặc nơi đăng.tsx";
 import { BàiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
 import { NơiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
 import { Signal } from "@preact/signals";
@@ -10,15 +10,15 @@ export default function KhungNhậpBênTrái(
   {
     danhSáchNơiĐăng,
     danhSáchBàiĐăng,
-    chọnBàiĐăng,
-    chọnNơiĐăng,
+    setBàiĐăng,
+    setNơiĐăng,
     setBốiCảnh,
     count,
   }: {
     danhSáchBàiĐăng: BàiĐăng[];
     danhSáchNơiĐăng: NơiĐăng[];
-    chọnNơiĐăng: StateUpdater<NơiĐăng | undefined>;
-    chọnBàiĐăng: StateUpdater<BàiĐăng | undefined>;
+    setNơiĐăng: StateUpdater<NơiĐăng | undefined>;
+    setBàiĐăng: StateUpdater<BàiĐăng | undefined>;
     setBốiCảnh: StateUpdater<BốiCảnh>;
     count: Signal<number>;
   },
@@ -47,19 +47,19 @@ export default function KhungNhậpBênTrái(
   });
   return (
     <section id="khung-nhập-bên-phải">
-      <SearchDiv
+      <KhungTìmBàiĐăngHoặcNơiĐăng
         tênDanhSách="bài đăng"
         fuse={fuseBàiĐăng}
         khungNhậpĐangActive={activeList}
         setKhungNhậpActive={setActiveList}
-        chọnBàiĐăngHoặcNơiĐăng={chọnBàiĐăng}
+        setBàiĐăngHoặcNơiĐăng={setBàiĐăng}
       />
-      <SearchDiv
+      <KhungTìmBàiĐăngHoặcNơiĐăng
         tênDanhSách="nơi đăng"
         fuse={fuseNơiĐăng}
         khungNhậpĐangActive={activeList}
         setKhungNhậpActive={setActiveList}
-        chọnBàiĐăngHoặcNơiĐăng={chọnNơiĐăng}
+        setBàiĐăngHoặcNơiĐăng={setNơiĐăng}
       />
       <label class="input input-bordered flex items-center gap-2">
         Bối cảnh

@@ -112,8 +112,17 @@ function tạoMedium(loạiNơiĐăng: LoạiNơiĐăng, loạiNềnTảng: Lo�
 /**
  * Tên dự án chính là tên chiến dịch
  */
-function tạoCampaign(dựÁn: DựÁn): Campaign {
-  return `${dựÁn["Mã dự án"]} ${dựÁn["Tên dự án"]}`;
+function tạoCampaign(dựÁn: DựÁn | undefined = undefined): Campaign {
+  if (dựÁn) {
+    const { "Tên dự án": tênDựÁn, "Mã dự án": mãDựÁn } = dựÁn;
+    if (mãDựÁn && tênDựÁn) {
+      return `${mãDựÁn} ${tênDựÁn}`;
+    } else if (!mãDựÁn && tênDựÁn) {
+      return `${tênDựÁn}`;
+    } else if (mãDựÁn && !tênDựÁn) {
+      return `${mãDựÁn}`;
+    }
+  }
 }
 
 function tạoContent(bốiCảnh: BốiCảnh): Content {
@@ -145,7 +154,7 @@ function tạoĐuôiRútGọn(
       );
     }
   }
-  return `${mãDựÁn}${tênNơiĐăngRútGọn}${lầnĐăng}`;
+  return `${mãDựÁn || ""}.${tênNơiĐăngRútGọn}.${lầnĐăng}`;
 }
 
 export default function tạoThamSốUTMVàLiênKếtRútGọn(
@@ -162,7 +171,7 @@ export default function tạoThamSốUTMVàLiênKếtRútGọn(
   const tênNơiĐăng = nơiĐăng["Tên nơi đăng"];
   const loạiNềnTảng = nơiĐăng["Loại nền tảng"];
 
-  const url = bàiĐăng.url;
+  const url = bàiĐăng.URL;
   const dựÁn = bàiĐăng["Dự án"];
   const mãDựÁn = bàiĐăng["Dự án"]["Mã dự án"];
   const thamSốUTM: ThamSốUTM = {
@@ -178,6 +187,7 @@ export default function tạoThamSốUTMVàLiênKếtRútGọn(
     content: tạoContent(bốiCảnh),
     term: tạoTerm(nơiĐăng, bàiĐăng),
   };
+  console.log("🚀 ~ thamSốUTM:", thamSốUTM);
   return {
     "Tham số UTM": thamSốUTM,
     "Liên kết UTM": tạoLiênKếtUTM(url, thamSốUTM),

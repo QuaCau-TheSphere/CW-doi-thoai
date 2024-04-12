@@ -5,6 +5,7 @@ import {
   ThamSốUTM,
 } from "./Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91%20UTM.ts";
 
+/** Tìm trong cấu hình nơi đăng xem từ được kiểm tra có ký hiệu viết tắt không. Nếu không thì trả lại từ được kiểm tra */
 export function lấyKýHiệuViếtTắt(
   từĐượcKiểmTra: string,
   cấuHìnhNơiĐăng: CấuHìnhNơiĐăng,
