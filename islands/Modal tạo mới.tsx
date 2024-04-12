@@ -1,13 +1,13 @@
 import { StateUpdater, useEffect, useState } from "preact/hooks";
 import {
   CorsProxyRes,
-  DanhSáchĐangActive,
-  KhungNhậpĐangActive,
+  ElementDùngTab,
   MụcĐượcChọn,
+  TênDanhSách,
 } from "../utils/Ki%E1%BB%83u%20cho%20web.ts";
 import { TÊN_MIỀN_RÚT_GỌN } from "../core/Code hỗ trợ/Hằng.ts";
 import { TênDanhSách } from "../utils/Kiểu cho web.ts";
-import { đổiKhungNhậpXuôi } from "../utils/Hàm.ts";
+import { đổiKhungNhập } from "../utils/Hàm.ts";
 
 function CácTrườngNhậpMới(
   { tênDanhSách, corsProxyUrl }: {
@@ -221,7 +221,7 @@ function handleSubmit(
   event: FormDataEvent,
   tênDanhSách: TênDanhSách,
   setSelectedItem: StateUpdater<MụcĐượcChọn>,
-  setKhungNhậpActive: StateUpdater<KhungNhậpĐangActive>,
+  setElement: StateUpdater<ElementDùngTab>,
 ) {
   event.preventDefault();
   const formData = new FormData(event.currentTarget);
@@ -244,15 +244,15 @@ function handleSubmit(
     })
     .catch(console.error);
   (document.getElementById("model-tạo-mới") as HTMLDialogElement).close();
-  đổiKhungNhậpXuôi(tênDanhSách, setKhungNhậpActive);
+  đổiKhungNhập("xuôi", tênDanhSách, setElement);
 }
 
 export default function ModalTạoMới(
-  { danhSáchĐangActive, url, setSelectedItem, setKhungNhậpActive }: {
-    danhSáchĐangActive: DanhSáchĐangActive;
+  { danhSáchĐangActive, url, setSelectedItem, setElement }: {
+    danhSáchĐangActive: TênDanhSách;
     url: string;
     setSelectedItem: StateUpdater<MụcĐượcChọn>;
-    setKhungNhậpActive: StateUpdater<KhungNhậpĐangActive>;
+    setElement: StateUpdater<ElementDùngTab>;
   },
 ) {
   if (danhSáchĐangActive === undefined || url === "") return <></>;
@@ -267,7 +267,7 @@ export default function ModalTạoMới(
               e,
               danhSáchĐangActive,
               setSelectedItem,
-              setKhungNhậpActive,
+              setElement,
             )}
         >
           <CácTrườngNhậpMới

@@ -27,10 +27,7 @@ export type MụcĐượcChọn = BàiĐăng | NơiĐăng | undefined;
 export type Cursor = number;
 
 export type TênDanhSách = "nơi đăng" | "bài đăng";
-export type TênKhungNhập = TênDanhSách | "bối cảnh";
-/** Active list is used to determine whether the search list should be popup or not */
-export type DanhSáchĐangActive = TênDanhSách | undefined;
-export type KhungNhậpĐangActive = TênKhungNhập | undefined;
+export type ElementDùngTab = TênDanhSách | "bối cảnh" | "nút tạo liên kết";
 
 export interface VậtThểTiếpThị extends ThamSốUTMVàLiênKếtRútGọn {
   "Bài đăng": BàiĐăng;

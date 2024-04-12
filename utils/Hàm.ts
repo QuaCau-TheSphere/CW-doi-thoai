@@ -1,6 +1,5 @@
-// deno-fmt-ignore-file 
 import { StateUpdater } from "https://esm.sh/v128/preact@10.19.6/hooks/src/index.js";
-import { KhungNhậpĐangActive, TênDanhSách } from "./Kiểu cho web.ts";
+import { ElementDùngTab, TênDanhSách } from "./Ki%E1%BB%83u%20cho%20web.ts";
 
 export function viếtHoa(tênDanhSách: TênDanhSách) {
   return tênDanhSách.replace(/^(.)/g, (x) => x.toUpperCase());
@@ -10,42 +9,55 @@ export function kebabCase(tênDanhSách: TênDanhSách) {
   return tênDanhSách.replace(" ", "-");
 }
 
-
-export function đổiKhungNhậpXuôi(
-  khungNhậpĐangActive: KhungNhậpĐangActive,
-  setKhungNhậpActive: StateUpdater<KhungNhậpĐangActive>,
-  ) {
+export function đổiKhungNhập(
+  xuôiHayNgược: "xuôi" | "ngược",
+  focusedElement: ElementDùngTab,
+  setElement: StateUpdater<ElementDùngTab>,
+) {
   const khungNhậpBàiĐăng = document.getElementById("khung-nhập-bài-đăng")!;
   const khungNhậpNơiĐăng = document.getElementById("khung-nhập-nơi-đăng")!;
   const khungNhậpBốiCảnh = document.getElementById("khung-nhập-bối-cảnh")!;
-  if (khungNhậpĐangActive === "bài đăng") {
-    setKhungNhậpActive("nơi đăng");
-    khungNhậpNơiĐăng.focus();
-  } else if (khungNhậpĐangActive === "nơi đăng") {
-    setKhungNhậpActive("bối cảnh");
-    console.log(true)
-    khungNhậpBốiCảnh.focus();
-  } else if (khungNhậpĐangActive === "bối cảnh") {
-    setKhungNhậpActive("bài đăng");
-    khungNhậpBàiĐăng.focus();
-  }
-}
-
-export function đổiKhungNhậpNgược(
-  khungNhậpĐangActive: KhungNhậpĐangActive,
-  setKhungNhậpActive: StateUpdater<KhungNhậpĐangActive>,
-  ) {
-  const khungNhậpBàiĐăng = document.getElementById("khung-nhập-bài-đăng")!;
-  const khungNhậpNơiĐăng = document.getElementById("khung-nhập-nơi-đăng")!;
-  const khungNhậpBốiCảnh = document.getElementById("khung-nhập-bối-cảnh")!;
-  if (khungNhậpĐangActive === "bối cảnh") {
-    setKhungNhậpActive("nơi đăng");
-    khungNhậpNơiĐăng.focus();
-  } else if (khungNhậpĐangActive === "nơi đăng") {
-    setKhungNhậpActive("bài đăng");
-    khungNhậpBàiĐăng.focus();
-  } else if (khungNhậpĐangActive === "bài đăng") {
-    setKhungNhậpActive("bối cảnh");
-    khungNhậpBốiCảnh.focus();
+  const nútTạoLiênKết = document.getElementById("nút-tạo-liên-kết")!;
+  switch (xuôiHayNgược) {
+    case "xuôi":
+      switch (focusedElement) {
+        case "bài đăng":
+          setElement("nơi đăng");
+          khungNhậpNơiĐăng.focus();
+          break;
+        case "nơi đăng":
+          setElement("bối cảnh");
+          khungNhậpBốiCảnh.focus();
+          break;
+        case "bối cảnh":
+          setElement("nút tạo liên kết");
+          nútTạoLiênKết.focus();
+          break;
+        case "nút tạo liên kết":
+          setElement("bài đăng");
+          khungNhậpBàiĐăng.focus();
+          break;
+      }
+      break;
+    case "ngược":
+      switch (focusedElement) {
+        case "nút tạo liên kết":
+          setElement("bối cảnh");
+          khungNhậpBốiCảnh.focus();
+          break;
+        case "bối cảnh":
+          setElement("nơi đăng");
+          khungNhậpNơiĐăng.focus();
+          break;
+        case "nơi đăng":
+          setElement("bài đăng");
+          khungNhậpBàiĐăng.focus();
+          break;
+        case "bài đăng":
+          setElement("nút tạo liên kết");
+          nútTạoLiênKết.focus();
+          break;
+      }
+      break;
   }
 }
