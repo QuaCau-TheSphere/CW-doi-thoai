@@ -10,13 +10,37 @@ import CấuHìnhNơiĐăng, {
 import Main from "../islands/Main.tsx";
 
 export default async function App(prop: PageProps) {
-  const danhSáchBàiĐăng = JSON.parse(
+  const kv = await Deno.openKv();
+
+  const iterBàiĐăng = kv.list({ prefix: ["Bài đăng"] });
+  const danhSáchBàiĐăngNgườiDùngTạoThêm: BàiĐăng[] = [];
+  for await (const res of iterBàiĐăng) {
+    danhSáchBàiĐăngNgườiDùngTạoThêm.push(res.value as BàiĐăng);
+  }
+  const danhSáchBàiĐăngLấyTừVault = JSON.parse(
     await Deno.readTextFile("core/A. Cấu hình/Danh sách tất cả bài đăng.json"),
   ) as BàiĐăng[];
+  const danhSáchBàiĐăng = [
+    ...danhSáchBàiĐăngLấyTừVault,
+    ...danhSáchBàiĐăngNgườiDùngTạoThêm,
+  ];
+
+  const iterNơiĐăng = kv.list({ prefix: ["Nơi đăng"] });
+  const danhSáchNơiĐăngNgườiDùngTạoThêm: NơiĐăng[] = [];
+  for await (const res of iterNơiĐăng) {
+    danhSáchNơiĐăngNgườiDùngTạoThêm.push(res.value as NơiĐăng);
+  }
   const cấuHìnhNơiĐăng = parse(
     await Deno.readTextFile("core/A. Cấu hình/Nơi đăng.yaml"),
   ) as CấuHìnhNơiĐăng;
-  const danhSáchNơiĐăng = tạoDanhSáchNơiĐăng(cấuHìnhNơiĐăng) as NơiĐăng[];
+  const danhSáchNơiĐăngLấyTừCấuHình = tạoDanhSáchNơiĐăng(
+    cấuHìnhNơiĐăng,
+  ) as NơiĐăng[];
+  const danhSáchNơiĐăng = [
+    ...danhSáchNơiĐăngLấyTừCấuHình,
+    ...danhSáchNơiĐăngNgườiDùngTạoThêm,
+  ];
+
   return (
     <body class="bg-base-100">
       <Meta
@@ -24,7 +48,6 @@ export default async function App(prop: PageProps) {
         href={TÊN_MIỀN_RÚT_GỌN}
       />
       <Main
-        class="mb-auto"
         danhSáchBàiĐăng={danhSáchBàiĐăng}
         danhSáchNơiĐăng={danhSáchNơiĐăng}
         cấuHìnhNơiĐăng={cấuHìnhNơiĐăng}

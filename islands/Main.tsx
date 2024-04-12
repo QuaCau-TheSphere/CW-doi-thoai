@@ -22,7 +22,7 @@ export default function Main(
   const count = useSignal(0);
 
   return (
-    <main class="flex flex-row gap-3 w-full">
+    <main class="flex flex-row gap-3 w-full mb-auto">
       <div class="basis-1/2 p-10">
         <KhungNhậpBênTrái
           danhSáchBàiĐăng={danhSáchBàiĐăng}
