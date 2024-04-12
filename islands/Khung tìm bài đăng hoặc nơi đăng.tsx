@@ -149,20 +149,22 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
       </label>
       {tênDanhSách === khungNhậpĐangActive
         ? (
-          <DanhSáchKếtQuảTìmKiếm
-            tênDanhSách={tênDanhSách}
-            searchList={searchList}
-            cursor={cursor}
-            setCursor={setCursor}
-            setSelectedItem={setMục}
-          />
+          <>
+            <DanhSáchKếtQuảTìmKiếm
+              tênDanhSách={tênDanhSách}
+              searchList={searchList}
+              cursor={cursor}
+              setCursor={setCursor}
+              setSelectedItem={setMục}
+            />
+            <NhậpMới
+              activeList={tênDanhSách}
+              url={query}
+              setSelectedItem={setMục}
+            />
+          </>
         )
         : null}
-      <NhậpMới
-        activeList={tênDanhSách}
-        url={query}
-        setSelectedItem={setMục}
-      />
       <KếtQuảĐượcChọn />
       <br />
     </div>

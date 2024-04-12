@@ -25,7 +25,7 @@ export default async function tạoDanhSáchBàiĐăngTrênWordPress(
 
     danhSáchBàiĐăng.push({
       "Tiêu đề": tiêuĐề,
-      url: url,
+      URL: url,
       "Dự án": {
         "Tên dự án": tênDựÁn,
         "Mã dự án": "", //todo

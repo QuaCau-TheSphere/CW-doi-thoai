@@ -8,56 +8,59 @@ import {
   TênNềnTảng,
 } from "../../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 
-async function lấyMetaTag(url: URL): Promise<{ bàiĐăng: BàiĐăng; nơiĐăng: NơiĐăng; }> {
-  const { title, description, site_name } = (await getMetaTags(url.href)).og as {
-    title: string;
-    description: string;
-    site_name: string;
-  };
+async function lấyMetaTag(
+  url: URL,
+): Promise<{ bàiĐăng: BàiĐăng; nơiĐăng: NơiĐăng }> {
+  const { title, description, site_name } = (await getMetaTags(url.href))
+    .og as {
+      title: string;
+      description: string;
+      site_name: string;
+    };
   const { hostname, pathname } = new URL(url);
 
   const bàiĐăng = {
     "Tiêu đề": title,
-    url: url,
+    URL: url,
     "Mô tả bài đăng": description,
     Vault: site_name || hostname,
   };
-  
-  function tạoNơiĐăng(): NơiĐăng {
-		let tênNềnTảng: TênNềnTảng;
-		let loạiNềnTảng: LoạiNềnTảng;
-		let loạiNơiĐăng: LoạiNơiĐăng;
-		let tênCộngĐồng: string = site_name;
 
-		if (hostname.includes("facebook")) {
-			loạiNềnTảng = "Diễn đàn";
-			tênNềnTảng = "Facebook";
-			if (pathname.includes("group")) {
-				loạiNơiĐăng = "Nhóm";
-				tênCộngĐồng = ""; //todo
-			} else {
-				loạiNơiĐăng = "Trang";
-			}
-		} else if (hostname.includes("discord")) {
-			loạiNềnTảng = "Chat";
-			tênNềnTảng = "Discord";
-			loạiNơiĐăng = "Máy chủ";
-		} else {
-			loạiNềnTảng = "Khác";
-			tênNềnTảng = "Website";
-			loạiNơiĐăng = "Website";
-		}
-		return {
-			"Tên nơi đăng": title,
-			URL: url,
-			"Mô tả nơi đăng": description,
-			"Loại nơi đăng": loạiNơiĐăng,
-			"Loại nền tảng": loạiNềnTảng,
-			"Tên nền tảng": tênNềnTảng,
-			"Tên cộng đồng": tênCộngĐồng,
-		};
-	} 
-  return {bàiĐăng: bàiĐăng, nơiĐăng: tạoNơiĐăng() } 
+  function tạoNơiĐăng(): NơiĐăng {
+    let tênNềnTảng: TênNềnTảng;
+    let loạiNềnTảng: LoạiNềnTảng;
+    let loạiNơiĐăng: LoạiNơiĐăng;
+    let tênCộngĐồng: string = site_name;
+
+    if (hostname.includes("facebook")) {
+      loạiNềnTảng = "Diễn đàn";
+      tênNềnTảng = "Facebook";
+      if (pathname.includes("group")) {
+        loạiNơiĐăng = "Nhóm";
+        tênCộngĐồng = ""; //todo
+      } else {
+        loạiNơiĐăng = "Trang";
+      }
+    } else if (hostname.includes("discord")) {
+      loạiNềnTảng = "Chat";
+      tênNềnTảng = "Discord";
+      loạiNơiĐăng = "Máy chủ";
+    } else {
+      loạiNềnTảng = "Khác";
+      tênNềnTảng = "Website";
+      loạiNơiĐăng = "Website";
+    }
+    return {
+      "Tên nơi đăng": title,
+      URL: url,
+      "Mô tả nơi đăng": description,
+      "Loại nơi đăng": loạiNơiĐăng,
+      "Loại nền tảng": loạiNềnTảng,
+      "Tên nền tảng": tênNềnTảng,
+      "Tên cộng đồng": tênCộngĐồng,
+    };
+  }
+  return { bàiĐăng: bàiĐăng, nơiĐăng: tạoNơiĐăng() };
 }
 
 export const handler: Handlers = {
@@ -66,7 +69,7 @@ export const handler: Handlers = {
       const url = new URL(ctx.params.url);
       const html = await (await fetch(url)).text();
       try {
-        const {bàiĐăng, nơiĐăng} = await lấyMetaTag(url) 
+        const { bàiĐăng, nơiĐăng } = await lấyMetaTag(url);
 
         return Response.json({
           "Nếu là bài đăng": bàiĐăng,
@@ -75,7 +78,8 @@ export const handler: Handlers = {
         });
       } catch {
         return Response.json({
-          lỗi: "Không lấy được dữ liệu thẻ og:title, og:description hoặc og:site_name Open Graph",
+          lỗi:
+            "Không lấy được dữ liệu thẻ og:title, og:description hoặc og:site_name Open Graph",
           html: html,
         });
       }

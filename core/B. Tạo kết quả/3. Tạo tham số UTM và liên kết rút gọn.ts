@@ -172,6 +172,7 @@ export default function tạoThamSốUTMVàLiênKếtRútGọn(
   const loạiNềnTảng = nơiĐăng["Loại nền tảng"];
 
   const url = bàiĐăng.URL;
+  console.log("🚀 ~ url:", url);
   const dựÁn = bàiĐăng["Dự án"];
   const mãDựÁn = bàiĐăng["Dự án"]["Mã dự án"];
   const thamSốUTM: ThamSốUTM = {

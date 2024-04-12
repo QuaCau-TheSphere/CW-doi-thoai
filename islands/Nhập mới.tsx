@@ -17,12 +17,12 @@ function CácTrườngNhậpMới(
     undefined,
   );
   useEffect(() => {
-    async function a() {
+    async function lấyMetaTag() {
       const corsProxyRes =
         (await (await fetch(corsProxyUrl)).json()) as CorsProxyRes;
       setCorsProxyRes(corsProxyRes);
     }
-    a();
+    lấyMetaTag();
     //todo
   }, []);
   if (corsProxyRes === undefined || corsProxyRes.lỗi) return <></>;
@@ -33,7 +33,7 @@ function CácTrườngNhậpMới(
       "Mô tả bài đăng": môTảBàiĐăng,
       "Dự án": dựÁn,
       Vault: vault,
-      url,
+      URL,
     } = corsProxyRes["Nếu là bài đăng"];
     return (
       <>
@@ -46,7 +46,7 @@ function CácTrườngNhậpMới(
             id="URL"
             type="text"
             name="URL"
-            value={url as string}
+            value={URL as string}
           />
         </label>
 

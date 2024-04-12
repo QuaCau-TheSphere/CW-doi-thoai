@@ -49,7 +49,7 @@ export interface YAMLCủaGhiChú {
 }
 export class BàiĐăng {
   "Tiêu đề": string;
-  url: URLString;
+  URL: URLString;
   "Mô tả bài đăng"?: string;
   "Dự án"?: DựÁn;
   Vault?: string;
@@ -67,7 +67,7 @@ export class BàiĐăng {
     mãBàiĐăng: string = "",
   ) {
     this["Tiêu đề"] = tiêuĐề;
-    this.url = url;
+    this.URL = url;
     this["Mô tả bài đăng"] = môTảBàiĐăng;
     this["Dự án"] = dựÁn;
     this.Vault = vault;

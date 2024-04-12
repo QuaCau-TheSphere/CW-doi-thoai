@@ -43,7 +43,7 @@ const liênKếtRútGọn = `${TÊN_MIỀN_RÚT_GỌN}/${đuôiRútGọn}`;
 // await kv.set(['Đuôi rút gọn', đuôiRútGọn], thamSốUTMVàLiênKếtRútGọn);
 
 console.log(`Bài viết: %c${bàiĐăng!["Tiêu đề"]}`, "color: green");
-console.log(`URL: %c${bàiĐăng!.url}`, "color: green");
+console.log(`URL: %c${bàiĐăng!.URL}`, "color: green");
 console.table(thamSốUTMVàLiênKếtRútGọn["Tham số UTM"]);
 console.log("Liên kết UTM:", liênKếtUTM);
 await writeText(liênKếtRútGọn);

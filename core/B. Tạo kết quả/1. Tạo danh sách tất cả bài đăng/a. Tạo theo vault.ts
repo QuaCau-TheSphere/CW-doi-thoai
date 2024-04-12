@@ -207,7 +207,7 @@ export default async function tạoDanhSáchBàiĐăngTrênVault(
 
       danhSáchBàiĐăng.push({
         "Tiêu đề": tiêuĐề,
-        url: url,
+        URL: url,
         Vault: vault["Tên vault"],
         "Dự án": {
           "Tên dự án": tênDựÁn,
