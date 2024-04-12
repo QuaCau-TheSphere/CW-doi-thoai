@@ -18,12 +18,12 @@ export function đổiKhungNhậpXuôi(
   const khungNhậpBàiĐăng = document.getElementById("khung-nhập-bài-đăng")!;
   const khungNhậpNơiĐăng = document.getElementById("khung-nhập-nơi-đăng")!;
   const khungNhậpBốiCảnh = document.getElementById("khung-nhập-bối-cảnh")!;
-  
   if (khungNhậpĐangActive === "bài đăng") {
     setKhungNhậpActive("nơi đăng");
     khungNhậpNơiĐăng.focus();
   } else if (khungNhậpĐangActive === "nơi đăng") {
     setKhungNhậpActive("bối cảnh");
+    console.log(true)
     khungNhậpBốiCảnh.focus();
   } else if (khungNhậpĐangActive === "bối cảnh") {
     setKhungNhậpActive("bài đăng");
@@ -38,7 +38,6 @@ export function đổiKhungNhậpNgược(
   const khungNhậpBàiĐăng = document.getElementById("khung-nhập-bài-đăng")!;
   const khungNhậpNơiĐăng = document.getElementById("khung-nhập-nơi-đăng")!;
   const khungNhậpBốiCảnh = document.getElementById("khung-nhập-bối-cảnh")!;
-  
   if (khungNhậpĐangActive === "bối cảnh") {
     setKhungNhậpActive("nơi đăng");
     khungNhậpNơiĐăng.focus();

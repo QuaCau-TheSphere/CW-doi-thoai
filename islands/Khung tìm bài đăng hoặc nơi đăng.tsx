@@ -1,5 +1,5 @@
 import Fuse from "https://deno.land/x/fuse@v6.4.1/dist/fuse.esm.js";
-import { StateUpdater, useState } from "preact/hooks";
+import { StateUpdater, useEffect, useState } from "preact/hooks";
 import type {
   Cursor,
   DanhSáchKếtQuảTìmKiếm,
@@ -130,12 +130,30 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
   const [cursor, setCursor] = useState<Cursor>(0);
   const [mụcĐượcChọn, setMục] = useState<MụcĐượcChọn>(undefined);
   const [query, setQuery] = useState<string>("");
+  useEffect(() => {
+    function handleTab(e: KeyboardEvent) {
+      if (e.key === "Tab") {
+        console.log(e);
+        e.preventDefault();
+        if (e.key === "Tab" && e.shiftKey) {
+          đổiKhungNhậpNgược(khungNhậpĐangActive, setKhungNhậpActive);
+        } else {
+          đổiKhungNhậpXuôi(khungNhậpĐangActive, setKhungNhậpActive);
+        }
+      }
+    }
+    document.addEventListener("keydown", handleTab);
+    return function(){
+      document.removeEventListener("keydown", handleTab);
+
+    } 
+  }, [khungNhậpĐangActive]);
 
   //@ts-ignore:
   setBàiĐăngHoặcNơiĐăng(mụcĐượcChọn);
   return (
     <div
-      id={`div-${tênDanhSách.replace(" ", "-")}`}
+      id={`div-${kebabCase(tênDanhSách)}`}
     >
       <label class="input input-bordered flex items-center gap-2">
         {tênDanhSách.replace(/^(.)/g, (x) => x.toUpperCase())}
@@ -203,15 +221,6 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
         setMục(searchList[cursor].item);
         đổiKhungNhậpXuôi(khungNhậpĐangActive, setKhungNhậpActive);
       }
-    }
-    if (e.key === "Tab") {
-      e.preventDefault();
-      đổiKhungNhậpXuôi(khungNhậpĐangActive, setKhungNhậpActive);
-    }
-
-    if (e.key === "Tab" && e.shiftKey) {
-      e.preventDefault();
-      đổiKhungNhậpNgược(khungNhậpĐangActive, setKhungNhậpActive);
     }
   }
   function KếtQuảĐượcChọn() {
