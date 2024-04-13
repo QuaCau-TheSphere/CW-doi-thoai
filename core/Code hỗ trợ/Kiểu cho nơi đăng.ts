@@ -38,7 +38,7 @@ export class NơiĐăng {
     tênNềnTảng: TênNềnTảng = "Facebook",
     loạiNềnTảng: LoạiNềnTảng = "Diễn đàn",
     url: URLString = "",
-    môTảNơiĐăng: string,
+    môTảNơiĐăng: string = "",
   ) {
     this["Tên nơi đăng"] = tênNơiĐăng;
     this["Tên cộng đồng"] = tênCộngĐồng;

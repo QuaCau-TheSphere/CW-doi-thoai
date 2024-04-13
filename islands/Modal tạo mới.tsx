@@ -4,41 +4,55 @@ import {
   ElementDùngTab,
   MụcĐượcChọn,
   TênDanhSách,
-} from "../utils/Ki%E1%BB%83u%20cho%20web.ts";
+} from "../utils/Kiểu cho web.ts";
 import { TÊN_MIỀN_RÚT_GỌN } from "../core/Code hỗ trợ/Hằng.ts";
-import { TênDanhSách } from "../utils/Kiểu cho web.ts";
 import { đổiKhungNhập } from "../utils/Hàm.ts";
+import { BàiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
+import { NơiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
+import { useSignal } from "@preact/signals";
 
 function CácTrườngNhậpMới(
-  { tênDanhSách, corsProxyUrl }: {
+  { tênDanhSách, urlNhậpỞKhungNhậpNgoài }: {
     tênDanhSách: TênDanhSách;
-    corsProxyUrl: string;
+    urlNhậpỞKhungNhậpNgoài: string;
   },
 ) {
+  console.log("🚀 ~ urlNhậpỞKhungNhậpNgoài:", urlNhậpỞKhungNhậpNgoài);
+  const [urlNhậpTrongModal, setUrl] = useState(urlNhậpỞKhungNhậpNgoài);
+  console.log("🚀 ~ urlNhậpTrongModal1:", urlNhậpTrongModal);
+
   const [corsProxyRes, setCorsProxyRes] = useState<CorsProxyRes | undefined>(
     undefined,
   );
   useEffect(() => {
     async function lấyMetaTag() {
+      console.log("🚀 ~ lấyMetaTag ~ url:", urlNhậpTrongModal);
+      const corsProxyUrl =
+        `${TÊN_MIỀN_RÚT_GỌN}/api/cors-proxy/${urlNhậpTrongModal}`;
       const corsProxyRes =
         (await (await fetch(corsProxyUrl)).json()) as CorsProxyRes;
       setCorsProxyRes(corsProxyRes);
     }
     lấyMetaTag();
     //todo
-  }, []);
-  if (corsProxyRes === undefined || corsProxyRes.lỗi) return <></>;
+  }, [urlNhậpTrongModal]);
 
   if (tênDanhSách === "bài đăng") {
+    let bàiĐăng;
+    if (corsProxyRes === undefined || corsProxyRes.lỗi) {
+      bàiĐăng = new BàiĐăng();
+    } else {
+      bàiĐăng = corsProxyRes["Nếu là bài đăng"];
+    }
     const {
       "Tiêu đề": tiêuĐề,
       "Mô tả bài đăng": môTảBàiĐăng,
       "Dự án": dựÁn,
       Vault: vault,
-      URL,
-    } = corsProxyRes["Nếu là bài đăng"];
+    } = bàiĐăng;
     return (
       <>
+        {urlNhậpTrongModal}
         <label className="form-control w-full max-w-xs">
           <div className="label">
             <span className="label-text font-bold">URL</span>
@@ -48,7 +62,11 @@ function CácTrườngNhậpMới(
             id="URL"
             type="text"
             name="URL"
-            value={URL as string}
+            value={urlNhậpTrongModal || urlNhậpỞKhungNhậpNgoài}
+            onInput={(e: InputEvent) => {
+              const urlNhậpTrongModal = (e.target as HTMLTextAreaElement).value;
+              setUrl(urlNhậpTrongModal);
+            }}
           />
         </label>
 
@@ -106,6 +124,12 @@ function CácTrườngNhậpMới(
       </>
     );
   } else if (tênDanhSách === "nơi đăng") {
+    let nơiĐăng;
+    if (corsProxyRes === undefined || corsProxyRes.lỗi) {
+      nơiĐăng = new NơiĐăng();
+    } else {
+      nơiĐăng = corsProxyRes["Nếu là nơi đăng"];
+    }
     const {
       "Tên nơi đăng": tênNơiĐăng,
       "Mô tả nơi đăng": môTảNơiĐăng,
@@ -114,7 +138,7 @@ function CácTrườngNhậpMới(
       "Tên cộng đồng": tênCộngĐồng,
       "Tên nền tảng": tênNềnTảng,
       URL,
-    } = corsProxyRes["Nếu là nơi đăng"];
+    } = nơiĐăng;
     return (
       <>
         <label className="form-control w-full max-w-xs">
@@ -248,31 +272,29 @@ function handleSubmit(
 }
 
 export default function ModalTạoMới(
-  { danhSáchĐangActive, url, setSelectedItem, setElement }: {
-    danhSáchĐangActive: TênDanhSách;
-    url: string;
+  { tênDanhSách, URL, setSelectedItem, setElement }: {
+    tênDanhSách: TênDanhSách;
+    URL: string;
     setSelectedItem: StateUpdater<MụcĐượcChọn>;
     setElement: StateUpdater<ElementDùngTab>;
   },
 ) {
-  if (danhSáchĐangActive === undefined || url === "") return <></>;
-  const corsProxyUrl = `${TÊN_MIỀN_RÚT_GỌN}/api/cors-proxy/${url}`;
   return (
     <dialog id="model-tạo-mới" className="modal">
       <div className="modal-box">
-        <h3 className="font-bold text-lg">Tạo {danhSáchĐangActive} mới</h3>
+        <h3 className="font-bold text-lg">Tạo {tênDanhSách} mới</h3>
         <form
           onSubmit={(e: FormDataEvent) =>
             handleSubmit(
               e,
-              danhSáchĐangActive,
+              tênDanhSách,
               setSelectedItem,
               setElement,
             )}
         >
           <CácTrườngNhậpMới
-            tênDanhSách={danhSáchĐangActive}
-            corsProxyUrl={corsProxyUrl}
+            tênDanhSách={tênDanhSách}
+            urlNhậpỞKhungNhậpNgoài={URL}
           />
           <button class="btn btn-secondary gap-2" type="submit">
             Tạo (<kbd>Enter</kbd>)

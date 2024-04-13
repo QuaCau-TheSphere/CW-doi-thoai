@@ -15,19 +15,19 @@ import { kebabCase, đổiKhungNhập } from "../utils/Hàm.ts";
 
 function DanhSáchKếtQuảTìmKiếm({
   tênDanhSách,
-  searchList,
+  danhSáchKếtQuảTìmKiếm,
   cursor,
   setCursor,
   setSelectedItem,
 }: {
   tênDanhSách: TênDanhSách;
-  searchList: DanhSáchKếtQuảTìmKiếm;
+  danhSáchKếtQuảTìmKiếm: DanhSáchKếtQuảTìmKiếm;
   cursor: Cursor;
   setCursor: StateUpdater<Cursor>;
   setSelectedItem: StateUpdater<MụcĐượcChọn>;
 }) {
-  if (!searchList) return <></>;
-  if (searchList.length === 0) {
+  if (!danhSáchKếtQuảTìmKiếm) return <></>;
+  if (danhSáchKếtQuảTìmKiếm.length === 0) {
     return (
       <h4 class="h4 tiêu-đề cursor bg-secondary">
         <IconPlus class="w-5 h-5" /> Tạo mới
@@ -36,7 +36,7 @@ function DanhSáchKếtQuảTìmKiếm({
   }
   return (
     <ul id={`danh-sách-${kebabCase(tênDanhSách)}-tìm-được`} class="active">
-      {searchList.map((item, index) => (
+      {danhSáchKếtQuảTìmKiếm.map((item, index) => (
         <li
           key={index}
           class={cursor === index ? "cursor bg-secondary" : ""}
@@ -126,24 +126,6 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
   const [cursor, setCursor] = useState<Cursor>(0);
   const [mụcĐượcChọn, setMục] = useState<MụcĐượcChọn>(undefined);
   const [query, setQuery] = useState<string>("");
-  useEffect(() => {
-    function handleTab(e: KeyboardEvent) {
-      if (e.key === "Tab") {
-        console.log(e);
-        e.preventDefault();
-        if (e.key === "Tab" && e.shiftKey) {
-          đổiKhungNhập("ngược", element, setElement);
-        } else {
-          đổiKhungNhập("xuôi", element, setElement);
-        }
-      }
-    }
-    document.addEventListener("keydown", handleTab);
-    return function () {
-      document.removeEventListener("keydown", handleTab);
-    };
-  }, [element]);
-
   //@ts-ignore:
   setBàiĐăngHoặcNơiĐăng(mụcĐượcChọn);
   return (
@@ -158,7 +140,7 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
           autoFocus
           value={query}
           id={`khung-nhập-${tênDanhSách?.replace(" ", "-")}`}
-          placeholder={`Nhập ${tênDanhSách}`}
+          placeholder={`Tìm ${tênDanhSách} hoặc dán URL để tạo mới`}
           onInput={handleInput}
           onFocus={() => setElement(tênDanhSách)}
           onKeyDown={handleKeyDown}
@@ -169,14 +151,14 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
           <>
             <DanhSáchKếtQuảTìmKiếm
               tênDanhSách={tênDanhSách}
-              searchList={searchList}
+              danhSáchKếtQuảTìmKiếm={searchList}
               cursor={cursor}
               setCursor={setCursor}
               setSelectedItem={setMục}
             />
             <ModalTạoMới
-              danhSáchĐangActive={tênDanhSách}
-              url={query}
+              tênDanhSách={tênDanhSách}
+              URL={query}
               setSelectedItem={setMục}
               setElement={setElement}
             />
@@ -216,6 +198,14 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
         setMục(searchList[cursor].item);
         đổiKhungNhập("xuôi", element, setElement);
       }
+    }
+    if (e.key === "Tab") {
+      e.preventDefault();
+      đổiKhungNhập("xuôi", element, setElement);
+    }
+    if (e.key === "Tab" && e.shiftKey) {
+      e.preventDefault();
+      đổiKhungNhập("ngược", element, setElement);
     }
   }
   function KếtQuảĐượcChọn() {
