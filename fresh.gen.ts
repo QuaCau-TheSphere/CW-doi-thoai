@@ -2,7 +2,8 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $_slug_ from "./routes/[slug].ts";
+import * as $_slug_chart from "./routes/[slug]/chart.tsx";
+import * as $_slug_index from "./routes/[slug]/index.ts";
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $api_cors_proxy_url_ from "./routes/api/cors-proxy/[...url].ts";
@@ -16,11 +17,13 @@ import * as $KhungKếtQuảBênPhải from "./islands/KhungKếtQuảBênPhải
 import * as $KhungNhậpBênTrái from "./islands/KhungNhậpBênTrái.tsx";
 import * as $Main from "./islands/Main.tsx";
 import * as $Modal_tạo_mới from "./islands/Modal tạo mới.tsx";
+import * as $chart from "./islands/chart.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
-    "./routes/[slug].ts": $_slug_,
+    "./routes/[slug]/chart.tsx": $_slug_chart,
+    "./routes/[slug]/index.ts": $_slug_index,
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
     "./routes/api/cors-proxy/[...url].ts": $api_cors_proxy_url_,
@@ -37,6 +40,7 @@ const manifest = {
     "./islands/KhungNhậpBênTrái.tsx": $KhungNhậpBênTrái,
     "./islands/Main.tsx": $Main,
     "./islands/Modal tạo mới.tsx": $Modal_tạo_mới,
+    "./islands/chart.tsx": $chart,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

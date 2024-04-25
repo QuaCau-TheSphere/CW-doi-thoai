@@ -1,6 +1,6 @@
-import { TÊN_TRANG, MÔ_TẢ_TRANG } from "../utils/H%E1%BA%B1ng.ts";
+import { MÔ_TẢ_TRANG, TÊN_TRANG } from "../utils/H%E1%BA%B1ng.ts";
 
-export interface MetaProps {
+interface MetaProps {
   title?: string;
   description?: string;
   href?: string;

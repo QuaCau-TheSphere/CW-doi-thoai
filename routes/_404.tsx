@@ -1,4 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
+import Meta from "../components/Meta.tsx";
+import { TÊN_MIỀN_RÚT_GỌN } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/H%E1%BA%B1ng.ts";
 
 export default function Error404() {
   return (
@@ -14,6 +16,10 @@ export default function Error404() {
           &#125;)(window,document,'script','dataLayer','GTM-MWZ4WG7');
         </script>
       </Head>
+      <Meta
+        imageUrl="platos1.gif"
+        href={TÊN_MIỀN_RÚT_GỌN}
+      />
       <noscript>
         <iframe
           src="https://www.googletagmanager.com/ns.html?id=GTM-MWZ4WG7"

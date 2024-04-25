@@ -45,6 +45,7 @@ export default function KhungKếtQuảBênPhải(
         "Bài đăng": bàiĐăngĐượcChọn,
         "Nơi đăng": nơiĐăngĐượcChọn,
         "Thời điểm tạo": thờiĐiểmTạo,
+        "Các lần truy cập": [],
       },
       ...thamSốUTMVàLiênKếtRútGọn,
     };

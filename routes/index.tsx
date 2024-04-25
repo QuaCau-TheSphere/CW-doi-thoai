@@ -43,10 +43,6 @@ export default async function App(prop: PageProps) {
 
   return (
     <body class="bg-base-100">
-      <Meta
-        imageUrl="platos1.gif"
-        href={TÊN_MIỀN_RÚT_GỌN}
-      />
       <Main
         danhSáchBàiĐăng={danhSáchBàiĐăng}
         danhSáchNơiĐăng={danhSáchNơiĐăng}
