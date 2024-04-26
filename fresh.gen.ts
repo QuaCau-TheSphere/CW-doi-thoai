@@ -18,6 +18,7 @@ import * as $KhungNhậpBênTrái from "./islands/KhungNhậpBênTrái.tsx";
 import * as $Main from "./islands/Main.tsx";
 import * as $Modal_tạo_mới from "./islands/Modal tạo mới.tsx";
 import * as $chart from "./islands/chart.tsx";
+import * as $chartjs_adapter_date_fns from "./islands/chartjs-adapter-date-fns.js";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -41,6 +42,7 @@ const manifest = {
     "./islands/Main.tsx": $Main,
     "./islands/Modal tạo mới.tsx": $Modal_tạo_mới,
     "./islands/chart.tsx": $chart,
+    "./islands/chartjs-adapter-date-fns.js": $chartjs_adapter_date_fns,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

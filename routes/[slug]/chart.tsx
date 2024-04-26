@@ -1,6 +1,8 @@
+import Chart from "../../islands/chart.tsx";
+// import 'npm:chartjs-adapter-date-fns';
+import "../../islands/chartjs-adapter-date-fns.js";
 import { Head } from "$fresh/runtime.ts";
 import { ChartColors } from "$fresh_charts/utils.ts";
-import Chart from "../../islands/chart.tsx";
 
 import { Handlers, PageProps } from "$fresh/server.ts";
 import {
@@ -53,15 +55,15 @@ export default function ChartPage(
           type="line"
           options={{
             scales: {
-              x: {
-                type: "time",
-                // time: {
-                //   "unit": "year",
-                // },
-                // displayFormats: {
-                //   "year": "YYYY",
-                // },
-              },
+              // x: {
+              //   type: "time",
+              //   time: {
+              //     "unit": "year",
+              //   },
+              //   displayFormats: {
+              //     "year": "YYYY",
+              //   },
+              // },
               y: { beginAtZero: true },
             },
           }}
