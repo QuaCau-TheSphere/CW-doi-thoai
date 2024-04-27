@@ -8,8 +8,11 @@ import type {
 import {
   getInstanceByDom,
   init,
+  registerTheme,
 } from "https://esm.sh/echarts@5.4.3/dist/echarts.min.js?target=es2022";
-// import { initThemes } from "./theme.tsx";
+import { initThemes } from "./theme.tsx";
+
+//
 
 export interface ReactEChartsProps {
   option: EChartsOption;
@@ -26,15 +29,14 @@ export default function ReactECharts({
   loading,
   theme,
 }: ReactEChartsProps): JSX.Element {
-  // Initialize themes (optional)
-  //   initThemes();
+  initThemes();
 
-  // Create a reference to the chart container
+  //if (!IS_BROWSER) return (<div>noop!</div>);
   const chartRef = useRef<HTMLDivElement>(null);
 
-  // Use useEffect to handle chart initialization and updates
   useEffect(() => {
-    // Initialize the chart
+    console.log("initialise chart");
+    // Initialize chart
     let chart: ECharts | undefined;
     if (chartRef?.current !== null) {
       chart = init(chartRef.current, theme, {
@@ -43,13 +45,14 @@ export default function ReactECharts({
     }
 
     // Add chart resize listener
+    // ResizeObserver is leading to a bit janky UX
     function resizeChart() {
       chart?.resize();
     }
 
     globalThis.addEventListener("resize", resizeChart);
 
-    // Cleanup function
+    // Return cleanup function
     return () => {
       chart?.dispose();
       globalThis.removeEventListener("resize", resizeChart);
@@ -62,7 +65,6 @@ export default function ReactECharts({
       echartInstance?.setOption(option, settings);
     }
   }, [option, settings, theme]);
-
   useEffect(() => {
     if (chartRef.current !== null) {
       const echartInstance = getInstanceByDom(chartRef.current);
@@ -73,6 +75,9 @@ export default function ReactECharts({
   }, [loading, theme]);
 
   return (
-    <div ref={chartRef} style={{ width: "100%", height: "100px", ...style }} />
+    <div
+      ref={chartRef}
+      style={{ "width": "100%", "height": "400px" }}
+    />
   );
 }

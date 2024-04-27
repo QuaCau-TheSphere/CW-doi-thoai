@@ -1,14 +1,10 @@
-import Chart from "../../islands/chart.tsx";
-// import 'npm:chartjs-adapter-date-fns';
-import "../../islands/chartjs-adapter-date-fns.js";
 import { Head } from "$fresh/runtime.ts";
-import { ChartColors } from "$fresh_charts/utils.ts";
-
 import { Handlers, PageProps } from "$fresh/server.ts";
 import {
   DữLiệuTruyCậpTừngNăm,
   VậtThểTiếpThị,
 } from "../../utils/Kiểu cho web.ts";
+import ReactECharts from "../../islands/Bi%E1%BB%83u%20%C4%91%E1%BB%93/echart.tsx";
 
 const kv = await Deno.openKv();
 export const handler: Handlers = {
@@ -24,12 +20,55 @@ export const handler: Handlers = {
     }
   },
 };
-const data = [
-  { x: Date.parse("2016-12-26"), y: 20 },
-  { x: Date.parse("2017-12-26"), y: 20 },
-  { x: Date.parse("2020-12-26"), y: 20 },
-  { x: Date.parse("2024-12-26"), y: 20 },
-];
+
+export function chartOption(dữLiệuTruyCậpTừngNăm: DữLiệuTruyCậpTừngNăm) {
+  const data = [
+    { datetime: "2024-01-31T00", hit: 1 },
+    { datetime: "2024-01-31T01", hit: 4 },
+    { datetime: "2024-01-31T02", hit: 3 },
+    { datetime: "2024-01-31T05", hit: 1 },
+    { datetime: "2024-01-31T06", hit: 4 },
+    { datetime: "2024-01-31T10", hit: 3 },
+    { datetime: "2024-01-31T20", hit: 1 },
+    { datetime: "2024-01-31T23", hit: 3 },
+  ];
+  return {
+    tooltip: {
+      trigger: "axis",
+      axisPointer: {
+        type: "cross",
+      },
+    },
+    dataset: {
+      source: data,
+      sourceHeader: false,
+    },
+    xAxis: { type: "time" },
+    // xAxis: { type: "category" },
+    yAxis: { gridIndex: 0 },
+    dataZoom: [
+      // {
+      //     type: 'inside',
+      //     start: 50,
+      //     end: 100
+      // },
+      {
+        show: true,
+        type: "slider",
+        top: "90%",
+        start: 50,
+        end: 100,
+      },
+    ],
+    series: [
+      {
+        type: "line",
+        seriesLayoutBy: "row",
+        emphasis: { focus: "series" },
+      },
+    ],
+  };
+}
 export default function ChartPage(
   props: PageProps<{ vậtThểTiếpThị: VậtThểTiếpThị }>,
 ) {
@@ -43,7 +82,7 @@ export default function ChartPage(
     "Đuôi rút gọn": đuôiRútGọn,
   } = vậtThểTiếpThị;
 
-  // const danhSáchĐiểmTrụcHoành = cácLầnTruyCập[0][]
+  const chartData = chartOption(cácLầnTruyCập);
   return (
     <>
       <Head>
@@ -51,32 +90,8 @@ export default function ChartPage(
       </Head>
       {JSON.stringify(bàiĐăng, null, 2)}
       <div class="p-4 mx-auto max-w-screen-md">
-        <Chart
-          type="line"
-          options={{
-            scales: {
-              // x: {
-              //   type: "time",
-              //   time: {
-              //     "unit": "year",
-              //   },
-              //   displayFormats: {
-              //     "year": "YYYY",
-              //   },
-              // },
-              y: { beginAtZero: true },
-            },
-          }}
-          data={{
-            datasets: [
-              {
-                label: "Users",
-                data: data,
-                borderColor: ChartColors.Blue,
-                borderWidth: 1,
-              },
-            ],
-          }}
+        <ReactECharts
+          option={chartData}
         />
       </div>
     </>
