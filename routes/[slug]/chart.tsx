@@ -1,7 +1,7 @@
 import { Head } from "$fresh/runtime.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
 import {
-  DữLiệuTruyCậpTừngNăm,
+  DữLiệuTruyCậpCácNăm,
   VậtThểTiếpThị,
 } from "../../utils/Kiểu cho web.ts";
 import ReactECharts from "../../islands/Bi%E1%BB%83u%20%C4%91%E1%BB%93/echart.tsx";
@@ -21,7 +21,7 @@ export const handler: Handlers = {
   },
 };
 
-export function chartOption(dữLiệuTruyCậpTừngNăm: DữLiệuTruyCậpTừngNăm) {
+export function chartOption(dữLiệuTruyCậpTừngNăm: DữLiệuTruyCậpCácNăm) {
   const data = [
     { datetime: "2024-01-31T00", hit: 1 },
     { datetime: "2024-01-31T01", hit: 4 },
