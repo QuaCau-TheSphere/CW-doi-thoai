@@ -12,6 +12,7 @@ import { NơiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u
 import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/plus.tsx";
 import ModalTạoMới from "./Modal tạo mới.tsx";
 import { kebabCase, đổiKhungNhập } from "../utils/Hàm cho khung nhập.ts";
+import KếtQuảĐượcChọn from "../components/K%E1%BA%BFt%20qu%E1%BA%A3%20%C4%91%C6%B0%E1%BB%A3c%20ch%E1%BB%8Dn.tsx";
 
 function DanhSáchKếtQuảTìmKiếm({
   tênDanhSách,
@@ -165,7 +166,7 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
           </>
         )
         : null}
-      <KếtQuảĐượcChọn />
+      <KếtQuảĐượcChọn tênDanhSách={tênDanhSách} mụcĐượcChọn={mụcĐượcChọn} />
       <br />
     </div>
   );
@@ -207,29 +208,5 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
       e.preventDefault();
       đổiKhungNhập("ngược", element, setElement);
     }
-  }
-  function KếtQuảĐượcChọn() {
-    function lấyGiáTrị(giáTrị: string | Record<string, string>) {
-      if (typeof giáTrị === "object") {
-        return Object.entries(giáTrị).map(([key, value]) => (
-          <li>{key}: {value}</li>
-        ));
-      } else {
-        return giáTrị;
-      }
-    }
-    return (
-      <div class="prose result">
-        <ul id={`${kebabCase(tênDanhSách)}-được-chọn`}>
-          {mụcĐượcChọn
-            ? Object.entries(mụcĐượcChọn).map(([key, value]) => (
-              <li>
-                <span class="font-bold">{key}</span>: {lấyGiáTrị(value)}
-              </li>
-            ))
-            : ""}
-        </ul>
-      </div>
-    );
   }
 }

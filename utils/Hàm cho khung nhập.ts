@@ -1,12 +1,12 @@
 import { StateUpdater } from "https://esm.sh/v128/preact@10.19.6/hooks/src/index.js";
-import { ElementDùngTab, TênDanhSách } from "./Ki%E1%BB%83u%20cho%20web.ts";
+import { ElementDùngTab } from "./Ki%E1%BB%83u%20cho%20web.ts";
 
-export function viếtHoa(tênDanhSách: TênDanhSách) {
-  return tênDanhSách.replace(/^(.)/g, (x) => x.toUpperCase());
+export function viếtHoa(chuỗi: string) {
+  return chuỗi.replace(/^(.)/g, (x) => x.toUpperCase());
 }
 
-export function kebabCase(tênDanhSách: TênDanhSách) {
-  return tênDanhSách.replace(" ", "-");
+export function kebabCase(chuỗi: string) {
+  return chuỗi.replace(" ", "-");
 }
 
 export function đổiKhungNhập(

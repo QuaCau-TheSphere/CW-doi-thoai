@@ -1,5 +1,22 @@
 // deno-fmt-ignore-file
 import { ĐơnVị, DữLiệuTruyCậpCácNăm, DữLiệuBiểuĐồ, DANH_SÁCH_ĐƠN_VỊ_THỜI_GIAN } from "./Ki%E1%BB%83u%20cho%20web.ts";
+
+type DanhSáchThờiĐiểm = Date[]
+function tạoDanhSáchThờiĐiểmĐượcTruyCập(dữLiệuTruyCậpCácNăm: DữLiệuTruyCậpCácNăm): DanhSáchThờiĐiểm {
+const danhSáchThờiĐiểmĐượcTruyCập: DanhSáchThờiĐiểm = [] 
+for (const [_year, monthData] of Object.entries(dữLiệuTruyCậpCácNăm)) {
+ for (const [_month, dayData] of Object.entries(monthData)) {
+   for (const [_day, hourData] of Object.entries(dayData)) {
+     for (const [_hour, hitsEachHour] of Object.entries(hourData)) {
+       for (const hit of hitsEachHour) {
+         danhSáchThờiĐiểmĐượcTruyCập.push(hit)
+       } 
+     }
+   }
+ }
+}
+return danhSáchThờiĐiểmĐượcTruyCập
+}
   
 function thêmThờiGian(startDate: Date|string|number, sốLượng: number, đơnVị: ĐơnVị) {
     let date: Date
@@ -16,23 +33,6 @@ function thêmThờiGian(startDate: Date|string|number, sốLượng: number, đ
       case "năm":
         return new Date(date.setFullYear(date.getFullYear() + sốLượng));
     }
-}
-   
-type DanhSáchThờiĐiểm = Date[]
-function tạoDanhSáchThờiĐiểmĐượcTruyCập(dữLiệuTruyCậpCácNăm: DữLiệuTruyCậpCácNăm): DanhSáchThờiĐiểm {
-  const danhSáchThờiĐiểmĐượcTruyCập: DanhSáchThờiĐiểm = [] 
-  for (const [_year, monthData] of Object.entries(dữLiệuTruyCậpCácNăm)) {
-    for (const [_month, dayData] of Object.entries(monthData)) {
-      for (const [_day, hourData] of Object.entries(dayData)) {
-        for (const [_hour, hitsEachHour] of Object.entries(hourData)) {
-          for (const hit of hitsEachHour) {
-            danhSáchThờiĐiểmĐượcTruyCập.push(hit)
-          } 
-        }
-      }
-    }
-  }
-  return danhSáchThờiĐiểmĐượcTruyCập
 }
 
 /** Nếu không có đơn vị thì mặc định là giờ */
