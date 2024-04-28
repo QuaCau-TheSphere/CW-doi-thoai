@@ -5,6 +5,8 @@ import {
   VậtThểTiếpThị,
 } from "../../utils/Kiểu cho web.ts";
 import ReactECharts from "../../islands/Bi%E1%BB%83u%20%C4%91%E1%BB%93/echart.tsx";
+import { dữLiệuTruyCậpCácNămTest } from "../../utils/Hàm cho biểu đồ.test.ts";
+import { tạoDữLiệuBiểuĐồ } from "../../utils/H%C3%A0m%20cho%20bi%E1%BB%83u%20%C4%91%E1%BB%93.ts";
 
 const kv = await Deno.openKv();
 export const handler: Handlers = {
@@ -21,17 +23,8 @@ export const handler: Handlers = {
   },
 };
 
-export function chartOption(dữLiệuTruyCậpTừngNăm: DữLiệuTruyCậpCácNăm) {
-  const data = [
-    { datetime: "2024-01-31T00", hit: 1 },
-    { datetime: "2024-01-31T01", hit: 4 },
-    { datetime: "2024-01-31T02", hit: 3 },
-    { datetime: "2024-01-31T05", hit: 1 },
-    { datetime: "2024-01-31T06", hit: 4 },
-    { datetime: "2024-01-31T10", hit: 3 },
-    { datetime: "2024-01-31T20", hit: 1 },
-    { datetime: "2024-01-31T23", hit: 3 },
-  ];
+export function chartOption(dữLiệuTruyCậpCácNăm: DữLiệuTruyCậpCácNăm) {
+  const data = tạoDữLiệuBiểuĐồ(dữLiệuTruyCậpCácNămTest).giờ; //todo;
   return {
     tooltip: {
       trigger: "axis",
@@ -44,19 +37,19 @@ export function chartOption(dữLiệuTruyCậpTừngNăm: DữLiệuTruyCậpC�
       sourceHeader: false,
     },
     xAxis: { type: "time" },
-    // xAxis: { type: "category" },
     yAxis: { gridIndex: 0 },
     dataZoom: [
-      // {
-      //     type: 'inside',
-      //     start: 50,
-      //     end: 100
-      // },
+      {
+        show: true,
+        type: "inside",
+        start: 50,
+        end: 100,
+      },
       {
         show: true,
         type: "slider",
-        top: "90%",
-        start: 50,
+        // top: "90%",
+        start: 0,
         end: 100,
       },
     ],
@@ -89,6 +82,7 @@ export default function ChartPage(
         <title>{đuôiRútGọn} Chart</title>
       </Head>
       {JSON.stringify(bàiĐăng, null, 2)}
+      <details>{JSON.stringify(bàiĐăng, null, 2)}</details>
       <div class="p-4 mx-auto max-w-screen-md">
         <ReactECharts
           option={chartData}

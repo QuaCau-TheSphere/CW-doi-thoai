@@ -5,15 +5,15 @@ function thêmThờiGian(startDate: Date|string|number, sốLượng: number, đ
     let date: Date
     typeof startDate === 'string' || typeof startDate === 'number' ? date = new Date(startDate) : date = startDate
     switch (đơnVị) {
-      case "hour":
+      case "giờ":
         return new Date(date.setHours(date.getHours() + sốLượng));
-      case "day":
+      case "ngày":
         return new Date(date.setDate(date.getDate() + sốLượng));
-      case "week":
+      case "tuần":
         return new Date(date.setDate(date.getDate() + 7 * sốLượng));
-      case "month":
+      case "tháng":
         return new Date(date.setMonth(date.getMonth() + sốLượng));
-      case "year":
+      case "năm":
         return new Date(date.setFullYear(date.getFullYear() + sốLượng));
     }
 }
@@ -39,29 +39,33 @@ function tạoDanhSáchThờiĐiểmĐượcTruyCập(dữLiệuTruyCậpCácNă
 function lọc(danhSáchThờiĐiểm: DanhSáchThờiĐiểm, thờiĐiểmĐangXét: Date, đơnVị?: ĐơnVị): DanhSáchThờiĐiểm {
   const nămĐangXét = thờiĐiểmĐangXét.getFullYear() 
   const thángĐangXét = thờiĐiểmĐangXét.getMonth() 
+  //todo const tuầnĐangXét = thờiĐiểmĐangXét.getMonth() 
   const ngàyĐangXét = thờiĐiểmĐangXét.getDate() 
   const giờĐangXét = thờiĐiểmĐangXét.getHours() 
   
   const danhSáchCùngNăm = danhSáchThờiĐiểm.filter(thờiĐiểm => (new Date(thờiĐiểm)).getFullYear() === nămĐangXét) 
-  if (đơnVị === "year") return danhSáchCùngNăm
+  if (đơnVị === "năm") return danhSáchCùngNăm
 
   const danhSáchCùngTháng = danhSáchCùngNăm.filter(thờiĐiểm => (new Date(thờiĐiểm)).getMonth() === thángĐangXét) 
-  if (đơnVị === "month") return danhSáchCùngTháng
+  if (đơnVị === "tháng") return danhSáchCùngTháng
   
+  //todo: tuần
+  if (đơnVị === "tuần") return [] 
+
   const danhSáchCùngNgày = danhSáchCùngTháng.filter(thờiĐiểm => (new Date(thờiĐiểm)).getDate() === ngàyĐangXét) 
-  if (đơnVị === "day") return danhSáchCùngNgày
+  if (đơnVị === "ngày") return danhSáchCùngNgày
   
   const danhSáchCùngGiờ = danhSáchCùngNgày.filter(thờiĐiểm => (new Date(thờiĐiểm)).getHours() === giờĐangXét) 
   return danhSáchCùngGiờ
 } 
 
-export function tạoDữLiệuBiểuĐồ(dữLiệuTruyCậpCácNăm: DữLiệuTruyCậpCácNăm): DữLiệuBiểuĐồ[] {
+export function tạoDữLiệuBiểuĐồ(dữLiệuTruyCậpCácNăm: DữLiệuTruyCậpCácNăm): DữLiệuBiểuĐồ {
   const danhSáchThờiĐiểm = tạoDanhSáchThờiĐiểmĐượcTruyCập(dữLiệuTruyCậpCácNăm)
   const danhSáchDạngSố = danhSáchThờiĐiểm.map(i => i.getTime())
   const minDate = Math.min(...danhSáchDạngSố)
   const maxDate = Math.max(...danhSáchDạngSố)
   
-  const kếtQuả: DữLiệuBiểuĐồ[] = [] 
+  const kếtQuả: Partial<DữLiệuBiểuĐồ> = {} 
   for (const đơnVị of DANH_SÁCH_ĐƠN_VỊ_THỜI_GIAN) {
     const dữLiệuBiểuĐồ: {datetime: Date, hit: number}[] = [];
     let i = minDate
@@ -74,10 +78,7 @@ export function tạoDữLiệuBiểuĐồ(dữLiệuTruyCậpCácNăm: DữLi�
     
       i = thêmThờiGian(i, 1, đơnVị).getTime()
     }
-    kếtQuả.push({
-      đơnVị: đơnVị,
-      dữLiệu: dữLiệuBiểuĐồ
-    })
+    kếtQuả[đơnVị] = dữLiệuBiểuĐồ
   } 
-  return kếtQuả
+  return kếtQuả as DữLiệuBiểuĐồ
 }
