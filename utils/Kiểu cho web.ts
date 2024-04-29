@@ -38,11 +38,13 @@ export const DANH_SÁCH_ĐƠN_VỊ_THỜI_GIAN = ["giờ", "ngày", "tuần", "t
 export type ĐơnVị = typeof DANH_SÁCH_ĐƠN_VỊ_THỜI_GIAN[number] 
 export type DữLiệuBiểuĐồ = Record<ĐơnVị, {datetime: Date, hit: number}[]> 
 
-export type DữLiệuTruyCậpCácGiờ = PartialRecord<`${Giờ} giờ`, Date[]>;
+type DữLiệuTruyCập = {'Thời điểm': Date, header?: Headers} 
+export type DữLiệuTruyCậpCácGiờ = PartialRecord<`${Giờ} giờ`, DữLiệuTruyCập[]>;
 export type DữLiệuTruyCậpCácNgày = PartialRecord<`Ngày ${Ngày}`, DữLiệuTruyCậpCácGiờ>;
 export type DữLiệuTruyCậpCácTháng = PartialRecord<`Tháng ${Tháng}`, DữLiệuTruyCậpCácNgày>;
 export type DữLiệuTruyCậpCácNăm = PartialRecord<Năm, DữLiệuTruyCậpCácTháng>;
 
+export type DanhSáchThờiĐiểm = Date[]
 export interface VậtThểTiếpThị extends ThamSốUTMVàLiênKếtRútGọn {
   "Bài đăng": BàiĐăng;
   "Nơi đăng": NơiĐăng;

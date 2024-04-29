@@ -8,6 +8,7 @@ import CấuHìnhNơiĐăng, {
   NơiĐăng,
 } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
 import { Signal } from "@preact/signals";
+import KếtQuảĐượcChọn from "../components/Kết quả được chọn.tsx";
 
 export default function KhungKếtQuảBênPhải(
   {
@@ -79,20 +80,12 @@ export default function KhungKếtQuảBênPhải(
   console.info("Nơi đăng được chọn:", nơiĐăngĐượcChọn);
 
   return (
-    <div id="khung-bên-phải-khi-có-kết-quả" class="prose">
-      <ul>
-        {Object.entries(thamSốUTM).map((
-          i,
-        ) => (
-          <li>
-            <span class="font-bold">{i[0]}</span>: {i[1]}
-          </li>
-        ))}
-      </ul>
+    <article id="khung-bên-phải-khi-có-kết-quả" class="prose">
+      <KếtQuảĐượcChọn từKhoáTiêuĐề="Tham số UTM" vậtThể={thamSốUTM} />
       <br />
 
       Liên kết rút gọn (đã được sao chép ✅):{" "}
       <pre id="liên-kết-rút-gọn">{liênKếtRútGọn}</pre>
-    </div>
+    </article>
   );
 }

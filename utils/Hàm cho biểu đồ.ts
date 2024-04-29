@@ -1,26 +1,24 @@
 // deno-fmt-ignore-file
-import { ĐơnVị, DữLiệuTruyCậpCácNăm, DữLiệuBiểuĐồ, DANH_SÁCH_ĐƠN_VỊ_THỜI_GIAN } from "./Ki%E1%BB%83u%20cho%20web.ts";
+import { ĐơnVị, DữLiệuTruyCậpCácNăm, DữLiệuBiểuĐồ, DANH_SÁCH_ĐƠN_VỊ_THỜI_GIAN, DanhSáchThờiĐiểm } from "./Ki%E1%BB%83u%20cho%20web.ts";
 
-type DanhSáchThờiĐiểm = Date[]
 function tạoDanhSáchThờiĐiểmĐượcTruyCập(dữLiệuTruyCậpCácNăm: DữLiệuTruyCậpCácNăm): DanhSáchThờiĐiểm {
-const danhSáchThờiĐiểmĐượcTruyCập: DanhSáchThờiĐiểm = [] 
-for (const [_year, monthData] of Object.entries(dữLiệuTruyCậpCácNăm)) {
- for (const [_month, dayData] of Object.entries(monthData)) {
-   for (const [_day, hourData] of Object.entries(dayData)) {
-     for (const [_hour, hitsEachHour] of Object.entries(hourData)) {
-       for (const hit of hitsEachHour) {
-         danhSáchThờiĐiểmĐượcTruyCập.push(hit)
-       } 
-     }
-   }
- }
-}
-return danhSáchThờiĐiểmĐượcTruyCập
+  const danhSáchThờiĐiểmĐượcTruyCập: DanhSáchThờiĐiểm = [] 
+  for (const monthData of Object.values(dữLiệuTruyCậpCácNăm)) {
+    for (const dayData of Object.values(monthData)) {
+      for (const hourData of Object.values(dayData)) {
+        for (const hitsEachHour of Object.values(hourData)) {
+          for (const hit of hitsEachHour) {
+            danhSáchThờiĐiểmĐượcTruyCập.push(hit["Thời điểm"])
+          } 
+        }
+      }
+    }
+  }
+  return danhSáchThờiĐiểmĐượcTruyCập
 }
   
 function thêmThờiGian(startDate: Date|string|number, sốLượng: number, đơnVị: ĐơnVị) {
-    let date: Date
-    typeof startDate === 'string' || typeof startDate === 'number' ? date = new Date(startDate) : date = startDate
+    const date = new Date(startDate)
     switch (đơnVị) {
       case "giờ":
         return new Date(date.setHours(date.getHours() + sốLượng));

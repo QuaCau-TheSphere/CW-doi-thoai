@@ -36,11 +36,16 @@ function DanhSáchKếtQuảTìmKiếm({
     );
   }
   return (
-    <ul id={`danh-sách-${kebabCase(tênDanhSách)}-tìm-được`} class="active">
+    <ul
+      id={`danh-sách-${kebabCase(tênDanhSách)}-tìm-được`}
+      class="active border-2 rounded border-secondary"
+    >
       {danhSáchKếtQuảTìmKiếm.map((item, index) => (
         <li
           key={index}
-          class={cursor === index ? "cursor bg-secondary" : ""}
+          class={cursor === index
+            ? "cursor bg-secondary p-2 box-decoration-clone"
+            : "p-2"}
           onClick={() => setSelectedItem(item)}
           onMouseEnter={() => setCursor(index)}
           onMouseLeave={() => setCursor(-1)}
@@ -166,7 +171,7 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
           </>
         )
         : null}
-      <KếtQuảĐượcChọn tênDanhSách={tênDanhSách} mụcĐượcChọn={mụcĐượcChọn} />
+      <KếtQuảĐượcChọn từKhoáTiêuĐề={tênDanhSách} vậtThể={mụcĐượcChọn} />
       <br />
     </div>
   );

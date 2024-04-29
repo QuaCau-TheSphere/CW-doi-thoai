@@ -64,18 +64,17 @@ export function chartOption(dữLiệuTruyCậpCácNăm: DữLiệuTruyCậpCác
     ],
   };
 }
-function lấyGiờVN(date: Date) {
-  console.log(date);
+function lấyGiờVN(thờiĐiểmTạo: Date | string) {
   const options = {
     weekday: "long",
     year: "numeric",
     month: "long",
     day: "numeric",
   };
-  console.log(date.toJSON());
-  // const ngày = date.toLocaleDateString("vi-VN", options);
-  // const giờ = date.toLocaleTimeString("vi-VN");
-  // return `${ngày} ${giờ}`;
+  const date = new Date(thờiĐiểmTạo);
+  const ngày = date.toLocaleDateString("vi-VN", options);
+  const giờ = date.toLocaleTimeString("vi-VN");
+  return `${ngày} ${giờ}`;
 }
 export default function ChartPage(
   props: PageProps<{ vậtThểTiếpThị: VậtThểTiếpThị }>,
@@ -89,7 +88,6 @@ export default function ChartPage(
     "Các lần truy cập": dữLiệuTruyCậpCácNăm,
     "Đuôi rút gọn": đuôiRútGọn,
   } = vậtThểTiếpThị;
-
   const chartData = chartOption(dữLiệuTruyCậpCácNăm);
   const khác = {
     "Thời điểm tạo": lấyGiờVN(thờiĐiểmTạo),
@@ -104,12 +102,12 @@ export default function ChartPage(
         <ReactECharts
           option={chartData}
         />
-        <div class="grid grid-cols-2 gap-4">
-          <KếtQuảĐượcChọn mụcĐượcChọn={bàiĐăng} tênDanhSách="bài đăng" />
-          <KếtQuảĐượcChọn mụcĐượcChọn={nơiĐăng} tênDanhSách="nơi đăng" />
-          <KếtQuảĐượcChọn mụcĐượcChọn={thamSốUTM} tênDanhSách="tham số UTM" />
-          <KếtQuảĐượcChọn mụcĐượcChọn={khác} tênDanhSách="thông tin khác" />
-        </div>
+        <article class="grid grid-cols-2 gap-4">
+          <KếtQuảĐượcChọn vậtThể={bàiĐăng} từKhoáTiêuĐề="Bài đăng:" />
+          <KếtQuảĐượcChọn vậtThể={nơiĐăng} từKhoáTiêuĐề="Nơi đăng:" />
+          <KếtQuảĐượcChọn vậtThể={thamSốUTM} từKhoáTiêuĐề="Tham số UTM:" />
+          <KếtQuảĐượcChọn vậtThể={khác} từKhoáTiêuĐề="Thông tin khác:" />
+        </article>
       </div>
     </>
   );
