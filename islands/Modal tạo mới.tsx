@@ -9,7 +9,6 @@ import { TÊN_MIỀN_RÚT_GỌN } from "../core/Code hỗ trợ/Hằng.ts";
 import { đổiKhungNhập } from "../utils/Hàm cho khung nhập.ts";
 import { BàiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
 import { NơiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
-import { useSignal } from "@preact/signals";
 
 function CácTrườngNhậpMới(
   { tênDanhSách, urlNhậpỞKhungNhậpNgoài }: {
@@ -46,9 +45,9 @@ function CácTrườngNhậpMới(
     }
     const {
       "Tiêu đề": tiêuĐề,
-      "Mô tả bài đăng": môTảBàiĐăng,
       "Dự án": dựÁn,
       Vault: vault,
+      "Nội dung bài đăng": nộiDungBàiĐăng,
     } = bàiĐăng;
     return (
       <>
@@ -92,7 +91,7 @@ function CácTrườngNhậpMới(
             id="mô-tả"
             type="text"
             name="Mô tả bài đăng"
-            value={môTảBàiĐăng}
+            value={nộiDungBàiĐăng?.["Mô tả bài đăng"]}
           />
         </label>
 
@@ -297,7 +296,7 @@ export default function ModalTạoMới(
             urlNhậpỞKhungNhậpNgoài={URL}
           />
           <button class="btn btn-secondary gap-2" type="submit">
-            Tạo (<kbd>Enter</kbd>)
+            Tạo (<kbd class="kbd">Enter</kbd>)
           </button>
         </form>
       </div>

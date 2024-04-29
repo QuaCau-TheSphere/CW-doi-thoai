@@ -70,13 +70,17 @@ export async function tạoDanhSáchThôngTinTấtCảCácVault(
     const thôngTinThiếtLập = extract(
       await Deno.readTextFile(đườngDẫnTớiTậpTinThiếtLập),
     ).attrs as unknown as Vault;
+    const tênVault = thôngTinThiếtLập["Tên vault"];
     danhSáchThôngTinTấtCảCácVault.push({
-      "Tên vault": thôngTinThiếtLập["Tên vault"],
+      "Tên vault": tênVault,
       "Mã vault": thôngTinThiếtLập["Mã vault"],
       "Mô tả vault": thôngTinThiếtLập["Mô tả vault"],
       URL: thôngTinThiếtLập["URL"],
       "Nơi lưu vault": đườngDẫnTớiThưMụcCon,
     });
+    console.info(
+      `Đã nạp thiết lập vault ${tênVault} tại ${đườngDẫnTớiThưMụcCon}`,
+    );
   }
 }
 /**
@@ -153,10 +157,10 @@ function xácĐịnhURLCủaGhiChú(
 }
 
 /** Nếu có title trong frontmatter thì lấy làm tiêu đề, còn không thì lấy filename */
-async function xácĐịnhTiêuĐềGhiChú(
+function xácĐịnhTiêuĐềGhiChú(
   đườngDẫnTớiGhiChú: ĐườngDẫnTuyệtĐối,
   frontmatter: YAMLCủaGhiChú,
-): Promise<string> {
+): string {
   if (frontmatter.title) {
     return frontmatter.title;
   } else {
@@ -195,8 +199,8 @@ export default async function tạoDanhSáchBàiĐăngTrênVault(
       );
 
     for (const đườngDẫnTớiGhiChú of danhSáchĐườngDẫnTấtCảCácBàiĐăngTrongVault) {
-      const text = await Deno.readTextFile(đườngDẫnTớiGhiChú);
-      const frontmatter = extract(text).attrs as YAMLCủaGhiChú;
+      const text = extract(await Deno.readTextFile(đườngDẫnTớiGhiChú));
+      const frontmatter = text.attrs as YAMLCủaGhiChú;
       const tiêuĐề = await xácĐịnhTiêuĐềGhiChú(đườngDẫnTớiGhiChú, frontmatter);
       const url = xácĐịnhURLCủaGhiChú(
         đườngDẫnTớiGhiChú,
@@ -204,6 +208,8 @@ export default async function tạoDanhSáchBàiĐăngTrênVault(
         vault.URL,
       );
       const tênDựÁn: TênDựÁn = xácĐịnhTênDựÁn(đườngDẫnTớiGhiChú);
+      const nộiDung = text.body;
+      const môTảBàiĐăng = frontmatter.description;
 
       danhSáchBàiĐăng.push({
         "Tiêu đề": tiêuĐề,
@@ -214,6 +220,11 @@ export default async function tạoDanhSáchBàiĐăngTrênVault(
           "Mã dự án": vault["Mã vault"], //todo
         },
         "Mã bài đăng": frontmatter["Mã bài đăng"],
+        "Nội dung bài đăng": {
+          "Mô tả bài đăng": môTảBàiĐăng,
+          "Toàn bộ nội dung": nộiDung,
+          "Định dạng nội dung": "md",
+        },
       });
     }
   }

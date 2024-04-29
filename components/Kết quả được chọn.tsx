@@ -20,13 +20,30 @@ export default function KếtQuảĐượcChọn(
     };
   },
 ) {
-  function lấyGiáTrị(giáTrị: string | Record<string, string>) {
-    if (typeof giáTrị === "object") {
-      return Object.entries(giáTrị).map(([key, value]) => (
-        <li>{key}: {value}</li>
-      ));
+  function thểHiệnThuộcTính(
+    key: string,
+    value: string | Record<string, string>,
+    // paddingLeft: number = 4
+  ) {
+    if (typeof value === "object") {
+      return (
+        <details>
+          <summary>{key}</summary>
+          {Object.entries(value).map(([key2, value2]) => (
+            <ul class="pl-8">
+              <li>
+                <span class="font-bold">{key2}:</span> {value2}
+              </li>
+            </ul>
+          ))}
+        </details>
+      );
     } else {
-      return giáTrị;
+      return (
+        <li>
+          <span class="font-bold">{key}</span>: {value}
+        </li>
+      );
     }
   }
   if (vậtThể) {
@@ -34,11 +51,9 @@ export default function KếtQuảĐượcChọn(
       <article class="nội-dung-vật-thể prose border-2 rounded border-secondary p-4">
         {tạoTiêuĐề(từKhoáTiêuĐề)}
         <ul>
-          {Object.entries(vậtThể).map(([key, value]) => (
-            <li>
-              <span class="font-bold">{key}</span>: {lấyGiáTrị(value)}
-            </li>
-          ))}
+          {Object.entries(vậtThể).map(([key, value]) =>
+            thểHiệnThuộcTính(key, value)
+          )}
         </ul>
       </article>
     );

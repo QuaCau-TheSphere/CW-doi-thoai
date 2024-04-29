@@ -81,11 +81,45 @@ export default function KhungKếtQuảBênPhải(
 
   return (
     <article id="khung-bên-phải-khi-có-kết-quả" class="prose">
-      <KếtQuảĐượcChọn từKhoáTiêuĐề="Tham số UTM" vậtThể={thamSốUTM} />
-      <br />
-
-      Liên kết rút gọn (đã được sao chép ✅):{" "}
-      <pre id="liên-kết-rút-gọn">{liênKếtRútGọn}</pre>
+      {tạoKếtQuảSaoChép()}
+      <details>
+        <summary>Tham số UTM</summary>
+        <KếtQuảĐượcChọn vậtThể={thamSốUTM} />
+      </details>
     </article>
   );
+
+  function tạoKếtQuảSaoChép() {
+    const tiêuĐề = bàiĐăngĐượcChọn["Tiêu đề"];
+    if (!bàiĐăngĐượcChọn["Nội dung bài đăng"]) {
+      return (
+        <p id="nội-dung-sao-chép">
+          Không tìm thấy nội dung hoặc mô tả ngắn ở bài đăng. Liên kết rút gọn
+          đã được sao chép ✅: <pre>{liênKếtRútGọn}</pre>
+        </p>
+      );
+    }
+    let nộiDungSaoChép = liênKếtRútGọn;
+    const {
+      "Mô tả bài đăng": môTả,
+      "Toàn bộ nội dung": nộiDung,
+    } = bàiĐăngĐượcChọn["Nội dung bài đăng"];
+
+    if (tiêuĐề && môTả) {
+      nộiDungSaoChép =
+        `Theo như bài ${tiêuĐề}, thì ${môTả}. Đọc kỹ hơn bài này tại ${liênKếtRútGọn}`;
+    } else if (tiêuĐề && nộiDung) {
+      nộiDungSaoChép = `# ${tiêuĐề}
+${nộiDung}
+${liênKếtRútGọn}`;
+    } else {
+      nộiDungSaoChép = `${tiêuĐề}: ${liênKếtRútGọn}`;
+    }
+    return (
+      <p id="nội-dung-sao-chép">
+        Nội dung đã được sao chép ✅:<br />
+        <pre>{nộiDungSaoChép}</pre>
+      </p>
+    );
+  }
 }

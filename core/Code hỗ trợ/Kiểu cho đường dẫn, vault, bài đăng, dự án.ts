@@ -47,30 +47,39 @@ export interface YAMLCủaGhiChú {
   share?: boolean;
   "Mã bài đăng"?: string;
 }
+export interface NộiDungBàiĐăng {
+  "Mô tả bài đăng"?: string;
+  "Toàn bộ nội dung"?: string;
+  "Định dạng nội dung"?: "md" | "html";
+}
 export class BàiĐăng {
   "Tiêu đề": string;
   URL: URLString;
-  "Mô tả bài đăng"?: string;
   "Dự án"?: DựÁn;
   Vault?: string;
   "Mã bài đăng"?: string;
+  "Nội dung bài đăng"?: NộiDungBàiĐăng;
 
   constructor(
     tiêuĐề: string = "",
     url: URLString = "",
-    môTảBàiĐăng: string = "",
     dựÁn: DựÁn = {
       "Mã dự án": "",
       "Tên dự án": "",
     },
     vault: string = "",
     mãBàiĐăng: string = "",
+    nộiDung: NộiDungBàiĐăng = {
+      "Mô tả bài đăng": "",
+      "Toàn bộ nội dung": "",
+      "Định dạng nội dung": "md",
+    },
   ) {
     this["Tiêu đề"] = tiêuĐề;
     this.URL = url;
-    this["Mô tả bài đăng"] = môTảBàiĐăng;
     this["Dự án"] = dựÁn;
     this.Vault = vault;
     this["Mã bài đăng"] = mãBàiĐăng;
+    this["Nội dung bài đăng"] = nộiDung;
   }
 }

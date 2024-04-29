@@ -5,12 +5,11 @@ import {
   ĐƯỜNG_DẪN_ĐẾN_TẬP_TIN_CSV,
 } from "./H%E1%BA%B1ng.ts";
 
-const danhSáchBàiĐăng =
-  (await tạoDanhSáchBàiĐăngTrênVault(THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT))
-    .concat(
-      await tạoDanhSáchBàiĐăngTrênWordPress(ĐƯỜNG_DẪN_ĐẾN_TẬP_TIN_CSV),
-    );
+// deno-fmt-ignore
+const danhSáchBàiĐăng = (await tạoDanhSáchBàiĐăngTrênVault(THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT)).concat(
+  await tạoDanhSáchBàiĐăngTrênWordPress(ĐƯỜNG_DẪN_ĐẾN_TẬP_TIN_CSV));
 Deno.writeTextFileSync(
   "core/A. Cấu hình/Danh sách tất cả bài đăng.json",
   JSON.stringify(danhSáchBàiĐăng),
 );
+console.log("done");
