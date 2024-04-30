@@ -1,3 +1,4 @@
+// deno-fmt-ignore-file
 import { Handlers } from "$fresh/server.ts";
 import { NơiĐăng } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { BàiĐăng } from "../../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
@@ -53,10 +54,8 @@ interface ReqBàiĐăngHoặcNơiĐăngTạoMới {
 export const handler: Handlers = {
   async POST(req, ctx) {
     const kv = await Deno.openKv();
-    const bàiĐăngHoặcNơiĐăngTạoMới = await req
-      .json() as ReqBàiĐăngHoặcNơiĐăngTạoMới;
-    const { "Tên danh sách": tênDanhSách, "Dữ liệu": dữLiệu } =
-      bàiĐăngHoặcNơiĐăngTạoMới;
+    const bàiĐăngHoặcNơiĐăngTạoMới = await req.json() as ReqBàiĐăngHoặcNơiĐăngTạoMới;
+    const { "Tên danh sách": tênDanhSách, "Dữ liệu": dữLiệu } = bàiĐăngHoặcNơiĐăngTạoMới;
     const key = tạoKey(tênDanhSách, dữLiệu);
     const value = {
       ...dữLiệu,

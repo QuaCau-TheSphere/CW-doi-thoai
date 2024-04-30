@@ -19,10 +19,12 @@ async function lấyMetaTag(
     };
   const { hostname, pathname } = new URL(url);
 
-  const bàiĐăng = {
+  const bàiĐăng: BàiĐăng = {
     "Tiêu đề": title,
     URL: url,
-    "Mô tả bài đăng": description,
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": description,
+    },
     Vault: site_name || hostname,
   };
 
@@ -78,8 +80,7 @@ export const handler: Handlers = {
         });
       } catch {
         return Response.json({
-          lỗi:
-            "Không lấy được dữ liệu thẻ og:title, og:description hoặc og:site_name Open Graph",
+          lỗi: "Không lấy được các thẻ Open Graph",
           html: html,
         });
       }
