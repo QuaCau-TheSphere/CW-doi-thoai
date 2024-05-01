@@ -9,14 +9,26 @@ type OneKey<K extends string, V = any> = {
 }[K];
 
 export default interface CấuHìnhNơiĐăng {
-  "Diễn đàn": CấuHìnhDiễnĐàn;
-  Chat: CấuHìnhChat;
-  Khác: NơiĐăngKhác;
-  "Viết tắt"?: Record<string, string>[];
+  "Diễn đàn"?: CấuHìnhDiễnĐàn | null;
+  Chat?: CấuHìnhChat | null;
+  Vault?: CấuHìnhVault | null;
+  Website?: CấuHìnhWebsite | null;
+  CV?: CấuHìnhCV | null;
+  Ảnh?: CấuHìnhẢnh | null;
+  Email?: CấuHìnhEmail | null;
+  "Dịch vụ lưu trữ"?: CấuHìnhDịchVụLưuTrữ | null;
+  "Viết tắt"?: Record<string, string>[] | null;
+  "Thành phần": ThànhPhần | null;
 }
 
-export type LoạiNềnTảng = "Diễn đàn" | "Chat" | "Khác";
-export type TênNềnTảng = TênDiễnĐàn | TênNềnTảngChat | LoạiNơiĐăngKhác; //| TênVault
+export type LoạiNềnTảng =
+  | "Diễn đàn"
+  | "Chat"
+  | LoạiNềnTảngKhác;
+export type TênNềnTảng =
+  | TênDiễnĐàn
+  | TênNềnTảngChat
+  | TênNềnTảngKhác;
 export type LoạiNơiĐăng =
   | LoạiNơiĐăngDiễnĐàn
   | LoạiNơiĐăngChat
@@ -28,7 +40,7 @@ export class NơiĐăng {
   "Loại nơi đăng": LoạiNơiĐăng;
   "Tên nền tảng": TênNềnTảng;
   "Loại nền tảng": LoạiNềnTảng;
-  URL: URLString;
+  URL?: URLString;
   "Mô tả nơi đăng"?: string;
 
   constructor(
@@ -61,6 +73,7 @@ export class NơiĐăng {
 /**
  * Diễn đàn
  *
+ * Diễn đàn là một loại nền tảng
  * Không xem subreddit là nhóm hay cộng đồng là máy chủ luôn được vì muốn sau đó xuất ra vẫn giữ tên là subreddit hay cộng động
  */
 
@@ -74,49 +87,49 @@ const danhSáchDiễnĐàn = [
   "Stack Exchange",
   "Instagram",
   "Pinterest",
-
+  "GitHub",
+  "GitLab",
   "Zalo",
   "Tinh tế",
   "Spiderum",
 ] as const;
-
-export type TênDiễnĐàn = typeof danhSáchDiễnĐàn[number] | "GitHub";
+/**
+ * Vì diễn đàn là một loại nền tảng, nên tên diễn đàn chính là tên nền tảng
+ */
+export type TênDiễnĐàn = typeof danhSáchDiễnĐàn[number];
 export type LoạiNơiĐăngDiễnĐàn =
   | "Nhóm"
   | "Trang"
   | "Tài khoản"
   | "Subreddit"
   | "Repo";
-type ThànhPhầnTàiKhoảnTrangHoặcNhóm =
-  | "Câu giới thiệu ngắn"
-  | "Đoạn giới thiệu chi tiết"
-  | "Ảnh bìa"
-  | "Ảnh đại diện";
-type TênTàiKhoảnTrangHoặcNhóm = string;
 
 /**
- * Ví dụ:
+ * Tên nơi đăng diễn đàn, bao gồm tên tài khoản, tên trang hoặc tên nhóm
+ * @example
  * ```yaml
- * - ooker777         # Kiểu `TênTàiKhoảnTrangHoặcNhóm`
- * - Quả Cầu:            # Kiểu `Record<TênTàiKhoảnTrangHoặcNhóm, ThànhPhần[]>`
- *   - Câu giới thiệu ngắn
- *   - Đoạn giới thiệu chi tiết
- * - SNPO:             # Kiểu `Record<TênTàiKhoảnTrangHoặcNhóm, null>
+ * Nhóm:
+ *   - SNPO
+ * ```
+ * @example
+ * ```yaml
+ * Tài khoản:
+ *   - ooker777
+ * ```
+ * @example
+ * ```yaml
+ * Trang:
+ *   - Quả Cầu
  * ```
  */
-type TàiKhoảnHoặcTrangHoặcNhóm =
-  | TênTàiKhoảnTrangHoặcNhóm
-  | OneKey<TênTàiKhoảnTrangHoặcNhóm, ThànhPhầnTàiKhoảnTrangHoặcNhóm[] | null>;
-export type VậtThểLàmGiáTrịChoTênDiễnĐàn = Record<
-  LoạiNơiĐăngDiễnĐàn,
-  TàiKhoảnHoặcTrangHoặcNhóm[]
+export type VậtThểLàmGiáTrịChoTênDiễnĐàn =
+  | Record<LoạiNơiĐăngDiễnĐàn, string[]>
+  | null;
+
+type CấuHìnhDiễnĐàn = Record<
+  TênDiễnĐàn,
+  VậtThểLàmGiáTrịChoTênDiễnĐàn | undefined | null
 >;
-
-type CấuHìnhDiễnĐàn = Record<TênDiễnĐàn, VậtThểLàmGiáTrịChoTênDiễnĐàn> | GitHub;
-
-type ThànhPhầnGitHub = "Website" | "Readme" | "Discussion" | "Issue";
-export type TênRepo = string;
-type GitHub = Record<TênRepo, ThànhPhầnGitHub[]>[];
 
 /**
  * Chat
@@ -174,12 +187,32 @@ interface CấuHìnhChat {
 /**
  * Nơi đăng khác
  */
+export const danhSáchLoạiNơiĐăngKhác = [
+  "Vault",
+  "Website",
+  "Email",
+  "CV",
+  "Ảnh",
+  "Dịch vụ lưu trữ",
+] as const;
+export type LoạiNơiĐăngKhác = typeof danhSáchLoạiNơiĐăngKhác[number];
+type TênNềnTảngKhác = typeof danhSáchLoạiNơiĐăngKhác[number];
+type LoạiNềnTảngKhác = typeof danhSáchLoạiNơiĐăngKhác[number];
 
-/** Vì các nơi đăng khác không phải là nền tảng nào, nên dùng luôn loại nơi đăng làm tên nền tảng */
-export type LoạiNơiĐăngKhác = "Website" | "Email" | "Ảnh";
-type TênEmailWebsiteHoặcẢnh = string;
-type ThànhPhầnEmailWebsiteHoặcẢnh = string;
-export type EmailWebsiteHoặcẢnh =
-  | TênEmailWebsiteHoặcẢnh
-  | OneKey<TênEmailWebsiteHoặcẢnh, ThànhPhầnEmailWebsiteHoặcẢnh[] | null>;
-export type NơiĐăngKhác = Record<LoạiNơiĐăngKhác, EmailWebsiteHoặcẢnh[]>;
+export type CấuHìnhVault = string[];
+export type CấuHìnhWebsite = string[];
+export type CấuHìnhEmail = string[];
+export type CấuHìnhCV = string[];
+export type CấuHìnhẢnh = string[];
+export type CấuHìnhDịchVụLưuTrữ = string[];
+
+export interface ThànhPhần {
+  "Diễn đàn": Record<TênDiễnĐàn, Record<LoạiNơiĐăngDiễnĐàn, string[]>>;
+  Chat: Record<TênNềnTảngChat, Record<LoạiNơiĐăngChat, string[]>>;
+  Vault: string[];
+  Website: string[];
+  CV: string[];
+  Ảnh: string[];
+  Email: string[];
+  "Dịch vụ lưu trữ": string[];
+}
