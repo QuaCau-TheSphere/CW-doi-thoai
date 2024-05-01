@@ -7,16 +7,31 @@ import {
   NơiĐăng,
   TênNềnTảng,
 } from "../../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
+interface MetaTags {
+  title: string;
+  description: string;
+  site_name: string;
+  type: string;
+  url: string;
+  image: string;
+  alt: string;
+  locale: string;
+}
+
+function lấyTitle(title: string): string {
+  const titleSplit = title.split(" | ");
+  titleSplit.pop();
+  return titleSplit.join(" | ");
+}
 
 async function lấyMetaTag(
   url: URL,
 ): Promise<{ bàiĐăng: BàiĐăng; nơiĐăng: NơiĐăng }> {
-  const { title, description, site_name } = (await getMetaTags(url.href))
-    .og as {
-      title: string;
-      description: string;
-      site_name: string;
-    };
+  const og = (await getMetaTags(url.href)).og as MetaTags;
+  const title = lấyTitle(og.title);
+  const description = og.description;
+  const site_name = og.site_name.replace("www.", "");
+
   const { hostname, pathname } = new URL(url);
 
   const bàiĐăng: BàiĐăng = {
@@ -39,7 +54,7 @@ async function lấyMetaTag(
       tênNềnTảng = "Facebook";
       if (pathname.includes("group")) {
         loạiNơiĐăng = "Nhóm";
-        tênCộngĐồng = ""; //todo
+        tênCộngĐồng = title;
       } else {
         loạiNơiĐăng = "Trang";
       }
@@ -56,9 +71,9 @@ async function lấyMetaTag(
       "Tên nơi đăng": title,
       URL: url,
       "Mô tả nơi đăng": description,
-      "Loại nơi đăng": loạiNơiĐăng,
       "Loại nền tảng": loạiNềnTảng,
       "Tên nền tảng": tênNềnTảng,
+      "Loại nơi đăng": loạiNơiĐăng,
       "Tên cộng đồng": tênCộngĐồng,
     };
   }

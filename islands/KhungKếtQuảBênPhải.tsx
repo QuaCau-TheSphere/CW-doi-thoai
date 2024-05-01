@@ -61,8 +61,7 @@ export default function KhungKếtQuảBênPhải(
       });
       console.log("Response:", res);
     }
-    ghiLênKV()
-      .catch(console.error);
+    ghiLênKV().catch(console.error);
     if (!window.location.href.includes("http://localhost")) {
       navigator.clipboard.writeText(liênKếtRútGọn);
     }
@@ -82,12 +81,12 @@ export default function KhungKếtQuảBênPhải(
   return (
     <article id="khung-bên-phải-khi-có-kết-quả" class="prose">
       {tạoKếtQuảSaoChép()}
+      Nội dung trên đã được sao chép vào bộ nhớ. Truy cập{" "}
+      <i>{liênKếtRútGọn}/chart</i> để xem thống kê lượt truy cập.
       <details>
         <summary>Tham số UTM</summary>
         <KếtQuảĐượcChọn vậtThể={thamSốUTM} />
       </details>
-      Nội dung trên đã được sao chép vào bộ nhớ. Truy cập{" "}
-      <code>{liênKếtRútGọn}/chart</code> để xem thống kê lượt truy cập.
     </article>
   );
 
@@ -111,11 +110,10 @@ export default function KhungKếtQuảBênPhải(
 
     if (tiêuĐề && môTả) {
       nộiDungTạoSẵn =
-        `Theo như bài ${tiêuĐề}, thì ${môTả}. Đọc kỹ hơn bài này tại ${liênKếtRútGọn}`;
+        `Theo như bài "${tiêuĐề}", thì ${môTả}. Link: ${liênKếtRútGọn}`;
     } else if (tiêuĐề && nộiDung) {
-      nộiDungTạoSẵn = `# ${tiêuĐề}
-${nộiDung}
-${liênKếtRútGọn}`;
+      nộiDungTạoSẵn = `Về vấn đề này thì mình nghĩ ${tiêuĐề}. ${nộiDung}
+Nếu sau này mình nghĩ ra được thêm điều gì mới thì sẽ cập nhật ghi chú tại ${liênKếtRútGọn}`;
     } else {
       nộiDungTạoSẵn = `${tiêuĐề}: ${liênKếtRútGọn}`;
     }

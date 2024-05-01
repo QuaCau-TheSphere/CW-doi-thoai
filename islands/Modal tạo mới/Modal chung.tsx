@@ -9,6 +9,16 @@ import { TÊN_MIỀN_RÚT_GỌN } from "../../core/Code hỗ trợ/Hằng.ts";
 import { đổiKhungNhập } from "../../utils/Hàm cho khung nhập.ts";
 import ModalBàiĐăng from "./Modal bài đăng.tsx";
 import ModalNơiĐăng from "./Modal nơi đăng.tsx";
+import {
+  BàiĐăng,
+  URLString,
+} from "../../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import {
+  LoạiNềnTảng,
+  NơiĐăng,
+} from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { TênNềnTảng } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { LoạiNơiĐăng } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 
 function CácTrườngNhậpMới(
   { tênDanhSách, urlNhậpỞKhungNhậpNgoài }: {
@@ -67,11 +77,7 @@ function handleSubmit(
   setElement: StateUpdater<ElementDùngTab>,
 ) {
   event.preventDefault();
-  const formData = new FormData(event.currentTarget);
-  const dữLiệuMới = {
-    "Tên danh sách": tênDanhSách,
-    "Dữ liệu": Object.fromEntries(formData),
-  };
+  const dữLiệuMới = tạoDữLiệuMới(event.currentTarget, tênDanhSách);
   const url = `${TÊN_MIỀN_RÚT_GỌN}/api/newData`;
 
   fetch(url, {
@@ -124,19 +130,63 @@ export default function ModalTạoMới(
   );
 }
 
-// function tạoDữLiệuMới(eventcurrentTarget: any, tênDanhSách: TênDanhSách) {
-//   const formData = Object.fromEntries(new FormData(eventcurrentTarget))
-//   let dữLiệu
-//   switch (tênDanhSách) {
-//     case 'bài đăng':
-//       const {URL: url, 'Tiêu đề': tiêuĐề, 'Mô tả bài đăng': môTảBàiĐăng, ''} = formData
-//       break;
+//todo
+function tạoDữLiệuMới(eventcurrentTarget: any, tênDanhSách: TênDanhSách) {
+  const formData = Object.fromEntries(new FormData(eventcurrentTarget));
 
-//     default:
-//       break;
-//   }
-//   return {
-//     "Tên danh sách": tênDanhSách,
-//     "Dữ liệu": dữLiệu,
-//   };
-// }
+  let dữLiệu: BàiĐăng | NơiĐăng;
+  switch (tênDanhSách) {
+    case "bài đăng": {
+      const {
+        URL: url,
+        "Tiêu đề": tiêuĐề,
+        "Mô tả bài đăng": môTảBàiĐăng,
+        "Tên dự án": dựÁn,
+        Website: vault,
+      } = formData as Record<string, string>;
+      dữLiệu = {
+        URL: url,
+        "Tiêu đề": tiêuĐề,
+        "Dự án": {
+          "Mã dự án": undefined,
+          "Tên dự án": dựÁn,
+        },
+        "Mã bài đăng": undefined,
+        "Nội dung bài đăng": {
+          "Mô tả bài đăng": môTảBàiĐăng,
+          "Toàn bộ nội dung": undefined,
+          "Định dạng nội dung": undefined,
+        },
+        Vault: vault,
+      };
+      break;
+    }
+    case "nơi đăng":
+      {
+        dữLiệu = formData as unknown as NơiĐăng;
+        // const {
+        //   URL: url,
+        //   "Tên nơi đăng": tênNơiĐăng,
+        //   "Loại nơi đăng": loạiNơiĐăng,
+        //   "Tên cộng đồng": tênCộngĐồng,
+        //   "Tên nền tảng": tênNềnTảng,
+        //   "Mô tả nơi đăng": môTảNơiĐăng,
+        //   "Loại nền tảng": loạiNềnTảng,
+        // } = formData as unknown as NơiĐăng;
+        // dữLiệu = {
+        //   URL: url,
+        //   "Tên nơi đăng": tênNơiĐăng,
+        //   "Loại nơi đăng": loạiNơiĐăng as LoạiNơiĐăng,
+        //   "Tên cộng đồng": tênCộngĐồng,
+        //   "Tên nền tảng": tênNềnTảng as TênNềnTảng,
+        //   "Mô tả nơi đăng": môTảNơiĐăng,
+        //   "Loại nền tảng": loạiNềnTảng as LoạiNềnTảng,
+        // };
+      }
+      break;
+  }
+  return {
+    "Tên danh sách": tênDanhSách,
+    "Dữ liệu": dữLiệu,
+  };
+}

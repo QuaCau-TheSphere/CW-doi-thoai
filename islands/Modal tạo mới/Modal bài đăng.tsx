@@ -68,26 +68,27 @@ export default function ModalBàiĐăng(
 
       <label className="form-control w-full max-w-xs">
         <div className="label">
-          <span className="label-text font-bold">Dự án</span>
+          <span className="label-text font-bold">Tên dự án</span>
         </div>
         <input
           className="input input-bordered input-primary w-full max-w-xs"
-          id="dự-án"
+          id="tên-dự-án"
           type="text"
-          name="Dự án"
+          name="Tên dự án"
+          placeholder="Việc đăng bài này nằm trong dự án hoặc chiến dịch nào của bạn?"
           value={dựÁn?.["Tên dự án"]}
         />
       </label>
 
       <label className="form-control w-full max-w-xs">
         <div className="label">
-          <span className="label-text font-bold">Vault</span>
+          <span className="label-text font-bold">Website</span>
         </div>
         <input
           className="input input-bordered input-primary w-full max-w-xs"
-          id="vault"
+          id="website"
           type="text"
-          name="Vault"
+          name="Website"
           value={vault}
         />
       </label>
