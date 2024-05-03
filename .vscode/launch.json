@@ -1,3 +1,22 @@
+// {
+//   "version": "0.2.0",
+//   "configurations": [
+//     {
+//       "request": "launch",
+//       "name": "Debug tests",
+//       "type": "node",
+//       "program": "${file}",
+//       "cwd": "${workspaceFolder}",
+//       "runtimeExecutable": "deno",
+//       "runtimeArgs": [
+//         "test",
+//         "--inspect-wait"
+//       ],
+//       "attachSimplePort": 9229
+//     }
+//   ]
+// }
+
 {
   // Use IntelliSense to learn about possible attributes.
   // Hover to view descriptions of existing attributes.
@@ -13,8 +32,9 @@
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "C:\\Users\\ganuo\\AppData\\Local\\Microsoft\\WinGet\\Links\\deno.EXE",
       "runtimeArgs": [
-        "run",
-        "--inspect-wait",
+        "test",
+        // "--inspect-wait",
+        "--inspect-brk",
         "--allow-all",
         "--unstable-kv"
       ],

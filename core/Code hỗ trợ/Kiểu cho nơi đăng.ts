@@ -43,7 +43,7 @@ export class NơiĐăng {
   "Lĩnh vực"?: string[];
   "Mô tả nơi đăng"?: string;
   "Mã nơi đăng"?: string;
-  "Vị trí"?: string;
+  "Vị trí"?: string[];
 
   // constructor(
   //   tênNơiĐăng: TênNơiĐăng = "",

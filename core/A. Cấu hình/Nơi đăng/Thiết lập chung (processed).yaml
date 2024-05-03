@@ -1,72 +1,73 @@
 Vị trí:
   # Diễn đàn
   ## Facebook
-  - Nơi đăng: [Diễn đàn, Facebook, Tài khoản]
-    Vị trí: [Bio, About, Website, Avatar, Cover, Pinned post, Album]
+  - Loại nơi đăng: [Diễn đàn, Facebook, Tài khoản]
+    Danh sách vị trí: [Bài đăng, Bio, About, Website, Ảnh đại diện, Ảnh bìa, Bài đăng được ghim, Album ảnh]
 
-  - Nơi đăng: [Diễn đàn, Facebook, Trang]
-    Vị trí: [Bio, About, Website, Avatar, Cover, Pinned post, Album]
+  - Loại nơi đăng: [Diễn đàn, Facebook, Trang]
+    Danh sách vị trí: [Bài đăng, Bio, About, Website, Ảnh đại diện, Ảnh bìa, Bài đăng được ghim, Album ảnh]
 
-  - Nơi đăng: [Diễn đàn, Facebook, Nhóm]
-    Vị trí: [About, Membership questions, Cover, Pinned post, Album]
+  - Loại nơi đăng: [Diễn đàn, Facebook, Nhóm]
+    Danh sách vị trí: [Bài đăng, About, Câu hỏi xét thành viên, Ảnh bìa, Bài đăng được ghim, Album ảnh]
 
   ## GitHub
-  - Nơi đăng: [Diễn đàn, GitHub, Repo]
-    Vị trí: [Website, Readme, Discussion, Issue]
+  - Loại nơi đăng: [Diễn đàn, GitHub, Repo]
+    Danh sách vị trí: [Bài đăng, Website, Readme, Thảo luận, Vấn đề]
 
   # Chat
   ## Messenger
-  - Nơi đăng: [Chat, Messenger, Cộng đồng]
-    Vị trí: null
+  - Loại nơi đăng: [Chat, Messenger, Cộng đồng]
+    Danh sách vị trí: null
 
-  - Nơi đăng: [Chat, Messenger, Cộng đồng, Community chat]
-    Vị trí: [About, Pinned message]
+  - Loại nơi đăng: [Chat, Messenger, Cộng đồng, Community chat]
+    Danh sách vị trí: [Tin nhắn, About, Tin nhắn được ghim]
 
   ## Discord
-  - Nơi đăng: [Chat, Discord, Máy chủ]
-    Vị trí: [Description, Onboarding]
+  - Loại nơi đăng: [Chat, Discord, Máy chủ]
+    Danh sách vị trí: [Tin nhắn, Description, Giới thiệu cho người mới]
 
-  - Nơi đăng: [Chat, Discord, Máy chủ, Text channel]
-    Vị trí: [Channel topic, Pinned message]
+  - Loại nơi đăng: [Chat, Discord, Máy chủ, Kênh thường]
+    Danh sách vị trí: [Tin nhắn, Chủ đề kênh, Tin nhắn được ghim]
 
-  - Nơi đăng: [Chat, Discord, Máy chủ, Text channel, Thread]
-    Vị trí: [Channel topic, Pinned message]
+  - Loại nơi đăng: [Chat, Discord, Máy chủ, Kênh thường, Thread]
+    Danh sách vị trí: [Tin nhắn, Chủ đề kênh, Tin nhắn được ghim]
 
-  - Nơi đăng: [Chat, Discord, Máy chủ, Forum channel]
-    Vị trí: [Post guideline, Pinned post]
+  - Loại nơi đăng: [Chat, Discord, Máy chủ, Kênh diễn đàn]
+    Danh sách vị trí: [Tin nhắn, Hướng dẫn đăng bài, Bài đăng được ghim]
 
-  - Nơi đăng: [Chat, Discord, Máy chủ, Forum channel, Forum post]
-    Vị trí: [Pinned message]
+  - Loại nơi đăng: [Chat, Discord, Máy chủ, Kênh diễn đàn, Bài diễn đàn]
+    Danh sách vị trí: [Tin nhắn, Tin nhắn được ghim]
 
   ## Telegram
-  - Nơi đăng: [Chat, Telegram, Tài khoản]
-    Vị trí: [Bio, Pinned message]
+  - Loại nơi đăng: [Chat, Telegram, Tài khoản]
+    Danh sách vị trí: [Tin nhắn, Bio, Tin nhắn được ghim]
 
-  - Nơi đăng: [Chat, Telegram, Nhóm]
-    Vị trí: [Description, Pinned message]
+  - Loại nơi đăng: [Chat, Telegram, Nhóm]
+    Danh sách vị trí: [Tin nhắn, Description, Tin nhắn được ghim]
 
-  - Nơi đăng: [Chat, Telegram, Nhóm, Topic]
-    Vị trí: [Pinned message]
+  - Loại nơi đăng: [Chat, Telegram, Nhóm, Chủ đề]
+    Danh sách vị trí: [Tin nhắn, Tin nhắn được ghim]
 
   # Website
-  - Nơi đăng: [Website]
-    Vị trí: [trang chủ]
+  - Loại nơi đăng: [Website]
+    Danh sách vị trí: [Bài đăng, Trang chủ]
 
   # Email
-  - Nơi đăng: [Email]
-    Vị trí: [chữ ký]
+  - Loại nơi đăng: [Email]
+    Danh sách vị trí: [Nội dung email, Chữ ký]
 
   # CV
-  - Nơi đăng: [CV]
-    Vị trí: [Website]
+  - Loại nơi đăng: [CV]
+    Danh sách vị trí: [Link dự án, Website]
 
   # Ảnh
-  - Nơi đăng: [Ảnh]
-    Vị trí: [QR, text]
+  - Loại nơi đăng: [Ảnh]
+    Danh sách vị trí: [QR, Chữ trong ảnh, Metadata]
 
 Vị trí nhỏ hơn:
-  Avatar: [QR, Text, Description]
-  Cover: [QR, Text, Description]
-  Pinned post: [text, image QR, image text]
-  Pinned message: [text, image QR, image text]
-  Album:
+  Bài đăng: [Nội dung chính, Bình luận] 
+  Ảnh đại diện: [Mô tả ảnh, QR trong ảnh, Chữ trong ảnh, Bình luận]
+  Ảnh bìa: [Mô tả ảnh, QR trong ảnh, Chữ trong ảnh, Bình luận]
+  Bài đăng được ghim: [Nội dung chính, Bình luận, QR trong ảnh, Chữ trong ảnh]
+  Tin nhắn được ghim: [Nội dung chính, Bình luận, QR trong ảnh, Chữ trong ảnh]
+  Album ảnh: [Mô tả album, Bình luận] 
