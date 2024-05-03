@@ -1,0 +1,72 @@
+Vị trí:
+  # Diễn đàn
+  ## Facebook
+  - Nơi đăng: [Diễn đàn, Facebook, Tài khoản]
+    Vị trí: [Bio, About, Website, Avatar, Cover, Pinned post, Album]
+
+  - Nơi đăng: [Diễn đàn, Facebook, Trang]
+    Vị trí: [Bio, About, Website, Avatar, Cover, Pinned post, Album]
+
+  - Nơi đăng: [Diễn đàn, Facebook, Nhóm]
+    Vị trí: [About, Membership questions, Cover, Pinned post, Album]
+
+  ## GitHub
+  - Nơi đăng: [Diễn đàn, GitHub, Repo]
+    Vị trí: [Website, Readme, Discussion, Issue]
+
+  # Chat
+  ## Messenger
+  - Nơi đăng: [Chat, Messenger, Cộng đồng]
+    Vị trí: null
+
+  - Nơi đăng: [Chat, Messenger, Cộng đồng, Community chat]
+    Vị trí: [About, Pinned message]
+
+  ## Discord
+  - Nơi đăng: [Chat, Discord, Máy chủ]
+    Vị trí: [Description, Onboarding]
+
+  - Nơi đăng: [Chat, Discord, Máy chủ, Text channel]
+    Vị trí: [Channel topic, Pinned message]
+
+  - Nơi đăng: [Chat, Discord, Máy chủ, Text channel, Thread]
+    Vị trí: [Channel topic, Pinned message]
+
+  - Nơi đăng: [Chat, Discord, Máy chủ, Forum channel]
+    Vị trí: [Post guideline, Pinned post]
+
+  - Nơi đăng: [Chat, Discord, Máy chủ, Forum channel, Forum post]
+    Vị trí: [Pinned message]
+
+  ## Telegram
+  - Nơi đăng: [Chat, Telegram, Tài khoản]
+    Vị trí: [Bio, Pinned message]
+
+  - Nơi đăng: [Chat, Telegram, Nhóm]
+    Vị trí: [Description, Pinned message]
+
+  - Nơi đăng: [Chat, Telegram, Nhóm, Topic]
+    Vị trí: [Pinned message]
+
+  # Website
+  - Nơi đăng: [Website]
+    Vị trí: [trang chủ]
+
+  # Email
+  - Nơi đăng: [Email]
+    Vị trí: [chữ ký]
+
+  # CV
+  - Nơi đăng: [CV]
+    Vị trí: [Website]
+
+  # Ảnh
+  - Nơi đăng: [Ảnh]
+    Vị trí: [QR, text]
+
+Vị trí nhỏ hơn:
+  Avatar: [QR, Text, Description]
+  Cover: [QR, Text, Description]
+  Pinned post: [text, image QR, image text]
+  Pinned message: [text, image QR, image text]
+  Album:

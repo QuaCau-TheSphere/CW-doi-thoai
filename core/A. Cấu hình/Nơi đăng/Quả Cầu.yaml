@@ -104,6 +104,7 @@ Chat:
               - Vật lý
     Tài khoản:
       - Ooker
+
   Zalo:
   Viber:
   Reddit:
@@ -148,18 +149,10 @@ Viết tắt:
   - Reddit: R
   - Stack Exchange: SE
 
-Thành phần:
-  Diễn đàn:
-    Facebook:
-      Tài khoản: Bio, About, Website, Avatar image, Avatar description, Cover image, Cover image description
-      Trang: Bio, About, Website, Avatar image, Avatar description, Cover image, Cover image description
-      Nhóm: About, Membership questions, Cover image, Cover image description
-    GitHub:
-      Repo: Website, Readme, Discussion, Issue
-  Chat:
-    Discord:
-      Máy chủ: About
-      Tài khoản: About
-  Website: trang chủ
-  Email: chữ ký
-  CV: Website
+Kênh forum:
+  - "#b-nhu-cầu-thường-gặp"
+  - "#b-sự-kiện-cơ-hội-tuyển-dụng-rao-vặt"
+  - "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ"
+  - "#d-phát-triển-bản-thân-học-kỹ-năng"
+  - "#f-cùng-suy-tư"
+  - "#g-nghiên-cứu-liên-ngành"

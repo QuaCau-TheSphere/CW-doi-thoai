@@ -2,7 +2,7 @@ import {
   assert,
   assertEquals,
 } from "https://deno.land/std@0.219.0/assert/mod.ts";
-import tạoDanhSáchNơiĐăng from "../B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình.ts";
+import tạoDanhSáchNơiĐăng from "../B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình/mod.ts";
 import { assertArrayIncludes } from "https://deno.land/std@0.219.0/assert/assert_array_includes.ts";
 import { parse } from "$std/yaml/parse.ts";
 import tạoDanhSáchBàiĐăngTrênVault from "../B.%20T%E1%BA%A1o%20k%E1%BA%BFt%20qu%E1%BA%A3/1.%20T%E1%BA%A1o%20danh%20s%C3%A1ch%20t%E1%BA%A5t%20c%E1%BA%A3%20b%C3%A0i%20%C4%91%C4%83ng/a.%20T%E1%BA%A1o%20theo%20vault.ts";

@@ -18,7 +18,7 @@ export default interface CấuHìnhNơiĐăng {
   Email?: CấuHìnhEmail | null;
   "Dịch vụ lưu trữ"?: CấuHìnhDịchVụLưuTrữ | null;
   "Viết tắt"?: Record<string, string>[] | null;
-  "Thành phần": ThànhPhần | null;
+  "Kênh forum Discord"?: string[] | null;
 }
 
 export type LoạiNềnTảng =
@@ -33,33 +33,35 @@ export type LoạiNơiĐăng =
   | LoạiNơiĐăngDiễnĐàn
   | LoạiNơiĐăngChat
   | LoạiNơiĐăngKhác;
-export type TênNơiĐăng = string;
+export type TênNơiĐăng = TênNơiĐăngDiễnĐàn | TênNơiĐăngChat | TênNơiĐăngKhác;
 export class NơiĐăng {
-  "Tên nơi đăng": TênNơiĐăng;
-  "Tên cộng đồng"?: string;
-  "Loại nơi đăng": LoạiNơiĐăng;
-  "Tên nền tảng": TênNềnTảng;
   "Loại nền tảng": LoạiNềnTảng;
+  "Tên nền tảng": TênNềnTảng;
+  "Loại nơi đăng": LoạiNơiĐăng;
+  "Tên nơi đăng": TênNơiĐăng;
   URL?: URLString;
+  "Lĩnh vực"?: string[];
   "Mô tả nơi đăng"?: string;
+  "Mã nơi đăng"?: string;
+  "Vị trí"?: string;
 
-  constructor(
-    tênNơiĐăng: TênNơiĐăng = "",
-    tênCộngĐồng: string = "",
-    loạiNơiĐăng: LoạiNơiĐăng = "Nhóm",
-    tênNềnTảng: TênNềnTảng = "Facebook",
-    loạiNềnTảng: LoạiNềnTảng = "Diễn đàn",
-    url: URLString = "",
-    môTảNơiĐăng: string = "",
-  ) {
-    this["Tên nơi đăng"] = tênNơiĐăng;
-    this["Tên cộng đồng"] = tênCộngĐồng;
-    this["Loại nơi đăng"] = loạiNơiĐăng;
-    this["Tên nền tảng"] = tênNềnTảng;
-    this["Loại nền tảng"] = loạiNềnTảng;
-    this.URL = url;
-    this["Mô tả nơi đăng"] = môTảNơiĐăng;
-  }
+  // constructor(
+  //   tênNơiĐăng: TênNơiĐăng = "",
+  //   tênCộngĐồng: string = "",
+  //   loạiNơiĐăng: LoạiNơiĐăng = "Nhóm",
+  //   tênNềnTảng: TênNềnTảng = "Facebook",
+  //   loạiNềnTảng: LoạiNềnTảng = "Diễn đàn",
+  //   url: URLString = "",
+  //   môTảNơiĐăng: string = "",
+  // ) {
+  //   this["Tên nơi đăng"] = tênNơiĐăng;
+  //   this["Tên cộng đồng"] = tênCộngĐồng;
+  //   this["Loại nơi đăng"] = loạiNơiĐăng;
+  //   this["Tên nền tảng"] = tênNềnTảng;
+  //   this["Loại nền tảng"] = loạiNềnTảng;
+  //   this.URL = url;
+  //   this["Mô tả nơi đăng"] = môTảNơiĐăng;
+  // }
 }
 
 /**
@@ -71,9 +73,10 @@ export class NơiĐăng {
  */
 
 /**
- * Diễn đàn
+ * DIỄN ĐÀN
  *
  * Diễn đàn là một loại nền tảng
+ *
  * Không xem subreddit là nhóm hay cộng đồng là máy chủ luôn được vì muốn sau đó xuất ra vẫn giữ tên là subreddit hay cộng động
  */
 
@@ -94,16 +97,13 @@ const danhSáchDiễnĐàn = [
   "Spiderum",
 ] as const;
 /**
- * Vì diễn đàn là một loại nền tảng, nên tên diễn đàn chính là tên nền tảng
+ * Vì diễn đàn là một loại nền tảng, nên tên diễn đàn chính là tên nền tảng. Đúng ra là nên đặt tên là `TênNềnTảngDiễnĐàn` cho thống nhất với `TênNềnTảngChat` và `TênNềnTảngKhác`, nhưng lúc viết code thấy có thể rút gọn được thì rút cho gọn.
  */
 export type TênDiễnĐàn = typeof danhSáchDiễnĐàn[number];
-export type LoạiNơiĐăngDiễnĐàn =
-  | "Nhóm"
-  | "Trang"
-  | "Tài khoản"
-  | "Subreddit"
-  | "Repo";
-
+export type LoạiNơiĐăngDiễnĐàn = [
+  "Nhóm" | "Trang" | "Tài khoản" | "Subreddit" | "Repo",
+];
+type TênNơiĐăngDiễnĐàn = [string];
 /**
  * Tên nơi đăng diễn đàn, bao gồm tên tài khoản, tên trang hoặc tên nhóm
  * @example
@@ -122,17 +122,17 @@ export type LoạiNơiĐăngDiễnĐàn =
  *   - Quả Cầu
  * ```
  */
-export type VậtThểLàmGiáTrịChoTênDiễnĐàn =
-  | Record<LoạiNơiĐăngDiễnĐàn, string[]>
+export type CấuHìnhNơiĐăngDiễnĐàn =
+  | Record<LoạiNơiĐăngDiễnĐàn[0], string[]>
   | null;
 
 type CấuHìnhDiễnĐàn = Record<
   TênDiễnĐàn,
-  VậtThểLàmGiáTrịChoTênDiễnĐàn | undefined | null
+  CấuHìnhNơiĐăngDiễnĐàn | null
 >;
 
 /**
- * Chat
+ * CHAT
  */
 const danhSáchNềnTảngChat = [
   "Messenger",
@@ -145,49 +145,83 @@ const danhSáchNềnTảngChat = [
 ] as const;
 
 export type TênNềnTảngChat = typeof danhSáchNềnTảngChat[number];
-type TênMáyChủ = string;
-type TênThreadHoặcTopic = string;
+
+/** Thông thường */
+export type LoạiNơiĐăngChatThôngThường = ["Cá nhân" | "Tài khoản" | "Nhóm"];
+export type CấuHìnhNơiĐăngChatThôngThường = Record<
+  LoạiNơiĐăngChatThôngThường[0],
+  string[] | null
+>;
+type TênNơiĐăngChatThôngThường = [string];
+
+/** Messenger, Discord, Telegram */
+export type TênMáyChủ = string;
+export type TênThreadHoặcTopic = string;
 type TênKênh = string;
+type TênNơiĐăngMessengerDiscordTelegram = [TênMáyChủ, TênKênh] | [
+  TênMáyChủ,
+  TênKênh,
+  TênThreadHoặcTopic,
+];
 /**
+ * Cấu hình máy chủ cũng chính là danh sách kênh của máy chủ đó
+ *
+ * @example
  * ```yaml
- * - Tên cộng đồng 1       # Kiểu `string`
- * - Tên máy chủ:          # Kiểu `Record<string, string[]>`
- *   - Kênh 1                   # Kiểu `string`
- *   - Kênh 2:                  # Kiểu `Record<TênKênh, TênThreadHoặcTopic[]>`
- *     - Thread 1
- *   - Kênh 3:                  # Kiểu `Record<TênKênh, null>`
- * - Tên cộng đồng 2:      # Kiểu `Record<string, null>
+ * - Kênh 1          # `TênKênh`
+ * - Kênh 2:         # `Record<TênKênh, TênThreadHoặcTopic[]>`
+ *   - Thread 1
+ * - Kênh 3:         # `Record<TênKênh, null>`
  * ```
  */
-type Kênh = TênKênh | Record<TênKênh, TênThreadHoặcTopic[] | null>;
-export type MáyChủ = OneKey<TênMáyChủ, Kênh[]>;
+export type CấuHìnhMáyChủ =
+  (TênKênh | Record<TênKênh, TênThreadHoặcTopic[] | null>)[];
+type MáyChủ = OneKey<TênMáyChủ, CấuHìnhMáyChủ | null>;
 
+type LoạiNơiĐăngMessenger =
+  | ["Cộng đồng", "Community chat"]
+  | ["Cộng đồng", "Community chat", "Sidechat"];
+type LoạiNơiĐăngDiscord =
+  | ["Máy chủ", "Text channel"]
+  | ["Máy chủ", "Text channel", "Thread"]
+  | ["Máy chủ", "Forum channel", "Forum post"];
+type LoạiNơiĐăngTelegram = ["Nhóm"] | ["Nhóm", "Topic"];
+export type LoạiNơiĐăngMessengerDiscordTelegram =
+  | LoạiNơiĐăngMessenger
+  | LoạiNơiĐăngDiscord
+  | LoạiNơiĐăngTelegram;
+
+/** Tổng hợp */
+type TênNơiĐăngChat =
+  | TênNơiĐăngChatThôngThường
+  | TênNơiĐăngMessengerDiscordTelegram;
 export type LoạiNơiĐăngChat =
-  | "Cá nhân"
-  | "Cộng đồng"
-  | "Máy chủ"
-  | "Kênh"
-  | "Nhóm";
-export interface VậtThểNơiĐăngChat {
-  "Cá nhân": string[];
-  Nhóm: string[];
-}
+  | LoạiNơiĐăngChatThôngThường
+  | LoạiNơiĐăngMessengerDiscordTelegram;
 
 interface CấuHìnhChat {
-  Messenger: VậtThểNơiĐăngChat & { "Cộng đồng": MáyChủ[] };
-  Discord: VậtThểNơiĐăngChat & { "Máy chủ": MáyChủ[] };
-  Telegram: { "Cá nhân": string[]; Kênh: string[]; Nhóm: MáyChủ[] };
-
-  Zalo: VậtThểNơiĐăngChat;
-  Viber: VậtThểNơiĐăngChat;
-  Reddit: VậtThểNơiĐăngChat;
-  LinkedIn: VậtThểNơiĐăngChat;
+  Messenger:
+    | CấuHìnhNơiĐăngChatThôngThường & { "Cộng đồng": MáyChủ[] | null }
+    | null;
+  Discord:
+    | CấuHìnhNơiĐăngChatThôngThường & { "Máy chủ": MáyChủ[] | null }
+    | null;
+  Telegram:
+    | CấuHìnhNơiĐăngChatThôngThường & {
+      Kênh: string[] | null;
+      Nhóm: MáyChủ[] | null;
+    }
+    | null;
+  Zalo: CấuHìnhNơiĐăngChatThôngThường | null;
+  Viber: CấuHìnhNơiĐăngChatThôngThường | null;
+  Reddit: CấuHìnhNơiĐăngChatThôngThường | null;
+  LinkedIn: CấuHìnhNơiĐăngChatThôngThường | null;
 }
 
 /**
- * Nơi đăng khác
+ * KHÁC
  */
-export const danhSáchLoạiNơiĐăngKhác = [
+export const danhSáchNơiĐăngKhác = [
   "Vault",
   "Website",
   "Email",
@@ -195,24 +229,15 @@ export const danhSáchLoạiNơiĐăngKhác = [
   "Ảnh",
   "Dịch vụ lưu trữ",
 ] as const;
-export type LoạiNơiĐăngKhác = typeof danhSáchLoạiNơiĐăngKhác[number];
-type TênNềnTảngKhác = typeof danhSáchLoạiNơiĐăngKhác[number];
-type LoạiNềnTảngKhác = typeof danhSáchLoạiNơiĐăngKhác[number];
+export type LoạiNơiĐăngKhác = [typeof danhSáchNơiĐăngKhác[number]];
+/** Tên nền tảng của vault, website, email, CV, ảnh, dịch vụ lưu trữ không quan trọng, không phức tạp, không làm ảnh hưởng tới cách gọi các cấp bậc nhỏ hơn nên để null cũng được */
+type TênNềnTảngKhác = typeof danhSáchNơiĐăngKhác[number];
+type LoạiNềnTảngKhác = typeof danhSáchNơiĐăngKhác[number];
+type TênNơiĐăngKhác = [string];
 
-export type CấuHìnhVault = string[];
-export type CấuHìnhWebsite = string[];
-export type CấuHìnhEmail = string[];
-export type CấuHìnhCV = string[];
-export type CấuHìnhẢnh = string[];
-export type CấuHìnhDịchVụLưuTrữ = string[];
-
-export interface ThànhPhần {
-  "Diễn đàn": Record<TênDiễnĐàn, Record<LoạiNơiĐăngDiễnĐàn, string[]>>;
-  Chat: Record<TênNềnTảngChat, Record<LoạiNơiĐăngChat, string[]>>;
-  Vault: string[];
-  Website: string[];
-  CV: string[];
-  Ảnh: string[];
-  Email: string[];
-  "Dịch vụ lưu trữ": string[];
-}
+export type CấuHìnhVault = string[] | null;
+export type CấuHìnhWebsite = string[] | null;
+export type CấuHìnhEmail = string[] | null;
+export type CấuHìnhCV = string[] | null;
+export type CấuHìnhẢnh = string[] | null;
+export type CấuHìnhDịchVụLưuTrữ = string[] | null;

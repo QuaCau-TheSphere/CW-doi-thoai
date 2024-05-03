@@ -8,7 +8,7 @@ export default function ModalNơiĐăng(
   urlNhậpỞKhungNhậpNgoài: string,
   setUrl: StateUpdater<string>,
 ) {
-  let nơiĐăng;
+  let nơiĐăng: NơiĐăng;
   if (corsProxyRes === undefined || corsProxyRes.lỗi) {
     nơiĐăng = new NơiĐăng();
   } else {
@@ -21,7 +21,6 @@ export default function ModalNơiĐăng(
     "Loại nền tảng": loạiNềnTảng,
     "Tên cộng đồng": tênCộngĐồng,
     "Tên nền tảng": tênNềnTảng,
-    URL,
   } = nơiĐăng;
   return (
     <>
@@ -33,8 +32,11 @@ export default function ModalNơiĐăng(
           className="input input-bordered input-primary w-full max-w-xs"
           id="URL"
           type="text"
-          name="URL"
-          value={URL as string}
+          value={urlNhậpTrongModal || urlNhậpỞKhungNhậpNgoài}
+          onInput={(e: InputEvent) => {
+            const urlNhậpTrongModal = (e.target as HTMLTextAreaElement).value;
+            setUrl(urlNhậpTrongModal);
+          }}
         />
       </label>
 
