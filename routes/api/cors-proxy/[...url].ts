@@ -2,11 +2,14 @@ import { Handlers } from "$fresh/server.ts";
 import { getMetaTags } from "https://deno.land/x/opengraph@v1.0.0/mod.ts";
 import { BàiĐăng } from "../../../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import {
+  danhSáchDiễnĐàn,
+  danhSáchNềnTảngChat,
   LoạiNơiĐăng,
   LoạiNềnTảng,
   NơiĐăng,
   TênNềnTảng,
 } from "../../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { viếtThường } from "../../../utils/Hàm cho khung nhập.ts";
 interface MetaTags {
   title: string;
   description: string;
@@ -30,7 +33,7 @@ async function lấyMetaTag(
   const og = (await getMetaTags(url.href)).og as MetaTags;
   const title = lấyTitle(og.title);
   const description = og.description;
-  const site_name = og.site_name.replace("www.", "");
+  const site_name = og.site_name?.replace("www.", "");
 
   const { hostname, pathname } = new URL(url);
 
@@ -44,42 +47,41 @@ async function lấyMetaTag(
   };
 
   function tạoNơiĐăng(): NơiĐăng {
-    let tênNềnTảng: TênNềnTảng;
-    let loạiNềnTảng: LoạiNềnTảng;
-    let loạiNơiĐăng: LoạiNơiĐăng;
-    let tênCộngĐồng: string = site_name;
+    let loạiNềnTảng: LoạiNềnTảng | undefined = undefined;
+    let tênNềnTảng: TênNềnTảng | undefined = undefined;
+    let loạiNơiĐăng: LoạiNơiĐăng | undefined = undefined;
 
-    if (hostname.includes("facebook")) {
-      loạiNềnTảng = "Diễn đàn";
-      tênNềnTảng = "Facebook";
-      if (pathname.includes("group")) {
-        loạiNơiĐăng = "Nhóm";
-        tênCộngĐồng = title;
-      } else {
-        loạiNơiĐăng = "Trang";
+    //deno-fmt-ignore
+    const danhSáchNềnTảng = (danhSáchDiễnĐàn as unknown as TênNềnTảng[]).concat(danhSáchNềnTảngChat);
+    for (const nềnTảng of danhSáchNềnTảng) {
+      if (hostname.includes(viếtThường(nềnTảng))) {
+        tênNềnTảng = nềnTảng;
+        if ((danhSáchDiễnĐàn as unknown as TênNềnTảng[]).includes(nềnTảng)) {
+          loạiNềnTảng = "Diễn đàn";
+          pathname.includes("group")
+            ? loạiNơiĐăng = ["Nhóm"]
+            : loạiNơiĐăng = ["Trang"];
+        } else {
+          loạiNềnTảng = "Chat";
+          if (hostname.includes("discord")) {
+            loạiNơiĐăng = ["Máy chủ", "Kênh thường"];
+          }
+        }
       }
-    } else if (hostname.includes("discord")) {
-      loạiNềnTảng = "Chat";
-      tênNềnTảng = "Discord";
-      loạiNơiĐăng = "Máy chủ";
-    } else {
-      loạiNềnTảng = "Khác";
-      tênNềnTảng = "Website";
-      loạiNơiĐăng = "Website";
     }
     return {
-      "Tên nơi đăng": title,
+      "Tên nơi đăng": [title],
       URL: url,
       "Mô tả nơi đăng": description,
-      "Loại nền tảng": loạiNềnTảng,
-      "Tên nền tảng": tênNềnTảng,
-      "Loại nơi đăng": loạiNơiĐăng,
-      "Tên cộng đồng": tênCộngĐồng,
+      "Loại nền tảng": loạiNềnTảng ?? "Website",
+      "Tên nền tảng": tênNềnTảng ?? "Website",
+      "Loại nơi đăng": loạiNơiĐăng ?? ["Website"],
     };
   }
-  return { bàiĐăng: bàiĐăng, nơiĐăng: tạoNơiĐăng() };
+  const nơiĐăng = tạoNơiĐăng();
+  console.log("🚀 ~ nơiĐăng:", nơiĐăng);
+  return { bàiĐăng: bàiĐăng, nơiĐăng: nơiĐăng };
 }
-
 export const handler: Handlers = {
   async GET(req, ctx) {
     try {
@@ -93,9 +95,10 @@ export const handler: Handlers = {
           "Nếu là nơi đăng": nơiĐăng,
           html: html,
         });
-      } catch {
+      } catch (e) {
+        console.log(JSON.stringify(e));
         return Response.json({
-          lỗi: "Không lấy được các thẻ Open Graph",
+          lỗi: e,
           html: html,
         });
       }

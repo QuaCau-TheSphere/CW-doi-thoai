@@ -5,6 +5,12 @@ export function viếtHoa(chuỗi: string) {
   return chuỗi.replace(/^(.)/g, (x) => x.toUpperCase());
 }
 
+export function viếtThường(chuỗi: string) {
+  const chữĐầuTiên = chuỗi.split(" ")[0];
+  if (chữĐầuTiên === chữĐầuTiên.toUpperCase()) return chuỗi;
+  return chuỗi.replace(/^(.)/g, (x) => x.toLowerCase());
+}
+
 export function kebabCase(chuỗi: string) {
   return chuỗi.replace(" ", "-");
 }

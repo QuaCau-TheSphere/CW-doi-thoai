@@ -89,17 +89,17 @@ function lấyNơiĐăngTừMessengerDiscordTelegram(
         return ["Cộng đồng", "Community chat", "Sidechat"];
 
       case "Discord":
-        if (!tênThreadHoặcTopic) return ["Máy chủ", "Text channel"];
+        if (!tênThreadHoặcTopic) return ["Máy chủ", "Kênh thường"];
         if (
           cấuHìnhNơiĐăng["Kênh forum Discord"]?.includes(tênThreadHoặcTopic)
         ) {
-          return ["Máy chủ", "Forum channel", "Forum post"];
+          return ["Máy chủ", "Kênh diễn đàn", "Bài diễn đàn"];
         }
-        return ["Máy chủ", "Text channel", "Thread"];
+        return ["Máy chủ", "Kênh thường", "Thread"];
 
       case "Telegram":
         if (!tênThreadHoặcTopic) return ["Nhóm"];
-        return ["Nhóm", "Topic"];
+        return ["Nhóm", "Chủ đề"];
     }
   }
 }

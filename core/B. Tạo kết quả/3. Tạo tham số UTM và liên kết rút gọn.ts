@@ -1,112 +1,105 @@
 import {
   BàiĐăng,
   DựÁn,
-  MãDựÁn,
 } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
-import CấuHìnhNơiĐăng, {
-  LoạiNơiĐăng,
-  LoạiNềnTảng,
-  NơiĐăng,
-  TênNơiĐăng,
-  TênNềnTảng,
-} from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
 import ThamSốUTMVàLiênKếtRútGọn, {
   Campaign,
   Content,
   Medium,
   Source,
+  SourceDiễnĐàn,
   SourceKhác,
+  SourceNềnTảngChat,
   Term,
   ThamSốUTM,
+  TênNơiĐăngString,
   ĐuôiRútGọn,
 } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91%20UTM.ts";
-import { SourceDiễnĐàn } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91%20UTM.ts";
-import { SourceNềnTảngChat } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91%20UTM.ts";
 import {
   lấyKýHiệuViếtTắt,
   tạoLiênKếtUTM,
 } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Code%20h%E1%BB%97%20tr%E1%BB%A3.ts";
 import { BốiCảnh } from "../../utils/Ki%E1%BB%83u%20cho%20web.ts";
+import CấuHìnhNơiĐăng, {
+  LoạiNơiĐăng,
+  LoạiNơiĐăngChat,
+  LoạiNềnTảng,
+  NơiĐăng,
+  TênNơiĐăng,
+  TênNềnTảng,
+} from "../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 
-export function tạoSource(
+function tạoSource(
   loạiNềnTảng: LoạiNềnTảng,
   tênNềnTảng: TênNềnTảng,
   loạiNơiĐăng: LoạiNơiĐăng,
   tênNơiĐăng: TênNơiĐăng,
   cấuHìnhNơiĐăng: CấuHìnhNơiĐăng,
 ): Source {
-  const kýHiệuNềnTảng = lấyKýHiệuViếtTắt(tênNềnTảng, cấuHìnhNơiĐăng);
+  const kýHiệuNềnTảng = lấyKýHiệuViếtTắt(tênNềnTảng, cấuHìnhNơiĐăng) ||
+    tênNềnTảng;
+  const tênNơiĐăngString: TênNơiĐăngString = tênNơiĐăng.join(" » ");
+
   switch (loạiNềnTảng) {
     case "Diễn đàn":
       return tạoSourceDiễnĐàn();
     case "Chat":
-      return tạoSourceNềnTảngChat();
-    case "Vault":
-      return tạoSourceVault();
-    case "Khác":
-      return tạoSourceKhác();
+      return tạoSourceChat(loạiNơiĐăng as LoạiNơiĐăngChat);
     default:
-      return undefined;
+      return tạoSourceKhác();
   }
 
   function tạoSourceDiễnĐàn(): SourceDiễnĐàn {
-    switch (loạiNơiĐăng) {
+    switch (loạiNơiĐăng[0]) {
       case "Trang":
-        return `${kýHiệuNềnTảng} Pg ${tênNơiĐăng}`;
+        return `${kýHiệuNềnTảng} Pg ${tênNơiĐăngString}`;
       case "Tài khoản":
-        return `${kýHiệuNềnTảng} Pr ${tênNơiĐăng}`;
+        return `${kýHiệuNềnTảng} Pr ${tênNơiĐăngString}`;
       case "Nhóm":
-        return `${kýHiệuNềnTảng} G ${tênNơiĐăng}`;
+        return `${kýHiệuNềnTảng} G ${tênNơiĐăngString}`;
       case "Repo":
-        return `${kýHiệuNềnTảng} ${tênNơiĐăng}`;
       case "Subreddit":
-        return `${kýHiệuNềnTảng} ${tênNơiĐăng}`;
       default:
-        return undefined;
+        return `${kýHiệuNềnTảng} ${tênNơiĐăngString}`;
     }
   }
-  function tạoSourceNềnTảngChat(): SourceNềnTảngChat {
-    switch (loạiNơiĐăng) {
+
+  function tạoSourceChat(loạiNơiĐăng: LoạiNơiĐăngChat): SourceNềnTảngChat {
+    switch (loạiNơiĐăng[0]) {
       case "Cá nhân":
-        return `${kýHiệuNềnTảng} I ${tênNơiĐăng}`;
-      case "Nhóm" || "Kênh":
-        return `${kýHiệuNềnTảng} GC ${tênNơiĐăng}`;
-      case "Máy chủ" || "Cộng đồng":
-        return `${kýHiệuNềnTảng} Sv ${tênNơiĐăng}`;
+        return `${kýHiệuNềnTảng} I ${tênNơiĐăngString}`;
+      case "Nhóm" ?? "Kênh":
+        return `${kýHiệuNềnTảng} GC ${tênNơiĐăngString}`;
+      case "Máy chủ" ?? "Cộng đồng":
+        return `${kýHiệuNềnTảng} Sv ${tênNơiĐăngString}`;
       default:
-        return undefined;
+        return `${kýHiệuNềnTảng} ${loạiNơiĐăng[0]} ${tênNơiĐăngString}`;
     }
   }
 
   function tạoSourceKhác(): SourceKhác {
-    switch (loạiNơiĐăng) {
-      case "Website" || "Email":
-        return tênNơiĐăng;
+    switch (loạiNơiĐăng[0]) {
+      case "Website" ?? "Email":
+        return tênNơiĐăngString;
       case "Ảnh":
-        return `Ảnh ${tênNơiĐăng}`;
+        return `Ảnh ${tênNơiĐăngString}`;
       default:
-        return undefined;
+        return tênNơiĐăngString;
     }
-  }
-  function tạoSourceVault(): Source {
-    throw new Error("Function not implemented.");
   }
 }
 
-function tạoMedium(loạiNơiĐăng: LoạiNơiĐăng, loạiNềnTảng: LoạiNềnTảng): Medium {
+function tạoMedium(loạiNềnTảng: LoạiNềnTảng): Medium {
   switch (loạiNềnTảng) {
     case "Diễn đàn":
       return "social";
     case "Chat":
       return "chat";
-  }
-  switch (loạiNơiĐăng) {
     case "Email":
       return "email";
+    default:
+      return loạiNềnTảng;
   }
-  // case 'quacau.deno.dev':
-  //     return 'redirect'
-  return undefined;
 }
 
 /**
@@ -121,6 +114,8 @@ function tạoCampaign(dựÁn: DựÁn | undefined = undefined): Campaign {
       return `${tênDựÁn}`;
     } else if (mãDựÁn && !tênDựÁn) {
       return `${mãDựÁn}`;
+    } else {
+      return undefined;
     }
   }
 }
@@ -129,32 +124,54 @@ function tạoContent(bốiCảnh: BốiCảnh): Content {
   return bốiCảnh;
 }
 
-function tạoTerm(nơiĐăng: NơiĐăng, bàiĐăng: BàiĐăng): Term {
-  return; //TODO
+function tạoTerm(nơiĐăng: NơiĐăng): Term {
+  return nơiĐăng["Lĩnh vực"]?.join(", ");
 }
 
-/** Nếu ký hiệu viết tắt có ít hơn 8 ký tự thì dùng trong đuôi rút gọn luôn, còn không thì tạo ngẫu nhiên 3 ký tự */
+/**
+ * Đuôi rút gọn theo cấu trúc sau: `phầnChoBàiĐăng.phầnChoNơiĐăng.lầnĐăng`
+ * @param bàiĐăng Thứ tự tìm: mã bài đăng, mã dự án, viết tắt của tên dự án, ngẫu nhiên ký tự
+ * @param nơiĐăng
+ * @param lầnĐăng
+ * @param cấuHìnhNơiĐăng dùng để tìm chuỗi viết tắt
+ * @returns `phầnChoBàiĐăng.phầnChoNơiĐăng.lầnĐăng`
+ */
 function tạoĐuôiRútGọn(
-  mãDựÁn: MãDựÁn,
-  tênNơiĐăng: TênNơiĐăng,
+  bàiĐăng: BàiĐăng,
+  nơiĐăng: NơiĐăng,
   lầnĐăng: number,
   cấuHìnhNơiĐăng: CấuHìnhNơiĐăng,
 ): ĐuôiRútGọn {
-  const tênNơiĐăngViếtTắt = lấyKýHiệuViếtTắt(tênNơiĐăng, cấuHìnhNơiĐăng);
+  let phầnChoBàiĐăng: string | undefined, phầnChoNơiĐăng: string;
 
-  let tênNơiĐăngRútGọn: string = "";
-  if (tênNơiĐăngViếtTắt.length < 7) {
-    tênNơiĐăngRútGọn = tênNơiĐăngViếtTắt;
-  } else {
+  const { "Mã bài đăng": mãBàiĐăng, "Dự án": dựÁn } = bàiĐăng;
+  if (mãBàiĐăng) {
+    phầnChoBàiĐăng = mãBàiĐăng;
+  } else if (dựÁn) {
+    const { "Mã dự án": mãDựÁn, "Tên dự án": tênDựÁn } = dựÁn;
+    phầnChoBàiĐăng = mãDựÁn ?? lấyKýHiệuViếtTắt(tênDựÁn, cấuHìnhNơiĐăng);
+  }
+  if (phầnChoBàiĐăng === undefined) {
+    phầnChoBàiĐăng = tạoChuỗiNgẫuNhiên(4);
+  }
+
+  const { "Mã nơi đăng": mãNơiĐăng, "Tên nơi đăng": tênNơiĐăng } = nơiĐăng;
+  phầnChoNơiĐăng = mãNơiĐăng ??
+    lấyKýHiệuViếtTắt(tênNơiĐăng[0], cấuHìnhNơiĐăng) ??
+    tạoChuỗiNgẫuNhiên(4);
+
+  return `${phầnChoBàiĐăng}.${phầnChoNơiĐăng}.${lầnĐăng}`;
+
+  function tạoChuỗiNgẫuNhiên(n: number): string {
     const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-    const charactersLength = characters.length;
-    for (let i = 0; i < 3; i++) {
-      tênNơiĐăngRútGọn += characters.charAt(
-        Math.floor(Math.random() * charactersLength),
+    let kếtQuả: string = "";
+    for (let i = 0; i < n; i++) {
+      kếtQuả += characters.charAt(
+        Math.floor(Math.random() * characters.length),
       );
     }
+    return kếtQuả;
   }
-  return `${mãDựÁn || ""}.${tênNơiĐăngRútGọn}.${lầnĐăng}`;
 }
 
 export default function tạoThamSốUTMVàLiênKếtRútGọn(
@@ -172,9 +189,7 @@ export default function tạoThamSốUTMVàLiênKếtRútGọn(
   const loạiNềnTảng = nơiĐăng["Loại nền tảng"];
 
   const url = bàiĐăng.URL;
-  console.log("🚀 ~ url:", url);
   const dựÁn = bàiĐăng["Dự án"];
-  const mãDựÁn = bàiĐăng["Dự án"]["Mã dự án"];
   const thamSốUTM: ThamSốUTM = {
     source: tạoSource(
       loạiNềnTảng,
@@ -183,16 +198,15 @@ export default function tạoThamSốUTMVàLiênKếtRútGọn(
       tênNơiĐăng,
       cấuHìnhNơiĐăng,
     ),
-    medium: tạoMedium(loạiNơiĐăng, loạiNềnTảng),
+    medium: tạoMedium(loạiNềnTảng),
     campaign: tạoCampaign(dựÁn),
     content: tạoContent(bốiCảnh),
-    term: tạoTerm(nơiĐăng, bàiĐăng),
+    term: tạoTerm(nơiĐăng),
   };
-  console.log("🚀 ~ thamSốUTM:", thamSốUTM);
   return {
     "Tham số UTM": thamSốUTM,
     "Liên kết UTM": tạoLiênKếtUTM(url, thamSốUTM),
     "Lần đăng": lầnĐăng,
-    "Đuôi rút gọn": tạoĐuôiRútGọn(mãDựÁn, tênNơiĐăng, lầnĐăng, cấuHìnhNơiĐăng),
+    "Đuôi rút gọn": tạoĐuôiRútGọn(bàiĐăng, nơiĐăng, lầnĐăng, cấuHìnhNơiĐăng),
   };
 }

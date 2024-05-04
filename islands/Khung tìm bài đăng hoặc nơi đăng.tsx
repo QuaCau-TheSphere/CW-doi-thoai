@@ -11,7 +11,11 @@ import { BàiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u
 import { NơiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
 import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/plus.tsx";
 import ModalTạoMới from "./Modal tạo mới/Modal chung.tsx";
-import { kebabCase, đổiKhungNhập } from "../utils/Hàm cho khung nhập.ts";
+import {
+  kebabCase,
+  viếtThường,
+  đổiKhungNhập,
+} from "../utils/Hàm cho khung nhập.ts";
 import KếtQuảĐượcChọn from "../components/K%E1%BA%BFt%20qu%E1%BA%A3%20%C4%91%C6%B0%E1%BB%A3c%20ch%E1%BB%8Dn.tsx";
 
 function DanhSáchKếtQuảTìmKiếm({
@@ -30,9 +34,11 @@ function DanhSáchKếtQuảTìmKiếm({
   if (!danhSáchKếtQuảTìmKiếm) return <></>;
   if (danhSáchKếtQuảTìmKiếm.length === 0) {
     return (
-      <h4 class="h4 tiêu-đề cursor bg-secondary">
-        <IconPlus class="w-5 h-5" /> Tạo mới
-      </h4>
+      <ul class="cursor border-2 rounded border-secondary">
+        <li class="bg-secondary p-2">
+          <IconPlus class="w-5 h-5" /> Tạo mới
+        </li>
+      </ul>
     );
   }
   return (
@@ -60,16 +66,17 @@ function DanhSáchKếtQuảTìmKiếm({
     let dòngChính, dòngPhụ;
     switch (tênDanhSách) {
       case "bài đăng": {
-        item = item as BàiĐăng;
-        dòngChính = <h4 class="h4 tiêu-đề">{item["Tiêu đề"]}</h4>;
+        const { "Dự án": dựÁn, Vault: vault, "Tiêu đề": tiêuĐề } =
+          item as BàiĐăng;
+        dòngChính = <h4 class="h4 tiêu-đề">{tiêuĐề}</h4>;
 
         let key, value;
-        if (item["Dự án"]["Tên dự án"]) {
+        if (dựÁn?.["Tên dự án"]) {
           key = "Dự án";
-          value = item["Dự án"]["Tên dự án"];
-        } else if (item.Vault) {
+          value = dựÁn?.["Tên dự án"];
+        } else if (vault) {
           key = "Vault";
-          value = item.Vault;
+          value = vault;
         }
 
         dòngPhụ = (
@@ -79,27 +86,40 @@ function DanhSáchKếtQuảTìmKiếm({
         );
         break;
       }
-      case "nơi đăng":
-        item = item as NơiĐăng;
-        dòngChính = <h4 class="h4 tiêu-đề">{item["Tên nơi đăng"]}</h4>;
-        switch (item["Loại nền tảng"]) {
-          case "Diễn đàn":
-          case "Chat":
-            dòngPhụ = (
-              <span class="nơi-đăng">
-                {item["Loại nơi đăng"]} {item["Tên nền tảng"]}{" "}
-                {item["Tên cộng đồng"]}
-              </span>
-            );
-            break;
-          case "Khác":
-            dòngPhụ = (
-              <span class="nơi-đăng">
-                {item["Loại nơi đăng"]}
-              </span>
-            );
-            break;
+      case "nơi đăng": {
+        const {
+          "Loại nền tảng": loạiNềnTảng,
+          "Tên nơi đăng": tênNơiĐăng,
+          "Loại nơi đăng": loạiNơiĐăng,
+          "Tên nền tảng": tênNềnTảng,
+          "Vị trí": vịTrí,
+        } = item as NơiĐăng;
+        if (!Array.isArray(tênNơiĐăng) || !vịTrí) return <></>;
+        dòngChính = <h4 class="h4 tiêu-đề">{tênNơiĐăng.join(" ➯ ")}</h4>;
+
+        let loạiNơiĐăngString: string;
+        if (loạiNơiĐăng[0] !== tênNềnTảng) {
+          loạiNơiĐăngString = `${loạiNơiĐăng[0]} ${tênNềnTảng} ${
+            tênNơiĐăng[0]
+          }`;
+        } else {
+          loạiNơiĐăngString = loạiNơiĐăng[0];
         }
+
+        let vịTríString: string;
+        if (vịTrí[1]) {
+          vịTríString = `${viếtThường(vịTrí[1])} trong ${viếtThường(vịTrí[0])}`;
+        } else {
+          vịTríString = vịTrí[0];
+        }
+        dòngPhụ = (
+          <>
+            <span class="loại-nơi-đăng">
+              {`${loạiNơiĐăngString} (${vịTríString})`}
+            </span>
+          </>
+        );
+      }
     }
     return (
       <>

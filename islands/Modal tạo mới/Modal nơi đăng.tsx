@@ -19,7 +19,6 @@ export default function ModalNơiĐăng(
     "Mô tả nơi đăng": môTảNơiĐăng,
     "Loại nơi đăng": loạiNơiĐăng,
     "Loại nền tảng": loạiNềnTảng,
-    "Tên cộng đồng": tênCộngĐồng,
     "Tên nền tảng": tênNềnTảng,
   } = nơiĐăng;
   return (
@@ -50,7 +49,7 @@ export default function ModalNơiĐăng(
           type="text"
           name="Tên nơi đăng"
           value={tênNơiĐăng}
-          placeholder={tênNơiĐăng}
+          placeholder={JSON.stringify(tênNơiĐăng)}
         />
       </label>
 
@@ -78,7 +77,7 @@ export default function ModalNơiĐăng(
           type="text"
           name="Loại nơi đăng"
           value={loạiNơiĐăng}
-          placeholder={loạiNơiĐăng}
+          placeholder={JSON.stringify(loạiNơiĐăng)}
         />
       </label>
 
@@ -93,20 +92,6 @@ export default function ModalNơiĐăng(
           name="Loại nền tảng"
           value={loạiNềnTảng}
           placeholder={loạiNềnTảng}
-        />
-      </label>
-
-      <label className="form-control w-full max-w-xs">
-        <div className="label">
-          <span className="label-text font-bold">Tên cộng đồng</span>
-        </div>
-        <input
-          className="input input-bordered input-primary w-full max-w-xs"
-          id="tên-cộng-đồng"
-          type="text"
-          name="Tên cộng đồng"
-          value={tênCộngĐồng}
-          placeholder={tênCộngĐồng}
         />
       </label>
 

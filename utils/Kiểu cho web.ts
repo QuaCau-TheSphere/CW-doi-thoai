@@ -16,7 +16,7 @@ export type KếtQuả = {
   bàiĐăng: BàiĐăng | undefined;
   nơiĐăng: NơiĐăng | undefined;
 } | undefined;
-
+// import FuseResult from "https://deno.land/x/fuse@v6.4.1/dist/fuse.d.ts";
 export type đổiSốLầnBấmEnter = StateUpdater<KếtQuả>;
 export type DanhSáchKếtQuảTìmKiếm = FuseResult<NơiĐăng> | FuseResult<BàiĐăng> | undefined;
 export type MụcĐượcChọn = BàiĐăng | NơiĐăng | undefined;

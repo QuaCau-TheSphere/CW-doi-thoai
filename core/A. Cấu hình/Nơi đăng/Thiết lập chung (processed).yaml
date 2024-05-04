@@ -1,73 +1,130 @@
 Vị trí:
   # Diễn đàn
   ## Facebook
-  - Loại nơi đăng: [Diễn đàn, Facebook, Tài khoản]
-    Danh sách vị trí: [Bài đăng, Bio, About, Website, Ảnh đại diện, Ảnh bìa, Bài đăng được ghim, Album ảnh]
+  - Loại nền tảng: Diễn đàn
+    Tên nền tảng: Facebook
+    Loại nơi đăng: [Tài khoản]
+    Danh sách vị trí:
+      [
+        Bài đăng,
+        Bio,
+        About,
+        Website,
+        Ảnh đại diện,
+        Ảnh bìa,
+        Bài ghim,
+        Album ảnh,
+      ]
 
-  - Loại nơi đăng: [Diễn đàn, Facebook, Trang]
-    Danh sách vị trí: [Bài đăng, Bio, About, Website, Ảnh đại diện, Ảnh bìa, Bài đăng được ghim, Album ảnh]
+  - Loại nền tảng: Diễn đàn
+    Tên nền tảng: Facebook
+    Loại nơi đăng: [Trang]
+    Danh sách vị trí:
+      [
+        Bài đăng,
+        Bio,
+        About,
+        Website,
+        Ảnh đại diện,
+        Ảnh bìa,
+        Bài ghim,
+        Album ảnh,
+      ]
 
-  - Loại nơi đăng: [Diễn đàn, Facebook, Nhóm]
-    Danh sách vị trí: [Bài đăng, About, Câu hỏi xét thành viên, Ảnh bìa, Bài đăng được ghim, Album ảnh]
+  - Loại nền tảng: Diễn đàn
+    Tên nền tảng: Facebook
+    Loại nơi đăng: [Nhóm]
+    Danh sách vị trí:
+      [Bài đăng, About, Câu hỏi xét thành viên, Ảnh bìa, Bài ghim, Album ảnh]
 
   ## GitHub
-  - Loại nơi đăng: [Diễn đàn, GitHub, Repo]
+  - Loại nền tảng: Diễn đàn
+    Tên nền tảng: GitHub
+    Loại nơi đăng: [Repo]
     Danh sách vị trí: [Bài đăng, Website, Readme, Thảo luận, Vấn đề]
 
   # Chat
   ## Messenger
-  - Loại nơi đăng: [Chat, Messenger, Cộng đồng]
-    Danh sách vị trí: null
+  - Loại nền tảng: Chat
+    Tên nền tảng: Messenger
+    Loại nơi đăng: [Cộng đồng, Community chat]
+    Danh sách vị trí: [Tin nhắn, About, Tin nhắn ghim]
 
-  - Loại nơi đăng: [Chat, Messenger, Cộng đồng, Community chat]
-    Danh sách vị trí: [Tin nhắn, About, Tin nhắn được ghim]
+  - Loại nền tảng: Chat
+    Tên nền tảng: Messenger
+    Loại nơi đăng: [Cộng đồng, Community chat, Sidechat]
+    Danh sách vị trí: [Tin nhắn, Tin nhắn ghim]
 
   ## Discord
-  - Loại nơi đăng: [Chat, Discord, Máy chủ]
+  - Loại nền tảng: Chat
+    Tên nền tảng: Discord
+    Loại nơi đăng: [Máy chủ]
     Danh sách vị trí: [Tin nhắn, Description, Giới thiệu cho người mới]
 
-  - Loại nơi đăng: [Chat, Discord, Máy chủ, Kênh thường]
-    Danh sách vị trí: [Tin nhắn, Chủ đề kênh, Tin nhắn được ghim]
+  - Loại nền tảng: Chat
+    Tên nền tảng: Discord
+    Loại nơi đăng: [Máy chủ, Kênh thường]
+    Danh sách vị trí: [Tin nhắn, Chủ đề kênh, Tin nhắn ghim]
 
-  - Loại nơi đăng: [Chat, Discord, Máy chủ, Kênh thường, Thread]
-    Danh sách vị trí: [Tin nhắn, Chủ đề kênh, Tin nhắn được ghim]
+  - Loại nền tảng: Chat
+    Tên nền tảng: Discord
+    Loại nơi đăng: [Máy chủ, Kênh thường, Thread]
+    Danh sách vị trí: [Tin nhắn, Chủ đề kênh, Tin nhắn ghim]
 
-  - Loại nơi đăng: [Chat, Discord, Máy chủ, Kênh diễn đàn]
-    Danh sách vị trí: [Tin nhắn, Hướng dẫn đăng bài, Bài đăng được ghim]
+  - Loại nền tảng: Chat
+    Tên nền tảng: Discord
+    Loại nơi đăng: [Máy chủ, Kênh diễn đàn]
+    Danh sách vị trí: [Hướng dẫn đăng bài, Bài ghim]
 
-  - Loại nơi đăng: [Chat, Discord, Máy chủ, Kênh diễn đàn, Bài diễn đàn]
-    Danh sách vị trí: [Tin nhắn, Tin nhắn được ghim]
+  - Loại nền tảng: Chat
+    Tên nền tảng: Discord
+    Loại nơi đăng: [Máy chủ, Kênh diễn đàn, Bài diễn đàn]
+    Danh sách vị trí: [Tin nhắn, Tin nhắn ghim]
 
   ## Telegram
-  - Loại nơi đăng: [Chat, Telegram, Tài khoản]
-    Danh sách vị trí: [Tin nhắn, Bio, Tin nhắn được ghim]
+  - Loại nền tảng: Chat
+    Tên nền tảng: Telegram
+    Loại nơi đăng: [Tài khoản]
+    Danh sách vị trí: [Tin nhắn, Bio, Tin nhắn ghim]
 
-  - Loại nơi đăng: [Chat, Telegram, Nhóm]
-    Danh sách vị trí: [Tin nhắn, Description, Tin nhắn được ghim]
+  - Loại nền tảng: Chat
+    Tên nền tảng: Telegram
+    Loại nơi đăng: [Nhóm]
+    Danh sách vị trí: [Tin nhắn, Description, Tin nhắn ghim]
 
-  - Loại nơi đăng: [Chat, Telegram, Nhóm, Chủ đề]
-    Danh sách vị trí: [Tin nhắn, Tin nhắn được ghim]
+  - Loại nền tảng: Chat
+    Tên nền tảng: Telegram
+    Loại nơi đăng: [Nhóm, Chủ đề]
+    Danh sách vị trí: [Tin nhắn, Tin nhắn ghim]
 
   # Website
-  - Loại nơi đăng: [Website]
+  - Loại nền tảng: Website
+    Tên nền tảng: Website
+    Loại nơi đăng: [Website]
     Danh sách vị trí: [Bài đăng, Trang chủ]
 
   # Email
-  - Loại nơi đăng: [Email]
+  - Loại nền tảng: Email
+    Tên nền tảng: Email
+    Loại nơi đăng: [Email]
     Danh sách vị trí: [Nội dung email, Chữ ký]
 
   # CV
-  - Loại nơi đăng: [CV]
+  - Loại nền tảng: CV
+    Tên nền tảng: CV
+    Loại nơi đăng: [CV]
     Danh sách vị trí: [Link dự án, Website]
 
   # Ảnh
-  - Loại nơi đăng: [Ảnh]
+  - Loại nền tảng: Ảnh
+    Tên nền tảng: Ảnh
+    Loại nơi đăng: [Ảnh]
     Danh sách vị trí: [QR, Chữ trong ảnh, Metadata]
 
 Vị trí nhỏ hơn:
-  Bài đăng: [Nội dung chính, Bình luận] 
+  Bài đăng: [Nội dung chính, Bình luận]
   Ảnh đại diện: [Mô tả ảnh, QR trong ảnh, Chữ trong ảnh, Bình luận]
   Ảnh bìa: [Mô tả ảnh, QR trong ảnh, Chữ trong ảnh, Bình luận]
-  Bài đăng được ghim: [Nội dung chính, Bình luận, QR trong ảnh, Chữ trong ảnh]
-  Tin nhắn được ghim: [Nội dung chính, Bình luận, QR trong ảnh, Chữ trong ảnh]
-  Album ảnh: [Mô tả album, Bình luận] 
+  Bài ghim: [Nội dung chính, Bình luận, QR trong ảnh, Chữ trong ảnh]
+  Tin nhắn ghim: [Nội dung chính, Bình luận, QR trong ảnh, Chữ trong ảnh]
+  Album ảnh: [Mô tả album, Bình luận]

@@ -80,7 +80,7 @@ export class NơiĐăng {
  * Không xem subreddit là nhóm hay cộng đồng là máy chủ luôn được vì muốn sau đó xuất ra vẫn giữ tên là subreddit hay cộng động
  */
 
-const danhSáchDiễnĐàn = [
+export const danhSáchDiễnĐàn = [
   "Facebook",
   "LinkedIn",
   "Twitter",
@@ -134,7 +134,7 @@ type CấuHìnhDiễnĐàn = Record<
 /**
  * CHAT
  */
-const danhSáchNềnTảngChat = [
+export const danhSáchNềnTảngChat = [
   "Messenger",
   "Discord",
   "Telegram",
@@ -156,13 +156,11 @@ type TênNơiĐăngChatThôngThường = [string];
 
 /** Messenger, Discord, Telegram */
 export type TênMáyChủ = string;
-export type TênThreadHoặcTopic = string;
 type TênKênh = string;
-type TênNơiĐăngMessengerDiscordTelegram = [TênMáyChủ, TênKênh] | [
-  TênMáyChủ,
-  TênKênh,
-  TênThreadHoặcTopic,
-];
+export type TênThreadHoặcTopic = string;
+type TênNơiĐăngMessengerDiscordTelegram =
+  | [TênMáyChủ, TênKênh]
+  | [TênMáyChủ, TênKênh, TênThreadHoặcTopic];
 /**
  * Cấu hình máy chủ cũng chính là danh sách kênh của máy chủ đó
  *
@@ -182,10 +180,10 @@ type LoạiNơiĐăngMessenger =
   | ["Cộng đồng", "Community chat"]
   | ["Cộng đồng", "Community chat", "Sidechat"];
 type LoạiNơiĐăngDiscord =
-  | ["Máy chủ", "Text channel"]
-  | ["Máy chủ", "Text channel", "Thread"]
-  | ["Máy chủ", "Forum channel", "Forum post"];
-type LoạiNơiĐăngTelegram = ["Nhóm"] | ["Nhóm", "Topic"];
+  | ["Máy chủ", "Kênh thường"]
+  | ["Máy chủ", "Kênh thường", "Thread"]
+  | ["Máy chủ", "Kênh diễn đàn", "Bài diễn đàn"];
+type LoạiNơiĐăngTelegram = ["Nhóm"] | ["Nhóm", "Chủ đề"];
 export type LoạiNơiĐăngMessengerDiscordTelegram =
   | LoạiNơiĐăngMessenger
   | LoạiNơiĐăngDiscord

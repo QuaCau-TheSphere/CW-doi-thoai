@@ -23,7 +23,6 @@ export default function KếtQuảĐượcChọn(
   function thểHiệnThuộcTính(
     key: string,
     value: string | Record<string, string>,
-    // paddingLeft: number = 4
   ) {
     if (typeof value === "object") {
       return (

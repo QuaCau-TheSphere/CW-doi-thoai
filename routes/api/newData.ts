@@ -30,17 +30,17 @@ function tạoKey(
         "Loại nền tảng": loạiNềnTảng,
         "Tên nền tảng": tênNềnTảng,
         "Loại nơi đăng": loạiNơiĐăng,
-        "Tên cộng đồng": tênCộngĐồng,
         "Tên nơi đăng": tênNơiĐăng,
+        "Vị trí": vịTrí,
         URL,
       } = dữLiệu as NơiĐăng;
       return [
         "Nơi đăng",
         loạiNềnTảng,
         tênNềnTảng,
-        loạiNơiĐăng,
-        tênCộngĐồng || "",
-        tênNơiĐăng,
+        JSON.stringify(loạiNơiĐăng),
+        JSON.stringify(tênNơiĐăng),
+        JSON.stringify(vịTrí),
         URL as string,
       ];
     }

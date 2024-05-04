@@ -3,7 +3,8 @@
   },
   "deno.enable": true,
   "deno.lint": true,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
+  // "editor.formatOnSave": false,
   "deno.config": "./deno.json",
   "editor.defaultFormatter": "denoland.vscode-deno",
   "[typescriptreact]": {
@@ -20,5 +21,7 @@
   },
   "[markdown]": {
     "editor.formatOnSave": false
-  }
+  },
+  "editor.tabSize": 2,
+  "editor.tabCompletion": "on"
 }
