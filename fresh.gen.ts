@@ -6,7 +6,7 @@ import * as $_slug_chart from "./routes/[slug]/chart.tsx";
 import * as $_slug_index from "./routes/[slug]/index.ts";
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
-import * as $api_cors_proxy_url_ from "./routes/api/cors-proxy/[...url].ts";
+import * as $api_cors_proxy_string_ from "./routes/api/cors-proxy/[...string].ts";
 import * as $api_newData from "./routes/api/newData.ts";
 import * as $index from "./routes/index.tsx";
 import * as $lmn from "./routes/lmn.ts";
@@ -29,7 +29,7 @@ const manifest = {
     "./routes/[slug]/index.ts": $_slug_index,
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
-    "./routes/api/cors-proxy/[...url].ts": $api_cors_proxy_url_,
+    "./routes/api/cors-proxy/[...string].ts": $api_cors_proxy_string_,
     "./routes/api/newData.ts": $api_newData,
     "./routes/index.tsx": $index,
     "./routes/lmn.ts": $lmn,

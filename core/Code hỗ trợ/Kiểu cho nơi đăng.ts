@@ -25,6 +25,10 @@ export type LoạiNềnTảng =
   | "Diễn đàn"
   | "Chat"
   | LoạiNềnTảngKhác;
+/**
+ * Tên nền tảng có kiểu là string, không phải string[]. Tên nơi đăng mới có kiểu string[]
+ * @type string
+ */
 export type TênNềnTảng =
   | TênDiễnĐàn
   | TênNềnTảngChat
@@ -33,6 +37,10 @@ export type LoạiNơiĐăng =
   | LoạiNơiĐăngDiễnĐàn
   | LoạiNơiĐăngChat
   | LoạiNơiĐăngKhác;
+/**
+ * Tên nơi đăng có kiểu là string[], không phải string. Tên nền tảng mới có kiểu string
+ * @type string[]
+ */
 export type TênNơiĐăng = TênNơiĐăngDiễnĐàn | TênNơiĐăngChat | TênNơiĐăngKhác;
 export class NơiĐăng {
   "Loại nền tảng": LoạiNềnTảng;

@@ -130,7 +130,6 @@ export default function ModalTạoMới(
   );
 }
 
-//todo
 function tạoDữLiệuMới(eventcurrentTarget: any, tênDanhSách: TênDanhSách) {
   const formData = Object.fromEntries(new FormData(eventcurrentTarget));
 
@@ -158,30 +157,28 @@ function tạoDữLiệuMới(eventcurrentTarget: any, tênDanhSách: TênDanhS�
           "Định dạng nội dung": undefined,
         },
         Vault: vault,
-      };
+      } satisfies BàiĐăng;
       break;
     }
     case "nơi đăng":
       {
-        dữLiệu = formData as unknown as NơiĐăng;
-        // const {
-        //   URL: url,
-        //   "Tên nơi đăng": tênNơiĐăng,
-        //   "Loại nơi đăng": loạiNơiĐăng,
-        //   "Tên cộng đồng": tênCộngĐồng,
-        //   "Tên nền tảng": tênNềnTảng,
-        //   "Mô tả nơi đăng": môTảNơiĐăng,
-        //   "Loại nền tảng": loạiNềnTảng,
-        // } = formData as unknown as NơiĐăng;
-        // dữLiệu = {
-        //   URL: url,
-        //   "Tên nơi đăng": tênNơiĐăng,
-        //   "Loại nơi đăng": loạiNơiĐăng as LoạiNơiĐăng,
-        //   "Tên cộng đồng": tênCộngĐồng,
-        //   "Tên nền tảng": tênNềnTảng as TênNềnTảng,
-        //   "Mô tả nơi đăng": môTảNơiĐăng,
-        //   "Loại nền tảng": loạiNềnTảng as LoạiNềnTảng,
-        // };
+        // dữLiệu = formData as unknown as NơiĐăng;
+        const {
+          URL: url,
+          "Tên nơi đăng": tênNơiĐăng,
+          "Loại nơi đăng": loạiNơiĐăng,
+          "Tên nền tảng": tênNềnTảng,
+          "Mô tả nơi đăng": môTảNơiĐăng,
+          "Loại nền tảng": loạiNềnTảng,
+        } = formData;
+        dữLiệu = {
+          URL: url as URLString,
+          "Tên nơi đăng": [tênNơiĐăng as string],
+          "Loại nơi đăng": [loạiNơiĐăng as LoạiNơiĐăng[0]],
+          "Tên nền tảng": tênNềnTảng as TênNềnTảng,
+          "Mô tả nơi đăng": môTảNơiĐăng as string,
+          "Loại nền tảng": loạiNềnTảng as LoạiNềnTảng,
+        } satisfies NơiĐăng;
       }
       break;
   }

@@ -43,6 +43,17 @@ Vị trí:
     Loại nơi đăng: [Repo]
     Danh sách vị trí: [Bài đăng, Website, Readme, Thảo luận, Vấn đề]
 
+  ## YouTube
+  - Loại nền tảng: Diễn đàn
+    Tên nền tảng: YouTube
+    Loại nơi đăng: [Kênh]
+    Danh sách vị trí: [About, Links, Ảnh bìa]
+
+  - Loại nền tảng: Diễn đàn
+    Tên nền tảng: YouTube
+    Loại nơi đăng: [Video]
+    Danh sách vị trí: [Video]
+
   # Chat
   ## Messenger
   - Loại nền tảng: Chat
@@ -128,3 +139,4 @@ Vị trí nhỏ hơn:
   Bài ghim: [Nội dung chính, Bình luận, QR trong ảnh, Chữ trong ảnh]
   Tin nhắn ghim: [Nội dung chính, Bình luận, QR trong ảnh, Chữ trong ảnh]
   Album ảnh: [Mô tả album, Bình luận]
+  Video: [Description, QR trong video, Chữ trong video, Bình luận]

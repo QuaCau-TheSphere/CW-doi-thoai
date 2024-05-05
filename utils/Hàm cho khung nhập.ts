@@ -6,9 +6,9 @@ export function viếtHoa(chuỗi: string) {
 }
 
 export function viếtThường(chuỗi: string) {
-  const chữĐầuTiên = chuỗi.split(" ")[0];
-  if (chữĐầuTiên === chữĐầuTiên.toUpperCase()) return chuỗi;
-  return chuỗi.replace(/^(.)/g, (x) => x.toLowerCase());
+  const từĐầuTiên = chuỗi.split(" ")[0];
+  if (từĐầuTiên === từĐầuTiên.toLocaleUpperCase()) return chuỗi;
+  return chuỗi.toLocaleLowerCase();
 }
 
 export function kebabCase(chuỗi: string) {

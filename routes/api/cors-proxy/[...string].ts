@@ -10,6 +10,9 @@ import {
   TênNềnTảng,
 } from "../../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { viếtThường } from "../../../utils/Hàm cho khung nhập.ts";
+import { assert } from "$std/assert/assert.ts";
+import { TÊN_MIỀN_RÚT_GỌN } from "../../../core/Code hỗ trợ/Hằng.ts";
+import { FreshContext } from "https://deno.land/x/fresh@1.6.8/src/server/mod.ts";
 interface MetaTags {
   title: string;
   description: string;
@@ -21,16 +24,33 @@ interface MetaTags {
   locale: string;
 }
 
+function lấyURL(ctx: FreshContext<Record<string, unknown>, any, any>) {
+  const fullUrl = ctx.url.href;
+  const temp = fullUrl.split("/api/cors-proxy/");
+  temp.shift();
+  const url = temp.join();
+  console.log("url:", url);
+  return new URL(url);
+}
+
+function cóTênNềnTảngTrongHostname(hostname: string, nềnTảng: TênNềnTảng) {
+  if (hostname.includes("youtu.be") && nềnTảng === "YouTube") return true;
+
+  const tênNềnTảngViếtThườngKhôngCách = viếtThường(nềnTảng).replaceAll(" ", "");
+  return hostname.includes(tênNềnTảngViếtThườngKhôngCách);
+}
+
 function lấyTitle(title: string): string {
   const titleSplit = title.split(" | ");
   titleSplit.pop();
-  return titleSplit.join(" | ");
+  return titleSplit.join(" | ") || title;
 }
 
 async function lấyMetaTag(
   url: URL,
 ): Promise<{ bàiĐăng: BàiĐăng; nơiĐăng: NơiĐăng }> {
   const og = (await getMetaTags(url.href)).og as MetaTags;
+  assert(og);
   const title = lấyTitle(og.title);
   const description = og.description;
   const site_name = og.site_name?.replace("www.", "");
@@ -54,10 +74,13 @@ async function lấyMetaTag(
     //deno-fmt-ignore
     const danhSáchNềnTảng = (danhSáchDiễnĐàn as unknown as TênNềnTảng[]).concat(danhSáchNềnTảngChat);
     for (const nềnTảng of danhSáchNềnTảng) {
-      if (hostname.includes(viếtThường(nềnTảng))) {
+      if (cóTênNềnTảngTrongHostname(hostname, nềnTảng)) {
         tênNềnTảng = nềnTảng;
         if ((danhSáchDiễnĐàn as unknown as TênNềnTảng[]).includes(nềnTảng)) {
           loạiNềnTảng = "Diễn đàn";
+          if (hostname.includes("github")) {
+            loạiNơiĐăng = ["Repo"];
+          }
           pathname.includes("group")
             ? loạiNơiĐăng = ["Nhóm"]
             : loạiNơiĐăng = ["Trang"];
@@ -65,6 +88,9 @@ async function lấyMetaTag(
           loạiNềnTảng = "Chat";
           if (hostname.includes("discord")) {
             loạiNơiĐăng = ["Máy chủ", "Kênh thường"];
+          }
+          if (hostname.includes("telegram")) {
+            loạiNơiĐăng = ["Nhóm", "Chủ đề"];
           }
         }
       }
@@ -79,13 +105,12 @@ async function lấyMetaTag(
     };
   }
   const nơiĐăng = tạoNơiĐăng();
-  console.log("🚀 ~ nơiĐăng:", nơiĐăng);
   return { bàiĐăng: bàiĐăng, nơiĐăng: nơiĐăng };
 }
 export const handler: Handlers = {
   async GET(req, ctx) {
     try {
-      const url = new URL(ctx.params.url);
+      const url = lấyURL(ctx);
       const html = await (await fetch(url)).text();
       try {
         const { bàiĐăng, nơiĐăng } = await lấyMetaTag(url);
@@ -96,15 +121,14 @@ export const handler: Handlers = {
           html: html,
         });
       } catch (e) {
-        console.log(JSON.stringify(e));
         return Response.json({
-          lỗi: e,
+          lỗi: String(e.stack),
           html: html,
         });
       }
-    } catch {
+    } catch (e) {
       return Response.json({
-        lỗi: `${ctx.params.url} không phải là URL hợp lệ`,
+        lỗi: `URL không hợp lệ`,
       });
     }
   },
