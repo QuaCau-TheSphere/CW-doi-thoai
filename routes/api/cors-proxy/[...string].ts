@@ -11,7 +11,6 @@ import {
 } from "../../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { viếtThường } from "../../../utils/Hàm cho khung nhập.ts";
 import { assert } from "$std/assert/assert.ts";
-import { TÊN_MIỀN_RÚT_GỌN } from "../../../core/Code hỗ trợ/Hằng.ts";
 import { FreshContext } from "https://deno.land/x/fresh@1.6.8/src/server/mod.ts";
 interface MetaTags {
   title: string;
@@ -59,7 +58,7 @@ async function lấyMetaTag(
 
   const bàiĐăng: BàiĐăng = {
     "Tiêu đề": title,
-    URL: url,
+    URL: url.href,
     "Nội dung bài đăng": {
       "Mô tả bài đăng": description,
     },
@@ -97,7 +96,7 @@ async function lấyMetaTag(
     }
     return {
       "Tên nơi đăng": [title],
-      URL: url,
+      URL: url.href,
       "Mô tả nơi đăng": description,
       "Loại nền tảng": loạiNềnTảng ?? "Website",
       "Tên nền tảng": tênNềnTảng ?? "Website",
@@ -126,7 +125,7 @@ export const handler: Handlers = {
           html: html,
         });
       }
-    } catch (e) {
+    } catch {
       return Response.json({
         lỗi: `URL không hợp lệ`,
       });

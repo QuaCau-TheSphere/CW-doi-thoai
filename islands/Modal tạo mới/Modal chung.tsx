@@ -1,11 +1,10 @@
 import { StateUpdater, useEffect, useState } from "preact/hooks";
 import {
-  CorsProxyRes,
   ElementDùngTab,
   MụcĐượcChọn,
+  PhảnHồiTừCORSProxy,
   TênDanhSách,
 } from "../../utils/Kiểu cho web.ts";
-import { TÊN_MIỀN_RÚT_GỌN } from "../../core/Code hỗ trợ/Hằng.ts";
 import { đổiKhungNhập } from "../../utils/Hàm cho khung nhập.ts";
 import ModalBàiĐăng from "./Modal bài đăng.tsx";
 import ModalNơiĐăng from "./Modal nơi đăng.tsx";
@@ -16,6 +15,7 @@ import {
 import {
   LoạiNềnTảng,
   NơiĐăng,
+  TênNơiĐăng,
 } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { TênNềnTảng } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { LoạiNơiĐăng } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
@@ -30,21 +30,21 @@ function CácTrườngNhậpMới(
   const [urlNhậpTrongModal, setUrl] = useState(urlNhậpỞKhungNhậpNgoài);
   console.log("🚀 ~ urlNhậpTrongModal1:", urlNhậpTrongModal);
 
-  const [corsProxyRes, setCorsProxyRes] = useState<CorsProxyRes | undefined>(
-    undefined,
-  );
+  //deno-fmt-ignore
+  const [phảnHồiTừCORSProxy, setPhảnHồiTừCORSProxy] = useState<PhảnHồiTừCORSProxy | undefined>(undefined);
   useEffect(() => {
     async function lấyMetaTag() {
-      console.log("🚀 ~ lấyMetaTag ~ url:", urlNhậpTrongModal);
-      const corsProxyUrl =
-        `${TÊN_MIỀN_RÚT_GỌN}/api/cors-proxy/${urlNhậpTrongModal}`;
-      const corsProxyRes =
-        (await (await fetch(corsProxyUrl)).json()) as CorsProxyRes;
-      setCorsProxyRes(corsProxyRes);
+      const originWeb = globalThis.location.origin;
+      const corsProxyUrl = `${originWeb}/api/cors-proxy/${urlNhậpTrongModal}`;
+      //deno-fmt-ignore
+      const phảnHồiTừCORSProxy = (await (await fetch(corsProxyUrl)).json()) as PhảnHồiTừCORSProxy;
+      setPhảnHồiTừCORSProxy(phảnHồiTừCORSProxy);
     }
     lấyMetaTag();
     //todo
   }, [urlNhậpTrongModal]);
+
+  console.log(phảnHồiTừCORSProxy);
 
   if (tênDanhSách === "bài đăng") {
     // return (
@@ -56,14 +56,14 @@ function CácTrườngNhậpMới(
     //   />
     // );
     return ModalBàiĐăng(
-      corsProxyRes,
+      phảnHồiTừCORSProxy,
       urlNhậpTrongModal,
       urlNhậpỞKhungNhậpNgoài,
       setUrl,
     );
   } else if (tênDanhSách === "nơi đăng") {
     return ModalNơiĐăng(
-      corsProxyRes,
+      phảnHồiTừCORSProxy,
       urlNhậpTrongModal,
       urlNhậpỞKhungNhậpNgoài,
       setUrl,
@@ -78,7 +78,8 @@ function handleSubmit(
 ) {
   event.preventDefault();
   const dữLiệuMới = tạoDữLiệuMới(event.currentTarget, tênDanhSách);
-  const url = `${TÊN_MIỀN_RÚT_GỌN}/api/newData`;
+  const originWeb = globalThis.location.origin;
+  const url = `${originWeb}/api/newData`;
 
   fetch(url, {
     method: "POST",
@@ -132,6 +133,7 @@ export default function ModalTạoMới(
 
 function tạoDữLiệuMới(eventcurrentTarget: any, tênDanhSách: TênDanhSách) {
   const formData = Object.fromEntries(new FormData(eventcurrentTarget));
+  console.log("🚀 ~ tạoDữLiệuMới ~ eventcurrentTarget:", eventcurrentTarget);
 
   let dữLiệu: BàiĐăng | NơiĐăng;
   switch (tênDanhSách) {
@@ -160,28 +162,28 @@ function tạoDữLiệuMới(eventcurrentTarget: any, tênDanhSách: TênDanhS�
       } satisfies BàiĐăng;
       break;
     }
-    case "nơi đăng":
-      {
-        // dữLiệu = formData as unknown as NơiĐăng;
-        const {
-          URL: url,
-          "Tên nơi đăng": tênNơiĐăng,
-          "Loại nơi đăng": loạiNơiĐăng,
-          "Tên nền tảng": tênNềnTảng,
-          "Mô tả nơi đăng": môTảNơiĐăng,
-          "Loại nền tảng": loạiNềnTảng,
-        } = formData;
-        dữLiệu = {
-          URL: url as URLString,
-          "Tên nơi đăng": [tênNơiĐăng as string],
-          "Loại nơi đăng": [loạiNơiĐăng as LoạiNơiĐăng[0]],
-          "Tên nền tảng": tênNềnTảng as TênNềnTảng,
-          "Mô tả nơi đăng": môTảNơiĐăng as string,
-          "Loại nền tảng": loạiNềnTảng as LoạiNềnTảng,
-        } satisfies NơiĐăng;
-      }
+    case "nơi đăng": {
+      const {
+        URL: url,
+        "Tên nơi đăng": tênNơiĐăngForm,
+        "Loại nơi đăng": loạiNơiĐăngForm,
+        "Tên nền tảng": tênNềnTảngForm,
+        "Mô tả nơi đăng": môTảNơiĐăngForm,
+        "Loại nền tảng": loạiNềnTảngForm,
+      } = formData;
+      dữLiệu = {
+        URL: url as URLString,
+        "Tên nơi đăng": [tênNơiĐăngForm as string],
+        "Loại nơi đăng": [loạiNơiĐăngForm as LoạiNơiĐăng[0]],
+        "Tên nền tảng": tênNềnTảngForm as TênNềnTảng,
+        "Mô tả nơi đăng": môTảNơiĐăngForm as string,
+        "Loại nền tảng": loạiNềnTảngForm as LoạiNềnTảng,
+      } satisfies NơiĐăng;
       break;
+    }
   }
+  console.log("🚀 ~ tạoDữLiệuMới ~ formData:", formData);
+  console.log("🚀 ~ tạoDữLiệuMới ~ dữLiệu:", dữLiệu);
   return {
     "Tên danh sách": tênDanhSách,
     "Dữ liệu": dữLiệu,

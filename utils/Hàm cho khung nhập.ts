@@ -5,6 +5,9 @@ export function viếtHoa(chuỗi: string) {
   return chuỗi.replace(/^(.)/g, (x) => x.toUpperCase());
 }
 
+/**
+ * Nếu từ đầu tiên trong chuỗi là từ viết tắt thì không viết thường. VD: `QR trong ảnh` → `QR trong ảnh`
+ */
 export function viếtThường(chuỗi: string) {
   const từĐầuTiên = chuỗi.split(" ")[0];
   if (từĐầuTiên === từĐầuTiên.toLocaleUpperCase()) return chuỗi;

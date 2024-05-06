@@ -21,6 +21,10 @@ export default interface CấuHìnhNơiĐăng {
   "Kênh forum Discord"?: string[] | null;
 }
 
+/**
+ * Loại nền tảng có kiểu là string, không phải string[]. Tên nơi đăng mới có kiểu string[]
+ * @type string
+ */
 export type LoạiNềnTảng =
   | "Diễn đàn"
   | "Chat"
@@ -38,7 +42,7 @@ export type LoạiNơiĐăng =
   | LoạiNơiĐăngChat
   | LoạiNơiĐăngKhác;
 /**
- * Tên nơi đăng có kiểu là string[], không phải string. Tên nền tảng mới có kiểu string
+ * Tên nơi đăng có kiểu là string[], không phải string. Tên nền tảng và loại nền tảng mới có kiểu string
  * @type string[]
  */
 export type TênNơiĐăng = TênNơiĐăngDiễnĐàn | TênNơiĐăngChat | TênNơiĐăngKhác;

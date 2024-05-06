@@ -1,9 +1,9 @@
 import { StateUpdater } from "https://esm.sh/v128/preact@10.19.6/hooks/src/index.js";
 import { NơiĐăng } from "../../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
-import { CorsProxyRes } from "../../utils/Ki%E1%BB%83u%20cho%20web.ts";
+import { PhảnHồiTừCORSProxy } from "../../utils/Ki%E1%BB%83u%20cho%20web.ts";
 
 export default function ModalNơiĐăng(
-  corsProxyRes: CorsProxyRes | undefined,
+  corsProxyRes: PhảnHồiTừCORSProxy | undefined,
   urlNhậpTrongModal: string,
   urlNhậpỞKhungNhậpNgoài: string,
   setUrl: StateUpdater<string>,

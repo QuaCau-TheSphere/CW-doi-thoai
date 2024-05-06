@@ -51,11 +51,11 @@ export interface VậtThểTiếpThị extends ThamSốUTMVàLiênKếtRútGọn
   "Thời điểm tạo": Date;
   "Các lần truy cập": DữLiệuTruyCậpCácNăm;
 }
-export type CorsProxyRes = {
+export type PhảnHồiTừCORSProxy = {
   "Nếu là bài đăng": BàiĐăng;
   "Nếu là nơi đăng": NơiĐăng;
   lỗi?:
-    | "Không lấy được dữ liệu thẻ og:title, og:description hoặc og:site_name Open Graph"
-    | `${string} không phải là URL hợp lệ`;
+    | string
+    | "URL không hợp lệ";
   html?: string | null;
 };
