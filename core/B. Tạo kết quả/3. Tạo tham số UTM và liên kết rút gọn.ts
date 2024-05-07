@@ -24,10 +24,11 @@ import CấuHìnhNơiĐăng, {
   LoạiNơiĐăng,
   LoạiNơiĐăngChat,
   LoạiNềnTảng,
-  NơiĐăng,
+  NơiĐăngĐãXácĐịnhVịTrí,
   TênNơiĐăng,
   TênNềnTảng,
 } from "../Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { VịTrí } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/H%C3%A0m%20v%C3%A0%20ki%E1%BB%83u%20cho%20v%E1%BB%8B%20tr%C3%AD.ts";
 
 function tạoSource(
   loạiNềnTảng: LoạiNềnTảng,
@@ -120,11 +121,11 @@ function tạoCampaign(dựÁn: DựÁn | undefined = undefined): Campaign {
   }
 }
 
-function tạoContent(bốiCảnh: BốiCảnh): Content {
-  return bốiCảnh;
+function tạoContent(vịTrí: VịTrí, bốiCảnh: BốiCảnh): Content {
+  return `Vị trí: ${vịTrí} | Bối cảnh: ${bốiCảnh}`;
 }
 
-function tạoTerm(nơiĐăng: NơiĐăng): Term {
+function tạoTerm(nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí): Term {
   return nơiĐăng["Lĩnh vực"]?.join(", ");
 }
 
@@ -138,26 +139,27 @@ function tạoTerm(nơiĐăng: NơiĐăng): Term {
  */
 function tạoĐuôiRútGọn(
   bàiĐăng: BàiĐăng,
-  nơiĐăng: NơiĐăng,
+  nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí,
   lầnĐăng: number,
   cấuHìnhNơiĐăng: CấuHìnhNơiĐăng,
 ): ĐuôiRútGọn {
-  let phầnChoBàiĐăng: string | undefined, phầnChoNơiĐăng: string;
+  let phầnChoBàiĐăng: string | undefined;
+  let phầnChoNơiĐăng: string;
 
   const { "Mã bài đăng": mãBàiĐăng, "Dự án": dựÁn } = bàiĐăng;
   if (mãBàiĐăng) {
     phầnChoBàiĐăng = mãBàiĐăng;
   } else if (dựÁn) {
     const { "Mã dự án": mãDựÁn, "Tên dự án": tênDựÁn } = dựÁn;
-    phầnChoBàiĐăng = mãDựÁn ?? lấyKýHiệuViếtTắt(tênDựÁn, cấuHìnhNơiĐăng);
+    phầnChoBàiĐăng = mãDựÁn || lấyKýHiệuViếtTắt(tênDựÁn, cấuHìnhNơiĐăng);
   }
   if (phầnChoBàiĐăng === undefined) {
     phầnChoBàiĐăng = tạoChuỗiNgẫuNhiên(4);
   }
 
   const { "Mã nơi đăng": mãNơiĐăng, "Tên nơi đăng": tênNơiĐăng } = nơiĐăng;
-  phầnChoNơiĐăng = mãNơiĐăng ??
-    lấyKýHiệuViếtTắt(tênNơiĐăng[0], cấuHìnhNơiĐăng) ??
+  phầnChoNơiĐăng = mãNơiĐăng ||
+    lấyKýHiệuViếtTắt(tênNơiĐăng[0], cấuHìnhNơiĐăng) ||
     tạoChuỗiNgẫuNhiên(4);
 
   return `${phầnChoBàiĐăng}.${phầnChoNơiĐăng}.${lầnĐăng}`;
@@ -177,17 +179,19 @@ function tạoĐuôiRútGọn(
 export default function tạoThamSốUTMVàLiênKếtRútGọn(
   { bàiĐăng, nơiĐăng, bốiCảnh, lầnĐăng, cấuHìnhNơiĐăng }: {
     bàiĐăng: BàiĐăng;
-    nơiĐăng: NơiĐăng;
+    nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí;
     bốiCảnh: BốiCảnh;
     lầnĐăng: number;
     cấuHìnhNơiĐăng: CấuHìnhNơiĐăng;
   },
 ): ThamSốUTMVàLiênKếtRútGọn {
-  const tênNềnTảng = nơiĐăng["Tên nền tảng"];
-  const loạiNơiĐăng = nơiĐăng["Loại nơi đăng"];
-  const tênNơiĐăng = nơiĐăng["Tên nơi đăng"];
-  const loạiNềnTảng = nơiĐăng["Loại nền tảng"];
-
+  const {
+    "Tên nơi đăng": tênNơiĐăng,
+    "Loại nơi đăng": loạiNơiĐăng,
+    "Tên nền tảng": tênNềnTảng,
+    "Loại nền tảng": loạiNềnTảng,
+    "Vị trí": vịTrí,
+  } = nơiĐăng;
   const url = bàiĐăng.URL;
   const dựÁn = bàiĐăng["Dự án"];
   const thamSốUTM: ThamSốUTM = {
@@ -200,7 +204,7 @@ export default function tạoThamSốUTMVàLiênKếtRútGọn(
     ),
     medium: tạoMedium(loạiNềnTảng),
     campaign: tạoCampaign(dựÁn),
-    content: tạoContent(bốiCảnh),
+    content: tạoContent(vịTrí, bốiCảnh),
     term: tạoTerm(nơiĐăng),
   };
   return {

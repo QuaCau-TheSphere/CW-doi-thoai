@@ -8,7 +8,7 @@ import type {
   TênDanhSách,
 } from "../utils/Kiểu cho web.ts";
 import { BàiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
-import { NơiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
+import { NơiĐăngĐãXácĐịnhVịTrí } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
 import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/plus.tsx";
 import ModalTạoMới from "./Modal tạo mới/Modal chung.tsx";
 import {
@@ -17,7 +17,7 @@ import {
   đổiKhungNhập,
 } from "../utils/Hàm cho khung nhập.ts";
 import KếtQuảĐượcChọn from "../components/K%E1%BA%BFt%20qu%E1%BA%A3%20%C4%91%C6%B0%E1%BB%A3c%20ch%E1%BB%8Dn.tsx";
-import { tạoVịTríString } from "../utils/Hàm cho vị trí.ts";
+import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
 
 function DanhSáchKếtQuảTìmKiếm({
   tênDanhSách,
@@ -63,7 +63,7 @@ function DanhSáchKếtQuảTìmKiếm({
     </ul>
   );
 
-  function Item({ item }: { item: BàiĐăng | NơiĐăng }) {
+  function Item({ item }: { item: BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí }) {
     let dòngChính, dòngPhụ;
     switch (tênDanhSách) {
       case "bài đăng": {
@@ -93,9 +93,8 @@ function DanhSáchKếtQuảTìmKiếm({
           "Tên nơi đăng": tênNơiĐăng,
           "Loại nơi đăng": loạiNơiĐăng,
           "Tên nền tảng": tênNềnTảng,
-          "Vị trí": vịTrí,
-        } = item as NơiĐăng;
-        if (!Array.isArray(tênNơiĐăng) || !vịTrí) return <></>;
+        } = item as NơiĐăngChưaXácĐịnhVịTrí;
+        if (!Array.isArray(tênNơiĐăng)) return <></>;
         dòngChính = <h4 class="h4 tiêu-đề">{tênNơiĐăng.join(" ➯ ")}</h4>;
 
         let loạiNơiĐăngString: string;
@@ -107,14 +106,7 @@ function DanhSáchKếtQuảTìmKiếm({
           loạiNơiĐăngString = loạiNơiĐăng[0];
         }
 
-        const vịTríString = tạoVịTríString(vịTrí);
-        dòngPhụ = (
-          <>
-            <span class="loại-nơi-đăng">
-              {`${loạiNơiĐăngString} (${vịTríString})`}
-            </span>
-          </>
-        );
+        dòngPhụ = <span class="loại-nơi-đăng">{loạiNơiĐăngString}</span>;
       }
     }
     return (
@@ -139,7 +131,9 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
     setElement: StateUpdater<ElementDùngTab>;
     setBàiĐăngHoặcNơiĐăng:
       | StateUpdater<BàiĐăng | undefined>
-      | StateUpdater<NơiĐăng | undefined>;
+      | StateUpdater<
+        NơiĐăngĐãXácĐịnhVịTrí | NơiĐăngChưaXácĐịnhVịTrí | undefined
+      >;
   },
 ) {
   const [searchList, setSearchList] = useState<DanhSáchKếtQuảTìmKiếm>(

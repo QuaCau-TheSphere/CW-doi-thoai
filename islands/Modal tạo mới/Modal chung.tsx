@@ -14,11 +14,9 @@ import {
 } from "../../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import {
   LoạiNềnTảng,
-  NơiĐăng,
-  TênNơiĐăng,
+  TênNềnTảng,
 } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
-import { TênNềnTảng } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
-import { LoạiNơiĐăng } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { NơiĐăngChưaXácĐịnhVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
 
 function CácTrườngNhậpMới(
   { tênDanhSách, urlNhậpỞKhungNhậpNgoài }: {
@@ -134,7 +132,7 @@ export default function ModalTạoMới(
 function tạoDữLiệuMới(eventcurrentTarget: any, tênDanhSách: TênDanhSách) {
   const formData = Object.fromEntries(new FormData(eventcurrentTarget));
 
-  let dữLiệu: BàiĐăng | NơiĐăng;
+  let dữLiệu: BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí;
   switch (tênDanhSách) {
     case "bài đăng": {
       const {
@@ -169,7 +167,7 @@ function tạoDữLiệuMới(eventcurrentTarget: any, tênDanhSách: TênDanhS�
         "Tên nền tảng": tênNềnTảng,
         "Mô tả nơi đăng": môTảNơiĐăng,
         "Loại nền tảng": loạiNềnTảng,
-        "Vị trí": vịTrí,
+        "Vị trí có thể đăng": vịTríCóThểĐăng,
       } = formData as Record<string, string>;
       dữLiệu = {
         URL: url as URLString,
@@ -178,8 +176,8 @@ function tạoDữLiệuMới(eventcurrentTarget: any, tênDanhSách: TênDanhS�
         "Tên nền tảng": tênNềnTảng as TênNềnTảng,
         "Mô tả nơi đăng": môTảNơiĐăng,
         "Loại nền tảng": loạiNềnTảng as LoạiNềnTảng,
-        "Vị trí": JSON.parse(vịTrí),
-      } satisfies NơiĐăng;
+        "Vị trí có thể đăng": JSON.parse(vịTríCóThểĐăng),
+      } satisfies NơiĐăngChưaXácĐịnhVịTrí;
       break;
     }
   }

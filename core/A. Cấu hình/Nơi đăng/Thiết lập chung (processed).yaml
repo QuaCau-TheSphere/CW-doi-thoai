@@ -7,13 +7,14 @@ Danh sách vật thể vị trí:
     Danh sách vị trí:
       [
         Bài đăng,
+        Album ảnh,
+        Video,
         Bio,
         About,
         Website,
         Ảnh đại diện,
         Ảnh bìa,
         Bài ghim,
-        Album ảnh,
       ]
 
   - Loại nền tảng: Diễn đàn
@@ -22,20 +23,29 @@ Danh sách vật thể vị trí:
     Danh sách vị trí:
       [
         Bài đăng,
+        Album ảnh,
+        Video,
         Bio,
         About,
         Website,
         Ảnh đại diện,
         Ảnh bìa,
         Bài ghim,
-        Album ảnh,
       ]
 
   - Loại nền tảng: Diễn đàn
     Tên nền tảng: Facebook
     Loại nơi đăng: [Nhóm]
     Danh sách vị trí:
-      [Bài đăng, About, Câu hỏi xét thành viên, Ảnh bìa, Bài ghim, Album ảnh]
+      [
+        Bài đăng,
+        Album ảnh,
+        Video,
+        About,
+        Câu hỏi xét thành viên,
+        Ảnh bìa,
+        Bài ghim,
+      ]
 
   ## GitHub
   - Loại nền tảng: Diễn đàn

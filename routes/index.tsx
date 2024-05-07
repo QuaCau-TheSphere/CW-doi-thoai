@@ -1,8 +1,9 @@
 // deno-fmt-ignore-file
 import { parse } from "$std/yaml/mod.ts";
-import tạoDanhSáchNơiĐăng from "../core/B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình/mod.ts";
-import { BàiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
-import CấuHìnhNơiĐăng, {NơiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
+import tạoDanhSáchNơiĐăngCXĐVT from "../core/B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình/mod.ts";
+import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
+import { BàiĐăng } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import CấuHìnhNơiĐăng from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import Main from "../islands/Main.tsx";
 
 export default async function App() {
@@ -15,11 +16,11 @@ export default async function App() {
   const danhSáchBàiĐăng = [...danhSáchBàiĐăngLấyTừVault, ...danhSáchBàiĐăngNgườiDùngTạoThêm];
 
   const iterNơiĐăng = kv.list({ prefix: ["Nơi đăng"] });
-  const danhSáchNơiĐăngNgườiDùngTạoThêm: NơiĐăng[] = [];
-  for await (const res of iterNơiĐăng) {danhSáchNơiĐăngNgườiDùngTạoThêm.push(res.value as NơiĐăng)}
+  const danhSáchNơiĐăngNgườiDùngTạoThêm: NơiĐăngChưaXácĐịnhVịTrí[] = [];
+  for await (const res of iterNơiĐăng) {danhSáchNơiĐăngNgườiDùngTạoThêm.push(res.value as NơiĐăngChưaXácĐịnhVịTrí)}
   const cấuHìnhNơiĐăng = parse(await Deno.readTextFile("core/A. Cấu hình/Nơi đăng/Quả Cầu.yaml")) as CấuHìnhNơiĐăng;
-  const danhSáchNơiĐăngLấyTừCấuHình = tạoDanhSáchNơiĐăng(cấuHìnhNơiĐăng) as NơiĐăng[];
-  const danhSáchNơiĐăng = [...danhSáchNơiĐăngLấyTừCấuHình, ...danhSáchNơiĐăngNgườiDùngTạoThêm];
+  const danhSáchNơiĐăngCXĐVT = tạoDanhSáchNơiĐăngCXĐVT(cấuHìnhNơiĐăng) as NơiĐăngChưaXácĐịnhVịTrí[];
+  const danhSáchNơiĐăng = [...danhSáchNơiĐăngCXĐVT, ...danhSáchNơiĐăngNgườiDùngTạoThêm];
 
   return (
     <body class="bg-base-100">

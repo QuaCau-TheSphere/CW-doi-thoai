@@ -4,7 +4,8 @@ import { BốiCảnh, ElementDùngTab } from "../utils/Kiểu cho web.ts";
 import KhungTìmBàiĐăngHoặcNơiĐăng from "./Khung tìm bài đăng hoặc nơi đăng.tsx";
 import { Signal } from "@preact/signals";
 import { BàiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
-import { NơiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
+import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
+import { NơiĐăngĐãXácĐịnhVịTrí } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 
 export default function KhungNhậpBênTrái(
   {
@@ -16,9 +17,11 @@ export default function KhungNhậpBênTrái(
     count,
   }: {
     danhSáchBàiĐăng: BàiĐăng[];
-    danhSáchNơiĐăng: NơiĐăng[];
+    danhSáchNơiĐăng: NơiĐăngChưaXácĐịnhVịTrí[];
     setBàiĐăng: StateUpdater<BàiĐăng | undefined>;
-    setNơiĐăng: StateUpdater<NơiĐăng | undefined>;
+    setNơiĐăng: StateUpdater<
+      NơiĐăngĐãXácĐịnhVịTrí | NơiĐăngChưaXácĐịnhVịTrí | undefined
+    >;
     setBốiCảnh: StateUpdater<BốiCảnh>;
     count: Signal<number>;
   },

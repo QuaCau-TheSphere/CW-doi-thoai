@@ -1,10 +1,11 @@
 import { StateUpdater } from "https://esm.sh/v128/preact@10.19.6/hooks/src/index.js";
-import { NơiĐăng } from "../../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
 import { PhảnHồiTừCORSProxy } from "../../utils/Ki%E1%BB%83u%20cho%20web.ts";
 import {
-  DanhSáchVịTríCóThểĐăng,
+  DanhSáchVịTríThànhPhần,
+  NơiĐăngChưaXácĐịnhVịTrí,
   tạoVịTríString,
-} from "../../utils/Hàm cho vị trí.ts";
+} from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
+import { NơiĐăngĐãXácĐịnhVịTrí } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 
 export default function ModalNơiĐăng(
   phảnHồiTừCORSProxy: PhảnHồiTừCORSProxy | undefined,
@@ -12,19 +13,18 @@ export default function ModalNơiĐăng(
   urlNhậpỞKhungNhậpNgoài: string,
   setUrl: StateUpdater<string>,
 ) {
-  let nơiĐăng: NơiĐăng;
-  if (phảnHồiTừCORSProxy === undefined || phảnHồiTừCORSProxy.lỗi) {
-    nơiĐăng = new NơiĐăng();
-  } else {
-    nơiĐăng = phảnHồiTừCORSProxy["Nếu là nơi đăng"];
-  }
+  //@ts-ignore: bổ sung sau
+  const nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí =
+    phảnHồiTừCORSProxy?.["Nếu là nơi đăng"] || new NơiĐăngĐãXácĐịnhVịTrí();
   const {
-    "Tên nơi đăng": tênNơiĐăng,
-    "Mô tả nơi đăng": môTảNơiĐăng,
-    "Loại nơi đăng": loạiNơiĐăng,
     "Loại nền tảng": loạiNềnTảng,
     "Tên nền tảng": tênNềnTảng,
-    "Vị trí": vịTrí,
+    "Tên nơi đăng": tênNơiĐăng,
+    "Loại nơi đăng": loạiNơiĐăng,
+    "Mô tả nơi đăng": môTảNơiĐăng,
+    "Vị trí có thể đăng": vịTríCóThểĐăng,
+    "Lĩnh vực": lĩnhVực,
+    "Mã nơi đăng": mãNơiĐăng,
     URL: url,
   } = nơiĐăng;
   return (
@@ -118,8 +118,14 @@ export default function ModalNơiĐăng(
           placeholder={tênNềnTảng}
         />
       </label>
+      <input
+        name="Vị trí có thể đăng"
+        type="hidden"
+        value={JSON.stringify(vịTríCóThểĐăng)}
+      />
 
-      <label className="form-control w-full max-w-xs">
+      {
+        /* <label className="form-control w-full max-w-xs">
         <div className="label">
           <span className="label-text font-bold">Vị trí</span>
         </div>
@@ -136,7 +142,8 @@ export default function ModalNơiĐăng(
           <option value="spider">Spider</option>
           <option value="goldfish">Goldfish</option>
         </select>
-      </label>
+      </label> */
+      }
     </>
   );
 }

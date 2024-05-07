@@ -1,6 +1,7 @@
-import { VịTrí } from "../../utils/Hàm cho vị trí.ts";
+import { VịTrí } from "./Hàm và kiểu cho vị trí.ts";
 import { URLString } from "./Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 
+// deno-lint-ignore no-explicit-any
 type OneKey<K extends string, V = any> = {
   [P in K]: (
     & Record<P, V>
@@ -47,7 +48,7 @@ export type LoạiNơiĐăng =
  * @type string[]
  */
 export type TênNơiĐăng = TênNơiĐăngDiễnĐàn | TênNơiĐăngChat | TênNơiĐăngKhác;
-export class NơiĐăng {
+export interface ThôngTinNơiĐăng {
   "Loại nền tảng": LoạiNềnTảng;
   "Tên nền tảng": TênNềnTảng;
   "Loại nơi đăng": LoạiNơiĐăng;
@@ -56,7 +57,17 @@ export class NơiĐăng {
   "Lĩnh vực"?: string[];
   "Mô tả nơi đăng"?: string;
   "Mã nơi đăng"?: string;
-  "Vị trí"?: VịTrí;
+}
+export class NơiĐăngĐãXácĐịnhVịTrí implements ThôngTinNơiĐăng {
+  "Loại nền tảng": LoạiNềnTảng;
+  "Tên nền tảng": TênNềnTảng;
+  "Loại nơi đăng": LoạiNơiĐăng;
+  "Tên nơi đăng": TênNơiĐăng;
+  URL?: URLString;
+  "Lĩnh vực"?: string[];
+  "Mô tả nơi đăng"?: string;
+  "Mã nơi đăng"?: string;
+  "Vị trí": VịTrí;
 
   // constructor(
   //   tênNơiĐăng: TênNơiĐăng = "",

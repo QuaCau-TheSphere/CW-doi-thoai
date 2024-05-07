@@ -1,12 +1,12 @@
 // deno-fmt-ignore-file
 import { Handlers } from "$fresh/server.ts";
-import { NơiĐăng } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { BàiĐăng } from "../../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { NơiĐăngChưaXácĐịnhVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
 import { TênDanhSách } from "../../utils/Kiểu cho web.ts";
 
 function tạoKey(
   tênDanhSách: TênDanhSách,
-  dữLiệu: BàiĐăng | NơiĐăng,
+  dữLiệu: BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí,
 ): Deno.KvKey {
   switch (tênDanhSách) {
     case "bài đăng": {
@@ -31,16 +31,14 @@ function tạoKey(
         "Tên nền tảng": tênNềnTảng,
         "Loại nơi đăng": loạiNơiĐăng,
         "Tên nơi đăng": tênNơiĐăng,
-        "Vị trí": vịTrí,
         URL,
-      } = dữLiệu as NơiĐăng;
+      } = dữLiệu as NơiĐăngChưaXácĐịnhVịTrí;
       return [
         "Nơi đăng",
         loạiNềnTảng,
         tênNềnTảng,
         JSON.stringify(loạiNơiĐăng),
         JSON.stringify(tênNơiĐăng),
-        JSON.stringify(vịTrí),
         URL as string,
       ];
     }
@@ -49,7 +47,7 @@ function tạoKey(
 
 interface ReqBàiĐăngHoặcNơiĐăngTạoMới {
   "Tên danh sách": TênDanhSách;
-  "Dữ liệu": BàiĐăng | NơiĐăng;
+  "Dữ liệu": BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí;
 }
 export const handler: Handlers = {
   async POST(req, ctx) {
@@ -61,10 +59,7 @@ export const handler: Handlers = {
       ...dữLiệu,
       "Thời điểm tạo": new Date(),
     };
-    console.log("🚀 ~ POST ~ key:", key)
-    console.log("🚀 ~ POST ~ value:", value)
-    await kv.set(['sdf'], value)
-    // await kv.set(key, value)
+    await kv.set(key, value)
     return Response.json(await kv.get(key));
   },
 };
