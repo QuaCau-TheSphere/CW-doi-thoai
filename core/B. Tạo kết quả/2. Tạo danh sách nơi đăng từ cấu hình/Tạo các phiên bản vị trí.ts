@@ -1,27 +1,15 @@
 import {
-  LoạiNơiĐăng,
-  LoạiNềnTảng,
-  NơiĐăng,
-  TênNềnTảng,
-} from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
-
-export interface CấuHìnhThiếtLậpChung {
-  "Vị trí": VậtThểVịTrí[];
-  "Vị trí nhỏ hơn"?: Record<string, string[]>;
-}
-type DanhSáchVịTrí = string[];
-export type VậtThểVịTrí = {
-  "Loại nền tảng": LoạiNềnTảng;
-  "Tên nền tảng": TênNềnTảng;
-  "Loại nơi đăng": LoạiNơiĐăng;
-  "Danh sách vị trí": DanhSáchVịTrí;
-};
+  CấuHìnhVịTríCTĐ,
+  DanhSáchVịTríCóThểĐăng,
+  VậtThểVịTríCóThểĐăng,
+} from "../../../utils/Hàm cho vị trí.ts";
+import { NơiĐăng } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 /**
  * Thuộc tính "Loại nơi đăng" đều có trong nơi đăng và vật thể vị trí. Hàm này kiểm tra xem nó có trùng nhau không
  */
 export function cóLoạiNơiĐăngNDTrongVậtThểVịTrí(
   nơiĐăng: NơiĐăng,
-  vậtThểVịTrí: VậtThểVịTrí,
+  vậtThểVịTrí: VậtThểVịTríCóThểĐăng,
 ): boolean {
   const {
     "Loại nền tảng": loạiNềnTảngND,
@@ -46,38 +34,42 @@ export function cóLoạiNơiĐăngNDTrongVậtThểVịTrí(
 
 export function tạoCácPhiênBảnCủaNơiĐăngTheoVịTrí(
   nơiĐăngĐangXét: NơiĐăng,
-  danhSáchVịTrí: DanhSáchVịTrí,
-  cấuHìnhVịTríNhỏHơn: CấuHìnhThiếtLậpChung["Vị trí nhỏ hơn"],
+  danhSáchVịTríCóThểCó: DanhSáchVịTríCóThểĐăng,
+  cấuHìnhVịTríNhỏHơn: CấuHìnhVịTríCTĐ["Vị trí nhỏ hơn"],
 ) {
   const kếtQuả: NơiĐăng[] = [];
-  for (const vịTrí of danhSáchVịTrí) {
-    //@ts-ignore: undefined đã được bắt ở dưới
-    const danhSáchVịTríNhỏHơn = cấuHìnhVịTríNhỏHơn[vịTrí];
+  for (const vịTríCóThểCó of danhSáchVịTríCóThểCó) {
+    const danhSáchVịTríNhỏHơn = cấuHìnhVịTríNhỏHơn[vịTríCóThểCó];
     if (danhSáchVịTríNhỏHơn) {
       for (const vịTríNhỏHơn of danhSáchVịTríNhỏHơn) {
-        kếtQuả.push({ ...nơiĐăngĐangXét, "Vị trí": [vịTrí, vịTríNhỏHơn] });
+        kếtQuả.push({
+          ...nơiĐăngĐangXét,
+          "Vị trí": [vịTríCóThểCó, vịTríNhỏHơn],
+        });
       }
     } else {
-      kếtQuả.push({ ...nơiĐăngĐangXét, "Vị trí": [vịTrí] });
+      kếtQuả.push({ ...nơiĐăngĐangXét, "Vị trí": [vịTríCóThểCó] });
     }
   }
   return kếtQuả;
 }
 export default function tạoCácPhiênBảnVịTrí(
   danhSáchNơiĐăngTổng: NơiĐăng[],
-  cấuHìnhThiếtLậpChung: CấuHìnhThiếtLậpChung,
+  cấuHìnhVịTrí: CấuHìnhVịTríCTĐ,
 ) {
-  const { "Vị trí": cấuHìnhVịTrí, "Vị trí nhỏ hơn": cấuHìnhVịTríNhỏHơn } =
-    cấuHìnhThiếtLậpChung;
+  const {
+    "Danh sách vật thể vị trí": danhSáchVậtThểVịTrí,
+    "Vị trí nhỏ hơn": cấuHìnhVịTríNhỏHơn,
+  } = cấuHìnhVịTrí;
   const danhSáchNơiĐăngSauXửLý = danhSáchNơiĐăngTổng.map((i) => i);
   for (const nơiĐăng of danhSáchNơiĐăngTổng) {
-    for (const vịTrí of cấuHìnhVịTrí) {
-      const { "Danh sách vị trí": danhSáchVịTrí } = vịTrí;
-      if (cóLoạiNơiĐăngNDTrongVậtThểVịTrí(nơiĐăng, vịTrí)) {
+    for (const vậtThểVịTrí of danhSáchVậtThểVịTrí) {
+      const { "Danh sách vị trí": danhSáchVịTríCóThểCó } = vậtThểVịTrí;
+      if (cóLoạiNơiĐăngNDTrongVậtThểVịTrí(nơiĐăng, vậtThểVịTrí)) {
         const i = danhSáchNơiĐăngSauXửLý.indexOf(nơiĐăng);
         const danhSáchVịTríCủaNơiĐăng = tạoCácPhiênBảnCủaNơiĐăngTheoVịTrí(
           nơiĐăng,
-          danhSáchVịTrí,
+          danhSáchVịTríCóThểCó,
           cấuHìnhVịTríNhỏHơn,
         );
         danhSáchNơiĐăngSauXửLý.splice(i, 1, ...danhSáchVịTríCủaNơiĐăng);

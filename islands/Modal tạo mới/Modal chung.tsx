@@ -133,7 +133,6 @@ export default function ModalTạoMới(
 
 function tạoDữLiệuMới(eventcurrentTarget: any, tênDanhSách: TênDanhSách) {
   const formData = Object.fromEntries(new FormData(eventcurrentTarget));
-  console.log("🚀 ~ tạoDữLiệuMới ~ eventcurrentTarget:", eventcurrentTarget);
 
   let dữLiệu: BàiĐăng | NơiĐăng;
   switch (tênDanhSách) {
@@ -165,25 +164,25 @@ function tạoDữLiệuMới(eventcurrentTarget: any, tênDanhSách: TênDanhS�
     case "nơi đăng": {
       const {
         URL: url,
-        "Tên nơi đăng": tênNơiĐăngForm,
-        "Loại nơi đăng": loạiNơiĐăngForm,
-        "Tên nền tảng": tênNềnTảngForm,
-        "Mô tả nơi đăng": môTảNơiĐăngForm,
-        "Loại nền tảng": loạiNềnTảngForm,
-      } = formData;
+        "Tên nơi đăng": tênNơiĐăng,
+        "Loại nơi đăng": loạiNơiĐăng,
+        "Tên nền tảng": tênNềnTảng,
+        "Mô tả nơi đăng": môTảNơiĐăng,
+        "Loại nền tảng": loạiNềnTảng,
+        "Vị trí": vịTrí,
+      } = formData as Record<string, string>;
       dữLiệu = {
         URL: url as URLString,
-        "Tên nơi đăng": [tênNơiĐăngForm as string],
-        "Loại nơi đăng": [loạiNơiĐăngForm as LoạiNơiĐăng[0]],
-        "Tên nền tảng": tênNềnTảngForm as TênNềnTảng,
-        "Mô tả nơi đăng": môTảNơiĐăngForm as string,
-        "Loại nền tảng": loạiNềnTảngForm as LoạiNềnTảng,
+        "Tên nơi đăng": JSON.parse(tênNơiĐăng),
+        "Loại nơi đăng": JSON.parse(loạiNơiĐăng),
+        "Tên nền tảng": tênNềnTảng as TênNềnTảng,
+        "Mô tả nơi đăng": môTảNơiĐăng,
+        "Loại nền tảng": loạiNềnTảng as LoạiNềnTảng,
+        "Vị trí": JSON.parse(vịTrí),
       } satisfies NơiĐăng;
       break;
     }
   }
-  console.log("🚀 ~ tạoDữLiệuMới ~ formData:", formData);
-  console.log("🚀 ~ tạoDữLiệuMới ~ dữLiệu:", dữLiệu);
   return {
     "Tên danh sách": tênDanhSách,
     "Dữ liệu": dữLiệu,

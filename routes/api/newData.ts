@@ -61,7 +61,10 @@ export const handler: Handlers = {
       ...dữLiệu,
       "Thời điểm tạo": new Date(),
     };
-    await kv.set(key, value)
+    console.log("🚀 ~ POST ~ key:", key)
+    console.log("🚀 ~ POST ~ value:", value)
+    await kv.set(['sdf'], value)
+    // await kv.set(key, value)
     return Response.json(await kv.get(key));
   },
 };

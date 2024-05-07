@@ -17,6 +17,7 @@ import {
   đổiKhungNhập,
 } from "../utils/Hàm cho khung nhập.ts";
 import KếtQuảĐượcChọn from "../components/K%E1%BA%BFt%20qu%E1%BA%A3%20%C4%91%C6%B0%E1%BB%A3c%20ch%E1%BB%8Dn.tsx";
+import { tạoVịTríString } from "../utils/Hàm cho vị trí.ts";
 
 function DanhSáchKếtQuảTìmKiếm({
   tênDanhSách,
@@ -106,12 +107,7 @@ function DanhSáchKếtQuảTìmKiếm({
           loạiNơiĐăngString = loạiNơiĐăng[0];
         }
 
-        let vịTríString: string;
-        if (vịTrí[1]) {
-          vịTríString = `${viếtThường(vịTrí[1])} trong ${viếtThường(vịTrí[0])}`;
-        } else {
-          vịTríString = vịTrí[0];
-        }
+        const vịTríString = tạoVịTríString(vịTrí);
         dòngPhụ = (
           <>
             <span class="loại-nơi-đăng">

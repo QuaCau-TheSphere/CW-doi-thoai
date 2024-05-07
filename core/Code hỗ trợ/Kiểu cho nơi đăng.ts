@@ -1,4 +1,5 @@
-import { URLString } from "./Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
+import { VịTrí } from "../../utils/Hàm cho vị trí.ts";
+import { URLString } from "./Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 
 type OneKey<K extends string, V = any> = {
   [P in K]: (
@@ -16,7 +17,7 @@ export default interface CấuHìnhNơiĐăng {
   CV?: CấuHìnhCV | null;
   Ảnh?: CấuHìnhẢnh | null;
   Email?: CấuHìnhEmail | null;
-  "Dịch vụ lưu trữ"?: CấuHìnhDịchVụLưuTrữ | null;
+  "Tập tin"?: CấuHìnhTậpTin | null;
   "Viết tắt"?: Record<string, string>[] | null;
   "Kênh forum Discord"?: string[] | null;
 }
@@ -55,7 +56,7 @@ export class NơiĐăng {
   "Lĩnh vực"?: string[];
   "Mô tả nơi đăng"?: string;
   "Mã nơi đăng"?: string;
-  "Vị trí"?: string[];
+  "Vị trí"?: VịTrí;
 
   // constructor(
   //   tênNơiĐăng: TênNơiĐăng = "",
@@ -229,6 +230,10 @@ interface CấuHìnhChat {
 }
 
 /**
+ * TẬP TIN
+ */
+export type CấuHìnhTậpTin = Record<"PDF" | "Word", string[]> | null;
+/**
  * KHÁC
  */
 export const danhSáchNơiĐăngKhác = [
@@ -237,7 +242,6 @@ export const danhSáchNơiĐăngKhác = [
   "Email",
   "CV",
   "Ảnh",
-  "Dịch vụ lưu trữ",
 ] as const;
 export type LoạiNơiĐăngKhác = [typeof danhSáchNơiĐăngKhác[number]];
 /** Tên nền tảng của vault, website, email, CV, ảnh, dịch vụ lưu trữ không quan trọng, không phức tạp, không làm ảnh hưởng tới cách gọi các cấp bậc nhỏ hơn nên để null cũng được */
@@ -250,4 +254,3 @@ export type CấuHìnhWebsite = string[] | null;
 export type CấuHìnhEmail = string[] | null;
 export type CấuHìnhCV = string[] | null;
 export type CấuHìnhẢnh = string[] | null;
-export type CấuHìnhDịchVụLưuTrữ = string[] | null;

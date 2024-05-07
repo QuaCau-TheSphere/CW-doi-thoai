@@ -12,6 +12,12 @@ import {
 import { viếtThường } from "../../../utils/Hàm cho khung nhập.ts";
 import { assert } from "$std/assert/assert.ts";
 import { FreshContext } from "https://deno.land/x/fresh@1.6.8/src/server/mod.ts";
+import {
+  CấuHìnhVịTríCTĐ,
+  DanhSáchVịTríCóThểĐăng,
+  VịTrí,
+} from "../../../utils/Hàm cho vị trí.ts";
+import { parse } from "$std/yaml/mod.ts";
 interface MetaTags {
   title: string;
   description: string;
@@ -45,6 +51,39 @@ function lấyTitle(title: string): string {
   return titleSplit.join(" | ") || title;
 }
 
+async function xácĐịnhCácLựaChọnVịTríCTĐ(
+  loạiNềnTảng: LoạiNềnTảng,
+  tênNềnTảng: TênNềnTảng,
+  loạiNơiĐăng: LoạiNơiĐăng,
+): Promise<string[][] | null> {
+  //deno-fmt-ignore
+  const cấuHìnhVịTríCTĐ = parse(await Deno.readTextFile("core/A. Cấu hình/Nơi đăng/Thiết lập chung (processed).yaml")) as CấuHìnhVịTríCTĐ;
+  const vậtThểVịTríCTĐ = cấuHìnhVịTríCTĐ["Danh sách vật thể vị trí"].find((i) =>
+    i["Loại nền tảng"] === loạiNềnTảng &&
+    i["Tên nền tảng"] === tênNềnTảng &&
+    i["Loại nơi đăng"] === loạiNơiĐăng
+  );
+  const danhSáchVịTríCTĐ = vậtThểVịTríCTĐ?.["Danh sách vị trí"];
+  console.log("🚀 ~ danhSáchVịTríCTĐ:", danhSáchVịTríCTĐ);
+
+  if (!danhSáchVịTríCTĐ) return null;
+  const kếtQuả = [];
+
+  for (const vịTríCTĐ of danhSáchVịTríCTĐ) {
+    const value: VịTrí = [vịTríCTĐ];
+    const danhSáchVịTríNhỏHơnCTĐ = cấuHìnhVịTríCTĐ["Vị trí nhỏ hơn"][vịTríCTĐ];
+    if (danhSáchVịTríNhỏHơnCTĐ) {
+      for (const vịTríNhỏHơn of danhSáchVịTríNhỏHơnCTĐ) {
+        value.push(vịTríNhỏHơn);
+        kếtQuả.push(value);
+      }
+    } else {
+      kếtQuả.push(value);
+    }
+  }
+  console.log("🚀 ~ kếtQuả:", kếtQuả);
+  return kếtQuả;
+}
 async function lấyMetaTag(
   url: URL,
 ): Promise<{ bàiĐăng: BàiĐăng; nơiĐăng: NơiĐăng }> {
@@ -65,7 +104,7 @@ async function lấyMetaTag(
     Vault: site_name || hostname,
   };
 
-  function tạoNơiĐăng(): NơiĐăng {
+  async function tạoNơiĐăng(): Promise<NơiĐăng> {
     let loạiNềnTảng: LoạiNềnTảng | undefined = undefined;
     let tênNềnTảng: TênNềnTảng | undefined = undefined;
     let loạiNơiĐăng: LoạiNơiĐăng | undefined = undefined;
@@ -94,16 +133,21 @@ async function lấyMetaTag(
         }
       }
     }
+    loạiNềnTảng = loạiNềnTảng ?? "Website";
+    tênNềnTảng = tênNềnTảng ?? "Website";
+    loạiNơiĐăng = loạiNơiĐăng ?? ["Website"];
+
+    await xácĐịnhCácLựaChọnVịTríCTĐ(loạiNềnTảng, tênNềnTảng, loạiNơiĐăng);
     return {
       "Tên nơi đăng": [title],
       URL: url.href,
       "Mô tả nơi đăng": description,
-      "Loại nền tảng": loạiNềnTảng ?? "Website",
-      "Tên nền tảng": tênNềnTảng ?? "Website",
-      "Loại nơi đăng": loạiNơiĐăng ?? ["Website"],
+      "Loại nền tảng": loạiNềnTảng,
+      "Tên nền tảng": tênNềnTảng,
+      "Loại nơi đăng": loạiNơiĐăng,
     };
   }
-  const nơiĐăng = tạoNơiĐăng();
+  const nơiĐăng = await tạoNơiĐăng();
   return { bàiĐăng: bàiĐăng, nơiĐăng: nơiĐăng };
 }
 export const handler: Handlers = {
