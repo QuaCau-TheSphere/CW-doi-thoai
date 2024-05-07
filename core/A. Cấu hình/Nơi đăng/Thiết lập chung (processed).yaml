@@ -152,6 +152,6 @@ Vị trí nhỏ hơn:
   Ảnh đại diện: [Mô tả ảnh, QR trong ảnh, Chữ trong ảnh, Bình luận]
   Ảnh bìa: [Mô tả ảnh, QR trong ảnh, Chữ trong ảnh, Bình luận]
   Bài ghim: [Nội dung chính, Bình luận, QR trong ảnh, Chữ trong ảnh]
-  Tin nhắn ghim: [Nội dung chính, Bình luận, QR trong ảnh, Chữ trong ảnh]
+  Tin nhắn ghim: ["", QR trong ảnh, Chữ trong ảnh]
   Album ảnh: [Mô tả album, Bình luận]
-  Video: [Description, QR trong video, Chữ trong video, Bình luận]
+  Video: [Mô tả video, QR trong video, Chữ trong video, Bình luận]

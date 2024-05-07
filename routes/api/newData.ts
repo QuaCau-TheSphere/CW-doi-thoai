@@ -14,14 +14,14 @@ function tạoKey(
         "Tiêu đề": tiêuĐề,
         "Dự án": dựÁn,
         Vault: vault,
-        URL,
+        url,
       } = dữLiệu as BàiĐăng;
       return [
         "Bài đăng",
         vault || "",
         dựÁn?.["Tên dự án"] || "",
         tiêuĐề || "",
-        URL as string || "",
+        url as string || "",
       ];
     }
 

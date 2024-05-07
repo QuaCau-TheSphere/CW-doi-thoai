@@ -1,5 +1,12 @@
 import { StateUpdater } from "https://esm.sh/v128/preact@10.19.6/hooks/src/index.js";
 import { ElementDùngTab } from "./Ki%E1%BB%83u%20cho%20web.ts";
+import {
+  LoạiNơiĐăng,
+  ThôngTinNơiĐăng,
+  TênNơiĐăng,
+} from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { VịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
+import { DựÁn } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 
 export function viếtHoa(chuỗi: string) {
   return chuỗi.replace(/^(.)/g, (x) => x.toUpperCase());
@@ -8,7 +15,8 @@ export function viếtHoa(chuỗi: string) {
 /**
  * Nếu từ đầu tiên trong chuỗi là từ viết tắt thì không viết thường. VD: `QR trong ảnh` → `QR trong ảnh`
  */
-export function viếtThường(chuỗi: string) {
+export function viếtThường(chuỗi: string | undefined) {
+  if (!chuỗi) return "";
   const từĐầuTiên = chuỗi.split(" ")[0];
   if (từĐầuTiên === từĐầuTiên.toLocaleUpperCase()) return chuỗi;
   return chuỗi.toLocaleLowerCase();
@@ -16,6 +24,46 @@ export function viếtThường(chuỗi: string) {
 
 export function kebabCase(chuỗi: string) {
   return chuỗi.replace(" ", "-");
+}
+
+export function tạoVịTríString(vịTrí: VịTrí): string {
+  if (vịTrí[1]) {
+    return `${vịTrí.join(": ")}`;
+  } else {
+    return vịTrí[0];
+  }
+}
+export function tạoTênNơiĐăngString(tênNơiĐăng: TênNơiĐăng): string {
+  return tênNơiĐăng.join(" ➯ ");
+}
+
+export function tạoLoạiNơiĐăngString(thôngTinNơiĐăng: ThôngTinNơiĐăng): string {
+  const {
+    "Loại nơi đăng": loạiNơiĐăng,
+    "Tên nền tảng": tênNềnTảng,
+  } = thôngTinNơiĐăng;
+  if (loạiNơiĐăng[0] !== tênNềnTảng) {
+    const array = JSON.parse(JSON.stringify(loạiNơiĐăng));
+    array[0] = `${loạiNơiĐăng[0]} ${tênNềnTảng}`;
+    return `${array.join(" → ")}`;
+  } else {
+    return loạiNơiĐăng[0];
+  }
+}
+
+export function tạoVaultHoặcDựÁnString(
+  dựÁn: DựÁn | undefined,
+  vault: string | undefined,
+) {
+  let key, value;
+  if (dựÁn && dựÁn["Tên dự án"]) {
+    key = "Dự án";
+    value = dựÁn["Tên dự án"];
+  } else if (vault) {
+    key = "Vault";
+    value = vault;
+  }
+  return `${key}: ${value}`;
 }
 
 export function đổiKhungNhập(

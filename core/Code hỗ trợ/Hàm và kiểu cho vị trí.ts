@@ -2,9 +2,9 @@ import {
   LoạiNơiĐăng,
   LoạiNềnTảng,
   ThôngTinNơiĐăng,
+  TênNơiĐăng,
   TênNềnTảng,
 } from "./Kiểu cho nơi đăng.ts";
-import { viếtThường } from "../../utils/Hàm cho khung nhập.ts";
 
 type VịTríThànhPhần = string;
 
@@ -133,12 +133,4 @@ export function tạoNơiĐăngChưaXácĐịnhVịTrí(
   }
 
   return { ...thôngTinNơiĐăng, "Vị trí có thể đăng": danhSáchVịTríCóThểĐăng };
-}
-/** Tạo chuỗi vị trí thân thiện với người dùng */
-export function tạoVịTríString(vịTrí: VịTrí) {
-  if (vịTrí[1]) {
-    return `${viếtThường(vịTrí[1])} trong ${viếtThường(vịTrí[0])}`;
-  } else {
-    return vịTrí[0];
-  }
 }

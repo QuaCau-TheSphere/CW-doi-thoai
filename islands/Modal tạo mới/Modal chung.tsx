@@ -143,7 +143,7 @@ function tạoDữLiệuMới(eventcurrentTarget: any, tênDanhSách: TênDanhS�
         Website: vault,
       } = formData as Record<string, string>;
       dữLiệu = {
-        URL: url,
+        url: url,
         "Tiêu đề": tiêuĐề,
         "Dự án": {
           "Mã dự án": undefined,

@@ -130,7 +130,7 @@ async function lấyMetaTag(
 
   const bàiĐăng: BàiĐăng = {
     "Tiêu đề": title,
-    URL: url.href,
+    url: url.href,
     "Nội dung bài đăng": {
       "Mô tả bài đăng": description,
     },

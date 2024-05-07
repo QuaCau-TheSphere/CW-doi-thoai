@@ -72,7 +72,7 @@ export default function KhungNhậpBênTrái(
           type="text"
           class="grow"
           id="khung-nhập-bối-cảnh"
-          placeholder="Nhập bối cảnh"
+          placeholder="(Không bắt buộc) Lý do khiến bài đăng trở nên hữu ích tại nơi đăng"
           onInput={(e) => {
             setBốiCảnh((e.target as HTMLInputElement).value);
           }}

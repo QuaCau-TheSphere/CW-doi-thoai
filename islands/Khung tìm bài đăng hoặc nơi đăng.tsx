@@ -8,11 +8,18 @@ import type {
   TênDanhSách,
 } from "../utils/Kiểu cho web.ts";
 import { BàiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
-import { NơiĐăngĐãXácĐịnhVịTrí } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
+import {
+  LoạiNơiĐăng,
+  NơiĐăngĐãXácĐịnhVịTrí,
+  TênNơiĐăng,
+} from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
 import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/plus.tsx";
 import ModalTạoMới from "./Modal tạo mới/Modal chung.tsx";
 import {
   kebabCase,
+  tạoLoạiNơiĐăngString,
+  tạoTênNơiĐăngString,
+  tạoVaultHoặcDựÁnString,
   viếtThường,
   đổiKhungNhập,
 } from "../utils/Hàm cho khung nhập.ts";
@@ -67,45 +74,26 @@ function DanhSáchKếtQuảTìmKiếm({
     let dòngChính, dòngPhụ;
     switch (tênDanhSách) {
       case "bài đăng": {
-        const { "Dự án": dựÁn, Vault: vault, "Tiêu đề": tiêuĐề } =
-          item as BàiĐăng;
+        item = item as BàiĐăng;
+        const { "Dự án": dựÁn, Vault: vault, "Tiêu đề": tiêuĐề } = item;
         dòngChính = <h4 class="h4 tiêu-đề">{tiêuĐề}</h4>;
 
-        let key, value;
-        if (dựÁn?.["Tên dự án"]) {
-          key = "Dự án";
-          value = dựÁn?.["Tên dự án"];
-        } else if (vault) {
-          key = "Vault";
-          value = vault;
-        }
-
+        const vaultHoặcDựÁnString = tạoVaultHoặcDựÁnString(dựÁn, vault);
         dòngPhụ = (
           <>
-            <span class="nơi-lưu-bài-đăng">{key}:</span> {value}
+            <span class="nơi-lưu-bài-đăng">{vaultHoặcDựÁnString}</span>
           </>
         );
         break;
       }
       case "nơi đăng": {
-        const {
-          "Loại nền tảng": loạiNềnTảng,
-          "Tên nơi đăng": tênNơiĐăng,
-          "Loại nơi đăng": loạiNơiĐăng,
-          "Tên nền tảng": tênNềnTảng,
-        } = item as NơiĐăngChưaXácĐịnhVịTrí;
+        item = item as NơiĐăngChưaXácĐịnhVịTrí;
+        const tênNơiĐăng = item["Tên nơi đăng"];
         if (!Array.isArray(tênNơiĐăng)) return <></>;
-        dòngChính = <h4 class="h4 tiêu-đề">{tênNơiĐăng.join(" ➯ ")}</h4>;
+        const tênNơiĐăngString = tạoTênNơiĐăngString(tênNơiĐăng);
+        dòngChính = <h4 class="h4 tiêu-đề">{tênNơiĐăngString}</h4>;
 
-        let loạiNơiĐăngString: string;
-        if (loạiNơiĐăng[0] !== tênNềnTảng) {
-          loạiNơiĐăngString = `${loạiNơiĐăng[0]} ${tênNềnTảng} ${
-            tênNơiĐăng[0]
-          }`;
-        } else {
-          loạiNơiĐăngString = loạiNơiĐăng[0];
-        }
-
+        const loạiNơiĐăngString = tạoLoạiNơiĐăngString(item);
         dòngPhụ = <span class="loại-nơi-đăng">{loạiNơiĐăngString}</span>;
       }
     }
@@ -154,6 +142,7 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
           type="text"
           class="grow"
           autoFocus
+          required
           value={query}
           id={`khung-nhập-${tênDanhSách?.replace(" ", "-")}`}
           placeholder={`Tìm ${tênDanhSách} hoặc dán URL để tạo mới`}

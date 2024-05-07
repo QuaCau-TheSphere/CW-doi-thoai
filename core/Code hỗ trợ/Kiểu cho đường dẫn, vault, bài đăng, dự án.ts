@@ -54,7 +54,7 @@ export interface NộiDungBàiĐăng {
 }
 export class BàiĐăng {
   "Tiêu đề": string;
-  URL: URLString;
+  url: URLString;
   "Dự án"?: DựÁn;
   Vault?: string;
   "Mã bài đăng"?: string;
@@ -76,7 +76,7 @@ export class BàiĐăng {
     },
   ) {
     this["Tiêu đề"] = tiêuĐề;
-    this.URL = url;
+    this.url = url;
     this["Dự án"] = dựÁn;
     this.Vault = vault;
     this["Mã bài đăng"] = mãBàiĐăng;
