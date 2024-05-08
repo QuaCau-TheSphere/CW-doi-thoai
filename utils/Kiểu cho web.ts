@@ -5,7 +5,7 @@ import CấuHìnhNơiĐăng, { NơiĐăngĐãXácĐịnhVịTrí } from "../core
 import ThamSốUTMVàLiênKếtRútGọn from "../core/Code hỗ trợ/Kiểu cho tham số UTM.ts";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
 
-/** Kiểu cho khung nhập */
+/** KHUNG NHẬP */
 export type BốiCảnh = string | undefined;
 export interface MainProps {
   danhSáchNơiĐăng: NơiĐăngChưaXácĐịnhVịTrí[];
@@ -27,8 +27,12 @@ export type Cursor = number;
 export type TênDanhSách = "nơi đăng" | "bài đăng";
 export type ElementDùngTab = TênDanhSách | "bối cảnh" | "nút tạo liên kết";
 
+export type SetNơiĐăng = StateUpdater<NơiĐăngChưaXácĐịnhVịTrí | NơiĐăngĐãXácĐịnhVịTrí | undefined>
+export type SetBàiĐăngHoặcNơiĐăng = StateUpdater<BàiĐăng | undefined> | SetNơiĐăng;
 
-/** Kiểu cho biểu đồ */
+
+
+/** BIỂU ĐỒ */
 // deno-lint-ignore no-explicit-any
 type PartialRecord<K extends keyof any, T> =  Partial<Record<K, T>>
 

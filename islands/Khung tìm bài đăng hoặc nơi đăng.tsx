@@ -7,14 +7,16 @@ import type {
   DanhSáchKếtQuảTìmKiếm,
   ElementDùngTab,
   MụcĐượcChọn,
+  SetBàiĐăngHoặcNơiĐăng,
   TênDanhSách,
 } from "../utils/Kiểu cho web.ts";
 import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/plus.tsx";
 import {
-  kebabCase,
+  kiểuKebab,
   tạoLoạiNơiĐăngString,
   tạoTênNơiĐăngString,
   tạoVaultHoặcDựÁnString,
+  viếtHoa,
   đổiKhungNhập,
 } from "../utils/Hàm cho khung nhập.ts";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
@@ -46,7 +48,7 @@ function DanhSáchKếtQuảTìmKiếm({
   }
   return (
     <ul
-      id={`danh-sách-${kebabCase(tênDanhSách)}-tìm-được`}
+      id={`danh-sách-${kiểuKebab(tênDanhSách)}-tìm-được`}
       class="active border-2 rounded border-secondary"
     >
       {danhSáchKếtQuảTìmKiếm.map((item, index) => (
@@ -112,9 +114,7 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
     fuse: Fuse;
     element: ElementDùngTab;
     setElement: StateUpdater<ElementDùngTab>;
-    setBàiĐăngHoặcNơiĐăng:
-      | StateUpdater<BàiĐăng | undefined>
-      | StateUpdater<NơiĐăngChưaXácĐịnhVịTrí | undefined>;
+    setBàiĐăngHoặcNơiĐăng: SetBàiĐăngHoặcNơiĐăng;
   },
 ) {
   const [searchList, setSearchList] = useState<DanhSáchKếtQuảTìmKiếm>(
@@ -127,17 +127,17 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
   setBàiĐăngHoặcNơiĐăng(mụcĐượcChọn);
   return (
     <div
-      id={`div-${kebabCase(tênDanhSách)}`}
+      id={`div-${kiểuKebab(tênDanhSách)}`}
     >
       <label class="input input-bordered flex items-center gap-2">
-        {tênDanhSách.replace(/^(.)/g, (x) => x.toUpperCase())}
+        {viếtHoa(tênDanhSách)}
         <input
           type="text"
           class="grow"
           autoFocus
           required
           value={query}
-          id={`khung-nhập-${tênDanhSách?.replace(" ", "-")}`}
+          id={`khung-nhập-${kiểuKebab(tênDanhSách)}`}
           placeholder={`Tìm ${tênDanhSách} hoặc dán URL để tạo mới`}
           onInput={handleInput}
           onFocus={() => setElement(tênDanhSách)}
@@ -163,7 +163,11 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
           </>
         )
         : null}
-      <KếtQuảĐượcChọn từKhoáTiêuĐề={tênDanhSách} vậtThể={mụcĐượcChọn} />
+      <KếtQuảĐượcChọn
+        tênDanhSách={tênDanhSách}
+        vậtThể={mụcĐượcChọn}
+        setBàiĐăngHoặcNơiĐăng={setBàiĐăngHoặcNơiĐăng}
+      />
       <br />
     </div>
   );

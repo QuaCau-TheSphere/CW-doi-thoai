@@ -34,7 +34,7 @@ function lấyURL(ctx: FreshContext<Record<string, unknown>, any, any>) {
   const temp = fullUrl.split("/api/cors-proxy/");
   temp.shift();
   const url = temp.join();
-  console.log("url:", url);
+  console.log("URL được gửi lên cors proxy:", url);
   return new URL(url);
 }
 

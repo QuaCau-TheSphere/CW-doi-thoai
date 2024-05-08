@@ -1,7 +1,13 @@
 import { ThamSốUTM } from "../core/Code hỗ trợ/Kiểu cho tham số UTM.ts";
-import { MụcĐượcChọn, TênDanhSách } from "../utils/Ki%E1%BB%83u%20cho%20web.ts";
+import {
+  MụcĐượcChọn,
+  SetBàiĐăngHoặcNơiĐăng,
+  SetNơiĐăng,
+  TênDanhSách,
+} from "../utils/Ki%E1%BB%83u%20cho%20web.ts";
 import {
   NơiĐăngChưaXácĐịnhVịTrí,
+  VịTrí,
 } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
 import {
   tạoLoạiNơiĐăngString,
@@ -10,6 +16,7 @@ import {
   viếtHoa,
 } from "../utils/Hàm cho khung nhập.ts";
 import { BàiĐăng } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { useState } from "preact/hooks";
 
 function tạoTiêuĐề(từKhoáTiêuĐề: string | TênDanhSách | undefined) {
   let tiêuĐề;
@@ -83,7 +90,10 @@ function BàiĐăngĐượcChọn({ bàiĐăng }: { bàiĐăng: BàiĐăng | und
   );
 }
 function NơiĐăngĐượcChọn(
-  { nơiĐăng }: { nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí | undefined },
+  { nơiĐăng, setNơiĐăng }: {
+    nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí | undefined;
+    setNơiĐăng: SetNơiĐăng;
+  },
 ) {
   if (!nơiĐăng) return <></>;
   const danhSáchLựaChọn = [];
@@ -95,7 +105,8 @@ function NơiĐăngĐượcChọn(
   }
   const tênNơiĐăngString = tạoTênNơiĐăngString(nơiĐăng["Tên nơi đăng"]);
   const loạiNơiĐăngString = tạoLoạiNơiĐăngString(nơiĐăng);
-
+  const [vịTríString, setVịTríString] = useState<string | undefined>(undefined);
+  console.log("🚀 ~ nơiĐăng:", nơiĐăng);
   return (
     <article class="nơi-đăng-được-chọn prose border-2 rounded border-secondary p-4">
       <h2 class="h2 tên-nơi-đăng">{tênNơiĐăngString}</h2>
@@ -112,27 +123,47 @@ function NơiĐăngĐượcChọn(
           name="Vị trí"
           class="select select-bordered w-full max-w-xs"
           id="vị-trí"
+          value={vịTríString}
+          onChange={(e) => handleChange((e.target as HTMLSelectElement).value)}
           required
         >
           {danhSáchLựaChọn}
         </select>
       </label>
+      {vịTríString}
+      <br></br>
+      {JSON.stringify(nơiĐăng)}
     </article>
   );
+  function handleChange(vịTríString: string) {
+    setVịTríString(vịTríString);
+    if (vịTríString === undefined) return;
+    const vịTrí = JSON.parse(vịTríString) as VịTrí;
+    const {
+      "Vị trí có thể đăng": bỏ,
+      ...thôngTinNơiĐăng
+    } = nơiĐăng as NơiĐăngChưaXácĐịnhVịTrí;
+    setNơiĐăng({ ...thôngTinNơiĐăng, "Vị trí": vịTrí });
+  }
 }
 export default function KếtQuảĐượcChọn(
-  { từKhoáTiêuĐề, vậtThể }: {
-    từKhoáTiêuĐề?: string;
-    vậtThể: MụcĐượcChọn | ThamSốUTM | {
-      "Thời điểm tạo": string;
-      "Đuôi rút gọn": string;
-    };
+  { tênDanhSách, vậtThể, setBàiĐăngHoặcNơiĐăng }: {
+    tênDanhSách?: TênDanhSách;
+    vậtThể: MụcĐượcChọn;
+    setBàiĐăngHoặcNơiĐăng: SetBàiĐăngHoặcNơiĐăng;
   },
 ) {
-  if (vậtThể?.["Vị trí có thể đăng"]) {
-    return <NơiĐăngĐượcChọn nơiĐăng={vậtThể} />;
-  } else if (vậtThể?.["Tiêu đề"]) {
+  if (tênDanhSách === "bài đăng") {
+    vậtThể = vậtThể as BàiĐăng;
+
     return <BàiĐăngĐượcChọn bàiĐăng={vậtThể} />;
+  } else if (tênDanhSách === "nơi đăng") {
+    vậtThể = vậtThể as NơiĐăngChưaXácĐịnhVịTrí;
+    setBàiĐăngHoặcNơiĐăng = setBàiĐăngHoặcNơiĐăng as SetNơiĐăng;
+
+    return (
+      <NơiĐăngĐượcChọn nơiĐăng={vậtThể} setNơiĐăng={setBàiĐăngHoặcNơiĐăng} />
+    );
   } else return <></>;
 }
 // export default function KếtQuảĐượcChọn(

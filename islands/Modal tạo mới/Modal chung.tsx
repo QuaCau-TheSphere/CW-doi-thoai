@@ -24,9 +24,9 @@ function CácTrườngNhậpMới(
     urlNhậpỞKhungNhậpNgoài: string;
   },
 ) {
-  console.log("🚀 ~ urlNhậpỞKhungNhậpNgoài:", urlNhậpỞKhungNhậpNgoài);
+  // console.log("🚀 ~ urlNhậpỞKhungNhậpNgoài:", urlNhậpỞKhungNhậpNgoài);
   const [urlNhậpTrongModal, setUrl] = useState(urlNhậpỞKhungNhậpNgoài);
-  console.log("🚀 ~ urlNhậpTrongModal1:", urlNhậpTrongModal);
+  // console.log("🚀 ~ urlNhậpTrongModal1:", urlNhậpTrongModal);
 
   //deno-fmt-ignore
   const [phảnHồiTừCORSProxy, setPhảnHồiTừCORSProxy] = useState<PhảnHồiTừCORSProxy | undefined>(undefined);
@@ -42,7 +42,7 @@ function CácTrườngNhậpMới(
     //todo
   }, [urlNhậpTrongModal]);
 
-  console.log(phảnHồiTừCORSProxy);
+  // console.log(phảnHồiTừCORSProxy);
 
   if (tênDanhSách === "bài đăng") {
     // return (

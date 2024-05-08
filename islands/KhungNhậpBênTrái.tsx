@@ -1,3 +1,4 @@
+//deno-fmt-ignore-file
 import Fuse from "https://deno.land/x/fuse@v6.4.1/dist/fuse.esm.js";
 import { StateUpdater, useState } from "preact/hooks";
 import { BốiCảnh, ElementDùngTab } from "../utils/Kiểu cho web.ts";
@@ -5,6 +6,7 @@ import KhungTìmBàiĐăngHoặcNơiĐăng from "./Khung tìm bài đăng hoặc
 import { Signal } from "@preact/signals";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
 import { BàiĐăng } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { NơiĐăngĐãXácĐịnhVịTrí } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 
 export default function KhungNhậpBênTrái(
   {
@@ -18,18 +20,15 @@ export default function KhungNhậpBênTrái(
     danhSáchBàiĐăng: BàiĐăng[];
     danhSáchNơiĐăng: NơiĐăngChưaXácĐịnhVịTrí[];
     setBàiĐăng: StateUpdater<BàiĐăng | undefined>;
-    setNơiĐăng: StateUpdater<NơiĐăngChưaXácĐịnhVịTrí | undefined>;
+    setNơiĐăng: StateUpdater<NơiĐăngChưaXácĐịnhVịTrí | NơiĐăngĐãXácĐịnhVịTrí | undefined>;
     setBốiCảnh: StateUpdater<BốiCảnh>;
     count: Signal<number>;
   },
 ) {
   /** Do ngay từ lúc mới KhungNhậpBênTrái mới render đã setKhungNhậpActive là 'bài đăng' rồi, nên sẽ không có chuyện undefined */
-  const [element, setElement] = useState<ElementDùngTab>(
-    "bài đăng",
-  );
+  const [element, setElement] = useState<ElementDùngTab>("bài đăng");
 
   const fuseBàiĐăng = new Fuse(danhSáchBàiĐăng, {
-    // minMatchCharLength: 3,
     ignoreLocation: true,
     keys: [
       {
@@ -41,7 +40,6 @@ export default function KhungNhậpBênTrái(
     ],
   });
   const fuseNơiĐăng = new Fuse(danhSáchNơiĐăng, {
-    // minMatchCharLength: 2,
     ignoreLocation: true,
     keys: [
       {
@@ -77,9 +75,7 @@ export default function KhungNhậpBênTrái(
           class="grow"
           id="khung-nhập-bối-cảnh"
           placeholder="Lý do khiến bài đăng trở nên hữu ích tại nơi đăng (không bắt buộc)"
-          onInput={(e) => {
-            setBốiCảnh((e.target as HTMLInputElement).value);
-          }}
+          onInput={(e) => {setBốiCảnh((e.target as HTMLInputElement).value)}}
           onFocus={() => setElement("bối cảnh")}
         />
       </label>

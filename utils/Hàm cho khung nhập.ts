@@ -21,7 +21,7 @@ export function viếtThường(chuỗi: string | undefined) {
   return chuỗi.toLocaleLowerCase();
 }
 
-export function kebabCase(chuỗi: string) {
+export function kiểuKebab(chuỗi: string) {
   return chuỗi.replace(" ", "-");
 }
 
@@ -33,6 +33,9 @@ export function tạoVịTríString(vịTrí: VịTrí): string {
   }
 }
 export function tạoTênNơiĐăngString(tênNơiĐăng: TênNơiĐăng): string {
+  if (typeof tênNơiĐăng === "string") {
+    return tênNơiĐăng;
+  }
   return tênNơiĐăng.join(" ➯ ");
 }
 

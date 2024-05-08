@@ -103,10 +103,10 @@ export default function ChartPage(
           option={chartData}
         />
         <article class="grid grid-cols-2 gap-4">
-          <KếtQuảĐượcChọn vậtThể={bàiĐăng} từKhoáTiêuĐề="Bài đăng:" />
-          <KếtQuảĐượcChọn vậtThể={nơiĐăng} từKhoáTiêuĐề="Nơi đăng:" />
-          <KếtQuảĐượcChọn vậtThể={thamSốUTM} từKhoáTiêuĐề="Tham số UTM:" />
-          <KếtQuảĐượcChọn vậtThể={khác} từKhoáTiêuĐề="Thông tin khác:" />
+          <KếtQuảĐượcChọn vậtThể={bàiĐăng} tênDanhSách="Bài đăng:" />
+          <KếtQuảĐượcChọn vậtThể={nơiĐăng} tênDanhSách="Nơi đăng:" />
+          <KếtQuảĐượcChọn vậtThể={thamSốUTM} tênDanhSách="Tham số UTM:" />
+          <KếtQuảĐượcChọn vậtThể={khác} tênDanhSách="Thông tin khác:" />
         </article>
       </div>
     </>
