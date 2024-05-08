@@ -3,9 +3,8 @@ import { StateUpdater, useState } from "preact/hooks";
 import { BốiCảnh, ElementDùngTab } from "../utils/Kiểu cho web.ts";
 import KhungTìmBàiĐăngHoặcNơiĐăng from "./Khung tìm bài đăng hoặc nơi đăng.tsx";
 import { Signal } from "@preact/signals";
-import { BàiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
-import { NơiĐăngĐãXácĐịnhVịTrí } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { BàiĐăng } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 
 export default function KhungNhậpBênTrái(
   {
@@ -19,9 +18,7 @@ export default function KhungNhậpBênTrái(
     danhSáchBàiĐăng: BàiĐăng[];
     danhSáchNơiĐăng: NơiĐăngChưaXácĐịnhVịTrí[];
     setBàiĐăng: StateUpdater<BàiĐăng | undefined>;
-    setNơiĐăng: StateUpdater<
-      NơiĐăngĐãXácĐịnhVịTrí | NơiĐăngChưaXácĐịnhVịTrí | undefined
-    >;
+    setNơiĐăng: StateUpdater<NơiĐăngChưaXácĐịnhVịTrí | undefined>;
     setBốiCảnh: StateUpdater<BốiCảnh>;
     count: Signal<number>;
   },
@@ -34,20 +31,27 @@ export default function KhungNhậpBênTrái(
   const fuseBàiĐăng = new Fuse(danhSáchBàiĐăng, {
     // minMatchCharLength: 3,
     ignoreLocation: true,
-    keys: [{
-      name: "Tiêu đề",
-      weight: 2,
-    }, "Mô tả bài đăng"],
+    keys: [
+      {
+        name: "Tiêu đề",
+        weight: 2,
+      },
+      "Mô tả bài đăng",
+      "URL",
+    ],
   });
   const fuseNơiĐăng = new Fuse(danhSáchNơiĐăng, {
     // minMatchCharLength: 2,
     ignoreLocation: true,
     keys: [
-      "Tên nơi đăng",
-      "Tên cộng đồng",
+      {
+        name: "Tên nơi đăng",
+        weight: 2,
+      },
       "Loại nơi đăng",
       "Tên nền tảng",
       "Loại nền tảng",
+      "URL",
     ],
   });
   return (
@@ -72,7 +76,7 @@ export default function KhungNhậpBênTrái(
           type="text"
           class="grow"
           id="khung-nhập-bối-cảnh"
-          placeholder="(Không bắt buộc) Lý do khiến bài đăng trở nên hữu ích tại nơi đăng"
+          placeholder="Lý do khiến bài đăng trở nên hữu ích tại nơi đăng (không bắt buộc)"
           onInput={(e) => {
             setBốiCảnh((e.target as HTMLInputElement).value);
           }}

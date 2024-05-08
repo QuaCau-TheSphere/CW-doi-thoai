@@ -1,5 +1,7 @@
 import Fuse from "https://deno.land/x/fuse@v6.4.1/dist/fuse.esm.js";
 import { StateUpdater, useEffect, useState } from "preact/hooks";
+import ModalTạoMới from "./Modal tạo mới/Modal chung.tsx";
+import KếtQuảĐượcChọn from "../components/Kết quả được chọn.tsx";
 import type {
   Cursor,
   DanhSáchKếtQuảTìmKiếm,
@@ -7,24 +9,17 @@ import type {
   MụcĐượcChọn,
   TênDanhSách,
 } from "../utils/Kiểu cho web.ts";
-import { BàiĐăng } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
-import {
-  LoạiNơiĐăng,
-  NơiĐăngĐãXácĐịnhVịTrí,
-  TênNơiĐăng,
-} from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
 import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/plus.tsx";
-import ModalTạoMới from "./Modal tạo mới/Modal chung.tsx";
 import {
   kebabCase,
   tạoLoạiNơiĐăngString,
   tạoTênNơiĐăngString,
   tạoVaultHoặcDựÁnString,
-  viếtThường,
   đổiKhungNhập,
 } from "../utils/Hàm cho khung nhập.ts";
-import KếtQuảĐượcChọn from "../components/K%E1%BA%BFt%20qu%E1%BA%A3%20%C4%91%C6%B0%E1%BB%A3c%20ch%E1%BB%8Dn.tsx";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
+import { NơiĐăngĐãXácĐịnhVịTrí } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { BàiĐăng } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 
 function DanhSáchKếtQuảTìmKiếm({
   tênDanhSách,
@@ -119,9 +114,7 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
     setElement: StateUpdater<ElementDùngTab>;
     setBàiĐăngHoặcNơiĐăng:
       | StateUpdater<BàiĐăng | undefined>
-      | StateUpdater<
-        NơiĐăngĐãXácĐịnhVịTrí | NơiĐăngChưaXácĐịnhVịTrí | undefined
-      >;
+      | StateUpdater<NơiĐăngChưaXácĐịnhVịTrí | undefined>;
   },
 ) {
   const [searchList, setSearchList] = useState<DanhSáchKếtQuảTìmKiếm>(

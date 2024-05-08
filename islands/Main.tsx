@@ -7,15 +7,27 @@ import KhungKếtQuảBênPhải from "./KhungK%E1%BA%BFtQu%E1%BA%A3B%C3%AAnPh%E
 import KhungNhậpBênTrái from "./KhungNhậpBênTrái.tsx";
 import KhungThôngTinKhiKhôngCóKếtQuả from "../components/KhungThôngTinKhiKhôngCóKếtQuả.tsx";
 import { NơiĐăngĐãXácĐịnhVịTrí } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
-import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
+import { NơiĐăngChưaXácĐịnhVịTrí, VịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
 
 export default function Main(
   { danhSáchNơiĐăng, danhSáchBàiĐăng, cấuHìnhNơiĐăng }: MainProps,
 ) {
   const [bàiĐăngĐượcChọn, chọnBàiĐăng] = useState<BàiĐăng | undefined>(undefined);
-  const [nơiĐăngĐượcChọn, chọnNơiĐăng] = useState<NơiĐăngĐãXácĐịnhVịTrí | NơiĐăngChưaXácĐịnhVịTrí | undefined>(undefined);
+  const [nơiĐăngĐượcChọn, chọnNơiĐăng] = useState<NơiĐăngChưaXácĐịnhVịTrí | undefined>(undefined);
   const [bốiCảnh, setBốiCảnh] = useState<string | undefined>(undefined);
+  const [vịTrí, setVịTrí] = useState<VịTrí | undefined>(undefined);
   const count = useSignal(0);
+  let nơiĐăngĐãXácĐịnhVịTrí: NơiĐăngĐãXácĐịnhVịTrí | undefined= undefined
+  if (globalThis.document) {
+    const vịTríHTML = document.getElementById("vị-trí") as HTMLSelectElement
+    if (vịTríHTML && nơiĐăngĐượcChọn) {
+      setVịTrí(JSON.parse(vịTríHTML.value)) 
+      console.log("🚀 ~ vịTrí:", vịTrí)
+      // const {"Vị trí có thể đăng": bỏ, ...thôngTinNơiĐăng } = nơiĐăngĐượcChọn
+      // nơiĐăngĐãXácĐịnhVịTrí= {...thôngTinNơiĐăng, "Vị trí": vịTrí as VịTrí} 
+      // console.log("🚀 ~ nơiĐăngĐãXácĐịnhVịTrí:", nơiĐăngĐãXácĐịnhVịTrí)
+    } 
+  } 
 
   return (
     <main class="flex flex-row gap-3 w-full mb-auto">
@@ -30,11 +42,11 @@ export default function Main(
         />
       </div>
       <div class="basis-1/2 p-10">
-        {count.value > 0 && bàiĐăngĐượcChọn && nơiĐăngĐượcChọn
+        {count.value > 0 && bàiĐăngĐượcChọn && nơiĐăngĐãXácĐịnhVịTrí
           ? (
             <KhungKếtQuảBênPhải
               bàiĐăngĐượcChọn={bàiĐăngĐượcChọn}
-              nơiĐăngĐượcChọn={nơiĐăngĐượcChọn}
+              nơiĐăngĐượcChọn={nơiĐăngĐãXácĐịnhVịTrí}
               bốiCảnh={bốiCảnh}
               cấuHìnhNơiĐăng={cấuHìnhNơiĐăng}
               count={count}

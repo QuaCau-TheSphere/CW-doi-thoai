@@ -47,7 +47,7 @@ function thểHiệnThuộcTính(
   }
 }
 
-function BàiĐăng({ bàiĐăng }: { bàiĐăng: BàiĐăng | undefined }) {
+function BàiĐăngĐượcChọn({ bàiĐăng }: { bàiĐăng: BàiĐăng | undefined }) {
   if (!bàiĐăng) return <></>;
   const {
     "Tiêu đề": tiêuĐề,
@@ -58,27 +58,31 @@ function BàiĐăng({ bàiĐăng }: { bàiĐăng: BàiĐăng | undefined }) {
   } = bàiĐăng;
   const môTả = nộiDung?.["Mô tả bài đăng"] || "";
   const toànBộNộiDung = nộiDung?.["Toàn bộ nội dung"] || "";
+  const địnhDạng = nộiDung?.["Định dạng nội dung"];
   return (
     <article class="bài-đăng-được-chọn prose border-2 rounded border-secondary p-4">
       <h2 class="h2 tên-bài-đăng">{tiêuĐề}</h2>
-      <span class="font-xs text-slate-400">
+      <span class="font-xs text-slate-400 hover:text-primary-content">
         <span class="vault">Vault: {vault}</span>
         <br />
         <span class="dự-án">Dự án: {dựÁn?.["Tên dự án"]}</span>
         <br />
         <span class="url">URL: {url}</span>
         <br />
-        <span class="mô-tả">Mô tả: {môTả}</span>
-        <br />
         <details>
-          <summary>Toàn bộ nội dung</summary>
+          <summary>Nội dung liên kết</summary>
+          <span class="mô-tả">Mô tả ngắn: {môTả}</span>
+          <br />
+          <span class="mô-tả">Định dạng: {địnhDạng}</span>
+          <br />
+          <span class="mô-tả">Toàn bộ nội dung:</span>
           <pre>{toànBộNộiDung}</pre>
         </details>
       </span>
     </article>
   );
 }
-function NơiĐăng(
+function NơiĐăngĐượcChọn(
   { nơiĐăng }: { nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí | undefined },
 ) {
   if (!nơiĐăng) return <></>;
@@ -91,21 +95,22 @@ function NơiĐăng(
   }
   const tênNơiĐăngString = tạoTênNơiĐăngString(nơiĐăng["Tên nơi đăng"]);
   const loạiNơiĐăngString = tạoLoạiNơiĐăngString(nơiĐăng);
+
   return (
     <article class="nơi-đăng-được-chọn prose border-2 rounded border-secondary p-4">
       <h2 class="h2 tên-nơi-đăng">{tênNơiĐăngString}</h2>
-      <span class="font-xs text-slate-400">
+      <span class="font-xs text-slate-400 hover:text-primary-content">
         <span class="loại-nơi-đăng">{loạiNơiĐăngString}</span>
         <br />
         <span class="url">URL: {url}</span>
       </span>
-      <label className="form-control w-full max-w-xs">
-        <div className="label">
-          <span className="label-text font-bold">Vị trí</span>
+      <label class="form-control w-full max-w-xs">
+        <div class="label">
+          <span class="label-text font-bold">Vị trí</span>
         </div>
         <select
           name="Vị trí"
-          class=" select select-bordered w-full max-w-xs"
+          class="select select-bordered w-full max-w-xs"
           id="vị-trí"
           required
         >
@@ -125,9 +130,9 @@ export default function KếtQuảĐượcChọn(
   },
 ) {
   if (vậtThể?.["Vị trí có thể đăng"]) {
-    return <NơiĐăng nơiĐăng={vậtThể}></NơiĐăng>;
+    return <NơiĐăngĐượcChọn nơiĐăng={vậtThể} />;
   } else if (vậtThể?.["Tiêu đề"]) {
-    return <BàiĐăng bàiĐăng={vậtThể}></BàiĐăng>;
+    return <BàiĐăngĐượcChọn bàiĐăng={vậtThể} />;
   } else return <></>;
 }
 // export default function KếtQuảĐượcChọn(
