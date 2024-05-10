@@ -16,11 +16,12 @@ import * as $Biểu_đồ_echart from "./islands/Biểu đồ/echart.tsx";
 import * as $Biểu_đồ_theme from "./islands/Biểu đồ/theme.tsx";
 import * as $Khung_tìm_bài_đăng_hoặc_nơi_đăng from "./islands/Khung tìm bài đăng hoặc nơi đăng.tsx";
 import * as $KhungKếtQuảBênPhải from "./islands/KhungKếtQuảBênPhải.tsx";
-import * as $KhungNhậpBênTrái from "./islands/KhungNhậpBênTrái.tsx";
 import * as $Main from "./islands/Main.tsx";
 import * as $Modal_tạo_mới_Modal_bài_đăng from "./islands/Modal tạo mới/Modal bài đăng.tsx";
 import * as $Modal_tạo_mới_Modal_chung from "./islands/Modal tạo mới/Modal chung.tsx";
 import * as $Modal_tạo_mới_Modal_nơi_đăng from "./islands/Modal tạo mới/Modal nơi đăng.tsx";
+import * as $Section_bên_trái from "./islands/Section bên trái.tsx";
+import * as $Signals from "./islands/Signals.ts";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -42,11 +43,12 @@ const manifest = {
     "./islands/Khung tìm bài đăng hoặc nơi đăng.tsx":
       $Khung_tìm_bài_đăng_hoặc_nơi_đăng,
     "./islands/KhungKếtQuảBênPhải.tsx": $KhungKếtQuảBênPhải,
-    "./islands/KhungNhậpBênTrái.tsx": $KhungNhậpBênTrái,
     "./islands/Main.tsx": $Main,
     "./islands/Modal tạo mới/Modal bài đăng.tsx": $Modal_tạo_mới_Modal_bài_đăng,
     "./islands/Modal tạo mới/Modal chung.tsx": $Modal_tạo_mới_Modal_chung,
     "./islands/Modal tạo mới/Modal nơi đăng.tsx": $Modal_tạo_mới_Modal_nơi_đăng,
+    "./islands/Section bên trái.tsx": $Section_bên_trái,
+    "./islands/Signals.ts": $Signals,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

@@ -1,13 +1,11 @@
 import Fuse from "https://deno.land/x/fuse@v6.4.1/dist/fuse.esm.js";
-import { StateUpdater, useEffect, useState } from "preact/hooks";
+import { StateUpdater, useState } from "preact/hooks";
 import ModalTạoMới from "./Modal tạo mới/Modal chung.tsx";
 import KếtQuảĐượcChọn from "../components/Kết quả được chọn.tsx";
 import type {
   Cursor,
   DanhSáchKếtQuảTìmKiếm,
-  ElementDùngTab,
   MụcĐượcChọn,
-  SetBàiĐăngHoặcNơiĐăng,
   TênDanhSách,
 } from "../utils/Kiểu cho web.ts";
 import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/plus.tsx";
@@ -20,8 +18,12 @@ import {
   đổiKhungNhập,
 } from "../utils/Hàm cho khung nhập.ts";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
-import { NơiĐăngĐãXácĐịnhVịTrí } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { BàiĐăng } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import {
+  bàiĐăngĐượcChọn,
+  element,
+  nơiĐăngChưaXácĐịnhVịTríĐượcChọn,
+} from "./Signals.ts";
 
 function DanhSáchKếtQuảTìmKiếm({
   tênDanhSách,
@@ -106,15 +108,9 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
   {
     tênDanhSách,
     fuse,
-    element,
-    setElement,
-    setBàiĐăngHoặcNơiĐăng,
   }: {
     tênDanhSách: TênDanhSách;
     fuse: Fuse;
-    element: ElementDùngTab;
-    setElement: StateUpdater<ElementDùngTab>;
-    setBàiĐăngHoặcNơiĐăng: SetBàiĐăngHoặcNơiĐăng;
   },
 ) {
   const [searchList, setSearchList] = useState<DanhSáchKếtQuảTìmKiếm>(
@@ -123,8 +119,16 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
   const [cursor, setCursor] = useState<Cursor>(0);
   const [mụcĐượcChọn, setMục] = useState<MụcĐượcChọn>(undefined);
   const [query, setQuery] = useState<string>("");
-  //@ts-ignore:
-  setBàiĐăngHoặcNơiĐăng(mụcĐượcChọn);
+  switch (tênDanhSách) {
+    case "nơi đăng":
+      nơiĐăngChưaXácĐịnhVịTríĐượcChọn.value =
+        mụcĐượcChọn as NơiĐăngChưaXácĐịnhVịTrí;
+      break;
+
+    case "bài đăng":
+      bàiĐăngĐượcChọn.value = mụcĐượcChọn as BàiĐăng;
+      break;
+  }
   return (
     <div
       id={`div-${kiểuKebab(tênDanhSách)}`}
@@ -140,11 +144,11 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
           id={`khung-nhập-${kiểuKebab(tênDanhSách)}`}
           placeholder={`Tìm ${tênDanhSách} hoặc dán URL để tạo mới`}
           onInput={handleInput}
-          onFocus={() => setElement(tênDanhSách)}
+          onFocus={() => element.value = tênDanhSách}
           onKeyDown={handleKeyDown}
         />
       </label>
-      {tênDanhSách === element
+      {tênDanhSách === element.value
         ? (
           <>
             <DanhSáchKếtQuảTìmKiếm
@@ -158,7 +162,6 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
               tênDanhSách={tênDanhSách}
               URL={query}
               setSelectedItem={setMục}
-              setElement={setElement}
             />
           </>
         )
@@ -166,14 +169,13 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
       <KếtQuảĐượcChọn
         tênDanhSách={tênDanhSách}
         vậtThể={mụcĐượcChọn}
-        setBàiĐăngHoặcNơiĐăng={setBàiĐăngHoặcNơiĐăng}
       />
       <br />
     </div>
   );
 
   function handleInput(e: InputEvent) {
-    setElement(tênDanhSách);
+    element.value = tênDanhSách;
     const query = (e.target as HTMLTextAreaElement).value;
     setQuery(query);
     setSearchList(fuse.search(query).slice(0, 10));
@@ -198,16 +200,16 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
           .showModal();
       } else {
         setMục(searchList[cursor].item);
-        đổiKhungNhập("xuôi", element, setElement);
+        đổiKhungNhập("xuôi");
       }
     }
     if (e.key === "Tab") {
       e.preventDefault();
-      đổiKhungNhập("xuôi", element, setElement);
+      đổiKhungNhập("xuôi");
     }
     if (e.key === "Tab" && e.shiftKey) {
       e.preventDefault();
-      đổiKhungNhập("ngược", element, setElement);
+      đổiKhungNhập("ngược");
     }
   }
 }

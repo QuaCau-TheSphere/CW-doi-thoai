@@ -72,7 +72,6 @@ function handleSubmit(
   event: FormDataEvent,
   tênDanhSách: TênDanhSách,
   setSelectedItem: StateUpdater<MụcĐượcChọn>,
-  setElement: StateUpdater<ElementDùngTab>,
 ) {
   event.preventDefault();
   const dữLiệuMới = tạoDữLiệuMới(event.currentTarget, tênDanhSách);
@@ -92,15 +91,14 @@ function handleSubmit(
     })
     .catch(console.error);
   (document.getElementById("model-tạo-mới") as HTMLDialogElement).close();
-  đổiKhungNhập("xuôi", tênDanhSách, setElement);
+  đổiKhungNhập("xuôi", tênDanhSách);
 }
 
 export default function ModalTạoMới(
-  { tênDanhSách, URL, setSelectedItem, setElement }: {
+  { tênDanhSách, URL, setSelectedItem }: {
     tênDanhSách: TênDanhSách;
     URL: string;
     setSelectedItem: StateUpdater<MụcĐượcChọn>;
-    setElement: StateUpdater<ElementDùngTab>;
   },
 ) {
   return (
@@ -113,7 +111,6 @@ export default function ModalTạoMới(
               e,
               tênDanhSách,
               setSelectedItem,
-              setElement,
             )}
         >
           <CácTrườngNhậpMới

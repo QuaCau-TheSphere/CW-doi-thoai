@@ -13,12 +13,7 @@ export interface MainProps {
   cấuHìnhNơiĐăng: CấuHìnhNơiĐăng;
 }
 
-export type KếtQuả = {
-  bàiĐăng: BàiĐăng | undefined;
-  nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí | undefined;
-} | undefined;
 // import FuseResult from "https://deno.land/x/fuse@v6.4.1/dist/fuse.d.ts";
-export type đổiSốLầnBấmEnter = StateUpdater<KếtQuả>;
 export type DanhSáchKếtQuảTìmKiếm = FuseResult<NơiĐăngChưaXácĐịnhVịTrí> | FuseResult<BàiĐăng> | undefined;
 export type MụcĐượcChọn = BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí | undefined;
 /** Cursor is the current highlighted item in the search list. It's undefined when the mouse leaves */

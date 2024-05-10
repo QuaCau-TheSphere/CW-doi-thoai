@@ -1,11 +1,10 @@
-import { StateUpdater } from "https://esm.sh/v128/preact@10.19.6/hooks/src/index.js";
-import { ElementDùngTab } from "./Ki%E1%BB%83u%20cho%20web.ts";
 import {
   ThôngTinNơiĐăng,
   TênNơiĐăng,
 } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { VịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
 import { DựÁn } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { element } from "../islands/Signals.ts";
 
 export function viếtHoa(chuỗi: string) {
   return chuỗi.replace(/^(.)/g, (x) => x.toUpperCase());
@@ -70,50 +69,50 @@ export function tạoVaultHoặcDựÁnString(
 
 export function đổiKhungNhập(
   xuôiHayNgược: "xuôi" | "ngược",
-  focusedElement: ElementDùngTab,
-  setElement: StateUpdater<ElementDùngTab>,
 ) {
   const khungNhậpBàiĐăng = document.getElementById("khung-nhập-bài-đăng")!;
   const khungNhậpNơiĐăng = document.getElementById("khung-nhập-nơi-đăng")!;
   const khungNhậpBốiCảnh = document.getElementById("khung-nhập-bối-cảnh")!;
   const nútTạoLiênKết = document.getElementById("nút-tạo-liên-kết")!;
+
+  const elementHiệnTại = element.value;
   switch (xuôiHayNgược) {
     case "xuôi":
-      switch (focusedElement) {
+      switch (elementHiệnTại) {
         case "bài đăng":
-          setElement("nơi đăng");
+          element.value = "nơi đăng";
           khungNhậpNơiĐăng.focus();
           break;
         case "nơi đăng":
-          setElement("bối cảnh");
+          element.value = "bối cảnh";
           khungNhậpBốiCảnh.focus();
           break;
         case "bối cảnh":
-          setElement("nút tạo liên kết");
+          element.value = "nút tạo liên kết";
           nútTạoLiênKết.focus();
           break;
         case "nút tạo liên kết":
-          setElement("bài đăng");
+          element.value = "bài đăng";
           khungNhậpBàiĐăng.focus();
           break;
       }
       break;
     case "ngược":
-      switch (focusedElement) {
+      switch (elementHiệnTại) {
         case "nút tạo liên kết":
-          setElement("bối cảnh");
+          element.value = "bối cảnh";
           khungNhậpBốiCảnh.focus();
           break;
         case "bối cảnh":
-          setElement("nơi đăng");
+          element.value = "nơi đăng";
           khungNhậpNơiĐăng.focus();
           break;
         case "nơi đăng":
-          setElement("bài đăng");
+          element.value = "bài đăng";
           khungNhậpBàiĐăng.focus();
           break;
         case "bài đăng":
-          setElement("nút tạo liên kết");
+          element.value = "nút tạo liên kết";
           nútTạoLiênKết.focus();
           break;
       }
