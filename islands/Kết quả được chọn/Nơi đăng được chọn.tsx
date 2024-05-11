@@ -1,7 +1,7 @@
 import {
   DanhSáchVịTríCóThểĐăng,
   NơiĐăngChưaXácĐịnhVịTrí,
-  VịTrí,
+  tạoNơiĐăngĐãXácĐịnhVịTrí,
 } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import {
   nơiĐăngChưaXácĐịnhVịTríĐượcChọn,
@@ -17,6 +17,7 @@ import {
 /** Tạo danh sách các phần tử <option> để người dùng lựa chọn vị trí đăng từ danh sách vị trí có thể đăng*/
 function tạoDanhSáchLựaChọn(
   danhSáchVịTríCóThểĐăng: DanhSáchVịTríCóThểĐăng | undefined,
+  nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí,
 ) {
   if (!danhSáchVịTríCóThểĐăng) return [];
   const danhSáchLựaChọn = [];
@@ -27,7 +28,14 @@ function tạoDanhSáchLựaChọn(
 
     if (i === 0) {
       danhSáchLựaChọn.push(<option selected value={value}>{text}</option>);
-      if (!vịTríString.value) vịTríString.value = value;
+      const vịTrí = vịTríString.value;
+      if (!vịTrí) {
+        vịTríString.value = value;
+        nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value = tạoNơiĐăngĐãXácĐịnhVịTrí(
+          value,
+          nơiĐăng,
+        );
+      }
     } else {
       danhSáchLựaChọn.push(<option value={value}>{text}</option>);
     }
@@ -40,25 +48,22 @@ function handleChange(
   nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí,
 ) {
   vịTríString.value = vịTríStringĐượcChọn;
-  const vịTrí = JSON.parse(vịTríStringĐượcChọn) as VịTrí;
-
-  const {
-    "Vị trí có thể đăng": bỏ,
-    ...thôngTinNơiĐăng
-  } = nơiĐăng;
-  nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value = {
-    ...thôngTinNơiĐăng,
-    "Vị trí": vịTrí,
-  };
+  nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value = tạoNơiĐăngĐãXácĐịnhVịTrí(
+    vịTríStringĐượcChọn,
+    nơiĐăng,
+  );
 }
 
 export default function NơiĐăngĐượcChọn() {
   const nơiĐăng = nơiĐăngChưaXácĐịnhVịTríĐượcChọn.value;
-  const danhSáchVịTríCóThểĐăng = nơiĐăng?.["Vị trí có thể đăng"];
-  const danhSáchLựaChọn = tạoDanhSáchLựaChọn(danhSáchVịTríCóThểĐăng);
-
   if (!nơiĐăng) return <></>;
-  const { "Tên nơi đăng": tênNơiĐăng, URL: url } = nơiĐăng;
+  const {
+    "Tên nơi đăng": tênNơiĐăng,
+    URL: url,
+    "Vị trí có thể đăng": danhSáchVịTríCóThểĐăng,
+  } = nơiĐăng;
+  const danhSáchLựaChọn = tạoDanhSáchLựaChọn(danhSáchVịTríCóThểĐăng, nơiĐăng);
+
   const tênNơiĐăngString = tạoTênNơiĐăngString(tênNơiĐăng);
   const loạiNơiĐăngString = tạoLoạiNơiĐăngString(nơiĐăng);
   return (

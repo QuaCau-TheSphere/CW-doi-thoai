@@ -2,6 +2,7 @@ import { tạoVịTríString } from "../../utils/Hàm cho khung nhập.ts";
 import {
   LoạiNơiĐăng,
   LoạiNềnTảng,
+  NơiĐăngĐãXácĐịnhVịTrí,
   ThôngTinNơiĐăng,
   TênNơiĐăng,
   TênNềnTảng,
@@ -134,4 +135,19 @@ export function tạoNơiĐăngChưaXácĐịnhVịTrí(
   }
 
   return { ...thôngTinNơiĐăng, "Vị trí có thể đăng": danhSáchVịTríCóThểĐăng };
+}
+
+export function tạoNơiĐăngĐãXácĐịnhVịTrí(
+  vịTríĐượcChọn: VịTrí | string,
+  nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí,
+): NơiĐăngĐãXácĐịnhVịTrí {
+  let vịTrí = vịTríĐượcChọn;
+  if (typeof vịTríĐượcChọn === "string") {
+    vịTrí = JSON.parse(vịTríĐượcChọn) as VịTrí;
+  } else {
+    vịTrí = vịTríĐượcChọn;
+  }
+  const { "Vị trí có thể đăng": bỏ, ...thôngTinNơiĐăng } = nơiĐăng;
+
+  return { ...thôngTinNơiĐăng, "Vị trí": vịTrí };
 }

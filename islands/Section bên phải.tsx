@@ -8,7 +8,7 @@ import KhungThôngTinKhiKhôngCóKếtQuả from "../components/KhungThôngTinKh
 import { bốiCảnh } from "./Signals.ts";
 import { lầnTạoLiênKết } from "./Signals.ts";
 
-export default function KhungKếtQuảBênPhải(
+export default function SectionBênPhải(
   { cấuHìnhNơiĐăng }: { cấuHìnhNơiĐăng: CấuHìnhNơiĐăng },
 ) {
   const [thamSốUTMVàLiênKếtRútGọn, setThamSốUTMVàLiênKếtRútGọn] = useState<
@@ -17,8 +17,13 @@ export default function KhungKếtQuảBênPhải(
   const bàiĐăng = bàiĐăngĐượcChọn.value;
   const nơiĐăng = nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value;
   if (!bàiĐăng || !nơiĐăng || lầnTạoLiênKết.value === 0) {
+    console.log("🚀 ~ lầnTạoLiênKết.value:", lầnTạoLiênKết.value);
+    console.log("🚀 ~ nơiĐăng:", nơiĐăng);
+    console.log("🚀 ~ bàiĐăng:", bàiĐăng);
     return <KhungThôngTinKhiKhôngCóKếtQuả />;
   }
+  console.info("Bài đăng được chọn:", bàiĐăng);
+  console.info("Nơi đăng được chọn:", nơiĐăng);
 
   useEffect(() => {
     const thamSốUTMVàLiênKếtRútGọn = tạoThamSốUTMVàLiênKếtRútGọn(
@@ -69,9 +74,6 @@ export default function KhungKếtQuảBênPhải(
   const liênKếtRútGọn = `${originWeb}/${đuôiRútGọn}`;
   const liênKếtRútGọnChart = `${originWeb}/${đuôiRútGọn}/chart`;
 
-  console.info("Bài đăng được chọn:", bàiĐăng);
-  console.info("Nơi đăng được chọn:", nơiĐăng);
-
   const thamSốUTM = thamSốUTMVàLiênKếtRútGọn["Tham số UTM"];
   return (
     <article id="khung-bên-phải-khi-có-kết-quả" class="prose">
@@ -81,7 +83,7 @@ export default function KhungKếtQuảBênPhải(
       để xem thống kê lượt truy cập.
       <details>
         <summary>Tham số UTM</summary>
-        {/* <KếtQuảĐượcChọn vậtThể={thamSốUTM} /> */}
+        <KếtQuảĐượcChọn vậtThể={thamSốUTM} />
       </details>
     </article>
   );
