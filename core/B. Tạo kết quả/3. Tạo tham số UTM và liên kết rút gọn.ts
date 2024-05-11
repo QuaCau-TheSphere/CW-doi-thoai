@@ -28,7 +28,7 @@ import CấuHìnhNơiĐăng, {
   TênNơiĐăng,
   TênNềnTảng,
 } from "../Code hỗ trợ/Kiểu cho nơi đăng.ts";
-import { VịTrí } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/H%C3%A0m%20v%C3%A0%20ki%E1%BB%83u%20cho%20v%E1%BB%8B%20tr%C3%AD.ts";
+import { VịTrí } from "../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 
 function tạoSource(
   loạiNềnTảng: LoạiNềnTảng,

@@ -1,7 +1,7 @@
 // deno-fmt-ignore-file
 import { parse } from "$std/yaml/mod.ts";
 import tạoDanhSáchNơiĐăngCXĐVT from "../core/B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình/mod.ts";
-import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
+import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { BàiĐăng } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import CấuHìnhNơiĐăng from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import Main from "../islands/Main.tsx";

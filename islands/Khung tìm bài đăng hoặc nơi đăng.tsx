@@ -1,7 +1,7 @@
 import Fuse from "https://deno.land/x/fuse@v6.4.1/dist/fuse.esm.js";
 import { StateUpdater, useState } from "preact/hooks";
 import ModalTạoMới from "./Modal tạo mới/Modal chung.tsx";
-import KếtQuảĐượcChọn from "../components/Kết quả được chọn.tsx";
+import KếtQuảĐượcChọn from "./Kết quả được chọn/Kết quả được chọn.tsx";
 import type {
   Cursor,
   DanhSáchKếtQuảTìmKiếm,
@@ -17,7 +17,7 @@ import {
   viếtHoa,
   đổiKhungNhập,
 } from "../utils/Hàm cho khung nhập.ts";
-import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
+import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { BàiĐăng } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import {
   bàiĐăngĐượcChọn,
@@ -166,10 +166,7 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
           </>
         )
         : null}
-      <KếtQuảĐượcChọn
-        tênDanhSách={tênDanhSách}
-        vậtThể={mụcĐượcChọn}
-      />
+      <KếtQuảĐượcChọn tênDanhSách={tênDanhSách} />
       <br />
     </div>
   );

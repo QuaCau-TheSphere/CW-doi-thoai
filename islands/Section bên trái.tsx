@@ -3,7 +3,7 @@ import Fuse from "https://deno.land/x/fuse@v6.4.1/dist/fuse.esm.js";
 import { useSignal } from "@preact/signals";
 import { ElementDùngTab } from "../utils/Kiểu cho web.ts";
 import KhungTìmBàiĐăngHoặcNơiĐăng from "./Khung tìm bài đăng hoặc nơi đăng.tsx";
-import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
+import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { BàiĐăng } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { bốiCảnh, element, lầnTạoLiênKết } from "./Signals.ts";
 
@@ -43,7 +43,7 @@ export default function KhungNhậpBênTrái(
     ],
   });
   return (
-    <section id="khung-nhập-bên-phải">
+    <>
       <KhungTìmBàiĐăngHoặcNơiĐăng
         tênDanhSách="bài đăng"
         fuse={fuseBàiĐăng}
@@ -74,6 +74,6 @@ export default function KhungNhậpBênTrái(
       >
         Tạo liên kết
       </button>
-    </section>
+    </>
   );
 }

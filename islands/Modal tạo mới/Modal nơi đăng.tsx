@@ -2,7 +2,7 @@ import { StateUpdater } from "https://esm.sh/v128/preact@10.19.6/hooks/src/index
 import { PhảnHồiTừCORSProxy } from "../../utils/Ki%E1%BB%83u%20cho%20web.ts";
 import {
   NơiĐăngChưaXácĐịnhVịTrí,
-} from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
+} from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { NơiĐăngĐãXácĐịnhVịTrí } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 
 export default function ModalNơiĐăng(

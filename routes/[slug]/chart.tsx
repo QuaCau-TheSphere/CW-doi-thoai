@@ -7,7 +7,7 @@ import {
 import ReactECharts from "../../islands/Bi%E1%BB%83u%20%C4%91%E1%BB%93/echart.tsx";
 import { dữLiệuTruyCậpCácNămTest } from "../../utils/Hàm cho biểu đồ.test.ts";
 import { tạoDữLiệuBiểuĐồ } from "../../utils/H%C3%A0m%20cho%20bi%E1%BB%83u%20%C4%91%E1%BB%93.ts";
-import KếtQuảĐượcChọn from "../../components/Kết quả được chọn.tsx";
+import KếtQuảĐượcChọn from "../../islands/Kết quả được chọn/Kết quả được chọn.tsx";
 
 const kv = await Deno.openKv();
 export const handler: Handlers = {

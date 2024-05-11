@@ -1,4 +1,4 @@
-import { VịTrí } from "./Hàm và kiểu cho vị trí.ts";
+import { VịTrí } from "./Hàm và kiểu cho vị trí.tsx";
 import { URLString } from "./Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 
 // deno-lint-ignore no-explicit-any

@@ -16,7 +16,7 @@ import {
   CấuHìnhVịTrí,
   NơiĐăngChưaXácĐịnhVịTrí,
   tạoNơiĐăngChưaXácĐịnhVịTrí,
-} from "../../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
+} from "../../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { parse } from "$std/yaml/mod.ts";
 interface MetaTags {
   title: string;

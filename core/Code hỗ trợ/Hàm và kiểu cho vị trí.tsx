@@ -1,3 +1,4 @@
+import { tạoVịTríString } from "../../utils/Hàm cho khung nhập.ts";
 import {
   LoạiNơiĐăng,
   LoạiNềnTảng,

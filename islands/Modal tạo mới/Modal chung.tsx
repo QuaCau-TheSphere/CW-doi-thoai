@@ -16,7 +16,7 @@ import {
   LoạiNềnTảng,
   TênNềnTảng,
 } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
-import { NơiĐăngChưaXácĐịnhVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
+import { NơiĐăngChưaXácĐịnhVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 
 function CácTrườngNhậpMới(
   { tênDanhSách, urlNhậpỞKhungNhậpNgoài }: {
