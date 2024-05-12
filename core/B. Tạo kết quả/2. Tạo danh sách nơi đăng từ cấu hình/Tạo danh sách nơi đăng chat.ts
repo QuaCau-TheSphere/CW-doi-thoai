@@ -85,8 +85,8 @@ function lấyNơiĐăngTừMessengerDiscordTelegram(
   ): LoạiNơiĐăngMessengerDiscordTelegram {
     switch (tênNềnTảng) {
       case "Messenger":
-        if (!tênThreadHoặcTopic) return ["Cộng đồng", "Community chat"];
-        return ["Cộng đồng", "Community chat", "Sidechat"];
+        if (!tênThreadHoặcTopic) return ["Cộng đồng", "Chat cộng đồng"];
+        return ["Cộng đồng", "Chat cộng đồng", "Sidechat"];
 
       case "Discord":
         if (!tênThreadHoặcTopic) return ["Máy chủ", "Kênh thường"];

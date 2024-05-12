@@ -21,33 +21,49 @@ import {
 } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Code%20h%E1%BB%97%20tr%E1%BB%A3.ts";
 import { BốiCảnh } from "../../utils/Ki%E1%BB%83u%20cho%20web.ts";
 import CấuHìnhNơiĐăng, {
-  LoạiNơiĐăng,
   LoạiNơiĐăngChat,
   LoạiNềnTảng,
   NơiĐăngĐãXácĐịnhVịTrí,
-  TênNơiĐăng,
-  TênNềnTảng,
 } from "../Code hỗ trợ/Kiểu cho nơi đăng.ts";
-import { VịTrí } from "../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { tạoVịTríString } from "../../utils/Hàm cho khung nhập.ts";
 
 function tạoSource(
-  loạiNềnTảng: LoạiNềnTảng,
-  tênNềnTảng: TênNềnTảng,
-  loạiNơiĐăng: LoạiNơiĐăng,
-  tênNơiĐăng: TênNơiĐăng,
+  nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí,
   cấuHìnhNơiĐăng: CấuHìnhNơiĐăng,
 ): Source {
+  const {
+    "Tên nơi đăng": tênNơiĐăng,
+    "Loại nơi đăng": loạiNơiĐăng,
+    "Tên nền tảng": tênNềnTảng,
+    "Loại nền tảng": loạiNềnTảng,
+    "Vị trí": vịTrí,
+  } = nơiĐăng;
   const kýHiệuNềnTảng = lấyKýHiệuViếtTắt(tênNềnTảng, cấuHìnhNơiĐăng) ||
     tênNềnTảng;
   const tênNơiĐăngString: TênNơiĐăngString = tênNơiĐăng.join(" » ");
 
+  let phầnNềnTảngVàNơiĐăng: string;
+
   switch (loạiNềnTảng) {
     case "Diễn đàn":
-      return tạoSourceDiễnĐàn();
+      phầnNềnTảngVàNơiĐăng = tạoSourceDiễnĐàn();
+      break;
     case "Chat":
-      return tạoSourceChat(loạiNơiĐăng as LoạiNơiĐăngChat);
+      phầnNềnTảngVàNơiĐăng = `${kýHiệuNềnTảng} ${tênNơiĐăngString}`;
+      // phầnNềnTảngVàNơiĐăng = tạoSourceChat(loạiNơiĐăng as LoạiNơiĐăngChat);
+      break;
     default:
-      return tạoSourceKhác();
+      phầnNềnTảngVàNơiĐăng = tạoSourceKhác();
+      break;
+  }
+
+  if (
+    vịTrí.length > 1 &&
+    vịTrí[0] !== "Bài đăng" && vịTrí[1] !== "Nội dung chính"
+  ) {
+    return `${phầnNềnTảngVàNơiĐăng} (${tạoVịTríString(vịTrí)})`;
+  } else {
+    return phầnNềnTảngVàNơiĐăng;
   }
 
   function tạoSourceDiễnĐàn(): SourceDiễnĐàn {
@@ -58,8 +74,8 @@ function tạoSource(
         return `${kýHiệuNềnTảng} Pr ${tênNơiĐăngString}`;
       case "Nhóm":
         return `${kýHiệuNềnTảng} G ${tênNơiĐăngString}`;
-      case "Repo":
-      case "Subreddit":
+      // case "Repo":
+      // case "Subreddit":
       default:
         return `${kýHiệuNềnTảng} ${tênNơiĐăngString}`;
     }
@@ -71,7 +87,8 @@ function tạoSource(
         return `${kýHiệuNềnTảng} I ${tênNơiĐăngString}`;
       case "Nhóm" ?? "Kênh":
         return `${kýHiệuNềnTảng} GC ${tênNơiĐăngString}`;
-      case "Máy chủ" ?? "Cộng đồng":
+      case "Máy chủ":
+      case "Cộng đồng":
         return `${kýHiệuNềnTảng} Sv ${tênNơiĐăngString}`;
       default:
         return `${kýHiệuNềnTảng} ${loạiNơiĐăng[0]} ${tênNơiĐăngString}`;
@@ -121,12 +138,13 @@ function tạoCampaign(dựÁn: DựÁn | undefined = undefined): Campaign {
   }
 }
 
-function tạoContent(vịTrí: VịTrí, bốiCảnh: BốiCảnh): Content {
-  return `Vị trí: ${vịTrí} | Bối cảnh: ${bốiCảnh}`;
+function tạoContent(bốiCảnh: BốiCảnh): Content {
+  return bốiCảnh;
 }
 
-function tạoTerm(nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí): Term {
-  return nơiĐăng["Lĩnh vực"]?.join(", ");
+function tạoTerm(lĩnhVực: string[] | undefined): Term {
+  if (!lĩnhVực) return undefined;
+  return lĩnhVực.join(", ");
 }
 
 /**
@@ -144,7 +162,6 @@ function tạoĐuôiRútGọn(
   cấuHìnhNơiĐăng: CấuHìnhNơiĐăng,
 ): ĐuôiRútGọn {
   let phầnChoBàiĐăng: string | undefined;
-  let phầnChoNơiĐăng: string;
 
   const { "Mã bài đăng": mãBàiĐăng, "Dự án": dựÁn } = bàiĐăng;
   if (mãBàiĐăng) {
@@ -158,7 +175,7 @@ function tạoĐuôiRútGọn(
   }
 
   const { "Mã nơi đăng": mãNơiĐăng, "Tên nơi đăng": tênNơiĐăng } = nơiĐăng;
-  phầnChoNơiĐăng = mãNơiĐăng ||
+  const phầnChoNơiĐăng = mãNơiĐăng ||
     lấyKýHiệuViếtTắt(tênNơiĐăng[0], cấuHìnhNơiĐăng) ||
     tạoChuỗiNgẫuNhiên(4);
 
@@ -185,27 +202,17 @@ export default function tạoThamSốUTMVàLiênKếtRútGọn(
     cấuHìnhNơiĐăng: CấuHìnhNơiĐăng;
   },
 ): ThamSốUTMVàLiênKếtRútGọn {
-  const {
-    "Tên nơi đăng": tênNơiĐăng,
-    "Loại nơi đăng": loạiNơiĐăng,
-    "Tên nền tảng": tênNềnTảng,
-    "Loại nền tảng": loạiNềnTảng,
-    "Vị trí": vịTrí,
-  } = nơiĐăng;
   const url = bàiĐăng.URL;
   const dựÁn = bàiĐăng["Dự án"];
+  const loạiNềnTảng = nơiĐăng["Loại nền tảng"];
+  const lĩnhVực = nơiĐăng["Lĩnh vực"];
+
   const thamSốUTM: ThamSốUTM = {
-    source: tạoSource(
-      loạiNềnTảng,
-      tênNềnTảng,
-      loạiNơiĐăng,
-      tênNơiĐăng,
-      cấuHìnhNơiĐăng,
-    ),
+    source: tạoSource(nơiĐăng, cấuHìnhNơiĐăng),
     medium: tạoMedium(loạiNềnTảng),
     campaign: tạoCampaign(dựÁn),
-    content: tạoContent(vịTrí, bốiCảnh),
-    term: tạoTerm(nơiĐăng),
+    content: tạoContent(bốiCảnh),
+    term: tạoTerm(lĩnhVực),
   };
   return {
     "Tham số UTM": thamSốUTM,

@@ -92,7 +92,7 @@ export class NơiĐăngĐãXácĐịnhVịTrí implements ThôngTinNơiĐăng {
  * | Diễn đàn                    | Discord                    | Messenger      | Telegram |
  * | --------------------------- | -------------------------- | -------------- | -------- |
  * | Tài khoản, trang, nhóm      | Server                     | Community      | Group    |
- * | Ảnh bìa, ảnh đại diện, v.v. | Text Channel/Forum Channel | Community Chat | Topic    |
+ * | Ảnh bìa, ảnh đại diện, v.v. | Text Channel/Forum Channel | Chat cộng đồng | Topic    |
  * | ❌                          | Channel Thread/Forum Post  | Sidechat       | ❌       |
  */
 
@@ -201,8 +201,8 @@ export type CấuHìnhMáyChủ =
 type MáyChủ = OneKey<TênMáyChủ, CấuHìnhMáyChủ | null>;
 
 type LoạiNơiĐăngMessenger =
-  | ["Cộng đồng", "Community chat"]
-  | ["Cộng đồng", "Community chat", "Sidechat"];
+  | ["Cộng đồng", "Chat cộng đồng"]
+  | ["Cộng đồng", "Chat cộng đồng", "Sidechat"];
 type LoạiNơiĐăngDiscord =
   | ["Máy chủ", "Kênh thường"]
   | ["Máy chủ", "Kênh thường", "Thread"]
