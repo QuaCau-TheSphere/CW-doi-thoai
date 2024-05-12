@@ -192,7 +192,7 @@ export default function tạoThamSốUTMVàLiênKếtRútGọn(
     "Loại nền tảng": loạiNềnTảng,
     "Vị trí": vịTrí,
   } = nơiĐăng;
-  const url = bàiĐăng.url;
+  const url = bàiĐăng.URL;
   const dựÁn = bàiĐăng["Dự án"];
   const thamSốUTM: ThamSốUTM = {
     source: tạoSource(

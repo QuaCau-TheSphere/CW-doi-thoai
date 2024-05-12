@@ -55,7 +55,7 @@ function DanhSáchKếtQuảTìmKiếm({
     >
       {danhSáchKếtQuảTìmKiếm.map((item, index) => (
         <li
-          key={index}
+          loạiDữLiệu={index}
           class={cursor === index
             ? "cursor bg-secondary p-2 box-decoration-clone"
             : "p-2"}
@@ -166,7 +166,7 @@ export default function KhungTìmBàiĐăngHoặcNơiĐăng(
           </>
         )
         : null}
-      <KếtQuảĐượcChọn tênDanhSách={tênDanhSách} />
+      <KếtQuảĐượcChọn loạiVậtThể={tênDanhSách} />
       <br />
     </div>
   );

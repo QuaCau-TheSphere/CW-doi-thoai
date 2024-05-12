@@ -1,6 +1,5 @@
-import { ThamSốUTM } from "../../core/Code hỗ trợ/Kiểu cho tham số UTM.ts";
 import { TênDanhSách } from "../../utils/Kiểu cho web.ts";
-import { viếtHoa } from "../../utils/Hàm cho khung nhập.ts";
+import { kiểuKebab, viếtHoa } from "../../utils/Hàm cho khung nhập.ts";
 import { bàiĐăngĐượcChọn } from "../Signals.ts";
 import NơiĐăngĐượcChọn from "./Nơi đăng được chọn.tsx";
 
@@ -17,63 +16,99 @@ function BàiĐăngĐượcChọn() {
   const toànBộNộiDung = nộiDung?.["Toàn bộ nội dung"] || "";
   const địnhDạng = nộiDung?.["Định dạng nội dung"];
   return (
-    <article class="bài-đăng-được-chọn prose border-2 rounded border-secondary p-4">
-      <h2 class="h2 tên-bài-đăng">{tiêuĐề}</h2>
-      <span class="font-xs text-slate-400 hover:text-primary-content">
-        <span class="vault">Vault: {vault}</span>
-        <br />
-        <span class="dự-án">Dự án: {dựÁn?.["Tên dự án"]}</span>
-        <br />
-        <span class="url">URL: {url}</span>
-        <br />
-        <details>
-          <summary>Nội dung liên kết</summary>
-          <span class="mô-tả">Mô tả ngắn: {môTả}</span>
+    <article
+      id="bài-đăng-được-chọn"
+      class="card w-full bg-base-200 shadow-xl"
+    >
+      <div class="card-body">
+        <h2 id="tên-bài-đăng" class="card-title">{tiêuĐề}</h2>
+        <span class="font-xs text-slate-400">
+          <span id="vault" class="hover:text-primary-content">
+            Vault: {vault}
+          </span>
           <br />
-          <span class="mô-tả">Định dạng: {địnhDạng}</span>
+          <span id="dự-án" class="hover:text-primary-content">
+            Dự án: {dựÁn?.["Tên dự án"]}
+          </span>
           <br />
-          <span class="mô-tả">Toàn bộ nội dung:</span>
-          <pre>{toànBộNộiDung}</pre>
-        </details>
-      </span>
+          <span id="url" class="hover:text-primary-content">URL: {url}</span>
+          <br />
+          <details id="nội-dung-liên-kết" class="hover:text-primary-content">
+            <summary>Nội dung liên kết</summary>
+            <span id="mô-tả">Mô tả ngắn: {môTả}</span>
+            <br />
+            <span id="định-dạng">Định dạng: {địnhDạng}</span>
+            <br />
+            <div id="toàn-bộ-nội-dung">
+              Toàn bộ nội dung:
+              <pre>{toànBộNộiDung}</pre>
+            </div>
+          </details>
+        </span>
+      </div>
     </article>
   );
 }
 
-export default function KếtQuảĐượcChọn(
-  { tênDanhSách }: {
-    tênDanhSách?: TênDanhSách;
-  },
+function VậtThểKhác(
+  { vậtThể, loạiVậtThể }: { vậtThể: Record<string, any>; loạiVậtThể: string },
 ) {
-  if (tênDanhSách === "bài đăng") {
-    return <BàiĐăngĐượcChọn />;
-  } else if (tênDanhSách === "nơi đăng") {
-    return <NơiĐăngĐượcChọn />;
-  } else return <></>;
+  const danhSáchPhầnTử = [];
+  for (const [key, value] of Object.entries(vậtThể)) {
+    if (typeof value === "object") {
+      danhSáchPhầnTử.push(
+        <details>
+          <summary>{key}</summary>
+          {Object.entries(value).map(([key2, value2]) => (
+            <ListItems loạiDữLiệu={key2} dữLiệu={value2} />
+          ))}
+        </details>,
+      );
+    } else {
+      danhSáchPhầnTử.push(
+        <ListItems loạiDữLiệu={key} dữLiệu={value} />,
+      );
+    }
+  }
+  return (
+    <article
+      id={kiểuKebab(loạiVậtThể)}
+      class="prose card bg-base-200 shadow-xl"
+    >
+      <div class="card-body">
+        <ul>{danhSáchPhầnTử}</ul>
+      </div>
+    </article>
+  );
+  function ListItems(
+    { loạiDữLiệu, dữLiệu }: { loạiDữLiệu: string; dữLiệu: any },
+  ) {
+    return (
+      <li id={kiểuKebab(loạiDữLiệu)}>
+        <span class="font-bold">{loạiDữLiệu}:</span> {String(dữLiệu)}
+        <br></br>
+      </li>
+    );
+  }
 }
 
-// export default function KếtQuảĐượcChọn(
-//   { từKhoáTiêuĐề, vậtThể }: {
-//     từKhoáTiêuĐề?: string;
-//     vậtThể: MụcĐượcChọn | ThamSốUTM | {
-//       "Thời điểm tạo": string;
-//       "Đuôi rút gọn": string;
-//     };
-//   },
-// ) {
-//   if (vậtThể) {
-//     return (
-//       <article class="nội-dung-vật-thể prose border-2 rounded border-secondary p-4">
-//         {tạoTiêuĐề(từKhoáTiêuĐề)}
-//         <ul>
-//           {Object.entries(vậtThể).map(([key, value]) =>
-//             thểHiệnThuộcTính(key, value)
-//           )}
-//         </ul>
-//       </article>
-//     );
-//   } else return <></>;
-// }
+export default function KếtQuảĐượcChọn(
+  { loạiVậtThể, vậtThể }: {
+    loạiVậtThể: TênDanhSách | "tham số UTM";
+    vậtThể?: Record<string, any>;
+  },
+) {
+  switch (loạiVậtThể) {
+    case "bài đăng":
+      return <BàiĐăngĐượcChọn />;
+    case "nơi đăng":
+      return <NơiĐăngĐượcChọn />;
+    default:
+      if (!vậtThể) return <></>;
+      return <VậtThểKhác loạiVậtThể={loạiVậtThể} vậtThể={vậtThể} />;
+  }
+}
+
 function tạoTiêuĐề(từKhoáTiêuĐề: string | TênDanhSách | undefined) {
   let tiêuĐề;
   if (từKhoáTiêuĐề === "bài đăng" || từKhoáTiêuĐề === "nơi đăng") {
@@ -82,30 +117,4 @@ function tạoTiêuĐề(từKhoáTiêuĐề: string | TênDanhSách | undefined
     tiêuĐề = từKhoáTiêuĐề;
   }
   return <h3 class="h3">{tiêuĐề}</h3>;
-}
-
-function thểHiệnThuộcTính(
-  key: string,
-  value: string | Record<string, string>,
-) {
-  if (typeof value === "object") {
-    return (
-      <details>
-        <summary>{key}</summary>
-        {Object.entries(value).map(([key2, value2]) => (
-          <ul class="pl-8">
-            <li>
-              <span class="font-bold">{key2}:</span> {value2}
-            </li>
-          </ul>
-        ))}
-      </details>
-    );
-  } else {
-    return (
-      <li>
-        <span class="font-bold">{key}</span>: {value}
-      </li>
-    );
-  }
 }

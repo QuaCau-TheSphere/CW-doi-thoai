@@ -6,7 +6,8 @@ import { VịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.
 import { DựÁn } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { element } from "../islands/Signals.ts";
 
-export function viếtHoa(chuỗi: string) {
+export function viếtHoa(chuỗi: string | undefined) {
+  if (!chuỗi) return "";
   return chuỗi.replace(/^(.)/g, (x) => x.toUpperCase());
 }
 
@@ -20,7 +21,8 @@ export function viếtThường(chuỗi: string | undefined) {
   return chuỗi.toLocaleLowerCase();
 }
 
-export function kiểuKebab(chuỗi: string) {
+export function kiểuKebab(chuỗi: string | undefined) {
+  if (!chuỗi) return "";
   return chuỗi.replace(" ", "-");
 }
 

@@ -67,29 +67,36 @@ export default function NơiĐăngĐượcChọn() {
   const tênNơiĐăngString = tạoTênNơiĐăngString(tênNơiĐăng);
   const loạiNơiĐăngString = tạoLoạiNơiĐăngString(nơiĐăng);
   return (
-    <article class="nơi-đăng-được-chọn prose border-2 rounded border-secondary p-4">
-      <h2 class="h2 tên-nơi-đăng">{tênNơiĐăngString}</h2>
-      <span class="font-xs text-slate-400 hover:text-primary-content">
-        <span class="loại-nơi-đăng">{loạiNơiĐăngString}</span>
-        <br />
-        <span class="url">URL: {url}</span>
-      </span>
-      <label class="form-control w-full max-w-xs">
-        <div class="label">
-          <span class="label-text font-bold">Vị trí</span>
-        </div>
-        <select
-          name="Vị trí"
-          class="select select-bordered w-full max-w-xs"
-          id="vị-trí"
-          value={vịTríString.value}
-          onChange={(e) =>
-            handleChange((e.target as HTMLSelectElement).value, nơiĐăng)}
-          required
-        >
-          {danhSáchLựaChọn}
-        </select>
-      </label>
+    <article
+      id="nơi-đăng-được-chọn"
+      class="card w-full bg-base-200 shadow-xl"
+    >
+      <div class="card-body">
+        <h2 id="tên-nơi-đăng" class="card-title">{tênNơiĐăngString}</h2>
+        <span class="font-xs text-slate-400">
+          <span id="loại-nơi-đăng" class="hover:text-primary-content">
+            {loạiNơiĐăngString}
+          </span>
+          <br />
+          <span id="url" class="hover:text-primary-content">URL: {url}</span>
+        </span>
+        <label class="form-control w-full max-w-xs">
+          <div class="label">
+            <span class="label-text font-bold">Vị trí</span>
+          </div>
+          <select
+            name="Vị trí"
+            class="select select-bordered w-full max-w-xs"
+            id="vị-trí"
+            value={vịTríString.value}
+            onChange={(e) =>
+              handleChange((e.target as HTMLSelectElement).value, nơiĐăng)}
+            required
+          >
+            {danhSáchLựaChọn}
+          </select>
+        </label>
+      </div>
     </article>
   );
 }

@@ -7,6 +7,7 @@ import { bàiĐăngĐượcChọn, nơiĐăngĐãXácĐịnhVịTríĐượcCh�
 import KhungThôngTinKhiKhôngCóKếtQuả from "../components/KhungThôngTinKhiKhôngCóKếtQuả.tsx";
 import { bốiCảnh } from "./Signals.ts";
 import { lầnTạoLiênKết } from "./Signals.ts";
+import KếtQuảĐượcChọn from "./Kết quả được chọn/Kết quả được chọn.tsx";
 
 export default function SectionBênPhải(
   { cấuHìnhNơiĐăng }: { cấuHìnhNơiĐăng: CấuHìnhNơiĐăng },
@@ -17,9 +18,6 @@ export default function SectionBênPhải(
   const bàiĐăng = bàiĐăngĐượcChọn.value;
   const nơiĐăng = nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value;
   if (!bàiĐăng || !nơiĐăng || lầnTạoLiênKết.value === 0) {
-    console.log("🚀 ~ lầnTạoLiênKết.value:", lầnTạoLiênKết.value);
-    console.log("🚀 ~ nơiĐăng:", nơiĐăng);
-    console.log("🚀 ~ bàiĐăng:", bàiĐăng);
     return <KhungThôngTinKhiKhôngCóKếtQuả />;
   }
   console.info("Bài đăng được chọn:", bàiĐăng);
@@ -65,7 +63,6 @@ export default function SectionBênPhải(
     }
     setThamSốUTMVàLiênKếtRútGọn(thamSốUTMVàLiênKếtRútGọn);
     console.info("Tham số UTM và liên kết rút gọn:", thamSốUTMVàLiênKếtRútGọn);
-    lầnTạoLiênKết.value = 0;
   }, [lầnTạoLiênKết.value]);
 
   if (thamSốUTMVàLiênKếtRútGọn === undefined) return <></>;
@@ -83,13 +80,12 @@ export default function SectionBênPhải(
       để xem thống kê lượt truy cập.
       <details>
         <summary>Tham số UTM</summary>
-        <KếtQuảĐượcChọn vậtThể={thamSốUTM} />
+        <KếtQuảĐượcChọn loạiVậtThể="tham số UTM" vậtThể={thamSốUTM} />
       </details>
     </article>
   );
 
   function tạoKếtQuảSaoChép() {
-    console.log(bàiĐăng);
     if (!bàiĐăng) return <></>;
     const tiêuĐề = bàiĐăng["Tiêu đề"];
     if (!bàiĐăng["Nội dung bài đăng"]) {
