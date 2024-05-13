@@ -39,7 +39,7 @@ function BàiĐăngĐượcChọn() {
             <br />
             <span id="định-dạng">Định dạng: {địnhDạng}</span>
             <br />
-            <div id="toàn-bộ-nội-dung">
+            <div id="toàn-bộ-nội-dung" class="prose">
               Toàn bộ nội dung:
               <pre>{toànBộNộiDung}</pre>
             </div>

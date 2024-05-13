@@ -7,11 +7,6 @@ import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm
 
 /** KHUNG NHẬP */
 export type BốiCảnh = string | undefined;
-export interface MainProps {
-  danhSáchNơiĐăng: NơiĐăngChưaXácĐịnhVịTrí[];
-  danhSáchBàiĐăng: BàiĐăng[];
-  cấuHìnhNơiĐăng: CấuHìnhNơiĐăng;
-}
 
 // import FuseResult from "https://deno.land/x/fuse@v6.4.1/dist/fuse.d.ts";
 export type DanhSáchKếtQuảTìmKiếm = FuseResult<NơiĐăngChưaXácĐịnhVịTrí> | FuseResult<BàiĐăng> | undefined;

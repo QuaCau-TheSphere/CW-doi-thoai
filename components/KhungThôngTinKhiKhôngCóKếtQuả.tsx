@@ -1,56 +1,25 @@
+import { extract } from "$std/front_matter/yaml.ts";
+import { render } from "gfm";
 import IconBrandDiscord from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/brand-discord.tsx";
 import IconBrandFacebook from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/brand-facebook.tsx";
 import IconSphere from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/sphere.tsx";
-import { TÊN_TRANG } from "../utils/H%E1%BA%B1ng.ts";
 
-export default function KhungThôngTinKhiKhôngCóKếtQuả() {
+export default function KhungThôngTinKhiKhôngCóKếtQuả(
+  { text }: { text: string },
+) {
+  const bàiViết = extract(text);
+  const tênBàiViết = bàiViết.attrs.title;
+  const môTảBàiViết = bàiViết.attrs.description;
+  const nộiDungBàiViết = render(bàiViết.body);
   return (
-    <article id="khung-thông-tin-khi-không-có-kết-quả" class="prose">
-      <h1>{TÊN_TRANG}</h1>
-      <p>
-        Đây là chương trình giúp bạn tự động tạo và rút gọn liên kết UTM trên
-        website của bạn chỉ bằng việc nhập bài đăng và nơi đăng. Điều này sẽ
-        giúp bạn có thêm dữ liệu về các cuộc đối thoại trực tuyến của bạn, từ đó
-        bạn có thể{" "}
-        <a href="https://worrydream.com/LadderOfAbstraction/">
-          kiểm tra giả thiết và thiết kế giải pháp một cách nhanh chóng và tự
-          tin
-        </a>.
-      </p>
-      <p>
-        Website của bạn cần có sẵn một dịch vụ phân tích web (VD: Google
-        Analytics) để có thể nhận dữ liệu.
-      </p>
-
-      <p>
-        Liên lạc với chúng tôi để thêm bài đăng và nơi đăng của bạn vào chương
-        trình với số lượng lớn, hoặc tải{" "}
-        <a href="https://github.com/QuaCau-TheSphere/CW-rut-gon-utm">
-          mã nguồn
-        </a>{" "}
-        để dùng riêng cho hệ thống của bạn. Trong tương lai chúng tôi cũng sẽ
-        tạo một plugin Obsidian để bạn có thể tạo bài đăng ngay trên vault của
-        mình. Tất cả đều miễn phí.
-      </p>
-      <p>Sản phẩm khác:</p>
-      <ul>
-        <li>
-          <a href="https://tranky.deno.dev">
-            Trấn Kỳ — Phân loại dữ liệu bằng tiếng Việt tự nhiên
-          </a>
-        </li>
-        <li>
-          <a href="https://quảcầu.cc/cac-buoi-dap-ung-nhu-cau-hoc-cach-su-dung-cong-cu-va-tu-duy-lap-trinh-cho-nhu-cau-ca-nhan-hoac-nghien-cuu/">
-            Các buổi đáp ứng nhu cầu tự học lập trình hoặc quản lý dự án
-          </a>
-        </li>
-        <li>
-          <a href="https://obsidian.quảcầu.cc/%F0%9F%93%90%20d%E1%BB%B1%20%C3%A1n/c%C3%B4ng%20c%E1%BB%A5%20cho%20h%E1%BB%87%20sinh%20th%C3%A1i/9%20blog/t%E1%BB%AB%20vi%E1%BB%87c%20l%C6%B0u%20d%E1%BB%AF%20li%E1%BB%87u%20t%E1%BA%A1i%20ch%E1%BB%97%20%C4%91%E1%BA%BFn%20s%E1%BB%B1%20h%E1%BB%A3p%20t%C3%A1c%20%C4%91a%20ph%C6%B0%C6%A1ng%20v%C3%A0%20li%C3%AAn%20ng%C3%A0nh%20v%C3%A0%20n%E1%BB%81n%20kinh%20t%E1%BA%BF%20kh%C3%B4ng%20d%C3%B9ng%20ti%E1%BB%81n/">
-            Hệ thống quản lý kiến thức cộng đồng
-          </a>
-        </li>
-      </ul>
-      <p>Viết bởi Quả Cầu.</p>
+    // prose prose-xl mx-5 my-10 md:my-36 md:mx-auto
+    <article
+      id="khung-thông-tin-khi-không-có-kết-quả"
+      class="prose"
+    >
+      <div dangerouslySetInnerHTML={{ __html: nộiDungBàiViết }}>
+        {nộiDungBàiViết}
+      </div>
 
       <nav class="flex gap-5">
         <a href="https://quảcầu.com">

@@ -59,7 +59,9 @@ export class BàiĐăng {
   Vault?: string;
   "Mã bài đăng"?: string;
   "Nội dung bài đăng"?: NộiDungBàiĐăng;
-
+  "Tác giả"?: string;
+  "Ngày tạo"?: Date;
+  "Ngày cập nhật"?: Date;
   constructor(
     tiêuĐề: string = "",
     url: URLString = "",

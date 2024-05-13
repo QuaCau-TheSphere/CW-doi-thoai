@@ -27,15 +27,16 @@ import CấuHìnhNơiĐăng, {
 } from "../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { tạoVịTríString } from "../../utils/Hàm cho khung nhập.ts";
 
+/** Chủ yếu là thể hiện loại nền tảng, tên nền tảng, loại nơi đăng một cách ngắn gọn. Có những nơi đăng nhìn vào là biết loại nền tảng nào, ví dụ r/subreddit, hoặc email@domain.com */
 function tạoSource(
   nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí,
   cấuHìnhNơiĐăng: CấuHìnhNơiĐăng,
 ): Source {
   const {
+    "Loại nền tảng": loạiNềnTảng,
+    "Tên nền tảng": tênNềnTảng,
     "Tên nơi đăng": tênNơiĐăng,
     "Loại nơi đăng": loạiNơiĐăng,
-    "Tên nền tảng": tênNềnTảng,
-    "Loại nền tảng": loạiNềnTảng,
     "Vị trí": vịTrí,
   } = nơiĐăng;
   const kýHiệuNềnTảng = lấyKýHiệuViếtTắt(tênNềnTảng, cấuHìnhNơiĐăng) ||
@@ -96,13 +97,12 @@ function tạoSource(
   }
 
   function tạoSourceKhác(): SourceKhác {
-    switch (loạiNơiĐăng[0]) {
-      case "Website" ?? "Email":
+    switch (loạiNềnTảng) {
+      case "Website":
+      case "Email":
         return tênNơiĐăngString;
-      case "Ảnh":
-        return `Ảnh ${tênNơiĐăngString}`;
       default:
-        return tênNơiĐăngString;
+        return `${loạiNềnTảng} ${tênNơiĐăngString}`;
     }
   }
 }

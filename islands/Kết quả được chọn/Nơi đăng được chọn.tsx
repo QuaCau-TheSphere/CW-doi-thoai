@@ -86,7 +86,7 @@ export default function NơiĐăngĐượcChọn() {
           </div>
           <select
             name="Vị trí"
-            class="select select-bordered w-full max-w-xs"
+            class="select select-bordered w-full max-w-xs prose"
             id="vị-trí"
             value={vịTríString.value}
             onChange={(e) =>

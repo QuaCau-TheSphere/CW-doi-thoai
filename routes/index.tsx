@@ -22,12 +22,15 @@ export default async function App() {
   const danhSáchNơiĐăngCXĐVT = tạoDanhSáchNơiĐăngCXĐVT(cấuHìnhNơiĐăng) as NơiĐăngChưaXácĐịnhVịTrí[];
   const danhSáchNơiĐăng = [...danhSáchNơiĐăngCXĐVT, ...danhSáchNơiĐăngNgườiDùngTạoThêm];
 
+  const text = Deno.readTextFileSync("docs/Trang chủ.md");
+
   return (
     <body class="bg-base-100">
       <Main
         danhSáchBàiĐăng={danhSáchBàiĐăng}
         danhSáchNơiĐăng={danhSáchNơiĐăng}
         cấuHìnhNơiĐăng={cấuHìnhNơiĐăng}
+        text={text} 
       />
     </body>
   );
