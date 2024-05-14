@@ -14,7 +14,7 @@ function tạoKey(
         "Tiêu đề": tiêuĐề,
         "Dự án": dựÁn,
         Vault: vault,
-        url,
+        'URL': url,
       } = dữLiệu as BàiĐăng;
       return [
         "Bài đăng",

@@ -1,80 +1,30 @@
-import { useEffect, useState } from "preact/hooks";
-import tạoThamSốUTMVàLiênKếtRútGọn from "../core/B.%20T%E1%BA%A1o%20k%E1%BA%BFt%20qu%E1%BA%A3/3.%20T%E1%BA%A1o%20tham%20s%E1%BB%91%20UTM%20v%C3%A0%20li%C3%AAn%20k%E1%BA%BFt%20r%C3%BAt%20g%E1%BB%8Dn.ts";
-import { VậtThểTiếpThị } from "../utils/Kiểu cho web.ts";
-import ThamSốUTMVàLiênKếtRútGọn from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91%20UTM.ts";
-import CấuHìnhNơiĐăng from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
-import { bàiĐăngĐượcChọn, nơiĐăngĐãXácĐịnhVịTríĐượcChọn } from "./Signals.ts";
+import {
+  bàiĐăngĐượcChọn,
+  nơiĐăngĐãXácĐịnhVịTríĐượcChọn,
+  vậtThểTiếpThịĐượcTạo,
+} from "./Signals.ts";
 import KhungThôngTinKhiKhôngCóKếtQuả from "../components/KhungThôngTinKhiKhôngCóKếtQuả.tsx";
-import { bốiCảnh } from "./Signals.ts";
-import { lầnTạoLiênKết } from "./Signals.ts";
 import KếtQuảĐượcChọn from "./Kết quả được chọn/Kết quả được chọn.tsx";
 
 export default function SectionBênPhải(
-  { cấuHìnhNơiĐăng }: { cấuHìnhNơiĐăng: CấuHìnhNơiĐăng },
+  { text }: { text: string },
 ) {
-  const [thamSốUTMVàLiênKếtRútGọn, setThamSốUTMVàLiênKếtRútGọn] = useState<
-    ThamSốUTMVàLiênKếtRútGọn | undefined
-  >(undefined);
   const bàiĐăng = bàiĐăngĐượcChọn.value;
-  const nơiĐăng = nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value;
-  if (!bàiĐăng || !nơiĐăng || lầnTạoLiênKết.value === 0) {
-    return <KhungThôngTinKhiKhôngCóKếtQuả />;
+  const vậtThểTiếpThị = vậtThểTiếpThịĐượcTạo.value;
+  if (!vậtThểTiếpThị) return <KhungThôngTinKhiKhôngCóKếtQuả text={text} />;
+
+  const thamSốUTM = vậtThểTiếpThị?.["Tham số UTM"];
+  const đuôiRútGọn = vậtThểTiếpThị?.["Đuôi rút gọn"];
+  const liênKếtRútGọn = `${origin}/${đuôiRútGọn}`;
+  const liênKếtRútGọnChart = `${origin}/${đuôiRútGọn}/chart`;
+
+  if (globalThis.location.hostname !== "localhost") {
+    navigator.clipboard.writeText(liênKếtRútGọn);
   }
-  console.info("Bài đăng được chọn:", bàiĐăng);
-  console.info("Nơi đăng được chọn:", nơiĐăng);
-
-  useEffect(() => {
-    const thamSốUTMVàLiênKếtRútGọn = tạoThamSốUTMVàLiênKếtRútGọn(
-      {
-        bàiĐăng: bàiĐăng,
-        nơiĐăng: nơiĐăng,
-        bốiCảnh: bốiCảnh.value,
-        lầnĐăng: 1,
-        cấuHìnhNơiĐăng: cấuHìnhNơiĐăng,
-      },
-    );
-    const đuôiRútGọn = thamSốUTMVàLiênKếtRútGọn["Đuôi rút gọn"];
-    const origin = globalThis.location.origin;
-    const liênKếtRútGọn = `${origin}/${đuôiRútGọn}`;
-    const thờiĐiểmTạo = new Date();
-    const vậtThểTiếpThị: VậtThểTiếpThị = {
-      ...{
-        "Bài đăng": bàiĐăng,
-        "Nơi đăng": nơiĐăng,
-        "Thời điểm tạo": thờiĐiểmTạo,
-        "Các lần truy cập": {},
-      },
-      ...thamSốUTMVàLiênKếtRútGọn,
-    };
-
-    async function ghiLênKV() {
-      const res = await fetch(liênKếtRútGọn, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(vậtThểTiếpThị),
-      });
-      console.log("Response:", res);
-    }
-    ghiLênKV().catch(console.error);
-    if (globalThis.location.hostname !== "localhost") {
-      navigator.clipboard.writeText(liênKếtRútGọn);
-    }
-    setThamSốUTMVàLiênKếtRútGọn(thamSốUTMVàLiênKếtRútGọn);
-    console.info("Tham số UTM và liên kết rút gọn:", thamSốUTMVàLiênKếtRútGọn);
-  }, [lầnTạoLiênKết.value]);
-
-  if (thamSốUTMVàLiênKếtRútGọn === undefined) return <></>;
-  const originWeb = globalThis.location.origin;
-  const đuôiRútGọn = thamSốUTMVàLiênKếtRútGọn["Đuôi rút gọn"];
-  const liênKếtRútGọn = `${originWeb}/${đuôiRútGọn}`;
-  const liênKếtRútGọnChart = `${originWeb}/${đuôiRútGọn}/chart`;
-
-  const thamSốUTM = thamSốUTMVàLiênKếtRútGọn["Tham số UTM"];
   return (
     <article id="khung-bên-phải-khi-có-kết-quả" class="prose">
-      {tạoKếtQuảSaoChép()}
+      {/* {tạoKếtQuảSaoChép()} */}
+      <KếtQuảSaoChép />
       Nội dung trên đã được sao chép sẵn vào bộ nhớ. Truy cập{" "}
       <a href={liênKếtRútGọnChart}>{liênKếtRútGọnChart}</a>{" "}
       để xem thống kê lượt truy cập.
@@ -85,7 +35,7 @@ export default function SectionBênPhải(
     </article>
   );
 
-  function tạoKếtQuảSaoChép() {
+  function KếtQuảSaoChép() {
     if (!bàiĐăng) return <></>;
     const tiêuĐề = bàiĐăng["Tiêu đề"];
     if (!bàiĐăng["Nội dung bài đăng"]) {

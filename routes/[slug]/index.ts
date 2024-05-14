@@ -34,7 +34,7 @@ export const handler: Handlers = {
     } 
   },
   async POST(req, ctx) {
-    // const kv = await Deno.openKv();
+    const kv = await Deno.openKv();
     const đuôiRútGọn = ctx.params.slug;
     const vậtThểTiếpThị = await req.json() as VậtThểTiếpThị;
     await kv.set(["Đuôi rút gọn", đuôiRútGọn], vậtThểTiếpThị);

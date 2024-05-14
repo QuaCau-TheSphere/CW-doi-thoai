@@ -47,7 +47,7 @@ export interface VậtThểTiếpThị extends ThamSốUTMVàLiênKếtRútGọn
   "Thời điểm tạo": Date;
   "Các lần truy cập": DữLiệuTruyCậpCácNăm;
 }
-export type PhảnHồiTừCORSProxy = {
+export interface PhảnHồiTừCORSProxy {
   "Nếu là bài đăng": BàiĐăng;
   "Nếu là nơi đăng": NơiĐăngChưaXácĐịnhVịTrí;
   lỗi?:
@@ -55,3 +55,5 @@ export type PhảnHồiTừCORSProxy = {
     | "URL không hợp lệ";
   html?: string | null;
 };
+
+export type PhảnHồiTừTìmVậtThểTiếpThịĐãCó = Deno.KvEntry<VậtThểTiếpThị> 

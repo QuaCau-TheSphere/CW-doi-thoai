@@ -18,6 +18,7 @@ import {
   tạoNơiĐăngChưaXácĐịnhVịTrí,
 } from "../../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { parse } from "$std/yaml/mod.ts";
+import { PhảnHồiTừCORSProxy } from "../../../utils/Kiểu cho web.ts";
 interface MetaTags {
   title: string;
   description: string;
@@ -141,7 +142,7 @@ async function lấyMetaTag(
   return { bàiĐăng: bàiĐăng, nơiĐăng: nơiĐăng };
 }
 export const handler: Handlers = {
-  async GET(req, ctx) {
+  async GET(_req, ctx) {
     try {
       const url = lấyURL(ctx);
       const html = await (await fetch(url)).text();

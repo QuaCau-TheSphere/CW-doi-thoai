@@ -1,9 +1,27 @@
-//deno-fmt-ignore-file
 import Fuse from "https://deno.land/x/fuse@v6.4.1/dist/fuse.esm.js";
 import KhungTìmBàiĐăngHoặcNơiĐăng from "./Khung tìm bài đăng hoặc nơi đăng.tsx";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { BàiĐăng } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { bốiCảnh, element, lầnTạoLiênKết } from "./Signals.ts";
+import { bốiCảnh, element } from "./Signals.ts";
+import { NútTạoLiênKết } from "./Nút tạo liên kết.tsx";
+
+function KhungNhậpBốiCảnh() {
+  return (
+    <label class="input input-bordered flex items-center gap-2">
+      Bối cảnh
+      <input
+        type="text"
+        class="grow"
+        id="khung-nhập-bối-cảnh"
+        placeholder="Lý do khiến bài đăng trở nên hữu ích tại nơi đăng (không bắt buộc)"
+        onInput={(e) => {
+          bốiCảnh.value = (e.target as HTMLInputElement).value;
+        }}
+        onFocus={() => element.value = "bối cảnh"}
+      />
+    </label>
+  );
+}
 
 export default function SectionBênTrái(
   {
@@ -14,8 +32,6 @@ export default function SectionBênTrái(
     danhSáchNơiĐăng: NơiĐăngChưaXácĐịnhVịTrí[];
   },
 ) {
-  /** Do ngay từ lúc mới KhungNhậpBênTrái mới render đã setKhungNhậpActive là 'bài đăng' rồi, nên sẽ không có chuyện undefined */
-
   const fuseBàiĐăng = new Fuse(danhSáchBàiĐăng, {
     ignoreLocation: true,
     keys: [
@@ -40,6 +56,7 @@ export default function SectionBênTrái(
       "URL",
     ],
   });
+
   return (
     <>
       <KhungTìmBàiĐăngHoặcNơiĐăng
@@ -50,25 +67,9 @@ export default function SectionBênTrái(
         tênDanhSách="nơi đăng"
         fuse={fuseNơiĐăng}
       />
-      <label class="input input-bordered flex items-center gap-2">
-        Bối cảnh
-        <input
-          type="text"
-          class="grow"
-          id="khung-nhập-bối-cảnh"
-          placeholder="Lý do khiến bài đăng trở nên hữu ích tại nơi đăng (không bắt buộc)"
-          onInput={(e) => {bốiCảnh.value = (e.target as HTMLInputElement).value}}
-          onFocus={() => element.value= "bối cảnh"}
-        />
-      </label>
+      <KhungNhậpBốiCảnh />
       <br />
-      <button
-        class="btn btn-secondary gap-2"
-        id="nút-tạo-liên-kết"
-        onClick={() => {lầnTạoLiênKết.value += 1}}
-      >
-        Tạo liên kết
-      </button>
+      <NútTạoLiênKết />
     </>
   );
 }

@@ -1,7 +1,7 @@
 import { Stylesheet } from "lunchbox";
 import { type PageProps } from "$fresh/server.ts";
 import Meta from "../components/Meta.tsx";
-import { TÊN_MIỀN_RÚT_GỌN } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/H%E1%BA%B1ng.ts";
+import { ORIGIN } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/H%E1%BA%B1ng.ts";
 
 export default function App({ Component }: PageProps) {
   return (
@@ -23,7 +23,7 @@ export default function App({ Component }: PageProps) {
         <Stylesheet />
         <Meta
           imageUrl="platos1.gif"
-          href={TÊN_MIỀN_RÚT_GỌN}
+          href={ORIGIN}
         />
       </head>
       <body>

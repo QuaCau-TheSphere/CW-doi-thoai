@@ -8,6 +8,7 @@ import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $api_cors_proxy_string_ from "./routes/api/cors-proxy/[...string].ts";
 import * as $api_newData from "./routes/api/newData.ts";
+import * as $api_tìm_vật_thể_tiếp_thị_đã_có from "./routes/api/tìm-vật-thể-tiếp-thị-đã-có.ts";
 import * as $index from "./routes/index.tsx";
 import * as $lmn from "./routes/lmn.ts";
 import * as $lậptrình from "./routes/lậptrình.ts";
@@ -21,6 +22,7 @@ import * as $Main from "./islands/Main.tsx";
 import * as $Modal_tạo_mới_Modal_bài_đăng from "./islands/Modal tạo mới/Modal bài đăng.tsx";
 import * as $Modal_tạo_mới_Modal_chung from "./islands/Modal tạo mới/Modal chung.tsx";
 import * as $Modal_tạo_mới_Modal_nơi_đăng from "./islands/Modal tạo mới/Modal nơi đăng.tsx";
+import * as $Nút_tạo_liên_kết from "./islands/Nút tạo liên kết.tsx";
 import * as $Section_bên_phải from "./islands/Section bên phải.tsx";
 import * as $Section_bên_trái from "./islands/Section bên trái.tsx";
 import * as $Signals from "./islands/Signals.ts";
@@ -34,6 +36,8 @@ const manifest = {
     "./routes/_app.tsx": $_app,
     "./routes/api/cors-proxy/[...string].ts": $api_cors_proxy_string_,
     "./routes/api/newData.ts": $api_newData,
+    "./routes/api/tìm-vật-thể-tiếp-thị-đã-có.ts":
+      $api_tìm_vật_thể_tiếp_thị_đã_có,
     "./routes/index.tsx": $index,
     "./routes/lmn.ts": $lmn,
     "./routes/lậptrình.ts": $lậptrình,
@@ -52,6 +56,7 @@ const manifest = {
     "./islands/Modal tạo mới/Modal bài đăng.tsx": $Modal_tạo_mới_Modal_bài_đăng,
     "./islands/Modal tạo mới/Modal chung.tsx": $Modal_tạo_mới_Modal_chung,
     "./islands/Modal tạo mới/Modal nơi đăng.tsx": $Modal_tạo_mới_Modal_nơi_đăng,
+    "./islands/Nút tạo liên kết.tsx": $Nút_tạo_liên_kết,
     "./islands/Section bên phải.tsx": $Section_bên_phải,
     "./islands/Section bên trái.tsx": $Section_bên_trái,
     "./islands/Signals.ts": $Signals,
