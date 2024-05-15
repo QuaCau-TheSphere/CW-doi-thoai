@@ -1,10 +1,7 @@
-import {
-  ThôngTinNơiĐăng,
-  TênNơiĐăng,
-} from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { ThôngTinNơiĐăng, TênNơiĐăng } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { VịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { DựÁn } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { element } from "../islands/Signals.ts";
+import { element } from "../islands/Signals tổng.ts";
 
 export function viếtHoa(chuỗi: string | undefined) {
   if (!chuỗi) return "";
@@ -119,5 +116,13 @@ export function đổiKhungNhập(
           break;
       }
       break;
+  }
+}
+
+export function isUrl(string: string) {
+  try {
+    return Boolean(new URL(string));
+  } catch {
+    return false;
   }
 }

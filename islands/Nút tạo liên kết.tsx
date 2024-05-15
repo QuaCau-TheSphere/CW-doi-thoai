@@ -6,7 +6,7 @@ import {
   nơiĐăngĐãXácĐịnhVịTríĐượcChọn,
   tênNút,
   vậtThểTiếpThịĐượcTạo,
-} from "./Signals.ts";
+} from "./Signals tổng.ts";
 import tạoThamSốUTMVàLiênKếtRútGọn from "../core/B. Tạo kết quả/3. Tạo tham số UTM và liên kết rút gọn.ts";
 
 async function ghiLênKV() {

@@ -1,15 +1,20 @@
-import { StateUpdater } from "https://esm.sh/v128/preact@10.19.6/hooks/src/index.js";
+import { useState } from "preact/hooks";
+import { useSignalEffect } from "@preact/signals";
+import { Signal } from "https://esm.sh/v135/@preact/signals-core@1.5.1/dist/signals-core.js";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { PhảnHồiTừCORSProxy } from "../../utils/Kiểu cho web.ts";
 
-export default function ModalNơiĐăng(
-  { phảnHồiTừCORSProxy, urlNhậpTrongModal, urlNhậpỞKhungNhậpNgoài, setUrl }: {
-    phảnHồiTừCORSProxy: PhảnHồiTừCORSProxy | undefined;
-    urlNhậpTrongModal: string;
-    urlNhậpỞKhungNhậpNgoài: string;
-    setUrl: StateUpdater<string>;
-  },
-) {
+export default function ModalNơiĐăng({ urlNhậpTrongModal }: { urlNhậpTrongModal: Signal<string> }) {
+  const [phảnHồiTừCORSProxy, setPhảnHồiTừCORSProxy] = useState<PhảnHồiTừCORSProxy | undefined>(undefined);
+  useSignalEffect(() => {
+    async function lấyMetaTag() {
+      console.log("🚀 ~ urlTrongeffect nơi đăng:", urlNhậpTrongModal.value);
+      const corsProxyUrl = `${origin}/api/cors-proxy/${urlNhậpTrongModal.value}`;
+      setPhảnHồiTừCORSProxy(await (await fetch(corsProxyUrl)).json() as PhảnHồiTừCORSProxy);
+    }
+    lấyMetaTag();
+  });
+  console.log("🚀 ~ ModalNơiĐăng ~ phảnHồiTừCORSProxy:", phảnHồiTừCORSProxy);
   const nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí | Record<string | number | symbol, never> =
     phảnHồiTừCORSProxy?.["Nếu là nơi đăng"] || {};
   const {
@@ -23,6 +28,7 @@ export default function ModalNơiĐăng(
     "Mã nơi đăng": mãNơiĐăng,
     URL: url,
   } = nơiĐăng;
+  console.log("🚀 ~ ModalNơiĐăng ~ nơiĐăng:", nơiĐăng);
   return (
     <>
       <label class="form-control w-full max-w-xs">
@@ -35,11 +41,8 @@ export default function ModalNơiĐăng(
           type="url"
           required
           id="URL"
-          value={url as string || urlNhậpTrongModal || urlNhậpỞKhungNhậpNgoài}
-          onInput={(e: InputEvent) => {
-            const urlNhậpTrongModal = (e.target as HTMLTextAreaElement).value;
-            setUrl(urlNhậpTrongModal);
-          }}
+          value={url as string || urlNhậpTrongModal}
+          onInput={(e: InputEvent) => urlNhậpTrongModal.value = (e.target as HTMLTextAreaElement).value}
         />
       </label>
 

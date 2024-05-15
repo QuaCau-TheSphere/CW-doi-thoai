@@ -16,28 +16,16 @@ export const handler: Handlers = {
       },
     } = bàiĐăngVàNơiĐăngTừRequest;
 
-    console.log(
-      "🚀 ~ POST ~ bàiĐăngVàNơiĐăngTừRequest:",
-      bàiĐăngVàNơiĐăngTừRequest,
-    );
     const kv = await Deno.openKv();
-    const tấtCảVậtThểTiếpThịĐangCó = await Array.fromAsync(
-      kv.list({ prefix: ["Đuôi rút gọn"] }),
-    ) as Deno.KvEntry<VậtThểTiếpThị>[];
+    //deno-fmt-ignore
+    const tấtCảVậtThểTiếpThịĐangCó = await Array.fromAsync(kv.list({ prefix: ["Đuôi rút gọn"] })) as Deno.KvEntry<VậtThểTiếpThị>[];
     const filtered = tấtCảVậtThểTiếpThịĐangCó.filter((i) => {
       const j = i.value as VậtThểTiếpThị;
-      console.log("🚀 ~ filtered ~ j:", j);
       if (j["Bài đăng"]["URL"] !== urlBàiĐăng) return false;
       if (j["Nơi đăng"]["Loại nền tảng"] !== loạiNềnTảng) return false;
       if (j["Nơi đăng"]["Tên nền tảng"] !== tênNềnTảng) return false;
-      if (
-        JSON.stringify(j["Nơi đăng"]["Tên nơi đăng"]) !==
-          JSON.stringify(tênNơiĐăng)
-      ) return false;
-      if (
-        JSON.stringify(j["Nơi đăng"]["Loại nơi đăng"]) !==
-          JSON.stringify(loạiNơiĐăng)
-      ) return false;
+      if (JSON.stringify(j["Nơi đăng"]["Tên nơi đăng"]) !== JSON.stringify(tênNơiĐăng)) return false;
+      if (JSON.stringify(j["Nơi đăng"]["Loại nơi đăng"]) !== JSON.stringify(loạiNơiĐăng)) return false;
 
       /** Không dùng vị trí để so sánh, vì khác vị trí cũng tính là đã có đăng ở đó một lần rồi */
       // if (JSON.stringify(j["Nơi đăng"]["Vị trí"]) !== JSON.stringify(vịTrí)) {
@@ -54,9 +42,7 @@ export const handler: Handlers = {
        * https://stackoverflow.com/a/34087850/3416774
        */
       const vậtThểTiếpThịCóLầnĐăngLớnNhất = filtered.reduce((prev, current) =>
-        (prev && prev.value["Lần đăng"] > current.value["Lần đăng"])
-          ? prev
-          : current
+        (prev && prev.value["Lần đăng"] > current.value["Lần đăng"]) ? prev : current
       );
       return Response.json(vậtThểTiếpThịCóLầnĐăngLớnNhất);
     }

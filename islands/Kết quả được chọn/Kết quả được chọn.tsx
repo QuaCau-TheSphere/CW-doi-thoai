@@ -1,6 +1,6 @@
 import { TênDanhSách } from "../../utils/Kiểu cho web.ts";
 import { kiểuKebab, viếtHoa } from "../../utils/Hàm cho khung nhập.ts";
-import { bàiĐăngĐượcChọn } from "../Signals.ts";
+import { bàiĐăngĐượcChọn } from "../Signals tổng.ts";
 import NơiĐăngĐượcChọn from "./Nơi đăng được chọn.tsx";
 
 function BàiĐăngĐượcChọn() {
@@ -59,9 +59,7 @@ function VậtThểKhác(
       danhSáchPhầnTử.push(
         <details>
           <summary>{key}</summary>
-          {Object.entries(value).map(([key2, value2]) => (
-            <ListItems loạiDữLiệu={key2} dữLiệu={value2} />
-          ))}
+          {Object.entries(value).map(([key2, value2]) => <ListItems loạiDữLiệu={key2} dữLiệu={value2} />)}
         </details>,
       );
     } else {

@@ -1,4 +1,4 @@
-import { bàiĐăngĐượcChọn, vậtThểTiếpThịĐượcTạo } from "./Signals.ts";
+import { bàiĐăngĐượcChọn, vậtThểTiếpThịĐượcTạo } from "./Signals tổng.ts";
 import KhungThôngTinKhiKhôngCóKếtQuả from "../components/KhungThôngTinKhiKhôngCóKếtQuả.tsx";
 import KếtQuảĐượcChọn from "./Kết quả được chọn/Kết quả được chọn.tsx";
 
@@ -20,8 +20,8 @@ export default function SectionBênPhải(
   return (
     <article id="khung-bên-phải-khi-có-kết-quả" class="prose">
       <KếtQuảSaoChép />
-      Nội dung trên đã được sao chép sẵn vào bộ nhớ. Truy cập{" "}
-      <a href={liênKếtRútGọnChart}>{liênKếtRútGọnChart}</a> để xem thống kê lượt truy cập.
+      Nội dung trên đã được sao chép sẵn vào bộ nhớ. Truy cập <a href={liênKếtRútGọnChart}>{liênKếtRútGọnChart}</a>{" "}
+      để xem thống kê lượt truy cập.
       <details>
         <summary>Tham số UTM</summary>
         <KếtQuảĐượcChọn loạiVậtThể="tham số UTM" vậtThể={thamSốUTM} />
@@ -35,8 +35,7 @@ export default function SectionBênPhải(
     if (!bàiĐăng["Nội dung bài đăng"]) {
       return (
         <p id="nội-dung-tạo-sẵn">
-          Không tìm thấy nội dung hoặc mô tả ngắn ở bài đăng. Liên kết rút gọn:{" "}
-          <pre>{liênKếtRútGọn}</pre>
+          Không tìm thấy nội dung hoặc mô tả ngắn ở bài đăng. Liên kết rút gọn: <pre>{liênKếtRútGọn}</pre>
         </p>
       );
     }

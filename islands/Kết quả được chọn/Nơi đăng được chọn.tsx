@@ -1,17 +1,6 @@
-import {
-  NơiĐăngChưaXácĐịnhVịTrí,
-  tạoNơiĐăngĐãXácĐịnhVịTrí,
-} from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
-import {
-  nơiĐăngChưaXácĐịnhVịTríĐượcChọn,
-  nơiĐăngĐãXácĐịnhVịTríĐượcChọn,
-  vịTríString,
-} from "../Signals.ts";
-import {
-  tạoLoạiNơiĐăngString,
-  tạoTênNơiĐăngString,
-  tạoVịTríString,
-} from "../../utils/Hàm cho khung nhập.ts";
+import { NơiĐăngChưaXácĐịnhVịTrí, tạoNơiĐăngĐãXácĐịnhVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { nơiĐăngChưaXácĐịnhVịTríĐượcChọn, nơiĐăngĐãXácĐịnhVịTríĐượcChọn, vịTríString } from "../Signals tổng.ts";
+import { tạoLoạiNơiĐăngString, tạoTênNơiĐăngString, tạoVịTríString } from "../../utils/Hàm cho khung nhập.ts";
 import { làCùngNơiĐăng, ThôngTinNơiĐăng } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 
 /** Tạo danh sách các phần tử <option> để người dùng lựa chọn vị trí đăng từ danh sách vị trí có thể đăng*/
@@ -44,13 +33,9 @@ function handleChange(vịTríStringĐượcChọn: string, nơiĐăng: NơiĐă
 }
 
 export default function NơiĐăngĐượcChọn() {
-  console.log("nơi đăng được chọn reload");
   const nơiĐăng = nơiĐăngChưaXácĐịnhVịTríĐượcChọn.value;
   if (!nơiĐăng) return <></>;
-  const {
-    "Tên nơi đăng": tênNơiĐăng,
-    URL: url,
-  } = nơiĐăng;
+  const { "Tên nơi đăng": tênNơiĐăng, URL: url } = nơiĐăng;
   const danhSáchLựaChọnVịTrí = tạoDanhSáchLựaChọnVịTrí(nơiĐăng);
   const tênNơiĐăngString = tạoTênNơiĐăngString(tênNơiĐăng);
   const loạiNơiĐăngString = tạoLoạiNơiĐăngString(nơiĐăng);
@@ -62,9 +47,7 @@ export default function NơiĐăngĐượcChọn() {
       <div class="card-body">
         <h2 id="tên-nơi-đăng" class="card-title">{tênNơiĐăngString}</h2>
         <span class="font-xs text-slate-400">
-          <span id="loại-nơi-đăng" class="hover:text-primary-content">
-            {loạiNơiĐăngString}
-          </span>
+          <span id="loại-nơi-đăng" class="hover:text-primary-content">{loạiNơiĐăngString}</span>
           <br />
           <span id="url" class="hover:text-primary-content">URL: {url}</span>
         </span>

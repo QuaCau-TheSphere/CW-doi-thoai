@@ -18,7 +18,6 @@ import {
   tạoNơiĐăngChưaXácĐịnhVịTrí,
 } from "../../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { parse } from "$std/yaml/mod.ts";
-import { PhảnHồiTừCORSProxy } from "../../../utils/Kiểu cho web.ts";
 interface MetaTags {
   title: string;
   description: string;
@@ -62,7 +61,6 @@ async function tạoNơiĐăng(
   let tênNềnTảng: TênNềnTảng | undefined = undefined;
   let loạiNơiĐăng: LoạiNơiĐăng | undefined = undefined;
 
-  //deno-fmt-ignore
   const danhSáchNềnTảng = (danhSáchDiễnĐàn as unknown as TênNềnTảng[]).concat(danhSáchNềnTảngChat);
   for (const nềnTảng of danhSáchNềnTảng) {
     if (cóTênNềnTảngTrongHostname(hostname, nềnTảng)) {
@@ -73,9 +71,7 @@ async function tạoNơiĐăng(
           loạiNơiĐăng = ["Repo"];
         }
         if (hostname.includes("facebook") || hostname.includes("linkedin")) {
-          pathname.includes("group")
-            ? loạiNơiĐăng = ["Nhóm"]
-            : loạiNơiĐăng = ["Trang"];
+          pathname.includes("group") ? loạiNơiĐăng = ["Nhóm"] : loạiNơiĐăng = ["Trang"];
         }
         if (hostname.includes("youtube") || url.href.includes("youtu.be")) {
           if (pathname.includes("playlist")) {
@@ -118,7 +114,7 @@ async function tạoNơiĐăng(
   return tạoNơiĐăngChưaXácĐịnhVịTrí(thôngTinNơiĐăng, cấuHìnhVịTrí);
 }
 
-async function lấyMetaTag(
+async function tạoBàiĐăngHoặcNơiĐăng(
   url: URL,
 ): Promise<{ bàiĐăng: BàiĐăng; nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí }> {
   const og = (await getMetaTags(url.href)).og as MetaTags;
@@ -147,7 +143,7 @@ export const handler: Handlers = {
       const url = lấyURL(ctx);
       const html = await (await fetch(url)).text();
       try {
-        const { bàiĐăng, nơiĐăng } = await lấyMetaTag(url);
+        const { bàiĐăng, nơiĐăng } = await tạoBàiĐăngHoặcNơiĐăng(url);
 
         return Response.json({
           "Nếu là bài đăng": bàiĐăng,

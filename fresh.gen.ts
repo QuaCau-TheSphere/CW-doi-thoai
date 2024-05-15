@@ -15,7 +15,6 @@ import * as $lậptrình from "./routes/lậptrình.ts";
 import * as $ngụngôn from "./routes/ngụngôn.ts";
 import * as $Biểu_đồ_echart from "./islands/Biểu đồ/echart.tsx";
 import * as $Biểu_đồ_theme from "./islands/Biểu đồ/theme.tsx";
-import * as $Khung_tìm_bài_đăng_hoặc_nơi_đăng from "./islands/Khung tìm bài đăng hoặc nơi đăng.tsx";
 import * as $Kết_quả_được_chọn_Kết_quả_được_chọn from "./islands/Kết quả được chọn/Kết quả được chọn.tsx";
 import * as $Kết_quả_được_chọn_Nơi_đăng_được_chọn from "./islands/Kết quả được chọn/Nơi đăng được chọn.tsx";
 import * as $Main from "./islands/Main.tsx";
@@ -25,7 +24,11 @@ import * as $Modal_tạo_mới_Modal_nơi_đăng from "./islands/Modal tạo m�
 import * as $Nút_tạo_liên_kết from "./islands/Nút tạo liên kết.tsx";
 import * as $Section_bên_phải from "./islands/Section bên phải.tsx";
 import * as $Section_bên_trái from "./islands/Section bên trái.tsx";
-import * as $Signals from "./islands/Signals.ts";
+import * as $Signals_tổng from "./islands/Signals tổng.ts";
+import * as $Tìm_bài_đăng_hoặc_nơi_đăng_Danh_sách_kết_quả_tìm_kiếm from "./islands/Tìm bài đăng hoặc nơi đăng/Danh sách kết quả tìm kiếm.tsx";
+import * as $Tìm_bài_đăng_hoặc_nơi_đăng_Div_tìm_bài_đăng_hoặc_nơi_đăng from "./islands/Tìm bài đăng hoặc nơi đăng/Div tìm bài đăng hoặc nơi đăng.tsx";
+import * as $Tìm_bài_đăng_hoặc_nơi_đăng_Input_tìm_bài_đăng_hoặc_nơi_đăng from "./islands/Tìm bài đăng hoặc nơi đăng/Input tìm bài đăng hoặc nơi đăng.tsx";
+import * as $Tìm_bài_đăng_hoặc_nơi_đăng_Signal_tìm_bài_đăng_hoặc_nơi_đăng from "./islands/Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -36,8 +39,7 @@ const manifest = {
     "./routes/_app.tsx": $_app,
     "./routes/api/cors-proxy/[...string].ts": $api_cors_proxy_string_,
     "./routes/api/newData.ts": $api_newData,
-    "./routes/api/tìm-vật-thể-tiếp-thị-đã-có.ts":
-      $api_tìm_vật_thể_tiếp_thị_đã_có,
+    "./routes/api/tìm-vật-thể-tiếp-thị-đã-có.ts": $api_tìm_vật_thể_tiếp_thị_đã_có,
     "./routes/index.tsx": $index,
     "./routes/lmn.ts": $lmn,
     "./routes/lậptrình.ts": $lậptrình,
@@ -46,12 +48,8 @@ const manifest = {
   islands: {
     "./islands/Biểu đồ/echart.tsx": $Biểu_đồ_echart,
     "./islands/Biểu đồ/theme.tsx": $Biểu_đồ_theme,
-    "./islands/Khung tìm bài đăng hoặc nơi đăng.tsx":
-      $Khung_tìm_bài_đăng_hoặc_nơi_đăng,
-    "./islands/Kết quả được chọn/Kết quả được chọn.tsx":
-      $Kết_quả_được_chọn_Kết_quả_được_chọn,
-    "./islands/Kết quả được chọn/Nơi đăng được chọn.tsx":
-      $Kết_quả_được_chọn_Nơi_đăng_được_chọn,
+    "./islands/Kết quả được chọn/Kết quả được chọn.tsx": $Kết_quả_được_chọn_Kết_quả_được_chọn,
+    "./islands/Kết quả được chọn/Nơi đăng được chọn.tsx": $Kết_quả_được_chọn_Nơi_đăng_được_chọn,
     "./islands/Main.tsx": $Main,
     "./islands/Modal tạo mới/Modal bài đăng.tsx": $Modal_tạo_mới_Modal_bài_đăng,
     "./islands/Modal tạo mới/Modal chung.tsx": $Modal_tạo_mới_Modal_chung,
@@ -59,7 +57,15 @@ const manifest = {
     "./islands/Nút tạo liên kết.tsx": $Nút_tạo_liên_kết,
     "./islands/Section bên phải.tsx": $Section_bên_phải,
     "./islands/Section bên trái.tsx": $Section_bên_trái,
-    "./islands/Signals.ts": $Signals,
+    "./islands/Signals tổng.ts": $Signals_tổng,
+    "./islands/Tìm bài đăng hoặc nơi đăng/Danh sách kết quả tìm kiếm.tsx":
+      $Tìm_bài_đăng_hoặc_nơi_đăng_Danh_sách_kết_quả_tìm_kiếm,
+    "./islands/Tìm bài đăng hoặc nơi đăng/Div tìm bài đăng hoặc nơi đăng.tsx":
+      $Tìm_bài_đăng_hoặc_nơi_đăng_Div_tìm_bài_đăng_hoặc_nơi_đăng,
+    "./islands/Tìm bài đăng hoặc nơi đăng/Input tìm bài đăng hoặc nơi đăng.tsx":
+      $Tìm_bài_đăng_hoặc_nơi_đăng_Input_tìm_bài_đăng_hoặc_nơi_đăng,
+    "./islands/Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts":
+      $Tìm_bài_đăng_hoặc_nơi_đăng_Signal_tìm_bài_đăng_hoặc_nơi_đăng,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

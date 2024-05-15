@@ -1,8 +1,8 @@
 import Fuse from "https://deno.land/x/fuse@v6.4.1/dist/fuse.esm.js";
-import KhungTìmBàiĐăngHoặcNơiĐăng from "./Khung tìm bài đăng hoặc nơi đăng.tsx";
+import DivTìmBàiĐăngHoặcNơiĐăng from "./Tìm bài đăng hoặc nơi đăng/Div tìm bài đăng hoặc nơi đăng.tsx";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { BàiĐăng } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { bốiCảnh, element } from "./Signals.ts";
+import { bốiCảnh, element } from "./Signals tổng.ts";
 import { NútTạoLiênKết } from "./Nút tạo liên kết.tsx";
 
 function KhungNhậpBốiCảnh() {
@@ -24,13 +24,7 @@ function KhungNhậpBốiCảnh() {
 }
 
 export default function SectionBênTrái(
-  {
-    danhSáchNơiĐăng,
-    danhSáchBàiĐăng,
-  }: {
-    danhSáchBàiĐăng: BàiĐăng[];
-    danhSáchNơiĐăng: NơiĐăngChưaXácĐịnhVịTrí[];
-  },
+  { danhSáchNơiĐăng, danhSáchBàiĐăng }: { danhSáchBàiĐăng: BàiĐăng[]; danhSáchNơiĐăng: NơiĐăngChưaXácĐịnhVịTrí[] },
 ) {
   const fuseBàiĐăng = new Fuse(danhSáchBàiĐăng, {
     ignoreLocation: true,
@@ -59,14 +53,8 @@ export default function SectionBênTrái(
 
   return (
     <>
-      <KhungTìmBàiĐăngHoặcNơiĐăng
-        tênDanhSách="bài đăng"
-        fuse={fuseBàiĐăng}
-      />
-      <KhungTìmBàiĐăngHoặcNơiĐăng
-        tênDanhSách="nơi đăng"
-        fuse={fuseNơiĐăng}
-      />
+      <DivTìmBàiĐăngHoặcNơiĐăng tênDanhSách="bài đăng" fuse={fuseBàiĐăng} />
+      <DivTìmBàiĐăngHoặcNơiĐăng tênDanhSách="nơi đăng" fuse={fuseNơiĐăng} />
       <KhungNhậpBốiCảnh />
       <br />
       <NútTạoLiênKết />

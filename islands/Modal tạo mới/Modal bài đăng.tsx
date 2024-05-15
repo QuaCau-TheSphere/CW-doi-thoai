@@ -1,15 +1,19 @@
-import { StateUpdater } from "https://esm.sh/v128/preact@10.19.6/hooks/src/index.js";
+import { useState } from "preact/hooks";
 import { PhảnHồiTừCORSProxy } from "../../utils/Kiểu cho web.ts";
 import { BàiĐăng } from "../../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { Signal } from "https://esm.sh/v135/@preact/signals-core@1.5.1/dist/signals-core.js";
+import { useSignalEffect } from "@preact/signals";
 
-export default function ModalBàiĐăng(
-  { phảnHồiTừCORSProxy, urlNhậpTrongModal, urlNhậpỞKhungNhậpNgoài, setUrl }: {
-    phảnHồiTừCORSProxy: PhảnHồiTừCORSProxy | undefined;
-    urlNhậpTrongModal: string;
-    urlNhậpỞKhungNhậpNgoài: string;
-    setUrl: StateUpdater<string>;
-  },
-) {
+export default function ModalBàiĐăng({ url }: { url: Signal<string> }) {
+  const [phảnHồiTừCORSProxy, setPhảnHồiTừCORSProxy] = useState<PhảnHồiTừCORSProxy | undefined>(undefined);
+  useSignalEffect(() => {
+    async function lấyMetaTag() {
+      console.log("🚀 ~ urlTrongeffect:", url.value);
+      const corsProxyUrl = `${origin}/api/cors-proxy/${url.value}`;
+      setPhảnHồiTừCORSProxy(await (await fetch(corsProxyUrl)).json() as PhảnHồiTừCORSProxy);
+    }
+    lấyMetaTag();
+  });
   let bàiĐăng;
   if (phảnHồiTừCORSProxy === undefined || phảnHồiTừCORSProxy.lỗi) {
     bàiĐăng = new BàiĐăng();
@@ -24,7 +28,7 @@ export default function ModalBàiĐăng(
   } = bàiĐăng;
   return (
     <>
-      {urlNhậpTrongModal}
+      {url}
       <label class="form-control w-full max-w-xs">
         <div class="label">
           <span class="label-text font-bold">URL</span>
@@ -35,11 +39,8 @@ export default function ModalBàiĐăng(
           type="url"
           name="URL"
           required
-          value={urlNhậpTrongModal || urlNhậpỞKhungNhậpNgoài}
-          onInput={(e: InputEvent) => {
-            const urlNhậpTrongModal = (e.target as HTMLTextAreaElement).value;
-            setUrl(urlNhậpTrongModal);
-          }}
+          value={url}
+          onInput={(e: InputEvent) => url.value = (e.target as HTMLTextAreaElement).value}
         />
       </label>
 

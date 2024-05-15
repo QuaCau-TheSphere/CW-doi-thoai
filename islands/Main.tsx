@@ -3,15 +3,15 @@ import { BàiĐăng } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, 
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import SectionBênPhải from "./Section bên phải.tsx";
 import SectionBênTrái from "./Section bên trái.tsx";
-import { cấuHìnhNơiĐăng } from "./Signals.ts";
+import { cấuHìnhNơiĐăng } from "./Signals tổng.ts";
 interface MainProps {
   danhSáchNơiĐăng: NơiĐăngChưaXácĐịnhVịTrí[];
   danhSáchBàiĐăng: BàiĐăng[];
   cấuHìnhNơiĐăngProp: CấuHìnhNơiĐăng;
   textTrangChủ: string;
 }
-//@ts-ignore:
-function Test({ danhSáchNơiĐăng, danhSáchBàiĐăng }) {
+
+function Test({ danhSáchNơiĐăng, danhSáchBàiĐăng }: MainProps) {
   return (
     <SectionBênTrái
       danhSáchBàiĐăng={danhSáchBàiĐăng}
@@ -19,10 +19,8 @@ function Test({ danhSáchNơiĐăng, danhSáchBàiĐăng }) {
     />
   );
 }
-function Production(
-  { danhSáchNơiĐăng, danhSáchBàiĐăng, cấuHìnhNơiĐăngProp, textTrangChủ }:
-    MainProps,
-) {
+
+function Production({ danhSáchNơiĐăng, danhSáchBàiĐăng, textTrangChủ }: MainProps) {
   return (
     <main class="flex flex-row gap-3 w-full mb-auto">
       <section id="section-bên-trái" class="basis-1/2 p-10">
@@ -37,19 +35,11 @@ function Production(
     </main>
   );
 }
+
 export default function Main(
-  { danhSáchNơiĐăng, danhSáchBàiĐăng, cấuHìnhNơiĐăngProp, textTrangChủ }:
-    MainProps,
+  { danhSáchNơiĐăng, danhSáchBàiĐăng, cấuHìnhNơiĐăngProp, textTrangChủ }: MainProps,
 ) {
   cấuHìnhNơiĐăng.value = cấuHìnhNơiĐăngProp;
-  return (
-    <Test danhSáchBàiĐăng={danhSáchBàiĐăng} danhSáchNơiĐăng={danhSáchNơiĐăng} />
-  );
-  return (
-    <Production
-      danhSáchBàiĐăng={danhSáchBàiĐăng}
-      danhSáchNơiĐăng={danhSáchNơiĐăng}
-      textTrangChủ={textTrangChủ}
-    />
-  );
+  return <Test danhSáchBàiĐăng={danhSáchBàiĐăng} danhSáchNơiĐăng={danhSáchNơiĐăng} />;
+  return <Production danhSáchBàiĐăng={danhSáchBàiĐăng} danhSáchNơiĐăng={danhSáchNơiĐăng} textTrangChủ={textTrangChủ} />;
 }
