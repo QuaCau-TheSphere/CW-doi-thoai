@@ -1,21 +1,10 @@
 import { StateUpdater, useEffect, useState } from "preact/hooks";
-import {
-  ElementDùngTab,
-  MụcĐượcChọn,
-  PhảnHồiTừCORSProxy,
-  TênDanhSách,
-} from "../../utils/Kiểu cho web.ts";
+import { ElementDùngTab, MụcĐượcChọn, PhảnHồiTừCORSProxy, TênDanhSách } from "../../utils/Kiểu cho web.ts";
 import { đổiKhungNhập } from "../../utils/Hàm cho khung nhập.ts";
 import ModalBàiĐăng from "./Modal bài đăng.tsx";
 import ModalNơiĐăng from "./Modal nơi đăng.tsx";
-import {
-  BàiĐăng,
-  URLString,
-} from "../../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import {
-  LoạiNềnTảng,
-  TênNềnTảng,
-} from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { BàiĐăng, URLString } from "../../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { LoạiNềnTảng, TênNềnTảng } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 
 function CácTrườngNhậpMới(
@@ -28,43 +17,36 @@ function CácTrườngNhậpMới(
   const [urlNhậpTrongModal, setUrl] = useState(urlNhậpỞKhungNhậpNgoài);
   // console.log("🚀 ~ urlNhậpTrongModal1:", urlNhậpTrongModal);
 
-  //deno-fmt-ignore
   const [phảnHồiTừCORSProxy, setPhảnHồiTừCORSProxy] = useState<PhảnHồiTừCORSProxy | undefined>(undefined);
   useEffect(() => {
     async function lấyMetaTag() {
       const originWeb = globalThis.location.origin;
       const corsProxyUrl = `${originWeb}/api/cors-proxy/${urlNhậpTrongModal}`;
-      //deno-fmt-ignore
       const phảnHồiTừCORSProxy = (await (await fetch(corsProxyUrl)).json()) as PhảnHồiTừCORSProxy;
       setPhảnHồiTừCORSProxy(phảnHồiTừCORSProxy);
     }
     lấyMetaTag();
-    //todo
   }, [urlNhậpTrongModal]);
 
   // console.log(phảnHồiTừCORSProxy);
 
   if (tênDanhSách === "bài đăng") {
-    // return (
-    //   <ModalBàiĐăng
-    //     corsProxyRes={corsProxyRes}
-    //     urlNhậpTrongModal={urlNhậpTrongModal}
-    //     urlNhậpỞKhungNhậpNgoài={urlNhậpỞKhungNhậpNgoài}
-    //     setUrl={setUrl}
-    //   />
-    // );
-    return ModalBàiĐăng(
-      phảnHồiTừCORSProxy,
-      urlNhậpTrongModal,
-      urlNhậpỞKhungNhậpNgoài,
-      setUrl,
+    return (
+      <ModalBàiĐăng
+        phảnHồiTừCORSProxy={phảnHồiTừCORSProxy}
+        urlNhậpTrongModal={urlNhậpTrongModal}
+        urlNhậpỞKhungNhậpNgoài={urlNhậpỞKhungNhậpNgoài}
+        setUrl={setUrl}
+      />
     );
   } else if (tênDanhSách === "nơi đăng") {
-    return ModalNơiĐăng(
-      phảnHồiTừCORSProxy,
-      urlNhậpTrongModal,
-      urlNhậpỞKhungNhậpNgoài,
-      setUrl,
+    return (
+      <ModalNơiĐăng
+        phảnHồiTừCORSProxy={phảnHồiTừCORSProxy}
+        urlNhậpTrongModal={urlNhậpTrongModal}
+        urlNhậpỞKhungNhậpNgoài={urlNhậpỞKhungNhậpNgoài}
+        setUrl={setUrl}
+      />
     );
   } else return <></>;
 }

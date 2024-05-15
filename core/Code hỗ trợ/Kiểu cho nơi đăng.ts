@@ -196,8 +196,7 @@ type TênNơiĐăngMessengerDiscordTelegram =
  * - Kênh 3:         # `Record<TênKênh, null>`
  * ```
  */
-export type CấuHìnhMáyChủ =
-  (TênKênh | Record<TênKênh, TênThreadHoặcTopic[] | null>)[];
+export type CấuHìnhMáyChủ = (TênKênh | Record<TênKênh, TênThreadHoặcTopic[] | null>)[];
 type MáyChủ = OneKey<TênMáyChủ, CấuHìnhMáyChủ | null>;
 
 type LoạiNơiĐăngMessenger =
@@ -247,13 +246,7 @@ export type CấuHìnhTậpTin = Record<"PDF" | "Word", string[]> | null;
 /**
  * KHÁC
  */
-export const danhSáchNơiĐăngKhác = [
-  "Vault",
-  "Website",
-  "Email",
-  "CV",
-  "Ảnh",
-] as const;
+export const danhSáchNơiĐăngKhác = ["Vault", "Website", "Email", "CV", "Ảnh"] as const;
 export type LoạiNơiĐăngKhác = [typeof danhSáchNơiĐăngKhác[number]];
 /** Tên nền tảng của vault, website, email, CV, ảnh, dịch vụ lưu trữ không quan trọng, không phức tạp, không làm ảnh hưởng tới cách gọi các cấp bậc nhỏ hơn nên để null cũng được */
 type TênNềnTảngKhác = typeof danhSáchNơiĐăngKhác[number];
@@ -267,10 +260,7 @@ export type CấuHìnhCV = string[] | null;
 export type CấuHìnhẢnh = string[] | null;
 
 /** Không xét URL vì có những nơi đăng có nhiều URL khác nhau */
-export function làCùngNơiĐăng(
-  nơiĐăng1: ThôngTinNơiĐăng,
-  nơiĐăng2: ThôngTinNơiĐăng,
-): boolean {
+export function làCùngNơiĐăng(nơiĐăng1: ThôngTinNơiĐăng, nơiĐăng2: ThôngTinNơiĐăng): boolean {
   if (!nơiĐăng1 || !nơiĐăng2) return false;
   const {
     "Loại nền tảng": loạiNềnTảng1,
@@ -284,13 +274,9 @@ export function làCùngNơiĐăng(
     "Tên nơi đăng": tênNơiĐăng2,
     "Loại nơi đăng": loạiNơiĐăng2,
   } = nơiĐăng2;
-  if (JSON.stringify(loạiNềnTảng1) !== JSON.stringify(loạiNềnTảng2)) {
-    return false;
-  }
+  if (JSON.stringify(loạiNềnTảng1) !== JSON.stringify(loạiNềnTảng2)) return false;
   if (JSON.stringify(tênNềnTảng1) !== JSON.stringify(tênNềnTảng2)) return false;
   if (JSON.stringify(tênNơiĐăng1) !== JSON.stringify(tênNơiĐăng2)) return false;
-  if (JSON.stringify(loạiNơiĐăng1) !== JSON.stringify(loạiNơiĐăng2)) {
-    return false;
-  }
+  if (JSON.stringify(loạiNơiĐăng1) !== JSON.stringify(loạiNơiĐăng2)) return false;
   return true;
 }

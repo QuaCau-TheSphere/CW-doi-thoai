@@ -1,18 +1,20 @@
 import { StateUpdater } from "https://esm.sh/v128/preact@10.19.6/hooks/src/index.js";
-import { BàiĐăng } from "../../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
-import { PhảnHồiTừCORSProxy } from "../../utils/Ki%E1%BB%83u%20cho%20web.ts";
+import { PhảnHồiTừCORSProxy } from "../../utils/Kiểu cho web.ts";
+import { BàiĐăng } from "../../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 
 export default function ModalBàiĐăng(
-  corsProxyRes: PhảnHồiTừCORSProxy | undefined,
-  urlNhậpTrongModal: string,
-  urlNhậpỞKhungNhậpNgoài: string,
-  setUrl: StateUpdater<string>,
+  { phảnHồiTừCORSProxy, urlNhậpTrongModal, urlNhậpỞKhungNhậpNgoài, setUrl }: {
+    phảnHồiTừCORSProxy: PhảnHồiTừCORSProxy | undefined;
+    urlNhậpTrongModal: string;
+    urlNhậpỞKhungNhậpNgoài: string;
+    setUrl: StateUpdater<string>;
+  },
 ) {
   let bàiĐăng;
-  if (corsProxyRes === undefined || corsProxyRes.lỗi) {
+  if (phảnHồiTừCORSProxy === undefined || phảnHồiTừCORSProxy.lỗi) {
     bàiĐăng = new BàiĐăng();
   } else {
-    bàiĐăng = corsProxyRes["Nếu là bài đăng"];
+    bàiĐăng = phảnHồiTừCORSProxy["Nếu là bài đăng"];
   }
   const {
     "Tiêu đề": tiêuĐề,
@@ -23,15 +25,16 @@ export default function ModalBàiĐăng(
   return (
     <>
       {urlNhậpTrongModal}
-      <label className="form-control w-full max-w-xs">
-        <div className="label">
-          <span className="label-text font-bold">URL</span>
+      <label class="form-control w-full max-w-xs">
+        <div class="label">
+          <span class="label-text font-bold">URL</span>
         </div>
         <input
-          className="input input-bordered input-primary w-full max-w-xs"
+          class="input input-bordered input-primary w-full max-w-xs"
           id="URL"
-          type="text"
+          type="url"
           name="URL"
+          required
           value={urlNhậpTrongModal || urlNhậpỞKhungNhậpNgoài}
           onInput={(e: InputEvent) => {
             const urlNhậpTrongModal = (e.target as HTMLTextAreaElement).value;
@@ -40,25 +43,26 @@ export default function ModalBàiĐăng(
         />
       </label>
 
-      <label className="form-control w-full max-w-xs">
-        <div className="label">
-          <span className="label-text font-bold">Tiêu đề</span>
+      <label class="form-control w-full max-w-xs">
+        <div class="label">
+          <span class="label-text font-bold">Tiêu đề</span>
         </div>
         <input
-          className="input input-bordered input-primary w-full max-w-xs"
+          class="input input-bordered input-primary w-full max-w-xs"
           id="tiêu-đề"
           type="text"
+          required
           name="Tiêu đề"
           value={tiêuĐề}
         />
       </label>
 
-      <label className="form-control w-full max-w-xs">
-        <div className="label">
-          <span className="label-text font-bold">Mô tả bài đăng</span>
+      <label class="form-control w-full max-w-xs">
+        <div class="label">
+          <span class="label-text font-bold">Mô tả bài đăng</span>
         </div>
         <input
-          className="input input-bordered input-primary w-full max-w-xs"
+          class="input input-bordered input-primary w-full max-w-xs"
           id="mô-tả"
           type="text"
           name="Mô tả bài đăng"
@@ -66,26 +70,26 @@ export default function ModalBàiĐăng(
         />
       </label>
 
-      <label className="form-control w-full max-w-xs">
-        <div className="label">
-          <span className="label-text font-bold">Tên dự án</span>
+      <label class="form-control w-full max-w-xs">
+        <div class="label">
+          <span class="label-text font-bold">Tên dự án</span>
         </div>
         <input
-          className="input input-bordered input-primary w-full max-w-xs"
+          class="input input-bordered input-primary w-full max-w-xs"
           id="tên-dự-án"
           type="text"
           name="Tên dự án"
-          placeholder="Việc đăng bài này nằm trong dự án hoặc chiến dịch nào của bạn?"
+          placeholder="Dự án hoặc chiến dịch của việc đăng bài này"
           value={dựÁn?.["Tên dự án"]}
         />
       </label>
 
-      <label className="form-control w-full max-w-xs">
-        <div className="label">
-          <span className="label-text font-bold">Website</span>
+      <label class="form-control w-full max-w-xs">
+        <div class="label">
+          <span class="label-text font-bold">Website</span>
         </div>
         <input
-          className="input input-bordered input-primary w-full max-w-xs"
+          class="input input-bordered input-primary w-full max-w-xs"
           id="website"
           type="text"
           name="Website"

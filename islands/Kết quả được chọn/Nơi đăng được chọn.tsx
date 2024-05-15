@@ -12,15 +12,10 @@ import {
   tạoTênNơiĐăngString,
   tạoVịTríString,
 } from "../../utils/Hàm cho khung nhập.ts";
-import {
-  làCùngNơiĐăng,
-  ThôngTinNơiĐăng,
-} from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { làCùngNơiĐăng, ThôngTinNơiĐăng } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 
 /** Tạo danh sách các phần tử <option> để người dùng lựa chọn vị trí đăng từ danh sách vị trí có thể đăng*/
-function tạoDanhSáchLựaChọnVịTrí(
-  nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí,
-) {
+function tạoDanhSáchLựaChọnVịTrí(nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí) {
   const danhSáchVịTríCóThểĐăng = nơiĐăng["Vị trí có thể đăng"];
   if (!danhSáchVịTríCóThểĐăng) return [];
   const danhSáchLựaChọn = [];
@@ -31,14 +26,10 @@ function tạoDanhSáchLựaChọnVịTrí(
 
     if (i === 0) {
       danhSáchLựaChọn.push(<option selected value={value}>{text}</option>);
-      const nơiĐăngĐượcChọnTrướcĐó = nơiĐăngĐãXácĐịnhVịTríĐượcChọn
-        .value as ThôngTinNơiĐăng;
+      const nơiĐăngĐượcChọnTrướcĐó = nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value as ThôngTinNơiĐăng;
       if (!làCùngNơiĐăng(nơiĐăng, nơiĐăngĐượcChọnTrướcĐó)) {
         vịTríString.value = value;
-        nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value = tạoNơiĐăngĐãXácĐịnhVịTrí(
-          value,
-          nơiĐăng,
-        );
+        nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value = tạoNơiĐăngĐãXácĐịnhVịTrí(value, nơiĐăng);
       }
     } else {
       danhSáchLựaChọn.push(<option value={value}>{text}</option>);
@@ -47,15 +38,9 @@ function tạoDanhSáchLựaChọnVịTrí(
   return danhSáchLựaChọn;
 }
 
-function handleChange(
-  vịTríStringĐượcChọn: string,
-  nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí,
-) {
+function handleChange(vịTríStringĐượcChọn: string, nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí) {
   vịTríString.value = vịTríStringĐượcChọn;
-  nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value = tạoNơiĐăngĐãXácĐịnhVịTrí(
-    vịTríStringĐượcChọn,
-    nơiĐăng,
-  );
+  nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value = tạoNơiĐăngĐãXácĐịnhVịTrí(vịTríStringĐượcChọn, nơiĐăng);
 }
 
 export default function NơiĐăngĐượcChọn() {
@@ -92,8 +77,7 @@ export default function NơiĐăngĐượcChọn() {
             class="select select-bordered w-full max-w-xs prose"
             id="vị-trí"
             value={vịTríString.value}
-            onChange={(e) =>
-              handleChange((e.target as HTMLSelectElement).value, nơiĐăng)}
+            onChange={(e) => handleChange((e.target as HTMLSelectElement).value, nơiĐăng)}
             required
           >
             {danhSáchLựaChọnVịTrí}

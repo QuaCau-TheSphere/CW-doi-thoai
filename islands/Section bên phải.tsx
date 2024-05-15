@@ -19,11 +19,9 @@ export default function SectionBênPhải(
   }
   return (
     <article id="khung-bên-phải-khi-có-kết-quả" class="prose">
-      {/* {tạoKếtQuảSaoChép()} */}
       <KếtQuảSaoChép />
       Nội dung trên đã được sao chép sẵn vào bộ nhớ. Truy cập{" "}
-      <a href={liênKếtRútGọnChart}>{liênKếtRútGọnChart}</a>{" "}
-      để xem thống kê lượt truy cập.
+      <a href={liênKếtRútGọnChart}>{liênKếtRútGọnChart}</a> để xem thống kê lượt truy cập.
       <details>
         <summary>Tham số UTM</summary>
         <KếtQuảĐượcChọn loạiVậtThể="tham số UTM" vậtThể={thamSốUTM} />
@@ -37,8 +35,7 @@ export default function SectionBênPhải(
     if (!bàiĐăng["Nội dung bài đăng"]) {
       return (
         <p id="nội-dung-tạo-sẵn">
-          Không tìm thấy nội dung hoặc mô tả ngắn ở bài đăng. Liên kết rút gọn:
-          {" "}
+          Không tìm thấy nội dung hoặc mô tả ngắn ở bài đăng. Liên kết rút gọn:{" "}
           <pre>{liênKếtRútGọn}</pre>
         </p>
       );
@@ -50,8 +47,7 @@ export default function SectionBênPhải(
     } = bàiĐăng["Nội dung bài đăng"];
 
     if (tiêuĐề && môTả) {
-      nộiDungTạoSẵn =
-        `Theo như bài "${tiêuĐề}", thì ${môTả}. Link: ${liênKếtRútGọn}`;
+      nộiDungTạoSẵn = `Theo như bài "${tiêuĐề}", thì ${môTả}. Link: ${liênKếtRútGọn}`;
     } else if (tiêuĐề && nộiDung) {
       nộiDungTạoSẵn = `Về vấn đề này thì mình nghĩ ${tiêuĐề}. ${nộiDung}
 Nếu sau này mình nghĩ ra được thêm điều gì mới thì sẽ cập nhật ghi chú tại ${liênKếtRútGọn}`;
