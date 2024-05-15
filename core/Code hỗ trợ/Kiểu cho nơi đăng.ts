@@ -265,3 +265,32 @@ export type CấuHìnhWebsite = string[] | null;
 export type CấuHìnhEmail = string[] | null;
 export type CấuHìnhCV = string[] | null;
 export type CấuHìnhẢnh = string[] | null;
+
+/** Không xét URL vì có những nơi đăng có nhiều URL khác nhau */
+export function làCùngNơiĐăng(
+  nơiĐăng1: ThôngTinNơiĐăng,
+  nơiĐăng2: ThôngTinNơiĐăng,
+): boolean {
+  if (!nơiĐăng1 || !nơiĐăng2) return false;
+  const {
+    "Loại nền tảng": loạiNềnTảng1,
+    "Tên nền tảng": tênNềnTảng1,
+    "Tên nơi đăng": tênNơiĐăng1,
+    "Loại nơi đăng": loạiNơiĐăng1,
+  } = nơiĐăng1;
+  const {
+    "Loại nền tảng": loạiNềnTảng2,
+    "Tên nền tảng": tênNềnTảng2,
+    "Tên nơi đăng": tênNơiĐăng2,
+    "Loại nơi đăng": loạiNơiĐăng2,
+  } = nơiĐăng2;
+  if (JSON.stringify(loạiNềnTảng1) !== JSON.stringify(loạiNềnTảng2)) {
+    return false;
+  }
+  if (JSON.stringify(tênNềnTảng1) !== JSON.stringify(tênNềnTảng2)) return false;
+  if (JSON.stringify(tênNơiĐăng1) !== JSON.stringify(tênNơiĐăng2)) return false;
+  if (JSON.stringify(loạiNơiĐăng1) !== JSON.stringify(loạiNơiĐăng2)) {
+    return false;
+  }
+  return true;
+}

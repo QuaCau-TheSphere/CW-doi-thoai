@@ -1,8 +1,4 @@
-import {
-  bàiĐăngĐượcChọn,
-  nơiĐăngĐãXácĐịnhVịTríĐượcChọn,
-  vậtThểTiếpThịĐượcTạo,
-} from "./Signals.ts";
+import { bàiĐăngĐượcChọn, vậtThểTiếpThịĐượcTạo } from "./Signals.ts";
 import KhungThôngTinKhiKhôngCóKếtQuả from "../components/KhungThôngTinKhiKhôngCóKếtQuả.tsx";
 import KếtQuảĐượcChọn from "./Kết quả được chọn/Kết quả được chọn.tsx";
 

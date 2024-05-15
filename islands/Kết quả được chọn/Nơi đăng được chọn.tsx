@@ -1,5 +1,4 @@
 import {
-  DanhSáchVịTríCóThểĐăng,
   NơiĐăngChưaXácĐịnhVịTrí,
   tạoNơiĐăngĐãXácĐịnhVịTrí,
 } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
@@ -13,12 +12,16 @@ import {
   tạoTênNơiĐăngString,
   tạoVịTríString,
 } from "../../utils/Hàm cho khung nhập.ts";
+import {
+  làCùngNơiĐăng,
+  ThôngTinNơiĐăng,
+} from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 
 /** Tạo danh sách các phần tử <option> để người dùng lựa chọn vị trí đăng từ danh sách vị trí có thể đăng*/
-function tạoDanhSáchLựaChọn(
-  danhSáchVịTríCóThểĐăng: DanhSáchVịTríCóThểĐăng | undefined,
+function tạoDanhSáchLựaChọnVịTrí(
   nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí,
 ) {
+  const danhSáchVịTríCóThểĐăng = nơiĐăng["Vị trí có thể đăng"];
   if (!danhSáchVịTríCóThểĐăng) return [];
   const danhSáchLựaChọn = [];
   for (const vịTríCóThểĐăng of danhSáchVịTríCóThểĐăng) {
@@ -28,8 +31,9 @@ function tạoDanhSáchLựaChọn(
 
     if (i === 0) {
       danhSáchLựaChọn.push(<option selected value={value}>{text}</option>);
-      const vịTrí = vịTríString.value;
-      if (!vịTrí) {
+      const nơiĐăngĐượcChọnTrướcĐó = nơiĐăngĐãXácĐịnhVịTríĐượcChọn
+        .value as ThôngTinNơiĐăng;
+      if (!làCùngNơiĐăng(nơiĐăng, nơiĐăngĐượcChọnTrướcĐó)) {
         vịTríString.value = value;
         nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value = tạoNơiĐăngĐãXácĐịnhVịTrí(
           value,
@@ -55,15 +59,14 @@ function handleChange(
 }
 
 export default function NơiĐăngĐượcChọn() {
+  console.log("nơi đăng được chọn reload");
   const nơiĐăng = nơiĐăngChưaXácĐịnhVịTríĐượcChọn.value;
   if (!nơiĐăng) return <></>;
   const {
     "Tên nơi đăng": tênNơiĐăng,
     URL: url,
-    "Vị trí có thể đăng": danhSáchVịTríCóThểĐăng,
   } = nơiĐăng;
-  const danhSáchLựaChọn = tạoDanhSáchLựaChọn(danhSáchVịTríCóThểĐăng, nơiĐăng);
-
+  const danhSáchLựaChọnVịTrí = tạoDanhSáchLựaChọnVịTrí(nơiĐăng);
   const tênNơiĐăngString = tạoTênNơiĐăngString(tênNơiĐăng);
   const loạiNơiĐăngString = tạoLoạiNơiĐăngString(nơiĐăng);
   return (
@@ -93,7 +96,7 @@ export default function NơiĐăngĐượcChọn() {
               handleChange((e.target as HTMLSelectElement).value, nơiĐăng)}
             required
           >
-            {danhSáchLựaChọn}
+            {danhSáchLựaChọnVịTrí}
           </select>
         </label>
       </div>

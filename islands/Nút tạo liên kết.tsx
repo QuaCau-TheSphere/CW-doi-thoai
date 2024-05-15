@@ -1,4 +1,3 @@
-import { StateUpdater, useEffect, useState } from "preact/hooks";
 import {
   bàiĐăngĐượcChọn,
   bốiCảnh,

@@ -10,11 +10,19 @@ interface MainProps {
   cấuHìnhNơiĐăngProp: CấuHìnhNơiĐăng;
   textTrangChủ: string;
 }
-export default function Main(
+//@ts-ignore:
+function Test({ danhSáchNơiĐăng, danhSáchBàiĐăng }) {
+  return (
+    <SectionBênTrái
+      danhSáchBàiĐăng={danhSáchBàiĐăng}
+      danhSáchNơiĐăng={danhSáchNơiĐăng}
+    />
+  );
+}
+function Production(
   { danhSáchNơiĐăng, danhSáchBàiĐăng, cấuHìnhNơiĐăngProp, textTrangChủ }:
     MainProps,
 ) {
-  cấuHìnhNơiĐăng.value = cấuHìnhNơiĐăngProp;
   return (
     <main class="flex flex-row gap-3 w-full mb-auto">
       <section id="section-bên-trái" class="basis-1/2 p-10">
@@ -27,5 +35,21 @@ export default function Main(
         <SectionBênPhải text={textTrangChủ} />
       </section>
     </main>
+  );
+}
+export default function Main(
+  { danhSáchNơiĐăng, danhSáchBàiĐăng, cấuHìnhNơiĐăngProp, textTrangChủ }:
+    MainProps,
+) {
+  cấuHìnhNơiĐăng.value = cấuHìnhNơiĐăngProp;
+  return (
+    <Test danhSáchBàiĐăng={danhSáchBàiĐăng} danhSáchNơiĐăng={danhSáchNơiĐăng} />
+  );
+  return (
+    <Production
+      danhSáchBàiĐăng={danhSáchBàiĐăng}
+      danhSáchNơiĐăng={danhSáchNơiĐăng}
+      textTrangChủ={textTrangChủ}
+    />
   );
 }
