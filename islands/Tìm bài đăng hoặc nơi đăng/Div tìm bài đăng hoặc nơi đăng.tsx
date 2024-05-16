@@ -1,5 +1,5 @@
 import Fuse from "https://deno.land/x/fuse@v6.4.1/dist/fuse.esm.js";
-import ModalTạoMới from "../Modal tạo mới/Modal chung.tsx";
+// import ModalTạoMới from "../Modal tạo mới/Modal chung.tsx";
 import KếtQuảĐượcChọn from "../Kết quả được chọn/Kết quả được chọn.tsx";
 import type { MụcĐượcChọn, TênDanhSách } from "../../utils/Kiểu cho web.ts";
 import { kiểuKebab } from "../../utils/Hàm cho khung nhập.ts";
@@ -22,7 +22,7 @@ export default function DivTìmBàiĐăngHoặcNơiĐăng({ tênDanhSách, fuse 
     <div id={`div-${kiểuKebab(tênDanhSách)}`}>
       <InputTìmBàiĐăngHoặcNơiĐăng fuse={fuse} tênDanhSách={tênDanhSách} mụcĐượcChọn={mụcĐượcChọn} />
       <DanhSáchKếtQuảTìmKiếm tênDanhSách={tênDanhSách} mụcĐượcChọn={mụcĐượcChọn} />
-      <ModalTạoMới tênDanhSách={tênDanhSách} mụcĐượcChọn={mụcĐượcChọn} />
+      {/* <ModalTạoMới tênDanhSách={tênDanhSách} mụcĐượcChọn={mụcĐượcChọn} /> */}
       <KếtQuảĐượcChọn loạiVậtThể={tênDanhSách} />
     </div>
   );

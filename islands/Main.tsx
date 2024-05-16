@@ -12,30 +12,20 @@ interface MainProps {
 }
 
 function Test({ danhSáchNơiĐăng, danhSáchBàiĐăng }: Omit<MainProps, "cấuHìnhNơiĐăng" | "textTrangChủ">) {
-  return (
-    <SectionBênTrái
-      danhSáchBàiĐăng={danhSáchBàiĐăng}
-      danhSáchNơiĐăng={danhSáchNơiĐăng}
-    />
-  );
+  return <SectionBênTrái danhSáchBàiĐăng={danhSáchBàiĐăng} danhSáchNơiĐăng={danhSáchNơiĐăng} />;
 }
 
 function Production({ danhSáchNơiĐăng, danhSáchBàiĐăng, textTrangChủ }: Omit<MainProps, "cấuHìnhNơiĐăng">) {
   return (
     <main class="flex flex-row gap-3 w-full mb-auto">
-      <SectionBênTrái
-        danhSáchBàiĐăng={danhSáchBàiĐăng}
-        danhSáchNơiĐăng={danhSáchNơiĐăng}
-      />
+      <SectionBênTrái danhSáchBàiĐăng={danhSáchBàiĐăng} danhSáchNơiĐăng={danhSáchNơiĐăng} />;
       <SectionBênPhải text={textTrangChủ} />
     </main>
   );
 }
 
-export default function Main(
-  { danhSáchNơiĐăng, danhSáchBàiĐăng, cấuHìnhNơiĐăng, textTrangChủ }: MainProps,
-) {
+export default function Main({ danhSáchNơiĐăng, danhSáchBàiĐăng, cấuHìnhNơiĐăng, textTrangChủ }: MainProps) {
   cấuHìnhNơiĐăngSignal.value = cấuHìnhNơiĐăng;
+  return <Production danhSáchBàiĐăng={danhSáchBàiĐăng} danhSáchNơiĐăng={danhSáchNơiĐăng} textTrangChủ={textTrangChủ} />;
   return <Test danhSáchBàiĐăng={danhSáchBàiĐăng} danhSáchNơiĐăng={danhSáchNơiĐăng} />;
-  // return <Production danhSáchBàiĐăng={danhSáchBàiĐăng} danhSáchNơiĐăng={danhSáchNơiĐăng} textTrangChủ={textTrangChủ} />;
 }
