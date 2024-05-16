@@ -4,6 +4,21 @@ import { TênDanhSách, VậtThểTiếpThị } from "./Kiểu cho web.ts";
 import { lầnĐăngGầnNhất } from "../islands/Signals tổng.ts";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 
+export interface ReqBàiĐăngHoặcNơiĐăngTạoMới {
+  "Tên danh sách": TênDanhSách;
+  "Dữ liệu": BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí;
+}
+
+export async function ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv(dữLiệuMới: ReqBàiĐăngHoặcNơiĐăngTạoMới) {
+  const url = `${origin}/api/thêm-bài-đăng-hoặc-nơi-đăng-mới`;
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(dữLiệuMới),
+  });
+  return await res.json();
+}
+
 /** Không dùng cho `await Response`, mà dùng cho `await (await Response).json()` */
 export interface PhảnHồiTừCORSProxy {
   "Nếu là bài đăng": BàiĐăng;
@@ -16,7 +31,7 @@ export interface PhảnHồiTừCORSProxy {
 
 export type PhảnHồiTừAPITìmVậtThểTiếpThịĐãCó = Deno.KvEntry<VậtThểTiếpThị>;
 
-export async function kiểmTraLầnĐăngĐãCóTrênKv(bàiĐăng: BàiĐăng, nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí) {
+export async function tìmVậtThểTiếpThịĐãCó(bàiĐăng: BàiĐăng, nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí) {
   const apiTìmVậtThểTiếpThịĐãCó = `${origin}/api/tìm-vật-thể-tiếp-thị-đã-có`;
   const res = await fetch(apiTìmVậtThểTiếpThịĐãCó, {
     method: "POST",
@@ -40,19 +55,4 @@ export async function ghiLênKV(vậtThểTiếpThị: VậtThểTiếpThị) {
     body: JSON.stringify(vậtThểTiếpThị),
   });
   console.log("Đã thêm thành công vật thể tiếp thị vào cơ sở dữ liệu:", res);
-}
-
-export interface ReqBàiĐăngHoặcNơiĐăngTạoMới {
-  "Tên danh sách": TênDanhSách;
-  "Dữ liệu": BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí;
-}
-
-export async function ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv(dữLiệuMới: ReqBàiĐăngHoặcNơiĐăngTạoMới) {
-  const url = `${origin}/api/newData`;
-  const res = await fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(dữLiệuMới),
-  });
-  return await res.json();
 }

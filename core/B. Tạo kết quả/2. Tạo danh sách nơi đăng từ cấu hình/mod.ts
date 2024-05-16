@@ -11,8 +11,9 @@ import { vậtThểVịTríCóThôngTinNơiĐăng, tạoDanhSáchVịTríCóTh�
 import { parse } from "$std/yaml/mod.ts";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { CấuHìnhVịTrí } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { tạoChuỗiNgẫuNhiên } from "../../Code hỗ trợ/Code hỗ trợ.ts";
 
-function tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăng[]) {
+function tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: Omit<ThôngTinNơiĐăng, 'id'>[]) {
   const cấuHìnhNơiĐăngDiễnĐàn = cấuHìnhNơiĐăng["Diễn đàn"];
   if (!cấuHìnhNơiĐăngDiễnĐàn) return;
   for (const [tênDiễnĐàn, vậtThểLàmGiáTrịChoTênDiễnĐàn] of Object.entries(cấuHìnhNơiĐăngDiễnĐàn) as [TênDiễnĐàn, CấuHìnhNơiĐăngDiễnĐàn][]) {
@@ -31,7 +32,7 @@ function tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, d
   }
 }
 
-function tạoDanhSáchKhác(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăng[]) {
+function tạoDanhSáchKhác(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: Omit<ThôngTinNơiĐăng, 'id'>[]) {
   for (const loạiNơiĐăngKhác of danhSáchNơiĐăngKhác) {
     const cấuHìnhLoạiNơiĐăngKhác = cấuHìnhNơiĐăng[loạiNơiĐăngKhác];
     if (!cấuHìnhLoạiNơiĐăngKhác) continue;
@@ -67,6 +68,8 @@ export default function tạoDanhSáchNơiĐăngCXĐVT(cấuHìnhNơiĐăng: C�
         );
       }
     }
+    thôngTinNơiĐăng.id= tạoChuỗiNgẫuNhiên(4) 
+
   }
   return danhSáchNơiĐăng
 }

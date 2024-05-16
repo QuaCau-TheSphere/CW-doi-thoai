@@ -15,7 +15,11 @@ import ThamSốUTM, {
   TênNơiĐăngString,
   ĐuôiRútGọn,
 } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91%20UTM.ts";
-import { lấyKýHiệuViếtTắt, tạoLiênKếtUTM } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Code%20h%E1%BB%97%20tr%E1%BB%A3.ts";
+import {
+  lấyKýHiệuViếtTắt,
+  tạoChuỗiNgẫuNhiên,
+  tạoLiênKếtUTM,
+} from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Code%20h%E1%BB%97%20tr%E1%BB%A3.ts";
 import { BốiCảnh } from "../../utils/Ki%E1%BB%83u%20cho%20web.ts";
 import CấuHìnhNơiĐăng, {
   LoạiNơiĐăngChat,
@@ -161,7 +165,7 @@ export function tạoĐuôiRútGọn(
 ): ĐuôiRútGọn {
   let phầnChoBàiĐăng: string | undefined;
 
-  const { "Mã bài đăng": mãBàiĐăng, "Dự án": dựÁn } = bàiĐăng;
+  const { "Mã bài đăng": mãBàiĐăng, "Dự án": dựÁn, id: idBàiĐăng } = bàiĐăng;
   if (mãBàiĐăng) {
     phầnChoBàiĐăng = mãBàiĐăng;
   } else if (dựÁn) {
@@ -169,26 +173,16 @@ export function tạoĐuôiRútGọn(
     phầnChoBàiĐăng = mãDựÁn || lấyKýHiệuViếtTắt(tênDựÁn, cấuHìnhNơiĐăng);
   }
   if (phầnChoBàiĐăng === undefined) {
-    phầnChoBàiĐăng = tạoChuỗiNgẫuNhiên(4);
+    phầnChoBàiĐăng = idBàiĐăng || tạoChuỗiNgẫuNhiên(4);
   }
 
-  const { "Mã nơi đăng": mãNơiĐăng, "Tên nơi đăng": tênNơiĐăng } = nơiĐăng;
+  const { "Mã nơi đăng": mãNơiĐăng, "Tên nơi đăng": tênNơiĐăng, id: idNơiĐăng } = nơiĐăng;
   const phầnChoNơiĐăng = mãNơiĐăng ||
     lấyKýHiệuViếtTắt(tênNơiĐăng[0], cấuHìnhNơiĐăng) ||
+    idNơiĐăng ||
     tạoChuỗiNgẫuNhiên(4);
 
   return `${phầnChoBàiĐăng}.${phầnChoNơiĐăng}.${lầnĐăng}`;
-
-  function tạoChuỗiNgẫuNhiên(n: number): string {
-    const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-    let kếtQuả: string = "";
-    for (let i = 0; i < n; i++) {
-      kếtQuả += characters.charAt(
-        Math.floor(Math.random() * characters.length),
-      );
-    }
-    return kếtQuả;
-  }
 }
 
 export default function tạoThamSốUTMVàLiênKếtRútGọn(

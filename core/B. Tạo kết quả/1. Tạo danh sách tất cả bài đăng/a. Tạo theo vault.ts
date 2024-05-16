@@ -13,12 +13,8 @@ import {
   type ĐườngDẫnTuyệtĐối,
   ĐườngDẫnTươngĐối,
 } from "../../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
-import {
-  THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT,
-  THƯ_MỤC_DỰ_ÁN,
-  THƯ_MỤC_THIẾT_LẬP,
-  TẬP_TIN_THIẾT_LẬP,
-} from "../../Code%20h%E1%BB%97%20tr%E1%BB%A3/H%E1%BA%B1ng.ts";
+import { THƯ_MỤC_DỰ_ÁN, THƯ_MỤC_THIẾT_LẬP, TẬP_TIN_THIẾT_LẬP } from "../../Code hỗ trợ/env.ts";
+import { tạoChuỗiNgẫuNhiên } from "../../Code hỗ trợ/Code hỗ trợ.ts";
 
 async function cóThưMụcObsidianBênTrong(thưMục: string) {
   try {
@@ -30,9 +26,7 @@ async function cóThưMụcObsidianBênTrong(thưMục: string) {
   }
 }
 
-export async function tạoDanhSáchThôngTinTấtCảCácVault(
-  thưMụcChứaTấtCảCácVault: ĐườngDẫnTuyệtĐối,
-): Promise<Vault[]> {
+export async function tạoDanhSáchThôngTinTấtCảCácVault(thưMụcChứaTấtCảCácVault: ĐườngDẫnTuyệtĐối): Promise<Vault[]> {
   const danhSáchThôngTinTấtCảCácVault: Vault[] = [];
   await tìmThưMụcObsidian(thưMụcChứaTấtCảCácVault);
   return danhSáchThôngTinTấtCảCácVault;
@@ -41,21 +35,12 @@ export async function tạoDanhSáchThôngTinTấtCảCácVault(
     for await (const dirEntry of Deno.readDir(thưMục)) {
       const đườngDẫnTớiThưMụcCon = join(thưMục, dirEntry.name);
       if (await cóThưMụcObsidianBênTrong(đườngDẫnTớiThưMụcCon)) {
-        const đườngDẫnTớiTậpTinThiếtLập = join(
-          đườngDẫnTớiThưMụcCon,
-          TẬP_TIN_THIẾT_LẬP,
-        );
+        const đườngDẫnTớiTậpTinThiếtLập = join(đườngDẫnTớiThưMụcCon, TẬP_TIN_THIẾT_LẬP);
         try {
-          await nạpThiếtLậpCủaVaultVàoDanhSách(
-            đườngDẫnTớiTậpTinThiếtLập,
-            đườngDẫnTớiThưMụcCon,
-          );
+          await nạpThiếtLậpCủaVaultVàoDanhSách(đườngDẫnTớiTậpTinThiếtLập, đườngDẫnTớiThưMụcCon);
           continue;
         } catch {
-          console.error(
-            `Không tìm thấy thiết lập vault tại ${đườngDẫnTớiThưMụcCon}`,
-          );
-          // throw error
+          console.error(`Không tìm thấy thiết lập vault tại ${đườngDẫnTớiThưMụcCon}`);
         }
       } else if (dirEntry.isDirectory) {
         await tìmThưMụcObsidian(đườngDẫnTớiThưMụcCon);
@@ -63,13 +48,8 @@ export async function tạoDanhSáchThôngTinTấtCảCácVault(
     }
   }
 
-  async function nạpThiếtLậpCủaVaultVàoDanhSách(
-    đườngDẫnTớiTậpTinThiếtLập: string,
-    đườngDẫnTớiThưMụcCon: string,
-  ) {
-    const thôngTinThiếtLập = extract(
-      await Deno.readTextFile(đườngDẫnTớiTậpTinThiếtLập),
-    ).attrs as unknown as Vault;
+  async function nạpThiếtLậpCủaVaultVàoDanhSách(đườngDẫnTớiTậpTinThiếtLập: string, đườngDẫnTớiThưMụcCon: string) {
+    const thôngTinThiếtLập = extract(await Deno.readTextFile(đườngDẫnTớiTậpTinThiếtLập)).attrs as unknown as Vault;
     const tênVault = thôngTinThiếtLập["Tên vault"];
     danhSáchThôngTinTấtCảCácVault.push({
       "Tên vault": tênVault,
@@ -95,9 +75,7 @@ export async function tạoDanhSáchĐườngDẫnCủaTấtCảCácBàiĐăngTr
   async function xétTừngTậpTinVàThưMụcBênTrong(thưMục: ĐườngDẫnTuyệtĐối) {
     for await (const dirEntry of Deno.readDir(thưMục)) {
       /** Loại các thư mục thiết lập (Ξ Thiết lập, .obsidian, .git, .vscode, .stfolder, v.v.) */
-      if (dirEntry.name[0] === "." || dirEntry.name === THƯ_MỤC_THIẾT_LẬP) {
-        continue;
-      }
+      if (dirEntry.name[0] === "." || dirEntry.name === THƯ_MỤC_THIẾT_LẬP) continue;
 
       if (dirEntry.isDirectory) {
         const đườngDẫnTớiThưMụcCon = join(thưMục, dirEntry.name);
@@ -113,9 +91,7 @@ export async function tạoDanhSáchĐườngDẫnCủaTấtCảCácBàiĐăngTr
           try {
             const frontmatter = extract(text).attrs;
             if (frontmatter.share === true) {
-              danhSáchĐườngDẫnCủaTấtCảCácBàiĐăngTrongVault.push(
-                đườngDẫnTớiGhiChú,
-              );
+              danhSáchĐườngDẫnCủaTấtCảCácBàiĐăngTrongVault.push(đườngDẫnTớiGhiChú);
             }
           } catch {
             continue;
@@ -134,15 +110,12 @@ function xácĐịnhURLCủaGhiChú(
   đườngDẫnTớiVault: ĐườngDẫnTuyệtĐối,
   urlVault: URLString,
 ) {
-  const đườngDẫnTươngĐốiCủaGhiChúTrongVault: ĐườngDẫnTươngĐối =
-    đườngDẫnTớiGhiChú.replace(đườngDẫnTớiVault, "");
+  const đườngDẫnTươngĐốiCủaGhiChúTrongVault: ĐườngDẫnTươngĐối = đườngDẫnTớiGhiChú.replace(đườngDẫnTớiVault, "");
   const tênTậpTin = basename(đườngDẫnTớiGhiChú, ".md");
-  const thưMụcMẹTrựcTiếp =
-    đườngDẫnTươngĐốiCủaGhiChúTrongVault.split(SEPARATOR_PATTERN).slice(-1)[0];
+  const thưMụcMẹTrựcTiếp = đườngDẫnTươngĐốiCủaGhiChúTrongVault.split(SEPARATOR_PATTERN).slice(-1)[0];
 
   /** Nếu đường dẫn bài viết là a/a.md, thì url là a. Nếu đường dẫn bài viết là a/b.md, thì url là a/b */
-  const đườngDẫnTươngĐốiTớiTậpTinHTMLCủaGhiChú: string[] =
-    đườngDẫnTươngĐốiCủaGhiChúTrongVault.split(SEPARATOR_PATTERN);
+  const đườngDẫnTươngĐốiTớiTậpTinHTMLCủaGhiChú: string[] = đườngDẫnTươngĐốiCủaGhiChúTrongVault.split(SEPARATOR_PATTERN);
   if (tênTậpTin !== thưMụcMẹTrựcTiếp) {
     đườngDẫnTươngĐốiTớiTậpTinHTMLCủaGhiChú.pop();
     đườngDẫnTươngĐốiTớiTậpTinHTMLCủaGhiChú.push(tênTậpTin);
@@ -157,10 +130,7 @@ function xácĐịnhURLCủaGhiChú(
 }
 
 /** Nếu có title trong frontmatter thì lấy làm tiêu đề, còn không thì lấy filename */
-function xácĐịnhTiêuĐềGhiChú(
-  đườngDẫnTớiGhiChú: ĐườngDẫnTuyệtĐối,
-  frontmatter: YAMLCủaGhiChú,
-): string {
+function xácĐịnhTiêuĐềGhiChú(đườngDẫnTớiGhiChú: ĐườngDẫnTuyệtĐối, frontmatter: YAMLCủaGhiChú): string {
   if (frontmatter.title) {
     return frontmatter.title;
   } else {
@@ -168,17 +138,11 @@ function xácĐịnhTiêuĐềGhiChú(
   }
 }
 
-function xácĐịnhTênDựÁn(
-  đườngDẫnTớiGhiChú: ĐườngDẫnTuyệtĐối,
-): TênDựÁn {
+function xácĐịnhTênDựÁn(đườngDẫnTớiGhiChú: ĐườngDẫnTuyệtĐối): TênDựÁn {
   if (đườngDẫnTớiGhiChú.includes(THƯ_MỤC_DỰ_ÁN)) {
-    const đườngDẫnTớiGhiChúDạngMảng = đườngDẫnTớiGhiChú.split(
-      SEPARATOR_PATTERN,
-    );
-    const vịTríCuảThưMụcDựÁnTrongMảng = đườngDẫnTớiGhiChúDạngMảng.indexOf(
-      THƯ_MỤC_DỰ_ÁN,
-    );
-    return đườngDẫnTớiGhiChúDạngMảng[vịTríCuảThưMụcDựÁnTrongMảng + 1]; //
+    const đườngDẫnTớiGhiChúDạngMảng = đườngDẫnTớiGhiChú.split(SEPARATOR_PATTERN);
+    const vịTríCuảThưMụcDựÁnTrongMảng = đườngDẫnTớiGhiChúDạngMảng.indexOf(THƯ_MỤC_DỰ_ÁN);
+    return đườngDẫnTớiGhiChúDạngMảng[vịTríCuảThưMụcDựÁnTrongMảng + 1];
   } else {
     return undefined;
   }
@@ -188,32 +152,24 @@ export default async function tạoDanhSáchBàiĐăngTrênVault(
   thưMụcChứaTấtCảCácVault: ĐườngDẫnTuyệtĐối,
 ): Promise<BàiĐăng[]> {
   const danhSáchBàiĐăng: BàiĐăng[] = [];
-  const danhSáchTấtCảCácVault = await tạoDanhSáchThôngTinTấtCảCácVault(
-    thưMụcChứaTấtCảCácVault,
-  );
+  const danhSáchTấtCảCácVault = await tạoDanhSáchThôngTinTấtCảCácVault(thưMụcChứaTấtCảCácVault);
   for (const vault of danhSáchTấtCảCácVault) {
     /** Bài đăng là những ghi chú được chia sẻ (có `share: true` trên frontmatter) */
     const danhSáchĐườngDẫnTấtCảCácBàiĐăngTrongVault: ĐườngDẫnTuyệtĐối[] =
-      await tạoDanhSáchĐườngDẫnCủaTấtCảCácBàiĐăngTrongVault(
-        vault["Nơi lưu vault"],
-      );
+      await tạoDanhSáchĐườngDẫnCủaTấtCảCácBàiĐăngTrongVault(vault["Nơi lưu vault"]);
 
     for (const đườngDẫnTớiGhiChú of danhSáchĐườngDẫnTấtCảCácBàiĐăngTrongVault) {
       const text = extract(await Deno.readTextFile(đườngDẫnTớiGhiChú));
       const frontmatter = text.attrs as YAMLCủaGhiChú;
       const tiêuĐề = await xácĐịnhTiêuĐềGhiChú(đườngDẫnTớiGhiChú, frontmatter);
-      const url = xácĐịnhURLCủaGhiChú(
-        đườngDẫnTớiGhiChú,
-        vault["Nơi lưu vault"],
-        vault.URL,
-      );
+      const url = xácĐịnhURLCủaGhiChú(đườngDẫnTớiGhiChú, vault["Nơi lưu vault"], vault.URL);
       const tênDựÁn: TênDựÁn = xácĐịnhTênDựÁn(đườngDẫnTớiGhiChú);
       const nộiDung = text.body;
       const môTảBàiĐăng = frontmatter.description;
 
       danhSáchBàiĐăng.push({
         "Tiêu đề": tiêuĐề,
-        url: url,
+        "URL": url,
         Vault: vault["Tên vault"],
         "Dự án": {
           "Tên dự án": tênDựÁn,
@@ -225,6 +181,7 @@ export default async function tạoDanhSáchBàiĐăngTrênVault(
           "Toàn bộ nội dung": nộiDung,
           "Định dạng nội dung": "md",
         },
+        id: tạoChuỗiNgẫuNhiên(4),
       });
     }
   }

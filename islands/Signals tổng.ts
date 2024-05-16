@@ -3,7 +3,7 @@ import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm
 import CấuHìnhNơiĐăng, { NơiĐăngĐãXácĐịnhVịTrí } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { BàiĐăng } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { ElementDùngTab, VậtThểTiếpThị } from "../utils/Kiểu cho web.ts";
-import { kiểmTraLầnĐăngĐãCóTrênKv } from "../utils/Hàm và kiểu cho API server.ts";
+import { tìmVậtThểTiếpThịĐãCó } from "../utils/Hàm và kiểu cho API server.ts";
 
 export const cấuHìnhNơiĐăngSignal = signal<CấuHìnhNơiĐăng>({});
 
@@ -38,5 +38,5 @@ effect(() => {
   const nơiĐăng = nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value;
 
   if (!bàiĐăng || !nơiĐăng) return;
-  kiểmTraLầnĐăngĐãCóTrênKv(bàiĐăng, nơiĐăng).catch(console.error);
+  tìmVậtThểTiếpThịĐãCó(bàiĐăng, nơiĐăng).catch(console.error);
 });

@@ -8,6 +8,7 @@ import { LoạiNềnTảng, TênNềnTảng } from "../../core/Code hỗ trợ/K
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { element } from "../Signals tổng.ts";
 import { ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv } from "../../utils/Hàm và kiểu cho API server.ts";
+import { tạoChuỗiNgẫuNhiên } from "../../core/Code hỗ trợ/Code hỗ trợ.ts";
 
 function CácTrườngNhậpMới({ tênDanhSách }: { tênDanhSách: TênDanhSách }) {
   switch (tênDanhSách) {
@@ -46,6 +47,7 @@ function tạoVậtThểDữLiệuMới(formData: Record<string, FormDataEntryVa
           "Định dạng nội dung": undefined,
         },
         Vault: vault,
+        id: tạoChuỗiNgẫuNhiên(4),
       } satisfies BàiĐăng;
       break;
     }
@@ -67,6 +69,7 @@ function tạoVậtThểDữLiệuMới(formData: Record<string, FormDataEntryVa
         "Mô tả nơi đăng": môTảNơiĐăng,
         "Loại nền tảng": loạiNềnTảng as LoạiNềnTảng,
         "Vị trí có thể đăng": JSON.parse(vịTríCóThểĐăng),
+        id: tạoChuỗiNgẫuNhiên(4),
       } satisfies NơiĐăngChưaXácĐịnhVịTrí;
       break;
     }

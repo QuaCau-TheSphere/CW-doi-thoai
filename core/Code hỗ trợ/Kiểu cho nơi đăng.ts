@@ -57,6 +57,7 @@ export interface ThôngTinNơiĐăng {
   "Lĩnh vực"?: string[];
   "Mô tả nơi đăng"?: string;
   "Mã nơi đăng"?: string;
+  id: string;
 }
 export class NơiĐăngĐãXácĐịnhVịTrí implements ThôngTinNơiĐăng {
   "Loại nền tảng": LoạiNềnTảng;
@@ -68,7 +69,7 @@ export class NơiĐăngĐãXácĐịnhVịTrí implements ThôngTinNơiĐăng {
   "Mô tả nơi đăng"?: string;
   "Mã nơi đăng"?: string;
   "Vị trí": VịTrí;
-
+  "id": string;
   // constructor(
   //   tênNơiĐăng: TênNơiĐăng = "",
   //   tênCộngĐồng: string = "",

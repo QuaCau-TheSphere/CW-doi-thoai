@@ -7,7 +7,7 @@ import * as $_slug_index from "./routes/[slug]/index.ts";
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $api_cors_proxy_string_ from "./routes/api/cors-proxy/[...string].ts";
-import * as $api_newData from "./routes/api/newData.ts";
+import * as $api_thêm_bài_đăng_hoặc_nơi_đăng_mới from "./routes/api/thêm-bài-đăng-hoặc-nơi-đăng-mới.ts";
 import * as $api_tìm_vật_thể_tiếp_thị_đã_có from "./routes/api/tìm-vật-thể-tiếp-thị-đã-có.ts";
 import * as $index from "./routes/index.tsx";
 import * as $lmn from "./routes/lmn.ts";
@@ -38,7 +38,7 @@ const manifest = {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
     "./routes/api/cors-proxy/[...string].ts": $api_cors_proxy_string_,
-    "./routes/api/newData.ts": $api_newData,
+    "./routes/api/thêm-bài-đăng-hoặc-nơi-đăng-mới.ts": $api_thêm_bài_đăng_hoặc_nơi_đăng_mới,
     "./routes/api/tìm-vật-thể-tiếp-thị-đã-có.ts": $api_tìm_vật_thể_tiếp_thị_đã_có,
     "./routes/index.tsx": $index,
     "./routes/lmn.ts": $lmn,

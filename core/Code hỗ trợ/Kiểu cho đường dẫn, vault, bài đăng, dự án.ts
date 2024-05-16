@@ -1,4 +1,5 @@
 import { parse, ParsedPath } from "$std/path/mod.ts";
+import { tạoChuỗiNgẫuNhiên } from "./Code hỗ trợ.ts";
 
 /** Đường dẫn */
 export type URLString = string | URL;
@@ -62,6 +63,7 @@ export class BàiĐăng {
   "Tác giả"?: string;
   "Ngày tạo"?: Date;
   "Ngày cập nhật"?: Date;
+  id: string;
   constructor(
     tiêuĐề: string = "",
     url: URLString = "",
@@ -83,5 +85,6 @@ export class BàiĐăng {
     this.Vault = vault;
     this["Mã bài đăng"] = mãBàiĐăng;
     this["Nội dung bài đăng"] = nộiDung;
+    this.id = tạoChuỗiNgẫuNhiên(4);
   }
 }

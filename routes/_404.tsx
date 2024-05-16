@@ -1,6 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
 import Meta from "../components/Meta.tsx";
-import { ORIGIN } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/H%E1%BA%B1ng.ts";
+import { ORIGIN } from "../core/Code hỗ trợ/env.ts";
 
 export default function Error404() {
   return (
@@ -8,9 +8,8 @@ export default function Error404() {
       <Head>
         <title>404 - Page not found</title>
         <script>
-          (function(w,d,s,l,i)&#123;w[l]=w[l]||[];w[l].push(&#123;'gtm.start':
-          new Date().getTime(),event:'gtm.js'&#125;);var
-          f=d.getElementsByTagName(s)[0],
+          (function(w,d,s,l,i)&#123;w[l]=w[l]||[];w[l].push(&#123;'gtm.start': new
+          Date().getTime(),event:'gtm.js'&#125;);var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           &#125;)(window,document,'script','dataLayer','GTM-MWZ4WG7');
