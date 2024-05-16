@@ -2,7 +2,7 @@ import {
   BàiĐăng,
   DựÁn,
 } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
-import ThamSốUTMVàLiênKếtRútGọn, {
+import ThamSốUTM, {
   Campaign,
   Content,
   Medium,
@@ -15,10 +15,7 @@ import ThamSốUTMVàLiênKếtRútGọn, {
   TênNơiĐăngString,
   ĐuôiRútGọn,
 } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91%20UTM.ts";
-import {
-  lấyKýHiệuViếtTắt,
-  tạoLiênKếtUTM,
-} from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Code%20h%E1%BB%97%20tr%E1%BB%A3.ts";
+import { lấyKýHiệuViếtTắt, tạoLiênKếtUTM } from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Code%20h%E1%BB%97%20tr%E1%BB%A3.ts";
 import { BốiCảnh } from "../../utils/Ki%E1%BB%83u%20cho%20web.ts";
 import CấuHìnhNơiĐăng, {
   LoạiNơiĐăngChat,
@@ -26,6 +23,7 @@ import CấuHìnhNơiĐăng, {
   NơiĐăngĐãXácĐịnhVịTrí,
 } from "../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { tạoVịTríString } from "../../utils/Hàm cho khung nhập.ts";
+import VậtThểThamSốUTM from "../Code hỗ trợ/Kiểu cho tham số UTM.ts";
 
 /** Chủ yếu là thể hiện loại nền tảng, tên nền tảng, loại nơi đăng một cách ngắn gọn. Có những nơi đăng nhìn vào là biết loại nền tảng nào, ví dụ r/subreddit, hoặc email@domain.com */
 function tạoSource(
@@ -155,7 +153,7 @@ function tạoTerm(lĩnhVực: string[] | undefined): Term {
  * @param cấuHìnhNơiĐăng dùng để tìm chuỗi viết tắt
  * @returns `phầnChoBàiĐăng.phầnChoNơiĐăng.lầnĐăng`
  */
-function tạoĐuôiRútGọn(
+export function tạoĐuôiRútGọn(
   bàiĐăng: BàiĐăng,
   nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí,
   lầnĐăng: number,
@@ -194,14 +192,13 @@ function tạoĐuôiRútGọn(
 }
 
 export default function tạoThamSốUTMVàLiênKếtRútGọn(
-  { bàiĐăng, nơiĐăng, bốiCảnh, lầnĐăng, cấuHìnhNơiĐăng }: {
+  { bàiĐăng, nơiĐăng, bốiCảnh, cấuHìnhNơiĐăng }: {
     bàiĐăng: BàiĐăng;
     nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí;
     bốiCảnh: BốiCảnh;
-    lầnĐăng: number;
     cấuHìnhNơiĐăng: CấuHìnhNơiĐăng;
   },
-): ThamSốUTMVàLiênKếtRútGọn {
+): VậtThểThamSốUTM {
   const url = bàiĐăng.URL;
   const dựÁn = bàiĐăng["Dự án"];
   const loạiNềnTảng = nơiĐăng["Loại nền tảng"];
@@ -217,7 +214,5 @@ export default function tạoThamSốUTMVàLiênKếtRútGọn(
   return {
     "Tham số UTM": thamSốUTM,
     "Liên kết UTM": tạoLiênKếtUTM(url, thamSốUTM),
-    "Lần đăng": lầnĐăng,
-    "Đuôi rút gọn": tạoĐuôiRútGọn(bàiĐăng, nơiĐăng, lầnĐăng, cấuHìnhNơiĐăng),
   };
 }

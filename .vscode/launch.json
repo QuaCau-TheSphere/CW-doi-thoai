@@ -32,7 +32,8 @@
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "C:\\Users\\ganuo\\AppData\\Local\\Microsoft\\WinGet\\Links\\deno.EXE",
       "runtimeArgs": [
-        "test",
+        "run",
+        // "test",
         // "--inspect-wait",
         "--inspect-brk",
         "--allow-all",

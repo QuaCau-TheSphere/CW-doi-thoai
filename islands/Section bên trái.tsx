@@ -52,12 +52,11 @@ export default function SectionBênTrái(
   });
 
   return (
-    <>
+    <section id="section-bên-trái" class="basis-1/2 p-10 space-y-5">
       <DivTìmBàiĐăngHoặcNơiĐăng tênDanhSách="bài đăng" fuse={fuseBàiĐăng} />
       <DivTìmBàiĐăngHoặcNơiĐăng tênDanhSách="nơi đăng" fuse={fuseNơiĐăng} />
       <KhungNhậpBốiCảnh />
-      <br />
       <NútTạoLiênKết />
-    </>
+    </section>
   );
 }

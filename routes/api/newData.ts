@@ -3,6 +3,7 @@ import { Handlers } from "$fresh/server.ts";
 import { BàiĐăng } from "../../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { TênDanhSách } from "../../utils/Kiểu cho web.ts";
+import { ReqBàiĐăngHoặcNơiĐăngTạoMới } from "../../utils/Hàm và kiểu cho API server.ts";
 
 function tạoKey(
   tênDanhSách: TênDanhSách,
@@ -45,10 +46,6 @@ function tạoKey(
   }
 }
 
-interface ReqBàiĐăngHoặcNơiĐăngTạoMới {
-  "Tên danh sách": TênDanhSách;
-  "Dữ liệu": BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí;
-}
 export const handler: Handlers = {
   async POST(req, ctx) {
     const kv = await Deno.openKv();

@@ -1,6 +1,6 @@
 import { Handlers } from "$fresh/server.ts";
 import { getMetaTags } from "https://deno.land/x/opengraph@v1.0.0/mod.ts";
-import { BàiĐăng } from "../../../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { BàiĐăng, URLString } from "../../../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import {
   danhSáchDiễnĐàn,
   danhSáchNềnTảngChat,
@@ -29,7 +29,7 @@ interface MetaTags {
   locale: string;
 }
 
-function lấyURL(ctx: FreshContext<Record<string, unknown>, any, any>) {
+function lấyURL(ctx: FreshContext<Record<string, unknown>>) {
   const fullUrl = ctx.url.href;
   const temp = fullUrl.split("/api/cors-proxy/");
   temp.shift();
@@ -78,7 +78,7 @@ async function tạoNơiĐăng(
             loạiNơiĐăng = ["Danh sách phát"];
           } else if (pathname.includes("/@")) {
             loạiNơiĐăng = ["Kênh"];
-          } else if (pathname.includes("watch")) {
+          } else {
             loạiNơiĐăng = ["Video"];
           }
         }
@@ -114,9 +114,10 @@ async function tạoNơiĐăng(
   return tạoNơiĐăngChưaXácĐịnhVịTrí(thôngTinNơiĐăng, cấuHìnhVịTrí);
 }
 
-async function tạoBàiĐăngHoặcNơiĐăng(
-  url: URL,
+export async function tạoBàiĐăngHoặcNơiĐăng(
+  urlString: URLString,
 ): Promise<{ bàiĐăng: BàiĐăng; nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí }> {
+  const url = new URL(urlString);
   const og = (await getMetaTags(url.href)).og as MetaTags;
   assert(og);
   const title = lấyTitle(og.title);

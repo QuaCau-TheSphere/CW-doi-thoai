@@ -1,32 +1,24 @@
 import {
   bàiĐăngĐượcChọn,
   bốiCảnh,
-  cấuHìnhNơiĐăng,
+  cấuHìnhNơiĐăngSignal,
   lầnĐăngHiệnTại,
   nơiĐăngĐãXácĐịnhVịTríĐượcChọn,
   tênNút,
   vậtThểTiếpThịĐượcTạo,
 } from "./Signals tổng.ts";
-import tạoThamSốUTMVàLiênKếtRútGọn from "../core/B. Tạo kết quả/3. Tạo tham số UTM và liên kết rút gọn.ts";
+import tạoThamSốUTMVàLiênKếtRútGọn, {
+  tạoĐuôiRútGọn,
+} from "../core/B. Tạo kết quả/3. Tạo tham số UTM và liên kết rút gọn.ts";
+import { ghiLênKV } from "../utils/Hàm và kiểu cho API server.ts";
 
-async function ghiLênKV() {
-  const đuôiRútGọn = vậtThểTiếpThịĐượcTạo.value?.["Đuôi rút gọn"];
-  const liênKếtRútGọn = `${origin}/${đuôiRútGọn}`;
-  const res = await fetch(liênKếtRútGọn, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(vậtThểTiếpThịĐượcTạo.value),
-  });
-  // console.log("Đã thêm thành công vật thể tiếp thị vào cơ sở dữ liệu:", res);
-}
-
-function tạoVậtThểTiếpThị() {
+async function tạoVậtThểTiếpThị() {
   console.log("tạo vật thể tiếp thị");
   const bàiĐăng = bàiĐăngĐượcChọn.value;
   const nơiĐăng = nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value;
   const bốicảnh = bốiCảnh.value;
+  const cấuHìnhNơiĐăng = cấuHìnhNơiĐăngSignal.value;
+  const lầnĐăng = lầnĐăngHiệnTại.value;
 
   if (!bàiĐăng) {
     console.error("Chưa có bài đăng");
@@ -41,24 +33,25 @@ function tạoVậtThểTiếpThị() {
       bàiĐăng: bàiĐăng,
       nơiĐăng: nơiĐăng,
       bốiCảnh: bốicảnh,
-      lầnĐăng: lầnĐăngHiệnTại.value,
-      cấuHìnhNơiĐăng: cấuHìnhNơiĐăng.value,
+      cấuHìnhNơiĐăng: cấuHìnhNơiĐăng,
     },
   );
-  const thờiĐiểmTạo = new Date();
+
   vậtThểTiếpThịĐượcTạo.value = {
     ...{
       "Bài đăng": bàiĐăng,
       "Nơi đăng": nơiĐăng,
-      "Thời điểm tạo": thờiĐiểmTạo,
+      "Thời điểm tạo": new Date(),
+      "Lần đăng": lầnĐăng,
+      "Đuôi rút gọn": tạoĐuôiRútGọn(bàiĐăng, nơiĐăng, lầnĐăng, cấuHìnhNơiĐăng),
       "Các lần truy cập": {},
     },
     ...thamSốUTMVàLiênKếtRútGọn,
   };
-  // console.info("Bài đăng được chọn:", bàiĐăng);
-  // console.info("Nơi đăng được chọn:", nơiĐăng);
+  console.info("Bài đăng được chọn:", bàiĐăng);
+  console.info("Nơi đăng được chọn:", nơiĐăng);
 
-  ghiLênKV().catch(console.error);
+  await ghiLênKV(vậtThểTiếpThịĐượcTạo.value);
 }
 
 export function NútTạoLiênKết() {
@@ -66,7 +59,7 @@ export function NútTạoLiênKết() {
     <button
       class="btn btn-secondary gap-2"
       id="nút-tạo-liên-kết"
-      onClick={() => tạoVậtThểTiếpThị()}
+      onClick={async () => await tạoVậtThểTiếpThị()}
     >
       {tênNút.value}
     </button>

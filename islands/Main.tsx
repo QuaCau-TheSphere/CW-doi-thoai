@@ -3,15 +3,15 @@ import { BàiĐăng } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, 
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import SectionBênPhải from "./Section bên phải.tsx";
 import SectionBênTrái from "./Section bên trái.tsx";
-import { cấuHìnhNơiĐăng } from "./Signals tổng.ts";
+import { cấuHìnhNơiĐăngSignal } from "./Signals tổng.ts";
 interface MainProps {
   danhSáchNơiĐăng: NơiĐăngChưaXácĐịnhVịTrí[];
   danhSáchBàiĐăng: BàiĐăng[];
-  cấuHìnhNơiĐăngProp: CấuHìnhNơiĐăng;
+  cấuHìnhNơiĐăng: CấuHìnhNơiĐăng;
   textTrangChủ: string;
 }
 
-function Test({ danhSáchNơiĐăng, danhSáchBàiĐăng }: MainProps) {
+function Test({ danhSáchNơiĐăng, danhSáchBàiĐăng }: Omit<MainProps, "cấuHìnhNơiĐăng" | "textTrangChủ">) {
   return (
     <SectionBênTrái
       danhSáchBàiĐăng={danhSáchBàiĐăng}
@@ -20,26 +20,22 @@ function Test({ danhSáchNơiĐăng, danhSáchBàiĐăng }: MainProps) {
   );
 }
 
-function Production({ danhSáchNơiĐăng, danhSáchBàiĐăng, textTrangChủ }: MainProps) {
+function Production({ danhSáchNơiĐăng, danhSáchBàiĐăng, textTrangChủ }: Omit<MainProps, "cấuHìnhNơiĐăng">) {
   return (
     <main class="flex flex-row gap-3 w-full mb-auto">
-      <section id="section-bên-trái" class="basis-1/2 p-10">
-        <SectionBênTrái
-          danhSáchBàiĐăng={danhSáchBàiĐăng}
-          danhSáchNơiĐăng={danhSáchNơiĐăng}
-        />
-      </section>
-      <section id="section-bên-phải" class="basis-1/2 p-10">
-        <SectionBênPhải text={textTrangChủ} />
-      </section>
+      <SectionBênTrái
+        danhSáchBàiĐăng={danhSáchBàiĐăng}
+        danhSáchNơiĐăng={danhSáchNơiĐăng}
+      />
+      <SectionBênPhải text={textTrangChủ} />
     </main>
   );
 }
 
 export default function Main(
-  { danhSáchNơiĐăng, danhSáchBàiĐăng, cấuHìnhNơiĐăngProp, textTrangChủ }: MainProps,
+  { danhSáchNơiĐăng, danhSáchBàiĐăng, cấuHìnhNơiĐăng, textTrangChủ }: MainProps,
 ) {
-  cấuHìnhNơiĐăng.value = cấuHìnhNơiĐăngProp;
+  cấuHìnhNơiĐăngSignal.value = cấuHìnhNơiĐăng;
   return <Test danhSáchBàiĐăng={danhSáchBàiĐăng} danhSáchNơiĐăng={danhSáchNơiĐăng} />;
-  return <Production danhSáchBàiĐăng={danhSáchBàiĐăng} danhSáchNơiĐăng={danhSáchNơiĐăng} textTrangChủ={textTrangChủ} />;
+  // return <Production danhSáchBàiĐăng={danhSáchBàiĐăng} danhSáchNơiĐăng={danhSáchNơiĐăng} textTrangChủ={textTrangChủ} />;
 }

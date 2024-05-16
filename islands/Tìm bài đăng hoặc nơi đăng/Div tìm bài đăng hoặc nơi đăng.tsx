@@ -24,7 +24,6 @@ export default function DivTìmBàiĐăngHoặcNơiĐăng({ tênDanhSách, fuse 
       <DanhSáchKếtQuảTìmKiếm tênDanhSách={tênDanhSách} mụcĐượcChọn={mụcĐượcChọn} />
       <ModalTạoMới tênDanhSách={tênDanhSách} mụcĐượcChọn={mụcĐượcChọn} />
       <KếtQuảĐượcChọn loạiVậtThể={tênDanhSách} />
-      <br />
     </div>
   );
 }

@@ -1,42 +1,27 @@
-import { Signal, useSignal } from "@preact/signals";
+import { Signal } from "@preact/signals";
 import { MụcĐượcChọn, TênDanhSách } from "../../utils/Kiểu cho web.ts";
-import { isUrl, đổiKhungNhập } from "../../utils/Hàm cho khung nhập.ts";
+import { đổiKhungNhập } from "../../utils/Hàm cho khung nhập.ts";
 import ModalBàiĐăng from "./Modal bài đăng.tsx";
 import ModalNơiĐăng from "./Modal nơi đăng.tsx";
 import { BàiĐăng, URLString } from "../../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { LoạiNềnTảng, TênNềnTảng } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { element } from "../Signals tổng.ts";
-import { queryBàiĐăng, queryNơiĐăng } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
+import { ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv } from "../../utils/Hàm và kiểu cho API server.ts";
 
 function CácTrườngNhậpMới({ tênDanhSách }: { tênDanhSách: TênDanhSách }) {
-  let query;
   switch (tênDanhSách) {
     case "bài đăng":
-      query = queryBàiĐăng;
-      break;
+      return <ModalBàiĐăng />;
     case "nơi đăng":
-      query = queryNơiĐăng;
-      break;
-  }
-  if (!isUrl(query.value)) return <></>;
-  const url = useSignal<string | undefined>(undefined);
-  url.value = query.value;
-  console.log("🚀 ~ urlNhậpTrongModal1:", url.value);
-
-  switch (tênDanhSách) {
-    case "bài đăng":
-      return <ModalBàiĐăng url={url} />;
-    case "nơi đăng":
-      return <ModalNơiĐăng urlNhậpTrongModal={url} />;
+      return <ModalNơiĐăng />;
     default:
       return <></>;
   }
 }
 
-function tạoVậtThểDữLiệuMới(eventcurrentTarget: any, tênDanhSách: TênDanhSách) {
-  const formData = Object.fromEntries(new FormData(eventcurrentTarget));
-
+/** Chuyển cấu trúc từ formData trên web sang BàiĐăng hoặc NơiĐăngChưaXácĐịnhVịTrí */
+function tạoVậtThểDữLiệuMới(formData: Record<string, FormDataEntryValue>, tênDanhSách: TênDanhSách) {
   let dữLiệu: BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí;
   switch (tênDanhSách) {
     case "bài đăng": {
@@ -92,23 +77,14 @@ function tạoVậtThểDữLiệuMới(eventcurrentTarget: any, tênDanhSách: 
   };
 }
 
-function handleSubmit(event: FormDataEvent, tênDanhSách: TênDanhSách, mụcĐượcChọn: Signal<MụcĐượcChọn>) {
+async function handleSubmit(event: any, tênDanhSách: TênDanhSách, mụcĐượcChọn: Signal<MụcĐượcChọn>) {
   event.preventDefault();
-  const vậtThểDữLiệuMới = tạoVậtThểDữLiệuMới(event.currentTarget, tênDanhSách);
-  const url = `${origin}/api/newData`;
-
-  fetch(url, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(vậtThểDữLiệuMới),
-  }).then((res) => res.json())
-    .then((data) => {
-      console.log(data);
-      mụcĐượcChọn.value = data.value;
-    })
-    .catch(console.error);
+  // if (event.currentTarget === null) return
+  const formData = Object.fromEntries(new FormData(event.currentTarget));
+  const vậtThểDữLiệuMới = tạoVậtThểDữLiệuMới(formData, tênDanhSách);
+  const data = await ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv(vậtThểDữLiệuMới);
+  console.log(data);
+  mụcĐượcChọn.value = data.value;
   (document.getElementById("model-tạo-mới") as HTMLDialogElement).close();
   đổiKhungNhập("xuôi");
 }
@@ -121,7 +97,7 @@ export default function ModalTạoMới(
     <dialog id="model-tạo-mới" class="modal">
       <div class="modal-box">
         <h3 class="font-bold text-lg">Tạo {tênDanhSách} mới</h3>
-        <form onSubmit={(e: FormDataEvent) => handleSubmit(e, tênDanhSách, mụcĐượcChọn)}>
+        <form onSubmit={(e) => handleSubmit(e, tênDanhSách, mụcĐượcChọn)}>
           <CácTrườngNhậpMới tênDanhSách={tênDanhSách} />
           <button class="btn btn-secondary gap-2" type="submit">
             Tạo <kbd class="kbd bg-secondary">Enter</kbd>

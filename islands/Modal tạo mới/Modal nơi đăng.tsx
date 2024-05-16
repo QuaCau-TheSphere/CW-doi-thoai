@@ -1,20 +1,18 @@
-import { useState } from "preact/hooks";
-import { useSignalEffect } from "@preact/signals";
-import { Signal } from "https://esm.sh/v135/@preact/signals-core@1.5.1/dist/signals-core.js";
+import { useEffect, useState } from "preact/hooks";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
-import { PhảnHồiTừCORSProxy } from "../../utils/Kiểu cho web.ts";
+import { queryNơiĐăng } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
+import { PhảnHồiTừCORSProxy } from "../../utils/Hàm và kiểu cho API server.ts";
 
-export default function ModalNơiĐăng({ urlNhậpTrongModal }: { urlNhậpTrongModal: Signal<string> }) {
+export default function ModalNơiĐăng() {
   const [phảnHồiTừCORSProxy, setPhảnHồiTừCORSProxy] = useState<PhảnHồiTừCORSProxy | undefined>(undefined);
-  useSignalEffect(() => {
+  const [urlNhậpVào, setUrlNhậpVào] = useState(queryNơiĐăng.value);
+  useEffect(() => {
     async function lấyMetaTag() {
-      console.log("🚀 ~ urlTrongeffect nơi đăng:", urlNhậpTrongModal.value);
-      const corsProxyUrl = `${origin}/api/cors-proxy/${urlNhậpTrongModal.value}`;
+      const corsProxyUrl = `${origin}/api/cors-proxy/${urlNhậpVào}`;
       setPhảnHồiTừCORSProxy(await (await fetch(corsProxyUrl)).json() as PhảnHồiTừCORSProxy);
     }
     lấyMetaTag();
-  });
-  console.log("🚀 ~ ModalNơiĐăng ~ phảnHồiTừCORSProxy:", phảnHồiTừCORSProxy);
+  }, [urlNhậpVào]);
   const nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí | Record<string | number | symbol, never> =
     phảnHồiTừCORSProxy?.["Nếu là nơi đăng"] || {};
   const {
@@ -26,9 +24,8 @@ export default function ModalNơiĐăng({ urlNhậpTrongModal }: { urlNhậpTron
     "Vị trí có thể đăng": vịTríCóThểĐăng,
     "Lĩnh vực": lĩnhVực,
     "Mã nơi đăng": mãNơiĐăng,
-    URL: url,
+    URL: urlChínhTắc,
   } = nơiĐăng;
-  console.log("🚀 ~ ModalNơiĐăng ~ nơiĐăng:", nơiĐăng);
   return (
     <>
       <label class="form-control w-full max-w-xs">
@@ -41,8 +38,8 @@ export default function ModalNơiĐăng({ urlNhậpTrongModal }: { urlNhậpTron
           type="url"
           required
           id="URL"
-          value={url as string || urlNhậpTrongModal}
-          onInput={(e: InputEvent) => urlNhậpTrongModal.value = (e.target as HTMLTextAreaElement).value}
+          value={urlChínhTắc as string || urlNhậpVào}
+          onInput={(e: InputEvent) => setUrlNhậpVào((e.target as HTMLTextAreaElement).value)}
         />
       </label>
 

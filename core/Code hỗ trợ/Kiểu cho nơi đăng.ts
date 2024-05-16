@@ -125,7 +125,7 @@ export const danhSáchDiễnĐàn = [
  */
 export type TênDiễnĐàn = typeof danhSáchDiễnĐàn[number];
 export type LoạiNơiĐăngDiễnĐàn = [
-  "Nhóm" | "Trang" | "Tài khoản" | "Subreddit" | "Repo",
+  "Nhóm" | "Trang" | "Tài khoản" | "Sự kiện" | "Danh sách phát" | "Kênh" | "Video" | "Subreddit" | "Repo",
 ];
 type TênNơiĐăngDiễnĐàn = [string];
 /**

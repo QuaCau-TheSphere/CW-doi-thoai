@@ -1,19 +1,18 @@
-import { useState } from "preact/hooks";
-import { PhảnHồiTừCORSProxy } from "../../utils/Kiểu cho web.ts";
+import { useEffect, useState } from "preact/hooks";
 import { BàiĐăng } from "../../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { Signal } from "https://esm.sh/v135/@preact/signals-core@1.5.1/dist/signals-core.js";
-import { useSignalEffect } from "@preact/signals";
+import { queryBàiĐăng } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
+import { PhảnHồiTừCORSProxy } from "../../utils/Hàm và kiểu cho API server.ts";
 
-export default function ModalBàiĐăng({ url }: { url: Signal<string> }) {
+export default function ModalBàiĐăng() {
   const [phảnHồiTừCORSProxy, setPhảnHồiTừCORSProxy] = useState<PhảnHồiTừCORSProxy | undefined>(undefined);
-  useSignalEffect(() => {
+  const [urlNhậpVào, setUrlNhậpVào] = useState(queryBàiĐăng.value);
+  useEffect(() => {
     async function lấyMetaTag() {
-      console.log("🚀 ~ urlTrongeffect:", url.value);
-      const corsProxyUrl = `${origin}/api/cors-proxy/${url.value}`;
+      const corsProxyUrl = `${origin}/api/cors-proxy/${urlNhậpVào}`;
       setPhảnHồiTừCORSProxy(await (await fetch(corsProxyUrl)).json() as PhảnHồiTừCORSProxy);
     }
     lấyMetaTag();
-  });
+  }, [urlNhậpVào]);
   let bàiĐăng;
   if (phảnHồiTừCORSProxy === undefined || phảnHồiTừCORSProxy.lỗi) {
     bàiĐăng = new BàiĐăng();
@@ -28,7 +27,6 @@ export default function ModalBàiĐăng({ url }: { url: Signal<string> }) {
   } = bàiĐăng;
   return (
     <>
-      {url}
       <label class="form-control w-full max-w-xs">
         <div class="label">
           <span class="label-text font-bold">URL</span>
@@ -39,8 +37,8 @@ export default function ModalBàiĐăng({ url }: { url: Signal<string> }) {
           type="url"
           name="URL"
           required
-          value={url}
-          onInput={(e: InputEvent) => url.value = (e.target as HTMLTextAreaElement).value}
+          value={urlNhậpVào}
+          onInput={(e: InputEvent) => setUrlNhậpVào((e.target as HTMLTextAreaElement).value)}
         />
       </label>
 

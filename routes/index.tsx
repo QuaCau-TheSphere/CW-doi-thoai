@@ -29,7 +29,7 @@ export default async function App() {
       <Main
         danhSáchBàiĐăng={danhSáchBàiĐăng}
         danhSáchNơiĐăng={danhSáchNơiĐăng}
-        cấuHìnhNơiĐăngProp={cấuHìnhNơiĐăng}
+        cấuHìnhNơiĐăng={cấuHìnhNơiĐăng}
         textTrangChủ={textTrangChủ} 
       />
     </body>

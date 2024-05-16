@@ -1,8 +1,8 @@
 // deno-fmt-ignore-file
 import { StateUpdater } from "preact/hooks";
 import { BàiĐăng } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import CấuHìnhNơiĐăng, { NơiĐăngĐãXácĐịnhVịTrí } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
-import ThamSốUTMVàLiênKếtRútGọn from "../core/Code hỗ trợ/Kiểu cho tham số UTM.ts";
+import { NơiĐăngĐãXácĐịnhVịTrí } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import ThamSốUTM, { ĐuôiRútGọn } from "../core/Code hỗ trợ/Kiểu cho tham số UTM.ts";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 
 /** KHUNG NHẬP */
@@ -41,19 +41,11 @@ export type DữLiệuTruyCậpCácTháng = PartialRecord<`Tháng ${Tháng}`, D�
 export type DữLiệuTruyCậpCácNăm = PartialRecord<Năm, DữLiệuTruyCậpCácTháng>;
 
 export type DanhSáchThờiĐiểm = Date[]
-export interface VậtThểTiếpThị extends ThamSốUTMVàLiênKếtRútGọn {
+export interface VậtThểTiếpThị extends ThamSốUTM {
   "Bài đăng": BàiĐăng;
   "Nơi đăng": NơiĐăngĐãXácĐịnhVịTrí;
   "Thời điểm tạo": Date;
   "Các lần truy cập": DữLiệuTruyCậpCácNăm;
+  "Đuôi rút gọn": ĐuôiRútGọn;
+  "Lần đăng": number;
 }
-export interface PhảnHồiTừCORSProxy {
-  "Nếu là bài đăng": BàiĐăng;
-  "Nếu là nơi đăng": NơiĐăngChưaXácĐịnhVịTrí;
-  lỗi?:
-    | string
-    | "URL không hợp lệ";
-  html?: string | null;
-};
-
-export type PhảnHồiTừTìmVậtThểTiếpThịĐãCó = Deno.KvEntry<VậtThểTiếpThị> 

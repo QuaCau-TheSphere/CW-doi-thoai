@@ -119,8 +119,9 @@ export function đổiKhungNhập(
   }
 }
 
-export function isUrl(string: string) {
+export function isUrl(string: string | undefined) {
   try {
+    if (!string) return false;
     return Boolean(new URL(string));
   } catch {
     return false;
