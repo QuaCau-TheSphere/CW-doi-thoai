@@ -15,7 +15,7 @@
     }
   },
   "fmt": {
-    "lineWidth": 120
+    "lineWidth": 130
   },
   "exclude": ["**/_fresh/*"],
   "imports": {

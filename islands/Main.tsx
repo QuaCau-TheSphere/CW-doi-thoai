@@ -1,9 +1,11 @@
+import FlexSearch, { Document } from "npm:flexsearch";
 import CấuHìnhNơiĐăng from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { BàiĐăng } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import SectionBênPhải from "./Section bên phải.tsx";
 import SectionBênTrái from "./Section bên trái.tsx";
-import { cấuHìnhNơiĐăngSignal } from "./Signals tổng.ts";
+import { cấuHìnhNơiĐăngSignal, flexSearchBàiĐăngSignal, flexSearchNơiĐăngSignal } from "./Signals tổng.ts";
+
 interface MainProps {
   danhSáchNơiĐăng: NơiĐăngChưaXácĐịnhVịTrí[];
   danhSáchBàiĐăng: BàiĐăng[];
@@ -11,14 +13,14 @@ interface MainProps {
   textTrangChủ: string;
 }
 
-function Test({ danhSáchNơiĐăng, danhSáchBàiĐăng }: Omit<MainProps, "cấuHìnhNơiĐăng" | "textTrangChủ">) {
-  return <SectionBênTrái danhSáchBàiĐăng={danhSáchBàiĐăng} danhSáchNơiĐăng={danhSáchNơiĐăng} />;
+function Test() {
+  return <SectionBênTrái />;
 }
 
-function Production({ danhSáchNơiĐăng, danhSáchBàiĐăng, textTrangChủ }: Omit<MainProps, "cấuHìnhNơiĐăng">) {
+function Production({ textTrangChủ }: { textTrangChủ: string }) {
   return (
     <main class="flex flex-row gap-3 w-full mb-auto">
-      <SectionBênTrái danhSáchBàiĐăng={danhSáchBàiĐăng} danhSáchNơiĐăng={danhSáchNơiĐăng} />;
+      <SectionBênTrái />;
       <SectionBênPhải text={textTrangChủ} />
     </main>
   );
@@ -26,6 +28,47 @@ function Production({ danhSáchNơiĐăng, danhSáchBàiĐăng, textTrangChủ }
 
 export default function Main({ danhSáchNơiĐăng, danhSáchBàiĐăng, cấuHìnhNơiĐăng, textTrangChủ }: MainProps) {
   cấuHìnhNơiĐăngSignal.value = cấuHìnhNơiĐăng;
-  return <Production danhSáchBàiĐăng={danhSáchBàiĐăng} danhSáchNơiĐăng={danhSáchNơiĐăng} textTrangChủ={textTrangChủ} />;
-  return <Test danhSáchBàiĐăng={danhSáchBàiĐăng} danhSáchNơiĐăng={danhSáchNơiĐăng} />;
+
+  const flexSearchBàiĐăng: Document<BàiĐăng, true> = new FlexSearch.Document({
+    document: {
+      id: "id",
+      index: [
+        "Tiêu đề",
+        "Vault",
+        "Dự án:Tên dự án",
+        "Dự án:Mã dự án",
+        "Tác giả",
+        "URL",
+        "Mã bài đăng",
+        "Nội dung bài đăng:Mô tả bài đăng",
+      ],
+      store: true,
+    },
+  });
+  for (const bàiĐăng of danhSáchBàiĐăng) flexSearchBàiĐăng.add(bàiĐăng);
+  flexSearchBàiĐăngSignal.value = flexSearchBàiĐăng;
+
+  const flexSearchNơiĐăng: Document<NơiĐăngChưaXácĐịnhVịTrí, true> = new FlexSearch.Document({
+    document: {
+      id: "id",
+      index: [
+        "Loại nền tảng",
+        "Tên nền tảng",
+        "Tên nơi đăng",
+        "Loại nơi đăng",
+        "Mô tả nơi đăng",
+        "URL",
+        "Lĩnh vực",
+        "Mô tả nơi đăng",
+        "Mã nơi đăng",
+      ],
+      store: true,
+    },
+  });
+  for (const nơiĐăng of danhSáchNơiĐăng) flexSearchNơiĐăng.add(nơiĐăng);
+  flexSearchNơiĐăngSignal.value = flexSearchNơiĐăng;
+
+  /** Tách ra test với production để khi không quan tâm tới section bên phải thì section bên trái không giảm một nửa bề rộng do tailwind*/
+  return <Test />;
+  return <Production textTrangChủ={textTrangChủ} />;
 }

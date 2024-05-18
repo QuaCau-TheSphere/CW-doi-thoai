@@ -1,3 +1,4 @@
+import FlexSearch from "npm:flexsearch";
 import { computed, effect, signal } from "@preact/signals";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import CấuHìnhNơiĐăng, { NơiĐăngĐãXácĐịnhVịTrí } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
@@ -6,6 +7,8 @@ import { ElementDùngTab, VậtThểTiếpThị } from "../utils/Kiểu cho web.
 import { tìmVậtThểTiếpThịĐãCó } from "../utils/Hàm và kiểu cho API server.ts";
 
 export const cấuHìnhNơiĐăngSignal = signal<CấuHìnhNơiĐăng>({});
+export const flexSearchBàiĐăngSignal = signal<FlexSearch.Document<BàiĐăng>>([]);
+export const flexSearchNơiĐăngSignal = signal<FlexSearch.Document<NơiĐăngChưaXácĐịnhVịTrí>>([]);
 
 export const bàiĐăngĐượcChọn = signal<BàiĐăng | undefined>(undefined);
 export const nơiĐăngChưaXácĐịnhVịTríĐượcChọn = signal<NơiĐăngChưaXácĐịnhVịTrí | undefined>(undefined);

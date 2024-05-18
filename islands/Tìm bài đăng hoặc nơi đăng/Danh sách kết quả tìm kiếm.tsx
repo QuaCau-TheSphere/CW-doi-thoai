@@ -1,15 +1,10 @@
 import type { MụcĐượcChọn, TênDanhSách } from "../../utils/Kiểu cho web.ts";
 import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/plus.tsx";
-import {
-  kiểuKebab,
-  tạoLoạiNơiĐăngString,
-  tạoTênNơiĐăngString,
-  tạoVaultHoặcDựÁnString,
-} from "../../utils/Hàm cho khung nhập.ts";
+import { kiểuKebab, tạoLoạiNơiĐăngString, tạoTênNơiĐăngString, tạoVaultHoặcDựÁnString } from "../../utils/Hàm cho khung nhập.ts";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { BàiĐăng } from "../../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { element } from "../Signals tổng.ts";
-import { cursor, searchList } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
+import { cursor, danhSáchGợiÝSignal } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
 import { Signal } from "@preact/signals";
 
 function Item({ item, tênDanhSách }: { item: BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí; tênDanhSách: TênDanhSách }) {
@@ -44,10 +39,11 @@ function Item({ item, tênDanhSách }: { item: BàiĐăng | NơiĐăngChưaXác�
 }
 
 export function DanhSáchKếtQuảTìmKiếm(
-  { tênDanhSách, mụcĐượcChọn }: { tênDanhSách: TênDanhSách; mụcĐượcChọn: Signal<MụcĐượcChọn> },
+  { tênDanhSách, mụcĐượcChọn, query }: { tênDanhSách: TênDanhSách; mụcĐượcChọn: Signal<MụcĐượcChọn>; query: Signal<string> },
 ) {
-  const danhSáchKếtQuảTìmKiếm = searchList.value;
-  if (tênDanhSách !== element.value || !danhSáchKếtQuảTìmKiếm) return <></>;
+  const danhSáchKếtQuảTìmKiếm = danhSáchGợiÝSignal.value;
+  if (tênDanhSách !== element.value || !danhSáchKếtQuảTìmKiếm || !query.value) return <></>;
+  console.log("🚀 ~ danhSáchKếtQuảTìmKiếm:", tênDanhSách, danhSáchKếtQuảTìmKiếm);
   if (danhSáchKếtQuảTìmKiếm.length === 0) {
     return (
       <ul class="cursor border-2 rounded border-secondary">
@@ -65,11 +61,11 @@ export function DanhSáchKếtQuảTìmKiếm(
       {danhSáchKếtQuảTìmKiếm.map((item, index) => (
         <li
           class={cursor.value === index ? "cursor bg-secondary p-2 box-decoration-clone" : "p-2"}
-          onClick={() => mụcĐượcChọn.value = item}
+          onClick={() => mụcĐượcChọn.value = item.doc}
           onMouseEnter={() => cursor.value = index}
           onMouseLeave={() => cursor.value = -1}
         >
-          <Item item={item.item} tênDanhSách={tênDanhSách} />
+          <Item item={item.doc} tênDanhSách={tênDanhSách} />
         </li>
       ))}
     </ul>

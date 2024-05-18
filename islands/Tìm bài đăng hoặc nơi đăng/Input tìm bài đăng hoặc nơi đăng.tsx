@@ -1,36 +1,47 @@
-import Fuse from "https://deno.land/x/fuse@v6.4.1/dist/fuse.esm.js";
-import type { MụcĐượcChọn, TênDanhSách } from "../../utils/Kiểu cho web.ts";
+import type {
+  DanhSáchKếtQuảTìmKiếmType,
+  FlexSearchBàiĐăngHoặcNơiĐăng,
+  MụcĐượcChọn,
+  TênDanhSách,
+} from "../../utils/Kiểu cho web.ts";
 import { kiểuKebab, viếtHoa, đổiKhungNhập } from "../../utils/Hàm cho khung nhập.ts";
 import { element } from "../Signals tổng.ts";
-import { queryBàiĐăng, queryNơiĐăng, searchList } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
-import { cursor } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
+import { cursor, danhSáchGợiÝSignal } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
 import { Signal } from "@preact/signals";
 
-function handleInput(e: InputEvent, tênDanhSách: TênDanhSách, fuse: Fuse, query: Signal<string>) {
+function handleInput(
+  e: InputEvent,
+  tênDanhSách: TênDanhSách,
+  flexSearch: FlexSearchBàiĐăngHoặcNơiĐăng,
+  query: Signal<string>,
+) {
   element.value = tênDanhSách;
   query.value = (e.target as HTMLTextAreaElement).value;
-  searchList.value = fuse.search(query.value).slice(0, 10);
+  const flexResult = flexSearch.search(query.value, { enrich: true });
+  if (flexResult && flexResult[0]) {
+    danhSáchGợiÝSignal.value = flexResult[0].result as unknown as DanhSáchKếtQuảTìmKiếmType;
+  }
 }
 
 function handleKeyDown(e: KeyboardEvent, mụcĐượcChọn: Signal<MụcĐượcChọn>) {
-  const searchlist = searchList.value;
-  if (!searchlist) return;
+  const danhSáchGợiÝ = danhSáchGợiÝSignal.value;
+  if (!danhSáchGợiÝ) return;
 
   const cursorHiệnTại = cursor.value;
   if (e.key === "ArrowDown") {
     e.preventDefault();
-    cursor.value = cursorHiệnTại < searchlist.length - 1 ? cursorHiệnTại + 1 : 0;
+    cursor.value = cursorHiệnTại < danhSáchGợiÝ.length - 1 ? cursorHiệnTại + 1 : 0;
   }
   if (e.key === "ArrowUp") {
     e.preventDefault();
-    cursor.value = cursorHiệnTại > 0 ? cursorHiệnTại - 1 : searchlist.length - 1;
+    cursor.value = cursorHiệnTại > 0 ? cursorHiệnTại - 1 : danhSáchGợiÝ.length - 1;
   }
   if (e.key === "Enter") {
     e.preventDefault();
-    if (searchlist.length === 0) {
+    if (danhSáchGợiÝ.length === 0) {
       (document.getElementById("model-tạo-mới") as HTMLDialogElement).showModal();
     } else {
-      mụcĐượcChọn.value = searchlist[cursorHiệnTại].item;
+      mụcĐượcChọn.value = danhSáchGợiÝ[cursorHiệnTại].doc;
       đổiKhungNhập("xuôi");
     }
   }
@@ -45,17 +56,13 @@ function handleKeyDown(e: KeyboardEvent, mụcĐượcChọn: Signal<MụcĐư�
 }
 
 export default function InputTìmBàiĐăngHoặcNơiĐăng(
-  { tênDanhSách, fuse, mụcĐượcChọn }: { tênDanhSách: TênDanhSách; fuse: Fuse; mụcĐượcChọn: Signal<MụcĐượcChọn> },
+  { tênDanhSách, mụcĐượcChọn, query, flexSearch }: {
+    tênDanhSách: TênDanhSách;
+    mụcĐượcChọn: Signal<MụcĐượcChọn>;
+    query: Signal<string>;
+    flexSearch: FlexSearchBàiĐăngHoặcNơiĐăng;
+  },
 ) {
-  let query;
-  switch (tênDanhSách) {
-    case "bài đăng":
-      query = queryBàiĐăng;
-      break;
-    case "nơi đăng":
-      query = queryNơiĐăng;
-      break;
-  }
   return (
     <label class="input input-bordered flex items-center gap-2">
       {viếtHoa(tênDanhSách)}
@@ -67,7 +74,7 @@ export default function InputTìmBàiĐăngHoặcNơiĐăng(
         value={query.value}
         id={`khung-nhập-${kiểuKebab(tênDanhSách)}`}
         placeholder={`Tìm ${tênDanhSách} hoặc dán URL để tạo mới`}
-        onInput={(e: InputEvent) => handleInput(e, tênDanhSách, fuse, query)}
+        onInput={(e: InputEvent) => handleInput(e, tênDanhSách, flexSearch, query)}
         onFocus={() => element.value = tênDanhSách}
         onKeyDown={(e: KeyboardEvent) => handleKeyDown(e, mụcĐượcChọn)}
       />

@@ -1,4 +1,5 @@
 // deno-fmt-ignore-file
+import { Document, EnrichedDocumentSearchResultSetUnitResultUnit} from "npm:flexsearch";
 import { StateUpdater } from "preact/hooks";
 import { BàiĐăng } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { NơiĐăngĐãXácĐịnhVịTrí } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
@@ -8,8 +9,11 @@ import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm
 /** KHUNG NHẬP */
 export type BốiCảnh = string | undefined;
 
-// import FuseResult from "https://deno.land/x/fuse@v6.4.1/dist/fuse.d.ts";
-export type DanhSáchKếtQuảTìmKiếmType = FuseResult<NơiĐăngChưaXácĐịnhVịTrí> | FuseResult<BàiĐăng> | undefined;
+export type FlexSearchBàiĐăngHoặcNơiĐăng = Document<BàiĐăng> | Document<NơiĐăngChưaXácĐịnhVịTrí>;
+export type DanhSáchKếtQuảTìmKiếmType = 
+  | EnrichedDocumentSearchResultSetUnitResultUnit<BàiĐăng>[]
+  | EnrichedDocumentSearchResultSetUnitResultUnit<NơiĐăngChưaXácĐịnhVịTrí>[] 
+  | undefined;
 export type MụcĐượcChọn = BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí | undefined;
 /** Cursor is the current highlighted item in the search list. It's undefined when the mouse leaves */
 export type Cursor = number;
