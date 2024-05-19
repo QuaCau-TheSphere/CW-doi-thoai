@@ -59,12 +59,9 @@ const manifest = {
     "./islands/Section bên trái.tsx": $Section_bên_trái,
     "./islands/Signals tổng.ts": $Signals_tổng,
     "./islands/Tìm bài đăng hoặc nơi đăng/Danh sách kết quả tìm kiếm.tsx": $Tìm_bài_đăng_hoặc_nơi_đăng_Danh_sách_kết_quả_tìm_kiếm,
-    "./islands/Tìm bài đăng hoặc nơi đăng/Div tìm bài đăng hoặc nơi đăng.tsx":
-      $Tìm_bài_đăng_hoặc_nơi_đăng_Div_tìm_bài_đăng_hoặc_nơi_đăng,
-    "./islands/Tìm bài đăng hoặc nơi đăng/Input tìm bài đăng hoặc nơi đăng.tsx":
-      $Tìm_bài_đăng_hoặc_nơi_đăng_Input_tìm_bài_đăng_hoặc_nơi_đăng,
-    "./islands/Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts":
-      $Tìm_bài_đăng_hoặc_nơi_đăng_Signal_tìm_bài_đăng_hoặc_nơi_đăng,
+    "./islands/Tìm bài đăng hoặc nơi đăng/Div tìm bài đăng hoặc nơi đăng.tsx": $Tìm_bài_đăng_hoặc_nơi_đăng_Div_tìm_bài_đăng_hoặc_nơi_đăng,
+    "./islands/Tìm bài đăng hoặc nơi đăng/Input tìm bài đăng hoặc nơi đăng.tsx": $Tìm_bài_đăng_hoặc_nơi_đăng_Input_tìm_bài_đăng_hoặc_nơi_đăng,
+    "./islands/Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts": $Tìm_bài_đăng_hoặc_nơi_đăng_Signal_tìm_bài_đăng_hoặc_nơi_đăng,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

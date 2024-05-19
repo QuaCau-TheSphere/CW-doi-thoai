@@ -1,19 +1,14 @@
-//deno-fmt-ignore-file
-import CấuHìnhNơiĐăng, {
-  danhSáchNơiĐăngKhác,
-  LoạiNơiĐăngDiễnĐàn,
-  ThôngTinNơiĐăng,
-} from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import CấuHìnhNơiĐăng, { danhSáchNơiĐăngKhác, LoạiNơiĐăngDiễnĐàn, ThôngTinNơiĐăng } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { TênDiễnĐàn } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { CấuHìnhNơiĐăngDiễnĐàn } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import tạoDanhSáchChat from "./Tạo danh sách nơi đăng chat.ts";
-import { vậtThểVịTríCóThôngTinNơiĐăng, tạoDanhSáchVịTríCóThểĐăng } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { tạoDanhSáchVịTríCóThểĐăng, vậtThểVịTríCóThôngTinNơiĐăng } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { parse } from "$std/yaml/mod.ts";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { CấuHìnhVịTrí } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
-import { tạoChuỗiNgẫuNhiên } from "../../Code hỗ trợ/Code hỗ trợ.ts";
+import { xácĐịnhId } from "../../Code hỗ trợ/Code hỗ trợ.ts";
 
-function tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: Omit<ThôngTinNơiĐăng, 'id'>[]) {
+function tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: Omit<ThôngTinNơiĐăng, "id">[]) {
   const cấuHìnhNơiĐăngDiễnĐàn = cấuHìnhNơiĐăng["Diễn đàn"];
   if (!cấuHìnhNơiĐăngDiễnĐàn) return;
   for (const [tênDiễnĐàn, vậtThểLàmGiáTrịChoTênDiễnĐàn] of Object.entries(cấuHìnhNơiĐăngDiễnĐàn) as [TênDiễnĐàn, CấuHìnhNơiĐăngDiễnĐàn][]) {
@@ -32,7 +27,7 @@ function tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, d
   }
 }
 
-function tạoDanhSáchKhác(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: Omit<ThôngTinNơiĐăng, 'id'>[]) {
+function tạoDanhSáchKhác(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: Omit<ThôngTinNơiĐăng, "id">[]) {
   for (const loạiNơiĐăngKhác of danhSáchNơiĐăngKhác) {
     const cấuHìnhLoạiNơiĐăngKhác = cấuHìnhNơiĐăng[loạiNơiĐăngKhác];
     if (!cấuHìnhLoạiNơiĐăngKhác) continue;
@@ -47,33 +42,29 @@ function tạoDanhSáchKhác(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSá
   }
 }
 
-export default function tạoDanhSáchNơiĐăngCXĐVT(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng): NơiĐăngChưaXácĐịnhVịTrí[] {
+export default async function tạoDanhSáchNơiĐăngChưaXácĐịnhVịTrí(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng): Promise<NơiĐăngChưaXácĐịnhVịTrí[]> {
   const danhSáchNơiĐăng: NơiĐăngChưaXácĐịnhVịTrí[] = [];
   tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng, danhSáchNơiĐăng);
   tạoDanhSáchChat(cấuHìnhNơiĐăng, danhSáchNơiĐăng);
   tạoDanhSáchKhác(cấuHìnhNơiĐăng, danhSáchNơiĐăng);
 
-  const cấuHìnhVịTrí = parse(Deno.readTextFileSync("./core/A. Cấu hình/Nơi đăng/Thiết lập chung (processed).yaml")) as CấuHìnhVịTrí
+  const cấuHìnhVịTrí = parse(Deno.readTextFileSync("./core/A. Cấu hình/Nơi đăng/Thiết lập chung (processed).yaml")) as CấuHìnhVịTrí;
   const {
     "Danh sách vật thể vị trí": danhSáchVậtThểVịTrí,
     "Vị trí nhỏ hơn": cấuHìnhVịTríNhỏHơn,
   } = cấuHìnhVịTrí;
   for (const thôngTinNơiĐăng of danhSáchNơiĐăng) {
     for (const vậtThểVịTrí of danhSáchVậtThểVịTrí) {
-      const { "Danh sách vị trí": danhSáchVịTríThànhPhần } = vậtThểVịTrí;
+      const danhSáchVịTríThànhPhần = vậtThểVịTrí["Danh sách vị trí"];
       if (vậtThểVịTríCóThôngTinNơiĐăng(thôngTinNơiĐăng, vậtThểVịTrí)) {
-        thôngTinNơiĐăng["Vị trí có thể đăng"] = tạoDanhSáchVịTríCóThểĐăng(
-          danhSáchVịTríThànhPhần,
-          cấuHìnhVịTríNhỏHơn,
-        );
+        thôngTinNơiĐăng["Vị trí có thể đăng"] = tạoDanhSáchVịTríCóThểĐăng(danhSáchVịTríThànhPhần, cấuHìnhVịTríNhỏHơn);
       }
     }
-    thôngTinNơiĐăng.id= tạoChuỗiNgẫuNhiên(4) 
-
+    thôngTinNơiĐăng.id = await xácĐịnhId("nơi đăng", thôngTinNơiĐăng);
   }
-  return danhSáchNơiĐăng
+  return danhSáchNơiĐăng;
 }
 // const cấuHìnhNơiĐăng = parse(Deno.readTextFileSync('./core/A. Cấu hình/Nơi đăng/UAN.yaml')) as CấuHìnhNơiĐăng;
-// const a = tạoDanhSáchNơiĐăngCXĐVT(cấuHìnhNơiĐăng)
+// const a = tạoDanhSáchNơiĐăngChưaXácĐịnhVịTrí(cấuHìnhNơiĐăng);
 // console.log(a)
 // console.log('')

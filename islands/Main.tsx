@@ -46,6 +46,7 @@ export default function Main({ danhSáchNơiĐăng, danhSáchBàiĐăng, cấuH�
     },
   });
   for (const bàiĐăng of danhSáchBàiĐăng) flexSearchBàiĐăng.add(bàiĐăng);
+  //@ts-ignore: để coi store nghĩa là gì sau
   flexSearchBàiĐăngSignal.value = flexSearchBàiĐăng;
 
   const flexSearchNơiĐăng: Document<NơiĐăngChưaXácĐịnhVịTrí, true> = new FlexSearch.Document({
@@ -66,9 +67,10 @@ export default function Main({ danhSáchNơiĐăng, danhSáchBàiĐăng, cấuH�
     },
   });
   for (const nơiĐăng of danhSáchNơiĐăng) flexSearchNơiĐăng.add(nơiĐăng);
+  //@ts-ignore: để coi store nghĩa là gì sau
   flexSearchNơiĐăngSignal.value = flexSearchNơiĐăng;
 
-  /** Tách ra test với production để khi không quan tâm tới section bên phải thì section bên trái không giảm một nửa bề rộng do tailwind*/
+  /** Tách ra thành test với production để khi không quan tâm tới section bên phải thì section bên trái không giảm một nửa bề rộng do tailwind*/
   return <Test />;
   return <Production textTrangChủ={textTrangChủ} />;
 }

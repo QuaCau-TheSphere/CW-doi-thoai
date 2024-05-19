@@ -7,10 +7,8 @@ import {
   tênNút,
   vậtThểTiếpThịĐượcTạo,
 } from "./Signals tổng.ts";
-import tạoThamSốUTMVàLiênKếtRútGọn, {
-  tạoĐuôiRútGọn,
-} from "../core/B. Tạo kết quả/3. Tạo tham số UTM và liên kết rút gọn.ts";
-import { ghiLênKV } from "../utils/Hàm và kiểu cho API server.ts";
+import tạoThamSốUTMVàLiênKếtRútGọn, { tạoĐuôiRútGọn } from "../core/B. Tạo kết quả/3. Tạo tham số UTM và liên kết rút gọn.ts";
+import { ghiVậtThểTiếpThịLênKV } from "../utils/Hàm và kiểu cho API server.ts";
 
 async function tạoVậtThểTiếpThị() {
   console.log("tạo vật thể tiếp thị");
@@ -51,7 +49,7 @@ async function tạoVậtThểTiếpThị() {
   console.info("Bài đăng được chọn:", bàiĐăng);
   console.info("Nơi đăng được chọn:", nơiĐăng);
 
-  await ghiLênKV(vậtThểTiếpThịĐượcTạo.value);
+  await ghiVậtThểTiếpThịLênKV(vậtThểTiếpThịĐượcTạo.value);
 }
 
 export function NútTạoLiênKết() {

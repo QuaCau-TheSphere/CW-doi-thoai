@@ -43,7 +43,6 @@ export function DanhSáchKếtQuảTìmKiếm(
 ) {
   const danhSáchKếtQuảTìmKiếm = danhSáchGợiÝSignal.value;
   if (tênDanhSách !== element.value || !danhSáchKếtQuảTìmKiếm || !query.value) return <></>;
-  console.log("🚀 ~ danhSáchKếtQuảTìmKiếm:", tênDanhSách, danhSáchKếtQuảTìmKiếm);
   if (danhSáchKếtQuảTìmKiếm.length === 0) {
     return (
       <ul class="cursor border-2 rounded border-secondary">

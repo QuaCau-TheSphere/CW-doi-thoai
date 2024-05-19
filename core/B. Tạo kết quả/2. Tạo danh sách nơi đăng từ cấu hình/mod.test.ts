@@ -1,6 +1,6 @@
 import { parse } from "$std/yaml/mod.ts";
 import { join } from "$std/path/join.ts";
-import tạoDanhSáchNơiĐăngCXĐVT from "./mod.ts";
+import tạoDanhSáchNơiĐăngChưaXácĐịnhVịTrí from "./mod.ts";
 import { assertArrayIncludes } from "https://deno.land/std@0.219.0/assert/assert_array_includes.ts";
 import { assert } from "$std/assert/assert.ts";
 import danhSáchNơiĐăngChưaXácĐịnhVịTrí, {
@@ -9,9 +9,7 @@ import danhSáchNơiĐăngChưaXácĐịnhVịTrí, {
   tạoDanhSáchVịTríCóThểĐăng,
   VậtThểVịTrí,
 } from "./Tạo các phiên bản vị trí.ts";
-import CấuHìnhNơiĐăng, {
-  NơiĐăngĐãXácĐịnhVịTrí,
-} from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import CấuHìnhNơiĐăng, { NơiĐăngĐãXácĐịnhVịTrí } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import tạoDanhSáchChat from "./T%E1%BA%A1o%20danh%20s%C3%A1ch%20n%C6%A1i%20%C4%91%C4%83ng%20chat.ts";
 
 const nơiĐăng1 = {
@@ -100,7 +98,7 @@ for (const file of Deno.readDirSync(folder)) {
   const fullPath = join(folder, file.name);
   //deno-fmt-ignore
   const cấuHìnhNơiĐăng = parse(Deno.readTextFileSync(fullPath)) as CấuHìnhNơiĐăng;
-  danhSáchNơiĐăng.push(...tạoDanhSáchNơiĐăngCXĐVT(cấuHìnhNơiĐăng));
+  danhSáchNơiĐăng.push(...tạoDanhSáchNơiĐăngChưaXácĐịnhVịTrí(cấuHìnhNơiĐăng));
 }
 console.log("🚀 ~ danhSáchNơiĐăng:", danhSáchNơiĐăng);
 // console.log("🚀 ~ danhSáchNơiĐăng:", danhSáchNơiĐăng);

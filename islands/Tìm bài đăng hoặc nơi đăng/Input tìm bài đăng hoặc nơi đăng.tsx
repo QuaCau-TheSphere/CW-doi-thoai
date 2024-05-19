@@ -1,9 +1,4 @@
-import type {
-  DanhSáchKếtQuảTìmKiếmType,
-  FlexSearchBàiĐăngHoặcNơiĐăng,
-  MụcĐượcChọn,
-  TênDanhSách,
-} from "../../utils/Kiểu cho web.ts";
+import type { DanhSáchKếtQuảTìmKiếmType, FlexSearchBàiĐăngHoặcNơiĐăng, MụcĐượcChọn, TênDanhSách } from "../../utils/Kiểu cho web.ts";
 import { kiểuKebab, viếtHoa, đổiKhungNhập } from "../../utils/Hàm cho khung nhập.ts";
 import { element } from "../Signals tổng.ts";
 import { cursor, danhSáchGợiÝSignal } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
@@ -17,9 +12,12 @@ function handleInput(
 ) {
   element.value = tênDanhSách;
   query.value = (e.target as HTMLTextAreaElement).value;
-  const flexResult = flexSearch.search(query.value, { enrich: true });
+  const flexResult = flexSearch.search(query.value, { enrich: true, limit: 10 });
+  console.log("🚀 ~ flexResult:", flexResult);
   if (flexResult && flexResult[0]) {
     danhSáchGợiÝSignal.value = flexResult[0].result as unknown as DanhSáchKếtQuảTìmKiếmType;
+  } else {
+    danhSáchGợiÝSignal.value = [];
   }
 }
 

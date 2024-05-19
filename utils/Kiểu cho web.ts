@@ -28,6 +28,7 @@ export type SetBàiĐăngHoặcNơiĐăng = StateUpdater<BàiĐăng | undefined>
 
 /** BIỂU ĐỒ */
 // deno-lint-ignore no-explicit-any
+/** [Define a list of optional keys for Typescript Record](https://stackoverflow.com/q/53276792/3416774) */
 type PartialRecord<K extends keyof any, T> =  Partial<Record<K, T>>
 
 export type Giờ = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20" | "21" | "22" | "23"

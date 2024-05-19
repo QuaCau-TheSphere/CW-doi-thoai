@@ -1,12 +1,6 @@
 import { tạoVịTríString } from "../../utils/Hàm cho khung nhập.ts";
-import {
-  LoạiNơiĐăng,
-  LoạiNềnTảng,
-  NơiĐăngĐãXácĐịnhVịTrí,
-  ThôngTinNơiĐăng,
-  TênNơiĐăng,
-  TênNềnTảng,
-} from "./Kiểu cho nơi đăng.ts";
+import { BàiĐăng } from "./Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { LoạiNơiĐăng, LoạiNềnTảng, NơiĐăngĐãXácĐịnhVịTrí, ThôngTinNơiĐăng, TênNơiĐăng, TênNềnTảng } from "./Kiểu cho nơi đăng.ts";
 
 type VịTríThànhPhần = string;
 
@@ -35,10 +29,7 @@ export type VậtThểVịTríTrongCấuHìnhVịTrí = {
 /**
  * Thuộc tính "Loại nơi đăng" đều có trong nơi đăng và vật thể vị trí. Hàm này kiểm tra xem nó có trùng nhau không
  */
-export function vậtThểVịTríCóThôngTinNơiĐăng(
-  thôngTinNơiĐăng: ThôngTinNơiĐăng,
-  vậtThểVịTrí: VậtThểVịTríTrongCấuHìnhVịTrí,
-): boolean {
+export function vậtThểVịTríCóThôngTinNơiĐăng(thôngTinNơiĐăng: ThôngTinNơiĐăng, vậtThểVịTrí: VậtThểVịTríTrongCấuHìnhVịTrí): boolean {
   const {
     "Loại nền tảng": loạiNềnTảngND,
     "Tên nền tảng": tênNềnTảngND,
@@ -50,9 +41,7 @@ export function vậtThểVịTríCóThôngTinNơiĐăng(
     "Loại nơi đăng": loạiNơiĐăngVTVT,
   } = vậtThểVịTrí;
 
-  if (loạiNềnTảngND !== loạiNềnTảngVTVT || tênNềnTảngND !== tênNềnTảngVTVT) {
-    return false;
-  }
+  if (loạiNềnTảngND !== loạiNềnTảngVTVT || tênNềnTảngND !== tênNềnTảngVTVT) return false;
   /** Cần dùng loạiNơiĐăngND để tạo vòng lặp chứ không phải loạiNơiĐăngVTVT, để tránh trường hợp loạiNơiĐăngVTVT dù thiếu phần tử ở cuối vẫn trả kết quả là true */
   for (const i in loạiNơiĐăngND) {
     if (loạiNơiĐăngVTVT[i] !== loạiNơiĐăngND[i]) return false;
@@ -115,10 +104,7 @@ export interface NơiĐăngChưaXácĐịnhVịTrí extends ThôngTinNơiĐăng 
   "Vị trí có thể đăng": DanhSáchVịTríCóThểĐăng;
 }
 
-export function tạoNơiĐăngChưaXácĐịnhVịTrí(
-  thôngTinNơiĐăng: ThôngTinNơiĐăng,
-  cấuHìnhVịTrí: CấuHìnhVịTrí,
-): NơiĐăngChưaXácĐịnhVịTrí {
+export function tạoNơiĐăngChưaXácĐịnhVịTrí(thôngTinNơiĐăng: ThôngTinNơiĐăng, cấuHìnhVịTrí: CấuHìnhVịTrí): NơiĐăngChưaXácĐịnhVịTrí {
   let danhSáchVịTríCóThểĐăng: DanhSáchVịTríCóThểĐăng = [];
   const {
     "Danh sách vật thể vị trí": danhSáchVậtThểVịTrí,
@@ -127,20 +113,14 @@ export function tạoNơiĐăngChưaXácĐịnhVịTrí(
   for (const vậtThểVịTrí of danhSáchVậtThểVịTrí) {
     const danhSáchVịTríThànhPhần = vậtThểVịTrí["Danh sách vị trí"];
     if (vậtThểVịTríCóThôngTinNơiĐăng(thôngTinNơiĐăng, vậtThểVịTrí)) {
-      danhSáchVịTríCóThểĐăng = tạoDanhSáchVịTríCóThểĐăng(
-        danhSáchVịTríThànhPhần,
-        cấuHìnhVịTríNhỏHơn,
-      );
+      danhSáchVịTríCóThểĐăng = tạoDanhSáchVịTríCóThểĐăng(danhSáchVịTríThànhPhần, cấuHìnhVịTríNhỏHơn);
     }
   }
 
   return { ...thôngTinNơiĐăng, "Vị trí có thể đăng": danhSáchVịTríCóThểĐăng };
 }
 
-export function tạoNơiĐăngĐãXácĐịnhVịTrí(
-  vịTríĐượcChọn: VịTrí | string,
-  nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí,
-): NơiĐăngĐãXácĐịnhVịTrí {
+export function tạoNơiĐăngĐãXácĐịnhVịTrí(vịTríĐượcChọn: VịTrí | string, nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí): NơiĐăngĐãXácĐịnhVịTrí {
   let vịTrí = vịTríĐượcChọn;
   if (typeof vịTríĐượcChọn === "string") {
     vịTrí = JSON.parse(vịTríĐượcChọn) as VịTrí;

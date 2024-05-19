@@ -1,3 +1,5 @@
+# Không dùng. Cái này chưa code xong. Dùng cái processed
+
 # Nếu giá trị của một thuộc tính là mảng thì mảng đó là vị trí. Nếu là vật thể thì hoặc các thuộc tính đều là thành phần, hoặc chỉ có 2 thuộc tính là vị trí và thành phần
 # Thành phần là những thứ sẽ giúp mình đối thoại (tin nhắn, bài đăng). Vị trí là những nơi để họ tìm hiểu về mình, để mình tự giới thiệu bản thân. Chúng không phải là những nơi điển hình khi ta nói là ta đăng bài ở đó
 # Bio, about, description có vẻ giống nhau, nhưng ví dụ như ở Facebook thì có cả bio và about. Thường về độ dài thì bio < about < description
