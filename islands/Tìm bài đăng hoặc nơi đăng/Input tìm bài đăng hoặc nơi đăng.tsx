@@ -13,7 +13,6 @@ function handleInput(
   element.value = tênDanhSách;
   query.value = (e.target as HTMLTextAreaElement).value;
   const flexResult = flexSearch.search(query.value, { enrich: true, limit: 10 });
-  console.log("🚀 ~ flexResult:", flexResult);
   if (flexResult && flexResult[0]) {
     danhSáchGợiÝSignal.value = flexResult[0].result as unknown as DanhSáchKếtQuảTìmKiếmType;
   } else {

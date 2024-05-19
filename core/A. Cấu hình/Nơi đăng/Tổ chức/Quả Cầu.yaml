@@ -58,9 +58,11 @@ Chat:
     Nhóm:
     Cộng đồng:
       - Rối loạn nhân cách tâm trạng không ổn định - BPD:
-          - test
-      - Nghiên cứu triết học phương Đông
-      - Khoa học nhận thức. Khoa học phức hợp
+          - Đoạn chat chung
+      - Nghiên cứu triết học phương Đông:
+          - Đoạn chat chung
+      - Khoa học nhận thức. Khoa học phức hợp:
+          - Đoạn chat chung
   Discord:
     Máy chủ:
       - Obsidian:
@@ -127,6 +129,7 @@ Email:
   - lyminhnhat911@gmail.com
   - quacau.thesphere@gmail.com
 Ảnh:
+
 Tập tin:
   PDF:
     - CV Nguyễn Hữu Lộc
@@ -135,9 +138,22 @@ Tập tin:
   # PowerPoint:
   # Excel:
 SaaS:
-  Khảo sát:
-  Google Drive:
+  Google:
+    Docs:
+    Forms:
+    Slides:
+    Sheet:
+    Meet:
+    Drive:
+      - test
+    Calendar:
+    Class:
+    Play:
+    Group:
+  Zoom:
   Notion:
+  Fibery:
+    Forms:
 
 Viết tắt:
   - Facebook: F

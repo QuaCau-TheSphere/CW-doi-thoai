@@ -42,7 +42,6 @@ type DữLiệu = BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí;
 export async function xácĐịnhId(tênDanhSách: TênDanhSách, dữLiệu: Omit<BàiĐăng, "id"> | Omit<NơiĐăngChưaXácĐịnhVịTrí, "id">): Promise<string> {
   const kv = await Deno.openKv();
   const key = tạoKeyKV(tênDanhSách, dữLiệu as DữLiệu);
-  console.log("🚀 ~ xácĐịnhId ~ key:", key, typeof key);
   const value = (await kv.get(key)).value as DữLiệu | undefined | null;
   return value?.id || tạoChuỗiNgẫuNhiên(4);
 }

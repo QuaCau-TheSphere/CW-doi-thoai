@@ -1,7 +1,9 @@
+/** Chỉ có những biến có từ cấu hình trong tên là dành cho cấu hình, còn lại là dành cho kết quả là vật thể nơi đăng */
 import { OneKey } from "./Code hỗ trợ.ts";
 import { VịTrí } from "./Hàm và kiểu cho vị trí.tsx";
 import { URLString } from "./Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 
+/** null là để cho việc người dùng khai báo xong để đó */
 export default interface CấuHìnhNơiĐăng {
   "Diễn đàn"?: CấuHìnhDiễnĐàn | null;
   Chat?: CấuHìnhChat | null;
@@ -11,6 +13,7 @@ export default interface CấuHìnhNơiĐăng {
   Ảnh?: CấuHìnhẢnh | null;
   Email?: CấuHìnhEmail | null;
   "Tập tin"?: CấuHìnhTậpTin | null;
+  SaaS?: CấuHìnhSaaS | null;
   "Viết tắt"?: Record<string, string>[] | null;
   "Kênh forum Discord"?: string[] | null;
 }
@@ -22,6 +25,8 @@ export default interface CấuHìnhNơiĐăng {
 export type LoạiNềnTảng =
   | "Diễn đàn"
   | "Chat"
+  | "Tập tin"
+  | "SaaS"
   | LoạiNềnTảngKhác;
 /**
  * Tên nền tảng có kiểu là string, không phải string[]. Tên nơi đăng mới có kiểu string[]
@@ -30,16 +35,25 @@ export type LoạiNềnTảng =
 export type TênNềnTảng =
   | TênDiễnĐàn
   | TênNềnTảngChat
+  | TênNềnTảngTậpTin
+  | TênNềnTảngSaaS
   | TênNềnTảngKhác;
 export type LoạiNơiĐăng =
   | LoạiNơiĐăngDiễnĐàn
   | LoạiNơiĐăngChat
+  | LoạiNơiĐăngTậpTin
+  | LoạiNơiĐăngSaaS
   | LoạiNơiĐăngKhác;
 /**
  * Tên nơi đăng có kiểu là string[], không phải string. Tên nền tảng và loại nền tảng mới có kiểu string
  * @type string[]
  */
-export type TênNơiĐăng = TênNơiĐăngDiễnĐàn | TênNơiĐăngChat | TênNơiĐăngKhác;
+export type TênNơiĐăng =
+  | TênNơiĐăngDiễnĐàn
+  | TênNơiĐăngChat
+  | TênNơiĐăngTậpTin
+  | TênNơiĐăngSaaS
+  | TênNơiĐăngKhác;
 export interface ThôngTinNơiĐăng {
   "Loại nền tảng": LoạiNềnTảng;
   "Tên nền tảng": TênNềnTảng;
@@ -232,7 +246,25 @@ interface CấuHìnhChat {
 /**
  * TẬP TIN
  */
-export type CấuHìnhTậpTin = Record<"PDF" | "Word", string[]> | null;
+export const danhSáchĐịnhDạngTậpTin = ["PDF", "Word", "PowerPoint", "Excel"] as const;
+export type ĐịnhDạngTậpTin = typeof danhSáchĐịnhDạngTậpTin[number];
+export type TênNềnTảngTậpTin = ĐịnhDạngTậpTin;
+type LoạiNơiĐăngTậpTin = [ĐịnhDạngTậpTin];
+type TênNơiĐăngTậpTin = [string];
+export type CấuHìnhTậpTin = Record<ĐịnhDạngTậpTin, string[]> | null;
+
+/**
+ * SaaS
+ */
+export type TênSaaS = "Google" | "Zoom" | "Notion";
+export type TênChứcNăngTrongSaaS = "Forms" | "Docs" | "Sheets" | "Slides" | "Meet" | "Drive" | "Calendar";
+export type TênNềnTảngSaaS = TênSaaS;
+export type LoạiNơiĐăngSaaS = [TênChứcNăngTrongSaaS];
+type TênNơiĐăngSaaS = [string];
+
+export type VậtThểLàmGiáTrịChoTênSaaS = Record<TênChứcNăngTrongSaaS, string[] | null>;
+export type CấuHìnhSaaS = Record<TênNềnTảngSaaS, VậtThểLàmGiáTrịChoTênSaaS | null> | null;
+
 /**
  * KHÁC
  */

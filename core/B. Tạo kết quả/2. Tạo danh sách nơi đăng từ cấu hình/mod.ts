@@ -1,4 +1,12 @@
-import CấuHìnhNơiĐăng, { danhSáchNơiĐăngKhác, LoạiNơiĐăngDiễnĐàn, ThôngTinNơiĐăng } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import CấuHìnhNơiĐăng, {
+  danhSáchNơiĐăngKhác,
+  LoạiNơiĐăngDiễnĐàn,
+  ThôngTinNơiĐăng,
+  TênChứcNăngTrongSaaS,
+  TênNềnTảngSaaS,
+  VậtThểLàmGiáTrịChoTênSaaS,
+  ĐịnhDạngTậpTin,
+} from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { TênDiễnĐàn } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { CấuHìnhNơiĐăngDiễnĐàn } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import tạoDanhSáchChat from "./Tạo danh sách nơi đăng chat.ts";
@@ -27,6 +35,40 @@ function tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, d
   }
 }
 
+function tạoDanhSáchTậpTin(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: Omit<ThôngTinNơiĐăng, "id">[]) {
+  const cấuHìnhTậpTin = cấuHìnhNơiĐăng["Tập tin"];
+  if (!cấuHìnhTậpTin) return;
+  for (const [địnhĐạngTậpTin, danhSáchTênNơiĐăng] of Object.entries(cấuHìnhTậpTin) as [ĐịnhDạngTậpTin, string[]][]) {
+    for (const tênNơiĐăng of danhSáchTênNơiĐăng) {
+      danhSáchThôngTinNơiĐăng.push({
+        "Tên nơi đăng": [tênNơiĐăng],
+        "Loại nơi đăng": [địnhĐạngTậpTin],
+        "Tên nền tảng": địnhĐạngTậpTin,
+        "Loại nền tảng": "Tập tin",
+      });
+    }
+  }
+}
+
+function tạoDanhSáchSaaS(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: Omit<ThôngTinNơiĐăng, "id">[]) {
+  const cấuHìnhSaaS = cấuHìnhNơiĐăng["SaaS"];
+  if (!cấuHìnhSaaS) return;
+  for (const [tênSaaS, vậtThểLàmGiáTrịChoTênSaaS] of Object.entries(cấuHìnhSaaS) as [TênNềnTảngSaaS, VậtThểLàmGiáTrịChoTênSaaS | null][]) {
+    if (!vậtThểLàmGiáTrịChoTênSaaS) continue;
+    for (const [TênChứcNăngTrongSaaS, danhSáchTênNơiĐăng] of Object.entries(vậtThểLàmGiáTrịChoTênSaaS) as [TênChứcNăngTrongSaaS, string[] | null][]) {
+      if (!danhSáchTênNơiĐăng) continue;
+      for (const tênNơiĐăng of danhSáchTênNơiĐăng) {
+        danhSáchThôngTinNơiĐăng.push({
+          "Tên nơi đăng": [tênNơiĐăng],
+          "Loại nơi đăng": [TênChứcNăngTrongSaaS],
+          "Tên nền tảng": tênSaaS,
+          "Loại nền tảng": "SaaS",
+        });
+      }
+    }
+  }
+}
+
 function tạoDanhSáchKhác(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: Omit<ThôngTinNơiĐăng, "id">[]) {
   for (const loạiNơiĐăngKhác of danhSáchNơiĐăngKhác) {
     const cấuHìnhLoạiNơiĐăngKhác = cấuHìnhNơiĐăng[loạiNơiĐăngKhác];
@@ -46,6 +88,8 @@ export default async function tạoDanhSáchNơiĐăngChưaXácĐịnhVịTrí(c
   const danhSáchNơiĐăng: NơiĐăngChưaXácĐịnhVịTrí[] = [];
   tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng, danhSáchNơiĐăng);
   tạoDanhSáchChat(cấuHìnhNơiĐăng, danhSáchNơiĐăng);
+  tạoDanhSáchTậpTin(cấuHìnhNơiĐăng, danhSáchNơiĐăng);
+  tạoDanhSáchSaaS(cấuHìnhNơiĐăng, danhSáchNơiĐăng);
   tạoDanhSáchKhác(cấuHìnhNơiĐăng, danhSáchNơiĐăng);
 
   const cấuHìnhVịTrí = parse(Deno.readTextFileSync("./core/A. Cấu hình/Nơi đăng/Thiết lập chung (processed).yaml")) as CấuHìnhVịTrí;
@@ -64,7 +108,8 @@ export default async function tạoDanhSáchNơiĐăngChưaXácĐịnhVịTrí(c
   }
   return danhSáchNơiĐăng;
 }
-// const cấuHìnhNơiĐăng = parse(Deno.readTextFileSync('./core/A. Cấu hình/Nơi đăng/UAN.yaml')) as CấuHìnhNơiĐăng;
-// const a = tạoDanhSáchNơiĐăngChưaXácĐịnhVịTrí(cấuHìnhNơiĐăng);
-// console.log(a)
-// console.log('')
+// const cấuHìnhNơiĐăng = parse(Deno.readTextFileSync("./core/A. Cấu hình/Nơi đăng/Tổ chức/Quả Cầu.yaml")) as CấuHìnhNơiĐăng;
+// const a = await tạoDanhSáchNơiĐăngChưaXácĐịnhVịTrí(cấuHìnhNơiĐăng);
+// console.log(a);
+// console.log("");
+//
