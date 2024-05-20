@@ -65,7 +65,7 @@ export default function InputTìmBàiĐăngHoặcNơiĐăng(
       {viếtHoa(tênDanhSách)}
       <input
         type="text"
-        class="grow"
+        class="grow bg-base-100"
         autoFocus
         required
         value={query.value}

@@ -13,8 +13,7 @@ export default function ModalNơiĐăng() {
     }
     lấyMetaTag();
   }, [urlNhậpVào]);
-  const nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí | Record<string | number | symbol, never> =
-    phảnHồiTừCORSProxy?.["Nếu là nơi đăng"] || {};
+  const nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí | Record<string | number | symbol, never> = phảnHồiTừCORSProxy?.["Nếu là nơi đăng"] || {};
   const {
     "Loại nền tảng": loạiNềnTảng,
     "Tên nền tảng": tênNềnTảng,
@@ -34,7 +33,7 @@ export default function ModalNơiĐăng() {
         </div>
         <input
           name="URL"
-          class="input input-bordered input-primary w-full max-w-xs"
+          class="input input-bordered w-full max-w-xs"
           type="url"
           required
           id="URL"
@@ -50,7 +49,7 @@ export default function ModalNơiĐăng() {
         <input
           name="Tên nơi đăng"
           type="text"
-          class="input input-bordered input-primary w-full max-w-xs"
+          class="input input-bordered w-full max-w-xs"
           required
           id="tên"
           value={JSON.stringify(tênNơiĐăng)}
@@ -65,7 +64,7 @@ export default function ModalNơiĐăng() {
         <input
           name="Mô tả nơi đăng"
           type="text"
-          class="input input-bordered input-primary w-full max-w-xs"
+          class="input input-bordered w-full max-w-xs"
           id="mô-tả"
           value={môTảNơiĐăng}
           placeholder={môTảNơiĐăng}
@@ -79,7 +78,7 @@ export default function ModalNơiĐăng() {
         <input
           name="Loại nơi đăng"
           type="text"
-          class="input input-bordered input-primary w-full max-w-xs"
+          class="input input-bordered w-full max-w-xs"
           id="loại"
           required
           value={JSON.stringify(loạiNơiĐăng)}
@@ -94,7 +93,7 @@ export default function ModalNơiĐăng() {
         <input
           name="Loại nền tảng"
           type="text"
-          class="input input-bordered input-primary w-full max-w-xs"
+          class="input input-bordered w-full max-w-xs"
           id="loại-nền-tảng"
           value={loạiNềnTảng}
           placeholder={loạiNềnTảng}
@@ -108,7 +107,7 @@ export default function ModalNơiĐăng() {
         <input
           name="Tên nền tảng"
           type="text"
-          class="input input-bordered input-primary w-full max-w-xs"
+          class="input input-bordered w-full max-w-xs"
           id="tên-nền-tảng"
           value={tênNềnTảng}
           placeholder={tênNềnTảng}

@@ -11,7 +11,6 @@ import tạoVậtThểUTM, { tạoĐuôiRútGọn } from "../core/B. Tạo kết
 import { ghiVậtThểTiếpThịLênKV } from "../utils/Hàm và kiểu cho API server.ts";
 
 async function tạoVậtThểTiếpThị() {
-  console.log("tạo vật thể tiếp thị");
   const bàiĐăng = bàiĐăngĐượcChọn.value;
   const nơiĐăng = nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value;
   const bốicảnh = bốiCảnh.value;

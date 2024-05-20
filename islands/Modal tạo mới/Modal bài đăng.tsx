@@ -32,7 +32,7 @@ export default function ModalBàiĐăng() {
           <span class="label-text font-bold">URL</span>
         </div>
         <input
-          class="input input-bordered input-primary w-full max-w-xs"
+          class="input input-bordered w-full max-w-xs"
           id="URL"
           type="url"
           name="URL"
@@ -47,7 +47,7 @@ export default function ModalBàiĐăng() {
           <span class="label-text font-bold">Tiêu đề</span>
         </div>
         <input
-          class="input input-bordered input-primary w-full max-w-xs"
+          class="input input-bordered w-full max-w-xs"
           id="tiêu-đề"
           type="text"
           required
@@ -61,7 +61,7 @@ export default function ModalBàiĐăng() {
           <span class="label-text font-bold">Mô tả bài đăng</span>
         </div>
         <input
-          class="input input-bordered input-primary w-full max-w-xs"
+          class="input input-bordered w-full max-w-xs"
           id="mô-tả"
           type="text"
           name="Mô tả bài đăng"
@@ -74,7 +74,7 @@ export default function ModalBàiĐăng() {
           <span class="label-text font-bold">Tên dự án</span>
         </div>
         <input
-          class="input input-bordered input-primary w-full max-w-xs"
+          class="input input-bordered w-full max-w-xs"
           id="tên-dự-án"
           type="text"
           name="Tên dự án"
@@ -88,7 +88,7 @@ export default function ModalBàiĐăng() {
           <span class="label-text font-bold">Website</span>
         </div>
         <input
-          class="input input-bordered input-primary w-full max-w-xs"
+          class="input input-bordered w-full max-w-xs"
           id="website"
           type="text"
           name="Website"
