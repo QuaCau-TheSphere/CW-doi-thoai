@@ -9,7 +9,10 @@ import { THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT, THƯ_MỤC_CẤU_HÌNH_NƠI_Đ
 
 const kv = await Deno.openKv();
 
-const danhSáchBàiĐăng = await tạoDanhSáchBàiĐăng(THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT, ĐƯỜNG_DẪN_ĐẾN_TẬP_TIN_CSV);
+const cấuHìnhNơiĐăng = parse(await Deno.readTextFile("core/A. Cấu hình/Nơi đăng/Tổ chức/Quả Cầu.yaml")) as CấuHìnhNơiĐăng;
+const cấuHìnhWebsite = cấuHìnhNơiĐăng.Website;
+
+const danhSáchBàiĐăng = await tạoDanhSáchBàiĐăng(THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT, ĐƯỜNG_DẪN_ĐẾN_TẬP_TIN_CSV, cấuHìnhWebsite);
 await Deno.writeTextFile("core/A. Cấu hình/Danh sách tất cả bài đăng.json", JSON.stringify(danhSáchBàiĐăng));
 for (const bàiĐăngLấyTừVault of danhSáchBàiĐăng) {
   console.log(bàiĐăngLấyTừVault["Tiêu đề"]);
@@ -24,7 +27,6 @@ for (const bàiĐăngLấyTừVault of danhSáchBàiĐăng) {
 //   } else if (dirEntry.isDirectory) {
 //   }
 // }
-const cấuHìnhNơiĐăng = parse(await Deno.readTextFile("core/A. Cấu hình/Nơi đăng/Tổ chức/Quả Cầu.yaml")) as CấuHìnhNơiĐăng;
 const danhSáchNơiĐăngTừCấuHình = await tạoDanhSáchNơiĐăngChưaXácĐịnhVịTrí(cấuHìnhNơiĐăng) as NơiĐăngChưaXácĐịnhVịTrí[];
 for (const nơiĐăng of danhSáchNơiĐăngTừCấuHình) {
   console.log(nơiĐăng["Tên nơi đăng"]);

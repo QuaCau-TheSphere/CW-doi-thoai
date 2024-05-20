@@ -1,4 +1,5 @@
 - [ ] Lay website khai bao o noi dang vào bai dang
+- [ ] Bo qua viec rut gon
 - [ ] Tong hop cac cau hinh noi dang
 - [ ] Cho phep nhap link trong cau hinh
 - [ ] viet bai

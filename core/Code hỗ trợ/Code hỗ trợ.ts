@@ -39,7 +39,12 @@ export function tạoChuỗiNgẫuNhiên(sốKýTự: number): string {
 
 type DữLiệu = BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí;
 
-export async function xácĐịnhId(tênDanhSách: TênDanhSách, dữLiệu: Omit<BàiĐăng, "id"> | Omit<NơiĐăngChưaXácĐịnhVịTrí, "id">): Promise<string> {
+export async function xácĐịnhId(
+  tênDanhSách: TênDanhSách,
+  dữLiệu: BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí | Omit<BàiĐăng, "id"> | Omit<NơiĐăngChưaXácĐịnhVịTrí, "id">,
+): Promise<string> {
+  //@ts-ignore:
+  if (dữLiệu.id) return dữLiệu.id;
   const kv = await Deno.openKv();
   const key = tạoKeyKV(tênDanhSách, dữLiệu as DữLiệu);
   const value = (await kv.get(key)).value as DữLiệu | undefined | null;

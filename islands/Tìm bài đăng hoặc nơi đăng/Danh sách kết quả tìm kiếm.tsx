@@ -1,33 +1,50 @@
 import type { MụcĐượcChọn, TênDanhSách } from "../../utils/Kiểu cho web.ts";
 import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/plus.tsx";
-import { kiểuKebab, tạoLoạiNơiĐăngString, tạoTênNơiĐăngString, tạoVaultHoặcDựÁnString } from "../../utils/Hàm cho khung nhập.ts";
+import { kiểuKebab, tạoLoạiNơiĐăngString, tạoTênNơiĐăngString } from "../../utils/Hàm cho khung nhập.ts";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { BàiĐăng } from "../../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { element } from "../Signals tổng.ts";
 import { cursor, danhSáchGợiÝSignal } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
 import { Signal } from "@preact/signals";
 
+function tạoDòngPhụCủaBàiĐăng(bàiĐăng: BàiĐăng) {
+  const { "Dự án": dựÁn, Vault: vault, URL, "Mã bài đăng": mãBàiĐăng, id } = bàiĐăng;
+  let key, value;
+  if (dựÁn && dựÁn["Tên dự án"]) {
+    key = "Dự án";
+    value = dựÁn["Tên dự án"];
+  } else if (vault) {
+    key = "Vault";
+    value = vault;
+  }
+  return <>{key}: {value} • URL: {URL} • id: {id}</>; //dùng để test
+  if (value) return <>{key}: {value}</>;
+  return <>URL: {URL} • Mã bài đăng: {mãBàiĐăng} • id: {id}</>;
+  if (value) {
+    return (
+      <ul>
+        <li>{key}: {value}</li>
+        <li>URL: {URL} • Mã bài đăng: {mãBàiĐăng} • id: {id}</li>
+      </ul>
+    );
+  }
+}
+
 function Item({ item, tênDanhSách }: { item: BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí; tênDanhSách: TênDanhSách }) {
   let dòngChính, dòngPhụ;
   switch (tênDanhSách) {
     case "bài đăng": {
       item = item as BàiĐăng;
-      const { "Dự án": dựÁn, Vault: vault, "Tiêu đề": tiêuĐề } = item;
-      dòngChính = tiêuĐề;
-
-      const vaultHoặcDựÁnString = tạoVaultHoặcDựÁnString(dựÁn, vault);
-      dòngPhụ = <span id="nơi-lưu-bài-đăng">{vaultHoặcDựÁnString}</span>;
+      dòngChính = item["Tiêu đề"];
+      dòngPhụ = <span id="nơi-lưu-bài-đăng">{tạoDòngPhụCủaBàiĐăng(item)}</span>;
       break;
     }
     case "nơi đăng": {
       item = item as NơiĐăngChưaXácĐịnhVịTrí;
       const tênNơiĐăng = item["Tên nơi đăng"];
       if (!Array.isArray(tênNơiĐăng)) return <></>;
-      const tênNơiĐăngString = tạoTênNơiĐăngString(tênNơiĐăng);
-      dòngChính = tênNơiĐăngString;
-
-      const loạiNơiĐăngString = tạoLoạiNơiĐăngString(item);
-      dòngPhụ = <span id="loại-nơi-đăng">{loạiNơiĐăngString}</span>;
+      dòngChính = tạoTênNơiĐăngString(tênNơiĐăng);
+      dòngPhụ = <span id="loại-nơi-đăng">{tạoLoạiNơiĐăngString(item)}</span>;
     }
   }
   return (

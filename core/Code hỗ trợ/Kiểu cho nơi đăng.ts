@@ -268,18 +268,18 @@ export type CấuHìnhSaaS = Record<TênNềnTảngSaaS, VậtThểLàmGiáTrị
 /**
  * KHÁC
  */
-export const danhSáchNơiĐăngKhác = ["Vault", "Website", "Email", "CV", "Ảnh"] as const;
+export const danhSáchNơiĐăngKhác = ["Vault", "Website", "Email", "Ảnh"] as const;
 export type LoạiNơiĐăngKhác = [typeof danhSáchNơiĐăngKhác[number]];
 /** Tên nền tảng của vault, website, email, CV, ảnh, dịch vụ lưu trữ không quan trọng, không phức tạp, không làm ảnh hưởng tới cách gọi các cấp bậc nhỏ hơn nên để null cũng được */
 type TênNềnTảngKhác = typeof danhSáchNơiĐăngKhác[number];
 type LoạiNềnTảngKhác = typeof danhSáchNơiĐăngKhác[number];
 type TênNơiĐăngKhác = [string];
 
-export type CấuHìnhVault = string[] | null;
-export type CấuHìnhWebsite = string[] | null;
-export type CấuHìnhEmail = string[] | null;
-export type CấuHìnhCV = string[] | null;
-export type CấuHìnhẢnh = string[] | null;
+export type CấuHìnhVault = string[];
+export type CấuHìnhWebsite = string[];
+export type CấuHìnhEmail = string[];
+export type CấuHìnhCV = string[];
+export type CấuHìnhẢnh = string[];
 
 /** Không xét URL vì có những nơi đăng có nhiều URL khác nhau */
 export function làCùngNơiĐăng(nơiĐăng1: ThôngTinNơiĐăng, nơiĐăng2: ThôngTinNơiĐăng): boolean {

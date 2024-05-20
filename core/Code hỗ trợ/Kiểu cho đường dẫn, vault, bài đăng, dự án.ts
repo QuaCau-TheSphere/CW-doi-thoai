@@ -5,16 +5,10 @@ import { tạoChuỗiNgẫuNhiên } from "./Code hỗ trợ.ts";
 export type URLString = string | URL;
 export type ĐườngDẫnTuyệtĐối = string;
 export type ĐườngDẫnTươngĐối = string;
-export type VậtThểĐườngDẫnTuyệtĐối = Readonly<ParsedPath> & {
-  readonly isAbsolute: true;
-};
-export type VậtThểĐườngDẫnTươngĐối = Readonly<ParsedPath> & {
-  readonly isAbsolute: false;
-};
+export type VậtThểĐườngDẫnTuyệtĐối = Readonly<ParsedPath> & { readonly isAbsolute: true };
+export type VậtThểĐườngDẫnTươngĐối = Readonly<ParsedPath> & { readonly isAbsolute: false };
 
-export function đọcĐườngDẫn(
-  path: string,
-): VậtThểĐườngDẫnTuyệtĐối | VậtThểĐườngDẫnTươngĐối {
+export function đọcĐườngDẫn(path: string): VậtThểĐườngDẫnTuyệtĐối | VậtThểĐườngDẫnTươngĐối {
   const parsed = parse(path);
   return Object.assign(parsed, { isAbsolute: parsed.root.length > 0 });
 }

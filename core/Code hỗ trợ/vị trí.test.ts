@@ -10,3 +10,4 @@ Deno.test("tạoDanhSáchVịTríCóThểĐăng", () => {
   const danhSáchVịTríCóThểĐăng = tạoDanhSáchVịTríCóThểĐăng(danhSáchVịTríThànhPhần, cấuHìnhVịTríNhỏHơn);
   console.log(JSON.stringify(danhSáchVịTríCóThểĐăng));
 });
+

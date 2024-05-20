@@ -1,6 +1,6 @@
 import { ThôngTinNơiĐăng, TênNơiĐăng } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { VịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
-import { DựÁn } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { BàiĐăng } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { element } from "../islands/Signals tổng.ts";
 
 export function viếtHoa(chuỗi: string | undefined) {
@@ -51,24 +51,7 @@ export function tạoLoạiNơiĐăngString(thôngTinNơiĐăng: ThôngTinNơiĐ
   }
 }
 
-export function tạoVaultHoặcDựÁnString(
-  dựÁn: DựÁn | undefined,
-  vault: string | undefined,
-) {
-  let key, value;
-  if (dựÁn && dựÁn["Tên dự án"]) {
-    key = "Dự án";
-    value = dựÁn["Tên dự án"];
-  } else if (vault) {
-    key = "Vault";
-    value = vault;
-  }
-  return `${key}: ${value}`;
-}
-
-export function đổiKhungNhập(
-  xuôiHayNgược: "xuôi" | "ngược",
-) {
+export function đổiKhungNhập(xuôiHayNgược: "xuôi" | "ngược") {
   const khungNhậpBàiĐăng = document.getElementById("khung-nhập-bài-đăng")!;
   const khungNhậpNơiĐăng = document.getElementById("khung-nhập-nơi-đăng")!;
   const khungNhậpBốiCảnh = document.getElementById("khung-nhập-bối-cảnh")!;
