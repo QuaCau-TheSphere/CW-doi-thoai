@@ -71,6 +71,6 @@ export default function Main({ danhSáchNơiĐăng, danhSáchBàiĐăng, cấuH�
   flexSearchNơiĐăngSignal.value = flexSearchNơiĐăng;
 
   /** Tách ra thành test với production để khi không quan tâm tới section bên phải thì section bên trái không giảm một nửa bề rộng do tailwind*/
-  return <Test />;
   return <Production textTrangChủ={textTrangChủ} />;
+  return <Test />;
 }

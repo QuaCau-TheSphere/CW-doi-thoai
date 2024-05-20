@@ -170,7 +170,7 @@ export function tạoĐuôiRútGọn(
   return `${phầnChoBàiĐăng}.${phầnChoNơiĐăng}.${lầnĐăng}`;
 }
 
-export default function tạoThamSốUTMVàLiênKếtRútGọn(
+export default function tạoVậtThểUTM(
   { bàiĐăng, nơiĐăng, bốiCảnh, cấuHìnhNơiĐăng }: {
     bàiĐăng: BàiĐăng;
     nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí;

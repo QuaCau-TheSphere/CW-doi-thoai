@@ -7,7 +7,7 @@ import {
   tênNút,
   vậtThểTiếpThịĐượcTạo,
 } from "./Signals tổng.ts";
-import tạoThamSốUTMVàLiênKếtRútGọn, { tạoĐuôiRútGọn } from "../core/B. Tạo kết quả/3. Tạo tham số UTM và liên kết rút gọn.ts";
+import tạoVậtThểUTM, { tạoĐuôiRútGọn } from "../core/B. Tạo kết quả/3. Tạo tham số UTM và liên kết rút gọn.ts";
 import { ghiVậtThểTiếpThịLênKV } from "../utils/Hàm và kiểu cho API server.ts";
 
 async function tạoVậtThểTiếpThị() {
@@ -26,7 +26,7 @@ async function tạoVậtThểTiếpThị() {
     console.error("Chưa có nơi đăng");
     return;
   }
-  const thamSốUTMVàLiênKếtRútGọn = tạoThamSốUTMVàLiênKếtRútGọn(
+  const thamSốUTMVàLiênKếtRútGọn = tạoVậtThểUTM(
     {
       bàiĐăng: bàiĐăng,
       nơiĐăng: nơiĐăng,

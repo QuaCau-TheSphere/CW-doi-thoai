@@ -7,6 +7,7 @@ import tạoDanhSáchNơiĐăngChưaXácĐịnhVịTrí from "../B. Tạo kết 
 import { CấuHìnhVịTrí, NơiĐăngChưaXácĐịnhVịTrí } from "./Hàm và kiểu cho vị trí.tsx";
 import CấuHìnhNơiĐăng, { VậtThểCấuHình } from "./Kiểu cho nơi đăng.ts";
 import { THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT, THƯ_MỤC_CẤU_HÌNH_NƠI_ĐĂNG, ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG, ĐƯỜNG_DẪN_ĐẾN_TẬP_TIN_CSV } from "./env.ts";
+import esthetic from "npm:esthetic";
 
 const danhSáchCấuHình: VậtThểCấuHình[] = [];
 
@@ -34,7 +35,6 @@ let danhSáchBàiĐăng = await tạoDanhSáchBàiĐăng(THƯ_MỤC_CHỨA_TẤT
 for (const vậtThểCấuHình of danhSáchCấuHình) {
   const cấuHìnhWebsite = vậtThểCấuHình.cấuHình.Website;
   danhSáchBàiĐăng = danhSáchBàiĐăng.concat(await tạoDanhSáchBàiĐăngTừCấuHìnhNơiĐăng(cấuHìnhWebsite));
-  await Deno.writeTextFile("core/A. Cấu hình/Danh sách tất cả bài đăng.json", JSON.stringify(danhSáchBàiĐăng));
   for (const bàiĐăngLấyTừVault of danhSáchBàiĐăng) {
     console.log(bàiĐăngLấyTừVault["Tiêu đề"]);
     const key = tạoKeyKV("bài đăng", bàiĐăngLấyTừVault);
@@ -48,4 +48,5 @@ for (const vậtThểCấuHình of danhSáchCấuHình) {
   }
 }
 
+await Deno.writeTextFile("core/A. Cấu hình/Danh sách tất cả bài đăng.json", esthetic.json(JSON.stringify(danhSáchBàiĐăng)));
 console.log("✅Đã đẩy xong lên KV");

@@ -14,9 +14,10 @@ export const handler: Handlers = {
           "Nếu là nơi đăng": nơiĐăng,
         });
       } catch (e) {
+        const html = await (await fetch(url)).text();
         return Response.json({
           lỗi: String(e.stack),
-          html: esthetic.format(await (await fetch(url)).text()),
+          html: esthetic.html(html),
         });
       }
     } catch {
