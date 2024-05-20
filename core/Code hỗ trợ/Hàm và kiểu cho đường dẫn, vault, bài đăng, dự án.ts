@@ -3,7 +3,13 @@ import { tạoChuỗiNgẫuNhiên } from "./Code hỗ trợ.ts";
 
 /** Đường dẫn */
 export type URLString = string | URL;
+/**
+ * @example `D:\\QC supplements\\Vaults`
+ */
 export type ĐườngDẫnTuyệtĐối = string;
+/**
+ * @example `./core/A. Cấu hình/wpd9_posts.csv`
+ */
 export type ĐườngDẫnTươngĐối = string;
 export type VậtThểĐườngDẫnTuyệtĐối = Readonly<ParsedPath> & { readonly isAbsolute: true };
 export type VậtThểĐườngDẫnTươngĐối = Readonly<ParsedPath> & { readonly isAbsolute: false };

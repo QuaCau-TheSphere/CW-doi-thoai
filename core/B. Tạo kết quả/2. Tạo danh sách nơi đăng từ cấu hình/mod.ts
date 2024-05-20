@@ -4,6 +4,7 @@ import CấuHìnhNơiĐăng, {
   ThôngTinNơiĐăng,
   TênChứcNăngTrongSaaS,
   TênNềnTảngSaaS,
+  VậtThểCấuHình,
   VậtThểLàmGiáTrịChoTênSaaS,
   ĐịnhDạngTậpTin,
 } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
@@ -84,24 +85,28 @@ function tạoDanhSáchKhác(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSá
   }
 }
 
-export default async function tạoDanhSáchNơiĐăngChưaXácĐịnhVịTrí(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng): Promise<NơiĐăngChưaXácĐịnhVịTrí[]> {
+export default async function tạoDanhSáchNơiĐăngChưaXácĐịnhVịTrí(
+  vậtThểCấuHình: VậtThểCấuHình,
+  cấuHìnhVịTrí: CấuHìnhVịTrí,
+): Promise<NơiĐăngChưaXácĐịnhVịTrí[]> {
+  const { cấuHình, loạiCấuHình, tênCấuHình } = vậtThểCấuHình;
   const danhSáchNơiĐăng: NơiĐăngChưaXácĐịnhVịTrí[] = [];
-  tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng, danhSáchNơiĐăng);
-  tạoDanhSáchChat(cấuHìnhNơiĐăng, danhSáchNơiĐăng);
-  tạoDanhSáchTậpTin(cấuHìnhNơiĐăng, danhSáchNơiĐăng);
-  tạoDanhSáchSaaS(cấuHìnhNơiĐăng, danhSáchNơiĐăng);
-  tạoDanhSáchKhác(cấuHìnhNơiĐăng, danhSáchNơiĐăng);
+  tạoDanhSáchDiễnĐàn(cấuHình, danhSáchNơiĐăng);
+  tạoDanhSáchChat(cấuHình, danhSáchNơiĐăng);
+  tạoDanhSáchTậpTin(cấuHình, danhSáchNơiĐăng);
+  tạoDanhSáchSaaS(cấuHình, danhSáchNơiĐăng);
+  tạoDanhSáchKhác(cấuHình, danhSáchNơiĐăng);
 
-  const cấuHìnhVịTrí = parse(Deno.readTextFileSync("./core/A. Cấu hình/Nơi đăng/Thiết lập chung (processed).yaml")) as CấuHìnhVịTrí;
   const {
-    "Danh sách vật thể vị trí": danhSáchVậtThểVịTrí,
-    "Vị trí nhỏ hơn": cấuHìnhVịTríNhỏHơn,
+    "Vị trí đặt liên kết ở nơi đăng": danhSáchVậtThểVịTrí,
+    "Vị trí thành phần": cấuHìnhVịTríNhỏHơn,
   } = cấuHìnhVịTrí;
   for (const thôngTinNơiĐăng of danhSáchNơiĐăng) {
     for (const vậtThểVịTrí of danhSáchVậtThểVịTrí) {
       const danhSáchVịTríThànhPhần = vậtThểVịTrí["Danh sách vị trí"];
       if (vậtThểVịTríCóThôngTinNơiĐăng(thôngTinNơiĐăng, vậtThểVịTrí)) {
         thôngTinNơiĐăng["Vị trí có thể đăng"] = tạoDanhSáchVịTríCóThểĐăng(danhSáchVịTríThànhPhần, cấuHìnhVịTríNhỏHơn);
+        thôngTinNơiĐăng["Lĩnh vực"] = [tênCấuHình];
       }
     }
     thôngTinNơiĐăng.id = await xácĐịnhId("nơi đăng", thôngTinNơiĐăng);

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "preact/hooks";
-import { BàiĐăng } from "../../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { BàiĐăng } from "../../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { queryBàiĐăng } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
 import { PhảnHồiTừCORSProxy } from "../../utils/Hàm và kiểu cho API server.ts";
 

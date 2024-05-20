@@ -1,4 +1,4 @@
-import { BàiĐăng, URLString } from "./Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { BàiĐăng, URLString } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import CấuHìnhNơiĐăng from "./Kiểu cho nơi đăng.ts";
 import { LiênKếtUTM, ThamSốUTM } from "./Kiểu cho tham số UTM.ts";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "./Hàm và kiểu cho vị trí.tsx";

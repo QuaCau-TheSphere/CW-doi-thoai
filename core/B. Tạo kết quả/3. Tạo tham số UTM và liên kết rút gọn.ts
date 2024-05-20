@@ -1,8 +1,5 @@
+import { BàiĐăng, DựÁn } from "../Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import {
-  BàiĐăng,
-  DựÁn,
-} from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20%C4%91%C6%B0%E1%BB%9Dng%20d%E1%BA%ABn,%20vault,%20b%C3%A0i%20%C4%91%C4%83ng,%20d%E1%BB%B1%20%C3%A1n.ts";
-import ThamSốUTM, {
   Campaign,
   Content,
   Medium,
@@ -14,26 +11,15 @@ import ThamSốUTM, {
   ThamSốUTM,
   TênNơiĐăngString,
   ĐuôiRútGọn,
-} from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91%20UTM.ts";
-import {
-  lấyKýHiệuViếtTắt,
-  tạoChuỗiNgẫuNhiên,
-  tạoLiênKếtUTM,
-} from "../Code%20h%E1%BB%97%20tr%E1%BB%A3/Code%20h%E1%BB%97%20tr%E1%BB%A3.ts";
-import { BốiCảnh } from "../../utils/Ki%E1%BB%83u%20cho%20web.ts";
-import CấuHìnhNơiĐăng, {
-  LoạiNơiĐăngChat,
-  LoạiNềnTảng,
-  NơiĐăngĐãXácĐịnhVịTrí,
-} from "../Code hỗ trợ/Kiểu cho nơi đăng.ts";
+} from "../Code hỗ trợ/Kiểu cho tham số UTM.ts";
+import { lấyKýHiệuViếtTắt, tạoChuỗiNgẫuNhiên, tạoLiênKếtUTM } from "../Code hỗ trợ/Code hỗ trợ.ts";
+import { BốiCảnh } from "../../utils/Kiểu cho web.ts";
+import CấuHìnhNơiĐăng, { LoạiNơiĐăngChat, LoạiNềnTảng, NơiĐăngĐãXácĐịnhVịTrí } from "../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { tạoVịTríString } from "../../utils/Hàm cho khung nhập.ts";
 import VậtThểThamSốUTM from "../Code hỗ trợ/Kiểu cho tham số UTM.ts";
 
 /** Chủ yếu là thể hiện loại nền tảng, tên nền tảng, loại nơi đăng một cách ngắn gọn. Có những nơi đăng nhìn vào là biết loại nền tảng nào, ví dụ r/subreddit, hoặc email@domain.com */
-function tạoSource(
-  nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí,
-  cấuHìnhNơiĐăng: CấuHìnhNơiĐăng,
-): Source {
+function tạoSource(nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí, cấuHìnhNơiĐăng: CấuHìnhNơiĐăng): Source {
   const {
     "Loại nền tảng": loạiNềnTảng,
     "Tên nền tảng": tênNềnTảng,
@@ -41,8 +27,7 @@ function tạoSource(
     "Loại nơi đăng": loạiNơiĐăng,
     "Vị trí": vịTrí,
   } = nơiĐăng;
-  const kýHiệuNềnTảng = lấyKýHiệuViếtTắt(tênNềnTảng, cấuHìnhNơiĐăng) ||
-    tênNềnTảng;
+  const kýHiệuNềnTảng = lấyKýHiệuViếtTắt(tênNềnTảng, cấuHìnhNơiĐăng) || tênNềnTảng;
   const tênNơiĐăngString: TênNơiĐăngString = tênNơiĐăng.join(" » ");
 
   let phầnNềnTảngVàNơiĐăng: string;

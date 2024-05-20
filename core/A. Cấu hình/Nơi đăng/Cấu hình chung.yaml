@@ -1,4 +1,4 @@
-Danh sách vật thể vị trí:
+Vị trí đặt liên kết ở nơi đăng:
   # Diễn đàn
   ## Facebook
   - Loại nền tảng: Diễn đàn
@@ -152,7 +152,7 @@ Danh sách vật thể vị trí:
     Loại nơi đăng: [Ảnh]
     Danh sách vị trí: [QR, Chữ trong ảnh, Metadata]
 
-Vị trí nhỏ hơn:
+Vị trí thành phần:
   Bài đăng: [Nội dung chính, Bình luận]
   Ảnh đại diện: [Mô tả ảnh, QR trong ảnh, Chữ trong ảnh, Bình luận]
   Ảnh bìa: [Mô tả ảnh, QR trong ảnh, Chữ trong ảnh, Bình luận]
@@ -160,3 +160,15 @@ Vị trí nhỏ hơn:
   Tin nhắn ghim: ["", QR trong ảnh, Chữ trong ảnh]
   Album ảnh: [Mô tả album, Bình luận]
   Video: [Mô tả video, QR trong video, Chữ trong video, Bình luận]
+
+Viết tắt:
+  - Facebook: F
+  - YouTube: Y
+  - Messenger: M
+  - Discord: D
+  - GitHub: G
+  - Telegram: T
+  - Zalo: Z
+  - LinkedIn: L
+  - Reddit: R
+  - Stack Exchange: SE

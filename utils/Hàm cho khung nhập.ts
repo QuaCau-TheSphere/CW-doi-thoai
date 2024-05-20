@@ -1,6 +1,6 @@
 import { ThôngTinNơiĐăng, TênNơiĐăng } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { VịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
-import { BàiĐăng } from "../core/Code hỗ trợ/Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { BàiĐăng } from "../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { element } from "../islands/Signals tổng.ts";
 
 export function viếtHoa(chuỗi: string | undefined) {

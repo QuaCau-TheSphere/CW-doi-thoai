@@ -1,5 +1,5 @@
 import { getMetaTags } from "https://deno.land/x/opengraph@v1.0.0/mod.ts";
-import { BàiĐăng, URLString } from "./Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { BàiĐăng, URLString } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { danhSáchDiễnĐàn, danhSáchNềnTảngChat, LoạiNơiĐăng, LoạiNềnTảng, ThôngTinNơiĐăng, TênNềnTảng } from "./Kiểu cho nơi đăng.ts";
 import { viếtThường } from "../../utils/Hàm cho khung nhập.ts";
 import { assert } from "$std/assert/assert.ts";
@@ -7,6 +7,7 @@ import { FreshContext } from "https://deno.land/x/fresh@1.6.8/src/server/mod.ts"
 import { CấuHìnhVịTrí, NơiĐăngChưaXácĐịnhVịTrí, tạoNơiĐăngChưaXácĐịnhVịTrí } from "./Hàm và kiểu cho vị trí.tsx";
 import { parse } from "$std/yaml/mod.ts";
 import { tạoChuỗiNgẫuNhiên } from "./Code hỗ trợ.ts";
+import { ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG } from "./env.ts";
 
 interface MetaTags {
   title: string;
@@ -95,8 +96,9 @@ async function tạoNơiĐăng(
     "Loại nền tảng": loạiNềnTảng,
     "Tên nền tảng": tênNềnTảng,
     "Loại nơi đăng": loạiNơiĐăng,
+    id: tạoChuỗiNgẫuNhiên(4),
   } satisfies ThôngTinNơiĐăng;
-  const cấuHìnhVịTrí = parse(await Deno.readTextFile("./core/A. Cấu hình/Nơi đăng/Thiết lập chung (processed).yaml")) as CấuHìnhVịTrí;
+  const cấuHìnhVịTrí = parse(await Deno.readTextFile(ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG)) as CấuHìnhVịTrí;
 
   return tạoNơiĐăngChưaXácĐịnhVịTrí(thôngTinNơiĐăng, cấuHìnhVịTrí);
 }
@@ -109,7 +111,6 @@ export async function tạoBàiĐăngHoặcNơiĐăngMớiTừURL(urlString: URL
 
   const title = lấyTitle(og.title);
   const description = og.description;
-  const site_name = og.site_name?.replace("www.", "");
   const { hostname, pathname } = new URL(url);
 
   const bàiĐăng: BàiĐăng = {

@@ -1,5 +1,3 @@
-import { tạoVịTríString } from "../../utils/Hàm cho khung nhập.ts";
-import { BàiĐăng } from "./Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { LoạiNơiĐăng, LoạiNềnTảng, NơiĐăngĐãXácĐịnhVịTrí, ThôngTinNơiĐăng, TênNơiĐăng, TênNềnTảng } from "./Kiểu cho nơi đăng.ts";
 
 type VịTríThànhPhần = string;
@@ -7,10 +5,10 @@ type VịTríThànhPhần = string;
 /** CẤU HÌNH VỊ TRÍ */
 /** Tránh dùng khái niệm "vị trí có thể đăng" trong cấu hình vị trí, vì nó đã được dùng trong NơiĐăngChưaXácĐịnhVịTrí */
 export interface CấuHìnhVịTrí {
-  "Danh sách vật thể vị trí": VậtThểVịTríTrongCấuHìnhVịTrí[];
-  "Vị trí nhỏ hơn": Record<string, VịTríThànhPhần[]>;
+  "Vị trí đặt liên kết ở nơi đăng": VậtThểVịTríTrongCấuHìnhVịTrí[];
+  "Vị trí thành phần": Record<string, VịTríThànhPhần[]>;
 }
-/** Danh sách vị trí có thể đăng của một loại nơi đăng. Nó nằm trong cấu hình vị trí, không nằm trong nơi đăng
+/** Danh sách vị trí có thể đăng của một loại nơi đăng. Nó nằm trong thiết lập chung, không nằm trong một cấu hình nơi đăng cụ thể nào
  * @example
  * Ví dụ danh sách vị trí thành phần của nhóm Facebook
  * ```json
@@ -51,7 +49,7 @@ export function vậtThểVịTríCóThôngTinNơiĐăng(thôngTinNơiĐăng: Th
 
 export function tạoDanhSáchVịTríCóThểĐăng(
   danhSáchVịTríThànhPhần: DanhSáchVịTríThànhPhần,
-  cấuHìnhVịTríNhỏHơn: CấuHìnhVịTrí["Vị trí nhỏ hơn"],
+  cấuHìnhVịTríNhỏHơn: CấuHìnhVịTrí["Vị trí thành phần"],
 ): DanhSáchVịTríCóThểĐăng {
   const danhSáchVịTríCóThểĐăng: DanhSáchVịTríCóThểĐăng = [];
   for (const vịTríThànhPhần of danhSáchVịTríThànhPhần) {
@@ -102,13 +100,17 @@ export type VịTrí = VịTríThànhPhần[];
 export type DanhSáchVịTríCóThểĐăng = VịTrí[];
 export interface NơiĐăngChưaXácĐịnhVịTrí extends ThôngTinNơiĐăng {
   "Vị trí có thể đăng": DanhSáchVịTríCóThểĐăng;
+  id: string;
 }
 
-export function tạoNơiĐăngChưaXácĐịnhVịTrí(thôngTinNơiĐăng: ThôngTinNơiĐăng, cấuHìnhVịTrí: CấuHìnhVịTrí): NơiĐăngChưaXácĐịnhVịTrí {
+export function tạoNơiĐăngChưaXácĐịnhVịTrí(
+  thôngTinNơiĐăng: ThôngTinNơiĐăng & { id: string },
+  cấuHìnhVịTrí: CấuHìnhVịTrí,
+): NơiĐăngChưaXácĐịnhVịTrí {
   let danhSáchVịTríCóThểĐăng: DanhSáchVịTríCóThểĐăng = [];
   const {
-    "Danh sách vật thể vị trí": danhSáchVậtThểVịTrí,
-    "Vị trí nhỏ hơn": cấuHìnhVịTríNhỏHơn,
+    "Vị trí đặt liên kết ở nơi đăng": danhSáchVậtThểVịTrí,
+    "Vị trí thành phần": cấuHìnhVịTríNhỏHơn,
   } = cấuHìnhVịTrí;
   for (const vậtThểVịTrí of danhSáchVậtThểVịTrí) {
     const danhSáchVịTríThànhPhần = vậtThểVịTrí["Danh sách vị trí"];
@@ -120,7 +122,10 @@ export function tạoNơiĐăngChưaXácĐịnhVịTrí(thôngTinNơiĐăng: Th�
   return { ...thôngTinNơiĐăng, "Vị trí có thể đăng": danhSáchVịTríCóThểĐăng };
 }
 
-export function tạoNơiĐăngĐãXácĐịnhVịTrí(vịTríĐượcChọn: VịTrí | string, nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí): NơiĐăngĐãXácĐịnhVịTrí {
+export function tạoNơiĐăngĐãXácĐịnhVịTrí(
+  vịTríĐượcChọn: VịTrí | string,
+  nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí,
+): NơiĐăngĐãXácĐịnhVịTrí {
   let vịTrí = vịTríĐượcChọn;
   if (typeof vịTríĐượcChọn === "string") {
     vịTrí = JSON.parse(vịTríĐượcChọn) as VịTrí;

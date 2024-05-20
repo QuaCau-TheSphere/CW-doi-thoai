@@ -1,7 +1,13 @@
 /** Chỉ có những biến có từ cấu hình trong tên là dành cho cấu hình, còn lại là dành cho kết quả là vật thể nơi đăng */
 import { OneKey } from "./Code hỗ trợ.ts";
 import { VịTrí } from "./Hàm và kiểu cho vị trí.tsx";
-import { URLString } from "./Kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { URLString } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+
+export type VậtThểCấuHình = {
+  cấuHình: CấuHìnhNơiĐăng;
+  loạiCấuHình: string;
+  tênCấuHình: string;
+};
 
 /** null là để cho việc người dùng khai báo xong để đó */
 export default interface CấuHìnhNơiĐăng {
