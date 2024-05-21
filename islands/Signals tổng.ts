@@ -15,7 +15,7 @@ export const nơiĐăngChưaXácĐịnhVịTríĐượcChọn = signal<NơiĐăn
 export const nơiĐăngĐãXácĐịnhVịTríĐượcChọn = signal<NơiĐăngĐãXácĐịnhVịTrí | undefined>(undefined);
 export const bốiCảnh = signal<string | undefined>(undefined);
 export const element = signal<ElementDùngTab>("bài đăng");
-// export const cóRútGọn = signal<boolean>(true);
+export const cóRútGọn = signal<boolean>(true);
 
 export const vịTríString = signal<string | undefined>(undefined);
 export const vậtThểTiếpThịĐượcTạo = signal<VậtThểTiếpThị | undefined>(undefined);
