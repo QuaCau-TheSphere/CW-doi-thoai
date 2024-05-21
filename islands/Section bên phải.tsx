@@ -3,9 +3,16 @@ import KhungThôngTinKhiKhôngCóKếtQuả from "../components/KhungThôngTinKh
 import KếtQuảĐượcChọn from "./Kết quả được chọn/Kết quả được chọn.tsx";
 
 export default function SectionBênPhải({ text }: { text: string }) {
+  return (
+    <section id="section-bên-phải" class="basis-1/2 p-10">
+      {vậtThểTiếpThịĐượcTạo.value ? <KhungThôngTinKhiCóKếtQuả /> : <KhungThôngTinKhiKhôngCóKếtQuả text={text} />}
+    </section>
+  );
+}
+
+function KhungThôngTinKhiCóKếtQuả() {
   const bàiĐăng = bàiĐăngĐượcChọn.value;
   const vậtThểTiếpThị = vậtThểTiếpThịĐượcTạo.value;
-  if (!vậtThểTiếpThị) return <KhungThôngTinKhiKhôngCóKếtQuả text={text} />;
 
   const thamSốUTM = vậtThểTiếpThị?.["Tham số UTM"];
   const đuôiRútGọn = vậtThểTiếpThị?.["Đuôi rút gọn"];
@@ -16,18 +23,14 @@ export default function SectionBênPhải({ text }: { text: string }) {
     navigator.clipboard.writeText(liênKếtRútGọn);
   }
   return (
-    <section id="section-bên-phải" class="basis-1/2 p-10">
-      <article id="khung-bên-phải-khi-có-kết-quả" class="prose">
-        <KếtQuảSaoChép />
-        Nội dung trên đã được sao chép sẵn vào bộ nhớ. Truy cập <a href={liênKếtRútGọnChart}>{liênKếtRútGọnChart}</a>
-        {" "}
-        để xem thống kê lượt truy cập.
-        <details>
-          <summary>Tham số UTM</summary>
-          <KếtQuảĐượcChọn loạiVậtThể="tham số UTM" vậtThể={thamSốUTM} />
-        </details>
-      </article>
-    </section>
+    <article id="khung-bên-phải-khi-có-kết-quả" class="prose">
+      <KếtQuảSaoChép />
+      Nội dung trên đã được sao chép sẵn vào bộ nhớ. Truy cập <a href={liênKếtRútGọnChart}>{liênKếtRútGọnChart}</a> để xem thống kê lượt truy cập.
+      <details>
+        <summary>Tham số UTM</summary>
+        <KếtQuảĐượcChọn loạiVậtThể="tham số UTM" vậtThể={thamSốUTM} />
+      </details>
+    </article>
   );
 
   function KếtQuảSaoChép() {

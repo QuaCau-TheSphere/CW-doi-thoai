@@ -18,7 +18,7 @@ for await (const walkEntry of walk(THƯ_MỤC_CẤU_HÌNH_NƠI_ĐĂNG)) {
     if (tênCấuHình.includes("Thiết lập chung")) continue;
 
     const pathSplit = path.split(SEPARATOR);
-    const tênThưMục = pathSplit[pathSplit.length - 2];
+    const tênThưMục = pathSplit[pathSplit.length - 2].replace(".yaml", "");
     const cấuHình = parse(await Deno.readTextFile(path)) as CấuHìnhNơiĐăng;
     danhSáchCấuHình.push({
       cấuHình: cấuHình,
