@@ -3,7 +3,7 @@ import { OneKey } from "./Code hỗ trợ.ts";
 import { VịTrí } from "./Hàm và kiểu cho vị trí.tsx";
 import { URLString } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 
-export type VậtThểCấuHình = {
+export type VậtThểCấuHìnhNơiĐăng = {
   cấuHình: CấuHìnhNơiĐăng;
   loạiCấuHình: string;
   tênCấuHình: string;

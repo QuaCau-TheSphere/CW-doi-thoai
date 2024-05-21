@@ -24,11 +24,10 @@ export function kiểuKebab(chuỗi: string | undefined) {
 }
 
 export function tạoVịTríString(vịTrí: VịTrí): string {
-  if (vịTrí[1]) {
+  if (vịTrí[1] && vịTrí[1] !== "Nội dung chính" && !vịTrí[1].includes("Mô tả")) {
     return `${vịTrí.join(": ")}`;
-  } else {
-    return vịTrí[0];
   }
+  return vịTrí[0];
 }
 export function tạoTênNơiĐăngString(tênNơiĐăng: TênNơiĐăng): string {
   if (typeof tênNơiĐăng === "string") {

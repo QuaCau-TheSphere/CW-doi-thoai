@@ -152,12 +152,14 @@ Vị trí đặt liên kết ở nơi đăng:
     Loại nơi đăng: [Ảnh]
     Danh sách vị trí: [QR, Chữ trong ảnh, Metadata]
 
+# Nội dung chính với mô tả ảnh sẽ được giấu đi khi tạo source
 Vị trí thành phần:
   Bài đăng: [Nội dung chính, Bình luận]
+  Bài ghim: [Nội dung chính, Bình luận, QR trong ảnh, Chữ trong ảnh]
+  Tin nhắn: [Nội dung chính, QR trong ảnh, Chữ trong ảnh]
+  Tin nhắn ghim: [Nội dung chính, QR trong ảnh, Chữ trong ảnh]
   Ảnh đại diện: [Mô tả ảnh, QR trong ảnh, Chữ trong ảnh, Bình luận]
   Ảnh bìa: [Mô tả ảnh, QR trong ảnh, Chữ trong ảnh, Bình luận]
-  Bài ghim: [Nội dung chính, Bình luận, QR trong ảnh, Chữ trong ảnh]
-  Tin nhắn ghim: ["", QR trong ảnh, Chữ trong ảnh]
   Album ảnh: [Mô tả album, Bình luận]
   Video: [Mô tả video, QR trong video, Chữ trong video, Bình luận]
 

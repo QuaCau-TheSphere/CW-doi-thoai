@@ -98,5 +98,5 @@ export async function ghiVậtThểTiếpThịLênKV(vậtThểTiếpThị: Vậ
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(vậtThểTiếpThị),
   });
-  console.log("Đã thêm thành công vật thể tiếp thị vào cơ sở dữ liệu:", res);
+  console.log("Đã thêm thành công vật thể tiếp thị vào cơ sở dữ liệu:", await res.json());
 }

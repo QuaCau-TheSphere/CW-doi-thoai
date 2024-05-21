@@ -7,7 +7,8 @@ import {
   tênNút,
   vậtThểTiếpThịĐượcTạo,
 } from "./Signals tổng.ts";
-import tạoVậtThểUTM, { tạoĐuôiRútGọn } from "../core/B. Tạo kết quả/3. Tạo tham số UTM và liên kết rút gọn.ts";
+import tạoVậtThểUTM from "../core/B. Tạo kết quả/3. Tạo liên kết/Tạo tham số UTM.ts";
+import { tạoĐuôiRútGọn } from "../core/B. Tạo kết quả/3. Tạo liên kết/Tạo đuôi rút gọn.ts";
 import { ghiVậtThểTiếpThịLênKV } from "../utils/Hàm và kiểu cho API server.ts";
 
 async function tạoVậtThểTiếpThị() {

@@ -4,7 +4,7 @@ import CấuHìnhNơiĐăng, {
   ThôngTinNơiĐăng,
   TênChứcNăngTrongSaaS,
   TênNềnTảngSaaS,
-  VậtThểCấuHình,
+  VậtThểCấuHìnhNơiĐăng,
   VậtThểLàmGiáTrịChoTênSaaS,
   ĐịnhDạngTậpTin,
 } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
@@ -86,7 +86,7 @@ function tạoDanhSáchKhác(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSá
 }
 
 export default async function tạoDanhSáchNơiĐăngChưaXácĐịnhVịTrí(
-  vậtThểCấuHình: VậtThểCấuHình,
+  vậtThểCấuHình: VậtThểCấuHìnhNơiĐăng,
   cấuHìnhVịTrí: CấuHìnhChung,
 ): Promise<NơiĐăngChưaXácĐịnhVịTrí[]> {
   const { cấuHình, loạiCấuHình, tênCấuHình } = vậtThểCấuHình;

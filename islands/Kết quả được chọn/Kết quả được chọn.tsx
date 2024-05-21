@@ -1,5 +1,5 @@
 import { TênDanhSách } from "../../utils/Kiểu cho web.ts";
-import { kiểuKebab } from "../../utils/Hàm cho khung nhập.ts";
+import { kiểuKebab, viếtHoa } from "../../utils/Hàm cho khung nhập.ts";
 import { bàiĐăngĐượcChọn } from "../Signals tổng.ts";
 import NơiĐăngĐượcChọn from "./Nơi đăng được chọn.tsx";
 
@@ -49,7 +49,7 @@ function BàiĐăngĐượcChọn() {
   );
 }
 
-function VậtThểKhác({ vậtThể, loạiVậtThể }: { vậtThể: Record<string, any>; loạiVậtThể: string }) {
+function VậtThểKhác({ vậtThể, loạiVậtThể, cóTiêuĐề }: { vậtThể: Record<string, any>; loạiVậtThể: string; cóTiêuĐề: boolean }) {
   const danhSáchPhầnTử = [];
   for (const [key, value] of Object.entries(vậtThể)) {
     if (typeof value === "object") {
@@ -64,8 +64,9 @@ function VậtThểKhác({ vậtThể, loạiVậtThể }: { vậtThể: Record<
     }
   }
   return (
-    <article id={kiểuKebab(loạiVậtThể)} class="prose card bg-base-200 shadow-xl">
+    <article id={kiểuKebab(loạiVậtThể)} class="card w-full bg-base-200 shadow-xl">
       <div class="card-body">
+        {cóTiêuĐề ? <h2 class="card-title">{viếtHoa(loạiVậtThể)}</h2> : <></>}
         <ul>{danhSáchPhầnTử}</ul>
       </div>
     </article>
@@ -80,9 +81,10 @@ function VậtThểKhác({ vậtThể, loạiVậtThể }: { vậtThể: Record<
 }
 
 export default function KếtQuảĐượcChọn(
-  { loạiVậtThể, vậtThể }: {
+  { loạiVậtThể, vậtThể, cóTiêuĐề = false }: {
     loạiVậtThể: TênDanhSách | "tham số UTM";
     vậtThể?: Record<string, any>;
+    cóTiêuĐề?: boolean;
   },
 ) {
   switch (loạiVậtThể) {
@@ -92,6 +94,6 @@ export default function KếtQuảĐượcChọn(
       return <NơiĐăngĐượcChọn />;
     default:
       if (!vậtThể) return <></>;
-      return <VậtThểKhác loạiVậtThể={loạiVậtThể} vậtThể={vậtThể} />;
+      return <VậtThểKhác loạiVậtThể={loạiVậtThể} vậtThể={vậtThể} cóTiêuĐề={cóTiêuĐề} />;
   }
 }

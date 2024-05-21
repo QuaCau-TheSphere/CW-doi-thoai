@@ -1,6 +1,6 @@
 import type { MụcĐượcChọn, TênDanhSách } from "../../utils/Kiểu cho web.ts";
 import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/plus.tsx";
-import { kiểuKebab, tạoLoạiNơiĐăngString, tạoTênNơiĐăngString } from "../../utils/Hàm cho khung nhập.ts";
+import { kiểuKebab, tạoLoạiNơiĐăngString, tạoTênNơiĐăngString, đổiKhungNhập } from "../../utils/Hàm cho khung nhập.ts";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { BàiĐăng } from "../../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { element } from "../Signals tổng.ts";
@@ -20,7 +20,7 @@ function tạoDòngPhụCủaBàiĐăng(bàiĐăng: BàiĐăng) {
   // return <>{key}: {value} • URL: {URL} • id: {id}</>; //dùng để test
   if (value) return <>{key}: {value}</>;
   return <>URL: {URL}</>;
-  return <>URL: {URL} • Mã bài đăng: {mãBàiĐăng} • id: {id}</>;
+  // return <>URL: {URL} • Mã bài đăng: {mãBàiĐăng} • id: {id}</>;
 }
 
 function Item({ item, tênDanhSách }: { item: BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí; tênDanhSách: TênDanhSách }) {
@@ -70,7 +70,10 @@ export function DanhSáchKếtQuảTìmKiếm(
       {danhSáchKếtQuảTìmKiếm.map((item, index) => (
         <li
           class={cursor.value === index ? "cursor bg-secondary p-2 box-decoration-clone" : "p-2"}
-          onClick={() => mụcĐượcChọn.value = item.doc}
+          onClick={() => {
+            mụcĐượcChọn.value = item.doc;
+            đổiKhungNhập("xuôi");
+          }}
           onMouseEnter={() => cursor.value = index}
           onMouseLeave={() => cursor.value = -1}
         >

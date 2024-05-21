@@ -29,6 +29,7 @@ function tạoDanhSáchLựaChọnVịTrí(nơiĐăng: NơiĐăngChưaXácĐịn
 
 function handleChange(vịTríStringĐượcChọn: string, nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí) {
   vịTríString.value = vịTríStringĐượcChọn;
+  console.info("Vị trí được chọn:", vịTríStringĐượcChọn);
   nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value = tạoNơiĐăngĐãXácĐịnhVịTrí(vịTríStringĐượcChọn, nơiĐăng);
 }
 
