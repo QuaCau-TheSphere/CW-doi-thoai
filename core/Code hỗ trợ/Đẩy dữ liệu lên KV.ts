@@ -27,8 +27,9 @@ for await (const walkEntry of walk(THƯ_MỤC_CẤU_HÌNH_NƠI_ĐĂNG)) {
     });
   }
 }
-
-const kv = await Deno.openKv();
+Deno.env.set("DENO_KV_ACCESS_TOKEN", "ddp_jr4lpd8nxcyHuD2CVETVD2AhDZw2oN0qPMFf");
+const kv = await Deno.openKv("https://api.deno.com/databases/b34093c5-7957-437b-ab01-87f33c582472/connect");
+// const kv = await Deno.openKv();
 const cấuHìnhVịTrí = parse(Deno.readTextFileSync(ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG)) as CấuHìnhChung;
 let danhSáchBàiĐăng = await tạoDanhSáchBàiĐăng(THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT, ĐƯỜNG_DẪN_ĐẾN_TẬP_TIN_CSV);
 

@@ -17,17 +17,10 @@ function tạoDòngPhụCủaBàiĐăng(bàiĐăng: BàiĐăng) {
     key = "Vault";
     value = vault;
   }
-  return <>{key}: {value} • URL: {URL} • id: {id}</>; //dùng để test
+  // return <>{key}: {value} • URL: {URL} • id: {id}</>; //dùng để test
   if (value) return <>{key}: {value}</>;
+  return <>URL: {URL}</>;
   return <>URL: {URL} • Mã bài đăng: {mãBàiĐăng} • id: {id}</>;
-  if (value) {
-    return (
-      <ul>
-        <li>{key}: {value}</li>
-        <li>URL: {URL} • Mã bài đăng: {mãBàiĐăng} • id: {id}</li>
-      </ul>
-    );
-  }
 }
 
 function Item({ item, tênDanhSách }: { item: BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí; tênDanhSách: TênDanhSách }) {
