@@ -127,13 +127,15 @@ export function tạoNơiĐăngChưaXácĐịnhVịTrí(
   return { ...thôngTinNơiĐăng, "Vị trí có thể đăng": danhSáchVịTríCóThểĐăng };
 }
 
-export function tạoNơiĐăngĐãXácĐịnhVịTrí(
-  vịTríĐượcChọn: VịTrí | string,
-  nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí,
-): NơiĐăngĐãXácĐịnhVịTrí {
+export function tạoNơiĐăngĐãXácĐịnhVịTrí(vịTríĐượcChọn: VịTrí | string, nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí): NơiĐăngĐãXácĐịnhVịTrí {
   let vịTrí = vịTríĐượcChọn;
   if (typeof vịTríĐượcChọn === "string") {
-    vịTrí = JSON.parse(vịTríĐượcChọn) as VịTrí;
+    try {
+      /** Trường hợp lấy từ API hay gì đó */
+      vịTrí = JSON.parse(vịTríĐượcChọn) as VịTrí;
+    } catch {
+      vịTrí = [JSON.parse(JSON.stringify(vịTríĐượcChọn))] as VịTrí;
+    }
   } else {
     vịTrí = vịTríĐượcChọn;
   }

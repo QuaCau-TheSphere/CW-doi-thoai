@@ -6,24 +6,32 @@ import { làCùngNơiĐăng, ThôngTinNơiĐăng } from "../../core/Code hỗ tr
 /** Tạo danh sách các phần tử <option> để người dùng lựa chọn vị trí đăng từ danh sách vị trí có thể đăng*/
 function tạoDanhSáchLựaChọnVịTrí(nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí) {
   const danhSáchVịTríCóThểĐăng = nơiĐăng["Vị trí có thể đăng"];
-  if (!danhSáchVịTríCóThểĐăng) return [];
   const danhSáchLựaChọn = [];
-  for (const vịTríCóThểĐăng of danhSáchVịTríCóThểĐăng) {
-    const value = JSON.stringify(vịTríCóThểĐăng);
-    const text = tạoVịTríString(vịTríCóThểĐăng);
-    const i = danhSáchVịTríCóThểĐăng.indexOf(vịTríCóThểĐăng);
 
-    if (i === 0) {
-      danhSáchLựaChọn.push(<option selected value={value}>{text}</option>);
-      const nơiĐăngĐượcChọnTrướcĐó = nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value as ThôngTinNơiĐăng;
-      if (!làCùngNơiĐăng(nơiĐăng, nơiĐăngĐượcChọnTrướcĐó)) {
-        vịTríString.value = value;
-        nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value = tạoNơiĐăngĐãXácĐịnhVịTrí(value, nơiĐăng);
+  if (danhSáchVịTríCóThểĐăng) {
+    for (const vịTríCóThểĐăng of danhSáchVịTríCóThểĐăng) {
+      const value = JSON.stringify(vịTríCóThểĐăng);
+      const text = tạoVịTríString(vịTríCóThểĐăng);
+      const i = danhSáchVịTríCóThểĐăng.indexOf(vịTríCóThểĐăng);
+
+      if (i === 0) {
+        danhSáchLựaChọn.push(<option selected value={value}>{text}</option>);
+        const nơiĐăngĐượcChọnTrướcĐó = nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value as ThôngTinNơiĐăng;
+        if (!làCùngNơiĐăng(nơiĐăng, nơiĐăngĐượcChọnTrướcĐó)) {
+          vịTríString.value = value;
+          nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value = tạoNơiĐăngĐãXácĐịnhVịTrí(value, nơiĐăng);
+        }
+      } else {
+        danhSáchLựaChọn.push(<option value={value}>{text}</option>);
       }
-    } else {
-      danhSáchLựaChọn.push(<option value={value}>{text}</option>);
     }
+  } else {
+    const vịTríMặcĐịnh = "Chưa cấu hình";
+    vịTríString.value = vịTríMặcĐịnh;
+    nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value = tạoNơiĐăngĐãXácĐịnhVịTrí(vịTríMặcĐịnh, nơiĐăng);
+    danhSáchLựaChọn.push(<option selected>{vịTríMặcĐịnh}</option>);
   }
+
   return danhSáchLựaChọn;
 }
 

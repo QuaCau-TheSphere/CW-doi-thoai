@@ -44,7 +44,8 @@ function tạoSource(nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí, cấuHìnhVi
       break;
   }
 
-  if (vịTrí[1] && (vịTrí[1] === "Nội dung chính" || vịTrí[1].includes("Mô tả"))) {
+  const làVịTríĐăngTầmThường = vịTrí[1] && (vịTrí[1] === "Nội dung chính" || vịTrí[1].includes("Mô tả"));
+  if (vịTrí[0] === "Chưa cấu hình" || làVịTríĐăngTầmThường) {
     return phầnNềnTảngVàNơiĐăng;
   }
   return `${phầnNềnTảngVàNơiĐăng} (${vịTrí.join(": ")})`;

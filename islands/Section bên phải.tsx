@@ -3,6 +3,7 @@ import KhungThôngTinKhiKhôngCóKếtQuả from "../components/KhungThôngTinKh
 import KếtQuảĐượcChọn from "./Kết quả được chọn/Kết quả được chọn.tsx";
 import { ThamSốUTM } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91%20UTM.ts";
 import { VậtThểTiếpThị } from "../utils/Kiểu cho web.ts";
+import punycode from "npm:punycode";
 
 export default function SectionBênPhải({ text }: { text: string }) {
   return (
@@ -37,14 +38,12 @@ function KếtQuảSaoChép({ vậtThểTiếpThị }: { vậtThểTiếpThị: 
   const bàiĐăng = bàiĐăngĐượcChọn.value;
 
   const đuôiRútGọn = vậtThểTiếpThị["Đuôi rút gọn"];
-  const liênKếtUTM = vậtThểTiếpThị["Liên kết UTM"].href;
+
+  const liênKếtUTM = punycode.toUnicode(decodeURI(vậtThểTiếpThị["Liên kết UTM"].href));
   const liênKếtRútGọn = `${origin}/${đuôiRútGọn}`;
 
   const liênKếtĐượcDùng = cóRútGọn.value ? liênKếtRútGọn : liênKếtUTM;
 
-  if (globalThis.location.hostname !== "localhost") {
-    navigator.clipboard.writeText(liênKếtĐượcDùng);
-  }
   if (!bàiĐăng) return <></>;
   const tiêuĐề = bàiĐăng["Tiêu đề"];
   if (!bàiĐăng["Nội dung bài đăng"]) {
@@ -68,6 +67,9 @@ Nếu sau này mình nghĩ ra được thêm điều gì mới thì sẽ cập n
   } else {
     nộiDungTạoSẵn = `${tiêuĐề}: ${liênKếtĐượcDùng}`;
   }
+  if (globalThis.location.hostname !== "localhost") {
+    navigator.clipboard.writeText(nộiDungTạoSẵn);
+  }
   return (
     <>
       <p id="nội-dung-tạo-sẵn">
@@ -80,6 +82,7 @@ Nếu sau này mình nghĩ ra được thêm điều gì mới thì sẽ cập n
     </>
   );
 }
+
 function KhungThôngTinKhiCóKếtQuả() {
   if (!vậtThểTiếpThịĐượcTạo.value) return <></>;
   return (

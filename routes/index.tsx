@@ -15,7 +15,6 @@ export default async function App() {
 
   const cấuHìnhChung = parse(await Deno.readTextFile(ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG)) as CấuHìnhChung;
   const cấuHìnhViếtTắt = cấuHìnhChung["Viết tắt"];
-
   const textTrangChủ = await Deno.readTextFile("docs/Trang chủ.md");
 
   return (
