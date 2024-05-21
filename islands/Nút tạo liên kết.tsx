@@ -1,7 +1,7 @@
 import {
   bàiĐăngĐượcChọn,
   bốiCảnh,
-  cấuHìnhNơiĐăngSignal,
+  cấuHìnhViếtTắtSignal,
   lầnĐăngHiệnTại,
   nơiĐăngĐãXácĐịnhVịTríĐượcChọn,
   tênNút,
@@ -14,7 +14,7 @@ async function tạoVậtThểTiếpThị() {
   const bàiĐăng = bàiĐăngĐượcChọn.value;
   const nơiĐăng = nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value;
   const bốicảnh = bốiCảnh.value;
-  const cấuHìnhNơiĐăng = cấuHìnhNơiĐăngSignal.value;
+  const cấuHìnhViếtTắt = cấuHìnhViếtTắtSignal.value;
   const lầnĐăng = lầnĐăngHiệnTại.value;
 
   if (!bàiĐăng) {
@@ -30,7 +30,7 @@ async function tạoVậtThểTiếpThị() {
       bàiĐăng: bàiĐăng,
       nơiĐăng: nơiĐăng,
       bốiCảnh: bốicảnh,
-      cấuHìnhNơiĐăng: cấuHìnhNơiĐăng,
+      cấuHìnhViếtTắt: cấuHìnhViếtTắt,
     },
   );
 
@@ -40,7 +40,7 @@ async function tạoVậtThểTiếpThị() {
       "Nơi đăng": nơiĐăng,
       "Thời điểm tạo": new Date(),
       "Lần đăng": lầnĐăng,
-      "Đuôi rút gọn": tạoĐuôiRútGọn(bàiĐăng, nơiĐăng, lầnĐăng, cấuHìnhNơiĐăng),
+      "Đuôi rút gọn": tạoĐuôiRútGọn(bàiĐăng, nơiĐăng, lầnĐăng, cấuHìnhViếtTắt),
       "Các lần truy cập": {},
     },
     ...thamSốUTMVàLiênKếtRútGọn,

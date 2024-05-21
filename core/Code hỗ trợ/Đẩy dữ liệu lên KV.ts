@@ -4,7 +4,7 @@ import { parse } from "$std/yaml/mod.ts";
 import { tạoKeyKV } from "../../utils/Hàm và kiểu cho API server.ts";
 import { tạoDanhSáchBàiĐăng, tạoDanhSáchBàiĐăngTừCấuHìnhNơiĐăng } from "../B. Tạo kết quả/1. Tạo danh sách tất cả bài đăng/mod.ts";
 import tạoDanhSáchNơiĐăngChưaXácĐịnhVịTrí from "../B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình/mod.ts";
-import { CấuHìnhVịTrí, NơiĐăngChưaXácĐịnhVịTrí } from "./Hàm và kiểu cho vị trí.tsx";
+import { CấuHìnhChung, NơiĐăngChưaXácĐịnhVịTrí } from "./Hàm và kiểu cho vị trí.tsx";
 import CấuHìnhNơiĐăng, { VậtThểCấuHình } from "./Kiểu cho nơi đăng.ts";
 import { THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT, THƯ_MỤC_CẤU_HÌNH_NƠI_ĐĂNG, ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG, ĐƯỜNG_DẪN_ĐẾN_TẬP_TIN_CSV } from "./env.ts";
 import esthetic from "npm:esthetic";
@@ -29,7 +29,7 @@ for await (const walkEntry of walk(THƯ_MỤC_CẤU_HÌNH_NƠI_ĐĂNG)) {
 }
 
 const kv = await Deno.openKv();
-const cấuHìnhVịTrí = parse(Deno.readTextFileSync(ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG)) as CấuHìnhVịTrí;
+const cấuHìnhVịTrí = parse(Deno.readTextFileSync(ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG)) as CấuHìnhChung;
 let danhSáchBàiĐăng = await tạoDanhSáchBàiĐăng(THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT, ĐƯỜNG_DẪN_ĐẾN_TẬP_TIN_CSV);
 
 for (const vậtThểCấuHình of danhSáchCấuHình) {

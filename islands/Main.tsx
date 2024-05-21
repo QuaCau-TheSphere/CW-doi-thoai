@@ -1,15 +1,14 @@
 import FlexSearch, { Document } from "npm:flexsearch";
-import CấuHìnhNơiĐăng from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { BàiĐăng } from "../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { CấuHìnhViếtTắt, NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import SectionBênPhải from "./Section bên phải.tsx";
 import SectionBênTrái from "./Section bên trái.tsx";
-import { cấuHìnhNơiĐăngSignal, flexSearchBàiĐăngSignal, flexSearchNơiĐăngSignal } from "./Signals tổng.ts";
+import { cấuHìnhViếtTắtSignal, flexSearchBàiĐăngSignal, flexSearchNơiĐăngSignal } from "./Signals tổng.ts";
 
 interface MainProps {
   danhSáchNơiĐăng: NơiĐăngChưaXácĐịnhVịTrí[];
   danhSáchBàiĐăng: BàiĐăng[];
-  cấuHìnhNơiĐăng: CấuHìnhNơiĐăng;
+  cấuHìnhViếtTắt: CấuHìnhViếtTắt;
   textTrangChủ: string;
 }
 
@@ -26,8 +25,8 @@ function Production({ textTrangChủ }: { textTrangChủ: string }) {
   );
 }
 
-export default function Main({ danhSáchNơiĐăng, danhSáchBàiĐăng, cấuHìnhNơiĐăng, textTrangChủ }: MainProps) {
-  cấuHìnhNơiĐăngSignal.value = cấuHìnhNơiĐăng;
+export default function Main({ danhSáchNơiĐăng, danhSáchBàiĐăng, cấuHìnhViếtTắt, textTrangChủ }: MainProps) {
+  cấuHìnhViếtTắtSignal.value = cấuHìnhViếtTắt;
 
   const flexSearchBàiĐăng: Document<BàiĐăng, true> = new FlexSearch.Document({
     document: {

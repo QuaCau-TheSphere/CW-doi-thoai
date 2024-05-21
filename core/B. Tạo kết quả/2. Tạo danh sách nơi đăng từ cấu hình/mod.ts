@@ -11,10 +11,10 @@ import CấuHìnhNơiĐăng, {
 import { TênDiễnĐàn } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { CấuHìnhNơiĐăngDiễnĐàn } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import tạoDanhSáchChat from "./Tạo danh sách nơi đăng chat.ts";
-import { tạoDanhSáchVịTríCóThểĐăng, vậtThểVịTríCóThôngTinNơiĐăng } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { cóThôngTinNơiĐăngTrongVậtThểVịTrí, tạoDanhSáchVịTríCóThểĐăng } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { parse } from "$std/yaml/mod.ts";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
-import { CấuHìnhVịTrí } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { CấuHìnhChung } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { xácĐịnhId } from "../../Code hỗ trợ/Code hỗ trợ.ts";
 
 function tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: Omit<ThôngTinNơiĐăng, "id">[]) {
@@ -87,7 +87,7 @@ function tạoDanhSáchKhác(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSá
 
 export default async function tạoDanhSáchNơiĐăngChưaXácĐịnhVịTrí(
   vậtThểCấuHình: VậtThểCấuHình,
-  cấuHìnhVịTrí: CấuHìnhVịTrí,
+  cấuHìnhVịTrí: CấuHìnhChung,
 ): Promise<NơiĐăngChưaXácĐịnhVịTrí[]> {
   const { cấuHình, loạiCấuHình, tênCấuHình } = vậtThểCấuHình;
   const danhSáchNơiĐăng: NơiĐăngChưaXácĐịnhVịTrí[] = [];
@@ -104,11 +104,11 @@ export default async function tạoDanhSáchNơiĐăngChưaXácĐịnhVịTrí(
   for (const thôngTinNơiĐăng of danhSáchNơiĐăng) {
     for (const vậtThểVịTrí of danhSáchVậtThểVịTrí) {
       const danhSáchVịTríThànhPhần = vậtThểVịTrí["Danh sách vị trí"];
-      if (vậtThểVịTríCóThôngTinNơiĐăng(thôngTinNơiĐăng, vậtThểVịTrí)) {
+      if (cóThôngTinNơiĐăngTrongVậtThểVịTrí(thôngTinNơiĐăng, vậtThểVịTrí)) {
         thôngTinNơiĐăng["Vị trí có thể đăng"] = tạoDanhSáchVịTríCóThểĐăng(danhSáchVịTríThànhPhần, cấuHìnhVịTríNhỏHơn);
-        thôngTinNơiĐăng["Lĩnh vực"] = [tênCấuHình];
       }
     }
+    thôngTinNơiĐăng["Lĩnh vực"] = [tênCấuHình];
     thôngTinNơiĐăng.id = await xácĐịnhId("nơi đăng", thôngTinNơiĐăng);
   }
   return danhSáchNơiĐăng;

@@ -8,5 +8,5 @@ export const ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG = "./core/A. Cấu hình/N
 
 export const THƯ_MỤC_CẤU_HÌNH_NƠI_ĐĂNG = "./core/A. Cấu hình/Nơi đăng";
 
-// export const ORIGIN = "https://doi-thoai.deno.dev";
-export const ORIGIN = "http://localhost:8000";
+export const ORIGIN = "https://doi-thoai.deno.dev";
+// export const ORIGIN = "http://localhost:8000";

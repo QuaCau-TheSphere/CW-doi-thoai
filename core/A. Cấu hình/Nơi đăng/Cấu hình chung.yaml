@@ -140,10 +140,10 @@ Vị trí đặt liên kết ở nơi đăng:
     Loại nơi đăng: [Email]
     Danh sách vị trí: [Nội dung email, Chữ ký]
 
-  # CV
-  - Loại nền tảng: CV
-    Tên nền tảng: CV
-    Loại nơi đăng: [CV]
+  # Tập tin
+  - Loại nền tảng: Tập tin
+    Tên nền tảng: Tập tin
+    Loại nơi đăng: [Tập tin]
     Danh sách vị trí: [Link dự án, Website]
 
   # Ảnh

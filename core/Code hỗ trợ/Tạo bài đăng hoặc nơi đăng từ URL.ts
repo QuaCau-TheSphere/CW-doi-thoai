@@ -4,7 +4,7 @@ import { danhSáchDiễnĐàn, danhSáchNềnTảngChat, LoạiNơiĐăng, Loạ
 import { viếtThường } from "../../utils/Hàm cho khung nhập.ts";
 import { assert } from "$std/assert/assert.ts";
 import { FreshContext } from "https://deno.land/x/fresh@1.6.8/src/server/mod.ts";
-import { CấuHìnhVịTrí, NơiĐăngChưaXácĐịnhVịTrí, tạoNơiĐăngChưaXácĐịnhVịTrí } from "./Hàm và kiểu cho vị trí.tsx";
+import { CấuHìnhChung, NơiĐăngChưaXácĐịnhVịTrí, tạoNơiĐăngChưaXácĐịnhVịTrí } from "./Hàm và kiểu cho vị trí.tsx";
 import { parse } from "$std/yaml/mod.ts";
 import { tạoChuỗiNgẫuNhiên } from "./Code hỗ trợ.ts";
 import { ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG } from "./env.ts";
@@ -98,7 +98,7 @@ async function tạoNơiĐăng(
     "Loại nơi đăng": loạiNơiĐăng,
     id: tạoChuỗiNgẫuNhiên(4),
   } satisfies ThôngTinNơiĐăng;
-  const cấuHìnhVịTrí = parse(await Deno.readTextFile(ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG)) as CấuHìnhVịTrí;
+  const cấuHìnhVịTrí = parse(await Deno.readTextFile(ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG)) as CấuHìnhChung;
 
   return tạoNơiĐăngChưaXácĐịnhVịTrí(thôngTinNơiĐăng, cấuHìnhVịTrí);
 }

@@ -14,12 +14,13 @@ import {
 } from "../Code hỗ trợ/Kiểu cho tham số UTM.ts";
 import { lấyKýHiệuViếtTắt, tạoChuỗiNgẫuNhiên, tạoLiênKếtUTM } from "../Code hỗ trợ/Code hỗ trợ.ts";
 import { BốiCảnh } from "../../utils/Kiểu cho web.ts";
-import CấuHìnhNơiĐăng, { LoạiNơiĐăngChat, LoạiNềnTảng, NơiĐăngĐãXácĐịnhVịTrí } from "../Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { LoạiNơiĐăngChat, LoạiNềnTảng, NơiĐăngĐãXácĐịnhVịTrí } from "../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { tạoVịTríString } from "../../utils/Hàm cho khung nhập.ts";
 import VậtThểThamSốUTM from "../Code hỗ trợ/Kiểu cho tham số UTM.ts";
+import { CấuHìnhViếtTắt } from "../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 
 /** Chủ yếu là thể hiện loại nền tảng, tên nền tảng, loại nơi đăng một cách ngắn gọn. Có những nơi đăng nhìn vào là biết loại nền tảng nào, ví dụ r/subreddit, hoặc email@domain.com */
-function tạoSource(nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí, cấuHìnhNơiĐăng: CấuHìnhNơiĐăng): Source {
+function tạoSource(nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí, cấuHìnhViếtTắt: CấuHìnhViếtTắt): Source {
   const {
     "Loại nền tảng": loạiNềnTảng,
     "Tên nền tảng": tênNềnTảng,
@@ -27,7 +28,7 @@ function tạoSource(nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí, cấuHìnhN�
     "Loại nơi đăng": loạiNơiĐăng,
     "Vị trí": vịTrí,
   } = nơiĐăng;
-  const kýHiệuNềnTảng = lấyKýHiệuViếtTắt(tênNềnTảng, cấuHìnhNơiĐăng) || tênNềnTảng;
+  const kýHiệuNềnTảng = lấyKýHiệuViếtTắt(tênNềnTảng, cấuHìnhViếtTắt) || tênNềnTảng;
   const tênNơiĐăngString: TênNơiĐăngString = tênNơiĐăng.join(" » ");
 
   let phầnNềnTảngVàNơiĐăng: string;
@@ -139,14 +140,14 @@ function tạoTerm(lĩnhVực: string[] | undefined): Term {
  * @param bàiĐăng Thứ tự tìm: mã bài đăng, mã dự án, viết tắt của tên dự án, ngẫu nhiên ký tự
  * @param nơiĐăng
  * @param lầnĐăng
- * @param cấuHìnhNơiĐăng dùng để tìm chuỗi viết tắt
+ * @param cấuHìnhViếtTắt dùng để tìm chuỗi viết tắt
  * @returns `phầnChoBàiĐăng.phầnChoNơiĐăng.lầnĐăng`
  */
 export function tạoĐuôiRútGọn(
   bàiĐăng: BàiĐăng,
   nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí,
   lầnĐăng: number,
-  cấuHìnhNơiĐăng: CấuHìnhNơiĐăng,
+  cấuHìnhViếtTắt: CấuHìnhViếtTắt,
 ): ĐuôiRútGọn {
   let phầnChoBàiĐăng: string | undefined;
 
@@ -155,7 +156,7 @@ export function tạoĐuôiRútGọn(
     phầnChoBàiĐăng = mãBàiĐăng;
   } else if (dựÁn) {
     const { "Mã dự án": mãDựÁn, "Tên dự án": tênDựÁn } = dựÁn;
-    phầnChoBàiĐăng = mãDựÁn || lấyKýHiệuViếtTắt(tênDựÁn, cấuHìnhNơiĐăng);
+    phầnChoBàiĐăng = mãDựÁn || lấyKýHiệuViếtTắt(tênDựÁn, cấuHìnhViếtTắt);
   }
   if (phầnChoBàiĐăng === undefined) {
     phầnChoBàiĐăng = idBàiĐăng || tạoChuỗiNgẫuNhiên(4);
@@ -163,7 +164,7 @@ export function tạoĐuôiRútGọn(
 
   const { "Mã nơi đăng": mãNơiĐăng, "Tên nơi đăng": tênNơiĐăng, id: idNơiĐăng } = nơiĐăng;
   const phầnChoNơiĐăng = mãNơiĐăng ||
-    lấyKýHiệuViếtTắt(tênNơiĐăng[0], cấuHìnhNơiĐăng) ||
+    lấyKýHiệuViếtTắt(tênNơiĐăng[0], cấuHìnhViếtTắt) ||
     idNơiĐăng ||
     tạoChuỗiNgẫuNhiên(4);
 
@@ -171,11 +172,11 @@ export function tạoĐuôiRútGọn(
 }
 
 export default function tạoVậtThểUTM(
-  { bàiĐăng, nơiĐăng, bốiCảnh, cấuHìnhNơiĐăng }: {
+  { bàiĐăng, nơiĐăng, bốiCảnh, cấuHìnhViếtTắt }: {
     bàiĐăng: BàiĐăng;
     nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí;
     bốiCảnh: BốiCảnh;
-    cấuHìnhNơiĐăng: CấuHìnhNơiĐăng;
+    cấuHìnhViếtTắt: CấuHìnhViếtTắt;
   },
 ): VậtThểThamSốUTM {
   const url = bàiĐăng.URL;
@@ -184,7 +185,7 @@ export default function tạoVậtThểUTM(
   const lĩnhVực = nơiĐăng["Lĩnh vực"];
 
   const thamSốUTM: ThamSốUTM = {
-    source: tạoSource(nơiĐăng, cấuHìnhNơiĐăng),
+    source: tạoSource(nơiĐăng, cấuHìnhViếtTắt),
     medium: tạoMedium(loạiNềnTảng),
     campaign: tạoCampaign(dựÁn),
     content: tạoContent(bốiCảnh),

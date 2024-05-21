@@ -1,14 +1,13 @@
 import { BàiĐăng, URLString } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import CấuHìnhNơiĐăng from "./Kiểu cho nơi đăng.ts";
 import { LiênKếtUTM, ThamSốUTM } from "./Kiểu cho tham số UTM.ts";
-import { NơiĐăngChưaXácĐịnhVịTrí } from "./Hàm và kiểu cho vị trí.tsx";
+import { CấuHìnhViếtTắt, NơiĐăngChưaXácĐịnhVịTrí } from "./Hàm và kiểu cho vị trí.tsx";
 import { TênDanhSách } from "../../utils/Kiểu cho web.ts";
 import { tạoKeyKV } from "../../utils/Hàm và kiểu cho API server.ts";
 
 /** Tìm trong cấu hình nơi đăng xem từ được kiểm tra có ký hiệu viết tắt không. Nếu không thì trả về undefined */
-export function lấyKýHiệuViếtTắt(từĐượcKiểmTra: string | undefined, cấuHìnhNơiĐăng: CấuHìnhNơiĐăng): string | undefined {
-  if (cấuHìnhNơiĐăng["Viết tắt"]) {
-    for (const danhMụcViếtTắt of cấuHìnhNơiĐăng["Viết tắt"]) {
+export function lấyKýHiệuViếtTắt(từĐượcKiểmTra: string | undefined, cấuHìnhViếtTắt: CấuHìnhViếtTắt): string | undefined {
+  if (cấuHìnhViếtTắt) {
+    for (const danhMụcViếtTắt of cấuHìnhViếtTắt) {
       const từĐượcViếtTắt = Object.keys(danhMụcViếtTắt)[0];
       const từViếtTắt = Object.values(danhMụcViếtTắt)[0];
       if (từĐượcViếtTắt === từĐượcKiểmTra) return từViếtTắt;

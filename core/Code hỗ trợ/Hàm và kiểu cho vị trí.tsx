@@ -1,22 +1,26 @@
 import { LoạiNơiĐăng, LoạiNềnTảng, NơiĐăngĐãXácĐịnhVịTrí, ThôngTinNơiĐăng, TênNơiĐăng, TênNềnTảng } from "./Kiểu cho nơi đăng.ts";
 
 type VịTríThànhPhần = string;
-
-/** CẤU HÌNH VỊ TRÍ */
-/** Tránh dùng khái niệm "vị trí có thể đăng" trong cấu hình vị trí, vì nó đã được dùng trong NơiĐăngChưaXácĐịnhVịTrí */
-export interface CấuHìnhVịTrí {
-  "Vị trí đặt liên kết ở nơi đăng": VậtThểVịTríTrongCấuHìnhVịTrí[];
+export type CấuHìnhViếtTắt = Record<string, string>[] | undefined | null;
+/** CẤU HÌNH Chung */
+/** Tránh dùng khái niệm "vị trí có thể đăng" trong cấu hình chung, vì nó đã được dùng trong NơiĐăngChưaXácĐịnhVịTrí */
+export interface CấuHìnhChung {
+  "Vị trí đặt liên kết ở nơi đăng": VậtThểCấuHìnhVịTrí[];
   "Vị trí thành phần": Record<string, VịTríThànhPhần[]>;
+  "Viết tắt"?: CấuHìnhViếtTắt;
 }
-/** Danh sách vị trí có thể đăng của một loại nơi đăng. Nó nằm trong thiết lập chung, không nằm trong một cấu hình nơi đăng cụ thể nào
+/** DanhSáchVịTríThànhPhần là danh sách các vị trí có thể đăng của một **loại nơi đăng**. Nó nằm trong cấu hình chung, không nằm trong một cấu hình nơi đăng cụ thể nào.
  * @example
  * Ví dụ danh sách vị trí thành phần của nhóm Facebook
  * ```json
  * [Bài đăng, About, Câu hỏi xét thành viên, Ảnh bìa, Bài ghim, Album ảnh]
  * ```
+ *
+ * @see VịTrí cũng có dạng VịTríThànhPhần[] giống như DanhSáchVịTríThànhPhần, nhưng nó dành cho **một nơi đăng cụ thể**
  */
 export type DanhSáchVịTríThànhPhần = VịTríThànhPhần[];
-export type VậtThểVịTríTrongCấuHìnhVịTrí = {
+/** Hay được viết tắt là VTCHVT */
+export type VậtThểCấuHìnhVịTrí = {
   "Loại nền tảng": LoạiNềnTảng;
   "Tên nền tảng": TênNềnTảng;
   "Loại nơi đăng": LoạiNơiĐăng;
@@ -25,31 +29,31 @@ export type VậtThểVịTríTrongCấuHìnhVịTrí = {
 
 /** TẠO NƠI ĐĂNG */
 /**
- * Thuộc tính "Loại nơi đăng" đều có trong nơi đăng và vật thể vị trí. Hàm này kiểm tra xem nó có trùng nhau không
+ * Thuộc tính "Loại nơi đăng" đều có trong ThôngTinNơiĐăng và VậtThểCấuHìnhVịTrí. Hàm này kiểm tra xem nó có trùng nhau không. Nếu có nghĩa là loại nơi đăng này có được khai báo trong VậtThểCấuHìnhVịTrí
  */
-export function vậtThểVịTríCóThôngTinNơiĐăng(thôngTinNơiĐăng: ThôngTinNơiĐăng, vậtThểVịTrí: VậtThểVịTríTrongCấuHìnhVịTrí): boolean {
+export function cóThôngTinNơiĐăngTrongVậtThểVịTrí(thôngTinNơiĐăng: ThôngTinNơiĐăng, vậtThểCấuHìnhVịTrí: VậtThểCấuHìnhVịTrí): boolean {
   const {
     "Loại nền tảng": loạiNềnTảngND,
     "Tên nền tảng": tênNềnTảngND,
     "Loại nơi đăng": loạiNơiĐăngND,
   } = thôngTinNơiĐăng;
   const {
-    "Loại nền tảng": loạiNềnTảngVTVT,
-    "Tên nền tảng": tênNềnTảngVTVT,
-    "Loại nơi đăng": loạiNơiĐăngVTVT,
-  } = vậtThểVịTrí;
+    "Loại nền tảng": loạiNềnTảngVTCHVT,
+    "Tên nền tảng": tênNềnTảngVTCHVT,
+    "Loại nơi đăng": loạiNơiĐăngVTCHVT,
+  } = vậtThểCấuHìnhVịTrí;
 
-  if (loạiNềnTảngND !== loạiNềnTảngVTVT || tênNềnTảngND !== tênNềnTảngVTVT) return false;
+  if (loạiNềnTảngND !== loạiNềnTảngVTCHVT || tênNềnTảngND !== tênNềnTảngVTCHVT) return false;
   /** Cần dùng loạiNơiĐăngND để tạo vòng lặp chứ không phải loạiNơiĐăngVTVT, để tránh trường hợp loạiNơiĐăngVTVT dù thiếu phần tử ở cuối vẫn trả kết quả là true */
   for (const i in loạiNơiĐăngND) {
-    if (loạiNơiĐăngVTVT[i] !== loạiNơiĐăngND[i]) return false;
+    if (loạiNơiĐăngVTCHVT[i] !== loạiNơiĐăngND[i]) return false;
   }
   return true;
 }
 
 export function tạoDanhSáchVịTríCóThểĐăng(
   danhSáchVịTríThànhPhần: DanhSáchVịTríThànhPhần,
-  cấuHìnhVịTríNhỏHơn: CấuHìnhVịTrí["Vị trí thành phần"],
+  cấuHìnhVịTríNhỏHơn: CấuHìnhChung["Vị trí thành phần"],
 ): DanhSáchVịTríCóThểĐăng {
   const danhSáchVịTríCóThểĐăng: DanhSáchVịTríCóThểĐăng = [];
   for (const vịTríThànhPhần of danhSáchVịTríThànhPhần) {
@@ -67,7 +71,7 @@ export function tạoDanhSáchVịTríCóThểĐăng(
 
 /** VỊ TRÍ TRONG NƠI ĐĂNG*/
 /**
- * Vị trí hoàn chỉnh, bao gồm các vị trí thành phần
+ * VịTrí là vị trí đăng cụ thể của **một nơi đăng cụ thể**, bao gồm các vị trí thành phần.
  *
  * @example
  * Ví dụ một vị trí của nhóm Facebook:
@@ -79,12 +83,13 @@ export function tạoDanhSáchVịTríCóThểĐăng(
  * ["Bài đăng", "Bình luận"]
  * ```
  *
- * Vị trí và danh sách vị trí thành phần tuy có cùng kiểu là VịTríThànhPhần[], nhưng mục đích dùng khác nhau
+ * VịTrí và DanhSáchVịTríThànhPhần tuy có cùng kiểu là VịTríThànhPhần[], nhưng mục đích dùng khác nhau.
+ * @see DanhSáchVịTríThànhPhần
  */
 export type VịTrí = VịTríThànhPhần[];
 
 /**
- * Danh sách vị trí có thể đăng nằm trong nơi đăng chưa xác định vị trí, không phải cấu hình vị trí
+ * Danh sách vị trí có thể đăng nằm trong nơi đăng chưa xác định vị trí, không phải VậtThểCấuHìnhVịTrí
  *
  * @example
  * Ví dụ danh sách vị trí có thể đăng của nhóm Facebook:
@@ -99,22 +104,22 @@ export type VịTrí = VịTríThànhPhần[];
  */
 export type DanhSáchVịTríCóThểĐăng = VịTrí[];
 export interface NơiĐăngChưaXácĐịnhVịTrí extends ThôngTinNơiĐăng {
-  "Vị trí có thể đăng": DanhSáchVịTríCóThểĐăng;
+  "Vị trí có thể đăng"?: DanhSáchVịTríCóThểĐăng;
   id: string;
 }
 
 export function tạoNơiĐăngChưaXácĐịnhVịTrí(
   thôngTinNơiĐăng: ThôngTinNơiĐăng & { id: string },
-  cấuHìnhVịTrí: CấuHìnhVịTrí,
+  cấuHìnhVịTrí: CấuHìnhChung,
 ): NơiĐăngChưaXácĐịnhVịTrí {
   let danhSáchVịTríCóThểĐăng: DanhSáchVịTríCóThểĐăng = [];
   const {
-    "Vị trí đặt liên kết ở nơi đăng": danhSáchVậtThểVịTrí,
+    "Vị trí đặt liên kết ở nơi đăng": danhSáchVTCHVT,
     "Vị trí thành phần": cấuHìnhVịTríNhỏHơn,
   } = cấuHìnhVịTrí;
-  for (const vậtThểVịTrí of danhSáchVậtThểVịTrí) {
-    const danhSáchVịTríThànhPhần = vậtThểVịTrí["Danh sách vị trí"];
-    if (vậtThểVịTríCóThôngTinNơiĐăng(thôngTinNơiĐăng, vậtThểVịTrí)) {
+  for (const VTCHVT of danhSáchVTCHVT) {
+    const danhSáchVịTríThànhPhần = VTCHVT["Danh sách vị trí"];
+    if (cóThôngTinNơiĐăngTrongVậtThểVịTrí(thôngTinNơiĐăng, VTCHVT)) {
       danhSáchVịTríCóThểĐăng = tạoDanhSáchVịTríCóThểĐăng(danhSáchVịTríThànhPhần, cấuHìnhVịTríNhỏHơn);
     }
   }

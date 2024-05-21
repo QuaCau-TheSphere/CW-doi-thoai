@@ -20,7 +20,6 @@ export default interface CấuHìnhNơiĐăng {
   Email?: CấuHìnhEmail | null;
   "Tập tin"?: CấuHìnhTậpTin | null;
   SaaS?: CấuHìnhSaaS | null;
-  "Viết tắt"?: Record<string, string>[] | null;
   "Kênh forum Discord"?: string[] | null;
 }
 

@@ -1,7 +1,7 @@
 import { parse } from "$std/yaml/mod.ts";
-import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { CấuHìnhChung, CấuHìnhViếtTắt, NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { BàiĐăng } from "../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import CấuHìnhNơiĐăng from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/env.ts";
 import Main from "../islands/Main.tsx";
 
 export default async function App() {
@@ -13,7 +13,8 @@ export default async function App() {
   const danhSáchEntryNơiĐăngTrênKv = await Array.fromAsync(kv.list({ prefix: ["Nơi đăng"] })) as Deno.KvEntry<NơiĐăngChưaXácĐịnhVịTrí>[];
   const danhSáchNơiĐăng = danhSáchEntryNơiĐăngTrênKv.map((entry) => entry.value);
 
-  const cấuHìnhNơiĐăng = parse(await Deno.readTextFile("core/A. Cấu hình/Nơi đăng/Tổ chức/Quả Cầu.yaml")) as CấuHìnhNơiĐăng;
+  const cấuHìnhChung = parse(await Deno.readTextFile(ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG)) as CấuHìnhChung;
+  const cấuHìnhViếtTắt = cấuHìnhChung["Viết tắt"];
 
   const textTrangChủ = await Deno.readTextFile("docs/Trang chủ.md");
 
@@ -22,7 +23,7 @@ export default async function App() {
       <Main
         danhSáchBàiĐăng={danhSáchBàiĐăng}
         danhSáchNơiĐăng={danhSáchNơiĐăng}
-        cấuHìnhNơiĐăng={cấuHìnhNơiĐăng}
+        cấuHìnhViếtTắt={cấuHìnhViếtTắt}
         textTrangChủ={textTrangChủ}
       />
     </body>
