@@ -116,7 +116,15 @@ export default async function tạoDanhSáchNơiĐăngChưaXácĐịnhVịTrí(
         thôngTinNơiĐăng["Vị trí có thể đăng"] = tạoDanhSáchVịTríCóThểĐăng(danhSáchVịTríThànhPhần, cấuHìnhVịTríNhỏHơn);
       }
     }
-    thôngTinNơiĐăng["Lĩnh vực"] = [tênCấuHình];
+    switch (loạiCấuHình) {
+      case "Chủ đề":
+        thôngTinNơiĐăng["Lĩnh vực"] = [tênCấuHình];
+        break;
+
+      default:
+        thôngTinNơiĐăng["Đơn vị quản lý"] = tênCấuHình;
+        break;
+    }
     thôngTinNơiĐăng.id = await xácĐịnhId("nơi đăng", thôngTinNơiĐăng);
   }
   return danhSáchNơiĐăng;

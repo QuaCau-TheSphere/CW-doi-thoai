@@ -28,17 +28,19 @@ function BàiĐăngĐượcChọn() {
           <li id="vault" class="hover:text-primary-content">Vault: {vault}</li>
           <li id="dự-án" class="hover:text-primary-content">Dự án: {dựÁn?.["Tên dự án"]}</li>
           <li id="url" class="hover:text-primary-content">URL: {url}</li>
-          <li id="khác" class="hover:text-primary-content">
+          {
+            /* <li id="khác" class="hover:text-primary-content">
             <span id="tác-giả">Tác giả: {tácGiả}</span> • <span id="mã-bài-đăng">Mã bài đăng: {mãBàiĐăng}</span> •{" "}
             <span id="ngày-tạo">Ngày tạo: {ngàyTạo}</span> • <span id="ngày-cập-nhật">Ngày cập nhật: {ngàyCậpNhật}</span> •{" "}
             <span id="id">id: {id}</span>
-          </li>
+          </li> */
+          }
           <details id="nội-dung-liên-kết" class="hover:text-primary-content">
             <summary>Nội dung liên kết</summary>
             <ul>
               <li id="mô-tả">Mô tả ngắn: {môTả}</li>
               <li id="định-dạng">Định dạng: {địnhDạng}</li>
-              <li id="toàn-bộ-nội-dung" class="prose">
+              <li id="toàn-bộ-nội-dung" class="prose max-w-none max-w-none">
                 Toàn bộ nội dung:<pre>{toànBộNộiDung}</pre>
               </li>
             </ul>

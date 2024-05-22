@@ -3,9 +3,10 @@ import { OneKey } from "./Code hỗ trợ.ts";
 import { VịTrí } from "./Hàm và kiểu cho vị trí.tsx";
 import { URLString } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 
+export type LoạiCấuHình = "Cá nhân" | "Tổ chức" | "Chủ đề";
 export type VậtThểCấuHìnhNơiĐăng = {
   cấuHình: CấuHìnhNơiĐăng;
-  loạiCấuHình: string;
+  loạiCấuHình: LoạiCấuHình;
   tênCấuHình: string;
 };
 
@@ -47,7 +48,7 @@ export type TênNềnTảng =
 /**
  * Loại nơi đăng có kiểu là string[], nhưng thông thường chỉ có một phần tử.
  * @type string[]
- * @example 
+ * @example
  * ```
  * ["Nhóm"];
  * ["Máy chủ", "Kênh diễn đàn", "Bài diễn đàn"];
@@ -78,6 +79,7 @@ export interface ThôngTinNơiĐăng {
   "Lĩnh vực"?: string[];
   "Mô tả nơi đăng"?: string;
   "Mã nơi đăng"?: string;
+  "Đơn vị quản lý"?: string;
   id?: string;
 }
 export class NơiĐăngĐãXácĐịnhVịTrí implements ThôngTinNơiĐăng {
@@ -144,7 +146,7 @@ export type LoạiNơiĐăngDiễnĐàn = [
   | "Nhóm" | "Trang" | "Tài khoản" | "Sự kiện" 
   | "Danh sách phát" | "Kênh" | "Video" 
   | "Subreddit" | "Repo"
-]  
+]
 type TênNơiĐăngDiễnĐàn = [string];
 /**
  * Tên nơi đăng diễn đàn, bao gồm tên tài khoản, tên trang hoặc tên nhóm

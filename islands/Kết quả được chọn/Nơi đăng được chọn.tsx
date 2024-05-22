@@ -44,7 +44,7 @@ function handleChange(vịTríStringĐượcChọn: string, nơiĐăng: NơiĐă
 export default function NơiĐăngĐượcChọn() {
   const nơiĐăng = nơiĐăngChưaXácĐịnhVịTríĐượcChọn.value;
   if (!nơiĐăng) return <></>;
-  const { "Tên nơi đăng": tênNơiĐăng, URL: url } = nơiĐăng;
+  const { "Tên nơi đăng": tênNơiĐăng, URL: url, "Đơn vị quản lý": đơnVịQuảnLý, "Lĩnh vực": lĩnhVực } = nơiĐăng;
   const danhSáchLựaChọnVịTrí = tạoDanhSáchLựaChọnVịTrí(nơiĐăng);
   const tênNơiĐăngString = tạoTênNơiĐăngString(tênNơiĐăng);
   const loạiNơiĐăngString = tạoLoạiNơiĐăngString(nơiĐăng);
@@ -55,11 +55,12 @@ export default function NơiĐăngĐượcChọn() {
     >
       <div class="card-body">
         <h2 id="tên-nơi-đăng" class="card-title">{tênNơiĐăngString}</h2>
-        <span class="font-xs text-slate-400">
-          <span id="loại-nơi-đăng" class="hover:text-primary-content">{loạiNơiĐăngString}</span>
-          <br />
-          <span id="url" class="hover:text-primary-content">URL: {url}</span>
-        </span>
+        <ul class="font-xs text-slate-400">
+          <li id="loại-nơi-đăng" class="hover:text-primary-content">Loại nơi đăng: {loạiNơiĐăngString}</li>
+          <li id="url" class="hover:text-primary-content">URL: {url}</li>
+          <li id="đơn-vị-quản-lý" class="hover:text-primary-content">Đơn vị quản lý: {đơnVịQuảnLý}</li>
+          <li id="lĩnh-vực" class="hover:text-primary-content">Lĩnh vực: {lĩnhVực}</li>
+        </ul>
         <label class="form-control w-full max-w-xs">
           <div class="label">
             <span class="label-text font-bold">Vị trí</span>
