@@ -7,7 +7,7 @@ import punycode from "npm:punycode";
 
 export default function SectionBênPhải({ text }: { text: string }) {
   return (
-    <section id="section-bên-phải" class="basis-1/2 p-10">
+    <section id="section-bên-phải" class="basis-1/2 p-5 md:p-10">
       {vậtThểTiếpThịĐượcTạo.value ? <KhungThôngTinKhiCóKếtQuả /> : <KhungThôngTinKhiKhôngCóKếtQuả text={text} />}
     </section>
   );

@@ -18,7 +18,7 @@ function Test() {
 
 function Production({ textTrangChủ }: { textTrangChủ: string }) {
   return (
-    <main class="flex flex-col md:flex-row flex-row gap-3 w-full mb-auto">
+    <main class="flex flex-col md:flex-row gap-3 w-full mb-auto">
       <SectionBênTrái />
       <SectionBênPhải text={textTrangChủ} />
     </main>

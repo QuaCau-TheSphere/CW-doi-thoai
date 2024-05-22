@@ -29,7 +29,7 @@ function ÔChọnRútGọnLink() {
 }
 export default function SectionBênTrái() {
   return (
-    <section id="section-bên-trái" class="basis-1/2 p-10 space-y-5">
+    <section id="section-bên-trái" class="basis-1/2 space-y-5 p-5 md:p-10">
       <DivTìmBàiĐăngHoặcNơiĐăng tênDanhSách="bài đăng" />
       <DivTìmBàiĐăngHoặcNơiĐăng tênDanhSách="nơi đăng" />
       <KhungNhậpBốiCảnh />
