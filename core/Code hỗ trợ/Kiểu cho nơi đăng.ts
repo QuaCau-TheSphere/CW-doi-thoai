@@ -43,6 +43,16 @@ export type TênNềnTảng =
   | TênNềnTảngTậpTin
   | TênNềnTảngSaaS
   | TênNềnTảngKhác;
+
+/**
+ * Loại nơi đăng có kiểu là string[], nhưng thông thường chỉ có một phần tử.
+ * @type string[]
+ * @example 
+ * ```
+ * ["Nhóm"];
+ * ["Máy chủ", "Kênh diễn đàn", "Bài diễn đàn"];
+ * ```
+ */
 export type LoạiNơiĐăng =
   | LoạiNơiĐăngDiễnĐàn
   | LoạiNơiĐăngChat
@@ -115,30 +125,26 @@ export class NơiĐăngĐãXácĐịnhVịTrí implements ThôngTinNơiĐăng {
  *
  * Không xem subreddit là nhóm hay cộng đồng là máy chủ luôn được vì muốn sau đó xuất ra vẫn giữ tên là subreddit hay cộng động
  */
-
+//deno-fmt-ignore
 export const danhSáchDiễnĐàn = [
-  "Facebook",
-  "LinkedIn",
-  "Twitter",
-  "Mastodon",
-  "Reddit",
-  "YouTube",
-  "Stack Exchange",
-  "Instagram",
-  "Pinterest",
-  "GitHub",
-  "GitLab",
+  "Facebook", "LinkedIn",
+  "Twitter", "Mastodon",
+  "YouTube", "TikTok",
+  "Instagram", "Pinterest",
+  "Reddit", "Stack Exchange", "Quora", "Tinh tế", "Spiderum", "Medium",
+  "GitHub", "GitLab",
   "Zalo",
-  "Tinh tế",
-  "Spiderum",
 ] as const;
 /**
  * Vì diễn đàn là một loại nền tảng, nên tên diễn đàn chính là tên nền tảng. Đúng ra là nên đặt tên là `TênNềnTảngDiễnĐàn` cho thống nhất với `TênNềnTảngChat` và `TênNềnTảngKhác`, nhưng lúc viết code thấy có thể rút gọn được thì rút cho gọn.
  */
 export type TênDiễnĐàn = typeof danhSáchDiễnĐàn[number];
+//deno-fmt-ignore
 export type LoạiNơiĐăngDiễnĐàn = [
-  "Nhóm" | "Trang" | "Tài khoản" | "Sự kiện" | "Danh sách phát" | "Kênh" | "Video" | "Subreddit" | "Repo",
-];
+  | "Nhóm" | "Trang" | "Tài khoản" | "Sự kiện" 
+  | "Danh sách phát" | "Kênh" | "Video" 
+  | "Subreddit" | "Repo"
+]  
 type TênNơiĐăngDiễnĐàn = [string];
 /**
  * Tên nơi đăng diễn đàn, bao gồm tên tài khoản, tên trang hoặc tên nhóm
@@ -158,14 +164,9 @@ type TênNơiĐăngDiễnĐàn = [string];
  *   - Quả Cầu
  * ```
  */
-export type CấuHìnhNơiĐăngDiễnĐàn =
-  | Record<LoạiNơiĐăngDiễnĐàn[0], string[]>
-  | null;
+export type CấuHìnhNơiĐăngDiễnĐàn = Record<LoạiNơiĐăngDiễnĐàn[0], string[]> | null;
 
-type CấuHìnhDiễnĐàn = Record<
-  TênDiễnĐàn,
-  CấuHìnhNơiĐăngDiễnĐàn | null
->;
+type CấuHìnhDiễnĐàn = Record<TênDiễnĐàn, CấuHìnhNơiĐăngDiễnĐàn | null>;
 
 /**
  * CHAT

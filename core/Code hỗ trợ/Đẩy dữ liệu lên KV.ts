@@ -21,25 +21,6 @@ await đẩyBàiĐăngLênKV();
 await đẩyNơiĐăngLênKV();
 console.log("✅Đã đẩy xong lên KV");
 
-async function đẩyNơiĐăngLênKV() {
-  for (const vậtThểCấuHình of danhSáchVậtThểCấuHình) {
-    const danhSáchNơiĐăngTừCấuHình = await tạoDanhSáchNơiĐăngChưaXácĐịnhVịTrí(vậtThểCấuHình, cấuHìnhVịTrí) as NơiĐăngChưaXácĐịnhVịTrí[];
-    for (const nơiĐăng of danhSáchNơiĐăngTừCấuHình) {
-      console.log(nơiĐăng["Tên nơi đăng"]);
-      const key = tạoKeyKV("nơi đăng", nơiĐăng);
-      await kv.set(key, nơiĐăng);
-    }
-  }
-}
-async function đẩyBàiĐăngLênKV() {
-  for (const bàiĐăngLấyTừVault of danhSáchBàiĐăng) {
-    console.log(bàiĐăngLấyTừVault["Tiêu đề"]);
-    const key = tạoKeyKV("bài đăng", bàiĐăngLấyTừVault);
-    await kv.set(key, bàiĐăngLấyTừVault);
-  }
-
-  await Deno.writeTextFile("core/A. Cấu hình/Danh sách tất cả bài đăng.json", esthetic.json(JSON.stringify(danhSáchBàiĐăng)));
-}
 async function tạoDanhSáchCấuHình() {
   const danhSáchCấuHình: VậtThểCấuHìnhNơiĐăng[] = [];
 
@@ -60,4 +41,25 @@ async function tạoDanhSáchCấuHình() {
     }
   }
   return danhSáchCấuHình;
+}
+
+async function đẩyBàiĐăngLênKV() {
+  for (const bàiĐăngLấyTừVault of danhSáchBàiĐăng) {
+    console.log(bàiĐăngLấyTừVault["Tiêu đề"]);
+    const key = tạoKeyKV("bài đăng", bàiĐăngLấyTừVault);
+    await kv.set(key, bàiĐăngLấyTừVault);
+  }
+
+  await Deno.writeTextFile("core/A. Cấu hình/Danh sách tất cả bài đăng.json", esthetic.json(JSON.stringify(danhSáchBàiĐăng)));
+}
+
+async function đẩyNơiĐăngLênKV() {
+  for (const vậtThểCấuHình of danhSáchVậtThểCấuHình) {
+    const danhSáchNơiĐăngTừCấuHình = await tạoDanhSáchNơiĐăngChưaXácĐịnhVịTrí(vậtThểCấuHình, cấuHìnhVịTrí) as NơiĐăngChưaXácĐịnhVịTrí[];
+    for (const nơiĐăng of danhSáchNơiĐăngTừCấuHình) {
+      console.log(nơiĐăng["Tên nơi đăng"]);
+      const key = tạoKeyKV("nơi đăng", nơiĐăng);
+      await kv.set(key, nơiĐăng);
+    }
+  }
 }

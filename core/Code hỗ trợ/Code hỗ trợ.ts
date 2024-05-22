@@ -1,8 +1,24 @@
-import { BàiĐăng, URLString } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { LiênKếtUTM, ThamSốUTM } from "./Kiểu cho tham số UTM.ts";
+import { BàiĐăng } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { CấuHìnhViếtTắt, NơiĐăngChưaXácĐịnhVịTrí } from "./Hàm và kiểu cho vị trí.tsx";
 import { TênDanhSách } from "../../utils/Kiểu cho web.ts";
 import { tạoKeyKV } from "../../utils/Hàm và kiểu cho API server.ts";
+import * as linkify from "npm:linkifyjs";
+
+export function táchUrlTrongChuỗi(chuỗiCóThểCóUrl: string): [string, string | undefined] {
+  if (!chuỗiCóThểCóUrl) return ["", ""];
+  console.log("🚀 chuỗiCóThểCóUrl:", chuỗiCóThểCóUrl);
+  let chuỗiKhôngCóUrl = chuỗiCóThểCóUrl;
+  let url = undefined;
+  const urls = linkify.find(chuỗiCóThểCóUrl);
+  console.log("🚀 urls:", urls);
+  if (urls.length > 0) {
+    url = urls[0].href as string;
+    console.log("🚀 url:", url);
+    chuỗiKhôngCóUrl = chuỗiCóThểCóUrl.replace(url, "").trim();
+    if (chuỗiKhôngCóUrl === "") chuỗiKhôngCóUrl = url;
+  }
+  return [chuỗiKhôngCóUrl, url];
+}
 
 /** Tìm trong cấu hình nơi đăng xem từ được kiểm tra có ký hiệu viết tắt không. Nếu không thì trả về undefined */
 export function lấyKýHiệuViếtTắt(từĐượcKiểmTra: string | undefined, cấuHìnhViếtTắt: CấuHìnhViếtTắt): string | undefined {
@@ -14,17 +30,6 @@ export function lấyKýHiệuViếtTắt(từĐượcKiểmTra: string | undefi
     }
   }
   return undefined;
-}
-
-export function tạoLiênKếtUTM(link: URLString, thamSốUTM: ThamSốUTM): LiênKếtUTM {
-  const url = new URL(link);
-  const { source, medium, campaign, content, term } = thamSốUTM;
-  url.searchParams.set("utm_source", source || "");
-  url.searchParams.set("utm_medium", medium || "");
-  url.searchParams.set("utm_campaign", campaign || "");
-  url.searchParams.set("utm_content", content || "");
-  url.searchParams.set("utm_term", term || "");
-  return url;
 }
 
 export function tạoChuỗiNgẫuNhiên(sốKýTự: number): string {

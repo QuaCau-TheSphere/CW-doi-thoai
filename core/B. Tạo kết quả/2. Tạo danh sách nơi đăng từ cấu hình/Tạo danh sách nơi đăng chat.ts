@@ -9,6 +9,7 @@ import CấuHìnhNơiĐăng, {
   TênNềnTảngChat,
   TênThreadHoặcTopic,
 } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { táchUrlTrongChuỗi } from "../../Code hỗ trợ/Code hỗ trợ.ts";
 
 function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăng[]) {
   const cấuHìnhNơiĐăngChat = cấuHìnhNơiĐăng.Chat;
@@ -21,38 +22,43 @@ function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: Cấu
     if (!danhSáchMáyChủ) continue;
 
     for (const MáyChủ of danhSáchMáyChủ) {
-      for (const [tênMáyChủ, cấuHìnhMáyChủ] of Object.entries(MáyChủ) as [TênMáyChủ, CấuHìnhMáyChủ | null][]) {
+      for (const [tênMáyChủUrl, cấuHìnhMáyChủ] of Object.entries(MáyChủ) as [TênMáyChủ, CấuHìnhMáyChủ | null][]) {
         if (!cấuHìnhMáyChủ) continue;
-        for (const kênh of cấuHìnhMáyChủ) {
+        const [tênMáyChủ, urlMáyChủ] = táchUrlTrongChuỗi(tênMáyChủUrl);
+        for (const cấuHìnhKênh of cấuHìnhMáyChủ) {
           /** Trường hợp người dùng chỉ khai báo kênh chứ không khai báo thread hoặc topic nhỏ hơn, và không để dấu `:` đằng sau tên kênh */
-          if (typeof kênh === "string") {
+          if (typeof cấuHìnhKênh === "string") {
+            const [kênh, urlKênh] = táchUrlTrongChuỗi(cấuHìnhKênh);
             danhSáchThôngTinNơiĐăng.push({
               "Tên nơi đăng": [tênMáyChủ, kênh],
               "Loại nơi đăng": loạiNơiĐăng,
               "Tên nền tảng": tênNềnTảng,
               "Loại nền tảng": "Chat",
+              URL: urlKênh || urlMáyChủ,
             });
           } else {
-            for (
-              const [tênKênh, danhSáchThreadHoặcTopic] of Object.entries(kênh)
-            ) {
+            for (const [kênhUrl, danhSáchThreadHoặcTopic] of Object.entries(cấuHìnhKênh)) {
               /** Trường hợp người dùng chỉ khai báo kênh chứ không khai báo thread hoặc topic nhỏ hơn, nhưng vẫn để dấu `:` đằng sau tên kênh */
+              const [kênh, urlKênh] = táchUrlTrongChuỗi(kênhUrl);
               if (danhSáchThreadHoặcTopic === null) {
                 danhSáchThôngTinNơiĐăng.push({
-                  "Tên nơi đăng": [tênMáyChủ, tênKênh],
+                  "Tên nơi đăng": [tênMáyChủ, kênh],
                   "Loại nơi đăng": loạiNơiĐăng,
                   "Tên nền tảng": tênNềnTảng,
                   "Loại nền tảng": "Chat",
+                  URL: urlKênh || urlMáyChủ,
                 });
 
                 /** Trường hợp kênh có thread hoặc topic nhỏ hơn*/
               } else {
-                for (const tênThreadHoặcTopic of danhSáchThreadHoặcTopic) {
+                for (const threadHoặcTopicUrl of danhSáchThreadHoặcTopic) {
+                  const [threadHoặcTopic, urlThreadHoặcTopic] = táchUrlTrongChuỗi(threadHoặcTopicUrl);
                   danhSáchThôngTinNơiĐăng.push({
-                    "Tên nơi đăng": [tênMáyChủ, tênKênh, tênThreadHoặcTopic],
-                    "Loại nơi đăng": lấyLoạiNơiĐăng(tênNềnTảng, tênThreadHoặcTopic),
+                    "Tên nơi đăng": [tênMáyChủ, kênh, threadHoặcTopic],
+                    "Loại nơi đăng": lấyLoạiNơiĐăng(tênNềnTảng, threadHoặcTopic),
                     "Tên nền tảng": tênNềnTảng,
                     "Loại nền tảng": "Chat",
+                    URL: urlThreadHoặcTopic || urlKênh || urlMáyChủ,
                   });
                 }
               }
@@ -98,12 +104,14 @@ function lấyNơiĐăngTừNềnTảngChatKhác(
       !danhSáchTênNơiĐăng
     ) continue;
 
-    for (const tênNơiĐăng of danhSáchTênNơiĐăng) {
+    for (const tênNơiĐăngUrl of danhSáchTênNơiĐăng) {
+      const [tênNơiĐăng, url] = táchUrlTrongChuỗi(tênNơiĐăngUrl);
       danhSáchThôngTinNơiĐăng.push({
         "Tên nơi đăng": [tênNơiĐăng],
         "Loại nơi đăng": [loạiNơiĐăng],
         "Tên nền tảng": tênNềnTảng,
         "Loại nền tảng": "Chat",
+        URL: url,
       });
     }
   }

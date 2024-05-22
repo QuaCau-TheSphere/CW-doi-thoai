@@ -1,7 +1,8 @@
-import { BàiĐăng, DựÁn } from "../../Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { BàiĐăng, DựÁn, URLString } from "../../Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import {
   Campaign,
   Content,
+  LiênKếtUTM,
   Medium,
   Source,
   SourceDiễnĐàn,
@@ -11,7 +12,7 @@ import {
   ThamSốUTM,
   TênNơiĐăngString,
 } from "../../Code hỗ trợ/Kiểu cho tham số UTM.ts";
-import { lấyKýHiệuViếtTắt, tạoLiênKếtUTM } from "../../Code hỗ trợ/Code hỗ trợ.ts";
+import { lấyKýHiệuViếtTắt } from "../../Code hỗ trợ/Code hỗ trợ.ts";
 import { BốiCảnh } from "../../../utils/Kiểu cho web.ts";
 import { LoạiNơiĐăngChat, LoạiNềnTảng, NơiĐăngĐãXácĐịnhVịTrí } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import VậtThểThamSốUTM from "../../Code hỗ trợ/Kiểu cho tham số UTM.ts";
@@ -129,6 +130,17 @@ function tạoContent(bốiCảnh: BốiCảnh): Content {
 function tạoTerm(lĩnhVực: string[] | undefined): Term {
   if (!lĩnhVực) return undefined;
   return lĩnhVực.join(", ");
+}
+
+function tạoLiênKếtUTM(link: URLString, thamSốUTM: ThamSốUTM): LiênKếtUTM {
+  const url = new URL(link);
+  const { source, medium, campaign, content, term } = thamSốUTM;
+  url.searchParams.set("utm_source", source || "");
+  url.searchParams.set("utm_medium", medium || "");
+  url.searchParams.set("utm_campaign", campaign || "");
+  url.searchParams.set("utm_content", content || "");
+  url.searchParams.set("utm_term", term || "");
+  return url;
 }
 
 export default function tạoVậtThểUTM(

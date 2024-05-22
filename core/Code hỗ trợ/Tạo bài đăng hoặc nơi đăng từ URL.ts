@@ -103,6 +103,7 @@ async function tạoNơiĐăng(
   return tạoNơiĐăngChưaXácĐịnhVịTrí(thôngTinNơiĐăng, cấuHìnhVịTrí);
 }
 
+/** Không muốn tách ra thành tạo bài đăng từ URL và tạo nơi đăng từ URL, để chỉ cần cào một lần, cào 2 lần sợ bị chặn */
 export async function tạoBàiĐăngHoặcNơiĐăngMớiTừURL(urlString: URLString): Promise<{ bàiĐăng: BàiĐăng; nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí }> {
   const url = new URL(urlString);
   console.info("Tạo bài đăng hoặc nơi đăng mới mới từ URL:", url.href);

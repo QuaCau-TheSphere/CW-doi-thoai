@@ -2,15 +2,17 @@ import tạoDanhSáchBàiĐăngTrênVault from "./a. Tạo theo vault.ts";
 import tạoDanhSáchBàiĐăngTrênWordPress from "./b. Lấy từ WordPress.ts";
 import { BàiĐăng, ĐườngDẫnTuyệtĐối, ĐườngDẫnTươngĐối } from "../../Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { xácĐịnhId } from "../../Code hỗ trợ/Code hỗ trợ.ts";
-import { CấuHìnhWebsite, VậtThểCấuHìnhNơiĐăng } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { VậtThểCấuHìnhNơiĐăng } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { tạoBàiĐăngHoặcNơiĐăngMớiTừURL } from "../../Code hỗ trợ/Tạo bài đăng hoặc nơi đăng từ URL.ts";
+import * as linkify from "npm:linkifyjs";
 
-async function tạoDanhSáchBàiĐăngTừCấuHìnhNơiĐăng(cấuHìnhWebsite: CấuHìnhWebsite | null | undefined): Promise<BàiĐăng[]> {
-  if (!cấuHìnhWebsite) return [];
+async function tạoDanhSáchBàiĐăngTừCấuHìnhNơiĐăng(vậtThểCấuHình: VậtThểCấuHìnhNơiĐăng): Promise<BàiĐăng[]> {
   const danhSáchBàiĐăng: BàiĐăng[] = [];
-  for (const website of cấuHìnhWebsite) {
+  const urls = linkify.find(JSON.stringify(vậtThểCấuHình, null, 2));
+  for (const url of urls) {
+    if (url.type !== "url") continue;
     try {
-      const bàiĐăng = (await tạoBàiĐăngHoặcNơiĐăngMớiTừURL(website)).bàiĐăng;
+      const bàiĐăng = (await tạoBàiĐăngHoặcNơiĐăngMớiTừURL(url.href)).bàiĐăng;
 
       danhSáchBàiĐăng.push({
         ...bàiĐăng,
@@ -41,8 +43,7 @@ export async function tạoDanhSáchBàiĐăng(
     ...await tạoDanhSáchBàiĐăngTrênWordPress(đườngDẫnĐếnTậpTinCsv),
   ];
   for (const vậtThểCấuHình of danhSáchVậtThểCấuHìnhNơiĐăng) {
-    const cấuHìnhWebsite = vậtThểCấuHình.cấuHình.Website;
-    danhSáchBàiĐăngChưaCóId.push(...await tạoDanhSáchBàiĐăngTừCấuHìnhNơiĐăng(cấuHìnhWebsite));
+    danhSáchBàiĐăngChưaCóId.push(...await tạoDanhSáchBàiĐăngTừCấuHìnhNơiĐăng(vậtThểCấuHình));
   }
   for (const bàiĐăngChưaCóId of danhSáchBàiĐăngChưaCóId) {
     const id = await xácĐịnhId("bài đăng", bàiĐăngChưaCóId);

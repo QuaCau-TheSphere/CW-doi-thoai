@@ -15,7 +15,7 @@ import { cóThôngTinNơiĐăngTrongVậtThểVịTrí, tạoDanhSáchVịTríC�
 import { parse } from "$std/yaml/mod.ts";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { CấuHìnhChung } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
-import { xácĐịnhId } from "../../Code hỗ trợ/Code hỗ trợ.ts";
+import { táchUrlTrongChuỗi, xácĐịnhId } from "../../Code hỗ trợ/Code hỗ trợ.ts";
 
 function tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: Omit<ThôngTinNơiĐăng, "id">[]) {
   const cấuHìnhNơiĐăngDiễnĐàn = cấuHìnhNơiĐăng["Diễn đàn"];
@@ -24,12 +24,14 @@ function tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, d
     if (!vậtThểLàmGiáTrịChoTênDiễnĐàn) continue;
     for (const [loạiNơiĐăng, danhSáchTênNơiĐăng] of Object.entries(vậtThểLàmGiáTrịChoTênDiễnĐàn) as [LoạiNơiĐăngDiễnĐàn[0], string[]][]) {
       if (!danhSáchTênNơiĐăng) continue;
-      for (const tênNơiĐăng of danhSáchTênNơiĐăng) {
+      for (const tênNơiĐăngUrl of danhSáchTênNơiĐăng) {
+        const [tênNơiĐăng, url] = táchUrlTrongChuỗi(tênNơiĐăngUrl);
         danhSáchThôngTinNơiĐăng.push({
           "Tên nơi đăng": [tênNơiĐăng],
           "Loại nơi đăng": [loạiNơiĐăng],
           "Tên nền tảng": tênDiễnĐàn,
           "Loại nền tảng": "Diễn đàn",
+          URL: url,
         });
       }
     }
@@ -40,12 +42,14 @@ function tạoDanhSáchTậpTin(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danh
   const cấuHìnhTậpTin = cấuHìnhNơiĐăng["Tập tin"];
   if (!cấuHìnhTậpTin) return;
   for (const [địnhĐạngTậpTin, danhSáchTênNơiĐăng] of Object.entries(cấuHìnhTậpTin) as [ĐịnhDạngTậpTin, string[]][]) {
-    for (const tênNơiĐăng of danhSáchTênNơiĐăng) {
+    for (const tênNơiĐăngUrl of danhSáchTênNơiĐăng) {
+      const [tênNơiĐăng, url] = táchUrlTrongChuỗi(tênNơiĐăngUrl);
       danhSáchThôngTinNơiĐăng.push({
         "Tên nơi đăng": [tênNơiĐăng],
         "Loại nơi đăng": [địnhĐạngTậpTin],
         "Tên nền tảng": địnhĐạngTậpTin,
         "Loại nền tảng": "Tập tin",
+        URL: url,
       });
     }
   }
@@ -58,12 +62,14 @@ function tạoDanhSáchSaaS(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSác
     if (!vậtThểLàmGiáTrịChoTênSaaS) continue;
     for (const [TênChứcNăngTrongSaaS, danhSáchTênNơiĐăng] of Object.entries(vậtThểLàmGiáTrịChoTênSaaS) as [TênChứcNăngTrongSaaS, string[] | null][]) {
       if (!danhSáchTênNơiĐăng) continue;
-      for (const tênNơiĐăng of danhSáchTênNơiĐăng) {
+      for (const tênNơiĐăngUrl of danhSáchTênNơiĐăng) {
+        const [tênNơiĐăng, url] = táchUrlTrongChuỗi(tênNơiĐăngUrl);
         danhSáchThôngTinNơiĐăng.push({
           "Tên nơi đăng": [tênNơiĐăng],
           "Loại nơi đăng": [TênChứcNăngTrongSaaS],
           "Tên nền tảng": tênSaaS,
           "Loại nền tảng": "SaaS",
+          URL: url,
         });
       }
     }
@@ -74,12 +80,14 @@ function tạoDanhSáchKhác(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSá
   for (const loạiNơiĐăngKhác of danhSáchNơiĐăngKhác) {
     const cấuHìnhLoạiNơiĐăngKhác = cấuHìnhNơiĐăng[loạiNơiĐăngKhác];
     if (!cấuHìnhLoạiNơiĐăngKhác) continue;
-    for (const tênNơiĐăngKhác of Object.values(cấuHìnhLoạiNơiĐăngKhác)) {
+    for (const tênNơiĐăngKhácUrl of Object.values(cấuHìnhLoạiNơiĐăngKhác)) {
+      const [tênNơiĐăngKhác, url] = táchUrlTrongChuỗi(tênNơiĐăngKhácUrl);
       danhSáchThôngTinNơiĐăng.push({
         "Tên nơi đăng": [tênNơiĐăngKhác],
         "Loại nơi đăng": [loạiNơiĐăngKhác],
         "Tên nền tảng": loạiNơiĐăngKhác,
         "Loại nền tảng": loạiNơiĐăngKhác,
+        URL: url,
       });
     }
   }
