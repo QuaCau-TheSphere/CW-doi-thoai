@@ -7,9 +7,7 @@ interface MetaProps {
   imageUrl?: string;
 }
 
-export default function Meta(
-  { title = TÊN_TRANG, href, imageUrl, description = MÔ_TẢ_TRANG }: MetaProps,
-) {
+export default function Meta({ title = TÊN_TRANG, href, imageUrl, description = MÔ_TẢ_TRANG }: MetaProps) {
   return (
     <>
       {/* HTML Meta Tags */}

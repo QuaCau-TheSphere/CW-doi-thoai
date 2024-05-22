@@ -18,7 +18,7 @@ export default function App({ Component }: PageProps) {
         <link rel="stylesheet" href="/styles.css" />
 
         <Meta
-          imageUrl="platos1.gif"
+          imageUrl="sihouette.jpg"
           href={ORIGIN}
         />
       </head>
