@@ -13,13 +13,8 @@ export default function ModalBàiĐăng() {
     }
     lấyMetaTag();
   }, [urlNhậpVào]);
-  let bàiĐăng;
+  const bàiĐăng: BàiĐăng | Record<string | number | symbol, never> = phảnHồiTừCORSProxy?.["Nếu là bài đăng"] || {};
   console.log("🚀 ~ ModalBàiĐăng ~ phảnHồiTừCORSProxy:", phảnHồiTừCORSProxy);
-  if (phảnHồiTừCORSProxy === undefined || phảnHồiTừCORSProxy.lỗi) {
-    bàiĐăng = new BàiĐăng();
-  } else {
-    bàiĐăng = phảnHồiTừCORSProxy["Nếu là bài đăng"];
-  }
   const {
     "Tiêu đề": tiêuĐề,
     "Dự án": dựÁn,

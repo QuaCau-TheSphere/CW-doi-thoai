@@ -35,10 +35,8 @@ function DetailThamSốUTM({ thamSốUTM }: { thamSốUTM: ThamSốUTM }) {
   return <KếtQuảĐượcChọn loạiVậtThể="tham số UTM" vậtThể={thamSốUTM} cóTiêuĐề />;
 }
 function KếtQuảSaoChép({ vậtThểTiếpThị }: { vậtThểTiếpThị: VậtThểTiếpThị }) {
-  const bàiĐăng = bàiĐăngĐượcChọn.value;
-
+  const bàiĐăng = vậtThểTiếpThị["Bài đăng"];
   const đuôiRútGọn = vậtThểTiếpThị["Đuôi rút gọn"];
-
   const liênKếtUTM = punycode.toUnicode(decodeURI(vậtThểTiếpThị["Liên kết UTM"].href));
   const liênKếtRútGọn = `${origin}/${đuôiRútGọn}`;
 
@@ -85,6 +83,7 @@ Nếu sau này mình nghĩ ra được thêm điều gì mới thì sẽ cập n
 
 function KhungThôngTinKhiCóKếtQuả() {
   if (!vậtThểTiếpThịĐượcTạo.value) return <></>;
+
   return (
     <article id="khung-bên-phải-khi-có-kết-quả" class="prose">
       <KếtQuảSaoChép vậtThểTiếpThị={vậtThểTiếpThịĐượcTạo.value} />

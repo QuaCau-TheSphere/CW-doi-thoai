@@ -13,6 +13,7 @@ export default function ModalNơiĐăng() {
     }
     lấyMetaTag();
   }, [urlNhậpVào]);
+  console.log("🚀 ~ ModalNơiĐăng ~ phảnHồiTừCORSProxy:", phảnHồiTừCORSProxy);
   const nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí | Record<string | number | symbol, never> = phảnHồiTừCORSProxy?.["Nếu là nơi đăng"] || {};
   const {
     "Loại nền tảng": loạiNềnTảng,
@@ -22,6 +23,7 @@ export default function ModalNơiĐăng() {
     "Mô tả nơi đăng": môTảNơiĐăng,
     "Vị trí có thể đăng": vịTríCóThểĐăng,
     "Lĩnh vực": lĩnhVực,
+    "Đơn vị quản lý": đơnVịQuảnLý,
     "Mã nơi đăng": mãNơiĐăng,
     URL: urlChínhTắc,
   } = nơiĐăng;
