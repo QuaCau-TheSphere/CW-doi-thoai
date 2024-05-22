@@ -92,9 +92,7 @@ async function handleSubmit(event: any, tênDanhSách: TênDanhSách, mụcĐư�
   đổiKhungNhập("xuôi");
 }
 
-export default function ModalTạoMới(
-  { tênDanhSách, mụcĐượcChọn }: { tênDanhSách: TênDanhSách; mụcĐượcChọn: Signal<MụcĐượcChọn> },
-) {
+export default function ModalTạoMới({ tênDanhSách, mụcĐượcChọn }: { tênDanhSách: TênDanhSách; mụcĐượcChọn: Signal<MụcĐượcChọn> }) {
   if (tênDanhSách !== element.value) return <></>;
   return (
     <dialog id="model-tạo-mới" class="modal">

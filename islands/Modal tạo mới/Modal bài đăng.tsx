@@ -14,6 +14,7 @@ export default function ModalBàiĐăng() {
     lấyMetaTag();
   }, [urlNhậpVào]);
   let bàiĐăng;
+  console.log("🚀 ~ ModalBàiĐăng ~ phảnHồiTừCORSProxy:", phảnHồiTừCORSProxy);
   if (phảnHồiTừCORSProxy === undefined || phảnHồiTừCORSProxy.lỗi) {
     bàiĐăng = new BàiĐăng();
   } else {
