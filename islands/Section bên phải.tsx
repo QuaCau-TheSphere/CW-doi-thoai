@@ -1,9 +1,9 @@
 import { bàiĐăngĐượcChọn, cóRútGọn, vậtThểTiếpThịĐượcTạo } from "./Signals tổng.ts";
 import KhungThôngTinKhiKhôngCóKếtQuả from "../components/KhungThôngTinKhiKhôngCóKếtQuả.tsx";
-import KếtQuảĐượcChọn from "./Kết quả được chọn/Kết quả được chọn.tsx";
 import { ThamSốUTM } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91%20UTM.ts";
 import { VậtThểTiếpThị } from "../utils/Kiểu cho web.ts";
 import punycode from "npm:punycode";
+import { VậtThểKhác } from "../components/Th%C3%B4ng%20tin%20v%E1%BA%ADt%20th%E1%BB%83%20ti%E1%BA%BFp%20th%E1%BB%8B.tsx";
 
 export default function SectionBênPhải({ textTrangChủ }: { textTrangChủ: string }) {
   return (
@@ -28,16 +28,16 @@ function DetailThamSốUTM({ thamSốUTM }: { thamSốUTM: ThamSốUTM }) {
     return (
       <details>
         <summary>Tham số UTM</summary>
-        <KếtQuảĐượcChọn loạiVậtThể="tham số UTM" vậtThể={thamSốUTM} />
+        <VậtThểKhác loạiVậtThể="tham số UTM" vậtThể={thamSốUTM} />
       </details>
     );
   }
-  return <KếtQuảĐượcChọn loạiVậtThể="tham số UTM" vậtThể={thamSốUTM} cóTiêuĐề />;
+  return <VậtThểKhác loạiVậtThể="tham số UTM" vậtThể={thamSốUTM} cóTiêuĐề />;
 }
 function KếtQuảSaoChép({ vậtThểTiếpThị }: { vậtThểTiếpThị: VậtThểTiếpThị }) {
   const bàiĐăng = vậtThểTiếpThị["Bài đăng"];
   const đuôiRútGọn = vậtThểTiếpThị["Đuôi rút gọn"];
-  const liênKếtUTM = punycode.toUnicode(decodeURI(vậtThểTiếpThị["Liên kết UTM"].href));
+  const liênKếtUTM = punycode.toUnicode(decodeURI(vậtThểTiếpThị["Liên kết UTM"].href)).replace(" ", "%20");
   const liênKếtRútGọn = `${origin}/${đuôiRútGọn}`;
 
   const liênKếtĐượcDùng = cóRútGọn.value ? liênKếtRútGọn : liênKếtUTM;

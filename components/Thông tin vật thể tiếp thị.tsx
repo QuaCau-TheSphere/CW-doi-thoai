@@ -1,7 +1,7 @@
 import { kiểuKebab, viếtHoa } from "../utils/Hàm cho khung nhập.ts";
 import { VậtThểTiếpThị } from "../utils/Kiểu cho web.ts";
 
-function VậtThểKhác({ vậtThể, loạiVậtThể, cóTiêuĐề }: { vậtThể: Record<string, any>; loạiVậtThể: string; cóTiêuĐề: boolean }) {
+export function VậtThểKhác({ vậtThể, loạiVậtThể, cóTiêuĐề }: { vậtThể: Record<string, any>; loạiVậtThể: string; cóTiêuĐề?: boolean }) {
   const danhSáchPhầnTử = [];
   for (const [key, value] of Object.entries(vậtThể)) {
     if (typeof value === "object") {
