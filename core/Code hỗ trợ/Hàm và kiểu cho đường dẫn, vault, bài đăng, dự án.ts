@@ -53,7 +53,7 @@ export interface NộiDungBàiĐăng {
   "Toàn bộ nội dung"?: string;
   "Định dạng nội dung"?: "md" | "html";
 }
-export class BàiĐăng {
+export interface BàiĐăng {
   "Tiêu đề": string;
   "URL": URLString;
   "Dự án"?: DựÁn;
@@ -64,30 +64,8 @@ export class BàiĐăng {
   "Ngày tạo"?: Date;
   "Ngày cập nhật"?: Date;
   id: string;
-  constructor(
-    tiêuĐề: string = "",
-    url: URLString = "",
-    dựÁn: DựÁn = {
-      "Mã dự án": "",
-      "Tên dự án": "",
-    },
-    vault: string = "",
-    mãBàiĐăng: string = "",
-    nộiDung: NộiDungBàiĐăng = {
-      "Mô tả bài đăng": "",
-      "Toàn bộ nội dung": "",
-      "Định dạng nội dung": "md",
-    },
-  ) {
-    this["Tiêu đề"] = tiêuĐề;
-    this.URL = url;
-    this["Dự án"] = dựÁn;
-    this.Vault = vault;
-    this["Mã bài đăng"] = mãBàiĐăng;
-    this["Nội dung bài đăng"] = nộiDung;
-    this.id = tạoChuỗiNgẫuNhiên(4);
-  }
 }
+
 /**
  * Mô tả vấn đề: có nhiều loại thông tin không phải lúc nào cũng được ghi, và không phải cứ thay đổi là khác nhau. VD: cùng một bài đăng, nhưng URL có thể đã thay đổi khi đổi đường dẫn, tiêu đề có thể đã được viết lại, nội dung có thể đã được cập nhật, vault và dự án có thể đã được cấu trúc lại. Tất cả mọi thứ đều có thể đã khác, nhưng ta vẫn xem chúng là giống nhau. Đây là nghịch lý con tàu Theseus điển hình.
  *

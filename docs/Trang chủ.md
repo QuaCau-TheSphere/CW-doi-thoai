@@ -9,7 +9,7 @@ updated: 2024-05-22T17:58
 Để đạt được mục tiêu đó, chương trình này sẽ giúp bạn:
 - Tìm nhanh những ghi chú được chia sẻ công khai trong kho dữ liệu của bạn, hoặc các bài đăng trên các website, diễn đàn
 - Quản lý và tìm nhanh những cộng đồng bạn muốn mở cuộc đối thoại
-- Tự động tạo liên kết UTM và rút gọn liên kết đó bằng tên miền của riêng bạn
+- Tự động tạo liên kết UTM và rút gọn liên kết đó
 - Tự động tạo nội dung sẽ được dùng để đối thoại dựa trên ghi chú của bạn
 - Thống kê số lượng truy cập tới liên kết được chia sẻ
 

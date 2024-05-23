@@ -1,5 +1,4 @@
-import punycode from "npm:punycode";
-import { VậtThểTiếpThị } from "../utils/Kiểu cho web.ts";
+import { VậtThểTiếpThị, xửLýPunycode } from "../utils/Kiểu cho web.ts";
 import { cóRútGọn, vậtThểTiếpThịĐượcTạo } from "./Signals tổng.ts";
 import { ThamSốUTM } from "../core/Code hỗ trợ/Kiểu cho tham số UTM.ts";
 import { VậtThểKhác } from "../components/Thông tin vật thể tiếp thị.tsx";
@@ -37,7 +36,7 @@ function DetailThamSốUTM({ thamSốUTM }: { thamSốUTM: ThamSốUTM }) {
 function KếtQuảSaoChép({ vậtThểTiếpThị }: { vậtThểTiếpThị: VậtThểTiếpThị }) {
   const bàiĐăng = vậtThểTiếpThị["Bài đăng"];
   const đuôiRútGọn = vậtThểTiếpThị["Đuôi rút gọn"];
-  const liênKếtUTM = punycode.toUnicode(decodeURI(vậtThểTiếpThị["Liên kết UTM"].href)).replace(" ", "%20");
+  const liênKếtUTM = xửLýPunycode(vậtThểTiếpThị["Liên kết UTM"].href);
   const liênKếtRútGọn = `${origin}/${đuôiRútGọn}`;
 
   const liênKếtĐượcDùng = cóRútGọn.value ? liênKếtRútGọn : liênKếtUTM;

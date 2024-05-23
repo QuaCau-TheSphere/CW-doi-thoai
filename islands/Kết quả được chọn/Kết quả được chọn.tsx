@@ -1,4 +1,4 @@
-import { TênDanhSách } from "../../utils/Kiểu cho web.ts";
+import { TênDanhSách, xửLýPunycode } from "../../utils/Kiểu cho web.ts";
 import { bàiĐăngĐượcChọn } from "../Signals tổng.ts";
 import NơiĐăngĐượcChọn from "./Nơi đăng được chọn.tsx";
 
@@ -19,6 +19,8 @@ function BàiĐăngĐượcChọn() {
   const môTả = nộiDung?.["Mô tả bài đăng"] || "";
   const toànBộNộiDung = nộiDung?.["Toàn bộ nội dung"] || "";
   const địnhDạng = nộiDung?.["Định dạng nội dung"];
+  const liênKết = xửLýPunycode(url, true);
+
   return (
     <article id="bài-đăng-được-chọn" class="card w-full bg-base-200 shadow-xl">
       <div class="card-body">
@@ -26,7 +28,10 @@ function BàiĐăngĐượcChọn() {
         <ul class="font-xs text-slate-400">
           <li id="vault" class="hover:text-primary-content">Vault: {vault}</li>
           <li id="dự-án" class="hover:text-primary-content">Dự án: {dựÁn?.["Tên dự án"]}</li>
-          <li id="url" class="hover:text-primary-content">URL: {url}</li>
+          <li id="liên-kết" class="hover:text-primary-content">
+            Liên kết: <a href={liênKết}>{liênKết}</a>
+          </li>
+
           {
             /* <li id="khác" class="hover:text-primary-content">
             <span id="tác-giả">Tác giả: {tácGiả}</span> • <span id="mã-bài-đăng">Mã bài đăng: {mãBàiĐăng}</span> •{" "}

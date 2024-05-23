@@ -1,10 +1,11 @@
 // deno-fmt-ignore-file
 import { Document, EnrichedDocumentSearchResultSetUnitResultUnit} from "npm:flexsearch";
 import { StateUpdater } from "preact/hooks";
-import { BàiĐăng } from "../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { BàiĐăng, URLString } from "../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { NơiĐăngĐãXácĐịnhVịTrí } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import ThamSốUTM, { ĐuôiRútGọn } from "../core/Code hỗ trợ/Kiểu cho tham số UTM.ts";
 import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import punycode from "npm:punycode";
 
 /** KHUNG NHẬP */
 export type BốiCảnh = string | undefined;
@@ -53,4 +54,11 @@ export interface VậtThểTiếpThị extends ThamSốUTM {
   "Các lần truy cập": DữLiệuTruyCậpCácNăm;
   "Đuôi rút gọn": ĐuôiRútGọn;
   "Lần đăng": number;
+}
+
+export function xửLýPunycode(url: URLString | undefined, đểDấuCáchTrongLiênKết: boolean = false): string {
+  if (!url) return ''
+  const liênKết = punycode.toUnicode(decodeURI(url.toString()))
+  if (đểDấuCáchTrongLiênKết) return liênKết
+  return liênKết.replaceAll(" ", "%20");
 }
