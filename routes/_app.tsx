@@ -3,6 +3,7 @@ import Meta from "../components/Meta.tsx";
 import { ORIGIN } from "../env.ts";
 
 export default function App({ Component }: PageProps) {
+  console.log("🚀 ~ ORIGIN:", ORIGIN);
   return (
     <html data-theme="retro" class="h-screen">
       <head>
@@ -19,6 +20,7 @@ export default function App({ Component }: PageProps) {
         <Meta imageUrl="sihouette.jpg" href={ORIGIN} />
       </head>
       <body>
+        sdfsdfsdf
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-MWZ4WG7"
@@ -29,6 +31,7 @@ export default function App({ Component }: PageProps) {
           </iframe>
         </noscript>
         <Component />
+        sdfsdfsdf
       </body>
     </html>
   );

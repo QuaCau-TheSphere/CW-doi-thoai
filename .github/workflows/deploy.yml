@@ -15,8 +15,6 @@ env:
   DUONG_DAN_DEN_CAU_HINH_CHUNG: ./core/A. Cấu hình/Nơi đăng/Cấu hình chung.yaml
   THU_MUC_CAU_HINH_NOI_DANG: ./core/A. Cấu hình/Nơi đăng
 
-  ORIGIN: https://doi-thoai.deno.dev
-
 jobs:
   deploy:
     name: Deploy
