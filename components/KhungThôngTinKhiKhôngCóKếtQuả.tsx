@@ -4,16 +4,14 @@ import IconBrandDiscord from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/bra
 import IconBrandFacebook from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/brand-facebook.tsx";
 import IconSphere from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/sphere.tsx";
 
-export default function KhungThôngTinKhiKhôngCóKếtQuả({ text }: { text: string }) {
-  const bàiViết = extract(text);
+export default function KhungThôngTinKhiKhôngCóKếtQuả({ textTrangChủ }: { textTrangChủ: string }) {
+  const bàiViết = extract(textTrangChủ);
   const tênBàiViết = bàiViết.attrs.title;
   const môTảBàiViết = bàiViết.attrs.description;
   const nộiDungBàiViết = render(bàiViết.body);
   return (
     <article id="khung-thông-tin-khi-không-có-kết-quả" class="prose">
-      <div dangerouslySetInnerHTML={{ __html: nộiDungBàiViết }}>
-        {nộiDungBàiViết}
-      </div>
+      <div dangerouslySetInnerHTML={{ __html: nộiDungBàiViết }} />
 
       <nav class="flex gap-5">
         <a href="https://quảcầu.com">

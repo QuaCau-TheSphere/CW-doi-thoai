@@ -5,10 +5,10 @@ import { ThamSốUTM } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83
 import { VậtThểTiếpThị } from "../utils/Kiểu cho web.ts";
 import punycode from "npm:punycode";
 
-export default function SectionBênPhải({ text }: { text: string }) {
+export default function SectionBênPhải({ textTrangChủ }: { textTrangChủ: string }) {
   return (
     <section id="section-bên-phải" class="basis-1/2 p-5 md:p-10">
-      {vậtThểTiếpThịĐượcTạo.value ? <KhungThôngTinKhiCóKếtQuả /> : <KhungThôngTinKhiKhôngCóKếtQuả text={text} />}
+      {vậtThểTiếpThịĐượcTạo.value ? <KhungThôngTinKhiCóKếtQuả /> : <KhungThôngTinKhiKhôngCóKếtQuả textTrangChủ={textTrangChủ} />}
     </section>
   );
 }

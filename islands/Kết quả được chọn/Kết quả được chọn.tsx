@@ -84,7 +84,7 @@ function VậtThểKhác({ vậtThể, loạiVậtThể, cóTiêuĐề }: { vậ
 
 export default function KếtQuảĐượcChọn(
   { loạiVậtThể, vậtThể, cóTiêuĐề = false }: {
-    loạiVậtThể: TênDanhSách | "tham số UTM";
+    loạiVậtThể: TênDanhSách | "Tham số UTM" | "Thông tin khác";
     vậtThể?: Record<string, any>;
     cóTiêuĐề?: boolean;
   },

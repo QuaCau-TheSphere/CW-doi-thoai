@@ -1,9 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
-import {
-  DữLiệuTruyCậpCácNăm,
-  VậtThểTiếpThị,
-} from "../../utils/Kiểu cho web.ts";
+import { DữLiệuTruyCậpCácNăm, VậtThểTiếpThị } from "../../utils/Kiểu cho web.ts";
 import ReactECharts from "../../islands/Bi%E1%BB%83u%20%C4%91%E1%BB%93/echart.tsx";
 import { dữLiệuTruyCậpCácNămTest } from "../../utils/Hàm cho biểu đồ.test.ts";
 import { tạoDữLiệuBiểuĐồ } from "../../utils/H%C3%A0m%20cho%20bi%E1%BB%83u%20%C4%91%E1%BB%93.ts";
@@ -25,14 +22,12 @@ export const handler: Handlers = {
 };
 
 export function chartOption(dữLiệuTruyCậpCácNăm: DữLiệuTruyCậpCácNăm) {
-  const data = tạoDữLiệuBiểuĐồ(dữLiệuTruyCậpCácNăm).giờ; //todo;
-  // const data = tạoDữLiệuBiểuĐồ(dữLiệuTruyCậpCácNămTest).giờ; //todo;
+  // const data = tạoDữLiệuBiểuĐồ(dữLiệuTruyCậpCácNăm).giờ; //todo;
+  const data = tạoDữLiệuBiểuĐồ(dữLiệuTruyCậpCácNămTest).giờ; //todo;
   return {
     tooltip: {
       trigger: "axis",
-      axisPointer: {
-        type: "cross",
-      },
+      axisPointer: { type: "cross" },
     },
     dataset: {
       source: data,
@@ -76,9 +71,7 @@ function lấyGiờVN(thờiĐiểmTạo: Date | string) {
   const giờ = date.toLocaleTimeString("vi-VN");
   return `${ngày} ${giờ}`;
 }
-export default function ChartPage(
-  props: PageProps<{ vậtThểTiếpThị: VậtThểTiếpThị }>,
-) {
+export default function ChartPage(props: PageProps<{ vậtThểTiếpThị: VậtThểTiếpThị }>) {
   const { vậtThểTiếpThị } = props.data;
   const {
     "Bài đăng": bàiĐăng,
@@ -98,10 +91,8 @@ export default function ChartPage(
       <Head>
         <title>Biểu đồ cho {đuôiRútGọn}</title>
       </Head>
-      <div class="p-4 mx-auto max-w-screen-md">
-        <ReactECharts
-          option={chartData}
-        />
+      <div class="p-4 mx-auto max-w-screen-md bg-secondary">
+        <ReactECharts option={chartData} />
         <article class="grid grid-cols-2 gap-4">
           <KếtQuảĐượcChọn vậtThể={bàiĐăng} loạiVậtThể="Bài đăng:" />
           <KếtQuảĐượcChọn vậtThể={nơiĐăng} loạiVậtThể="Nơi đăng:" />
