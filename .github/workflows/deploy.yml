@@ -5,6 +5,18 @@ on:
   pull_request:
     branches: main
 
+env:
+  THU_MUC_DU_AN: 📐 Dự án
+  THU_MUC_THIET_LAP: Ξ Thiết lập
+  TAP_TIN_THIET_LAP: Ξ Thiết lập\\Ξ Thiết lập.md
+  THU_MUC_CHUA_TAT_CA_CAC_VAULT: D:\\QC supplements\\Vaults
+
+  DUONG_DAN_DEN_TAP_TIN_CSV: ./core/A. Cấu hình/wpd9_posts.csv
+  DUONG_DAN_DEN_CAU_HINH_CHUNG: ./core/A. Cấu hình/Nơi đăng/Cấu hình chung.yaml
+  THU_MUC_CAU_HINH_NOI_DANG: ./core/A. Cấu hình/Nơi đăng
+
+  ORIGIN: https://doi-thoai.deno.dev
+
 jobs:
   deploy:
     name: Deploy
