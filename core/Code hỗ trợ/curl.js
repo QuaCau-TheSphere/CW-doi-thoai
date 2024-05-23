@@ -1,4 +1,4 @@
-import { kv } from "./env.ts";
+import { kv } from "../../env.ts";
 const allEntries = await Array.fromAsync(kv.list({ prefix: [] }));
 for (const entry of allEntries) {
   console.log("🚀 ~ entry:", entry);

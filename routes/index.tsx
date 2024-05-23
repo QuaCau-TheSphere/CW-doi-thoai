@@ -1,7 +1,7 @@
 import { parse } from "$std/yaml/mod.ts";
 import { CấuHìnhChung, NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { BàiĐăng } from "../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG } from "../core/Code hỗ trợ/env.ts";
+import { ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG } from "../env.ts";
 import Main from "../islands/Main.tsx";
 
 export default async function App() {

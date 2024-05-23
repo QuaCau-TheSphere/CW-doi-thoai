@@ -1,6 +1,6 @@
 import { type PageProps } from "$fresh/server.ts";
 import Meta from "../components/Meta.tsx";
-import { ORIGIN } from "../core/Code hỗ trợ/env.ts";
+import { ORIGIN } from "../env.ts";
 
 export default function App({ Component }: PageProps) {
   return (

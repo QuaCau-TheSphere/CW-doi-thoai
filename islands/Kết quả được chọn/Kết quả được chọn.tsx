@@ -1,5 +1,4 @@
 import { TênDanhSách } from "../../utils/Kiểu cho web.ts";
-import { kiểuKebab, viếtHoa } from "../../utils/Hàm cho khung nhập.ts";
 import { bàiĐăngĐượcChọn } from "../Signals tổng.ts";
 import NơiĐăngĐượcChọn from "./Nơi đăng được chọn.tsx";
 
@@ -51,51 +50,11 @@ function BàiĐăngĐượcChọn() {
   );
 }
 
-function VậtThểKhác({ vậtThể, loạiVậtThể, cóTiêuĐề }: { vậtThể: Record<string, any>; loạiVậtThể: string; cóTiêuĐề: boolean }) {
-  const danhSáchPhầnTử = [];
-  for (const [key, value] of Object.entries(vậtThể)) {
-    if (typeof value === "object") {
-      danhSáchPhầnTử.push(
-        <details>
-          <summary>{key}</summary>
-          {Object.entries(value).map(([key2, value2]) => <ListItem loạiDữLiệu={key2} dữLiệu={value2} />)}
-        </details>,
-      );
-    } else {
-      danhSáchPhầnTử.push(<ListItem loạiDữLiệu={key} dữLiệu={value} />);
-    }
-  }
-  return (
-    <article id={kiểuKebab(loạiVậtThể)} class="card w-full bg-base-200 shadow-xl">
-      <div class="card-body">
-        {cóTiêuĐề ? <h2 class="card-title">{viếtHoa(loạiVậtThể)}</h2> : <></>}
-        <ul>{danhSáchPhầnTử}</ul>
-      </div>
-    </article>
-  );
-  function ListItem({ loạiDữLiệu, dữLiệu }: { loạiDữLiệu: string; dữLiệu: any }) {
-    return (
-      <li id={kiểuKebab(loạiDữLiệu)}>
-        <strong class="font-bold">{loạiDữLiệu}:</strong> {String(dữLiệu)}
-      </li>
-    );
-  }
-}
-
-export default function KếtQuảĐượcChọn(
-  { loạiVậtThể, vậtThể, cóTiêuĐề = false }: {
-    loạiVậtThể: TênDanhSách | "Tham số UTM" | "Thông tin khác";
-    vậtThể?: Record<string, any>;
-    cóTiêuĐề?: boolean;
-  },
-) {
+export default function KếtQuảĐượcChọn({ loạiVậtThể }: { loạiVậtThể: TênDanhSách }) {
   switch (loạiVậtThể) {
     case "bài đăng":
       return <BàiĐăngĐượcChọn />;
     case "nơi đăng":
       return <NơiĐăngĐượcChọn />;
-    default:
-      if (!vậtThể) return <></>;
-      return <VậtThểKhác loạiVậtThể={loạiVậtThể} vậtThể={vậtThể} cóTiêuĐề={cóTiêuĐề} />;
   }
 }

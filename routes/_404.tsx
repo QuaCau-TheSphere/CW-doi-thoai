@@ -1,6 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
 import Meta from "../components/Meta.tsx";
-import { ORIGIN } from "../core/Code hỗ trợ/env.ts";
+import { ORIGIN } from "../env.ts";
 
 export default function Error404() {
   return (
