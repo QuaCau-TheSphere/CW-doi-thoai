@@ -59,8 +59,8 @@ export default function ThôngTinVậtThểTiếpThị({ vậtThểTiếpThị }
   };
   return (
     <article class="grid grid-cols-2 gap-4">
-      <VậtThểKhác vậtThể={bàiĐăng} loạiVậtThể="bài đăng" cóTiêuĐề />
-      <VậtThểKhác vậtThể={nơiĐăng} loạiVậtThể="nơi đăng" cóTiêuĐề />
+      <VậtThểKhác vậtThể={bàiĐăng} loạiVậtThể="Bài đăng" cóTiêuĐề />
+      <VậtThểKhác vậtThể={nơiĐăng} loạiVậtThể="Nơi đăng" cóTiêuĐề />
       <VậtThểKhác vậtThể={thamSốUTM} loạiVậtThể="Tham số UTM" cóTiêuĐề />
       <VậtThểKhác vậtThể={khác} loạiVậtThể="Thông tin khác" cóTiêuĐề />
     </article>

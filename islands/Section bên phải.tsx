@@ -1,9 +1,9 @@
-import { bàiĐăngĐượcChọn, cóRútGọn, vậtThểTiếpThịĐượcTạo } from "./Signals tổng.ts";
-import KhungThôngTinKhiKhôngCóKếtQuả from "../components/KhungThôngTinKhiKhôngCóKếtQuả.tsx";
-import { ThamSốUTM } from "../core/Code%20h%E1%BB%97%20tr%E1%BB%A3/Ki%E1%BB%83u%20cho%20tham%20s%E1%BB%91%20UTM.ts";
-import { VậtThểTiếpThị } from "../utils/Kiểu cho web.ts";
 import punycode from "npm:punycode";
-import { VậtThểKhác } from "../components/Th%C3%B4ng%20tin%20v%E1%BA%ADt%20th%E1%BB%83%20ti%E1%BA%BFp%20th%E1%BB%8B.tsx";
+import { VậtThểTiếpThị } from "../utils/Kiểu cho web.ts";
+import { cóRútGọn, vậtThểTiếpThịĐượcTạo } from "./Signals tổng.ts";
+import { ThamSốUTM } from "../core/Code hỗ trợ/Kiểu cho tham số UTM.ts";
+import { VậtThểKhác } from "../components/Thông tin vật thể tiếp thị.tsx";
+import KhungThôngTinKhiKhôngCóKếtQuả from "../components/KhungThôngTinKhiKhôngCóKếtQuả.tsx";
 
 export default function SectionBênPhải({ textTrangChủ }: { textTrangChủ: string }) {
   return (
