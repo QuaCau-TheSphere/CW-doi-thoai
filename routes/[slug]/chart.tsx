@@ -5,6 +5,7 @@ import ReactECharts from "../../islands/Biểu đồ/echart.tsx";
 import { dữLiệuTruyCậpCácNămTest } from "../../utils/Hàm cho biểu đồ.test.ts";
 import { tạoDữLiệuBiểuĐồ } from "../../utils/Hàm cho biểu đồ.ts";
 import ThôngTinVậtThểTiếpThị from "../../components/Thông tin vật thể tiếp thị.tsx";
+import Meta from "../../components/Meta.tsx";
 
 const kv = await Deno.openKv();
 export const handler: Handlers = {
@@ -22,8 +23,8 @@ export const handler: Handlers = {
 };
 
 export function chartOption(dữLiệuTruyCậpCácNăm: DữLiệuTruyCậpCácNăm) {
-  // const data = tạoDữLiệuBiểuĐồ(dữLiệuTruyCậpCácNăm).giờ; //todo;
-  const data = tạoDữLiệuBiểuĐồ(dữLiệuTruyCậpCácNămTest).giờ; //todo;
+  const data = tạoDữLiệuBiểuĐồ(dữLiệuTruyCậpCácNăm).giờ; //todo;
+  // const data = tạoDữLiệuBiểuĐồ(dữLiệuTruyCậpCácNămTest).giờ; //todo;
   return {
     tooltip: {
       trigger: "axis",
@@ -73,6 +74,7 @@ export default function ChartPage(props: PageProps<{ vậtThểTiếpThị: Vậ
       <Head>
         <title>Biểu đồ cho {đuôiRútGọn}</title>
       </Head>
+      <Meta imageUrl="sihouette.jpg" />
       <div class="p-4 mx-auto max-w-screen-md">
         <ReactECharts option={chartData} />
         <ThôngTinVậtThểTiếpThị vậtThểTiếpThị={vậtThểTiếpThị} />

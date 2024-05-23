@@ -1,6 +1,5 @@
 import { Head } from "$fresh/runtime.ts";
 import Meta from "../components/Meta.tsx";
-import { ORIGIN } from "../env.ts";
 
 export default function Error404() {
   return (
@@ -14,7 +13,7 @@ export default function Error404() {
           &#125;)(window,document,'script','dataLayer','GTM-MWZ4WG7');
         </script>
       </Head>
-      <Meta imageUrl="sihouette.jpg" href={ORIGIN} />
+      <Meta imageUrl="sihouette.jpg" />
       <noscript>
         <iframe
           src="https://www.googletagmanager.com/ns.html?id=GTM-MWZ4WG7"

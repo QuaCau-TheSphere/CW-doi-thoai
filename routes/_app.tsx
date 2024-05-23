@@ -1,9 +1,7 @@
 import { type PageProps } from "$fresh/server.ts";
 import Meta from "../components/Meta.tsx";
-import { ORIGIN } from "../env.ts";
 
 export default function App({ Component }: PageProps) {
-  console.log("🚀 ~ ORIGIN:", ORIGIN);
   return (
     <html data-theme="retro" class="h-screen">
       <head>
@@ -17,10 +15,9 @@ export default function App({ Component }: PageProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link rel="stylesheet" href="/styles.css" />
-        <Meta imageUrl="sihouette.jpg" href={ORIGIN} />
+        <Meta imageUrl="sihouette.jpg" />
       </head>
       <body>
-        sdfsdfsdf
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-MWZ4WG7"
@@ -31,7 +28,6 @@ export default function App({ Component }: PageProps) {
           </iframe>
         </noscript>
         <Component />
-        sdfsdfsdf
       </body>
     </html>
   );

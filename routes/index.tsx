@@ -13,16 +13,12 @@ export default async function App() {
   const danhSáchEntryNơiĐăngTrênKv = await Array.fromAsync(kv.list({ prefix: ["Nơi đăng"] })) as Deno.KvEntry<NơiĐăngChưaXácĐịnhVịTrí>[];
   const danhSáchNơiĐăng = danhSáchEntryNơiĐăngTrênKv.map((entry) => entry.value);
 
-  console.log("🚀 ~ App ~ ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG:", ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG);
   const cấuHìnhChung = parse(await Deno.readTextFile(ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG)) as CấuHìnhChung;
-  console.log("🚀 ~ App ~ cấuHìnhChung:", cấuHìnhChung);
   const cấuHìnhViếtTắt = cấuHìnhChung["Viết tắt"];
   const textTrangChủ = await Deno.readTextFile("docs/Trang chủ.md");
-  console.log("🚀 ~ App ~ textTrangChủ:", textTrangChủ);
 
   return (
     <body class="">
-      aaaa
       <Main
         danhSáchBàiĐăng={danhSáchBàiĐăng}
         danhSáchNơiĐăng={danhSáchNơiĐăng}

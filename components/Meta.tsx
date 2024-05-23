@@ -1,4 +1,5 @@
 import { MÔ_TẢ_TRANG, TÊN_TRANG } from "../utils/H%E1%BA%B1ng.ts";
+import { load } from "https://deno.land/std@0.224.0/dotenv/mod.ts";
 
 interface MetaProps {
   title?: string;
@@ -6,8 +7,15 @@ interface MetaProps {
   href?: string;
   imageUrl?: string;
 }
+const env = await load();
+const ORIGIn = env["ORIGIN"];
 
-export default function Meta({ title = TÊN_TRANG, href, imageUrl, description = MÔ_TẢ_TRANG }: MetaProps) {
+export default function Meta({
+  title = TÊN_TRANG,
+  href = ORIGIn,
+  imageUrl,
+  description = MÔ_TẢ_TRANG,
+}: MetaProps) {
   return (
     <>
       {/* HTML Meta Tags */}
