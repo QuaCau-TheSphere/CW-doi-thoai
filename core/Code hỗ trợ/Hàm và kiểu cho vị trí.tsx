@@ -1,4 +1,4 @@
-import { LoạiNơiĐăng, LoạiNềnTảng, NơiĐăngĐãXácĐịnhVịTrí, ThôngTinNơiĐăng, TênNơiĐăng, TênNềnTảng } from "./Kiểu cho nơi đăng.ts";
+import { LoạiNơiĐăng, LoạiNềnTảng, ThôngTinNơiĐăng, TênNềnTảng } from "./Kiểu cho nơi đăng.ts";
 
 type VịTríThànhPhần = string;
 export type CấuHìnhViếtTắt = Record<string, string>[] | undefined | null;
@@ -103,15 +103,22 @@ export type VịTrí = VịTríThànhPhần[];
  * ```
  */
 export type DanhSáchVịTríCóThểĐăng = VịTrí[];
-export interface NơiĐăngChưaXácĐịnhVịTrí extends ThôngTinNơiĐăng {
-  "Vị trí có thể đăng"?: DanhSáchVịTríCóThểĐăng;
-  id: string;
+
+/** Tên cũ: NơiĐăngChưaXácĐịnhVịTrí */
+export interface NơiĐăngCóCácLựaChọnVịTrí extends ThôngTinNơiĐăng {
+  "Vị trí có thể đăng": DanhSáchVịTríCóThểĐăng;
+  id?: string; //refactor: khi nào rảnh thì refactor để bỏ này luôn
+}
+/** Tên cũ: NơiĐăngĐãXácĐịnhVịTrí */
+export interface NơiĐăngCóMộtVịTríCụThể extends ThôngTinNơiĐăng {
+  "Vị trí": VịTrí;
+  id?: string; //refactor: khi nào rảnh thì refactor để bỏ này luôn
 }
 
-export function tạoNơiĐăngChưaXácĐịnhVịTrí(
-  thôngTinNơiĐăng: ThôngTinNơiĐăng & { id: string },
+export function tạoNơiĐăngCóCácLựaChọnVịTrí(
+  thôngTinNơiĐăng: ThôngTinNơiĐăng,
   cấuHìnhVịTrí: CấuHìnhChung,
-): NơiĐăngChưaXácĐịnhVịTrí {
+): NơiĐăngCóCácLựaChọnVịTrí {
   let danhSáchVịTríCóThểĐăng: DanhSáchVịTríCóThểĐăng = [];
   const {
     "Vị trí đặt liên kết ở nơi đăng": danhSáchVTCHVT,
@@ -127,7 +134,8 @@ export function tạoNơiĐăngChưaXácĐịnhVịTrí(
   return { ...thôngTinNơiĐăng, "Vị trí có thể đăng": danhSáchVịTríCóThểĐăng };
 }
 
-export function tạoNơiĐăngĐãXácĐịnhVịTrí(vịTríĐượcChọn: VịTrí | string, nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí): NơiĐăngĐãXácĐịnhVịTrí {
+/** Từ NơiĐăngCóCácLựaChọnVịTrí và vịTríĐượcChọn, tạo NơiĐăngCóMộtVịTríCụThể*/
+export function tạoNơiĐăngCóMộtVịTríCụThể(vịTríĐượcChọn: VịTrí | string, nơiĐăng: NơiĐăngCóCácLựaChọnVịTrí): NơiĐăngCóMộtVịTríCụThể {
   let vịTrí = vịTríĐượcChọn;
   if (typeof vịTríĐượcChọn === "string") {
     try {

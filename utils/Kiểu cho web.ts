@@ -2,27 +2,27 @@
 import { Document, EnrichedDocumentSearchResultSetUnitResultUnit} from "npm:flexsearch";
 import { StateUpdater } from "preact/hooks";
 import { BàiĐăng, URLString } from "../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { NơiĐăngĐãXácĐịnhVịTrí } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { NơiĐăngCóMộtVịTríCụThể } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import ThamSốUTM, { ĐuôiRútGọn } from "../core/Code hỗ trợ/Kiểu cho tham số UTM.ts";
-import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { NơiĐăngCóCácLựaChọnVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import punycode from "npm:punycode";
 
 /** KHUNG NHẬP */
 export type BốiCảnh = string | undefined;
 
-export type FlexSearchBàiĐăngHoặcNơiĐăng = Document<BàiĐăng> | Document<NơiĐăngChưaXácĐịnhVịTrí>;
+export type FlexSearchBàiĐăngHoặcNơiĐăng = Document<BàiĐăng> | Document<NơiĐăngCóCácLựaChọnVịTrí>;
 export type DanhSáchKếtQuảTìmKiếmType = 
   | EnrichedDocumentSearchResultSetUnitResultUnit<BàiĐăng>[]
-  | EnrichedDocumentSearchResultSetUnitResultUnit<NơiĐăngChưaXácĐịnhVịTrí>[] 
+  | EnrichedDocumentSearchResultSetUnitResultUnit<NơiĐăngCóCácLựaChọnVịTrí>[] 
   | undefined;
-export type MụcĐượcChọn = BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí | undefined;
+export type MụcĐượcChọn = BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí | undefined;
 /** Cursor is the current highlighted item in the search list. It's undefined when the mouse leaves */
 export type Cursor = number;
 
 export type TênDanhSách = "nơi đăng" | "bài đăng";
 export type ElementDùngTab = TênDanhSách | "bối cảnh" | "nút tạo liên kết";
 
-export type SetNơiĐăng = StateUpdater<NơiĐăngChưaXácĐịnhVịTrí | NơiĐăngĐãXácĐịnhVịTrí | undefined>
+export type SetNơiĐăng = StateUpdater<NơiĐăngCóCácLựaChọnVịTrí | NơiĐăngCóMộtVịTríCụThể | undefined>
 export type SetBàiĐăngHoặcNơiĐăng = StateUpdater<BàiĐăng | undefined> | SetNơiĐăng;
 
 
@@ -49,7 +49,7 @@ export type DữLiệuTruyCậpCácNăm = PartialRecord<Năm, DữLiệuTruyCậ
 export type DanhSáchThờiĐiểm = Date[]
 export interface VậtThểTiếpThị extends ThamSốUTM {
   "Bài đăng": BàiĐăng;
-  "Nơi đăng": NơiĐăngĐãXácĐịnhVịTrí;
+  "Nơi đăng": NơiĐăngCóMộtVịTríCụThể;
   "Thời điểm tạo": Date;
   "Các lần truy cập": DữLiệuTruyCậpCácNăm;
   "Đuôi rút gọn": ĐuôiRútGọn;

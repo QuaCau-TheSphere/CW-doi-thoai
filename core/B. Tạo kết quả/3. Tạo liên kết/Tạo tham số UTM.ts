@@ -14,12 +14,12 @@ import {
 } from "../../Code hỗ trợ/Kiểu cho tham số UTM.ts";
 import { lấyKýHiệuViếtTắt } from "../../Code hỗ trợ/Code hỗ trợ.ts";
 import { BốiCảnh } from "../../../utils/Kiểu cho web.ts";
-import { LoạiNơiĐăngChat, LoạiNềnTảng, NơiĐăngĐãXácĐịnhVịTrí } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { LoạiNơiĐăngChat, LoạiNềnTảng } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import VậtThểThamSốUTM from "../../Code hỗ trợ/Kiểu cho tham số UTM.ts";
-import { CấuHìnhViếtTắt } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { CấuHìnhViếtTắt, NơiĐăngCóMộtVịTríCụThể } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 
 /** Chủ yếu là thể hiện loại nền tảng, tên nền tảng, loại nơi đăng một cách ngắn gọn. Có những nơi đăng nhìn vào là biết loại nền tảng nào, ví dụ r/subreddit, hoặc email@domain.com */
-function tạoSource(nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí, cấuHìnhViếtTắt: CấuHìnhViếtTắt): Source {
+function tạoSource(nơiĐăng: NơiĐăngCóMộtVịTríCụThể, cấuHìnhViếtTắt: CấuHìnhViếtTắt): Source {
   const {
     "Loại nền tảng": loạiNềnTảng,
     "Tên nền tảng": tênNềnTảng,
@@ -146,7 +146,7 @@ function tạoLiênKếtUTM(link: URLString, thamSốUTM: ThamSốUTM): LiênK�
 export default function tạoVậtThểUTM(
   { bàiĐăng, nơiĐăng, bốiCảnh, cấuHìnhViếtTắt }: {
     bàiĐăng: BàiĐăng;
-    nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí;
+    nơiĐăng: NơiĐăngCóMộtVịTríCụThể;
     bốiCảnh: BốiCảnh;
     cấuHìnhViếtTắt: CấuHìnhViếtTắt;
   },

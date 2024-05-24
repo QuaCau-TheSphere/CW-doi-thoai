@@ -4,7 +4,7 @@ import { danhSáchDiễnĐàn, danhSáchNềnTảngChat, LoạiNơiĐăng, Loạ
 import { viếtThường } from "../../utils/Hàm cho khung nhập.ts";
 import { assert } from "$std/assert/assert.ts";
 import { FreshContext } from "https://deno.land/x/fresh@1.6.8/src/server/mod.ts";
-import { CấuHìnhChung, NơiĐăngChưaXácĐịnhVịTrí, tạoNơiĐăngChưaXácĐịnhVịTrí } from "./Hàm và kiểu cho vị trí.tsx";
+import { CấuHìnhChung, NơiĐăngCóCácLựaChọnVịTrí, tạoNơiĐăngCóCácLựaChọnVịTrí } from "./Hàm và kiểu cho vị trí.tsx";
 import { parse } from "$std/yaml/mod.ts";
 import { tạoChuỗiNgẫuNhiên } from "./Code hỗ trợ.ts";
 import { ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG } from "../../env.ts";
@@ -48,7 +48,7 @@ async function tạoNơiĐăng(
   description: string,
   hostname: string,
   pathname: string,
-): Promise<NơiĐăngChưaXácĐịnhVịTrí> {
+): Promise<NơiĐăngCóCácLựaChọnVịTrí> {
   let loạiNềnTảng: LoạiNềnTảng | undefined = undefined;
   let tênNềnTảng: TênNềnTảng | undefined = undefined;
   let loạiNơiĐăng: LoạiNơiĐăng | undefined = undefined;
@@ -100,11 +100,11 @@ async function tạoNơiĐăng(
   } satisfies ThôngTinNơiĐăng;
   const cấuHìnhVịTrí = parse(await Deno.readTextFile(ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG)) as CấuHìnhChung;
 
-  return tạoNơiĐăngChưaXácĐịnhVịTrí(thôngTinNơiĐăng, cấuHìnhVịTrí);
+  return tạoNơiĐăngCóCácLựaChọnVịTrí(thôngTinNơiĐăng, cấuHìnhVịTrí);
 }
 
 /** Không muốn tách ra thành tạo bài đăng từ URL và tạo nơi đăng từ URL, để chỉ cần cào một lần, cào 2 lần sợ bị chặn */
-export async function tạoBàiĐăngHoặcNơiĐăngMớiTừURL(urlString: URLString): Promise<{ bàiĐăng: BàiĐăng; nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí }> {
+export async function tạoBàiĐăngHoặcNơiĐăngMớiTừURL(urlString: URLString): Promise<{ bàiĐăng: BàiĐăng; nơiĐăng: NơiĐăngCóCácLựaChọnVịTrí }> {
   const url = new URL(urlString);
   console.info("Tạo bài đăng hoặc nơi đăng mới mới từ URL:", url.href);
   const og = (await getMetaTags(url.href)).og as MetaTags;

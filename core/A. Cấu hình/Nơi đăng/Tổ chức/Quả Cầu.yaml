@@ -20,36 +20,33 @@ Diễn đàn:
     Kênh:
       - Quả Cầu
     Video:
-      - Quả Cầu
   GitHub:
     Repo:
-      - https://github.com/orgs/QuaCau-TheSphere
-      - https://github.com/QuaCau-TheSphere/CW-doi-thoai
-      - https://github.com/QuaCau-TheSphere/CW-obsidian-quan-ly-du-an-va-cong-cu-nghi
-      - https://github.com/QuaCau-TheSphere/CW-xu-ly-du-lieu-va-lap-trinh
-      - https://github.com/QuaCau-TheSphere/CV-obsidian-quan-ly-du-an-va-cong-cu-nghi
-      - https://github.com/QuaCau-TheSphere/EV-HeavyT
-      - https://github.com/QuaCau-TheSphere/FV-khoa-hoc-xa-hoi
-      - https://github.com/QuaCau-TheSphere/LandofSpheres
-      - https://github.com/QuaCau-TheSphere/CV-tiep-thi-so-xu-ly-du-lieu-va-lap-trinh
-      - https://github.com/QuaCau-TheSphere/tran-ky
-      - https://github.com/QuaCau-TheSphere/tranky-test
-      - https://github.com/QuaCau-TheSphere/meetup-ticketbox-to-google-calendar
-      - https://github.com/QuaCau-TheSphere/EW-heavyT
-      - https://github.com/QuaCau-TheSphere/ObsidianPulisherTest
-      - https://github.com/QuaCau-TheSphere/belief-network
-      - https://github.com/QuaCau-TheSphere/DV-phat-trien-ban-than
-      - https://github.com/QuaCau-TheSphere/NeedExchange
-      - https://github.com/QuaCau-TheSphere/DW-phat-trien-ban-than
-      - https://github.com/QuaCau-TheSphere/quacau-thesphere.github.io
-      - https://github.com/QuaCau-TheSphere/ONB
-      - https://github.com/QuaCau-TheSphere/Buoc-Chan
-      - https://github.com/QuaCau-TheSphere/LOS-Installer
-      - https://github.com/QuaCau-TheSphere/Ca-nhan-khac
-      - https://github.com/QuaCau-TheSphere/SampleVault
-      - https://github.com/QuaCau-TheSphere/Graphvidian
-      -
-
+      - orgs/QuaCau-TheSphere https://github.com/orgs/QuaCau-TheSphere
+      - CW-doi-thoai https://github.com/QuaCau-TheSphere/CW-doi-thoai
+      - CW-obsidian-quan-ly-du-an-va-cong-cu-nghi https://github.com/QuaCau-TheSphere/CW-obsidian-quan-ly-du-an-va-cong-cu-nghi
+      - CW-xu-ly-du-lieu-va-lap-trinh https://github.com/QuaCau-TheSphere/CW-xu-ly-du-lieu-va-lap-trinh
+      - CV-obsidian-quan-ly-du-an-va-cong-cu-nghi https://github.com/QuaCau-TheSphere/CV-obsidian-quan-ly-du-an-va-cong-cu-nghi
+      - EV-HeavyT https://github.com/QuaCau-TheSphere/EV-HeavyT
+      - FV-khoa-hoc-xa-hoi https://github.com/QuaCau-TheSphere/FV-khoa-hoc-xa-hoi
+      - LandofSpheres https://github.com/QuaCau-TheSphere/LandofSpheres
+      - CV-tiep-thi-so-xu-ly-du-lieu-va-lap-trinh https://github.com/QuaCau-TheSphere/CV-tiep-thi-so-xu-ly-du-lieu-va-lap-trinh
+      - tran-ky https://github.com/QuaCau-TheSphere/tran-ky
+      - tranky-test https://github.com/QuaCau-TheSphere/tranky-test
+      - meetup-ticketbox-to-google-calendar https://github.com/QuaCau-TheSphere/meetup-ticketbox-to-google-calendar
+      - EW-heavyT https://github.com/QuaCau-TheSphere/EW-heavyT
+      - ObsidianPulisherTest https://github.com/QuaCau-TheSphere/ObsidianPulisherTest
+      - belief-network https://github.com/QuaCau-TheSphere/belief-network
+      - DV-phat-trien-ban-than https://github.com/QuaCau-TheSphere/DV-phat-trien-ban-than
+      - NeedExchange https://github.com/QuaCau-TheSphere/NeedExchange
+      - DW-phat-trien-ban-than https://github.com/QuaCau-TheSphere/DW-phat-trien-ban-than
+      - quacau-thesphere.github.io https://github.com/QuaCau-TheSphere/quacau-thesphere.github.io
+      - ONB https://github.com/QuaCau-TheSphere/ONB
+      - Buoc-Chan https://github.com/QuaCau-TheSphere/Buoc-Chan
+      - LOS-Installer https://github.com/QuaCau-TheSphere/LOS-Installer
+      - Ca-nhan-khac https://github.com/QuaCau-TheSphere/Ca-nhan-khac
+      - SampleVault https://github.com/QuaCau-TheSphere/SampleVault
+      - Graphvidian https://github.com/QuaCau-TheSphere/Graphvidian
   Spiderum:
 
 Chat:
@@ -106,6 +103,9 @@ Chat:
               - Khoa học sự sống, khoa học nhận thức, khoa học phức hợp
               - Vật lý
   LinkedIn:
+  Zalo:
+    Tài khoản:
+      - 0979437321
 
 Vault:
   - A Vùng đất Quả Cầu
@@ -117,14 +117,12 @@ Vault:
   # - F
 
 Website:
-  - https://lyminhnhat.com
   - https://quảcầu.cc
   - https://obsidian.quảcầu.cc
   - https://lậptrình.quảcầu.cc
   - https://doi-thoai.deno.dev
   - https://tranky.deno.dev
 Email:
-  - lyminhnhat911@gmail.com
   - quacau.thesphere@gmail.com
 Ảnh:
 
@@ -143,7 +141,6 @@ SaaS:
     Sheet:
     Meet:
     Drive:
-      - test
     Calendar:
     Class:
     Play:
@@ -160,3 +157,30 @@ Kênh forum:
   - "#d-phát-triển-bản-thân-học-kỹ-năng"
   - "#f-cùng-suy-tư"
   - "#g-nghiên-cứu-liên-ngành"
+
+Mã nơi đăng:
+  chim-sáo: Một đám mây chim sáo
+  vđqc: [Vùng đất Quả Cầu, A Vùng đất Quả Cầu]
+  bpd: Rối loạn nhân cách tâm trạng không ổn định - BPD
+  triết-phương-đông: Nghiên cứu triết học phương Đông
+  nhận-thức-phức-hợp: Khoa học nhận thức. Khoa học phức hợp
+  giác-quan-kèm: Giác quan kèm
+  quảcầu: [Quả Cầu, https://quảcầu.cc]
+  obsidianqc: https://obsidian.quảcầu.cc
+  lậptrìnhqc: https://lậptrình.quảcầu.cc
+  doi-thoai: https://doi-thoai.deno.dev
+  trấnkỳ: [https://tranky.deno.dev, tran-ky]
+  qcg: quacau.thesphere@gmail.com
+  321: 0979437321
+  "#a-vùng-đất-quả-cầu": qc#a
+  "#b-nền-kinh-tế-không-dùng-tiền": qc#b1
+  "#b-nhu-cầu-thường-gặp": qc#b2
+  "#b-sự-kiện-cơ-hội-tuyển-dụng-rao-vặt": qc#b3
+  "#c-hệ-thống-tri-thức-cộng-đồng": qc#c1
+  "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ": qc#c2
+  "#d-phát-triển-bản-thân-học-kỹ-năng": qc#d
+  "#e-mạng-lưới-người-thân-bạn-bè-của-người-có-niềm-tin-tiêu-cực": qc#e
+  "#f-cùng-suy-tư": qc#f1
+  "#f-tạo-môi-trường-thúc-đẩy-sự-đối-thoại-và-khoẻ-mạnh": qc#f2
+  "#g-nghiên-cứu-liên-ngành": qc#g
+  cvLộc: CV Nguyễn Hữu Lộc

@@ -1,10 +1,10 @@
 import { BàiĐăng } from "../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
-import { NơiĐăngĐãXácĐịnhVịTrí } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { NơiĐăngCóCácLựaChọnVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { NơiĐăngCóMộtVịTríCụThể } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { TênDanhSách, VậtThểTiếpThị } from "./Kiểu cho web.ts";
 import { lầnĐăngGầnNhất } from "../islands/Signals tổng.ts";
 
-export function tạoKeyKV(tênDanhSách: TênDanhSách, dữLiệu: BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí): Deno.KvKey {
+export function tạoKeyKV(tênDanhSách: TênDanhSách, dữLiệu: BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí): Deno.KvKey {
   switch (tênDanhSách) {
     case "bài đăng": {
       const {
@@ -29,7 +29,7 @@ export function tạoKeyKV(tênDanhSách: TênDanhSách, dữLiệu: BàiĐăng 
         "Loại nơi đăng": loạiNơiĐăng,
         "Tên nơi đăng": tênNơiĐăng,
         URL,
-      } = dữLiệu as NơiĐăngChưaXácĐịnhVịTrí;
+      } = dữLiệu as NơiĐăngCóCácLựaChọnVịTrí;
       return [
         "Nơi đăng",
         loạiNềnTảng,
@@ -52,7 +52,7 @@ export async function thêmBàiĐăngHoặcNơiĐăngMớiVàoKV(bàiĐăngHoặ
 
 export interface ReqBàiĐăngHoặcNơiĐăngTạoMới {
   "Tên danh sách": TênDanhSách;
-  "Dữ liệu": BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí;
+  "Dữ liệu": BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí;
 }
 
 export async function ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv(dữLiệuMới: ReqBàiĐăngHoặcNơiĐăngTạoMới) {
@@ -68,14 +68,14 @@ export async function ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv(dữLiệuM�
 /** Không dùng cho `await Response`, mà dùng cho `await (await Response).json()` */
 export interface PhảnHồiTừCORSProxy {
   "Nếu là bài đăng": BàiĐăng;
-  "Nếu là nơi đăng": NơiĐăngChưaXácĐịnhVịTrí;
+  "Nếu là nơi đăng": NơiĐăngCóCácLựaChọnVịTrí;
   lỗi?: string | "URL không hợp lệ";
   html?: string | null;
 }
 
 export type PhảnHồiTừAPITìmVậtThểTiếpThịĐãCó = Deno.KvEntry<VậtThểTiếpThị>;
 
-export async function tìmVậtThểTiếpThịĐãCó(bàiĐăng: BàiĐăng, nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí) {
+export async function tìmVậtThểTiếpThịĐãCó(bàiĐăng: BàiĐăng, nơiĐăng: NơiĐăngCóMộtVịTríCụThể) {
   const apiTìmVậtThểTiếpThịĐãCó = `${origin}/api/tìm-vật-thể-tiếp-thị-đã-có`;
   const res = await fetch(apiTìmVậtThểTiếpThịĐãCó, {
     method: "POST",

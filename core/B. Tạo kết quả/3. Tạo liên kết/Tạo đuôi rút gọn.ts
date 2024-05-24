@@ -1,8 +1,7 @@
 import { BàiĐăng } from "../../Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { ĐuôiRútGọn } from "../../Code hỗ trợ/Kiểu cho tham số UTM.ts";
 import { lấyKýHiệuViếtTắt, tạoChuỗiNgẫuNhiên } from "../../Code hỗ trợ/Code hỗ trợ.ts";
-import { NơiĐăngĐãXácĐịnhVịTrí } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
-import { CấuHìnhViếtTắt } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { CấuHìnhViếtTắt, NơiĐăngCóMộtVịTríCụThể } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 
 /**
  * Đuôi rút gọn theo cấu trúc sau: `phầnChoBàiĐăng.phầnChoNơiĐăng.lầnĐăng`
@@ -15,7 +14,7 @@ import { CấuHìnhViếtTắt } from "../../Code hỗ trợ/Hàm và kiểu cho
 
 export function tạoĐuôiRútGọn(
   bàiĐăng: BàiĐăng,
-  nơiĐăng: NơiĐăngĐãXácĐịnhVịTrí,
+  nơiĐăng: NơiĐăngCóMộtVịTríCụThể,
   lầnĐăng: number,
   cấuHìnhViếtTắt: CấuHìnhViếtTắt,
 ): ĐuôiRútGọn {

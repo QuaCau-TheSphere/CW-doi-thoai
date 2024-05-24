@@ -1,6 +1,5 @@
 /** Chỉ có những biến có từ cấu hình trong tên là dành cho cấu hình, còn lại là dành cho kết quả là vật thể nơi đăng */
 import { OneKey } from "./Code hỗ trợ.ts";
-import { VịTrí } from "./Hàm và kiểu cho vị trí.tsx";
 import { URLString } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 
 export type LoạiCấuHình = "Cá nhân" | "Tổ chức" | "Chủ đề";
@@ -16,14 +15,16 @@ export default interface CấuHìnhNơiĐăng {
   Chat?: CấuHìnhChat | null;
   Vault?: CấuHìnhVault | null;
   Website?: CấuHìnhWebsite | null;
-  CV?: CấuHìnhCV | null;
   Ảnh?: CấuHìnhẢnh | null;
   Email?: CấuHìnhEmail | null;
   "Tập tin"?: CấuHìnhTậpTin | null;
   SaaS?: CấuHìnhSaaS | null;
   "Kênh forum Discord"?: string[] | null;
+  "Mã nơi đăng"?: CấuHìnhMãNơiĐăng;
 }
 
+export type MãNơiĐăng = string;
+export type CấuHìnhMãNơiĐăng = Record<MãNơiĐăng, string | string[]>;
 /**
  * Loại nền tảng có kiểu là string, không phải string[]. Tên nơi đăng mới có kiểu string[]
  * @type string
@@ -81,35 +82,6 @@ export interface ThôngTinNơiĐăng {
   "Mã nơi đăng"?: string;
   "Đơn vị quản lý"?: string;
   id?: string;
-}
-export class NơiĐăngĐãXácĐịnhVịTrí implements ThôngTinNơiĐăng {
-  "Loại nền tảng": LoạiNềnTảng;
-  "Tên nền tảng": TênNềnTảng;
-  "Loại nơi đăng": LoạiNơiĐăng;
-  "Tên nơi đăng": TênNơiĐăng;
-  URL?: URLString;
-  "Lĩnh vực"?: string[];
-  "Mô tả nơi đăng"?: string;
-  "Mã nơi đăng"?: string;
-  "Vị trí": VịTrí;
-  "id": string;
-  // constructor(
-  //   tênNơiĐăng: TênNơiĐăng = "",
-  //   tênCộngĐồng: string = "",
-  //   loạiNơiĐăng: LoạiNơiĐăng = "Nhóm",
-  //   tênNềnTảng: TênNềnTảng = "Facebook",
-  //   loạiNềnTảng: LoạiNềnTảng = "Diễn đàn",
-  //   url: URLString = "",
-  //   môTảNơiĐăng: string = "",
-  // ) {
-  //   this["Tên nơi đăng"] = tênNơiĐăng;
-  //   this["Tên cộng đồng"] = tênCộngĐồng;
-  //   this["Loại nơi đăng"] = loạiNơiĐăng;
-  //   this["Tên nền tảng"] = tênNềnTảng;
-  //   this["Loại nền tảng"] = loạiNềnTảng;
-  //   this.URL = url;
-  //   this["Mô tả nơi đăng"] = môTảNơiĐăng;
-  // }
 }
 
 /**
@@ -286,7 +258,6 @@ type TênNơiĐăngKhác = [string];
 export type CấuHìnhVault = string[];
 export type CấuHìnhWebsite = string[];
 export type CấuHìnhEmail = string[];
-export type CấuHìnhCV = string[];
 export type CấuHìnhẢnh = string[];
 
 /** Không xét URL vì có những nơi đăng có nhiều URL khác nhau */

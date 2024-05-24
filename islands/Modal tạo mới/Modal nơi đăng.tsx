@@ -1,5 +1,5 @@
 import { useEffect, useState } from "preact/hooks";
-import { NơiĐăngChưaXácĐịnhVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { NơiĐăngCóCácLựaChọnVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { queryNơiĐăng } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
 import { PhảnHồiTừCORSProxy } from "../../utils/Hàm và kiểu cho API server.ts";
 
@@ -14,7 +14,7 @@ export default function ModalNơiĐăng() {
     lấyMetaTag();
   }, [urlNhậpVào]);
   console.log("🚀 ~ ModalNơiĐăng ~ phảnHồiTừCORSProxy:", phảnHồiTừCORSProxy);
-  const nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí | Record<string | number | symbol, never> = phảnHồiTừCORSProxy?.["Nếu là nơi đăng"] || {};
+  const nơiĐăng: NơiĐăngCóCácLựaChọnVịTrí | Record<string | number | symbol, never> = phảnHồiTừCORSProxy?.["Nếu là nơi đăng"] || {};
   const {
     "Loại nền tảng": loạiNềnTảng,
     "Tên nền tảng": tênNềnTảng,

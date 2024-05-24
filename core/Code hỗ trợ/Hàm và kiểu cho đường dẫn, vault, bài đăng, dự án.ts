@@ -1,5 +1,4 @@
 import { parse, ParsedPath } from "$std/path/mod.ts";
-import { tạoChuỗiNgẫuNhiên } from "./Code hỗ trợ.ts";
 
 /** Đường dẫn */
 export type URLString = string | URL;

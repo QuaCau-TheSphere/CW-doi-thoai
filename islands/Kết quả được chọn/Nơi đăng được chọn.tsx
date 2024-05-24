@@ -1,11 +1,11 @@
-import { NơiĐăngChưaXácĐịnhVịTrí, tạoNơiĐăngĐãXácĐịnhVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { NơiĐăngCóCácLựaChọnVịTrí, tạoNơiĐăngCóMộtVịTríCụThể } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { nơiĐăngChưaXácĐịnhVịTríĐượcChọn, nơiĐăngĐãXácĐịnhVịTríĐượcChọn, vịTríString } from "../Signals tổng.ts";
 import { tạoLoạiNơiĐăngString, tạoTênNơiĐăngString, tạoVịTríString } from "../../utils/Hàm cho khung nhập.ts";
 import { làCùngNơiĐăng, ThôngTinNơiĐăng } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { xửLýPunycode } from "../../utils/Kiểu cho web.ts";
 
 /** Tạo danh sách các phần tử <option> để người dùng lựa chọn vị trí đăng từ danh sách vị trí có thể đăng*/
-function tạoDanhSáchLựaChọnVịTrí(nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí) {
+function tạoDanhSáchLựaChọnVịTrí(nơiĐăng: NơiĐăngCóCácLựaChọnVịTrí) {
   const danhSáchVịTríCóThểĐăng = nơiĐăng["Vị trí có thể đăng"];
   const danhSáchLựaChọn = [];
 
@@ -20,7 +20,7 @@ function tạoDanhSáchLựaChọnVịTrí(nơiĐăng: NơiĐăngChưaXácĐịn
         const nơiĐăngĐượcChọnTrướcĐó = nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value as ThôngTinNơiĐăng;
         if (!làCùngNơiĐăng(nơiĐăng, nơiĐăngĐượcChọnTrướcĐó)) {
           vịTríString.value = value;
-          nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value = tạoNơiĐăngĐãXácĐịnhVịTrí(value, nơiĐăng);
+          nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value = tạoNơiĐăngCóMộtVịTríCụThể(value, nơiĐăng);
         }
       } else {
         danhSáchLựaChọn.push(<option value={value}>{text}</option>);
@@ -29,17 +29,17 @@ function tạoDanhSáchLựaChọnVịTrí(nơiĐăng: NơiĐăngChưaXácĐịn
   } else {
     const vịTríMặcĐịnh = "Chưa cấu hình";
     vịTríString.value = vịTríMặcĐịnh;
-    nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value = tạoNơiĐăngĐãXácĐịnhVịTrí(vịTríMặcĐịnh, nơiĐăng);
+    nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value = tạoNơiĐăngCóMộtVịTríCụThể(vịTríMặcĐịnh, nơiĐăng);
     danhSáchLựaChọn.push(<option selected>{vịTríMặcĐịnh}</option>);
   }
 
   return danhSáchLựaChọn;
 }
 
-function handleChange(vịTríStringĐượcChọn: string, nơiĐăng: NơiĐăngChưaXácĐịnhVịTrí) {
+function handleChange(vịTríStringĐượcChọn: string, nơiĐăng: NơiĐăngCóCácLựaChọnVịTrí) {
   vịTríString.value = vịTríStringĐượcChọn;
   console.info("Vị trí được chọn:", vịTríStringĐượcChọn);
-  nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value = tạoNơiĐăngĐãXácĐịnhVịTrí(vịTríStringĐượcChọn, nơiĐăng);
+  nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value = tạoNơiĐăngCóMộtVịTríCụThể(vịTríStringĐượcChọn, nơiĐăng);
 }
 
 export default function NơiĐăngĐượcChọn() {

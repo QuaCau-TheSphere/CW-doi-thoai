@@ -17,7 +17,7 @@ Liên lạc với chúng tôi để thêm bài đăng và nơi đăng của bạ
 
 Sản phẩm khác:
 - [Trấn Kỳ — Phân loại dữ liệu bằng tiếng Việt tự nhiên](https://tranky.deno.dev/?utm_source=doi-thoai.deno.dev+%28Trang+ch%E1%BB%A7%29&utm_medium=Website&utm_campaign=Trấn+Kỳ)
-- [Các buổi đáp ứng nhu cầu tự học lập trình hoặc quản lý dự án](https://xn--qucu-hr5aza.cc/?p=21168&utm_source=doi-thoai.deno.dev+%28Trang+ch%E1%BB%A7%29&utm_medium=Website&utm_campaign=C%C3%A1c+bu%E1%BB%95i+%C4%91%C3%A1p+%E1%BB%A9ng+nhu+c%E1%BA%A7u+h%E1%BB%8Dc+l%E1%BA%ADp+tr%C3%ACnh)
+- [Các buổi đáp ứng nhu cầu tự học lập trình hoặc quản lý dự án](https://quảcầu.cc/?p=21168&utm_source=doi-thoai.deno.dev+%28Trang+ch%E1%BB%A7%29&utm_medium=Website&utm_campaign=C%C3%A1c+bu%E1%BB%95i+%C4%91%C3%A1p+%E1%BB%A9ng+nhu+c%E1%BA%A7u+h%E1%BB%8Dc+l%E1%BA%ADp+tr%C3%ACnh)
 - [Hệ thống quản lý nhu cầu và kiến thức cộng đồng](https://obsidian.quảcầu.cc/📐%20Dự%20án/Công%20cụ%20cho%20hệ%20sinh%20thái/9%20Blog/Từ%20việc%20lưu%20dữ%20liệu%20tại%20chỗ%20đến%20sự%20hợp%20tác%20đa%20phương%20và%20liên%20ngành%20và%20nền%20kinh%20tế%20không%20dùng%20tiền?utm_source=doi-thoai.deno.dev+(Trang+chủ)&utm_medium=Website&utm_campaign=C1+Công+cụ+cho+hệ+sinh+thái)
 
 Viết bởi [Quả Cầu](https://quảcầu.cc/truyen-ngu-ngon-ve-nhung-nguoi-mong-doi/?utm_source=doi-thoai.deno.dev+(Trang+chủ)&utm_medium=Website&utm_campaign=Meta).

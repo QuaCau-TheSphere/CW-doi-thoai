@@ -164,13 +164,17 @@ Vị trí thành phần:
   Video: [Mô tả video, QR trong video, Chữ trong video, Bình luận]
 
 Viết tắt:
-  - Facebook: F
-  - YouTube: Y
-  - Messenger: M
-  - Discord: D
-  - GitHub: G
-  - Telegram: T
-  - Zalo: Z
-  - LinkedIn: L
-  - Reddit: R
+  - Facebook: Fb
+  - YouTube: Yt
+  - Messenger: Me
+  - Discord: Dc
+  - GitHub: Gh
+  - Telegram: Tlg
+  - Zalo: Za
+  - LinkedIn: Li
+  - Reddit: Rd
   - Stack Exchange: SE
+  - Vault: Vlt
+  - Ảnh: Img
+  - Website: W
+  - Email: E

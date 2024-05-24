@@ -5,7 +5,7 @@ import ModalBàiĐăng from "./Modal bài đăng.tsx";
 import ModalNơiĐăng from "./Modal nơi đăng.tsx";
 import { BàiĐăng, URLString } from "../../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { LoạiNềnTảng, TênNềnTảng } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
-import { NơiĐăngChưaXácĐịnhVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { NơiĐăngCóCácLựaChọnVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { element } from "../Signals tổng.ts";
 import { ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv } from "../../utils/Hàm và kiểu cho API server.ts";
 import { tạoChuỗiNgẫuNhiên } from "../../core/Code hỗ trợ/Code hỗ trợ.ts";
@@ -23,7 +23,7 @@ function CácTrườngNhậpMới({ tênDanhSách }: { tênDanhSách: TênDanhS�
 
 /** Chuyển cấu trúc từ formData trên web sang BàiĐăng hoặc NơiĐăngChưaXácĐịnhVịTrí */
 function tạoVậtThểDữLiệuMới(formData: Record<string, FormDataEntryValue>, tênDanhSách: TênDanhSách) {
-  let dữLiệu: BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí;
+  let dữLiệu: BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí;
   switch (tênDanhSách) {
     case "bài đăng": {
       const {
@@ -70,7 +70,7 @@ function tạoVậtThểDữLiệuMới(formData: Record<string, FormDataEntryVa
         "Loại nền tảng": loạiNềnTảng as LoạiNềnTảng,
         "Vị trí có thể đăng": JSON.parse(vịTríCóThểĐăng),
         id: tạoChuỗiNgẫuNhiên(4),
-      } satisfies NơiĐăngChưaXácĐịnhVịTrí;
+      } satisfies NơiĐăngCóCácLựaChọnVịTrí;
       break;
     }
   }

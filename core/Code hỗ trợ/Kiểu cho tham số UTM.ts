@@ -1,4 +1,4 @@
-import { LoạiNơiĐăngChat, LoạiNềnTảng, TênNơiĐăng } from "./Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
+import { LoạiNơiĐăngChat, LoạiNềnTảng, TênNơiĐăng } from "./Kiểu cho nơi đăng.ts";
 
 /** Source */
 type KýHiệuLoạiDiễnĐàn = "G " | "Pg " | "Pr " | "";

@@ -1,19 +1,16 @@
 import { BàiĐăng } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { CấuHìnhViếtTắt, NơiĐăngChưaXácĐịnhVịTrí } from "./Hàm và kiểu cho vị trí.tsx";
+import { CấuHìnhViếtTắt, NơiĐăngCóCácLựaChọnVịTrí } from "./Hàm và kiểu cho vị trí.tsx";
 import { TênDanhSách } from "../../utils/Kiểu cho web.ts";
 import { tạoKeyKV } from "../../utils/Hàm và kiểu cho API server.ts";
 import * as linkify from "npm:linkifyjs";
 
 export function táchUrlTrongChuỗi(chuỗiCóThểCóUrl: string): [string, string | undefined] {
   if (!chuỗiCóThểCóUrl) return ["", ""];
-  console.log("🚀 chuỗiCóThểCóUrl:", chuỗiCóThểCóUrl);
   let chuỗiKhôngCóUrl = chuỗiCóThểCóUrl;
   let url = undefined;
   const urls = linkify.find(chuỗiCóThểCóUrl);
-  console.log("🚀 urls:", urls);
   if (urls.length > 0) {
     url = urls[0].href as string;
-    console.log("🚀 url:", url);
     chuỗiKhôngCóUrl = chuỗiCóThểCóUrl.replace(url, "").trim();
     if (chuỗiKhôngCóUrl === "") chuỗiKhôngCóUrl = url;
   }
@@ -41,11 +38,11 @@ export function tạoChuỗiNgẫuNhiên(sốKýTự: number): string {
   return kếtQuả;
 }
 
-type DữLiệu = BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí;
+type DữLiệu = BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí;
 
 export async function xácĐịnhId(
   tênDanhSách: TênDanhSách,
-  dữLiệu: BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí | Omit<BàiĐăng, "id"> | Omit<NơiĐăngChưaXácĐịnhVịTrí, "id">,
+  dữLiệu: BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí | Omit<BàiĐăng, "id"> | Omit<NơiĐăngCóCácLựaChọnVịTrí, "id">,
 ): Promise<string> {
   //@ts-ignore:
   if (dữLiệu.id) return dữLiệu.id;

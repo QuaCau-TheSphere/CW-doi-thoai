@@ -6,5 +6,3 @@ export const THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT = "D:\\QC supplements\\Vaul
 export const ĐƯỜNG_DẪN_ĐẾN_TẬP_TIN_CSV = "./core/A. Cấu hình/wpd9_posts.csv";
 export const ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG = "./core/A. Cấu hình/Nơi đăng/Cấu hình chung.yaml";
 export const THƯ_MỤC_CẤU_HÌNH_NƠI_ĐĂNG = "./core/A. Cấu hình/Nơi đăng";
-
-export const kv = await Deno.openKv();

@@ -1,6 +1,6 @@
 import { parse } from "$std/yaml/mod.ts";
 import { join } from "$std/path/join.ts";
-import tạoDanhSáchNơiĐăngChưaXácĐịnhVịTrí from "./mod.ts";
+import tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí from "./mod.ts";
 import { assertArrayIncludes } from "https://deno.land/std@0.219.0/assert/assert_array_includes.ts";
 import { assert } from "$std/assert/assert.ts";
 import danhSáchNơiĐăngChưaXácĐịnhVịTrí, {
@@ -9,7 +9,7 @@ import danhSáchNơiĐăngChưaXácĐịnhVịTrí, {
   tạoDanhSáchVịTríCóThểĐăng,
   VậtThểVịTrí,
 } from "./Tạo các phiên bản vị trí.ts";
-import CấuHìnhNơiĐăng, { NơiĐăngĐãXácĐịnhVịTrí } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import CấuHìnhNơiĐăng, { NơiĐăngCóMộtVịTríCụThể } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import tạoDanhSáchChat from "./T%E1%BA%A1o%20danh%20s%C3%A1ch%20n%C6%A1i%20%C4%91%C4%83ng%20chat.ts";
 
 const nơiĐăng1 = {
@@ -17,7 +17,7 @@ const nơiĐăng1 = {
   "Loại nơi đăng": ["Tài khoản"],
   "Tên nền tảng": "Facebook",
   "Loại nền tảng": "Diễn đàn",
-} satisfies NơiĐăngĐãXácĐịnhVịTrí;
+} satisfies NơiĐăngCóMộtVịTríCụThể;
 
 const vậtThểVịTrí1 = {
   "Loại nền tảng": "Diễn đàn",
@@ -46,7 +46,7 @@ const nơiĐăng2 = {
   "Loại nơi đăng": ["Máy chủ", "Kênh thường", "Thread"],
   "Tên nền tảng": "Discord",
   "Loại nền tảng": "Chat",
-} satisfies NơiĐăngĐãXácĐịnhVịTrí;
+} satisfies NơiĐăngCóMộtVịTríCụThể;
 
 const vậtThểVịTrí2 = {
   "Loại nền tảng": "Chat",
@@ -91,14 +91,14 @@ Deno.test("Thêm vị trí nhỏ hơn", () => {
 // const cấuHìnhNơiĐăng = parse(Deno.readTextFileSync(fullPath)) as CấuHìnhNơiĐăng;
 // const danhSáchNơiĐăngTổng = tạoDanhSáchNơiĐăng(cấuHìnhNơiĐăng);
 
-const danhSáchNơiĐăng: NơiĐăngĐãXácĐịnhVịTrí[] = [];
+const danhSáchNơiĐăng: NơiĐăngCóMộtVịTríCụThể[] = [];
 const folder = "./core/A. Cấu hình/Nơi đăng";
 for (const file of Deno.readDirSync(folder)) {
   if (!file.isFile) continue;
   const fullPath = join(folder, file.name);
   //deno-fmt-ignore
   const cấuHìnhNơiĐăng = parse(Deno.readTextFileSync(fullPath)) as CấuHìnhNơiĐăng;
-  danhSáchNơiĐăng.push(...tạoDanhSáchNơiĐăngChưaXácĐịnhVịTrí(cấuHìnhNơiĐăng));
+  danhSáchNơiĐăng.push(...tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí(cấuHìnhNơiĐăng));
 }
 console.log("🚀 ~ danhSáchNơiĐăng:", danhSáchNơiĐăng);
 // console.log("🚀 ~ danhSáchNơiĐăng:", danhSáchNơiĐăng);

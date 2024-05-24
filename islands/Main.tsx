@@ -1,12 +1,12 @@
 import FlexSearch, { Document } from "npm:flexsearch";
 import { BàiĐăng } from "../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { CấuHìnhViếtTắt, NơiĐăngChưaXácĐịnhVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { CấuHìnhViếtTắt, NơiĐăngCóCácLựaChọnVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import SectionBênPhải from "./Section bên phải.tsx";
 import SectionBênTrái from "./Section bên trái.tsx";
 import { cấuHìnhViếtTắtSignal, flexSearchBàiĐăngSignal, flexSearchNơiĐăngSignal } from "./Signals tổng.ts";
 
 interface MainProps {
-  danhSáchNơiĐăng: NơiĐăngChưaXácĐịnhVịTrí[];
+  danhSáchNơiĐăng: NơiĐăngCóCácLựaChọnVịTrí[];
   danhSáchBàiĐăng: BàiĐăng[];
   cấuHìnhViếtTắt: CấuHìnhViếtTắt;
   textTrangChủ: string;
@@ -48,7 +48,7 @@ export default function Main({ danhSáchNơiĐăng, danhSáchBàiĐăng, cấuH�
   //@ts-ignore: để coi store nghĩa là gì sau
   flexSearchBàiĐăngSignal.value = flexSearchBàiĐăng;
 
-  const flexSearchNơiĐăng: Document<NơiĐăngChưaXácĐịnhVịTrí, true> = new FlexSearch.Document({
+  const flexSearchNơiĐăng: Document<NơiĐăngCóCácLựaChọnVịTrí, true> = new FlexSearch.Document({
     document: {
       id: "id",
       index: [

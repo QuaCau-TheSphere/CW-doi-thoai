@@ -1,7 +1,7 @@
 import type { MụcĐượcChọn, TênDanhSách } from "../../utils/Kiểu cho web.ts";
 import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/plus.tsx";
 import { kiểuKebab, tạoLoạiNơiĐăngString, tạoTênNơiĐăngString, đổiKhungNhập } from "../../utils/Hàm cho khung nhập.ts";
-import { NơiĐăngChưaXácĐịnhVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { NơiĐăngCóCácLựaChọnVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { BàiĐăng } from "../../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { element } from "../Signals tổng.ts";
 import { cursor, danhSáchGợiÝSignal } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
@@ -23,7 +23,9 @@ function tạoDòngPhụCủaBàiĐăng(bàiĐăng: BàiĐăng) {
   // return <>URL: {URL} • Mã bài đăng: {mãBàiĐăng} • id: {id}</>;
 }
 
-function Item({ item, tênDanhSách }: { item: BàiĐăng | NơiĐăngChưaXácĐịnhVịTrí; tênDanhSách: TênDanhSách }) {
+function Item({ item, tênDanhSách }: { item: BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí; tênDanhSách: TênDanhSách }) {
+  console.log(item);
+
   let dòngChính, dòngPhụ;
   switch (tênDanhSách) {
     case "bài đăng": {
@@ -33,7 +35,7 @@ function Item({ item, tênDanhSách }: { item: BàiĐăng | NơiĐăngChưaXác�
       break;
     }
     case "nơi đăng": {
-      item = item as NơiĐăngChưaXácĐịnhVịTrí;
+      item = item as NơiĐăngCóCácLựaChọnVịTrí;
       const tênNơiĐăng = item["Tên nơi đăng"];
       if (!Array.isArray(tênNơiĐăng)) return <></>;
       dòngChính = tạoTênNơiĐăngString(tênNơiĐăng);
@@ -62,6 +64,8 @@ export function DanhSáchKếtQuảTìmKiếm(
       </ul>
     );
   }
+  console.log("🚀 ~ danhSáchKếtQuảTìmKiếm:", danhSáchKếtQuảTìmKiếm);
+  console.log("🚀 ~ danhSáchGợiÝSignal.value:", danhSáchGợiÝSignal.value);
   return (
     <ul
       id={`danh-sách-${kiểuKebab(tênDanhSách)}-tìm-được`}
