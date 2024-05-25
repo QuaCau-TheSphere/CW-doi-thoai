@@ -1,5 +1,5 @@
 import { NơiĐăngCóCácLựaChọnVịTrí, tạoNơiĐăngCóMộtVịTríCụThể } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
-import { nơiĐăngChưaXácĐịnhVịTríĐượcChọn, nơiĐăngĐãXácĐịnhVịTríĐượcChọn, vịTríString } from "../Signals tổng.ts";
+import { nơiĐăngCóCácLựaChọnVịTrí, nơiĐăngCóMộtVịTríCụThể, vịTríString } from "../Signals tổng.ts";
 import { tạoLoạiNơiĐăngString, tạoTênNơiĐăngString, tạoVịTríString } from "../../utils/Hàm cho khung nhập.ts";
 import { làCùngNơiĐăng, ThôngTinNơiĐăng } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { xửLýPunycode } from "../../utils/Kiểu cho web.ts";
@@ -17,10 +17,10 @@ function tạoDanhSáchLựaChọnVịTrí(nơiĐăng: NơiĐăngCóCácLựaCh�
 
       if (i === 0) {
         danhSáchLựaChọn.push(<option selected value={value}>{text}</option>);
-        const nơiĐăngĐượcChọnTrướcĐó = nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value as ThôngTinNơiĐăng;
+        const nơiĐăngĐượcChọnTrướcĐó = nơiĐăngCóMộtVịTríCụThể.value as ThôngTinNơiĐăng;
         if (!làCùngNơiĐăng(nơiĐăng, nơiĐăngĐượcChọnTrướcĐó)) {
           vịTríString.value = value;
-          nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value = tạoNơiĐăngCóMộtVịTríCụThể(value, nơiĐăng);
+          nơiĐăngCóMộtVịTríCụThể.value = tạoNơiĐăngCóMộtVịTríCụThể(value, nơiĐăng);
         }
       } else {
         danhSáchLựaChọn.push(<option value={value}>{text}</option>);
@@ -29,7 +29,7 @@ function tạoDanhSáchLựaChọnVịTrí(nơiĐăng: NơiĐăngCóCácLựaCh�
   } else {
     const vịTríMặcĐịnh = "Chưa cấu hình";
     vịTríString.value = vịTríMặcĐịnh;
-    nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value = tạoNơiĐăngCóMộtVịTríCụThể(vịTríMặcĐịnh, nơiĐăng);
+    nơiĐăngCóMộtVịTríCụThể.value = tạoNơiĐăngCóMộtVịTríCụThể(vịTríMặcĐịnh, nơiĐăng);
     danhSáchLựaChọn.push(<option selected>{vịTríMặcĐịnh}</option>);
   }
 
@@ -39,11 +39,11 @@ function tạoDanhSáchLựaChọnVịTrí(nơiĐăng: NơiĐăngCóCácLựaCh�
 function handleChange(vịTríStringĐượcChọn: string, nơiĐăng: NơiĐăngCóCácLựaChọnVịTrí) {
   vịTríString.value = vịTríStringĐượcChọn;
   console.info("Vị trí được chọn:", vịTríStringĐượcChọn);
-  nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value = tạoNơiĐăngCóMộtVịTríCụThể(vịTríStringĐượcChọn, nơiĐăng);
+  nơiĐăngCóMộtVịTríCụThể.value = tạoNơiĐăngCóMộtVịTríCụThể(vịTríStringĐượcChọn, nơiĐăng);
 }
 
 export default function NơiĐăngĐượcChọn() {
-  const nơiĐăng = nơiĐăngChưaXácĐịnhVịTríĐượcChọn.value;
+  const nơiĐăng = nơiĐăngCóCácLựaChọnVịTrí.value;
   if (!nơiĐăng) return <></>;
   const { "Tên nơi đăng": tênNơiĐăng, URL: url, "Đơn vị quản lý": đơnVịQuảnLý, "Lĩnh vực": lĩnhVực, "Mã nơi đăng": mãNơiĐăng } = nơiĐăng;
   const danhSáchLựaChọnVịTrí = tạoDanhSáchLựaChọnVịTrí(nơiĐăng);

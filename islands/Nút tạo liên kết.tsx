@@ -3,7 +3,7 @@ import {
   bốiCảnh,
   cấuHìnhViếtTắtSignal,
   lầnĐăngHiệnTại,
-  nơiĐăngĐãXácĐịnhVịTríĐượcChọn,
+  nơiĐăngCóMộtVịTríCụThể,
   tênNút,
   vậtThểTiếpThịĐượcTạo,
 } from "./Signals tổng.ts";
@@ -13,7 +13,7 @@ import { ghiVậtThểTiếpThịLênKV } from "../utils/Hàm và kiểu cho API
 
 async function tạoVậtThểTiếpThị() {
   const bàiĐăng = bàiĐăngĐượcChọn.value;
-  const nơiĐăng = nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value;
+  const nơiĐăng = nơiĐăngCóMộtVịTríCụThể.value;
   const bốicảnh = bốiCảnh.value;
   const cấuHìnhViếtTắt = cấuHìnhViếtTắtSignal.value;
   const lầnĐăng = lầnĐăngHiệnTại.value;

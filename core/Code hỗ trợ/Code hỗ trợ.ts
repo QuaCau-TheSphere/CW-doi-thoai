@@ -1,8 +1,9 @@
 import { BàiĐăng } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { CấuHìnhViếtTắt, NơiĐăngCóCácLựaChọnVịTrí } from "./Hàm và kiểu cho vị trí.tsx";
 import { TênDanhSách } from "../../utils/Kiểu cho web.ts";
-import { tạoKeyKV } from "../../utils/Hàm và kiểu cho API server.ts";
 import * as linkify from "npm:linkifyjs";
+import { kvGetCount, TableName, tạoKeyKV } from "./Hàm cho KV.ts";
+import { viếtHoa } from "../../utils/Hàm cho khung nhập.ts";
 
 export function táchUrlTrongChuỗi(chuỗiCóThểCóUrl: string): [string, string | undefined] {
   if (!chuỗiCóThểCóUrl) return ["", ""];
@@ -29,27 +30,38 @@ export function lấyKýHiệuViếtTắt(từĐượcKiểmTra: string | undefi
   return undefined;
 }
 
+const digit = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_";
+function đổiTừCơSố10SangCơSố64(x: number) {
+  return x.toString(2).split(/(?=(?:.{6})+(?!.))/g).map((v) => digit[parseInt(v, 2)]).join("");
+}
+
 export function tạoChuỗiNgẫuNhiên(sốKýTự: number): string {
-  const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
   let kếtQuả: string = "";
   for (let i = 0; i < sốKýTự; i++) {
-    kếtQuả += characters.charAt(Math.floor(Math.random() * characters.length));
+    kếtQuả += digit.charAt(Math.floor(Math.random() * digit.length));
   }
   return kếtQuả;
 }
 
-type DữLiệu = BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí;
+function đổiTừCơSố64SangCơSố10(x: string) {
+  return x.split("").reduce((s, v) => s * 64 + digit.indexOf(v), 0);
+}
 
 export async function xácĐịnhId(
   tênDanhSách: TênDanhSách,
-  dữLiệu: BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí | Omit<BàiĐăng, "id"> | Omit<NơiĐăngCóCácLựaChọnVịTrí, "id">,
+  dữLiệu: BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí,
 ): Promise<string> {
-  //@ts-ignore:
   if (dữLiệu.id) return dữLiệu.id;
   const kv = await Deno.openKv();
-  const key = tạoKeyKV(tênDanhSách, dữLiệu as DữLiệu);
-  const value = (await kv.get(key)).value as DữLiệu | undefined | null;
-  return value?.id || tạoChuỗiNgẫuNhiên(4);
+  const key = tạoKeyKV(tênDanhSách, dữLiệu);
+  const value = (await kv.get(key)).value as BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí | undefined | null;
+  if (value && value.id) return value.id;
+  return dùngTổng();
+
+  async function dùngTổng() {
+    const tổngSốEntryHiệnTại = await kvGetCount(viếtHoa(tênDanhSách) as TableName, kv);
+    return đổiTừCơSố10SangCơSố64(tổngSốEntryHiệnTại + 1);
+  }
 }
 
 export type OneKey<K extends string, V = any> = {

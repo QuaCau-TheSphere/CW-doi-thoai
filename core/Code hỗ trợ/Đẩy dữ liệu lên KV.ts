@@ -1,19 +1,20 @@
 import { walk } from "$std/fs/walk.ts";
 import { parse } from "$std/yaml/mod.ts";
 import { basename, extname, SEPARATOR } from "$std/path/mod.ts";
-import { tạoKeyKV } from "../../utils/Hàm và kiểu cho API server.ts";
 import { CấuHìnhChung, NơiĐăngCóCácLựaChọnVịTrí } from "./Hàm và kiểu cho vị trí.tsx";
 import CấuHìnhNơiĐăng, { LoạiCấuHình, VậtThểCấuHìnhNơiĐăng } from "./Kiểu cho nơi đăng.ts";
 import { tạoDanhSáchBàiĐăng } from "../B. Tạo kết quả/1. Tạo danh sách tất cả bài đăng/mod.ts";
 import tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí from "../B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình/mod.ts";
 import { THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT, THƯ_MỤC_CẤU_HÌNH_NƠI_ĐĂNG, ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG, ĐƯỜNG_DẪN_ĐẾN_TẬP_TIN_CSV } from "../../env.ts";
-import { load } from "$std/dotenv/mod.ts";
 import { tạoTênNơiĐăngString } from "../../utils/Hàm cho khung nhập.ts";
+import { load } from "$std/dotenv/mod.ts";
+import { kvSetValueAndCount, tạoKeyKV } from "./Hàm cho KV.ts";
 
 const env = await load();
 Deno.env.set("DENO_KV_ACCESS_TOKEN", env["DENO_KV_ACCESS_TOKEN"]);
-const kv = await Deno.openKv(env["LOCATION"]);
-// const kv = await Deno.openKv();
+const mapKV = new Map();
+mapKV.set("Cloud", await Deno.openKv(env["LOCATION"]));
+mapKV.set("Local", await Deno.openKv());
 
 const danhSáchVậtThểCấuHình: VậtThểCấuHìnhNơiĐăng[] = await tạoDanhSáchCấuHình();
 const cấuHìnhVịTrí = parse(await Deno.readTextFile(ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG)) as CấuHìnhChung;
@@ -49,7 +50,7 @@ async function đẩyBàiĐăngLênKV() {
   for (const bàiĐăngLấyTừVault of danhSáchBàiĐăng) {
     console.log(bàiĐăngLấyTừVault["Tiêu đề"]);
     const key = tạoKeyKV("bài đăng", bàiĐăngLấyTừVault);
-    await kv.set(key, bàiĐăngLấyTừVault);
+    await kvSetValueAndCount(key, bàiĐăngLấyTừVault, "Bài đăng", mapKV);
   }
   console.log("✅Đã đẩy xong bài đăng lên KV");
 }
@@ -57,13 +58,14 @@ async function đẩyBàiĐăngLênKV() {
 async function đẩyNơiĐăngLênKV() {
   const temp = [];
   for (const vậtThểCấuHình of danhSáchVậtThểCấuHình) {
+    if (vậtThểCấuHình.tênCấuHình !== "UAN") continue;
     const danhSáchNơiĐăngTừCấuHình = await tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí(vậtThểCấuHình, cấuHìnhVịTrí) as NơiĐăngCóCácLựaChọnVịTrí[];
     temp.push(...danhSáchNơiĐăngTừCấuHình);
     for (const nơiĐăng of danhSáchNơiĐăngTừCấuHình) {
       console.log(tạoTênNơiĐăngString(nơiĐăng["Tên nơi đăng"]));
       console.log("→", nơiĐăng["Mã nơi đăng"]);
       const key = tạoKeyKV("nơi đăng", nơiĐăng);
-      await kv.set(key, nơiĐăng);
+      await kvSetValueAndCount(key, nơiĐăng, "Nơi đăng", mapKV);
     }
   }
   await Deno.writeTextFile("core/A. Cấu hình/Danh sách nơi đăng.json", JSON.stringify(temp, null, 2));

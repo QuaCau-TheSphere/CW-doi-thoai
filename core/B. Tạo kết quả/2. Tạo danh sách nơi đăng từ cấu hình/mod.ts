@@ -16,7 +16,7 @@ import { parse } from "$std/yaml/mod.ts";
 import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { CấuHìnhChung } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { táchUrlTrongChuỗi, xácĐịnhId } from "../../Code hỗ trợ/Code hỗ trợ.ts";
-import { tạoMãNơiĐăng, tạoTừĐiểnGiữaTênNơiĐăngThànhPhầnVàMãNơiĐăng } from "./Tạo mã nơi đăng.ts";
+import { tạoMãNơiĐăng, tạoTừĐiểnMãNơiĐăng } from "./Tạo mã nơi đăng.ts";
 
 function tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăng[]) {
   const cấuHìnhNơiĐăngDiễnĐàn = cấuHìnhNơiĐăng["Diễn đàn"];
@@ -117,7 +117,7 @@ export default async function tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí
     "Vị trí thành phần": cấuHìnhVịTríNhỏHơn,
     "Viết tắt": viếtTắt,
   } = cấuHìnhChung;
-  const từĐiểnMãNơiĐăng = tạoTừĐiểnGiữaTênNơiĐăngThànhPhầnVàMãNơiĐăng(cấuHình["Mã nơi đăng"]);
+  const từĐiểnMãNơiĐăng = tạoTừĐiểnMãNơiĐăng(cấuHình["Mã nơi đăng"]);
 
   for (const thôngTinNơiĐăng of danhSáchNơiĐăng) {
     for (const vậtThểVịTrí of danhSáchVậtThểVịTrí) {

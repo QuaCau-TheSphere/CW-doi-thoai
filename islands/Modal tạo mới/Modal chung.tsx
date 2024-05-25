@@ -8,7 +8,7 @@ import { LoạiNềnTảng, TênNềnTảng } from "../../core/Code hỗ trợ/K
 import { NơiĐăngCóCácLựaChọnVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { element } from "../Signals tổng.ts";
 import { ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv } from "../../utils/Hàm và kiểu cho API server.ts";
-import { tạoChuỗiNgẫuNhiên } from "../../core/Code hỗ trợ/Code hỗ trợ.ts";
+import { xácĐịnhId } from "../../core/Code hỗ trợ/Code hỗ trợ.ts";
 
 function CácTrườngNhậpMới({ tênDanhSách }: { tênDanhSách: TênDanhSách }) {
   switch (tênDanhSách) {
@@ -22,7 +22,7 @@ function CácTrườngNhậpMới({ tênDanhSách }: { tênDanhSách: TênDanhS�
 }
 
 /** Chuyển cấu trúc từ formData trên web sang BàiĐăng hoặc NơiĐăngChưaXácĐịnhVịTrí */
-function tạoVậtThểDữLiệuMới(formData: Record<string, FormDataEntryValue>, tênDanhSách: TênDanhSách) {
+async function tạoVậtThểDữLiệuMới(formData: Record<string, FormDataEntryValue>, tênDanhSách: TênDanhSách) {
   let dữLiệu: BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí;
   switch (tênDanhSách) {
     case "bài đăng": {
@@ -47,8 +47,8 @@ function tạoVậtThểDữLiệuMới(formData: Record<string, FormDataEntryVa
           "Định dạng nội dung": undefined,
         },
         Vault: vault,
-        id: tạoChuỗiNgẫuNhiên(4),
       } satisfies BàiĐăng;
+      dữLiệu.id = await xácĐịnhId("bài đăng", dữLiệu);
       break;
     }
     case "nơi đăng": {
@@ -69,8 +69,8 @@ function tạoVậtThểDữLiệuMới(formData: Record<string, FormDataEntryVa
         "Mô tả nơi đăng": môTảNơiĐăng,
         "Loại nền tảng": loạiNềnTảng as LoạiNềnTảng,
         "Vị trí có thể đăng": JSON.parse(vịTríCóThểĐăng),
-        id: tạoChuỗiNgẫuNhiên(4),
       } satisfies NơiĐăngCóCácLựaChọnVịTrí;
+      dữLiệu.id = await xácĐịnhId("nơi đăng", dữLiệu);
       break;
     }
   }
@@ -84,7 +84,7 @@ async function handleSubmit(event: any, tênDanhSách: TênDanhSách, mụcĐư�
   event.preventDefault();
   // if (event.currentTarget === null) return
   const formData = Object.fromEntries(new FormData(event.currentTarget));
-  const vậtThểDữLiệuMới = tạoVậtThểDữLiệuMới(formData, tênDanhSách);
+  const vậtThểDữLiệuMới = await tạoVậtThểDữLiệuMới(formData, tênDanhSách);
   const data = await ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv(vậtThểDữLiệuMới);
   console.log(data);
   mụcĐượcChọn.value = data.value;

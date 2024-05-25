@@ -72,7 +72,7 @@ export default function ChartPage(props: PageProps<{ vậtThểTiếpThị: Vậ
   return (
     <main>
       <Head>
-        <title>Biểu đồ lượt truy cập vào {đuôiRútGọn}</title>
+        <title>Lượt truy cập vào {đuôiRútGọn}</title>
       </Head>
       <Meta imageUrl="sihouette.jpg" />
       <div class="p-4 mx-auto max-w-screen-md">

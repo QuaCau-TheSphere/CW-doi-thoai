@@ -2,12 +2,7 @@ import ModalTạoMới from "../Modal tạo mới/Modal chung.tsx";
 import KếtQuảĐượcChọn from "../Kết quả được chọn/Kết quả được chọn.tsx";
 import type { FlexSearchBàiĐăngHoặcNơiĐăng, MụcĐượcChọn, TênDanhSách } from "../../utils/Kiểu cho web.ts";
 import { kiểuKebab } from "../../utils/Hàm cho khung nhập.ts";
-import {
-  bàiĐăngĐượcChọn,
-  flexSearchBàiĐăngSignal,
-  flexSearchNơiĐăngSignal,
-  nơiĐăngChưaXácĐịnhVịTríĐượcChọn,
-} from "../Signals tổng.ts";
+import { bàiĐăngĐượcChọn, flexSearchBàiĐăngSignal, flexSearchNơiĐăngSignal, nơiĐăngCóCácLựaChọnVịTrí } from "../Signals tổng.ts";
 import { DanhSáchKếtQuảTìmKiếm } from "./Danh sách kết quả tìm kiếm.tsx";
 import InputTìmBàiĐăngHoặcNơiĐăng from "./Input tìm bài đăng hoặc nơi đăng.tsx";
 import { Signal } from "@preact/signals";
@@ -24,7 +19,7 @@ export default function DivTìmBàiĐăngHoặcNơiĐăng({ tênDanhSách }: { t
       flexSearch = flexSearchBàiĐăngSignal.value;
       break;
     case "nơi đăng":
-      mụcĐượcChọn = nơiĐăngChưaXácĐịnhVịTríĐượcChọn;
+      mụcĐượcChọn = nơiĐăngCóCácLựaChọnVịTrí;
       query = queryNơiĐăng;
       flexSearch = flexSearchNơiĐăngSignal.value;
       break;

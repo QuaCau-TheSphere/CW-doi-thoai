@@ -1,3 +1,7 @@
+/** API để mỗi khi người dùng chọn xong bài đăng và nơi đăng thì biết được đó là lần đăng thứ mấy
+ * @see tìmVậtThểTiếpThịĐãCó
+ */
+
 import { Handlers } from "$fresh/server.ts";
 import { VậtThểTiếpThị } from "../../utils/Kiểu cho web.ts";
 
@@ -17,7 +21,6 @@ export const handler: Handlers = {
     } = bàiĐăngVàNơiĐăngTừRequest;
 
     const kv = await Deno.openKv();
-    //deno-fmt-ignore
     const tấtCảVậtThểTiếpThịĐangCó = await Array.fromAsync(kv.list({ prefix: ["Đuôi rút gọn"] })) as Deno.KvEntry<VậtThểTiếpThị>[];
     const filtered = tấtCảVậtThểTiếpThịĐangCó.filter((i) => {
       const j = i.value as VậtThểTiếpThị;

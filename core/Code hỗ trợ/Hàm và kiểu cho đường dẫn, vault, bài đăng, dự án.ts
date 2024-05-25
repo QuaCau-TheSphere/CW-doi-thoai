@@ -62,7 +62,7 @@ export interface BàiĐăng {
   "Tác giả"?: string;
   "Ngày tạo"?: Date;
   "Ngày cập nhật"?: Date;
-  id: string;
+  id?: string;
 }
 
 /**

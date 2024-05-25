@@ -25,8 +25,8 @@ export default function Error404() {
       </noscript>
       <div class="flex flex-col bg-base-300 items-center justify-center">
         <h1 class="text-4xl font-bold p-5">404 - Không tìm thấy trang</h1>
-        <a href="/" class="underline">Về trang chủ</a>
-        <img src="sihouette.jpg" alt="sihouette" />
+        <a href="/" class="underline">Tạo liên kết khác</a>
+        <img src="sihouette.jpg" alt="Ảnh: bóng của hai nguời đang ngồi dưới đất trò chuyện với nhau" />
       </div>
     </>
   );

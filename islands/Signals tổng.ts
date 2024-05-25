@@ -1,7 +1,6 @@
 import FlexSearch from "npm:flexsearch";
 import { computed, effect, signal } from "@preact/signals";
-import { CấuHìnhViếtTắt, NơiĐăngCóCácLựaChọnVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
-import { NơiĐăngCóMộtVịTríCụThể } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { CấuHìnhViếtTắt, NơiĐăngCóCácLựaChọnVịTrí, NơiĐăngCóMộtVịTríCụThể } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
 import { BàiĐăng } from "../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { ElementDùngTab, VậtThểTiếpThị } from "../utils/Kiểu cho web.ts";
 import { tìmVậtThểTiếpThịĐãCó } from "../utils/Hàm và kiểu cho API server.ts";
@@ -11,8 +10,8 @@ export const flexSearchBàiĐăngSignal = signal<FlexSearch.Document<BàiĐăng>
 export const flexSearchNơiĐăngSignal = signal<FlexSearch.Document<NơiĐăngCóCácLựaChọnVịTrí>>([]);
 
 export const bàiĐăngĐượcChọn = signal<BàiĐăng | undefined>(undefined);
-export const nơiĐăngChưaXácĐịnhVịTríĐượcChọn = signal<NơiĐăngCóCácLựaChọnVịTrí | undefined>(undefined);
-export const nơiĐăngĐãXácĐịnhVịTríĐượcChọn = signal<NơiĐăngCóMộtVịTríCụThể | undefined>(undefined);
+export const nơiĐăngCóCácLựaChọnVịTrí = signal<NơiĐăngCóCácLựaChọnVịTrí | undefined>(undefined);
+export const nơiĐăngCóMộtVịTríCụThể = signal<NơiĐăngCóMộtVịTríCụThể | undefined>(undefined);
 export const bốiCảnh = signal<string | undefined>(undefined);
 export const element = signal<ElementDùngTab>("bài đăng");
 export const cóRútGọn = signal<boolean>(true);
@@ -39,7 +38,7 @@ export const tênNút = computed<string>(() => {
 
 effect(() => {
   const bàiĐăng = bàiĐăngĐượcChọn.value;
-  const nơiĐăng = nơiĐăngĐãXácĐịnhVịTríĐượcChọn.value;
+  const nơiĐăng = nơiĐăngCóMộtVịTríCụThể.value;
 
   if (!bàiĐăng || !nơiĐăng) return;
   tìmVậtThểTiếpThịĐãCó(bàiĐăng, nơiĐăng).catch(console.error);
