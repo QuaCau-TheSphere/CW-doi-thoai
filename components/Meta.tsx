@@ -1,18 +1,19 @@
-import { MÔ_TẢ_TRANG, TÊN_TRANG } from "../utils/H%E1%BA%B1ng.ts";
-import { load } from "https://deno.land/std@0.224.0/dotenv/mod.ts";
+import { load } from "$std/dotenv/mod.ts";
 
 interface MetaProps {
   title?: string;
   description?: string;
-  href?: string;
+  url?: string;
   imageUrl?: string;
 }
 const env = await load();
-const ORIGIn = env["ORIGIN"];
+const ORIGIN = env["ORIGIN"];
+const TÊN_TRANG = "đối ⊷ thoại";
+const MÔ_TẢ_TRANG = "Nhanh chóng tìm lại các cuộc thảo luận đã từng có trước đây và nắm được mức độ quan tâm của các bên liên quan";
 
 export default function Meta({
   title = TÊN_TRANG,
-  href = ORIGIn,
+  url = ORIGIN,
   imageUrl,
   description = MÔ_TẢ_TRANG,
 }: MetaProps) {
@@ -30,7 +31,7 @@ export default function Meta({
       {/* Facebook Meta Tags */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:url" content={href} />
+      <meta property="og:url" content={url} />
       <meta property="og:image" content={imageUrl} />
       <meta property="og:locale" content="vi_VN" />
       <meta property="og:site_name" content={TÊN_TRANG} />

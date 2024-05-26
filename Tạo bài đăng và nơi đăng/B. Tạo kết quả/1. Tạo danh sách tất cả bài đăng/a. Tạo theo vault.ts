@@ -13,7 +13,7 @@ import {
   YAMLCủaGhiChú,
   type ĐườngDẫnTuyệtĐối,
   ĐườngDẫnTươngĐối,
-} from "../../Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+} from "../../Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT, THƯ_MỤC_DỰ_ÁN, THƯ_MỤC_THIẾT_LẬP, TẬP_TIN_THIẾT_LẬP } from "../../../env.ts";
 
 async function cóThưMụcObsidianBênTrong(thưMục: string) {

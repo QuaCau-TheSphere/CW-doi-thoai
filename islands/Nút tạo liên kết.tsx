@@ -7,9 +7,9 @@ import {
   tênNút,
   vậtThểTiếpThịĐượcTạo,
 } from "./Signals tổng.ts";
-import tạoVậtThểUTM from "../core/B. Tạo kết quả/3. Tạo liên kết/Tạo tham số UTM.ts";
-import { tạoĐuôiRútGọn } from "../core/B. Tạo kết quả/3. Tạo liên kết/Tạo đuôi rút gọn.ts";
-import { ghiVậtThểTiếpThịLênKV } from "../utils/Hàm và kiểu cho API server.ts";
+import tạoVậtThểUTM from "../Code hỗ trợ cho client/Tạo liên kết UTM/Tạo tham số UTM.ts";
+import { tạoĐuôiRútGọn } from "../Code hỗ trợ cho client/Tạo liên kết UTM/Tạo đuôi rút gọn.ts";
+import { ghiVậtThểTiếpThịLênKV } from "../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
 
 async function tạoVậtThểTiếpThị() {
   const bàiĐăng = bàiĐăngĐượcChọn.value;

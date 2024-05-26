@@ -1,10 +1,10 @@
 import FlexSearch, { Document } from "npm:flexsearch";
-import { BàiĐăng } from "../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { NơiĐăngCóCácLựaChọnVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
+import { BàiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { NơiĐăngCóCácLựaChọnVịTrí } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import SectionBênTrái from "./Section bên trái.tsx";
 import SectionBênPhải from "./Section bên phải.tsx";
 import { cấuHìnhViếtTắtSignal, flexSearchBàiĐăngSignal, flexSearchNơiĐăngSignal } from "./Signals tổng.ts";
-import { CấuHìnhViếtTắt } from "../core/Code hỗ trợ/Hàm và kiểu cho cấu hình.ts";
+import { CấuHìnhViếtTắt } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
 
 interface MainProps {
   danhSáchNơiĐăng: NơiĐăngCóCácLựaChọnVịTrí[];

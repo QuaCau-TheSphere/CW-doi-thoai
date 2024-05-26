@@ -1,11 +1,16 @@
-import { BàiĐăng } from "../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { NơiĐăngCóCácLựaChọnVịTrí, NơiĐăngCóMộtVịTríCụThể } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
-import { TênDanhSách, VậtThểTiếpThị } from "./Kiểu cho web.ts";
+import { BàiĐăng, BàiĐăngChưaCóId } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import {
+  NơiĐăngCóCácLựaChọnVịTrí,
+  NơiĐăngCóCácLựaChọnVịTríChưaCóId,
+  NơiĐăngCóMộtVịTríCụThể,
+} from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
+import { VậtThểTiếpThị } from "./Kiểu cho vật thể tiếp thị.ts";
 import { lầnĐăngGầnNhất } from "../islands/Signals tổng.ts";
+import { TênDanhSách } from "./Hàm và kiểu cho khung nhập.ts";
 
 export interface ReqBàiĐăngHoặcNơiĐăngTạoMới {
   "Tên danh sách": TênDanhSách;
-  "Dữ liệu": BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí;
+  "Dữ liệu": BàiĐăngChưaCóId | NơiĐăngCóCácLựaChọnVịTríChưaCóId;
 }
 
 export async function ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv(dữLiệuMới: ReqBàiĐăngHoặcNơiĐăngTạoMới) {

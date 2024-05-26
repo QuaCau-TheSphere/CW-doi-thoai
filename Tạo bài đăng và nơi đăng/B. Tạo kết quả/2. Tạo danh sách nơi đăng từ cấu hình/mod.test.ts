@@ -3,14 +3,6 @@ import { join } from "$std/path/join.ts";
 import tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí from "./mod.ts";
 import { assertArrayIncludes } from "https://deno.land/std@0.219.0/assert/assert_array_includes.ts";
 import { assert } from "$std/assert/assert.ts";
-import danhSáchNơiĐăngChưaXácĐịnhVịTrí, {
-  cóLoạiNơiĐăngNDTrongVậtThểVịTrí,
-  CấuHìnhThiếtLậpChung,
-  tạoDanhSáchVịTríCóThểĐăng,
-  VậtThểVịTrí,
-} from "./Tạo các phiên bản vị trí.ts";
-import CấuHìnhNơiĐăng, { NơiĐăngCóMộtVịTríCụThể } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
-import tạoDanhSáchChat from "./T%E1%BA%A1o%20danh%20s%C3%A1ch%20n%C6%A1i%20%C4%91%C4%83ng%20chat.ts";
 
 const nơiĐăng1 = {
   "Tên nơi đăng": ["Lý Minh Nhật"],

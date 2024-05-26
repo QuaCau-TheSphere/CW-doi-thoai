@@ -1,8 +1,7 @@
-import { ThôngTinNơiĐăngChưaCóId, TênNơiĐăng } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
-import { táchUrlTrongChuỗi } from "../../Code hỗ trợ/Code hỗ trợ.ts";
-import { CấuHìnhMãNơiĐăng } from "../../Code hỗ trợ/Hàm và kiểu cho cấu hình.ts";
-import { kiểuKebab } from "../../../utils/Hàm cho khung nhập.ts";
-import { assert } from "$std/assert/assert.ts";
+import { ThôngTinNơiĐăngChưaCóId } from "../../Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
+import { táchUrlTrongChuỗi } from "../../Code hỗ trợ cho server/Code hỗ trợ.ts";
+import { CấuHìnhMãNơiĐăng } from "../../Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
+import { kiểuKebab } from "../../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 
 export type TừĐiểnMãNơiĐăng = Map<string, string>;
 
@@ -33,7 +32,6 @@ export function tạoMãNơiĐăng(nơiĐăng: ThôngTinNơiĐăngChưaCóId, t�
     "Loại nơi đăng": loạiNơiĐăng,
   } = nơiĐăng;
   if (từĐiểnMãNơiĐăng) {
-    console.log("🚀 ~ tạoMãNơiĐăng ~ từĐiểnMãNơiĐăng:", từĐiểnMãNơiĐăng);
     for (const tênNơiĐăngThànhPhần of tênNơiĐăng.toReversed()) {
       const mãNơiĐăngĐượcKhaiBáo = từĐiểnMãNơiĐăng.get(tênNơiĐăngThànhPhần.toLowerCase());
       if (mãNơiĐăngĐượcKhaiBáo) return mãNơiĐăngĐượcKhaiBáo;

@@ -1,5 +1,5 @@
 import { FreshContext, Handlers } from "$fresh/server.ts";
-import { tạoBàiĐăngTừURL, tạoNơiĐăngTừURL } from "../../../core/Code hỗ trợ/Tạo bài đăng hoặc nơi đăng từ URL.ts";
+import { tạoBàiĐăngTừURL, tạoNơiĐăngTừURL } from "../../../Code hỗ trợ cho client/Tạo bài đăng hoặc nơi đăng từ URL.ts";
 import esthetic from "npm:esthetic";
 
 function lấyURL(ctx: FreshContext<Record<string, unknown>>) {

@@ -1,11 +1,11 @@
-import { tạoTênNơiĐăngString } from "../../utils/Hàm cho khung nhập.ts";
-import { ReqBàiĐăngHoặcNơiĐăngTạoMới } from "../../utils/Hàm và kiểu cho API server.ts";
-import { TênDanhSách } from "../../utils/Kiểu cho web.ts";
+import { ReqBàiĐăngHoặcNơiĐăngTạoMới } from "../../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
+import { tạoTênNơiĐăngString } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { TênDanhSách } from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
 import { tạoDanhSáchBàiĐăng } from "../B. Tạo kết quả/1. Tạo danh sách tất cả bài đăng/mod.ts";
-import tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí from "../B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình/mod.ts";
-import { CấuHìnhChung, ThôngTinCấuHìnhNơiĐăng, tạoDanhSáchThôngTinCấuHìnhNơiĐăng } from "./Hàm và kiểu cho cấu hình.ts";
+import { tạoDanhSáchNơiĐăngTừTấtCảCấuHình } from "../B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình/mod.ts";
+import { tạoDanhSáchThôngTinCấuHìnhNơiĐăng } from "./Hàm và kiểu cho cấu hình.ts";
 import { NơiĐăngCóCácLựaChọnVịTrí } from "./Hàm và kiểu cho vị trí.ts";
-import { BàiĐăng, BàiĐăngChưaCóId, ĐườngDẫnTuyệtĐối, ĐườngDẫnTươngĐối } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { BàiĐăng, BàiĐăngChưaCóId } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { ThôngTinNơiĐăng, ThôngTinNơiĐăngChưaCóId } from "./Kiểu cho nơi đăng.ts";
 
 type KvName = "Cloud" | "Local";
@@ -98,34 +98,30 @@ export async function thêmBàiĐăngHoặcNơiĐăngMớiVàoKV(bàiĐăngHoặ
   return key;
 }
 
-export async function đẩyBàiĐăngLênKV(
-  danhSáchThôngTinCấuHìnhNơiĐăng: ThôngTinCấuHìnhNơiĐăng[],
-  mapKV: MapKV,
-) {
+export async function đẩyBàiĐăngLênKV(mapKV: MapKV) {
+  const danhSáchThôngTinCấuHìnhNơiĐăng = await tạoDanhSáchThôngTinCấuHìnhNơiĐăng();
   const danhSáchBàiĐăng = await tạoDanhSáchBàiĐăng(danhSáchThôngTinCấuHìnhNơiĐăng);
-  await Deno.writeTextFile("core/A. Cấu hình/Danh sách tất cả bài đăng.json", JSON.stringify(danhSáchBàiĐăng, null, 2));
-  for (const bàiĐăngLấyTừVault of danhSáchBàiĐăng) {
-    console.log(bàiĐăngLấyTừVault["Tiêu đề"], bàiĐăngLấyTừVault.id);
-    const key = tạoKeyKV("bài đăng", bàiĐăngLấyTừVault);
-    await kvSetValueAndCount(key, bàiĐăngLấyTừVault, "Bài đăng", mapKV);
+  await Deno.writeTextFile("Tạo bài đăng và nơi đăng/A. Cấu hình/Danh sách tất cả bài đăng.json", JSON.stringify(danhSáchBàiĐăng, null, 2));
+
+  for (const bàiĐăng of danhSáchBàiĐăng) {
+    console.log(bàiĐăng["Tiêu đề"]);
+    console.log("→", bàiĐăng.id);
+    const key = tạoKeyKV("bài đăng", bàiĐăng);
+    await kvSetValueAndCount(key, bàiĐăng, "Bài đăng", mapKV);
   }
   console.log("✅Đã đẩy xong bài đăng lên KV");
 }
 
-export async function đẩyNơiĐăngLênKV(cấuHìnhChung: CấuHìnhChung, mapKV: MapKV) {
-  const temp = [];
-  const danhSáchThôngTinCấuHìnhNơiĐăng = await tạoDanhSáchThôngTinCấuHìnhNơiĐăng();
+export async function đẩyNơiĐăngLênKV(mapKV: MapKV) {
+  const danhSáchNơiĐăng = await tạoDanhSáchNơiĐăngTừTấtCảCấuHình();
+  await Deno.writeTextFile("Tạo bài đăng và nơi đăng/A. Cấu hình/Danh sách nơi đăng.json", JSON.stringify(danhSáchNơiĐăng, null, 2));
 
-  for (const vậtThểCấuHình of danhSáchThôngTinCấuHìnhNơiĐăng) {
-    const danhSáchNơiĐăngTừCấuHình = await tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí(vậtThểCấuHình, cấuHìnhChung);
-    temp.push(...danhSáchNơiĐăngTừCấuHình);
-    for (const nơiĐăng of danhSáchNơiĐăngTừCấuHình) {
-      console.log(tạoTênNơiĐăngString(nơiĐăng["Tên nơi đăng"]));
-      console.log("→", nơiĐăng["Mã nơi đăng"]);
-      const key = tạoKeyKV("nơi đăng", nơiĐăng);
-      await kvSetValueAndCount(key, nơiĐăng, "Nơi đăng", mapKV);
-    }
+  for (const nơiĐăng of danhSáchNơiĐăng) {
+    console.log(tạoTênNơiĐăngString(nơiĐăng["Tên nơi đăng"]));
+    console.log("→", nơiĐăng["Mã nơi đăng"], nơiĐăng.id);
+    const key = tạoKeyKV("nơi đăng", nơiĐăng);
+    await kvSetValueAndCount(key, nơiĐăng, "Nơi đăng", mapKV);
   }
-  await Deno.writeTextFile("core/A. Cấu hình/Danh sách nơi đăng.json", JSON.stringify(temp, null, 2));
+
   console.log("✅Đã đẩy xong nơi đăng lên KV");
 }

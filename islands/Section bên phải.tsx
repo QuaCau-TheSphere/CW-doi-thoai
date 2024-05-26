@@ -1,5 +1,5 @@
 import { cóRútGọn, vậtThểTiếpThịĐượcTạo } from "./Signals tổng.ts";
-import { ThamSốUTM } from "../core/Code hỗ trợ/Kiểu cho tham số UTM.ts";
+import { ThamSốUTM } from "../Code hỗ trợ cho client/Tạo liên kết UTM/Kiểu cho tham số UTM.ts";
 import { VậtThểKhác } from "../components/Thông tin vật thể tiếp thị.tsx";
 import KhungThôngTinKhiKhôngCóKếtQuả from "../components/KhungThôngTinKhiKhôngCóKếtQuả.tsx";
 

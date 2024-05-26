@@ -1,4 +1,24 @@
-import { DANH_SÁCH_ĐƠN_VỊ_THỜI_GIAN, DanhSáchThờiĐiểm, DữLiệuBiểuĐồ, DữLiệuTruyCậpCácNăm, ĐơnVị } from "./Kiểu cho web.ts";
+// deno-fmt-ignore-file
+
+/** [Define a list of optional keys for Typescript Record](https://stackoverflow.com/q/53276792/3416774) */
+// deno-lint-ignore no-explicit-any
+export type PartialRecord<K extends keyof any, T> =  Partial<Record<K, T>>
+
+export type Giờ = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20" | "21" | "22" | "23"
+export type Ngày = "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20" | "21" | "22" | "23" | "24" | "25" | "26" | "27" | "28" | "29" | "30" | "31";
+export type Tháng = "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12"
+export type Năm = "2024" | "2025" | "2026" | "2027" | "2028" | "2029" | "2030" | "2031" | "2032" | "2033" | "2034" | "2035" | "2036" | "2037" | "2038" | "2039" | "2040" | "2041" | "2042" | "2043" | "2044" | "2045" | "2046" | "2047" | "2048" | "2049" | "2050" 
+export const DANH_SÁCH_ĐƠN_VỊ_THỜI_GIAN = ["giờ", "ngày", "tuần", "tháng", "năm"] as const 
+export type ĐơnVị = typeof DANH_SÁCH_ĐƠN_VỊ_THỜI_GIAN[number] 
+export type DữLiệuBiểuĐồ = Record<ĐơnVị, {datetime: Date, hit: number}[]> 
+
+type DữLiệuTruyCập = {'Thời điểm': Date, header?: Headers} 
+export type DữLiệuTruyCậpCácGiờ = PartialRecord<`${Giờ} giờ`, DữLiệuTruyCập[] | undefined>;
+export type DữLiệuTruyCậpCácNgày = PartialRecord<`Ngày ${Ngày}`, DữLiệuTruyCậpCácGiờ | undefined>;
+export type DữLiệuTruyCậpCácTháng = PartialRecord<`Tháng ${Tháng}`, DữLiệuTruyCậpCácNgày | undefined>;
+export type DữLiệuTruyCậpCácNăm = PartialRecord<Năm, DữLiệuTruyCậpCácTháng | undefined>;
+
+export type DanhSáchThờiĐiểm = Date[]
 
 function tạoDanhSáchThờiĐiểmĐượcTruyCập(dữLiệuTruyCậpCácNăm: DữLiệuTruyCậpCácNăm): DanhSáchThờiĐiểm {
   const danhSáchThờiĐiểmĐượcTruyCập: DanhSáchThờiĐiểm = [];

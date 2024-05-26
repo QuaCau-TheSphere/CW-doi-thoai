@@ -3,7 +3,7 @@
  */
 
 import { Handlers } from "$fresh/server.ts";
-import { VậtThểTiếpThị } from "../../utils/Kiểu cho web.ts";
+import { VậtThểTiếpThị } from "../../Code hỗ trợ cho client/Kiểu cho vật thể tiếp thị.ts";
 
 export const handler: Handlers = {
   async POST(req, ctx) {

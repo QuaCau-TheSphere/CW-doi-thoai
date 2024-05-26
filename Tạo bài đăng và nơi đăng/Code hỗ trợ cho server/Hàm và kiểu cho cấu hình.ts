@@ -2,7 +2,7 @@ import { walk } from "$std/fs/walk.ts";
 import { parse } from "$std/yaml/mod.ts";
 import { basename, extname, SEPARATOR } from "$std/path/mod.ts";
 import { VậtThểCấuHìnhVịTrí, VịTríThànhPhần } from "./Hàm và kiểu cho vị trí.ts";
-import { THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT, THƯ_MỤC_CẤU_HÌNH_NƠI_ĐĂNG, ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG, ĐƯỜNG_DẪN_ĐẾN_TẬP_TIN_CSV } from "../../env.ts";
+import { THƯ_MỤC_CẤU_HÌNH_NƠI_ĐĂNG, ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG } from "../../env.ts";
 import {
   CấuHìnhChat,
   CấuHìnhDiễnĐàn,

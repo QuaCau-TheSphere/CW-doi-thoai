@@ -228,11 +228,11 @@ export type CấuHìnhSaaS = Record<TênNềnTảngSaaS, VậtThểLàmGiáTrị
 /**
  * KHÁC
  */
-export const danhSáchNơiĐăngKhác = ["Vault", "Website", "Email", "Ảnh"] as const;
-export type LoạiNơiĐăngKhác = [typeof danhSáchNơiĐăngKhác[number]];
+export const DanhSáchNơiĐăngKhác = ["Vault", "Website", "Email", "Ảnh"] as const;
+export type LoạiNơiĐăngKhác = [typeof DanhSáchNơiĐăngKhác[number]];
 /** Tên nền tảng của vault, website, email, CV, ảnh, dịch vụ lưu trữ không quan trọng, không phức tạp, không làm ảnh hưởng tới cách gọi các cấp bậc nhỏ hơn nên để null cũng được */
-type TênNềnTảngKhác = typeof danhSáchNơiĐăngKhác[number];
-type LoạiNềnTảngKhác = typeof danhSáchNơiĐăngKhác[number];
+type TênNềnTảngKhác = typeof DanhSáchNơiĐăngKhác[number];
+type LoạiNềnTảngKhác = typeof DanhSáchNơiĐăngKhác[number];
 type TênNơiĐăngKhác = [string];
 
 export type CấuHìnhVault = string[];

@@ -1,4 +1,5 @@
-import { TênDanhSách, xửLýPunycode } from "../../utils/Kiểu cho web.ts";
+import { xửLýPunycode } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { TênDanhSách } from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
 import { bàiĐăngĐượcChọn } from "../Signals tổng.ts";
 import NơiĐăngĐượcChọn from "./Nơi đăng được chọn.tsx";
 

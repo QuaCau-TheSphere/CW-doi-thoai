@@ -1,7 +1,7 @@
 import { useEffect, useState } from "preact/hooks";
-import { NơiĐăngCóCácLựaChọnVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
+import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { queryNơiĐăng } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
-import { PhảnHồiTừCORSProxy } from "../../utils/Hàm và kiểu cho API server.ts";
+import { PhảnHồiTừCORSProxy } from "../../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
 
 export default function ModalNơiĐăng() {
   const [phảnHồiTừCORSProxy, setPhảnHồiTừCORSProxy] = useState<PhảnHồiTừCORSProxy | undefined>(undefined);

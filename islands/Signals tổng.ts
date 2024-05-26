@@ -1,10 +1,10 @@
 import FlexSearch from "npm:flexsearch";
 import { computed, effect, signal } from "@preact/signals";
-import { NơiĐăngCóCácLựaChọnVịTrí, NơiĐăngCóMộtVịTríCụThể } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
-import { BàiĐăng } from "../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { ElementDùngTab, VậtThểTiếpThị } from "../utils/Kiểu cho web.ts";
-import { tìmVậtThểTiếpThịĐãCó } from "../utils/Hàm và kiểu cho API server.ts";
-import { CấuHìnhViếtTắt } from "../core/Code hỗ trợ/Hàm và kiểu cho cấu hình.ts";
+import { NơiĐăngCóCácLựaChọnVịTrí, NơiĐăngCóMộtVịTríCụThể } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
+import { BàiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { ElementDùngTab, VậtThểTiếpThị } from "../Code hỗ trợ cho client/Kiểu cho vật thể tiếp thị.ts";
+import { tìmVậtThểTiếpThịĐãCó } from "../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
+import { CấuHìnhViếtTắt } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
 
 export const cấuHìnhViếtTắtSignal = signal<CấuHìnhViếtTắt>({});
 export const flexSearchBàiĐăngSignal = signal<FlexSearch.Document<BàiĐăng>>([]);

@@ -1,10 +1,20 @@
 import { getMetaTags } from "https://deno.land/x/opengraph@v1.0.0/mod.ts";
-import { BàiĐăngChưaCóId, URLString } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { danhSáchDiễnĐàn, danhSáchNềnTảngChat, LoạiNơiĐăng, LoạiNềnTảng, ThôngTinNơiĐăngChưaCóId, TênNềnTảng } from "./Kiểu cho nơi đăng.ts";
-import { viếtThường } from "../../utils/Hàm cho khung nhập.ts";
+import { BàiĐăngChưaCóId, URLString } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import {
+  danhSáchDiễnĐàn,
+  danhSáchNềnTảngChat,
+  LoạiNơiĐăng,
+  LoạiNềnTảng,
+  ThôngTinNơiĐăngChưaCóId,
+  TênNềnTảng,
+} from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
+import { viếtThường } from "./Hàm xử lý chuỗi.ts";
 import { assert } from "$std/assert/assert.ts";
-import { NơiĐăngCóCácLựaChọnVịTríChưaCóId, tạoNơiĐăngCóCácLựaChọnVịTrí } from "./Hàm và kiểu cho vị trí.ts";
-import { tạoMãNơiĐăng, TừĐiểnMãNơiĐăng } from "../B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình/Tạo mã nơi đăng.ts";
+import {
+  NơiĐăngCóCácLựaChọnVịTríChưaCóId,
+  tạoNơiĐăngCóCácLựaChọnVịTrí,
+} from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
+import { tạoMãNơiĐăng, TừĐiểnMãNơiĐăng } from "../Tạo bài đăng và nơi đăng/B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình/Tạo mã nơi đăng.ts";
 
 interface MetaTags {
   title: string;

@@ -1,11 +1,11 @@
-import type { MụcĐượcChọn, TênDanhSách } from "../../utils/Kiểu cho web.ts";
 import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/plus.tsx";
-import { kiểuKebab, tạoLoạiNơiĐăngString, tạoTênNơiĐăngString, đổiKhungNhập } from "../../utils/Hàm cho khung nhập.ts";
-import { NơiĐăngCóCácLựaChọnVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
-import { BàiĐăng } from "../../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { MụcĐượcChọn, TênDanhSách, đổiKhungNhập } from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
+import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
+import { BàiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { element } from "../Signals tổng.ts";
 import { cursor, danhSáchGợiÝSignal } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
 import { Signal } from "@preact/signals";
+import { kiểuKebab, tạoLoạiNơiĐăngString, tạoTênNơiĐăngString } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 
 function tạoDòngPhụCủaBàiĐăng(bàiĐăng: BàiĐăng) {
   const { "Dự án": dựÁn, Vault: vault, URL, "Mã bài đăng": mãBàiĐăng, id } = bàiĐăng;

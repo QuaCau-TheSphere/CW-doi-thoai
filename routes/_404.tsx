@@ -13,7 +13,7 @@ export default function Error404() {
           &#125;)(window,document,'script','dataLayer','GTM-MWZ4WG7');
         </script>
       </Head>
-      <Meta imageUrl="sihouette.jpg" />
+      <Meta url="/404" imageUrl="sihouette.jpg" />
       <noscript>
         <iframe
           src="https://www.googletagmanager.com/ns.html?id=GTM-MWZ4WG7"

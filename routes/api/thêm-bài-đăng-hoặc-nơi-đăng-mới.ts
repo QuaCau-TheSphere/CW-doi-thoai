@@ -1,6 +1,6 @@
 import { Handlers } from "$fresh/server.ts";
-import { thêmBàiĐăngHoặcNơiĐăngMớiVàoKV } from "../../core/Code hỗ trợ/Hàm cho KV.ts";
-import { ReqBàiĐăngHoặcNơiĐăngTạoMới } from "../../utils/Hàm và kiểu cho API server.ts";
+import { thêmBàiĐăngHoặcNơiĐăngMớiVàoKV } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho KV.ts";
+import { ReqBàiĐăngHoặcNơiĐăngTạoMới } from "../../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
 
 export const handler: Handlers = {
   async POST(req, ctx) {

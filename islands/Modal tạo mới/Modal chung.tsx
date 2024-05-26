@@ -1,13 +1,15 @@
 import { Signal } from "@preact/signals";
-import { MụcĐượcChọn, TênDanhSách } from "../../utils/Kiểu cho web.ts";
-import { đổiKhungNhập } from "../../utils/Hàm cho khung nhập.ts";
+import { MụcĐượcChọn, TênDanhSách, đổiKhungNhập } from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
 import ModalBàiĐăng from "./Modal bài đăng.tsx";
 import ModalNơiĐăng from "./Modal nơi đăng.tsx";
-import { BàiĐăng, BàiĐăngChưaCóId, URLString } from "../../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { LoạiNềnTảng, ThôngTinNơiĐăngChưaCóId, TênNềnTảng } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
-import { NơiĐăngCóCácLựaChọnVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
+import {
+  BàiĐăngChưaCóId,
+  URLString,
+} from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { LoạiNềnTảng, ThôngTinNơiĐăngChưaCóId, TênNềnTảng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
 import { element } from "../Signals tổng.ts";
-import { ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv } from "../../utils/Hàm và kiểu cho API server.ts";
+import { ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv } from "../../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
+import { NơiĐăngCóCácLựaChọnVịTríChưaCóId } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 
 function CácTrườngNhậpMới({ tênDanhSách }: { tênDanhSách: TênDanhSách }) {
   switch (tênDanhSách) {
@@ -22,7 +24,7 @@ function CácTrườngNhậpMới({ tênDanhSách }: { tênDanhSách: TênDanhS�
 
 /** Chuyển cấu trúc từ formData trên web sang BàiĐăng hoặc NơiĐăngChưaXácĐịnhVịTrí */
 function tạoVậtThểDữLiệuMới(formData: Record<string, FormDataEntryValue>, tênDanhSách: TênDanhSách) {
-  let dữLiệu: BàiĐăngChưaCóId | ThôngTinNơiĐăngChưaCóId;
+  let dữLiệu: BàiĐăngChưaCóId | NơiĐăngCóCácLựaChọnVịTríChưaCóId;
   switch (tênDanhSách) {
     case "bài đăng": {
       const {
@@ -81,7 +83,7 @@ async function handleSubmit(event: any, tênDanhSách: TênDanhSách, mụcĐư�
   event.preventDefault();
   // if (event.currentTarget === null) return
   const formData = Object.fromEntries(new FormData(event.currentTarget));
-  const vậtThểDữLiệuMới = await tạoVậtThểDữLiệuMới(formData, tênDanhSách);
+  const vậtThểDữLiệuMới = tạoVậtThểDữLiệuMới(formData, tênDanhSách);
   const data = await ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv(vậtThểDữLiệuMới);
   console.log(data);
   mụcĐượcChọn.value = data.value;

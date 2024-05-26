@@ -1,6 +1,7 @@
 // deno-fmt-ignore-file
 import { Handlers } from "$fresh/server.ts";
-import { Giờ, Ngày, Năm, Tháng, VậtThểTiếpThị } from "../../utils/Kiểu cho web.ts";
+import { VậtThểTiếpThị } from "../../Code hỗ trợ cho client/Kiểu cho vật thể tiếp thị.ts";
+import { Giờ, Ngày, Năm, Tháng } from "../../Code hỗ trợ cho client/Hàm và kiểu cho biểu đồ.ts";
 
 function thêmThờiĐiểmTruyCập(vậtThểTiếpThị: VậtThểTiếpThị, headers: Headers){
   const bâyGiờ = new Date()

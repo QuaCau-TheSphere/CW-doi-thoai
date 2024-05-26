@@ -3,15 +3,15 @@ import CấuHìnhNơiĐăng, {
   CấuHìnhNơiĐăngChatThôngThường,
   LoạiNơiĐăngChat,
   LoạiNơiĐăngMessengerDiscordTelegram,
-  ThôngTinNơiĐăng,
+  ThôngTinNơiĐăngChưaCóId,
   TênMáyChủ,
   TênNềnTảng,
   TênNềnTảngChat,
   TênThreadHoặcTopic,
-} from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
-import { táchUrlTrongChuỗi } from "../../Code hỗ trợ/Code hỗ trợ.ts";
+} from "../../Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
+import { táchUrlTrongChuỗi } from "../../Code hỗ trợ cho server/Code hỗ trợ.ts";
 
-function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăng[]) {
+function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
   const cấuHìnhNơiĐăngChat = cấuHìnhNơiĐăng.Chat;
   if (!cấuHìnhNơiĐăngChat) return;
   for (const tênNềnTảng of ["Messenger", "Discord", "Telegram"] as const) {
@@ -94,7 +94,7 @@ function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: Cấu
 function lấyNơiĐăngTừNềnTảngChatKhác(
   vậtThểNơiĐăng: CấuHìnhNơiĐăngChatThôngThường,
   tênNềnTảng: TênNềnTảng,
-  danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăng[],
+  danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[],
 ) {
   for (const [loạiNơiĐăng, danhSáchTênNơiĐăng] of Object.entries(vậtThểNơiĐăng) as [LoạiNơiĐăngChat[0], string[]][]) {
     /** Loại hết cộng đồng chat trên Messenger, Discord, Telegram để chỉ còn lại loại nơi đăng chat thông thường (tài khoản, cá nhân hoặc nhóm) */
@@ -117,7 +117,7 @@ function lấyNơiĐăngTừNềnTảngChatKhác(
   }
 }
 
-export default function tạoDanhSáchChat(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăng[]) {
+export default function tạoDanhSáchChat(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
   const cấuHìnhNơiĐăngChat = cấuHìnhNơiĐăng.Chat;
   if (!cấuHìnhNơiĐăngChat) return;
 

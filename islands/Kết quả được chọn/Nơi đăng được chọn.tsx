@@ -1,8 +1,11 @@
-import { NơiĐăngCóCácLựaChọnVịTrí, VịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
+import {
+  NơiĐăngCóCácLựaChọnVịTrí,
+  NơiĐăngCóMộtVịTríCụThể,
+  VịTrí,
+} from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { nơiĐăngCóCácLựaChọnVịTrí, nơiĐăngCóMộtVịTríCụThể, vịTríString } from "../Signals tổng.ts";
-import { tạoLoạiNơiĐăngString, tạoTênNơiĐăngString, tạoVịTríString } from "../../utils/Hàm cho khung nhập.ts";
-import { làCùngNơiĐăng, ThôngTinNơiĐăng } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
-import { xửLýPunycode } from "../../utils/Kiểu cho web.ts";
+import { tạoLoạiNơiĐăngString, tạoTênNơiĐăngString, tạoVịTríString, xửLýPunycode } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { làCùngNơiĐăng, ThôngTinNơiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
 
 /** Từ NơiĐăngCóCácLựaChọnVịTrí và vịTríĐượcChọn, tạo NơiĐăngCóMộtVịTríCụThể*/
 export function tạoNơiĐăngCóMộtVịTríCụThể(vịTríĐượcChọn: VịTrí | string, nơiĐăng: NơiĐăngCóCácLựaChọnVịTrí): NơiĐăngCóMộtVịTríCụThể {

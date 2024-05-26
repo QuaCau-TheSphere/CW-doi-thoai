@@ -1,8 +1,8 @@
 import { BàiĐăng, BàiĐăngChưaCóId } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { TênDanhSách } from "../../utils/Kiểu cho web.ts";
+import { TênDanhSách } from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
 import * as linkify from "npm:linkifyjs";
 import { kvGetCount, TableName, tạoKeyKV } from "./Hàm cho KV.ts";
-import { viếtHoa } from "../../utils/Hàm cho khung nhập.ts";
+import { viếtHoa } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 import { ThôngTinNơiĐăng, ThôngTinNơiĐăngChưaCóId } from "./Kiểu cho nơi đăng.ts";
 import { CấuHìnhViếtTắt } from "./Hàm và kiểu cho cấu hình.ts";
 

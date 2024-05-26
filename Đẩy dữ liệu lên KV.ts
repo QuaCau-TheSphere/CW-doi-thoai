@@ -1,6 +1,5 @@
-import { lấyCấuHìnhChung, tạoDanhSáchThôngTinCấuHìnhNơiĐăng } from "./core/Code hỗ trợ/Hàm và kiểu cho cấu hình.ts";
 import { load } from "$std/dotenv/mod.ts";
-import { đẩyBàiĐăngLênKV, đẩyNơiĐăngLênKV } from "./core/Code hỗ trợ/Hàm cho KV.ts";
+import { đẩyBàiĐăngLênKV, đẩyNơiĐăngLênKV } from "./Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho KV.ts";
 import { wipeKvStore } from "https://deno.land/x/kv_utils@1.1.1/mod.ts";
 
 const env = await load();
@@ -10,11 +9,8 @@ const mapKV = new Map();
 mapKV.set("Local", await Deno.openKv());
 await xoáDữLiệuTrênKv();
 
-const cấuHìnhChung = lấyCấuHìnhChung();
-const danhSáchThôngTinCấuHìnhNơiĐăng = await tạoDanhSáchThôngTinCấuHìnhNơiĐăng();
-
-// await đẩyNơiĐăngLênKV(cấuHìnhChung, mapKV);
-await đẩyBàiĐăngLênKV(danhSáchThôngTinCấuHìnhNơiĐăng, mapKV);
+await đẩyNơiĐăngLênKV(mapKV);
+await đẩyBàiĐăngLênKV(mapKV);
 
 // const sốLượngDữLiệu = (await kv.get(["Số lượng dữ liệu"])).value;
 // console.log(sốLượngDữLiệu.get("Bài đăng"));

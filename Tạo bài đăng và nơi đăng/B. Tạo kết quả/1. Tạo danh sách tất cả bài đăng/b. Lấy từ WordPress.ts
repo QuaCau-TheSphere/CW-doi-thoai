@@ -1,6 +1,6 @@
 import { parse } from "$std/csv/mod.ts";
 import { ĐƯỜNG_DẪN_ĐẾN_TẬP_TIN_CSV } from "../../../env.ts";
-import { BàiĐăng, TênDựÁn } from "../../Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { BàiĐăng, TênDựÁn } from "../../Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 
 type TậpTinCSV = {
   post_title: string;

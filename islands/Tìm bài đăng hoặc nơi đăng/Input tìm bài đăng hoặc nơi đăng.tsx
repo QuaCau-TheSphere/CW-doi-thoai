@@ -1,5 +1,11 @@
-import type { DanhSáchKếtQuảTìmKiếmType, FlexSearchBàiĐăngHoặcNơiĐăng, MụcĐượcChọn, TênDanhSách } from "../../utils/Kiểu cho web.ts";
-import { kiểuKebab, viếtHoa, đổiKhungNhập } from "../../utils/Hàm cho khung nhập.ts";
+import {
+  DanhSáchKếtQuảTìmKiếmType,
+  FlexSearchBàiĐăngHoặcNơiĐăng,
+  MụcĐượcChọn,
+  TênDanhSách,
+  đổiKhungNhập,
+} from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
+import { kiểuKebab, viếtHoa } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 import { element } from "../Signals tổng.ts";
 import { cursor, danhSáchGợiÝSignal } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
 import { Signal } from "@preact/signals";

@@ -1,10 +1,13 @@
-import { BàiĐăng } from "../../Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { ĐuôiRútGọn } from "../../Code hỗ trợ/Kiểu cho tham số UTM.ts";
-import { lấyKýHiệuViếtTắt } from "../../Code hỗ trợ/Code hỗ trợ.ts";
-import { CấuHìnhViếtTắt } from "../../Code hỗ trợ/Hàm và kiểu cho cấu hình.ts";
-import { tạoMãNơiĐăng, TừĐiểnMãNơiĐăng } from "../2. Tạo danh sách nơi đăng từ cấu hình/Tạo mã nơi đăng.ts";
-import { MãNơiĐăng, ThôngTinNơiĐăng } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
-import { kiểuKebab } from "../../../utils/Hàm cho khung nhập.ts";
+import { BàiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { ĐuôiRútGọn } from "./Kiểu cho tham số UTM.ts";
+import { lấyKýHiệuViếtTắt } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Code hỗ trợ.ts";
+import { CấuHìnhViếtTắt } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
+import {
+  tạoMãNơiĐăng,
+  TừĐiểnMãNơiĐăng,
+} from "../../Tạo bài đăng và nơi đăng/B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình/Tạo mã nơi đăng.ts";
+import { MãNơiĐăng, ThôngTinNơiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
+import { kiểuKebab } from "../Hàm xử lý chuỗi.ts";
 
 function tạoPhầnBàiĐăng(bàiĐăng: BàiĐăng, cấuHìnhViếtTắt: CấuHìnhViếtTắt) {
   const { Vault: vault, "Dự án": dựÁn, id: id } = bàiĐăng;
@@ -51,7 +54,6 @@ export function tạoĐuôiRútGọn(
   từĐiểnMãNơiĐăng: TừĐiểnMãNơiĐăng,
   cấuHìnhViếtTắt: CấuHìnhViếtTắt,
 ): ĐuôiRútGọn {
-  return "sdf";
   const phầnChoBàiĐăng = tạoPhầnBàiĐăng(bàiĐăng, cấuHìnhViếtTắt);
   const phầnChoNơiĐăng = tạoPhầnNơiĐăng(nơiĐăng, từĐiểnMãNơiĐăng, cấuHìnhViếtTắt);
   return `${phầnChoBàiĐăng}.${phầnChoNơiĐăng}.${lầnĐăng}`;

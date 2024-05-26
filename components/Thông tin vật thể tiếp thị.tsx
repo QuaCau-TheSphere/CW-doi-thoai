@@ -1,5 +1,5 @@
-import { kiểuKebab, viếtHoa } from "../utils/Hàm cho khung nhập.ts";
-import { VậtThểTiếpThị } from "../utils/Kiểu cho web.ts";
+import { kiểuKebab, viếtHoa } from "../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { VậtThểTiếpThị } from "../Code hỗ trợ cho client/Kiểu cho vật thể tiếp thị.ts";
 
 export function VậtThểKhác({ vậtThể, loạiVậtThể, cóTiêuĐề }: { vậtThể: Record<string, any>; loạiVậtThể: string; cóTiêuĐề?: boolean }) {
   const danhSáchPhầnTử = [];
