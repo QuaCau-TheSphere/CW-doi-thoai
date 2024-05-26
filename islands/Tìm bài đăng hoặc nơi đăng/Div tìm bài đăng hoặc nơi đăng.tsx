@@ -1,5 +1,5 @@
-import ModalTạoMới from "../Modal tạo mới/Modal chung.tsx";
 import KếtQuảĐượcChọn from "../Kết quả được chọn/Kết quả được chọn.tsx";
+import ModalTạoMới from "../Modal tạo mới/Modal chung.tsx";
 import type { FlexSearchBàiĐăngHoặcNơiĐăng, MụcĐượcChọn, TênDanhSách } from "../../utils/Kiểu cho web.ts";
 import { kiểuKebab } from "../../utils/Hàm cho khung nhập.ts";
 import { bàiĐăngĐượcChọn, flexSearchBàiĐăngSignal, flexSearchNơiĐăngSignal, nơiĐăngCóCácLựaChọnVịTrí } from "../Signals tổng.ts";

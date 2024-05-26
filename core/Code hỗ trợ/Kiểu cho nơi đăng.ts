@@ -1,30 +1,9 @@
 /** Chỉ có những biến có từ cấu hình trong tên là dành cho cấu hình, còn lại là dành cho kết quả là vật thể nơi đăng */
 import { OneKey } from "./Code hỗ trợ.ts";
+import { DanhSáchVịTríCóThểĐăng } from "./Hàm và kiểu cho vị trí.ts";
 import { URLString } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 
-export type LoạiCấuHình = "Cá nhân" | "Tổ chức" | "Chủ đề";
-export type VậtThểCấuHìnhNơiĐăng = {
-  cấuHình: CấuHìnhNơiĐăng;
-  loạiCấuHình: LoạiCấuHình;
-  tênCấuHình: string;
-};
-
-/** null là để cho việc người dùng khai báo xong để đó */
-export default interface CấuHìnhNơiĐăng {
-  "Diễn đàn"?: CấuHìnhDiễnĐàn | null;
-  Chat?: CấuHìnhChat | null;
-  Vault?: CấuHìnhVault | null;
-  Website?: CấuHìnhWebsite | null;
-  Ảnh?: CấuHìnhẢnh | null;
-  Email?: CấuHìnhEmail | null;
-  "Tập tin"?: CấuHìnhTậpTin | null;
-  SaaS?: CấuHìnhSaaS | null;
-  "Kênh forum Discord"?: string[] | null;
-  "Mã nơi đăng"?: CấuHìnhMãNơiĐăng;
-}
-
 export type MãNơiĐăng = string;
-export type CấuHìnhMãNơiĐăng = Record<MãNơiĐăng, string | string[]>;
 /**
  * Loại nền tảng có kiểu là string, không phải string[]. Tên nơi đăng mới có kiểu string[]
  * @type string
@@ -81,9 +60,10 @@ export interface ThôngTinNơiĐăng {
   "Mô tả nơi đăng"?: string;
   "Mã nơi đăng"?: string;
   "Đơn vị quản lý"?: string;
-  id?: string;
+  "Vị trí có thể đăng"?: DanhSáchVịTríCóThểĐăng;
+  id: string;
 }
-
+export type ThôngTinNơiĐăngChưaCóId = Omit<ThôngTinNơiĐăng, "id">;
 /**
  * | Diễn đàn                    | Discord                    | Messenger      | Telegram |
  * | --------------------------- | -------------------------- | -------------- | -------- |
@@ -140,7 +120,7 @@ type TênNơiĐăngDiễnĐàn = [string];
  */
 export type CấuHìnhNơiĐăngDiễnĐàn = Record<LoạiNơiĐăngDiễnĐàn[0], string[]> | null;
 
-type CấuHìnhDiễnĐàn = Record<TênDiễnĐàn, CấuHìnhNơiĐăngDiễnĐàn | null>;
+export type CấuHìnhDiễnĐàn = Record<TênDiễnĐàn, CấuHìnhNơiĐăngDiễnĐàn | null>;
 
 /**
  * CHAT
@@ -204,7 +184,7 @@ export type LoạiNơiĐăngChat =
   | LoạiNơiĐăngChatThôngThường
   | LoạiNơiĐăngMessengerDiscordTelegram;
 
-interface CấuHìnhChat {
+export interface CấuHìnhChat {
   Messenger:
     | CấuHìnhNơiĐăngChatThôngThường & { "Cộng đồng": MáyChủ[] | null }
     | null;

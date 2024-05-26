@@ -1,24 +1,23 @@
-import CấuHìnhNơiĐăng, {
+import {
   danhSáchNơiĐăngKhác,
   LoạiNơiĐăngDiễnĐàn,
-  ThôngTinNơiĐăng,
+  ThôngTinNơiĐăngChưaCóId,
   TênChứcNăngTrongSaaS,
   TênNềnTảngSaaS,
-  VậtThểCấuHìnhNơiĐăng,
   VậtThểLàmGiáTrịChoTênSaaS,
   ĐịnhDạngTậpTin,
 } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { TênDiễnĐàn } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { CấuHìnhNơiĐăngDiễnĐàn } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import tạoDanhSáchChat from "./Tạo danh sách nơi đăng chat.ts";
-import { cóThôngTinNơiĐăngTrongVậtThểVịTrí, tạoDanhSáchVịTríCóThểĐăng } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { cóThôngTinNơiĐăngTrongVậtThểVịTrí, tạoDanhSáchVịTríCóThểĐăng } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
 import { parse } from "$std/yaml/mod.ts";
-import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
-import { CấuHìnhChung } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
-import { táchUrlTrongChuỗi, xácĐịnhId } from "../../Code hỗ trợ/Code hỗ trợ.ts";
-import { tạoMãNơiĐăng, tạoTừĐiểnMãNơiĐăng } from "./Tạo mã nơi đăng.ts";
+import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
+import { kiểmTraIdĐangCó, táchUrlTrongChuỗi } from "../../Code hỗ trợ/Code hỗ trợ.ts";
+import { tạoMãNơiĐăng, tạoTừĐiểnMãNơiĐăng, TừĐiểnMãNơiĐăng } from "./Tạo mã nơi đăng.ts";
+import CấuHìnhNơiĐăng, { CấuHìnhChung, ThôngTinCấuHìnhNơiĐăng } from "../../Code hỗ trợ/Hàm và kiểu cho cấu hình.ts";
 
-function tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăng[]) {
+function tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
   const cấuHìnhNơiĐăngDiễnĐàn = cấuHìnhNơiĐăng["Diễn đàn"];
   if (!cấuHìnhNơiĐăngDiễnĐàn) return;
   for (const [tênDiễnĐàn, vậtThểLàmGiáTrịChoTênDiễnĐàn] of Object.entries(cấuHìnhNơiĐăngDiễnĐàn) as [TênDiễnĐàn, CấuHìnhNơiĐăngDiễnĐàn][]) {
@@ -39,7 +38,7 @@ function tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, d
   }
 }
 
-function tạoDanhSáchTậpTin(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăng[]) {
+function tạoDanhSáchTậpTin(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
   const cấuHìnhTậpTin = cấuHìnhNơiĐăng["Tập tin"];
   if (!cấuHìnhTậpTin) return;
   for (const [địnhĐạngTậpTin, danhSáchTênNơiĐăng] of Object.entries(cấuHìnhTậpTin) as [ĐịnhDạngTậpTin, string[]][]) {
@@ -56,7 +55,7 @@ function tạoDanhSáchTậpTin(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danh
   }
 }
 
-function tạoDanhSáchSaaS(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăng[]) {
+function tạoDanhSáchSaaS(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
   const cấuHìnhSaaS = cấuHìnhNơiĐăng["SaaS"];
   if (!cấuHìnhSaaS) return;
   for (const [tênSaaS, vậtThểLàmGiáTrịChoTênSaaS] of Object.entries(cấuHìnhSaaS) as [TênNềnTảngSaaS, VậtThểLàmGiáTrịChoTênSaaS | null][]) {
@@ -77,7 +76,7 @@ function tạoDanhSáchSaaS(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSác
   }
 }
 
-function tạoDanhSáchKhác(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăng[]) {
+function tạoDanhSáchKhác(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
   for (const loạiNơiĐăngKhác of danhSáchNơiĐăngKhác) {
     const cấuHìnhLoạiNơiĐăngKhác = cấuHìnhNơiĐăng[loạiNơiĐăngKhác];
     if (!cấuHìnhLoạiNơiĐăngKhác) continue;
@@ -96,12 +95,9 @@ function tạoDanhSáchKhác(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSá
 
 /**
  * Tạo danh sách nơi đăng từ một file cấu hình. Kết quả
- * @param vậtThểCấuHình VậtThểCấuHìnhNơiĐăng
- * @param cấuHìnhChung CấuHìnhChung
- * @returns Promise<NơiĐăngChưaXácĐịnhVịTrí[]> Là một
  */
 export default async function tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí(
-  vậtThểCấuHình: VậtThểCấuHìnhNơiĐăng,
+  vậtThểCấuHình: ThôngTinCấuHìnhNơiĐăng,
   cấuHìnhChung: CấuHìnhChung,
 ): Promise<NơiĐăngCóCácLựaChọnVịTrí[]> {
   const { cấuHình, loạiCấuHình, tênCấuHình } = vậtThểCấuHình;
@@ -115,9 +111,8 @@ export default async function tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí
   const {
     "Vị trí đặt liên kết ở nơi đăng": danhSáchVậtThểVịTrí,
     "Vị trí thành phần": cấuHìnhVịTríNhỏHơn,
-    "Viết tắt": viếtTắt,
   } = cấuHìnhChung;
-  const từĐiểnMãNơiĐăng = tạoTừĐiểnMãNơiĐăng(cấuHình["Mã nơi đăng"]);
+  const từĐiểnMãNơiĐăng = tạoTừĐiểnMãNơiĐăng(vậtThểCấuHình.cấuHình["Mã nơi đăng"]);
 
   for (const thôngTinNơiĐăng of danhSáchNơiĐăng) {
     for (const vậtThểVịTrí of danhSáchVậtThểVịTrí) {
@@ -135,8 +130,9 @@ export default async function tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí
         thôngTinNơiĐăng["Đơn vị quản lý"] = tênCấuHình;
         break;
     }
-    thôngTinNơiĐăng.id = await xácĐịnhId("nơi đăng", thôngTinNơiĐăng);
-    thôngTinNơiĐăng["Mã nơi đăng"] = tạoMãNơiĐăng(thôngTinNơiĐăng as ThôngTinNơiĐăng & { id: string }, từĐiểnMãNơiĐăng, viếtTắt);
+    thôngTinNơiĐăng.id = await kiểmTraIdĐangCó("nơi đăng", thôngTinNơiĐăng);
+
+    thôngTinNơiĐăng["Mã nơi đăng"] = tạoMãNơiĐăng(thôngTinNơiĐăng, từĐiểnMãNơiĐăng);
   }
   return danhSáchNơiĐăng;
 }

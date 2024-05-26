@@ -1,9 +1,10 @@
 import FlexSearch, { Document } from "npm:flexsearch";
 import { BàiĐăng } from "../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { CấuHìnhViếtTắt, NơiĐăngCóCácLựaChọnVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
-import SectionBênPhải from "./Section bên phải.tsx";
+import { NơiĐăngCóCácLựaChọnVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
 import SectionBênTrái from "./Section bên trái.tsx";
+import SectionBênPhải from "./Section bên phải.tsx";
 import { cấuHìnhViếtTắtSignal, flexSearchBàiĐăngSignal, flexSearchNơiĐăngSignal } from "./Signals tổng.ts";
+import { CấuHìnhViếtTắt } from "../core/Code hỗ trợ/Hàm và kiểu cho cấu hình.ts";
 
 interface MainProps {
   danhSáchNơiĐăng: NơiĐăngCóCácLựaChọnVịTrí[];
@@ -24,7 +25,6 @@ function Production({ textTrangChủ }: { textTrangChủ: string }) {
     </main>
   );
 }
-
 export default function Main({ danhSáchNơiĐăng, danhSáchBàiĐăng, cấuHìnhViếtTắt, textTrangChủ }: MainProps) {
   cấuHìnhViếtTắtSignal.value = cấuHìnhViếtTắt;
 
@@ -43,6 +43,7 @@ export default function Main({ danhSáchNơiĐăng, danhSáchBàiĐăng, cấuH�
       ],
       store: true,
     },
+    tokenize: "forward",
   });
   for (const bàiĐăng of danhSáchBàiĐăng) flexSearchBàiĐăng.add(bàiĐăng);
   //@ts-ignore: để coi store nghĩa là gì sau
@@ -64,6 +65,7 @@ export default function Main({ danhSáchNơiĐăng, danhSáchBàiĐăng, cấuH�
       ],
       store: true,
     },
+    tokenize: "forward",
   });
   for (const nơiĐăng of danhSáchNơiĐăng) flexSearchNơiĐăng.add(nơiĐăng);
   //@ts-ignore: để coi store nghĩa là gì sau
@@ -71,5 +73,5 @@ export default function Main({ danhSáchNơiĐăng, danhSáchBàiĐăng, cấuH�
 
   /** Tách ra thành test với production để khi không quan tâm tới section bên phải thì section bên trái không giảm một nửa bề rộng do tailwind*/
   return <Production textTrangChủ={textTrangChủ} />;
-  return <Test />;
+  // return <Test />;
 }

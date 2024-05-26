@@ -1,13 +1,15 @@
-import { CấuHìnhMãNơiĐăng, MãNơiĐăng, TênNơiĐăng } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
-import { lấyKýHiệuViếtTắt, táchUrlTrongChuỗi, tạoChuỗiNgẫuNhiên } from "../../Code hỗ trợ/Code hỗ trợ.ts";
-import { CấuHìnhViếtTắt } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
-import { ThôngTinNơiĐăng } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { ThôngTinNơiĐăngChưaCóId, TênNơiĐăng } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { táchUrlTrongChuỗi } from "../../Code hỗ trợ/Code hỗ trợ.ts";
+import { CấuHìnhMãNơiĐăng } from "../../Code hỗ trợ/Hàm và kiểu cho cấu hình.ts";
+import { kiểuKebab } from "../../../utils/Hàm cho khung nhập.ts";
+import { assert } from "$std/assert/assert.ts";
+
+export type TừĐiểnMãNơiĐăng = Map<string, string>;
 
 /** Từ điển (hay ánh xạ) giữa tên nơi đăng thành phần và mã nơi đăng */
-export function tạoTừĐiểnMãNơiĐăng(
-  cấuHìnhMãNơiĐăng: CấuHìnhMãNơiĐăng | undefined | null,
-): Map<string, string> {
-  const từĐiển: Map<string, string> = new Map();
+export function tạoTừĐiểnMãNơiĐăng(cấuHìnhMãNơiĐăng: CấuHìnhMãNơiĐăng | undefined): TừĐiểnMãNơiĐăng {
+  const từĐiển: TừĐiểnMãNơiĐăng = new Map();
+
   if (!cấuHìnhMãNơiĐăng) return từĐiển;
   for (const [mã, nơiĐăngThànhPhần] of Object.entries(cấuHìnhMãNơiĐăng)) {
     if (typeof nơiĐăngThànhPhần === "string") {
@@ -23,27 +25,19 @@ export function tạoTừĐiểnMãNơiĐăng(
   return từĐiển;
 }
 
-function tìmMãNơiĐăngĐượcKhaiBáo(
-  tênNơiĐăng: TênNơiĐăng,
-  từĐiểnMãNơiĐăng: Map<string, string>,
-): string | undefined {
-  for (const tênNơiĐăngThànhPhần of tênNơiĐăng) {
-    const mãNơiĐăngĐượcKhaiBáo = từĐiểnMãNơiĐăng.get(tênNơiĐăngThànhPhần.toLowerCase());
-    if (mãNơiĐăngĐượcKhaiBáo) return mãNơiĐăngĐượcKhaiBáo;
-  }
-}
-
-export function tạoMãNơiĐăng(
-  nơiĐăng: ThôngTinNơiĐăng & { id: string },
-  từĐiểnMãNơiĐăng: Map<string, string>,
-  cấuHìnhViếtTắt: CấuHìnhViếtTắt,
-): `${string}:${MãNơiĐăng}` {
+export function tạoMãNơiĐăng(nơiĐăng: ThôngTinNơiĐăngChưaCóId, từĐiểnMãNơiĐăng: TừĐiểnMãNơiĐăng | undefined): string | undefined {
   const {
+    "Loại nền tảng": loạiNềnTảng,
     "Tên nền tảng": tênNềnTảng,
     "Tên nơi đăng": tênNơiĐăng,
+    "Loại nơi đăng": loạiNơiĐăng,
   } = nơiĐăng;
-  const kýHiệuNềnTảng = lấyKýHiệuViếtTắt(tênNềnTảng, cấuHìnhViếtTắt) || tênNềnTảng;
-  const phầnNơiĐăng: MãNơiĐăng = tìmMãNơiĐăngĐượcKhaiBáo(tênNơiĐăng, từĐiểnMãNơiĐăng) || nơiĐăng.id;
-
-  return `${kýHiệuNềnTảng}:${phầnNơiĐăng}`;
+  if (từĐiểnMãNơiĐăng) {
+    console.log("🚀 ~ tạoMãNơiĐăng ~ từĐiểnMãNơiĐăng:", từĐiểnMãNơiĐăng);
+    for (const tênNơiĐăngThànhPhần of tênNơiĐăng.toReversed()) {
+      const mãNơiĐăngĐượcKhaiBáo = từĐiểnMãNơiĐăng.get(tênNơiĐăngThànhPhần.toLowerCase());
+      if (mãNơiĐăngĐượcKhaiBáo) return mãNơiĐăngĐượcKhaiBáo;
+    }
+  }
+  return kiểuKebab(tênNơiĐăng[0]);
 }

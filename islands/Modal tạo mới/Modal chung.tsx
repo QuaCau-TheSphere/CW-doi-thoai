@@ -3,12 +3,11 @@ import { MụcĐượcChọn, TênDanhSách } from "../../utils/Kiểu cho web.t
 import { đổiKhungNhập } from "../../utils/Hàm cho khung nhập.ts";
 import ModalBàiĐăng from "./Modal bài đăng.tsx";
 import ModalNơiĐăng from "./Modal nơi đăng.tsx";
-import { BàiĐăng, URLString } from "../../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { LoạiNềnTảng, TênNềnTảng } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
-import { NơiĐăngCóCácLựaChọnVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { BàiĐăng, BàiĐăngChưaCóId, URLString } from "../../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { LoạiNềnTảng, ThôngTinNơiĐăngChưaCóId, TênNềnTảng } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
+import { NơiĐăngCóCácLựaChọnVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
 import { element } from "../Signals tổng.ts";
 import { ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv } from "../../utils/Hàm và kiểu cho API server.ts";
-import { xácĐịnhId } from "../../core/Code hỗ trợ/Code hỗ trợ.ts";
 
 function CácTrườngNhậpMới({ tênDanhSách }: { tênDanhSách: TênDanhSách }) {
   switch (tênDanhSách) {
@@ -22,8 +21,8 @@ function CácTrườngNhậpMới({ tênDanhSách }: { tênDanhSách: TênDanhS�
 }
 
 /** Chuyển cấu trúc từ formData trên web sang BàiĐăng hoặc NơiĐăngChưaXácĐịnhVịTrí */
-async function tạoVậtThểDữLiệuMới(formData: Record<string, FormDataEntryValue>, tênDanhSách: TênDanhSách) {
-  let dữLiệu: BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí;
+function tạoVậtThểDữLiệuMới(formData: Record<string, FormDataEntryValue>, tênDanhSách: TênDanhSách) {
+  let dữLiệu: BàiĐăngChưaCóId | ThôngTinNơiĐăngChưaCóId;
   switch (tênDanhSách) {
     case "bài đăng": {
       const {
@@ -47,8 +46,7 @@ async function tạoVậtThểDữLiệuMới(formData: Record<string, FormDataE
           "Định dạng nội dung": undefined,
         },
         Vault: vault,
-      } satisfies BàiĐăng;
-      dữLiệu.id = await xácĐịnhId("bài đăng", dữLiệu);
+      } satisfies BàiĐăngChưaCóId;
       break;
     }
     case "nơi đăng": {
@@ -69,8 +67,7 @@ async function tạoVậtThểDữLiệuMới(formData: Record<string, FormDataE
         "Mô tả nơi đăng": môTảNơiĐăng,
         "Loại nền tảng": loạiNềnTảng as LoạiNềnTảng,
         "Vị trí có thể đăng": JSON.parse(vịTríCóThểĐăng),
-      } satisfies NơiĐăngCóCácLựaChọnVịTrí;
-      dữLiệu.id = await xácĐịnhId("nơi đăng", dữLiệu);
+      };
       break;
     }
   }

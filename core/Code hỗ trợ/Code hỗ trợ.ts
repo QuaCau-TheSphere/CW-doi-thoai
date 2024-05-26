@@ -1,9 +1,10 @@
-import { BàiĐăng } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { CấuHìnhViếtTắt, NơiĐăngCóCácLựaChọnVịTrí } from "./Hàm và kiểu cho vị trí.tsx";
+import { BàiĐăng, BàiĐăngChưaCóId } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { TênDanhSách } from "../../utils/Kiểu cho web.ts";
 import * as linkify from "npm:linkifyjs";
 import { kvGetCount, TableName, tạoKeyKV } from "./Hàm cho KV.ts";
 import { viếtHoa } from "../../utils/Hàm cho khung nhập.ts";
+import { ThôngTinNơiĐăng, ThôngTinNơiĐăngChưaCóId } from "./Kiểu cho nơi đăng.ts";
+import { CấuHìnhViếtTắt } from "./Hàm và kiểu cho cấu hình.ts";
 
 export function táchUrlTrongChuỗi(chuỗiCóThểCóUrl: string): [string, string | undefined] {
   if (!chuỗiCóThểCóUrl) return ["", ""];
@@ -31,7 +32,7 @@ export function lấyKýHiệuViếtTắt(từĐượcKiểmTra: string | undefi
 }
 
 const digit = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_";
-function đổiTừCơSố10SangCơSố64(x: number) {
+export function đổiTừCơSố10SangCơSố64(x: number) {
   return x.toString(2).split(/(?=(?:.{6})+(?!.))/g).map((v) => digit[parseInt(v, 2)]).join("");
 }
 
@@ -47,21 +48,26 @@ function đổiTừCơSố64SangCơSố10(x: string) {
   return x.split("").reduce((s, v) => s * 64 + digit.indexOf(v), 0);
 }
 
-export async function xácĐịnhId(
+/**
+ * Việc tạo Id chỉ vào lúc trước khi dữ liệu được đẩy lên KV từ local, hoặc khi người dùng tạo mới trên client. Không tạo id khi mới lấy URL, để tránh tình trạng tạo og xong thì người dùng không làm nữa
+ */
+export async function kiểmTraIdĐangCó(
   tênDanhSách: TênDanhSách,
-  dữLiệu: BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí,
-): Promise<string> {
-  if (dữLiệu.id) return dữLiệu.id;
+  dữLiệu: BàiĐăngChưaCóId | BàiĐăng | ThôngTinNơiĐăngChưaCóId | ThôngTinNơiĐăng,
+): Promise<string | undefined> {
+  /** Nếu dữ liệu đã có sẵn id thì lấy id đó */
+  if ("id" in dữLiệu) return (dữLiệu as BàiĐăng | ThôngTinNơiĐăng).id;
+
+  /** Nếu dữ liệu không có sẵn id thì kiểm tra id trên KV */
   const kv = await Deno.openKv();
   const key = tạoKeyKV(tênDanhSách, dữLiệu);
-  const value = (await kv.get(key)).value as BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí | undefined | null;
+  const value = (await kv.get(key)).value as BàiĐăng | ThôngTinNơiĐăng | undefined | null;
   if (value && value.id) return value.id;
-  return dùngTổng();
 
-  async function dùngTổng() {
-    const tổngSốEntryHiệnTại = await kvGetCount(viếtHoa(tênDanhSách) as TableName, kv);
-    return đổiTừCơSố10SangCơSố64(tổngSốEntryHiệnTại + 1);
-  }
+  /** Nếu trên KV không có dữ liệu thì dùng tổng số entry hiện tại rồi cộng thêm 1 */
+  const tổngSốEntryHiệnTại = await kvGetCount(viếtHoa(tênDanhSách) as TableName, kv);
+  console.log("🚀 ~ tổngSốEntryHiệnTại:", tổngSốEntryHiệnTại);
+  if (tổngSốEntryHiệnTại) return đổiTừCơSố10SangCơSố64(tổngSốEntryHiệnTại + 1);
 }
 
 export type OneKey<K extends string, V = any> = {

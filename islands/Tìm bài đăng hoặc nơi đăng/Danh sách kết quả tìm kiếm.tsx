@@ -1,7 +1,7 @@
 import type { MụcĐượcChọn, TênDanhSách } from "../../utils/Kiểu cho web.ts";
 import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/plus.tsx";
 import { kiểuKebab, tạoLoạiNơiĐăngString, tạoTênNơiĐăngString, đổiKhungNhập } from "../../utils/Hàm cho khung nhập.ts";
-import { NơiĐăngCóCácLựaChọnVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { NơiĐăngCóCácLựaChọnVịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
 import { BàiĐăng } from "../../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { element } from "../Signals tổng.ts";
 import { cursor, danhSáchGợiÝSignal } from "./Signal tìm bài đăng hoặc nơi đăng.ts";

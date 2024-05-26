@@ -172,15 +172,15 @@ Mã nơi đăng:
   trấnkỳ: [https://tranky.deno.dev, tran-ky]
   qcg: quacau.thesphere@gmail.com
   321: 0979437321
-  "#a-vùng-đất-quả-cầu": qc#a
-  "#b-nền-kinh-tế-không-dùng-tiền": qc#b1
-  "#b-nhu-cầu-thường-gặp": qc#b2
-  "#b-sự-kiện-cơ-hội-tuyển-dụng-rao-vặt": qc#b3
-  "#c-hệ-thống-tri-thức-cộng-đồng": qc#c1
-  "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ": qc#c2
-  "#d-phát-triển-bản-thân-học-kỹ-năng": qc#d
-  "#e-mạng-lưới-người-thân-bạn-bè-của-người-có-niềm-tin-tiêu-cực": qc#e
-  "#f-cùng-suy-tư": qc#f1
-  "#f-tạo-môi-trường-thúc-đẩy-sự-đối-thoại-và-khoẻ-mạnh": qc#f2
-  "#g-nghiên-cứu-liên-ngành": qc#g
+  "qc#a": "#a-vùng-đất-quả-cầu"
+  "qc#b1": "#b-nền-kinh-tế-không-dùng-tiền"
+  "qc#b2": "#b-nhu-cầu-thường-gặp"
+  "qc#b3": "#b-sự-kiện-cơ-hội-tuyển-dụng-rao-vặt"
+  "qc#c1": "#c-hệ-thống-tri-thức-cộng-đồng"
+  "qc#c2": "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ"
+  "qc#d": "#d-phát-triển-bản-thân-học-kỹ-năng"
+  "qc#e": "#e-mạng-lưới-người-thân-bạn-bè-của-người-có-niềm-tin-tiêu-cực"
+  "qc#f1": "#f-cùng-suy-tư"
+  "qc#f2": "#f-tạo-môi-trường-thúc-đẩy-sự-đối-thoại-và-khoẻ-mạnh"
+  "qc#g": "#g-nghiên-cứu-liên-ngành"
   cvLộc: CV Nguyễn Hữu Lộc

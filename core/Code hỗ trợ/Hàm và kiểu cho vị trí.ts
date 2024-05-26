@@ -1,14 +1,8 @@
-import { LoạiNơiĐăng, LoạiNềnTảng, ThôngTinNơiĐăng, TênNềnTảng } from "./Kiểu cho nơi đăng.ts";
+import { CấuHìnhChung, lấyCấuHìnhChung } from "./Hàm và kiểu cho cấu hình.ts";
+import { LoạiNơiĐăng, LoạiNềnTảng, ThôngTinNơiĐăng, ThôngTinNơiĐăngChưaCóId, TênNềnTảng } from "./Kiểu cho nơi đăng.ts";
 
-type VịTríThànhPhần = string;
-export type CấuHìnhViếtTắt = Record<string, string>[] | undefined | null;
-/** CẤU HÌNH Chung */
-/** Tránh dùng khái niệm "vị trí có thể đăng" trong cấu hình chung, vì nó đã được dùng trong NơiĐăngChưaXácĐịnhVịTrí */
-export interface CấuHìnhChung {
-  "Vị trí đặt liên kết ở nơi đăng": VậtThểCấuHìnhVịTrí[];
-  "Vị trí thành phần": Record<string, VịTríThànhPhần[]>;
-  "Viết tắt"?: CấuHìnhViếtTắt;
-}
+export type VịTríThànhPhần = string;
+
 /** DanhSáchVịTríThànhPhần là danh sách các vị trí có thể đăng của một **loại nơi đăng**. Nó nằm trong cấu hình chung, không nằm trong một cấu hình nơi đăng cụ thể nào.
  * @example
  * Ví dụ danh sách vị trí thành phần của nhóm Facebook
@@ -31,7 +25,7 @@ export type VậtThểCấuHìnhVịTrí = {
 /**
  * Thuộc tính "Loại nơi đăng" đều có trong ThôngTinNơiĐăng và VậtThểCấuHìnhVịTrí. Hàm này kiểm tra xem nó có trùng nhau không. Nếu có nghĩa là loại nơi đăng này có được khai báo trong VậtThểCấuHìnhVịTrí
  */
-export function cóThôngTinNơiĐăngTrongVậtThểVịTrí(thôngTinNơiĐăng: ThôngTinNơiĐăng, vậtThểCấuHìnhVịTrí: VậtThểCấuHìnhVịTrí): boolean {
+export function cóThôngTinNơiĐăngTrongVậtThểVịTrí(thôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId, vậtThểCấuHìnhVịTrí: VậtThểCấuHìnhVịTrí): boolean {
   const {
     "Loại nền tảng": loạiNềnTảngND,
     "Tên nền tảng": tênNềnTảngND,
@@ -107,47 +101,27 @@ export type DanhSáchVịTríCóThểĐăng = VịTrí[];
 /** Tên cũ: NơiĐăngChưaXácĐịnhVịTrí */
 export interface NơiĐăngCóCácLựaChọnVịTrí extends ThôngTinNơiĐăng {
   "Vị trí có thể đăng": DanhSáchVịTríCóThểĐăng;
-  id?: string; //refactor: khi nào rảnh thì refactor để bỏ này luôn
+}
+export interface NơiĐăngCóCácLựaChọnVịTríChưaCóId extends ThôngTinNơiĐăngChưaCóId {
+  "Vị trí có thể đăng": DanhSáchVịTríCóThểĐăng;
 }
 /** Tên cũ: NơiĐăngĐãXácĐịnhVịTrí */
 export interface NơiĐăngCóMộtVịTríCụThể extends ThôngTinNơiĐăng {
   "Vị trí": VịTrí;
-  id?: string; //refactor: khi nào rảnh thì refactor để bỏ này luôn
 }
 
-export function tạoNơiĐăngCóCácLựaChọnVịTrí(
-  thôngTinNơiĐăng: ThôngTinNơiĐăng,
-  cấuHìnhVịTrí: CấuHìnhChung,
-): NơiĐăngCóCácLựaChọnVịTrí {
+export function tạoNơiĐăngCóCácLựaChọnVịTrí(thôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId): NơiĐăngCóCácLựaChọnVịTríChưaCóId {
   let danhSáchVịTríCóThểĐăng: DanhSáchVịTríCóThểĐăng = [];
   const {
-    "Vị trí đặt liên kết ở nơi đăng": danhSáchVTCHVT,
-    "Vị trí thành phần": cấuHìnhVịTríNhỏHơn,
-  } = cấuHìnhVịTrí;
-  for (const VTCHVT of danhSáchVTCHVT) {
+    "Vị trí đặt liên kết ở nơi đăng": danhSáchVậtThểCấuHìnhVịTrí,
+    "Vị trí thành phần": cấuHìnhVịTríThànhPhần,
+  } = lấyCấuHìnhChung();
+  for (const VTCHVT of danhSáchVậtThểCấuHìnhVịTrí) {
     const danhSáchVịTríThànhPhần = VTCHVT["Danh sách vị trí"];
     if (cóThôngTinNơiĐăngTrongVậtThểVịTrí(thôngTinNơiĐăng, VTCHVT)) {
-      danhSáchVịTríCóThểĐăng = tạoDanhSáchVịTríCóThểĐăng(danhSáchVịTríThànhPhần, cấuHìnhVịTríNhỏHơn);
+      danhSáchVịTríCóThểĐăng = tạoDanhSáchVịTríCóThểĐăng(danhSáchVịTríThànhPhần, cấuHìnhVịTríThànhPhần);
     }
   }
 
   return { ...thôngTinNơiĐăng, "Vị trí có thể đăng": danhSáchVịTríCóThểĐăng };
-}
-
-/** Từ NơiĐăngCóCácLựaChọnVịTrí và vịTríĐượcChọn, tạo NơiĐăngCóMộtVịTríCụThể*/
-export function tạoNơiĐăngCóMộtVịTríCụThể(vịTríĐượcChọn: VịTrí | string, nơiĐăng: NơiĐăngCóCácLựaChọnVịTrí): NơiĐăngCóMộtVịTríCụThể {
-  let vịTrí = vịTríĐượcChọn;
-  if (typeof vịTríĐượcChọn === "string") {
-    try {
-      /** Trường hợp lấy từ API hay gì đó */
-      vịTrí = JSON.parse(vịTríĐượcChọn) as VịTrí;
-    } catch {
-      vịTrí = [JSON.parse(JSON.stringify(vịTríĐượcChọn))] as VịTrí;
-    }
-  } else {
-    vịTrí = vịTríĐượcChọn;
-  }
-  const { "Vị trí có thể đăng": bỏ, ...thôngTinNơiĐăng } = nơiĐăng;
-
-  return { ...thôngTinNơiĐăng, "Vị trí": vịTrí };
 }

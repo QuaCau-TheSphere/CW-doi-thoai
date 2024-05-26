@@ -6,6 +6,7 @@ import { basename, extname, join, SEPARATOR_PATTERN } from "$std/path/mod.ts";
 import { buildUrl } from "https://deno.land/x/url_builder/mod.ts";
 import {
   BàiĐăng,
+  BàiĐăngChưaCóId,
   TênDựÁn,
   URLString,
   Vault,
@@ -13,7 +14,7 @@ import {
   type ĐườngDẫnTuyệtĐối,
   ĐườngDẫnTươngĐối,
 } from "../../Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { THƯ_MỤC_DỰ_ÁN, THƯ_MỤC_THIẾT_LẬP, TẬP_TIN_THIẾT_LẬP } from "../../../env.ts";
+import { THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT, THƯ_MỤC_DỰ_ÁN, THƯ_MỤC_THIẾT_LẬP, TẬP_TIN_THIẾT_LẬP } from "../../../env.ts";
 
 async function cóThưMụcObsidianBênTrong(thưMục: string) {
   try {
@@ -25,9 +26,9 @@ async function cóThưMụcObsidianBênTrong(thưMục: string) {
   }
 }
 
-export async function tạoDanhSáchThôngTinTấtCảCácVault(thưMụcChứaTấtCảCácVault: ĐườngDẫnTuyệtĐối): Promise<Vault[]> {
+export async function tạoDanhSáchThôngTinTấtCảCácVault(): Promise<Vault[]> {
   const danhSáchThôngTinTấtCảCácVault: Vault[] = [];
-  await tìmThưMụcObsidian(thưMụcChứaTấtCảCácVault);
+  await tìmThưMụcObsidian(THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT);
   return danhSáchThôngTinTấtCảCácVault;
 
   async function tìmThưMụcObsidian(thưMục: ĐườngDẫnTuyệtĐối) {
@@ -135,9 +136,9 @@ function xácĐịnhTênDựÁn(đườngDẫnTớiGhiChú: ĐườngDẫnTuyệ
   return undefined;
 }
 
-export default async function tạoDanhSáchBàiĐăngTrênVault(thưMụcChứaTấtCảCácVault: ĐườngDẫnTuyệtĐối): Promise<Omit<BàiĐăng, "id">[]> {
+export default async function tạoDanhSáchBàiĐăngTrênVault(): Promise<BàiĐăngChưaCóId[]> {
   const danhSáchBàiĐăng: Omit<BàiĐăng, "id">[] = [];
-  const danhSáchTấtCảCácVault = await tạoDanhSáchThôngTinTấtCảCácVault(thưMụcChứaTấtCảCácVault);
+  const danhSáchTấtCảCácVault = await tạoDanhSáchThôngTinTấtCảCácVault();
   for (const vault of danhSáchTấtCảCácVault) {
     /** Bài đăng là những ghi chú được chia sẻ (có `share: true` trên frontmatter) */
     const danhSáchĐườngDẫnTấtCảCácBàiĐăngTrongVault: ĐườngDẫnTuyệtĐối[] = await tạoDanhSáchĐườngDẫnTấtCảCácBàiĐăngTrongVault(vault["Nơi lưu vault"]);

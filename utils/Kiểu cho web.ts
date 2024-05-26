@@ -2,9 +2,8 @@
 import { Document, EnrichedDocumentSearchResultSetUnitResultUnit} from "npm:flexsearch";
 import { StateUpdater } from "preact/hooks";
 import { BàiĐăng, URLString } from "../core/Code hỗ trợ/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { NơiĐăngCóMộtVịTríCụThể } from "../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import ThamSốUTM, { ĐuôiRútGọn } from "../core/Code hỗ trợ/Kiểu cho tham số UTM.ts";
-import { NơiĐăngCóCácLựaChọnVịTrí } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { NơiĐăngCóCácLựaChọnVịTrí, NơiĐăngCóMộtVịTríCụThể } from "../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
 import punycode from "npm:punycode";
 
 /** KHUNG NHẬP */
@@ -62,3 +61,4 @@ export function xửLýPunycode(url: URLString | undefined, đểDấuCáchTrong
   if (đểDấuCáchTrongLiênKết) return liênKết
   return liênKết.replaceAll(" ", "%20");
 }
+

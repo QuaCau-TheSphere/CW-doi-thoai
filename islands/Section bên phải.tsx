@@ -1,4 +1,3 @@
-import { VậtThểTiếpThị, xửLýPunycode } from "../utils/Kiểu cho web.ts";
 import { cóRútGọn, vậtThểTiếpThịĐượcTạo } from "./Signals tổng.ts";
 import { ThamSốUTM } from "../core/Code hỗ trợ/Kiểu cho tham số UTM.ts";
 import { VậtThểKhác } from "../components/Thông tin vật thể tiếp thị.tsx";

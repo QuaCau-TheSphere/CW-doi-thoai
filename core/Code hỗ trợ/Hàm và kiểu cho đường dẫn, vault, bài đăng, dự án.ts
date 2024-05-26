@@ -52,6 +52,7 @@ export interface NộiDungBàiĐăng {
   "Toàn bộ nội dung"?: string;
   "Định dạng nội dung"?: "md" | "html";
 }
+export type BàiĐăngChưaCóId = Omit<BàiĐăng, "id">;
 export interface BàiĐăng {
   "Tiêu đề": string;
   "URL": URLString;
@@ -62,7 +63,7 @@ export interface BàiĐăng {
   "Tác giả"?: string;
   "Ngày tạo"?: Date;
   "Ngày cập nhật"?: Date;
-  id?: string;
+  id: string;
 }
 
 /**

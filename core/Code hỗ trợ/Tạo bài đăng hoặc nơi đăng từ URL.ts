@@ -1,13 +1,10 @@
 import { getMetaTags } from "https://deno.land/x/opengraph@v1.0.0/mod.ts";
-import { BàiĐăng, URLString } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { danhSáchDiễnĐàn, danhSáchNềnTảngChat, LoạiNơiĐăng, LoạiNềnTảng, ThôngTinNơiĐăng, TênNềnTảng } from "./Kiểu cho nơi đăng.ts";
+import { BàiĐăngChưaCóId, URLString } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { danhSáchDiễnĐàn, danhSáchNềnTảngChat, LoạiNơiĐăng, LoạiNềnTảng, ThôngTinNơiĐăngChưaCóId, TênNềnTảng } from "./Kiểu cho nơi đăng.ts";
 import { viếtThường } from "../../utils/Hàm cho khung nhập.ts";
 import { assert } from "$std/assert/assert.ts";
-import { FreshContext } from "https://deno.land/x/fresh@1.6.8/src/server/mod.ts";
-import { CấuHìnhChung, NơiĐăngCóCácLựaChọnVịTrí, tạoNơiĐăngCóCácLựaChọnVịTrí } from "./Hàm và kiểu cho vị trí.tsx";
-import { parse } from "$std/yaml/mod.ts";
-import { tạoChuỗiNgẫuNhiên } from "./Code hỗ trợ.ts";
-import { ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG } from "../../env.ts";
+import { NơiĐăngCóCácLựaChọnVịTríChưaCóId, tạoNơiĐăngCóCácLựaChọnVịTrí } from "./Hàm và kiểu cho vị trí.ts";
+import { tạoMãNơiĐăng, TừĐiểnMãNơiĐăng } from "../B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình/Tạo mã nơi đăng.ts";
 
 interface MetaTags {
   title: string;
@@ -18,15 +15,6 @@ interface MetaTags {
   image: string;
   alt: string;
   locale: string;
-}
-
-export function lấyURL(ctx: FreshContext<Record<string, unknown>>) {
-  const fullUrl = ctx.url.href;
-  const temp = fullUrl.split("/api/cors-proxy/");
-  temp.shift();
-  const url = temp.join();
-  console.log("URL được gửi lên cors proxy:", url);
-  return new URL(url);
 }
 
 function cóTênNềnTảngTrongHostname(hostname: string, nềnTảng: TênNềnTảng) {
@@ -42,13 +30,20 @@ function lấyTitle(title: string): string {
   return titleSplit.join(" | ") || title;
 }
 
-async function tạoNơiĐăng(
-  title: string,
-  url: URL,
-  description: string,
-  hostname: string,
-  pathname: string,
-): Promise<NơiĐăngCóCácLựaChọnVịTrí> {
+/**
+ * @param [từĐiểnMãNơiĐăng=undefined] nếu là undefined nghĩa là URL là do người dùng nhập chứ không phải được khai báo sẵn, nên từ đầu đã không có từ điển mã nơi đăng
+ */
+export async function tạoNơiĐăngTừURL(
+  urlString: URL,
+  từĐiểnMãNơiĐăng: TừĐiểnMãNơiĐăng | undefined = undefined,
+): Promise<NơiĐăngCóCácLựaChọnVịTríChưaCóId> {
+  const url = new URL(urlString);
+  console.info("Tạo nơi đăng mới từ URL:", url.href);
+  const og = (await getMetaTags(url.href)).og as MetaTags;
+  assert(og, `Không lấy được các thẻ Meta cho ${url.href}`);
+
+  const { hostname, pathname } = url;
+
   let loạiNềnTảng: LoạiNềnTảng | undefined = undefined;
   let tênNềnTảng: TênNềnTảng | undefined = undefined;
   let loạiNơiĐăng: LoạiNơiĐăng | undefined = undefined;
@@ -89,40 +84,32 @@ async function tạoNơiĐăng(
   tênNềnTảng = tênNềnTảng ?? "Website";
   loạiNơiĐăng = loạiNơiĐăng ?? ["Website"];
 
-  const thôngTinNơiĐăng = {
-    "Tên nơi đăng": [title],
+  const thôngTinNơiĐăngChưaCóId: ThôngTinNơiĐăngChưaCóId = {
+    "Tên nơi đăng": [lấyTitle(og.title)],
     URL: url.href,
-    "Mô tả nơi đăng": description,
+    "Mô tả nơi đăng": og.description,
     "Loại nền tảng": loạiNềnTảng,
     "Tên nền tảng": tênNềnTảng,
     "Loại nơi đăng": loạiNơiĐăng,
-    id: tạoChuỗiNgẫuNhiên(4),
-  } satisfies ThôngTinNơiĐăng;
-  const cấuHìnhVịTrí = parse(await Deno.readTextFile(ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG)) as CấuHìnhChung;
-
-  return tạoNơiĐăngCóCácLựaChọnVịTrí(thôngTinNơiĐăng, cấuHìnhVịTrí);
+  };
+  const thôngTinNơiĐăng = {
+    ...thôngTinNơiĐăngChưaCóId,
+    "Mã nơi đăng": tạoMãNơiĐăng(thôngTinNơiĐăngChưaCóId, từĐiểnMãNơiĐăng),
+  };
+  return tạoNơiĐăngCóCácLựaChọnVịTrí(thôngTinNơiĐăng);
 }
 
-/** Không muốn tách ra thành tạo bài đăng từ URL và tạo nơi đăng từ URL, để chỉ cần cào một lần, cào 2 lần sợ bị chặn */
-export async function tạoBàiĐăngHoặcNơiĐăngMớiTừURL(urlString: URLString): Promise<{ bàiĐăng: BàiĐăng; nơiĐăng: NơiĐăngCóCácLựaChọnVịTrí }> {
+export async function tạoBàiĐăngTừURL(urlString: URLString): Promise<BàiĐăngChưaCóId> {
   const url = new URL(urlString);
-  console.info("Tạo bài đăng hoặc nơi đăng mới mới từ URL:", url.href);
+  console.info("Tạo bài đăng mới từ URL:", url.href);
   const og = (await getMetaTags(url.href)).og as MetaTags;
   assert(og, `Không lấy được các thẻ Meta cho ${url.href}`);
 
-  const title = lấyTitle(og.title);
-  const description = og.description;
-  const { hostname, pathname } = new URL(url);
-
-  const bàiĐăng: BàiĐăng = {
-    "Tiêu đề": title,
+  return {
+    "Tiêu đề": lấyTitle(og.title),
     "URL": url.href,
     "Nội dung bài đăng": {
-      "Mô tả bài đăng": description,
+      "Mô tả bài đăng": og.description,
     },
-    id: tạoChuỗiNgẫuNhiên(4),
   };
-
-  const nơiĐăng = await tạoNơiĐăng(title, url, description, hostname, pathname);
-  return { bàiĐăng: bàiĐăng, nơiĐăng: nơiĐăng };
 }

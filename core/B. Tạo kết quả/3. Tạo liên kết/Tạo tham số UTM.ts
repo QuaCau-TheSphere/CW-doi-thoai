@@ -16,7 +16,8 @@ import { lấyKýHiệuViếtTắt } from "../../Code hỗ trợ/Code hỗ trợ
 import { BốiCảnh } from "../../../utils/Kiểu cho web.ts";
 import { LoạiNơiĐăngChat, LoạiNềnTảng } from "../../Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import VậtThểThamSốUTM from "../../Code hỗ trợ/Kiểu cho tham số UTM.ts";
-import { CấuHìnhViếtTắt, NơiĐăngCóMộtVịTríCụThể } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { NơiĐăngCóMộtVịTríCụThể } from "../../Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
+import { CấuHìnhViếtTắt } from "../../Code hỗ trợ/Hàm và kiểu cho cấu hình.ts";
 
 /** Chủ yếu là thể hiện loại nền tảng, tên nền tảng, loại nơi đăng một cách ngắn gọn. Có những nơi đăng nhìn vào là biết loại nền tảng nào, ví dụ r/subreddit, hoặc email@domain.com */
 function tạoSource(nơiĐăng: NơiĐăngCóMộtVịTríCụThể, cấuHìnhViếtTắt: CấuHìnhViếtTắt): Source {

@@ -1,8 +1,25 @@
-import { NơiĐăngCóCácLựaChọnVịTrí, tạoNơiĐăngCóMộtVịTríCụThể } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.tsx";
+import { NơiĐăngCóCácLựaChọnVịTrí, VịTrí } from "../../core/Code hỗ trợ/Hàm và kiểu cho vị trí.ts";
 import { nơiĐăngCóCácLựaChọnVịTrí, nơiĐăngCóMộtVịTríCụThể, vịTríString } from "../Signals tổng.ts";
 import { tạoLoạiNơiĐăngString, tạoTênNơiĐăngString, tạoVịTríString } from "../../utils/Hàm cho khung nhập.ts";
 import { làCùngNơiĐăng, ThôngTinNơiĐăng } from "../../core/Code hỗ trợ/Kiểu cho nơi đăng.ts";
 import { xửLýPunycode } from "../../utils/Kiểu cho web.ts";
+
+/** Từ NơiĐăngCóCácLựaChọnVịTrí và vịTríĐượcChọn, tạo NơiĐăngCóMộtVịTríCụThể*/
+export function tạoNơiĐăngCóMộtVịTríCụThể(vịTríĐượcChọn: VịTrí | string, nơiĐăng: NơiĐăngCóCácLựaChọnVịTrí): NơiĐăngCóMộtVịTríCụThể {
+  let vịTrí = vịTríĐượcChọn;
+  if (typeof vịTríĐượcChọn === "string") {
+    try {
+      /** Trường hợp lấy từ API hay gì đó */
+      vịTrí = JSON.parse(vịTríĐượcChọn) as VịTrí;
+    } catch {
+      vịTrí = [JSON.parse(JSON.stringify(vịTríĐượcChọn))] as VịTrí;
+    }
+  } else {
+    vịTrí = vịTríĐượcChọn;
+  }
+  const { "Vị trí có thể đăng": _bỏ, ...thôngTinNơiĐăng } = nơiĐăng;
+  return { ...thôngTinNơiĐăng, "Vị trí": vịTrí };
+}
 
 /** Tạo danh sách các phần tử <option> để người dùng lựa chọn vị trí đăng từ danh sách vị trí có thể đăng*/
 function tạoDanhSáchLựaChọnVịTrí(nơiĐăng: NơiĐăngCóCácLựaChọnVịTrí) {
