@@ -1,7 +1,6 @@
 import { ThôngTinNơiĐăngChưaCóId } from "../../Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
-import { táchUrlTrongChuỗi } from "../../Code hỗ trợ cho server/Code hỗ trợ.ts";
 import { CấuHìnhMãNơiĐăng } from "../../Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
-import { kiểuKebab } from "../../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { kiểuKebab, táchUrlTrongChuỗi } from "../../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 
 export type TừĐiểnMãNơiĐăng = Map<string, string>;
 

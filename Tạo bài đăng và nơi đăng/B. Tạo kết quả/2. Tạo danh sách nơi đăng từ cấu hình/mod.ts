@@ -16,7 +16,8 @@ import {
   tạoDanhSáchVịTríCóThểĐăng,
 } from "../../Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
-import { kiểmTraIdĐangCó, táchUrlTrongChuỗi, đổiTừCơSố10SangCơSố64 } from "../../Code hỗ trợ cho server/Code hỗ trợ.ts";
+import { táchUrlTrongChuỗi, đổiTừCơSố10SangCơSố64 } from "../../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { kiểmTraIdĐangCó } from "../../Code hỗ trợ cho server/Hàm cho KV.ts";
 import { tạoMãNơiĐăng, tạoTừĐiểnMãNơiĐăng } from "./Tạo mã nơi đăng.ts";
 import CấuHìnhNơiĐăng, {
   lấyCấuHìnhChung,

@@ -48,14 +48,14 @@ function handleKeyDown(e: KeyboardEvent, mụcĐượcChọn: Signal<MụcĐư�
       đổiKhungNhập("xuôi");
     }
   }
-  // if (e.key === "Tab") {
-  //   e.preventDefault();
-  //   đổiKhungNhập("xuôi");
-  // }
-  // if (e.key === "Tab" && e.shiftKey) {
-  //   e.preventDefault();
-  //   đổiKhungNhập("ngược");
-  // }
+  if (e.key === "Tab") {
+    e.preventDefault();
+    đổiKhungNhập("xuôi");
+  }
+  if (e.key === "Tab" && e.shiftKey) {
+    e.preventDefault();
+    đổiKhungNhập("ngược");
+  }
 }
 
 export default function InputTìmBàiĐăngHoặcNơiĐăng(

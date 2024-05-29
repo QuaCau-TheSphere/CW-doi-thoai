@@ -1,7 +1,13 @@
 /** Chỉ có những biến có từ cấu hình trong tên là dành cho cấu hình, còn lại là dành cho kết quả là vật thể nơi đăng */
-import { OneKey } from "./Code hỗ trợ.ts";
 import { DanhSáchVịTríCóThểĐăng } from "./Hàm và kiểu cho vị trí.ts";
 import { URLString } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+export type OneKey<K extends string, V = any> = {
+  [P in K]: (
+    & Record<P, V>
+    & Partial<Record<Exclude<K, P>, never>>
+  ) extends infer O ? { [Q in keyof O]: O[Q] }
+    : never;
+}[K];
 
 export type MãNơiĐăng = string;
 /**

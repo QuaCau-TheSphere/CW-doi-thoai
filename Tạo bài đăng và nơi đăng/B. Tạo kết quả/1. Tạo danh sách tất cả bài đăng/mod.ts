@@ -1,10 +1,11 @@
 import tạoDanhSáchBàiĐăngTrênVault from "./a. Tạo theo vault.ts";
 import tạoDanhSáchBàiĐăngTrênWordPress from "./b. Lấy từ WordPress.ts";
 import { BàiĐăng, BàiĐăngChưaCóId } from "../../Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { kiểmTraIdĐangCó, đổiTừCơSố10SangCơSố64 } from "../../Code hỗ trợ cho server/Code hỗ trợ.ts";
 import * as linkify from "npm:linkifyjs";
 import { ThôngTinCấuHìnhNơiĐăng } from "../../Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
-import { tạoBàiĐăngTừURL } from "../../../Code hỗ trợ cho client/Tạo bài đăng hoặc nơi đăng từ URL.ts";
+import { tạoBàiĐăngTừURL } from "../../Code hỗ trợ cho server/Tạo bài đăng hoặc nơi đăng từ URL.ts";
+import { đổiTừCơSố10SangCơSố64 } from "../../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { kiểmTraIdĐangCó } from "../../Code hỗ trợ cho server/Hàm cho KV.ts";
 
 async function tạoDanhSáchBàiĐăngTừCấuHìnhNơiĐăng(vậtThểCấuHình: ThôngTinCấuHìnhNơiĐăng): Promise<BàiĐăngChưaCóId[]> {
   const danhSáchBàiĐăng: BàiĐăngChưaCóId[] = [];
