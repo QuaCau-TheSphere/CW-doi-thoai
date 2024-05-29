@@ -23,7 +23,10 @@ export function tạoTừĐiểnMãNơiĐăng(cấuHìnhMãNơiĐăng: CấuHìn
   return từĐiển;
 }
 
-export function tạoMãNơiĐăng(nơiĐăng: ThôngTinNơiĐăngChưaCóId, từĐiểnMãNơiĐăng: TừĐiểnMãNơiĐăng | undefined): string | undefined {
+/**
+ * @param [từĐiểnMãNơiĐăng=undefined] nếu là undefined nghĩa là URL là do người dùng nhập chứ không phải được khai báo sẵn, nên từ đầu đã không có từ điển mã nơi đăng. Lúc này trả về tên nơi đăng dạng kebab
+ */
+export function tạoMãNơiĐăng(nơiĐăng: ThôngTinNơiĐăngChưaCóId, từĐiểnMãNơiĐăng: TừĐiểnMãNơiĐăng | undefined = undefined): string | undefined {
   const {
     "Loại nền tảng": loạiNềnTảng,
     "Tên nền tảng": tênNềnTảng,

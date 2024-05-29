@@ -3,13 +3,18 @@ import { MụcĐượcChọn, TênDanhSách, đổiKhungNhập } from "../../Cod
 import ModalBàiĐăng from "./Modal bài đăng.tsx";
 import ModalNơiĐăng from "./Modal nơi đăng.tsx";
 import {
+  BàiĐăng,
   BàiĐăngChưaCóId,
   URLString,
 } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { LoạiNềnTảng, ThôngTinNơiĐăngChưaCóId, TênNềnTảng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
 import { element } from "../Signals tổng.ts";
 import { ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv } from "../../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
-import { NơiĐăngCóCácLựaChọnVịTríChưaCóId } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
+import {
+  NơiĐăngCóCácLựaChọnVịTrí,
+  NơiĐăngCóCácLựaChọnVịTríChưaCóId,
+} from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
+import { xácĐịnhId } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho id.ts";
 
 function CácTrườngNhậpMới({ tênDanhSách }: { tênDanhSách: TênDanhSách }) {
   switch (tênDanhSách) {
@@ -22,9 +27,11 @@ function CácTrườngNhậpMới({ tênDanhSách }: { tênDanhSách: TênDanhS�
   }
 }
 
-/** Chuyển cấu trúc từ formData trên web sang BàiĐăng hoặc NơiĐăngChưaXácĐịnhVịTrí */
-function tạoVậtThểDữLiệuMới(formData: Record<string, FormDataEntryValue>, tênDanhSách: TênDanhSách) {
-  let dữLiệu: BàiĐăngChưaCóId | NơiĐăngCóCácLựaChọnVịTríChưaCóId;
+/**
+ * Chuyển cấu trúc từ formData trên web sang BàiĐăng hoặc NơiĐăngChưaXácĐịnhVịTrí
+ */
+async function tạoVậtThểDữLiệuMới(formData: Record<string, FormDataEntryValue>, tênDanhSách: TênDanhSách) {
+  let dữLiệuChưaCóId: BàiĐăngChưaCóId | NơiĐăngCóCácLựaChọnVịTríChưaCóId;
   switch (tênDanhSách) {
     case "bài đăng": {
       const {
@@ -34,7 +41,7 @@ function tạoVậtThểDữLiệuMới(formData: Record<string, FormDataEntryVa
         "Tên dự án": dựÁn,
         Website: vault,
       } = formData as Record<string, string>;
-      dữLiệu = {
+      dữLiệuChưaCóId = {
         URL: url,
         "Tiêu đề": tiêuĐề,
         "Dự án": {
@@ -61,7 +68,7 @@ function tạoVậtThểDữLiệuMới(formData: Record<string, FormDataEntryVa
         "Loại nền tảng": loạiNềnTảng,
         "Vị trí có thể đăng": vịTríCóThểĐăng,
       } = formData as Record<string, string>;
-      dữLiệu = {
+      dữLiệuChưaCóId = {
         URL: url as URLString,
         "Tên nơi đăng": JSON.parse(tênNơiĐăng),
         "Loại nơi đăng": JSON.parse(loạiNơiĐăng),
@@ -73,9 +80,13 @@ function tạoVậtThểDữLiệuMới(formData: Record<string, FormDataEntryVa
       break;
     }
   }
+  const dữLiệuCóId: BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí = {
+    ...dữLiệuChưaCóId,
+    id: (await xácĐịnhId(tênDanhSách, dữLiệuChưaCóId)).id,
+  };
   return {
     "Tên danh sách": tênDanhSách,
-    "Dữ liệu": dữLiệu,
+    "Dữ liệu": dữLiệuCóId,
   };
 }
 
@@ -83,9 +94,9 @@ async function handleSubmit(event: any, tênDanhSách: TênDanhSách, mụcĐư�
   event.preventDefault();
   // if (event.currentTarget === null) return
   const formData = Object.fromEntries(new FormData(event.currentTarget));
-  const vậtThểDữLiệuMới = tạoVậtThểDữLiệuMới(formData, tênDanhSách);
+  const vậtThểDữLiệuMới = await tạoVậtThểDữLiệuMới(formData, tênDanhSách);
   const data = await ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv(vậtThểDữLiệuMới);
-  console.log(data);
+  console.log("Kết quả dữ liệu sau khi được ghi lên KV:", data);
   mụcĐượcChọn.value = data.value;
   (document.getElementById("model-tạo-mới") as HTMLDialogElement).close();
   đổiKhungNhập("xuôi");

@@ -17,7 +17,7 @@ import {
 } from "../../Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { táchUrlTrongChuỗi, đổiTừCơSố10SangCơSố64 } from "../../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
-import { kiểmTraIdĐangCó } from "../../Code hỗ trợ cho server/Hàm cho KV.ts";
+import { xácĐịnhId } from "../../Code hỗ trợ cho server/Hàm cho id.ts";
 import { tạoMãNơiĐăng, tạoTừĐiểnMãNơiĐăng } from "./Tạo mã nơi đăng.ts";
 import CấuHìnhNơiĐăng, {
   lấyCấuHìnhChung,
@@ -152,9 +152,9 @@ export async function tạoDanhSáchNơiĐăngTừTấtCảCấuHình() {
   let sốNơiĐăngChưaCóId = 0;
   for (const nơiĐăngChưaCóId of danhSáchNơiĐăngChưaCóIdTừTấtCảCấuHình) {
     let id: string;
-    const idHiệnTại = await kiểmTraIdĐangCó("nơi đăng", nơiĐăngChưaCóId);
-    if (idHiệnTại) {
-      id = idHiệnTại;
+    const vậtThểId = await xácĐịnhId("nơi đăng", nơiĐăngChưaCóId);
+    if (vậtThểId.mãCáchXácĐịnh !== 3) {
+      id = vậtThểId.id;
     } else {
       sốNơiĐăngChưaCóId += 1;
       id = đổiTừCơSố10SangCơSố64(sốNơiĐăngChưaCóId);
@@ -162,6 +162,7 @@ export async function tạoDanhSáchNơiĐăngTừTấtCảCấuHình() {
     danhSáchNơiĐăngTừTấtCảCấuHình.push({
       ...nơiĐăngChưaCóId,
       id: id,
+      vậtThểId: vậtThểId,
     });
   }
   console.log(sốNơiĐăngChưaCóId);

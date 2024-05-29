@@ -1,5 +1,5 @@
 import { ReqBàiĐăngHoặcNơiĐăngTạoMới } from "../../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
-import { tạoTênNơiĐăngString, viếtHoa, đổiTừCơSố10SangCơSố64 } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { tạoTênNơiĐăngString } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 import { TênDanhSách } from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
 import { tạoDanhSáchBàiĐăng } from "../B. Tạo kết quả/1. Tạo danh sách tất cả bài đăng/mod.ts";
 import { tạoDanhSáchNơiĐăngTừTấtCảCấuHình } from "../B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình/mod.ts";
@@ -8,22 +8,37 @@ import { NơiĐăngCóCácLựaChọnVịTrí } from "./Hàm và kiểu cho vị
 import { BàiĐăng, BàiĐăngChưaCóId } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { ThôngTinNơiĐăng, ThôngTinNơiĐăngChưaCóId } from "./Kiểu cho nơi đăng.ts";
 import { wipeKvStore } from "https://deno.land/x/kv_utils@1.1.1/mod.ts";
-import { increaseReadUnit, increaseWriteUnit, kvSignal } from "./Signal.ts";
+import { kvSignal, readUnitSignal, writeUnitSignal } from "./Signal KV.ts";
+import sizeof from "npm:object-sizeof";
 
 export type TableName = "Nơi đăng" | "Bài đăng" | "Vật thể tiếp thị";
 type SốLượngDữLiệu = Map<TableName, number>;
+
+export function increaseReadUnit(data: any) {
+  const KiB = sizeof(data) / 1024;
+  readUnitSignal.value += Math.ceil(KiB / 4);
+}
+
+export function increaseWriteUnit(data: any) {
+  const KiB = sizeof(data) / 1024;
+  writeUnitSignal.value += Math.ceil(KiB);
+}
 
 export async function kvGet(key: Deno.KvKey) {
   const kv = kvSignal.value;
   const result = await kv.get(key);
   increaseReadUnit(result);
+  console.log("READ");
   return result;
 }
+
 export async function kvSet(key: Deno.KvKey, value: any) {
   const kv = kvSignal.value;
   await kv.set(key, value);
+  console.log("WRITE");
   increaseWriteUnit(value);
 }
+
 export async function kvDelete(key: Deno.KvKey) {
   const kv = kvSignal.value;
   await kv.delete(key);
@@ -42,6 +57,8 @@ export async function kvSetValueAndCount(
   tableName: TableName,
 ) {
   await kvSet(key, value);
+  if (value.vậtThểId?.mãCáchXácĐịnh === 1) return;
+
   const sốLượngDữLiệu = (await kvGet(["Số lượng dữ liệu"])).value as SốLượngDữLiệu | null;
   if (sốLượngDữLiệu) {
     const currentCount = sốLượngDữLiệu.get(tableName) || 0;
@@ -134,25 +151,4 @@ export async function xoáDữLiệuTrênKv() {
     console.log(keysWhichWereNotDeleted);
   }
   console.log("Đã xoá sạch dữ liệu hiện có trên KV");
-}
-
-/**
- * Việc tạo Id chỉ vào lúc trước khi dữ liệu được đẩy lên KV từ local, hoặc khi người dùng tạo mới trên client. Không tạo id khi mới lấy URL, để tránh tình trạng tạo og xong thì người dùng không làm nữa
- */
-export async function kiểmTraIdĐangCó(
-  tênDanhSách: TênDanhSách,
-  dữLiệu: BàiĐăngChưaCóId | BàiĐăng | ThôngTinNơiĐăngChưaCóId | ThôngTinNơiĐăng,
-): Promise<string | undefined> {
-  /** Nếu dữ liệu đã có sẵn id thì lấy id đó */
-  if ("id" in dữLiệu) return (dữLiệu as BàiĐăng | ThôngTinNơiĐăng).id;
-
-  /** Nếu dữ liệu không có sẵn id thì kiểm tra id trên KV */
-  const key = tạoKeyKV(tênDanhSách, dữLiệu);
-  const value = (await kvGet(key)).value as BàiĐăng | ThôngTinNơiĐăng | undefined | null;
-  if (value && value.id) return value.id;
-
-  /** Nếu trên KV không có dữ liệu thì dùng tổng số entry hiện tại rồi cộng thêm 1 */
-  const tổngSốEntryHiệnTại = await kvGetCount(viếtHoa(tênDanhSách) as TableName);
-  console.log("🚀 ~ tổngSốEntryHiệnTại:", tổngSốEntryHiệnTại);
-  if (tổngSốEntryHiệnTại) return đổiTừCơSố10SangCơSố64(tổngSốEntryHiệnTại + 1);
 }

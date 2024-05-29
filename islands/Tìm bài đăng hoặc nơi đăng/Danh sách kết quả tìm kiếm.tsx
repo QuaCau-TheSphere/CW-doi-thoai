@@ -24,8 +24,6 @@ function tạoDòngPhụCủaBàiĐăng(bàiĐăng: BàiĐăng) {
 }
 
 function Item({ item, tênDanhSách }: { item: BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí; tênDanhSách: TênDanhSách }) {
-  console.log(item);
-
   let dòngChính, dòngPhụ;
   switch (tênDanhSách) {
     case "bài đăng": {
@@ -64,8 +62,6 @@ export function DanhSáchKếtQuảTìmKiếm(
       </ul>
     );
   }
-  console.log("🚀 ~ danhSáchKếtQuảTìmKiếm:", danhSáchKếtQuảTìmKiếm);
-  console.log("🚀 ~ danhSáchGợiÝSignal.value:", danhSáchGợiÝSignal.value);
   return (
     <ul
       id={`danh-sách-${kiểuKebab(tênDanhSách)}-tìm-được`}

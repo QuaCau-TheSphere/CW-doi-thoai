@@ -2,6 +2,7 @@
 import { Handlers } from "$fresh/server.ts";
 import { VậtThểTiếpThị } from "../../Code hỗ trợ cho client/Kiểu cho vật thể tiếp thị.ts";
 import { Giờ, Ngày, Năm, Tháng } from "../../Code hỗ trợ cho client/Hàm và kiểu cho biểu đồ.ts";
+import { kvGet, kvSet } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho KV.ts";
 
 function thêmThờiĐiểmTruyCập(vậtThểTiếpThị: VậtThểTiếpThị, headers: Headers){
   const bâyGiờ = new Date()
@@ -21,26 +22,24 @@ function thêmThờiĐiểmTruyCập(vậtThểTiếpThị: VậtThểTiếpTh�
 
 export const handler: Handlers = {
   async GET(req, ctx) {
-    const kv = await Deno.openKv();
     const đuôiRútGọn = ctx.params.slug;
     const key = ["Đuôi rút gọn", đuôiRútGọn]
-    const vậtThểTiếpThị = (await kv.get(key)).value as VậtThểTiếpThị;
+    const vậtThểTiếpThị = (await kvGet(key)).value as VậtThểTiếpThị;
     const headers =  req.headers
 
     if (vậtThểTiếpThị) {
       const liênKếtUTM = vậtThểTiếpThị["Liên kết UTM"];
       thêmThờiĐiểmTruyCập(vậtThểTiếpThị, headers) 
-      await kv.set(key, vậtThểTiếpThị);
+      await kvSet(key, vậtThểTiếpThị);
       return Response.redirect(liênKếtUTM, 307);
     } else {
       return ctx.renderNotFound();
     } 
   },
   async POST(req, ctx) {
-    const kv = await Deno.openKv();
     const đuôiRútGọn = ctx.params.slug;
     const vậtThểTiếpThị = await req.json() as VậtThểTiếpThị;
-    await kv.set(["Đuôi rút gọn", đuôiRútGọn], vậtThểTiếpThị);
+    await kvSet(["Đuôi rút gọn", đuôiRútGọn], vậtThểTiếpThị);
 
     return new Response(JSON.stringify(vậtThểTiếpThị, null, 2));
   },

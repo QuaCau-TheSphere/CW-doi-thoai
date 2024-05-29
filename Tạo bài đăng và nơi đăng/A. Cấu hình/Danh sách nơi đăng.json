@@ -84,7 +84,12 @@
       "Công cụ ghi chú"
     ],
     "Mã nơi đăng": "obsvn",
-    "id": "1"
+    "id": "1",
+    "vậtThểId": {
+      "id": "1",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -99,7 +104,12 @@
       "Công cụ ghi chú"
     ],
     "Mã nơi đăng": "obs",
-    "id": "2"
+    "id": "2",
+    "vậtThểId": {
+      "id": "2",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -114,7 +124,12 @@
       "Công cụ ghi chú"
     ],
     "Mã nơi đăng": "r/googlekeep",
-    "id": "3"
+    "id": "3",
+    "vậtThểId": {
+      "id": "3",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -157,7 +172,12 @@
       "Công cụ ghi chú"
     ],
     "Mã nơi đăng": "obsvn",
-    "id": "4"
+    "id": "6",
+    "vậtThểId": {
+      "id": "6",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -203,7 +223,12 @@
       "Công cụ ghi chú"
     ],
     "Mã nơi đăng": "obs",
-    "id": "5"
+    "id": "7",
+    "vậtThểId": {
+      "id": "7",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -246,7 +271,12 @@
       "Công cụ ghi chú"
     ],
     "Mã nơi đăng": "obsvn",
-    "id": "6"
+    "id": "6",
+    "vậtThểId": {
+      "id": "6",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -292,7 +322,12 @@
       "Công cụ ghi chú"
     ],
     "Mã nơi đăng": "obs",
-    "id": "7"
+    "id": "7",
+    "vậtThểId": {
+      "id": "7",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -379,7 +414,12 @@
       "Phi lợi nhuận"
     ],
     "Mã nơi đăng": "SNPO",
-    "id": "8"
+    "id": "8",
+    "vậtThểId": {
+      "id": "8",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -422,7 +462,12 @@
       "Phi lợi nhuận"
     ],
     "Mã nơi đăng": "SNPO",
-    "id": "9"
+    "id": "9",
+    "vậtThểId": {
+      "id": "9",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -465,7 +510,12 @@
       "Phi lợi nhuận"
     ],
     "Mã nơi đăng": "SNPO",
-    "id": "A"
+    "id": "A",
+    "vậtThểId": {
+      "id": "A",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -569,7 +619,12 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Mã nơi đăng": "lmn",
-    "id": "B"
+    "id": "B",
+    "vậtThểId": {
+      "id": "B",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -582,7 +637,12 @@
     "Loại nền tảng": "Diễn đàn",
     "Đơn vị quản lý": "Nhật",
     "Mã nơi đăng": "lmn",
-    "id": "C"
+    "id": "C",
+    "vậtThểId": {
+      "id": "C",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -595,7 +655,12 @@
     "Loại nền tảng": "Diễn đàn",
     "Đơn vị quản lý": "Nhật",
     "Mã nơi đăng": "ooker",
-    "id": "D"
+    "id": "D",
+    "vậtThểId": {
+      "id": "D",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -608,7 +673,12 @@
     "Loại nền tảng": "Diễn đàn",
     "Đơn vị quản lý": "Nhật",
     "Mã nơi đăng": "ooker",
-    "id": "E"
+    "id": "E",
+    "vậtThểId": {
+      "id": "E",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -621,7 +691,12 @@
     "Loại nền tảng": "Diễn đàn",
     "Đơn vị quản lý": "Nhật",
     "Mã nơi đăng": "lmn",
-    "id": "F"
+    "id": "F",
+    "vậtThểId": {
+      "id": "F",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -634,7 +709,12 @@
     "Loại nền tảng": "Diễn đàn",
     "Đơn vị quản lý": "Nhật",
     "Mã nơi đăng": "ooker",
-    "id": "G"
+    "id": "G",
+    "vậtThểId": {
+      "id": "G",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -647,7 +727,12 @@
     "Loại nền tảng": "Diễn đàn",
     "Đơn vị quản lý": "Nhật",
     "Mã nơi đăng": "ooker",
-    "id": "H"
+    "id": "H",
+    "vậtThểId": {
+      "id": "H",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -660,7 +745,12 @@
     "Loại nền tảng": "Diễn đàn",
     "Đơn vị quản lý": "Nhật",
     "Mã nơi đăng": "ooker",
-    "id": "I"
+    "id": "I",
+    "vậtThểId": {
+      "id": "I",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -673,7 +763,12 @@
     "Loại nền tảng": "Chat",
     "Đơn vị quản lý": "Nhật",
     "Mã nơi đăng": "lmn",
-    "id": "J"
+    "id": "J",
+    "vậtThểId": {
+      "id": "J",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -686,7 +781,12 @@
     "Loại nền tảng": "Chat",
     "Đơn vị quản lý": "Nhật",
     "Mã nơi đăng": "ooker",
-    "id": "K"
+    "id": "K",
+    "vậtThểId": {
+      "id": "K",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -699,7 +799,12 @@
     "Loại nền tảng": "Chat",
     "Đơn vị quản lý": "Nhật",
     "Mã nơi đăng": "lmn",
-    "id": "L"
+    "id": "L",
+    "vậtThểId": {
+      "id": "L",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -712,7 +817,12 @@
     "Loại nền tảng": "Chat",
     "Đơn vị quản lý": "Nhật",
     "Mã nơi đăng": "ooker",
-    "id": "M"
+    "id": "M",
+    "vậtThểId": {
+      "id": "M",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -725,7 +835,12 @@
     "Loại nền tảng": "Chat",
     "Đơn vị quản lý": "Nhật",
     "Mã nơi đăng": "lmn",
-    "id": "N"
+    "id": "N",
+    "vậtThểId": {
+      "id": "N",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -738,7 +853,12 @@
     "Loại nền tảng": "Tập tin",
     "Đơn vị quản lý": "Nhật",
     "Mã nơi đăng": "cv",
-    "id": "O"
+    "id": "O",
+    "vậtThểId": {
+      "id": "O",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -751,7 +871,12 @@
     "Loại nền tảng": "Vault",
     "Đơn vị quản lý": "Nhật",
     "Mã nơi đăng": "lmn",
-    "id": "P"
+    "id": "P",
+    "vậtThểId": {
+      "id": "P",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -778,7 +903,12 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Mã nơi đăng": "lmn",
-    "id": "Q"
+    "id": "Q",
+    "vậtThểId": {
+      "id": "Q",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -800,7 +930,12 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Mã nơi đăng": "ganu",
-    "id": "R"
+    "id": "R",
+    "vậtThểId": {
+      "id": "R",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -822,7 +957,12 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Mã nơi đăng": "lmn",
-    "id": "S"
+    "id": "S",
+    "vậtThểId": {
+      "id": "S",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -907,7 +1047,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "chim-sáo",
-    "id": "T"
+    "id": "T",
+    "vậtThểId": {
+      "id": "T",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -992,7 +1137,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "vđqc",
-    "id": "U"
+    "id": "U",
+    "vậtThểId": {
+      "id": "U",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -1077,7 +1227,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "bpd",
-    "id": "V"
+    "id": "V",
+    "vậtThểId": {
+      "id": "V",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -1162,7 +1317,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "triết-phương-đông",
-    "id": "W"
+    "id": "W",
+    "vậtThểId": {
+      "id": "W",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -1247,7 +1407,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "nhận-thức-phức-hợp",
-    "id": "X"
+    "id": "X",
+    "vậtThểId": {
+      "id": "X",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -1332,7 +1497,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "giác-quan-kèm",
-    "id": "Y"
+    "id": "Y",
+    "vậtThểId": {
+      "id": "Y",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -1437,7 +1607,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "quảcầu",
-    "id": "Z"
+    "id": "Z",
+    "vậtThểId": {
+      "id": "Z",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -1542,7 +1717,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "quảcầu",
-    "id": "a"
+    "id": "a",
+    "vậtThểId": {
+      "id": "a",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -1555,7 +1735,12 @@
     "Loại nền tảng": "Diễn đàn",
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "quảcầu",
-    "id": "b"
+    "id": "b",
+    "vậtThểId": {
+      "id": "b",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -1592,7 +1777,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "quảcầu",
-    "id": "c"
+    "id": "c",
+    "vậtThểId": {
+      "id": "c",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -1620,7 +1810,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "orgs/QuaCau-TheSphere",
-    "id": "d"
+    "id": "d",
+    "vậtThểId": {
+      "id": "d",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -1648,7 +1843,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "CW-doi-thoai",
-    "id": "e"
+    "id": "e",
+    "vậtThểId": {
+      "id": "e",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -1676,7 +1876,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "CW-obsidian-quan-ly-du-an-va-cong-cu-nghi",
-    "id": "f"
+    "id": "f",
+    "vậtThểId": {
+      "id": "f",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -1704,7 +1909,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "CW-xu-ly-du-lieu-va-lap-trinh",
-    "id": "g"
+    "id": "g",
+    "vậtThểId": {
+      "id": "g",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -1732,7 +1942,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "CV-obsidian-quan-ly-du-an-va-cong-cu-nghi",
-    "id": "h"
+    "id": "h",
+    "vậtThểId": {
+      "id": "h",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -1760,7 +1975,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "EV-HeavyT",
-    "id": "i"
+    "id": "i",
+    "vậtThểId": {
+      "id": "i",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -1788,7 +2008,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "FV-khoa-hoc-xa-hoi",
-    "id": "j"
+    "id": "j",
+    "vậtThểId": {
+      "id": "j",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -1816,7 +2041,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "LandofSpheres",
-    "id": "k"
+    "id": "k",
+    "vậtThểId": {
+      "id": "k",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -1844,7 +2074,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "CV-tiep-thi-so-xu-ly-du-lieu-va-lap-trinh",
-    "id": "l"
+    "id": "l",
+    "vậtThểId": {
+      "id": "l",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -1872,7 +2107,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "trấnkỳ",
-    "id": "m"
+    "id": "m",
+    "vậtThểId": {
+      "id": "m",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -1900,7 +2140,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "tranky-test",
-    "id": "n"
+    "id": "n",
+    "vậtThểId": {
+      "id": "n",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -1928,7 +2173,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "meetup-ticketbox-to-google-calendar",
-    "id": "o"
+    "id": "o",
+    "vậtThểId": {
+      "id": "o",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -1956,7 +2206,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "EW-heavyT",
-    "id": "p"
+    "id": "p",
+    "vậtThểId": {
+      "id": "p",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -1984,7 +2239,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "ObsidianPulisherTest",
-    "id": "q"
+    "id": "q",
+    "vậtThểId": {
+      "id": "q",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2012,7 +2272,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "belief-network",
-    "id": "r"
+    "id": "r",
+    "vậtThểId": {
+      "id": "r",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2040,7 +2305,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "DV-phat-trien-ban-than",
-    "id": "s"
+    "id": "s",
+    "vậtThểId": {
+      "id": "s",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2068,7 +2338,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "NeedExchange",
-    "id": "t"
+    "id": "t",
+    "vậtThểId": {
+      "id": "t",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2096,7 +2371,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "DW-phat-trien-ban-than",
-    "id": "u"
+    "id": "u",
+    "vậtThểId": {
+      "id": "u",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2124,7 +2404,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "quacau-thesphere.github.io-https://github.com/QuaCau-TheSphere/quacau-thesphere.github.io",
-    "id": "v"
+    "id": "v",
+    "vậtThểId": {
+      "id": "v",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2152,7 +2437,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "ONB",
-    "id": "w"
+    "id": "w",
+    "vậtThểId": {
+      "id": "w",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2180,7 +2470,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "Buoc-Chan",
-    "id": "x"
+    "id": "x",
+    "vậtThểId": {
+      "id": "x",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2208,7 +2503,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "LOS-Installer",
-    "id": "y"
+    "id": "y",
+    "vậtThểId": {
+      "id": "y",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2236,7 +2536,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "Ca-nhan-khac",
-    "id": "z"
+    "id": "z",
+    "vậtThểId": {
+      "id": "z",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2264,7 +2569,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "SampleVault",
-    "id": "-"
+    "id": "-",
+    "vậtThểId": {
+      "id": "-",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2292,7 +2602,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "Graphvidian",
-    "id": "_"
+    "id": "_",
+    "vậtThểId": {
+      "id": "_",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2333,7 +2648,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "bpd",
-    "id": "10"
+    "id": "1m",
+    "vậtThểId": {
+      "id": "1m",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2374,7 +2694,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "triết-phương-đông",
-    "id": "11"
+    "id": "1n",
+    "vậtThểId": {
+      "id": "1n",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2415,7 +2740,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "nhận-thức-phức-hợp",
-    "id": "12"
+    "id": "1o",
+    "vậtThểId": {
+      "id": "1o",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2460,7 +2790,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#a",
-    "id": "13"
+    "id": "1p",
+    "vậtThểId": {
+      "id": "1p",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2505,7 +2840,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#b1",
-    "id": "14"
+    "id": "1q",
+    "vậtThểId": {
+      "id": "1q",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2552,7 +2892,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#b2",
-    "id": "15"
+    "id": "1r",
+    "vậtThểId": {
+      "id": "1r",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2599,7 +2944,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#b2",
-    "id": "16"
+    "id": "1s",
+    "vậtThểId": {
+      "id": "1s",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2644,7 +2994,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#b3",
-    "id": "17"
+    "id": "1t",
+    "vậtThểId": {
+      "id": "1t",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2689,7 +3044,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c1",
-    "id": "18"
+    "id": "1u",
+    "vậtThểId": {
+      "id": "1u",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2736,7 +3096,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c2",
-    "id": "19"
+    "id": "1v",
+    "vậtThểId": {
+      "id": "1v",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2783,7 +3148,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c2",
-    "id": "1A"
+    "id": "1w",
+    "vậtThểId": {
+      "id": "1w",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2830,7 +3200,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c2",
-    "id": "1B"
+    "id": "1x",
+    "vậtThểId": {
+      "id": "1x",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2877,7 +3252,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c2",
-    "id": "1C"
+    "id": "1y",
+    "vậtThểId": {
+      "id": "1y",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2924,7 +3304,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c2",
-    "id": "1D"
+    "id": "1z",
+    "vậtThểId": {
+      "id": "1z",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -2971,7 +3356,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c2",
-    "id": "1E"
+    "id": "1-",
+    "vậtThểId": {
+      "id": "1-",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -3018,7 +3408,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c2",
-    "id": "1F"
+    "id": "1_",
+    "vậtThểId": {
+      "id": "1_",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -3065,7 +3460,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#d",
-    "id": "1G"
+    "id": "20",
+    "vậtThểId": {
+      "id": "20",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -3110,7 +3510,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#e",
-    "id": "1H"
+    "id": "21",
+    "vậtThểId": {
+      "id": "21",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -3155,7 +3560,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#f1",
-    "id": "1I"
+    "id": "22",
+    "vậtThểId": {
+      "id": "22",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -3200,7 +3610,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#f2",
-    "id": "1J"
+    "id": "23",
+    "vậtThểId": {
+      "id": "23",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -3247,7 +3662,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#g",
-    "id": "1K"
+    "id": "24",
+    "vậtThểId": {
+      "id": "24",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -3294,7 +3714,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#g",
-    "id": "1L"
+    "id": "25",
+    "vậtThểId": {
+      "id": "25",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -3341,7 +3766,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#g",
-    "id": "1M"
+    "id": "26",
+    "vậtThểId": {
+      "id": "26",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -3388,7 +3818,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#g",
-    "id": "1N"
+    "id": "27",
+    "vậtThểId": {
+      "id": "27",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -3429,7 +3864,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "bpd",
-    "id": "1O"
+    "id": "1m",
+    "vậtThểId": {
+      "id": "1m",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -3470,7 +3910,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "triết-phương-đông",
-    "id": "1P"
+    "id": "1n",
+    "vậtThểId": {
+      "id": "1n",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -3511,7 +3956,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "nhận-thức-phức-hợp",
-    "id": "1Q"
+    "id": "1o",
+    "vậtThểId": {
+      "id": "1o",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -3556,7 +4006,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#a",
-    "id": "1R"
+    "id": "1p",
+    "vậtThểId": {
+      "id": "1p",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -3601,7 +4056,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#b1",
-    "id": "1S"
+    "id": "1q",
+    "vậtThểId": {
+      "id": "1q",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -3648,7 +4108,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#b2",
-    "id": "1T"
+    "id": "1r",
+    "vậtThểId": {
+      "id": "1r",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -3695,7 +4160,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#b2",
-    "id": "1U"
+    "id": "1s",
+    "vậtThểId": {
+      "id": "1s",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -3740,7 +4210,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#b3",
-    "id": "1V"
+    "id": "1t",
+    "vậtThểId": {
+      "id": "1t",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -3785,7 +4260,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c1",
-    "id": "1W"
+    "id": "1u",
+    "vậtThểId": {
+      "id": "1u",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -3832,7 +4312,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c2",
-    "id": "1X"
+    "id": "1v",
+    "vậtThểId": {
+      "id": "1v",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -3879,7 +4364,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c2",
-    "id": "1Y"
+    "id": "1w",
+    "vậtThểId": {
+      "id": "1w",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -3926,7 +4416,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c2",
-    "id": "1Z"
+    "id": "1x",
+    "vậtThểId": {
+      "id": "1x",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -3973,7 +4468,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c2",
-    "id": "1a"
+    "id": "1y",
+    "vậtThểId": {
+      "id": "1y",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -4020,7 +4520,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c2",
-    "id": "1b"
+    "id": "1z",
+    "vậtThểId": {
+      "id": "1z",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -4067,7 +4572,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c2",
-    "id": "1c"
+    "id": "1-",
+    "vậtThểId": {
+      "id": "1-",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -4114,7 +4624,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c2",
-    "id": "1d"
+    "id": "1_",
+    "vậtThểId": {
+      "id": "1_",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -4161,7 +4676,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#d",
-    "id": "1e"
+    "id": "20",
+    "vậtThểId": {
+      "id": "20",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -4206,7 +4726,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#e",
-    "id": "1f"
+    "id": "21",
+    "vậtThểId": {
+      "id": "21",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -4251,7 +4776,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#f1",
-    "id": "1g"
+    "id": "22",
+    "vậtThểId": {
+      "id": "22",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -4296,7 +4826,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#f2",
-    "id": "1h"
+    "id": "23",
+    "vậtThểId": {
+      "id": "23",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -4343,7 +4878,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#g",
-    "id": "1i"
+    "id": "24",
+    "vậtThểId": {
+      "id": "24",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -4390,7 +4930,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#g",
-    "id": "1j"
+    "id": "25",
+    "vậtThểId": {
+      "id": "25",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -4437,7 +4982,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#g",
-    "id": "1k"
+    "id": "26",
+    "vậtThểId": {
+      "id": "26",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -4484,7 +5034,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#g",
-    "id": "1l"
+    "id": "27",
+    "vậtThểId": {
+      "id": "27",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -4525,7 +5080,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "bpd",
-    "id": "1m"
+    "id": "1m",
+    "vậtThểId": {
+      "id": "1m",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -4566,7 +5126,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "triết-phương-đông",
-    "id": "1n"
+    "id": "1n",
+    "vậtThểId": {
+      "id": "1n",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -4607,7 +5172,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "nhận-thức-phức-hợp",
-    "id": "1o"
+    "id": "1o",
+    "vậtThểId": {
+      "id": "1o",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -4652,7 +5222,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#a",
-    "id": "1p"
+    "id": "1p",
+    "vậtThểId": {
+      "id": "1p",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -4697,7 +5272,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#b1",
-    "id": "1q"
+    "id": "1q",
+    "vậtThểId": {
+      "id": "1q",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -4744,7 +5324,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#b2",
-    "id": "1r"
+    "id": "1r",
+    "vậtThểId": {
+      "id": "1r",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -4791,7 +5376,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#b2",
-    "id": "1s"
+    "id": "1s",
+    "vậtThểId": {
+      "id": "1s",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -4836,7 +5426,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#b3",
-    "id": "1t"
+    "id": "1t",
+    "vậtThểId": {
+      "id": "1t",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -4881,7 +5476,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c1",
-    "id": "1u"
+    "id": "1u",
+    "vậtThểId": {
+      "id": "1u",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -4928,7 +5528,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c2",
-    "id": "1v"
+    "id": "1v",
+    "vậtThểId": {
+      "id": "1v",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -4975,7 +5580,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c2",
-    "id": "1w"
+    "id": "1w",
+    "vậtThểId": {
+      "id": "1w",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5022,7 +5632,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c2",
-    "id": "1x"
+    "id": "1x",
+    "vậtThểId": {
+      "id": "1x",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5069,7 +5684,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c2",
-    "id": "1y"
+    "id": "1y",
+    "vậtThểId": {
+      "id": "1y",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5116,7 +5736,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c2",
-    "id": "1z"
+    "id": "1z",
+    "vậtThểId": {
+      "id": "1z",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5163,7 +5788,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c2",
-    "id": "1-"
+    "id": "1-",
+    "vậtThểId": {
+      "id": "1-",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5210,7 +5840,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#c2",
-    "id": "1_"
+    "id": "1_",
+    "vậtThểId": {
+      "id": "1_",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5257,7 +5892,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#d",
-    "id": "20"
+    "id": "20",
+    "vậtThểId": {
+      "id": "20",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5302,7 +5942,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#e",
-    "id": "21"
+    "id": "21",
+    "vậtThểId": {
+      "id": "21",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5347,7 +5992,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#f1",
-    "id": "22"
+    "id": "22",
+    "vậtThểId": {
+      "id": "22",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5392,7 +6042,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#f2",
-    "id": "23"
+    "id": "23",
+    "vậtThểId": {
+      "id": "23",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5439,7 +6094,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#g",
-    "id": "24"
+    "id": "24",
+    "vậtThểId": {
+      "id": "24",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5486,7 +6146,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#g",
-    "id": "25"
+    "id": "25",
+    "vậtThểId": {
+      "id": "25",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5533,7 +6198,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#g",
-    "id": "26"
+    "id": "26",
+    "vậtThểId": {
+      "id": "26",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5580,7 +6250,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qc#g",
-    "id": "27"
+    "id": "27",
+    "vậtThểId": {
+      "id": "27",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5593,7 +6268,12 @@
     "Loại nền tảng": "Chat",
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "321",
-    "id": "28"
+    "id": "28",
+    "vậtThểId": {
+      "id": "28",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5606,7 +6286,12 @@
     "Loại nền tảng": "Tập tin",
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "cvLộc",
-    "id": "29"
+    "id": "29",
+    "vậtThểId": {
+      "id": "29",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5619,7 +6304,12 @@
     "Loại nền tảng": "Vault",
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "vđqc",
-    "id": "2A"
+    "id": "2A",
+    "vậtThểId": {
+      "id": "2A",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5632,7 +6322,12 @@
     "Loại nền tảng": "Vault",
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "B-Mạng kết nối nhu cầu",
-    "id": "2B"
+    "id": "2B",
+    "vậtThểId": {
+      "id": "2B",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5645,7 +6340,12 @@
     "Loại nền tảng": "Vault",
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "C-Obsidian, quản lý dự án và công cụ nghĩ",
-    "id": "2C"
+    "id": "2C",
+    "vậtThểId": {
+      "id": "2C",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5658,7 +6358,12 @@
     "Loại nền tảng": "Vault",
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "C-Tiếp thị số, xử lý dữ liệu và lập trình",
-    "id": "2D"
+    "id": "2D",
+    "vậtThểId": {
+      "id": "2D",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5671,7 +6376,12 @@
     "Loại nền tảng": "Vault",
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "D-Học kỹ năng, phát triển bản thân",
-    "id": "2E"
+    "id": "2E",
+    "vậtThểId": {
+      "id": "2E",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5698,7 +6408,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "quảcầu",
-    "id": "2F"
+    "id": "2F",
+    "vậtThểId": {
+      "id": "2F",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5725,7 +6440,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "obsidianqc",
-    "id": "2G"
+    "id": "2G",
+    "vậtThểId": {
+      "id": "2G",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5752,7 +6472,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "lậptrìnhqc",
-    "id": "2H"
+    "id": "2H",
+    "vậtThểId": {
+      "id": "2H",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5779,7 +6504,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "doi-thoai",
-    "id": "2I"
+    "id": "2I",
+    "vậtThểId": {
+      "id": "2I",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5806,7 +6536,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "trấnkỳ",
-    "id": "2J"
+    "id": "2J",
+    "vậtThểId": {
+      "id": "2J",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5828,7 +6563,12 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Mã nơi đăng": "qcg",
-    "id": "2K"
+    "id": "2K",
+    "vậtThểId": {
+      "id": "2K",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5913,7 +6653,12 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Mã nơi đăng": "uan",
-    "id": "2L"
+    "id": "2L",
+    "vậtThểId": {
+      "id": "2L",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5953,7 +6698,12 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Mã nơi đăng": "uan",
-    "id": "2M"
+    "id": "2M",
+    "vậtThểId": {
+      "id": "2M",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   },
   {
     "Tên nơi đăng": [
@@ -5993,6 +6743,11 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Mã nơi đăng": "uan",
-    "id": "2N"
+    "id": "2N",
+    "vậtThểId": {
+      "id": "2N",
+      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+      "mãCáchXácĐịnh": 1
+    }
   }
 ]

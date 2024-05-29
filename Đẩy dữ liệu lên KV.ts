@@ -1,11 +1,10 @@
 import { load } from "$std/dotenv/mod.ts";
-import { kvSignal, readUnitSignal, writeUnitSignal } from "./Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Signal.ts";
+import { kvSignal, readUnitSignal, writeUnitSignal } from "./Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Signal KV.ts";
 import { xoáDữLiệuTrênKv, đẩyBàiĐăngLênKV, đẩyNơiĐăngLênKV } from "./Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho KV.ts";
 
 const env = await load();
 Deno.env.set("DENO_KV_ACCESS_TOKEN", env["DENO_KV_ACCESS_TOKEN"]);
-// kvSignal.value = await Deno.openKv();
-kvSignal.value = await Deno.openKv(env["LOCATION"]);
+// kvSignal.value = await Deno.openKv(env["API"]);
 
 // await xoáDữLiệuTrênKv();
 

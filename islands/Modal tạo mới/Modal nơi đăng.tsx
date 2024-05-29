@@ -5,7 +5,8 @@ import { PhảnHồiTừCORSProxy } from "../../Code hỗ trợ cho client/Hàm 
 
 export default function ModalNơiĐăng() {
   const [phảnHồiTừCORSProxy, setPhảnHồiTừCORSProxy] = useState<PhảnHồiTừCORSProxy | undefined>(undefined);
-  const [urlNhậpVào, setUrlNhậpVào] = useState(queryNơiĐăng.value);
+  const [urlNhậpVào, setUrlNhậpVào] = useState<string | undefined>(undefined);
+  setUrlNhậpVào(queryNơiĐăng.value);
   useEffect(() => {
     async function lấyMetaTag() {
       const corsProxyUrl = `${origin}/api/cors-proxy/${urlNhậpVào}`;
@@ -13,7 +14,7 @@ export default function ModalNơiĐăng() {
     }
     lấyMetaTag();
   }, [urlNhậpVào]);
-  console.log("🚀 ~ ModalNơiĐăng ~ phảnHồiTừCORSProxy:", phảnHồiTừCORSProxy);
+  console.log("Kết quả lấy dữ liệu từ URL được nhập vào nơi đăng:", phảnHồiTừCORSProxy);
   const nơiĐăng: NơiĐăngCóCácLựaChọnVịTrí | Record<string | number | symbol, never> = phảnHồiTừCORSProxy?.["Nếu là nơi đăng"] || {};
   const {
     "Loại nền tảng": loạiNềnTảng,

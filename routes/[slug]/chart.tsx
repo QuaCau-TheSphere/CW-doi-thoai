@@ -6,12 +6,12 @@ import { dữLiệuTruyCậpCácNămTest } from "../../Code hỗ trợ cho clien
 import { DữLiệuTruyCậpCácNăm, tạoDữLiệuBiểuĐồ } from "../../Code hỗ trợ cho client/Hàm và kiểu cho biểu đồ.ts";
 import ThôngTinVậtThểTiếpThị from "../../components/Thông tin vật thể tiếp thị.tsx";
 import Meta from "../../components/Meta.tsx";
+import { kvGet } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho KV.ts";
 
-const kv = await Deno.openKv();
 export const handler: Handlers = {
   async GET(req, ctx) {
     const đuôiRútGọn = ctx.params.slug;
-    const serverGet = await kv.get(["Đuôi rút gọn", đuôiRútGọn]);
+    const serverGet = await kvGet(["Đuôi rút gọn", đuôiRútGọn]);
     const vậtThểTiếpThị = serverGet.value as VậtThểTiếpThị;
 
     if (vậtThểTiếpThị) {

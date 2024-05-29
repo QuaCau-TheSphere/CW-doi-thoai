@@ -1,4 +1,5 @@
 /** Chỉ có những biến có từ cấu hình trong tên là dành cho cấu hình, còn lại là dành cho kết quả là vật thể nơi đăng */
+import { VậtThểId } from "./Hàm cho id.ts";
 import { DanhSáchVịTríCóThểĐăng } from "./Hàm và kiểu cho vị trí.ts";
 import { URLString } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 export type OneKey<K extends string, V = any> = {
@@ -68,6 +69,7 @@ export interface ThôngTinNơiĐăng {
   "Đơn vị quản lý"?: string;
   "Vị trí có thể đăng"?: DanhSáchVịTríCóThểĐăng;
   id: string;
+  vậtThểId?: VậtThểId;
 }
 export type ThôngTinNơiĐăngChưaCóId = Omit<ThôngTinNơiĐăng, "id">;
 /**

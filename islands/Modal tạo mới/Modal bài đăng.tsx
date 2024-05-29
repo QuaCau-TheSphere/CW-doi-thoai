@@ -5,7 +5,8 @@ import { PhảnHồiTừCORSProxy } from "../../Code hỗ trợ cho client/Hàm 
 
 export default function ModalBàiĐăng() {
   const [phảnHồiTừCORSProxy, setPhảnHồiTừCORSProxy] = useState<PhảnHồiTừCORSProxy | undefined>(undefined);
-  const [urlNhậpVào, setUrlNhậpVào] = useState(queryBàiĐăng.value);
+  const [urlNhậpVào, setUrlNhậpVào] = useState<string | undefined>(undefined);
+  setUrlNhậpVào(queryBàiĐăng.value);
   useEffect(() => {
     async function lấyMetaTag() {
       const corsProxyUrl = `${origin}/api/cors-proxy/${urlNhậpVào}`;
@@ -14,7 +15,7 @@ export default function ModalBàiĐăng() {
     lấyMetaTag();
   }, [urlNhậpVào]);
   const bàiĐăng: BàiĐăng | Record<string | number | symbol, never> = phảnHồiTừCORSProxy?.["Nếu là bài đăng"] || {};
-  console.log("🚀 ~ ModalBàiĐăng ~ phảnHồiTừCORSProxy:", phảnHồiTừCORSProxy);
+  console.log("Kết quả lấy dữ liệu từ URL được nhập vào bài đăng:", phảnHồiTừCORSProxy);
   const {
     "Tiêu đề": tiêuĐề,
     "Dự án": dựÁn,
