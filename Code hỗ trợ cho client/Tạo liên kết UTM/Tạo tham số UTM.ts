@@ -86,6 +86,7 @@ function tạoSource(nơiĐăng: NơiĐăngCóMộtVịTríCụThể, cấuHình
       case "Website":
         return tênNơiĐăngString.replace("https://www.", "").replace("https://", "");
       case "Email":
+      case "Tập tin":
         return tênNơiĐăngString;
       default:
         return `${loạiNềnTảng} ${tênNơiĐăngString}`;

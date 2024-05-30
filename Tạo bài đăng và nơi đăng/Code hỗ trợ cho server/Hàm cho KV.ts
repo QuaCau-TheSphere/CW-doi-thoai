@@ -119,7 +119,7 @@ export async function thêmBàiĐăngHoặcNơiĐăngMớiVàoKV(bàiĐăngHoặ
 export async function đẩyBàiĐăngLênKV() {
   const danhSáchThôngTinCấuHìnhNơiĐăng = await tạoDanhSáchThôngTinCấuHìnhNơiĐăng();
   const danhSáchBàiĐăng = await tạoDanhSáchBàiĐăng(danhSáchThôngTinCấuHìnhNơiĐăng);
-  await Deno.writeTextFile("Tạo bài đăng và nơi đăng/A. Cấu hình/Danh sách tất cả bài đăng.json", JSON.stringify(danhSáchBàiĐăng, null, 2));
+  await Deno.writeTextFile("Tạo bài đăng và nơi đăng/A. Cấu hình/Bài đăng/Danh sách bài đăng.json", JSON.stringify(danhSáchBàiĐăng, null, 2));
 
   for (const bàiĐăng of danhSáchBàiĐăng) {
     console.log(bàiĐăng["Tiêu đề"]);
@@ -132,7 +132,7 @@ export async function đẩyBàiĐăngLênKV() {
 
 export async function đẩyNơiĐăngLênKV() {
   const danhSáchNơiĐăng = await tạoDanhSáchNơiĐăngTừTấtCảCấuHình();
-  await Deno.writeTextFile("Tạo bài đăng và nơi đăng/A. Cấu hình/Danh sách nơi đăng.json", JSON.stringify(danhSáchNơiĐăng, null, 2));
+  await Deno.writeTextFile("Tạo bài đăng và nơi đăng/A. Cấu hình/Nơi đăng/Danh sách nơi đăng.json", JSON.stringify(danhSáchNơiĐăng, null, 2));
 
   for (const nơiĐăng of danhSáchNơiĐăng) {
     console.log(tạoTênNơiĐăngString(nơiĐăng["Tên nơi đăng"]));

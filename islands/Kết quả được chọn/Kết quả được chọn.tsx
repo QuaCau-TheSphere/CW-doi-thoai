@@ -27,11 +27,14 @@ function BàiĐăngĐượcChọn() {
       <div class="card-body">
         <h2 id="tên-bài-đăng" class="card-title">{tiêuĐề}</h2>
         <ul class="font-xs text-slate-400">
-          <li id="vault" class="hover:text-primary-content">Vault: {vault}</li>
-          <li id="dự-án" class="hover:text-primary-content">Dự án: {dựÁn?.["Tên dự án"]}</li>
+          <li id="vault" class="hover:text-primary-content">Vault: {vault || "∅"}</li>
+          <li id="dự-án" class="hover:text-primary-content">Dự án: {dựÁn?.["Tên dự án"] || "∅"}</li>
           <li id="liên-kết" class="hover:text-primary-content">
-            Liên kết: <a href={liênKết}>{liênKết}</a>
+            Liên kết: <a href={liênKết}>{liênKết || "∅"}</a>
           </li>
+          <li id="tác-giả" class="hover:text-primary-content">Tác giả: {tácGiả || "∅"}</li>
+          <li id="ngày-cập-nhật" class="hover:text-primary-content">Ngày cập nhật: {ngàyCậpNhật || "∅"}</li>
+          <li id="mã-bài-đăng" class="hover:text-primary-content">Mã bài đăng: {mãBàiĐăng || "∅"}</li>
 
           {
             /* <li id="khác" class="hover:text-primary-content">

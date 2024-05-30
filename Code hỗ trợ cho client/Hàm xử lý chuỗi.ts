@@ -31,7 +31,8 @@ export function tạoVịTríString(vịTrí: VịTrí): string {
   }
   return vịTrí[0];
 }
-export function tạoTênNơiĐăngString(tênNơiĐăng: TênNơiĐăng): string {
+export function tạoTênNơiĐăngString(tênNơiĐăng: TênNơiĐăng | undefined): string {
+  if (!tênNơiĐăng) return "";
   if (typeof tênNơiĐăng === "string") {
     return tênNơiĐăng;
   }

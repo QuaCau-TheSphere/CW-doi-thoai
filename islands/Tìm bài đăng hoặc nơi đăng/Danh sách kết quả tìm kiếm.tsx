@@ -5,7 +5,7 @@ import { BàiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ tr
 import { element } from "../Signals tổng.ts";
 import { cursor, danhSáchGợiÝSignal } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
 import { Signal } from "@preact/signals";
-import { kiểuKebab, tạoLoạiNơiĐăngString, tạoTênNơiĐăngString } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { kiểuKebab, tạoLoạiNơiĐăngString, tạoTênNơiĐăngString, xửLýPunycode } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 
 function tạoDòngPhụCủaBàiĐăng(bàiĐăng: BàiĐăng) {
   const { "Dự án": dựÁn, Vault: vault, URL, "Mã bài đăng": mãBàiĐăng, id } = bàiĐăng;
@@ -17,10 +17,8 @@ function tạoDòngPhụCủaBàiĐăng(bàiĐăng: BàiĐăng) {
     key = "Vault";
     value = vault;
   }
-  // return <>{key}: {value} • URL: {URL} • id: {id}</>; //dùng để test
   if (value) return <>{key}: {value}</>;
-  return <>URL: {URL}</>;
-  // return <>URL: {URL} • Mã bài đăng: {mãBàiĐăng} • id: {id}</>;
+  return <>URL: {xửLýPunycode(URL)}</>;
 }
 
 function Item({ item, tênDanhSách }: { item: BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí; tênDanhSách: TênDanhSách }) {
