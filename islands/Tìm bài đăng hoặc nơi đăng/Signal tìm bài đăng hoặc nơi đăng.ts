@@ -1,5 +1,5 @@
 import { signal } from "@preact/signals";
-import { Cursor, DanhSáchKếtQuảTìmKiếmType } from "../../Code hỗ trợ cho client/Kiểu cho vật thể tiếp thị.ts";
+import { Cursor, DanhSáchKếtQuảTìmKiếmType } from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
 
 export const danhSáchGợiÝSignal = signal<DanhSáchKếtQuảTìmKiếmType>(undefined);
 export const queryBàiĐăng = signal<string>("");

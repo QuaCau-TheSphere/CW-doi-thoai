@@ -5,8 +5,7 @@ import { PhảnHồiTừCORSProxy } from "../../Code hỗ trợ cho client/Hàm 
 
 export default function ModalBàiĐăng() {
   const [phảnHồiTừCORSProxy, setPhảnHồiTừCORSProxy] = useState<PhảnHồiTừCORSProxy | undefined>(undefined);
-  const [urlNhậpVào, setUrlNhậpVào] = useState<string | undefined>(undefined);
-  setUrlNhậpVào(queryBàiĐăng.value);
+  const [urlNhậpVào, setUrlNhậpVào] = useState<string | undefined>(queryBàiĐăng.value);
   useEffect(() => {
     async function lấyMetaTag() {
       const corsProxyUrl = `${origin}/api/cors-proxy/${urlNhậpVào}`;
@@ -92,6 +91,18 @@ export default function ModalBàiĐăng() {
           value={vault}
         />
       </label>
+      <details>
+        <summary>Nâng cao</summary>
+        <textarea
+          class="textarea textarea-bordered"
+          rows="15"
+          style="width:100%"
+          name="Nâng cao"
+          id="nâng-cao"
+          value={JSON.stringify(bàiĐăng, null, 2)}
+        >
+        </textarea>
+      </details>
     </>
   );
 }

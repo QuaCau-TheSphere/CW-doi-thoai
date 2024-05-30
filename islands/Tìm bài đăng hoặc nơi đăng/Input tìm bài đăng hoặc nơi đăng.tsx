@@ -42,6 +42,7 @@ function handleKeyDown(e: KeyboardEvent, mụcĐượcChọn: Signal<MụcĐư�
   if (e.key === "Enter") {
     e.preventDefault();
     if (danhSáchGợiÝ.length === 0) {
+      //refactor: mount component ModalTạoMới vào đây
       (document.getElementById("model-tạo-mới") as HTMLDialogElement).showModal();
     } else {
       mụcĐượcChọn.value = danhSáchGợiÝ[cursorHiệnTại].doc;

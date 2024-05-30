@@ -22,7 +22,7 @@ export function viếtThường(chuỗi: string | undefined) {
 
 export function kiểuKebab(chuỗi: string | undefined) {
   if (!chuỗi) return "";
-  return chuỗi.replace(" ", "-");
+  return viếtThường(chuỗi).replaceAll(" ", "-");
 }
 
 export function tạoVịTríString(vịTrí: VịTrí): string {
@@ -43,6 +43,7 @@ export function tạoLoạiNơiĐăngString(thôngTinNơiĐăng: ThôngTinNơiĐ
     "Loại nơi đăng": loạiNơiĐăng,
     "Tên nền tảng": tênNềnTảng,
   } = thôngTinNơiĐăng;
+  if (!loạiNơiĐăng) return tênNềnTảng || "";
   if (loạiNơiĐăng[0] !== tênNềnTảng) {
     const array = JSON.parse(JSON.stringify(loạiNơiĐăng));
     array[0] = `${loạiNơiĐăng[0]} ${tênNềnTảng}`;
