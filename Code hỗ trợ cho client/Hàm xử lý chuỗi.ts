@@ -62,11 +62,18 @@ export function isUrl(string: string | undefined) {
   }
 }
 
-export function xửLýPunycode(url: URLString | undefined, đểDấuCáchTrongLiênKết: boolean = false): string {
-  if (!url) return "";
-  const liênKết = punycode.toUnicode(decodeURI(url.toString()));
-  if (đểDấuCáchTrongLiênKết) return liênKết;
-  return liênKết.replaceAll(" ", "%20");
+/**
+ * @param đểDấuCáchTrongLiênKết mặc định là false để tạo markdown cho dễ
+ */
+export function xửLýPunycode(encodedUrl: URLString | undefined, đểDấuCáchTrongLiênKết: boolean = false): string {
+  if (!encodedUrl) return "";
+  const decodedUri = decodeURI(encodedUrl.toString());
+  const hostname = (new URL(encodedUrl)).hostname;
+  const decodedHostname = punycode.toUnicode(hostname);
+  const decodedString = decodedUri.toString().replace(hostname, decodedHostname);
+
+  if (đểDấuCáchTrongLiênKết) return decodedString;
+  return decodedString.replaceAll(" ", "%20");
 }
 
 export function táchUrlTrongChuỗi(chuỗiCóThểCóUrl: string): [string, string | undefined] {
