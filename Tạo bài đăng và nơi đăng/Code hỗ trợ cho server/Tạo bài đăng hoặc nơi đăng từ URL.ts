@@ -91,6 +91,7 @@ export async function tạoNơiĐăngTừURL(
     "Loại nền tảng": loạiNềnTảng,
     "Tên nền tảng": tênNềnTảng,
     "Loại nơi đăng": loạiNơiĐăng,
+    "Phương thức tạo": "Người dùng nhập tay trên web",
   };
   const thôngTinNơiĐăng = {
     ...thôngTinNơiĐăngChưaCóId,
@@ -111,5 +112,6 @@ export async function tạoBàiĐăngTừURL(urlString: URLString): Promise<Bài
     "Nội dung bài đăng": {
       "Mô tả bài đăng": og.description,
     },
+    "Phương thức tạo": "Người dùng nhập tay trên web",
   };
 }

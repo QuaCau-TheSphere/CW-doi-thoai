@@ -36,6 +36,7 @@ function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: Cấu
               "Tên nền tảng": tênNềnTảng,
               "Loại nền tảng": "Chat",
               URL: urlKênh || urlMáyChủ,
+              "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
             });
           } else {
             for (const [kênhUrl, danhSáchThreadHoặcTopic] of Object.entries(cấuHìnhKênh)) {
@@ -48,6 +49,7 @@ function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: Cấu
                   "Tên nền tảng": tênNềnTảng,
                   "Loại nền tảng": "Chat",
                   URL: urlKênh || urlMáyChủ,
+                  "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
                 });
 
                 /** Trường hợp kênh có thread hoặc topic nhỏ hơn*/
@@ -60,6 +62,7 @@ function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: Cấu
                     "Tên nền tảng": tênNềnTảng,
                     "Loại nền tảng": "Chat",
                     URL: urlThreadHoặcTopic || urlKênh || urlMáyChủ,
+                    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
                   });
                 }
               }
@@ -113,6 +116,7 @@ function lấyNơiĐăngTừNềnTảngChatKhác(
         "Tên nền tảng": tênNềnTảng,
         "Loại nền tảng": "Chat",
         URL: url,
+        "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
       });
     }
   }

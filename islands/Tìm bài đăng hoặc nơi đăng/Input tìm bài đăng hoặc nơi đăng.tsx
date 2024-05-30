@@ -26,7 +26,7 @@ function handleInput(
   }
 }
 
-function handleKeyDown(e: KeyboardEvent, mụcĐượcChọn: Signal<MụcĐượcChọn>) {
+function handleKeyDown(e: KeyboardEvent, mụcĐượcChọnSignal: Signal<MụcĐượcChọn>, tênDanhSách: TênDanhSách) {
   const danhSáchGợiÝ = danhSáchGợiÝSignal.value;
   if (!danhSáchGợiÝ) return;
 
@@ -45,7 +45,9 @@ function handleKeyDown(e: KeyboardEvent, mụcĐượcChọn: Signal<MụcĐư�
       //refactor: mount component ModalTạoMới vào đây
       (document.getElementById("model-tạo-mới") as HTMLDialogElement).showModal();
     } else {
-      mụcĐượcChọn.value = danhSáchGợiÝ[cursorHiệnTại].doc;
+      const mụcĐượcChọn = danhSáchGợiÝ[cursorHiệnTại].doc;
+      mụcĐượcChọnSignal.value = mụcĐượcChọn;
+      console.log(`${viếtHoa(tênDanhSách)} được chọn:`, mụcĐượcChọn);
       đổiKhungNhập("xuôi");
     }
   }
@@ -80,7 +82,7 @@ export default function InputTìmBàiĐăngHoặcNơiĐăng(
         placeholder={`Tìm ${tênDanhSách} hoặc dán URL để tạo mới`}
         onInput={(e: InputEvent) => handleInput(e, tênDanhSách, flexSearch, query)}
         onFocus={() => element.value = tênDanhSách}
-        onKeyDown={(e: KeyboardEvent) => handleKeyDown(e, mụcĐượcChọn)}
+        onKeyDown={(e: KeyboardEvent) => handleKeyDown(e, mụcĐượcChọn, tênDanhSách)}
       />
     </label>
   );

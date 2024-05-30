@@ -160,12 +160,13 @@ export default async function tạoDanhSáchBàiĐăngTrênVault(): Promise<Bài
           "Tên dự án": tênDựÁn,
           "Mã dự án": vault["Mã vault"], //todo
         },
-        "Mã bài đăng": frontmatter["Mã bài đăng"],
+        "Mã bài đăng": frontmatter.slug,
         "Nội dung bài đăng": {
           "Mô tả bài đăng": môTảBàiĐăng,
           "Toàn bộ nội dung": nộiDung.slice(0, 10000),
           "Định dạng nội dung": "md",
         },
+        "Phương thức tạo": "Cào vault",
       });
     }
   }

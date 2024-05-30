@@ -87,8 +87,8 @@
     "id": "1",
     "vậtThểId": {
       "id": "1",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -107,8 +107,8 @@
     "id": "2",
     "vậtThểId": {
       "id": "2",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -127,8 +127,8 @@
     "id": "3",
     "vậtThểId": {
       "id": "3",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -175,8 +175,8 @@
     "id": "6",
     "vậtThểId": {
       "id": "6",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -226,8 +226,8 @@
     "id": "7",
     "vậtThểId": {
       "id": "7",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -274,8 +274,8 @@
     "id": "6",
     "vậtThểId": {
       "id": "6",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -325,8 +325,8 @@
     "id": "7",
     "vậtThểId": {
       "id": "7",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -417,8 +417,8 @@
     "id": "8",
     "vậtThểId": {
       "id": "8",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -465,8 +465,8 @@
     "id": "9",
     "vậtThểId": {
       "id": "9",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -513,8 +513,8 @@
     "id": "A",
     "vậtThểId": {
       "id": "A",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -622,8 +622,8 @@
     "id": "B",
     "vậtThểId": {
       "id": "B",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -640,8 +640,8 @@
     "id": "C",
     "vậtThểId": {
       "id": "C",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -658,8 +658,8 @@
     "id": "D",
     "vậtThểId": {
       "id": "D",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -676,8 +676,8 @@
     "id": "E",
     "vậtThểId": {
       "id": "E",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -694,8 +694,8 @@
     "id": "F",
     "vậtThểId": {
       "id": "F",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -712,8 +712,8 @@
     "id": "G",
     "vậtThểId": {
       "id": "G",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -730,8 +730,8 @@
     "id": "H",
     "vậtThểId": {
       "id": "H",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -748,8 +748,8 @@
     "id": "I",
     "vậtThểId": {
       "id": "I",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -766,8 +766,8 @@
     "id": "J",
     "vậtThểId": {
       "id": "J",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -784,8 +784,8 @@
     "id": "K",
     "vậtThểId": {
       "id": "K",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -802,8 +802,8 @@
     "id": "L",
     "vậtThểId": {
       "id": "L",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -820,8 +820,8 @@
     "id": "M",
     "vậtThểId": {
       "id": "M",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -838,8 +838,8 @@
     "id": "N",
     "vậtThểId": {
       "id": "N",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -856,8 +856,8 @@
     "id": "O",
     "vậtThểId": {
       "id": "O",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -874,8 +874,8 @@
     "id": "P",
     "vậtThểId": {
       "id": "P",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -906,8 +906,8 @@
     "id": "Q",
     "vậtThểId": {
       "id": "Q",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -933,8 +933,8 @@
     "id": "R",
     "vậtThểId": {
       "id": "R",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -960,8 +960,8 @@
     "id": "S",
     "vậtThểId": {
       "id": "S",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -1050,8 +1050,8 @@
     "id": "T",
     "vậtThểId": {
       "id": "T",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -1140,8 +1140,8 @@
     "id": "U",
     "vậtThểId": {
       "id": "U",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -1230,8 +1230,8 @@
     "id": "V",
     "vậtThểId": {
       "id": "V",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -1320,8 +1320,8 @@
     "id": "W",
     "vậtThểId": {
       "id": "W",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -1410,8 +1410,8 @@
     "id": "X",
     "vậtThểId": {
       "id": "X",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -1500,8 +1500,8 @@
     "id": "Y",
     "vậtThểId": {
       "id": "Y",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -1610,8 +1610,8 @@
     "id": "Z",
     "vậtThểId": {
       "id": "Z",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -1720,8 +1720,8 @@
     "id": "a",
     "vậtThểId": {
       "id": "a",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -1738,8 +1738,8 @@
     "id": "b",
     "vậtThểId": {
       "id": "b",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -1780,8 +1780,8 @@
     "id": "c",
     "vậtThểId": {
       "id": "c",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -1809,12 +1809,12 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "orgs/QuaCau-TheSphere",
+    "Mã nơi đăng": "orgs/quacau-thesphere",
     "id": "d",
     "vậtThểId": {
       "id": "d",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -1842,12 +1842,12 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "CW-doi-thoai",
+    "Mã nơi đăng": "cw-doi-thoai",
     "id": "e",
     "vậtThểId": {
       "id": "e",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -1875,12 +1875,12 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "CW-obsidian-quan-ly-du-an-va-cong-cu-nghi",
+    "Mã nơi đăng": "cw-obsidian-quan-ly-du-an-va-cong-cu-nghi",
     "id": "f",
     "vậtThểId": {
       "id": "f",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -1908,12 +1908,12 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "CW-xu-ly-du-lieu-va-lap-trinh",
+    "Mã nơi đăng": "cw-xu-ly-du-lieu-va-lap-trinh",
     "id": "g",
     "vậtThểId": {
       "id": "g",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -1941,12 +1941,12 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "CV-obsidian-quan-ly-du-an-va-cong-cu-nghi",
+    "Mã nơi đăng": "cv-obsidian-quan-ly-du-an-va-cong-cu-nghi",
     "id": "h",
     "vậtThểId": {
       "id": "h",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -1974,12 +1974,12 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "EV-HeavyT",
+    "Mã nơi đăng": "ev-heavyt",
     "id": "i",
     "vậtThểId": {
       "id": "i",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2007,12 +2007,12 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "FV-khoa-hoc-xa-hoi",
+    "Mã nơi đăng": "fv-khoa-hoc-xa-hoi",
     "id": "j",
     "vậtThểId": {
       "id": "j",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2040,12 +2040,12 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "LandofSpheres",
+    "Mã nơi đăng": "landofspheres",
     "id": "k",
     "vậtThểId": {
       "id": "k",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2073,12 +2073,12 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "CV-tiep-thi-so-xu-ly-du-lieu-va-lap-trinh",
+    "Mã nơi đăng": "cv-tiep-thi-so-xu-ly-du-lieu-va-lap-trinh",
     "id": "l",
     "vậtThểId": {
       "id": "l",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2110,8 +2110,8 @@
     "id": "m",
     "vậtThểId": {
       "id": "m",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2143,8 +2143,8 @@
     "id": "n",
     "vậtThểId": {
       "id": "n",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2176,8 +2176,8 @@
     "id": "o",
     "vậtThểId": {
       "id": "o",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2205,12 +2205,12 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "EW-heavyT",
+    "Mã nơi đăng": "ew-heavyt",
     "id": "p",
     "vậtThểId": {
       "id": "p",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2238,12 +2238,12 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "ObsidianPulisherTest",
+    "Mã nơi đăng": "obsidianpulishertest",
     "id": "q",
     "vậtThểId": {
       "id": "q",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2275,8 +2275,8 @@
     "id": "r",
     "vậtThểId": {
       "id": "r",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2304,12 +2304,12 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "DV-phat-trien-ban-than",
+    "Mã nơi đăng": "dv-phat-trien-ban-than",
     "id": "s",
     "vậtThểId": {
       "id": "s",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2337,12 +2337,12 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "NeedExchange",
+    "Mã nơi đăng": "needexchange",
     "id": "t",
     "vậtThểId": {
       "id": "t",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2370,12 +2370,12 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "DW-phat-trien-ban-than",
+    "Mã nơi đăng": "dw-phat-trien-ban-than",
     "id": "u",
     "vậtThểId": {
       "id": "u",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2403,12 +2403,12 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "quacau-thesphere.github.io-https://github.com/QuaCau-TheSphere/quacau-thesphere.github.io",
+    "Mã nơi đăng": "quacau-thesphere.github.io-https://github.com/quacau-thesphere/quacau-thesphere.github.io",
     "id": "v",
     "vậtThểId": {
       "id": "v",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2440,8 +2440,8 @@
     "id": "w",
     "vậtThểId": {
       "id": "w",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2469,12 +2469,12 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "Buoc-Chan",
+    "Mã nơi đăng": "buoc-chan",
     "id": "x",
     "vậtThểId": {
       "id": "x",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2502,12 +2502,12 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "LOS-Installer",
+    "Mã nơi đăng": "los-installer",
     "id": "y",
     "vậtThểId": {
       "id": "y",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2535,12 +2535,12 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "Ca-nhan-khac",
+    "Mã nơi đăng": "ca-nhan-khac",
     "id": "z",
     "vậtThểId": {
       "id": "z",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2568,12 +2568,12 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "SampleVault",
+    "Mã nơi đăng": "samplevault",
     "id": "-",
     "vậtThểId": {
       "id": "-",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2601,12 +2601,12 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "Graphvidian",
+    "Mã nơi đăng": "graphvidian",
     "id": "_",
     "vậtThểId": {
       "id": "_",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2651,8 +2651,8 @@
     "id": "1m",
     "vậtThểId": {
       "id": "1m",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2697,8 +2697,8 @@
     "id": "1n",
     "vậtThểId": {
       "id": "1n",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2743,8 +2743,8 @@
     "id": "1o",
     "vậtThểId": {
       "id": "1o",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2793,8 +2793,8 @@
     "id": "1p",
     "vậtThểId": {
       "id": "1p",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2843,8 +2843,8 @@
     "id": "1q",
     "vậtThểId": {
       "id": "1q",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2895,8 +2895,8 @@
     "id": "1r",
     "vậtThểId": {
       "id": "1r",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2947,8 +2947,8 @@
     "id": "1s",
     "vậtThểId": {
       "id": "1s",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -2997,8 +2997,8 @@
     "id": "1t",
     "vậtThểId": {
       "id": "1t",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -3047,8 +3047,8 @@
     "id": "1u",
     "vậtThểId": {
       "id": "1u",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -3099,8 +3099,8 @@
     "id": "1v",
     "vậtThểId": {
       "id": "1v",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -3151,8 +3151,8 @@
     "id": "1w",
     "vậtThểId": {
       "id": "1w",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -3203,8 +3203,8 @@
     "id": "1x",
     "vậtThểId": {
       "id": "1x",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -3255,8 +3255,8 @@
     "id": "1y",
     "vậtThểId": {
       "id": "1y",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -3307,8 +3307,8 @@
     "id": "1z",
     "vậtThểId": {
       "id": "1z",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -3359,8 +3359,8 @@
     "id": "1-",
     "vậtThểId": {
       "id": "1-",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -3411,8 +3411,8 @@
     "id": "1_",
     "vậtThểId": {
       "id": "1_",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -3463,8 +3463,8 @@
     "id": "20",
     "vậtThểId": {
       "id": "20",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -3513,8 +3513,8 @@
     "id": "21",
     "vậtThểId": {
       "id": "21",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -3563,8 +3563,8 @@
     "id": "22",
     "vậtThểId": {
       "id": "22",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -3613,8 +3613,8 @@
     "id": "23",
     "vậtThểId": {
       "id": "23",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -3665,8 +3665,8 @@
     "id": "24",
     "vậtThểId": {
       "id": "24",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -3717,8 +3717,8 @@
     "id": "25",
     "vậtThểId": {
       "id": "25",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -3769,8 +3769,8 @@
     "id": "26",
     "vậtThểId": {
       "id": "26",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -3821,8 +3821,8 @@
     "id": "27",
     "vậtThểId": {
       "id": "27",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -3867,8 +3867,8 @@
     "id": "1m",
     "vậtThểId": {
       "id": "1m",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -3913,8 +3913,8 @@
     "id": "1n",
     "vậtThểId": {
       "id": "1n",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -3959,8 +3959,8 @@
     "id": "1o",
     "vậtThểId": {
       "id": "1o",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -4009,8 +4009,8 @@
     "id": "1p",
     "vậtThểId": {
       "id": "1p",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -4059,8 +4059,8 @@
     "id": "1q",
     "vậtThểId": {
       "id": "1q",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -4111,8 +4111,8 @@
     "id": "1r",
     "vậtThểId": {
       "id": "1r",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -4163,8 +4163,8 @@
     "id": "1s",
     "vậtThểId": {
       "id": "1s",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -4213,8 +4213,8 @@
     "id": "1t",
     "vậtThểId": {
       "id": "1t",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -4263,8 +4263,8 @@
     "id": "1u",
     "vậtThểId": {
       "id": "1u",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -4315,8 +4315,8 @@
     "id": "1v",
     "vậtThểId": {
       "id": "1v",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -4367,8 +4367,8 @@
     "id": "1w",
     "vậtThểId": {
       "id": "1w",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -4419,8 +4419,8 @@
     "id": "1x",
     "vậtThểId": {
       "id": "1x",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -4471,8 +4471,8 @@
     "id": "1y",
     "vậtThểId": {
       "id": "1y",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -4523,8 +4523,8 @@
     "id": "1z",
     "vậtThểId": {
       "id": "1z",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -4575,8 +4575,8 @@
     "id": "1-",
     "vậtThểId": {
       "id": "1-",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -4627,8 +4627,8 @@
     "id": "1_",
     "vậtThểId": {
       "id": "1_",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -4679,8 +4679,8 @@
     "id": "20",
     "vậtThểId": {
       "id": "20",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -4729,8 +4729,8 @@
     "id": "21",
     "vậtThểId": {
       "id": "21",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -4779,8 +4779,8 @@
     "id": "22",
     "vậtThểId": {
       "id": "22",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -4829,8 +4829,8 @@
     "id": "23",
     "vậtThểId": {
       "id": "23",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -4881,8 +4881,8 @@
     "id": "24",
     "vậtThểId": {
       "id": "24",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -4933,8 +4933,8 @@
     "id": "25",
     "vậtThểId": {
       "id": "25",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -4985,8 +4985,8 @@
     "id": "26",
     "vậtThểId": {
       "id": "26",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -5037,8 +5037,8 @@
     "id": "27",
     "vậtThểId": {
       "id": "27",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -5083,8 +5083,8 @@
     "id": "1m",
     "vậtThểId": {
       "id": "1m",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -5129,8 +5129,8 @@
     "id": "1n",
     "vậtThểId": {
       "id": "1n",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -5175,8 +5175,8 @@
     "id": "1o",
     "vậtThểId": {
       "id": "1o",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -5225,8 +5225,8 @@
     "id": "1p",
     "vậtThểId": {
       "id": "1p",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -5275,8 +5275,8 @@
     "id": "1q",
     "vậtThểId": {
       "id": "1q",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -5327,8 +5327,8 @@
     "id": "1r",
     "vậtThểId": {
       "id": "1r",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -5379,8 +5379,8 @@
     "id": "1s",
     "vậtThểId": {
       "id": "1s",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -5429,8 +5429,8 @@
     "id": "1t",
     "vậtThểId": {
       "id": "1t",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -5479,8 +5479,8 @@
     "id": "1u",
     "vậtThểId": {
       "id": "1u",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -5531,8 +5531,8 @@
     "id": "1v",
     "vậtThểId": {
       "id": "1v",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -5583,8 +5583,8 @@
     "id": "1w",
     "vậtThểId": {
       "id": "1w",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -5635,8 +5635,8 @@
     "id": "1x",
     "vậtThểId": {
       "id": "1x",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -5687,8 +5687,8 @@
     "id": "1y",
     "vậtThểId": {
       "id": "1y",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -5739,8 +5739,8 @@
     "id": "1z",
     "vậtThểId": {
       "id": "1z",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -5791,8 +5791,8 @@
     "id": "1-",
     "vậtThểId": {
       "id": "1-",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -5843,8 +5843,8 @@
     "id": "1_",
     "vậtThểId": {
       "id": "1_",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -5895,8 +5895,8 @@
     "id": "20",
     "vậtThểId": {
       "id": "20",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -5945,8 +5945,8 @@
     "id": "21",
     "vậtThểId": {
       "id": "21",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -5995,8 +5995,8 @@
     "id": "22",
     "vậtThểId": {
       "id": "22",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -6045,8 +6045,8 @@
     "id": "23",
     "vậtThểId": {
       "id": "23",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -6097,8 +6097,8 @@
     "id": "24",
     "vậtThểId": {
       "id": "24",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -6149,8 +6149,8 @@
     "id": "25",
     "vậtThểId": {
       "id": "25",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -6201,8 +6201,8 @@
     "id": "26",
     "vậtThểId": {
       "id": "26",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -6253,8 +6253,8 @@
     "id": "27",
     "vậtThểId": {
       "id": "27",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -6271,8 +6271,8 @@
     "id": "28",
     "vậtThểId": {
       "id": "28",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -6289,8 +6289,8 @@
     "id": "29",
     "vậtThểId": {
       "id": "29",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -6307,8 +6307,8 @@
     "id": "2A",
     "vậtThểId": {
       "id": "2A",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -6321,12 +6321,12 @@
     "Tên nền tảng": "Vault",
     "Loại nền tảng": "Vault",
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "B-Mạng kết nối nhu cầu",
+    "Mã nơi đăng": "B-Mạng-kết-nối-nhu-cầu",
     "id": "2B",
     "vậtThểId": {
       "id": "2B",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -6339,12 +6339,12 @@
     "Tên nền tảng": "Vault",
     "Loại nền tảng": "Vault",
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "C-Obsidian, quản lý dự án và công cụ nghĩ",
+    "Mã nơi đăng": "C-Obsidian,-quản-lý-dự-án-và-công-cụ-nghĩ",
     "id": "2C",
     "vậtThểId": {
       "id": "2C",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -6357,12 +6357,12 @@
     "Tên nền tảng": "Vault",
     "Loại nền tảng": "Vault",
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "C-Tiếp thị số, xử lý dữ liệu và lập trình",
+    "Mã nơi đăng": "C-Tiếp-thị-số,-xử-lý-dữ-liệu-và-lập-trình",
     "id": "2D",
     "vậtThểId": {
       "id": "2D",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -6375,12 +6375,12 @@
     "Tên nền tảng": "Vault",
     "Loại nền tảng": "Vault",
     "Đơn vị quản lý": "Quả Cầu",
-    "Mã nơi đăng": "D-Học kỹ năng, phát triển bản thân",
+    "Mã nơi đăng": "D-Học-kỹ-năng,-phát-triển-bản-thân",
     "id": "2E",
     "vậtThểId": {
       "id": "2E",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -6411,8 +6411,8 @@
     "id": "2F",
     "vậtThểId": {
       "id": "2F",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -6443,8 +6443,8 @@
     "id": "2G",
     "vậtThểId": {
       "id": "2G",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -6475,8 +6475,8 @@
     "id": "2H",
     "vậtThểId": {
       "id": "2H",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -6507,8 +6507,8 @@
     "id": "2I",
     "vậtThểId": {
       "id": "2I",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -6539,8 +6539,8 @@
     "id": "2J",
     "vậtThểId": {
       "id": "2J",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -6566,8 +6566,8 @@
     "id": "2K",
     "vậtThểId": {
       "id": "2K",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -6656,8 +6656,8 @@
     "id": "2L",
     "vậtThểId": {
       "id": "2L",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -6701,8 +6701,8 @@
     "id": "2M",
     "vậtThểId": {
       "id": "2M",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   },
   {
@@ -6746,8 +6746,8 @@
     "id": "2N",
     "vậtThểId": {
       "id": "2N",
-      "cáchXácĐịnh": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-      "mãCáchXácĐịnh": 1
+      "cáchXácĐịnh": 1,
+      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
     }
   }
 ]

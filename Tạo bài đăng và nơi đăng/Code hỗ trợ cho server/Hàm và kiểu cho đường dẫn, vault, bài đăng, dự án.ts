@@ -46,7 +46,7 @@ export interface YAMLCủaGhiChú {
   created?: string;
   updated?: string;
   share?: boolean;
-  "Mã bài đăng"?: string;
+  slug?: string;
 }
 export interface NộiDungBàiĐăng {
   "Mô tả bài đăng"?: string;
@@ -65,6 +65,7 @@ export interface BàiĐăng {
   "Ngày tạo"?: Date;
   "Ngày cập nhật"?: Date;
   id: string;
+  "Phương thức tạo": "Cào vault" | "Cào web" | "Nhập từ CSV" | "Lấy trong cấu hình nơi đăng" | "Người dùng nhập tay trên web";
   vậtThểId?: VậtThểId;
 }
 

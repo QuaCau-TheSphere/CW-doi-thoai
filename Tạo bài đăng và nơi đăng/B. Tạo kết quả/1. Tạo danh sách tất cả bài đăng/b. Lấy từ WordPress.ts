@@ -24,6 +24,7 @@ export default async function tạoDanhSáchBàiĐăngTrênWordPress() {
         "Mã dự án": "", //todo
       },
       Vault: "WordPress",
+      "Phương thức tạo": "Nhập từ CSV",
     });
   }
   return danhSáchBàiĐăng;

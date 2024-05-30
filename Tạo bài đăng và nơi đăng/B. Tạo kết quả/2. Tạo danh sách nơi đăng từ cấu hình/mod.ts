@@ -40,6 +40,7 @@ function tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, d
           "Tên nền tảng": tênDiễnĐàn,
           "Loại nền tảng": "Diễn đàn",
           URL: url,
+          "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
         });
       }
     }
@@ -58,6 +59,7 @@ function tạoDanhSáchTậpTin(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danh
         "Tên nền tảng": địnhĐạngTậpTin,
         "Loại nền tảng": "Tập tin",
         URL: url,
+        "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
       });
     }
   }

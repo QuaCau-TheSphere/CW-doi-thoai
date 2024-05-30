@@ -15,6 +15,7 @@ async function tạoDanhSáchBàiĐăngTừCấuHìnhNơiĐăng(vậtThểCấuH
     try {
       danhSáchBàiĐăng.push({
         ...await tạoBàiĐăngTừURL(url.href),
+        "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
         // "Dự án": {
         //   "Tên dự án": undefined,
         //   "Mã dự án": undefined,

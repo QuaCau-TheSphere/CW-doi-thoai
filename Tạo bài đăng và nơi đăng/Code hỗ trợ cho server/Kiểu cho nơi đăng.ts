@@ -70,6 +70,7 @@ export interface ThôngTinNơiĐăng {
   "Vị trí có thể đăng"?: DanhSáchVịTríCóThểĐăng;
   id: string;
   vậtThểId?: VậtThểId;
+  "Phương thức tạo": "Lấy từ cấu hình nơi đăng" | "Người dùng nhập tay trên web";
 }
 export type ThôngTinNơiĐăngChưaCóId = Omit<ThôngTinNơiĐăng, "id">;
 /**
