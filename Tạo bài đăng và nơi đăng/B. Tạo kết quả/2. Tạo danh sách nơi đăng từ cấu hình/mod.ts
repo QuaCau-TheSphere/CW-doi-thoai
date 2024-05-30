@@ -17,7 +17,7 @@ import {
 } from "../../Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { táchUrlTrongChuỗi, đổiTừCơSố10SangCơSố64 } from "../../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
-import { xácĐịnhId } from "../../Code hỗ trợ cho server/Hàm cho id.ts";
+import { xácĐịnhIdTrênLocal } from "../../Code hỗ trợ cho server/Hàm cho id.ts";
 import { tạoMãNơiĐăng, tạoTừĐiểnMãNơiĐăng } from "./Tạo mã nơi đăng.ts";
 import CấuHìnhNơiĐăng, {
   lấyCấuHìnhChung,
@@ -152,8 +152,8 @@ export async function tạoDanhSáchNơiĐăngTừTấtCảCấuHình() {
   let sốNơiĐăngChưaCóId = 0;
   for (const nơiĐăngChưaCóId of danhSáchNơiĐăngChưaCóIdTừTấtCảCấuHình) {
     let id: string;
-    const vậtThểId = await xácĐịnhId("nơi đăng", nơiĐăngChưaCóId);
-    if (vậtThểId.mãCáchXácĐịnh !== 3) {
+    const vậtThểId = await xácĐịnhIdTrênLocal("nơi đăng", nơiĐăngChưaCóId);
+    if (vậtThểId.cáchXácĐịnh !== 3) {
       id = vậtThểId.id;
     } else {
       sốNơiĐăngChưaCóId += 1;

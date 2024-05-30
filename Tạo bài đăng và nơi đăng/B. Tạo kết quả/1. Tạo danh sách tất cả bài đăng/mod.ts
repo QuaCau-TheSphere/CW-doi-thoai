@@ -5,7 +5,7 @@ import * as linkify from "npm:linkifyjs";
 import { ThôngTinCấuHìnhNơiĐăng } from "../../Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
 import { tạoBàiĐăngTừURL } from "../../Code hỗ trợ cho server/Tạo bài đăng hoặc nơi đăng từ URL.ts";
 import { đổiTừCơSố10SangCơSố64 } from "../../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
-import { xácĐịnhId } from "../../Code hỗ trợ cho server/Hàm cho id.ts";
+import { xácĐịnhIdTrênLocal } from "../../Code hỗ trợ cho server/Hàm cho id.ts";
 
 async function tạoDanhSáchBàiĐăngTừCấuHìnhNơiĐăng(vậtThểCấuHình: ThôngTinCấuHìnhNơiĐăng): Promise<BàiĐăngChưaCóId[]> {
   const danhSáchBàiĐăng: BàiĐăngChưaCóId[] = [];
@@ -39,8 +39,8 @@ export async function tạoDanhSáchBàiĐăng(danhSáchVậtThểCấuHìnhNơi
   let sốBàiĐăngChưaCóId = 0;
   for (const bàiĐăngChưaCóId of danhSáchBàiĐăngChưaCóId) {
     let id: string;
-    const vậtThểId = await xácĐịnhId("bài đăng", bàiĐăngChưaCóId);
-    if (vậtThểId.mãCáchXácĐịnh !== 3) {
+    const vậtThểId = await xácĐịnhIdTrênLocal("bài đăng", bàiĐăngChưaCóId);
+    if (vậtThểId.cáchXácĐịnh !== 3) {
       id = vậtThểId.id;
     } else {
       sốBàiĐăngChưaCóId += 1;

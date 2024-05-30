@@ -7,13 +7,14 @@ import {
 import { VậtThểTiếpThị } from "./Kiểu cho vật thể tiếp thị.ts";
 import { lầnĐăngGầnNhất } from "../islands/Signals tổng.ts";
 import { TênDanhSách } from "./Hàm và kiểu cho khung nhập.ts";
+import { SốLượngDữLiệu } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho KV.ts";
 
-export interface ReqBàiĐăngHoặcNơiĐăngTạoMới {
+export interface ReqBàiĐăngHoặcNơiĐăng {
   "Tên danh sách": TênDanhSách;
   "Dữ liệu": BàiĐăngChưaCóId | NơiĐăngCóCácLựaChọnVịTríChưaCóId;
 }
 
-export async function ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv(dữLiệuMới: ReqBàiĐăngHoặcNơiĐăngTạoMới) {
+export async function ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv(dữLiệuMới: ReqBàiĐăngHoặcNơiĐăng) {
   const url = `${origin}/api/thêm-bài-đăng-hoặc-nơi-đăng-mới`;
   const res = await fetch(url, {
     method: "POST",
@@ -57,4 +58,16 @@ export async function ghiVậtThểTiếpThịLênKV(vậtThểTiếpThị: Vậ
     body: JSON.stringify(vậtThểTiếpThị),
   });
   console.log("Đã thêm thành công vật thể tiếp thị vào cơ sở dữ liệu:", await res.json());
+}
+
+export async function kiểmTraBàiĐăngHoặcNơiĐăngĐãCó(
+  dữLiệuMới: ReqBàiĐăngHoặcNơiĐăng,
+): Promise<BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí | SốLượngDữLiệu> {
+  const url = `${origin}/api/kiểm-tra-bài-đăng-hoặc-nơi-đăng-đã-có`;
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(dữLiệuMới),
+  });
+  return await res.json();
 }

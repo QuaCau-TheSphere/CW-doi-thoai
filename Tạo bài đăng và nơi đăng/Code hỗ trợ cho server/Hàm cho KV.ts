@@ -1,4 +1,4 @@
-import { ReqBàiĐăngHoặcNơiĐăngTạoMới } from "../../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
+import { ReqBàiĐăngHoặcNơiĐăng } from "../../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
 import { tạoTênNơiĐăngString } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 import { TênDanhSách } from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
 import { tạoDanhSáchBàiĐăng } from "../B. Tạo kết quả/1. Tạo danh sách tất cả bài đăng/mod.ts";
@@ -12,7 +12,7 @@ import { kvSignal, readUnitSignal, writeUnitSignal } from "./Signal KV.ts";
 import sizeof from "npm:object-sizeof";
 
 export type TableName = "Nơi đăng" | "Bài đăng" | "Vật thể tiếp thị";
-type SốLượngDữLiệu = Map<TableName, number>;
+export type SốLượngDữLiệu = Map<TableName, number>;
 
 export function increaseReadUnit(data: any) {
   const KiB = sizeof(data) / 1024;
@@ -57,7 +57,7 @@ export async function kvSetValueAndCount(
   tableName: TableName,
 ) {
   await kvSet(key, value);
-  if (value.vậtThểId?.mãCáchXácĐịnh === 1) return;
+  if (value.vậtThểId?.cáchXácĐịnh === 1) return;
 
   const sốLượngDữLiệu = (await kvGet(["Số lượng dữ liệu"])).value as SốLượngDữLiệu | null;
   if (sốLượngDữLiệu) {
@@ -108,7 +108,7 @@ export function tạoKeyKV(tênDanhSách: TênDanhSách, dữLiệu: BàiĐăng 
   }
 }
 
-export async function thêmBàiĐăngHoặcNơiĐăngMớiVàoKV(bàiĐăngHoặcNơiĐăngTạoMới: ReqBàiĐăngHoặcNơiĐăngTạoMới) {
+export async function thêmBàiĐăngHoặcNơiĐăngMớiVàoKV(bàiĐăngHoặcNơiĐăngTạoMới: ReqBàiĐăngHoặcNơiĐăng) {
   const { "Tên danh sách": tênDanhSách, "Dữ liệu": dữLiệu } = bàiĐăngHoặcNơiĐăngTạoMới;
   const key = tạoKeyKV(tênDanhSách, dữLiệu);
   const value = { ...dữLiệu, "Thời điểm nhập vào KV": new Date() };

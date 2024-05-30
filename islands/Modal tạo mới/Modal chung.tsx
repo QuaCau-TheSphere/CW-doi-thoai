@@ -2,19 +2,9 @@ import { Signal } from "@preact/signals";
 import { MụcĐượcChọn, TênDanhSách, đổiKhungNhập } from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
 import ModalBàiĐăng from "./Modal bài đăng.tsx";
 import ModalNơiĐăng from "./Modal nơi đăng.tsx";
-import {
-  BàiĐăng,
-  BàiĐăngChưaCóId,
-  URLString,
-} from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { LoạiNềnTảng, ThôngTinNơiĐăngChưaCóId, TênNềnTảng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
 import { element } from "../Signals tổng.ts";
 import { ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv } from "../../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
-import {
-  NơiĐăngCóCácLựaChọnVịTrí,
-  NơiĐăngCóCácLựaChọnVịTríChưaCóId,
-} from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
-import { xácĐịnhId } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho id.ts";
+import { tạoVậtThểDữLiệuMới } from "../../Code hỗ trợ cho client/Kiểu cho vật thể tiếp thị.ts";
 
 function CácTrườngNhậpMới({ tênDanhSách }: { tênDanhSách: TênDanhSách }) {
   switch (tênDanhSách) {
@@ -25,69 +15,6 @@ function CácTrườngNhậpMới({ tênDanhSách }: { tênDanhSách: TênDanhS�
     default:
       return <></>;
   }
-}
-
-/**
- * Chuyển cấu trúc từ formData trên web sang BàiĐăng hoặc NơiĐăngChưaXácĐịnhVịTrí
- */
-async function tạoVậtThểDữLiệuMới(formData: Record<string, FormDataEntryValue>, tênDanhSách: TênDanhSách) {
-  let dữLiệuChưaCóId: BàiĐăngChưaCóId | NơiĐăngCóCácLựaChọnVịTríChưaCóId;
-  switch (tênDanhSách) {
-    case "bài đăng": {
-      const {
-        URL: url,
-        "Tiêu đề": tiêuĐề,
-        "Mô tả bài đăng": môTảBàiĐăng,
-        "Tên dự án": dựÁn,
-        Website: vault,
-      } = formData as Record<string, string>;
-      dữLiệuChưaCóId = {
-        URL: url,
-        "Tiêu đề": tiêuĐề,
-        "Dự án": {
-          "Mã dự án": undefined,
-          "Tên dự án": dựÁn,
-        },
-        "Mã bài đăng": undefined,
-        "Nội dung bài đăng": {
-          "Mô tả bài đăng": môTảBàiĐăng,
-          "Toàn bộ nội dung": undefined,
-          "Định dạng nội dung": undefined,
-        },
-        Vault: vault,
-      } satisfies BàiĐăngChưaCóId;
-      break;
-    }
-    case "nơi đăng": {
-      const {
-        URL: url,
-        "Tên nơi đăng": tênNơiĐăng,
-        "Loại nơi đăng": loạiNơiĐăng,
-        "Tên nền tảng": tênNềnTảng,
-        "Mô tả nơi đăng": môTảNơiĐăng,
-        "Loại nền tảng": loạiNềnTảng,
-        "Vị trí có thể đăng": vịTríCóThểĐăng,
-      } = formData as Record<string, string>;
-      dữLiệuChưaCóId = {
-        URL: url as URLString,
-        "Tên nơi đăng": JSON.parse(tênNơiĐăng),
-        "Loại nơi đăng": JSON.parse(loạiNơiĐăng),
-        "Tên nền tảng": tênNềnTảng as TênNềnTảng,
-        "Mô tả nơi đăng": môTảNơiĐăng,
-        "Loại nền tảng": loạiNềnTảng as LoạiNềnTảng,
-        "Vị trí có thể đăng": JSON.parse(vịTríCóThểĐăng),
-      };
-      break;
-    }
-  }
-  const dữLiệuCóId: BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí = {
-    ...dữLiệuChưaCóId,
-    id: (await xácĐịnhId(tênDanhSách, dữLiệuChưaCóId)).id,
-  };
-  return {
-    "Tên danh sách": tênDanhSách,
-    "Dữ liệu": dữLiệuCóId,
-  };
 }
 
 async function handleSubmit(event: any, tênDanhSách: TênDanhSách, mụcĐượcChọn: Signal<MụcĐượcChọn>) {
