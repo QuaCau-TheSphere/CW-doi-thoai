@@ -38,7 +38,7 @@ export default function Main({ danhSáchNơiĐăng, danhSáchBàiĐăng, cấuH�
         "Dự án:Mã dự án",
         "Tác giả",
         "URL",
-        "Mã bài đăng",
+        "Slug",
         "Nội dung bài đăng:Mô tả bài đăng",
       ],
       store: true,

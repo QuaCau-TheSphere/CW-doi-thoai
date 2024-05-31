@@ -18,8 +18,8 @@ export default function ModalBàiĐăng() {
   const {
     "Tiêu đề": tiêuĐề,
     "Dự án": dựÁn,
-    Vault: vault,
     "Nội dung bài đăng": nộiDungBàiĐăng,
+    Slug: slug,
   } = bàiĐăng;
   return (
     <>
@@ -81,16 +81,17 @@ export default function ModalBàiĐăng() {
 
       <label class="form-control w-full max-w-xs">
         <div class="label">
-          <span class="label-text font-bold">Website</span>
+          <span class="label-text font-bold">Slug</span>
         </div>
         <input
           class="input input-bordered w-full max-w-xs"
-          id="website"
+          id="slug"
           type="text"
-          name="Website"
-          value={vault}
+          name="Slug"
+          value={slug}
         />
       </label>
+
       <details>
         <summary>Nâng cao</summary>
         <textarea

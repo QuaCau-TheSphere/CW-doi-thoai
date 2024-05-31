@@ -11,7 +11,7 @@ export interface VậtThểId {
 }
 /**
  * Việc tạo Id chỉ vào lúc trước khi dữ liệu được đẩy lên KV từ local, hoặc khi người dùng tạo mới trên client. Không tạo id khi mới lấy URL, để tránh tình trạng tạo og xong thì người dùng không làm nữa
- * Id cần ngắn nhất có thể để nếu không tạo được mã bài đăng có ý nghĩa thì id sẽ được dùng để tạo đuôi rút gọn
+ * Id cần ngắn nhất có thể để nếu không tạo được Slug có ý nghĩa thì id sẽ được dùng để tạo đuôi rút gọn
  */
 export async function xácĐịnhIdTrênLocal(
   tênDanhSách: TênDanhSách,

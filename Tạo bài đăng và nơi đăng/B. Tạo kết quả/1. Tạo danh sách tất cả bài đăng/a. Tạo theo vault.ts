@@ -160,7 +160,7 @@ export default async function tạoDanhSáchBàiĐăngTrênVault(): Promise<Bài
           "Tên dự án": tênDựÁn,
           "Mã dự án": vault["Mã vault"], //todo
         },
-        "Mã bài đăng": frontmatter.slug,
+        Slug: frontmatter.slug,
         "Nội dung bài đăng": {
           "Mô tả bài đăng": môTảBàiĐăng,
           "Toàn bộ nội dung": nộiDung.slice(0, 10000),

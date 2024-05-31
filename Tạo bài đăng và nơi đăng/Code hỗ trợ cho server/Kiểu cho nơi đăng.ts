@@ -64,7 +64,7 @@ export interface ThôngTinNơiĐăng {
   "Tên nơi đăng": TênNơiĐăng;
   URL?: URLString;
   "Lĩnh vực"?: string[];
-  "Mô tả nơi đăng"?: string;
+  "Mô tả nơi đăng"?: string | null;
   "Mã nơi đăng"?: string;
   "Đơn vị quản lý"?: string;
   "Vị trí có thể đăng"?: DanhSáchVịTríCóThểĐăng;

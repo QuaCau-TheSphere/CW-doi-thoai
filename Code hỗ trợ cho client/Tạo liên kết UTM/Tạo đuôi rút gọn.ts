@@ -14,7 +14,7 @@ function tạoPhầnBàiĐăng(bàiĐăng: BàiĐăng, cấuHìnhViếtTắt: C�
   } else if (vault) {
     mãDựÁnHoặcVault = kiểuKebab(vault);
   }
-  const mãBàiĐăng = bàiĐăng["Mã bài đăng"] || id;
+  const mãBàiĐăng = bàiĐăng["Slug"] || id;
   return `${mãDựÁnHoặcVault}:${mãBàiĐăng}`;
 }
 
@@ -34,7 +34,7 @@ function tạoPhầnNơiĐăng(
 
 /**
  * Đuôi rút gọn theo cấu trúc sau: `phầnChoBàiĐăng.phầnChoNơiĐăng.lầnĐăng`
- * @param bàiĐăng Thứ tự tìm: mã bài đăng, mã dự án, viết tắt của tên dự án, ngẫu nhiên ký tự
+ * @param bàiĐăng Thứ tự tìm: Slug, mã dự án, viết tắt của tên dự án, ngẫu nhiên ký tự
  * @param nơiĐăng
  * @param lầnĐăng
  * @param từĐiểnMãNơiĐăng

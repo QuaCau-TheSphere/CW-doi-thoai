@@ -8,7 +8,7 @@ import { Signal } from "@preact/signals";
 import { kiểuKebab, tạoLoạiNơiĐăngString, tạoTênNơiĐăngString, xửLýPunycode } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 
 function tạoDòngPhụCủaBàiĐăng(bàiĐăng: BàiĐăng) {
-  const { "Dự án": dựÁn, Vault: vault, URL, "Mã bài đăng": mãBàiĐăng, id } = bàiĐăng;
+  const { "Dự án": dựÁn, Vault: vault, URL, "Slug": mãBàiĐăng, id } = bàiĐăng;
   let key, value;
   if (dựÁn && dựÁn["Tên dự án"]) {
     key = "Dự án";

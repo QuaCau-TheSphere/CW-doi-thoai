@@ -45,7 +45,7 @@ export async function tạoVậtThểDữLiệuMới(formData: Record<string, Fo
           "Mã dự án": undefined,
           "Tên dự án": dựÁn,
         },
-        "Mã bài đăng": undefined,
+        "Slug": undefined,
         "Nội dung bài đăng": {
           "Mô tả bài đăng": môTảBàiĐăng,
           "Toàn bộ nội dung": undefined,

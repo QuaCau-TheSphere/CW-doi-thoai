@@ -2,7 +2,7 @@ import { FreshContext, Handlers } from "$fresh/server.ts";
 import { tạoBàiĐăngTừURL, tạoNơiĐăngTừURL } from "../../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Tạo bài đăng hoặc nơi đăng từ URL.ts";
 import esthetic from "npm:esthetic";
 
-function lấyURL(ctx: FreshContext<Record<string, unknown>>) {
+function lọcUrlStringTừContext(ctx: FreshContext<Record<string, unknown>>) {
   const fullUrl = ctx.url.href;
   const temp = fullUrl.split("/api/cors-proxy/");
   temp.shift();
@@ -14,7 +14,7 @@ function lấyURL(ctx: FreshContext<Record<string, unknown>>) {
 export const handler: Handlers = {
   async GET(_req, ctx) {
     try {
-      const url = lấyURL(ctx);
+      const url = lọcUrlStringTừContext(ctx);
       try {
         return Response.json({
           "Nếu là bài đăng": await tạoBàiĐăngTừURL(url),

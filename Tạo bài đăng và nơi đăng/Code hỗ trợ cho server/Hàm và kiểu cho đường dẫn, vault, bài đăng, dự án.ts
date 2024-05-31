@@ -49,7 +49,7 @@ export interface YAMLCủaGhiChú {
   slug?: string;
 }
 export interface NộiDungBàiĐăng {
-  "Mô tả bài đăng"?: string;
+  "Mô tả bài đăng"?: string | null;
   "Toàn bộ nội dung"?: string;
   "Định dạng nội dung"?: "md" | "html";
 }
@@ -59,7 +59,7 @@ export interface BàiĐăng {
   "URL": URLString;
   "Dự án"?: DựÁn;
   Vault?: string;
-  "Mã bài đăng"?: string;
+  "Slug"?: string;
   "Nội dung bài đăng"?: NộiDungBàiĐăng;
   "Tác giả"?: string;
   "Ngày tạo"?: Date;
@@ -78,7 +78,7 @@ export interface BàiĐăng {
  *
  * Nếu khác định dạng bài đăng (VD một cái là markdown, một cái là HTML) thì mặc định là bài đăng khác nhau.
  *
- * Nếu các tiêu chí chính đều khác nhau và cùng định dạng bài đăng thì bắt đầu xét tới các tiêu chí phụ: Vault, id, mã bài đăng, tên dự án, mã dự án. Chúng là những thông tin thường hay bị bỏ qua khi viết. Tuy nhiên, chúng lại có đặc điểm là ít bị thay đổi hơn là các tiêu chí chính. Nếu có quá nửa số tiêu chí phụ khác nhau thì xét là bài đăng khác nhau. Còn không thì xét là giống nhau.
+ * Nếu các tiêu chí chính đều khác nhau và cùng định dạng bài đăng thì bắt đầu xét tới các tiêu chí phụ: Vault, id, Slug, tên dự án, mã dự án. Chúng là những thông tin thường hay bị bỏ qua khi viết. Tuy nhiên, chúng lại có đặc điểm là ít bị thay đổi hơn là các tiêu chí chính. Nếu có quá nửa số tiêu chí phụ khác nhau thì xét là bài đăng khác nhau. Còn không thì xét là giống nhau.
  *
  * Nên xét thế nào về id? Liệu có nên xác định là giống nhau nếu cùng id, khác nhau nếu khác id? Vì id cũng có thể thay đổi như tiêu đề?
  */
@@ -114,7 +114,7 @@ export function làCùngBàiĐăng(bàiĐăng1: BàiĐăng, bàiĐăng2: BàiĐ�
   }
 
   let sốTiêuChíPhụKhácNhau = 0;
-  const tiêuChíPhụ = ["Vault", "id", "Mã bài đăng"] as const;
+  const tiêuChíPhụ = ["Vault", "id", "Slug"] as const;
   for (const key of tiêuChíPhụ) {
     if (bàiĐăng1[key] !== bàiĐăng2[key]) sốTiêuChíPhụKhácNhau += 1;
   }

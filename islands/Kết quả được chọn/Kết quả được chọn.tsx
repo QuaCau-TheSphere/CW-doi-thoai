@@ -13,7 +13,7 @@ function BàiĐăngĐượcChọn() {
     URL: url,
     id,
     "Tác giả": tácGiả,
-    "Mã bài đăng": mãBàiĐăng,
+    Slug: slug,
     "Ngày tạo": ngàyTạo,
     "Ngày cập nhật": ngàyCậpNhật,
   } = bàiĐăngĐượcChọn.value;
@@ -34,11 +34,11 @@ function BàiĐăngĐượcChọn() {
           </li>
           <li id="tác-giả" class="hover:text-primary-content">Tác giả: {tácGiả || "∅"}</li>
           <li id="ngày-cập-nhật" class="hover:text-primary-content">Ngày cập nhật: {ngàyCậpNhật || "∅"}</li>
-          <li id="mã-bài-đăng" class="hover:text-primary-content">Mã bài đăng: {mãBàiĐăng || "∅"}</li>
+          <li id="slug-bài-đăng" class="hover:text-primary-content">Slug: {slug || "∅"}</li>
 
           {
             /* <li id="khác" class="hover:text-primary-content">
-            <span id="tác-giả">Tác giả: {tácGiả}</span> • <span id="mã-bài-đăng">Mã bài đăng: {mãBàiĐăng}</span> •{" "}
+            <span id="tác-giả">Tác giả: {tácGiả}</span> • <span id="mã-bài-đăng">Slug: {mãBàiĐăng}</span> •{" "}
             <span id="ngày-tạo">Ngày tạo: {ngàyTạo}</span> • <span id="ngày-cập-nhật">Ngày cập nhật: {ngàyCậpNhật}</span> •{" "}
             <span id="id">id: {id}</span>
           </li> */
