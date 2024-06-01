@@ -5,6 +5,8 @@ import SectionBênTrái from "./Section bên trái.tsx";
 import SectionBênPhải from "./Section bên phải.tsx";
 import { cấuHìnhViếtTắtSignal, flexSearchBàiĐăngSignal, flexSearchNơiĐăngSignal } from "./Signals tổng.ts";
 import { CấuHìnhViếtTắt } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
+import ModalNơiĐăng from "./Modal tạo mới/Modal nơi đăng.tsx";
+import ModalBàiĐăng from "./Modal tạo mới/Modal bài đăng.tsx";
 
 interface MainProps {
   danhSáchNơiĐăng: NơiĐăngCóCácLựaChọnVịTrí[];
@@ -13,19 +15,7 @@ interface MainProps {
   textTrangChủ: string;
 }
 
-function Test() {
-  return <SectionBênTrái />;
-}
-
-function Production({ textTrangChủ }: { textTrangChủ: string }) {
-  return (
-    <main class="flex flex-col md:flex-row gap-3 w-full mb-auto">
-      <SectionBênTrái />
-      <SectionBênPhải textTrangChủ={textTrangChủ} />
-    </main>
-  );
-}
-export default function Main({ danhSáchNơiĐăng, danhSáchBàiĐăng, cấuHìnhViếtTắt, textTrangChủ }: MainProps) {
+function xửLýSignal(cấuHìnhViếtTắt: CấuHìnhViếtTắt, danhSáchBàiĐăng: BàiĐăng[], danhSáchNơiĐăng: NơiĐăngCóCácLựaChọnVịTrí[]) {
   cấuHìnhViếtTắtSignal.value = cấuHìnhViếtTắt;
 
   const flexSearchBàiĐăng: Document<BàiĐăng, true> = new FlexSearch.Document({
@@ -70,8 +60,21 @@ export default function Main({ danhSáchNơiĐăng, danhSáchBàiĐăng, cấuH�
   for (const nơiĐăng of danhSáchNơiĐăng) flexSearchNơiĐăng.add(nơiĐăng);
   //@ts-ignore: để coi store nghĩa là gì sau
   flexSearchNơiĐăngSignal.value = flexSearchNơiĐăng;
+}
+
+export default function Main({ danhSáchNơiĐăng, danhSáchBàiĐăng, cấuHìnhViếtTắt, textTrangChủ }: MainProps) {
+  xửLýSignal(cấuHìnhViếtTắt, danhSáchBàiĐăng, danhSáchNơiĐăng);
+
+  /** Cần debug component nào thì cứ return nó ở đây */
+  // return <ModalBàiĐăng />;
+  // return <ModalNơiĐăng />;
+  // return <SectionBênTrái />;
 
   /** Tách ra thành test với production để khi không quan tâm tới section bên phải thì section bên trái không giảm một nửa bề rộng do tailwind*/
-  return <Production textTrangChủ={textTrangChủ} />;
-  // return <Test />;
+  return (
+    <main class="flex flex-col md:flex-row gap-3 w-full mb-auto">
+      <SectionBênTrái />
+      <SectionBênPhải textTrangChủ={textTrangChủ} />
+    </main>
+  );
 }

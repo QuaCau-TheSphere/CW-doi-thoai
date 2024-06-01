@@ -1,26 +1,66 @@
 import { useEffect, useState } from "preact/hooks";
-import { BàiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { BàiĐăngChưaCóId } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { queryBàiĐăng } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
 import { PhảnHồiTừCORSProxy } from "../../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
 
+/** Các dữ liệu người dùng nhập trong form */
 export default function ModalBàiĐăng() {
-  const [phảnHồiTừCORSProxy, setPhảnHồiTừCORSProxy] = useState<PhảnHồiTừCORSProxy | undefined>(undefined);
-  const [urlNhậpVào, setUrlNhậpVào] = useState<string | undefined>(queryBàiĐăng.value);
+  const [bàiĐăng, setBàiĐăng] = useState<BàiĐăngChưaCóId | undefined>();
+  /**
+   * Các state dưới đây cần để kiểu là string vì chúng là do người dùng nhập vào
+   * Cái nào không có undefined nghĩa là cái đó bắt buộc phải có
+   */
+  const [url, setUrl] = useState(queryBàiĐăng.value);
+  const [tiêuĐề, setTiêuĐề] = useState("");
+  const [slug, setSlug] = useState<string | undefined>();
+  const [môTảBàiĐăng, setMôTảBàiĐăng] = useState<string | undefined>();
+  const [tênDựÁn, setTênDựÁn] = useState<string | undefined>();
+
   useEffect(() => {
-    async function lấyMetaTag() {
-      const corsProxyUrl = `${origin}/api/cors-proxy/${urlNhậpVào}`;
-      setPhảnHồiTừCORSProxy(await (await fetch(corsProxyUrl)).json() as PhảnHồiTừCORSProxy);
+    setUrl(url);
+    async function lấyThôngTinTừUrl() {
+      try {
+        new URL(url);
+      } catch {
+        return;
+      }
+      const corsProxyUrl = `${origin}/api/cors-proxy/${url}`;
+      const phảnHồiTừCORSProxy = await (await fetch(corsProxyUrl)).json() as PhảnHồiTừCORSProxy;
+      console.log("Kết quả lấy dữ liệu từ URL được nhập vào bài đăng:", phảnHồiTừCORSProxy);
+      setBàiĐăng(phảnHồiTừCORSProxy?.["Nếu là bài đăng"]);
     }
-    lấyMetaTag();
-  }, [urlNhậpVào]);
-  const bàiĐăng: BàiĐăng | Record<string | number | symbol, never> = phảnHồiTừCORSProxy?.["Nếu là bài đăng"] || {};
-  console.log("Kết quả lấy dữ liệu từ URL được nhập vào bài đăng:", phảnHồiTừCORSProxy);
-  const {
-    "Tiêu đề": tiêuĐề,
-    "Dự án": dựÁn,
-    "Nội dung bài đăng": nộiDungBàiĐăng,
-    Slug: slug,
-  } = bàiĐăng;
+    lấyThôngTinTừUrl();
+  }, [url]);
+
+  useEffect(() => {
+    setBàiĐăng({
+      ...bàiĐăng as BàiĐăngChưaCóId,
+      "Tiêu đề": tiêuĐề,
+      "Nội dung bài đăng": {
+        "Mô tả bài đăng": môTảBàiĐăng,
+      },
+      "Dự án": {
+        "Tên dự án": tênDựÁn,
+      },
+      Slug: slug,
+    });
+  }, [tiêuĐề, môTảBàiĐăng, tênDựÁn, slug]);
+
+  useEffect(() => {
+    const {
+      URL: url,
+      "Tiêu đề": tiêuĐề,
+      "Nội dung bài đăng": nộiDungBàiĐăng,
+      "Dự án": dựÁn,
+      Slug: slug,
+    } = bàiĐăng || {};
+    setUrl(url as string);
+    setTiêuĐề(tiêuĐề || "");
+    setMôTảBàiĐăng(nộiDungBàiĐăng?.["Mô tả bài đăng"] || undefined);
+    setTênDựÁn(dựÁn?.["Tên dự án"]);
+    setSlug(slug);
+  }, [bàiĐăng]);
+
   return (
     <>
       <label class="form-control w-full max-w-xs">
@@ -33,8 +73,8 @@ export default function ModalBàiĐăng() {
           type="url"
           name="URL"
           required
-          value={urlNhậpVào}
-          onInput={(e: InputEvent) => setUrlNhậpVào((e.target as HTMLTextAreaElement).value)}
+          value={url}
+          onInput={(e: InputEvent) => setUrl((e.target as HTMLTextAreaElement).value)}
         />
       </label>
 
@@ -49,33 +89,7 @@ export default function ModalBàiĐăng() {
           required
           name="Tiêu đề"
           value={tiêuĐề}
-        />
-      </label>
-
-      <label class="form-control w-full max-w-xs">
-        <div class="label">
-          <span class="label-text font-bold">Mô tả bài đăng</span>
-        </div>
-        <input
-          class="input input-bordered w-full max-w-xs"
-          id="mô-tả"
-          type="text"
-          name="Mô tả bài đăng"
-          value={nộiDungBàiĐăng?.["Mô tả bài đăng"]}
-        />
-      </label>
-
-      <label class="form-control w-full max-w-xs">
-        <div class="label">
-          <span class="label-text font-bold">Tên dự án</span>
-        </div>
-        <input
-          class="input input-bordered w-full max-w-xs"
-          id="tên-dự-án"
-          type="text"
-          name="Tên dự án"
-          placeholder="Dự án hoặc chiến dịch của việc đăng bài này"
-          value={dựÁn?.["Tên dự án"]}
+          onInput={(e: InputEvent) => setTiêuĐề((e.target as HTMLTextAreaElement).value)}
         />
       </label>
 
@@ -89,6 +103,36 @@ export default function ModalBàiĐăng() {
           type="text"
           name="Slug"
           value={slug}
+          onInput={(e: InputEvent) => setSlug((e.target as HTMLTextAreaElement).value)}
+        />
+      </label>
+
+      <label class="form-control w-full max-w-xs">
+        <div class="label">
+          <span class="label-text font-bold">Mô tả bài đăng</span>
+        </div>
+        <input
+          class="input input-bordered w-full max-w-xs"
+          id="mô-tả"
+          type="text"
+          name="Mô tả bài đăng"
+          value={môTảBàiĐăng}
+          onInput={(e: InputEvent) => setMôTảBàiĐăng((e.target as HTMLTextAreaElement).value)}
+        />
+      </label>
+
+      <label class="form-control w-full max-w-xs">
+        <div class="label">
+          <span class="label-text font-bold">Tên dự án</span>
+        </div>
+        <input
+          class="input input-bordered w-full max-w-xs"
+          id="tên-dự-án"
+          type="text"
+          name="Tên dự án"
+          placeholder="Dự án hoặc chiến dịch của việc đăng bài này"
+          value={tênDựÁn || ""}
+          onInput={(e: InputEvent) => setTênDựÁn((e.target as HTMLTextAreaElement).value)}
         />
       </label>
 
@@ -96,11 +140,12 @@ export default function ModalBàiĐăng() {
         <summary>Nâng cao</summary>
         <textarea
           class="textarea textarea-bordered"
-          rows="15"
+          rows={15}
           style="width:100%"
           name="Nâng cao"
           id="nâng-cao"
           value={JSON.stringify(bàiĐăng, null, 2)}
+          onChange={(e: InputEvent) => setBàiĐăng(JSON.parse((e.target as HTMLTextAreaElement).value))}
         >
         </textarea>
       </details>

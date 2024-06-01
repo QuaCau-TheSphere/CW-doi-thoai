@@ -34,8 +34,8 @@ export interface Vault {
 export type TênDựÁn = string | undefined;
 export type MãDựÁn = string | undefined;
 export interface DựÁn {
-  "Tên dự án": TênDựÁn;
-  "Mã dự án": MãDựÁn;
+  "Tên dự án"?: TênDựÁn;
+  "Mã dự án"?: MãDựÁn;
 }
 
 /** Bài đăng */
