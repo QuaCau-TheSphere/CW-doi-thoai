@@ -1,6 +1,6 @@
 import { useEffect, useState } from "preact/hooks";
 import { BàiĐăngChưaCóId } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { queryBàiĐăng } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
+import { queryBàiĐăngSignal } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
 import { PhảnHồiTừCORSProxy } from "../../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
 
 /** Các dữ liệu người dùng nhập trong form */
@@ -10,7 +10,7 @@ export default function ModalBàiĐăng() {
    * Các state dưới đây cần để kiểu là string vì chúng là do người dùng nhập vào
    * Cái nào không có undefined nghĩa là cái đó bắt buộc phải có
    */
-  const [url, setUrl] = useState(queryBàiĐăng.value);
+  const [url, setUrl] = useState(queryBàiĐăngSignal.value);
   const [tiêuĐề, setTiêuĐề] = useState("");
   const [slug, setSlug] = useState<string | undefined>();
   const [môTảBàiĐăng, setMôTảBàiĐăng] = useState<string | undefined>();

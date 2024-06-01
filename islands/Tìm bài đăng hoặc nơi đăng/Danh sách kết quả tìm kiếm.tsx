@@ -47,10 +47,10 @@ function Item({ item, tênDanhSách }: { item: BàiĐăng | NơiĐăngCóCácL�
 }
 
 export function DanhSáchKếtQuảTìmKiếm(
-  { tênDanhSách, mụcĐượcChọn, query }: { tênDanhSách: TênDanhSách; mụcĐượcChọn: Signal<MụcĐượcChọn>; query: Signal<string> },
+  { tênDanhSách, mụcĐượcChọnSignal, querySignal }: { tênDanhSách: TênDanhSách; mụcĐượcChọnSignal: Signal<MụcĐượcChọn>; querySignal: Signal<string> },
 ) {
   const danhSáchKếtQuảTìmKiếm = danhSáchGợiÝSignal.value;
-  if (tênDanhSách !== element.value || !danhSáchKếtQuảTìmKiếm || !query.value) return <></>;
+  if (tênDanhSách !== element.value || !danhSáchKếtQuảTìmKiếm || !querySignal.value) return <></>;
   if (danhSáchKếtQuảTìmKiếm.length === 0) {
     return (
       <ul class="cursor border-2 rounded border-secondary">
@@ -69,7 +69,7 @@ export function DanhSáchKếtQuảTìmKiếm(
         <li
           class={cursor.value === index ? "cursor bg-secondary p-2 box-decoration-clone" : "p-2"}
           onClick={() => {
-            mụcĐượcChọn.value = item.doc;
+            mụcĐượcChọnSignal.value = item.doc;
             đổiKhungNhập("xuôi");
           }}
           onMouseEnter={() => cursor.value = index}

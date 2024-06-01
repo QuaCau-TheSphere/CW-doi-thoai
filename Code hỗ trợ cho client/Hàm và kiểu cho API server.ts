@@ -7,15 +7,19 @@ import {
 import { VậtThểTiếpThị } from "./Kiểu cho vật thể tiếp thị.ts";
 import { lầnĐăngGầnNhất } from "../islands/Signals tổng.ts";
 import { TênDanhSách } from "./Hàm và kiểu cho khung nhập.ts";
-import { SốLượngDữLiệu } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho KV.ts";
-
+import { đổiTừCơSố10SangCơSố64 } from "./Hàm xử lý chuỗi.ts";
 export interface ReqBàiĐăngHoặcNơiĐăng {
   "Tên danh sách": TênDanhSách;
   "Dữ liệu": BàiĐăngChưaCóId | NơiĐăngCóCácLựaChọnVịTríChưaCóId;
 }
 
-export async function ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv(dữLiệuMới: ReqBàiĐăngHoặcNơiĐăng) {
-  const url = `${origin}/api/thêm-bài-đăng-hoặc-nơi-đăng-mới`;
+async function kiểmTraBàiĐăngHoặcNơiĐăngĐãCó(
+  dữLiệuMới: ReqBàiĐăngHoặcNơiĐăng,
+): Promise<
+  | { "Dữ liệu có id": BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí; "Loại dữ liệu": TênDanhSách }
+  | { "Tổng số dữ liệu đang có": number; "Loại dữ liệu": TênDanhSách }
+> {
+  const url = `${origin}/api/kiểm-tra-bài-đăng-hoặc-nơi-đăng-đã-có`;
   const res = await fetch(url, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -24,18 +28,35 @@ export async function ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv(dữLiệuM�
   return await res.json();
 }
 
-declare class Stringified<T> extends String {
-  private ___stringified: T;
+async function xácĐịnhId(
+  tênDanhSách: TênDanhSách,
+  dữLiệuChưaCóId: BàiĐăngChưaCóId | NơiĐăngCóCácLựaChọnVịTríChưaCóId,
+) {
+  const res = await kiểmTraBàiĐăngHoặcNơiĐăngĐãCó({
+    "Tên danh sách": tênDanhSách,
+    "Dữ liệu": dữLiệuChưaCóId,
+  });
+  console.log(res);
+  if ("Dữ liệu có id" in res) return res["Dữ liệu có id"].id;
+  if ("Tổng số dữ liệu đang có" in res) return đổiTừCơSố10SangCơSố64(res["Tổng số dữ liệu đang có"] + 1);
+  return đổiTừCơSố10SangCơSố64(Date.now());
 }
 
-interface JSON {
-  stringify<T>(
-    value: T,
-    replacer?: (key: string, value: any) => any,
-    space?: string | number,
-  ): string & Stringified<T>;
-  parse<T>(text: Stringified<T>, reviver?: (key: any, value: any) => any): T;
-  parse(text: string, reviver?: (key: any, value: any) => any): any;
+export async function ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv(dữLiệuChưaCóId: BàiĐăngChưaCóId | NơiĐăngCóCácLựaChọnVịTríChưaCóId, tênDanhSách: TênDanhSách) {
+  const body = JSON.stringify({
+    "Tên danh sách": tênDanhSách,
+    "Dữ liệu": {
+      ...dữLiệuChưaCóId,
+      id: await xácĐịnhId(tênDanhSách, dữLiệuChưaCóId),
+    },
+  });
+  const url = `${origin}/api/thêm-bài-đăng-hoặc-nơi-đăng-mới`;
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: body,
+  });
+  return await res.json();
 }
 
 /** Không phải là để dùng cho `await Response`, mà dùng cho `await (await Response).json()` */
@@ -72,16 +93,4 @@ export async function ghiVậtThểTiếpThịLênKV(vậtThểTiếpThị: Vậ
     body: JSON.stringify(vậtThểTiếpThị),
   });
   console.log("Đã thêm thành công vật thể tiếp thị vào cơ sở dữ liệu:", await res.json());
-}
-
-export async function kiểmTraBàiĐăngHoặcNơiĐăngĐãCó(
-  dữLiệuMới: ReqBàiĐăngHoặcNơiĐăng,
-): Promise<BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí | SốLượngDữLiệu> {
-  const url = `${origin}/api/kiểm-tra-bài-đăng-hoặc-nơi-đăng-đã-có`;
-  const res = await fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(dữLiệuMới),
-  });
-  return await res.json();
 }

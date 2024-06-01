@@ -5,12 +5,12 @@ import { bàiĐăngĐượcChọn, flexSearchBàiĐăngSignal, flexSearchNơiĐ�
 import { DanhSáchKếtQuảTìmKiếm } from "./Danh sách kết quả tìm kiếm.tsx";
 import InputTìmBàiĐăngHoặcNơiĐăng from "./Input tìm bài đăng hoặc nơi đăng.tsx";
 import { Signal, useComputed } from "@preact/signals";
-import { danhSáchGợiÝSignal, queryBàiĐăng, queryNơiĐăng } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
+import { danhSáchGợiÝSignal, queryBàiĐăngSignal, queryNơiĐăngSignal } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
 import { FlexSearchBàiĐăngHoặcNơiĐăng, MụcĐượcChọn, TênDanhSách } from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
 
 export default function DivTìmBàiĐăngHoặcNơiĐăng({ tênDanhSách }: { tênDanhSách: TênDanhSách }) {
-  let mụcĐượcChọn: Signal<MụcĐượcChọn>;
-  let query: Signal<string>;
+  let mụcĐượcChọnSignal: Signal<MụcĐượcChọn>;
+  let querySignal: Signal<string>;
   let flexSearch: FlexSearchBàiĐăngHoặcNơiĐăng;
   const tạoMới = useComputed(() => {
     if (danhSáchGợiÝSignal.value && danhSáchGợiÝSignal.value.length === 0) return true;
@@ -18,22 +18,22 @@ export default function DivTìmBàiĐăngHoặcNơiĐăng({ tênDanhSách }: { t
   });
   switch (tênDanhSách) {
     case "bài đăng":
-      mụcĐượcChọn = bàiĐăngĐượcChọn;
-      query = queryBàiĐăng;
+      mụcĐượcChọnSignal = bàiĐăngĐượcChọn;
+      querySignal = queryBàiĐăngSignal;
       flexSearch = flexSearchBàiĐăngSignal.value;
       break;
     case "nơi đăng":
-      mụcĐượcChọn = nơiĐăngCóCácLựaChọnVịTrí;
-      query = queryNơiĐăng;
+      mụcĐượcChọnSignal = nơiĐăngCóCácLựaChọnVịTrí;
+      querySignal = queryNơiĐăngSignal;
       flexSearch = flexSearchNơiĐăngSignal.value;
       break;
   }
   return (
     <div id={`div-tìm-${kiểuKebab(tênDanhSách)}`}>
-      <InputTìmBàiĐăngHoặcNơiĐăng tênDanhSách={tênDanhSách} mụcĐượcChọn={mụcĐượcChọn} query={query} flexSearch={flexSearch} />
-      <DanhSáchKếtQuảTìmKiếm tênDanhSách={tênDanhSách} mụcĐượcChọn={mụcĐượcChọn} query={query} />
+      <InputTìmBàiĐăngHoặcNơiĐăng tênDanhSách={tênDanhSách} mụcĐượcChọnSignal={mụcĐượcChọnSignal} querySignal={querySignal} flexSearch={flexSearch} />
+      <DanhSáchKếtQuảTìmKiếm tênDanhSách={tênDanhSách} mụcĐượcChọnSignal={mụcĐượcChọnSignal} querySignal={querySignal} />
       <KếtQuảĐượcChọn loạiVậtThể={tênDanhSách} />
-      {tạoMới.value ? <ModalTạoMới tênDanhSách={tênDanhSách} mụcĐượcChọn={mụcĐượcChọn} /> : <></>}
+      {tạoMới.value ? <ModalTạoMới tênDanhSách={tênDanhSách} mụcĐượcChọnSignal={mụcĐượcChọnSignal} /> : <></>}
     </div>
   );
 }

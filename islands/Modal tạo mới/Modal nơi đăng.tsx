@@ -1,6 +1,6 @@
 import { useEffect, useState } from "preact/hooks";
 import { NơiĐăngCóCácLựaChọnVịTríChưaCóId } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
-import { queryNơiĐăng } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
+import { queryNơiĐăngSignal } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
 import { PhảnHồiTừCORSProxy } from "../../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
 import { TênNơiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
 
@@ -12,7 +12,7 @@ export default function ModalNơiĐăng() {
    * Các state dưới đây cần để kiểu là string vì chúng là do người dùng nhập vào
    * Cái nào không có undefined nghĩa là cái đó bắt buộc phải có
    */
-  const [url, setUrl] = useState<string>(queryNơiĐăng.value);
+  const [url, setUrl] = useState<string>(queryNơiĐăngSignal.value);
   const [tênNơiĐăng, setTênNơiĐăng] = useState("");
   const [slug, setSlug] = useState<string | undefined>();
   const [môTảNơiĐăng, setMôTảNơiĐăng] = useState<string | undefined>();

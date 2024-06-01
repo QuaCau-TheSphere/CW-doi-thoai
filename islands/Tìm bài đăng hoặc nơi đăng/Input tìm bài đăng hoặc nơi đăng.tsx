@@ -62,10 +62,10 @@ function handleKeyDown(e: KeyboardEvent, mụcĐượcChọnSignal: Signal<Mục
 }
 
 export default function InputTìmBàiĐăngHoặcNơiĐăng(
-  { tênDanhSách, mụcĐượcChọn, query, flexSearch }: {
+  { tênDanhSách, mụcĐượcChọnSignal, querySignal, flexSearch }: {
     tênDanhSách: TênDanhSách;
-    mụcĐượcChọn: Signal<MụcĐượcChọn>;
-    query: Signal<string>;
+    mụcĐượcChọnSignal: Signal<MụcĐượcChọn>;
+    querySignal: Signal<string>;
     flexSearch: FlexSearchBàiĐăngHoặcNơiĐăng;
   },
 ) {
@@ -77,12 +77,12 @@ export default function InputTìmBàiĐăngHoặcNơiĐăng(
         class="grow bg-base-100"
         autoFocus
         required
-        value={query.value}
+        value={querySignal.value}
         id={`khung-nhập-${kiểuKebab(tênDanhSách)}`}
         placeholder={`Tìm ${tênDanhSách} hoặc dán URL để tạo mới`}
-        onInput={(e: InputEvent) => handleInput(e, tênDanhSách, flexSearch, query)}
+        onInput={(e: InputEvent) => handleInput(e, tênDanhSách, flexSearch, querySignal)}
         onFocus={() => element.value = tênDanhSách}
-        onKeyDown={(e: KeyboardEvent) => handleKeyDown(e, mụcĐượcChọn, tênDanhSách)}
+        onKeyDown={(e: KeyboardEvent) => handleKeyDown(e, mụcĐượcChọnSignal, tênDanhSách)}
       />
     </label>
   );
