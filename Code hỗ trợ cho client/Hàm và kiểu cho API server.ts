@@ -24,10 +24,24 @@ export async function ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv(dữLiệuM�
   return await res.json();
 }
 
-/** Không dùng cho `await Response`, mà dùng cho `await (await Response).json()` */
+declare class Stringified<T> extends String {
+  private ___stringified: T;
+}
+
+interface JSON {
+  stringify<T>(
+    value: T,
+    replacer?: (key: string, value: any) => any,
+    space?: string | number,
+  ): string & Stringified<T>;
+  parse<T>(text: Stringified<T>, reviver?: (key: any, value: any) => any): T;
+  parse(text: string, reviver?: (key: any, value: any) => any): any;
+}
+
+/** Không phải là để dùng cho `await Response`, mà dùng cho `await (await Response).json()` */
 export interface PhảnHồiTừCORSProxy {
-  "Nếu là bài đăng": BàiĐăng;
-  "Nếu là nơi đăng": NơiĐăngCóCácLựaChọnVịTrí;
+  "Nếu là bài đăng": BàiĐăngChưaCóId;
+  "Nếu là nơi đăng": NơiĐăngCóCácLựaChọnVịTríChưaCóId;
   lỗi?: string | "URL không hợp lệ";
   html?: string | null;
 }

@@ -40,7 +40,7 @@ export default interface CấuHìnhNơiĐăng {
   "Tập tin"?: CấuHìnhTậpTin | null;
   SaaS?: CấuHìnhSaaS | null;
   "Kênh forum Discord"?: string[] | null;
-  "Mã nơi đăng"?: CấuHìnhMãNơiĐăng;
+  "Slug"?: CấuHìnhMãNơiĐăng;
 }
 export type CấuHìnhMãNơiĐăng = Record<MãNơiĐăng, string | string[]>;
 

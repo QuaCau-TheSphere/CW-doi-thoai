@@ -1,34 +1,60 @@
 import { useEffect, useState } from "preact/hooks";
-import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
+import { NơiĐăngCóCácLựaChọnVịTríChưaCóId } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { queryNơiĐăng } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
 import { PhảnHồiTừCORSProxy } from "../../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
-import { tạoLoạiNơiĐăngString, tạoVịTríString } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { TênNơiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
 
 export default function ModalNơiĐăng() {
-  const [phảnHồiTừCORSProxy, setPhảnHồiTừCORSProxy] = useState<PhảnHồiTừCORSProxy | undefined>(undefined);
-  const [urlNhậpVào, setUrlNhậpVào] = useState<string>(queryNơiĐăng.value);
+  /** Tạo dữ liệu lấy từ CORS proxy (LTCP) */
+  const [nơiĐăngLTCP, setNơiĐăngLTCP] = useState<NơiĐăngCóCácLựaChọnVịTríChưaCóId | undefined>();
+  const [urlNDNTF, setUrlNDNTF] = useState<string>(queryNơiĐăng.value);
+  const [tênNơiĐăngLTCP, setTênNơiĐăngLTCP] = useState<TênNơiĐăng | undefined>();
+  const [slugLTCP, setSlugLTCP] = useState<string | undefined>();
+  const [môTảNơiĐăngLTCP, setMôTảNơiĐăngLTCP] = useState<string | undefined | null>();
   useEffect(() => {
-    setUrlNhậpVào(urlNhậpVào);
-    async function lấyMetaTag() {
-      const corsProxyUrl = `${origin}/api/cors-proxy/${urlNhậpVào}`;
-      setPhảnHồiTừCORSProxy(await (await fetch(corsProxyUrl)).json() as PhảnHồiTừCORSProxy);
+    setUrlNDNTF(urlNDNTF);
+    async function lấyThôngTinTừUrl() {
+      try {
+        new URL(urlNDNTF);
+      } catch {
+        return;
+      }
+      const corsProxyUrl = `${origin}/api/cors-proxy/${urlNDNTF}`;
+      const phảnHồiTừCORSProxy = await (await fetch(corsProxyUrl)).json() as PhảnHồiTừCORSProxy;
+      console.log("Kết quả lấy dữ liệu từ URL được nhập vào nơi đăng:", phảnHồiTừCORSProxy);
+
+      const nơiĐăng = phảnHồiTừCORSProxy?.["Nếu là nơi đăng"];
+      setMôTảNơiĐăngLTCP("sdfsdf");
+      setNơiĐăngLTCP(nơiĐăng);
+      // setTênNơiĐăngLTCP(nơiĐăng?.["Tên nơi đăng"]);
+      // setMôTảNơiĐăngLTCP(nơiĐăng?.["Mô tả nơi đăng"]);
+      // setSlugLTCP(nơiĐăng.Slug);
     }
-    lấyMetaTag();
-  }, [urlNhậpVào]);
-  console.log("Kết quả lấy dữ liệu từ URL được nhập vào nơi đăng:", phảnHồiTừCORSProxy);
-  const nơiĐăng: NơiĐăngCóCácLựaChọnVịTrí | Record<string | number | symbol, never> = phảnHồiTừCORSProxy?.["Nếu là nơi đăng"] || {};
-  const {
-    "Loại nền tảng": loạiNềnTảng,
-    "Tên nền tảng": tênNềnTảng,
-    "Tên nơi đăng": tênNơiĐăng,
-    "Loại nơi đăng": loạiNơiĐăng,
-    "Mô tả nơi đăng": môTảNơiĐăng,
-    "Lĩnh vực": lĩnhVực,
-    "Đơn vị quản lý": đơnVịQuảnLý,
-    "Mã nơi đăng": mãNơiĐăng,
-    URL: urlChínhTắc,
-    id: id,
-  } = nơiĐăng;
+    lấyThôngTinTừUrl();
+  }, [urlNDNTF]);
+
+  console.log("🚀 ~ ModalNơiĐăng ~ tênNơiĐăngLTCP:", tênNơiĐăngLTCP);
+  console.log("🚀 ~ ModalNơiĐăng ~ slugLTCP:", slugLTCP);
+  console.log("🚀 ~ ModalNơiĐăng ~ môTảNơiĐăngLTCP:", môTảNơiĐăngLTCP);
+  /** Tạo dữ liệu người dùng nhập trong form (NDNTF) */
+  const [nơiĐăngNDNTF, setNơiĐăngNDNTF] = useState<NơiĐăngCóCácLựaChọnVịTríChưaCóId | undefined>();
+  const [tênNơiĐăngNDNTF, setTênNơiĐăngNDNTF] = useState(tênNơiĐăngLTCP?.join(", "));
+  const [slugNDNTF, setSlugNDNTF] = useState<string | undefined>(slugLTCP);
+  const [môTảNơiĐăngNDNTF, setMôTảNơiĐăngNDNTF] = useState(JSON.stringify(môTảNơiĐăngLTCP));
+  const [lĩnhVựcNDNTF, setLĩnhVựcNDNTF] = useState<string | undefined>();
+  const [đơnVịQuảnLýNDNTF, setĐơnVịQuảnLýNDNTF] = useState<string | undefined>();
+
+  useEffect(() => {
+    console.log("🚀 nơiĐăngLTCP:", nơiĐăngLTCP);
+    setNơiĐăngNDNTF({
+      ...nơiĐăngLTCP as NơiĐăngCóCácLựaChọnVịTríChưaCóId,
+      "Tên nơi đăng": tênNơiĐăngNDNTF?.split(", ") as TênNơiĐăng,
+      Slug: slugNDNTF,
+      "Mô tả nơi đăng": môTảNơiĐăngNDNTF,
+      "Lĩnh vực": lĩnhVựcNDNTF?.split(", "),
+      "Đơn vị quản lý": đơnVịQuảnLýNDNTF,
+    });
+  }, [nơiĐăngLTCP, tênNơiĐăngNDNTF, môTảNơiĐăngNDNTF, lĩnhVựcNDNTF, đơnVịQuảnLýNDNTF]);
 
   return (
     <>
@@ -43,8 +69,8 @@ export default function ModalNơiĐăng() {
           type="url"
           required
           id="URL"
-          value={urlChínhTắc as string || urlNhậpVào}
-          onInput={(e: InputEvent) => setUrlNhậpVào((e.target as HTMLTextAreaElement).value)}
+          value={urlNDNTF}
+          onInput={(e: InputEvent) => setUrlNDNTF((e.target as HTMLTextAreaElement).value)}
         />
       </label>
 
@@ -58,8 +84,24 @@ export default function ModalNơiĐăng() {
           class="input input-bordered w-full max-w-xs"
           required
           id="tên"
-          value={JSON.stringify(tênNơiĐăng)}
-          placeholder={JSON.stringify(tênNơiĐăng)}
+          value={tênNơiĐăngNDNTF}
+          placeholder="Phân cách các thành phần trong tên nơi đăng bằng dấu phẩy"
+          onInput={(e: InputEvent) => setTênNơiĐăngNDNTF((e.target as HTMLTextAreaElement).value)}
+        />
+      </label>
+
+      <label class="form-control w-full max-w-xs">
+        <div class="label">
+          <span class="label-text font-bold">Slug</span>
+        </div>
+        <input
+          name="Slug"
+          type="text"
+          class="input input-bordered w-full max-w-xs"
+          required
+          id="slug"
+          value={slugNDNTF}
+          onInput={(e: InputEvent) => setSlugNDNTF((e.target as HTMLTextAreaElement).value)}
         />
       </label>
 
@@ -72,34 +114,52 @@ export default function ModalNơiĐăng() {
           type="text"
           class="input input-bordered w-full max-w-xs"
           id="mô-tả"
-          value={môTảNơiĐăng}
-          placeholder={môTảNơiĐăng}
+          value={môTảNơiĐăngNDNTF || ""}
+          onInput={(e: InputEvent) => setMôTảNơiĐăngNDNTF((e.target as HTMLTextAreaElement).value)}
         />
       </label>
 
       <label class="form-control w-full max-w-xs">
         <div class="label">
-          <span class="label-text font-bold">Loại nơi đăng</span>
+          <span class="label-text font-bold">Lĩnh vực</span>
         </div>
         <input
-          name="Loại nơi đăng"
+          name="Lĩnh vực"
           type="text"
           class="input input-bordered w-full max-w-xs"
-          id="loại"
+          id="lĩnh-vực"
           required
-          value={JSON.stringify(loạiNơiĐăng)}
-          placeholder={JSON.stringify(loạiNơiĐăng)}
+          value={lĩnhVựcNDNTF}
+          placeholder="Phân cách các lĩnh vực của nơi đăng bằng dấu phẩy"
+          onInput={(e: InputEvent) => setLĩnhVựcNDNTF((e.target as HTMLTextAreaElement).value)}
         />
       </label>
+
+      <label class="form-control w-full max-w-xs">
+        <div class="label">
+          <span class="label-text font-bold">Đơn vị quản lý</span>
+        </div>
+        <input
+          name="Đơn vị quản lý"
+          type="text"
+          class="input input-bordered w-full max-w-xs"
+          id="đơn-vị-quản-lý"
+          required
+          value={đơnVịQuảnLýNDNTF}
+          onInput={(e: InputEvent) => setĐơnVịQuảnLýNDNTF((e.target as HTMLTextAreaElement).value)}
+        />
+      </label>
+      {JSON.stringify(nơiĐăngNDNTF, null, 2)}
       <details>
         <summary>Nâng cao</summary>
         <textarea
           class="textarea textarea-bordered"
-          rows="15"
+          rows={15}
           style="width:100%"
           name="Nâng cao"
           id="nâng-cao"
-          value={JSON.stringify(nơiĐăng, null, 2)}
+          value={JSON.stringify(nơiĐăngNDNTF, null, 2)}
+          onInput={(e: InputEvent) => setNơiĐăngNDNTF(JSON.parse((e.target as HTMLTextAreaElement).value))}
         >
         </textarea>
       </details>

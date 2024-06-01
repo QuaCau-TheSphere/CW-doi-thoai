@@ -70,7 +70,7 @@ export default function NơiĐăngĐượcChọn() {
     URL: url,
     "Đơn vị quản lý": đơnVịQuảnLý,
     "Lĩnh vực": lĩnhVực,
-    "Mã nơi đăng": mãNơiĐăng,
+    "Slug": mãNơiĐăng,
     id,
   } = nơiĐăng;
   const danhSáchLựaChọnVịTrí = tạoDanhSáchLựaChọnVịTrí(nơiĐăng);
@@ -91,7 +91,7 @@ export default function NơiĐăngĐượcChọn() {
           </li>
           <li id="đơn-vị-quản-lý" class="hover:text-primary-content">Đơn vị quản lý: {đơnVịQuảnLý || "∅"}</li>
           <li id="lĩnh-vực" class="hover:text-primary-content">Lĩnh vực: {lĩnhVực || "∅"}</li>
-          <li id="mã-nơi-đăng" class="hover:text-primary-content">Mã nơi đăng: {mãNơiĐăng || "∅"}</li>
+          <li id="mã-nơi-đăng" class="hover:text-primary-content">Slug: {mãNơiĐăng || "∅"}</li>
         </ul>
         <label class="form-control w-full max-w-xs">
           <div class="label">

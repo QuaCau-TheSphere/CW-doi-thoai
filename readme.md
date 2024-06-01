@@ -38,14 +38,11 @@ Bắt chước các cấu hình có sẵn trong `./core/A. Cấu hình/Nơi đă
 # Tạo biến môi trường
 Tạo tập tin `.env` với nội dung như sau:
 ```env
-THU_MUC_DU_AN = 📐 Dự án
-THU_MUC_THIET_LAP = Ξ Thiết lập
-TAP_TIN_THIET_LAP = Ξ Thiết lập\\Ξ Thiết lập.md
-THU_MUC_CHUA_TAT_CA_CAC_VAULT = D:\\QC supplements\\Vaults
+DENO_KV_ACCESS_TOKEN = XXX
+KV_UUID = YYY
 
-DUONG_DAN_DEN_TAP_TIN_CSV = ./core/A. Cấu hình/wp_posts.csv
-THU_MUC_CAU_HINH_NOI_DANG = ./core/A. Cấu hình/Nơi đăng
-DUONG_DAN_DEN_CAU_HINH_CHUNG = ./core/A. Cấu hình/Nơi đăng/Cấu hình chung.yaml
+ORIGIN = https://localhost:8000
+# ORIGIN = https://doi-thoai.deno.dev
 ```
 
 # Giấy phép

@@ -4,7 +4,7 @@ import ModalBàiĐăng from "./Modal bài đăng.tsx";
 import ModalNơiĐăng from "./Modal nơi đăng.tsx";
 import { element } from "../Signals tổng.ts";
 import { ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv } from "../../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
-import { tạoVậtThểDữLiệuMới } from "../../Code hỗ trợ cho client/Kiểu cho vật thể tiếp thị.ts";
+import { tạoVậtThểDữLiệuMới } from "../../Code hỗ trợ cho client/Hàm cho modal tạo mới.ts";
 
 function CácTrườngNhậpMới({ tênDanhSách }: { tênDanhSách: TênDanhSách }) {
   switch (tênDanhSách) {
@@ -20,8 +20,8 @@ function CácTrườngNhậpMới({ tênDanhSách }: { tênDanhSách: TênDanhS�
 async function handleSubmit(event: any, tênDanhSách: TênDanhSách, mụcĐượcChọn: Signal<MụcĐượcChọn>) {
   event.preventDefault();
   // if (event.currentTarget === null) return
-  const formData = Object.fromEntries(new FormData(event.currentTarget));
-  const vậtThểDữLiệuMới = await tạoVậtThểDữLiệuMới(formData, tênDanhSách);
+  const vậtThểNgườiDùngNhậpTừForm = Object.fromEntries(new FormData(event.currentTarget));
+  const vậtThểDữLiệuMới = await tạoVậtThểDữLiệuMới(vậtThểNgườiDùngNhậpTừForm, tênDanhSách);
   const data = await ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv(vậtThểDữLiệuMới);
   console.log("Kết quả dữ liệu sau khi được ghi lên KV:", data);
   mụcĐượcChọn.value = data.value;

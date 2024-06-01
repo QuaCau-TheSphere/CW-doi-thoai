@@ -61,7 +61,7 @@ export default function Main({ danhSáchNơiĐăng, danhSáchBàiĐăng, cấuH�
         "URL",
         "Lĩnh vực",
         "Mô tả nơi đăng",
-        "Mã nơi đăng",
+        "Slug",
       ],
       store: true,
     },

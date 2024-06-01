@@ -2,11 +2,11 @@ import { ThôngTinNơiĐăngChưaCóId } from "../../Code hỗ trợ cho server/
 import { CấuHìnhMãNơiĐăng } from "../../Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
 import { kiểuKebab, táchUrlTrongChuỗi } from "../../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 
-export type TừĐiểnMãNơiĐăng = Map<string, string>;
+export type TừĐiểnSlugNơiĐăng = Map<string, string>;
 
-/** Từ điển (hay ánh xạ) giữa tên nơi đăng thành phần và mã nơi đăng */
-export function tạoTừĐiểnMãNơiĐăng(cấuHìnhMãNơiĐăng: CấuHìnhMãNơiĐăng | undefined): TừĐiểnMãNơiĐăng {
-  const từĐiển: TừĐiểnMãNơiĐăng = new Map();
+/** Từ điển (hay ánh xạ) giữa tên nơi đăng thành phần và slug */
+export function tạoTừĐiểnSlugNơiĐăng(cấuHìnhMãNơiĐăng: CấuHìnhMãNơiĐăng | undefined): TừĐiểnSlugNơiĐăng {
+  const từĐiển: TừĐiểnSlugNơiĐăng = new Map();
 
   if (!cấuHìnhMãNơiĐăng) return từĐiển;
   for (const [mã, nơiĐăngThànhPhần] of Object.entries(cấuHìnhMãNơiĐăng)) {
@@ -24,18 +24,18 @@ export function tạoTừĐiểnMãNơiĐăng(cấuHìnhMãNơiĐăng: CấuHìn
 }
 
 /**
- * @param [từĐiểnMãNơiĐăng=undefined] nếu là undefined nghĩa là URL là do người dùng nhập chứ không phải được khai báo sẵn, nên từ đầu đã không có từ điển mã nơi đăng. Lúc này trả về tên nơi đăng dạng kebab
+ * @param [từĐiểnSlugNơiĐăng=undefined] nếu là undefined nghĩa là URL là do người dùng nhập chứ không phải được khai báo sẵn, nên từ đầu đã không có từ điển slug. Lúc này trả về tên nơi đăng dạng kebab
  */
-export function tạoMãNơiĐăng(nơiĐăng: ThôngTinNơiĐăngChưaCóId, từĐiểnMãNơiĐăng: TừĐiểnMãNơiĐăng | undefined = undefined): string | undefined {
+export function tạoSlugNơiĐăng(nơiĐăng: ThôngTinNơiĐăngChưaCóId, từĐiểnSlugNơiĐăng: TừĐiểnSlugNơiĐăng | undefined = undefined): string | undefined {
   const {
     "Loại nền tảng": loạiNềnTảng,
     "Tên nền tảng": tênNềnTảng,
     "Tên nơi đăng": tênNơiĐăng,
     "Loại nơi đăng": loạiNơiĐăng,
   } = nơiĐăng;
-  if (từĐiểnMãNơiĐăng) {
+  if (từĐiểnSlugNơiĐăng) {
     for (const tênNơiĐăngThànhPhần of tênNơiĐăng.toReversed()) {
-      const mãNơiĐăngĐượcKhaiBáo = từĐiểnMãNơiĐăng.get(tênNơiĐăngThànhPhần.toLowerCase());
+      const mãNơiĐăngĐượcKhaiBáo = từĐiểnSlugNơiĐăng.get(tênNơiĐăngThànhPhần.toLowerCase());
       if (mãNơiĐăngĐượcKhaiBáo) return mãNơiĐăngĐượcKhaiBáo;
     }
   }

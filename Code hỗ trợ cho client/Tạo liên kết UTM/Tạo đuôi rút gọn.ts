@@ -1,7 +1,7 @@
 import { BàiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { ĐuôiRútGọn } from "./Kiểu cho tham số UTM.ts";
 import { CấuHìnhViếtTắt } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
-import { tạoMãNơiĐăng } from "../../Tạo bài đăng và nơi đăng/B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình/Tạo mã nơi đăng.ts";
+import { tạoSlugNơiĐăng } from "../../Tạo bài đăng và nơi đăng/B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình/Tạo slug nơi đăng.ts";
 import { MãNơiĐăng, ThôngTinNơiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
 import { kiểuKebab, lấyKýHiệuViếtTắt } from "../Hàm xử lý chuỗi.ts";
 
@@ -18,16 +18,13 @@ function tạoPhầnBàiĐăng(bàiĐăng: BàiĐăng, cấuHìnhViếtTắt: C�
   return `${mãDựÁnHoặcVault}:${mãBàiĐăng}`;
 }
 
-function tạoPhầnNơiĐăng(
-  nơiĐăng: ThôngTinNơiĐăng,
-  cấuHìnhViếtTắt: CấuHìnhViếtTắt,
-): `${string}:${string}` {
+function tạoPhầnNơiĐăng(nơiĐăng: ThôngTinNơiĐăng, cấuHìnhViếtTắt: CấuHìnhViếtTắt) {
   const {
     "Tên nền tảng": tênNềnTảng,
-    "Tên nơi đăng": tênNơiĐăng,
+    id,
   } = nơiĐăng;
   const kýHiệuNềnTảng = lấyKýHiệuViếtTắt(tênNềnTảng, cấuHìnhViếtTắt) || tênNềnTảng;
-  const mãNơiĐăng: MãNơiĐăng = tạoMãNơiĐăng(nơiĐăng) || nơiĐăng.id;
+  const mãNơiĐăng: MãNơiĐăng = tạoSlugNơiĐăng(nơiĐăng) || id;
 
   return `${kýHiệuNềnTảng}:${mãNơiĐăng}`;
 }

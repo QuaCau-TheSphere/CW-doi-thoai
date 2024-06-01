@@ -18,7 +18,7 @@ import {
 import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { táchUrlTrongChuỗi, đổiTừCơSố10SangCơSố64 } from "../../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 import { xácĐịnhIdTrênLocal } from "../../Code hỗ trợ cho server/Hàm cho id.ts";
-import { tạoMãNơiĐăng, tạoTừĐiểnMãNơiĐăng } from "./Tạo mã nơi đăng.ts";
+import { tạoSlugNơiĐăng, tạoTừĐiểnSlugNơiĐăng } from "./Tạo slug nơi đăng.ts";
 import CấuHìnhNơiĐăng, {
   lấyCấuHìnhChung,
   ThôngTinCấuHìnhNơiĐăng,
@@ -80,6 +80,7 @@ function tạoDanhSáchSaaS(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSác
           "Tên nền tảng": tênSaaS,
           "Loại nền tảng": "SaaS",
           URL: url,
+          "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
         });
       }
     }
@@ -98,6 +99,7 @@ function tạoDanhSáchKhác(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSá
         "Tên nền tảng": loạiNơiĐăngKhác,
         "Loại nền tảng": loạiNơiĐăngKhác,
         URL: url,
+        "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
       });
     }
   }
@@ -119,7 +121,7 @@ export default function tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí(vật
     "Vị trí đặt liên kết ở nơi đăng": danhSáchVậtThểVịTrí,
     "Vị trí thành phần": cấuHìnhVịTríNhỏHơn,
   } = lấyCấuHìnhChung();
-  const từĐiểnMãNơiĐăng = tạoTừĐiểnMãNơiĐăng(vậtThểCấuHình.cấuHình["Mã nơi đăng"]);
+  const từĐiểnMãNơiĐăng = tạoTừĐiểnSlugNơiĐăng(vậtThểCấuHình.cấuHình["Slug"]);
 
   for (const thôngTinNơiĐăng of danhSáchNơiĐăng) {
     for (const vậtThểVịTrí of danhSáchVậtThểVịTrí) {
@@ -138,7 +140,7 @@ export default function tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí(vật
         break;
     }
 
-    thôngTinNơiĐăng["Mã nơi đăng"] = tạoMãNơiĐăng(thôngTinNơiĐăng, từĐiểnMãNơiĐăng);
+    thôngTinNơiĐăng["Slug"] = tạoSlugNơiĐăng(thôngTinNơiĐăng, từĐiểnMãNơiĐăng);
   }
   return danhSáchNơiĐăng;
 }

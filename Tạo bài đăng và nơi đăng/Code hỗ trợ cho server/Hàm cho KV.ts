@@ -136,7 +136,7 @@ export async function đẩyNơiĐăngLênKV() {
 
   for (const nơiĐăng of danhSáchNơiĐăng) {
     console.log(tạoTênNơiĐăngString(nơiĐăng["Tên nơi đăng"]));
-    console.log("→", nơiĐăng["Mã nơi đăng"], nơiĐăng.id);
+    console.log("→", nơiĐăng["Slug"], nơiĐăng.id);
     const key = tạoKeyKV("nơi đăng", nơiĐăng);
     await kvSetValueAndCount(key, nơiĐăng, "Nơi đăng");
   }

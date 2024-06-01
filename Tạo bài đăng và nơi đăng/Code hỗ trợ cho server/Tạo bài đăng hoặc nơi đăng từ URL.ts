@@ -1,9 +1,10 @@
+/** Bài đăng và nơi đăng được tạo ở đây ko có id. Id chỉ thêm vào ngay trước lúc nhập vào KV */
 import { getMetaTags } from "https://deno.land/x/opengraph@v1.0.0/mod.ts";
 import { BàiĐăngChưaCóId, URLString } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { danhSáchDiễnĐàn, danhSáchNềnTảngChat, LoạiNơiĐăng, LoạiNềnTảng, ThôngTinNơiĐăngChưaCóId, TênNềnTảng } from "./Kiểu cho nơi đăng.ts";
 import { viếtThường } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 import { NơiĐăngCóCácLựaChọnVịTríChưaCóId, tạoNơiĐăngCóCácLựaChọnVịTrí } from "./Hàm và kiểu cho vị trí.ts";
-import { tạoMãNơiĐăng, TừĐiểnMãNơiĐăng } from "../B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình/Tạo mã nơi đăng.ts";
+import { tạoSlugNơiĐăng, TừĐiểnSlugNơiĐăng } from "../B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình/Tạo slug nơi đăng.ts";
 import { DOMParser, HTMLDocument } from "jsr:@b-fuze/deno-dom";
 interface MetaTags {
   title: string;
@@ -15,10 +16,12 @@ interface MetaTags {
   alt: string;
   locale: string;
 }
+type Og = MetaTags | undefined;
+
 async function tạoOgVàDOM(urlString: URLString) {
   const url = new URL(urlString);
   const html = await (await fetch(url)).text();
-  const og = (await getMetaTags(html)).og as MetaTags | undefined;
+  const og = (await getMetaTags(html)).og as Og;
   console.error(`Không lấy được các thẻ Meta cho ${url.href}`);
   const dom = new DOMParser().parseFromString(html, "text/html");
   return { og, url, dom };
@@ -31,7 +34,7 @@ function cóTênNềnTảngTrongHostname(hostname: string, nềnTảng: TênNề
   return hostname.includes(tênNềnTảngViếtThườngKhôngCách);
 }
 
-function lấyTitle(og: MetaTags | undefined, dom: HTMLDocument): string {
+function lấyTitle(og: Og, dom: HTMLDocument): string {
   const title = og?.title || dom.querySelector("title")?.textContent;
   if (!title) return "";
   const titleSplit = title.split(" | ");
@@ -46,7 +49,7 @@ function lấyTênMiền(hostname: string) {
   return hostname.replace(TLDs, "").split(".").pop();
 }
 
-function lấyMôTả(og: MetaTags | undefined, dom: HTMLDocument): string | null | undefined {
+function lấyMôTả(og: Og, dom: HTMLDocument): string | null | undefined {
   return og?.description || dom.querySelector("p")?.textContent;
 }
 
@@ -63,11 +66,11 @@ function tạoSlug({ hostname, pathname }: URL) {
 }
 
 /**
- * @param [từĐiểnMãNơiĐăng=undefined] nếu là undefined nghĩa là URL là do người dùng nhập chứ không phải được khai báo sẵn, nên từ đầu đã không có từ điển mã nơi đăng
+ * @param [từĐiểnMãNơiĐăng=undefined] nếu là undefined nghĩa là URL là do người dùng nhập chứ không phải được khai báo sẵn, nên từ đầu đã không có từ điển Slug
  */
 export async function tạoNơiĐăngTừURL(
   urlString: URLString,
-  từĐiểnMãNơiĐăng: TừĐiểnMãNơiĐăng | undefined = undefined,
+  từĐiểnMãNơiĐăng: TừĐiểnSlugNơiĐăng | undefined = undefined,
 ): Promise<NơiĐăngCóCácLựaChọnVịTríChưaCóId> {
   console.info("Tạo nơi đăng mới từ URL:", urlString.toString());
   const { og, url, dom } = await tạoOgVàDOM(urlString);
@@ -124,7 +127,7 @@ export async function tạoNơiĐăngTừURL(
   };
   const thôngTinNơiĐăng = {
     ...thôngTinNơiĐăngChưaCóId,
-    "Mã nơi đăng": tạoMãNơiĐăng(thôngTinNơiĐăngChưaCóId, từĐiểnMãNơiĐăng),
+    "Slug": tạoSlugNơiĐăng(thôngTinNơiĐăngChưaCóId, từĐiểnMãNơiĐăng),
   };
   return tạoNơiĐăngCóCácLựaChọnVịTrí(thôngTinNơiĐăng);
 }
