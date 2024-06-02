@@ -1,11 +1,12 @@
 import { useEffect, useState } from "preact/hooks";
 import { BàiĐăngChưaCóId } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { queryBàiĐăngSignal } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
-import { PhảnHồiTừCORSProxy } from "../../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
+import { tạoBàiĐăngTừURL } from "../../Code hỗ trợ cho client/Tạo bài đăng hoặc nơi đăng từ URL.ts";
 
 /** Các dữ liệu người dùng nhập trong form */
 export default function ModalBàiĐăng() {
   const [bàiĐăng, setBàiĐăng] = useState<BàiĐăngChưaCóId | undefined>();
+
   /**
    * Các state dưới đây cần để kiểu là string vì chúng là do người dùng nhập vào
    * Cái nào không có undefined nghĩa là cái đó bắt buộc phải có
@@ -25,9 +26,11 @@ export default function ModalBàiĐăng() {
         return;
       }
       const corsProxyUrl = `${origin}/api/cors-proxy/${url}`;
-      const phảnHồiTừCORSProxy = await (await fetch(corsProxyUrl)).json() as PhảnHồiTừCORSProxy;
-      console.log("Kết quả lấy dữ liệu từ URL được nhập vào bài đăng:", phảnHồiTừCORSProxy);
-      setBàiĐăng(phảnHồiTừCORSProxy?.["Nếu là bài đăng"]);
+      const html = await (await fetch(corsProxyUrl)).text();
+      setBàiĐăng({
+        ...await tạoBàiĐăngTừURL(url, html),
+        "Phương thức tạo": "Người dùng nhập tay trên web",
+      });
     }
     lấyThôngTinTừUrl();
   }, [url]);

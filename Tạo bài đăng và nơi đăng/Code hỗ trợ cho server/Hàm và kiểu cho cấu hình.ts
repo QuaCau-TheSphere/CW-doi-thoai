@@ -14,6 +14,8 @@ import {
   CấuHìnhẢnh,
   MãNơiĐăng,
 } from "./Kiểu cho nơi đăng.ts";
+import { IS_BROWSER } from "$fresh/runtime.ts";
+import { cấuHìnhChungSignal } from "../../islands/Signals tổng.ts";
 
 export type CấuHìnhViếtTắt = Record<string, string>[] | undefined | null;
 export interface CấuHìnhChung {
@@ -65,9 +67,7 @@ export async function tạoDanhSáchThôngTinCấuHìnhNơiĐăng(): Promise<Th�
   }
   return danhSáchCấuHình;
 }
-export function lấyCấuHìnhChung() {
+export function lấyCấuHìnhChung(): CấuHìnhChung {
+  if (IS_BROWSER) return cấuHìnhChungSignal.value;
   return parse(Deno.readTextFileSync(ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG)) as CấuHìnhChung;
-}
-export function lấyCấuHìnhViếtTắt() {
-  return lấyCấuHìnhChung()["Viết tắt"];
 }

@@ -1,4 +1,4 @@
-import { ThôngTinNơiĐăngChưaCóId } from "../../Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
+import { ThôngTinNơiĐăngChưaCóId, ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo } from "../../Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
 import { CấuHìnhMãNơiĐăng } from "../../Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
 import { kiểuKebab, táchUrlTrongChuỗi } from "../../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 
@@ -26,7 +26,10 @@ export function tạoTừĐiểnSlugNơiĐăng(cấuHìnhMãNơiĐăng: CấuHì
 /**
  * @param [từĐiểnSlugNơiĐăng=undefined] nếu là undefined nghĩa là URL là do người dùng nhập chứ không phải được khai báo sẵn, nên từ đầu đã không có từ điển slug. Lúc này trả về tên nơi đăng dạng kebab
  */
-export function tạoSlugNơiĐăng(nơiĐăng: ThôngTinNơiĐăngChưaCóId, từĐiểnSlugNơiĐăng: TừĐiểnSlugNơiĐăng | undefined = undefined): string | undefined {
+export function tạoSlugNơiĐăng(
+  nơiĐăng: ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo,
+  từĐiểnSlugNơiĐăng: TừĐiểnSlugNơiĐăng | undefined = undefined,
+): string | undefined {
   const {
     "Loại nền tảng": loạiNềnTảng,
     "Tên nền tảng": tênNềnTảng,

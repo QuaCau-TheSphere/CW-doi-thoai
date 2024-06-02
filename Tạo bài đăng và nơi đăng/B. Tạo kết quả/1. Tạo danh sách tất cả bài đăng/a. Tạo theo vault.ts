@@ -8,7 +8,7 @@ import {
   BàiĐăng,
   BàiĐăngChưaCóId,
   TênDựÁn,
-  URLString,
+  UrlString,
   Vault,
   YAMLCủaGhiChú,
   type ĐườngDẫnTuyệtĐối,
@@ -102,7 +102,7 @@ export async function tạoDanhSáchĐườngDẫnTấtCảCácBàiĐăngTrongVa
 function xácĐịnhURLCủaGhiChú(
   đườngDẫnTớiGhiChú: ĐườngDẫnTuyệtĐối,
   đườngDẫnTớiVault: ĐườngDẫnTuyệtĐối,
-  urlVault: URLString,
+  urlVault: UrlString,
 ) {
   const đườngDẫnTươngĐốiCủaGhiChúTrongVault: ĐườngDẫnTươngĐối = đườngDẫnTớiGhiChú.replace(đườngDẫnTớiVault, "");
   const tênTậpTin = basename(đườngDẫnTớiGhiChú, ".md");

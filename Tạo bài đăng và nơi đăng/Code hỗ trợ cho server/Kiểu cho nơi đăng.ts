@@ -1,7 +1,7 @@
 /** Chỉ có những biến có từ cấu hình trong tên là dành cho cấu hình, còn lại là dành cho kết quả là vật thể nơi đăng */
 import { VậtThểId } from "./Hàm cho id.ts";
 import { DanhSáchVịTríCóThểĐăng } from "./Hàm và kiểu cho vị trí.ts";
-import { URLString } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { UrlString } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 export type OneKey<K extends string, V = any> = {
   [P in K]: (
     & Record<P, V>
@@ -62,7 +62,7 @@ export interface ThôngTinNơiĐăng {
   "Tên nền tảng": TênNềnTảng;
   "Loại nơi đăng": LoạiNơiĐăng;
   "Tên nơi đăng": TênNơiĐăng;
-  URL?: URLString;
+  URL?: UrlString;
   "Lĩnh vực"?: string[];
   "Mô tả nơi đăng"?: string | null;
   "Slug"?: string;
@@ -73,6 +73,7 @@ export interface ThôngTinNơiĐăng {
   "Phương thức tạo": "Lấy từ cấu hình nơi đăng" | "Người dùng nhập tay trên web";
 }
 export type ThôngTinNơiĐăngChưaCóId = Omit<ThôngTinNơiĐăng, "id">;
+export type ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo = Omit<ThôngTinNơiĐăng, "id" | "Phương thức tạo">;
 /**
  * | Diễn đàn                    | Discord                    | Messenger      | Telegram |
  * | --------------------------- | -------------------------- | -------------- | -------- |

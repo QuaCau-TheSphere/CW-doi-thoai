@@ -3,20 +3,20 @@ import { BàiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ
 import { NơiĐăngCóCácLựaChọnVịTrí } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import SectionBênTrái from "./Section bên trái.tsx";
 import SectionBênPhải from "./Section bên phải.tsx";
-import { cấuHìnhViếtTắtSignal, flexSearchBàiĐăngSignal, flexSearchNơiĐăngSignal } from "./Signals tổng.ts";
-import { CấuHìnhViếtTắt } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
+import { cấuHìnhChungSignal, flexSearchBàiĐăngSignal, flexSearchNơiĐăngSignal } from "./Signals tổng.ts";
+import { CấuHìnhChung } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
 import ModalNơiĐăng from "./Modal tạo mới/Modal nơi đăng.tsx";
 import ModalBàiĐăng from "./Modal tạo mới/Modal bài đăng.tsx";
 
 interface MainProps {
   danhSáchNơiĐăng: NơiĐăngCóCácLựaChọnVịTrí[];
   danhSáchBàiĐăng: BàiĐăng[];
-  cấuHìnhViếtTắt: CấuHìnhViếtTắt;
+  cấuHìnhChung: CấuHìnhChung;
   textTrangChủ: string;
 }
 
-function xửLýSignal(cấuHìnhViếtTắt: CấuHìnhViếtTắt, danhSáchBàiĐăng: BàiĐăng[], danhSáchNơiĐăng: NơiĐăngCóCácLựaChọnVịTrí[]) {
-  cấuHìnhViếtTắtSignal.value = cấuHìnhViếtTắt;
+function nạpSignal(cấuHìnhChung: CấuHìnhChung, danhSáchBàiĐăng: BàiĐăng[], danhSáchNơiĐăng: NơiĐăngCóCácLựaChọnVịTrí[]) {
+  cấuHìnhChungSignal.value = cấuHìnhChung;
 
   const flexSearchBàiĐăng: Document<BàiĐăng, true> = new FlexSearch.Document({
     document: {
@@ -62,8 +62,8 @@ function xửLýSignal(cấuHìnhViếtTắt: CấuHìnhViếtTắt, danhSáchB�
   flexSearchNơiĐăngSignal.value = flexSearchNơiĐăng;
 }
 
-export default function Main({ danhSáchNơiĐăng, danhSáchBàiĐăng, cấuHìnhViếtTắt, textTrangChủ }: MainProps) {
-  xửLýSignal(cấuHìnhViếtTắt, danhSáchBàiĐăng, danhSáchNơiĐăng);
+export default function Main({ danhSáchNơiĐăng, danhSáchBàiĐăng, cấuHìnhChung, textTrangChủ }: MainProps) {
+  nạpSignal(cấuHìnhChung, danhSáchBàiĐăng, danhSáchNơiĐăng);
 
   /** Cần debug component nào thì cứ return nó ở đây */
   // return <ModalBàiĐăng />;

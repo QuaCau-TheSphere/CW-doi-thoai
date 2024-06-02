@@ -1,8 +1,8 @@
 import { useEffect, useState } from "preact/hooks";
 import { NơiĐăngCóCácLựaChọnVịTríChưaCóId } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { queryNơiĐăngSignal } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
-import { PhảnHồiTừCORSProxy } from "../../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
 import { TênNơiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
+import { tạoNơiĐăngTừURL } from "../../Code hỗ trợ cho client/Tạo bài đăng hoặc nơi đăng từ URL.ts";
 
 /** Các dữ liệu người dùng nhập trong form */
 export default function ModalNơiĐăng() {
@@ -12,7 +12,7 @@ export default function ModalNơiĐăng() {
    * Các state dưới đây cần để kiểu là string vì chúng là do người dùng nhập vào
    * Cái nào không có undefined nghĩa là cái đó bắt buộc phải có
    */
-  const [url, setUrl] = useState<string>(queryNơiĐăngSignal.value);
+  const [url, setUrl] = useState(queryNơiĐăngSignal.value);
   const [tênNơiĐăng, setTênNơiĐăng] = useState("");
   const [slug, setSlug] = useState<string | undefined>();
   const [môTảNơiĐăng, setMôTảNơiĐăng] = useState<string | undefined>();
@@ -28,9 +28,11 @@ export default function ModalNơiĐăng() {
         return;
       }
       const corsProxyUrl = `${origin}/api/cors-proxy/${url}`;
-      const phảnHồiTừCORSProxy = await (await fetch(corsProxyUrl)).json() as PhảnHồiTừCORSProxy;
-      console.log("Kết quả lấy dữ liệu từ URL được nhập vào nơi đăng:", phảnHồiTừCORSProxy);
-      setNơiĐăng(phảnHồiTừCORSProxy?.["Nếu là nơi đăng"]);
+      const html = await (await fetch(corsProxyUrl)).text();
+      setNơiĐăng({
+        ...await tạoNơiĐăngTừURL(url, undefined, html),
+        "Phương thức tạo": "Người dùng nhập tay trên web",
+      });
     }
     lấyThôngTinTừUrl();
   }, [url]);
@@ -50,7 +52,7 @@ export default function ModalNơiĐăng() {
       "Tên nơi đăng": tênNơiĐăng,
       Slug: slug,
       "Mô tả nơi đăng": môTảNơiĐăng,
-    } = nơiĐăng as NơiĐăngCóCácLựaChọnVịTríChưaCóId;
+    } = nơiĐăng || {};
     setUrl(url?.toString() || "");
     setTênNơiĐăng(tênNơiĐăng?.join(", ") || "");
     setSlug(slug);

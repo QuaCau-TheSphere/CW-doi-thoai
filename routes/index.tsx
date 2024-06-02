@@ -1,6 +1,6 @@
 import { NơiĐăngCóCácLựaChọnVịTrí } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { BàiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
-import { lấyCấuHìnhViếtTắt } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
+import { lấyCấuHìnhChung } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
 import Main from "../islands/Main.tsx";
 
 export default async function App() {
@@ -18,7 +18,7 @@ export default async function App() {
       <Main
         danhSáchBàiĐăng={danhSáchBàiĐăng}
         danhSáchNơiĐăng={danhSáchNơiĐăng}
-        cấuHìnhViếtTắt={lấyCấuHìnhViếtTắt()}
+        cấuHìnhChung={lấyCấuHìnhChung()}
         textTrangChủ={textTrangChủ}
       />
     </body>

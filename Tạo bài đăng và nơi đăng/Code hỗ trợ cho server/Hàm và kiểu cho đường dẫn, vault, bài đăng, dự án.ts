@@ -2,7 +2,7 @@ import { parse, ParsedPath } from "$std/path/mod.ts";
 import { VậtThểId } from "./Hàm cho id.ts";
 
 /** Đường dẫn */
-export type URLString = string | URL;
+export type UrlString = string | URL;
 /**
  * @example `D:\\QC supplements\\Vaults`
  */
@@ -25,7 +25,7 @@ export type MãVault = string;
 export interface Vault {
   "Tên vault": TênVault;
   "Mã vault": MãVault;
-  URL: URLString;
+  URL: UrlString;
   "Nơi lưu vault": ĐườngDẫnTuyệtĐối;
   "Mô tả vault"?: string;
 }
@@ -54,9 +54,10 @@ export interface NộiDungBàiĐăng {
   "Định dạng nội dung"?: "md" | "html";
 }
 export type BàiĐăngChưaCóId = Omit<BàiĐăng, "id">;
+export type BàiĐăngChưaCóIdVàPhươngThứTạo = Omit<BàiĐăng, "id" | "Phương thức tạo">;
 export interface BàiĐăng {
   "Tiêu đề": string;
-  "URL": URLString;
+  "URL": UrlString;
   "Dự án"?: DựÁn;
   Vault?: string;
   "Slug"?: string;

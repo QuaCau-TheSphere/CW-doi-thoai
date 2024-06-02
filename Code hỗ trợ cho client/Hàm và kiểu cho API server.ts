@@ -59,14 +59,6 @@ export async function ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv(dữLiệuCh
   return await res.json();
 }
 
-/** Không phải là để dùng cho `await Response`, mà dùng cho `await (await Response).json()` */
-export interface PhảnHồiTừCORSProxy {
-  "Nếu là bài đăng": BàiĐăngChưaCóId;
-  "Nếu là nơi đăng": NơiĐăngCóCácLựaChọnVịTríChưaCóId;
-  lỗi?: string | "URL không hợp lệ";
-  html?: string | null;
-}
-
 export type PhảnHồiTừAPITìmVậtThểTiếpThịĐãCó = Deno.KvEntry<VậtThểTiếpThị>;
 
 export async function tìmVậtThểTiếpThịĐãCó(bàiĐăng: BàiĐăng, nơiĐăng: NơiĐăngCóMộtVịTríCụThể) {

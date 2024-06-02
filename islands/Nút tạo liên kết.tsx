@@ -1,7 +1,7 @@
 import {
   bàiĐăngĐượcChọn,
   bốiCảnh,
-  cấuHìnhViếtTắtSignal,
+  cấuHìnhChungSignal,
   lầnĐăngHiệnTại,
   nơiĐăngCóMộtVịTríCụThể,
   tênNút,
@@ -15,7 +15,7 @@ async function tạoVậtThểTiếpThị() {
   const bàiĐăng = bàiĐăngĐượcChọn.value;
   const nơiĐăng = nơiĐăngCóMộtVịTríCụThể.value;
   const bốicảnh = bốiCảnh.value;
-  const cấuHìnhViếtTắt = cấuHìnhViếtTắtSignal.value;
+  const cấuHìnhViếtTắt = cấuHìnhChungSignal.value["Viết tắt"];
   const lầnĐăng = lầnĐăngHiệnTại.value;
 
   if (!bàiĐăng) {

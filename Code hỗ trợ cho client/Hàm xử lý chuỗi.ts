@@ -1,4 +1,4 @@
-import { URLString } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { UrlString } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { VịTrí } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { ThôngTinNơiĐăng, TênNơiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
 import punycode from "npm:punycode";
@@ -66,7 +66,7 @@ export function isUrl(string: string | undefined) {
 /**
  * @param đểDấuCáchTrongLiênKết mặc định là false để tạo markdown cho dễ
  */
-export function xửLýPunycode(encodedUrl: URLString | undefined, đểDấuCáchTrongLiênKết: boolean = false): string {
+export function xửLýPunycode(encodedUrl: UrlString | undefined, đểDấuCáchTrongLiênKết: boolean = false): string {
   if (!encodedUrl) return "";
   const decodedUri = decodeURI(encodedUrl.toString());
   const hostname = (new URL(encodedUrl)).hostname;

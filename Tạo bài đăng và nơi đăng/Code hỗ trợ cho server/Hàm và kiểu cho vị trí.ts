@@ -1,5 +1,12 @@
 import { CấuHìnhChung, lấyCấuHìnhChung } from "./Hàm và kiểu cho cấu hình.ts";
-import { LoạiNơiĐăng, LoạiNềnTảng, ThôngTinNơiĐăng, ThôngTinNơiĐăngChưaCóId, TênNềnTảng } from "./Kiểu cho nơi đăng.ts";
+import {
+  LoạiNơiĐăng,
+  LoạiNềnTảng,
+  ThôngTinNơiĐăng,
+  ThôngTinNơiĐăngChưaCóId,
+  ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo,
+  TênNềnTảng,
+} from "./Kiểu cho nơi đăng.ts";
 
 export type VịTríThànhPhần = string;
 
@@ -25,7 +32,10 @@ export type VậtThểCấuHìnhVịTrí = {
 /**
  * Thuộc tính "Loại nơi đăng" đều có trong ThôngTinNơiĐăng và VậtThểCấuHìnhVịTrí. Hàm này kiểm tra xem nó có trùng nhau không. Nếu có nghĩa là loại nơi đăng này có được khai báo trong VậtThểCấuHìnhVịTrí
  */
-export function cóThôngTinNơiĐăngTrongVậtThểVịTrí(thôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId, vậtThểCấuHìnhVịTrí: VậtThểCấuHìnhVịTrí): boolean {
+export function cóThôngTinNơiĐăngTrongVậtThểVịTrí(
+  thôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo,
+  vậtThểCấuHìnhVịTrí: VậtThểCấuHìnhVịTrí,
+): boolean {
   const {
     "Loại nền tảng": loạiNềnTảngND,
     "Tên nền tảng": tênNềnTảngND,
@@ -110,7 +120,9 @@ export interface NơiĐăngCóMộtVịTríCụThể extends ThôngTinNơiĐăng
   "Vị trí": VịTrí;
 }
 
-export function tạoNơiĐăngCóCácLựaChọnVịTrí(thôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId): NơiĐăngCóCácLựaChọnVịTríChưaCóId {
+export function tạoNơiĐăngCóCácLựaChọnVịTrí(
+  thôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo,
+): Omit<NơiĐăngCóCácLựaChọnVịTríChưaCóId, "Phương thức tạo"> {
   let danhSáchVịTríCóThểĐăng: DanhSáchVịTríCóThểĐăng = [];
   const {
     "Vị trí đặt liên kết ở nơi đăng": danhSáchVậtThểCấuHìnhVịTrí,

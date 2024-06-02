@@ -4,10 +4,10 @@ import { NơiĐăngCóCácLựaChọnVịTrí, NơiĐăngCóMộtVịTríCụTh�
 import { BàiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { VậtThểTiếpThị } from "../Code hỗ trợ cho client/Kiểu cho vật thể tiếp thị.ts";
 import { tìmVậtThểTiếpThịĐãCó } from "../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
-import { CấuHìnhViếtTắt } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
+import { CấuHìnhChung } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
 import { ElementDùngTab } from "../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
 
-export const cấuHìnhViếtTắtSignal = signal<CấuHìnhViếtTắt>({});
+export const cấuHìnhChungSignal = signal<CấuHìnhChung>({});
 export const flexSearchBàiĐăngSignal = signal<FlexSearch.Document<BàiĐăng>>([]);
 export const flexSearchNơiĐăngSignal = signal<FlexSearch.Document<NơiĐăngCóCácLựaChọnVịTrí>>([]);
 

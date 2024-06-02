@@ -1,4 +1,4 @@
-import { BàiĐăng, DựÁn, URLString } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { BàiĐăng, DựÁn, UrlString } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import {
   Campaign,
   Content,
@@ -134,7 +134,7 @@ function tạoTerm(lĩnhVực: string[] | undefined): Term {
   return lĩnhVực.join(", ");
 }
 
-function tạoLiênKếtUTM(link: URLString, thamSốUTM: ThamSốUTM): LiênKếtUTM {
+function tạoLiênKếtUTM(link: UrlString, thamSốUTM: ThamSốUTM): LiênKếtUTM {
   const url = new URL(link);
   const { source, medium, campaign, content, term } = thamSốUTM;
   url.searchParams.set("utm_source", source || "");
