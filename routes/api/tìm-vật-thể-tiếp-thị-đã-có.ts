@@ -4,7 +4,7 @@
 
 import { Handlers } from "$fresh/server.ts";
 import { VậtThểTiếpThị } from "../../Code hỗ trợ cho client/Kiểu cho vật thể tiếp thị.ts";
-import { kvSignal } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Signal KV.ts";
+import { kvList } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho KV.ts";
 
 export const handler: Handlers = {
   async POST(req, ctx) {
@@ -21,9 +21,10 @@ export const handler: Handlers = {
       },
     } = bàiĐăngVàNơiĐăngTừRequest;
 
-    const kv = await Deno.openKv();
-    kvSignal.value = kv;
-    const tấtCảVậtThểTiếpThịĐangCó = await Array.fromAsync(kv.list({ prefix: ["Đuôi rút gọn"] })) as Deno.KvEntry<VậtThểTiếpThị>[];
+    const tấtCảVậtThểTiếpThịĐangCó = await kvList(
+      { prefix: ["Đuôi rút gọn"] },
+      "POST handler trong routes\\api\\tìm-vật-thể-tiếp-thị-đã-có.ts",
+    ) as Deno.KvEntry<VậtThểTiếpThị>[];
     const filtered = tấtCảVậtThểTiếpThịĐangCó.filter((i) => {
       const j = i.value as VậtThểTiếpThị;
       if (j["Bài đăng"]["URL"] !== urlBàiĐăng) return false;

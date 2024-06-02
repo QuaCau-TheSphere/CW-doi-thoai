@@ -13,39 +13,62 @@ import sizeof from "npm:object-sizeof";
 
 export type TableName = "Nơi đăng" | "Bài đăng" | "Vật thể tiếp thị";
 export type SốLượngDữLiệu = Map<TableName, number>;
+const cssIncrease = "color: blue; font-style: bold; border: solid blue";
 
 export function increaseReadUnit(data: any) {
   const KiB = sizeof(data) / 1024;
-  readUnitSignal.value += Math.ceil(KiB / 4);
+  const readUnits = Math.ceil(KiB / 4);
+  readUnitSignal.value += readUnits;
+  console.log(`Read units: %c${readUnits}`, cssIncrease);
 }
 
 export function increaseWriteUnit(data: any) {
   const KiB = sizeof(data) / 1024;
-  writeUnitSignal.value += Math.ceil(KiB);
+  const writeUnit = Math.ceil(KiB);
+  writeUnitSignal.value += writeUnit;
+  console.log(`Write units: %c${writeUnit}`, cssIncrease);
 }
 
-export async function kvGet(key: Deno.KvKey) {
+export async function kvGet(key: Deno.KvKey, caller: string) {
   const kv = kvSignal.value;
   const result = await kv.get(key);
+  console.log("READ: get");
+  console.log("Hàm gọi:", caller);
+  console.log("key:", key);
   increaseReadUnit(result);
-  console.log("READ");
   return result;
 }
 
-export async function kvSet(key: Deno.KvKey, value: any) {
+export async function kvList(prefix: Deno.KvListSelector, caller: string) {
+  const kv = kvSignal.value;
+  const result = await Array.fromAsync(kv.list(prefix));
+  console.log("READ: list");
+  console.log("Hàm gọi:", caller);
+  console.log("key:", prefix);
+  increaseReadUnit(result);
+  return result;
+}
+
+export async function kvSet(key: Deno.KvKey, value: any, caller: string) {
   const kv = kvSignal.value;
   await kv.set(key, value);
-  console.log("WRITE");
+  console.log("WRITE: set");
+  console.log("Hàm gọi:", caller);
+  console.log("key:", key);
+  console.log("value:", value);
   increaseWriteUnit(value);
 }
 
 export async function kvDelete(key: Deno.KvKey) {
   const kv = kvSignal.value;
+  console.trace("WRITE: delete");
+  console.log("key:", key);
   await kv.delete(key);
+  // increaseWriteUnit(value);
 }
 
 export async function kvGetCount(tableName: TableName) {
-  const sốLượngDữLiệu = (await kvGet(["Số lượng dữ liệu"])).value as SốLượngDữLiệu | null;
+  const sốLượngDữLiệu = (await kvGet(["Số lượng dữ liệu"], "kvGetCount trong Hàm cho id.ts")).value as SốLượngDữLiệu | null;
   if (sốLượngDữLiệu) {
     return sốLượngDữLiệu.get(tableName);
   }
@@ -56,19 +79,19 @@ export async function kvSetValueAndCount(
   value: BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí,
   tableName: TableName,
 ) {
-  await kvSet(key, value);
+  await kvSet(key, value, "kvSetValueAndCount khi đẩy dữ liệu hàng loạt");
   if (value.vậtThểId?.cáchXácĐịnh === 1) return;
 
-  const sốLượngDữLiệu = (await kvGet(["Số lượng dữ liệu"])).value as SốLượngDữLiệu | null;
+  const sốLượngDữLiệu = (await kvGet(["Số lượng dữ liệu"], "kvSetValueAndCount khi đẩy dữ liệu hàng loạt")).value as SốLượngDữLiệu | null;
   if (sốLượngDữLiệu) {
     const currentCount = sốLượngDữLiệu.get(tableName) || 0;
     sốLượngDữLiệu.set(tableName, currentCount + 1);
     console.log(sốLượngDữLiệu.get(tableName));
-    await kvSet(["Số lượng dữ liệu"], sốLượngDữLiệu);
+    await kvSet(["Số lượng dữ liệu"], sốLượngDữLiệu, "kvSetValueAndCount khi đẩy dữ liệu hàng loạt");
   } else {
     const newMap = new Map();
     newMap.set(tableName, 1);
-    await kvSet(["Số lượng dữ liệu"], newMap);
+    await kvSet(["Số lượng dữ liệu"], newMap, "kvSetValueAndCount khi đẩy dữ liệu hàng loạt");
   }
 }
 
@@ -112,7 +135,7 @@ export async function thêmBàiĐăngHoặcNơiĐăngMớiVàoKV(bàiĐăngHoặ
   const { "Tên danh sách": tênDanhSách, "Dữ liệu": dữLiệu } = bàiĐăngHoặcNơiĐăngTạoMới;
   const key = tạoKeyKV(tênDanhSách, dữLiệu);
   const value = { ...dữLiệu, "Thời điểm nhập vào KV": new Date() };
-  await kvSet(key, value);
+  await kvSet(key, value, "thêmBàiĐăngHoặcNơiĐăngMớiVàoKV trong routes\\api\\thêm-bài-đăng-hoặc-nơi-đăng-mới.ts");
   return key;
 }
 

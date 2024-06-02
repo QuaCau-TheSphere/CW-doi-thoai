@@ -18,7 +18,7 @@ function tạoDòngPhụCủaBàiĐăng(bàiĐăng: BàiĐăng) {
     value = vault;
   }
   if (value) return <>{key}: {value}</>;
-  return <>URL: {xửLýPunycode(URL)}</>;
+  return <>URL: {xửLýPunycode(URL, true)}</>;
 }
 
 function Item({ item, tênDanhSách }: { item: BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí; tênDanhSách: TênDanhSách }) {

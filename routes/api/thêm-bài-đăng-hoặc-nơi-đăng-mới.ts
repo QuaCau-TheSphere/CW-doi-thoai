@@ -6,6 +6,6 @@ export const handler: Handlers = {
   async POST(req, ctx) {
     const bàiĐăngHoặcNơiĐăngTạoMới = await req.json() as ReqBàiĐăngHoặcNơiĐăng;
     const key = await thêmBàiĐăngHoặcNơiĐăngMớiVàoKV(bàiĐăngHoặcNơiĐăngTạoMới);
-    return Response.json(await kvGet(key));
+    return Response.json(await kvGet(key, "POST handler trong routes\\api\\thêm-bài-đăng-hoặc-nơi-đăng-mới.ts"));
   },
 };

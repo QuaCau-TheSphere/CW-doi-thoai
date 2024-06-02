@@ -11,7 +11,7 @@ import { kvGet } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ c
 export const handler: Handlers = {
   async GET(req, ctx) {
     const đuôiRútGọn = ctx.params.slug;
-    const serverGet = await kvGet(["Đuôi rút gọn", đuôiRútGọn]);
+    const serverGet = await kvGet(["Đuôi rút gọn", đuôiRútGọn], "GET hander trong chart.tsx");
     const vậtThểTiếpThị = serverGet.value as VậtThểTiếpThị;
 
     if (vậtThểTiếpThị) {

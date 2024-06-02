@@ -24,13 +24,13 @@ export const handler: Handlers = {
   async GET(req, ctx) {
     const đuôiRútGọn = ctx.params.slug;
     const key = ["Đuôi rút gọn", đuôiRútGọn]
-    const vậtThểTiếpThị = (await kvGet(key)).value as VậtThểTiếpThị;
+    const vậtThểTiếpThị = (await kvGet(key, 'GET hander trong cors proxy')).value as VậtThểTiếpThị;
     const headers =  req.headers
 
     if (vậtThểTiếpThị) {
       const liênKếtUTM = vậtThểTiếpThị["Liên kết UTM"];
       thêmThờiĐiểmTruyCập(vậtThểTiếpThị, headers) 
-      await kvSet(key, vậtThểTiếpThị);
+      await kvSet(key, vậtThểTiếpThị, 'GET handler trong routes\\[slug]\\index.ts');
       return Response.redirect(liênKếtUTM, 307);
     } else {
       return ctx.renderNotFound();
@@ -39,7 +39,7 @@ export const handler: Handlers = {
   async POST(req, ctx) {
     const đuôiRútGọn = ctx.params.slug;
     const vậtThểTiếpThị = await req.json() as VậtThểTiếpThị;
-    await kvSet(["Đuôi rút gọn", đuôiRútGọn], vậtThểTiếpThị);
+    await kvSet(["Đuôi rút gọn", đuôiRútGọn], vậtThểTiếpThị, 'POST handler trong routes\\[slug]\\index.ts');
 
     return new Response(JSON.stringify(vậtThểTiếpThị, null, 2));
   },

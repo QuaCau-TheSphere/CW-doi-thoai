@@ -27,7 +27,7 @@ export async function xácĐịnhIdTrênLocal(
   }
 
   const key = tạoKeyKV(tênDanhSách, dữLiệu);
-  const value = (await kvGet(key)).value as BàiĐăng | ThôngTinNơiĐăng | undefined | null;
+  const value = (await kvGet(key, "xácĐịnhIdTrênLocal trong Hàm cho id.ts")).value as BàiĐăng | ThôngTinNơiĐăng | undefined | null;
   if (value && value.id) {
     return {
       id: value.id,

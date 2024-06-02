@@ -66,8 +66,8 @@ export function isUrl(string: string | undefined) {
 /**
  * @param đểDấuCáchTrongLiênKết mặc định là false để tạo markdown cho dễ
  */
-export function xửLýPunycode(encodedUrl: UrlString | undefined, đểDấuCáchTrongLiênKết: boolean = false): string {
-  if (!encodedUrl) return "";
+export function xửLýPunycode(encodedUrl: UrlString | undefined, đểDấuCáchTrongLiênKết: boolean = false): string | undefined {
+  if (!encodedUrl) return undefined;
   const decodedUri = decodeURI(encodedUrl.toString());
   const hostname = (new URL(encodedUrl)).hostname;
   const decodedHostname = punycode.toUnicode(hostname);

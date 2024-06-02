@@ -86,9 +86,7 @@ export default function NơiĐăngĐượcChọn() {
         <h2 id="tên-nơi-đăng" class="card-title">{tênNơiĐăngString}</h2>
         <ul class="font-xs text-slate-400">
           <li id="loại-nơi-đăng" class="hover:text-primary-content">Loại nơi đăng: {loạiNơiĐăngString}</li>
-          <li id="liên-kết" class="hover:text-primary-content">
-            Liên kết: <a href={liênKết}>{liênKết || "∅"}</a>
-          </li>
+          <li id="liên-kết" class="hover:text-primary-content">Liên kết: {liênKết ? <a href={liênKết}>{liênKết}</a> : "∅"}</li>
           <li id="đơn-vị-quản-lý" class="hover:text-primary-content">Đơn vị quản lý: {đơnVịQuảnLý || "∅"}</li>
           <li id="lĩnh-vực" class="hover:text-primary-content">Lĩnh vực: {lĩnhVực || "∅"}</li>
           <li id="mã-nơi-đăng" class="hover:text-primary-content">Slug: {mãNơiĐăng || "∅"}</li>
