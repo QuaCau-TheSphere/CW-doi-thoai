@@ -52,12 +52,15 @@ function handleKeyDown(e: KeyboardEvent, mụcĐượcChọnSignal: Signal<Mục
     }
   }
   if (e.key === "Tab") {
-    e.preventDefault();
-    đổiKhungNhập("xuôi");
-  }
-  if (e.key === "Tab" && e.shiftKey) {
-    e.preventDefault();
-    đổiKhungNhập("ngược");
+    if (!e.shiftKey) {
+      console.log(document.activeElement);
+      e.preventDefault();
+      đổiKhungNhập("xuôi");
+    } else {
+      console.log(document.activeElement);
+      e.preventDefault();
+      đổiKhungNhập("ngược");
+    }
   }
 }
 

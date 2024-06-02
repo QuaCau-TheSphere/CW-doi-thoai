@@ -51,14 +51,14 @@ export function đổiKhungNhập(xuôiHayNgược: "xuôi" | "ngược") {
       break;
     case "ngược":
       switch (elementHiệnTại) {
-        case "nút tạo liên kết":
-          element.value = "bối cảnh";
-          khungNhậpBốiCảnh.focus();
-          break;
-        case "bối cảnh":
-          element.value = "nơi đăng";
-          khungNhậpNơiĐăng.focus();
-          break;
+        // case "nút tạo liên kết":
+        //   element.value = "bối cảnh";
+        //   khungNhậpBốiCảnh.focus();
+        //   break;
+        // case "bối cảnh":
+        //   element.value = "nơi đăng";
+        //   khungNhậpNơiĐăng.focus();
+        //   break;
         case "nơi đăng":
           element.value = "bài đăng";
           khungNhậpBàiĐăng.focus();
