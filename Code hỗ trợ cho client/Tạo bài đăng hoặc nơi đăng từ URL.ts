@@ -2,10 +2,7 @@
  * @fileoverview Bài đăng và nơi đăng được tạo ở đây ko có id. Id chỉ thêm vào ngay trước lúc nhập vào KV
  */
 import { getMetaTags } from "https://deno.land/x/opengraph@v1.0.0/mod.ts";
-import {
-  BàiĐăngChưaCóIdVàPhươngThứTạo,
-  UrlString,
-} from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { BàiĐăngChưaCóIdVàPhươngThứTạo } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import {
   danhSáchDiễnĐàn,
   danhSáchNềnTảngChat,
@@ -95,13 +92,15 @@ type OpenGraphTags = {
   [extraKeys: string]: unknown;
 };
 
-interface MetaTagVàDocument {
+interface MetaTagUrlVàDocument {
   meta: MetaTags;
   url: URL;
   document: HTMLDocument;
 }
 
-async function lấyMetaTagVàTạoDocument(urlString: UrlString, HTML: string | undefined = undefined): Promise<MetaTagVàDocument> {
+export type UrlString = string | URL;
+
+async function lấyMetaTagVàTạoDocument(urlString: UrlString, HTML: string | undefined = undefined): Promise<MetaTagUrlVàDocument> {
   const url = new URL(urlString);
   const html = HTML ? HTML : await (await fetch(url)).text();
   const meta = await getMetaTags(html) as MetaTags;
@@ -118,7 +117,7 @@ function cóTênNềnTảngTrongHostname(hostname: string, nềnTảng: TênNề
   return hostname.includes(tênNềnTảngViếtThườngKhôngCách);
 }
 
-function lấyTitle(meta: MetaTags, document: HTMLDocument): string {
+function lấyTitle({ meta, document }: MetaTagUrlVàDocument): string {
   const title = document.querySelector("title")?.textContent || meta.og?.title;
   if (!title) return "";
   const titleSplit = title.split(" | ");
@@ -133,7 +132,7 @@ function lấyTênMiền(hostname: string) {
   return hostname.replace(TLDs, "").split(".").pop();
 }
 
-function lấyMôTả(meta: MetaTags, document: HTMLDocument): string | null | undefined {
+function lấyMôTả({ meta, document }: MetaTagUrlVàDocument): string | null | undefined {
   return meta?.description || document.querySelector("p")?.textContent || meta.og?.description;
 }
 
@@ -141,6 +140,19 @@ function lấyLĩnhVực(meta: MetaTags): string[] | undefined {
   if (meta?.keywords) return meta.keywords.split(",");
   if (meta?.article?.tag) return [meta.article?.tag];
   return undefined;
+}
+
+function lấyĐơnVịQuảnLý(loạiNềnTảng: LoạiNềnTảng, { meta, url, document }: MetaTagUrlVàDocument): string | undefined {
+  switch (loạiNềnTảng) {
+    case "Website": {
+      const title = document.querySelector("title")?.textContent || meta.og?.title;
+      if (!title) return url.hostname;
+      const titleSplit = title.split(" | ");
+      return titleSplit[titleSplit.length - 1];
+    }
+    default:
+      break;
+  }
 }
 
 function tạoSlug({ hostname, pathname }: URL) {
@@ -166,7 +178,8 @@ export async function tạoNơiĐăngTừURL(
   HTML: string | undefined = undefined,
 ): Promise<Omit<NơiĐăngCóCácLựaChọnVịTríChưaCóId, "Phương thức tạo">> {
   console.info("Tạo nơi đăng mới từ URL:", urlString.toString());
-  const { meta, url, document } = await lấyMetaTagVàTạoDocument(urlString, HTML);
+  const metaTagUrlVàDocument = await lấyMetaTagVàTạoDocument(urlString, HTML);
+  const { meta, url, document } = metaTagUrlVàDocument;
   const { hostname, pathname } = url;
 
   let loạiNềnTảng: LoạiNềnTảng | undefined = undefined;
@@ -210,13 +223,14 @@ export async function tạoNơiĐăngTừURL(
   loạiNơiĐăng = loạiNơiĐăng ?? ["Website"];
 
   const thôngTinNơiĐăngChưaCóId: ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo = {
-    "Tên nơi đăng": [lấyTitle(meta, document)],
+    "Tên nơi đăng": [lấyTitle(metaTagUrlVàDocument)],
     URL: meta.og?.url || url.href,
-    "Mô tả nơi đăng": lấyMôTả(meta, document),
+    "Mô tả nơi đăng": lấyMôTả(metaTagUrlVàDocument),
     "Loại nền tảng": loạiNềnTảng,
     "Tên nền tảng": tênNềnTảng,
     "Loại nơi đăng": loạiNơiĐăng,
     "Lĩnh vực": lấyLĩnhVực(meta),
+    "Đơn vị quản lý": lấyĐơnVịQuảnLý(loạiNềnTảng, metaTagUrlVàDocument),
   };
   const thôngTinNơiĐăng = {
     ...thôngTinNơiĐăngChưaCóId,
@@ -227,12 +241,13 @@ export async function tạoNơiĐăngTừURL(
 
 export async function tạoBàiĐăngTừURL(urlString: UrlString, HTML: string | undefined = undefined): Promise<BàiĐăngChưaCóIdVàPhươngThứTạo> {
   console.info("Tạo bài đăng mới từ URL:", urlString.toString());
-  const { meta, url, document } = await lấyMetaTagVàTạoDocument(urlString, HTML);
+  const metaTagUrlVàDocument = await lấyMetaTagVàTạoDocument(urlString, HTML);
+  const { meta, url, document } = metaTagUrlVàDocument;
   return {
-    "Tiêu đề": lấyTitle(meta, document),
+    "Tiêu đề": lấyTitle(metaTagUrlVàDocument),
     URL: meta.og?.url || url.href,
     "Nội dung bài đăng": {
-      "Mô tả bài đăng": lấyMôTả(meta, document),
+      "Mô tả bài đăng": lấyMôTả(metaTagUrlVàDocument),
     },
     Slug: tạoSlug(url),
     "Tác giả": meta?.author || meta.article?.author || meta.creator,

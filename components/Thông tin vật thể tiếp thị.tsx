@@ -1,4 +1,4 @@
-import { kiểuKebab, viếtHoa } from "../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { kiểuKebab, lấyGiờVN, viếtHoa } from "../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 import { VậtThểTiếpThị } from "../Code hỗ trợ cho client/Kiểu cho vật thể tiếp thị.ts";
 
 export function VậtThểKhác({ vậtThể, loạiVậtThể, cóTiêuĐề }: { vậtThể: Record<string, any>; loạiVậtThể: string; cóTiêuĐề?: boolean }) {
@@ -30,19 +30,6 @@ export function VậtThểKhác({ vậtThể, loạiVậtThể, cóTiêuĐề }:
       </li>
     );
   }
-}
-
-function lấyGiờVN(thờiĐiểmTạo: Date | string) {
-  const options = {
-    weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  };
-  const date = new Date(thờiĐiểmTạo);
-  const ngày = date.toLocaleDateString("vi-VN", options);
-  const giờ = date.toLocaleTimeString("vi-VN");
-  return `${ngày} ${giờ}`;
 }
 
 export default function ThôngTinVậtThểTiếpThị({ vậtThểTiếpThị }: { vậtThểTiếpThị: VậtThểTiếpThị }) {

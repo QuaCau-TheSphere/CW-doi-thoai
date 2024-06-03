@@ -1,7 +1,7 @@
 /** Chỉ có những biến có từ cấu hình trong tên là dành cho cấu hình, còn lại là dành cho kết quả là vật thể nơi đăng */
-import { VậtThểId } from "./Hàm cho id.ts";
+import { VậtThểId } from "./Hàm và kiểu cho id và số lượng dữ liệu.ts";
 import { DanhSáchVịTríCóThểĐăng } from "./Hàm và kiểu cho vị trí.ts";
-import { UrlString } from "./Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { UrlString } from "./Hàm và kiểu cho vault, dự án, bài đăng.ts";
 export type OneKey<K extends string, V = any> = {
   [P in K]: (
     & Record<P, V>
@@ -57,6 +57,8 @@ export type TênNơiĐăng =
   | TênNơiĐăngTậpTin
   | TênNơiĐăngSaaS
   | TênNơiĐăngKhác;
+export type PhươngThứcTạoNơiĐăng = "Lấy trong cấu hình nơi đăng" | "Người dùng nhập tay trên web";
+
 export interface ThôngTinNơiĐăng {
   "Loại nền tảng": LoạiNềnTảng;
   "Tên nền tảng": TênNềnTảng;
@@ -70,7 +72,7 @@ export interface ThôngTinNơiĐăng {
   "Vị trí có thể đăng"?: DanhSáchVịTríCóThểĐăng;
   id: string;
   vậtThểId?: VậtThểId;
-  "Phương thức tạo": "Lấy từ cấu hình nơi đăng" | "Người dùng nhập tay trên web";
+  "Phương thức tạo": PhươngThứcTạoNơiĐăng;
 }
 export type ThôngTinNơiĐăngChưaCóId = Omit<ThôngTinNơiĐăng, "id">;
 export type ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo = Omit<ThôngTinNơiĐăng, "id" | "Phương thức tạo">;

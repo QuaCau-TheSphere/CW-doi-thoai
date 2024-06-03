@@ -2,7 +2,7 @@ import { Document, EnrichedDocumentSearchResultSetUnitResultUnit } from "npm:fle
 import { StateUpdater } from "preact/hooks";
 import { NơiĐăngCóCácLựaChọnVịTrí, NơiĐăngCóMộtVịTríCụThể } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { element } from "../islands/Signals tổng.ts";
-import { BàiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { BàiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 
 export type BốiCảnh = string | undefined;
 

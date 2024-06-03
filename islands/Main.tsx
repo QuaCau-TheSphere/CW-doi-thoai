@@ -1,5 +1,5 @@
 import FlexSearch, { Document } from "npm:flexsearch";
-import { BàiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { BàiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import { NơiĐăngCóCácLựaChọnVịTrí } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import SectionBênTrái from "./Section bên trái.tsx";
 import SectionBênPhải from "./Section bên phải.tsx";
@@ -8,15 +8,19 @@ import { CấuHìnhChung } from "../Tạo bài đăng và nơi đăng/Code hỗ 
 import ModalNơiĐăng from "./Modal tạo mới/Modal nơi đăng.tsx";
 import ModalBàiĐăng from "./Modal tạo mới/Modal bài đăng.tsx";
 
+export interface DanhSáchBàiĐăngVàNơiĐăng {
+  dsBàiĐăng: BàiĐăng[];
+  dsNơiĐăng: NơiĐăngCóCácLựaChọnVịTrí[];
+}
 interface MainProps {
-  danhSáchNơiĐăng: NơiĐăngCóCácLựaChọnVịTrí[];
-  danhSáchBàiĐăng: BàiĐăng[];
+  dsBàiĐăngVàNơiĐăng: DanhSáchBàiĐăngVàNơiĐăng;
   cấuHìnhChung: CấuHìnhChung;
   textTrangChủ: string;
 }
 
-function nạpSignal(cấuHìnhChung: CấuHìnhChung, danhSáchBàiĐăng: BàiĐăng[], danhSáchNơiĐăng: NơiĐăngCóCácLựaChọnVịTrí[]) {
+function nạpSignal(cấuHìnhChung: CấuHìnhChung, dsBàiĐăngVàNơiĐăng: DanhSáchBàiĐăngVàNơiĐăng) {
   cấuHìnhChungSignal.value = cấuHìnhChung;
+  const { dsBàiĐăng, dsNơiĐăng } = dsBàiĐăngVàNơiĐăng;
 
   const flexSearchBàiĐăng: Document<BàiĐăng, true> = new FlexSearch.Document({
     document: {
@@ -35,7 +39,7 @@ function nạpSignal(cấuHìnhChung: CấuHìnhChung, danhSáchBàiĐăng: Bài
     },
     tokenize: "forward",
   });
-  for (const bàiĐăng of danhSáchBàiĐăng) flexSearchBàiĐăng.add(bàiĐăng);
+  for (const bàiĐăng of dsBàiĐăng) flexSearchBàiĐăng.add(bàiĐăng);
   //@ts-ignore: để coi store nghĩa là gì sau
   flexSearchBàiĐăngSignal.value = flexSearchBàiĐăng;
 
@@ -57,13 +61,13 @@ function nạpSignal(cấuHìnhChung: CấuHìnhChung, danhSáchBàiĐăng: Bài
     },
     tokenize: "forward",
   });
-  for (const nơiĐăng of danhSáchNơiĐăng) flexSearchNơiĐăng.add(nơiĐăng);
+  for (const nơiĐăng of dsNơiĐăng) flexSearchNơiĐăng.add(nơiĐăng);
   //@ts-ignore: để coi store nghĩa là gì sau
   flexSearchNơiĐăngSignal.value = flexSearchNơiĐăng;
 }
 
-export default function Main({ danhSáchNơiĐăng, danhSáchBàiĐăng, cấuHìnhChung, textTrangChủ }: MainProps) {
-  nạpSignal(cấuHìnhChung, danhSáchBàiĐăng, danhSáchNơiĐăng);
+export default function Main({ dsBàiĐăngVàNơiĐăng, cấuHìnhChung, textTrangChủ }: MainProps) {
+  nạpSignal(cấuHìnhChung, dsBàiĐăngVàNơiĐăng);
 
   /** Cần debug component nào thì cứ return nó ở đây */
   // return <ModalBàiĐăng />;

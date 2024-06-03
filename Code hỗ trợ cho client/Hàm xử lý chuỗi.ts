@@ -1,9 +1,9 @@
-import { UrlString } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
 import { VịTrí } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { ThôngTinNơiĐăng, TênNơiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
 import punycode from "npm:punycode";
 import * as linkify from "npm:linkifyjs";
 import { CấuHìnhViếtTắt } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
+import { UrlString } from "./Tạo bài đăng hoặc nơi đăng từ URL.ts";
 
 export function viếtHoa(chuỗi: string | undefined) {
   if (!chuỗi) return "";
@@ -118,4 +118,19 @@ export function tạoChuỗiNgẫuNhiên(sốKýTự: number): string {
 
 function đổiTừCơSố64SangCơSố10(x: string) {
   return x.split("").reduce((s, v) => s * 64 + digit.indexOf(v), 0);
+}
+
+export function lấyGiờVN(thờiĐiểmTạo: Date | string | undefined) {
+  if (!thờiĐiểmTạo) return undefined;
+  const options = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    timeZone: "Asia/Ho_Chi_Minh",
+  };
+  const date = new Date(thờiĐiểmTạo);
+  const ngày = date.toLocaleDateString("vi-VN", options);
+  const giờ = date.toLocaleTimeString("vi-VN");
+  return `${ngày} ${giờ}`;
 }

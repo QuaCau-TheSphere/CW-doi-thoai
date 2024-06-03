@@ -2,7 +2,7 @@ import { walk } from "$std/fs/walk.ts";
 import { parse } from "$std/yaml/mod.ts";
 import { basename, extname, SEPARATOR } from "$std/path/mod.ts";
 import { VậtThểCấuHìnhVịTrí, VịTríThànhPhần } from "./Hàm và kiểu cho vị trí.ts";
-import { THƯ_MỤC_CẤU_HÌNH_NƠI_ĐĂNG, ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG } from "../../env.ts";
+import { THƯ_MỤC_CẤU_HÌNH_NƠI_ĐĂNG, TẬP_TIN_CẤU_HÌNH_CHUNG, ĐườngDẫnTuyệtĐối, ĐườngDẫnTươngĐối } from "../../ĐƯỜNG_DẪN.ts";
 import {
   CấuHìnhChat,
   CấuHìnhDiễnĐàn,
@@ -69,5 +69,9 @@ export async function tạoDanhSáchThôngTinCấuHìnhNơiĐăng(): Promise<Th�
 }
 export function lấyCấuHìnhChung(): CấuHìnhChung {
   if (IS_BROWSER) return cấuHìnhChungSignal.value;
-  return parse(Deno.readTextFileSync(ĐƯỜNG_DẪN_ĐẾN_CẤU_HÌNH_CHUNG)) as CấuHìnhChung;
+  return parse(Deno.readTextFileSync(TẬP_TIN_CẤU_HÌNH_CHUNG)) as CấuHìnhChung;
+}
+
+export async function đọcJSON(đườngDẫn: ĐườngDẫnTươngĐối | ĐườngDẫnTuyệtĐối) {
+  return JSON.parse(await Deno.readTextFile(đườngDẫn));
 }

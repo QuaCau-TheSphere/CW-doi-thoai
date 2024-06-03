@@ -1,6 +1,6 @@
 import { parse } from "$std/csv/mod.ts";
-import { ĐƯỜNG_DẪN_ĐẾN_TẬP_TIN_CSV } from "../../../env.ts";
-import { BàiĐăng, TênDựÁn } from "../../Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { TẬP_TIN_CSV } from "../../../ĐƯỜNG_DẪN.ts";
+import { BàiĐăng, TênDựÁn } from "../../Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 
 type TậpTinCSV = {
   post_title: string;
@@ -9,7 +9,7 @@ type TậpTinCSV = {
 }[];
 
 export default async function tạoDanhSáchBàiĐăngTrênWordPress() {
-  const tậpTinCSV = parse(await Deno.readTextFile(ĐƯỜNG_DẪN_ĐẾN_TẬP_TIN_CSV), { skipFirstRow: true, strip: true }) as TậpTinCSV;
+  const tậpTinCSV = parse(await Deno.readTextFile(TẬP_TIN_CSV), { skipFirstRow: true, strip: true }) as TậpTinCSV;
   const danhSáchBàiĐăng: Omit<BàiĐăng, "id">[] = [];
   for (const dòng of tậpTinCSV) {
     const tiêuĐề = dòng.post_title;

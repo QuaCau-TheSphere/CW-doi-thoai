@@ -1,4 +1,4 @@
-import { xửLýPunycode } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { lấyGiờVN, xửLýPunycode } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 import { TênDanhSách } from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
 import { bàiĐăngĐượcChọn } from "../Signals tổng.ts";
 import NơiĐăngĐượcChọn from "./Nơi đăng được chọn.tsx";
@@ -31,16 +31,10 @@ function BàiĐăngĐượcChọn() {
           <li id="dự-án" class="hover:text-primary-content">Dự án: {dựÁn?.["Tên dự án"] || "∅"}</li>
           <li id="liên-kết" class="hover:text-primary-content">Liên kết: {liênKết ? <a href={liênKết}>{liênKết}</a> : "∅"}</li>
           <li id="tác-giả" class="hover:text-primary-content">Tác giả: {tácGiả || "∅"}</li>
-          <li id="ngày-cập-nhật" class="hover:text-primary-content">Ngày cập nhật: {ngàyCậpNhật || "∅"}</li>
+          <li id="ngày-tạo" class="hover:text-primary-content">Ngày tạo: {lấyGiờVN(ngàyTạo) || "∅"}</li>
+          <li id="ngày-cập-nhật" class="hover:text-primary-content">Ngày cập nhật: {lấyGiờVN(ngàyCậpNhật) || "∅"}</li>
           <li id="slug-bài-đăng" class="hover:text-primary-content">Slug: {slug || "∅"}</li>
 
-          {
-            /* <li id="khác" class="hover:text-primary-content">
-            <span id="tác-giả">Tác giả: {tácGiả}</span> • <span id="mã-bài-đăng">Slug: {mãBàiĐăng}</span> •{" "}
-            <span id="ngày-tạo">Ngày tạo: {ngàyTạo}</span> • <span id="ngày-cập-nhật">Ngày cập nhật: {ngàyCậpNhật}</span> •{" "}
-            <span id="id">id: {id}</span>
-          </li> */
-          }
           <details id="nội-dung-liên-kết" class="hover:text-primary-content">
             <summary>Nội dung liên kết</summary>
             <ul>

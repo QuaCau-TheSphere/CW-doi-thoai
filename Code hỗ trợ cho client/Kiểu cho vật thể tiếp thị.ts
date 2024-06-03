@@ -1,7 +1,7 @@
 import ThamSốUTM, { ĐuôiRútGọn } from "./Tạo liên kết UTM/Kiểu cho tham số UTM.ts";
 import { NơiĐăngCóMộtVịTríCụThể } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { DữLiệuTruyCậpCácNăm } from "./Hàm và kiểu cho biểu đồ.ts";
-import { BàiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { BàiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 
 export interface VậtThểTiếpThị extends ThamSốUTM {
   "Bài đăng": BàiĐăng;

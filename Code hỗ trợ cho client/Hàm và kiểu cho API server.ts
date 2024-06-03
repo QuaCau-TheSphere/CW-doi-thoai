@@ -1,4 +1,4 @@
-import { BàiĐăng, BàiĐăngChưaCóId } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho đường dẫn, vault, bài đăng, dự án.ts";
+import { BàiĐăng, BàiĐăngChưaCóId } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import {
   NơiĐăngCóCácLựaChọnVịTrí,
   NơiĐăngCóCácLựaChọnVịTríChưaCóId,

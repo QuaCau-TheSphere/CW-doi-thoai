@@ -1,23 +1,6 @@
-import { parse, ParsedPath } from "$std/path/mod.ts";
-import { VậtThểId } from "./Hàm cho id.ts";
-
-/** Đường dẫn */
-export type UrlString = string | URL;
-/**
- * @example `D:\\QC supplements\\Vaults`
- */
-export type ĐườngDẫnTuyệtĐối = string;
-/**
- * @example `./core/A. Cấu hình/wpd9_posts.csv`
- */
-export type ĐườngDẫnTươngĐối = string;
-export type VậtThểĐườngDẫnTuyệtĐối = Readonly<ParsedPath> & { readonly isAbsolute: true };
-export type VậtThểĐườngDẫnTươngĐối = Readonly<ParsedPath> & { readonly isAbsolute: false };
-
-export function đọcĐườngDẫn(path: string): VậtThểĐườngDẫnTuyệtĐối | VậtThểĐườngDẫnTươngĐối {
-  const parsed = parse(path);
-  return Object.assign(parsed, { isAbsolute: parsed.root.length > 0 });
-}
+import { UrlString } from "../../Code hỗ trợ cho client/Tạo bài đăng hoặc nơi đăng từ URL.ts";
+import { ĐườngDẫnTuyệtĐối } from "../../ĐƯỜNG_DẪN.ts";
+import { VậtThểId } from "./Hàm và kiểu cho id và số lượng dữ liệu.ts";
 
 /** Vault */
 export type TênVault = string;
@@ -55,6 +38,8 @@ export interface NộiDungBàiĐăng {
 }
 export type BàiĐăngChưaCóId = Omit<BàiĐăng, "id">;
 export type BàiĐăngChưaCóIdVàPhươngThứTạo = Omit<BàiĐăng, "id" | "Phương thức tạo">;
+export type PhươngThứcTạoBàiĐăng = "Cào vault" | "Cào web" | "Nhập từ CSV" | "Lấy trong cấu hình nơi đăng" | "Người dùng nhập tay trên web";
+
 export interface BàiĐăng {
   "Tiêu đề": string;
   "URL": UrlString;
@@ -66,7 +51,7 @@ export interface BàiĐăng {
   "Ngày tạo"?: Date;
   "Ngày cập nhật"?: Date;
   id: string;
-  "Phương thức tạo": "Cào vault" | "Cào web" | "Nhập từ CSV" | "Lấy trong cấu hình nơi đăng" | "Người dùng nhập tay trên web";
+  "Phương thức tạo": PhươngThứcTạoBàiĐăng;
   vậtThểId?: VậtThểId;
 }
 
