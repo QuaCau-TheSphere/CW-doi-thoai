@@ -158,7 +158,7 @@ export async function tạoDanhSáchNơiĐăngTừTấtCảCấuHình() {
     let id: string;
     const vậtThểId = await xácĐịnhIdTrênLocal("nơi đăng", nơiĐăngChưaCóId);
     if (vậtThểId.cáchXácĐịnh !== 3) {
-      id = vậtThểId.id;
+      id = vậtThểId.idGợiÝ;
     } else {
       sốNơiĐăngChưaCóId += 1;
       id = đổiTừCơSố10SangCơSố64(sốNơiĐăngChưaCóId);

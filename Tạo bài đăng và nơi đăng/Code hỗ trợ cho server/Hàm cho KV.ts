@@ -10,7 +10,10 @@ import { wipeKvStore } from "https://deno.land/x/kv_utils@1.1.1/mod.ts";
 import { kvSignal, readUnitSignal, writeUnitSignal } from "./Signal KV.ts";
 import sizeof from "npm:object-sizeof";
 import { VậtThểTiếpThị } from "../../Code hỗ trợ cho client/Kiểu cho vật thể tiếp thị.ts";
-import { TênBảng } from "./Hàm và kiểu cho id và số lượng dữ liệu.ts";
+import { cậpNhậtSốLượngBàiĐăng, cậpNhậtSốLượngNơiĐăng, TênBảng } from "./Hàm và kiểu cho id và số lượng dữ liệu.ts";
+import { TẬP_TIN_DANH_SÁCH_BÀI_ĐĂNG, TẬP_TIN_DANH_SÁCH_NƠI_ĐĂNG } from "../../ĐƯỜNG_DẪN.ts";
+import { SốLượngBàiĐăng } from "./Hàm và kiểu cho id và số lượng dữ liệu.ts";
+import { SốLượngNơiĐăng } from "./Hàm và kiểu cho id và số lượng dữ liệu.ts";
 
 const cssIncrease = "color: blue; font-style: bold; border: solid blue";
 
@@ -72,23 +75,8 @@ export async function kvDelete(key: Deno.KvKey) {
   // increaseWriteUnit(value);
 }
 
-export async function kvGetCount(tableName: TênBảng) {
-  const sốLượngDữLiệu = (await kvGet(["Số lượng dữ liệu"], "kvGetCount trong Hàm cho id.ts")).value as SốLượngDữLiệu | null;
-  if (sốLượngDữLiệu) {
-    return sốLượngDữLiệu.get(tableName);
-  }
-}
-
-export async function kvSetValueAndUpdateCount(
-  key: Deno.KvKey,
-  value: BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí | VậtThểTiếpThị,
-  tableName: TênBảng,
-  caller: string | undefined = undefined,
-) {
-  await kvSet(key, value, caller);
-  /** Nếu thấy trên KV đã có dữ liệu giống như value và có sẵn id rồi thì không cộng thêm số lượng dữ liệu nữa */
-  if ("vậtThểId" in value && value.vậtThểId?.cáchXácĐịnh === 1) return;
-  await cậpNhậtSốLượngDữLiệu(tableName, caller);
+export async function kvGetSốLượngDữLiệu(tênBảng: TênBảng, caller: string | undefined = undefined) {
+  return (await kvGet(["Số lượng dữ liệu", tênBảng], caller)).value as SốLượngBàiĐăng | SốLượngNơiĐăng | number | null;
 }
 
 export function tạoKeyKV(tênDanhSách: TênDanhSách, dữLiệu: BàiĐăng | BàiĐăngChưaCóId | ThôngTinNơiĐăng | ThôngTinNơiĐăngChưaCóId): Deno.KvKey {
@@ -127,32 +115,41 @@ export function tạoKeyKV(tênDanhSách: TênDanhSách, dữLiệu: BàiĐăng 
   }
 }
 
-export async function đẩyBàiĐăngLênKV() {
+export async function tạoBàiĐăng(cóĐẩyLênKv: boolean = false) {
   const danhSáchThôngTinCấuHìnhNơiĐăng = await tạoDanhSáchThôngTinCấuHìnhNơiĐăng();
   const danhSáchBàiĐăng = await tạoDanhSáchBàiĐăng(danhSáchThôngTinCấuHìnhNơiĐăng);
-  await Deno.writeTextFile("Tạo bài đăng và nơi đăng/A. Cấu hình/Bài đăng/Danh sách bài đăng.json", JSON.stringify(danhSáchBàiĐăng, null, 2));
+  await Deno.writeTextFile(TẬP_TIN_DANH_SÁCH_BÀI_ĐĂNG, JSON.stringify(danhSáchBàiĐăng, null, 2));
 
   for (const bàiĐăng of danhSáchBàiĐăng) {
     console.log(bàiĐăng["Tiêu đề"]);
-    console.log("→", bàiĐăng.id);
-    const key = tạoKeyKV("bài đăng", bàiĐăng);
-    await kvSetValueAndUpdateCount(key, bàiĐăng, "Bài đăng", "Đẩy bài đăng hàng loạt");
+    console.log("• Slug:", bàiĐăng.Slug);
+    console.log("• ID:", bàiĐăng.id);
+
+    if (cóĐẩyLênKv) {
+      const key = tạoKeyKV("bài đăng", bàiĐăng);
+      await kvSet(key, bàiĐăng, "Đẩy bài đăng hàng loạt");
+      await cậpNhậtSốLượngBàiĐăng(bàiĐăng["Phương thức tạo"]);
+      console.log("✅Đã đẩy xong bài đăng lên KV");
+    }
   }
-  console.log("✅Đã đẩy xong bài đăng lên KV");
 }
 
-export async function đẩyNơiĐăngLênKV() {
+export async function tạoNơiĐăng(cóĐẩyLênKv: boolean = false) {
   const danhSáchNơiĐăng = await tạoDanhSáchNơiĐăngTừTấtCảCấuHình();
-  await Deno.writeTextFile("Tạo bài đăng và nơi đăng/A. Cấu hình/Nơi đăng/Danh sách nơi đăng.json", JSON.stringify(danhSáchNơiĐăng, null, 2));
+  await Deno.writeTextFile(TẬP_TIN_DANH_SÁCH_NƠI_ĐĂNG, JSON.stringify(danhSáchNơiĐăng, null, 2));
 
   for (const nơiĐăng of danhSáchNơiĐăng) {
     console.log(tạoTênNơiĐăngString(nơiĐăng["Tên nơi đăng"]));
-    console.log("→", nơiĐăng["Slug"], nơiĐăng.id);
-    const key = tạoKeyKV("nơi đăng", nơiĐăng);
-    await kvSetValueAndUpdateCount(key, nơiĐăng, "Nơi đăng", "Đẩy nơi đăng hàng loạt");
-  }
+    console.log("• Slug:", nơiĐăng.Slug);
+    console.log("• ID:", nơiĐăng.id);
 
-  console.log("✅Đã đẩy xong nơi đăng lên KV");
+    if (cóĐẩyLênKv) {
+      const key = tạoKeyKV("nơi đăng", nơiĐăng);
+      await kvSet(key, nơiĐăng, "Đẩy nơi đăng hàng loạt");
+      await cậpNhậtSốLượngNơiĐăng(nơiĐăng["Phương thức tạo"]);
+      console.log("✅Đã đẩy xong nơi đăng lên KV");
+    }
+  }
 }
 export async function xoáDữLiệuTrênKv() {
   const result = await wipeKvStore();

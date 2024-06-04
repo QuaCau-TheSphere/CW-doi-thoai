@@ -4,17 +4,16 @@
 import { extract } from "$std/front_matter/yaml.ts";
 import { basename, extname, join, SEPARATOR_PATTERN } from "$std/path/mod.ts";
 import { buildUrl } from "https://deno.land/x/url_builder/mod.ts";
+import { BàiĐăng, BàiĐăngChưaCóId, TênDựÁn, Vault, YAMLCủaGhiChú } from "../../Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import {
-  BàiĐăng,
-  BàiĐăngChưaCóId,
-  TênDựÁn,
-  UrlString,
-  Vault,
-  YAMLCủaGhiChú,
-  type ĐườngDẫnTuyệtĐối,
+  THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT,
+  THƯ_MỤC_DỰ_ÁN,
+  THƯ_MỤC_THIẾT_LẬP,
+  TẬP_TIN_THIẾT_LẬP,
+  ĐườngDẫnTuyệtĐối,
   ĐườngDẫnTươngĐối,
-} from "../../Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
-import { THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT, THƯ_MỤC_DỰ_ÁN, THƯ_MỤC_THIẾT_LẬP, TẬP_TIN_THIẾT_LẬP } from "../../../ĐƯỜNG_DẪN.ts";
+} from "../../../ĐƯỜNG_DẪN.ts";
+import { UrlString } from "../../../Code hỗ trợ cho client/Tạo bài đăng hoặc nơi đăng từ URL.ts";
 
 async function cóThưMụcObsidianBênTrong(thưMục: string) {
   try {

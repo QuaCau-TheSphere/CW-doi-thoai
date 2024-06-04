@@ -24,7 +24,5 @@ export const TẬP_TIN_CẤU_HÌNH_CHUNG: ĐườngDẫnTươngĐối = "./Tạo
 export const THƯ_MỤC_CẤU_HÌNH_NƠI_ĐĂNG: ĐườngDẫnTươngĐối = "./Tạo bài đăng và nơi đăng/A. Cấu hình/Nơi đăng";
 
 /** Dữ liệu đã được xử lý trước */
-export const TẬP_TIN_DANH_SÁCH_NƠI_ĐĂNG: ĐườngDẫnTươngĐối = "./Tạo bài đăng và nơi đăng/A. Cấu hình/Nơi đăng/Danh sách nơi đăng lấy từ cấu hình.json";
-export const TẬP_TIN_DANH_SÁCH_BÀI_ĐĂNG: ĐườngDẫnTươngĐối = "./Tạo bài đăng và nơi đăng/A. Cấu hình/Bài đăng/Danh sách bài đăng lấy từ vault và cấu hình.json";
-
-
+export const TẬP_TIN_DANH_SÁCH_BÀI_ĐĂNG: ĐườngDẫnTươngĐối = "./Tạo bài đăng và nơi đăng/A. Cấu hình/Bài đăng/Danh sách bài đăng tạo trên local.json";
+export const TẬP_TIN_DANH_SÁCH_NƠI_ĐĂNG: ĐườngDẫnTươngĐối = "./Tạo bài đăng và nơi đăng/A. Cấu hình/Nơi đăng/Danh sách nơi đăng tạo trên local.json";

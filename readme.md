@@ -18,20 +18,20 @@ URL: ttt
 ---
 ```
 ## WordPress 
-Mở PhPMyAdmin lên và dùng lệnh MySQL này. Nhớ thay `wp` bằng tên table của bạn.
+Mở PhPMyAdmin lên và dùng lệnh MySQL này. Nhớ thay `wpd9` bằng tên table của bạn.
 ```sql
-SELECT wp_posts.post_title, GROUP_CONCAT(wp_terms.name) AS categories
-FROM wp_posts
-LEFT JOIN wp_term_relationships ON (wp_posts.ID = wp_term_relationships.object_id)
-LEFT JOIN wp_term_taxonomy ON (wp_term_relationships.term_taxonomy_id = wp_term_taxonomy.term_taxonomy_id)
-LEFT JOIN wp_terms ON (wp_term_taxonomy.term_id = wp_terms.term_id)
-WHERE wp_posts.post_type = 'post' 
-AND wp_posts.post_status = 'publish'
-GROUP BY wp_posts.ID
+SELECT wpd9_posts.post_title, GROUP_CONCAT(wpd9_terms.name) AS categories
+FROM wpd9_posts
+LEFT JOIN wpd9_term_relationships ON (wpd9_posts.ID = wpd9_term_relationships.object_id)
+LEFT JOIN wpd9_term_taxonomy ON (wpd9_term_relationships.term_taxonomy_id = wpd9_term_taxonomy.term_taxonomy_id)
+LEFT JOIN wpd9_terms ON (wpd9_term_taxonomy.term_id = wpd9_terms.term_id)
+WHERE wpd9_posts.post_type = 'post' 
+AND wpd9_posts.post_status = 'publish'
+GROUP BY wpd9_posts.ID
 INTO OUTFILE '/path/to/export/posts_categories.csv'
 FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n';
 ```
-Copy kết quả vào `./core/A. Cấu hình/wp_posts.csv`
+Copy kết quả vào `./core/A. Cấu hình/wpd9_posts.csv`
 # Thiết lập cấu hình
 Bắt chước các cấu hình có sẵn trong `./core/A. Cấu hình/Nơi đăng`.
 

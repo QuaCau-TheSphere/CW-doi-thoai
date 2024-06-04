@@ -1,13 +1,6 @@
 import { load } from "$std/dotenv/mod.ts";
 import { kvSignal, readUnitSignal, writeUnitSignal } from "./Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Signal KV.ts";
-import {
-  kvGet,
-  kvList,
-  SốLượngDữLiệu,
-  xoáDữLiệuTrênKv,
-  đẩyBàiĐăngLênKV,
-  đẩyNơiĐăngLênKV,
-} from "./Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho KV.ts";
+import { kvGet, kvList, tạoBàiĐăng, tạoNơiĐăng, xoáDữLiệuTrênKv } from "./Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho KV.ts";
 import { replaceLocalDataWithRemote } from "https://deno.land/x/kv_utils@1.1.1/mod.ts";
 
 const env = await load();
@@ -16,16 +9,13 @@ const env = await load();
 
 // await xoáDữLiệuTrênKv();
 console.log("🚀 ~ await kvList({ prefix: [] }):", await kvList({ prefix: [] }));
-// await đẩyNơiĐăngLênKV();
-// await đẩyBàiĐăngLênKV();
+await tạoNơiĐăng();
+await tạoBàiĐăng();
 
 console.log("Số read unit", readUnitSignal.value);
 console.log("Số write unit", writeUnitSignal.value);
 
-const sốLượngDữLiệu = (await kvGet(["Số lượng dữ liệu"])) as SốLượngDữLiệu;
-console.log(sốLượngDữLiệu);
-
-debugger;
+// debugger;
 
 async function chạyTrênDeployChứKhôngChạyTrênLocal() {
   Deno.env.set("DENO_KV_ACCESS_TOKEN", env["DENO_KV_ACCESS_TOKEN"]);

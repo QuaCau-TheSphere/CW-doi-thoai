@@ -1,4 +1,4 @@
-import { BàiĐăng, DựÁn, UrlString } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
+import { BàiĐăng, DựÁn } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import {
   Campaign,
   Content,
@@ -18,6 +18,7 @@ import { NơiĐăngCóMộtVịTríCụThể } from "../../Tạo bài đăng và
 import { CấuHìnhViếtTắt } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
 import { BốiCảnh } from "../Hàm và kiểu cho khung nhập.ts";
 import { lấyKýHiệuViếtTắt } from "../Hàm xử lý chuỗi.ts";
+import { UrlString } from "../Tạo bài đăng hoặc nơi đăng từ URL.ts";
 
 /** Chủ yếu là thể hiện loại nền tảng, tên nền tảng, loại nơi đăng một cách ngắn gọn. Có những nơi đăng nhìn vào là biết loại nền tảng nào, ví dụ r/subreddit, hoặc email@domain.com */
 function tạoSource(nơiĐăng: NơiĐăngCóMộtVịTríCụThể, cấuHìnhViếtTắt: CấuHìnhViếtTắt): Source {

@@ -42,7 +42,7 @@ export async function tạoDanhSáchBàiĐăng(danhSáchVậtThểCấuHìnhNơi
     let id: string;
     const vậtThểId = await xácĐịnhIdTrênLocal("bài đăng", bàiĐăngChưaCóId);
     if (vậtThểId.cáchXácĐịnh !== 3) {
-      id = vậtThểId.id;
+      id = vậtThểId.idGợiÝ;
     } else {
       sốBàiĐăngChưaCóId += 1;
       id = đổiTừCơSố10SangCơSố64(sốBàiĐăngChưaCóId);

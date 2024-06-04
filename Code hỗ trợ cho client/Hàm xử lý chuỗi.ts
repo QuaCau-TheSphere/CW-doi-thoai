@@ -54,6 +54,10 @@ export function tạoLoạiNơiĐăngString(thôngTinNơiĐăng: ThôngTinNơiĐ
   }
 }
 
+/* ====
+URL
+*/
+
 export function isUrl(string: string | undefined) {
   try {
     if (!string) return false;
@@ -89,6 +93,10 @@ export function táchUrlTrongChuỗi(chuỗiCóThểCóUrl: string): [string, st
   }
   return [chuỗiKhôngCóUrl, url];
 }
+
+/* ====
+ID
+*/
 
 /** Tìm trong cấu hình nơi đăng xem từ được kiểm tra có ký hiệu viết tắt không. Nếu không thì trả về undefined */
 export function lấyKýHiệuViếtTắt(từĐượcKiểmTra: string | undefined, cấuHìnhViếtTắt: CấuHìnhViếtTắt): string | undefined {
