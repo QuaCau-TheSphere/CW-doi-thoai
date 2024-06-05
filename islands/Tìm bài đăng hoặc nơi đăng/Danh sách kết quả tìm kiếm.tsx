@@ -5,7 +5,8 @@ import { BàiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ tr
 import { element } from "../Signals tổng.ts";
 import { cursor, danhSáchGợiÝSignal } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
 import { Signal } from "@preact/signals";
-import { kiểuKebab, tạoLoạiNơiĐăngString, tạoTênNơiĐăngString, xửLýPunycode } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { kiểuKebab, tạoLoạiNơiĐăngString, tạoTênNơiĐăngString } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { xửLýPunycode } from "../../Code hỗ trợ cho client/Hàm và kiểu cho URL.ts";
 
 function tạoDòngPhụCủaBàiĐăng(bàiĐăng: BàiĐăng) {
   const { "Dự án": dựÁn, Vault: vault, URL, "Slug": mãBàiĐăng, id } = bàiĐăng;

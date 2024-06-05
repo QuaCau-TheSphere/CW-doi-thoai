@@ -4,8 +4,9 @@ import {
   VịTrí,
 } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { nơiĐăngCóCácLựaChọnVịTrí, nơiĐăngCóMộtVịTríCụThể, vịTríString } from "../Signals tổng.ts";
-import { tạoLoạiNơiĐăngString, tạoTênNơiĐăngString, tạoVịTríString, xửLýPunycode } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { tạoLoạiNơiĐăngString, tạoTênNơiĐăngString, tạoVịTríString } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 import { làCùngNơiĐăng, ThôngTinNơiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
+import { xửLýPunycode } from "../../Code hỗ trợ cho client/Hàm và kiểu cho URL.ts";
 
 /** Từ NơiĐăngCóCácLựaChọnVịTrí và vịTríĐượcChọn, tạo NơiĐăngCóMộtVịTríCụThể*/
 export function tạoNơiĐăngCóMộtVịTríCụThể(vịTríĐượcChọn: VịTrí | string, nơiĐăng: NơiĐăngCóCácLựaChọnVịTrí): NơiĐăngCóMộtVịTríCụThể {

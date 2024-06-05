@@ -1,9 +1,6 @@
 import { VịTrí } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { ThôngTinNơiĐăng, TênNơiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
-import punycode from "npm:punycode";
-import * as linkify from "npm:linkifyjs";
 import { CấuHìnhViếtTắt } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
-import { UrlString } from "./Tạo bài đăng hoặc nơi đăng từ URL.ts";
 
 export function viếtHoa(chuỗi: string | undefined) {
   if (!chuỗi) return "";
@@ -52,46 +49,6 @@ export function tạoLoạiNơiĐăngString(thôngTinNơiĐăng: ThôngTinNơiĐ
   } else {
     return loạiNơiĐăng[0];
   }
-}
-
-/* ====
-URL
-*/
-
-export function isUrl(string: string | undefined) {
-  try {
-    if (!string) return false;
-    return Boolean(new URL(string));
-  } catch {
-    return false;
-  }
-}
-
-/**
- * @param đểDấuCáchTrongLiênKết mặc định là false để tạo markdown cho dễ
- */
-export function xửLýPunycode(encodedUrl: UrlString | undefined, đểDấuCáchTrongLiênKết: boolean = false): string | undefined {
-  if (!encodedUrl) return undefined;
-  const decodedUri = decodeURI(encodedUrl.toString());
-  const hostname = (new URL(encodedUrl)).hostname;
-  const decodedHostname = punycode.toUnicode(hostname);
-  const decodedString = decodedUri.toString().replace(hostname, decodedHostname);
-
-  if (đểDấuCáchTrongLiênKết) return decodedString;
-  return decodedString.replaceAll(" ", "%20");
-}
-
-export function táchUrlHoặcEmailTrongChuỗi(chuỗiCóThểCóUrl: string): [string, string | undefined] {
-  if (!chuỗiCóThểCóUrl) return ["", ""];
-  let chuỗiKhôngCóUrl = chuỗiCóThểCóUrl;
-  let url = undefined;
-  const urls = linkify.find(chuỗiCóThểCóUrl);
-  if (urls.length > 0) {
-    url = urls[0].href as string;
-    chuỗiKhôngCóUrl = chuỗiCóThểCóUrl.replace(url, "").trim();
-    if (chuỗiKhôngCóUrl === "") chuỗiKhôngCóUrl = url;
-  }
-  return [chuỗiKhôngCóUrl, url];
 }
 
 /* ====

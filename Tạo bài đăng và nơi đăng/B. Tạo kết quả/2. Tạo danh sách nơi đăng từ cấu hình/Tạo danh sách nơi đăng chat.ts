@@ -10,7 +10,7 @@ import {
   TênThreadHoặcTopic,
 } from "../../Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
 import CấuHìnhNơiĐăng from "../../Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
-import { táchUrlHoặcEmailTrongChuỗi } from "../../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { táchUrlHoặcEmailTrongChuỗi } from "../../../Code hỗ trợ cho client/Hàm và kiểu cho URL.ts";
 
 function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
   const cấuHìnhNơiĐăngChat = cấuHìnhNơiĐăng.Chat;
@@ -36,7 +36,7 @@ function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: Cấu
               "Tên nền tảng": tênNềnTảng,
               "Loại nền tảng": "Chat",
               URL: urlKênh || urlMáyChủ,
-              "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+              "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
             });
           } else {
             for (const [kênhUrl, danhSáchThreadHoặcTopic] of Object.entries(cấuHìnhKênh)) {
@@ -49,7 +49,7 @@ function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: Cấu
                   "Tên nền tảng": tênNềnTảng,
                   "Loại nền tảng": "Chat",
                   URL: urlKênh || urlMáyChủ,
-                  "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+                  "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
                 });
 
                 /** Trường hợp kênh có thread hoặc topic nhỏ hơn*/
@@ -62,7 +62,7 @@ function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: Cấu
                     "Tên nền tảng": tênNềnTảng,
                     "Loại nền tảng": "Chat",
                     URL: urlThreadHoặcTopic || urlKênh || urlMáyChủ,
-                    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+                    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
                   });
                 }
               }
@@ -116,7 +116,7 @@ function lấyNơiĐăngTừNềnTảngChatKhác(
         "Tên nền tảng": tênNềnTảng,
         "Loại nền tảng": "Chat",
         URL: url,
-        "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+        "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
       });
     }
   }

@@ -1,7 +1,6 @@
 /**
  * @fileoverview Bài đăng và nơi đăng được tạo ở đây ko có id. Id chỉ thêm vào ngay trước lúc nhập vào KV
  */
-import { getMetaTags } from "https://deno.land/x/opengraph@v1.0.0/mod.ts";
 import { BàiĐăngChưaCóIdVàPhươngThứTạo } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import {
   danhSáchDiễnĐàn,
@@ -20,115 +19,13 @@ import {
   tạoSlugNơiĐăng,
   TừĐiểnSlugNơiĐăng,
 } from "../Tạo bài đăng và nơi đăng/B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình/Tạo slug nơi đăng.ts";
-import { DOMParser, HTMLDocument } from "jsr:@b-fuze/deno-dom";
-import { parse } from "npm:tldts";
-import punycode from "npm:punycode";
-type MetaTags = {
-  /**
-   * Defined from HTML specification
-   * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name
-   */
-  "application-name"?: string;
-  author?: string;
-  description?: string;
-  generator?: string;
-  keywords?: string;
-  referrer?: string;
-  "theme-color"?: string;
-  "color-scheme"?: string;
-  viewport?: string;
-
-  // Defined from other specifications
-  creator?: string;
-  googlebot?: string;
-  robots?: string;
-  publisher?: string;
-
-  /**
-   * Defined from Open Graph
-   * @see https://ogp.me/
-   */
-  og?: OpenGraphTags;
-  article: {
-    publish_time: string;
-    modified_time: string;
-    expiration_time: string;
-    author: string;
-    section: string;
-    tag: string;
-  };
-  book: {
-    author: string;
-    isbn: string;
-    release_date: string;
-    tag: string;
-  };
-  profile: {
-    first_name: string;
-    last_name: string;
-    username: string;
-    gender: string;
-  };
-
-  [extraKeys: string]: unknown;
-};
-type OpenGraphTags = {
-  title?: string;
-  type?: string;
-  description?: string;
-  site_name?: string;
-  locale?: string | { alternate?: string; content: string };
-  image?:
-    | string
-    | {
-      url?: string;
-      secure_url?: string;
-      type?: string;
-      width?: string;
-      height?: string;
-      alt?: string;
-      content: string;
-    };
-  url?: string;
-  determiner?: string;
-  [extraKeys: string]: unknown;
-};
-
-interface MetaTagUrlVàDocument {
-  meta: MetaTags;
-  url: URL;
-  document: HTMLDocument;
-}
-
-export type UrlString = string | URL;
-
-async function lấyMetaTagVàTạoDocument(urlString: UrlString, HTML: string | undefined = undefined): Promise<MetaTagUrlVàDocument> {
-  const url = new URL(urlString);
-  const html = HTML ? HTML : await (await fetch(url)).text();
-  const meta = await getMetaTags(html) as MetaTags;
-  if (!meta?.og) console.warn(`Không lấy được các thẻ Open Graph cho ${url.href}`);
-  const document = new DOMParser().parseFromString(html, "text/html");
-
-  return { meta, url, document };
-}
+import { lấyMetaTagVàTạoDocument, lấyMôTả, lấyTitle, lấyTênMiền, MetaTags, MetaTagUrlVàDocument, UrlString } from "./Hàm và kiểu cho URL.ts";
 
 function cóTênNềnTảngTrongHostname(hostname: string, nềnTảng: TênNềnTảng) {
   if (hostname.includes("youtu.be") && nềnTảng === "YouTube") return true;
 
   const tênNềnTảngViếtThườngKhôngCách = viếtThường(nềnTảng).replaceAll(" ", "");
   return hostname.includes(tênNềnTảngViếtThườngKhôngCách);
-}
-
-function lấyTitle({ meta, document }: MetaTagUrlVàDocument): string {
-  const title = document.querySelector("title")?.textContent || meta.og?.title;
-  if (!title) return "";
-  const titleSplit = title.split(" | ");
-  titleSplit.pop();
-  return titleSplit.join(" | ") || title;
-}
-
-function lấyMôTả({ meta, document }: MetaTagUrlVàDocument): string | null | undefined {
-  return meta?.description || document.querySelector("p")?.textContent || meta.og?.description;
 }
 
 function lấyLĩnhVực(meta: MetaTags): string[] | undefined {
@@ -162,13 +59,6 @@ function tạoSlug({ hostname, pathname }: URL) {
     return slugWebsiteCóSẵn ? `${tênMiền}-${slugWebsiteCóSẵn}` : tênMiền;
   }
   return undefined;
-}
-
-function lấyTênMiền(hostname: string) {
-  const { domainWithoutSuffix, subdomain } = parse(punycode.toUnicode(hostname));
-  const platforms = ["deno", "wordpress", "medium", "tumplr", "wix", "blogger", "substack"];
-  if (platforms.includes(domainWithoutSuffix)) return subdomain;
-  return domainWithoutSuffix;
 }
 
 /**

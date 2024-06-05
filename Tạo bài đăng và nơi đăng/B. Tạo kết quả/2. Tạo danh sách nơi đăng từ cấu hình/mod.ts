@@ -16,7 +16,7 @@ import {
   tạoDanhSáchVịTríCóThểĐăng,
 } from "../../Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
-import { táchUrlHoặcEmailTrongChuỗi, đổiTừCơSố10SangCơSố64 } from "../../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { đổiTừCơSố10SangCơSố64 } from "../../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 import { xácĐịnhIdTrênLocal } from "../../Code hỗ trợ cho server/Hàm và kiểu cho id và số lượng dữ liệu.ts";
 import { tạoSlugNơiĐăng, tạoTừĐiểnSlugNơiĐăng } from "./Tạo slug nơi đăng.ts";
 import CấuHìnhNơiĐăng, {
@@ -24,6 +24,7 @@ import CấuHìnhNơiĐăng, {
   ThôngTinCấuHìnhNơiĐăng,
   tạoDanhSáchThôngTinCấuHìnhNơiĐăng,
 } from "../../Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
+import { táchUrlHoặcEmailTrongChuỗi } from "../../../Code hỗ trợ cho client/Hàm và kiểu cho URL.ts";
 
 function tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
   const cấuHìnhNơiĐăngDiễnĐàn = cấuHìnhNơiĐăng["Diễn đàn"];
