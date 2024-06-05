@@ -57,7 +57,7 @@ export type TênNơiĐăng =
   | TênNơiĐăngTậpTin
   | TênNơiĐăngSaaS
   | TênNơiĐăngKhác;
-export type PhươngThứcTạoNơiĐăng = "Lấy trong cấu hình nơi đăng" | "Người dùng nhập tay trên web";
+export type PhươngThứcTạoNơiĐăng = "Lấy trong cấu hình nơi đăng" | "Nhập tay trên web";
 
 export interface ThôngTinNơiĐăng {
   "Loại nền tảng": LoạiNềnTảng;

@@ -1,33 +1,27 @@
-import { Head } from "$fresh/runtime.ts";
-import Meta from "../components/Meta.tsx";
+import { PageProps } from "$fresh/server.ts";
+import Meta, { TÊN_TRANG } from "../components/Meta.tsx";
 
-export default function Error404() {
+export default function Error404(props: PageProps<{ đuôiRútGọn: string }>) {
+  const đuôiRútGọn = props.data?.đuôiRútGọn;
   return (
     <>
-      <Head>
-        <title>404 - Page not found</title>
-        <script>
-          (function(w,d,s,l,i)&#123;w[l]=w[l]||[];w[l].push(&#123;'gtm.start': new Date().getTime(),event:'gtm.js'&#125;);var
-          f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          &#125;)(window,document,'script','dataLayer','GTM-MWZ4WG7');
-        </script>
-      </Head>
-      <Meta url="/404" imageUrl="sihouette.jpg" />
-      <noscript>
-        <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-MWZ4WG7"
-          height="0"
-          width="0"
-          style="display:none;visibility:hidden"
-        >
-        </iframe>
-      </noscript>
-      <div class="flex flex-col bg-base-300 items-center justify-center">
-        <h1 class="text-4xl font-bold p-5">404 - Không tìm thấy trang</h1>
-        <a href="/" class="underline">Tạo liên kết khác</a>
-        <img src="sihouette.jpg" alt="Bóng của hai nguời đang ngồi dưới đất trò chuyện với nhau" />
-      </div>
+      <Meta title="404 – Không tìm thấy trang" description="404 – Không tìm thấy trang" url="/404" imageUrl="sihouette.jpg" />
+      <body class="flex flex-col md:flex-row bg-base-300 items-center max-w-none space-x-10">
+        <section class="align-middle justify-center">
+          <article class="prose py-10">
+            <h1>404 – Không tìm thấy trang</h1>
+            <p>
+              Đuôi rút gọn <code>{đuôiRútGọn}</code> chưa từng được tạo trên {TÊN_TRANG}.
+            </p>
+          </article>
+          <button class="btn">
+            <a href="/">Tạo liên kết khác</a>
+          </button>
+        </section>
+        <section class="align-middle">
+          <img src="sihouette.jpg" alt="Bóng của hai nguời đang ngồi dưới đất trò chuyện với nhau" />
+        </section>
+      </body>
     </>
   );
 }

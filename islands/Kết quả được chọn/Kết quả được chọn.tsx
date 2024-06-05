@@ -40,7 +40,7 @@ function BàiĐăngĐượcChọn() {
             <ul>
               <li id="mô-tả">Mô tả ngắn: {môTả}</li>
               <li id="định-dạng">Định dạng: {địnhDạng}</li>
-              <li id="toàn-bộ-nội-dung" class="prose max-w-none max-w-none">
+              <li id="toàn-bộ-nội-dung" class="prose max-w-none">
                 Toàn bộ nội dung:<pre>{toànBộNộiDung}</pre>
               </li>
             </ul>

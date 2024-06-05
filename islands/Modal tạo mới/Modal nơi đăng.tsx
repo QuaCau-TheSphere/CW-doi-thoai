@@ -22,7 +22,9 @@ export default function ModalNơiĐăng() {
   const [đơnVịQuảnLý, setĐơnVịQuảnLý] = useState<string | undefined>();
 
   useEffect(() => {
+    console.log("🚀", urlHoặcEmail);
     setUrlHoặcEmail(urlHoặcEmail);
+    console.log("🚀", urlHoặcEmail);
     async function tạoNơiĐăngTừUrlHoặcEmail() {
       const linkĐầuTiên = urlHoặcEmail ? linkify.find(urlHoặcEmail)[0] : undefined;
       if (linkĐầuTiên === undefined) return;
@@ -34,7 +36,7 @@ export default function ModalNơiĐăng() {
         const html = await (await fetch(corsProxyUrl)).text();
         setNơiĐăng({
           ...await tạoNơiĐăngTừURL(url, undefined, html),
-          "Phương thức tạo": "Người dùng nhập tay trên web",
+          "Phương thức tạo": "Nhập tay trên web",
         });
       } else if (type === "email" || linkĐầuTiên?.value.startsWith("mailto:")) {
         const email = linkĐầuTiên.value.replace("mailto:", "");
@@ -47,7 +49,7 @@ export default function ModalNơiĐăng() {
         } satisfies ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo;
         setNơiĐăng({
           ...tạoNơiĐăngCóCácLựaChọnVịTrí(thôngTinNơiĐăngChưaCóId),
-          "Phương thức tạo": "Người dùng nhập tay trên web",
+          "Phương thức tạo": "Nhập tay trên web",
         });
       }
     }

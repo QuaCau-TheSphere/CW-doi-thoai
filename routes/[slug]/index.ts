@@ -25,6 +25,7 @@ export const handler: Handlers = {
   /** Người dùng truy cập để tới liên kết thực sự */
   async GET(req, ctx) {
     const đuôiRútGọn = ctx.params.slug;
+    console.log("Đuôi rút gọn được truy cập:", đuôiRútGọn)
     const key = ["Đuôi rút gọn", đuôiRútGọn]
     const vậtThểTiếpThị = (await kvGet(key, 'GET hander trong cors proxy')).value as VậtThểTiếpThị;
     const headers =  req.headers
@@ -36,7 +37,7 @@ export const handler: Handlers = {
       await cậpNhậtSốLượngĐuôiRútGọn();
       return Response.redirect(liênKếtUTM, 307);
     } else {
-      return ctx.renderNotFound();
+      return ctx.renderNotFound({ đuôiRútGọn: đuôiRútGọn });
     } 
   },
 

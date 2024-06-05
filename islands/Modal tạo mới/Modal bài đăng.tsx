@@ -19,7 +19,6 @@ export default function ModalBàiĐăng() {
   const [tênDựÁn, setTênDựÁn] = useState<string | undefined>();
 
   useEffect(() => {
-    setUrl(url);
     async function tạoBàiĐăngTừUrl() {
       const linkĐầuTiên = url ? linkify.find(url)[0] : undefined;
       if (linkĐầuTiên === undefined) return;
@@ -31,7 +30,7 @@ export default function ModalBàiĐăng() {
         const html = await (await fetch(corsProxyUrl)).text();
         setBàiĐăng({
           ...await tạoBàiĐăngTừURL(url, html),
-          "Phương thức tạo": "Người dùng nhập tay trên web",
+          "Phương thức tạo": "Nhập tay trên web",
         });
       }
     }
@@ -71,7 +70,7 @@ export default function ModalBàiĐăng() {
     <>
       <label class="form-control w-full max-w-xs">
         <div class="label">
-          <span class="label-text font-bold">URL</span>
+          <span class="label-text font-bold">Liên kết</span>
         </div>
         <input
           class="input input-bordered w-full max-w-xs"
