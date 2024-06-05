@@ -18,6 +18,7 @@ async function kiểmTraBàiĐăngHoặcNơiĐăngĐãCó(
 ): Promise<
   | { "Dữ liệu có id": BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí; "Loại dữ liệu": TênDanhSách }
   | { "Tổng số dữ liệu đang có": number; "Loại dữ liệu": TênDanhSách }
+  | string
 > {
   const url = `${origin}/api/kiểm-tra-bài-đăng-hoặc-nơi-đăng-đã-có`;
   const res = await fetch(url, {
@@ -37,6 +38,7 @@ async function xácĐịnhId(
     "Dữ liệu": dữLiệuChưaCóId,
   });
   console.log(res);
+  if (typeof res === "string") return đổiTừCơSố10SangCơSố64(Date.now());
   if ("Dữ liệu có id" in res) return res["Dữ liệu có id"].id;
   if ("Tổng số dữ liệu đang có" in res) return đổiTừCơSố10SangCơSố64(res["Tổng số dữ liệu đang có"] + 1);
   return đổiTừCơSố10SangCơSố64(Date.now());

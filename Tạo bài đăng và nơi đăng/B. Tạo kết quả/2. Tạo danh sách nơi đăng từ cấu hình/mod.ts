@@ -156,19 +156,21 @@ export async function tạoDanhSáchNơiĐăngTừTấtCảCấuHình() {
   }
   let sốNơiĐăngChưaCóId = 0;
   for (const nơiĐăngChưaCóId of danhSáchNơiĐăngChưaCóIdTừTấtCảCấuHình) {
-    let id: string;
-    const vậtThểId = await xácĐịnhIdTrênLocal("nơi đăng", nơiĐăngChưaCóId);
-    if (vậtThểId.cáchXácĐịnh !== 3) {
-      id = vậtThểId.idGợiÝ;
-    } else {
-      sốNơiĐăngChưaCóId += 1;
-      id = đổiTừCơSố10SangCơSố64(sốNơiĐăngChưaCóId);
-    }
+    // let id: string;
+    // const vậtThểId = await xácĐịnhIdTrênLocal("nơi đăng", nơiĐăngChưaCóId);
+    // if (vậtThểId.cáchXácĐịnh !== 3) {
+    //   id = vậtThểId.idGợiÝ;
+    // } else {
+    //   sốNơiĐăngChưaCóId += 1;
+    //   id = đổiTừCơSố10SangCơSố64(sốNơiĐăngChưaCóId);
+    // }
     danhSáchNơiĐăngTừTấtCảCấuHình.push({
       ...nơiĐăngChưaCóId,
-      id: id,
-      vậtThểId: vậtThểId,
+      id: đổiTừCơSố10SangCơSố64(sốNơiĐăngChưaCóId),
+      // id: id,
+      // vậtThểId: vậtThểId,
     });
+    sốNơiĐăngChưaCóId += 1;
   }
   console.log(sốNơiĐăngChưaCóId);
   return danhSáchNơiĐăngTừTấtCảCấuHình;

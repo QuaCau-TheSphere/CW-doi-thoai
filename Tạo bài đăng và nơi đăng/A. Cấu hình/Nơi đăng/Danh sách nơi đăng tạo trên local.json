@@ -85,12 +85,7 @@
       "Công cụ ghi chú"
     ],
     "Slug": "obsvn",
-    "id": "1",
-    "vậtThểId": {
-      "idGợiÝ": "1",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "0"
   },
   {
     "Tên nơi đăng": [
@@ -106,12 +101,7 @@
       "Công cụ ghi chú"
     ],
     "Slug": "obs",
-    "id": "2",
-    "vậtThểId": {
-      "idGợiÝ": "2",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1"
   },
   {
     "Tên nơi đăng": [
@@ -127,12 +117,7 @@
       "Công cụ ghi chú"
     ],
     "Slug": "r/googlekeep",
-    "id": "3",
-    "vậtThểId": {
-      "idGợiÝ": "3",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "2"
   },
   {
     "Tên nơi đăng": [
@@ -145,7 +130,7 @@
     ],
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -176,12 +161,7 @@
       "Công cụ ghi chú"
     ],
     "Slug": "obsvn",
-    "id": "6",
-    "vậtThểId": {
-      "idGợiÝ": "6",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "3"
   },
   {
     "Tên nơi đăng": [
@@ -194,7 +174,7 @@
     ],
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -228,12 +208,7 @@
       "Công cụ ghi chú"
     ],
     "Slug": "obs",
-    "id": "7",
-    "vậtThểId": {
-      "idGợiÝ": "7",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "4"
   },
   {
     "Tên nơi đăng": [
@@ -246,7 +221,7 @@
     ],
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -277,12 +252,7 @@
       "Công cụ ghi chú"
     ],
     "Slug": "obsvn",
-    "id": "6",
-    "vậtThểId": {
-      "idGợiÝ": "6",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "5"
   },
   {
     "Tên nơi đăng": [
@@ -295,7 +265,7 @@
     ],
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -329,12 +299,7 @@
       "Công cụ ghi chú"
     ],
     "Slug": "obs",
-    "id": "7",
-    "vậtThểId": {
-      "idGợiÝ": "7",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "6"
   },
   {
     "Tên nơi đăng": [
@@ -422,12 +387,7 @@
       "Phi lợi nhuận"
     ],
     "Slug": "SNPO",
-    "id": "8",
-    "vậtThểId": {
-      "idGợiÝ": "8",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "7"
   },
   {
     "Tên nơi đăng": [
@@ -440,7 +400,7 @@
     ],
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -471,12 +431,7 @@
       "Phi lợi nhuận"
     ],
     "Slug": "SNPO",
-    "id": "9",
-    "vậtThểId": {
-      "idGợiÝ": "9",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "8"
   },
   {
     "Tên nơi đăng": [
@@ -489,7 +444,7 @@
     ],
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -520,12 +475,7 @@
       "Phi lợi nhuận"
     ],
     "Slug": "SNPO",
-    "id": "A",
-    "vậtThểId": {
-      "idGợiÝ": "A",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "9"
   },
   {
     "Tên nơi đăng": [
@@ -630,12 +580,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "B",
-    "vậtThểId": {
-      "idGợiÝ": "B",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "A"
   },
   {
     "Tên nơi đăng": [
@@ -649,12 +594,7 @@
     "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "C",
-    "vậtThểId": {
-      "idGợiÝ": "C",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "B"
   },
   {
     "Tên nơi đăng": [
@@ -668,12 +608,7 @@
     "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "ooker",
-    "id": "D",
-    "vậtThểId": {
-      "idGợiÝ": "D",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "C"
   },
   {
     "Tên nơi đăng": [
@@ -687,12 +622,7 @@
     "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "ooker",
-    "id": "E",
-    "vậtThểId": {
-      "idGợiÝ": "E",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "D"
   },
   {
     "Tên nơi đăng": [
@@ -706,12 +636,7 @@
     "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "F",
-    "vậtThểId": {
-      "idGợiÝ": "F",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "E"
   },
   {
     "Tên nơi đăng": [
@@ -725,12 +650,7 @@
     "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "ooker",
-    "id": "G",
-    "vậtThểId": {
-      "idGợiÝ": "G",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "F"
   },
   {
     "Tên nơi đăng": [
@@ -744,12 +664,7 @@
     "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "ooker",
-    "id": "H",
-    "vậtThểId": {
-      "idGợiÝ": "H",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "G"
   },
   {
     "Tên nơi đăng": [
@@ -763,12 +678,7 @@
     "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "ooker",
-    "id": "I",
-    "vậtThểId": {
-      "idGợiÝ": "I",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "H"
   },
   {
     "Tên nơi đăng": [
@@ -779,15 +689,10 @@
     ],
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "J",
-    "vậtThểId": {
-      "idGợiÝ": "J",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "I"
   },
   {
     "Tên nơi đăng": [
@@ -798,15 +703,10 @@
     ],
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "ooker",
-    "id": "K",
-    "vậtThểId": {
-      "idGợiÝ": "K",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "J"
   },
   {
     "Tên nơi đăng": [
@@ -817,15 +717,10 @@
     ],
     "Tên nền tảng": "Zalo",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "L",
-    "vậtThểId": {
-      "idGợiÝ": "L",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "K"
   },
   {
     "Tên nơi đăng": [
@@ -836,15 +731,10 @@
     ],
     "Tên nền tảng": "Reddit",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "ooker",
-    "id": "M",
-    "vậtThểId": {
-      "idGợiÝ": "M",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "L"
   },
   {
     "Tên nơi đăng": [
@@ -855,15 +745,10 @@
     ],
     "Tên nền tảng": "LinkedIn",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "N",
-    "vậtThểId": {
-      "idGợiÝ": "N",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "M"
   },
   {
     "Tên nơi đăng": [
@@ -877,12 +762,7 @@
     "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "cv",
-    "id": "O",
-    "vậtThểId": {
-      "idGợiÝ": "O",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "N"
   },
   {
     "Tên nơi đăng": [
@@ -896,12 +776,7 @@
     "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "P",
-    "vậtThểId": {
-      "idGợiÝ": "P",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "O"
   },
   {
     "Tên nơi đăng": [
@@ -929,12 +804,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "Q",
-    "vậtThểId": {
-      "idGợiÝ": "Q",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "P"
   },
   {
     "Tên nơi đăng": [
@@ -957,12 +827,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "ganu",
-    "id": "R",
-    "vậtThểId": {
-      "idGợiÝ": "R",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "Q"
   },
   {
     "Tên nơi đăng": [
@@ -985,12 +850,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "S",
-    "vậtThểId": {
-      "idGợiÝ": "S",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "R"
   },
   {
     "Tên nơi đăng": [
@@ -1076,12 +936,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "chim-sáo",
-    "id": "T",
-    "vậtThểId": {
-      "idGợiÝ": "T",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "S"
   },
   {
     "Tên nơi đăng": [
@@ -1167,12 +1022,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "vđqc",
-    "id": "U",
-    "vậtThểId": {
-      "idGợiÝ": "U",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "T"
   },
   {
     "Tên nơi đăng": [
@@ -1258,12 +1108,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "bpd",
-    "id": "V",
-    "vậtThểId": {
-      "idGợiÝ": "V",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "U"
   },
   {
     "Tên nơi đăng": [
@@ -1349,12 +1194,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "triết-phương-đông",
-    "id": "W",
-    "vậtThểId": {
-      "idGợiÝ": "W",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "V"
   },
   {
     "Tên nơi đăng": [
@@ -1440,12 +1280,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "nhận-thức-phức-hợp",
-    "id": "X",
-    "vậtThểId": {
-      "idGợiÝ": "X",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "W"
   },
   {
     "Tên nơi đăng": [
@@ -1531,12 +1366,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "giác-quan-kèm",
-    "id": "Y",
-    "vậtThểId": {
-      "idGợiÝ": "Y",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "X"
   },
   {
     "Tên nơi đăng": [
@@ -1642,12 +1472,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "quảcầu",
-    "id": "Z",
-    "vậtThểId": {
-      "idGợiÝ": "Z",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "Y"
   },
   {
     "Tên nơi đăng": [
@@ -1753,12 +1578,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "quảcầu",
-    "id": "a",
-    "vậtThểId": {
-      "idGợiÝ": "a",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "Z"
   },
   {
     "Tên nơi đăng": [
@@ -1772,12 +1592,7 @@
     "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "quảcầu",
-    "id": "b",
-    "vậtThểId": {
-      "idGợiÝ": "b",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "a"
   },
   {
     "Tên nơi đăng": [
@@ -1815,12 +1630,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "quảcầu",
-    "id": "c",
-    "vậtThểId": {
-      "idGợiÝ": "c",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "b"
   },
   {
     "Tên nơi đăng": [
@@ -1849,12 +1659,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "orgs/quacau-thesphere",
-    "id": "d",
-    "vậtThểId": {
-      "idGợiÝ": "d",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "c"
   },
   {
     "Tên nơi đăng": [
@@ -1883,12 +1688,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "cw-doi-thoai",
-    "id": "e",
-    "vậtThểId": {
-      "idGợiÝ": "e",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "d"
   },
   {
     "Tên nơi đăng": [
@@ -1917,12 +1717,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "cw-obsidian-quan-ly-du-an-va-cong-cu-nghi",
-    "id": "f",
-    "vậtThểId": {
-      "idGợiÝ": "f",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "e"
   },
   {
     "Tên nơi đăng": [
@@ -1951,12 +1746,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "cw-xu-ly-du-lieu-va-lap-trinh",
-    "id": "g",
-    "vậtThểId": {
-      "idGợiÝ": "g",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "f"
   },
   {
     "Tên nơi đăng": [
@@ -1985,12 +1775,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "cv-obsidian-quan-ly-du-an-va-cong-cu-nghi",
-    "id": "h",
-    "vậtThểId": {
-      "idGợiÝ": "h",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "g"
   },
   {
     "Tên nơi đăng": [
@@ -2019,12 +1804,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "ev-heavyt",
-    "id": "i",
-    "vậtThểId": {
-      "idGợiÝ": "i",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "h"
   },
   {
     "Tên nơi đăng": [
@@ -2053,12 +1833,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "fv-khoa-hoc-xa-hoi",
-    "id": "j",
-    "vậtThểId": {
-      "idGợiÝ": "j",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "i"
   },
   {
     "Tên nơi đăng": [
@@ -2087,12 +1862,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "landofspheres",
-    "id": "k",
-    "vậtThểId": {
-      "idGợiÝ": "k",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "j"
   },
   {
     "Tên nơi đăng": [
@@ -2121,12 +1891,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "cv-tiep-thi-so-xu-ly-du-lieu-va-lap-trinh",
-    "id": "l",
-    "vậtThểId": {
-      "idGợiÝ": "l",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "k"
   },
   {
     "Tên nơi đăng": [
@@ -2155,12 +1920,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "trấnkỳ",
-    "id": "m",
-    "vậtThểId": {
-      "idGợiÝ": "m",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "l"
   },
   {
     "Tên nơi đăng": [
@@ -2189,12 +1949,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "tranky-test",
-    "id": "n",
-    "vậtThểId": {
-      "idGợiÝ": "n",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "m"
   },
   {
     "Tên nơi đăng": [
@@ -2223,12 +1978,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "meetup-ticketbox-to-google-calendar",
-    "id": "o",
-    "vậtThểId": {
-      "idGợiÝ": "o",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "n"
   },
   {
     "Tên nơi đăng": [
@@ -2257,12 +2007,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "ew-heavyt",
-    "id": "p",
-    "vậtThểId": {
-      "idGợiÝ": "p",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "o"
   },
   {
     "Tên nơi đăng": [
@@ -2291,12 +2036,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "obsidianpulishertest",
-    "id": "q",
-    "vậtThểId": {
-      "idGợiÝ": "q",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "p"
   },
   {
     "Tên nơi đăng": [
@@ -2325,12 +2065,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "belief-network",
-    "id": "r",
-    "vậtThểId": {
-      "idGợiÝ": "r",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "q"
   },
   {
     "Tên nơi đăng": [
@@ -2359,12 +2094,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "dv-phat-trien-ban-than",
-    "id": "s",
-    "vậtThểId": {
-      "idGợiÝ": "s",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "r"
   },
   {
     "Tên nơi đăng": [
@@ -2393,12 +2123,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "needexchange",
-    "id": "t",
-    "vậtThểId": {
-      "idGợiÝ": "t",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "s"
   },
   {
     "Tên nơi đăng": [
@@ -2427,12 +2152,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "dw-phat-trien-ban-than",
-    "id": "u",
-    "vậtThểId": {
-      "idGợiÝ": "u",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "t"
   },
   {
     "Tên nơi đăng": [
@@ -2461,12 +2181,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "quacau-thesphere.github.io-https://github.com/quacau-thesphere/quacau-thesphere.github.io",
-    "id": "v",
-    "vậtThểId": {
-      "idGợiÝ": "v",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "u"
   },
   {
     "Tên nơi đăng": [
@@ -2495,12 +2210,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "ONB",
-    "id": "w",
-    "vậtThểId": {
-      "idGợiÝ": "w",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "v"
   },
   {
     "Tên nơi đăng": [
@@ -2529,12 +2239,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "buoc-chan",
-    "id": "x",
-    "vậtThểId": {
-      "idGợiÝ": "x",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "w"
   },
   {
     "Tên nơi đăng": [
@@ -2563,12 +2268,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "los-installer",
-    "id": "y",
-    "vậtThểId": {
-      "idGợiÝ": "y",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "x"
   },
   {
     "Tên nơi đăng": [
@@ -2597,12 +2297,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "ca-nhan-khac",
-    "id": "z",
-    "vậtThểId": {
-      "idGợiÝ": "z",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "y"
   },
   {
     "Tên nơi đăng": [
@@ -2631,12 +2326,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "samplevault",
-    "id": "-",
-    "vậtThểId": {
-      "idGợiÝ": "-",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "z"
   },
   {
     "Tên nơi đăng": [
@@ -2665,12 +2355,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "graphvidian",
-    "id": "_",
-    "vậtThểId": {
-      "idGợiÝ": "_",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "-"
   },
   {
     "Tên nơi đăng": [
@@ -2683,7 +2368,7 @@
     ],
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -2712,12 +2397,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "bpd",
-    "id": "1m",
-    "vậtThểId": {
-      "idGợiÝ": "1m",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "_"
   },
   {
     "Tên nơi đăng": [
@@ -2730,7 +2410,7 @@
     ],
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -2759,12 +2439,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "triết-phương-đông",
-    "id": "1n",
-    "vậtThểId": {
-      "idGợiÝ": "1n",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "10"
   },
   {
     "Tên nơi đăng": [
@@ -2777,7 +2452,7 @@
     ],
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -2806,12 +2481,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "nhận-thức-phức-hợp",
-    "id": "1o",
-    "vậtThểId": {
-      "idGợiÝ": "1o",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "11"
   },
   {
     "Tên nơi đăng": [
@@ -2825,7 +2495,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -2857,12 +2527,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#a",
-    "id": "1p",
-    "vậtThểId": {
-      "idGợiÝ": "1p",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "12"
   },
   {
     "Tên nơi đăng": [
@@ -2876,7 +2541,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -2908,12 +2573,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#b1",
-    "id": "1q",
-    "vậtThểId": {
-      "idGợiÝ": "1q",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "13"
   },
   {
     "Tên nơi đăng": [
@@ -2929,7 +2589,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -2961,12 +2621,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#b2",
-    "id": "1r",
-    "vậtThểId": {
-      "idGợiÝ": "1r",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "14"
   },
   {
     "Tên nơi đăng": [
@@ -2982,7 +2637,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -3014,12 +2669,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#b2",
-    "id": "1s",
-    "vậtThểId": {
-      "idGợiÝ": "1s",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "15"
   },
   {
     "Tên nơi đăng": [
@@ -3033,7 +2683,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -3065,12 +2715,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#b3",
-    "id": "1t",
-    "vậtThểId": {
-      "idGợiÝ": "1t",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "16"
   },
   {
     "Tên nơi đăng": [
@@ -3084,7 +2729,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -3116,12 +2761,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c1",
-    "id": "1u",
-    "vậtThểId": {
-      "idGợiÝ": "1u",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "17"
   },
   {
     "Tên nơi đăng": [
@@ -3137,7 +2777,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -3169,12 +2809,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c2",
-    "id": "1v",
-    "vậtThểId": {
-      "idGợiÝ": "1v",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "18"
   },
   {
     "Tên nơi đăng": [
@@ -3190,7 +2825,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -3222,12 +2857,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c2",
-    "id": "1w",
-    "vậtThểId": {
-      "idGợiÝ": "1w",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "19"
   },
   {
     "Tên nơi đăng": [
@@ -3243,7 +2873,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -3275,12 +2905,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c2",
-    "id": "1x",
-    "vậtThểId": {
-      "idGợiÝ": "1x",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1A"
   },
   {
     "Tên nơi đăng": [
@@ -3296,7 +2921,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -3328,12 +2953,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c2",
-    "id": "1y",
-    "vậtThểId": {
-      "idGợiÝ": "1y",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1B"
   },
   {
     "Tên nơi đăng": [
@@ -3349,7 +2969,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -3381,12 +3001,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c2",
-    "id": "1z",
-    "vậtThểId": {
-      "idGợiÝ": "1z",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1C"
   },
   {
     "Tên nơi đăng": [
@@ -3402,7 +3017,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -3434,12 +3049,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c2",
-    "id": "1-",
-    "vậtThểId": {
-      "idGợiÝ": "1-",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1D"
   },
   {
     "Tên nơi đăng": [
@@ -3455,7 +3065,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -3487,12 +3097,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c2",
-    "id": "1_",
-    "vậtThểId": {
-      "idGợiÝ": "1_",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1E"
   },
   {
     "Tên nơi đăng": [
@@ -3508,7 +3113,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -3540,12 +3145,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#d",
-    "id": "20",
-    "vậtThểId": {
-      "idGợiÝ": "20",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1F"
   },
   {
     "Tên nơi đăng": [
@@ -3559,7 +3159,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -3591,12 +3191,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#e",
-    "id": "21",
-    "vậtThểId": {
-      "idGợiÝ": "21",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1G"
   },
   {
     "Tên nơi đăng": [
@@ -3610,7 +3205,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -3642,12 +3237,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#f1",
-    "id": "22",
-    "vậtThểId": {
-      "idGợiÝ": "22",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1H"
   },
   {
     "Tên nơi đăng": [
@@ -3661,7 +3251,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -3693,12 +3283,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#f2",
-    "id": "23",
-    "vậtThểId": {
-      "idGợiÝ": "23",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1I"
   },
   {
     "Tên nơi đăng": [
@@ -3714,7 +3299,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -3746,12 +3331,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#g",
-    "id": "24",
-    "vậtThểId": {
-      "idGợiÝ": "24",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1J"
   },
   {
     "Tên nơi đăng": [
@@ -3767,7 +3347,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -3799,12 +3379,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#g",
-    "id": "25",
-    "vậtThểId": {
-      "idGợiÝ": "25",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1K"
   },
   {
     "Tên nơi đăng": [
@@ -3820,7 +3395,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -3852,12 +3427,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#g",
-    "id": "26",
-    "vậtThểId": {
-      "idGợiÝ": "26",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1L"
   },
   {
     "Tên nơi đăng": [
@@ -3873,7 +3443,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -3905,12 +3475,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#g",
-    "id": "27",
-    "vậtThểId": {
-      "idGợiÝ": "27",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1M"
   },
   {
     "Tên nơi đăng": [
@@ -3923,7 +3488,7 @@
     ],
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -3952,12 +3517,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "bpd",
-    "id": "1m",
-    "vậtThểId": {
-      "idGợiÝ": "1m",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1N"
   },
   {
     "Tên nơi đăng": [
@@ -3970,7 +3530,7 @@
     ],
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -3999,12 +3559,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "triết-phương-đông",
-    "id": "1n",
-    "vậtThểId": {
-      "idGợiÝ": "1n",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1O"
   },
   {
     "Tên nơi đăng": [
@@ -4017,7 +3572,7 @@
     ],
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -4046,12 +3601,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "nhận-thức-phức-hợp",
-    "id": "1o",
-    "vậtThểId": {
-      "idGợiÝ": "1o",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1P"
   },
   {
     "Tên nơi đăng": [
@@ -4065,7 +3615,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -4097,12 +3647,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#a",
-    "id": "1p",
-    "vậtThểId": {
-      "idGợiÝ": "1p",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1Q"
   },
   {
     "Tên nơi đăng": [
@@ -4116,7 +3661,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -4148,12 +3693,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#b1",
-    "id": "1q",
-    "vậtThểId": {
-      "idGợiÝ": "1q",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1R"
   },
   {
     "Tên nơi đăng": [
@@ -4169,7 +3709,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -4201,12 +3741,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#b2",
-    "id": "1r",
-    "vậtThểId": {
-      "idGợiÝ": "1r",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1S"
   },
   {
     "Tên nơi đăng": [
@@ -4222,7 +3757,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -4254,12 +3789,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#b2",
-    "id": "1s",
-    "vậtThểId": {
-      "idGợiÝ": "1s",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1T"
   },
   {
     "Tên nơi đăng": [
@@ -4273,7 +3803,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -4305,12 +3835,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#b3",
-    "id": "1t",
-    "vậtThểId": {
-      "idGợiÝ": "1t",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1U"
   },
   {
     "Tên nơi đăng": [
@@ -4324,7 +3849,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -4356,12 +3881,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c1",
-    "id": "1u",
-    "vậtThểId": {
-      "idGợiÝ": "1u",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1V"
   },
   {
     "Tên nơi đăng": [
@@ -4377,7 +3897,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -4409,12 +3929,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c2",
-    "id": "1v",
-    "vậtThểId": {
-      "idGợiÝ": "1v",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1W"
   },
   {
     "Tên nơi đăng": [
@@ -4430,7 +3945,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -4462,12 +3977,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c2",
-    "id": "1w",
-    "vậtThểId": {
-      "idGợiÝ": "1w",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1X"
   },
   {
     "Tên nơi đăng": [
@@ -4483,7 +3993,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -4515,12 +4025,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c2",
-    "id": "1x",
-    "vậtThểId": {
-      "idGợiÝ": "1x",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1Y"
   },
   {
     "Tên nơi đăng": [
@@ -4536,7 +4041,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -4568,12 +4073,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c2",
-    "id": "1y",
-    "vậtThểId": {
-      "idGợiÝ": "1y",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1Z"
   },
   {
     "Tên nơi đăng": [
@@ -4589,7 +4089,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -4621,12 +4121,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c2",
-    "id": "1z",
-    "vậtThểId": {
-      "idGợiÝ": "1z",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1a"
   },
   {
     "Tên nơi đăng": [
@@ -4642,7 +4137,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -4674,12 +4169,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c2",
-    "id": "1-",
-    "vậtThểId": {
-      "idGợiÝ": "1-",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1b"
   },
   {
     "Tên nơi đăng": [
@@ -4695,7 +4185,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -4727,12 +4217,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c2",
-    "id": "1_",
-    "vậtThểId": {
-      "idGợiÝ": "1_",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1c"
   },
   {
     "Tên nơi đăng": [
@@ -4748,7 +4233,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -4780,12 +4265,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#d",
-    "id": "20",
-    "vậtThểId": {
-      "idGợiÝ": "20",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1d"
   },
   {
     "Tên nơi đăng": [
@@ -4799,7 +4279,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -4831,12 +4311,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#e",
-    "id": "21",
-    "vậtThểId": {
-      "idGợiÝ": "21",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1e"
   },
   {
     "Tên nơi đăng": [
@@ -4850,7 +4325,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -4882,12 +4357,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#f1",
-    "id": "22",
-    "vậtThểId": {
-      "idGợiÝ": "22",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1f"
   },
   {
     "Tên nơi đăng": [
@@ -4901,7 +4371,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -4933,12 +4403,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#f2",
-    "id": "23",
-    "vậtThểId": {
-      "idGợiÝ": "23",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1g"
   },
   {
     "Tên nơi đăng": [
@@ -4954,7 +4419,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -4986,12 +4451,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#g",
-    "id": "24",
-    "vậtThểId": {
-      "idGợiÝ": "24",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1h"
   },
   {
     "Tên nơi đăng": [
@@ -5007,7 +4467,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -5039,12 +4499,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#g",
-    "id": "25",
-    "vậtThểId": {
-      "idGợiÝ": "25",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1i"
   },
   {
     "Tên nơi đăng": [
@@ -5060,7 +4515,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -5092,12 +4547,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#g",
-    "id": "26",
-    "vậtThểId": {
-      "idGợiÝ": "26",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1j"
   },
   {
     "Tên nơi đăng": [
@@ -5113,7 +4563,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -5145,12 +4595,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#g",
-    "id": "27",
-    "vậtThểId": {
-      "idGợiÝ": "27",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1k"
   },
   {
     "Tên nơi đăng": [
@@ -5163,7 +4608,7 @@
     ],
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -5192,12 +4637,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "bpd",
-    "id": "1m",
-    "vậtThểId": {
-      "idGợiÝ": "1m",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1l"
   },
   {
     "Tên nơi đăng": [
@@ -5210,7 +4650,7 @@
     ],
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -5239,12 +4679,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "triết-phương-đông",
-    "id": "1n",
-    "vậtThểId": {
-      "idGợiÝ": "1n",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1m"
   },
   {
     "Tên nơi đăng": [
@@ -5257,7 +4692,7 @@
     ],
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -5286,12 +4721,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "nhận-thức-phức-hợp",
-    "id": "1o",
-    "vậtThểId": {
-      "idGợiÝ": "1o",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1n"
   },
   {
     "Tên nơi đăng": [
@@ -5305,7 +4735,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -5337,12 +4767,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#a",
-    "id": "1p",
-    "vậtThểId": {
-      "idGợiÝ": "1p",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1o"
   },
   {
     "Tên nơi đăng": [
@@ -5356,7 +4781,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -5388,12 +4813,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#b1",
-    "id": "1q",
-    "vậtThểId": {
-      "idGợiÝ": "1q",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1p"
   },
   {
     "Tên nơi đăng": [
@@ -5409,7 +4829,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -5441,12 +4861,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#b2",
-    "id": "1r",
-    "vậtThểId": {
-      "idGợiÝ": "1r",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1q"
   },
   {
     "Tên nơi đăng": [
@@ -5462,7 +4877,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -5494,12 +4909,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#b2",
-    "id": "1s",
-    "vậtThểId": {
-      "idGợiÝ": "1s",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1r"
   },
   {
     "Tên nơi đăng": [
@@ -5513,7 +4923,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -5545,12 +4955,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#b3",
-    "id": "1t",
-    "vậtThểId": {
-      "idGợiÝ": "1t",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1s"
   },
   {
     "Tên nơi đăng": [
@@ -5564,7 +4969,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -5596,12 +5001,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c1",
-    "id": "1u",
-    "vậtThểId": {
-      "idGợiÝ": "1u",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1t"
   },
   {
     "Tên nơi đăng": [
@@ -5617,7 +5017,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -5649,12 +5049,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c2",
-    "id": "1v",
-    "vậtThểId": {
-      "idGợiÝ": "1v",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1u"
   },
   {
     "Tên nơi đăng": [
@@ -5670,7 +5065,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -5702,12 +5097,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c2",
-    "id": "1w",
-    "vậtThểId": {
-      "idGợiÝ": "1w",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1v"
   },
   {
     "Tên nơi đăng": [
@@ -5723,7 +5113,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -5755,12 +5145,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c2",
-    "id": "1x",
-    "vậtThểId": {
-      "idGợiÝ": "1x",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1w"
   },
   {
     "Tên nơi đăng": [
@@ -5776,7 +5161,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -5808,12 +5193,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c2",
-    "id": "1y",
-    "vậtThểId": {
-      "idGợiÝ": "1y",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1x"
   },
   {
     "Tên nơi đăng": [
@@ -5829,7 +5209,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -5861,12 +5241,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c2",
-    "id": "1z",
-    "vậtThểId": {
-      "idGợiÝ": "1z",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1y"
   },
   {
     "Tên nơi đăng": [
@@ -5882,7 +5257,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -5914,12 +5289,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c2",
-    "id": "1-",
-    "vậtThểId": {
-      "idGợiÝ": "1-",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1z"
   },
   {
     "Tên nơi đăng": [
@@ -5935,7 +5305,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -5967,12 +5337,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#c2",
-    "id": "1_",
-    "vậtThểId": {
-      "idGợiÝ": "1_",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1-"
   },
   {
     "Tên nơi đăng": [
@@ -5988,7 +5353,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -6020,12 +5385,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#d",
-    "id": "20",
-    "vậtThểId": {
-      "idGợiÝ": "20",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "1_"
   },
   {
     "Tên nơi đăng": [
@@ -6039,7 +5399,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -6071,12 +5431,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#e",
-    "id": "21",
-    "vậtThểId": {
-      "idGợiÝ": "21",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "20"
   },
   {
     "Tên nơi đăng": [
@@ -6090,7 +5445,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -6122,12 +5477,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#f1",
-    "id": "22",
-    "vậtThểId": {
-      "idGợiÝ": "22",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "21"
   },
   {
     "Tên nơi đăng": [
@@ -6141,7 +5491,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -6173,12 +5523,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#f2",
-    "id": "23",
-    "vậtThểId": {
-      "idGợiÝ": "23",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "22"
   },
   {
     "Tên nơi đăng": [
@@ -6194,7 +5539,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -6226,12 +5571,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#g",
-    "id": "24",
-    "vậtThểId": {
-      "idGợiÝ": "24",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "23"
   },
   {
     "Tên nơi đăng": [
@@ -6247,7 +5587,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -6279,12 +5619,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#g",
-    "id": "25",
-    "vậtThểId": {
-      "idGợiÝ": "25",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "24"
   },
   {
     "Tên nơi đăng": [
@@ -6300,7 +5635,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -6332,12 +5667,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#g",
-    "id": "26",
-    "vậtThểId": {
-      "idGợiÝ": "26",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "25"
   },
   {
     "Tên nơi đăng": [
@@ -6353,7 +5683,7 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -6385,12 +5715,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qc#g",
-    "id": "27",
-    "vậtThểId": {
-      "idGợiÝ": "27",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "26"
   },
   {
     "Tên nơi đăng": [
@@ -6401,15 +5726,10 @@
     ],
     "Tên nền tảng": "Zalo",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "321",
-    "id": "28",
-    "vậtThểId": {
-      "idGợiÝ": "28",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "27"
   },
   {
     "Tên nơi đăng": [
@@ -6423,12 +5743,7 @@
     "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "cvLộc",
-    "id": "29",
-    "vậtThểId": {
-      "idGợiÝ": "29",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "28"
   },
   {
     "Tên nơi đăng": [
@@ -6442,12 +5757,7 @@
     "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "vđqc",
-    "id": "2A",
-    "vậtThểId": {
-      "idGợiÝ": "2A",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "29"
   },
   {
     "Tên nơi đăng": [
@@ -6461,12 +5771,7 @@
     "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "B-Mạng-kết-nối-nhu-cầu",
-    "id": "2B",
-    "vậtThểId": {
-      "idGợiÝ": "2B",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "2A"
   },
   {
     "Tên nơi đăng": [
@@ -6480,12 +5785,7 @@
     "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "C-Obsidian,-quản-lý-dự-án-và-công-cụ-nghĩ",
-    "id": "2C",
-    "vậtThểId": {
-      "idGợiÝ": "2C",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "2B"
   },
   {
     "Tên nơi đăng": [
@@ -6499,12 +5799,7 @@
     "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "C-Tiếp-thị-số,-xử-lý-dữ-liệu-và-lập-trình",
-    "id": "2D",
-    "vậtThểId": {
-      "idGợiÝ": "2D",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "2C"
   },
   {
     "Tên nơi đăng": [
@@ -6518,12 +5813,7 @@
     "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "D-Học-kỹ-năng,-phát-triển-bản-thân",
-    "id": "2E",
-    "vậtThểId": {
-      "idGợiÝ": "2E",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "2D"
   },
   {
     "Tên nơi đăng": [
@@ -6551,12 +5841,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "quảcầu",
-    "id": "2F",
-    "vậtThểId": {
-      "idGợiÝ": "2F",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "2E"
   },
   {
     "Tên nơi đăng": [
@@ -6584,12 +5869,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "obsidianqc",
-    "id": "2G",
-    "vậtThểId": {
-      "idGợiÝ": "2G",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "2F"
   },
   {
     "Tên nơi đăng": [
@@ -6617,12 +5897,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "lậptrìnhqc",
-    "id": "2H",
-    "vậtThểId": {
-      "idGợiÝ": "2H",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "2G"
   },
   {
     "Tên nơi đăng": [
@@ -6650,12 +5925,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "doi-thoai",
-    "id": "2I",
-    "vậtThểId": {
-      "idGợiÝ": "2I",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "2H"
   },
   {
     "Tên nơi đăng": [
@@ -6683,12 +5953,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "trấnkỳ",
-    "id": "2J",
-    "vậtThểId": {
-      "idGợiÝ": "2J",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "2I"
   },
   {
     "Tên nơi đăng": [
@@ -6711,12 +5976,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "qcg",
-    "id": "2K",
-    "vậtThểId": {
-      "idGợiÝ": "2K",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "2J"
   },
   {
     "Tên nơi đăng": [
@@ -6802,12 +6062,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": "uan",
-    "id": "2L",
-    "vậtThểId": {
-      "idGợiÝ": "2L",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "2K"
   },
   {
     "Tên nơi đăng": [
@@ -6819,7 +6074,7 @@
     ],
     "Tên nền tảng": "Telegram",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -6848,12 +6103,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": "uan",
-    "id": "2M",
-    "vậtThểId": {
-      "idGợiÝ": "2M",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "2L"
   },
   {
     "Tên nơi đăng": [
@@ -6865,7 +6115,7 @@
     ],
     "Tên nền tảng": "Telegram",
     "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Tin nhắn",
@@ -6894,11 +6144,6 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": "uan",
-    "id": "2N",
-    "vậtThểId": {
-      "idGợiÝ": "2N",
-      "cáchXácĐịnh": 1,
-      "giảiThích": "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id"
-    }
+    "id": "2M"
   }
 ]

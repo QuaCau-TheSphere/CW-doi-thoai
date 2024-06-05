@@ -39,19 +39,21 @@ export async function tạoDanhSáchBàiĐăng(danhSáchVậtThểCấuHìnhNơi
   }
   let sốBàiĐăngChưaCóId = 0;
   for (const bàiĐăngChưaCóId of danhSáchBàiĐăngChưaCóId) {
-    let id: string;
-    const vậtThểId = await xácĐịnhIdTrênLocal("bài đăng", bàiĐăngChưaCóId);
-    if (vậtThểId.cáchXácĐịnh !== 3) {
-      id = vậtThểId.idGợiÝ;
-    } else {
-      sốBàiĐăngChưaCóId += 1;
-      id = đổiTừCơSố10SangCơSố64(sốBàiĐăngChưaCóId);
-    }
+    // let id: string;
+    // const vậtThểId = await xácĐịnhIdTrênLocal("bài đăng", bàiĐăngChưaCóId);
+    // if (vậtThểId.cáchXácĐịnh !== 3) {
+    //   id = vậtThểId.idGợiÝ;
+    // } else {
+    //   sốBàiĐăngChưaCóId += 1;
+    //   id = đổiTừCơSố10SangCơSố64(sốBàiĐăngChưaCóId);
+    // }
     danhSáchBàiĐăngĐãCóId.push({
       ...bàiĐăngChưaCóId,
-      id: id,
-      vậtThểId: vậtThểId,
+      id: đổiTừCơSố10SangCơSố64(sốBàiĐăngChưaCóId),
+      // id: id,
+      // vậtThểId: vậtThểId,
     });
+    sốBàiĐăngChưaCóId += 1;
   }
   console.log(sốBàiĐăngChưaCóId);
   return danhSáchBàiĐăngĐãCóId;

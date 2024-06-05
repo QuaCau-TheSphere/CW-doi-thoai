@@ -148,6 +148,14 @@ export async function tạoNơiĐăng(cóĐẩyLênKv: boolean = false) {
   }
 }
 export async function xoáDữLiệuTrênKv() {
+  if (
+    kvSignal.value !== await Deno.openKv()
+  ) {
+    const entries = await kvList({ prefix: [] });
+    for (const entry of entries) {
+      kvDelete(entry.key);
+    }
+  }
   const result = await wipeKvStore();
 
   if (!result.ok) {

@@ -15,7 +15,7 @@ await tạoBàiĐăng();
 console.log("Số read unit", readUnitSignal.value);
 console.log("Số write unit", writeUnitSignal.value);
 
-debugger;
+// debugger;
 
 async function chạyTrênDeployChứKhôngChạyTrênLocal() {
   Deno.env.set("DENO_KV_ACCESS_TOKEN", env["DENO_KV_ACCESS_TOKEN"]);

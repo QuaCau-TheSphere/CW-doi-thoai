@@ -1,3 +1,8 @@
+/**
+ * @fileoverview dùng cho việc tạo id khi người dùng tạo bài đăng hoặc nơi đăng mới thủ công
+ * @see kiểmTraBàiĐăngHoặcNơiĐăngĐãCó trong Code hỗ trợ cho client\Hàm và kiểu cho API server.ts
+ * @see islands\Modal tạo mới\Modal chung.tsx
+ */
 import { Handlers } from "$fresh/server.ts";
 import { kvGet, tạoKeyKV } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho KV.ts";
 import { ReqBàiĐăngHoặcNơiĐăng } from "../../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
@@ -17,8 +22,10 @@ export const handler: Handlers = {
       });
     }
 
+    const tổngSốBàiĐăngHoặcNơiĐăngĐangCó = lấyTổngSốBàiĐăngHoặcNơiĐăngĐangCó(tênDanhSách);
+    if (typeof tổngSốBàiĐăngHoặcNơiĐăngĐangCó === "string") return Response.json(tổngSốBàiĐăngHoặcNơiĐăngĐangCó);
     return Response.json({
-      "Tổng số dữ liệu đang có": lấyTổngSốBàiĐăngHoặcNơiĐăngĐangCó(tênDanhSách),
+      "Tổng số dữ liệu đang có": tổngSốBàiĐăngHoặcNơiĐăngĐangCó,
       "Loại dữ liệu": tênDanhSách,
     });
   },

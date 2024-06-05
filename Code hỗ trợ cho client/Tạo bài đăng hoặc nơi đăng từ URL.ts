@@ -54,6 +54,7 @@ function tạoSlug({ hostname, pathname }: URL) {
   if (!làDiễnĐàn && !làNềnTảngChat) {
     const tênMiền = lấyTênMiền(hostname);
     let slugWebsiteCóSẵn = pathname.substring(1);
+    slugWebsiteCóSẵn = slugWebsiteCóSẵn.slice(-1) === "/" ? slugWebsiteCóSẵn.slice(0, -1) : slugWebsiteCóSẵn;
     if (slugWebsiteCóSẵn.startsWith("blog/")) slugWebsiteCóSẵn = slugWebsiteCóSẵn.replace("blog/", "");
     if (slugWebsiteCóSẵn.includes("/")) return undefined;
     return slugWebsiteCóSẵn ? `${tênMiền}-${slugWebsiteCóSẵn}` : tênMiền;

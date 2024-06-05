@@ -13,47 +13,47 @@ export interface VậtThểId {
  * Việc tạo Id chỉ vào lúc trước khi dữ liệu được đẩy lên KV từ local, hoặc khi người dùng tạo mới trên client. Không tạo id khi mới lấy URL, để tránh tình trạng tạo og xong thì người dùng không làm nữa
  * Id cần ngắn nhất có thể để nếu không tạo được Slug có ý nghĩa thì id sẽ được dùng để tạo đuôi rút gọn
  */
-export async function xácĐịnhIdTrênLocal(
-  tênDanhSách: TênDanhSách,
-  dữLiệu: BàiĐăngChưaCóId | BàiĐăng | ThôngTinNơiĐăngChưaCóId | ThôngTinNơiĐăng,
-): Promise<VậtThểId> {
-  if ("id" in dữLiệu) {
-    const idGợiÝ = (dữLiệu as BàiĐăng | ThôngTinNơiĐăng).id;
-    return {
-      idGợiÝ: idGợiÝ,
-      cáchXácĐịnh: 0,
-      giảiThích: "Dữ liệu đã có sẵn id",
-    };
-  }
+// export async function xácĐịnhIdTrênLocal(
+//   tênDanhSách: TênDanhSách,
+//   dữLiệu: BàiĐăngChưaCóId | BàiĐăng | ThôngTinNơiĐăngChưaCóId | ThôngTinNơiĐăng,
+// ): Promise<VậtThểId> {
+//   if ("id" in dữLiệu) {
+//     const idGợiÝ = (dữLiệu as BàiĐăng | ThôngTinNơiĐăng).id;
+//     return {
+//       idGợiÝ: idGợiÝ,
+//       cáchXácĐịnh: 0,
+//       giảiThích: "Dữ liệu đã có sẵn id",
+//     };
+//   }
 
-  const key = tạoKeyKV(tênDanhSách, dữLiệu);
-  const value = (await kvGet(key, "xácĐịnhIdTrênLocal trong Hàm cho id.ts")).value as BàiĐăng | ThôngTinNơiĐăng | undefined | null;
-  if (value && value.id) {
-    return {
-      idGợiÝ: value.id,
-      cáchXácĐịnh: 1,
-      giảiThích:
-        "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
-    };
-  }
+//   const key = tạoKeyKV(tênDanhSách, dữLiệu);
+//   const value = (await kvGet(key, "xácĐịnhIdTrênLocal trong Hàm cho id.ts")).value as BàiĐăng | ThôngTinNơiĐăng | undefined | null;
+//   if (value && value.id) {
+//     return {
+//       idGợiÝ: value.id,
+//       cáchXácĐịnh: 1,
+//       giảiThích:
+//         "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì thấy đã có dữ liệu trên đó với key này, và dữ liệu này đã có sẵn id",
+//     };
+//   }
 
-  const tổngSốĐangCó = await lấyTổngSốBàiĐăngHoặcNơiĐăngĐangCó(tênDanhSách);
-  if (tổngSốĐangCó) {
-    return {
-      idGợiÝ: đổiTừCơSố10SangCơSố64(tổngSốĐangCó + 1),
-      cáchXácĐịnh: 2,
-      giảiThích:
-        "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì cũng không thấy có dữ liệu nào trên đó với key này. Dùng tổng số entry hiện tại rồi cộng thêm 1 ",
-    };
-  }
+//   const tổngSốĐangCó = await lấyTổngSốBàiĐăngHoặcNơiĐăngĐangCó(tênDanhSách);
+//   if (typeof tổngSốĐangCó === "number") {
+//     return {
+//       idGợiÝ: đổiTừCơSố10SangCơSố64(tổngSốĐangCó + 1),
+//       cáchXácĐịnh: 2,
+//       giảiThích:
+//         "Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì cũng không thấy có dữ liệu nào trên đó với key này. Dùng tổng số entry hiện tại rồi cộng thêm 1 ",
+//     };
+//   }
 
-  return {
-    idGợiÝ: đổiTừCơSố10SangCơSố64(Date.now()),
-    cáchXácĐịnh: 3,
-    giảiThích:
-      'Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì cũng không thấy có dữ liệu nào trên đó với key này. Trên KV không có key `["Số lượng dữ liệu"]`. Tạo id đơn thuần bằng ngày tháng',
-  };
-}
+//   return {
+//     idGợiÝ: đổiTừCơSố10SangCơSố64(Date.now()),
+//     cáchXácĐịnh: 3,
+//     giảiThích:
+//       'Dữ liệu đầu vào không có sẵn id. Tạo key từ dữ liệu này rồi kiểm tra trên KV thì cũng không thấy có dữ liệu nào trên đó với key này. Trên KV không có key `["Số lượng dữ liệu"]`. Tạo id đơn thuần bằng ngày tháng',
+//   };
+// }
 
 export type TênBảng = "Nơi đăng" | "Bài đăng" | "Đuôi rút gọn";
 export type SốLượngBàiĐăng = Record<PhươngThứcTạoBàiĐăng, number>;
@@ -67,9 +67,10 @@ export async function lấyTổngSốBàiĐăngHoặcNơiĐăngĐangCó(tênDanh
   if (sốLượngĐangCó) {
     console.log("🚀 ~ Object.values(sốLượngĐangCó):", Object.values(sốLượngĐangCó));
     tổngSốĐangCó = Object.values(sốLượngĐangCó).reduce((sum, i) => sum + i, 0);
+    console.log(`Tổng số ${tênDanhSách} đang có:`, tổngSốĐangCó);
+    return tổngSốĐangCó;
   }
-  console.log(`Tổng số ${tênDanhSách} đang có:`, tổngSốĐangCó);
-  return tổngSốĐangCó;
+  return `Không có entry số lượng dữ liệu cho ${tênDanhSách} trong KV`;
 }
 
 export async function cậpNhậtSốLượngBàiĐăng(value: SốLượngBàiĐăng | PhươngThứcTạoBàiĐăng, delta: number = 1) {
