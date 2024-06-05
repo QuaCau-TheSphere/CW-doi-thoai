@@ -2,7 +2,7 @@ import { viếtHoa, đổiTừCơSố10SangCơSố64 } from "../../Code hỗ tr�
 import { TênDanhSách } from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
 import { BàiĐăng, BàiĐăngChưaCóId, PhươngThứcTạoBàiĐăng } from "./Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import { PhươngThứcTạoNơiĐăng, ThôngTinNơiĐăng, ThôngTinNơiĐăngChưaCóId } from "./Kiểu cho nơi đăng.ts";
-import { kvGet, kvGetSốLượngDữLiệu, kvSet, tạoKeyKV } from "./Hàm cho KV.ts";
+import { kvGet, kvSet, tạoKeyKV } from "./Hàm cho KV.ts";
 
 export interface VậtThểId {
   idGợiÝ: string;
@@ -37,13 +37,7 @@ export async function xácĐịnhIdTrênLocal(
     };
   }
 
-  let tổngSốĐangCó = 0;
-  const sốLượngĐangCó = await kvGetSốLượngDữLiệu(viếtHoa(tênDanhSách) as TênBảng) as SốLượngBàiĐăng | SốLượngNơiĐăng | null;
-  if (sốLượngĐangCó) {
-    console.log("🚀 ~ Object.values(sốLượngĐangCó):", Object.values(sốLượngĐangCó));
-    tổngSốĐangCó = Object.values(sốLượngĐangCó).reduce((sum, i) => sum + i, 0);
-  }
-  console.log(`Tổng số ${tênDanhSách} đang có:`, tổngSốĐangCó);
+  const tổngSốĐangCó = await lấyTổngSốBàiĐăngHoặcNơiĐăngĐangCó(tênDanhSách);
   if (tổngSốĐangCó) {
     return {
       idGợiÝ: đổiTừCơSố10SangCơSố64(tổngSốĐangCó + 1),
@@ -66,6 +60,17 @@ export type SốLượngBàiĐăng = Record<PhươngThứcTạoBàiĐăng, numbe
 export type SốLượngNơiĐăng = Record<PhươngThứcTạoNơiĐăng, number>;
 
 type KeyLấySốLượngBàiĐăngHoặcNơiĐăng = ["Bài đăng", PhươngThứcTạoBàiĐăng] | ["Nơi đăng", PhươngThứcTạoNơiĐăng];
+
+export async function lấyTổngSốBàiĐăngHoặcNơiĐăngĐangCó(tênDanhSách: TênDanhSách) {
+  let tổngSốĐangCó = 0;
+  const sốLượngĐangCó = await lấySốLượngDữLiệu(tênDanhSách) as SốLượngBàiĐăng | SốLượngNơiĐăng | null;
+  if (sốLượngĐangCó) {
+    console.log("🚀 ~ Object.values(sốLượngĐangCó):", Object.values(sốLượngĐangCó));
+    tổngSốĐangCó = Object.values(sốLượngĐangCó).reduce((sum, i) => sum + i, 0);
+  }
+  console.log(`Tổng số ${tênDanhSách} đang có:`, tổngSốĐangCó);
+  return tổngSốĐangCó;
+}
 
 export async function cậpNhậtSốLượngBàiĐăng(value: SốLượngBàiĐăng | PhươngThứcTạoBàiĐăng, delta: number = 1) {
   const key = ["Số lượng dữ liệu", "Bài đăng"];
@@ -95,4 +100,16 @@ export async function cậpNhậtSốLượngĐuôiRútGọn(delta: number = 1) 
   const key = ["Số lượng dữ liệu", "Đuôi rút gọn"];
   const sốLượngĐangCó = (await kvGet(key, "cậpNhậtSốLượng")).value as number | null || 0;
   await kvSet(key, sốLượngĐangCó + delta, "cậpNhậtSốLượng");
+}
+
+export async function lấySốLượngDữLiệu(input: TênDanhSách | "Đuôi rút gọn", caller: string | undefined = undefined) {
+  const tênBảng = viếtHoa(input);
+  const value = (await kvGet(["Số lượng dữ liệu", tênBảng], caller)).value;
+
+  switch (input) {
+    case "Đuôi rút gọn":
+      return value as number | null;
+    default:
+      return value as SốLượngBàiĐăng | SốLượngNơiĐăng | null;
+  }
 }

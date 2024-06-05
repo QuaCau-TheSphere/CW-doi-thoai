@@ -1,8 +1,10 @@
 import { useEffect, useState } from "preact/hooks";
 import { NơiĐăngCóCácLựaChọnVịTríChưaCóId } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { queryNơiĐăngSignal } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
-import { TênNơiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
+import { ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo, TênNơiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
 import { tạoNơiĐăngTừURL } from "../../Code hỗ trợ cho client/Tạo bài đăng hoặc nơi đăng từ URL.ts";
+import * as linkify from "npm:linkifyjs";
+import { tạoNơiĐăngCóCácLựaChọnVịTrí } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 
 /** Các dữ liệu người dùng nhập trong form */
 export default function ModalNơiĐăng() {
@@ -12,30 +14,45 @@ export default function ModalNơiĐăng() {
    * Các state dưới đây cần để kiểu là string vì chúng là do người dùng nhập vào
    * Cái nào không có undefined nghĩa là cái đó bắt buộc phải có
    */
-  const [url, setUrl] = useState(queryNơiĐăngSignal.value);
+  const [urlHoặcEmail, setUrlHoặcEmail] = useState(queryNơiĐăngSignal.value);
   const [tênNơiĐăng, setTênNơiĐăng] = useState("");
   const [slug, setSlug] = useState<string | undefined>();
-  const [môTảNơiĐăng, setMôTảNơiĐăng] = useState<string | undefined>();
+  const [môTảNơiĐăng, setMôTảNơiĐăng] = useState<string | undefined | null>();
   const [lĩnhVực, setLĩnhVực] = useState<string | undefined>();
   const [đơnVịQuảnLý, setĐơnVịQuảnLý] = useState<string | undefined>();
 
   useEffect(() => {
-    setUrl(url);
-    async function lấyThôngTinTừUrl() {
-      try {
-        new URL(url);
-      } catch {
-        return;
+    setUrlHoặcEmail(urlHoặcEmail);
+    async function tạoNơiĐăngTừUrlHoặcEmail() {
+      const linkĐầuTiên = urlHoặcEmail ? linkify.find(urlHoặcEmail)[0] : undefined;
+      if (linkĐầuTiên === undefined) return;
+
+      const type = linkĐầuTiên.type;
+      if (type === "url" && !linkĐầuTiên?.value.startsWith("mailto:")) {
+        const url = linkĐầuTiên.href;
+        const corsProxyUrl = `${origin}/api/cors-proxy/${url}`;
+        const html = await (await fetch(corsProxyUrl)).text();
+        setNơiĐăng({
+          ...await tạoNơiĐăngTừURL(url, undefined, html),
+          "Phương thức tạo": "Người dùng nhập tay trên web",
+        });
+      } else if (type === "email" || linkĐầuTiên?.value.startsWith("mailto:")) {
+        const email = linkĐầuTiên.value.replace("mailto:", "");
+        const thôngTinNơiĐăngChưaCóId = {
+          "Tên nền tảng": "Email",
+          "Loại nền tảng": "Email",
+          "Tên nơi đăng": [email],
+          "Loại nơi đăng": ["Email"],
+          URL: linkĐầuTiên.href,
+        } satisfies ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo;
+        setNơiĐăng({
+          ...tạoNơiĐăngCóCácLựaChọnVịTrí(thôngTinNơiĐăngChưaCóId),
+          "Phương thức tạo": "Người dùng nhập tay trên web",
+        });
       }
-      const corsProxyUrl = `${origin}/api/cors-proxy/${url}`;
-      const html = await (await fetch(corsProxyUrl)).text();
-      setNơiĐăng({
-        ...await tạoNơiĐăngTừURL(url, undefined, html),
-        "Phương thức tạo": "Người dùng nhập tay trên web",
-      });
     }
-    lấyThôngTinTừUrl();
-  }, [url]);
+    tạoNơiĐăngTừUrlHoặcEmail();
+  }, [urlHoặcEmail]);
 
   useEffect(() => {
     setNơiĐăng({
@@ -47,33 +64,35 @@ export default function ModalNơiĐăng() {
   }, [tênNơiĐăng, slug, môTảNơiĐăng]);
 
   useEffect(() => {
-    const {
-      URL: url,
-      "Tên nơi đăng": tênNơiĐăng,
-      Slug: slug,
-      "Mô tả nơi đăng": môTảNơiĐăng,
-    } = nơiĐăng || {};
-    setUrl(url?.toString() || "");
-    setTênNơiĐăng(tênNơiĐăng?.join(", ") || "");
-    setSlug(slug);
-    setMôTảNơiĐăng(môTảNơiĐăng || undefined);
+    if (nơiĐăng) {
+      const {
+        URL: urlHoặcEmail,
+        "Tên nơi đăng": tênNơiĐăng,
+        Slug: slug,
+        "Mô tả nơi đăng": môTảNơiĐăng,
+      } = nơiĐăng;
+      setUrlHoặcEmail(urlHoặcEmail?.toString());
+      setTênNơiĐăng(tênNơiĐăng?.join(", "));
+      setSlug(slug);
+      setMôTảNơiĐăng(môTảNơiĐăng);
+    }
   }, [nơiĐăng]);
 
   return (
     <>
       <label class="form-control w-full max-w-xs">
         <div class="label">
-          <span class="label-text font-bold">URL</span>
+          <span class="label-text font-bold">Liên kết</span>
         </div>
         <input
           name="URL"
-          style="width:100%"
+          type="text"
           class="input input-bordered w-full max-w-xs"
-          type="url"
           required
           id="URL"
-          value={url}
-          onInput={(e: InputEvent) => setUrl((e.target as HTMLTextAreaElement).value)}
+          value={urlHoặcEmail}
+          placeholder="URL hoặc email"
+          onInput={(e: InputEvent) => setUrlHoặcEmail((e.target as HTMLTextAreaElement).value)}
         />
       </label>
 
@@ -101,7 +120,6 @@ export default function ModalNơiĐăng() {
           name="Slug"
           type="text"
           class="input input-bordered w-full max-w-xs"
-          required
           id="slug"
           value={slug}
           onInput={(e: InputEvent) => setSlug((e.target as HTMLTextAreaElement).value)}

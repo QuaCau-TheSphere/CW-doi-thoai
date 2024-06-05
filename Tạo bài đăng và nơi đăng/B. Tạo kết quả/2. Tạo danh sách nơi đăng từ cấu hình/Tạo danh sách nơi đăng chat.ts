@@ -10,7 +10,7 @@ import {
   TênThreadHoặcTopic,
 } from "../../Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
 import CấuHìnhNơiĐăng from "../../Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
-import { táchUrlTrongChuỗi } from "../../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { táchUrlHoặcEmailTrongChuỗi } from "../../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 
 function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
   const cấuHìnhNơiĐăngChat = cấuHìnhNơiĐăng.Chat;
@@ -25,11 +25,11 @@ function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: Cấu
     for (const MáyChủ of danhSáchMáyChủ) {
       for (const [tênMáyChủUrl, cấuHìnhMáyChủ] of Object.entries(MáyChủ) as [TênMáyChủ, CấuHìnhMáyChủ | null][]) {
         if (!cấuHìnhMáyChủ) continue;
-        const [tênMáyChủ, urlMáyChủ] = táchUrlTrongChuỗi(tênMáyChủUrl);
+        const [tênMáyChủ, urlMáyChủ] = táchUrlHoặcEmailTrongChuỗi(tênMáyChủUrl);
         for (const cấuHìnhKênh of cấuHìnhMáyChủ) {
           /** Trường hợp người dùng chỉ khai báo kênh chứ không khai báo thread hoặc topic nhỏ hơn, và không để dấu `:` đằng sau tên kênh */
           if (typeof cấuHìnhKênh === "string") {
-            const [kênh, urlKênh] = táchUrlTrongChuỗi(cấuHìnhKênh);
+            const [kênh, urlKênh] = táchUrlHoặcEmailTrongChuỗi(cấuHìnhKênh);
             danhSáchThôngTinNơiĐăng.push({
               "Tên nơi đăng": [tênMáyChủ, kênh],
               "Loại nơi đăng": loạiNơiĐăng,
@@ -41,7 +41,7 @@ function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: Cấu
           } else {
             for (const [kênhUrl, danhSáchThreadHoặcTopic] of Object.entries(cấuHìnhKênh)) {
               /** Trường hợp người dùng chỉ khai báo kênh chứ không khai báo thread hoặc topic nhỏ hơn, nhưng vẫn để dấu `:` đằng sau tên kênh */
-              const [kênh, urlKênh] = táchUrlTrongChuỗi(kênhUrl);
+              const [kênh, urlKênh] = táchUrlHoặcEmailTrongChuỗi(kênhUrl);
               if (danhSáchThreadHoặcTopic === null) {
                 danhSáchThôngTinNơiĐăng.push({
                   "Tên nơi đăng": [tênMáyChủ, kênh],
@@ -55,7 +55,7 @@ function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: Cấu
                 /** Trường hợp kênh có thread hoặc topic nhỏ hơn*/
               } else {
                 for (const threadHoặcTopicUrl of danhSáchThreadHoặcTopic) {
-                  const [threadHoặcTopic, urlThreadHoặcTopic] = táchUrlTrongChuỗi(threadHoặcTopicUrl);
+                  const [threadHoặcTopic, urlThreadHoặcTopic] = táchUrlHoặcEmailTrongChuỗi(threadHoặcTopicUrl);
                   danhSáchThôngTinNơiĐăng.push({
                     "Tên nơi đăng": [tênMáyChủ, kênh, threadHoặcTopic],
                     "Loại nơi đăng": lấyLoạiNơiĐăng(tênNềnTảng, threadHoặcTopic),
@@ -109,7 +109,7 @@ function lấyNơiĐăngTừNềnTảngChatKhác(
     ) continue;
 
     for (const tênNơiĐăngUrl of danhSáchTênNơiĐăng) {
-      const [tênNơiĐăng, url] = táchUrlTrongChuỗi(tênNơiĐăngUrl);
+      const [tênNơiĐăng, url] = táchUrlHoặcEmailTrongChuỗi(tênNơiĐăngUrl);
       danhSáchThôngTinNơiĐăng.push({
         "Tên nơi đăng": [tênNơiĐăng],
         "Loại nơi đăng": [loạiNơiĐăng],

@@ -2,6 +2,7 @@ import { useEffect, useState } from "preact/hooks";
 import { BàiĐăngChưaCóId } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import { queryBàiĐăngSignal } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
 import { tạoBàiĐăngTừURL } from "../../Code hỗ trợ cho client/Tạo bài đăng hoặc nơi đăng từ URL.ts";
+import * as linkify from "npm:linkifyjs";
 
 /** Các dữ liệu người dùng nhập trong form */
 export default function ModalBàiĐăng() {
@@ -19,20 +20,22 @@ export default function ModalBàiĐăng() {
 
   useEffect(() => {
     setUrl(url);
-    async function lấyThôngTinTừUrl() {
-      try {
-        new URL(url);
-      } catch {
-        return;
+    async function tạoBàiĐăngTừUrl() {
+      const linkĐầuTiên = url ? linkify.find(url)[0] : undefined;
+      if (linkĐầuTiên === undefined) return;
+
+      const type = linkĐầuTiên.type;
+      if (type === "url" && !linkĐầuTiên?.value.startsWith("mailto:")) {
+        const url = linkĐầuTiên.href;
+        const corsProxyUrl = `${origin}/api/cors-proxy/${url}`;
+        const html = await (await fetch(corsProxyUrl)).text();
+        setBàiĐăng({
+          ...await tạoBàiĐăngTừURL(url, html),
+          "Phương thức tạo": "Người dùng nhập tay trên web",
+        });
       }
-      const corsProxyUrl = `${origin}/api/cors-proxy/${url}`;
-      const html = await (await fetch(corsProxyUrl)).text();
-      setBàiĐăng({
-        ...await tạoBàiĐăngTừURL(url, html),
-        "Phương thức tạo": "Người dùng nhập tay trên web",
-      });
     }
-    lấyThôngTinTừUrl();
+    tạoBàiĐăngTừUrl();
   }, [url]);
 
   useEffect(() => {

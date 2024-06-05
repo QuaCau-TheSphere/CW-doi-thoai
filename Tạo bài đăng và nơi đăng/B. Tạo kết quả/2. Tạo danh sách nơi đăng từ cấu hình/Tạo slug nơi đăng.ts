@@ -1,6 +1,6 @@
 import { ThôngTinNơiĐăngChưaCóId, ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo } from "../../Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
 import { CấuHìnhMãNơiĐăng } from "../../Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
-import { kiểuKebab, táchUrlTrongChuỗi } from "../../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { kiểuKebab, táchUrlHoặcEmailTrongChuỗi } from "../../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 
 export type TừĐiểnSlugNơiĐăng = Map<string, string>;
 
@@ -11,11 +11,11 @@ export function tạoTừĐiểnSlugNơiĐăng(cấuHìnhMãNơiĐăng: CấuHì
   if (!cấuHìnhMãNơiĐăng) return từĐiển;
   for (const [mã, nơiĐăngThànhPhần] of Object.entries(cấuHìnhMãNơiĐăng)) {
     if (typeof nơiĐăngThànhPhần === "string") {
-      const [tênNơiĐăngThànhPhần, url] = táchUrlTrongChuỗi(nơiĐăngThànhPhần);
+      const [tênNơiĐăngThànhPhần, url] = táchUrlHoặcEmailTrongChuỗi(nơiĐăngThànhPhần);
       từĐiển.set(tênNơiĐăngThànhPhần.toLowerCase(), mã);
     } else {
       for (const dòng of nơiĐăngThànhPhần) {
-        const [tênNơiĐăngThànhPhần, url] = táchUrlTrongChuỗi(dòng);
+        const [tênNơiĐăngThànhPhần, url] = táchUrlHoặcEmailTrongChuỗi(dòng);
         từĐiển.set(tênNơiĐăngThànhPhần.toLowerCase(), mã);
       }
     }

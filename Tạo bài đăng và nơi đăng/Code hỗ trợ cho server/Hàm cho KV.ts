@@ -1,4 +1,4 @@
-import { tạoTênNơiĐăngString } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { tạoTênNơiĐăngString, viếtHoa } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 import { TênDanhSách } from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
 import { tạoDanhSáchBàiĐăng } from "../B. Tạo kết quả/1. Tạo danh sách tất cả bài đăng/mod.ts";
 import { tạoDanhSáchNơiĐăngTừTấtCảCấuHình } from "../B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình/mod.ts";
@@ -73,10 +73,6 @@ export async function kvDelete(key: Deno.KvKey) {
   console.log("key:", key);
   await kv.delete(key);
   // increaseWriteUnit(value);
-}
-
-export async function kvGetSốLượngDữLiệu(tênBảng: TênBảng, caller: string | undefined = undefined) {
-  return (await kvGet(["Số lượng dữ liệu", tênBảng], caller)).value as SốLượngBàiĐăng | SốLượngNơiĐăng | number | null;
 }
 
 export function tạoKeyKV(tênDanhSách: TênDanhSách, dữLiệu: BàiĐăng | BàiĐăngChưaCóId | ThôngTinNơiĐăng | ThôngTinNơiĐăngChưaCóId): Deno.KvKey {

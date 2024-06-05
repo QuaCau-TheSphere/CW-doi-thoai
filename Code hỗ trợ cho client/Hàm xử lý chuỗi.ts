@@ -81,7 +81,7 @@ export function xửLýPunycode(encodedUrl: UrlString | undefined, đểDấuCá
   return decodedString.replaceAll(" ", "%20");
 }
 
-export function táchUrlTrongChuỗi(chuỗiCóThểCóUrl: string): [string, string | undefined] {
+export function táchUrlHoặcEmailTrongChuỗi(chuỗiCóThểCóUrl: string): [string, string | undefined] {
   if (!chuỗiCóThểCóUrl) return ["", ""];
   let chuỗiKhôngCóUrl = chuỗiCóThểCóUrl;
   let url = undefined;

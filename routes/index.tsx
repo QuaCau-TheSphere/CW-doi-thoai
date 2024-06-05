@@ -2,10 +2,11 @@ import { NơiĐăngCóCácLựaChọnVịTrí } from "../Tạo bài đăng và n
 import { BàiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import { lấyCấuHìnhChung, đọcJSON } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
 import Main, { DanhSáchBàiĐăngVàNơiĐăng } from "../islands/Main.tsx";
-import { kvGetSốLượngDữLiệu, kvList } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho KV.ts";
+import { kvList } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho KV.ts";
 import {
   cậpNhậtSốLượngBàiĐăng,
   cậpNhậtSốLượngNơiĐăng,
+  lấySốLượngDữLiệu,
   SốLượngBàiĐăng,
   SốLượngNơiĐăng,
 } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho id và số lượng dữ liệu.ts";
@@ -22,7 +23,7 @@ async function cậpNhậtSốLượngDữLiệu({ dsBàiĐăng, dsNơiĐăng }:
   console.log("Số lượng nơi đăng:", sốLượngNơiĐăng);
   await cậpNhậtSốLượngNơiĐăng(sốLượngNơiĐăng);
 
-  const sốLượngĐuôiRútGọn = await kvGetSốLượngDữLiệu("Đuôi rút gọn");
+  const sốLượngĐuôiRútGọn = await lấySốLượngDữLiệu("Đuôi rút gọn");
   console.log("Số lượng đuôi rút gọn:", sốLượngĐuôiRútGọn);
 }
 
