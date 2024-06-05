@@ -15,11 +15,12 @@ await tạoBàiĐăng();
 console.log("Số read unit", readUnitSignal.value);
 console.log("Số write unit", writeUnitSignal.value);
 
-// debugger;
+debugger;
 
 async function chạyTrênDeployChứKhôngChạyTrênLocal() {
   Deno.env.set("DENO_KV_ACCESS_TOKEN", env["DENO_KV_ACCESS_TOKEN"]);
-  kvSignal.value = await Deno.openKv(env["API"]);
+  const api = `https://api.deno.com/databases/${env["KV_UUID"]}/connect`;
+  kvSignal.value = await Deno.openKv(api);
 }
 async function thayDữLiệuTrênLocalBằngDữLiệuTrênDeploy() {
   console.log("thayDữLiệuTrênLocalBằngDữLiệuTrênDeploy");

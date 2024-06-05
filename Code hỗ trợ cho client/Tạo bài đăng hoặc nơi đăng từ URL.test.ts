@@ -1,0 +1,57 @@
+import _ from "npm:lodash";
+import { assertEquals } from "$std/assert/mod.ts";
+import { BàiĐăngChưaCóIdVàPhươngThứTạo } from "../T%E1%BA%A1o%20b%C3%A0i%20%C4%91%C4%83ng%20v%C3%A0%20n%C6%A1i%20%C4%91%C4%83ng/Code%20h%E1%BB%97%20tr%E1%BB%A3%20cho%20server/H%C3%A0m%20v%C3%A0%20ki%E1%BB%83u%20cho%20vault,%20d%E1%BB%B1%20%C3%A1n,%20b%C3%A0i%20%C4%91%C4%83ng.ts";
+import { tạoBàiĐăngTừURL } from "./T%E1%BA%A1o%20b%C3%A0i%20%C4%91%C4%83ng%20ho%E1%BA%B7c%20n%C6%A1i%20%C4%91%C4%83ng%20t%E1%BB%AB%20URL.ts";
+import { assertObjectMatch } from "https://deno.land/std@0.216.0/assert/assert_object_match.ts";
+import punycode from "npm:punycode";
+
+const test1 = [
+  "https://xn--qucu-hr5aza.cc",
+  {
+    "Tiêu đề": "Quả Cầu – Lan tỏa và bảo vệ các tinh thần phản tư, tò mò, dũng cảm, trân trọng người khác",
+    URL: "https://Quảcầu.cc",
+    "Ngày cập nhật": undefined,
+    "Ngày tạo": undefined,
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Dự án Quả Cầu được lập ra để lan tỏa tinh thần:",
+    },
+    "Slug": "quảcầu",
+    "Tác giả": undefined,
+  } satisfies BàiĐăngChưaCóIdVàPhươngThứTạo,
+];
+const test2 = [
+  "https://lậptrình.xn--qucu-hr5aza.cc",
+  {
+    "Tiêu đề": "Nơi này là nơi nào - Tiếp thị số, xử lý dữ liệu và lập trình",
+    URL: "https://xn--lptrnh-zva6402d.xn--qucu-hr5aza.cc/",
+    "Ngày cập nhật": undefined,
+    "Ngày tạo": undefined,
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng":
+        "Đây là vault bổ sung cho Obsidian, quản lý dự án và công cụ nghĩ, tập trung vào việc xử lý dữ liệu và lập trình. Nó được sinh ra trong quá trình bọn mình viết Trấn Kỳ, và cũng được sử dụng như tài liệu hướng dẫn cho nó. Nếu bạn muốn tìm một nguồn tài liệu để học một cách bài bản thì không nên vào đây. Nhưng nếu mục tiêu của bạn là làm xong những công việc khác, mà để làm được chúng trôi chảy bạn phải học lập trình, và bạn muốn tìm những bài viết thật ngắn nhưng đủ để hiểu khái niệm để còn làm việc được tiếp (như khi bọn mình cần phải học để còn viết xong Trấn Kỳ), thì có thể một số thứ trong đây sẽ hữu ích cho bạn.",
+    },
+    "Slug": "lậptrình.quảcầu",
+    "Tác giả": undefined,
+  } satisfies BàiĐăngChưaCóIdVàPhươngThứTạo,
+];
+const test3 = [
+  "https://doi-thoai.deno.dev",
+  {
+    "Tiêu đề": "đối ⊷ thoại",
+    URL: "https://doi-thoai.deno.dev/",
+    "Ngày cập nhật": undefined,
+    "Ngày tạo": undefined,
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Nhanh chóng tìm lại các cuộc thảo luận đã từng có trước đây và nắm được mức độ quan tâm của các bên liên quan",
+    },
+    "Slug": "doi-thoai",
+    "Tác giả": undefined,
+  } satisfies BàiĐăngChưaCóIdVàPhươngThứTạo,
+];
+
+assertObjectMatch(await tạoBàiĐăngTừURL(test1[0]), test1[1]);
+assertObjectMatch(await tạoBàiĐăngTừURL(test2[0]), test2[1]);
+// assertObjectMatch(await tạoBàiĐăngTừURL(test3[0]), test3[1]);
+
+console.log("Không bị lỗi");
+debugger;

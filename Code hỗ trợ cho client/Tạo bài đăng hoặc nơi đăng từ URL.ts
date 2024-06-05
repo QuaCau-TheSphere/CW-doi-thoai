@@ -21,6 +21,8 @@ import {
   TừĐiểnSlugNơiĐăng,
 } from "../Tạo bài đăng và nơi đăng/B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình/Tạo slug nơi đăng.ts";
 import { DOMParser, HTMLDocument } from "jsr:@b-fuze/deno-dom";
+import { parse } from "npm:tldts";
+import punycode from "npm:punycode";
 type MetaTags = {
   /**
    * Defined from HTML specification
@@ -125,13 +127,6 @@ function lấyTitle({ meta, document }: MetaTagUrlVàDocument): string {
   return titleSplit.join(" | ") || title;
 }
 
-function lấyTênMiền(hostname: string) {
-  const TLDs = new RegExp(
-    /\.(com|net|org|biz|ltd|plc|edu|mil|asn|adm|adv|arq|art|bio|cng|cnt|ecn|eng|esp|etc|eti|fot|fst|g12|ind|inf|jor|lel|med|nom|ntr|odo|ppg|pro|psc|psi|rec|slg|tmp|tur|vet|zlg|asso|presse|k12|gov|muni|ernet|res|store|firm|arts|info|mobi|maori|iwi|travel|asia|web|tel)(\.[a-z]{2,3})?$|(\.[^\.]{2,3})(\.[^\.]{2,3})$|(\.[^\.]{2})$/,
-  );
-  return hostname.replace(TLDs, "").split(".").pop();
-}
-
 function lấyMôTả({ meta, document }: MetaTagUrlVàDocument): string | null | undefined {
   return meta?.description || document.querySelector("p")?.textContent || meta.og?.description;
 }
@@ -167,6 +162,13 @@ function tạoSlug({ hostname, pathname }: URL) {
     return slugWebsiteCóSẵn ? `${tênMiền}-${slugWebsiteCóSẵn}` : tênMiền;
   }
   return undefined;
+}
+
+function lấyTênMiền(hostname: string) {
+  const { domainWithoutSuffix, subdomain } = parse(punycode.toUnicode(hostname));
+  const platforms = ["deno", "wordpress", "medium", "tumplr", "wix", "blogger", "substack"];
+  if (platforms.includes(domainWithoutSuffix)) return subdomain;
+  return domainWithoutSuffix;
 }
 
 /**
