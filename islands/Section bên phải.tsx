@@ -1,4 +1,4 @@
-import { cóRútGọn, vậtThểTiếpThịĐượcTạo } from "./Signals tổng.ts";
+import { cóRútGọn, vậtThểTiếpThịSignal } from "./Signals tổng.ts";
 import { ThamSốUTM } from "../Code hỗ trợ cho client/Tạo liên kết UTM/Kiểu cho tham số UTM.ts";
 import { VậtThểKhác } from "../components/Thông tin vật thể tiếp thị.tsx";
 import KhungThôngTinKhiKhôngCóKếtQuả from "../components/KhungThôngTinKhiKhôngCóKếtQuả.tsx";
@@ -8,7 +8,7 @@ import { xửLýPunycode } from "../Code hỗ trợ cho client/Hàm và kiểu c
 export default function SectionBênPhải({ textTrangChủ }: { textTrangChủ: string }) {
   return (
     <section id="section-bên-phải" class="basis-1/2 p-5 md:p-10">
-      {vậtThểTiếpThịĐượcTạo.value ? <KhungThôngTinKhiCóKếtQuả /> : <KhungThôngTinKhiKhôngCóKếtQuả textTrangChủ={textTrangChủ} />}
+      {vậtThểTiếpThịSignal.value ? <KhungThôngTinKhiCóKếtQuả /> : <KhungThôngTinKhiKhôngCóKếtQuả textTrangChủ={textTrangChủ} />}
     </section>
   );
 }
@@ -82,12 +82,12 @@ Nếu sau này mình nghĩ ra được thêm điều gì mới thì sẽ cập n
 }
 
 function KhungThôngTinKhiCóKếtQuả() {
-  if (!vậtThểTiếpThịĐượcTạo.value) return <></>;
+  if (!vậtThểTiếpThịSignal.value) return <></>;
 
   return (
     <article id="khung-bên-phải-khi-có-kết-quả" class="prose">
-      <KếtQuảSaoChép vậtThểTiếpThị={vậtThểTiếpThịĐượcTạo.value} />
-      <DetailThamSốUTM thamSốUTM={vậtThểTiếpThịĐượcTạo.value["Tham số UTM"]} />
+      <KếtQuảSaoChép vậtThểTiếpThị={vậtThểTiếpThịSignal.value} />
+      <DetailThamSốUTM thamSốUTM={vậtThểTiếpThịSignal.value["Tham số UTM"]} />
     </article>
   );
 }

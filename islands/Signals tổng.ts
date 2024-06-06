@@ -11,15 +11,15 @@ export const cấuHìnhChungSignal = signal<CấuHìnhChung>({});
 export const flexSearchBàiĐăngSignal = signal<FlexSearch.Document<BàiĐăng>>([]);
 export const flexSearchNơiĐăngSignal = signal<FlexSearch.Document<NơiĐăngCóCácLựaChọnVịTrí>>([]);
 
-export const bàiĐăngĐượcChọn = signal<BàiĐăng | undefined>(undefined);
-export const nơiĐăngCóCácLựaChọnVịTrí = signal<NơiĐăngCóCácLựaChọnVịTrí | undefined>(undefined);
-export const nơiĐăngCóMộtVịTríCụThể = signal<NơiĐăngCóMộtVịTríCụThể | undefined>(undefined);
-export const bốiCảnh = signal<string | undefined>(undefined);
+export const bàiĐăngSignal = signal<BàiĐăng | undefined>(undefined);
+export const nơiĐăngCóCácLựaChọnVịTríSignal = signal<NơiĐăngCóCácLựaChọnVịTrí | undefined>(undefined);
+export const nơiĐăngCóMộtVịTríCụThểSignal = signal<NơiĐăngCóMộtVịTríCụThể | undefined>(undefined);
+export const bốiCảnhSignal = signal<string | undefined>(undefined);
 export const element = signal<ElementDùngTab>("bài đăng");
 export const cóRútGọn = signal<boolean>(true);
 
 export const vịTríString = signal<string | undefined>(undefined);
-export const vậtThểTiếpThịĐượcTạo = signal<VậtThểTiếpThị | undefined>(undefined);
+export const vậtThểTiếpThịSignal = signal<VậtThểTiếpThị | undefined | void>(undefined);
 export const lầnĐăngGầnNhất = signal<number | undefined>(undefined);
 export const lầnĐăngHiệnTại = computed<number>(() => {
   const num = lầnĐăngGầnNhất.value;
@@ -39,8 +39,8 @@ export const tênNút = computed<string>(() => {
 });
 
 effect(() => {
-  const bàiĐăng = bàiĐăngĐượcChọn.value;
-  const nơiĐăng = nơiĐăngCóMộtVịTríCụThể.value;
+  const bàiĐăng = bàiĐăngSignal.value;
+  const nơiĐăng = nơiĐăngCóMộtVịTríCụThểSignal.value;
 
   if (!bàiĐăng || !nơiĐăng) return;
   tìmVậtThểTiếpThịĐãCó(bàiĐăng, nơiĐăng).catch(console.error);

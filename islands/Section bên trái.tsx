@@ -1,6 +1,7 @@
 import DivTìmBàiĐăngHoặcNơiĐăng from "./Tìm bài đăng hoặc nơi đăng/Div tìm bài đăng hoặc nơi đăng.tsx";
-import { bốiCảnh, cóRútGọn, element } from "./Signals tổng.ts";
-import { NútTạoLiênKết } from "./Nút tạo liên kết.tsx";
+import { bốiCảnhSignal, cóRútGọn, element } from "./Signals tổng.ts";
+import { bấmNútTạoLiênKết, NútTạoLiênKết } from "./Nút tạo liên kết.tsx";
+import { tạoVậtThểTiếpThị } from "../Code hỗ trợ cho client/Hàm và kiểu cho vật thể tiếp thị.ts";
 
 function KhungNhậpBốiCảnh() {
   return (
@@ -11,8 +12,15 @@ function KhungNhậpBốiCảnh() {
         class="grow bg-base-100"
         id="khung-nhập-bối-cảnh"
         placeholder="Lý do khiến bài đăng trở nên hữu ích tại nơi đăng (không bắt buộc)"
-        onInput={(e) => bốiCảnh.value = (e.target as HTMLInputElement).value}
+        onInput={(e) => bốiCảnhSignal.value = (e.target as HTMLInputElement).value}
         onFocus={() => element.value = "bối cảnh"}
+        onKeyDown={async (e: KeyboardEvent) => {
+          if (!bốiCảnhSignal.value && e.key === "Enter") {
+            e.preventDefault();
+            const vậtThểTiếpThị = tạoVậtThểTiếpThị();
+            await bấmNútTạoLiênKết(vậtThểTiếpThị);
+          }
+        }}
       />
     </label>
   );

@@ -3,7 +3,7 @@ import {
   NơiĐăngCóMộtVịTríCụThể,
   VịTrí,
 } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
-import { nơiĐăngCóCácLựaChọnVịTrí, nơiĐăngCóMộtVịTríCụThể, vịTríString } from "../Signals tổng.ts";
+import { nơiĐăngCóCácLựaChọnVịTríSignal, nơiĐăngCóMộtVịTríCụThểSignal, vịTríString } from "../Signals tổng.ts";
 import { tạoLoạiNơiĐăngString, tạoTênNơiĐăngString, tạoVịTríString } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 import { làCùngNơiĐăng, ThôngTinNơiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
 import { xửLýPunycode } from "../../Code hỗ trợ cho client/Hàm và kiểu cho URL.ts";
@@ -38,10 +38,10 @@ function tạoDanhSáchLựaChọnVịTrí(nơiĐăng: NơiĐăngCóCácLựaCh�
 
       if (i === 0) {
         danhSáchLựaChọn.push(<option selected value={value}>{text}</option>);
-        const nơiĐăngĐượcChọnTrướcĐó = nơiĐăngCóMộtVịTríCụThể.value as ThôngTinNơiĐăng;
+        const nơiĐăngĐượcChọnTrướcĐó = nơiĐăngCóMộtVịTríCụThểSignal.value as ThôngTinNơiĐăng;
         if (!làCùngNơiĐăng(nơiĐăng, nơiĐăngĐượcChọnTrướcĐó)) {
           vịTríString.value = value;
-          nơiĐăngCóMộtVịTríCụThể.value = tạoNơiĐăngCóMộtVịTríCụThể(value, nơiĐăng);
+          nơiĐăngCóMộtVịTríCụThểSignal.value = tạoNơiĐăngCóMộtVịTríCụThể(value, nơiĐăng);
         }
       } else {
         danhSáchLựaChọn.push(<option value={value}>{text}</option>);
@@ -50,7 +50,7 @@ function tạoDanhSáchLựaChọnVịTrí(nơiĐăng: NơiĐăngCóCácLựaCh�
   } else {
     const vịTríMặcĐịnh = "Chưa cấu hình";
     vịTríString.value = vịTríMặcĐịnh;
-    nơiĐăngCóMộtVịTríCụThể.value = tạoNơiĐăngCóMộtVịTríCụThể(vịTríMặcĐịnh, nơiĐăng);
+    nơiĐăngCóMộtVịTríCụThểSignal.value = tạoNơiĐăngCóMộtVịTríCụThể(vịTríMặcĐịnh, nơiĐăng);
     danhSáchLựaChọn.push(<option selected>{vịTríMặcĐịnh}</option>);
   }
 
@@ -60,11 +60,11 @@ function tạoDanhSáchLựaChọnVịTrí(nơiĐăng: NơiĐăngCóCácLựaCh�
 function handleChange(vịTríStringĐượcChọn: string, nơiĐăng: NơiĐăngCóCácLựaChọnVịTrí) {
   vịTríString.value = vịTríStringĐượcChọn;
   console.info("Vị trí được chọn:", vịTríStringĐượcChọn);
-  nơiĐăngCóMộtVịTríCụThể.value = tạoNơiĐăngCóMộtVịTríCụThể(vịTríStringĐượcChọn, nơiĐăng);
+  nơiĐăngCóMộtVịTríCụThểSignal.value = tạoNơiĐăngCóMộtVịTríCụThể(vịTríStringĐượcChọn, nơiĐăng);
 }
 
 export default function NơiĐăngĐượcChọn() {
-  const nơiĐăng = nơiĐăngCóCácLựaChọnVịTrí.value;
+  const nơiĐăng = nơiĐăngCóCácLựaChọnVịTríSignal.value;
   if (!nơiĐăng) return <></>;
   const {
     "Tên nơi đăng": tênNơiĐăng,

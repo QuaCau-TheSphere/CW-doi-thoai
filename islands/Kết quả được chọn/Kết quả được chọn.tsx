@@ -1,11 +1,11 @@
 import { lấyGiờVN } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 import { TênDanhSách } from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
-import { bàiĐăngĐượcChọn } from "../Signals tổng.ts";
+import { bàiĐăngSignal } from "../Signals tổng.ts";
 import NơiĐăngĐượcChọn from "./Nơi đăng được chọn.tsx";
 import { xửLýPunycode } from "../../Code hỗ trợ cho client/Hàm và kiểu cho URL.ts";
 
 function BàiĐăngĐượcChọn() {
-  if (!bàiĐăngĐượcChọn.value) return <></>;
+  if (!bàiĐăngSignal.value) return <></>;
   const {
     "Tiêu đề": tiêuĐề,
     "Dự án": dựÁn,
@@ -17,7 +17,7 @@ function BàiĐăngĐượcChọn() {
     Slug: slug,
     "Ngày tạo": ngàyTạo,
     "Ngày cập nhật": ngàyCậpNhật,
-  } = bàiĐăngĐượcChọn.value;
+  } = bàiĐăngSignal.value;
   const môTả = nộiDung?.["Mô tả bài đăng"] || "";
   const toànBộNộiDung = nộiDung?.["Toàn bộ nội dung"] || "";
   const địnhDạng = nộiDung?.["Định dạng nội dung"];

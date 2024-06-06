@@ -5,6 +5,7 @@ import { BàiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ
 import tạoVậtThểUTM from "./Tạo liên kết UTM/Tạo tham số UTM.ts";
 import { tạoĐuôiRútGọn } from "./Tạo liên kết UTM/Tạo đuôi rút gọn.ts";
 import { CấuHìnhViếtTắt } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
+import { bàiĐăngSignal, bốiCảnhSignal, cấuHìnhChungSignal, lầnĐăngHiệnTại, nơiĐăngCóMộtVịTríCụThểSignal } from "../islands/Signals tổng.ts";
 
 export interface VậtThểTiếpThị extends ThamSốUTM {
   "Bài đăng": BàiĐăng;
@@ -16,14 +17,21 @@ export interface VậtThểTiếpThị extends ThamSốUTM {
 }
 
 interface ThamSốChoHàmTạoVậtThểTiếpThị {
-  bàiĐăng: BàiĐăng;
-  nơiĐăng: NơiĐăngCóMộtVịTríCụThể;
+  bàiĐăng: BàiĐăng | undefined;
+  nơiĐăng: NơiĐăngCóMộtVịTríCụThể | undefined;
   lầnĐăng: number;
   cấuHìnhViếtTắt: CấuHìnhViếtTắt;
   bốiCảnh: string | undefined;
 }
 
-export function tạoVậtThểTiếpThị({ bàiĐăng, nơiĐăng, lầnĐăng, cấuHìnhViếtTắt, bốiCảnh }: ThamSốChoHàmTạoVậtThểTiếpThị): VậtThểTiếpThị {
+export function tạoVậtThểTiếpThị({ bàiĐăng, nơiĐăng, lầnĐăng, cấuHìnhViếtTắt, bốiCảnh }: ThamSốChoHàmTạoVậtThểTiếpThị = {
+  bàiĐăng: bàiĐăngSignal.value,
+  nơiĐăng: nơiĐăngCóMộtVịTríCụThểSignal.value,
+  bốiCảnh: bốiCảnhSignal.value,
+  cấuHìnhViếtTắt: cấuHìnhChungSignal.value["Viết tắt"],
+  lầnĐăng: lầnĐăngHiệnTại.value,
+}): VậtThểTiếpThị | void {
+  if (!bàiĐăng || !nơiĐăng) return;
   const thamSốUTMVàLiênKếtRútGọn = tạoVậtThểUTM(
     {
       bàiĐăng: bàiĐăng,
