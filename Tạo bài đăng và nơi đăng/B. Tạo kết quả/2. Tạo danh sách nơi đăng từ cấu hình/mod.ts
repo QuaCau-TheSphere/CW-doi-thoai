@@ -17,8 +17,7 @@ import {
 } from "../../Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { đổiTừCơSố10SangCơSố64 } from "../../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
-import { xácĐịnhIdTrênLocal } from "../../Code hỗ trợ cho server/Hàm và kiểu cho id và số lượng dữ liệu.ts";
-import { tạoSlugNơiĐăng, tạoTừĐiểnSlugNơiĐăng } from "./Tạo slug nơi đăng.ts";
+import { tạoSlugNơiĐăng, tạoTừĐiểnSlugNơiĐăng } from "../../../Code hỗ trợ cho client/Tạo slug nơi đăng.ts";
 import CấuHìnhNơiĐăng, {
   lấyCấuHìnhChung,
   ThôngTinCấuHìnhNơiĐăng,
@@ -41,7 +40,7 @@ function tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, d
           "Tên nền tảng": tênDiễnĐàn,
           "Loại nền tảng": "Diễn đàn",
           URL: url,
-          "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+          "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
         });
       }
     }
@@ -60,7 +59,7 @@ function tạoDanhSáchTậpTin(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danh
         "Tên nền tảng": địnhĐạngTậpTin,
         "Loại nền tảng": "Tập tin",
         URL: url,
-        "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+        "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
       });
     }
   }
@@ -81,7 +80,7 @@ function tạoDanhSáchSaaS(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSác
           "Tên nền tảng": tênSaaS,
           "Loại nền tảng": "SaaS",
           URL: url,
-          "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+          "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
         });
       }
     }
@@ -100,7 +99,7 @@ function tạoDanhSáchKhác(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSá
         "Tên nền tảng": loạiNơiĐăngKhác,
         "Loại nền tảng": loạiNơiĐăngKhác,
         URL: url,
-        "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+        "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
       });
     }
   }

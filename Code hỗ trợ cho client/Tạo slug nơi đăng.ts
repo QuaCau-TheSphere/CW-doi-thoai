@@ -1,7 +1,7 @@
-import { ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo } from "../../Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
-import { CấuHìnhMãNơiĐăng } from "../../Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
-import { kiểuKebab } from "../../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
-import { táchUrlHoặcEmailTrongChuỗi } from "../../../Code hỗ trợ cho client/Hàm và kiểu cho URL.ts";
+import { ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
+import { CấuHìnhMãNơiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
+import { kiểuKebab } from "./Hàm xử lý chuỗi.ts";
+import { táchUrlHoặcEmailTrongChuỗi } from "./Hàm và kiểu cho URL.ts";
 
 export type TừĐiểnSlugNơiĐăng = Map<string, string>;
 

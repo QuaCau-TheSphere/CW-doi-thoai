@@ -12,7 +12,7 @@ import {
   CấuHìnhVault,
   CấuHìnhWebsite,
   CấuHìnhẢnh,
-  MãNơiĐăng,
+  Slug,
 } from "./Kiểu cho nơi đăng.ts";
 import { IS_BROWSER } from "$fresh/runtime.ts";
 import { cấuHìnhChungSignal } from "../../islands/Signals tổng.ts";
@@ -42,9 +42,9 @@ export default interface CấuHìnhNơiĐăng {
   "Tập tin"?: CấuHìnhTậpTin | null;
   SaaS?: CấuHìnhSaaS | null;
   "Kênh forum Discord"?: string[] | null;
-  "Slug"?: CấuHìnhMãNơiĐăng;
+  "Slug"?: CấuHìnhSlug;
 }
-export type CấuHìnhMãNơiĐăng = Record<MãNơiĐăng, string | string[]>;
+export type CấuHìnhSlug = Record<Slug, string | string[]>;
 
 export async function tạoDanhSáchThôngTinCấuHìnhNơiĐăng(): Promise<ThôngTinCấuHìnhNơiĐăng[]> {
   const danhSáchCấuHình: ThôngTinCấuHìnhNơiĐăng[] = [];

@@ -15,10 +15,7 @@ import {
   NơiĐăngCóCácLựaChọnVịTríChưaCóId,
   tạoNơiĐăngCóCácLựaChọnVịTrí,
 } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
-import {
-  tạoSlugNơiĐăng,
-  TừĐiểnSlugNơiĐăng,
-} from "../Tạo bài đăng và nơi đăng/B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình/Tạo slug nơi đăng.ts";
+import { tạoSlugNơiĐăng, TừĐiểnSlugNơiĐăng } from "./Tạo slug nơi đăng.ts";
 import { lấyMetaTagVàTạoDocument, lấyMôTả, lấyTitle, lấyTênMiền, MetaTags, MetaTagUrlVàDocument, UrlString } from "./Hàm và kiểu cho URL.ts";
 
 function cóTênNềnTảngTrongHostname(hostname: string, nềnTảng: TênNềnTảng) {
@@ -47,7 +44,7 @@ function lấyĐơnVịQuảnLý(loạiNềnTảng: LoạiNềnTảng, { meta, u
   }
 }
 
-function tạoSlug({ hostname, pathname }: URL) {
+function tạoSlugBàiĐăng({ hostname, pathname }: URL) {
   const làDiễnĐàn = (danhSáchDiễnĐàn as unknown as string[]).includes(hostname);
   const làNềnTảngChat = (danhSáchNềnTảngChat as unknown as string[]).includes(hostname);
 
@@ -57,6 +54,7 @@ function tạoSlug({ hostname, pathname }: URL) {
     slugWebsiteCóSẵn = slugWebsiteCóSẵn.slice(-1) === "/" ? slugWebsiteCóSẵn.slice(0, -1) : slugWebsiteCóSẵn;
     if (slugWebsiteCóSẵn.startsWith("blog/")) slugWebsiteCóSẵn = slugWebsiteCóSẵn.replace("blog/", "");
     if (slugWebsiteCóSẵn.includes("/")) return undefined;
+    return slugWebsiteCóSẵn ? slugWebsiteCóSẵn : tênMiền;
     return slugWebsiteCóSẵn ? `${tênMiền}-${slugWebsiteCóSẵn}` : tênMiền;
   }
   return undefined;
@@ -142,7 +140,7 @@ export async function tạoBàiĐăngTừURL(urlString: UrlString, HTML: string 
     "Nội dung bài đăng": {
       "Mô tả bài đăng": lấyMôTả(metaTagUrlVàDocument),
     },
-    Slug: tạoSlug(url),
+    Slug: tạoSlugBàiĐăng(url),
     "Tác giả": meta?.author || meta.article?.author || meta.creator,
     "Ngày tạo": meta?.article?.publish_time ? new Date(meta.article.publish_time) : undefined,
     "Ngày cập nhật": meta?.article?.modified_time ? new Date(meta.article.modified_time) : undefined,

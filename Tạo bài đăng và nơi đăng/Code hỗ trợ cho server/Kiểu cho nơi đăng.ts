@@ -1,7 +1,7 @@
 /** Chỉ có những biến có từ cấu hình trong tên là dành cho cấu hình, còn lại là dành cho kết quả là vật thể nơi đăng */
+import { UrlString } from "../../Code hỗ trợ cho client/Hàm và kiểu cho URL.ts";
 import { VậtThểId } from "./Hàm và kiểu cho id và số lượng dữ liệu.ts";
 import { DanhSáchVịTríCóThểĐăng } from "./Hàm và kiểu cho vị trí.ts";
-import { UrlString } from "./Hàm và kiểu cho vault, dự án, bài đăng.ts";
 export type OneKey<K extends string, V = any> = {
   [P in K]: (
     & Record<P, V>
@@ -10,7 +10,7 @@ export type OneKey<K extends string, V = any> = {
     : never;
 }[K];
 
-export type MãNơiĐăng = string;
+export type Slug = string;
 /**
  * Loại nền tảng có kiểu là string, không phải string[]. Tên nơi đăng mới có kiểu string[]
  * @type string

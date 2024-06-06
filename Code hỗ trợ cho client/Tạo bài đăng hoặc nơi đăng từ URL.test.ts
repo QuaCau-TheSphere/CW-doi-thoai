@@ -63,7 +63,7 @@ assertObjectMatch(
       "Mô tả bài đăng":
         '"In science, if you know what you are doing, you should not be doing it.  In engineering, if you do not know what you are doing, you should not be doing it.  Of course, you seldom, if ever, see either pure state."',
     },
-    "Slug": "worrydream-LadderOfAbstraction",
+    "Slug": "LadderOfAbstraction",
     "Tác giả": undefined,
   } satisfies BàiĐăngChưaCóIdVàPhươngThứTạo,
 );
