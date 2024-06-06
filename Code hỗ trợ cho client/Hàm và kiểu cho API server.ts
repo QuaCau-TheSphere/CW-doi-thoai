@@ -49,7 +49,8 @@ export async function ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv(dữLiệuCh
     "Tên danh sách": tênDanhSách,
     "Dữ liệu": {
       ...dữLiệuChưaCóId,
-      id: await xácĐịnhId(tênDanhSách, dữLiệuChưaCóId),
+      id: đổiTừCơSố10SangCơSố64(Date.now()),
+      // id: await xácĐịnhId(tênDanhSách, dữLiệuChưaCóId),
     },
   });
   const url = `${origin}/api/thêm-bài-đăng-hoặc-nơi-đăng-mới`;

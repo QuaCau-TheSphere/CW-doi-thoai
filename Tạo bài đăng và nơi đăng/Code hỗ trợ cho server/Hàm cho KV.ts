@@ -1,19 +1,15 @@
-import { tạoTênNơiĐăngString, viếtHoa } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { tạoTênNơiĐăngString } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 import { TênDanhSách } from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
 import { tạoDanhSáchBàiĐăng } from "../B. Tạo kết quả/1. Tạo danh sách tất cả bài đăng/mod.ts";
 import { tạoDanhSáchNơiĐăngTừTấtCảCấuHình } from "../B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình/mod.ts";
 import { tạoDanhSáchThôngTinCấuHìnhNơiĐăng } from "./Hàm và kiểu cho cấu hình.ts";
-import { NơiĐăngCóCácLựaChọnVịTrí } from "./Hàm và kiểu cho vị trí.ts";
 import { BàiĐăng, BàiĐăngChưaCóId } from "./Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import { ThôngTinNơiĐăng, ThôngTinNơiĐăngChưaCóId } from "./Kiểu cho nơi đăng.ts";
 import { wipeKvStore } from "https://deno.land/x/kv_utils@1.1.1/mod.ts";
 import { kvSignal, readUnitSignal, writeUnitSignal } from "./Signal KV.ts";
 import sizeof from "npm:object-sizeof";
-import { VậtThểTiếpThị } from "../../Code hỗ trợ cho client/Hàm và kiểu cho vật thể tiếp thị.ts";
-import { cậpNhậtSốLượngBàiĐăng, cậpNhậtSốLượngNơiĐăng, TênBảng } from "./Hàm và kiểu cho id và số lượng dữ liệu.ts";
+import { cậpNhậtSốLượngBàiĐăng, cậpNhậtSốLượngNơiĐăng } from "./Hàm và kiểu cho id và số lượng dữ liệu.ts";
 import { TẬP_TIN_DANH_SÁCH_BÀI_ĐĂNG, TẬP_TIN_DANH_SÁCH_NƠI_ĐĂNG } from "../../ĐƯỜNG_DẪN.ts";
-import { SốLượngBàiĐăng } from "./Hàm và kiểu cho id và số lượng dữ liệu.ts";
-import { SốLượngNơiĐăng } from "./Hàm và kiểu cho id và số lượng dữ liệu.ts";
 
 const cssIncrease = "color: blue; font-style: bold; border: solid blue";
 

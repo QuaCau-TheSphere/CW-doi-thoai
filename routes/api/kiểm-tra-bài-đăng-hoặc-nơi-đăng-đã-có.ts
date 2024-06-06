@@ -15,7 +15,7 @@ export const handler: Handlers = {
     const { "Tên danh sách": tênDanhSách, "Dữ liệu": dữLiệu } = await req.json() as ReqBàiĐăngHoặcNơiĐăng;
     const key = tạoKeyKV(tênDanhSách, dữLiệu);
     const value = (await kvGet(key, "kiểm-tra-bài-đăng-hoặc-nơi-đăng-đã-có.ts")).value as BàiĐăng | NơiĐăngCóCácLựaChọnVịTrí;
-    if (value) {
+    if (value && value.id) {
       return Response.json({
         "Dữ liệu có id": value,
         "Loại dữ liệu": tênDanhSách,
