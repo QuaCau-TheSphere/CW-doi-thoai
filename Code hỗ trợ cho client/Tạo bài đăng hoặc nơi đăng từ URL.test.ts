@@ -67,6 +67,21 @@ assertObjectMatch(
     "Tác giả": undefined,
   } satisfies BàiĐăngChưaCóIdVàPhươngThứTạo,
 );
+assertObjectMatch(
+  await tạoBàiĐăngTừURL("https://www.inkandswitch.com/local-first/"),
+  {
+    "Ngày cập nhật": new Date("2019-04-01T00:00:00.000Z"),
+    "Ngày tạo": undefined,
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng":
+        "Cloud apps like Google Docs and Trello are popular because they enable real-time collaboration with colleagues, and they make it easy for us to access our work from all of our devices. However, by centralizing data storage on servers, cloud apps also take away ownership and agency from users. If a service shuts down, the software stops functioning, and data created with that software is lost.",
+    },
+    "Tiêu đề": "Local-first software: You own your data, in spite of the cloud",
+    "Tác giả": undefined,
+    Slug: "local-first",
+    URL: "https://www.inkandswitch.com/local-first/",
+  } satisfies BàiĐăngChưaCóIdVàPhươngThứTạo,
+);
 
 console.log("Không bị lỗi");
 debugger;

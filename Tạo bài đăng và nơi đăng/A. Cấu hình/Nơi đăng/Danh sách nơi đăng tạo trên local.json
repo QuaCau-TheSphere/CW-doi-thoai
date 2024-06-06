@@ -8,7 +8,7 @@
     ],
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Bài đăng",
@@ -96,7 +96,7 @@
     ],
     "Tên nền tảng": "Reddit",
     "Loại nền tảng": "Diễn đàn",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Lĩnh vực": [
       "Công cụ ghi chú"
     ],
@@ -112,7 +112,7 @@
     ],
     "Tên nền tảng": "Reddit",
     "Loại nền tảng": "Diễn đàn",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Lĩnh vực": [
       "Công cụ ghi chú"
     ],
@@ -310,7 +310,7 @@
     ],
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Bài đăng",
@@ -486,7 +486,7 @@
     ],
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Bài đăng",
@@ -591,7 +591,7 @@
     ],
     "Tên nền tảng": "LinkedIn",
     "Loại nền tảng": "Diễn đàn",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
     "id": "B"
@@ -605,7 +605,7 @@
     ],
     "Tên nền tảng": "Reddit",
     "Loại nền tảng": "Diễn đàn",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "ooker",
     "id": "C"
@@ -619,7 +619,7 @@
     ],
     "Tên nền tảng": "YouTube",
     "Loại nền tảng": "Diễn đàn",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "ooker",
     "id": "D"
@@ -633,7 +633,7 @@
     ],
     "Tên nền tảng": "Zalo",
     "Loại nền tảng": "Diễn đàn",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
     "id": "E"
@@ -647,7 +647,7 @@
     ],
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "ooker",
     "id": "F"
@@ -661,7 +661,7 @@
     ],
     "Tên nền tảng": "Tinh tế",
     "Loại nền tảng": "Diễn đàn",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "ooker",
     "id": "G"
@@ -675,7 +675,7 @@
     ],
     "Tên nền tảng": "Stack Exchange",
     "Loại nền tảng": "Diễn đàn",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "ooker",
     "id": "H"
@@ -759,7 +759,7 @@
     ],
     "Tên nền tảng": "PDF",
     "Loại nền tảng": "Tập tin",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "cv",
     "id": "N"
@@ -773,7 +773,7 @@
     ],
     "Tên nền tảng": "Vault",
     "Loại nền tảng": "Vault",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
     "id": "O"
@@ -788,7 +788,7 @@
     "Tên nền tảng": "Website",
     "Loại nền tảng": "Website",
     "URL": "https://lyminhnhat.com",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Bài đăng",
@@ -816,7 +816,7 @@
     "Tên nền tảng": "Email",
     "Loại nền tảng": "Email",
     "URL": "mailto:ganuongphap@gmail.com",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Nội dung email"
@@ -839,7 +839,7 @@
     "Tên nền tảng": "Email",
     "Loại nền tảng": "Email",
     "URL": "mailto:lyminhnhat911@gmail.com",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Nội dung email"
@@ -861,7 +861,7 @@
     ],
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Bài đăng",
@@ -947,7 +947,7 @@
     ],
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Bài đăng",
@@ -1033,7 +1033,7 @@
     ],
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Bài đăng",
@@ -1119,7 +1119,7 @@
     ],
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Bài đăng",
@@ -1205,7 +1205,7 @@
     ],
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Bài đăng",
@@ -1291,7 +1291,7 @@
     ],
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Bài đăng",
@@ -1378,7 +1378,7 @@
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://www.facebook.com/quacau.sphere/",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Bài đăng",
@@ -1484,7 +1484,7 @@
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://www.facebook.com/qua.cau.the.sphere",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Bài đăng",
@@ -1589,7 +1589,7 @@
     ],
     "Tên nền tảng": "LinkedIn",
     "Loại nền tảng": "Diễn đàn",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "quảcầu",
     "id": "a"
@@ -1603,7 +1603,7 @@
     ],
     "Tên nền tảng": "YouTube",
     "Loại nền tảng": "Diễn đàn",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "About"
@@ -1642,7 +1642,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/orgs/QuaCau-TheSphere",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -1671,7 +1671,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/CW-doi-thoai",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -1700,7 +1700,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/CW-obsidian-quan-ly-du-an-va-cong-cu-nghi",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -1729,7 +1729,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/CW-xu-ly-du-lieu-va-lap-trinh",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -1758,7 +1758,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/CV-obsidian-quan-ly-du-an-va-cong-cu-nghi",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -1787,7 +1787,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/EV-HeavyT",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -1816,7 +1816,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/FV-khoa-hoc-xa-hoi",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -1845,7 +1845,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/LandofSpheres",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -1874,7 +1874,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/CV-tiep-thi-so-xu-ly-du-lieu-va-lap-trinh",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -1903,7 +1903,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/tran-ky",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -1932,7 +1932,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/tranky-test",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -1961,7 +1961,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/meetup-ticketbox-to-google-calendar",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -1990,7 +1990,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/EW-heavyT",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -2019,7 +2019,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/ObsidianPulisherTest",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -2048,7 +2048,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/belief-network",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -2077,7 +2077,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/DV-phat-trien-ban-than",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -2106,7 +2106,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/NeedExchange",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -2135,7 +2135,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/DW-phat-trien-ban-than",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -2164,7 +2164,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "http://quacau-thesphere.github.io",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -2193,7 +2193,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/ONB",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -2222,7 +2222,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/Buoc-Chan",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -2251,7 +2251,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/LOS-Installer",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -2280,7 +2280,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/Ca-nhan-khac",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -2309,7 +2309,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/SampleVault",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -2338,7 +2338,7 @@
     "Tên nền tảng": "GitHub",
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/Graphvidian",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Website"
@@ -5740,7 +5740,7 @@
     ],
     "Tên nền tảng": "PDF",
     "Loại nền tảng": "Tập tin",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "cvLộc",
     "id": "28"
@@ -5754,7 +5754,7 @@
     ],
     "Tên nền tảng": "Vault",
     "Loại nền tảng": "Vault",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "vđqc",
     "id": "29"
@@ -5768,7 +5768,7 @@
     ],
     "Tên nền tảng": "Vault",
     "Loại nền tảng": "Vault",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "B-Mạng-kết-nối-nhu-cầu",
     "id": "2A"
@@ -5782,7 +5782,7 @@
     ],
     "Tên nền tảng": "Vault",
     "Loại nền tảng": "Vault",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "C-Obsidian,-quản-lý-dự-án-và-công-cụ-nghĩ",
     "id": "2B"
@@ -5796,7 +5796,7 @@
     ],
     "Tên nền tảng": "Vault",
     "Loại nền tảng": "Vault",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "C-Tiếp-thị-số,-xử-lý-dữ-liệu-và-lập-trình",
     "id": "2C"
@@ -5810,7 +5810,7 @@
     ],
     "Tên nền tảng": "Vault",
     "Loại nền tảng": "Vault",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "D-Học-kỹ-năng,-phát-triển-bản-thân",
     "id": "2D"
@@ -5825,7 +5825,7 @@
     "Tên nền tảng": "Website",
     "Loại nền tảng": "Website",
     "URL": "https://quảcầu.cc",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Bài đăng",
@@ -5853,7 +5853,7 @@
     "Tên nền tảng": "Website",
     "Loại nền tảng": "Website",
     "URL": "https://obsidian.quảcầu.cc",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Bài đăng",
@@ -5881,7 +5881,7 @@
     "Tên nền tảng": "Website",
     "Loại nền tảng": "Website",
     "URL": "https://lậptrình.quảcầu.cc",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Bài đăng",
@@ -5909,7 +5909,7 @@
     "Tên nền tảng": "Website",
     "Loại nền tảng": "Website",
     "URL": "https://doi-thoai.deno.dev",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Bài đăng",
@@ -5937,7 +5937,7 @@
     "Tên nền tảng": "Website",
     "Loại nền tảng": "Website",
     "URL": "https://tranky.deno.dev",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Bài đăng",
@@ -5965,7 +5965,7 @@
     "Tên nền tảng": "Email",
     "Loại nền tảng": "Email",
     "URL": "mailto:quacau.thesphere@gmail.com",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Nội dung email"
@@ -5987,7 +5987,7 @@
     ],
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
-    "Phương thức tạo": "Lấy từ cấu hình nơi đăng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
         "Bài đăng",

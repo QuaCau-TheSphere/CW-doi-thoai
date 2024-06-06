@@ -3,9 +3,12 @@ import { FreshContext, Handlers } from "$fresh/server.ts";
 
 function lọcUrlStringTừContext(ctx: FreshContext<Record<string, unknown>>) {
   const urlTrongContext = ctx.url.href;
+  console.log("🚀 ~ lọcUrlStringTừContext ~ urlTrongContext:", urlTrongContext);
   const temp = urlTrongContext.split("/api/cors-proxy/");
   temp.shift();
-  return temp.join();
+  return `${temp.join()}/`;
+  // if (a.startsWith("https:/") && !a.startsWith("https://")) a = a.replace("https:/", "https://");
+  // console.log("🚀 ~ lọcUrlStringTừContext ~ a:", a);
 }
 
 export const handler: Handlers = {

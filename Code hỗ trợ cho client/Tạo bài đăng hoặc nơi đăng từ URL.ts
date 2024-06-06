@@ -133,6 +133,7 @@ export async function tạoNơiĐăngTừURL(
 export async function tạoBàiĐăngTừURL(urlString: UrlString, HTML: string | undefined = undefined): Promise<BàiĐăngChưaCóIdVàPhươngThứTạo> {
   console.info("Tạo bài đăng mới từ URL:", urlString.toString());
   const metaTagUrlVàDocument = await lấyMetaTagVàTạoDocument(urlString, HTML);
+  console.log("🚀 ~ tạoBàiĐăngTừURL ~ metaTagUrlVàDocument:", metaTagUrlVàDocument);
   const { meta, url, document } = metaTagUrlVàDocument;
   return {
     "Tiêu đề": lấyTitle(metaTagUrlVàDocument),

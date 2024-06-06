@@ -5,7 +5,7 @@ import { replaceLocalDataWithRemote } from "https://deno.land/x/kv_utils@1.1.1/m
 
 const env = await load();
 await chạyTrênDeployChứKhôngChạyTrênLocal();
-await thayDữLiệuTrênLocalBằngDữLiệuTrênDeploy();
+// await thayDữLiệuTrênLocalBằngDữLiệuTrênDeploy();
 
 await xoáDữLiệuTrênKv();
 console.log("🚀 ~ await kvList({ prefix: [] }):", await kvList({ prefix: [] }));
