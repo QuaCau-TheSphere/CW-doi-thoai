@@ -145,27 +145,24 @@ export default async function tạoDanhSáchBàiĐăngTrênVault(): Promise<Bài
     for (const đườngDẫnTớiGhiChú of danhSáchĐườngDẫnTấtCảCácBàiĐăngTrongVault) {
       const text = extract(await Deno.readTextFile(đườngDẫnTớiGhiChú));
       const frontmatter = text.attrs as YAMLCủaGhiChú;
-      const tiêuĐề = xácĐịnhTiêuĐềGhiChú(đườngDẫnTớiGhiChú, frontmatter);
-      const url = xácĐịnhURLCủaGhiChú(đườngDẫnTớiGhiChú, vault["Nơi lưu vault"], vault.URL);
-      const tênDựÁn: TênDựÁn = xácĐịnhTênDựÁn(đườngDẫnTớiGhiChú);
-      const nộiDung = text.body;
-      const môTảBàiĐăng = frontmatter.description;
 
       danhSáchBàiĐăng.push({
-        "Tiêu đề": tiêuĐề,
-        "URL": url,
+        "Tiêu đề": xácĐịnhTiêuĐềGhiChú(đườngDẫnTớiGhiChú, frontmatter),
+        "URL": xácĐịnhURLCủaGhiChú(đườngDẫnTớiGhiChú, vault["Nơi lưu vault"], vault.URL),
         Vault: vault["Tên vault"],
         "Dự án": {
-          "Tên dự án": tênDựÁn,
-          "Mã dự án": vault["Mã vault"], //todo
+          "Tên dự án": xácĐịnhTênDựÁn(đườngDẫnTớiGhiChú),
+          "Mã dự án": vault["Mã vault"],
         },
         Slug: frontmatter.slug,
         "Nội dung bài đăng": {
-          "Mô tả bài đăng": môTảBàiĐăng,
-          "Toàn bộ nội dung": nộiDung.slice(0, 10000),
+          "Mô tả bài đăng": frontmatter.description,
+          "Toàn bộ nội dung": text.body.slice(0, 10000),
           "Định dạng nội dung": "md",
         },
         "Phương thức tạo": "Cào vault",
+        "Ngày tạo": frontmatter.created ? new Date(frontmatter.created) : undefined,
+        "Ngày cập nhật": frontmatter.updated ? new Date(frontmatter.updated) : undefined,
       });
     }
   }
