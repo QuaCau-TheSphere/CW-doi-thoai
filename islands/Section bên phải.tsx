@@ -2,7 +2,7 @@ import { cóRútGọn, vậtThểTiếpThịĐượcTạo } from "./Signals tổ
 import { ThamSốUTM } from "../Code hỗ trợ cho client/Tạo liên kết UTM/Kiểu cho tham số UTM.ts";
 import { VậtThểKhác } from "../components/Thông tin vật thể tiếp thị.tsx";
 import KhungThôngTinKhiKhôngCóKếtQuả from "../components/KhungThôngTinKhiKhôngCóKếtQuả.tsx";
-import { VậtThểTiếpThị } from "../Code hỗ trợ cho client/Kiểu cho vật thể tiếp thị.ts";
+import { VậtThểTiếpThị } from "../Code hỗ trợ cho client/Hàm và kiểu cho vật thể tiếp thị.ts";
 import { xửLýPunycode } from "../Code hỗ trợ cho client/Hàm và kiểu cho URL.ts";
 
 export default function SectionBênPhải({ textTrangChủ }: { textTrangChủ: string }) {

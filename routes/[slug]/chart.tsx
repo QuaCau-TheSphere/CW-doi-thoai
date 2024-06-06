@@ -1,6 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
-import { VậtThểTiếpThị } from "../../Code hỗ trợ cho client/Kiểu cho vật thể tiếp thị.ts";
+import { VậtThểTiếpThị } from "../../Code hỗ trợ cho client/Hàm và kiểu cho vật thể tiếp thị.ts";
 import ReactECharts from "../../islands/Biểu đồ/echart.tsx";
 import { dữLiệuTruyCậpCácNămTest } from "../../Code hỗ trợ cho client/Hàm cho biểu đồ.test.ts";
 import { DữLiệuTruyCậpCácNăm, tạoDữLiệuBiểuĐồ } from "../../Code hỗ trợ cho client/Hàm và kiểu cho biểu đồ.ts";

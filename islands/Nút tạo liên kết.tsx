@@ -7,57 +7,45 @@ import {
   tênNút,
   vậtThểTiếpThịĐượcTạo,
 } from "./Signals tổng.ts";
-import tạoVậtThểUTM from "../Code hỗ trợ cho client/Tạo liên kết UTM/Tạo tham số UTM.ts";
-import { tạoĐuôiRútGọn } from "../Code hỗ trợ cho client/Tạo liên kết UTM/Tạo đuôi rút gọn.ts";
 import { ghiVậtThểTiếpThịLênKV } from "../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
+import { tạoVậtThểTiếpThị, VậtThểTiếpThị } from "../Code hỗ trợ cho client/Hàm và kiểu cho vật thể tiếp thị.ts";
+import { cóRútGọn } from "./Signals tổng.ts";
 
-async function tạoVậtThểTiếpThị() {
+function tạoHoverTitle(vậtThểTiếpThị: VậtThểTiếpThị): string {
+  if (cóRútGọn.value) return `${origin}/${vậtThểTiếpThị["Đuôi rút gọn"]}`;
+  return vậtThểTiếpThị["Liên kết UTM"].href;
+}
+export function NútTạoLiênKết() {
   const bàiĐăng = bàiĐăngĐượcChọn.value;
   const nơiĐăng = nơiĐăngCóMộtVịTríCụThể.value;
   const bốicảnh = bốiCảnh.value;
   const cấuHìnhViếtTắt = cấuHìnhChungSignal.value["Viết tắt"];
   const lầnĐăng = lầnĐăngHiệnTại.value;
 
-  if (!bàiĐăng) {
-    console.error("Chưa có bài đăng");
-    return;
+  if (!bàiĐăng || !nơiĐăng) {
+    return (
+      <button
+        class="btn btn-secondary gap-2"
+        id="nút-tạo-liên-kết"
+        title="Cần chọn bài đăng và nơi đăng trước khi rút gọn liên kết"
+      >
+        {tênNút.value}
+      </button>
+    );
   }
-  if (!nơiĐăng) {
-    console.error("Chưa có nơi đăng");
-    return;
-  }
-  const thamSốUTMVàLiênKếtRútGọn = tạoVậtThểUTM(
-    {
-      bàiĐăng: bàiĐăng,
-      nơiĐăng: nơiĐăng,
-      bốiCảnh: bốicảnh,
-      cấuHìnhViếtTắt: cấuHìnhViếtTắt,
-    },
-  );
+  const vậtThểTiếpThị = tạoVậtThểTiếpThị({ bàiĐăng: bàiĐăng, nơiĐăng: nơiĐăng, bốiCảnh: bốicảnh, lầnĐăng: lầnĐăng, cấuHìnhViếtTắt: cấuHìnhViếtTắt });
 
-  vậtThểTiếpThịĐượcTạo.value = {
-    ...{
-      "Bài đăng": bàiĐăng,
-      "Nơi đăng": nơiĐăng,
-      "Thời điểm tạo": new Date(),
-      "Lần đăng": lầnĐăng,
-      "Đuôi rút gọn": tạoĐuôiRútGọn(bàiĐăng, nơiĐăng, lầnĐăng, cấuHìnhViếtTắt),
-      "Các lần truy cập": {},
-    },
-    ...thamSốUTMVàLiênKếtRútGọn,
-  };
-  console.info("Bài đăng được chọn:", bàiĐăng);
-  console.info("Nơi đăng được chọn:", nơiĐăng);
-
-  await ghiVậtThểTiếpThịLênKV(vậtThểTiếpThịĐượcTạo.value);
-}
-
-export function NútTạoLiênKết() {
   return (
     <button
       class="btn btn-secondary gap-2"
       id="nút-tạo-liên-kết"
-      onClick={async () => await tạoVậtThểTiếpThị()}
+      onClick={async () => {
+        vậtThểTiếpThịĐượcTạo.value = vậtThểTiếpThị;
+        console.info("Bài đăng được chọn:", bàiĐăngĐượcChọn.value);
+        console.info("Nơi đăng được chọn:", nơiĐăngCóMộtVịTríCụThể.value);
+        await ghiVậtThểTiếpThịLênKV(vậtThểTiếpThị);
+      }}
+      title={tạoHoverTitle(vậtThểTiếpThị)}
     >
       {tênNút.value}
     </button>

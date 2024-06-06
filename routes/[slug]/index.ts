@@ -1,6 +1,6 @@
 // deno-fmt-ignore-file
 import { Handlers } from "$fresh/server.ts";
-import { VậtThểTiếpThị } from "../../Code hỗ trợ cho client/Kiểu cho vật thể tiếp thị.ts";
+import { VậtThểTiếpThị } from "../../Code hỗ trợ cho client/Hàm và kiểu cho vật thể tiếp thị.ts";
 import { Giờ, Ngày, Năm, Tháng } from "../../Code hỗ trợ cho client/Hàm và kiểu cho biểu đồ.ts";
 import { kvGet, kvSet } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho KV.ts";
 import { cậpNhậtSốLượngĐuôiRútGọn } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho id và số lượng dữ liệu.ts";

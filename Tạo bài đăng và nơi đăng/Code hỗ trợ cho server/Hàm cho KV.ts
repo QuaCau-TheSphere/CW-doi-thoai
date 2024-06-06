@@ -9,7 +9,7 @@ import { ThôngTinNơiĐăng, ThôngTinNơiĐăngChưaCóId } from "./Kiểu cho
 import { wipeKvStore } from "https://deno.land/x/kv_utils@1.1.1/mod.ts";
 import { kvSignal, readUnitSignal, writeUnitSignal } from "./Signal KV.ts";
 import sizeof from "npm:object-sizeof";
-import { VậtThểTiếpThị } from "../../Code hỗ trợ cho client/Kiểu cho vật thể tiếp thị.ts";
+import { VậtThểTiếpThị } from "../../Code hỗ trợ cho client/Hàm và kiểu cho vật thể tiếp thị.ts";
 import { cậpNhậtSốLượngBàiĐăng, cậpNhậtSốLượngNơiĐăng, TênBảng } from "./Hàm và kiểu cho id và số lượng dữ liệu.ts";
 import { TẬP_TIN_DANH_SÁCH_BÀI_ĐĂNG, TẬP_TIN_DANH_SÁCH_NƠI_ĐĂNG } from "../../ĐƯỜNG_DẪN.ts";
 import { SốLượngBàiĐăng } from "./Hàm và kiểu cho id và số lượng dữ liệu.ts";
