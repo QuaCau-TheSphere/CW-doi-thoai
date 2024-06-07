@@ -19,22 +19,23 @@ export default function ModalBàiĐăng() {
   const [tênDựÁn, setTênDựÁn] = useState<string | undefined>();
 
   useEffect(() => {
-    async function tạoBàiĐăngTừUrl() {
+    async function xửLýUrlMới() {
       const linkĐầuTiên = url ? linkify.find(url)[0] : undefined;
       if (linkĐầuTiên === undefined) return;
 
       const type = linkĐầuTiên.type;
       if (type === "url" && !linkĐầuTiên?.value.startsWith("mailto:")) {
-        const url = linkĐầuTiên.href;
-        const corsProxyUrl = `${origin}/api/cors-proxy/${url}`;
-        const html = await (await fetch(corsProxyUrl)).text();
+        const urlNgườiDùngNhập = linkĐầuTiên.href;
+        const urlCorsProxy = new URL(`${origin}/api/cors-proxy/`);
+        urlCorsProxy.search = new URLSearchParams({ url: urlNgườiDùngNhập });
+        const html = await (await fetch(urlCorsProxy)).text();
         setBàiĐăng({
-          ...await tạoBàiĐăngTừURL(url, html),
+          ...await tạoBàiĐăngTừURL(urlNgườiDùngNhập, html),
           "Phương thức tạo": "Nhập tay trên web",
         });
       }
     }
-    tạoBàiĐăngTừUrl();
+    xửLýUrlMới();
   }, [url]);
 
   useEffect(() => {
@@ -59,6 +60,7 @@ export default function ModalBàiĐăng() {
       "Dự án": dựÁn,
       Slug: slug,
     } = bàiĐăng || {};
+    console.log("🚀 ~ useEffect ~ url:", url);
     setUrl(url as string);
     setTiêuĐề(tiêuĐề || "");
     setMôTảBàiĐăng(nộiDungBàiĐăng?.["Mô tả bài đăng"] || undefined);
@@ -109,6 +111,7 @@ export default function ModalBàiĐăng() {
           name="Slug"
           value={slug}
           onInput={(e: InputEvent) => setSlug((e.target as HTMLTextAreaElement).value)}
+          placeholder="Slug sẽ được dùng để tạo đuôi rút gọn"
         />
       </label>
 

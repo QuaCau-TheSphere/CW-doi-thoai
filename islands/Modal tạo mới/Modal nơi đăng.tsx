@@ -22,20 +22,19 @@ export default function ModalNơiĐăng() {
   const [đơnVịQuảnLý, setĐơnVịQuảnLý] = useState<string | undefined>();
 
   useEffect(() => {
-    console.log("🚀", urlHoặcEmail);
     setUrlHoặcEmail(urlHoặcEmail);
-    console.log("🚀", urlHoặcEmail);
     async function tạoNơiĐăngTừUrlHoặcEmail() {
       const linkĐầuTiên = urlHoặcEmail ? linkify.find(urlHoặcEmail)[0] : undefined;
       if (linkĐầuTiên === undefined) return;
 
       const type = linkĐầuTiên.type;
       if (type === "url" && !linkĐầuTiên?.value.startsWith("mailto:")) {
-        const url = linkĐầuTiên.href;
-        const corsProxyUrl = `${origin}/api/cors-proxy/${url}`;
-        const html = await (await fetch(corsProxyUrl)).text();
+        const urlNgườiDùngNhập = linkĐầuTiên.href;
+        const urlCorsProxy = new URL(`${origin}/api/cors-proxy/`);
+        urlCorsProxy.search = new URLSearchParams({ url: urlNgườiDùngNhập });
+        const html = await (await fetch(urlCorsProxy)).text();
         setNơiĐăng({
-          ...await tạoNơiĐăngTừURL(url, undefined, html),
+          ...await tạoNơiĐăngTừURL(urlNgườiDùngNhập, undefined, html),
           "Phương thức tạo": "Nhập tay trên web",
         });
       } else if (type === "email" || linkĐầuTiên?.value.startsWith("mailto:")) {
@@ -125,6 +124,7 @@ export default function ModalNơiĐăng() {
           id="slug"
           value={slug}
           onInput={(e: InputEvent) => setSlug((e.target as HTMLTextAreaElement).value)}
+          placeholder="Slug sẽ được dùng để tạo đuôi rút gọn"
         />
       </label>
 

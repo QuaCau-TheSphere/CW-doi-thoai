@@ -4,13 +4,13 @@ import { kvGet, kvList, tạoBàiĐăng, tạoNơiĐăng, xoáDữLiệuTrênKv 
 import { replaceLocalDataWithRemote } from "https://deno.land/x/kv_utils@1.1.1/mod.ts";
 
 const env = await load();
-await chạyTrênDeployChứKhôngChạyTrênLocal();
+// await chạyTrênDeployChứKhôngChạyTrênLocal();
 // await thayDữLiệuTrênLocalBằngDữLiệuTrênDeploy();
 
 await xoáDữLiệuTrênKv();
 console.log("🚀 ~ await kvList({ prefix: [] }):", await kvList({ prefix: [] }));
-await tạoBàiĐăng();
-await tạoNơiĐăng();
+// await tạoBàiĐăng();
+// await tạoNơiĐăng();
 
 console.log("Số read unit", readUnitSignal.value);
 console.log("Số write unit", writeUnitSignal.value);

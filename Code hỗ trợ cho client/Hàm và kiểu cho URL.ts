@@ -147,3 +147,9 @@ export function táchUrlHoặcEmailTrongChuỗi(chuỗiCóThểCóUrl: string): 
   }
   return [chuỗiKhôngCóUrl, url];
 }
+
+export function lấyURL(metaTagUrlVàDocument: MetaTagUrlVàDocument): UrlString {
+  const { meta, url, document } = metaTagUrlVàDocument;
+  const canonical = document.querySelector("link[rel='canonical']") as HTMLLinkElement | null;
+  return canonical?.href || url.href;
+}

@@ -16,7 +16,7 @@ import {
   tạoNơiĐăngCóCácLựaChọnVịTrí,
 } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { tạoSlugNơiĐăng, TừĐiểnSlugNơiĐăng } from "./Tạo slug nơi đăng.ts";
-import { lấyMetaTagVàTạoDocument, lấyMôTả, lấyTitle, lấyTênMiền, MetaTags, MetaTagUrlVàDocument, UrlString } from "./Hàm và kiểu cho URL.ts";
+import { lấyMetaTagVàTạoDocument, lấyMôTả, lấyTitle, lấyTênMiền, lấyURL, MetaTags, MetaTagUrlVàDocument, UrlString } from "./Hàm và kiểu cho URL.ts";
 
 function cóTênNềnTảngTrongHostname(hostname: string, nềnTảng: TênNềnTảng) {
   if (hostname.includes("youtu.be") && nềnTảng === "YouTube") return true;
@@ -117,7 +117,7 @@ export async function tạoNơiĐăngTừURL(
 
   const thôngTinNơiĐăngChưaCóId: ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo = {
     "Tên nơi đăng": [lấyTitle(metaTagUrlVàDocument)],
-    URL: meta.og?.url || url.href,
+    URL: lấyURL(metaTagUrlVàDocument),
     "Mô tả nơi đăng": lấyMôTả(metaTagUrlVàDocument),
     "Loại nền tảng": loạiNềnTảng,
     "Tên nền tảng": tênNềnTảng,
@@ -138,7 +138,7 @@ export async function tạoBàiĐăngTừURL(urlString: UrlString, HTML: string 
   const { meta, url, document } = metaTagUrlVàDocument;
   return {
     "Tiêu đề": lấyTitle(metaTagUrlVàDocument),
-    URL: meta.og?.url || url.href,
+    URL: lấyURL(metaTagUrlVàDocument),
     "Nội dung bài đăng": {
       "Mô tả bài đăng": lấyMôTả(metaTagUrlVàDocument),
     },

@@ -1,24 +1,13 @@
-import { FreshContext, Handlers } from "$fresh/server.ts";
-// import esthetic from "npm:esthetic";
-
-function lọcUrlStringTừContext(ctx: FreshContext<Record<string, unknown>>) {
-  const urlTrongContext = ctx.url.href;
-  console.log("🚀 ~ lọcUrlStringTừContext ~ urlTrongContext:", urlTrongContext);
-  const temp = urlTrongContext.split("/api/cors-proxy/");
-  temp.shift();
-  return `${temp.join()}/`;
-  // if (a.startsWith("https:/") && !a.startsWith("https://")) a = a.replace("https:/", "https://");
-  // console.log("🚀 ~ lọcUrlStringTừContext ~ a:", a);
-}
+import { Handlers } from "$fresh/server.ts";
+import esthetic from "npm:esthetic";
 
 export const handler: Handlers = {
   async GET(_req, ctx) {
-    const urlString = lọcUrlStringTừContext(ctx);
-    console.log("URL được gửi lên cors proxy:", urlString);
-    const html = await (await fetch(urlString)).text();
-    // const prettyHTML = esthetic.html(html);
-    // console.log("🚀 ~ GET ~ newLocal:", prettyHTML);
-    // return new Response(prettyHTML);
+    const url = ctx.url.searchParams.get("url");
+    if (!url) return new Response("");
+    console.log("URL được gửi lên cors proxy:", url);
+    const html = await (await fetch(url)).text();
     return new Response(html);
+    return new Response(esthetic.html(html));
   },
 };

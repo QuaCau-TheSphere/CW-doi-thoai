@@ -100,7 +100,7 @@ export function làCùngBàiĐăng(bàiĐăng1: BàiĐăng, bàiĐăng2: BàiĐ�
   }
 
   let sốTiêuChíPhụKhácNhau = 0;
-  const tiêuChíPhụ = ["Vault", "id", "Slug"] as const;
+  const tiêuChíPhụ = ["Kho thông tin", "id", "Slug"] as const;
   for (const key of tiêuChíPhụ) {
     if (bàiĐăng1[key] !== bàiĐăng2[key]) sốTiêuChíPhụKhácNhau += 1;
   }

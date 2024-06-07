@@ -93,13 +93,16 @@ const tests: [string, BàiĐăngChưaCóIdVàPhươngThứTạo][] = [
       "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/CW-doi-thoai development by creating an account on GitHub.",
     },
   }],
+
+  ["https://docs.google.com/forms/d/e/1FAIpQLSeIYwh8-76fFxqDROZo3lLWC2KBp3xlT72VRokR4KJf0E7dew/viewform"],
 ];
 
 for (const test of tests) {
-  if (tests.indexOf(test) !== 5) continue;
+  if (tests.indexOf(test) !== 6) continue;
   const a = await lấyMetaTagVàTạoDocument(test[0]);
   console.log(a);
-  assertObjectMatch(await tạoBàiĐăngTừURL(test[0]), test[1]);
+  console.log(await tạoBàiĐăngTừURL(test[0]));
+  // assertObjectMatch(await tạoBàiĐăngTừURL(test[0]), test[1]);
 }
 
 console.info("Không bị lỗi");
