@@ -85,8 +85,8 @@ function đổiTừCơSố64SangCơSố10(x: string) {
   return x.split("").reduce((s, v) => s * 64 + digit.indexOf(v), 0);
 }
 
-export function lấyGiờVN(thờiĐiểmTạo: Date | string | undefined) {
-  if (!thờiĐiểmTạo) return undefined;
+export function lấyGiờVN(thờiĐiểm: Date | string | undefined) {
+  if (!thờiĐiểm) return undefined;
   const options = {
     weekday: "long",
     year: "numeric",
@@ -94,8 +94,14 @@ export function lấyGiờVN(thờiĐiểmTạo: Date | string | undefined) {
     day: "numeric",
     timeZone: "Asia/Ho_Chi_Minh",
   };
-  const date = new Date(thờiĐiểmTạo);
+  const date = new Date(thờiĐiểm);
   const ngày = date.toLocaleDateString("vi-VN", options);
-  const giờ = date.toLocaleTimeString("vi-VN");
+  const giờ = date.toLocaleTimeString("vi-VN").slice(0, -3);
   return `${ngày} ${giờ}`;
+}
+
+export function lấyNgàyISO(thờiĐiểm: Date | string | undefined) {
+  if (!thờiĐiểm) return undefined;
+  const iso = new Date(thờiĐiểm).toISOString();
+  return iso.substring(0, iso.indexOf("T"));
 }

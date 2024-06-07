@@ -47,7 +47,9 @@ function lấyĐơnVịQuảnLý(loạiNềnTảng: LoạiNềnTảng, { meta, u
 function tạoSlugBàiĐăng({ hostname, pathname }: URL) {
   const làDiễnĐàn = (danhSáchDiễnĐàn as unknown as string[]).includes(hostname);
   const làNềnTảngChat = (danhSáchNềnTảngChat as unknown as string[]).includes(hostname);
-
+  // if (làDiễnĐàn) {
+  //   if
+  // }
   if (!làDiễnĐàn && !làNềnTảngChat) {
     const tênMiền = lấyTênMiền(hostname);
     let slugWebsiteCóSẵn = pathname.substring(1);
@@ -133,7 +135,6 @@ export async function tạoNơiĐăngTừURL(
 export async function tạoBàiĐăngTừURL(urlString: UrlString, HTML: string | undefined = undefined): Promise<BàiĐăngChưaCóIdVàPhươngThứTạo> {
   console.info("Tạo bài đăng mới từ URL:", urlString.toString());
   const metaTagUrlVàDocument = await lấyMetaTagVàTạoDocument(urlString, HTML);
-  console.log("🚀 ~ tạoBàiĐăngTừURL ~ metaTagUrlVàDocument:", metaTagUrlVàDocument);
   const { meta, url, document } = metaTagUrlVàDocument;
   return {
     "Tiêu đề": lấyTitle(metaTagUrlVàDocument),

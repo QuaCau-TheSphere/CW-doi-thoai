@@ -1,4 +1,4 @@
-import { UrlString } from "../../Code hỗ trợ cho client/Tạo bài đăng hoặc nơi đăng từ URL.ts";
+import { UrlString } from "../../Code hỗ trợ cho client/Hàm và kiểu cho URL.ts";
 import { ĐườngDẫnTuyệtĐối } from "../../ĐƯỜNG_DẪN.ts";
 import { VậtThểId } from "./Hàm và kiểu cho id và số lượng dữ liệu.ts";
 
@@ -42,9 +42,9 @@ export type PhươngThứcTạoBàiĐăng = "Cào vault" | "Cào web" | "Nhập 
 
 export interface BàiĐăng {
   "Tiêu đề": string;
-  "URL": UrlString;
+  URL: UrlString;
   "Dự án"?: DựÁn;
-  Vault?: string;
+  "Kho thông tin"?: string;
   "Slug"?: string;
   "Nội dung bài đăng"?: NộiDungBàiĐăng;
   "Tác giả"?: string;

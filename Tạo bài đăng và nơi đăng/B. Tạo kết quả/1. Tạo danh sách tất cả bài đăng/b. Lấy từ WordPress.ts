@@ -23,7 +23,7 @@ export default async function tạoDanhSáchBàiĐăngTrênWordPress() {
         "Tên dự án": tênDựÁn,
         "Mã dự án": "", //todo
       },
-      Vault: "WordPress",
+      "Kho thông tin": new URL(url).hostname,
       "Phương thức tạo": "Nhập từ CSV",
     });
   }

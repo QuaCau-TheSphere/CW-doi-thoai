@@ -9,7 +9,7 @@ import { kiểuKebab, tạoLoạiNơiĐăngString, tạoTênNơiĐăngString } f
 import { xửLýPunycode } from "../../Code hỗ trợ cho client/Hàm và kiểu cho URL.ts";
 
 function tạoDòngPhụCủaBàiĐăng(bàiĐăng: BàiĐăng) {
-  const { "Dự án": dựÁn, Vault: vault, URL, "Slug": mãBàiĐăng, id } = bàiĐăng;
+  const { "Dự án": dựÁn, "Kho thông tin": vault, URL, "Slug": mãBàiĐăng, id } = bàiĐăng;
   let key, value;
   if (dựÁn && dựÁn["Tên dự án"]) {
     key = "Dự án";

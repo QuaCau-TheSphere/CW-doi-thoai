@@ -148,8 +148,8 @@ export default async function tạoDanhSáchBàiĐăngTrênVault(): Promise<Bài
 
       danhSáchBàiĐăng.push({
         "Tiêu đề": xácĐịnhTiêuĐềGhiChú(đườngDẫnTớiGhiChú, frontmatter),
-        "URL": xácĐịnhURLCủaGhiChú(đườngDẫnTớiGhiChú, vault["Nơi lưu vault"], vault.URL),
-        Vault: vault["Tên vault"],
+        URL: xácĐịnhURLCủaGhiChú(đườngDẫnTớiGhiChú, vault["Nơi lưu vault"], vault.URL),
+        "Kho thông tin": vault["Tên vault"],
         "Dự án": {
           "Tên dự án": xácĐịnhTênDựÁn(đườngDẫnTớiGhiChú),
           "Mã dự án": vault["Mã vault"],

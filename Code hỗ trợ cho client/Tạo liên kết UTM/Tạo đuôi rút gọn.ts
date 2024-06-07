@@ -6,7 +6,7 @@ import { kiểuKebab, lấyKýHiệuViếtTắt } from "../Hàm xử lý chuỗi
 
 function tạoPhầnBàiĐăng(bàiĐăng: BàiĐăng, cấuHìnhViếtTắt: CấuHìnhViếtTắt) {
   const {
-    Vault: vault,
+    "Kho thông tin": vault,
     "Dự án": dựÁn,
     id,
     Slug: slug,

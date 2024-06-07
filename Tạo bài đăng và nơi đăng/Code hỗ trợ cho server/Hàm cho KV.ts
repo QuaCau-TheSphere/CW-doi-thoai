@@ -10,6 +10,7 @@ import { kvSignal, readUnitSignal, writeUnitSignal } from "./Signal KV.ts";
 import sizeof from "npm:object-sizeof";
 import { cậpNhậtSốLượngBàiĐăng, cậpNhậtSốLượngNơiĐăng } from "./Hàm và kiểu cho id và số lượng dữ liệu.ts";
 import { TẬP_TIN_DANH_SÁCH_BÀI_ĐĂNG, TẬP_TIN_DANH_SÁCH_NƠI_ĐĂNG } from "../../ĐƯỜNG_DẪN.ts";
+import { lấyTênMiền } from "../../Code hỗ trợ cho client/Hàm và kiểu cho URL.ts";
 
 const cssIncrease = "color: blue; font-style: bold; border: solid blue";
 
@@ -76,16 +77,12 @@ export function tạoKeyKV(tênDanhSách: TênDanhSách, dữLiệu: BàiĐăng 
     case "bài đăng": {
       const {
         "Tiêu đề": tiêuĐề,
-        "Dự án": dựÁn,
-        Vault: vault,
-        URL,
+        URL: url,
       } = dữLiệu as BàiĐăng;
       return [
         "Bài đăng",
-        vault || "",
-        dựÁn?.["Tên dự án"] || "",
+        (new URL(url)).hostname,
         tiêuĐề || "",
-        URL as string || "",
       ];
     }
 
