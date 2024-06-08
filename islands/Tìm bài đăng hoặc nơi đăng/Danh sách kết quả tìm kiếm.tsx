@@ -1,15 +1,15 @@
 import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/plus.tsx";
-import { MụcĐượcChọn, TênDanhSách, đổiKhungNhập } from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
+import { DanhSáchKếtQuảTìmKiếmType, MụcĐượcChọn, TênDanhSách, đổiKhungNhập } from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
 import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { BàiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import { element } from "../Signals tổng.ts";
-import { cursor, danhSáchGợiÝSignal } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
+import { cursor } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
 import { Signal } from "@preact/signals";
 import { kiểuKebab, tạoLoạiNơiĐăngString, tạoTênNơiĐăngString } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 import { xửLýPunycode } from "../../Code hỗ trợ cho client/Hàm và kiểu cho URL.ts";
 
 function tạoDòngPhụCủaBàiĐăng(bàiĐăng: BàiĐăng) {
-  const { "Dự án": dựÁn, "Kho thông tin": vault, URL, "Slug": mãBàiĐăng, id } = bàiĐăng;
+  const { "Dự án": dựÁn, "Kho thông tin": vault, URL } = bàiĐăng;
   let key, value;
   if (dựÁn && dựÁn["Tên dự án"]) {
     key = "Dự án";
@@ -48,9 +48,13 @@ function Item({ item, tênDanhSách }: { item: BàiĐăng | NơiĐăngCóCácL�
 }
 
 export function DanhSáchKếtQuảTìmKiếm(
-  { tênDanhSách, mụcĐượcChọnSignal, querySignal }: { tênDanhSách: TênDanhSách; mụcĐượcChọnSignal: Signal<MụcĐượcChọn>; querySignal: Signal<string> },
+  { tênDanhSách, mụcĐượcChọnSignal, querySignal, danhSáchKếtQuảTìmKiếm }: {
+    tênDanhSách: TênDanhSách;
+    mụcĐượcChọnSignal: Signal<MụcĐượcChọn>;
+    querySignal: Signal<string>;
+    danhSáchKếtQuảTìmKiếm: DanhSáchKếtQuảTìmKiếmType;
+  },
 ) {
-  const danhSáchKếtQuảTìmKiếm = danhSáchGợiÝSignal.value;
   if (tênDanhSách !== element.value || !danhSáchKếtQuảTìmKiếm || !querySignal.value) return <></>;
   if (danhSáchKếtQuảTìmKiếm.length === 0) {
     return (

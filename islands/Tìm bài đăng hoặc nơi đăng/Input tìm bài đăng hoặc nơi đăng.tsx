@@ -7,18 +7,19 @@ import {
 } from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
 import { kiểuKebab, viếtHoa } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
 import { element } from "../Signals tổng.ts";
-import { cursor, danhSáchGợiÝSignal } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
+import { cursor } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
 import { Signal } from "@preact/signals";
 
 function handleInput(
   e: InputEvent,
   tênDanhSách: TênDanhSách,
   flexSearch: FlexSearchBàiĐăngHoặcNơiĐăng,
-  query: Signal<string>,
+  querySignal: Signal<string>,
+  danhSáchGợiÝSignal: Signal<DanhSáchKếtQuảTìmKiếmType>,
 ) {
   element.value = tênDanhSách;
-  query.value = (e.target as HTMLTextAreaElement).value;
-  const flexResult = flexSearch.search(query.value, { enrich: true, limit: 10 });
+  querySignal.value = (e.target as HTMLTextAreaElement).value;
+  const flexResult = flexSearch.search(querySignal.value, { enrich: true, limit: 10 });
   if (flexResult && flexResult[0]) {
     danhSáchGợiÝSignal.value = flexResult[0].result as unknown as DanhSáchKếtQuảTìmKiếmType;
   } else {
@@ -26,7 +27,12 @@ function handleInput(
   }
 }
 
-function handleKeyDown(e: KeyboardEvent, mụcĐượcChọnSignal: Signal<MụcĐượcChọn>, tênDanhSách: TênDanhSách) {
+function handleKeyDown(
+  e: KeyboardEvent,
+  mụcĐượcChọnSignal: Signal<MụcĐượcChọn>,
+  tênDanhSách: TênDanhSách,
+  danhSáchGợiÝSignal: Signal<DanhSáchKếtQuảTìmKiếmType>,
+) {
   const danhSáchGợiÝ = danhSáchGợiÝSignal.value;
   if (!danhSáchGợiÝ) return;
 
@@ -53,11 +59,9 @@ function handleKeyDown(e: KeyboardEvent, mụcĐượcChọnSignal: Signal<Mục
   }
   if (e.key === "Tab") {
     if (!e.shiftKey) {
-      console.log(document.activeElement);
       e.preventDefault();
       đổiKhungNhập("xuôi");
     } else {
-      console.log(document.activeElement);
       e.preventDefault();
       đổiKhungNhập("ngược");
     }
@@ -65,11 +69,12 @@ function handleKeyDown(e: KeyboardEvent, mụcĐượcChọnSignal: Signal<Mục
 }
 
 export default function InputTìmBàiĐăngHoặcNơiĐăng(
-  { tênDanhSách, mụcĐượcChọnSignal, querySignal, flexSearch }: {
+  { tênDanhSách, mụcĐượcChọnSignal, querySignal, flexSearch, danhSáchGợiÝSignal }: {
     tênDanhSách: TênDanhSách;
     mụcĐượcChọnSignal: Signal<MụcĐượcChọn>;
     querySignal: Signal<string>;
     flexSearch: FlexSearchBàiĐăngHoặcNơiĐăng;
+    danhSáchGợiÝSignal: Signal<DanhSáchKếtQuảTìmKiếmType>;
   },
 ) {
   return (
@@ -83,9 +88,9 @@ export default function InputTìmBàiĐăngHoặcNơiĐăng(
         value={querySignal.value}
         id={`khung-nhập-${kiểuKebab(tênDanhSách)}`}
         placeholder={`Tìm ${tênDanhSách} hoặc dán URL để tạo mới`}
-        onInput={(e: InputEvent) => handleInput(e, tênDanhSách, flexSearch, querySignal)}
+        onInput={(e: InputEvent) => handleInput(e, tênDanhSách, flexSearch, querySignal, danhSáchGợiÝSignal)}
         onFocus={() => element.value = tênDanhSách}
-        onKeyDown={(e: KeyboardEvent) => handleKeyDown(e, mụcĐượcChọnSignal, tênDanhSách)}
+        onKeyDown={(e: KeyboardEvent) => handleKeyDown(e, mụcĐượcChọnSignal, tênDanhSách, danhSáchGợiÝSignal)}
       />
     </label>
   );
