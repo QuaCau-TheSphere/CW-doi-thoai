@@ -19,7 +19,7 @@ import { EnrichedDocumentSearchResultSetUnitResultUnit } from "npm:flexsearch";
 /** Những signal được tạo ở ngoài rồi import vào đây là có được sử dụng ở ngoài div. Những signal được tạo trong đây chỉ cần dùng trong div này */
 export default function DivTìmBàiĐăngHoặcNơiĐăng({ tênDanhSách }: { tênDanhSách: TênDanhSách }) {
   let mụcĐượcChọnSignal: Signal<MụcĐượcChọn>;
-  let querySignal: Signal<string>;
+  let querySignal: Signal<string | undefined>;
   let flexSearch: FlexSearchBàiĐăngHoặcNơiĐăng;
   let danhSáchGợiÝSignal: Signal<DanhSáchKếtQuảTìmKiếmType>;
   let tạoMới: Signal<boolean>;

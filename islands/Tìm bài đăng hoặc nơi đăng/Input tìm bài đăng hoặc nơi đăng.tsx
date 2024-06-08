@@ -14,7 +14,7 @@ function handleInput(
   e: InputEvent,
   tênDanhSách: TênDanhSách,
   flexSearch: FlexSearchBàiĐăngHoặcNơiĐăng,
-  querySignal: Signal<string>,
+  querySignal: Signal<string | undefined>,
   danhSáchGợiÝSignal: Signal<DanhSáchKếtQuảTìmKiếmType>,
 ) {
   element.value = tênDanhSách;
@@ -72,7 +72,7 @@ export default function InputTìmBàiĐăngHoặcNơiĐăng(
   { tênDanhSách, mụcĐượcChọnSignal, querySignal, flexSearch, danhSáchGợiÝSignal }: {
     tênDanhSách: TênDanhSách;
     mụcĐượcChọnSignal: Signal<MụcĐượcChọn>;
-    querySignal: Signal<string>;
+    querySignal: Signal<string | undefined>;
     flexSearch: FlexSearchBàiĐăngHoặcNơiĐăng;
     danhSáchGợiÝSignal: Signal<DanhSáchKếtQuảTìmKiếmType>;
   },

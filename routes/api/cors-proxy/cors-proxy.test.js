@@ -1,4 +1,5 @@
 import { load } from "$std/dotenv/mod.ts";
+import { tạoUrlCorsProxy } from "../../../Code hỗ trợ cho client/Hàm và kiểu cho URL.ts";
 // const url = "https://youtu.be/v3F5Hsua4J4?si=PuQHF7GLWfCzGeKZ";
 // const url = "https://www.facebook.com/Cactus2104";
 // deno-fmt-ignore
@@ -6,8 +7,8 @@ import { load } from "$std/dotenv/mod.ts";
 // const url = "https://www.youtube.com/watch?v=gU-8U7Z-E64";
 // const url = "https://www.facebook.com/groups/EUPD.VN/";
 // const url = "https://www.linkedin.com/in/nh%E1%BA%ADt-l%C3%BD/";
-const url = "https://docs.google.com/forms/d/e/1FAIpQLSeIYwh8-76fFxqDROZo3lLWC2KBp3xlT72VRokR4KJf0E7dew/viewform";
-// const url = "https://www.inkandswitch.com/local-first";
+// const url = "https://docs.google.com/forms/d/e/1FAIpQLSeIYwh8-76fFxqDROZo3lLWC2KBp3xlT72VRokR4KJf0E7dew/viewform";
+const url = "https://www.inkandswitch.com/local-first";
 // await fetchTrựcTiếp();
 await fetchQuaAPI();
 
@@ -22,9 +23,7 @@ async function fetchTrựcTiếp() {
 }
 async function fetchQuaAPI() {
   const env = await load();
-  // const corsProxyUrl = `${origin}/api/cors-proxy/${url}`;
-  const urlCorsProxy = new URL(`${env["ORIGIN"]}/api/cors-proxy/`);
-  urlCorsProxy.search = new URLSearchParams({ url: url });
+  const urlCorsProxy = tạoUrlCorsProxy(url, env["ORIGIN"]);
   console.log("🚀 ~ fetchQuaAPI ~ urlCorsProxy:", urlCorsProxy);
   const fetchResult = await fetch(urlCorsProxy);
   const html = await fetchResult.text();

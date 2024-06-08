@@ -71,7 +71,7 @@ const tests: [string, BàiĐăngChưaCóIdVàPhươngThứTạo][] = [
   ],
 
   [
-    "https://www.inkandswitch.com/local-first/",
+    "https://www.inkandswitch.com/local-first",
     {
       "Ngày cập nhật": new Date("2019-04-01T00:00:00.000Z"),
       "Ngày tạo": undefined,
@@ -98,7 +98,7 @@ const tests: [string, BàiĐăngChưaCóIdVàPhươngThứTạo][] = [
 ];
 
 for (const test of tests) {
-  if (tests.indexOf(test) !== 6) continue;
+  if (tests.indexOf(test) !== 4) continue;
   const a = await lấyMetaTagVàTạoDocument(test[0]);
   console.log(a);
   console.log(await tạoBàiĐăngTừURL(test[0]));

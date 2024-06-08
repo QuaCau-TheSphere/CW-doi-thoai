@@ -153,3 +153,9 @@ export function lấyURL(metaTagUrlVàDocument: MetaTagUrlVàDocument): UrlStrin
   const canonical = document.querySelector("link[rel='canonical']") as HTMLLinkElement | null;
   return canonical?.href || url.href;
 }
+
+export function tạoUrlCorsProxy(urlNgườiDùngNhập: URL["href"], origin: URL["origin"] = globalThis.location.origin) {
+  const urlCorsProxy = new URL(`${origin}/api/cors-proxy/`);
+  urlCorsProxy.search = new URLSearchParams({ url: urlNgườiDùngNhập });
+  return urlCorsProxy;
+}

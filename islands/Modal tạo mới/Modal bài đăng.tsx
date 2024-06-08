@@ -3,6 +3,7 @@ import { BàiĐăngChưaCóId } from "../../Tạo bài đăng và nơi đăng/Co
 import { queryBàiĐăngSignal } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
 import { tạoBàiĐăngTừURL } from "../../Code hỗ trợ cho client/Tạo bài đăng hoặc nơi đăng từ URL.ts";
 import * as linkify from "npm:linkifyjs";
+import { tạoUrlCorsProxy } from "../../Code hỗ trợ cho client/Hàm và kiểu cho URL.ts";
 
 /** Các dữ liệu người dùng nhập trong form */
 export default function ModalBàiĐăng() {
@@ -26,8 +27,7 @@ export default function ModalBàiĐăng() {
       const type = linkĐầuTiên.type;
       if (type === "url" && !linkĐầuTiên?.value.startsWith("mailto:")) {
         const urlNgườiDùngNhập = linkĐầuTiên.href;
-        const urlCorsProxy = new URL(`${origin}/api/cors-proxy/`);
-        urlCorsProxy.search = new URLSearchParams({ url: urlNgườiDùngNhập });
+        const urlCorsProxy = tạoUrlCorsProxy(urlNgườiDùngNhập);
         const html = await (await fetch(urlCorsProxy)).text();
         setBàiĐăng({
           ...await tạoBàiĐăngTừURL(urlNgườiDùngNhập, html),
