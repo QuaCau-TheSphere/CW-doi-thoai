@@ -7,9 +7,9 @@ const env = await load();
 // await chạyTrênDeployChứKhôngChạyTrênLocal();
 // await thayDữLiệuTrênLocalBằngDữLiệuTrênDeploy();
 
-await xoáDữLiệuTrênKv();
+// await xoáDữLiệuTrênKv();
 console.log("🚀 ~ await kvList({ prefix: [] }):", await kvList({ prefix: [] }));
-// await tạoBàiĐăng();
+await tạoBàiĐăng();
 // await tạoNơiĐăng();
 
 console.log("Số read unit", readUnitSignal.value);

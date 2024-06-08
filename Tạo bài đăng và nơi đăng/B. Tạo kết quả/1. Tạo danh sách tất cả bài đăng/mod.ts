@@ -1,5 +1,5 @@
 import tạoDanhSáchBàiĐăngTrênVault from "./a. Tạo theo vault.ts";
-import tạoDanhSáchBàiĐăngTrênWordPress from "./b. Lấy từ WordPress.ts";
+import tạoDanhSáchBàiĐăngTừCSV from "./b. Tạo từ CSV.ts";
 import { BàiĐăng, BàiĐăngChưaCóId } from "../../Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import * as linkify from "npm:linkifyjs";
 import CấuHìnhNơiĐăng, { ThôngTinCấuHìnhNơiĐăng } from "../../Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
@@ -32,7 +32,7 @@ export async function tạoDanhSáchBàiĐăng(danhSáchVậtThểCấuHìnhNơi
   const danhSáchBàiĐăngĐãCóId: BàiĐăng[] = [];
   const danhSáchBàiĐăngChưaCóId = [
     ...await tạoDanhSáchBàiĐăngTrênVault(),
-    ...await tạoDanhSáchBàiĐăngTrênWordPress(),
+    ...await tạoDanhSáchBàiĐăngTừCSV(),
   ];
   for (const vậtThểCấuHình of danhSáchVậtThểCấuHìnhNơiĐăng) {
     danhSáchBàiĐăngChưaCóId.push(...await tạoDanhSáchBàiĐăngTừCấuHìnhNơiĐăng(vậtThểCấuHình.cấuHình));

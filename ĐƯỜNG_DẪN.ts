@@ -19,7 +19,7 @@ export const TẬP_TIN_THIẾT_LẬP: ĐườngDẫnTươngĐối = "Ξ Thiết 
 export const THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT: ĐườngDẫnTuyệtĐối = "D:\\QC supplements\\Vaults";
 
 /** Trong thư mục dự án */
-export const TẬP_TIN_CSV: ĐườngDẫnTươngĐối = "./Tạo bài đăng và nơi đăng/A. Cấu hình/Bài đăng/wpd9_posts.csv";
+export const TẬP_TIN_CSV: ĐườngDẫnTươngĐối = "./Tạo bài đăng và nơi đăng/A. Cấu hình/Bài đăng/quảcầu.cc.csv";
 export const TẬP_TIN_CẤU_HÌNH_CHUNG: ĐườngDẫnTươngĐối = "./Tạo bài đăng và nơi đăng/A. Cấu hình/Nơi đăng/Cấu hình chung.yaml";
 export const THƯ_MỤC_CẤU_HÌNH_NƠI_ĐĂNG: ĐườngDẫnTươngĐối = "./Tạo bài đăng và nơi đăng/A. Cấu hình/Nơi đăng";
 
