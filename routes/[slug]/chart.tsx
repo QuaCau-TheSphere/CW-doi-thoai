@@ -74,7 +74,7 @@ export default function ChartPage(props: PageProps<{ vậtThểTiếpThị: Vậ
       <Head>
         <title>Lượt truy cập vào {đuôiRútGọn}</title>
       </Head>
-      <Meta imageUrl="sihouette.jpg" />
+      <Meta imageUrl="Linh Rab.jpg" />
       <div class="p-4 mx-auto max-w-screen-md">
         <ReactECharts option={chartData} />
         <ThôngTinVậtThểTiếpThị vậtThểTiếpThị={vậtThểTiếpThị} />

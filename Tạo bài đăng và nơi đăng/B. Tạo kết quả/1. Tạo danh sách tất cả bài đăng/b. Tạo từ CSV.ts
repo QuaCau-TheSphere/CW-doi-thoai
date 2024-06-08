@@ -39,4 +39,3 @@ export default async function tạoDanhSáchBàiĐăngTừCSV() {
   }
   return danhSáchBàiĐăng;
 }
-console.log(await tạoDanhSáchBàiĐăngTừCSV());
