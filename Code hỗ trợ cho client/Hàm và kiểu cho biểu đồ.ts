@@ -1,7 +1,6 @@
 // deno-fmt-ignore-file
 
 /** [Define a list of optional keys for Typescript Record](https://stackoverflow.com/q/53276792/3416774) */
-// deno-lint-ignore no-explicit-any
 export type PartialRecord<K extends keyof any, T> =  Partial<Record<K, T>>
 
 export type Giờ = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20" | "21" | "22" | "23"
@@ -99,3 +98,4 @@ export function tạoDữLiệuBiểuĐồ(dữLiệuTruyCậpCácNăm: DữLi�
   }
   return kếtQuả as DữLiệuBiểuĐồ;
 }
+

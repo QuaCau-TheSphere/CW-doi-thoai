@@ -151,7 +151,7 @@ export function táchUrlHoặcEmailTrongChuỗi(chuỗiCóThểCóUrl: string): 
 export function lấyURL(metaTagUrlVàDocument: MetaTagUrlVàDocument): UrlString {
   const { meta, url, document } = metaTagUrlVàDocument;
   const canonical = document.querySelector("link[rel='canonical']") as HTMLLinkElement | null;
-  return canonical?.href || url.href;
+  return canonical?.getAttribute("href") || url.href;
 }
 
 export function tạoUrlCorsProxy(urlNgườiDùngNhập: URL["href"], origin: URL["origin"] = globalThis.location.origin) {

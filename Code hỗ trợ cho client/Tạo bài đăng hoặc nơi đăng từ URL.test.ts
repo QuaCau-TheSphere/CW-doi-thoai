@@ -1,9 +1,6 @@
-import _ from "npm:lodash";
-import { assertEquals } from "$std/assert/mod.ts";
-import { BàiĐăngChưaCóIdVàPhươngThứTạo } from "../T%E1%BA%A1o%20b%C3%A0i%20%C4%91%C4%83ng%20v%C3%A0%20n%C6%A1i%20%C4%91%C4%83ng/Code%20h%E1%BB%97%20tr%E1%BB%A3%20cho%20server/H%C3%A0m%20v%C3%A0%20ki%E1%BB%83u%20cho%20vault,%20d%E1%BB%B1%20%C3%A1n,%20b%C3%A0i%20%C4%91%C4%83ng.ts";
 import { tạoBàiĐăngTừURL } from "./T%E1%BA%A1o%20b%C3%A0i%20%C4%91%C4%83ng%20ho%E1%BA%B7c%20n%C6%A1i%20%C4%91%C4%83ng%20t%E1%BB%AB%20URL.ts";
+import { BàiĐăngChưaCóIdVàPhươngThứTạo } from "../T%E1%BA%A1o%20b%C3%A0i%20%C4%91%C4%83ng%20v%C3%A0%20n%C6%A1i%20%C4%91%C4%83ng/Code%20h%E1%BB%97%20tr%E1%BB%A3%20cho%20server/H%C3%A0m%20v%C3%A0%20ki%E1%BB%83u%20cho%20vault,%20d%E1%BB%B1%20%C3%A1n,%20b%C3%A0i%20%C4%91%C4%83ng.ts";
 import { assertObjectMatch } from "https://deno.land/std@0.216.0/assert/assert_object_match.ts";
-import punycode from "npm:punycode";
 import { lấyMetaTagVàTạoDocument } from "./H%C3%A0m%20v%C3%A0%20ki%E1%BB%83u%20cho%20URL.ts";
 
 const tests: [string, BàiĐăngChưaCóIdVàPhươngThứTạo][] = [

@@ -23088,20 +23088,20 @@
     "id": "MD"
   },
   {
-    "Tiêu đề": "Untitled",
-    "URL": "https://obsidian.quảcầu.cc/📐 Dự án/đối ⊷ thoại/Untitled",
+    "Tiêu đề": "Hướng dẫn sử dụng",
+    "URL": "https://obsidian.quảcầu.cc/📐 Dự án/đối ⊷ thoại/Hướng dẫn sử dụng",
     "Kho thông tin": "Obsidian, quản lý dự án và công cụ nghĩ",
     "Dự án": {
       "Tên dự án": "đối ⊷ thoại",
       "Mã dự án": "C1"
     },
     "Nội dung bài đăng": {
-      "Toàn bộ nội dung": "id theo cơ số 64\n\n",
+      "Toàn bộ nội dung": "# Bối cảnh\nVD: lý do khiến bài đăng trở nên hữu ích tại nơi đăng, sự khác biệt so với những lần đăng trước, v.v.\n\n# Cách slug nơi đăng được tạo\nSlug nơi đăng: tên nơi đăng hoặc URL\n\n# Cách đuôi rút gọn được tạo\nid theo cơ số 64",
       "Định dạng nội dung": "md"
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-05T09:17:00.000Z",
-    "Ngày cập nhật": "2024-05-29T11:04:00.000Z",
+    "Ngày cập nhật": "2024-06-08T15:12:00.000Z",
     "id": "ME"
   },
   {
@@ -23130,12 +23130,12 @@
       "Mã dự án": "C1"
     },
     "Nội dung bài đăng": {
-      "Toàn bộ nội dung": "# đối ⊷ thoại\n[Để có thể thiết kế một giải pháp một cách nhanh chóng và tự tin, bạn cần được thử nghiệm ý tưởng mới và kiểm tra giả thiết ngay khi chúng vừa được nghĩ ra.](https://doi-thoai.deno.dev/LadderOfAbstraction.doi-thoai.1 \"Up and Down the Ladder of Abstraction\") Nếu giải pháp đó cần sự đối thoại giữa các bên, bạn cần nhanh chóng tìm lại các cuộc thảo luận đã từng có trước đây và nắm được mức độ quan tâm của các bên liên quan.\n\nĐể đạt được mục tiêu đó, chương trình này sẽ giúp bạn:\n- Tìm nhanh những ghi chú được chia sẻ công khai trong kho dữ liệu của bạn, hoặc các bài đăng trên các website, diễn đàn\n- Quản lý và tìm nhanh những cộng đồng bạn muốn mở cuộc đối thoại\n- Tự động tạo liên kết UTM và rút gọn liên kết đó\n- Tự động tạo nội dung sẽ được dùng để đối thoại dựa trên ghi chú của bạn\n- Thống kê số lượng truy cập tới liên kết được chia sẻ\n\nLiên lạc với chúng tôi để thêm bài đăng và nơi đăng của bạn vào chương trình với số lượng lớn, hoặc tải [mã nguồn](https://doi-thoai.deno.dev/aH.doi-thoai.1) để dùng với tên miền và hệ thống của bạn. Trong tương lai chúng tôi cũng sẽ tạo một plugin Obsidian để bạn có thể tạo nội dung chia sẻ ngay trên vault của mình. Tất cả hướng tới việc đem lại [sự tự do và tự trị dữ liệu](https://doi-thoai.deno.dev/local-first.doi-thoai.1) cho bạn.\n\nSản phẩm khác:\n- [Trấn Kỳ — Phân loại dữ liệu bằng tiếng Việt tự nhiên](https://tranky.deno.dev/?utm_source=doi-thoai.deno.dev+(Trang+chủ)&utm_medium=Website&utm_campaign=&utm_content=&utm_term=)\n- [Các buổi đáp ứng nhu cầu tự học lập trình hoặc quản lý dự án](https://xn--qucu-hr5aza.cc/?p=21168&utm_source=doi-thoai.deno.dev+%28Trang+ch%E1%BB%A7%29&utm_medium=Website&utm_campaign=C%C3%A1c+bu%E1%BB%95i+%C4%91%C3%A1p+%E1%BB%A9ng+nhu+c%E1%BA%A7u+h%E1%BB%8Dc+l%E1%BA%ADp+tr%C3%ACnh)\n- [Hệ thống quản lý nhu cầu và kiến thức cộng đồng](https://obsidian.quảcầu.cc/📐 Dự án/Công cụ cho hệ sinh thái/9 Blog/Từ việc lưu dữ liệu tại chỗ đến sự hợp tác đa phương và liên ngành và nền kinh tế không dùng tiền?utm_source=doi-thoai.deno.dev+(Trang+chủ)&utm_medium=Website&utm_campaign=C1+Công+cụ+cho+hệ+sinh+thái)\n\nViết bởi [Quả Cầu](https://quảcầu.cc/truyen-ngu-ngon-ve-nhung-nguoi-mong-doi/?utm_source=doi-thoai.deno.dev+(Trang+chủ)&utm_medium=Website&utm_campaign=Meta).\n",
+      "Toàn bộ nội dung": "# đối ⊷ thoại\n[Để có thể thiết kế một giải pháp một cách nhanh chóng và tự tin, bạn cần được thử nghiệm ý tưởng mới và kiểm tra giả thiết ngay khi chúng vừa được nghĩ ra.](https://doi-thoai.deno.dev/LadderOfAbstraction.doi-thoai.1 \"Up and Down the Ladder of Abstraction\") Nếu giải pháp đó cần sự đối thoại giữa các bên, bạn cần nhanh chóng tìm lại các cuộc thảo luận đã từng có trước đây và nắm được mức độ quan tâm của các bên liên quan.\n\nĐể đạt được mục tiêu đó, chương trình này sẽ giúp bạn:\n- Tìm nhanh những ghi chú được chia sẻ công khai trong kho dữ liệu của bạn, hoặc các bài đăng trên các website, diễn đàn\n- Quản lý và tìm nhanh những cộng đồng bạn muốn mở cuộc đối thoại\n- Tự động tạo liên kết UTM và rút gọn liên kết đó\n- Tự động tạo nội dung sẽ được dùng để đối thoại dựa trên ghi chú của bạn\n- Thống kê số lượng truy cập tới liên kết được chia sẻ\n\nLiên lạc với chúng tôi để thêm bài đăng và nơi đăng của bạn vào chương trình với số lượng lớn, hoặc tải [mã nguồn](https://doi-thoai.deno.dev/aH.doi-thoai.1) để dùng với tên miền và hệ thống của bạn. Trong tương lai chúng tôi cũng sẽ tạo một plugin Obsidian để bạn có thể tạo nội dung chia sẻ ngay trên kho thông tin của mình. Chúng tôi hướng tới việc đem lại [sự tự do và tự trị dữ liệu](https://doi-thoai.deno.dev/local-first.doi-thoai.1) cho bạn.\n\nSản phẩm khác:\n- [Trấn Kỳ — Phân loại dữ liệu bằng tiếng Việt tự nhiên](https://tranky.deno.dev/?utm_source=doi-thoai.deno.dev+(Trang+chủ)&utm_medium=Website&utm_campaign=&utm_content=&utm_term=)\n- [Các buổi đáp ứng nhu cầu học cách sử dụng công cụ và tư duy lập trình cho nhu cầu cá nhân hoặc nghiên cứu](https://quảcầu.cc/cac-buoi-dap-ung-nhu-cau-hoc-cach-su-dung-cong-cu-va-tu-duy-lap-trinh-cho-nhu-cau-ca-nhan-hoac-nghien-cuu?utm_source=doi-thoai.deno.dev+(Trang+chủ)&utm_medium=Website&utm_campaign=Các+buổi+đáp+ứng+nhu+cầu+học+lập+trình&utm_content=&utm_term=)\n- [Từ việc lưu dữ liệu tại chỗ đến sự hợp tác đa phương và liên ngành và nền kinh tế không dùng tiền](https://obsidian.quảcầu.cc/📐%20Dự%20án/Công%20cụ%20cho%20hệ%20sinh%20thái/9%20Blog/Từ%20việc%20lưu%20dữ%20liệu%20tại%20chỗ%20đến%20sự%20hợp%20tác%20đa%20phương%20và%20liên%20ngành%20và%20nền%20kinh%20tế%20không%20dùng%20tiền?utm_source=doi-thoai.deno.dev+(Trang+chủ)&utm_medium=Website&utm_campaign=C1+Công+cụ+cho+hệ+sinh+thái&utm_content=&utm_term=)\n\nViết bởi [Quả Cầu](https://quảcầu.cc/truyen-ngu-ngon-ve-nhung-nguoi-mong-doi?utm_source=doi-thoai.deno.dev+(Trang+chủ)&utm_medium=Website&utm_campaign=Meta&utm_content=&utm_term=).\n",
       "Định dạng nội dung": "md"
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
-    "Ngày cập nhật": "2024-06-08T06:22:00.000Z",
+    "Ngày cập nhật": "2024-06-08T08:35:00.000Z",
     "id": "MG"
   },
   {
@@ -23572,12 +23572,12 @@
       "Mã dự án": "C1"
     },
     "Nội dung bài đăng": {
-      "Toàn bộ nội dung": "# [[Các buổi đáp ứng nhu cầu học lập trình]]\n[[09-11]] 15:38 https://www.facebook.com/quacau.sphere/posts/pfbid0ePQADgc8zmQH7FyVa2GjHtmaMF1Rv4h8MnwMiy3f7LgSn3YQf9tDtvUzCwwuYJmQl\n\n[[16-11]] 23:56: \n- Post impressions: 127\n- Post reach: 121\n- Engagement: 17\n- Reactions: 4\n- Comments: 0\n- Link clicks: 2\n- Shares: 0\n- Other clicks: 3\n\n[[21-03]] 20:41 7 react, 14 share\n\n# [[Bàn làm việc Google Calendar]]\n[[29-12]] 17:06  https://www.facebook.com/quacau.sphere/posts/pfbid02zVMWHfUYFZ7rv5gnLnx4TJfxmi273DBZ9XrXRtKxgoFKt9wN9ptm6CgYdnS3TZnyl\n22:46 46 46 5\n[[31-12]] 15:08 104 104 11\n\n# [[Tự động tạo liên kết UTM hoàn chỉnh chỉ bằng những thông tin tối thiểu (tên bài, nơi đăng)]]\n[[20-02]] 02:33 https://www.facebook.com/quacau.sphere/posts/pfbid028r4PfZ2SiamuaSVT5CMMzgfjQfkVLnjkTrNU7dfLNoWiNNW1o1ceBV8bv1DS5gH2l\n[[21-02]] 01:17 2 react\n[[23-02]] 19:32  248 impression, 33 engagement\n[[24-02]] 13:09 319 impression, 36 engagement\n\n# [[đối ⊷ thoại]]\n[[23-05]] 16:08 dạng link https://www.facebook.com/quacau.sphere/posts/pfbid05EsAmUkU2LwiYksgXhE55NnZdZ1Xs2NoHxUhg4hzt6yTZwDa4uco397NQKQ7KCRKl\n16:30 3 view\n19:01 3 view. Share lại trên [[Profile QC]]\nhttps://www.facebook.com/qua.cau.the.sphere/posts/pfbid0K1dS32XBxSdz7po9zx4YgqFhWvei1Q4cBCEfAmBHHbnBKDNfKhtCSi151iWrBNVZl\n\n[[24-05]] 18:00 27 view, 27 impression, 1 like\ndạng ảnh https://www.facebook.com/quacau.sphere/posts/pfbid02KYRdxC6aAXdkDJLB1L4c2PUM4mUsSs4Lw9XbcymSheQ56dPZDbNVhDdDSEj1VsT2l\n23:00 23 view, 23 impression, 1 like",
+      "Toàn bộ nội dung": "# [[Các buổi đáp ứng nhu cầu học lập trình]]\n[[09-11]] 15:38 https://www.facebook.com/quacau.sphere/posts/pfbid0ePQADgc8zmQH7FyVa2GjHtmaMF1Rv4h8MnwMiy3f7LgSn3YQf9tDtvUzCwwuYJmQl\n\n[[16-11]] 23:56: \n- Post impressions: 127\n- Post reach: 121\n- Engagement: 17\n- Reactions: 4\n- Comments: 0\n- Link clicks: 2\n- Shares: 0\n- Other clicks: 3\n\n[[21-03]] 20:41 7 react, 14 share\n\n# [[Bàn làm việc Google Calendar]]\n[[29-12]] 17:06  https://www.facebook.com/quacau.sphere/posts/pfbid02zVMWHfUYFZ7rv5gnLnx4TJfxmi273DBZ9XrXRtKxgoFKt9wN9ptm6CgYdnS3TZnyl\n22:46 46 46 5\n[[31-12]] 15:08 104 104 11\n\n# [[Tự động tạo liên kết UTM hoàn chỉnh chỉ bằng những thông tin tối thiểu (tên bài, nơi đăng)]]\n[[20-02]] 02:33 https://www.facebook.com/quacau.sphere/posts/pfbid028r4PfZ2SiamuaSVT5CMMzgfjQfkVLnjkTrNU7dfLNoWiNNW1o1ceBV8bv1DS5gH2l\n[[21-02]] 01:17 2 react\n[[23-02]] 19:32  248 impression, 33 engagement\n[[24-02]] 13:09 319 impression, 36 engagement\n\n# [[đối ⊷ thoại]]\n[[23-05]] 16:08 [dạng link](https://www.facebook.com/quacau.sphere/posts/pfbid05EsAmUkU2LwiYksgXhE55NnZdZ1Xs2NoHxUhg4hzt6yTZwDa4uco397NQKQ7KCRKl) \n16:30 3 view\n19:01 3 view. Share lại trên [[Profile QC]]\nhttps://www.facebook.com/qua.cau.the.sphere/posts/pfbid0K1dS32XBxSdz7po9zx4YgqFhWvei1Q4cBCEfAmBHHbnBKDNfKhtCSi151iWrBNVZl\n\n[[24-05]] 18:00 27 view, 27 impression, 1 like\ndạng ảnh https://www.facebook.com/quacau.sphere/posts/pfbid02KYRdxC6aAXdkDJLB1L4c2PUM4mUsSs4Lw9XbcymSheQ56dPZDbNVhDdDSEj1VsT2l\n23:00 23 view, 23 impression, 1 like\n\n[[08-06]] 20:52 đăng dạng ảnh trang chủ https://www.facebook.com/quacau.sphere/posts/pfbid0Y6Rsu6rQuBtPtwDj4xzonDkyh8Jrpbr8YrsJUvbTWwaw7MyEwW4jLEkjhAvkUAfjl\n21:10 1 like\n[[09-06]] 00:28 21 view, 21 impression, 1 like\n13:07 26 view, 26 impression, 1 like\n\n|                | Reach | Impression | React             |\n| -------------- | ----- | ---------- | ----------------- |\n| Link sihouette | 90    | 96         | 2 (có 1 tự share) |\n| Ảnh sihouette  | 46    | 46         | 1                 |\n| Ảnh trang chủ  | 26    | 26         | 1                 |\n",
       "Định dạng nội dung": "md"
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-05-26T07:51:00.000Z",
-    "Ngày cập nhật": "2024-05-24T16:00:00.000Z",
+    "Ngày cập nhật": "2024-06-09T06:07:00.000Z",
     "id": "Mg"
   },
   {
@@ -23719,12 +23719,12 @@
       "Mã dự án": "C1"
     },
     "Nội dung bài đăng": {
-      "Toàn bộ nội dung": "# Đánh dấu các phần của file thu âm \r\n# Đánh dấu các phần của một recording\r\n",
+      "Toàn bộ nội dung": "# Đánh dấu các phần của file thu âm \n# Đánh dấu các phần của một recording\n",
       "Định dạng nội dung": "md"
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-06-02T03:46:00.000Z",
-    "Ngày cập nhật": "2023-10-06T09:09:00.000Z",
+    "Ngày cập nhật": "2024-06-08T17:37:00.000Z",
     "id": "Mp"
   },
   {
@@ -23736,12 +23736,12 @@
     },
     "Nội dung bài đăng": {
       "Mô tả bài đăng": "Dành cho những người nghèo cần họp",
-      "Toàn bộ nội dung": "> [!important] Nguyên tắc chung\r\n> Trong phòng chỉ có một thiết bị thu âm, và thiết bị đó cũng là thiết bị phát âm duy nhất\r\n\r\n# Yêu cầu tối thiểu\r\nNhững thứ cơ bản:\r\n- 🔊Loa nghe rõ, \r\n- 🎙️Mic hoạt động ổn định,\r\n- 🌐Internet ổn định\r\n\r\nNgười thuyết trình cần:\r\n- Bật cam,\r\n- Bật chia sẻ màn hình trong Zoom\r\n- Bật các chương trình khác khi chia sẻ: trình duyệt, PowerPoint, Google Docs, Obsidian, v.v. \r\n\r\nTất cả những cái này đều khá tốn RAM. Một số webapp như Google Docs hay Notion chỉ bật mình nó thôi là đã thấy hơi cà giựt. Các chương trình khác như Obsidian hay PowerPoint nếu chỉ bật không thôi thì thấy nhanh, nhưng nếu có bật với Zoom (chưa cần chia sẻ) thì đã thấy giựt. Chưa kể lúc đó mic dễ bị trục trặc. Vì thế, máy của người thuyết trình phải đủ mạnh, nếu không thì chỉ nên nói thôi chứ không nên chia sẻ màn hình.\r\n\r\n# Điều kiện tốt nhất \r\nNên có những thứ sau:\r\n- 🎙️🔊 1 bộ loa, mic chuyên dụng cho việc họp\r\n- 🔓 1 tài khoản Zoom premium/Google Meet premium\r\n- 🖥️ 2 màn hình: 1 để xem mặt người online + nội dung chat, 1 để trình chiếu\r\n- 📹 1 webcam \r\n- 💻 Máy của người thuyết trình đủ mạnh \r\n- 🌐 Internet ổn định\r\n\r\nMột số thiết bị gợi ý:\r\n- [Microsoft Modern USB-C Speaker](https://www.youtube.com/watch?v=S2qjBBnVeqU \"Giờ họp khỏi xài tai nghe nữa, quá ngon: Microsoft Modern USB-C Speaker - YouTube\"): 2.680.000 ₫\r\n![](https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Panel3-S2-FeatureCtr?scl=1) \r\n# Khi không có đầy đủ thiết bị\r\nBảng dưới đây liệt kê những giải pháp khi thiếu một trong những thứ đó. Nếu không cần dùng đến cái nào thì xem như đã có nó đó rồi.\r\n\r\n| 🎙️🔊 Có bộ loa, mic chuyên dụng | 🔓 Có tài khoản Zoom/Google Meet premium | 🖥️ Có máy chiếu | 📹 Có webcam | `←` Tình huống<br>`↓` Phương án giải quyết                                                                                                                                                                  |\r\n| ------------------------------- | ---------------------------------------- | --------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\r\n| ❌                              | ✔                                        | ✔               | ✔            | Dùng một điện thoại hoặc laptop để thay thế<br><br>Nếu tiếng không được lớn, người ở xa không nghe rõ, cũng như mic không thu tiếng của họ rõ thì cần có thêm loa ngoài                                     |\r\n| ✔                               | ❌                                       | ✔               | ✔            | Dùng [[Discord (gọi online)\\|Discord]], [[📜 Tài nguyên/Làm dự án/Phần mềm làm việc nhóm (groupware)/Phần mềm chat nhóm/Gather]] hoặc Jitsi trên một máy<br><sub>Bấm vào từng link để xem chi tiết</sub>                                                                                  |\r\n| ✔                               | ✔                                        | ❌              | ✔            | • Vác màn hình riêng cũng không quá bất tiện<br>• Nhiều máy cùng vào cùng lúc và tắt hết tiếng, mic                                                                                                         |\r\n| ✔                               | ✔                                        | ✔               | ❌           | Gắn điện thoại lên cây selfie đứng hoặc tripod                                                                                                                                                              |\r\n| 🎙️🔊 Có bộ loa, mic chuyên dụng | 🔓 Có tài khoản Zoom/Google Meet premium | 🖥️ Có máy chiếu | 📹 Có webcam | `←` Tình huống<br>`↕` Phương án giải quyết                                                                                                                                                                  |\r\n| ❌                              | ❌                                       | ✔               | ✔            | Tương tự như ở dưới, nhưng gọi trên [[Discord (gọi online)\\|Discord]], [[📜 Tài nguyên/Làm dự án/Phần mềm làm việc nhóm (groupware)/Phần mềm chat nhóm/Gather]] hoặc Jitsi|\r\n| ❌                              | ✔                                        | ❌              | ✔            | Dùng nhiều điện thoại, laptop vào cùng lúc.<br><br>Nếu bị hú thì có 2 cách:<br>• Mỗi người đeo một tai nghe, hoặc<br>• Khi ai nói thì người đó bật mic và loa, tất cả mọi người cùng tắt |\r\n| ❌                              | ✔                                        | ✔               | ❌           | Tương tự như ở trên                                                                                                                                                                                                            |\r\n| 🎙️🔊 Có bộ loa, mic chuyên dụng | 🔓 Có tài khoản Zoom/Google Meet premium | 🖥️ Có máy chiếu | 📹 Có webcam | `←` Tình huống<br>`↕` Phương án giải quyết                                                                                                                                                                  |\r\n| ✔                               | ❌                                       | ❌              | ✔            | Dùng [[Discord (gọi online)\\|Discord]], [[📜 Tài nguyên/Làm dự án/Phần mềm làm việc nhóm (groupware)/Phần mềm chat nhóm/Gather]] hoặc Jitsi trên tất cả các máy. Tắt hết tất cả mic và loa                                                                                                |\r\n| ✔                               | ❌                                       | ✔               | ❌           | Dùng [[Discord (gọi online)\\|Discord]], [[📜 Tài nguyên/Làm dự án/Phần mềm làm việc nhóm (groupware)/Phần mềm chat nhóm/Gather]] hoặc Jitsi trên một máy. Gắn điện thoại lên cây selfie đứng hoặc tripod                                                                                  |\r\n| ✔                               | ✔                                        | ❌              | ❌           | Dùng [[Zoom]], [[Google Meet]], [[Discord (gọi online)\\|Discord]], [[📜 Tài nguyên/Làm dự án/Phần mềm làm việc nhóm (groupware)/Phần mềm chat nhóm/Gather]] hoặc Jitsi trên tất cả các máy. Tắt hết tất cả mic và loa.                                                                    |\r\n| ❌                              | ❌                                       | ❌              | ✔            |                                                                                                                                                                                                             |\r\n| ❌                              | ❌                                       | ✔               | ❌           |                                                                                                                                                                                                             |\r\n| ❌                              | ✔                                        | ❌              | ❌           |                                                                                                                                                                                                             |\r\n| ✔                               | ❌                                       | ❌              | ❌           |                                                                                                                                                                                                             |\r\n| ❌                              | ❌                                       | ❌              | ❌           |                                                                                                                                                                                                             |\r\n",
+      "Toàn bộ nội dung": "> [!important] Nguyên tắc chung\n> Trong phòng chỉ có một thiết bị thu âm, và thiết bị đó cũng là thiết bị phát âm duy nhất\n\n# Yêu cầu tối thiểu\nNhững thứ cơ bản:\n- 🔊Loa nghe rõ, \n- 🎙️Mic hoạt động ổn định,\n- 🌐Internet ổn định\n\nNgười thuyết trình cần:\n- Bật cam,\n- Bật chia sẻ màn hình trong Zoom\n- Bật các chương trình khác khi chia sẻ: trình duyệt, PowerPoint, Google Docs, Obsidian, v.v. \n\nTất cả những cái này đều khá tốn RAM. Một số webapp như Google Docs hay Notion chỉ bật mình nó thôi là đã thấy hơi cà giựt. Các chương trình khác như Obsidian hay PowerPoint nếu chỉ bật không thôi thì thấy nhanh, nhưng nếu có bật với Zoom (chưa cần chia sẻ) thì đã thấy giựt. Chưa kể lúc đó mic dễ bị trục trặc. Vì thế, máy của người thuyết trình phải đủ mạnh, nếu không thì chỉ nên nói thôi chứ không nên chia sẻ màn hình.\n\n# Điều kiện tốt nhất \nNên có những thứ sau:\n- 🎙️🔊 1 bộ loa, mic chuyên dụng cho việc họp\n- 🔓 1 tài khoản Zoom premium/Google Meet premium\n- 🖥️ 2 màn hình: 1 để xem mặt người online + nội dung chat, 1 để trình chiếu\n- 📹 1 webcam \n- 💻 Máy của người thuyết trình đủ mạnh \n- 🌐 Internet ổn định\n\nMột số thiết bị gợi ý:\n- [Microsoft Modern USB-C Speaker](https://www.youtube.com/watch?v=S2qjBBnVeqU \"Giờ họp khỏi xài tai nghe nữa, quá ngon: Microsoft Modern USB-C Speaker - YouTube\"): 2.680.000 ₫\n![](https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Panel3-S2-FeatureCtr?scl=1) \n# Khi không có đầy đủ thiết bị\nBảng dưới đây liệt kê những giải pháp khi thiếu một trong những thứ đó. Nếu không cần dùng đến cái nào thì xem như đã có nó đó rồi.\n\n| 🎙️🔊 Có bộ loa, mic chuyên dụng | 🔓 Có tài khoản Zoom/Google Meet premium | 🖥️ Có máy chiếu | 📹 Có webcam | `←` Tình huống<br>`↓` Phương án giải quyết                                                                                                                                                                  |\n| ------------------------------- | ---------------------------------------- | --------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| ❌                              | ✔                                        | ✔               | ✔            | Dùng một điện thoại hoặc laptop để thay thế<br><br>Nếu tiếng không được lớn, người ở xa không nghe rõ, cũng như mic không thu tiếng của họ rõ thì cần có thêm loa ngoài                                     |\n| ✔                               | ❌                                       | ✔               | ✔            | Dùng [[Discord (gọi online)\\|Discord]], [[📜 Tài nguyên/Làm dự án/Phần mềm làm việc nhóm (groupware)/Phần mềm chat nhóm/Gather]] hoặc Jitsi trên một máy<br><sub>Bấm vào từng link để xem chi tiết</sub>                                                                                  |\n| ✔                               | ✔                                        | ❌              | ✔            | • Vác màn hình riêng cũng không quá bất tiện<br>• Nhiều máy cùng vào cùng lúc và tắt hết tiếng, mic                                                                                                         |\n| ✔                               | ✔                                        | ✔               | ❌           | Gắn điện thoại lên cây selfie đứng hoặc tripod                                                                                                                                                              |\n| 🎙️🔊 Có bộ loa, mic chuyên dụng | 🔓 Có tài khoản Zoom/Google Meet premium | 🖥️ Có máy chiếu | 📹 Có webcam | `←` Tình huống<br>`↕` Phương án giải quyết                                                                                                                                                                  |\n| ❌                              | ❌                                       | ✔               | ✔            | Tương tự như ở dưới, nhưng gọi trên [[Discord (gọi online)\\|Discord]], [[📜 Tài nguyên/Làm dự án/Phần mềm làm việc nhóm (groupware)/Phần mềm chat nhóm/Gather]] hoặc Jitsi|\n| ❌                              | ✔                                        | ❌              | ✔            | Dùng nhiều điện thoại, laptop vào cùng lúc.<br><br>Nếu bị hú thì có 2 cách:<br>• Mỗi người đeo một tai nghe, hoặc<br>• Khi ai nói thì người đó bật mic và loa, tất cả mọi người cùng tắt |\n| ❌                              | ✔                                        | ✔               | ❌           | Tương tự như ở trên                                                                                                                                                                                                            |\n| 🎙️🔊 Có bộ loa, mic chuyên dụng | 🔓 Có tài khoản Zoom/Google Meet premium | 🖥️ Có máy chiếu | 📹 Có webcam | `←` Tình huống<br>`↕` Phương án giải quyết                                                                                                                                                                  |\n| ✔                               | ❌                                       | ❌              | ✔            | Dùng [[Discord (gọi online)\\|Discord]], [[📜 Tài nguyên/Làm dự án/Phần mềm làm việc nhóm (groupware)/Phần mềm chat nhóm/Gather]] hoặc Jitsi trên tất cả các máy. Tắt hết tất cả mic và loa                                                                                                |\n| ✔                               | ❌                                       | ✔               | ❌           | Dùng [[Discord (gọi online)\\|Discord]], [[📜 Tài nguyên/Làm dự án/Phần mềm làm việc nhóm (groupware)/Phần mềm chat nhóm/Gather]] hoặc Jitsi trên một máy. Gắn điện thoại lên cây selfie đứng hoặc tripod                                                                                  |\n| ✔                               | ✔                                        | ❌              | ❌           | Dùng [[Zoom]], [[Google Meet]], [[Discord (gọi online)\\|Discord]], [[📜 Tài nguyên/Làm dự án/Phần mềm làm việc nhóm (groupware)/Phần mềm chat nhóm/Gather]] hoặc Jitsi trên tất cả các máy. Tắt hết tất cả mic và loa.                                                                    |\n| ❌                              | ❌                                       | ❌              | ✔            |                                                                                                                                                                                                             |\n| ❌                              | ❌                                       | ✔               | ❌           |                                                                                                                                                                                                             |\n| ❌                              | ✔                                        | ❌              | ❌           |                                                                                                                                                                                                             |\n| ✔                               | ❌                                       | ❌              | ❌           |                                                                                                                                                                                                             |\n| ❌                              | ❌                                       | ❌              | ❌           |                                                                                                                                                                                                             |\n",
       "Định dạng nội dung": "md"
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-05-26T07:51:00.000Z",
-    "Ngày cập nhật": "2023-10-06T09:09:00.000Z",
+    "Ngày cập nhật": "2024-06-08T17:37:00.000Z",
     "id": "Mq"
   },
   {
@@ -24377,12 +24377,12 @@
       "Mã dự án": "C1"
     },
     "Nội dung bài đăng": {
-      "Toàn bộ nội dung": "",
+      "Toàn bộ nội dung": "trong một server discord có người hỏi tương tự, em thấy có thể hữu ích nên copy ra đây.  \n  \nHỏi:  \n❝em đang tìm một phần mềm quản lý thời gian biểu cả nhóm theo dạng như:  \nCó một bảng lịch cộng tác  \nmọi người có thể tô trên lịch các khoảng thời gian mình bận  \ntừ đó lọc ra khoảng thời gian rảnh để thống nhất đưa ra lịch họp  \nCác bác biết phần mềm nào như vậy không ạ❞  \n  \nĐáp:  \n❝reclaim.ai nhưng ko khuyến khích vì nó ko có database ha, còn ở mức độ bt thì thằng notion calendar chắc cũng đủ để dùng  \nnói thêm cái bạn nói là 1 dạng sắp xếp cuộc hẹn á, appointment bạn search kiểu này dễ ra hơn chứ ko nó đề xuất 1 loạt cái ko lq loạn lắm, các phương án thay thế có thể là morgen motion❞  \nhttps://discord.com/channels/686053708261228577/944662832585277511/1248948508443021342",
       "Định dạng nội dung": "md"
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-05-26T07:51:00.000Z",
-    "Ngày cập nhật": "2023-10-06T09:09:00.000Z",
+    "Ngày cập nhật": "2024-06-08T17:25:00.000Z",
     "id": "NS"
   },
   {
@@ -24409,12 +24409,12 @@
       "Mã dự án": "C1"
     },
     "Nội dung bài đăng": {
-      "Toàn bộ nội dung": "Giới hạn của bản miễn phí:: \r\nGiới hạn về mặt công nghệ:: • Chỉ cho một thiết bị vào cùng lúc<br>• Không chia phòng được<br>• Không kết nối với các dịch vụ khác được\r\nƯu điểm::\r\n",
+      "Toàn bộ nội dung": "Giới hạn của bản miễn phí:: \nGiới hạn về mặt công nghệ:: • Chỉ cho một thiết bị vào cùng lúc<br>• Không chia phòng được<br>• Không kết nối với các dịch vụ khác được\nƯu điểm::\n",
       "Định dạng nội dung": "md"
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-05-26T07:51:00.000Z",
-    "Ngày cập nhật": "2023-10-06T09:09:00.000Z",
+    "Ngày cập nhật": "2024-06-08T17:37:00.000Z",
     "id": "NU"
   },
   {
@@ -24425,12 +24425,12 @@
       "Mã dự án": "C1"
     },
     "Nội dung bài đăng": {
-      "Toàn bộ nội dung": "Giới hạn của bản miễn phí:: \r\nGiới hạn về mặt công nghệ:: • Chỉ cho một thiết bị vào cùng lúc<br>• Không chia phòng được<br>• Không kết nối với các dịch vụ khác được\r\nƯu điểm::\r\n",
+      "Toàn bộ nội dung": "Giới hạn của bản miễn phí:: \nGiới hạn về mặt công nghệ:: • Chỉ cho một thiết bị vào cùng lúc<br>• Không chia phòng được<br>• Không kết nối với các dịch vụ khác được\nƯu điểm::\n",
       "Định dạng nội dung": "md"
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-05-26T07:51:00.000Z",
-    "Ngày cập nhật": "2023-10-06T09:09:00.000Z",
+    "Ngày cập nhật": "2024-06-08T17:37:00.000Z",
     "id": "NV"
   },
   {
@@ -24441,12 +24441,12 @@
       "Mã dự án": "C1"
     },
     "Nội dung bài đăng": {
-      "Toàn bộ nội dung": "Giới hạn của bản miễn phí:: Tối đa 45 phút khi có 3 thiết bị tham gia trở lên\r\nGiới hạn về mặt công nghệ:: Không dùng trên điện thoại được\r\nƯu điểm::\r\n",
+      "Toàn bộ nội dung": "Giới hạn của bản miễn phí:: Tối đa 45 phút khi có 3 thiết bị tham gia trở lên\nGiới hạn về mặt công nghệ:: Không dùng trên điện thoại được\nƯu điểm::\n",
       "Định dạng nội dung": "md"
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-05-26T07:51:00.000Z",
-    "Ngày cập nhật": "2023-10-06T09:09:00.000Z",
+    "Ngày cập nhật": "2024-06-08T17:37:00.000Z",
     "id": "NW"
   },
   {
@@ -24457,12 +24457,12 @@
       "Mã dự án": "C1"
     },
     "Nội dung bài đăng": {
-      "Toàn bộ nội dung": "Giới hạn của bản miễn phí:: Tối đa 25 người\r\nGiới hạn về mặt công nghệ:: \r\nƯu điểm:: Di chuyển tự do, Cảm giác gần gũi như ở cùng nhau thật\r\n\r\n\r\nGather\r\n",
+      "Toàn bộ nội dung": "Giới hạn của bản miễn phí:: Tối đa 25 người\nGiới hạn về mặt công nghệ:: \nƯu điểm:: Di chuyển tự do, Cảm giác gần gũi như ở cùng nhau thật\n\n\nGather\n",
       "Định dạng nội dung": "md"
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-05-26T07:51:00.000Z",
-    "Ngày cập nhật": "2023-10-06T09:09:00.000Z",
+    "Ngày cập nhật": "2024-06-08T17:37:00.000Z",
     "id": "NX"
   },
   {
@@ -24473,12 +24473,12 @@
       "Mã dự án": "C1"
     },
     "Nội dung bài đăng": {
-      "Toàn bộ nội dung": "Giới hạn của bản miễn phí:: Tối đa 45 phút khi có 3 thiết bị tham gia trở lên\r\nGiới hạn về mặt công nghệ:: \r\nƯu điểm:: Tích hợp với Google Docs, Phụ đề\r\n\r\n",
+      "Toàn bộ nội dung": "Giới hạn của bản miễn phí:: Tối đa 45 phút khi có 3 thiết bị tham gia trở lên\nGiới hạn về mặt công nghệ:: \nƯu điểm:: Tích hợp với Google Docs, Phụ đề\n\n",
       "Định dạng nội dung": "md"
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-05-26T07:51:00.000Z",
-    "Ngày cập nhật": "2023-10-06T09:09:00.000Z",
+    "Ngày cập nhật": "2024-06-08T17:37:00.000Z",
     "id": "NY"
   },
   {
@@ -24489,12 +24489,12 @@
       "Mã dự án": "C1"
     },
     "Nội dung bài đăng": {
-      "Toàn bộ nội dung": "Giới hạn của bản miễn phí:: \r\nGiới hạn về mặt công nghệ:: Chỉ cho một thiết bị vào cùng lúc\r\nGiới hạn về mặt công nghệ:: Không chia phòng được\r\nGiới hạn về mặt công nghệ:: Không kết nối với các dịch vụ khác được\r\nƯu điểm::\r\n",
+      "Toàn bộ nội dung": "Giới hạn của bản miễn phí:: \nGiới hạn về mặt công nghệ:: Chỉ cho một thiết bị vào cùng lúc\nGiới hạn về mặt công nghệ:: Không chia phòng được\nGiới hạn về mặt công nghệ:: Không kết nối với các dịch vụ khác được\nƯu điểm::\n",
       "Định dạng nội dung": "md"
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-05-26T07:51:00.000Z",
-    "Ngày cập nhật": "2023-10-06T09:09:00.000Z",
+    "Ngày cập nhật": "2024-06-08T17:37:00.000Z",
     "id": "NZ"
   },
   {
@@ -24505,12 +24505,12 @@
       "Mã dự án": "C1"
     },
     "Nội dung bài đăng": {
-      "Toàn bộ nội dung": "Giới hạn của bản miễn phí:: \r\nGiới hạn về mặt công nghệ:: \r\nƯu điểm:: Người tham gia có thể điều khiển slide theo ý muốn\r\n",
+      "Toàn bộ nội dung": "Giới hạn của bản miễn phí:: \nGiới hạn về mặt công nghệ:: \nƯu điểm:: Người tham gia có thể điều khiển slide theo ý muốn\n",
       "Định dạng nội dung": "md"
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-05-26T07:51:00.000Z",
-    "Ngày cập nhật": "2023-10-06T09:09:00.000Z",
+    "Ngày cập nhật": "2024-06-08T17:37:00.000Z",
     "id": "Na"
   },
   {
@@ -24521,12 +24521,12 @@
       "Mã dự án": "C1"
     },
     "Nội dung bài đăng": {
-      "Toàn bộ nội dung": "Giới hạn của bản miễn phí:: Tối đa 45 phút khi có 3 thiết bị tham gia trở lên\r\nGiới hạn về mặt công nghệ:: \r\nƯu điểm::\r\n\r\n",
+      "Toàn bộ nội dung": "Giới hạn của bản miễn phí:: Tối đa 45 phút khi có 3 thiết bị tham gia trở lên\nGiới hạn về mặt công nghệ:: \nƯu điểm::\n\n",
       "Định dạng nội dung": "md"
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-05-26T07:51:00.000Z",
-    "Ngày cập nhật": "2023-10-06T09:09:00.000Z",
+    "Ngày cập nhật": "2024-06-08T17:37:00.000Z",
     "id": "Nb"
   },
   {
@@ -24542,7 +24542,7 @@
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-05-26T07:51:00.000Z",
-    "Ngày cập nhật": "2023-10-06T09:09:00.000Z",
+    "Ngày cập nhật": "2024-06-08T17:37:00.000Z",
     "id": "Nc"
   },
   {
@@ -24558,7 +24558,7 @@
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-05-26T07:51:00.000Z",
-    "Ngày cập nhật": "2023-10-06T09:09:00.000Z",
+    "Ngày cập nhật": "2024-06-08T17:37:00.000Z",
     "id": "Nd"
   },
   {
@@ -24574,7 +24574,7 @@
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-05-26T07:51:00.000Z",
-    "Ngày cập nhật": "2023-10-06T09:09:00.000Z",
+    "Ngày cập nhật": "2024-06-08T17:36:00.000Z",
     "id": "Ne"
   },
   {
@@ -24622,7 +24622,7 @@
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-05-26T07:51:00.000Z",
-    "Ngày cập nhật": "2023-10-06T09:09:00.000Z",
+    "Ngày cập nhật": "2024-06-08T17:36:00.000Z",
     "id": "Nh"
   },
   {
@@ -24649,12 +24649,12 @@
       "Mã dự án": "C1"
     },
     "Nội dung bài đăng": {
-      "Toàn bộ nội dung": "[[Giao diện block cho phép người dùng linh hoạt hơn mà vẫn giữ được sự cấu trúc]]\r\n",
+      "Toàn bộ nội dung": "[[Giao diện block cho phép người dùng linh hoạt hơn mà vẫn giữ được sự cấu trúc]]\n",
       "Định dạng nội dung": "md"
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-05-26T07:51:00.000Z",
-    "Ngày cập nhật": "2023-10-06T09:09:00.000Z",
+    "Ngày cập nhật": "2024-06-08T17:37:00.000Z",
     "id": "Nj"
   },
   {
@@ -24686,7 +24686,7 @@
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-05-26T07:51:00.000Z",
-    "Ngày cập nhật": "2023-10-06T09:09:00.000Z",
+    "Ngày cập nhật": "2024-06-08T17:37:00.000Z",
     "id": "Nl"
   },
   {
@@ -24777,12 +24777,12 @@
       "Mã dự án": "C1"
     },
     "Nội dung bài đăng": {
-      "Toàn bộ nội dung": "# [Tool Finder: Productivity Tools Reviews, Guides & News](https://toolfinder.co/)\r\n",
+      "Toàn bộ nội dung": "# [Tool Finder: Productivity Tools Reviews, Guides & News](https://toolfinder.co/)\n",
       "Định dạng nội dung": "md"
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-07-01T07:03:00.000Z",
-    "Ngày cập nhật": "2023-10-06T09:09:00.000Z",
+    "Ngày cập nhật": "2024-06-08T17:36:00.000Z",
     "id": "Nr"
   },
   {
@@ -25434,12 +25434,12 @@
       "Mã dự án": "C2"
     },
     "Nội dung bài đăng": {
-      "Toàn bộ nội dung": "# Thử nhanh\nCài đặt Deno và tạo tài khoản trên Deno Deploy.\n\nKhi clone repo này về thì chạy:\n```\ndeno task start\n```\n\n# Lấy dữ liệu từ vault, website\n## Obsidian, Logseq\nVault của bạn cần có một thư mục thiết lập, và trong đó có một note thiết lập có frontmatter như sau:\n```yaml\n---\nTên vault: xxx\nMã vault: yyy\nMô tả: zzz\nURL: ttt\n---\n```\n## WordPress \nMở PhPMyAdmin lên và dùng lệnh MySQL này. Nhớ thay `wp` bằng tên table của bạn.\n```sql\nSELECT wp_posts.post_title, GROUP_CONCAT(wp_terms.name) AS categories\nFROM wp_posts\nLEFT JOIN wp_term_relationships ON (wp_posts.ID = wp_term_relationships.object_id)\nLEFT JOIN wp_term_taxonomy ON (wp_term_relationships.term_taxonomy_id = wp_term_taxonomy.term_taxonomy_id)\nLEFT JOIN wp_terms ON (wp_term_taxonomy.term_id = wp_terms.term_id)\nWHERE wp_posts.post_type = 'post' \nAND wp_posts.post_status = 'publish'\nGROUP BY wp_posts.ID\nINTO OUTFILE '/path/to/export/posts_categories.csv'\nFIELDS TERMINATED BY ',' ENCLOSED BY '\"' LINES TERMINATED BY '\\n';\n```\nCopy kết quả vào `./core/A. Cấu hình/wp_posts.csv`\n# Thiết lập cấu hình\nBắt chước các cấu hình có sẵn trong `./core/A. Cấu hình/Nơi đăng`.\n\n# Tạo biến môi trường\nTạo tập tin `.env` với nội dung như sau:\n```env\nDENO_KV_ACCESS_TOKEN = XXX\nKV_UUID = YYY\n\nORIGIN = https://localhost:8000\n# ORIGIN = https://doi-thoai.deno.dev\n```\n\n# Giấy phép\nAGPL. Người sử dụng liên kết rút gọn của bạn có quyền tiếp cận và chia sẻ mã nguồn.\n",
+      "Toàn bộ nội dung": "# Thử nhanh\nCài đặt Git, Deno.\n\nSau khi clone repo này về thì chạy lệnh sau trên terminal:\n```\ndeno task start\n```\n\n# Lấy dữ liệu từ vault, website của bạn\n## Chuẩn bị dữ liệu\n### Obsidian, Logseq\nVault của bạn cần có một thư mục thiết lập, và trong đó có một note thiết lập có frontmatter như sau:\n```yaml\n---\nTên vault: xxx\nMã vault: yyy\nMô tả: zzz\nURL: ttt\n---\n```\n\n### WordPress \n[Mở PhPMyAdmin lên và chạy truy vấn SQL](https://youtu.be/VnBdOBKwPes?si=6XjJZ3hsX-WR15jT) dưới đây. Nhớ thay `wp` bằng tên table của bạn.\n```sql\nSELECT wp_posts.post_title, GROUP_CONCAT(wp_terms.name) AS categories, wp_posts.post_name, wp_posts.post_author, wp_posts.post_excerpt, wp_posts.post_date, wp_posts.post_modified\nFROM wp_posts\nLEFT JOIN wp_term_relationships ON (wp_posts.ID = wp_term_relationships.object_id)\nLEFT JOIN wp_term_taxonomy ON (wp_term_relationships.term_taxonomy_id = wp_term_taxonomy.term_taxonomy_id)\nLEFT JOIN wp_terms ON (wp_term_taxonomy.term_id = wp_terms.term_id)\nWHERE wp_posts.post_type = 'post' \nAND wp_posts.post_status = 'publish'\nGROUP BY wp_posts.ID\n```\nXuất kết quả dưới dạng csv.\n\n## Thiết lập cấu hình\nBắt chước các cấu hình có sẵn trong `./core/A. Cấu hình` và chỉnh sửa các đường dẫn trong `./ĐƯỜNG_DẪN.ts` cho đúng.\n\n## Tạo biến môi trường\nTạo tập tin `.env` với nội dung như sau:\n```env\nDENO_KV_ACCESS_TOKEN = XXX\nKV_UUID = YYY\n\nORIGIN = https://localhost:8000\n## ORIGIN = https://doi-thoai.deno.dev\n```\n\n## Chạy\n```\ndeno task start\n```\n\n## Deploy\nDùng Deno Deploy\n\n# Giấy phép\nAGPL. Người sử dụng liên kết rút gọn của bạn có quyền tiếp cận và chia sẻ mã nguồn.\n",
       "Định dạng nội dung": "md"
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
-    "Ngày cập nhật": "2024-06-01T05:34:00.000Z",
+    "Ngày cập nhật": "2024-06-08T10:57:00.000Z",
     "id": "OU"
   },
   {
@@ -28827,12 +28827,12 @@
       "Mã dự án": "C2"
     },
     "Nội dung bài đăng": {
-      "Toàn bộ nội dung": "To start off, let’s do the “hello world” of generics: the identity function. The identity function is a function that will return back whatever is passed in. You can think of this in a similar way to the `echo` command.\n\nWithout generics, we would either have to give the identity function a specific type:\n\n`   function identity(arg: number): number {    return arg;  }   `[Try](https://www.typescriptlang.org/play/#code/GYVwdgxgLglg9mABDAJgUzLKBPAFAQwCcBzALkTBAFsAjNQgSnMtvsQG8AoRRQtKEISRFiAbk4BfIA)\n\nOr, we could describe the identity function using the `any` type:\n\n`   function identity(arg: any): any {    return arg;  }   `[Try](https://www.typescriptlang.org/play/#code/GYVwdgxgLglg9mABDAJgUzLKBPAFAQwCcBzALkXzGwEpzLtEBvAKEUULShEKSOIG5mAXyA)\n\nWhile using `any` is certainly generic in that it will cause the function to accept any and all types for the type of `arg`, we actually are losing the information about what that type was when the function returns. If we passed in a number, the only information we have is that any type could be returned.\n\nInstead, we need a way of capturing the type of the argument in such a way that we can also use it to denote what is being returned. Here, we will use a _type variable_, a special kind of variable that works on types rather than values.\n\n`   function identity<Type>(arg: Type): Type {    return arg;  }   `[Try](https://www.typescriptlang.org/play/#code/GYVwdgxgLglg9mABDAJgUzLKBPAPAFWwAc0A+ACgEMAnAcwC5FCSBKR5tRAbwChFFqaKCGpIatANw8AvkA)\n\nWe’ve now added a type variable `Type` to the identity function. This `Type` allows us to capture the type the user provides (e.g. `number`), so that we can use that information later. Here, we use `Type` again as the return type. On inspection, we can now see the same type is used for the argument and the return type. This allows us to traffic that type information in one side of the function and out the other.\n\nWe say that this version of the `identity` function is generic, as it works over a range of types. Unlike using `any`, it’s also just as precise (i.e., it doesn’t lose any information) as the first `identity` function that used numbers for the argument and return type.\n\nNguồn:: [TypeScript: Documentation - Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html)\n[[generic là biến dành cho kiểu]] \n",
+      "Toàn bộ nội dung": "To start off, let’s do the “hello world” of generics: the identity function. The identity function is a function that will return back whatever is passed in. You can think of this in a similar way to the `echo` command.\n\nWithout generics, we would either have to give the identity function a specific type:\n\n```ts\nfunction identity(arg: number): number {    \n\treturn arg;\n}\n```\n\n[Try](https://www.typescriptlang.org/play/#code/GYVwdgxgLglg9mABDAJgUzLKBPAFAQwCcBzALkTBAFsAjNQgSnMtvsQG8AoRRQtKEISRFiAbk4BfIA)\n\nOr, we could describe the identity function using the `any` type:\n\n```ts\nfunction identity(arg: any): any {\n\treturn arg;\n}\n```\n[Try](https://www.typescriptlang.org/play/#code/GYVwdgxgLglg9mABDAJgUzLKBPAFAQwCcBzALkXzGwEpzLtEBvAKEUULShEKSOIG5mAXyA)\n\nWhile using `any` is certainly generic in that it will cause the function to accept any and all types for the type of `arg`, we actually are losing the information about what that type was when the function returns. If we passed in a number, the only information we have is that any type could be returned.\n\nInstead, we need a way of capturing the type of the argument in such a way that we can also use it to denote what is being returned. Here, we will use a _type variable_, a special kind of variable that works on types rather than values.\n\n```ts\nfunction identity<Type>(arg: Type): Type {\n\treturn arg;\n}\n```\n\n[Try](https://www.typescriptlang.org/play/#code/GYVwdgxgLglg9mABDAJgUzLKBPAPAFWwAc0A+ACgEMAnAcwC5FCSBKR5tRAbwChFFqaKCGpIatANw8AvkA)\n\nWe’ve now added a type variable `Type` to the identity function. This `Type` allows us to capture the type the user provides (e.g. `number`), so that we can use that information later. Here, we use `Type` again as the return type. On inspection, we can now see the same type is used for the argument and the return type. This allows us to traffic that type information in one side of the function and out the other.\n\nWe say that this version of the `identity` function is generic, as it works over a range of types. Unlike using `any`, it’s also just as precise (i.e., it doesn’t lose any information) as the first `identity` function that used numbers for the argument and return type.\n\nNguồn:: [TypeScript: Documentation - Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html)\n[[generic là biến dành cho kiểu]] \n",
       "Định dạng nội dung": "md"
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
-    "Ngày cập nhật": "2024-03-22T09:35:00.000Z",
+    "Ngày cập nhật": "2024-06-09T06:29:00.000Z",
     "id": "Ro"
   },
   {
@@ -33878,6 +33878,22 @@
     "id": "Wj"
   },
   {
+    "Tiêu đề": "Có vẻ như để bài viết dưới dạng link hay dạng ảnh thì fb cũng đều phân phối như nhau",
+    "URL": "https://lậptrình.quảcầu.cc/🗯️Tiếp thị số/Facebook/Có vẻ như để bài viết dưới dạng link hay dạng ảnh thì fb cũng đều phân phối như nhau",
+    "Kho thông tin": "Tiếp thị số, xử lý dữ liệu và lập trình",
+    "Dự án": {
+      "Mã dự án": "C2"
+    },
+    "Nội dung bài đăng": {
+      "Toàn bộ nội dung": "Nguồn:: ",
+      "Định dạng nội dung": "md"
+    },
+    "Phương thức tạo": "Cào vault",
+    "Ngày tạo": "2023-10-30T07:29:00.000Z",
+    "Ngày cập nhật": "2024-06-09T06:07:00.000Z",
+    "id": "Wk"
+  },
+  {
     "Tiêu đề": "Quảng cáo trên Facebook",
     "URL": "https://lậptrình.quảcầu.cc/🗯️Tiếp thị số/Facebook/Quảng cáo trên Facebook",
     "Kho thông tin": "Tiếp thị số, xử lý dữ liệu và lập trình",
@@ -33891,7 +33907,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-11-28T15:27:00.000Z",
-    "id": "Wk"
+    "id": "Wl"
   },
   {
     "Tiêu đề": "Seeding",
@@ -33907,7 +33923,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-08T08:25:00.000Z",
-    "id": "Wl"
+    "id": "Wm"
   },
   {
     "Tiêu đề": "Share like từ page thì thấy được số tương tác trên Facebook",
@@ -33923,7 +33939,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-27T12:32:00.000Z",
     "Ngày cập nhật": "2024-05-16T10:02:00.000Z",
-    "id": "Wm"
+    "id": "Wn"
   },
   {
     "Tiêu đề": "Tất cả like, share từ các phiên bản URL khác nhau sẽ được đổ hết về og:url",
@@ -33939,7 +33955,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-01T06:38:00.000Z",
-    "id": "Wn"
+    "id": "Wo"
   },
   {
     "Tiêu đề": "Để biết được bài đăng của mình tiếp cận được bao nhiêu người, vào Business Suite",
@@ -33955,7 +33971,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-21T14:00:00.000Z",
-    "id": "Wo"
+    "id": "Wp"
   },
   {
     "Tiêu đề": "❓Vai trò của các chỉ số trên Facebook trong phân tích web",
@@ -33971,7 +33987,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-26T07:59:00.000Z",
     "Ngày cập nhật": "2024-02-08T08:24:00.000Z",
-    "id": "Wp"
+    "id": "Wq"
   },
   {
     "Tiêu đề": "Quảng cáo trên Facebook",
@@ -33987,7 +34003,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "Wq"
+    "id": "Wr"
   },
   {
     "Tiêu đề": "Rút gọn link",
@@ -34003,7 +34019,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "Wr"
+    "id": "Ws"
   },
   {
     "Tiêu đề": "JSON-LD là một cách để tạo schema",
@@ -34019,7 +34035,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:41:00.000Z",
-    "id": "Ws"
+    "id": "Wt"
   },
   {
     "Tiêu đề": "Open Graph chuyên cho việc chia sẻ trên mạng xã hội. Schema chuyên cho việc tìm kiếm trên Google",
@@ -34035,7 +34051,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-12-15T10:45:00.000Z",
-    "id": "Wt"
+    "id": "Wu"
   },
   {
     "Tiêu đề": "Open Graph và Schema.org là từ vựng. JSON-LD, RDFa và Microdata là ngữ pháp",
@@ -34051,7 +34067,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:41:00.000Z",
-    "id": "Wu"
+    "id": "Wv"
   },
   {
     "Tiêu đề": "SEO",
@@ -34067,7 +34083,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-12-15T10:37:00.000Z",
-    "id": "Wv"
+    "id": "Ww"
   },
   {
     "Tiêu đề": "Tiếp thị số",
@@ -34083,7 +34099,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-26T06:45:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "Ww"
+    "id": "Wx"
   },
   {
     "Tiêu đề": "Tên miền có dấu",
@@ -34099,7 +34115,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "Wx"
+    "id": "Wy"
   },
   {
     "Tiêu đề": "Chiến dịch là sản phẩm",
@@ -34115,7 +34131,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-05T09:17:00.000Z",
     "Ngày cập nhật": "2024-04-07T04:52:00.000Z",
-    "id": "Wy"
+    "id": "Wz"
   },
   {
     "Tiêu đề": "Client-side tracking thiếu chính xác",
@@ -34131,7 +34147,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-07T04:09:00.000Z",
-    "id": "Wz"
+    "id": "W-"
   },
   {
     "Tiêu đề": "Có thể có tới 40% người dùng dùng adblock. Số độc giả rành công nghệ có thể lên tới 58%",
@@ -34147,7 +34163,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-24T08:23:00.000Z",
-    "id": "W-"
+    "id": "W_"
   },
   {
     "Tiêu đề": "Dự án là sản phẩm",
@@ -34163,7 +34179,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-05T09:17:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "W_"
+    "id": "X0"
   },
   {
     "Tiêu đề": "Chỉ cần dùng một measurement ID cho các subdomain",
@@ -34179,7 +34195,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-05T09:17:00.000Z",
     "Ngày cập nhật": "2024-01-27T14:09:00.000Z",
-    "id": "X0"
+    "id": "X1"
   },
   {
     "Tiêu đề": "Google Analytics dùng cookie để theo dõi hoạt động",
@@ -34195,7 +34211,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-14T04:01:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "X1"
+    "id": "X2"
   },
   {
     "Tiêu đề": "Google Analytics",
@@ -34211,7 +34227,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-27T14:12:00.000Z",
-    "id": "X2"
+    "id": "X3"
   },
   {
     "Tiêu đề": "Nếu web có ít người sử dụng thì một số dữ liệu sẽ bị giấu đi để đảm bảo tính riêng tư cho người dùng",
@@ -34227,7 +34243,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "X3"
+    "id": "X4"
   },
   {
     "Tiêu đề": "Các organic branded traffic nên được xem như là direct traffic",
@@ -34243,7 +34259,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-06-30T05:52:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "X4"
+    "id": "X5"
   },
   {
     "Tiêu đề": "Các URL dài có thể là organic traffic chứ không phải direct traffic",
@@ -34259,7 +34275,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-06-30T06:05:00.000Z",
     "Ngày cập nhật": "2024-04-07T07:17:00.000Z",
-    "id": "X5"
+    "id": "X6"
   },
   {
     "Tiêu đề": "GA xem zalo, wordpress, stackexchange là social",
@@ -34275,7 +34291,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-26T07:59:00.000Z",
     "Ngày cập nhật": "2024-01-27T14:02:00.000Z",
-    "id": "X6"
+    "id": "X7"
   },
   {
     "Tiêu đề": "Nếu medium không có gì đặc biệt thì cứ để trống để google tự phân loại",
@@ -34291,7 +34307,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-26T06:41:00.000Z",
     "Ngày cập nhật": "2024-03-13T06:38:00.000Z",
-    "id": "X7"
+    "id": "X8"
   },
   {
     "Tiêu đề": "Referral channel group bao gồm organic social trong đó",
@@ -34307,7 +34323,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-26T07:59:00.000Z",
     "Ngày cập nhật": "2023-10-30T18:19:00.000Z",
-    "id": "X8"
+    "id": "X9"
   },
   {
     "Tiêu đề": "Social về bản chất là referral, nhưng được tách ra để phân tích sâu hơn",
@@ -34323,7 +34339,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-06-30T06:12:00.000Z",
     "Ngày cập nhật": "2023-10-30T18:19:00.000Z",
-    "id": "X9"
+    "id": "XA"
   },
   {
     "Tiêu đề": "Google Marketing Platform",
@@ -34339,7 +34355,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "XA"
+    "id": "XB"
   },
   {
     "Tiêu đề": "Google Search Console chỉ lưu dữ liệu trong 16 tháng",
@@ -34355,7 +34371,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-27T14:02:00.000Z",
-    "id": "XB"
+    "id": "XC"
   },
   {
     "Tiêu đề": "Google Search Console dùng để biết thiên hạ đang google web mình thế nào",
@@ -34371,7 +34387,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-27T14:02:00.000Z",
-    "id": "XC"
+    "id": "XD"
   },
   {
     "Tiêu đề": "App điện thoại có thể trở thành data stream, nhưng không thể trở thành destination",
@@ -34387,7 +34403,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-28T10:19:00.000Z",
-    "id": "XD"
+    "id": "XE"
   },
   {
     "Tiêu đề": "Các dữ liệu cần xử lý chung một chỗ cần được đổ về cùng một property",
@@ -34403,7 +34419,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-28T10:37:00.000Z",
-    "id": "XE"
+    "id": "XF"
   },
   {
     "Tiêu đề": "Các tag có thể thêm vào",
@@ -34419,7 +34435,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-28T10:27:00.000Z",
-    "id": "XF"
+    "id": "XG"
   },
   {
     "Tiêu đề": "Destination ID cho GA trùng với Measurement ID của web data stream",
@@ -34435,7 +34451,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-07-01T11:04:00.000Z",
     "Ngày cập nhật": "2024-01-28T10:27:00.000Z",
-    "id": "XG"
+    "id": "XH"
   },
   {
     "Tiêu đề": "Destination là nơi nhận dữ liệu của Google tag",
@@ -34451,7 +34467,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-28T10:27:00.000Z",
-    "id": "XH"
+    "id": "XI"
   },
   {
     "Tiêu đề": "Container",
@@ -34467,7 +34483,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "XI"
+    "id": "XJ"
   },
   {
     "Tiêu đề": "data layer tập trung mọi dữ liệu lại vào một chỗ rồi truyền đến container",
@@ -34483,7 +34499,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-19T12:13:00.000Z",
-    "id": "XJ"
+    "id": "XK"
   },
   {
     "Tiêu đề": "Data layer variable là",
@@ -34499,7 +34515,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "XK"
+    "id": "XL"
   },
   {
     "Tiêu đề": "Google Tag Manager là một trình quản lý các mã JavaScript được gắn vào web",
@@ -34515,7 +34531,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-28T10:11:00.000Z",
-    "id": "XL"
+    "id": "XM"
   },
   {
     "Tiêu đề": "Workspace",
@@ -34531,7 +34547,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "XM"
+    "id": "XN"
   },
   {
     "Tiêu đề": "Để kích hoạt một tag trước tất cả các tag khác, chọn ❝Initialization – All Pages❞",
@@ -34547,7 +34563,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "XN"
+    "id": "XO"
   },
   {
     "Tiêu đề": "Google tag đổ dữ liệu về Google Analytics, không phải Google Tag Manager",
@@ -34563,7 +34579,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-28T10:31:00.000Z",
-    "id": "XO"
+    "id": "XP"
   },
   {
     "Tiêu đề": "Google tag, global site tag, gtag là những cái tên khác nhau cho đoạn script theo dõi người dùng của Google Analytics",
@@ -34579,7 +34595,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-28T10:37:00.000Z",
-    "id": "XP"
+    "id": "XQ"
   },
   {
     "Tiêu đề": "Một Google tag có thể có nhiều ID",
@@ -34595,7 +34611,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-28T10:36:00.000Z",
-    "id": "XQ"
+    "id": "XR"
   },
   {
     "Tiêu đề": "Một tag có thể có nhiều destination, nhưng một destination chỉ thuộc về một tag",
@@ -34611,7 +34627,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-28T10:21:00.000Z",
-    "id": "XR"
+    "id": "XS"
   },
   {
     "Tiêu đề": "Nên cài Google tag trong Google Tag Manager thay vì cài trực tiếp trên web hoặc qua plugin",
@@ -34627,7 +34643,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-28T10:36:00.000Z",
-    "id": "XS"
+    "id": "XT"
   },
   {
     "Tiêu đề": "❓Measurement ID của web data stream chính là Google tag ID",
@@ -34643,7 +34659,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "XT"
+    "id": "XU"
   },
   {
     "Tiêu đề": "Link referrer không hiện đầy đủ mà chỉ có tên miền vì URL có thể chứa thông tin cá nhân",
@@ -34659,7 +34675,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-24T03:58:00.000Z",
-    "id": "XU"
+    "id": "XV"
   },
   {
     "Tiêu đề": "Web analytics đã thay đổi trong nhiều năm qua",
@@ -34675,7 +34691,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-07-02T14:06:00.000Z",
     "Ngày cập nhật": "2024-04-07T04:05:00.000Z",
-    "id": "XV"
+    "id": "XW"
   },
   {
     "Tiêu đề": "🗯️Tiếp thị số",
@@ -34691,7 +34707,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-27T12:32:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:25:00.000Z",
-    "id": "XW"
+    "id": "XX"
   },
   {
     "Tiêu đề": "Chuyện Tiểu Cúc",
@@ -34704,7 +34720,7 @@
     "Slug": "chuyen-tieu-cuc",
     "Ngày tạo": "2019-08-08T14:58:56.000Z",
     "Ngày cập nhật": "2021-05-13T10:48:36.000Z",
-    "id": "XX"
+    "id": "XY"
   },
   {
     "Tiêu đề": "Tại sao Đạo gia lại đề cao sự học?",
@@ -34717,7 +34733,7 @@
     "Slug": "tai-sao-dao-gia-lai-de-cao-su-hoc",
     "Ngày tạo": "2019-08-08T15:53:57.000Z",
     "Ngày cập nhật": "2020-05-31T07:19:55.000Z",
-    "id": "XY"
+    "id": "XZ"
   },
   {
     "Tiêu đề": "Con mắt lạnh như băng",
@@ -34730,7 +34746,7 @@
     "Slug": "con-mat-lanh-nhu-bang",
     "Ngày tạo": "2019-08-08T17:08:49.000Z",
     "Ngày cập nhật": "2021-11-26T12:13:30.000Z",
-    "id": "XZ"
+    "id": "Xa"
   },
   {
     "Tiêu đề": "Chuyện gì sẽ xảy ra nếu...?",
@@ -34743,7 +34759,7 @@
     "Slug": "chuyen-gi-se-xay-ra-neu",
     "Ngày tạo": "2019-08-08T18:59:39.000Z",
     "Ngày cập nhật": "2021-04-09T08:22:13.000Z",
-    "id": "Xa"
+    "id": "Xb"
   },
   {
     "Tiêu đề": "Rối loạn nhân cách tâm trạng không ổn định",
@@ -34756,7 +34772,7 @@
     "Slug": "roi-loan-nhan-cach-tam-trang-khong-on-dinh",
     "Ngày tạo": "2019-08-09T05:08:18.000Z",
     "Ngày cập nhật": "2020-06-02T07:02:27.000Z",
-    "id": "Xb"
+    "id": "Xc"
   },
   {
     "Tiêu đề": "Tranh luận hiền hòa",
@@ -34769,7 +34785,7 @@
     "Slug": "tranh-luan-hien-hoa",
     "Ngày tạo": "2019-08-09T05:20:49.000Z",
     "Ngày cập nhật": "2021-08-23T17:42:18.000Z",
-    "id": "Xc"
+    "id": "Xd"
   },
   {
     "Tiêu đề": "Nơi cuối trời",
@@ -34782,7 +34798,7 @@
     "Slug": "noi-cuoi-troi",
     "Ngày tạo": "2019-08-09T05:27:27.000Z",
     "Ngày cập nhật": "2021-02-23T13:10:57.000Z",
-    "id": "Xd"
+    "id": "Xe"
   },
   {
     "Tiêu đề": "Truyện cười vật lý",
@@ -34795,7 +34811,7 @@
     "Slug": "truyen-cuoi-vat-ly",
     "Ngày tạo": "2019-08-09T05:37:20.000Z",
     "Ngày cập nhật": "2021-02-24T16:19:06.000Z",
-    "id": "Xe"
+    "id": "Xf"
   },
   {
     "Tiêu đề": "EUPD: xem thêm",
@@ -34808,7 +34824,7 @@
     "Slug": "eupd-xem-them",
     "Ngày tạo": "2019-08-09T18:13:49.000Z",
     "Ngày cập nhật": "2023-11-08T14:23:48.000Z",
-    "id": "Xf"
+    "id": "Xg"
   },
   {
     "Tiêu đề": "Bộ sưu tập từ điển chuyên ngành",
@@ -34821,7 +34837,7 @@
     "Slug": "tu-dien-chuyen-nganh",
     "Ngày tạo": "2019-08-11T09:23:46.000Z",
     "Ngày cập nhật": "2024-01-10T07:21:34.000Z",
-    "id": "Xg"
+    "id": "Xh"
   },
   {
     "Tiêu đề": "Máy trợ thính",
@@ -34834,7 +34850,7 @@
     "Slug": "may-tro-thinh",
     "Ngày tạo": "2019-08-11T17:59:21.000Z",
     "Ngày cập nhật": "2021-02-24T16:18:30.000Z",
-    "id": "Xh"
+    "id": "Xi"
   },
   {
     "Tiêu đề": "Ru em ngủ",
@@ -34847,7 +34863,7 @@
     "Slug": "ru-em-ngu",
     "Ngày tạo": "2019-08-23T14:42:48.000Z",
     "Ngày cập nhật": "2021-02-23T13:11:23.000Z",
-    "id": "Xi"
+    "id": "Xj"
   },
   {
     "Tiêu đề": "Kết luận",
@@ -34860,7 +34876,7 @@
     "Slug": "ccmmcr-ket-luan",
     "Ngày tạo": "2019-08-25T18:00:54.000Z",
     "Ngày cập nhật": "2021-04-16T16:18:54.000Z",
-    "id": "Xj"
+    "id": "Xk"
   },
   {
     "Tiêu đề": "Phần 3: Khoa học có trong những triết lý của ông ấy",
@@ -34873,7 +34889,7 @@
     "Slug": "phan-3-khoa-hoc-co-trong-nhung-triet-ly-cua-ong-ay",
     "Ngày tạo": "2019-08-26T13:32:08.000Z",
     "Ngày cập nhật": "2021-03-31T08:49:58.000Z",
-    "id": "Xk"
+    "id": "Xl"
   },
   {
     "Tiêu đề": "Phần 2: Thứ ông ấy làm lại là khoa học đúng nghĩa",
@@ -34886,7 +34902,7 @@
     "Slug": "phan-2-thu-ong-ay-lam-lai-la-khoa-hoc-dung-nghia",
     "Ngày tạo": "2019-08-26T14:44:31.000Z",
     "Ngày cập nhật": "2021-03-31T08:44:31.000Z",
-    "id": "Xl"
+    "id": "Xm"
   },
   {
     "Tiêu đề": "Phần 1: Thứ ông ấy nghĩ không phải là khoa học đúng nghĩa",
@@ -34899,7 +34915,7 @@
     "Slug": "phan-1-thu-ong-ay-nghi-khong-phai-la-khoa-hoc-dung-nghia",
     "Ngày tạo": "2019-08-26T15:03:57.000Z",
     "Ngày cập nhật": "2021-04-12T22:24:04.000Z",
-    "id": "Xm"
+    "id": "Xn"
   },
   {
     "Tiêu đề": "Phản biện cuốn <em>Cuộc cách mạng một-cọng-rơm</em>",
@@ -34912,7 +34928,7 @@
     "Slug": "phan-bien-cuon-cuoc-cach-mang-mot-cong-rom",
     "Ngày tạo": "2019-08-27T07:41:30.000Z",
     "Ngày cập nhật": "2021-03-22T09:48:42.000Z",
-    "id": "Xn"
+    "id": "Xo"
   },
   {
     "Tiêu đề": "Cần bạn trợ giúp: kháng nghị Facebook",
@@ -34925,7 +34941,7 @@
     "Slug": "can-ban-tro-giup-khang-nghi-facebook",
     "Ngày tạo": "2019-09-06T08:29:04.000Z",
     "Ngày cập nhật": "2019-09-06T08:29:04.000Z",
-    "id": "Xo"
+    "id": "Xp"
   },
   {
     "Tiêu đề": "Phản hồi của người dịch: bạn đọc sách không thấm rồi",
@@ -34938,7 +34954,7 @@
     "Slug": "phan-hoi-cua-nguoi-dich-ban-doc-sach-khong-tham-roi",
     "Ngày tạo": "2019-09-06T16:52:24.000Z",
     "Ngày cập nhật": "2021-04-16T16:11:11.000Z",
-    "id": "Xp"
+    "id": "Xq"
   },
   {
     "Tiêu đề": "Rắc rối của từ bi (bản ngắn)",
@@ -34951,7 +34967,7 @@
     "Slug": "rac-roi-cua-tu-bi-ban-ngan",
     "Ngày tạo": "2019-09-23T13:45:27.000Z",
     "Ngày cập nhật": "2020-05-27T13:41:44.000Z",
-    "id": "Xq"
+    "id": "Xr"
   },
   {
     "Tiêu đề": "Khi đạo sĩ gặp rối loạn tâm lý",
@@ -34964,7 +34980,7 @@
     "Slug": "khi-dao-si-gap-roi-loan-tam-ly",
     "Ngày tạo": "2019-10-01T17:32:06.000Z",
     "Ngày cập nhật": "2020-08-10T14:02:59.000Z",
-    "id": "Xr"
+    "id": "Xs"
   },
   {
     "Tiêu đề": "Ví dụ về sự tương tác giữa Đạo gia và rối loạn tâm lý",
@@ -34977,7 +34993,7 @@
     "Slug": "vi-du-ve-su-tuong-tac-giua-dao-gia-va-roi-loan-tam-ly",
     "Ngày tạo": "2019-10-01T17:51:53.000Z",
     "Ngày cập nhật": "2020-12-11T17:26:57.000Z",
-    "id": "Xs"
+    "id": "Xt"
   },
   {
     "Tiêu đề": "Mối quan hệ của một bông hoa chết",
@@ -34990,7 +35006,7 @@
     "Slug": "moi-quan-he-cua-mot-bong-hoa-chet",
     "Ngày tạo": "2019-10-01T18:14:55.000Z",
     "Ngày cập nhật": "2020-11-05T17:56:09.000Z",
-    "id": "Xt"
+    "id": "Xu"
   },
   {
     "Tiêu đề": "Kết luận",
@@ -35003,7 +35019,7 @@
     "Slug": "bong-hoa-chet-ket-luan",
     "Ngày tạo": "2019-10-01T18:20:23.000Z",
     "Ngày cập nhật": "2020-05-27T14:13:57.000Z",
-    "id": "Xu"
+    "id": "Xv"
   },
   {
     "Tiêu đề": "Trăm năm khép lại",
@@ -35016,7 +35032,7 @@
     "Slug": "tram-nam-khep-lai",
     "Ngày tạo": "2019-10-13T15:32:24.000Z",
     "Ngày cập nhật": "2021-02-24T16:17:28.000Z",
-    "id": "Xv"
+    "id": "Xw"
   },
   {
     "Tiêu đề": "Nghiên cứu khoa học phong cách truyện tranh",
@@ -35029,7 +35045,7 @@
     "Slug": "nghien-cuu-khoa-hoc-phong-cach-truyen-tranh",
     "Ngày tạo": "2019-10-20T17:19:29.000Z",
     "Ngày cập nhật": "2021-02-24T16:17:18.000Z",
-    "id": "Xw"
+    "id": "Xx"
   },
   {
     "Tiêu đề": "Rắc rối của từ bi",
@@ -35042,7 +35058,7 @@
     "Slug": "rac-roi-cua-tu-bi",
     "Ngày tạo": "2019-10-27T08:34:42.000Z",
     "Ngày cập nhật": "2021-05-09T07:05:41.000Z",
-    "id": "Xx"
+    "id": "Xy"
   },
   {
     "Tiêu đề": "Giải pháp",
@@ -35055,7 +35071,7 @@
     "Slug": "giai-phap",
     "Ngày tạo": "2019-10-27T08:43:44.000Z",
     "Ngày cập nhật": "2020-05-28T10:26:09.000Z",
-    "id": "Xy"
+    "id": "Xz"
   },
   {
     "Tiêu đề": "Rắc rối 3: Người ngoài không hiểu bạn",
@@ -35068,7 +35084,7 @@
     "Slug": "rac-roi-3-nguoi-ngoai-khong-hieu-ban",
     "Ngày tạo": "2019-10-27T09:03:58.000Z",
     "Ngày cập nhật": "2020-05-28T10:38:12.000Z",
-    "id": "Xz"
+    "id": "X-"
   },
   {
     "Tiêu đề": "Rắc rối 2: Phải chịu những hậu quả của dính mắc mặc dù mình không có",
@@ -35081,7 +35097,7 @@
     "Slug": "rac-roi-2-phai-chiu-nhung-hau-qua-cua-dinh-mac-mac-du-minh-khong-co",
     "Ngày tạo": "2019-10-27T11:46:52.000Z",
     "Ngày cập nhật": "2020-05-28T10:46:38.000Z",
-    "id": "X-"
+    "id": "X_"
   },
   {
     "Tiêu đề": "Rắc rối 1: Bị nói là không biết tôn trọng sự khó chịu của họ",
@@ -35094,7 +35110,7 @@
     "Slug": "rac-roi-1-bi-noi-la-khong-biet-ton-trong-su-kho-chiu-cua-ho",
     "Ngày tạo": "2019-10-27T11:50:54.000Z",
     "Ngày cập nhật": "2021-03-05T19:54:20.000Z",
-    "id": "X_"
+    "id": "Y0"
   },
   {
     "Tiêu đề": "Độc giả Quả Cầu là ai?",
@@ -35107,7 +35123,7 @@
     "Slug": "doc-gia-qua-cau-la-ai",
     "Ngày tạo": "2019-11-01T15:13:02.000Z",
     "Ngày cập nhật": "2021-02-23T01:01:25.000Z",
-    "id": "Y0"
+    "id": "Y1"
   },
   {
     "Tiêu đề": "Bộ thẻ học từ vựng tiếng Anh nâng cao (GRE)",
@@ -35120,7 +35136,7 @@
     "Slug": "bo-the-hoc-tu-vung-tieng-anh-nang-cao",
     "Ngày tạo": "2019-11-21T06:54:39.000Z",
     "Ngày cập nhật": "2022-04-08T17:47:41.000Z",
-    "id": "Y1"
+    "id": "Y2"
   },
   {
     "Tiêu đề": "Tại sao Nho gia cũng là một trường phái để đạt tới vô vi?",
@@ -35133,7 +35149,7 @@
     "Slug": "tai-sao-nho-gia-cung-la-mot-truong-phai-de-dat-toi-vo-vi",
     "Ngày tạo": "2019-11-25T10:17:14.000Z",
     "Ngày cập nhật": "2021-09-20T08:43:33.000Z",
-    "id": "Y2"
+    "id": "Y3"
   },
   {
     "Tiêu đề": "Tại sao \"đúng sai miễn bàn\" lại không phải là quan điểm của Đạo giáo?",
@@ -35146,7 +35162,7 @@
     "Slug": "tai-sao-dung-sai-mien-ban-lai-khong-phai-la-quan-diem-cua-dao-giao",
     "Ngày tạo": "2019-12-05T05:53:03.000Z",
     "Ngày cập nhật": "2020-05-28T17:32:30.000Z",
-    "id": "Y3"
+    "id": "Y4"
   },
   {
     "Tiêu đề": "Các phần mềm hữu ích",
@@ -35159,7 +35175,7 @@
     "Slug": "cac-phan-mem-huu-ich",
     "Ngày tạo": "2019-12-09T14:35:02.000Z",
     "Ngày cập nhật": "2022-03-14T19:07:31.000Z",
-    "id": "Y4"
+    "id": "Y5"
   },
   {
     "Tiêu đề": "500 nhóm Facebook hay",
@@ -35172,7 +35188,7 @@
     "Slug": "cac-nhom-facebook-hay",
     "Ngày tạo": "2019-12-17T13:57:36.000Z",
     "Ngày cập nhật": "2021-08-30T05:21:20.000Z",
-    "id": "Y5"
+    "id": "Y6"
   },
   {
     "Tiêu đề": "Duy vật lý dưới góc nhìn của vật lý và tâm lý học nhận thức",
@@ -35185,7 +35201,7 @@
     "Slug": "duy-vat-ly-duoi-goc-nhin-cua-vat-ly-va-tam-ly-hoc-nhan-thuc",
     "Ngày tạo": "2019-12-22T16:29:58.000Z",
     "Ngày cập nhật": "2021-03-31T13:00:42.000Z",
-    "id": "Y6"
+    "id": "Y7"
   },
   {
     "Tiêu đề": "Câu chuyện của Tiểu Cúc với người trăm năm",
@@ -35198,7 +35214,7 @@
     "Slug": "cau-chuyen-cua-tieu-cuc-voi-nguoi-tram-nam",
     "Ngày tạo": "2019-12-25T20:34:20.000Z",
     "Ngày cập nhật": "2021-05-13T11:19:05.000Z",
-    "id": "Y7"
+    "id": "Y8"
   },
   {
     "Tiêu đề": "Khi sự giúp đỡ trông như cưỡng ép",
@@ -35211,7 +35227,7 @@
     "Slug": "khi-su-giup-do-trong-nhu-cuong-ep",
     "Ngày tạo": "2019-12-31T06:30:04.000Z",
     "Ngày cập nhật": "2021-02-22T17:06:22.000Z",
-    "id": "Y8"
+    "id": "Y9"
   },
   {
     "Tiêu đề": "Anh Nguyễn Dương Minh gửi: Rắc rối của từ bi",
@@ -35224,7 +35240,7 @@
     "Slug": "anh-nguyen-duong-minh-gui-rac-roi-cua-tu-bi",
     "Ngày tạo": "2020-01-06T06:22:21.000Z",
     "Ngày cập nhật": "2022-04-21T10:43:22.000Z",
-    "id": "Y9"
+    "id": "YA"
   },
   {
     "Tiêu đề": "Bạn Đoàn Phương Thảo gửi: Chuyện Tiểu Cúc",
@@ -35237,7 +35253,7 @@
     "Slug": "ban-doan-phuong-thao-gui-chuyen-tieu-cuc",
     "Ngày tạo": "2020-01-05T16:57:39.000Z",
     "Ngày cập nhật": "2021-02-24T16:14:37.000Z",
-    "id": "YA"
+    "id": "YB"
   },
   {
     "Tiêu đề": "Giải quyết nhiều hiểu lầm, ngộ nhận và niềm tin sai phổ biến, một lần cho mãi mãi",
@@ -35250,7 +35266,7 @@
     "Slug": "giai-quyet-nhieu-hieu-lam-ngo-nhan-va-niem-tin-sai-pho-bien-mot-lan-cho-mai-mai",
     "Ngày tạo": "2020-01-09T18:10:27.000Z",
     "Ngày cập nhật": "2021-03-31T07:54:05.000Z",
-    "id": "YB"
+    "id": "YC"
   },
   {
     "Tiêu đề": "Bản ngã là gì nếu không phải là sự chú ý?",
@@ -35263,7 +35279,7 @@
     "Slug": "ban-nga-la-gi-neu-khong-phai-la-su-chu-y",
     "Ngày tạo": "2020-01-10T15:36:44.000Z",
     "Ngày cập nhật": "2021-03-06T20:05:27.000Z",
-    "id": "YC"
+    "id": "YD"
   },
   {
     "Tiêu đề": "Thử xây dựng lại Đạo giáo từ khoa học hiện đại",
@@ -35276,7 +35292,7 @@
     "Slug": "thu-xay-dung-lai-dao-giao-tu-khoa-hoc-hien-dai",
     "Ngày tạo": "2020-01-10T15:58:45.000Z",
     "Ngày cập nhật": "2021-12-21T09:07:18.000Z",
-    "id": "YD"
+    "id": "YE"
   },
   {
     "Tiêu đề": "Bạn Nguyễn Trần Anh gửi: Chuyện Tiểu Cúc | Một lời đáp",
@@ -35289,7 +35305,7 @@
     "Slug": "ban-nguyen-tran-anh-gui-chuyen-tieu-cuc-mot-loi-dap",
     "Ngày tạo": "2020-01-13T08:46:48.000Z",
     "Ngày cập nhật": "2021-02-24T15:48:57.000Z",
-    "id": "YE"
+    "id": "YF"
   },
   {
     "Tiêu đề": "Hướng dẫn trợ giúp",
@@ -35302,7 +35318,7 @@
     "Slug": "huong-dan-tro-giup",
     "Ngày tạo": "2020-01-14T17:44:38.000Z",
     "Ngày cập nhật": "2020-01-14T17:44:38.000Z",
-    "id": "YF"
+    "id": "YG"
   },
   {
     "Tiêu đề": "Ratatouille – những góc nhìn chưa từng có",
@@ -35315,7 +35331,7 @@
     "Slug": "ratatouille",
     "Ngày tạo": "2020-01-31T16:44:43.000Z",
     "Ngày cập nhật": "2021-12-28T15:11:41.000Z",
-    "id": "YG"
+    "id": "YH"
   },
   {
     "Tiêu đề": "CV người sáng lập",
@@ -35328,7 +35344,7 @@
     "Slug": "cv",
     "Ngày tạo": "2020-02-10T15:11:35.000Z",
     "Ngày cập nhật": "2022-09-16T09:41:02.000Z",
-    "id": "YH"
+    "id": "YI"
   },
   {
     "Tiêu đề": "Xưng hô trong tình yêu",
@@ -35341,7 +35357,7 @@
     "Slug": "xung-ho-trong-tinh-yeu",
     "Ngày tạo": "2020-02-14T13:40:06.000Z",
     "Ngày cập nhật": "2021-03-05T11:37:36.000Z",
-    "id": "YI"
+    "id": "YJ"
   },
   {
     "Tiêu đề": "Đôi khi",
@@ -35354,7 +35370,7 @@
     "Slug": "doi-khi",
     "Ngày tạo": "2020-02-26T04:58:48.000Z",
     "Ngày cập nhật": "2021-02-23T13:16:53.000Z",
-    "id": "YJ"
+    "id": "YK"
   },
   {
     "Tiêu đề": "Biết chửi thề trước khi biết nói",
@@ -35367,7 +35383,7 @@
     "Slug": "biet-chui-the-truoc-khi-biet-noi",
     "Ngày tạo": "2020-03-05T13:33:21.000Z",
     "Ngày cập nhật": "2021-03-31T12:41:26.000Z",
-    "id": "YK"
+    "id": "YL"
   },
   {
     "Tiêu đề": "Tham gia cùng Quả Cầu",
@@ -35380,7 +35396,7 @@
     "Slug": "tham-gia-cung-qua-cau",
     "Ngày tạo": "2020-03-07T16:01:43.000Z",
     "Ngày cập nhật": "2023-07-03T14:47:26.000Z",
-    "id": "YL"
+    "id": "YM"
   },
   {
     "Tiêu đề": "Khi nào ta cần phải tác động? Khi nào sự cứng rắn là cần thiết?",
@@ -35393,7 +35409,7 @@
     "Slug": "khi-nao-su-tac-dong-la-can-thiet",
     "Ngày tạo": "2020-03-15T15:42:23.000Z",
     "Ngày cập nhật": "2021-06-29T10:54:29.000Z",
-    "id": "YM"
+    "id": "YN"
   },
   {
     "Tiêu đề": "Làm sao để biết chắc chắn mình đúng? Nhỡ đâu chính mình mới có bóp méo?",
@@ -35406,7 +35422,7 @@
     "Slug": "lam-sao-de-biet-chac-chan-minh-dung",
     "Ngày tạo": "2020-03-15T15:54:35.000Z",
     "Ngày cập nhật": "2021-02-24T15:11:12.000Z",
-    "id": "YN"
+    "id": "YO"
   },
   {
     "Tiêu đề": "Quyền thay đổi niềm tin của người khác",
@@ -35419,7 +35435,7 @@
     "Slug": "quyen-thay-doi-niem-tin-cua-nguoi-khac",
     "Ngày tạo": "2020-03-15T18:38:05.000Z",
     "Ngày cập nhật": "2021-02-24T15:10:49.000Z",
-    "id": "YO"
+    "id": "YP"
   },
   {
     "Tiêu đề": "Làm sao để không cảm thấy ngại khi hành động?",
@@ -35432,7 +35448,7 @@
     "Slug": "lam-sao-de-khong-cam-thay-ngai-khi-hanh-dong",
     "Ngày tạo": "2020-03-24T16:19:12.000Z",
     "Ngày cập nhật": "2021-02-24T15:11:07.000Z",
-    "id": "YP"
+    "id": "YQ"
   },
   {
     "Tiêu đề": "Bản kế hoạch chiến lược dự án Quả Cầu",
@@ -35445,7 +35461,7 @@
     "Slug": "ban-ke-hoach-chien-luoc-du-an-qua-cau",
     "Ngày tạo": "2020-03-25T08:00:21.000Z",
     "Ngày cập nhật": "2023-07-03T13:59:51.000Z",
-    "id": "YQ"
+    "id": "YR"
   },
   {
     "Tiêu đề": "love is more thicker than forget",
@@ -35458,7 +35474,7 @@
     "Slug": "love-is-more-thicker-than-forget",
     "Ngày tạo": "2020-04-02T15:35:48.000Z",
     "Ngày cập nhật": "2020-04-02T15:35:48.000Z",
-    "id": "YR"
+    "id": "YS"
   },
   {
     "Tiêu đề": "<em>Trung Quán Minh Cú Luận</em>, bản tiếng Pháp",
@@ -35471,7 +35487,7 @@
     "Slug": "trung-quan-minh-cu-luan-ban-tieng-phap",
     "Ngày tạo": "2020-04-06T07:08:07.000Z",
     "Ngày cập nhật": "2021-02-23T13:17:09.000Z",
-    "id": "YS"
+    "id": "YT"
   },
   {
     "Tiêu đề": "Một số suy nghĩ từ dự án Chữ VN Song Song",
@@ -35484,7 +35500,7 @@
     "Slug": "mot-so-suy-nghi-tu-du-an-chu-vn-song-song",
     "Ngày tạo": "2020-04-07T16:02:57.000Z",
     "Ngày cập nhật": "2021-05-20T10:17:21.000Z",
-    "id": "YT"
+    "id": "YU"
   },
   {
     "Tiêu đề": "Chìa khóa học cách phát âm",
@@ -35497,7 +35513,7 @@
     "Slug": "chia-khoa-hoc-cach-phat-am",
     "Ngày tạo": "2020-04-07T17:33:51.000Z",
     "Ngày cập nhật": "2021-03-31T12:59:23.000Z",
-    "id": "YU"
+    "id": "YV"
   },
   {
     "Tiêu đề": "Một suy nghĩ về lập trình ngôn ngữ tư duy (NLP)",
@@ -35510,7 +35526,7 @@
     "Slug": "lap-trinh-ngon-ngu-tu-duy-nlp",
     "Ngày tạo": "2020-04-11T16:39:19.000Z",
     "Ngày cập nhật": "2021-09-13T11:23:14.000Z",
-    "id": "YV"
+    "id": "YW"
   },
   {
     "Tiêu đề": "Tinh thần Quả Cầu",
@@ -35523,7 +35539,7 @@
     "Slug": "tinh-than-qua-cau",
     "Ngày tạo": "2020-05-26T17:09:06.000Z",
     "Ngày cập nhật": "2022-03-31T15:51:35.000Z",
-    "id": "YW"
+    "id": "YX"
   },
   {
     "Tiêu đề": "12 người đàn ông giận dữ",
@@ -35536,7 +35552,7 @@
     "Slug": "12-nguoi-dan-ong-gian-du",
     "Ngày tạo": "2020-05-26T15:21:06.000Z",
     "Ngày cập nhật": "2021-07-12T17:36:35.000Z",
-    "id": "YX"
+    "id": "YY"
   },
   {
     "Tiêu đề": "Sự bất lực học được là gì?",
@@ -35549,7 +35565,7 @@
     "Slug": "su-bat-luc-hoc-duoc",
     "Ngày tạo": "2020-05-26T16:47:00.000Z",
     "Ngày cập nhật": "2021-09-26T14:47:17.000Z",
-    "id": "YY"
+    "id": "YZ"
   },
   {
     "Tiêu đề": "Tại sao không nên dùng ngực thay cho vú?",
@@ -35562,7 +35578,7 @@
     "Slug": "tai-sao-khong-nen-dung-nguc-thay-cho-vu",
     "Ngày tạo": "2020-05-26T18:41:04.000Z",
     "Ngày cập nhật": "2022-04-22T18:24:21.000Z",
-    "id": "YZ"
+    "id": "Ya"
   },
   {
     "Tiêu đề": "Chị Nguyễn Đan Khanh gửi: hãy giữ niềm tin sống như một người trẻ mới bước vào đời",
@@ -35575,7 +35591,7 @@
     "Slug": "chi-nguyen-dan-khanh-gui-hay-giu-niem-tin-song-nhu-mot-nguoi-tre-moi-buoc-vao-doi",
     "Ngày tạo": "2020-05-26T18:53:51.000Z",
     "Ngày cập nhật": "2021-02-24T15:09:35.000Z",
-    "id": "Ya"
+    "id": "Yb"
   },
   {
     "Tiêu đề": "Đạo không thể giải thích được qua sự độc thoại, nhưng có thể thấy nó được qua sự đối thoại",
@@ -35588,7 +35604,7 @@
     "Slug": "dao-khong-the-giai-thich-duoc-qua-su-doc-thoai-nhung-co-the-thay-no-duoc-qua-su-doi-thoai",
     "Ngày tạo": "2020-05-27T12:55:44.000Z",
     "Ngày cập nhật": "2020-06-21T09:54:09.000Z",
-    "id": "Yb"
+    "id": "Yc"
   },
   {
     "Tiêu đề": "Cảm xúc trong mỹ học",
@@ -35601,7 +35617,7 @@
     "Slug": "cam-xuc-trong-my-hoc",
     "Ngày tạo": "2020-06-01T10:15:31.000Z",
     "Ngày cập nhật": "2021-02-23T13:22:16.000Z",
-    "id": "Yc"
+    "id": "Yd"
   },
   {
     "Tiêu đề": "Vượn trần trụi - Vườn thú người",
@@ -35614,7 +35630,7 @@
     "Slug": "vuon-tran-trui-vuon-thu-nguoi",
     "Ngày tạo": "2020-06-01T10:17:46.000Z",
     "Ngày cập nhật": "2021-02-23T13:04:28.000Z",
-    "id": "Yd"
+    "id": "Ye"
   },
   {
     "Tiêu đề": "Những bức ảnh muốn gì?",
@@ -35627,7 +35643,7 @@
     "Slug": "nhung-buc-anh-muon-gi",
     "Ngày tạo": "2020-06-02T06:46:48.000Z",
     "Ngày cập nhật": "2021-03-31T12:41:07.000Z",
-    "id": "Ye"
+    "id": "Yf"
   },
   {
     "Tiêu đề": "Một suy nghĩ về sự cộng hưởng",
@@ -35640,7 +35656,7 @@
     "Slug": "mot-suy-nghi-ve-su-cong-huong",
     "Ngày tạo": "2020-06-06T11:34:59.000Z",
     "Ngày cập nhật": "2021-02-23T13:27:59.000Z",
-    "id": "Yf"
+    "id": "Yg"
   },
   {
     "Tiêu đề": "Kinh nghiệm dịch: google thuật ngữ tiếng Việt",
@@ -35653,7 +35669,7 @@
     "Slug": "kinh-nghiem-google-thuat-ngu",
     "Ngày tạo": "2020-06-07T08:09:32.000Z",
     "Ngày cập nhật": "2020-10-19T06:16:39.000Z",
-    "id": "Yg"
+    "id": "Yh"
   },
   {
     "Tiêu đề": "Kinh nghiệm dịch: công cụ dịch",
@@ -35666,7 +35682,7 @@
     "Slug": "kinh-nghiem-dich-cong-cu-dich",
     "Ngày tạo": "2020-06-07T08:16:15.000Z",
     "Ngày cập nhật": "2020-10-19T06:38:12.000Z",
-    "id": "Yh"
+    "id": "Yi"
   },
   {
     "Tiêu đề": "Tại sao cảm xúc không phải là đúng nhất?",
@@ -35679,7 +35695,7 @@
     "Slug": "tai-sao-cam-xuc-khong-phai-la-dung-nhat",
     "Ngày tạo": "2020-06-20T09:00:23.000Z",
     "Ngày cập nhật": "2021-02-23T13:22:45.000Z",
-    "id": "Yi"
+    "id": "Yj"
   },
   {
     "Tiêu đề": "Tại sao cái đẹp không nhất thiết đi cùng với cái tốt?",
@@ -35692,7 +35708,7 @@
     "Slug": "tai-sao-cai-dep-khong-nhat-thiet-di-cung-voi-cai-tot",
     "Ngày tạo": "2020-06-20T12:58:39.000Z",
     "Ngày cập nhật": "2021-03-22T13:05:54.000Z",
-    "id": "Yj"
+    "id": "Yk"
   },
   {
     "Tiêu đề": "Khi sự bất lực trở thành cái đẹp",
@@ -35705,7 +35721,7 @@
     "Slug": "khi-su-bat-luc-tro-thanh-cai-dep",
     "Ngày tạo": "2020-06-20T14:17:40.000Z",
     "Ngày cập nhật": "2020-11-05T17:55:45.000Z",
-    "id": "Yk"
+    "id": "Yl"
   },
   {
     "Tiêu đề": "Khi sự nuông chiều trở thành cái \"đẹp\"",
@@ -35718,7 +35734,7 @@
     "Slug": "khi-su-nuong-chieu-tro-thanh-cai-dep",
     "Ngày tạo": "2020-06-20T14:37:20.000Z",
     "Ngày cập nhật": "2021-02-23T13:30:00.000Z",
-    "id": "Yl"
+    "id": "Ym"
   },
   {
     "Tiêu đề": "Ai nhớ ngàn năm một ngón tay",
@@ -35731,7 +35747,7 @@
     "Slug": "ai-nho-ngan-nam-mot-ngon-tay",
     "Ngày tạo": "2020-06-20T15:51:50.000Z",
     "Ngày cập nhật": "2020-06-29T18:32:48.000Z",
-    "id": "Ym"
+    "id": "Yn"
   },
   {
     "Tiêu đề": "Hiện tượng đồng âm khác nghĩa, đồng nghĩa khác âm, và đảo nghĩa trong quá trình hình thành niềm tin: 2",
@@ -35744,7 +35760,7 @@
     "Slug": "hien-tuong-dong-am-khac-nghia-2",
     "Ngày tạo": "2020-06-21T09:48:15.000Z",
     "Ngày cập nhật": "2021-05-08T08:34:01.000Z",
-    "id": "Yn"
+    "id": "Yo"
   },
   {
     "Tiêu đề": "Naïve realism và người sử dụng logic",
@@ -35757,7 +35773,7 @@
     "Slug": "naive-realism-va-nguoi-su-dung-logic",
     "Ngày tạo": "2020-06-29T18:09:06.000Z",
     "Ngày cập nhật": "2021-02-24T08:10:27.000Z",
-    "id": "Yo"
+    "id": "Yp"
   },
   {
     "Tiêu đề": "Chọn làm điều đúng hay chọn làm điều tốt?",
@@ -35770,7 +35786,7 @@
     "Slug": "chon-lam-dieu-dung-hay-chon-lam-dieu-tot",
     "Ngày tạo": "2020-07-15T17:56:12.000Z",
     "Ngày cập nhật": "2021-03-08T17:53:53.000Z",
-    "id": "Yp"
+    "id": "Yq"
   },
   {
     "Tiêu đề": "Bạn ngoen gửi: Chuyện Lão Ong",
@@ -35783,7 +35799,7 @@
     "Slug": "ban-ngoen-gui-chuyen-lao-ong",
     "Ngày tạo": "2020-07-19T16:52:41.000Z",
     "Ngày cập nhật": "2021-02-24T08:08:00.000Z",
-    "id": "Yq"
+    "id": "Yr"
   },
   {
     "Tiêu đề": "Lời mời khơi dậy sự hồn nhiên và lòng dũng cảm ở một con người",
@@ -35796,7 +35812,7 @@
     "Slug": "loi-moi-khoi-day-su-hon-nhien-va-long-dung-cam-o-mot-con-nguoi",
     "Ngày tạo": "2020-07-22T09:27:40.000Z",
     "Ngày cập nhật": "2021-08-06T12:25:03.000Z",
-    "id": "Yr"
+    "id": "Ys"
   },
   {
     "Tiêu đề": "Não của bạn đã ngăn bạn xem việc biến đổi khí hậu là nghiêm trọng như thế nào?",
@@ -35809,7 +35825,7 @@
     "Slug": "nao-cua-ban-da-ngan-ban-xem-viec-bien-doi-khi-hau-la-nghiem-trong-nhu-the-nao",
     "Ngày tạo": "2020-07-22T11:13:36.000Z",
     "Ngày cập nhật": "2021-09-24T15:31:44.000Z",
-    "id": "Ys"
+    "id": "Yt"
   },
   {
     "Tiêu đề": "Lời mời phản biện và hợp tác nghiên cứu",
@@ -35822,7 +35838,7 @@
     "Slug": "loi-moi-phan-bien-va-hop-tac-nghien-cuu",
     "Ngày tạo": "2020-07-30T07:35:10.000Z",
     "Ngày cập nhật": "2021-12-21T09:17:52.000Z",
-    "id": "Yt"
+    "id": "Yu"
   },
   {
     "Tiêu đề": "Bản kế hoạch hành động dự án Quả Cầu",
@@ -35835,7 +35851,7 @@
     "Slug": "ban-ke-hoach-hanh-dong-du-an-qua-cau",
     "Ngày tạo": "2020-08-14T12:36:59.000Z",
     "Ngày cập nhật": "2023-07-03T13:59:11.000Z",
-    "id": "Yu"
+    "id": "Yv"
   },
   {
     "Tiêu đề": "Giải đáp chất vấn",
@@ -35848,7 +35864,7 @@
     "Slug": "giai-dap-chat-van",
     "Ngày tạo": "2020-08-18T11:44:54.000Z",
     "Ngày cập nhật": "2022-03-17T09:33:10.000Z",
-    "id": "Yv"
+    "id": "Yw"
   },
   {
     "Tiêu đề": "Thay đổi niềm tin của người có niềm tin tiêu cực: rào cản và giải pháp",
@@ -35861,7 +35877,7 @@
     "Slug": "thay-doi-niem-tin-cua-nguoi-co-niem-tin-tieu-cuc",
     "Ngày tạo": "2020-08-27T14:08:00.000Z",
     "Ngày cập nhật": "2021-05-12T07:35:43.000Z",
-    "id": "Yw"
+    "id": "Yx"
   },
   {
     "Tiêu đề": "Bạn nghĩ gì về Quả Cầu?",
@@ -35874,7 +35890,7 @@
     "Slug": "ban-nghi-gi-ve-qua-cau",
     "Ngày tạo": "2020-09-06T05:23:11.000Z",
     "Ngày cập nhật": "2021-05-21T18:43:19.000Z",
-    "id": "Yx"
+    "id": "Yy"
   },
   {
     "Tiêu đề": "Tại sao những sự bất tiện nhỏ, chứ không phải bức tường lớn, lại là thứ định hướng hành vi trên mạng?",
@@ -35887,7 +35903,7 @@
     "Slug": "dinh-huong-hanh-vi-tren-mang",
     "Ngày tạo": "2020-09-10T16:10:52.000Z",
     "Ngày cập nhật": "2021-02-24T15:07:48.000Z",
-    "id": "Yy"
+    "id": "Yz"
   },
   {
     "Tiêu đề": "Một quan điểm về loại bỏ từ Hán Việt trong tiếng Việt",
@@ -35900,7 +35916,7 @@
     "Slug": "loai-bo-tu-han-viet",
     "Ngày tạo": "2020-09-16T16:06:40.000Z",
     "Ngày cập nhật": "2024-02-18T16:05:05.000Z",
-    "id": "Yz"
+    "id": "Y-"
   },
   {
     "Tiêu đề": "Thông tin ủng hộ",
@@ -35913,7 +35929,7 @@
     "Slug": "ung-ho",
     "Ngày tạo": "2020-10-09T09:12:21.000Z",
     "Ngày cập nhật": "2022-03-19T10:14:36.000Z",
-    "id": "Y-"
+    "id": "Y_"
   },
   {
     "Tiêu đề": "Cá trích đỏ trong toán học",
@@ -35926,7 +35942,7 @@
     "Slug": "ca-trich-do-trong-toan-hoc",
     "Ngày tạo": "2020-10-15T07:01:39.000Z",
     "Ngày cập nhật": "2021-09-10T17:31:38.000Z",
-    "id": "Y_"
+    "id": "Z0"
   },
   {
     "Tiêu đề": "Ý tưởng nền tảng dịch thuật ngữ",
@@ -35939,7 +35955,7 @@
     "Slug": "y-tuong-nen-tang-dich-thuat-ngu",
     "Ngày tạo": "2020-10-17T08:21:38.000Z",
     "Ngày cập nhật": "2021-12-02T09:07:39.000Z",
-    "id": "Z0"
+    "id": "Z1"
   },
   {
     "Tiêu đề": "Độc giả Quả Cầu nói gì?",
@@ -35952,7 +35968,7 @@
     "Slug": "doc-gia-qua-cau-noi-gi",
     "Ngày tạo": "2020-11-02T11:22:22.000Z",
     "Ngày cập nhật": "2021-06-17T18:51:46.000Z",
-    "id": "Z1"
+    "id": "Z2"
   },
   {
     "Tiêu đề": "Clip về bạo hành, bắt nạt, và quấy rối",
@@ -35965,7 +35981,7 @@
     "Slug": "clip-ve-bao-hanh-bat-nat-va-quay-roi",
     "Ngày tạo": "2020-11-04T17:48:02.000Z",
     "Ngày cập nhật": "2021-02-22T17:39:45.000Z",
-    "id": "Z2"
+    "id": "Z3"
   },
   {
     "Tiêu đề": "Tại sao nói tự nhiên giao cho con người công việc phá hủy nó? (nháp)",
@@ -35978,7 +35994,7 @@
     "Slug": "tai-sao-noi-tu-nhien-giao-cho-con-nguoi-cong-viec-pha-huy-no",
     "Ngày tạo": "2020-11-08T06:26:21.000Z",
     "Ngày cập nhật": "2021-02-23T16:29:53.000Z",
-    "id": "Z3"
+    "id": "Z4"
   },
   {
     "Tiêu đề": "Liệu sự thao túng là luôn sai?",
@@ -35991,7 +36007,7 @@
     "Slug": "lieu-su-thao-tung-la-luon-sai",
     "Ngày tạo": "2020-12-01T06:51:33.000Z",
     "Ngày cập nhật": "2021-02-23T16:29:42.000Z",
-    "id": "Z4"
+    "id": "Z5"
   },
   {
     "Tiêu đề": "Liệu sự yêu cầu về sự đồng thuận có thực sự có cơ sở?",
@@ -36004,7 +36020,7 @@
     "Slug": "lieu-su-yeu-cau-ve-su-dong-thuan-co-thuc-su-co-co-so",
     "Ngày tạo": "2020-12-01T07:30:26.000Z",
     "Ngày cập nhật": "2021-02-23T16:29:33.000Z",
-    "id": "Z5"
+    "id": "Z6"
   },
   {
     "Tiêu đề": "Tại sao mong muốn của một người không nhất thiết là sự tự chủ của người đó?",
@@ -36017,7 +36033,7 @@
     "Slug": "khi-nao-thi-mong-muon-cua-mot-nguoi-la-su-tu-chu-cua-nguoi-do",
     "Ngày tạo": "2020-12-01T08:32:35.000Z",
     "Ngày cập nhật": "2021-02-23T16:29:20.000Z",
-    "id": "Z6"
+    "id": "Z7"
   },
   {
     "Tiêu đề": "Hỗ trợ người gây bạo hành: liệu ta có đang bỏ qua một nguồn lực quan trọng nhất?",
@@ -36030,7 +36046,7 @@
     "Slug": "ho-tro-nguoi-gay-bao-hanh",
     "Ngày tạo": "2020-12-13T13:47:34.000Z",
     "Ngày cập nhật": "2021-07-14T04:56:39.000Z",
-    "id": "Z7"
+    "id": "Z8"
   },
   {
     "Tiêu đề": "Khi nào thì sự từ chối trợ giúp của một người không có hiệu lực?",
@@ -36043,7 +36059,7 @@
     "Slug": "khi-nao-thi-su-tu-choi-tro-giup-cua-mot-nguoi-khong-co-hieu-luc",
     "Ngày tạo": "2020-12-13T14:23:38.000Z",
     "Ngày cập nhật": "2021-02-22T17:38:04.000Z",
-    "id": "Z8"
+    "id": "Z9"
   },
   {
     "Tiêu đề": "Hiện tượng đồng âm khác nghĩa, đồng nghĩa khác âm, và đảo nghĩa trong quá trình hình thành niềm tin",
@@ -36056,7 +36072,7 @@
     "Slug": "hien-tuong-dong-am-khac-nghia-1",
     "Ngày tạo": "2020-12-30T12:13:47.000Z",
     "Ngày cập nhật": "2021-05-27T18:01:27.000Z",
-    "id": "Z9"
+    "id": "ZA"
   },
   {
     "Tiêu đề": "Hiện tượng đồng âm khác nghĩa, đồng nghĩa khác âm, và đảo nghĩa trong quá trình hình thành niềm tin: 3",
@@ -36069,7 +36085,7 @@
     "Slug": "hien-tuong-dong-am-khac-nghia-3",
     "Ngày tạo": "2020-12-30T13:18:12.000Z",
     "Ngày cập nhật": "2021-05-13T10:22:09.000Z",
-    "id": "ZA"
+    "id": "ZB"
   },
   {
     "Tiêu đề": "Bản câu hỏi dành cho người muốn thay đổi quan niệm của bạn mình",
@@ -36082,7 +36098,7 @@
     "Slug": "ban-cau-hoi-danh-cho-nguoi-muon-thay-doi-quan-niem-cua-ban-minh",
     "Ngày tạo": "2021-01-19T17:33:21.000Z",
     "Ngày cập nhật": "2021-07-14T10:57:14.000Z",
-    "id": "ZB"
+    "id": "ZC"
   },
   {
     "Tiêu đề": "Cảm ơn bạn đã ủng hộ Quả Cầu",
@@ -36095,7 +36111,7 @@
     "Slug": "cam-on-ban-da-ung-ho-qua-cau",
     "Ngày tạo": "2020-01-22T11:47:00.000Z",
     "Ngày cập nhật": "2021-01-22T11:49:25.000Z",
-    "id": "ZC"
+    "id": "ZD"
   },
   {
     "Tiêu đề": "Lời mời cùng dịch các bài viết về tự trị",
@@ -36108,7 +36124,7 @@
     "Slug": "loi-moi-cung-dich-cac-bai-viet-ve-tu-tri",
     "Ngày tạo": "2021-02-21T02:05:29.000Z",
     "Ngày cập nhật": "2021-08-11T17:52:48.000Z",
-    "id": "ZD"
+    "id": "ZE"
   },
   {
     "Tiêu đề": "Là dơi thì như thế nào?",
@@ -36121,7 +36137,7 @@
     "Slug": "la-doi-thi-nhu-the-nao",
     "Ngày tạo": "2021-02-21T10:04:34.000Z",
     "Ngày cập nhật": "2021-02-21T12:38:57.000Z",
-    "id": "ZE"
+    "id": "ZF"
   },
   {
     "Tiêu đề": "Lý thuyết về góc nhìn",
@@ -36134,7 +36150,7 @@
     "Slug": "ly-thuyet-ve-goc-nhin",
     "Ngày tạo": "2021-02-21T13:00:25.000Z",
     "Ngày cập nhật": "2021-02-24T15:41:22.000Z",
-    "id": "ZF"
+    "id": "ZG"
   },
   {
     "Tiêu đề": "Test",
@@ -36147,7 +36163,7 @@
     "Slug": "test",
     "Ngày tạo": "2019-02-24T11:16:00.000Z",
     "Ngày cập nhật": "2021-03-02T10:48:52.000Z",
-    "id": "ZG"
+    "id": "ZH"
   },
   {
     "Tiêu đề": "Những hashtag chính trị như #MeToo hay #BlackLivesMatter có thể khiến mọi người ít tin vào tin tức hơn",
@@ -36160,7 +36176,7 @@
     "Slug": "hashtag-khien-moi-nguoi-it-tin-vao-tin-tuc-hon",
     "Ngày tạo": "2021-03-22T09:09:50.000Z",
     "Ngày cập nhật": "2021-04-08T17:25:37.000Z",
-    "id": "ZH"
+    "id": "ZI"
   },
   {
     "Tiêu đề": "Khảo sát thành viên nhóm <em>Nghiên cứu triết học phương Đông</em>",
@@ -36173,7 +36189,7 @@
     "Slug": "khao-sat-thanh-vien-nhom-nghien-cuu-triet-hoc-phuong-dong",
     "Ngày tạo": "2021-03-31T18:16:54.000Z",
     "Ngày cập nhật": "2021-05-27T15:54:09.000Z",
-    "id": "ZI"
+    "id": "ZJ"
   },
   {
     "Tiêu đề": "Toán học còn có nhiều thứ hơn là mỗi sự chặt chẽ và chứng minh",
@@ -36186,7 +36202,7 @@
     "Slug": "toan-hoc-con-co-nhieu-thu-hon-la-moi-su-chat-che-va-chung-minh",
     "Ngày tạo": "2021-04-08T09:32:44.000Z",
     "Ngày cập nhật": "2021-04-28T07:55:31.000Z",
-    "id": "ZJ"
+    "id": "ZK"
   },
   {
     "Tiêu đề": "Những câu hỏi về nữ quyền",
@@ -36199,7 +36215,7 @@
     "Slug": "nhung-cau-hoi-ve-nu-quyen",
     "Ngày tạo": "2021-04-09T08:22:20.000Z",
     "Ngày cập nhật": "2021-10-16T07:54:09.000Z",
-    "id": "ZK"
+    "id": "ZL"
   },
   {
     "Tiêu đề": "Nước cờ thông minh: chúng ta học được nhiều hơn bằng việc tin tưởng hơn là không tin",
@@ -36212,7 +36228,7 @@
     "Slug": "chung-ta-hoc-duoc-nhieu-hon-bang-viec-tin-tuong-hon-la-khong-tin",
     "Ngày tạo": "2021-04-14T09:17:47.000Z",
     "Ngày cập nhật": "2022-03-06T15:19:11.000Z",
-    "id": "ZL"
+    "id": "ZM"
   },
   {
     "Tiêu đề": "Tổng hợp một số nghịch lý",
@@ -36225,7 +36241,7 @@
     "Slug": "tong-hop-mot-so-nghich-ly",
     "Ngày tạo": "2021-04-15T11:21:52.000Z",
     "Ngày cập nhật": "2021-04-15T11:31:53.000Z",
-    "id": "ZM"
+    "id": "ZN"
   },
   {
     "Tiêu đề": "Câu chuyện <em>Người mù sờ voi</em>: những góc nhìn chưa từng có",
@@ -36238,7 +36254,7 @@
     "Slug": "nguoi-mu-so-voi",
     "Ngày tạo": "2021-04-17T09:31:39.000Z",
     "Ngày cập nhật": "2022-12-22T14:12:59.000Z",
-    "id": "ZN"
+    "id": "ZO"
   },
   {
     "Tiêu đề": "Hoàng Lan",
@@ -36251,7 +36267,7 @@
     "Slug": "hoang-lan",
     "Ngày tạo": "2021-04-27T17:04:00.000Z",
     "Ngày cập nhật": "2021-04-27T17:24:42.000Z",
-    "id": "ZO"
+    "id": "ZP"
   },
   {
     "Tiêu đề": "Mạng lưới người thân, bạn bè của người có niềm tin tiêu cực",
@@ -36264,7 +36280,7 @@
     "Slug": "mang-luoi-nguoi-than-ban-be-nguoi-co-niem-tin-tieu-cuc",
     "Ngày tạo": "2021-05-01T11:48:15.000Z",
     "Ngày cập nhật": "2022-01-01T16:00:53.000Z",
-    "id": "ZP"
+    "id": "ZQ"
   },
   {
     "Tiêu đề": "Thông tin liên hệ",
@@ -36277,7 +36293,7 @@
     "Slug": "lien-he",
     "Ngày tạo": "2021-05-18T07:38:51.000Z",
     "Ngày cập nhật": "2022-03-20T17:14:12.000Z",
-    "id": "ZQ"
+    "id": "ZR"
   },
   {
     "Tiêu đề": "Khảo sát quan điểm về sự tác động",
@@ -36290,7 +36306,7 @@
     "Slug": "khao-sat-quan-diem-ve-su-tac-dong",
     "Ngày tạo": "2020-05-21T15:30:00.000Z",
     "Ngày cập nhật": "2021-07-15T12:29:49.000Z",
-    "id": "ZR"
+    "id": "ZS"
   },
   {
     "Tiêu đề": "Phiếu đăng ký tham gia <em>Mạng lưới người thân, bạn bè của người có niềm tin tiêu cực</em>",
@@ -36303,7 +36319,7 @@
     "Slug": "dang-ky-tham-gia-mang-luoi",
     "Ngày tạo": "2020-05-21T15:33:00.000Z",
     "Ngày cập nhật": "2021-09-04T10:35:33.000Z",
-    "id": "ZS"
+    "id": "ZT"
   },
   {
     "Tiêu đề": "Khảo sát người tu tập Phật giáo",
@@ -36316,7 +36332,7 @@
     "Slug": "khao-sat-nguoi-tu-tap-phat-giao",
     "Ngày tạo": "2020-05-22T08:42:00.000Z",
     "Ngày cập nhật": "2021-09-10T10:11:40.000Z",
-    "id": "ZT"
+    "id": "ZU"
   },
   {
     "Tiêu đề": "Nhờ người thứ 3 tác động người có niềm tin tiêu cực",
@@ -36329,7 +36345,7 @@
     "Slug": "nho-nguoi-thu-3-tac-dong-nguoi-co-niem-tin-tieu-cuc",
     "Ngày tạo": "2021-05-27T11:41:47.000Z",
     "Ngày cập nhật": "2021-08-06T12:44:44.000Z",
-    "id": "ZU"
+    "id": "ZV"
   },
   {
     "Tiêu đề": "4 câu hỏi để giúp người khác thay đổi tốt hơn (Phỏng vấn tạo động lực)",
@@ -36342,7 +36358,7 @@
     "Slug": "phong-van-tao-dong-luc",
     "Ngày tạo": "2021-06-05T03:49:49.000Z",
     "Ngày cập nhật": "2021-08-06T11:10:19.000Z",
-    "id": "ZV"
+    "id": "ZW"
   },
   {
     "Tiêu đề": "Chấp thuận sau khi được giải thích",
@@ -36355,7 +36371,7 @@
     "Slug": "chap-thuan-sau-khi-duoc-giai-thich",
     "Ngày tạo": "2021-06-11T08:57:30.000Z",
     "Ngày cập nhật": "2021-08-15T14:13:25.000Z",
-    "id": "ZW"
+    "id": "ZX"
   },
   {
     "Tiêu đề": "Các câu hỏi thường gặp",
@@ -36368,7 +36384,7 @@
     "Slug": "cac-cau-hoi-thuong-gap",
     "Ngày tạo": "2021-06-16T16:31:41.000Z",
     "Ngày cập nhật": "2022-08-14T13:05:55.000Z",
-    "id": "ZX"
+    "id": "ZY"
   },
   {
     "Tiêu đề": "Lộ trình thay đổi người có niềm tin tiêu cực",
@@ -36381,7 +36397,7 @@
     "Slug": "lo-trinh-thay-doi-nguoi-co-niem-tin-tieu-cuc",
     "Ngày tạo": "2021-06-27T08:00:00.000Z",
     "Ngày cập nhật": "2022-04-10T16:24:13.000Z",
-    "id": "ZY"
+    "id": "ZZ"
   },
   {
     "Tiêu đề": "Giới thiệu người sáng lập",
@@ -36394,7 +36410,7 @@
     "Slug": "gioi-thieu-nguoi-sang-lap",
     "Ngày tạo": "2021-08-04T11:16:45.000Z",
     "Ngày cập nhật": "2022-06-07T18:46:09.000Z",
-    "id": "ZZ"
+    "id": "Za"
   },
   {
     "Tiêu đề": "Sự tối ưu hoá trong vũ trụ",
@@ -36407,7 +36423,7 @@
     "Slug": "su-toi-uu-hoa-trong-vu-tru",
     "Ngày tạo": "2021-08-04T11:04:11.000Z",
     "Ngày cập nhật": "2021-08-04T11:06:27.000Z",
-    "id": "Za"
+    "id": "Zb"
   },
   {
     "Tiêu đề": "Né tránh bằng tâm linh (spiritual bypassing)",
@@ -36420,7 +36436,7 @@
     "Slug": "ne-tranh-bang-tam-linh-spiritual-bypassing",
     "Ngày tạo": "2021-08-06T16:09:34.000Z",
     "Ngày cập nhật": "2021-08-06T16:09:40.000Z",
-    "id": "Zb"
+    "id": "Zc"
   },
   {
     "Tiêu đề": "Về nguỵ biện",
@@ -36433,7 +36449,7 @@
     "Slug": "ve-nguy-bien",
     "Ngày tạo": "2021-08-09T09:02:13.000Z",
     "Ngày cập nhật": "2021-08-09T09:37:26.000Z",
-    "id": "Zc"
+    "id": "Zd"
   },
   {
     "Tiêu đề": "Sự riêng tư",
@@ -36446,7 +36462,7 @@
     "Slug": "su-rieng-tu",
     "Ngày tạo": "2021-08-11T17:45:52.000Z",
     "Ngày cập nhật": "2021-08-15T14:19:02.000Z",
-    "id": "Zd"
+    "id": "Ze"
   },
   {
     "Tiêu đề": "Bộ quy tắc đạo đức cho thành viên <i>Mạng lưới người thân, bạn bè của người có niềm tin tiêu cực</i>",
@@ -36459,7 +36475,7 @@
     "Slug": "bo-quy-tac-dao-duc",
     "Ngày tạo": "2021-09-03T11:32:10.000Z",
     "Ngày cập nhật": "2021-09-04T10:44:21.000Z",
-    "id": "Ze"
+    "id": "Zf"
   },
   {
     "Tiêu đề": "Tên miền có dấu?",
@@ -36472,7 +36488,7 @@
     "Slug": "ten-mien-co-dau",
     "Ngày tạo": "2021-09-08T07:45:08.000Z",
     "Ngày cập nhật": "2021-12-14T15:47:41.000Z",
-    "id": "Zf"
+    "id": "Zg"
   },
   {
     "Tiêu đề": "Sao mà hỏi lắm thế?",
@@ -36485,7 +36501,7 @@
     "Slug": "sao-ma-hoi-lam-the",
     "Ngày tạo": "2021-09-19T18:20:08.000Z",
     "Ngày cập nhật": "2022-08-05T14:01:36.000Z",
-    "id": "Zg"
+    "id": "Zh"
   },
   {
     "Tiêu đề": "\"The best way to learn vocabulary is from context.\" Why is that sometime not true?",
@@ -36498,7 +36514,7 @@
     "Slug": "learn-vocab-from-context",
     "Ngày tạo": "2021-10-24T10:06:38.000Z",
     "Ngày cập nhật": "2022-07-19T17:44:36.000Z",
-    "id": "Zh"
+    "id": "Zi"
   },
   {
     "Tiêu đề": "Phân tích một mạng lưới 100+ niềm tin",
@@ -36511,7 +36527,7 @@
     "Slug": "phan-tich-mot-mang-luoi-100-niem-tin",
     "Ngày tạo": "2022-01-01T13:23:46.000Z",
     "Ngày cập nhật": "2022-01-24T10:06:02.000Z",
-    "id": "Zi"
+    "id": "Zj"
   },
   {
     "Tiêu đề": "test",
@@ -36524,7 +36540,7 @@
     "Slug": "test-2",
     "Ngày tạo": "2021-01-07T08:47:54.000Z",
     "Ngày cập nhật": "2022-01-23T15:12:54.000Z",
-    "id": "Zj"
+    "id": "Zk"
   },
   {
     "Tiêu đề": "",
@@ -36537,7 +36553,7 @@
     "Slug": "6788-2",
     "Ngày tạo": "2021-01-07T09:26:00.000Z",
     "Ngày cập nhật": "2022-01-07T10:52:15.000Z",
-    "id": "Zk"
+    "id": "Zl"
   },
   {
     "Tiêu đề": "Phân tích một mạng lưới 100+ niềm tin (phần 2)",
@@ -36550,7 +36566,7 @@
     "Slug": "phan-tich-mot-mang-luoi-100-niem-tin-phan-2",
     "Ngày tạo": "2022-01-22T09:16:20.000Z",
     "Ngày cập nhật": "2022-01-24T08:58:45.000Z",
-    "id": "Zl"
+    "id": "Zm"
   },
   {
     "Tiêu đề": "Danh sách các niềm tin trong đồ thị mạng lưới niềm tin",
@@ -36563,7 +36579,7 @@
     "Slug": "danh-sach-cac-niem-tin-trong-do-thi-mang-luoi-niem-tin",
     "Ngày tạo": "2022-01-24T07:47:51.000Z",
     "Ngày cập nhật": "2022-01-24T09:46:45.000Z",
-    "id": "Zm"
+    "id": "Zn"
   },
   {
     "Tiêu đề": "Obsidian, cây vấn đề, hệ thống quản lý công việc, và nỗi sợ chết",
@@ -36576,7 +36592,7 @@
     "Slug": "obsidian",
     "Ngày tạo": "2022-03-14T18:54:19.000Z",
     "Ngày cập nhật": "2022-04-12T11:20:26.000Z",
-    "id": "Zn"
+    "id": "Zo"
   },
   {
     "Tiêu đề": "Cửa hàng",
@@ -36589,7 +36605,7 @@
     "Slug": "cua-hang",
     "Ngày tạo": "2021-03-20T14:40:00.000Z",
     "Ngày cập nhật": "2022-03-20T17:20:37.000Z",
-    "id": "Zo"
+    "id": "Zp"
   },
   {
     "Tiêu đề": "Các cấp độ tham gia Quả Cầu",
@@ -36602,7 +36618,7 @@
     "Slug": "cac-cap-do-tham-gia-qua-cau",
     "Ngày tạo": "2022-04-11T10:11:14.000Z",
     "Ngày cập nhật": "2023-07-03T14:03:41.000Z",
-    "id": "Zp"
+    "id": "Zq"
   },
   {
     "Tiêu đề": "Vấn đề Quả Cầu",
@@ -36615,7 +36631,7 @@
     "Slug": "van-de-qua-cau",
     "Ngày tạo": "2022-04-21T10:05:23.000Z",
     "Ngày cập nhật": "2022-04-21T10:33:29.000Z",
-    "id": "Zq"
+    "id": "Zr"
   },
   {
     "Tiêu đề": "Bản câu hỏi dành cho việc xây dựng nhóm người thân bạn bè của người có niềm tin tiêu cực",
@@ -36628,7 +36644,7 @@
     "Slug": "ban-cau-hoi-danh-cho-viec-xay-dung-nhom-nguoi-than-ban-be-cua-nguoi-co-niem-tin-tieu-cuc",
     "Ngày tạo": "2022-05-06T10:04:49.000Z",
     "Ngày cập nhật": "2022-05-06T10:06:14.000Z",
-    "id": "Zr"
+    "id": "Zs"
   },
   {
     "Tiêu đề": "Về cặp phạm trù “cái phổ quát - cái đặc thù - cái đơn nhất” trong phép biện chứng của Hegel",
@@ -36641,7 +36657,7 @@
     "Slug": "ve-cap-pham-tru-cai-pho-quat-cai-dac-thu-cai-don-nhat-trong-phep-bien-chung-cua-hegel",
     "Ngày tạo": "2021-05-21T09:40:00.000Z",
     "Ngày cập nhật": "2022-05-21T18:03:25.000Z",
-    "id": "Zs"
+    "id": "Zt"
   },
   {
     "Tiêu đề": "Mẹo tóm tắt các bài viết đọc chẳng hiểu gì hết",
@@ -36654,7 +36670,7 @@
     "Slug": "meo-tom-tat-cac-bai-viet-doc-chang-hieu-gi-het",
     "Ngày tạo": "2022-05-22T07:16:33.000Z",
     "Ngày cập nhật": "2022-05-22T08:22:51.000Z",
-    "id": "Zt"
+    "id": "Zu"
   },
   {
     "Tiêu đề": "Hợp nhất hai cách nhìn về thông tin",
@@ -36667,7 +36683,7 @@
     "Slug": "hop-nhat-hai-cach-nhin-ve-thong-tin",
     "Ngày tạo": "2022-06-14T09:39:27.000Z",
     "Ngày cập nhật": "2022-06-19T13:53:46.000Z",
-    "id": "Zu"
+    "id": "Zv"
   },
   {
     "Tiêu đề": "Một đám mây chim sáo",
@@ -36680,7 +36696,7 @@
     "Slug": "mot-dam-may-chim-sao",
     "Ngày tạo": "2022-08-09T08:56:55.000Z",
     "Ngày cập nhật": "2022-09-14T16:23:44.000Z",
-    "id": "Zv"
+    "id": "Zw"
   },
   {
     "Tiêu đề": "Một đám mây chim sáo (phần 2)",
@@ -36693,7 +36709,7 @@
     "Slug": "mot-dam-may-chim-sao-phan-2",
     "Ngày tạo": "2022-09-14T16:20:45.000Z",
     "Ngày cập nhật": "2022-10-03T15:09:18.000Z",
-    "id": "Zw"
+    "id": "Zx"
   },
   {
     "Tiêu đề": "Truyện ngụ ngôn về những người mong đợi",
@@ -36706,7 +36722,7 @@
     "Slug": "truyen-ngu-ngon-ve-nhung-nguoi-mong-doi",
     "Ngày tạo": "2022-10-03T14:57:51.000Z",
     "Ngày cập nhật": "2022-10-03T15:07:48.000Z",
-    "id": "Zx"
+    "id": "Zy"
   },
   {
     "Tiêu đề": "Chú thích cho bài <em>Người mù sờ voi</em>",
@@ -36719,7 +36735,7 @@
     "Slug": "chu-thich-cho-bai-nguoi-mu-so-voi",
     "Ngày tạo": "2022-12-22T14:15:19.000Z",
     "Ngày cập nhật": "2022-12-22T14:20:35.000Z",
-    "id": "Zy"
+    "id": "Zz"
   },
   {
     "Tiêu đề": "Khảo sát người dùng vault Nhập môn Obsidian",
@@ -36732,7 +36748,7 @@
     "Slug": "khao-sat-nguoi-dung-vault-nhap-mon-obsidian",
     "Ngày tạo": "2023-02-06T09:55:53.000Z",
     "Ngày cập nhật": "2023-02-06T09:56:16.000Z",
-    "id": "Zz"
+    "id": "Z-"
   },
   {
     "Tiêu đề": "Truyện Ngụ Ngôn về Người Nhật – Phần Một (chưa chắc có Phần Hai)",
@@ -36745,7 +36761,7 @@
     "Slug": "truyen-ngu-ngon-ve-nguoi-nhat",
     "Ngày tạo": "2023-03-26T06:13:48.000Z",
     "Ngày cập nhật": "2023-03-26T06:17:32.000Z",
-    "id": "Z-"
+    "id": "Z_"
   },
   {
     "Tiêu đề": "Từ việc hỗ trợ Kendy đến Patreon và tâm lý của con người về tiền",
@@ -36758,7 +36774,7 @@
     "Slug": "tu-viec-ho-tro-kendy-den-patreon-va-tam-ly-cua-con-nguoi-ve-tien",
     "Ngày tạo": "2023-06-07T17:05:05.000Z",
     "Ngày cập nhật": "2023-06-07T17:27:16.000Z",
-    "id": "Z_"
+    "id": "a0"
   },
   {
     "Tiêu đề": "Câu hỏi thường gặp về mô hình tổ chức chim sáo",
@@ -36771,7 +36787,7 @@
     "Slug": "cau-hoi-thuong-gap-ve-mo-hinh-to-chuc-chim-sao",
     "Ngày tạo": "2023-06-14T18:37:29.000Z",
     "Ngày cập nhật": "2023-06-20T10:01:32.000Z",
-    "id": "a0"
+    "id": "a1"
   },
   {
     "Tiêu đề": "Phiếu khảo sát sau buổi nói chuyện \"Một đám mây chim sáo\"",
@@ -36784,7 +36800,7 @@
     "Slug": "phieu-khao-sat-sau-buoi-noi-chuyen-mot-dam-may-chim-sao",
     "Ngày tạo": "2023-06-20T10:36:49.000Z",
     "Ngày cập nhật": "2023-06-20T10:37:00.000Z",
-    "id": "a1"
+    "id": "a2"
   },
   {
     "Tiêu đề": "Từ cách một từ được đổ nghĩa đến việc dịch khái niệm philanthropy sang tiếng Việt",
@@ -36797,7 +36813,7 @@
     "Slug": "tu-cach-mot-tu-duoc-do-nghia-den-viec-dich-khai-niem-philanthropy-sang-tieng-viet",
     "Ngày tạo": "2023-06-23T08:20:06.000Z",
     "Ngày cập nhật": "2023-06-23T13:33:54.000Z",
-    "id": "a2"
+    "id": "a3"
   },
   {
     "Tiêu đề": "Các buổi chia sẻ kỹ năng miễn phí với nhau",
@@ -36810,7 +36826,7 @@
     "Slug": "cac-buoi-chia-se-ky-nang-mien-phi-voi-nhau",
     "Ngày tạo": "2023-06-27T10:22:15.000Z",
     "Ngày cập nhật": "2023-06-27T15:02:32.000Z",
-    "id": "a3"
+    "id": "a4"
   },
   {
     "Tiêu đề": "Bộ cài đặt Vùng đất Quả Cầu",
@@ -36823,7 +36839,7 @@
     "Slug": "bo-cai-dat-vung-dat-qua-cau",
     "Ngày tạo": "2023-07-03T14:17:25.000Z",
     "Ngày cập nhật": "2023-07-03T14:20:01.000Z",
-    "id": "a4"
+    "id": "a5"
   },
   {
     "Tiêu đề": "Khảo sát nhu cầu phân loại tự động và lập trình",
@@ -36836,7 +36852,7 @@
     "Slug": "khao-sat-nhu-cau-phan-loai-tu-dong-va-lap-trinh",
     "Ngày tạo": "2023-11-08T12:39:34.000Z",
     "Ngày cập nhật": "2023-11-08T14:17:42.000Z",
-    "id": "a5"
+    "id": "a6"
   },
   {
     "Tiêu đề": "Bàn làm việc Google Calendar",
@@ -36849,7 +36865,7 @@
     "Slug": "ban-lam-viec-google-calendar",
     "Ngày tạo": "2023-12-29T08:40:45.000Z",
     "Ngày cập nhật": "2023-12-31T05:59:13.000Z",
-    "id": "a6"
+    "id": "a7"
   },
   {
     "Tiêu đề": "Các buổi đáp ứng nhu cầu học cách sử dụng công cụ và tư duy lập trình cho nhu cầu công việc",
@@ -36862,7 +36878,7 @@
     "Slug": "cac-buoi-dap-ung-nhu-cau-hoc-cach-su-dung-cong-cu-va-tu-duy-lap-trinh-cho-nhu-cau-ca-nhan-hoac-nghien-cuu",
     "Ngày tạo": "2023-12-29T14:15:32.000Z",
     "Ngày cập nhật": "2024-03-02T16:10:36.000Z",
-    "id": "a7"
+    "id": "a8"
   },
   {
     "Tiêu đề": "Khi nào thì chiến lược định giá \"trả tuỳ tâm\" đạt được sự bền vững?",
@@ -36875,7 +36891,7 @@
     "Slug": "khi-nao-thi-chien-luoc-dinh-gia-tra-tuy-tam-dat-duoc-su-ben-vung",
     "Ngày tạo": "2023-12-31T05:47:50.000Z",
     "Ngày cập nhật": "2023-12-31T12:11:55.000Z",
-    "id": "a8"
+    "id": "a9"
   },
   {
     "Tiêu đề": "Tích hợp Trấn Kỳ vào hệ thống của bạn",
@@ -36888,7 +36904,7 @@
     "Slug": "tich-hop-tran-ky-vao-he-thong-cua-ban",
     "Ngày tạo": "2024-02-02T10:25:32.000Z",
     "Ngày cập nhật": "2024-02-19T19:31:57.000Z",
-    "id": "a9"
+    "id": "aA"
   },
   {
     "Tiêu đề": "Kiếm tiền từ Trấn Kỳ",
@@ -36901,7 +36917,7 @@
     "Slug": "kiem-tien-tu-tran-ky",
     "Ngày tạo": "2024-02-14T10:41:22.000Z",
     "Ngày cập nhật": "2024-02-14T10:41:33.000Z",
-    "id": "aA"
+    "id": "aB"
   },
   {
     "Tiêu đề": "tesst",
@@ -36914,7 +36930,7 @@
     "Slug": "tesst",
     "Ngày tạo": "2024-02-25T13:28:40.000Z",
     "Ngày cập nhật": "2024-02-25T13:28:40.000Z",
-    "id": "aB"
+    "id": "aC"
   },
   {
     "Tiêu đề": "Khảo sát nhu cầu học lập trình",
@@ -36927,7 +36943,7 @@
     "Slug": "khao-sat-nhu-cau-hoc-lap-trinh",
     "Ngày tạo": "2024-02-25T15:18:17.000Z",
     "Ngày cập nhật": "2024-02-25T16:14:27.000Z",
-    "id": "aC"
+    "id": "aD"
   },
   {
     "Tiêu đề": "Lý Minh Nhật – Human after all",
@@ -36937,17 +36953,17 @@
     },
     "Slug": "lyminhnhat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aD"
+    "id": "aE"
   },
   {
     "Tiêu đề": "Quả Cầu",
-    "URL": "https://www.facebook.com/quacau.sphere/",
+    "URL": "https://www.facebook.com/quacau.sphere",
     "Nội dung bài đăng": {
-      "Mô tả bài đăng": "Quả Cầu. 1.719 lượt thích · 1 người đang nói về điều này. Bằng trí tưởng tượng và logic thuần túy, ta dựng một quả cầu lên trên thế giới thực"
+      "Mô tả bài đăng": "Quả Cầu. 1.720 lượt thích · 4 người đang nói về điều này. Bằng trí tưởng tượng và logic thuần túy, ta dựng một quả cầu lên trên thế giới thực"
     },
     "Slug": "quacau.sphere",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aE"
+    "id": "aF"
   },
   {
     "Tiêu đề": "Quả Cầu",
@@ -36957,16 +36973,16 @@
     },
     "Slug": "qua.cau.the.sphere",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aF"
+    "id": "aG"
   },
   {
     "Tiêu đề": "Quả Cầu · GitHub",
-    "URL": "https://github.com/orgs/QuaCau-TheSphere",
+    "URL": "https://github.com/QuaCau-TheSphere",
     "Nội dung bài đăng": {
       "Mô tả bài đăng": "Bằng trí tưởng tượng và logic thuần tuý, ta dựng một quả cầu lên trên thế giới thực - Quả Cầu"
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aG"
+    "id": "aH"
   },
   {
     "Tiêu đề": "GitHub - QuaCau-TheSphere/CW-doi-thoai",
@@ -36975,7 +36991,7 @@
       "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/CW-doi-thoai development by creating an account on GitHub."
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aH"
+    "id": "aI"
   },
   {
     "Tiêu đề": "GitHub - QuaCau-TheSphere/CW-obsidian-quan-ly-du-an-va-cong-cu-nghi",
@@ -36984,7 +37000,7 @@
       "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/CW-obsidian-quan-ly-du-an-va-cong-cu-nghi development by creating an account on GitHub."
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aI"
+    "id": "aJ"
   },
   {
     "Tiêu đề": "GitHub - QuaCau-TheSphere/CW-xu-ly-du-lieu-va-lap-trinh",
@@ -36993,7 +37009,7 @@
       "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/CW-xu-ly-du-lieu-va-lap-trinh development by creating an account on GitHub."
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aJ"
+    "id": "aK"
   },
   {
     "Tiêu đề": "GitHub - QuaCau-TheSphere/CV-obsidian-quan-ly-du-an-va-cong-cu-nghi: Vault hướng dẫn ứng dụng Obsidian và Git vào việc quản lý dự án và kết nối nguồn lực cộng đồng dành riêng cho người Việt",
@@ -37002,7 +37018,7 @@
       "Mô tả bài đăng": "Vault hướng dẫn ứng dụng Obsidian và Git vào việc quản lý dự án và kết nối nguồn lực cộng đồng dành riêng cho người Việt - QuaCau-TheSphere/CV-obsidian-quan-ly-du-an-va-cong-cu-nghi"
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aK"
+    "id": "aL"
   },
   {
     "Tiêu đề": "Page not found · GitHub · GitHub",
@@ -37011,7 +37027,7 @@
       "Mô tả bài đăng": "GitHub is where people build software. More than 100 million people use GitHub to discover, fork, and contribute to over 420 million projects."
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aL"
+    "id": "aM"
   },
   {
     "Tiêu đề": "GitHub - QuaCau-TheSphere/FV-khoa-hoc-xa-hoi",
@@ -37020,7 +37036,7 @@
       "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/FV-khoa-hoc-xa-hoi development by creating an account on GitHub."
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aM"
+    "id": "aN"
   },
   {
     "Tiêu đề": "GitHub - QuaCau-TheSphere/LandofSpheres: Vault Obsidian chứa mọi dữ liệu hoạt động của Quả Cầu",
@@ -37029,7 +37045,7 @@
       "Mô tả bài đăng": "Vault Obsidian chứa mọi dữ liệu hoạt động của Quả Cầu - QuaCau-TheSphere/LandofSpheres"
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aN"
+    "id": "aO"
   },
   {
     "Tiêu đề": "GitHub - QuaCau-TheSphere/CV-tiep-thi-so-xu-ly-du-lieu-va-lap-trinh",
@@ -37038,7 +37054,7 @@
       "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/CV-tiep-thi-so-xu-ly-du-lieu-va-lap-trinh development by creating an account on GitHub."
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aO"
+    "id": "aP"
   },
   {
     "Tiêu đề": "Page not found · GitHub · GitHub",
@@ -37047,7 +37063,7 @@
       "Mô tả bài đăng": "GitHub is where people build software. More than 100 million people use GitHub to discover, fork, and contribute to over 420 million projects."
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aP"
+    "id": "aQ"
   },
   {
     "Tiêu đề": "GitHub - QuaCau-TheSphere/tranky-test",
@@ -37056,7 +37072,7 @@
       "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/tranky-test development by creating an account on GitHub."
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aQ"
+    "id": "aR"
   },
   {
     "Tiêu đề": "GitHub - QuaCau-TheSphere/meetup-ticketbox-to-google-calendar",
@@ -37065,7 +37081,7 @@
       "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/meetup-ticketbox-to-google-calendar development by creating an account on GitHub."
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aR"
+    "id": "aS"
   },
   {
     "Tiêu đề": "GitHub - QuaCau-TheSphere/EW-heavyT",
@@ -37074,7 +37090,7 @@
       "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/EW-heavyT development by creating an account on GitHub."
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aS"
+    "id": "aT"
   },
   {
     "Tiêu đề": "GitHub - QuaCau-TheSphere/ObsidianPulisherTest",
@@ -37083,7 +37099,7 @@
       "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/ObsidianPulisherTest development by creating an account on GitHub."
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aT"
+    "id": "aU"
   },
   {
     "Tiêu đề": "GitHub - QuaCau-TheSphere/belief-network",
@@ -37092,7 +37108,7 @@
       "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/belief-network development by creating an account on GitHub."
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aU"
+    "id": "aV"
   },
   {
     "Tiêu đề": "GitHub - QuaCau-TheSphere/DV-phat-trien-ban-than",
@@ -37101,7 +37117,7 @@
       "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/DV-phat-trien-ban-than development by creating an account on GitHub."
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aV"
+    "id": "aW"
   },
   {
     "Tiêu đề": "GitHub - QuaCau-TheSphere/NeedExchange",
@@ -37110,7 +37126,7 @@
       "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/NeedExchange development by creating an account on GitHub."
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aW"
+    "id": "aX"
   },
   {
     "Tiêu đề": "GitHub - QuaCau-TheSphere/DW-phat-trien-ban-than",
@@ -37119,7 +37135,7 @@
       "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/DW-phat-trien-ban-than development by creating an account on GitHub."
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aX"
+    "id": "aY"
   },
   {
     "Tiêu đề": "Đồ thị mạng lưới 100 niềm tin phổ biến – Quả Cầu",
@@ -37127,7 +37143,7 @@
     "Nội dung bài đăng": {},
     "Slug": "github",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aY"
+    "id": "aZ"
   },
   {
     "Tiêu đề": "GitHub - QuaCau-TheSphere/quacau-thesphere.github.io",
@@ -37136,7 +37152,7 @@
       "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/quacau-thesphere.github.io development by creating an account on GitHub."
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aZ"
+    "id": "aa"
   },
   {
     "Tiêu đề": "QuaCau-TheSphere/ONB · GitHub",
@@ -37145,7 +37161,7 @@
       "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/ONB development by creating an account on GitHub."
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aa"
+    "id": "ab"
   },
   {
     "Tiêu đề": "GitHub - QuaCau-TheSphere/Buoc-Chan",
@@ -37154,7 +37170,7 @@
       "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/Buoc-Chan development by creating an account on GitHub."
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "ab"
+    "id": "ac"
   },
   {
     "Tiêu đề": "GitHub - QuaCau-TheSphere/LOS-Installer: Bộ cài đặt các phần mềm cần thiết cho LOS",
@@ -37163,7 +37179,7 @@
       "Mô tả bài đăng": "Bộ cài đặt các phần mềm cần thiết cho LOS. Contribute to QuaCau-TheSphere/LOS-Installer development by creating an account on GitHub."
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "ac"
+    "id": "ad"
   },
   {
     "Tiêu đề": "Page not found · GitHub · GitHub",
@@ -37172,7 +37188,7 @@
       "Mô tả bài đăng": "GitHub is where people build software. More than 100 million people use GitHub to discover, fork, and contribute to over 420 million projects."
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "ad"
+    "id": "ae"
   },
   {
     "Tiêu đề": "GitHub - QuaCau-TheSphere/SampleVault",
@@ -37181,7 +37197,7 @@
       "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/SampleVault development by creating an account on GitHub."
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "ae"
+    "id": "af"
   },
   {
     "Tiêu đề": "GitHub - QuaCau-TheSphere/Graphvidian: Obsidian plugin to export Graphviz graphs from vault's notes",
@@ -37190,17 +37206,17 @@
       "Mô tả bài đăng": "Obsidian plugin to export Graphviz graphs from vault's notes - QuaCau-TheSphere/Graphvidian"
     },
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "af"
+    "id": "ag"
   },
   {
     "Tiêu đề": "Quả Cầu",
-    "URL": "https://discord.gg/jWTk4EHFK2",
+    "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Nội dung bài đăng": {
       "Mô tả bài đăng": "Check out the Quả Cầu community on Discord - hang out with 151 other members and enjoy free voice and text chat."
     },
     "Slug": "jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "ag"
+    "id": "ah"
   },
   {
     "Tiêu đề": "Quả Cầu – Lan tỏa và bảo vệ các tinh thần phản tư, tò mò, dũng cảm, trân trọng người khác",
@@ -37210,7 +37226,7 @@
     },
     "Slug": "quảcầu",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "ah"
+    "id": "ai"
   },
   {
     "Tiêu đề": "🌟 Mở đầu - Obsidian, quản lý dự án và công cụ nghĩ",
@@ -37220,7 +37236,7 @@
     },
     "Slug": "quảcầu",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "ai"
+    "id": "aj"
   },
   {
     "Tiêu đề": "Nơi này là nơi nào - Tiếp thị số, xử lý dữ liệu và lập trình",
@@ -37230,7 +37246,7 @@
     },
     "Slug": "quảcầu",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aj"
+    "id": "ak"
   },
   {
     "Tiêu đề": "đối ⊷ thoại",
@@ -37240,7 +37256,7 @@
     },
     "Slug": "doi-thoai",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "ak"
+    "id": "al"
   },
   {
     "Tiêu đề": "Trấn Kỳ",
@@ -37250,6 +37266,6 @@
     },
     "Slug": "tranky",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "al"
+    "id": "am"
   }
 ]

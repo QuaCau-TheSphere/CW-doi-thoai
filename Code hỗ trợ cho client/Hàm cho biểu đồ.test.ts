@@ -1,5 +1,4 @@
-import { tạoDữLiệuBiểuĐồ } from "./Hàm và kiểu cho biểu đồ.ts";
-import { DữLiệuTruyCậpCácNăm } from "./Hàm và kiểu cho vật thể tiếp thị.ts";
+import { DữLiệuTruyCậpCácNăm, tạoDữLiệuBiểuĐồ } from "./Hàm và kiểu cho biểu đồ.ts";
 
 export const dữLiệuTruyCậpCácNămTest: DữLiệuTruyCậpCácNăm = {
   "2024": {

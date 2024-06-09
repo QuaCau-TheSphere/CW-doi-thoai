@@ -23,8 +23,8 @@ export const handler: Handlers = {
 };
 
 export function chartOption(dữLiệuTruyCậpCácNăm: DữLiệuTruyCậpCácNăm) {
-  const data = tạoDữLiệuBiểuĐồ(dữLiệuTruyCậpCácNăm).giờ; //todo;
-  // const data = tạoDữLiệuBiểuĐồ(dữLiệuTruyCậpCácNămTest).giờ; //todo;
+  // const data = tạoDữLiệuBiểuĐồ(dữLiệuTruyCậpCácNăm).giờ; //todo;
+  const data = tạoDữLiệuBiểuĐồ(dữLiệuTruyCậpCácNămTest).giờ; //todo;
   return {
     tooltip: {
       trigger: "axis",

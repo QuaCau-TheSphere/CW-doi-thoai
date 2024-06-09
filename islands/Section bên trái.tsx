@@ -11,7 +11,7 @@ function KhungNhậpBốiCảnh() {
         type="text"
         class="grow bg-base-100"
         id="khung-nhập-bối-cảnh"
-        placeholder="Lý do khiến bài đăng trở nên hữu ích tại nơi đăng (không bắt buộc)"
+        placeholder="VD: lý do khiến bài đăng trở nên hữu ích tại nơi đăng, v.v. (không bắt buộc)"
         onInput={(e) => bốiCảnhSignal.value = (e.target as HTMLInputElement).value}
         onFocus={() => element.value = "bối cảnh"}
         onKeyDown={async (e: KeyboardEvent) => {
