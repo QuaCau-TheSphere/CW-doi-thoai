@@ -44,7 +44,7 @@ export default interface CấuHìnhNơiĐăng {
   "Kênh forum Discord"?: string[] | null;
   "Slug"?: CấuHìnhSlug;
 }
-export type CấuHìnhSlug = Record<Slug, string | string[]>;
+export type CấuHìnhSlug = Record<Slug, URL["href"] | string | string[]>;
 
 export async function tạoDanhSáchThôngTinCấuHìnhNơiĐăng(): Promise<ThôngTinCấuHìnhNơiĐăng[]> {
   const danhSáchCấuHình: ThôngTinCấuHìnhNơiĐăng[] = [];

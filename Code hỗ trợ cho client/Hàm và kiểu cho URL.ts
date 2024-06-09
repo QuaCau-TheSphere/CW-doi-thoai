@@ -112,15 +112,6 @@ export function lấyMôTả({ meta, document }: MetaTagUrlVàDocument): string 
   return meta?.description || document.querySelector("p")?.textContent || meta.og?.description;
 }
 
-export function isUrl(string: string | undefined) {
-  try {
-    if (!string) return false;
-    return Boolean(new URL(string));
-  } catch {
-    return false;
-  }
-}
-
 /**
  * @param đểDấuCáchTrongLiênKết mặc định là false để tạo markdown cho dễ
  */
@@ -135,19 +126,6 @@ export function xửLýPunycode(encodedUrl: UrlString | undefined, đểDấuCá
   return decodedString.replaceAll(" ", "%20");
 }
 
-export function táchUrlHoặcEmailTrongChuỗi(chuỗiCóThểCóUrl: string): [string, string | undefined] {
-  if (!chuỗiCóThểCóUrl) return ["", ""];
-  let chuỗiKhôngCóUrl = chuỗiCóThểCóUrl;
-  let url = undefined;
-  const urls = linkify.find(chuỗiCóThểCóUrl);
-  if (urls.length > 0) {
-    url = urls[0].href as string;
-    chuỗiKhôngCóUrl = chuỗiCóThểCóUrl.replace(url, "").trim();
-    if (chuỗiKhôngCóUrl === "") chuỗiKhôngCóUrl = url;
-  }
-  return [chuỗiKhôngCóUrl, url];
-}
-
 export function lấyURL(metaTagUrlVàDocument: MetaTagUrlVàDocument): UrlString {
   const { meta, url, document } = metaTagUrlVàDocument;
   const canonical = document.querySelector("link[rel='canonical']") as HTMLLinkElement | null;
@@ -158,4 +136,49 @@ export function tạoUrlCorsProxy(urlNgườiDùngNhập: URL["href"], origin: U
   const urlCorsProxy = new URL(`${origin}/api/cors-proxy/`);
   urlCorsProxy.search = new URLSearchParams({ url: urlNgườiDùngNhập });
   return urlCorsProxy;
+}
+
+/**
+ * Nếu chuỗi chỉ hoàn toàn có URL thì trả về [url, url]. Còn nếu có thì phần tử đầu là những chữ còn lại sau khi loc url. Việc này là để khi người dùng chỉ nhập đúng url mà không nhập gì khác thì dùng url này làm tên nơi đăng luôn cho tiện
+ */
+export function táchUrlHoặcEmailTrongChuỗi(chuỗiCóThểCóUrl: string): [string, string | undefined] {
+  if (!chuỗiCóThểCóUrl) return ["", ""];
+  let chuỗiKhôngCóUrl = chuỗiCóThểCóUrl;
+  let urlCóSlash = undefined;
+  const urls = linkify.find(chuỗiCóThểCóUrl);
+  if (urls.length > 0) {
+    const urlGốc = urls[0].href;
+    chuỗiKhôngCóUrl = chuỗiCóThểCóUrl.replace(urlGốc, "").trim();
+    urlCóSlash = appendSlashToUrlIfIsPossible(urlGốc);
+    if (chuỗiKhôngCóUrl === "") chuỗiKhôngCóUrl = urlCóSlash;
+  }
+  return [chuỗiKhôngCóUrl, urlCóSlash];
+}
+
+/**
+ * Slash is possible to add to the end of url in following cases:
+ * - There is no slash standing as last symbol of URL.
+ * - There is no file extension (or there is no dot inside the last section of the path).
+ * - There is no parameter (even empty one — a single ? at the end of URL).
+ * - There is no link to a fragment (even empty one — a single # mark at the end of URL).
+ */
+export function appendSlashToUrlIfIsPossible(url: string) {
+  /** Removing empty parameter or fragment so the URL will always have slash if possible */
+  const urlWithNoEmptyParameterOrFragment = url.replace(/#$/g, "").replace(/\?$/g, "");
+
+  const parsedUrl = new URL(urlWithNoEmptyParameterOrFragment);
+
+  /** There are directories with dots in the last section of the path, so we can only hope that the file extension being in used (if any) is a common one */
+  const noFileExtension = !/\.(htm|html|jpg|png|gif|pdf|php|doc|docx)$/.test(parsedUrl.pathname);
+
+  const noParameter = !parsedUrl.search;
+  const noLinkToFragment = !parsedUrl.hash;
+
+  /** All checks above cannot guarantee that there is no '?' or '#' symbol at the end of URL. It is required to be checked manually */
+  const noTrailingSlashAlready = !/\/$/.test(parsedUrl.href);
+
+  const slashAppendingIsPossible = noFileExtension && noParameter && noLinkToFragment && noTrailingSlashAlready;
+
+  if (slashAppendingIsPossible) return `${parsedUrl.href}/`;
+  return parsedUrl.href;
 }

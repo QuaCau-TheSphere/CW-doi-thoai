@@ -1,10 +1,10 @@
 ---
 share: true
 created: 2023-10-30T14:29
-updated: 2024-06-07T22:03
+updated: 2024-06-08T15:35
 ---
 # đối ⊷ thoại
-[Để có thể thiết kế một giải pháp một cách nhanh chóng và tự tin, bạn cần được thử nghiệm ý tưởng mới và kiểm tra giả thiết ngay khi chúng vừa được nghĩ ra.](https://doi-thoai.deno.dev/LadderOfAbstraction.doi-thoai.1 "Up and Down the Ladder of Abstraction") Nếu giải pháp đó cần sự đối thoại giữa các bên, bạn cần nhanh chóng tìm lại các cuộc thảo luận đã từng có trước đây và nắm được mức độ quan tâm của các bên liên quan.
+[Để có thể thiết kế một giải pháp một cách nhanh chóng và tự tin, bạn cần được thử nghiệm ý tưởng mới và kiểm tra giả thiết ngay khi chúng vừa được nghĩ ra.](https://doi-thoai.deno.dev/LadderOfAbstraction.đốithoại.1 "Up and Down the Ladder of Abstraction") Nếu giải pháp đó cần sự đối thoại giữa các bên, bạn cần nhanh chóng tìm lại các cuộc thảo luận đã từng có trước đây và nắm được mức độ quan tâm của các bên liên quan.
 
 Để đạt được mục tiêu đó, chương trình này sẽ giúp bạn:
 - Tìm nhanh những ghi chú được chia sẻ công khai trong kho dữ liệu của bạn, hoặc các bài đăng trên các website, diễn đàn
@@ -13,7 +13,7 @@ updated: 2024-06-07T22:03
 - Tự động tạo nội dung sẽ được dùng để đối thoại dựa trên ghi chú của bạn
 - Thống kê số lượng truy cập tới liên kết được chia sẻ
 
-Liên lạc với chúng tôi để thêm bài đăng và nơi đăng của bạn vào chương trình với số lượng lớn, hoặc tải [mã nguồn](https://doi-thoai.deno.dev/aH.doi-thoai.1) để dùng với tên miền và hệ thống của bạn. Trong tương lai chúng tôi cũng sẽ tạo một plugin Obsidian để bạn có thể tạo nội dung chia sẻ ngay trên kho thông tin của mình. Chúng tôi hướng tới việc đem lại [sự tự do và tự trị dữ liệu](https://doi-thoai.deno.dev/local-first.doi-thoai.1) cho bạn.
+Liên lạc với chúng tôi để thêm bài đăng và nơi đăng của bạn vào chương trình với số lượng lớn, hoặc tải [mã nguồn](https://doi-thoai.deno.dev/aI.đốithoại.1) để dùng với tên miền và hệ thống của bạn. Trong tương lai chúng tôi cũng sẽ tạo một plugin Obsidian để bạn có thể tạo nội dung chia sẻ ngay trên kho thông tin của mình. Chúng tôi hướng tới việc đem lại [sự tự do và tự trị dữ liệu](https://doi-thoai.deno.dev/local-first.đốithoại.1) cho bạn.
 
 Sản phẩm khác:
 - [Trấn Kỳ — Phân loại dữ liệu bằng tiếng Việt tự nhiên](https://tranky.deno.dev/?utm_source=doi-thoai.deno.dev+(Trang+chủ)&utm_medium=Website&utm_campaign=&utm_content=&utm_term=)

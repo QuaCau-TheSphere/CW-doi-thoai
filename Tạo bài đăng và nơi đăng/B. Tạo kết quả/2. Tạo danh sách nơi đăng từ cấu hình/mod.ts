@@ -124,10 +124,12 @@ export default function tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí(vật
   const từĐiểnMãNơiĐăng = tạoTừĐiểnSlugNơiĐăng(vậtThểCấuHình.cấuHình["Slug"]);
 
   for (const thôngTinNơiĐăng of danhSáchNơiĐăng) {
-    for (const vậtThểVịTrí of danhSáchVậtThểVịTrí) {
-      const danhSáchVịTríThànhPhần = vậtThểVịTrí["Danh sách vị trí"];
-      if (cóThôngTinNơiĐăngTrongVậtThểVịTrí(thôngTinNơiĐăng, vậtThểVịTrí)) {
-        thôngTinNơiĐăng["Vị trí có thể đăng"] = tạoDanhSáchVịTríCóThểĐăng(danhSáchVịTríThànhPhần, cấuHìnhVịTríNhỏHơn);
+    if (thôngTinNơiĐăng.URL === "") {
+      for (const vậtThểVịTrí of danhSáchVậtThểVịTrí) {
+        const danhSáchVịTríThànhPhần = vậtThểVịTrí["Danh sách vị trí"];
+        if (cóThôngTinNơiĐăngTrongVậtThểVịTrí(thôngTinNơiĐăng, vậtThểVịTrí)) {
+          thôngTinNơiĐăng["Vị trí có thể đăng"] = tạoDanhSáchVịTríCóThểĐăng(danhSáchVịTríThànhPhần, cấuHìnhVịTríNhỏHơn);
+        }
       }
     }
     switch (loạiCấuHình) {

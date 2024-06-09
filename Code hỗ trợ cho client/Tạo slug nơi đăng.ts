@@ -1,6 +1,6 @@
 import { ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
 import { kiểuKebab, lấyKýHiệuViếtTắt } from "./Hàm xử lý chuỗi.ts";
-import { táchUrlHoặcEmailTrongChuỗi } from "./Hàm và kiểu cho URL.ts";
+import { appendSlashToUrlIfIsPossible, táchUrlHoặcEmailTrongChuỗi } from "./Hàm và kiểu cho URL.ts";
 import CấuHìnhNơiĐăng from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
 import { cấuHìnhChungSignal } from "../islands/Signals tổng.ts";
 
@@ -40,7 +40,8 @@ export function tạoSlugNơiĐăng(
   } = nơiĐăng;
   if (từĐiểnSlugNơiĐăng) {
     if (url) {
-      const slug = từĐiểnSlugNơiĐăng.get(url.toString());
+      const urlSlash = appendSlashToUrlIfIsPossible(url.toString());
+      const slug = từĐiểnSlugNơiĐăng.get(urlSlash);
       if (slug) return slug;
     }
     for (const tênNơiĐăngThànhPhần of tênNơiĐăng.toReversed()) {
@@ -49,7 +50,7 @@ export function tạoSlugNơiĐăng(
     }
   }
 
-  const kýHiệuTênNềnTảng = lấyKýHiệuViếtTắt(tênNềnTảng, cấuHìnhViếtTắt);
-  if (kýHiệuTênNềnTảng) return `${kýHiệuTênNềnTảng}:${kiểuKebab(tênNơiĐăng[0])}`;
-  return kiểuKebab(tênNơiĐăng[0]);
+  // const kýHiệuTênNềnTảng = lấyKýHiệuViếtTắt(tênNềnTảng, cấuHìnhViếtTắt);
+  // if (kýHiệuTênNềnTảng) return `${kýHiệuTênNềnTảng}:${kiểuKebab(tênNơiĐăng[0])}`;
+  // return kiểuKebab(tênNơiĐăng[0]);
 }
