@@ -1,4 +1,4 @@
-import { kiểuKebab, lấyGiờVN, viếtHoa } from "../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { kiểuKebab, lấyGiờVN, viếtHoa } from "../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm xử lý chuỗi.ts";
 import { VậtThểTiếpThị } from "../Code hỗ trợ cho client/Hàm và kiểu cho vật thể tiếp thị.ts";
 
 export function VậtThểKhác({ vậtThể, loạiVậtThể, cóTiêuĐề }: { vậtThể: Record<string, any>; loạiVậtThể: string; cóTiêuĐề?: boolean }) {

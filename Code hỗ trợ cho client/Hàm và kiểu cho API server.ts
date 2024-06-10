@@ -7,7 +7,7 @@ import {
 import { VậtThểTiếpThị } from "./Hàm và kiểu cho vật thể tiếp thị.ts";
 import { lầnĐăngGầnNhất } from "../islands/Signals tổng.ts";
 import { TênDanhSách } from "./Hàm và kiểu cho khung nhập.ts";
-import { đổiTừCơSố10SangCơSố64 } from "./Hàm xử lý chuỗi.ts";
+import { đổiTừCơSố10SangCơSố64 } from "./Chuỗi, URL, slug/Hàm xử lý chuỗi.ts";
 export interface ReqBàiĐăngHoặcNơiĐăng {
   "Tên danh sách": TênDanhSách;
   "Dữ liệu": BàiĐăngChưaCóId | NơiĐăngCóCácLựaChọnVịTríChưaCóId;

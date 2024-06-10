@@ -3,7 +3,7 @@ import { BàiĐăngChưaCóId } from "../../Tạo bài đăng và nơi đăng/Co
 import { queryBàiĐăngSignal } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
 import { tạoBàiĐăngTừURL } from "../../Code hỗ trợ cho client/Tạo bài đăng hoặc nơi đăng từ URL.ts";
 import * as linkify from "npm:linkifyjs";
-import { tạoUrlCorsProxy } from "../../Code hỗ trợ cho client/Hàm và kiểu cho URL.ts";
+import { tạoUrlCorsProxy } from "../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
 
 /** Các dữ liệu người dùng nhập trong form */
 export default function ModalBàiĐăng() {

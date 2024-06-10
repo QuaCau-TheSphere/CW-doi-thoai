@@ -1,5 +1,5 @@
 import { assertEquals } from "https://deno.land/std@0.216.0/assert/assert_equals.ts";
-import { xửLýPunycode } from "./Hàm xử lý chuỗi.ts";
+import { xửLýPunycode } from "./H%C3%A0m%20v%C3%A0%20ki%E1%BB%83u%20cho%20URL.ts";
 
 Deno.test("https://xn--qucu-hr5aza.cc", () => {
   assertEquals(xửLýPunycode("https://xn--qucu-hr5aza.cc"), "https://quảcầu.cc");

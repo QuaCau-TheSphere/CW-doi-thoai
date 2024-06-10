@@ -1,8 +1,12 @@
-import { ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
+import {
+  danhSáchDiễnĐàn,
+  danhSáchNềnTảngChat,
+  ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo,
+} from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
 import { kiểuKebab, lấyKýHiệuViếtTắt } from "./Hàm xử lý chuỗi.ts";
-import { appendSlashToUrlIfIsPossible, táchUrlHoặcEmailTrongChuỗi } from "./Hàm và kiểu cho URL.ts";
-import CấuHìnhNơiĐăng from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
-import { cấuHìnhChungSignal } from "../islands/Signals tổng.ts";
+import { appendSlashToUrlIfIsPossible, lấyTênMiền, táchUrlHoặcEmailTrongChuỗi } from "./Hàm và kiểu cho URL.ts";
+import CấuHìnhNơiĐăng from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
+import { cấuHìnhChungSignal } from "../../islands/Signals tổng.ts";
 
 export type TừĐiểnSlugNơiĐăng = Map<string, string>;
 
@@ -53,4 +57,22 @@ export function tạoSlugNơiĐăng(
   // const kýHiệuTênNềnTảng = lấyKýHiệuViếtTắt(tênNềnTảng, cấuHìnhViếtTắt);
   // if (kýHiệuTênNềnTảng) return `${kýHiệuTênNềnTảng}:${kiểuKebab(tênNơiĐăng[0])}`;
   // return kiểuKebab(tênNơiĐăng[0]);
+}
+
+export function tạoSlugBàiĐăng({ hostname, pathname }: URL) {
+  const làDiễnĐàn = (danhSáchDiễnĐàn as unknown as string[]).includes(hostname);
+  const làNềnTảngChat = (danhSáchNềnTảngChat as unknown as string[]).includes(hostname);
+  // if (làDiễnĐàn) {
+  //   if
+  // }
+  if (!làDiễnĐàn && !làNềnTảngChat) {
+    const tênMiền = lấyTênMiền(hostname);
+    let slugWebsiteCóSẵn = pathname.substring(1);
+    slugWebsiteCóSẵn = slugWebsiteCóSẵn.slice(-1) === "/" ? slugWebsiteCóSẵn.slice(0, -1) : slugWebsiteCóSẵn;
+    if (slugWebsiteCóSẵn.startsWith("blog/")) slugWebsiteCóSẵn = slugWebsiteCóSẵn.replace("blog/", "");
+    if (slugWebsiteCóSẵn.includes("/")) return undefined;
+    return slugWebsiteCóSẵn ? slugWebsiteCóSẵn : tênMiền;
+    return slugWebsiteCóSẵn ? `${tênMiền}-${slugWebsiteCóSẵn}` : tênMiền;
+  }
+  return undefined;
 }

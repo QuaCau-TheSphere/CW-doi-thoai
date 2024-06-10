@@ -5,7 +5,7 @@ import {
   TênDanhSách,
   đổiKhungNhập,
 } from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
-import { kiểuKebab, viếtHoa } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { kiểuKebab, viếtHoa } from "../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm xử lý chuỗi.ts";
 import { element } from "../Signals tổng.ts";
 import { cursor } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
 import { Signal } from "@preact/signals";

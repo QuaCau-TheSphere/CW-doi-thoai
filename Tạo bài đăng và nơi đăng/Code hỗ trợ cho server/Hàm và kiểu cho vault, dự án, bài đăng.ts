@@ -1,4 +1,4 @@
-import { UrlString } from "../../Code hỗ trợ cho client/Hàm và kiểu cho URL.ts";
+import { UrlString } from "../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
 import { ĐườngDẫnTuyệtĐối } from "../../ĐƯỜNG_DẪN.ts";
 import { VậtThểId } from "./Hàm và kiểu cho id và số lượng dữ liệu.ts";
 

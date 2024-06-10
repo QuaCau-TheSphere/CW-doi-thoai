@@ -10,7 +10,7 @@ import {
   TênThreadHoặcTopic,
 } from "../../Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
 import CấuHìnhNơiĐăng from "../../Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
-import { táchUrlHoặcEmailTrongChuỗi } from "../../../Code hỗ trợ cho client/Hàm và kiểu cho URL.ts";
+import { táchUrlHoặcEmailTrongChuỗi } from "../../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
 
 function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
   const cấuHìnhNơiĐăngChat = cấuHìnhNơiĐăng.Chat;

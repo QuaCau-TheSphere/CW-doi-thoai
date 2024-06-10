@@ -1,7 +1,7 @@
 import { Signal, useComputed, useSignal } from "@preact/signals";
 import KếtQuảĐượcChọn from "../Kết quả được chọn/Kết quả được chọn.tsx";
 import ModalTạoMới from "../Modal tạo mới/Modal chung.tsx";
-import { kiểuKebab } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { kiểuKebab } from "../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm xử lý chuỗi.ts";
 import { bàiĐăngSignal, flexSearchBàiĐăngSignal, flexSearchNơiĐăngSignal, nơiĐăngCóCácLựaChọnVịTríSignal } from "../Signals tổng.ts";
 import { DanhSáchKếtQuảTìmKiếm } from "./Danh sách kết quả tìm kiếm.tsx";
 import InputTìmBàiĐăngHoặcNơiĐăng from "./Input tìm bài đăng hoặc nơi đăng.tsx";

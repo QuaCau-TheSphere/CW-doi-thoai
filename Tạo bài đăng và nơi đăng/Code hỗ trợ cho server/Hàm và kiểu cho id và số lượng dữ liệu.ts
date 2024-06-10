@@ -1,4 +1,4 @@
-import { viếtHoa, đổiTừCơSố10SangCơSố64 } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { viếtHoa, đổiTừCơSố10SangCơSố64 } from "../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm xử lý chuỗi.ts";
 import { TênDanhSách } from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
 import { BàiĐăng, BàiĐăngChưaCóId, PhươngThứcTạoBàiĐăng } from "./Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import { PhươngThứcTạoNơiĐăng, ThôngTinNơiĐăng, ThôngTinNơiĐăngChưaCóId } from "./Kiểu cho nơi đăng.ts";

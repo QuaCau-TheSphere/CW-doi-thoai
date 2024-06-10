@@ -2,7 +2,7 @@ import { BàiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ tr
 import { ĐuôiRútGọn } from "./Kiểu cho tham số UTM.ts";
 import { CấuHìnhViếtTắt } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
 import { Slug, ThôngTinNơiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
-import { kiểuKebab, lấyKýHiệuViếtTắt } from "../Hàm xử lý chuỗi.ts";
+import { kiểuKebab, lấyKýHiệuViếtTắt } from "../Chuỗi, URL, slug/Hàm xử lý chuỗi.ts";
 
 function tạoPhầnBàiĐăng(bàiĐăng: BàiĐăng, cấuHìnhViếtTắt: CấuHìnhViếtTắt) {
   const {

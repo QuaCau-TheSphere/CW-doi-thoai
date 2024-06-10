@@ -1,6 +1,6 @@
 import { Handlers } from "$fresh/server.ts";
 import esthetic from "npm:esthetic";
-import { appendSlashToUrlIfIsPossible } from "../../../Code hỗ trợ cho client/Hàm và kiểu cho URL.ts";
+import { appendSlashToUrlIfIsPossible } from "../../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
 
 export const handler: Handlers = {
   async GET(_req, ctx) {

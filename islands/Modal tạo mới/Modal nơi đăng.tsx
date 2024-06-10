@@ -5,7 +5,7 @@ import { ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo, TênNơiĐăng } f
 import { tạoNơiĐăngTừURL } from "../../Code hỗ trợ cho client/Tạo bài đăng hoặc nơi đăng từ URL.ts";
 import * as linkify from "npm:linkifyjs";
 import { tạoNơiĐăngCóCácLựaChọnVịTrí } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
-import { tạoUrlCorsProxy } from "../../Code hỗ trợ cho client/Hàm và kiểu cho URL.ts";
+import { tạoUrlCorsProxy } from "../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
 
 /** Các dữ liệu người dùng nhập trong form */
 export default function ModalNơiĐăng() {

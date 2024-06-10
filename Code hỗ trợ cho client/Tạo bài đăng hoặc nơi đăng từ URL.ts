@@ -10,13 +10,21 @@ import {
   ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo,
   TênNềnTảng,
 } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
-import { viếtThường } from "./Hàm xử lý chuỗi.ts";
+import { viếtThường } from "./Chuỗi, URL, slug/Hàm xử lý chuỗi.ts";
 import {
   NơiĐăngCóCácLựaChọnVịTríChưaCóId,
   tạoNơiĐăngCóCácLựaChọnVịTrí,
 } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
-import { tạoSlugNơiĐăng, TừĐiểnSlugNơiĐăng } from "./Tạo slug nơi đăng.ts";
-import { lấyMetaTagVàTạoDocument, lấyMôTả, lấyTitle, lấyTênMiền, lấyURL, MetaTags, MetaTagUrlVàDocument, UrlString } from "./Hàm và kiểu cho URL.ts";
+import { tạoSlugBàiĐăng, tạoSlugNơiĐăng, TừĐiểnSlugNơiĐăng } from "./Chuỗi, URL, slug/Tạo slug.ts";
+import {
+  lấyMetaTagVàTạoDocument,
+  lấyMôTả,
+  lấyTitle,
+  lấyURL,
+  MetaTags,
+  MetaTagUrlVàDocument,
+  UrlString,
+} from "./Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
 
 function cóTênNềnTảngTrongHostname(hostname: string, nềnTảng: TênNềnTảng) {
   if (hostname.includes("youtu.be") && nềnTảng === "YouTube") return true;
@@ -42,24 +50,6 @@ function lấyĐơnVịQuảnLý(loạiNềnTảng: LoạiNềnTảng, { meta, u
     default:
       break;
   }
-}
-
-function tạoSlugBàiĐăng({ hostname, pathname }: URL) {
-  const làDiễnĐàn = (danhSáchDiễnĐàn as unknown as string[]).includes(hostname);
-  const làNềnTảngChat = (danhSáchNềnTảngChat as unknown as string[]).includes(hostname);
-  // if (làDiễnĐàn) {
-  //   if
-  // }
-  if (!làDiễnĐàn && !làNềnTảngChat) {
-    const tênMiền = lấyTênMiền(hostname);
-    let slugWebsiteCóSẵn = pathname.substring(1);
-    slugWebsiteCóSẵn = slugWebsiteCóSẵn.slice(-1) === "/" ? slugWebsiteCóSẵn.slice(0, -1) : slugWebsiteCóSẵn;
-    if (slugWebsiteCóSẵn.startsWith("blog/")) slugWebsiteCóSẵn = slugWebsiteCóSẵn.replace("blog/", "");
-    if (slugWebsiteCóSẵn.includes("/")) return undefined;
-    return slugWebsiteCóSẵn ? slugWebsiteCóSẵn : tênMiền;
-    return slugWebsiteCóSẵn ? `${tênMiền}-${slugWebsiteCóSẵn}` : tênMiền;
-  }
-  return undefined;
 }
 
 /**

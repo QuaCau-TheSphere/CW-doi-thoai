@@ -1,8 +1,8 @@
-import { lấyGiờVN, lấyNgàyISO } from "../../Code hỗ trợ cho client/Hàm xử lý chuỗi.ts";
+import { lấyGiờVN, lấyNgàyISO } from "../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm xử lý chuỗi.ts";
 import { TênDanhSách } from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
 import { bàiĐăngSignal } from "../Signals tổng.ts";
 import NơiĐăngĐượcChọn from "./Nơi đăng được chọn.tsx";
-import { xửLýPunycode } from "../../Code hỗ trợ cho client/Hàm và kiểu cho URL.ts";
+import { xửLýPunycode } from "../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
 
 function BàiĐăngĐượcChọn() {
   if (!bàiĐăngSignal.value) return <></>;
