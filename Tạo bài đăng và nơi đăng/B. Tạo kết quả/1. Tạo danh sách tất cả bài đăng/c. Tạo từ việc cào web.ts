@@ -1,1 +1,0 @@
-// đọc qua sitemap và meta tag của từng trang

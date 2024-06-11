@@ -81,6 +81,7 @@ export interface MetaTagUrlVàDocument {
   meta: MetaTags;
   url: URL;
   document: HTMLDocument;
+  html: string;
 }
 
 export type UrlStringChưaChínhTắc = string | URL;
@@ -96,7 +97,7 @@ export async function lấyMetaTagVàTạoDocument(
   if (!meta?.og) console.warn(`Không lấy được các thẻ Open Graph cho ${url.href}`);
   const document = new DOMParser().parseFromString(html, "text/html");
 
-  return { meta, url, document };
+  return { meta, url, document, html };
 }
 
 export function lấyUsername(hostname: string) {
@@ -106,12 +107,17 @@ export function lấyUsername(hostname: string) {
   return domainWithoutSuffix;
 }
 
-export function lấyTitle({ meta, url, document }: MetaTagUrlVàDocument): string {
-  const title = document.querySelector("title")?.textContent || meta.og?.title;
-  if (!title) return "";
-  const titleSplit = title.split(" | ");
-  titleSplit.pop();
-  return titleSplit.join(" | ") || title;
+export function lấyTitle({ meta, url, document }: MetaTagUrlVàDocument): string | undefined {
+  const metaTitle = meta.og?.title;
+  const htmlTitle = document.querySelector("title")?.textContent;
+
+  if (!metaTitle && !htmlTitle) return "";
+  if (metaTitle && !htmlTitle) return metaTitle;
+  if (!metaTitle && htmlTitle) return htmlTitle;
+  if (metaTitle && htmlTitle) {
+    if (metaTitle.length <= htmlTitle.length) return htmlTitle;
+    if (metaTitle.length > htmlTitle.length) return metaTitle;
+  }
 }
 
 export function lấyMôTả({ meta, document }: MetaTagUrlVàDocument): string | null | undefined {
@@ -135,6 +141,7 @@ export function xửLýPunycode(
   return decodedString.replaceAll(" ", "%20");
 }
 
+/** Không gộp lại thành chung một biến được vì nếu không có URL chính tắc trong HTML thì còn lấy URL được nhập từ trước */
 export async function lấyURLChínhTắc(urlString: UrlStringChưaChínhTắc | UrlStringChínhTắc, HTML: string | undefined = undefined): Promise<URL> {
   const html = HTML ? HTML : await lấyHTML(urlString);
   const document = new DOMParser().parseFromString(html, "text/html");
@@ -165,34 +172,8 @@ export async function táchUrlHoặcEmailĐầuTiênTrongChuỗi(chuỗi: string
   return [chuỗiĐượcLọc, urlHoặcEmail];
 }
 
-/**
- * Slash is possible to add to the end of url in following cases:
- * - There is no slash standing as last symbol of URL.
- * - There is no file extension (or there is no dot inside the last section of the path).
- * - There is no parameter (even empty one — a single ? at the end of URL).
- * - There is no link to a fragment (even empty one — a single # mark at the end of URL).
- */
-function appendSlashToUrlIfIsPossible(url: UrlStringChưaChínhTắc) {
-  /** Removing empty parameter or fragment so the URL will always have slash if possible */
-  const urlWithNoEmptyParameterOrFragment = url.toString().replace(/#$/g, "").replace(/\?$/g, "");
-
-  const parsedUrl = new URL(urlWithNoEmptyParameterOrFragment);
-
-  /** There are directories with dots in the last section of the path, so we can only hope that the file extension being in used (if any) is a common one */
-  const noFileExtension = !/\.(htm|html|jpg|png|gif|pdf|php|doc|docx)$/.test(parsedUrl.pathname);
-
-  const noParameter = !parsedUrl.search;
-  const noLinkToFragment = !parsedUrl.hash;
-
-  /** All checks above cannot guarantee that there is no '?' or '#' symbol at the end of URL. It is required to be checked manually */
-  const noTrailingSlashAlready = !/\/$/.test(parsedUrl.href);
-
-  const slashAppendingIsPossible = noFileExtension && noParameter && noLinkToFragment && noTrailingSlashAlready;
-  return slashAppendingIsPossible ? `${parsedUrl.href}/` : parsedUrl.href;
-}
-
 export async function lấyHTML(urlString: UrlStringChưaChínhTắc | UrlStringChínhTắc) {
-  return await (await fetch(urlString)).text();
+  return await (await fetch(urlString.toString())).text();
 }
 
 export function lấyURLTrongJSON(vậtThể: Record<any, any>) {
@@ -209,18 +190,4 @@ export function lấyEmailTrongJSON(vậtThể: Record<any, any>) {
    *  @see https://github.com/Hypercontext/linkifyjs/discussions/480
    */
   return linkify.find(JSON.stringify(vậtThể, null, 2)).filter((i) => isEmail(i.href));
-}
-type UrlStringĐãXửLýSlashVàChưaCanonical = string;
-export function xửLýSlash(urlString: UrlStringChưaChínhTắc, debug = ""): UrlStringĐãXửLýSlashVàChưaCanonical {
-  const url = new URL(urlString);
-  const danhSáchHostnameKhôngThêmSlashĐược = ["discord.gg"];
-  if (url.href === "https://discord.gg/jWTk4EHFK2") {
-    console.log(
-      // "🚀 xửLýSlash",
-      debug,
-      url.href,
-      danhSáchHostnameKhôngThêmSlashĐược.includes(url.hostname),
-    );
-  }
-  return danhSáchHostnameKhôngThêmSlashĐược.includes(url.hostname) ? url.href : new URL(appendSlashToUrlIfIsPossible(url.href)).href;
 }

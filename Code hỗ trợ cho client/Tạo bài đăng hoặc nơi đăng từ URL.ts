@@ -33,6 +33,60 @@ function cóTênNềnTảngTrongHostname(hostname: string, nềnTảng: TênNề
   return hostname.includes(tênNềnTảngViếtThườngKhôngCách);
 }
 
+export async function tạoTiêuĐề(
+  urlString: UrlStringChưaChínhTắc,
+  HTML: string | undefined = undefined,
+): Promise<string> {
+  const metaTagUrlVàDocument = await lấyMetaTagVàTạoDocument(urlString, HTML);
+  const { meta, url } = metaTagUrlVàDocument;
+  const metaTitle = meta.og?.title;
+  const htmlTitle = document.querySelector("title")?.textContent;
+  const htmlTitleSplit = htmlTitle?.split(/ [-–—|·] /g) || [];
+  const siteName = meta.og?.site_name;
+
+  const {
+    "Loại nơi đăng": loạiNơiĐăng,
+    "Tên nền tảng": tênNềnTảng,
+    "Loại nền tảng": loạiNềnTảng,
+    "Tên nơi đăng": tênNơiĐăng,
+  } = await tạoNơiĐăngTừURL(url.href, undefined, HTML);
+
+  let tên;
+  switch (loạiNềnTảng) {
+    case "Diễn đàn":
+    case "Chat":
+      switch (tênNềnTảng) {
+        case "Facebook":
+          tên = metaTitle;
+          break;
+        case "Discord":
+          tên = htmlTitle;
+          break;
+        case "GitHub":
+          switch (htmlTitleSplit[1]) {
+            case "GitHub":
+              return `Org GitHub ${htmlTitleSplit[0]}`;
+            default:
+              /** Repo bình thường */
+              tên = htmlTitleSplit[1];
+          }
+          break;
+        default:
+          tên = siteName;
+          break;
+      }
+      return `${loạiNơiĐăng[0]} ${tênNềnTảng} ${tên}`;
+    case "Website":
+      if (url.pathname === "/") {
+        const tênTrang = siteName ? siteName : htmlTitleSplit[htmlTitleSplit.length - 1];
+        return `Trang chủ ${tênTrang}`;
+      }
+      return lấyTitle(metaTagUrlVàDocument) || "";
+    default:
+      return `${tênNềnTảng} ${tênNơiĐăng[0]}`;
+  }
+}
+
 function lấyLĩnhVực(meta: MetaTags): string[] | undefined {
   if (meta?.keywords) return meta.keywords.split(",");
   if (meta?.article?.tag) return [meta.article?.tag];
@@ -117,7 +171,7 @@ export async function tạoNơiĐăngTừURL(
   loạiNơiĐăng = loạiNơiĐăng ?? ["Website"];
 
   const thôngTinNơiĐăngChưaCóId: ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo = {
-    "Tên nơi đăng": [lấyTitle(metaTagUrlVàDocument)],
+    "Tên nơi đăng": [lấyTitle(metaTagUrlVàDocument) || ""],
     URL: await lấyURLChínhTắc(urlString, HTML),
     "Mô tả nơi đăng": lấyMôTả(metaTagUrlVàDocument),
     "Loại nền tảng": loạiNềnTảng,
@@ -139,9 +193,9 @@ export async function tạoBàiĐăngTừURL(
 ): Promise<BàiĐăngChưaCóIdVàPhươngThứcTạo> {
   console.info("Tạo bài đăng mới từ URL:", urlString.toString());
   const metaTagUrlVàDocument = await lấyMetaTagVàTạoDocument(urlString, HTML);
-  const { meta, url, document } = metaTagUrlVàDocument;
+  const { meta, url } = metaTagUrlVàDocument;
   return {
-    "Tiêu đề": lấyTitle(metaTagUrlVàDocument),
+    "Tiêu đề": await tạoTiêuĐề(urlString, HTML),
     URL: await lấyURLChínhTắc(urlString, HTML),
     "Nội dung bài đăng": {
       "Mô tả bài đăng": lấyMôTả(metaTagUrlVàDocument),

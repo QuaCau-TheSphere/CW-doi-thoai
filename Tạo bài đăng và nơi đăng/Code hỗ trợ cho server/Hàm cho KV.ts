@@ -131,6 +131,7 @@ export async function tạoNơiĐăng(cóĐẩyLênKv: boolean = false) {
     console.log(tạoTênNơiĐăngString(nơiĐăng["Tên nơi đăng"]));
     console.log("• Slug:", nơiĐăng.Slug);
     console.log("• ID:", nơiĐăng.id);
+    console.log("• URL:", nơiĐăng.URL);
 
     if (cóĐẩyLênKv) {
       const key = tạoKeyKV("nơi đăng", nơiĐăng);

@@ -154,8 +154,9 @@ export async function tạoDanhSáchNơiĐăngTừTấtCảCấuHình() {
   const danhSáchNơiĐăngTừTấtCảCấuHình: NơiĐăngCóCácLựaChọnVịTrí[] = [];
   const danhSáchThôngTinCấuHìnhNơiĐăng = await tạoDanhSáchThôngTinCấuHìnhNơiĐăng();
 
-  for (const vậtThểCấuHình of danhSáchThôngTinCấuHìnhNơiĐăng) {
-    danhSáchNơiĐăngChưaCóIdTừTấtCảCấuHình.push(...await tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí(vậtThểCấuHình));
+  for (const thôngTinCấuHình of danhSáchThôngTinCấuHìnhNơiĐăng) {
+    if (thôngTinCấuHình.tênCấuHình === "test") continue;
+    danhSáchNơiĐăngChưaCóIdTừTấtCảCấuHình.push(...await tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí(thôngTinCấuHình));
   }
   let sốNơiĐăngChưaCóId = 0;
   for (const nơiĐăngChưaCóId of danhSáchNơiĐăngChưaCóIdTừTấtCảCấuHình) {
