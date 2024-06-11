@@ -1,4 +1,4 @@
-import { UrlString } from "../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
+import { UrlStringChưaChínhTắc } from "../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
 import { ĐườngDẫnTuyệtĐối } from "../../ĐƯỜNG_DẪN.ts";
 import { VậtThểId } from "./Hàm và kiểu cho id và số lượng dữ liệu.ts";
 
@@ -8,7 +8,7 @@ export type MãVault = string;
 export interface Vault {
   "Tên vault": TênVault;
   "Mã vault": MãVault;
-  URL: UrlString;
+  URL: UrlStringChưaChínhTắc;
   "Nơi lưu vault": ĐườngDẫnTuyệtĐối;
   "Mô tả vault"?: string;
 }
@@ -37,12 +37,12 @@ export interface NộiDungBàiĐăng {
   "Định dạng nội dung"?: "md" | "html";
 }
 export type BàiĐăngChưaCóId = Omit<BàiĐăng, "id">;
-export type BàiĐăngChưaCóIdVàPhươngThứTạo = Omit<BàiĐăng, "id" | "Phương thức tạo">;
+export type BàiĐăngChưaCóIdVàPhươngThứcTạo = Omit<BàiĐăng, "id" | "Phương thức tạo">;
 export type PhươngThứcTạoBàiĐăng = "Cào vault" | "Cào web" | "Nhập từ CSV" | "Lấy trong cấu hình nơi đăng" | "Nhập tay trên web";
 
 export interface BàiĐăng {
   "Tiêu đề": string;
-  URL: UrlString;
+  URL: UrlStringChưaChínhTắc;
   "Dự án"?: DựÁn;
   "Kho thông tin"?: string;
   "Slug"?: string;

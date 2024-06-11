@@ -23,9 +23,9 @@ import CấuHìnhNơiĐăng, {
   ThôngTinCấuHìnhNơiĐăng,
   tạoDanhSáchThôngTinCấuHìnhNơiĐăng,
 } from "../../Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
-import { táchUrlHoặcEmailTrongChuỗi } from "../../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
+import { táchUrlHoặcEmailĐầuTiênTrongChuỗi } from "../../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
 
-function tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
+async function tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
   const cấuHìnhNơiĐăngDiễnĐàn = cấuHìnhNơiĐăng["Diễn đàn"];
   if (!cấuHìnhNơiĐăngDiễnĐàn) return;
   for (const [tênDiễnĐàn, vậtThểLàmGiáTrịChoTênDiễnĐàn] of Object.entries(cấuHìnhNơiĐăngDiễnĐàn) as [TênDiễnĐàn, CấuHìnhNơiĐăngDiễnĐàn][]) {
@@ -33,7 +33,7 @@ function tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, d
     for (const [loạiNơiĐăng, danhSáchTênNơiĐăng] of Object.entries(vậtThểLàmGiáTrịChoTênDiễnĐàn) as [LoạiNơiĐăngDiễnĐàn[0], string[]][]) {
       if (!danhSáchTênNơiĐăng) continue;
       for (const tênNơiĐăngUrl of danhSáchTênNơiĐăng) {
-        const [tênNơiĐăng, url] = táchUrlHoặcEmailTrongChuỗi(tênNơiĐăngUrl);
+        const [tênNơiĐăng, url] = await táchUrlHoặcEmailĐầuTiênTrongChuỗi(tênNơiĐăngUrl);
         danhSáchThôngTinNơiĐăng.push({
           "Tên nơi đăng": [tênNơiĐăng],
           "Loại nơi đăng": [loạiNơiĐăng],
@@ -47,12 +47,12 @@ function tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, d
   }
 }
 
-function tạoDanhSáchTậpTin(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
+async function tạoDanhSáchTậpTin(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
   const cấuHìnhTậpTin = cấuHìnhNơiĐăng["Tập tin"];
   if (!cấuHìnhTậpTin) return;
   for (const [địnhĐạngTậpTin, danhSáchTênNơiĐăng] of Object.entries(cấuHìnhTậpTin) as [ĐịnhDạngTậpTin, string[]][]) {
     for (const tênNơiĐăngUrl of danhSáchTênNơiĐăng) {
-      const [tênNơiĐăng, url] = táchUrlHoặcEmailTrongChuỗi(tênNơiĐăngUrl);
+      const [tênNơiĐăng, url] = await táchUrlHoặcEmailĐầuTiênTrongChuỗi(tênNơiĐăngUrl);
       danhSáchThôngTinNơiĐăng.push({
         "Tên nơi đăng": [tênNơiĐăng],
         "Loại nơi đăng": [địnhĐạngTậpTin],
@@ -65,7 +65,7 @@ function tạoDanhSáchTậpTin(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danh
   }
 }
 
-function tạoDanhSáchSaaS(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
+async function tạoDanhSáchSaaS(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
   const cấuHìnhSaaS = cấuHìnhNơiĐăng["SaaS"];
   if (!cấuHìnhSaaS) return;
   for (const [tênSaaS, vậtThểLàmGiáTrịChoTênSaaS] of Object.entries(cấuHìnhSaaS) as [TênNềnTảngSaaS, VậtThểLàmGiáTrịChoTênSaaS | null][]) {
@@ -73,7 +73,7 @@ function tạoDanhSáchSaaS(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSác
     for (const [TênChứcNăngTrongSaaS, danhSáchTênNơiĐăng] of Object.entries(vậtThểLàmGiáTrịChoTênSaaS) as [TênChứcNăngTrongSaaS, string[] | null][]) {
       if (!danhSáchTênNơiĐăng) continue;
       for (const tênNơiĐăngUrl of danhSáchTênNơiĐăng) {
-        const [tênNơiĐăng, url] = táchUrlHoặcEmailTrongChuỗi(tênNơiĐăngUrl);
+        const [tênNơiĐăng, url] = await táchUrlHoặcEmailĐầuTiênTrongChuỗi(tênNơiĐăngUrl);
         danhSáchThôngTinNơiĐăng.push({
           "Tên nơi đăng": [tênNơiĐăng],
           "Loại nơi đăng": [TênChứcNăngTrongSaaS],
@@ -87,12 +87,12 @@ function tạoDanhSáchSaaS(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSác
   }
 }
 
-function tạoDanhSáchKhác(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
+async function tạoDanhSáchKhác(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
   for (const loạiNơiĐăngKhác of DanhSáchNơiĐăngKhác) {
     const cấuHìnhLoạiNơiĐăngKhác = cấuHìnhNơiĐăng[loạiNơiĐăngKhác];
     if (!cấuHìnhLoạiNơiĐăngKhác) continue;
     for (const tênNơiĐăngKhácUrl of Object.values(cấuHìnhLoạiNơiĐăngKhác)) {
-      const [tênNơiĐăngKhác, url] = táchUrlHoặcEmailTrongChuỗi(tênNơiĐăngKhácUrl);
+      const [tênNơiĐăngKhác, url] = await táchUrlHoặcEmailĐầuTiênTrongChuỗi(tênNơiĐăngKhácUrl);
       danhSáchThôngTinNơiĐăng.push({
         "Tên nơi đăng": [tênNơiĐăngKhác],
         "Loại nơi đăng": [loạiNơiĐăngKhác],
@@ -108,20 +108,22 @@ function tạoDanhSáchKhác(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSá
 /**
  * Tạo danh sách nơi đăng từ một file cấu hình
  */
-export default function tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí(vậtThểCấuHình: ThôngTinCấuHìnhNơiĐăng): NơiĐăngCóCácLựaChọnVịTríChưaCóId[] {
-  const { cấuHình, loạiCấuHình, tênCấuHình } = vậtThểCấuHình;
+export default async function tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí(
+  thôngTinCấuHìnhNơiĐăng: ThôngTinCấuHìnhNơiĐăng,
+): Promise<NơiĐăngCóCácLựaChọnVịTríChưaCóId[]> {
+  const { cấuHình, loạiCấuHình, tênCấuHình } = thôngTinCấuHìnhNơiĐăng;
   const danhSáchNơiĐăng: NơiĐăngCóCácLựaChọnVịTríChưaCóId[] = [];
-  tạoDanhSáchDiễnĐàn(cấuHình, danhSáchNơiĐăng);
-  tạoDanhSáchChat(cấuHình, danhSáchNơiĐăng);
-  tạoDanhSáchTậpTin(cấuHình, danhSáchNơiĐăng);
-  tạoDanhSáchSaaS(cấuHình, danhSáchNơiĐăng);
-  tạoDanhSáchKhác(cấuHình, danhSáchNơiĐăng);
+  await tạoDanhSáchDiễnĐàn(cấuHình, danhSáchNơiĐăng);
+  await tạoDanhSáchChat(cấuHình, danhSáchNơiĐăng);
+  await tạoDanhSáchTậpTin(cấuHình, danhSáchNơiĐăng);
+  await tạoDanhSáchSaaS(cấuHình, danhSáchNơiĐăng);
+  await tạoDanhSáchKhác(cấuHình, danhSáchNơiĐăng);
 
   const {
     "Vị trí đặt liên kết ở nơi đăng": danhSáchVậtThểVịTrí,
     "Vị trí thành phần": cấuHìnhVịTríNhỏHơn,
   } = lấyCấuHìnhChung();
-  const từĐiểnMãNơiĐăng = tạoTừĐiểnSlugNơiĐăng(vậtThểCấuHình.cấuHình["Slug"]);
+  const từĐiểnSlugNơiĐăng = await tạoTừĐiểnSlugNơiĐăng(thôngTinCấuHìnhNơiĐăng.cấuHình["Slug"]);
 
   for (const thôngTinNơiĐăng of danhSáchNơiĐăng) {
     if (thôngTinNơiĐăng.URL === "") {
@@ -142,7 +144,7 @@ export default function tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí(vật
         break;
     }
 
-    thôngTinNơiĐăng["Slug"] = tạoSlugNơiĐăng(thôngTinNơiĐăng, từĐiểnMãNơiĐăng);
+    thôngTinNơiĐăng["Slug"] = tạoSlugNơiĐăng(thôngTinNơiĐăng, từĐiểnSlugNơiĐăng);
   }
   return danhSáchNơiĐăng;
 }
@@ -153,7 +155,7 @@ export async function tạoDanhSáchNơiĐăngTừTấtCảCấuHình() {
   const danhSáchThôngTinCấuHìnhNơiĐăng = await tạoDanhSáchThôngTinCấuHìnhNơiĐăng();
 
   for (const vậtThểCấuHình of danhSáchThôngTinCấuHìnhNơiĐăng) {
-    danhSáchNơiĐăngChưaCóIdTừTấtCảCấuHình.push(...tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí(vậtThểCấuHình));
+    danhSáchNơiĐăngChưaCóIdTừTấtCảCấuHình.push(...await tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí(vậtThểCấuHình));
   }
   let sốNơiĐăngChưaCóId = 0;
   for (const nơiĐăngChưaCóId of danhSáchNơiĐăngChưaCóIdTừTấtCảCấuHình) {

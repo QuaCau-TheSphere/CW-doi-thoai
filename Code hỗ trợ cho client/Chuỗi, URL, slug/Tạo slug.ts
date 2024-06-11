@@ -3,30 +3,35 @@ import {
   danhSáchNềnTảngChat,
   ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo,
 } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
-import { kiểuKebab, lấyKýHiệuViếtTắt } from "./Hàm xử lý chuỗi.ts";
-import { appendSlashToUrlIfIsPossible, lấyTênMiền, táchUrlHoặcEmailTrongChuỗi } from "./Hàm và kiểu cho URL.ts";
+import { lấyUsername, táchUrlHoặcEmailĐầuTiênTrongChuỗi } from "./Hàm và kiểu cho URL.ts";
 import CấuHìnhNơiĐăng from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
-import { cấuHìnhChungSignal } from "../../islands/Signals tổng.ts";
 
 export type TừĐiểnSlugNơiĐăng = Map<string, string>;
 
 /** Từ điển (hay ánh xạ) giữa tên nơi đăng thành phần và slug */
-export function tạoTừĐiểnSlugNơiĐăng(cấuHìnhSlug: CấuHìnhNơiĐăng["Slug"] | undefined): TừĐiểnSlugNơiĐăng {
+export async function tạoTừĐiểnSlugNơiĐăng(cấuHìnhSlug: CấuHìnhNơiĐăng["Slug"] | undefined): Promise<TừĐiểnSlugNơiĐăng> {
   const từĐiển: TừĐiểnSlugNơiĐăng = new Map();
 
   if (!cấuHìnhSlug) return từĐiển;
   for (const [slug, nơiĐăngThànhPhần] of Object.entries(cấuHìnhSlug)) {
     if (typeof nơiĐăngThànhPhần === "string") {
-      const [tênNơiĐăngThànhPhần, url] = táchUrlHoặcEmailTrongChuỗi(nơiĐăngThànhPhần);
-      từĐiển.set(tênNơiĐăngThànhPhần.toLowerCase(), slug);
+      await thêmDòngTrongTừĐiểnTừDòngTrongCấuHình(nơiĐăngThànhPhần, slug);
     } else {
       for (const dòng of nơiĐăngThànhPhần) {
-        const [tênNơiĐăngThànhPhần, url] = táchUrlHoặcEmailTrongChuỗi(dòng);
-        từĐiển.set(tênNơiĐăngThànhPhần.toLowerCase(), slug);
+        await thêmDòngTrongTừĐiểnTừDòngTrongCấuHình(dòng, slug);
       }
     }
   }
   return từĐiển;
+
+  async function thêmDòngTrongTừĐiểnTừDòngTrongCấuHình(nơiĐăngThànhPhần: string, slug: string) {
+    const [tênNơiĐăngThànhPhần, url] = await táchUrlHoặcEmailĐầuTiênTrongChuỗi(nơiĐăngThànhPhần);
+    if (tênNơiĐăngThànhPhần !== url) {
+      từĐiển.set(tênNơiĐăngThànhPhần.toLowerCase(), slug);
+    } else {
+      từĐiển.set(url, slug);
+    }
+  }
 }
 
 /**
@@ -34,45 +39,31 @@ export function tạoTừĐiểnSlugNơiĐăng(cấuHìnhSlug: CấuHìnhNơiĐ�
  */
 export function tạoSlugNơiĐăng(
   nơiĐăng: Omit<ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo, "Slug">,
-  từĐiểnSlugNơiĐăng: TừĐiểnSlugNơiĐăng | undefined = undefined,
-  cấuHìnhViếtTắt = cấuHìnhChungSignal.value["Viết tắt"],
+  từĐiểnSlugNơiĐăng: TừĐiểnSlugNơiĐăng,
 ): string | undefined {
   const {
-    "Tên nền tảng": tênNềnTảng,
     "Tên nơi đăng": tênNơiĐăng,
     URL: url,
   } = nơiĐăng;
-  if (từĐiểnSlugNơiĐăng) {
-    if (url) {
-      const urlSlash = appendSlashToUrlIfIsPossible(url.toString());
-      const slug = từĐiểnSlugNơiĐăng.get(urlSlash);
-      if (slug) return slug;
-    }
-    for (const tênNơiĐăngThànhPhần of tênNơiĐăng.toReversed()) {
-      const slugNơiĐăngĐượcKhaiBáo = từĐiểnSlugNơiĐăng.get(tênNơiĐăngThànhPhần.toLowerCase());
-      if (slugNơiĐăngĐượcKhaiBáo) return slugNơiĐăngĐượcKhaiBáo;
-    }
+  if (url) {
+    const slug = từĐiểnSlugNơiĐăng.get(url.toString());
+    if (slug) return slug;
   }
-
-  // const kýHiệuTênNềnTảng = lấyKýHiệuViếtTắt(tênNềnTảng, cấuHìnhViếtTắt);
-  // if (kýHiệuTênNềnTảng) return `${kýHiệuTênNềnTảng}:${kiểuKebab(tênNơiĐăng[0])}`;
-  // return kiểuKebab(tênNơiĐăng[0]);
+  for (const tênNơiĐăngThànhPhần of tênNơiĐăng.toReversed()) {
+    const slugNơiĐăngĐượcKhaiBáo = từĐiểnSlugNơiĐăng.get(tênNơiĐăngThànhPhần.toLowerCase());
+    if (slugNơiĐăngĐượcKhaiBáo) return slugNơiĐăngĐượcKhaiBáo;
+  }
 }
 
 export function tạoSlugBàiĐăng({ hostname, pathname }: URL) {
   const làDiễnĐàn = (danhSáchDiễnĐàn as unknown as string[]).includes(hostname);
   const làNềnTảngChat = (danhSáchNềnTảngChat as unknown as string[]).includes(hostname);
-  // if (làDiễnĐàn) {
-  //   if
-  // }
   if (!làDiễnĐàn && !làNềnTảngChat) {
-    const tênMiền = lấyTênMiền(hostname);
     let slugWebsiteCóSẵn = pathname.substring(1);
     slugWebsiteCóSẵn = slugWebsiteCóSẵn.slice(-1) === "/" ? slugWebsiteCóSẵn.slice(0, -1) : slugWebsiteCóSẵn;
     if (slugWebsiteCóSẵn.startsWith("blog/")) slugWebsiteCóSẵn = slugWebsiteCóSẵn.replace("blog/", "");
     if (slugWebsiteCóSẵn.includes("/")) return undefined;
-    return slugWebsiteCóSẵn ? slugWebsiteCóSẵn : tênMiền;
-    return slugWebsiteCóSẵn ? `${tênMiền}-${slugWebsiteCóSẵn}` : tênMiền;
+    return slugWebsiteCóSẵn ? slugWebsiteCóSẵn : lấyUsername(hostname);
   }
   return undefined;
 }

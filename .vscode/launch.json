@@ -33,6 +33,7 @@
       "runtimeExecutable": "C:\\Users\\ganuo\\AppData\\Local\\Microsoft\\WinGet\\Links\\deno.EXE",
       "runtimeArgs": [
         "run",
+        "--watch",
         // "test",
         // "--inspect-wait",
         "--inspect-brk",

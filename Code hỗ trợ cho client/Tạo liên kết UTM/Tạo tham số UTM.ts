@@ -18,7 +18,7 @@ import { NơiĐăngCóMộtVịTríCụThể } from "../../Tạo bài đăng và
 import { CấuHìnhViếtTắt } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
 import { BốiCảnh } from "../Hàm và kiểu cho khung nhập.ts";
 import { lấyKýHiệuViếtTắt } from "../Chuỗi, URL, slug/Hàm xử lý chuỗi.ts";
-import { UrlString } from "../Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
+import { UrlStringChưaChínhTắc } from "../Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
 
 /** Chủ yếu là thể hiện loại nền tảng, tên nền tảng, loại nơi đăng một cách ngắn gọn. Có những nơi đăng nhìn vào là biết loại nền tảng nào, ví dụ r/subreddit, hoặc email@domain.com */
 function tạoSource(nơiĐăng: NơiĐăngCóMộtVịTríCụThể, cấuHìnhViếtTắt: CấuHìnhViếtTắt): Source {
@@ -135,7 +135,7 @@ function tạoTerm(lĩnhVực: string[] | undefined): Term {
   return lĩnhVực.join(", ");
 }
 
-function tạoLiênKếtUTM(link: UrlString, thamSốUTM: ThamSốUTM): LiênKếtUTM {
+function tạoLiênKếtUTM(link: UrlStringChưaChínhTắc, thamSốUTM: ThamSốUTM): LiênKếtUTM {
   const url = new URL(link);
   const { source, medium, campaign, content, term } = thamSốUTM;
   url.searchParams.set("utm_source", source || "");

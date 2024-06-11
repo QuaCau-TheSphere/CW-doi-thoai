@@ -3,27 +3,43 @@ import tạoDanhSáchBàiĐăngTừCSV from "./b. Tạo từ CSV.ts";
 import { BàiĐăng, BàiĐăngChưaCóId } from "../../Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import * as linkify from "npm:linkifyjs";
 import CấuHìnhNơiĐăng, { ThôngTinCấuHìnhNơiĐăng } from "../../Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
-import { tạoBàiĐăngTừURL } from "../../../Code hỗ trợ cho client/Tạo bài đăng hoặc nơi đăng từ URL.ts";
+import {
+  lấyNgàyCậpNhật,
+  lấyNgàyTạo,
+  lấyTácGiả,
+  lấyĐơnVịQuảnLý,
+  tạoNơiĐăngTừURL,
+} from "../../../Code hỗ trợ cho client/Tạo bài đăng hoặc nơi đăng từ URL.ts";
 import { đổiTừCơSố10SangCơSố64 } from "../../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm xử lý chuỗi.ts";
+import { tạoTênNơiĐăngString } from "../../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm xử lý chuỗi.ts";
+import { lấyHTML, lấyMetaTagVàTạoDocument, lấyMôTả, lấyURLTrongJSON } from "../../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
+import { tạoSlugNơiĐăng, tạoTừĐiểnSlugNơiĐăng } from "../../../Code hỗ trợ cho client/Chuỗi, URL, slug/Tạo slug.ts";
 
 async function tạoDanhSáchBàiĐăngTừCấuHìnhNơiĐăng(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng): Promise<BàiĐăngChưaCóId[]> {
   const danhSáchBàiĐăng: BàiĐăngChưaCóId[] = [];
-  const { Slug: _, ...cấuHìnhĐãBỏSlug } = cấuHìnhNơiĐăng;
-  const urls = linkify.find(JSON.stringify(cấuHìnhĐãBỏSlug, null, 2));
+  const { Slug: cấuHìnhSlug, ...cấuHìnhĐãBỏSlug } = cấuHìnhNơiĐăng;
+  const từĐiểnSlugNơiĐăng = await tạoTừĐiểnSlugNơiĐăng(cấuHìnhSlug);
+  const urls = lấyURLTrongJSON(cấuHìnhĐãBỏSlug);
   for (const url of urls) {
-    if (url.type !== "url") continue;
-    try {
-      danhSáchBàiĐăng.push({
-        ...await tạoBàiĐăngTừURL(url.href),
-        "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-        // "Dự án": {
-        //   "Tên dự án": undefined,
-        //   "Mã dự án": undefined,
-        // },
-      });
-    } catch (error) {
-      console.error(error);
-    }
+    const html = await lấyHTML(url.href);
+    const thôngTinNơiĐăng = await tạoNơiĐăngTừURL(url.href, undefined, html);
+    const slug = tạoSlugNơiĐăng(thôngTinNơiĐăng, từĐiểnSlugNơiĐăng);
+    const { "Tên nơi đăng": tênNơiĐăng, URL: urlNơiĐăng } = thôngTinNơiĐăng;
+    const metaTagUrlVàDocument = await lấyMetaTagVàTạoDocument(url.href);
+    const meta = metaTagUrlVàDocument.meta;
+
+    danhSáchBàiĐăng.push({
+      "Tiêu đề": tạoTênNơiĐăngString(tênNơiĐăng),
+      URL: urlNơiĐăng || url.href,
+      Slug: slug,
+      "Nội dung bài đăng": {
+        "Mô tả bài đăng": lấyMôTả(metaTagUrlVàDocument),
+      },
+      "Tác giả": lấyTácGiả(meta) || lấyĐơnVịQuảnLý(metaTagUrlVàDocument, "Website"),
+      "Ngày tạo": lấyNgàyTạo(meta),
+      "Ngày cập nhật": lấyNgàyCậpNhật(meta),
+      "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    });
   }
   return danhSáchBàiĐăng;
 }

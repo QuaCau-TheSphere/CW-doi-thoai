@@ -3,8 +3,8 @@ import { BàiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ
 import { NơiĐăngCóCácLựaChọnVịTrí } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import SectionBênTrái from "./Section bên trái.tsx";
 import SectionBênPhải from "./Section bên phải.tsx";
-import { cấuHìnhChungSignal, flexSearchBàiĐăngSignal, flexSearchNơiĐăngSignal } from "./Signals tổng.ts";
-import { CấuHìnhChung } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
+import { cấuHìnhChungSignal, danhSáchThôngTinCấuHìnhNơiĐăngSignal, flexSearchBàiĐăngSignal, flexSearchNơiĐăngSignal } from "./Signals tổng.ts";
+import { CấuHìnhChung, ThôngTinCấuHìnhNơiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
 import ModalNơiĐăng from "./Modal tạo mới/Modal nơi đăng.tsx";
 import ModalBàiĐăng from "./Modal tạo mới/Modal bài đăng.tsx";
 
@@ -14,12 +14,18 @@ export interface DanhSáchBàiĐăngVàNơiĐăng {
 }
 interface MainProps {
   dsBàiĐăngVàNơiĐăng: DanhSáchBàiĐăngVàNơiĐăng;
+  danhSáchThôngTinCấuHìnhNơiĐăng: ThôngTinCấuHìnhNơiĐăng[];
   cấuHìnhChung: CấuHìnhChung;
   textTrangChủ: string;
 }
 
-function nạpSignal(cấuHìnhChung: CấuHìnhChung, dsBàiĐăngVàNơiĐăng: DanhSáchBàiĐăngVàNơiĐăng) {
+function nạpSignal(
+  cấuHìnhChung: CấuHìnhChung,
+  dsBàiĐăngVàNơiĐăng: DanhSáchBàiĐăngVàNơiĐăng,
+  danhSáchThôngTinCấuHìnhNơiĐăng: ThôngTinCấuHìnhNơiĐăng[],
+) {
   cấuHìnhChungSignal.value = cấuHìnhChung;
+  danhSáchThôngTinCấuHìnhNơiĐăngSignal.value = danhSáchThôngTinCấuHìnhNơiĐăng;
   const { dsBàiĐăng, dsNơiĐăng } = dsBàiĐăngVàNơiĐăng;
 
   const flexSearchBàiĐăng: Document<BàiĐăng, true> = new FlexSearch.Document({
@@ -66,8 +72,8 @@ function nạpSignal(cấuHìnhChung: CấuHìnhChung, dsBàiĐăngVàNơiĐăng
   flexSearchNơiĐăngSignal.value = flexSearchNơiĐăng;
 }
 
-export default function Main({ dsBàiĐăngVàNơiĐăng, cấuHìnhChung, textTrangChủ }: MainProps) {
-  nạpSignal(cấuHìnhChung, dsBàiĐăngVàNơiĐăng);
+export default function Main({ dsBàiĐăngVàNơiĐăng, cấuHìnhChung, textTrangChủ, danhSáchThôngTinCấuHìnhNơiĐăng }: MainProps) {
+  nạpSignal(cấuHìnhChung, dsBàiĐăngVàNơiĐăng, danhSáchThôngTinCấuHìnhNơiĐăng);
 
   /** Cần debug component nào thì cứ return nó ở đây */
   // return <ModalBàiĐăng />;

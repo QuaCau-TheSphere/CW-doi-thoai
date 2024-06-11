@@ -1,7 +1,7 @@
 /**
  * @fileoverview Bài đăng và nơi đăng được tạo ở đây ko có id. Id chỉ thêm vào ngay trước lúc nhập vào KV
  */
-import { BàiĐăngChưaCóIdVàPhươngThứTạo } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
+import { BàiĐăngChưaCóIdVàPhươngThứcTạo } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import {
   danhSáchDiễnĐàn,
   danhSáchNềnTảngChat,
@@ -15,15 +15,15 @@ import {
   NơiĐăngCóCácLựaChọnVịTríChưaCóId,
   tạoNơiĐăngCóCácLựaChọnVịTrí,
 } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
-import { tạoSlugBàiĐăng, tạoSlugNơiĐăng, TừĐiểnSlugNơiĐăng } from "./Chuỗi, URL, slug/Tạo slug.ts";
+import { tạoSlugBàiĐăng } from "./Chuỗi, URL, slug/Tạo slug.ts";
 import {
   lấyMetaTagVàTạoDocument,
   lấyMôTả,
   lấyTitle,
-  lấyURL,
+  lấyURLChínhTắc,
   MetaTags,
   MetaTagUrlVàDocument,
-  UrlString,
+  UrlStringChưaChínhTắc,
 } from "./Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
 
 function cóTênNềnTảngTrongHostname(hostname: string, nềnTảng: TênNềnTảng) {
@@ -39,7 +39,7 @@ function lấyLĩnhVực(meta: MetaTags): string[] | undefined {
   return undefined;
 }
 
-function lấyĐơnVịQuảnLý(loạiNềnTảng: LoạiNềnTảng, { meta, url, document }: MetaTagUrlVàDocument): string | undefined {
+export function lấyĐơnVịQuảnLý({ meta, url, document }: MetaTagUrlVàDocument, loạiNềnTảng: LoạiNềnTảng = "Website"): string | undefined {
   switch (loạiNềnTảng) {
     case "Website": {
       const title = document.querySelector("title")?.textContent || meta.og?.title;
@@ -52,19 +52,30 @@ function lấyĐơnVịQuảnLý(loạiNềnTảng: LoạiNềnTảng, { meta, u
   }
 }
 
+export function lấyNgàyCậpNhật(meta: MetaTags): Date | undefined {
+  return meta?.article?.modified_time ? new Date(meta.article.modified_time) : undefined;
+}
+
+export function lấyNgàyTạo(meta: MetaTags): Date | undefined {
+  return meta?.article?.publish_time ? new Date(meta.article.publish_time) : undefined;
+}
+
+export function lấyTácGiả(meta: MetaTags): string | undefined {
+  return meta?.author || meta.article?.author || meta.creator;
+}
+
 /**
- * @param [từĐiểnMãNơiĐăng=undefined] nếu là undefined nghĩa là URL là do người dùng nhập chứ không phải được khai báo sẵn, nên từ đầu đã không có từ điển Slug
+ * @param [từĐiểnSlugNơiĐăng=undefined] nếu là undefined nghĩa là URL là do người dùng nhập chứ không phải được khai báo sẵn, nên từ đầu đã không có từ điển Slug
  */
 export async function tạoNơiĐăngTừURL(
-  urlString: UrlString,
-  từĐiểnMãNơiĐăng: TừĐiểnSlugNơiĐăng | undefined = undefined,
+  urlString: UrlStringChưaChínhTắc,
+  slug: string | undefined,
   HTML: string | undefined = undefined,
 ): Promise<Omit<NơiĐăngCóCácLựaChọnVịTríChưaCóId, "Phương thức tạo">> {
   console.info("Tạo nơi đăng mới từ URL:", urlString.toString());
   const metaTagUrlVàDocument = await lấyMetaTagVàTạoDocument(urlString, HTML);
   const { meta, url, document } = metaTagUrlVàDocument;
   const { hostname, pathname } = url;
-
   let loạiNềnTảng: LoạiNềnTảng | undefined = undefined;
   let tênNềnTảng: TênNềnTảng | undefined = undefined;
   let loạiNơiĐăng: LoạiNơiĐăng | undefined = undefined;
@@ -107,34 +118,37 @@ export async function tạoNơiĐăngTừURL(
 
   const thôngTinNơiĐăngChưaCóId: ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo = {
     "Tên nơi đăng": [lấyTitle(metaTagUrlVàDocument)],
-    URL: lấyURL(metaTagUrlVàDocument),
+    URL: await lấyURLChínhTắc(urlString, HTML),
     "Mô tả nơi đăng": lấyMôTả(metaTagUrlVàDocument),
     "Loại nền tảng": loạiNềnTảng,
     "Tên nền tảng": tênNềnTảng,
     "Loại nơi đăng": loạiNơiĐăng,
     "Lĩnh vực": lấyLĩnhVực(meta),
-    "Đơn vị quản lý": lấyĐơnVịQuảnLý(loạiNềnTảng, metaTagUrlVàDocument),
+    "Đơn vị quản lý": lấyĐơnVịQuảnLý(metaTagUrlVàDocument, loạiNềnTảng),
   };
   const thôngTinNơiĐăng = {
     ...thôngTinNơiĐăngChưaCóId,
-    "Slug": tạoSlugNơiĐăng(thôngTinNơiĐăngChưaCóId, từĐiểnMãNơiĐăng),
+    "Slug": slug,
   };
   return tạoNơiĐăngCóCácLựaChọnVịTrí(thôngTinNơiĐăng);
 }
 
-export async function tạoBàiĐăngTừURL(urlString: UrlString, HTML: string | undefined = undefined): Promise<BàiĐăngChưaCóIdVàPhươngThứTạo> {
+export async function tạoBàiĐăngTừURL(
+  urlString: UrlStringChưaChínhTắc,
+  HTML: string | undefined = undefined,
+): Promise<BàiĐăngChưaCóIdVàPhươngThứcTạo> {
   console.info("Tạo bài đăng mới từ URL:", urlString.toString());
   const metaTagUrlVàDocument = await lấyMetaTagVàTạoDocument(urlString, HTML);
   const { meta, url, document } = metaTagUrlVàDocument;
   return {
     "Tiêu đề": lấyTitle(metaTagUrlVàDocument),
-    URL: lấyURL(metaTagUrlVàDocument),
+    URL: await lấyURLChínhTắc(urlString, HTML),
     "Nội dung bài đăng": {
       "Mô tả bài đăng": lấyMôTả(metaTagUrlVàDocument),
     },
     Slug: tạoSlugBàiĐăng(url),
-    "Tác giả": meta?.author || meta.article?.author || meta.creator,
-    "Ngày tạo": meta?.article?.publish_time ? new Date(meta.article.publish_time) : undefined,
-    "Ngày cập nhật": meta?.article?.modified_time ? new Date(meta.article.modified_time) : undefined,
+    "Tác giả": lấyTácGiả(meta),
+    "Ngày tạo": lấyNgàyTạo(meta),
+    "Ngày cập nhật": lấyNgàyCậpNhật(meta),
   };
 }

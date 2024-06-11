@@ -8,7 +8,7 @@ const env = await load();
 // await copyDữLiệuTrênDeployXuốngLocal();
 
 // await xoáDữLiệuTrênKv();
-console.log("🚀 ~ await kvList({ prefix: [] }):", await kvList({ prefix: [] }));
+// console.log("🚀 ~ await kvList({ prefix: [] }):", await kvList({ prefix: [] }));
 await tạoBàiĐăng();
 await tạoNơiĐăng();
 

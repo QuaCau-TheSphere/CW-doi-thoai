@@ -1,9 +1,14 @@
-import { tạoBàiĐăngTừURL } from "./T%E1%BA%A1o%20b%C3%A0i%20%C4%91%C4%83ng%20ho%E1%BA%B7c%20n%C6%A1i%20%C4%91%C4%83ng%20t%E1%BB%AB%20URL.ts";
-import { BàiĐăngChưaCóIdVàPhươngThứTạo } from "../T%E1%BA%A1o%20b%C3%A0i%20%C4%91%C4%83ng%20v%C3%A0%20n%C6%A1i%20%C4%91%C4%83ng/Code%20h%E1%BB%97%20tr%E1%BB%A3%20cho%20server/H%C3%A0m%20v%C3%A0%20ki%E1%BB%83u%20cho%20vault,%20d%E1%BB%B1%20%C3%A1n,%20b%C3%A0i%20%C4%91%C4%83ng.ts";
+import {
+  tạoBàiĐăngTừURL,
+  tạoNơiĐăngTừURL,
+} from "./T%E1%BA%A1o%20b%C3%A0i%20%C4%91%C4%83ng%20ho%E1%BA%B7c%20n%C6%A1i%20%C4%91%C4%83ng%20t%E1%BB%AB%20URL.ts";
+import { BàiĐăngChưaCóIdVàPhươngThứcTạo } from "../T%E1%BA%A1o%20b%C3%A0i%20%C4%91%C4%83ng%20v%C3%A0%20n%C6%A1i%20%C4%91%C4%83ng/Code%20h%E1%BB%97%20tr%E1%BB%A3%20cho%20server/H%C3%A0m%20v%C3%A0%20ki%E1%BB%83u%20cho%20vault,%20d%E1%BB%B1%20%C3%A1n,%20b%C3%A0i%20%C4%91%C4%83ng.ts";
 import { assertObjectMatch } from "https://deno.land/std@0.216.0/assert/assert_object_match.ts";
-import { lấyMetaTagVàTạoDocument } from "./Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
+import { lấyMetaTagVàTạoDocument, lấyURLChínhTắc } from "./Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
+import { ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
+import { assertEquals } from "https://deno.land/std@0.216.0/assert/assert_equals.ts";
 
-const tests: [string, BàiĐăngChưaCóIdVàPhươngThứTạo][] = [
+const tests: [string, BàiĐăngChưaCóIdVàPhươngThứcTạo | ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo][] = [
   [
     "https://xn--qucu-hr5aza.cc",
     {
@@ -92,15 +97,24 @@ const tests: [string, BàiĐăngChưaCóIdVàPhươngThứTạo][] = [
   }],
 
   ["https://docs.google.com/forms/d/e/1FAIpQLSeIYwh8-76fFxqDROZo3lLWC2KBp3xlT72VRokR4KJf0E7dew/viewform"],
+  ["https://discord.gg/jWTk4EHFK2", {
+    "Loại nơi đăng": ["Máy chủ"],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Tên nơi đăng": ["Quả Cầu"],
+  }],
 ];
 
 for (const test of tests) {
-  if (tests.indexOf(test) !== 4) continue;
+  // if (tests.indexOf(test) !== 4) continue;
+  if (test[0] !== "https://discord.gg/jWTk4EHFK2") continue;
   const a = await lấyMetaTagVàTạoDocument(test[0]);
-  console.log(a);
-  console.log(await tạoBàiĐăngTừURL(test[0]));
+  console.log(lấyURLChínhTắc(a));
+  // console.log(a);
+  // console.log(await tạoBàiĐăngTừURL(test[0]));
   // assertObjectMatch(await tạoBàiĐăngTừURL(test[0]), test[1]);
+  // assertEquals((await tạoNơiĐăngTừURL(test[0], undefined)).URL, test[0]);
+  // console.log("🚀", await tạoNơiĐăngTừURL(test[0], "sdfsdf"));
 }
-
 console.info("Không bị lỗi");
 debugger;

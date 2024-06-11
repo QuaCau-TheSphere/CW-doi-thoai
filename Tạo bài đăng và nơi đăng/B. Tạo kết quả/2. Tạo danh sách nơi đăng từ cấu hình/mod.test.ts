@@ -3,13 +3,23 @@ import { join } from "$std/path/join.ts";
 import tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí from "./mod.ts";
 import { assertArrayIncludes } from "https://deno.land/std@0.219.0/assert/assert_array_includes.ts";
 import { assert } from "$std/assert/assert.ts";
+import CấuHìnhNơiĐăng, {
+  tạoDanhSáchThôngTinCấuHìnhNơiĐăng,
+} from "../../Code%20h%E1%BB%97%20tr%E1%BB%A3%20cho%20server/H%C3%A0m%20v%C3%A0%20ki%E1%BB%83u%20cho%20c%E1%BA%A5u%20h%C3%ACnh.ts";
+import {
+  NơiĐăngCóCácLựaChọnVịTríChưaCóId,
+  NơiĐăngCóMộtVịTríCụThể,
+  tạoDanhSáchVịTríCóThểĐăng,
+  VậtThểCấuHìnhVịTrí,
+} from "../../Code%20h%E1%BB%97%20tr%E1%BB%A3%20cho%20server/H%C3%A0m%20v%C3%A0%20ki%E1%BB%83u%20cho%20v%E1%BB%8B%20tr%C3%AD.ts";
+import { ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo } from "../../Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
 
 const nơiĐăng1 = {
   "Tên nơi đăng": ["Lý Minh Nhật"],
   "Loại nơi đăng": ["Tài khoản"],
   "Tên nền tảng": "Facebook",
   "Loại nền tảng": "Diễn đàn",
-} satisfies NơiĐăngCóMộtVịTríCụThể;
+} satisfies ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo;
 
 const vậtThểVịTrí1 = {
   "Loại nền tảng": "Diễn đàn",
@@ -27,7 +37,7 @@ const vậtThểVịTrí1 = {
     "Bài đăng được ghim",
     "Album ảnh",
   ],
-} satisfies VậtThểVịTrí;
+} satisfies VậtThểCấuHìnhVịTrí;
 
 const nơiĐăng2 = {
   "Tên nơi đăng": [
@@ -38,7 +48,7 @@ const nơiĐăng2 = {
   "Loại nơi đăng": ["Máy chủ", "Kênh thường", "Thread"],
   "Tên nền tảng": "Discord",
   "Loại nền tảng": "Chat",
-} satisfies NơiĐăngCóMộtVịTríCụThể;
+} satisfies ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo;
 
 const vậtThểVịTrí2 = {
   "Loại nền tảng": "Chat",
@@ -53,12 +63,7 @@ const vậtThểVịTrí2 = {
     "Chủ đề kênh",
     "Tin nhắn được ghim",
   ],
-} satisfies VậtThểVịTrí;
-
-Deno.test("Kiểm tra hàm loạiNơiĐăngCóTrongCấuHìnhVịTrí", () => {
-  assert(cóLoạiNơiĐăngNDTrongVậtThểVịTrí(nơiĐăng1, vậtThểVịTrí1));
-  assert(cóLoạiNơiĐăngNDTrongVậtThểVịTrí(nơiĐăng2, vậtThểVịTrí2));
-});
+} satisfies VậtThểCấuHìnhVịTrí;
 
 //deno-fmt-ignore
 const cấuHìnhThiếtLậpChung = parse(Deno.readTextFileSync('./core/A. Cấu hình/Nơi đăng/Thiết lập chung (processed).yaml')) as CấuHìnhThiếtLậpChung
@@ -83,14 +88,16 @@ Deno.test("Thêm vị trí nhỏ hơn", () => {
 // const cấuHìnhNơiĐăng = parse(Deno.readTextFileSync(fullPath)) as CấuHìnhNơiĐăng;
 // const danhSáchNơiĐăngTổng = tạoDanhSáchNơiĐăng(cấuHìnhNơiĐăng);
 
-const danhSáchNơiĐăng: NơiĐăngCóMộtVịTríCụThể[] = [];
+const danhSáchNơiĐăng: NơiĐăngCóCácLựaChọnVịTríChưaCóId[] = [];
 const folder = "./core/A. Cấu hình/Nơi đăng";
 for (const file of Deno.readDirSync(folder)) {
   if (!file.isFile) continue;
   const fullPath = join(folder, file.name);
-  //deno-fmt-ignore
-  const cấuHìnhNơiĐăng = parse(Deno.readTextFileSync(fullPath)) as CấuHìnhNơiĐăng;
-  danhSáchNơiĐăng.push(...tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí(cấuHìnhNơiĐăng));
+  const danhSáchThôngTinCấuHìnhNơiĐăng = await tạoDanhSáchThôngTinCấuHìnhNơiĐăng();
+
+  for (const thôngTinCấuHìnhNơiĐăng of danhSáchThôngTinCấuHìnhNơiĐăng) {
+    danhSáchNơiĐăng.push(...tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí(thôngTinCấuHìnhNơiĐăng));
+  }
 }
 console.log("🚀 ~ danhSáchNơiĐăng:", danhSáchNơiĐăng);
 // console.log("🚀 ~ danhSáchNơiĐăng:", danhSáchNơiĐăng);

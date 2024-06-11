@@ -10,9 +10,9 @@ import {
   TênThreadHoặcTopic,
 } from "../../Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
 import CấuHìnhNơiĐăng from "../../Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
-import { táchUrlHoặcEmailTrongChuỗi } from "../../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
+import { táchUrlHoặcEmailĐầuTiênTrongChuỗi } from "../../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
 
-function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
+async function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
   const cấuHìnhNơiĐăngChat = cấuHìnhNơiĐăng.Chat;
   if (!cấuHìnhNơiĐăngChat) return;
   for (const tênNềnTảng of ["Messenger", "Discord", "Telegram"] as const) {
@@ -25,11 +25,11 @@ function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: Cấu
     for (const MáyChủ of danhSáchMáyChủ) {
       for (const [tênMáyChủUrl, cấuHìnhMáyChủ] of Object.entries(MáyChủ) as [TênMáyChủ, CấuHìnhMáyChủ | null][]) {
         if (!cấuHìnhMáyChủ) continue;
-        const [tênMáyChủ, urlMáyChủ] = táchUrlHoặcEmailTrongChuỗi(tênMáyChủUrl);
+        const [tênMáyChủ, urlMáyChủ] = await táchUrlHoặcEmailĐầuTiênTrongChuỗi(tênMáyChủUrl);
         for (const cấuHìnhKênh of cấuHìnhMáyChủ) {
           /** Trường hợp người dùng chỉ khai báo kênh chứ không khai báo thread hoặc topic nhỏ hơn, và không để dấu `:` đằng sau tên kênh */
           if (typeof cấuHìnhKênh === "string") {
-            const [kênh, urlKênh] = táchUrlHoặcEmailTrongChuỗi(cấuHìnhKênh);
+            const [kênh, urlKênh] = await táchUrlHoặcEmailĐầuTiênTrongChuỗi(cấuHìnhKênh);
             danhSáchThôngTinNơiĐăng.push({
               "Tên nơi đăng": [tênMáyChủ, kênh],
               "Loại nơi đăng": loạiNơiĐăng,
@@ -41,7 +41,7 @@ function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: Cấu
           } else {
             for (const [kênhUrl, danhSáchThreadHoặcTopic] of Object.entries(cấuHìnhKênh)) {
               /** Trường hợp người dùng chỉ khai báo kênh chứ không khai báo thread hoặc topic nhỏ hơn, nhưng vẫn để dấu `:` đằng sau tên kênh */
-              const [kênh, urlKênh] = táchUrlHoặcEmailTrongChuỗi(kênhUrl);
+              const [kênh, urlKênh] = await táchUrlHoặcEmailĐầuTiênTrongChuỗi(kênhUrl);
               if (danhSáchThreadHoặcTopic === null) {
                 danhSáchThôngTinNơiĐăng.push({
                   "Tên nơi đăng": [tênMáyChủ, kênh],
@@ -55,7 +55,7 @@ function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: Cấu
                 /** Trường hợp kênh có thread hoặc topic nhỏ hơn*/
               } else {
                 for (const threadHoặcTopicUrl of danhSáchThreadHoặcTopic) {
-                  const [threadHoặcTopic, urlThreadHoặcTopic] = táchUrlHoặcEmailTrongChuỗi(threadHoặcTopicUrl);
+                  const [threadHoặcTopic, urlThreadHoặcTopic] = await táchUrlHoặcEmailĐầuTiênTrongChuỗi(threadHoặcTopicUrl);
                   danhSáchThôngTinNơiĐăng.push({
                     "Tên nơi đăng": [tênMáyChủ, kênh, threadHoặcTopic],
                     "Loại nơi đăng": lấyLoạiNơiĐăng(tênNềnTảng, threadHoặcTopic),
@@ -95,7 +95,7 @@ function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: Cấu
   }
 }
 
-function lấyNơiĐăngTừNềnTảngChatKhác(
+async function lấyNơiĐăngTừNềnTảngChatKhác(
   vậtThểNơiĐăng: CấuHìnhNơiĐăngChatThôngThường,
   tênNềnTảng: TênNềnTảng,
   danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[],
@@ -109,7 +109,7 @@ function lấyNơiĐăngTừNềnTảngChatKhác(
     ) continue;
 
     for (const tênNơiĐăngUrl of danhSáchTênNơiĐăng) {
-      const [tênNơiĐăng, url] = táchUrlHoặcEmailTrongChuỗi(tênNơiĐăngUrl);
+      const [tênNơiĐăng, url] = await táchUrlHoặcEmailĐầuTiênTrongChuỗi(tênNơiĐăngUrl);
       danhSáchThôngTinNơiĐăng.push({
         "Tên nơi đăng": [tênNơiĐăng],
         "Loại nơi đăng": [loạiNơiĐăng],
@@ -122,13 +122,13 @@ function lấyNơiĐăngTừNềnTảngChatKhác(
   }
 }
 
-export default function tạoDanhSáchChat(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
+export default async function tạoDanhSáchChat(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
   const cấuHìnhNơiĐăngChat = cấuHìnhNơiĐăng.Chat;
   if (!cấuHìnhNơiĐăngChat) return;
 
   for (const [tênNềnTảng, vậtThểNơiĐăng] of Object.entries(cấuHìnhNơiĐăngChat) as [TênNềnTảngChat, CấuHìnhNơiĐăngChatThôngThường][]) {
     if (!vậtThểNơiĐăng) continue;
-    lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng);
-    lấyNơiĐăngTừNềnTảngChatKhác(vậtThểNơiĐăng, tênNềnTảng, danhSáchThôngTinNơiĐăng);
+    await lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng);
+    await lấyNơiĐăngTừNềnTảngChatKhác(vậtThểNơiĐăng, tênNềnTảng, danhSáchThôngTinNơiĐăng);
   }
 }

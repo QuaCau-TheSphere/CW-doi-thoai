@@ -1,5 +1,5 @@
 import { assert } from "$std/assert/assert.ts";
-import { appendSlashToUrlIfIsPossible, táchUrlHoặcEmailTrongChuỗi } from "./Hàm và kiểu cho URL.ts";
+import { appendSlashToUrlIfIsPossible, táchUrlHoặcEmailĐầuTiênTrongChuỗi } from "./Hàm và kiểu cho URL.ts";
 
 const testsappendSlashToUrlIfIsPossible: string[] = [
   "https://quảcầu.com",
@@ -13,6 +13,8 @@ const testsappendSlashToUrlIfIsPossible: string[] = [
   "https://example.com/path/file.pdf",
   "https://example.com/path/file.pdf?",
   "https://example.com/path/path.with.dot",
+  "ganuongphap@gmail.com",
+  "mailto:ganuongphap@gmail.com",
 ];
 
 const testtáchUrlHoặcEmailTrongChuỗi: string[] = [
@@ -22,10 +24,12 @@ const testtáchUrlHoặcEmailTrongChuỗi: string[] = [
   "https://example.com/path?#",
   "https://example.com/path/?#",
   "https://example.com/path/path.with.dot",
+  "ganuongphap@gmail.com",
+  "mailto:ganuongphap@gmail.com",
 ];
 
 for (const chuỗi of testtáchUrlHoặcEmailTrongChuỗi) {
-  console.log(táchUrlHoặcEmailTrongChuỗi(chuỗi));
+  console.log(táchUrlHoặcEmailĐầuTiênTrongChuỗi(chuỗi));
   console.log();
 }
 // appendSlashToUrlIfIsPossible_test();

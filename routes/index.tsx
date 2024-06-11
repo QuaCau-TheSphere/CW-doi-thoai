@@ -1,6 +1,10 @@
 import { NơiĐăngCóCácLựaChọnVịTrí } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { BàiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
-import { lấyCấuHìnhChung, đọcJSON } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
+import {
+  lấyCấuHìnhChung,
+  tạoDanhSáchThôngTinCấuHìnhNơiĐăng,
+  đọcJSON,
+} from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
 import Main, { DanhSáchBàiĐăngVàNơiĐăng } from "../islands/Main.tsx";
 import { kvList } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho KV.ts";
 import {
@@ -50,6 +54,7 @@ export default async function App() {
     <body class="">
       <Main
         dsBàiĐăngVàNơiĐăng={dsBàiĐăngVàNơiĐăng}
+        danhSáchThôngTinCấuHìnhNơiĐăng={await tạoDanhSáchThôngTinCấuHìnhNơiĐăng()}
         cấuHìnhChung={lấyCấuHìnhChung()}
         textTrangChủ={textTrangChủ}
       />

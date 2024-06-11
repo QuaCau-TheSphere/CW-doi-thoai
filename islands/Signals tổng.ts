@@ -1,13 +1,15 @@
+/** @fileoverview Chứa những signal dùng cho cả section bên trái và section bên phải */
 import FlexSearch from "npm:flexsearch";
 import { computed, effect, signal } from "@preact/signals";
 import { NơiĐăngCóCácLựaChọnVịTrí, NơiĐăngCóMộtVịTríCụThể } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import { BàiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import { VậtThểTiếpThị } from "../Code hỗ trợ cho client/Hàm và kiểu cho vật thể tiếp thị.ts";
 import { tìmVậtThểTiếpThịĐãCó } from "../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
-import { CấuHìnhChung } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
+import { CấuHìnhChung, ThôngTinCấuHìnhNơiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
 import { ElementDùngTab } from "../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
 
-export const cấuHìnhChungSignal = signal<CấuHìnhChung>({});
+export const cấuHìnhChungSignal = signal<CấuHìnhChung>({ "Vị trí thành phần": { "": [""] }, "Vị trí đặt liên kết ở nơi đăng": [] });
+export const danhSáchThôngTinCấuHìnhNơiĐăngSignal = signal<ThôngTinCấuHìnhNơiĐăng[]>([]);
 export const flexSearchBàiĐăngSignal = signal<FlexSearch.Document<BàiĐăng>>([]);
 export const flexSearchNơiĐăngSignal = signal<FlexSearch.Document<NơiĐăngCóCácLựaChọnVịTrí>>([]);
 
