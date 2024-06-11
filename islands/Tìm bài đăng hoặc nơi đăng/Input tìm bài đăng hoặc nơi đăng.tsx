@@ -1,14 +1,14 @@
+import { Signal } from "@preact/signals";
+import { element } from "../Signals tổng.ts";
+import { cursor } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
 import {
   DanhSáchKếtQuảTìmKiếmType,
   FlexSearchBàiĐăngHoặcNơiĐăng,
   MụcĐượcChọn,
   TênDanhSách,
   đổiKhungNhập,
-} from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
-import { kiểuKebab, viếtHoa } from "../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm xử lý chuỗi.ts";
-import { element } from "../Signals tổng.ts";
-import { cursor } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
-import { Signal } from "@preact/signals";
+} from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho khung nhập.ts";
+import { kiểuKebab, viếtHoa } from "../../Code chạy trên client/Chuỗi, slug/Hàm xử lý chuỗi.ts";
 
 function handleInput(
   e: InputEvent,

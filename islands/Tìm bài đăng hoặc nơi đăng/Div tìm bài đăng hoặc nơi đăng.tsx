@@ -1,7 +1,7 @@
 import { Signal, useComputed, useSignal } from "@preact/signals";
+import { EnrichedDocumentSearchResultSetUnitResultUnit } from "npm:flexsearch";
 import KếtQuảĐượcChọn from "../Kết quả được chọn/Kết quả được chọn.tsx";
 import ModalTạoMới from "../Modal tạo mới/Modal chung.tsx";
-import { kiểuKebab } from "../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm xử lý chuỗi.ts";
 import { bàiĐăngSignal, flexSearchBàiĐăngSignal, flexSearchNơiĐăngSignal, nơiĐăngCóCácLựaChọnVịTríSignal } from "../Signals tổng.ts";
 import { DanhSáchKếtQuảTìmKiếm } from "./Danh sách kết quả tìm kiếm.tsx";
 import InputTìmBàiĐăngHoặcNơiĐăng from "./Input tìm bài đăng hoặc nơi đăng.tsx";
@@ -11,10 +11,10 @@ import {
   FlexSearchBàiĐăngHoặcNơiĐăng,
   MụcĐượcChọn,
   TênDanhSách,
-} from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
-import { BàiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
-import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
-import { EnrichedDocumentSearchResultSetUnitResultUnit } from "npm:flexsearch";
+} from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho khung nhập.ts";
+import { kiểuKebab } from "../../Code chạy trên client/Chuỗi, slug/Hàm xử lý chuỗi.ts";
+import { BàiĐăng } from "../../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
+import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
 
 /** Những signal được tạo ở ngoài rồi import vào đây là có được sử dụng ở ngoài div. Những signal được tạo trong đây chỉ cần dùng trong div này */
 export default function DivTìmBàiĐăngHoặcNơiĐăng({ tênDanhSách }: { tênDanhSách: TênDanhSách }) {

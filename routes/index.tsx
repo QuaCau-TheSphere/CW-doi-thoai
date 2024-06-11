@@ -1,20 +1,16 @@
-import { NơiĐăngCóCácLựaChọnVịTrí } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
-import { BàiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
-import {
-  lấyCấuHìnhChung,
-  tạoDanhSáchThôngTinCấuHìnhNơiĐăng,
-  đọcJSON,
-} from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
 import Main, { DanhSáchBàiĐăngVàNơiĐăng } from "../islands/Main.tsx";
-import { kvList } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho KV.ts";
+import { NơiĐăngCóCácLựaChọnVịTrí } from "../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
+import { BàiĐăng } from "../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
+import { lấyCấuHìnhChung, tạoDanhSáchThôngTinCấuHìnhNơiĐăng, đọcJSON } from "../Code chạy trên local, server, KV/Hàm và kiểu cho cấu hình.ts";
+import { kvList } from "../Code chạy trên local, server, KV/Hàm cho KV.ts";
 import {
   cậpNhậtSốLượngBàiĐăng,
   cậpNhậtSốLượngNơiĐăng,
   lấySốLượngDữLiệu,
   SốLượngBàiĐăng,
   SốLượngNơiĐăng,
-} from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho id và số lượng dữ liệu.ts";
-import { TẬP_TIN_DANH_SÁCH_BÀI_ĐĂNG, TẬP_TIN_DANH_SÁCH_NƠI_ĐĂNG } from "../ĐƯỜNG_DẪN.ts";
+} from "../Code chạy trên local, server, KV/Hàm và kiểu cho id và số lượng dữ liệu.ts";
+import { TẬP_TIN_DANH_SÁCH_BÀI_ĐĂNG, TẬP_TIN_DANH_SÁCH_NƠI_ĐĂNG } from "../Code chạy trên local, server, KV/ĐƯỜNG_DẪN.ts";
 
 async function cậpNhậtSốLượngDữLiệu({ dsBàiĐăng, dsNơiĐăng }: DanhSáchBàiĐăngVàNơiĐăng) {
   const phânLoạiBàiĐăng = Object.groupBy(dsBàiĐăng, ({ "Phương thức tạo": phươngThứcTạo }) => phươngThứcTạo);

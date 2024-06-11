@@ -1,14 +1,14 @@
 /**
  * @fileoverview dùng cho việc tạo id khi người dùng tạo bài đăng hoặc nơi đăng mới thủ công
- * @see kiểmTraBàiĐăngHoặcNơiĐăngĐãCó trong Code hỗ trợ cho client\Hàm và kiểu cho API server.ts
+ * @see kiểmTraBàiĐăngHoặcNơiĐăngĐãCó trong Code chạy trên client\Hàm và kiểu cho API server.ts
  * @see islands\Modal tạo mới\Modal chung.tsx
  */
 import { Handlers } from "$fresh/server.ts";
-import { kvGet, tạoKeyKV } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho KV.ts";
-import { ReqBàiĐăngHoặcNơiĐăng } from "../../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
-import { BàiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
-import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
-import { lấyTổngSốBàiĐăngHoặcNơiĐăngĐangCó } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho id và số lượng dữ liệu.ts";
+import { kvGet, tạoKeyKV } from "../../Code chạy trên local, server, KV/Hàm cho KV.ts";
+import { ReqBàiĐăngHoặcNơiĐăng } from "../../Code chạy trên client/Hàm và kiểu cho API server.ts";
+import { BàiĐăng } from "../../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
+import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
+import { lấyTổngSốBàiĐăngHoặcNơiĐăngĐangCó } from "../../Code chạy trên local, server, KV/Hàm và kiểu cho id và số lượng dữ liệu.ts";
 
 export const handler: Handlers = {
   async POST(req, ctx) {

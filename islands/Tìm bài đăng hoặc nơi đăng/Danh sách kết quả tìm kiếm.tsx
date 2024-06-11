@@ -1,12 +1,17 @@
+import { Signal } from "@preact/signals";
 import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/plus.tsx";
-import { DanhSáchKếtQuảTìmKiếmType, MụcĐượcChọn, TênDanhSách, đổiKhungNhập } from "../../Code hỗ trợ cho client/Hàm và kiểu cho khung nhập.ts";
-import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
-import { BàiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import { element } from "../Signals tổng.ts";
 import { cursor } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
-import { Signal } from "@preact/signals";
-import { kiểuKebab, tạoLoạiNơiĐăngString, tạoTênNơiĐăngString } from "../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm xử lý chuỗi.ts";
-import { xửLýPunycode } from "../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
+import {
+  DanhSáchKếtQuảTìmKiếmType,
+  MụcĐượcChọn,
+  TênDanhSách,
+  đổiKhungNhập,
+} from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho khung nhập.ts";
+import { xửLýPunycode } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL.ts";
+import { kiểuKebab, tạoLoạiNơiĐăngString, tạoTênNơiĐăngString } from "../../Code chạy trên client/Chuỗi, slug/Hàm xử lý chuỗi.ts";
+import { BàiĐăng } from "../../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
+import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
 
 function tạoDòngPhụCủaBàiĐăng(bàiĐăng: BàiĐăng) {
   const { "Dự án": dựÁn, "Kho thông tin": vault, URL } = bàiĐăng;

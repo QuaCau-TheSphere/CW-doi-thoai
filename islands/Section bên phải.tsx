@@ -1,9 +1,9 @@
 import { cóRútGọn, vậtThểTiếpThịSignal } from "./Signals tổng.ts";
-import { ThamSốUTM } from "../Code hỗ trợ cho client/Tạo liên kết UTM/Kiểu cho tham số UTM.ts";
 import { VậtThểKhác } from "../components/Thông tin vật thể tiếp thị.tsx";
 import KhungThôngTinKhiKhôngCóKếtQuả from "../components/Phần giới thiệu ở trang chủ khi chưa tạo kết quả.tsx";
-import { VậtThểTiếpThị } from "../Code hỗ trợ cho client/Hàm và kiểu cho vật thể tiếp thị.ts";
-import { xửLýPunycode } from "../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
+import { ThamSốUTM } from "../Code chạy trên client/Tham số UTM và liên kết rút gọn/Kiểu cho tham số UTM.ts";
+import { VậtThểTiếpThị } from "../Code chạy trên client/Hàm và kiểu cho vật thể tiếp thị.ts";
+import { xửLýPunycode } from "../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL.ts";
 
 export default function SectionBênPhải({ textTrangChủ }: { textTrangChủ: string }) {
   return (

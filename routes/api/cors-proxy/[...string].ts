@@ -1,6 +1,6 @@
 import { Handlers } from "$fresh/server.ts";
 import esthetic from "npm:esthetic";
-import { lấyHTML } from "../../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
+import { lấyHTML } from "../../../Code chạy trên client/URL, HTML/Hàm và kiểu cho HTML và dữ liệu meta.ts";
 
 export const handler: Handlers = {
   async GET(_req, ctx) {

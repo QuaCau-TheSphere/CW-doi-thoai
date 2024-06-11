@@ -1,12 +1,12 @@
 import { Head } from "$fresh/runtime.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
-import { VậtThểTiếpThị } from "../../Code hỗ trợ cho client/Hàm và kiểu cho vật thể tiếp thị.ts";
+import { VậtThểTiếpThị } from "../../Code chạy trên client/Hàm và kiểu cho vật thể tiếp thị.ts";
 import ReactECharts from "../../islands/Biểu đồ/echart.tsx";
-import { dữLiệuTruyCậpCácNămTest } from "../../Code hỗ trợ cho client/Hàm cho biểu đồ.test.ts";
-import { DữLiệuTruyCậpCácNăm, tạoDữLiệuBiểuĐồ } from "../../Code hỗ trợ cho client/Hàm và kiểu cho biểu đồ.ts";
+import { dữLiệuTruyCậpCácNămTest } from "../../Code chạy trên client/Hàm cho biểu đồ.test.ts";
+import { DữLiệuTruyCậpCácNăm, tạoDữLiệuBiểuĐồ } from "../../Code chạy trên client/Hàm và kiểu cho biểu đồ.ts";
 import ThôngTinVậtThểTiếpThị from "../../components/Thông tin vật thể tiếp thị.tsx";
 import Meta from "../../components/Meta.tsx";
-import { kvGet } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho KV.ts";
+import { kvGet } from "../../Code chạy trên local, server, KV/Hàm cho KV.ts";
 
 export const handler: Handlers = {
   async GET(req, ctx) {

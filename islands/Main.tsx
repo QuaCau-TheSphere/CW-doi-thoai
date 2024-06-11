@@ -1,12 +1,12 @@
 import FlexSearch, { Document } from "npm:flexsearch";
-import { BàiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
-import { NơiĐăngCóCácLựaChọnVịTrí } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
 import SectionBênTrái from "./Section bên trái.tsx";
 import SectionBênPhải from "./Section bên phải.tsx";
 import { cấuHìnhChungSignal, danhSáchThôngTinCấuHìnhNơiĐăngSignal, flexSearchBàiĐăngSignal, flexSearchNơiĐăngSignal } from "./Signals tổng.ts";
-import { CấuHìnhChung, ThôngTinCấuHìnhNơiĐăng } from "../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho cấu hình.ts";
 import ModalNơiĐăng from "./Modal tạo mới/Modal nơi đăng.tsx";
 import ModalBàiĐăng from "./Modal tạo mới/Modal bài đăng.tsx";
+import { NơiĐăngCóCácLựaChọnVịTrí } from "../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
+import { BàiĐăng } from "../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
+import { CấuHìnhChung, ThôngTinCấuHìnhNơiĐăng } from "../Code chạy trên local, server, KV/Hàm và kiểu cho cấu hình.ts";
 
 export interface DanhSáchBàiĐăngVàNơiĐăng {
   dsBàiĐăng: BàiĐăng[];

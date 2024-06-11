@@ -1,11 +1,8 @@
 import { Handlers } from "$fresh/server.ts";
-import { kvGet, kvSet, tạoKeyKV } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho KV.ts";
-import { ReqBàiĐăngHoặcNơiĐăng } from "../../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
-import {
-  cậpNhậtSốLượngBàiĐăng,
-  cậpNhậtSốLượngNơiĐăng,
-} from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho id và số lượng dữ liệu.ts";
-import { PhươngThứcTạoNơiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
+import { kvGet, kvSet, tạoKeyKV } from "../../Code chạy trên local, server, KV/Hàm cho KV.ts";
+import { ReqBàiĐăngHoặcNơiĐăng } from "../../Code chạy trên client/Hàm và kiểu cho API server.ts";
+import { cậpNhậtSốLượngBàiĐăng, cậpNhậtSốLượngNơiĐăng } from "../../Code chạy trên local, server, KV/Hàm và kiểu cho id và số lượng dữ liệu.ts";
+import { PhươngThứcTạoNơiĐăng } from "../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
 
 export async function thêmBàiĐăngHoặcNơiĐăngMớiVàoKV(bàiĐăngHoặcNơiĐăngTạoMới: ReqBàiĐăngHoặcNơiĐăng) {
   const { "Tên danh sách": tênDanhSách, "Dữ liệu": dữLiệu } = bàiĐăngHoặcNơiĐăngTạoMới;

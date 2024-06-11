@@ -3,8 +3,8 @@
  */
 
 import { Handlers } from "$fresh/server.ts";
-import { VậtThểTiếpThị } from "../../Code hỗ trợ cho client/Hàm và kiểu cho vật thể tiếp thị.ts";
-import { kvList } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho KV.ts";
+import { VậtThểTiếpThị } from "../../Code chạy trên client/Hàm và kiểu cho vật thể tiếp thị.ts";
+import { kvList } from "../../Code chạy trên local, server, KV/Hàm cho KV.ts";
 
 export const handler: Handlers = {
   async POST(req, ctx) {

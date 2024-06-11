@@ -1,12 +1,8 @@
-import {
-  NơiĐăngCóCácLựaChọnVịTrí,
-  NơiĐăngCóMộtVịTríCụThể,
-  VịTrí,
-} from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vị trí.ts";
+import { NơiĐăngCóCácLựaChọnVịTrí, NơiĐăngCóMộtVịTríCụThể, VịTrí } from "../../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
 import { nơiĐăngCóCácLựaChọnVịTríSignal, nơiĐăngCóMộtVịTríCụThểSignal, vịTríString } from "../Signals tổng.ts";
-import { tạoLoạiNơiĐăngString, tạoTênNơiĐăngString, tạoVịTríString } from "../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm xử lý chuỗi.ts";
-import { làCùngNơiĐăng, ThôngTinNơiĐăng } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
-import { xửLýPunycode } from "../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
+import { tạoLoạiNơiĐăngString, tạoTênNơiĐăngString, tạoVịTríString } from "../../Code chạy trên client/Chuỗi, slug/Hàm xử lý chuỗi.ts";
+import { làCùngNơiĐăng, ThôngTinNơiĐăng } from "../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
+import { xửLýPunycode } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL.ts";
 
 /** Từ NơiĐăngCóCácLựaChọnVịTrí và vịTríĐượcChọn, tạo NơiĐăngCóMộtVịTríCụThể*/
 export function tạoNơiĐăngCóMộtVịTríCụThể(vịTríĐượcChọn: VịTrí | string, nơiĐăng: NơiĐăngCóCácLựaChọnVịTrí): NơiĐăngCóMộtVịTríCụThể {

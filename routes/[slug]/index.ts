@@ -1,8 +1,8 @@
 import { Handlers } from "$fresh/server.ts";
-import { VậtThểTiếpThị } from "../../Code hỗ trợ cho client/Hàm và kiểu cho vật thể tiếp thị.ts";
-import { thêmThờiĐiểmTruyCập } from "../../Code hỗ trợ cho client/Hàm và kiểu cho vật thể tiếp thị.ts";
-import { kvGet, kvSet } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm cho KV.ts";
-import { cậpNhậtSốLượngĐuôiRútGọn } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho id và số lượng dữ liệu.ts";
+import { VậtThểTiếpThị } from "../../Code chạy trên client/Hàm và kiểu cho vật thể tiếp thị.ts";
+import { thêmThờiĐiểmTruyCập } from "../../Code chạy trên client/Hàm và kiểu cho vật thể tiếp thị.ts";
+import { kvGet, kvSet } from "../../Code chạy trên local, server, KV/Hàm cho KV.ts";
+import { cậpNhậtSốLượngĐuôiRútGọn } from "../../Code chạy trên local, server, KV/Hàm và kiểu cho id và số lượng dữ liệu.ts";
 
 export const handler: Handlers = {
   /** Người dùng truy cập để tới liên kết thực sự */

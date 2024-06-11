@@ -1,5 +1,5 @@
 import { load } from "$std/dotenv/mod.ts";
-import { tạoUrlCorsProxy } from "../../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
+import { tạoUrlCorsProxy } from "../../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL.ts";
 // const url = "https://youtu.be/v3F5Hsua4J4?si=PuQHF7GLWfCzGeKZ";
 // const url = "https://www.facebook.com/Cactus2104";
 // deno-fmt-ignore

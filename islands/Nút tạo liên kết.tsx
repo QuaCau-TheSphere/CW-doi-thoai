@@ -1,7 +1,6 @@
-import { bàiĐăngSignal, nơiĐăngCóMộtVịTríCụThểSignal, tênNút, vậtThểTiếpThịSignal } from "./Signals tổng.ts";
-import { ghiVậtThểTiếpThịLênKV } from "../Code hỗ trợ cho client/Hàm và kiểu cho API server.ts";
-import { tạoVậtThểTiếpThị, VậtThểTiếpThị } from "../Code hỗ trợ cho client/Hàm và kiểu cho vật thể tiếp thị.ts";
-import { cóRútGọn } from "./Signals tổng.ts";
+import { bàiĐăngSignal, cóRútGọn, nơiĐăngCóMộtVịTríCụThểSignal, tênNút, vậtThểTiếpThịSignal } from "./Signals tổng.ts";
+import { ghiVậtThểTiếpThịLênKV } from "../Code chạy trên client/Hàm và kiểu cho API server.ts";
+import { tạoVậtThểTiếpThị, VậtThểTiếpThị } from "../Code chạy trên client/Hàm và kiểu cho vật thể tiếp thị.ts";
 
 function tạoHoverTitle(vậtThểTiếpThị: VậtThểTiếpThị | void): string {
   if (!vậtThểTiếpThị) return "Cần chọn bài đăng và nơi đăng trước khi rút gọn liên kết";

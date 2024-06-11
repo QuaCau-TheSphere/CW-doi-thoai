@@ -1,0 +1,88 @@
+# Không dùng. Cái này chưa code xong. Mục tiêu của nó là tạo kết quả giống như ở cấu hình chung mà gọn hơn
+
+# Nếu giá trị của một thuộc tính là mảng thì mảng đó là vị trí. Nếu là vật thể thì hoặc các thuộc tính đều là thành phần, hoặc chỉ có 2 thuộc tính là vị trí và thành phần
+# Thành phần là những thứ sẽ giúp mình đối thoại (tin nhắn, bài đăng). Vị trí là những nơi để họ tìm hiểu về mình, để mình tự giới thiệu bản thân. Chúng không phải là những nơi điển hình khi ta nói là ta đăng bài ở đó
+# Bio, about, description có vẻ giống nhau, nhưng ví dụ như ở Facebook thì có cả bio và about. Thường về độ dài thì bio < about < description
+
+Vị trí:
+  Diễn đàn:
+    Facebook:
+      Tài khoản: [Bio, About, Website, Avatar, Cover, Pinned post, Album]
+      Trang: [Bio, About, Website, Avatar, Cover, Pinned post, Album]
+      Nhóm: [About, Membership questions, Cover, Pinned post, Album]
+    GitHub:
+      Repo: [Website, Readme, Discussion, Issue]
+    YouTube:
+      Kênh: [About, Links]
+      Video: [Description, Bình luận]
+  Chat:
+    Messenger:
+      Cộng đồng: [About, Pinned message]
+    Discord:
+      Máy chủ:
+        Thành phần:
+          Text channel:
+            Thành phần:
+              Thread: Pinned message
+            Vị trí: [Channel topic, Pinned message]
+          Forum channel:
+            Thành phần:
+              Forum post: Pinned message
+            Vị trí: [Post guideline, Pinned post]
+        Vị trí: [Description, Onboarding]
+      Tài khoản: [About, Pinned message]
+    Telegram:
+      Tài khoản: [Bio, Pinned message]
+      Nhóm: [Description, Pinned message]
+  Website: trang chủ
+  Email: chữ ký
+  CV: Website
+  Ảnh: [QR, text]
+
+Vị trí nhỏ hơn:
+  Avatar: [QR, Text, Description]
+  Cover: [QR, Text, Description]
+  Pinned post: [text, image QR, image text]
+  Pinned message: [text, image QR, image text]
+  Album:
+# type sdf = string | string[] | {
+#   [key: string]: string | string[] | sdf;
+# } | {
+#   "Vị trí": sdf;
+#   "Thành phần": sdf;
+# };
+# //deno-fmt-ignore
+# const vịTríĐặt = parse(Deno.readTextFileSync('./core/A. Cấu hình/Nơi đăng/Vị trí đặt.yaml')) as CấuHìnhVịTríĐặt
+# const danhSáchVịTríĐặt: VịTríĐặt[] = [];
+# for (const [key, value] of Object.entries(vịTríĐặt["Vị trí"])) {
+#   const tênNơiĐăng = [key];
+#   newFunction(tênNơiĐăng, value);
+#   console.log(danhSáchVịTríĐặt);
+# }
+# console.log(danhSáchVịTríĐặt);
+
+# debugger;
+
+# function newFunction(key: string[], input: sdf) {
+#   // console.log(key, input);
+#   if (typeof input === "string") {
+#     danhSáchVịTríĐặt.push({
+#       "Tên nơi đăng": key,
+#       "Vị trí": input,
+#     });
+#   } else if (Array.isArray(input)) {
+#     for (const vịTrí of input) {
+#       danhSáchVịTríĐặt.push({
+#         "Tên nơi đăng": key,
+#         "Vị trí": vịTrí,
+#       });
+#     }
+#     // } else if (input["Vị trí"] && input["Thành phần"]) {
+#   } else {
+#     for (const [key2, value2] of Object.entries(input)) {
+#       key.push(key2);
+#       newFunction(key, value2);
+#       console.log(danhSáchVịTríĐặt);
+#     }
+#   }
+# }

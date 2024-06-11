@@ -1,9 +1,9 @@
-import { useEffect, useState } from "preact/hooks";
-import { BàiĐăngChưaCóId } from "../../Tạo bài đăng và nơi đăng/Code hỗ trợ cho server/Hàm và kiểu cho vault, dự án, bài đăng.ts";
-import { queryBàiĐăngSignal } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
-import { tạoBàiĐăngTừURL } from "../../Code hỗ trợ cho client/Tạo bài đăng hoặc nơi đăng từ URL.ts";
 import * as linkify from "npm:linkifyjs";
-import { tạoUrlCorsProxy } from "../../Code hỗ trợ cho client/Chuỗi, URL, slug/Hàm và kiểu cho URL.ts";
+import { useEffect, useState } from "preact/hooks";
+import { queryBàiĐăngSignal } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
+import { tạoBàiĐăngTừURL } from "../../Code chạy trên client/URL, HTML/Tạo bài đăng hoặc nơi đăng từ URL.ts";
+import { tạoUrlCorsProxy } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL.ts";
+import { BàiĐăngChưaCóId } from "../../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 
 /** Các dữ liệu người dùng nhập trong form */
 export default function ModalBàiĐăng() {
