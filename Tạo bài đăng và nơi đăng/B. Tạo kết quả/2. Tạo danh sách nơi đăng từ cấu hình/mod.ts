@@ -132,8 +132,6 @@ export default async function tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí
         thôngTinNơiĐăng["Vị trí có thể đăng"] = tạoDanhSáchVịTríCóThểĐăng(danhSáchVịTríThànhPhần, cấuHìnhVịTríNhỏHơn);
       }
     }
-    if (thôngTinNơiĐăng.URL === "") {
-    }
     switch (loạiCấuHình) {
       case "Chủ đề":
         thôngTinNơiĐăng["Lĩnh vực"] = [tênCấuHình];

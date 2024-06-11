@@ -85,7 +85,7 @@ function tạoSource(nơiĐăng: NơiĐăngCóMộtVịTríCụThể, cấuHình
   function tạoSourceKhác(): SourceKhác {
     switch (loạiNềnTảng) {
       case "Website":
-        return tênNơiĐăngString.replace("https://www.", "").replace("https://", "");
+        return `${kýHiệuNềnTảng} ${tênNơiĐăngString}`;
       case "Email":
       case "Tập tin":
         return tênNơiĐăngString;

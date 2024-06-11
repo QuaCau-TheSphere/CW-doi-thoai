@@ -14,13 +14,13 @@ export default function KhungThôngTinKhiKhôngCóKếtQuả({ textTrangChủ }:
       <div dangerouslySetInnerHTML={{ __html: nộiDungBàiViết }} />
 
       <nav class="flex gap-5">
-        <a href="https://quảcầu.cc/?utm_source=doi-thoai.deno.dev+(Trang+chủ)&utm_medium=Website&utm_campaign=&utm_content=&utm_term=">
+        <a href="https://quảcầu.cc/?utm_source=đối+⊷+thoại+(Trang+chủ)&utm_medium=Website&utm_campaign=&utm_content=&utm_term=">
           <IconSphere class="w-6 h-6" />
         </a>
-        <a href="https://doi-thoai.deno.dev/jWTk4EHFK2.doi-thoai.1">
+        <a href="https://doi-thoai.deno.dev/discordQC.đốithoại.1">
           <IconBrandDiscord class="w-6 h-6" />
         </a>
-        <a href="https://doi-thoai.deno.dev/quacau.sphere.doi-thoai.1">
+        <a href="https://doi-thoai.deno.dev/pagefbQC.đốithoại.1">
           <IconBrandFacebook class="w-6 h-6" />
         </a>
       </nav>

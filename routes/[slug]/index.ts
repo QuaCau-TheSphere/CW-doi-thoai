@@ -7,7 +7,7 @@ import { cậpNhậtSốLượngĐuôiRútGọn } from "../../Tạo bài đăng 
 export const handler: Handlers = {
   /** Người dùng truy cập để tới liên kết thực sự */
   async GET(req, ctx) {
-    const đuôiRútGọn = ctx.params.slug;
+    const đuôiRútGọn = decodeURIComponent(ctx.params.slug);
     console.log("Đuôi rút gọn được truy cập:", đuôiRútGọn);
     const key = ["Đuôi rút gọn", đuôiRútGọn];
     const vậtThểTiếpThị = (await kvGet(key, "GET hander trong cors proxy")).value as VậtThểTiếpThị;
