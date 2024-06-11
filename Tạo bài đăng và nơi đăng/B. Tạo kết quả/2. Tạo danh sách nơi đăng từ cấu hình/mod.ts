@@ -126,13 +126,13 @@ export default async function tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí
   const từĐiểnSlugNơiĐăng = await tạoTừĐiểnSlugNơiĐăng(thôngTinCấuHìnhNơiĐăng.cấuHình["Slug"]);
 
   for (const thôngTinNơiĐăng of danhSáchNơiĐăng) {
-    if (thôngTinNơiĐăng.URL === "") {
-      for (const vậtThểVịTrí of danhSáchVậtThểVịTrí) {
-        const danhSáchVịTríThànhPhần = vậtThểVịTrí["Danh sách vị trí"];
-        if (cóThôngTinNơiĐăngTrongVậtThểVịTrí(thôngTinNơiĐăng, vậtThểVịTrí)) {
-          thôngTinNơiĐăng["Vị trí có thể đăng"] = tạoDanhSáchVịTríCóThểĐăng(danhSáchVịTríThànhPhần, cấuHìnhVịTríNhỏHơn);
-        }
+    for (const vậtThểVịTrí of danhSáchVậtThểVịTrí) {
+      const danhSáchVịTríThànhPhần = vậtThểVịTrí["Danh sách vị trí"];
+      if (cóThôngTinNơiĐăngTrongVậtThểVịTrí(thôngTinNơiĐăng, vậtThểVịTrí)) {
+        thôngTinNơiĐăng["Vị trí có thể đăng"] = tạoDanhSáchVịTríCóThểĐăng(danhSáchVịTríThànhPhần, cấuHìnhVịTríNhỏHơn);
       }
+    }
+    if (thôngTinNơiĐăng.URL === "") {
     }
     switch (loạiCấuHình) {
       case "Chủ đề":
@@ -160,19 +160,9 @@ export async function tạoDanhSáchNơiĐăngTừTấtCảCấuHình() {
   }
   let sốNơiĐăngChưaCóId = 0;
   for (const nơiĐăngChưaCóId of danhSáchNơiĐăngChưaCóIdTừTấtCảCấuHình) {
-    // let id: string;
-    // const vậtThểId = await xácĐịnhIdTrênLocal("nơi đăng", nơiĐăngChưaCóId);
-    // if (vậtThểId.cáchXácĐịnh !== 3) {
-    //   id = vậtThểId.idGợiÝ;
-    // } else {
-    //   sốNơiĐăngChưaCóId += 1;
-    //   id = đổiTừCơSố10SangCơSố64(sốNơiĐăngChưaCóId);
-    // }
     danhSáchNơiĐăngTừTấtCảCấuHình.push({
       ...nơiĐăngChưaCóId,
       id: đổiTừCơSố10SangCơSố64(sốNơiĐăngChưaCóId),
-      // id: id,
-      // vậtThểId: vậtThểId,
     });
     sốNơiĐăngChưaCóId += 1;
   }

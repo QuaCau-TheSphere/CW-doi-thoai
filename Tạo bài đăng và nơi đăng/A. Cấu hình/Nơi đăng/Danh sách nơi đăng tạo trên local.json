@@ -9,6 +9,78 @@
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Album ảnh",
+        "Mô tả album"
+      ],
+      [
+        "Album ảnh",
+        "Bình luận"
+      ],
+      [
+        "Video",
+        "Mô tả video"
+      ],
+      [
+        "Video",
+        "QR trong video"
+      ],
+      [
+        "Video",
+        "Chữ trong video"
+      ],
+      [
+        "Video",
+        "Bình luận"
+      ],
+      [
+        "About"
+      ],
+      [
+        "Câu hỏi xét thành viên"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Bài ghim",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Bài ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Lĩnh vực": [
       "Công cụ ghi chú"
     ],
@@ -58,6 +130,32 @@
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Lĩnh vực": [
       "Công cụ ghi chú"
     ],
@@ -76,6 +174,35 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Lĩnh vực": [
       "Công cụ ghi chú"
     ],
@@ -94,6 +221,32 @@
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Lĩnh vực": [
       "Công cụ ghi chú"
     ],
@@ -112,6 +265,35 @@
     "Tên nền tảng": "Discord",
     "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Lĩnh vực": [
       "Công cụ ghi chú"
     ],
@@ -128,6 +310,78 @@
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Album ảnh",
+        "Mô tả album"
+      ],
+      [
+        "Album ảnh",
+        "Bình luận"
+      ],
+      [
+        "Video",
+        "Mô tả video"
+      ],
+      [
+        "Video",
+        "QR trong video"
+      ],
+      [
+        "Video",
+        "Chữ trong video"
+      ],
+      [
+        "Video",
+        "Bình luận"
+      ],
+      [
+        "About"
+      ],
+      [
+        "Câu hỏi xét thành viên"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Bài ghim",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Bài ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Lĩnh vực": [
       "Phi lợi nhuận"
     ],
@@ -146,6 +400,32 @@
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Lĩnh vực": [
       "Phi lợi nhuận"
     ],
@@ -164,6 +444,32 @@
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Lĩnh vực": [
       "Phi lợi nhuận"
     ],
@@ -180,6 +486,97 @@
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Album ảnh",
+        "Mô tả album"
+      ],
+      [
+        "Album ảnh",
+        "Bình luận"
+      ],
+      [
+        "Video",
+        "Mô tả video"
+      ],
+      [
+        "Video",
+        "QR trong video"
+      ],
+      [
+        "Video",
+        "Chữ trong video"
+      ],
+      [
+        "Video",
+        "Bình luận"
+      ],
+      [
+        "Bio"
+      ],
+      [
+        "About"
+      ],
+      [
+        "Website"
+      ],
+      [
+        "Ảnh đại diện",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "Bình luận"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Bài ghim",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Bài ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
     "id": "A"
@@ -391,6 +788,19 @@
     "Loại nền tảng": "Website",
     "URL": "https://lyminhnhat.com/",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Trang chủ"
+      ]
+    ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
     "id": "P"
@@ -406,6 +816,14 @@
     "Loại nền tảng": "Email",
     "URL": "mailto:ganuongphap@gmail.com",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Nội dung email"
+      ],
+      [
+        "Chữ ký"
+      ]
+    ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "ganu",
     "id": "Q"
@@ -421,6 +839,14 @@
     "Loại nền tảng": "Email",
     "URL": "mailto:lyminhnhat911@gmail.com",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Nội dung email"
+      ],
+      [
+        "Chữ ký"
+      ]
+    ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
     "id": "R"
@@ -435,6 +861,78 @@
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Album ảnh",
+        "Mô tả album"
+      ],
+      [
+        "Album ảnh",
+        "Bình luận"
+      ],
+      [
+        "Video",
+        "Mô tả video"
+      ],
+      [
+        "Video",
+        "QR trong video"
+      ],
+      [
+        "Video",
+        "Chữ trong video"
+      ],
+      [
+        "Video",
+        "Bình luận"
+      ],
+      [
+        "About"
+      ],
+      [
+        "Câu hỏi xét thành viên"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Bài ghim",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Bài ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "chimsáo",
     "id": "S"
@@ -449,6 +947,78 @@
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Album ảnh",
+        "Mô tả album"
+      ],
+      [
+        "Album ảnh",
+        "Bình luận"
+      ],
+      [
+        "Video",
+        "Mô tả video"
+      ],
+      [
+        "Video",
+        "QR trong video"
+      ],
+      [
+        "Video",
+        "Chữ trong video"
+      ],
+      [
+        "Video",
+        "Bình luận"
+      ],
+      [
+        "About"
+      ],
+      [
+        "Câu hỏi xét thành viên"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Bài ghim",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Bài ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "vđqc",
     "id": "T"
@@ -463,6 +1033,78 @@
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Album ảnh",
+        "Mô tả album"
+      ],
+      [
+        "Album ảnh",
+        "Bình luận"
+      ],
+      [
+        "Video",
+        "Mô tả video"
+      ],
+      [
+        "Video",
+        "QR trong video"
+      ],
+      [
+        "Video",
+        "Chữ trong video"
+      ],
+      [
+        "Video",
+        "Bình luận"
+      ],
+      [
+        "About"
+      ],
+      [
+        "Câu hỏi xét thành viên"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Bài ghim",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Bài ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "bpd",
     "id": "U"
@@ -477,6 +1119,78 @@
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Album ảnh",
+        "Mô tả album"
+      ],
+      [
+        "Album ảnh",
+        "Bình luận"
+      ],
+      [
+        "Video",
+        "Mô tả video"
+      ],
+      [
+        "Video",
+        "QR trong video"
+      ],
+      [
+        "Video",
+        "Chữ trong video"
+      ],
+      [
+        "Video",
+        "Bình luận"
+      ],
+      [
+        "About"
+      ],
+      [
+        "Câu hỏi xét thành viên"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Bài ghim",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Bài ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "triếtphươngđông",
     "id": "V"
@@ -491,6 +1205,78 @@
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Album ảnh",
+        "Mô tả album"
+      ],
+      [
+        "Album ảnh",
+        "Bình luận"
+      ],
+      [
+        "Video",
+        "Mô tả video"
+      ],
+      [
+        "Video",
+        "QR trong video"
+      ],
+      [
+        "Video",
+        "Chữ trong video"
+      ],
+      [
+        "Video",
+        "Bình luận"
+      ],
+      [
+        "About"
+      ],
+      [
+        "Câu hỏi xét thành viên"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Bài ghim",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Bài ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "nhậnthứcphứchợp",
     "id": "W"
@@ -505,6 +1291,78 @@
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Album ảnh",
+        "Mô tả album"
+      ],
+      [
+        "Album ảnh",
+        "Bình luận"
+      ],
+      [
+        "Video",
+        "Mô tả video"
+      ],
+      [
+        "Video",
+        "QR trong video"
+      ],
+      [
+        "Video",
+        "Chữ trong video"
+      ],
+      [
+        "Video",
+        "Bình luận"
+      ],
+      [
+        "About"
+      ],
+      [
+        "Câu hỏi xét thành viên"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Bài ghim",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Bài ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "giácquankèm",
     "id": "X"
@@ -520,6 +1378,97 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://www.facebook.com/quacau.sphere",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Album ảnh",
+        "Mô tả album"
+      ],
+      [
+        "Album ảnh",
+        "Bình luận"
+      ],
+      [
+        "Video",
+        "Mô tả video"
+      ],
+      [
+        "Video",
+        "QR trong video"
+      ],
+      [
+        "Video",
+        "Chữ trong video"
+      ],
+      [
+        "Video",
+        "Bình luận"
+      ],
+      [
+        "Bio"
+      ],
+      [
+        "About"
+      ],
+      [
+        "Website"
+      ],
+      [
+        "Ảnh đại diện",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "Bình luận"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Bài ghim",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Bài ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "pagefbQC",
     "id": "Y"
@@ -535,6 +1484,97 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://www.facebook.com/qua.cau.the.sphere",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Album ảnh",
+        "Mô tả album"
+      ],
+      [
+        "Album ảnh",
+        "Bình luận"
+      ],
+      [
+        "Video",
+        "Mô tả video"
+      ],
+      [
+        "Video",
+        "QR trong video"
+      ],
+      [
+        "Video",
+        "Chữ trong video"
+      ],
+      [
+        "Video",
+        "Bình luận"
+      ],
+      [
+        "Bio"
+      ],
+      [
+        "About"
+      ],
+      [
+        "Website"
+      ],
+      [
+        "Ảnh đại diện",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "Bình luận"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Bài ghim",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Bài ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "profilefbQC",
     "id": "Z"
@@ -562,6 +1602,30 @@
     "Tên nền tảng": "YouTube",
     "Loại nền tảng": "Diễn đàn",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "About"
+      ],
+      [
+        "Links"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "b"
   },
@@ -576,6 +1640,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "c"
   },
@@ -590,6 +1668,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/CW-doi-thoai",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "d"
   },
@@ -604,6 +1696,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/CW-obsidian-quan-ly-du-an-va-cong-cu-nghi",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "e"
   },
@@ -618,6 +1724,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/CW-xu-ly-du-lieu-va-lap-trinh",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "f"
   },
@@ -632,6 +1752,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/CV-obsidian-quan-ly-du-an-va-cong-cu-nghi",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "g"
   },
@@ -646,6 +1780,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/EV-HeavyT",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "h"
   },
@@ -660,6 +1808,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/FV-khoa-hoc-xa-hoi",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "i"
   },
@@ -674,6 +1836,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/LandofSpheres",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "j"
   },
@@ -688,6 +1864,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/CV-tiep-thi-so-xu-ly-du-lieu-va-lap-trinh",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "k"
   },
@@ -702,6 +1892,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/tran-ky",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "l"
   },
@@ -716,6 +1920,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/tranky-test",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "m"
   },
@@ -730,6 +1948,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/meetup-ticketbox-to-google-calendar",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "n"
   },
@@ -744,6 +1976,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/EW-heavyT",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "o"
   },
@@ -758,6 +2004,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/ObsidianPulisherTest",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "p"
   },
@@ -772,6 +2032,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/belief-network",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "q"
   },
@@ -786,6 +2060,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/DV-phat-trien-ban-than",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "r"
   },
@@ -800,6 +2088,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/NeedExchange",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "s"
   },
@@ -814,6 +2116,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/DW-phat-trien-ban-than",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "t"
   },
@@ -828,6 +2144,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "http://quacau-thesphere.github.io/",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "u"
   },
@@ -842,6 +2172,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/ONB",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "v"
   },
@@ -856,6 +2200,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/Buoc-Chan",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "w"
   },
@@ -870,6 +2228,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/LOS-Installer",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "x"
   },
@@ -884,6 +2256,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/Ca-nhan-khac",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "y"
   },
@@ -898,6 +2284,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/SampleVault",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "z"
   },
@@ -912,6 +2312,20 @@
     "Loại nền tảng": "Diễn đàn",
     "URL": "https://github.com/QuaCau-TheSphere/Graphvidian",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Website"
+      ],
+      [
+        "Readme"
+      ],
+      [
+        "Thảo luận"
+      ],
+      [
+        "Vấn đề"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "-"
   },
@@ -927,6 +2341,32 @@
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "bpd",
     "id": "_"
@@ -943,6 +2383,32 @@
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "triếtphươngđông",
     "id": "10"
@@ -959,6 +2425,32 @@
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "nhậnthứcphứchợp",
     "id": "11"
@@ -976,6 +2468,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "12"
@@ -993,6 +2514,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "13"
@@ -1012,6 +2562,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "14"
@@ -1031,6 +2610,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "15"
@@ -1048,6 +2656,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "16"
@@ -1065,6 +2702,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "17"
@@ -1084,6 +2750,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "18"
@@ -1103,6 +2798,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "19"
@@ -1122,6 +2846,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1A"
@@ -1141,6 +2894,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1B"
@@ -1160,6 +2942,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1C"
@@ -1179,6 +2990,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1D"
@@ -1198,6 +3038,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1E"
@@ -1217,6 +3086,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1F"
@@ -1234,6 +3132,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1G"
@@ -1251,6 +3178,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1H"
@@ -1268,6 +3224,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1I"
@@ -1287,6 +3272,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1J"
@@ -1306,6 +3320,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1K"
@@ -1325,6 +3368,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1L"
@@ -1344,6 +3416,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1M"
@@ -1360,6 +3461,32 @@
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "bpd",
     "id": "1N"
@@ -1376,6 +3503,32 @@
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "triếtphươngđông",
     "id": "1O"
@@ -1392,6 +3545,32 @@
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "nhậnthứcphứchợp",
     "id": "1P"
@@ -1409,6 +3588,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1Q"
@@ -1426,6 +3634,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1R"
@@ -1445,6 +3682,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1S"
@@ -1464,6 +3730,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1T"
@@ -1481,6 +3776,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1U"
@@ -1498,6 +3822,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1V"
@@ -1517,6 +3870,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1W"
@@ -1536,6 +3918,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1X"
@@ -1555,6 +3966,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1Y"
@@ -1574,6 +4014,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1Z"
@@ -1593,6 +4062,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1a"
@@ -1612,6 +4110,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1b"
@@ -1631,6 +4158,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1c"
@@ -1650,6 +4206,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1d"
@@ -1667,6 +4252,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1e"
@@ -1684,6 +4298,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1f"
@@ -1701,6 +4344,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1g"
@@ -1720,6 +4392,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1h"
@@ -1739,6 +4440,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1i"
@@ -1758,6 +4488,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1j"
@@ -1777,6 +4536,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1k"
@@ -1793,6 +4581,32 @@
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "bpd",
     "id": "1l"
@@ -1809,6 +4623,32 @@
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "triếtphươngđông",
     "id": "1m"
@@ -1825,6 +4665,32 @@
     "Tên nền tảng": "Messenger",
     "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "nhậnthứcphứchợp",
     "id": "1n"
@@ -1842,6 +4708,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1o"
@@ -1859,6 +4754,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1p"
@@ -1878,6 +4802,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1q"
@@ -1897,6 +4850,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1r"
@@ -1914,6 +4896,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1s"
@@ -1931,6 +4942,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1t"
@@ -1950,6 +4990,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1u"
@@ -1969,6 +5038,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1v"
@@ -1988,6 +5086,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1w"
@@ -2007,6 +5134,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1x"
@@ -2026,6 +5182,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1y"
@@ -2045,6 +5230,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1z"
@@ -2064,6 +5278,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1-"
@@ -2083,6 +5326,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "1_"
@@ -2100,6 +5372,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "20"
@@ -2117,6 +5418,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "21"
@@ -2134,6 +5464,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "22"
@@ -2153,6 +5512,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "23"
@@ -2172,6 +5560,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "24"
@@ -2191,6 +5608,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "25"
@@ -2210,6 +5656,35 @@
     "Loại nền tảng": "Chat",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC",
     "id": "26"
@@ -2319,6 +5794,19 @@
     "Loại nền tảng": "Website",
     "URL": "https://xn--qucu-hr5aza.cc/",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Trang chủ"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "trangchủQC",
     "id": "2E"
@@ -2334,6 +5822,19 @@
     "Loại nền tảng": "Website",
     "URL": "https://obsidian.xn--qucu-hr5aza.cc/",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Trang chủ"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "obsidianQC",
     "id": "2F"
@@ -2349,6 +5850,19 @@
     "Loại nền tảng": "Website",
     "URL": "https://xn--lptrnh-zva6402d.xn--qucu-hr5aza.cc/",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Trang chủ"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "lậptrìnhQC",
     "id": "2G"
@@ -2364,6 +5878,19 @@
     "Loại nền tảng": "Website",
     "URL": "https://doi-thoai.deno.dev/",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Trang chủ"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "đốithoại",
     "id": "2H"
@@ -2379,6 +5906,19 @@
     "Loại nền tảng": "Website",
     "URL": "https://tranky.deno.dev/",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Trang chủ"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "trấnkỳ",
     "id": "2I"
@@ -2394,6 +5934,14 @@
     "Loại nền tảng": "Email",
     "URL": "mailto:quacau.thesphere@gmail.com",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Nội dung email"
+      ],
+      [
+        "Chữ ký"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "emailQC",
     "id": "2J"
@@ -2408,6 +5956,78 @@
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Album ảnh",
+        "Mô tả album"
+      ],
+      [
+        "Album ảnh",
+        "Bình luận"
+      ],
+      [
+        "Video",
+        "Mô tả video"
+      ],
+      [
+        "Video",
+        "QR trong video"
+      ],
+      [
+        "Video",
+        "Chữ trong video"
+      ],
+      [
+        "Video",
+        "Bình luận"
+      ],
+      [
+        "About"
+      ],
+      [
+        "Câu hỏi xét thành viên"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Bài ghim",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Bài ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "UAN",
     "Slug": "uan",
     "id": "2K"
@@ -2423,6 +6043,32 @@
     "Tên nền tảng": "Telegram",
     "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "UAN",
     "Slug": "uan",
     "id": "2L"
@@ -2438,6 +6084,32 @@
     "Tên nền tảng": "Telegram",
     "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "UAN",
     "Slug": "uan",
     "id": "2M"
