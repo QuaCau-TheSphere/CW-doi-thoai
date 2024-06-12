@@ -4,14 +4,15 @@ import isURL from "npm:validator/lib/isURL.js";
 import isEmail from "npm:validator/lib/isEmail.js";
 import { lấyURLChínhTắc } from "./Hàm và kiểu cho HTML và dữ liệu meta.ts";
 
-export type UrlStringChưaChínhTắc = string | URL;
-export type UrlStringChínhTắc = URL;
+export type UrlChưaChínhTắc = string | URL;
+export type UrlChínhTắc = URL;
+export type Url = UrlChưaChínhTắc | UrlChínhTắc;
 
 /**
  * @param đểDấuCáchTrongLiênKết mặc định là false để tạo markdown cho dễ
  */
 export function xửLýPunycode(
-  encodedUrl: UrlStringChưaChínhTắc | undefined,
+  encodedUrl: UrlChưaChínhTắc | undefined,
   đểDấuCáchTrongLiênKết: boolean = false,
 ): string | undefined {
   if (!encodedUrl) return undefined;

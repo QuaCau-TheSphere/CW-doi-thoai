@@ -13,7 +13,7 @@ import {
   ĐườngDẫnTuyệtĐối,
   ĐườngDẫnTươngĐối,
 } from "../ĐƯỜNG_DẪN.ts";
-import { UrlStringChưaChínhTắc } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL.ts";
+import { UrlChưaChínhTắc } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL.ts";
 
 async function cóThưMụcObsidianBênTrong(thưMục: string) {
   try {
@@ -101,7 +101,7 @@ export async function tạoDanhSáchĐườngDẫnTấtCảCácBàiĐăngTrongVa
 function xácĐịnhURLCủaGhiChú(
   đườngDẫnTớiGhiChú: ĐườngDẫnTuyệtĐối,
   đườngDẫnTớiVault: ĐườngDẫnTuyệtĐối,
-  urlVault: UrlStringChưaChínhTắc,
+  urlVault: UrlChưaChínhTắc,
 ) {
   const đườngDẫnTươngĐốiCủaGhiChúTrongVault: ĐườngDẫnTươngĐối = đườngDẫnTớiGhiChú.replace(đườngDẫnTớiVault, "");
   const tênTậpTin = basename(đườngDẫnTớiGhiChú, ".md");

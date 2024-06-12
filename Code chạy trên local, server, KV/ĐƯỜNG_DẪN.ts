@@ -23,6 +23,7 @@ export const TẬP_TIN_CSV: ĐườngDẫnTươngĐối = "Cấu hình và dữ 
 export const TẬP_TIN_CẤU_HÌNH_CHUNG: ĐườngDẫnTươngĐối = "Cấu hình và dữ liệu/Nơi đăng/Cấu hình chung.yaml";
 export const THƯ_MỤC_CẤU_HÌNH_NƠI_ĐĂNG: ĐườngDẫnTươngĐối = "Cấu hình và dữ liệu/Nơi đăng";
 
-/** Dữ liệu đã được xử lý trước */
-export const TẬP_TIN_DANH_SÁCH_BÀI_ĐĂNG: ĐườngDẫnTươngĐối = "Cấu hình và dữ liệu/Bài đăng/Danh sách bài đăng tạo trên local.json";
-export const TẬP_TIN_DANH_SÁCH_NƠI_ĐĂNG: ĐườngDẫnTươngĐối = "Cấu hình và dữ liệu/Nơi đăng/Danh sách nơi đăng tạo trên local.json";
+/** Dữ liệu đã được xử lý trước (cache) */
+export const TẬP_TIN_DANH_SÁCH_BÀI_ĐĂNG: ĐườngDẫnTươngĐối = "Cấu hình và dữ liệu/Danh sách bài đăng tạo trên local.json";
+export const TẬP_TIN_DANH_SÁCH_NƠI_ĐĂNG: ĐườngDẫnTươngĐối = "Cấu hình và dữ liệu/Danh sách nơi đăng tạo trên local.json";
+export const TẬP_TIN_CACHE_HTML: ĐườngDẫnTươngĐối = "Cấu hình và dữ liệu/Cache HTML.json";

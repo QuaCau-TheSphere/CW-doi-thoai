@@ -1,5 +1,5 @@
 /** Chỉ có những biến có từ cấu hình trong tên là dành cho cấu hình, còn lại là dành cho kết quả là vật thể nơi đăng */
-import { UrlStringChưaChínhTắc } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL.ts";
+import { UrlChưaChínhTắc } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL.ts";
 import { DanhSáchVịTríCóThểĐăng } from "./Hàm và kiểu cho vị trí.ts";
 import { OneKey } from "../Kiểu hỗ trợ.ts";
 
@@ -57,7 +57,7 @@ export interface ThôngTinNơiĐăng {
   "Tên nền tảng": TênNềnTảng;
   "Loại nơi đăng": LoạiNơiĐăng;
   "Tên nơi đăng": TênNơiĐăng;
-  URL?: UrlStringChưaChínhTắc;
+  URL?: UrlChưaChínhTắc;
   "Lĩnh vực"?: string[];
   "Mô tả nơi đăng"?: string | null;
   "Slug"?: string;

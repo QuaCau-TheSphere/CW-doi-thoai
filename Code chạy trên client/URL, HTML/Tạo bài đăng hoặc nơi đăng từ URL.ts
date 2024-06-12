@@ -15,7 +15,7 @@ import {
   tạoNơiĐăngCóCácLựaChọnVịTrí,
 } from "../../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
 import { tạoSlugBàiĐăng } from "../Chuỗi, slug/Tạo slug.ts";
-import { UrlStringChưaChínhTắc } from "./Hàm và kiểu cho URL.ts";
+import { UrlChưaChínhTắc } from "./Hàm và kiểu cho URL.ts";
 import {
   cóTênNềnTảngTrongHostname,
   lấyLĩnhVực,
@@ -78,7 +78,7 @@ function tạoThôngTinNơiĐăngTừURL(url: URL) {
  * @param [slug=undefined] nếu là undefined nghĩa là URL là do người dùng nhập chứ không phải được khai báo sẵn, nên từ đầu đã không có slug
  */
 export async function tạoNơiĐăngTừURL(
-  urlString: UrlStringChưaChínhTắc,
+  urlString: UrlChưaChínhTắc,
   slug: string | undefined,
   HTML: string | undefined = undefined,
 ): Promise<Omit<NơiĐăngCóCácLựaChọnVịTríChưaCóId, "Phương thức tạo">> {
@@ -105,7 +105,7 @@ export async function tạoNơiĐăngTừURL(
 }
 
 export async function tạoBàiĐăngTừURL(
-  urlString: UrlStringChưaChínhTắc,
+  urlString: UrlChưaChínhTắc,
   HTML: string | undefined = undefined,
 ): Promise<BàiĐăngChưaCóIdVàPhươngThứcTạo> {
   console.info("Tạo bài đăng mới từ URL:", urlString.toString());

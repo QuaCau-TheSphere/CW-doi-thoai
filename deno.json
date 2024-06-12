@@ -8,7 +8,6 @@
     "build": "deno run -A --unstable-kv dev.ts build",
     "preview": "deno run -A --unstable-kv main.ts",
     "update": "deno run -A --unstable-kv -r https://fresh.deno.dev/update .",
-    "kv": "deno run -A --unstable-kv --watch '.\\Xử lý KV.ts'",
     "test": "deno run -A --unstable-kv --watch "
   },
   "lint": {

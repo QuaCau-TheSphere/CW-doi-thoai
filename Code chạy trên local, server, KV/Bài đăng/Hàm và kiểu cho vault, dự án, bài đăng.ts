@@ -1,4 +1,4 @@
-import { UrlStringChưaChínhTắc } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL.ts";
+import { UrlChưaChínhTắc } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL.ts";
 import { ĐườngDẫnTuyệtĐối } from "../ĐƯỜNG_DẪN.ts";
 
 /** Vault */
@@ -7,7 +7,7 @@ export type MãVault = string;
 export interface Vault {
   "Tên vault": TênVault;
   "Mã vault": MãVault;
-  URL: UrlStringChưaChínhTắc;
+  URL: UrlChưaChínhTắc;
   "Nơi lưu vault": ĐườngDẫnTuyệtĐối;
   "Mô tả vault"?: string;
 }
@@ -41,7 +41,7 @@ export type PhươngThứcTạoBàiĐăng = "Cào vault" | "Cào web" | "Nhập 
 
 export interface BàiĐăng {
   "Tiêu đề": string;
-  URL: UrlStringChưaChínhTắc;
+  URL: UrlChưaChínhTắc;
   "Dự án"?: DựÁn;
   "Kho thông tin"?: string;
   "Slug"?: string;
