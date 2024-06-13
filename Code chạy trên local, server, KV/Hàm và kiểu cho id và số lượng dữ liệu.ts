@@ -1,5 +1,5 @@
 import { viếtHoa } from "../Code chạy trên client/Chuỗi, slug/Hàm xử lý chuỗi.ts";
-import { TênDanhSách } from "../Code chạy trên client/URL, HTML/Hàm và kiểu cho khung nhập.ts";
+import { TênDanhSách } from "../Code chạy trên client/Hàm và kiểu cho khung nhập.ts";
 import { PhươngThứcTạoBàiĐăng } from "./Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import { PhươngThứcTạoNơiĐăng } from "./Nơi đăng/Kiểu cho nơi đăng.ts";
 import { kvGet, kvSet } from "./Hàm cho KV.ts";

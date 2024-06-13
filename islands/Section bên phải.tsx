@@ -3,7 +3,7 @@ import { VậtThểKhác } from "../components/Thông tin vật thể tiếp th�
 import KhungThôngTinKhiKhôngCóKếtQuả from "../components/Phần giới thiệu ở trang chủ khi chưa tạo kết quả.tsx";
 import { ThamSốUTM } from "../Code chạy trên client/Tham số UTM và liên kết rút gọn/Kiểu cho tham số UTM.ts";
 import { VậtThểTiếpThị } from "../Code chạy trên client/Hàm và kiểu cho vật thể tiếp thị.ts";
-import { xửLýPunycode } from "../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL.ts";
+import { xửLýPunycode } from "../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL và fetch.ts";
 
 export default function SectionBênPhải({ textTrangChủ }: { textTrangChủ: string }) {
   return (

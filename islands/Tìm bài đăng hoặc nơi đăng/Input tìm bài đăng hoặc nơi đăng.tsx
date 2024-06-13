@@ -7,7 +7,7 @@ import {
   MụcĐượcChọn,
   TênDanhSách,
   đổiKhungNhập,
-} from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho khung nhập.ts";
+} from "../../Code chạy trên client/Hàm và kiểu cho khung nhập.ts";
 import { kiểuKebab, viếtHoa } from "../../Code chạy trên client/Chuỗi, slug/Hàm xử lý chuỗi.ts";
 
 function handleInput(

@@ -1,9 +1,10 @@
-import { táchUrlHoặcEmailĐầuTiênTrongChuỗi } from "../URL, HTML/Hàm và kiểu cho URL.ts";
-import { lấyUsername } from "../URL, HTML/Hàm và kiểu cho HTML và dữ liệu meta.ts";
+import { táchUrlHoặcEmailĐầuTiênTrongChuỗi, Url } from "../URL, HTML/Hàm và kiểu cho URL và fetch.ts";
+import { lấyUsername } from "../URL, HTML/Hàm và kiểu cho dữ liệu meta.ts";
 import {
   danhSáchDiễnĐàn,
   danhSáchNềnTảngChat,
   ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo,
+  TênNơiĐăng,
 } from "../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
 import CấuHìnhNơiĐăng from "../../Code chạy trên local, server, KV/Hàm và kiểu cho cấu hình.ts";
 
@@ -39,13 +40,10 @@ export async function tạoTừĐiểnSlugNơiĐăng(cấuHìnhSlug: CấuHìnhN
  * @param [từĐiểnSlugNơiĐăng=undefined] nếu là undefined nghĩa là URL là do người dùng nhập chứ không phải được khai báo sẵn, nên từ đầu đã không có từ điển slug. Lúc này trả về tên nơi đăng dạng kebab
  */
 export function tạoSlugNơiĐăng(
-  nơiĐăng: Omit<ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo, "Slug">,
+  tênNơiĐăng: TênNơiĐăng,
+  url: Url,
   từĐiểnSlugNơiĐăng: TừĐiểnSlugNơiĐăng,
 ): string | undefined {
-  const {
-    "Tên nơi đăng": tênNơiĐăng,
-    URL: url,
-  } = nơiĐăng;
   if (url) {
     const slug = từĐiểnSlugNơiĐăng.get(url.toString());
     if (slug) return slug;

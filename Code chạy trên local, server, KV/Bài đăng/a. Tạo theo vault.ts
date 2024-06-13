@@ -13,7 +13,7 @@ import {
   ĐườngDẫnTuyệtĐối,
   ĐườngDẫnTươngĐối,
 } from "../ĐƯỜNG_DẪN.ts";
-import { UrlChưaChínhTắc } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL.ts";
+import { UrlChưaChínhTắc } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL và fetch.ts";
 
 async function cóThưMụcObsidianBênTrong(thưMục: string) {
   try {

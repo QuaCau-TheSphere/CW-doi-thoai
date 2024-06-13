@@ -1,5 +1,5 @@
 import { signal } from "@preact/signals";
-import { Cursor } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho khung nhập.ts";
+import { Cursor } from "../../Code chạy trên client/Hàm và kiểu cho khung nhập.ts";
 
 export const queryBàiĐăngSignal = signal<string | undefined>(undefined);
 export const queryNơiĐăngSignal = signal<string | undefined>(undefined);

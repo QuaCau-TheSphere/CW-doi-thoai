@@ -1,6 +1,6 @@
 import { tạoBàiĐăngTừURL, tạoNơiĐăngTừURL } from "./URL, HTML/Tạo bài đăng hoặc nơi đăng từ URL.ts";
 import { assertObjectMatch } from "https://deno.land/std@0.216.0/assert/assert_object_match.ts";
-import { lấyMetaTagVàTạoDocument, lấyURLChínhTắc } from "./URL, HTML/Hàm và kiểu cho HTML và dữ liệu meta.ts";
+import { lấyMetaTagVàTạoDocument, lấyURLChínhTắc } from "./URL, HTML/Hàm và kiểu cho dữ liệu meta.ts";
 import { ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo } from "../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
 import { assertEquals } from "https://deno.land/std@0.216.0/assert/assert_equals.ts";
 import { BàiĐăngChưaCóIdVàPhươngThứcTạo } from "../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";

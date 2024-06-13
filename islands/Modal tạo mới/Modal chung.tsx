@@ -4,7 +4,7 @@ import ModalNơiĐăng from "./Modal nơi đăng.tsx";
 import { element } from "../Signals tổng.ts";
 import { ghiBàiĐăngHoặcNơiĐăngTạoMớiLênKv } from "../../Code chạy trên client/Hàm và kiểu cho API server.ts";
 import { NơiĐăngCóCácLựaChọnVịTríChưaCóId } from "../../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
-import { MụcĐượcChọn, TênDanhSách, đổiKhungNhập } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho khung nhập.ts";
+import { MụcĐượcChọn, TênDanhSách, đổiKhungNhập } from "../../Code chạy trên client/Hàm và kiểu cho khung nhập.ts";
 import { BàiĐăngChưaCóId } from "../../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 
 async function handleSubmit(

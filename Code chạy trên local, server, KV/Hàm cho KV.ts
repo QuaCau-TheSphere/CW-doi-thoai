@@ -2,7 +2,7 @@ import sizeof from "npm:object-sizeof";
 import { kvSignal, readUnitSignal, writeUnitSignal } from "./Signal KV.ts";
 import { ThôngTinNơiĐăng, ThôngTinNơiĐăngChưaCóId } from "./Nơi đăng/Kiểu cho nơi đăng.ts";
 import { BàiĐăng, BàiĐăngChưaCóId } from "./Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
-import { TênDanhSách } from "../Code chạy trên client/URL, HTML/Hàm và kiểu cho khung nhập.ts";
+import { TênDanhSách } from "../Code chạy trên client/Hàm và kiểu cho khung nhập.ts";
 
 const cssIncrease = "color: blue; font-style: bold; border: solid blue";
 

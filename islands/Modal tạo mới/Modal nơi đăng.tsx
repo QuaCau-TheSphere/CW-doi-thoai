@@ -1,7 +1,7 @@
 import * as linkify from "npm:linkifyjs";
 import { useEffect, useState } from "preact/hooks";
 import { queryNơiĐăngSignal } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
-import { tạoUrlCorsProxy } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL.ts";
+import { lấyHTML } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL và fetch.ts";
 import { tạoNơiĐăngTừURL } from "../../Code chạy trên client/URL, HTML/Tạo bài đăng hoặc nơi đăng từ URL.ts";
 import { tạoNơiĐăngCóCácLựaChọnVịTrí } from "../../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
 import { NơiĐăngCóCácLựaChọnVịTríChưaCóId } from "../../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
@@ -31,8 +31,7 @@ export default function ModalNơiĐăng() {
       const type = linkĐầuTiên.type;
       if (type === "url" && !linkĐầuTiên?.value.startsWith("mailto:")) {
         const urlNgườiDùngNhập = linkĐầuTiên.href;
-        const urlCorsProxy = tạoUrlCorsProxy(urlNgườiDùngNhập);
-        const html = await (await fetch(urlCorsProxy)).text();
+        const html = await lấyHTML(urlNgườiDùngNhập);
         setNơiĐăng({
           ...await tạoNơiĐăngTừURL(urlNgườiDùngNhập, undefined, html),
           "Phương thức tạo": "Nhập tay trên web",
@@ -72,7 +71,7 @@ export default function ModalNơiĐăng() {
         Slug: slug,
         "Mô tả nơi đăng": môTảNơiĐăng,
       } = nơiĐăng;
-      setUrlHoặcEmail(urlHoặcEmail?.toString());
+      setUrlHoặcEmail(urlHoặcEmail?.toString() || "⌛Đang tải dữ liệu...");
       setTênNơiĐăng(tênNơiĐăng?.join(", "));
       setSlug(slug);
       setMôTảNơiĐăng(môTảNơiĐăng);

@@ -11,7 +11,7 @@ import {
   FlexSearchBàiĐăngHoặcNơiĐăng,
   MụcĐượcChọn,
   TênDanhSách,
-} from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho khung nhập.ts";
+} from "../../Code chạy trên client/Hàm và kiểu cho khung nhập.ts";
 import { kiểuKebab } from "../../Code chạy trên client/Chuỗi, slug/Hàm xử lý chuỗi.ts";
 import { BàiĐăng } from "../../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";

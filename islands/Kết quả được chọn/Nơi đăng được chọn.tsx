@@ -2,7 +2,7 @@ import { NơiĐăngCóCácLựaChọnVịTrí, NơiĐăngCóMộtVịTríCụTh�
 import { nơiĐăngCóCácLựaChọnVịTríSignal, nơiĐăngCóMộtVịTríCụThểSignal, vịTríString } from "../Signals tổng.ts";
 import { tạoLoạiNơiĐăngString, tạoTênNơiĐăngString, tạoVịTríString } from "../../Code chạy trên client/Chuỗi, slug/Hàm xử lý chuỗi.ts";
 import { làCùngNơiĐăng, ThôngTinNơiĐăng } from "../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
-import { xửLýPunycode } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL.ts";
+import { xửLýPunycode } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL và fetch.ts";
 
 /** Từ NơiĐăngCóCácLựaChọnVịTrí và vịTríĐượcChọn, tạo NơiĐăngCóMộtVịTríCụThể*/
 export function tạoNơiĐăngCóMộtVịTríCụThể(vịTríĐượcChọn: VịTrí | string, nơiĐăng: NơiĐăngCóCácLựaChọnVịTrí): NơiĐăngCóMộtVịTríCụThể {

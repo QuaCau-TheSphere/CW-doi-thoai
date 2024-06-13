@@ -27,3 +27,4 @@ export const THƯ_MỤC_CẤU_HÌNH_NƠI_ĐĂNG: ĐườngDẫnTươngĐối = "
 export const TẬP_TIN_DANH_SÁCH_BÀI_ĐĂNG: ĐườngDẫnTươngĐối = "Cấu hình và dữ liệu/Danh sách bài đăng tạo trên local.json";
 export const TẬP_TIN_DANH_SÁCH_NƠI_ĐĂNG: ĐườngDẫnTươngĐối = "Cấu hình và dữ liệu/Danh sách nơi đăng tạo trên local.json";
 export const TẬP_TIN_CACHE_HTML: ĐườngDẫnTươngĐối = "Cấu hình và dữ liệu/Cache HTML.json";
+export const TẬP_TIN_CACHE_URL_CHÍNH_TẮC: ĐườngDẫnTươngĐối = "Cấu hình và dữ liệu/Cache URL chính tắc.json";

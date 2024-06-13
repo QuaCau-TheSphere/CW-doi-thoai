@@ -115,6 +115,7 @@ export interface NơiĐăngCóCácLựaChọnVịTrí extends ThôngTinNơiĐăn
 export interface NơiĐăngCóCácLựaChọnVịTríChưaCóId extends ThôngTinNơiĐăngChưaCóId {
   "Vị trí có thể đăng": DanhSáchVịTríCóThểĐăng;
 }
+export type NơiĐăngCóCácLựaChọnVịTríChưaCóIdVàPhươngThứcTạo = Omit<NơiĐăngCóCácLựaChọnVịTríChưaCóId, "Phương thức tạo">;
 /** Tên cũ: NơiĐăngĐãXácĐịnhVịTrí */
 export interface NơiĐăngCóMộtVịTríCụThể extends ThôngTinNơiĐăng {
   "Vị trí": VịTrí;
@@ -122,7 +123,7 @@ export interface NơiĐăngCóMộtVịTríCụThể extends ThôngTinNơiĐăng
 
 export function tạoNơiĐăngCóCácLựaChọnVịTrí(
   thôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo,
-): Omit<NơiĐăngCóCácLựaChọnVịTríChưaCóId, "Phương thức tạo"> {
+): NơiĐăngCóCácLựaChọnVịTríChưaCóIdVàPhươngThứcTạo {
   let danhSáchVịTríCóThểĐăng: DanhSáchVịTríCóThểĐăng = [];
   const {
     "Vị trí đặt liên kết ở nơi đăng": danhSáchVậtThểCấuHìnhVịTrí,

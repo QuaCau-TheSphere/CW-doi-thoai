@@ -7,20 +7,22 @@ import { cậpNhậtSốLượngĐuôiRútGọn } from "../../Code chạy trên 
 export const handler: Handlers = {
   /** Người dùng truy cập để tới liên kết thực sự */
   async GET(req, ctx) {
-    const đuôiRútGọn = decodeURIComponent(ctx.params.slug);
-    console.log("Đuôi rút gọn được truy cập:", đuôiRútGọn);
-    const key = ["Đuôi rút gọn", đuôiRútGọn];
-    const vậtThểTiếpThị = (await kvGet(key, "GET hander trong cors proxy")).value as VậtThểTiếpThị;
-    const headers = req.headers;
+    const slug = ctx.params.slug;
+    if (!["renderer.js.map", "installHook.js.map"].includes(slug)) {
+      const đuôiRútGọn = decodeURIComponent(slug);
+      console.log("Đuôi rút gọn được truy cập:", đuôiRútGọn);
+      const key = ["Đuôi rút gọn", đuôiRútGọn];
+      const vậtThểTiếpThị = (await kvGet(key, "GET hander trong routes\\[slug]\\index.ts")).value as VậtThểTiếpThị;
 
-    if (vậtThểTiếpThị) {
-      const liênKếtUTM = vậtThểTiếpThị["Liên kết UTM"];
-      thêmThờiĐiểmTruyCập(vậtThểTiếpThị, headers);
-      await kvSet(key, vậtThểTiếpThị, "GET handler trong routes\\[slug]\\index.ts");
-      await cậpNhậtSốLượngĐuôiRútGọn();
-      return Response.redirect(liênKếtUTM, 307);
-    } else {
-      return ctx.renderNotFound({ đuôiRútGọn: đuôiRútGọn });
+      if (vậtThểTiếpThị) {
+        const liênKếtUTM = vậtThểTiếpThị["Liên kết UTM"];
+        thêmThờiĐiểmTruyCập(vậtThểTiếpThị, req.headers);
+        await kvSet(key, vậtThểTiếpThị, "GET handler trong routes\\[slug]\\index.ts");
+        await cậpNhậtSốLượngĐuôiRútGọn();
+        return Response.redirect(liênKếtUTM, 307);
+      } else {
+        return ctx.renderNotFound({ đuôiRútGọn: đuôiRútGọn });
+      }
     }
   },
 

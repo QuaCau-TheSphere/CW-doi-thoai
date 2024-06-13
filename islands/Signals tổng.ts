@@ -2,7 +2,7 @@
 import FlexSearch from "npm:flexsearch";
 import { computed, effect, signal } from "@preact/signals";
 import { VậtThểTiếpThị } from "../Code chạy trên client/Hàm và kiểu cho vật thể tiếp thị.ts";
-import { ElementDùngTab } from "../Code chạy trên client/URL, HTML/Hàm và kiểu cho khung nhập.ts";
+import { ElementDùngTab } from "../Code chạy trên client/Hàm và kiểu cho khung nhập.ts";
 import { tìmVậtThểTiếpThịĐãCó } from "../Code chạy trên client/Hàm và kiểu cho API server.ts";
 import { CấuHìnhChung, ThôngTinCấuHìnhNơiĐăng } from "../Code chạy trên local, server, KV/Hàm và kiểu cho cấu hình.ts";
 import { NơiĐăngCóCácLựaChọnVịTrí, NơiĐăngCóMộtVịTríCụThể } from "../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";

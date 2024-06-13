@@ -1,5 +1,5 @@
 import { assertEquals } from "https://deno.land/std@0.216.0/assert/assert_equals.ts";
-import { xửLýPunycode } from "../URL, HTML/Hàm và kiểu cho URL.ts";
+import { xửLýPunycode } from "../URL, HTML/Hàm và kiểu cho URL và fetch.ts";
 
 Deno.test("https://xn--qucu-hr5aza.cc", () => {
   assertEquals(xửLýPunycode("https://xn--qucu-hr5aza.cc"), "https://quảcầu.cc");

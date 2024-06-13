@@ -11,11 +11,11 @@ import {
   TênNềnTảng,
 } from "../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
 import {
-  NơiĐăngCóCácLựaChọnVịTríChưaCóId,
+  NơiĐăngCóCácLựaChọnVịTríChưaCóIdVàPhươngThứcTạo,
   tạoNơiĐăngCóCácLựaChọnVịTrí,
 } from "../../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
 import { tạoSlugBàiĐăng } from "../Chuỗi, slug/Tạo slug.ts";
-import { UrlChưaChínhTắc } from "./Hàm và kiểu cho URL.ts";
+import { lấyURLChínhTắc, UrlChưaChínhTắc } from "./Hàm và kiểu cho URL và fetch.ts";
 import {
   cóTênNềnTảngTrongHostname,
   lấyLĩnhVực,
@@ -25,12 +25,11 @@ import {
   lấyNgàyTạo,
   lấyTitle,
   lấyTácGiả,
-  lấyURLChínhTắc,
   lấyĐơnVịQuảnLý,
   tạoTiêuĐề,
-} from "./Hàm và kiểu cho HTML và dữ liệu meta.ts";
+} from "./Hàm và kiểu cho dữ liệu meta.ts";
 
-function tạoThôngTinNơiĐăngTừURL(url: URL) {
+export function tạoThôngTinNơiĐăngTừURL(url: URL) {
   let loạiNềnTảng: LoạiNềnTảng | undefined = undefined;
   let tênNềnTảng: TênNềnTảng | undefined = undefined;
   let loạiNơiĐăng: LoạiNơiĐăng | undefined = undefined;
@@ -81,8 +80,8 @@ export async function tạoNơiĐăngTừURL(
   urlString: UrlChưaChínhTắc,
   slug: string | undefined,
   HTML: string | undefined = undefined,
-): Promise<Omit<NơiĐăngCóCácLựaChọnVịTríChưaCóId, "Phương thức tạo">> {
-  console.info("Tạo nơi đăng mới từ URL:", urlString.toString());
+): Promise<NơiĐăngCóCácLựaChọnVịTríChưaCóIdVàPhươngThứcTạo> {
+  console.trace("Tạo nơi đăng mới từ URL:", urlString.toString());
   const metaTagUrlVàDocument = await lấyMetaTagVàTạoDocument(urlString, HTML);
   const { meta, url } = metaTagUrlVàDocument;
   const { loạiNềnTảng, tênNềnTảng, loạiNơiĐăng } = tạoThôngTinNơiĐăngTừURL(url);

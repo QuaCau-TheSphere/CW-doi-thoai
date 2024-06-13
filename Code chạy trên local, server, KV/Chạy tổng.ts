@@ -1,6 +1,7 @@
 import { kvSignal, readUnitSignal, writeUnitSignal } from "./Signal KV.ts";
 import { kvGet, kvList } from "./Hàm cho KV.ts";
-import { tạoBàiĐăng, tạoCacheHTML, tạoNơiĐăng, xoáDữLiệuTrênKv } from "./Hàm tạo dữ liệu và cache.ts";
+import { tạoBàiĐăng, tạoNơiĐăng, xoáDữLiệuTrênKv } from "./Tạo dữ liệu.ts";
+import { tạoCache } from "./Hàm cho cache.ts";
 
 // await chạyTrênDeployChứKhôngChạyTrênLocal();
 // await copyDữLiệuTrênDeployXuốngLocal();
@@ -8,9 +9,9 @@ import { tạoBàiĐăng, tạoCacheHTML, tạoNơiĐăng, xoáDữLiệuTrênKv
 // await xoáDữLiệuTrênKv();
 // console.log("🚀 ~ await kvList({ prefix: [] }):", await kvList({ prefix: [] }));
 
-// await tạoCacheHTML();
-await tạoBàiĐăng();
-await tạoNơiĐăng();
+await tạoCache();
+// await tạoBàiĐăng();
+// await tạoNơiĐăng();
 
 console.log("Số read unit", readUnitSignal.value);
 console.log("Số write unit", writeUnitSignal.value);

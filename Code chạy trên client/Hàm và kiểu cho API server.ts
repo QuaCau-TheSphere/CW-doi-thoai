@@ -6,7 +6,7 @@ import {
 } from "../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
 import { VậtThểTiếpThị } from "./Hàm và kiểu cho vật thể tiếp thị.ts";
 import { lầnĐăngGầnNhất } from "../islands/Signals tổng.ts";
-import { TênDanhSách } from "./URL, HTML/Hàm và kiểu cho khung nhập.ts";
+import { TênDanhSách } from "./Hàm và kiểu cho khung nhập.ts";
 import { đổiTừCơSố10SangCơSố64 } from "./Chuỗi, slug/Hàm xử lý chuỗi.ts";
 export interface ReqBàiĐăngHoặcNơiĐăng {
   "Tên danh sách": TênDanhSách;

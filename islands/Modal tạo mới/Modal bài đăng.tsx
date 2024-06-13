@@ -2,7 +2,7 @@ import * as linkify from "npm:linkifyjs";
 import { useEffect, useState } from "preact/hooks";
 import { queryBàiĐăngSignal } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
 import { tạoBàiĐăngTừURL } from "../../Code chạy trên client/URL, HTML/Tạo bài đăng hoặc nơi đăng từ URL.ts";
-import { tạoUrlCorsProxy } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL.ts";
+import { lấyHTML } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL và fetch.ts";
 import { BàiĐăngChưaCóId } from "../../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 
 /** Các dữ liệu người dùng nhập trong form */
@@ -27,8 +27,7 @@ export default function ModalBàiĐăng() {
       const type = linkĐầuTiên.type;
       if (type === "url" && !linkĐầuTiên?.value.startsWith("mailto:")) {
         const urlNgườiDùngNhập = linkĐầuTiên.href;
-        const urlCorsProxy = tạoUrlCorsProxy(urlNgườiDùngNhập);
-        const html = await (await fetch(urlCorsProxy)).text();
+        const html = await lấyHTML(urlNgườiDùngNhập);
         setBàiĐăng({
           ...await tạoBàiĐăngTừURL(urlNgườiDùngNhập, html),
           "Phương thức tạo": "Nhập tay trên web",
@@ -60,8 +59,7 @@ export default function ModalBàiĐăng() {
       "Dự án": dựÁn,
       Slug: slug,
     } = bàiĐăng || {};
-    console.log("🚀 ~ useEffect ~ url:", url);
-    setUrl(url as string);
+    setUrl(url?.toString() || "⌛Đang tải dữ liệu...");
     setTiêuĐề(tiêuĐề || "");
     setMôTảBàiĐăng(nộiDungBàiĐăng?.["Mô tả bài đăng"] || undefined);
     setTênDựÁn(dựÁn?.["Tên dự án"]);
