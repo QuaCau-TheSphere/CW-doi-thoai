@@ -1,7 +1,7 @@
 import { Document, EnrichedDocumentSearchResultSetUnitResultUnit } from "npm:flexsearch";
 import { StateUpdater } from "preact/hooks";
 import { element } from "../islands/Signals tổng.ts";
-import { NơiĐăngCóCácLựaChọnVịTrí, NơiĐăngCóMộtVịTríCụThể } from "../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
+import { NơiĐăngCóCácLựaChọnVịTrí, NơiĐăngCóMộtVịTríCụThể } from "./Hàm và kiểu cho vị trí.ts";
 import { BàiĐăng } from "../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 
 export type BốiCảnh = string | undefined;

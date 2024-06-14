@@ -1,17 +1,15 @@
 import { load } from "$std/dotenv/mod.ts";
 import { replaceLocalDataWithRemote, wipeKvStore } from "https://deno.land/x/kv_utils@1.1.1/mod.ts";
 import { kvSignal } from "./Signal KV.ts";
-import { tạoDanhSáchThôngTinCấuHìnhNơiĐăng } from "./Hàm và kiểu cho cấu hình.ts";
 import { TẬP_TIN_DANH_SÁCH_BÀI_ĐĂNG, TẬP_TIN_DANH_SÁCH_NƠI_ĐĂNG } from "./ĐƯỜNG_DẪN.ts";
 import { cậpNhậtSốLượngBàiĐăng, cậpNhậtSốLượngNơiĐăng } from "./Hàm và kiểu cho id và số lượng dữ liệu.ts";
-import { tạoDanhSáchBàiĐăng } from "./Bài đăng/mod.ts";
+import tạoDanhSáchBàiĐăng from "./Bài đăng/mod.ts";
 import { tạoDanhSáchNơiĐăngTừTấtCảCấuHình } from "./Nơi đăng/mod.ts";
 import { kvDelete, kvList, kvSet, tạoKeyKV } from "./Hàm cho KV.ts";
 import { tạoTênNơiĐăngString } from "../Code chạy trên client/Chuỗi, slug/Hàm xử lý chuỗi.ts";
 
 export async function tạoBàiĐăng(cóĐẩyLênKv: boolean = false) {
-  const danhSáchThôngTinCấuHìnhNơiĐăng = await tạoDanhSáchThôngTinCấuHìnhNơiĐăng();
-  const danhSáchBàiĐăng = await tạoDanhSáchBàiĐăng(danhSáchThôngTinCấuHìnhNơiĐăng);
+  const danhSáchBàiĐăng = await tạoDanhSáchBàiĐăng();
   await Deno.writeTextFile(TẬP_TIN_DANH_SÁCH_BÀI_ĐĂNG, JSON.stringify(danhSáchBàiĐăng, null, 2));
 
   for (const bàiĐăng of danhSáchBàiĐăng) {

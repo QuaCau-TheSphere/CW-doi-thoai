@@ -1,7 +1,7 @@
 import { walk } from "$std/fs/walk.ts";
 import { parse } from "$std/yaml/mod.ts";
 import { basename, extname, SEPARATOR } from "$std/path/mod.ts";
-import { VậtThểCấuHìnhVịTrí, VịTríThànhPhần } from "./Nơi đăng/Hàm và kiểu cho vị trí.ts";
+import { VậtThểCấuHìnhVịTrí, VịTríThànhPhần } from "../Code chạy trên client/Hàm và kiểu cho vị trí.ts";
 import { THƯ_MỤC_CẤU_HÌNH_NƠI_ĐĂNG, TẬP_TIN_CẤU_HÌNH_CHUNG, ĐườngDẫnTuyệtĐối, ĐườngDẫnTươngĐối } from "./ĐƯỜNG_DẪN.ts";
 import {
   CấuHìnhChat,

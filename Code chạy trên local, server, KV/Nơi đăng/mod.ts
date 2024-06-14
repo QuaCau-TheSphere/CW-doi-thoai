@@ -15,10 +15,10 @@ import {
   NơiĐăngCóCácLựaChọnVịTrí,
   NơiĐăngCóCácLựaChọnVịTríChưaCóId,
   tạoDanhSáchVịTríCóThểĐăng,
-} from "./Hàm và kiểu cho vị trí.ts";
+} from "../../Code chạy trên client/Hàm và kiểu cho vị trí.ts";
 import CấuHìnhNơiĐăng, { lấyCấuHìnhChung, ThôngTinCấuHìnhNơiĐăng, tạoDanhSáchThôngTinCấuHìnhNơiĐăng } from "../Hàm và kiểu cho cấu hình.ts";
 import { đổiTừCơSố10SangCơSố64 } from "../../Code chạy trên client/Chuỗi, slug/Hàm xử lý chuỗi.ts";
-import { tạoSlugNơiĐăng, tạoTừĐiểnSlugNơiĐăng } from "../../Code chạy trên client/Chuỗi, slug/Tạo slug.ts";
+import { tạoSlugNơiĐăng, tạoTừĐiểnSlugNơiĐăng } from "./Tạo slug.ts";
 import { táchUrlHoặcEmailĐầuTiênTrongChuỗi } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL và fetch.ts";
 
 async function tạoDanhSáchDiễnĐàn(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
@@ -137,8 +137,8 @@ export default async function tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí
         thôngTinNơiĐăng["Đơn vị quản lý"] = tênCấuHình;
         break;
     }
-
-    thôngTinNơiĐăng["Slug"] = tạoSlugNơiĐăng(thôngTinNơiĐăng, từĐiểnSlugNơiĐăng);
+    const { "Tên nơi đăng": tênNơiĐăng, URL: url } = thôngTinNơiĐăng;
+    thôngTinNơiĐăng["Slug"] = await tạoSlugNơiĐăng(tênNơiĐăng, url, từĐiểnSlugNơiĐăng);
   }
   return danhSáchNơiĐăng;
 }

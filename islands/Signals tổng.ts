@@ -5,7 +5,7 @@ import { VậtThểTiếpThị } from "../Code chạy trên client/Hàm và ki�
 import { ElementDùngTab } from "../Code chạy trên client/Hàm và kiểu cho khung nhập.ts";
 import { tìmVậtThểTiếpThịĐãCó } from "../Code chạy trên client/Hàm và kiểu cho API server.ts";
 import { CấuHìnhChung, ThôngTinCấuHìnhNơiĐăng } from "../Code chạy trên local, server, KV/Hàm và kiểu cho cấu hình.ts";
-import { NơiĐăngCóCácLựaChọnVịTrí, NơiĐăngCóMộtVịTríCụThể } from "../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
+import { NơiĐăngCóCácLựaChọnVịTrí, NơiĐăngCóMộtVịTríCụThể } from "../Code chạy trên client/Hàm và kiểu cho vị trí.ts";
 import { BàiĐăng } from "../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 
 export const cấuHìnhChungSignal = signal<CấuHìnhChung>({ "Vị trí thành phần": { "": [""] }, "Vị trí đặt liên kết ở nơi đăng": [] });

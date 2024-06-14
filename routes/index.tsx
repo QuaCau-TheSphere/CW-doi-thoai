@@ -1,5 +1,5 @@
 import Main, { DanhSáchBàiĐăngVàNơiĐăng } from "../islands/Main.tsx";
-import { NơiĐăngCóCácLựaChọnVịTrí } from "../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
+import { NơiĐăngCóCácLựaChọnVịTrí } from "../Code chạy trên client/Hàm và kiểu cho vị trí.ts";
 import { BàiĐăng } from "../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import { lấyCấuHìnhChung, tạoDanhSáchThôngTinCấuHìnhNơiĐăng, đọcJSON } from "../Code chạy trên local, server, KV/Hàm và kiểu cho cấu hình.ts";
 import { kvList } from "../Code chạy trên local, server, KV/Hàm cho KV.ts";

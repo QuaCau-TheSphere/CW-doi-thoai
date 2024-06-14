@@ -1,7 +1,10 @@
+import { DOMParser, HTMLDocument } from "jsr:@b-fuze/deno-dom";
 import punycode from "npm:punycode";
 import * as linkify from "npm:linkifyjs";
 import isURL from "npm:validator/lib/isURL.js";
 import isEmail from "npm:validator/lib/isEmail.js";
+import { IS_BROWSER } from "$fresh/src/runtime/utils.ts";
+import { lấyURLChínhTắcVàHTMLTừLocal } from "../../Code%20ch%E1%BA%A1y%20tr%C3%AAn%20local,%20server,%20KV/H%C3%A0m%20cho%20cache.ts";
 
 export type UrlChưaChínhTắc = string | URL;
 export type UrlChínhTắc = URL;
@@ -58,20 +61,72 @@ export function lấyEmailTrongJSON(vậtThể: Record<any, any>) {
 }
 
 /** Không gộp lại thành chung một biến được vì nếu không có URL chính tắc trong HTML thì còn lấy URL được nhập từ trước */
-export async function lấyURLChínhTắc(urL: UrlChưaChínhTắc, HTML: string | undefined = undefined): Promise<string> {
-  const url = urL.toString();
-  const html = HTML ? HTML : await lấyHTML(url);
-  const document = new DOMParser().parseFromString(html, "text/html");
-  const canonical = document.querySelector("link[rel='canonical']") as HTMLLinkElement | null;
-  return canonical?.getAttribute("href") || url.toString();
+export async function lấyURLChínhTắc(url: UrlChưaChínhTắc, HTML: string | undefined = undefined): Promise<string> {
+  let urlChínhTắc;
+  if (!IS_BROWSER) {
+    urlChínhTắc = (await lấyURLChínhTắcVàHTMLTừLocal(url))[0];
+  } else {
+    const html = HTML ? HTML : await lấyHTML(url);
+    const document = new DOMParser().parseFromString(html, "text/html");
+    const canonical = document.querySelector("link[rel='canonical']") as HTMLLinkElement | null;
+    urlChínhTắc = canonical?.getAttribute("href");
+  }
+  return urlChínhTắc || url.toString();
+}
+
+export async function lấyHTML(url: Url) {
+  let urlĐểFetch;
+  if (IS_BROWSER) {
+    /**
+     * Ở trên client thì không bao giờ fetch trực tiếp hết, mà đều phải fetch qua CORS proxy. Chỉ có trên server thì mới có cơ hội được fetch trực tiếp
+     * @see lấyHTMLTừCache
+     */
+    const origin = globalThis.location.origin;
+    urlĐểFetch = new URL(`${origin}/api/cors-proxy/`);
+    urlĐểFetch.search = new URLSearchParams({ url: url.toString() });
+  } else {
+    urlĐểFetch = url;
+  }
+  return await (await fetch(urlĐểFetch)).text();
 }
 
 /**
- * Ở trên client thì không bao giờ fetch trực tiếp hết, mà đều phải fetch qua CORS proxy. Chỉ có trên server thì mới có cơ hội được fetch trực tiếp
- * @see lấyHTMLTừCache
+ * Slash is possible to add to the end of url in following cases:
+ * - There is no slash standing as last symbol of URL.
+ * - There is no file extension (or there is no dot inside the last section of the path).
+ * - There is no parameter (even empty one — a single ? at the end of URL).
+ * - There is no link to a fragment (even empty one — a single # mark at the end of URL).
  */
-export async function lấyHTML(url: Url, origin: URL["origin"] = globalThis.location.origin) {
-  const urlCorsProxy = new URL(`${origin}/api/cors-proxy/`);
-  urlCorsProxy.search = new URLSearchParams({ url: url.toString() });
-  return await (await fetch(urlCorsProxy)).text();
+function appendSlashToUrlIfIsPossible(url: string) {
+  /** Removing empty parameter or fragment so the URL will always have slash if possible */
+  const urlWithNoEmptyParameterOrFragment = url.replace(/#$/g, "").replace(/\?$/g, "");
+
+  const parsedUrl = new URL(urlWithNoEmptyParameterOrFragment);
+
+  /** There are directories with dots in the last section of the path, so we can only hope that the file extension being in used (if any) is a common one */
+  const noFileExtension = !/\.(htm|html|jpg|png|gif|pdf|php|doc|docx)$/.test(parsedUrl.pathname);
+
+  const noParameter = !parsedUrl.search;
+  const noLinkToFragment = !parsedUrl.hash;
+
+  /** All checks above cannot guarantee that there is no '?' or '#' symbol at the end of URL. It is required to be checked manually */
+  const noTrailingSlashAlready = !/\/$/.test(parsedUrl.href);
+
+  const slashAppendingIsPossible = noFileExtension && noParameter && noLinkToFragment && noTrailingSlashAlready;
+
+  if (slashAppendingIsPossible) return `${parsedUrl.href}/`;
+  return parsedUrl.href;
+}
+
+export function lấyURLKhôngSlashVàCóSlash(url: string) {
+  let urlKhôngSlash;
+  let urlCóSlash;
+  if (url.endsWith("/")) {
+    urlCóSlash = url;
+    urlKhôngSlash = urlCóSlash.slice(0, -1);
+  } else {
+    urlKhôngSlash = url;
+    urlCóSlash = appendSlashToUrlIfIsPossible(urlKhôngSlash);
+  }
+  return [urlKhôngSlash, urlCóSlash];
 }

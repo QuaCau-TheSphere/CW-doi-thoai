@@ -24,7 +24,7 @@ async function fetchTrựcTiếp() {
 }
 async function fetchQuaAPI() {
   const env = await load();
-  const html = await lấyHTML((url, env["ORIGIN"]));
+  const html = await lấyHTML(url);
 
   console.log("Status:", fetchResult.status);
   console.log("HTML:", html);

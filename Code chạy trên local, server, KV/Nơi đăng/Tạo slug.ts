@@ -1,12 +1,8 @@
-import { táchUrlHoặcEmailĐầuTiênTrongChuỗi, Url } from "../URL, HTML/Hàm và kiểu cho URL và fetch.ts";
-import { lấyUsername } from "../URL, HTML/Hàm và kiểu cho dữ liệu meta.ts";
-import {
-  danhSáchDiễnĐàn,
-  danhSáchNềnTảngChat,
-  ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo,
-  TênNơiĐăng,
-} from "../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
-import CấuHìnhNơiĐăng from "../../Code chạy trên local, server, KV/Hàm và kiểu cho cấu hình.ts";
+import { táchUrlHoặcEmailĐầuTiênTrongChuỗi, Url } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL và fetch.ts";
+import { lấyUsername } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho dữ liệu meta.ts";
+import { danhSáchDiễnĐàn, danhSáchNềnTảngChat, ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo, TênNơiĐăng } from "./Kiểu cho nơi đăng.ts";
+import CấuHìnhNơiĐăng from "../Hàm và kiểu cho cấu hình.ts";
+import { lấyURLChínhTắcVàHTMLTừLocal } from "../Hàm cho cache.ts";
 
 export type TừĐiểnSlugNơiĐăng = Map<string, string>;
 
@@ -39,13 +35,14 @@ export async function tạoTừĐiểnSlugNơiĐăng(cấuHìnhSlug: CấuHìnhN
 /**
  * @param [từĐiểnSlugNơiĐăng=undefined] nếu là undefined nghĩa là URL là do người dùng nhập chứ không phải được khai báo sẵn, nên từ đầu đã không có từ điển slug. Lúc này trả về tên nơi đăng dạng kebab
  */
-export function tạoSlugNơiĐăng(
+export async function tạoSlugNơiĐăng(
   tênNơiĐăng: TênNơiĐăng,
-  url: Url,
+  url: Url | undefined,
   từĐiểnSlugNơiĐăng: TừĐiểnSlugNơiĐăng,
-): string | undefined {
+): Promise<string | undefined> {
   if (url) {
-    const slug = từĐiểnSlugNơiĐăng.get(url.toString());
+    const urlChínhTắc = (await lấyURLChínhTắcVàHTMLTừLocal(url))[0];
+    const slug = từĐiểnSlugNơiĐăng.get(urlChínhTắc);
     if (slug) return slug;
   }
   for (const tênNơiĐăngThànhPhần of tênNơiĐăng.toReversed()) {

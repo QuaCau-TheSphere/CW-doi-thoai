@@ -1,9 +1,5 @@
 import { BàiĐăng, BàiĐăngChưaCóId } from "../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
-import {
-  NơiĐăngCóCácLựaChọnVịTrí,
-  NơiĐăngCóCácLựaChọnVịTríChưaCóId,
-  NơiĐăngCóMộtVịTríCụThể,
-} from "../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
+import { NơiĐăngCóCácLựaChọnVịTrí, NơiĐăngCóCácLựaChọnVịTríChưaCóId, NơiĐăngCóMộtVịTríCụThể } from "./Hàm và kiểu cho vị trí.ts";
 import { VậtThểTiếpThị } from "./Hàm và kiểu cho vật thể tiếp thị.ts";
 import { lầnĐăngGầnNhất } from "../islands/Signals tổng.ts";
 import { TênDanhSách } from "./Hàm và kiểu cho khung nhập.ts";

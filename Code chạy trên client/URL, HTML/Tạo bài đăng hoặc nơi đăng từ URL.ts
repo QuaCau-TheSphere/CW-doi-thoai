@@ -1,7 +1,6 @@
 /**
  * @fileoverview Bài đăng và nơi đăng được tạo ở đây ko có id. Id chỉ thêm vào ngay trước lúc nhập vào KV
  */
-import { BàiĐăngChưaCóIdVàPhươngThứcTạo } from "../../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import {
   danhSáchDiễnĐàn,
   danhSáchNềnTảngChat,
@@ -10,11 +9,6 @@ import {
   ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo,
   TênNềnTảng,
 } from "../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
-import {
-  NơiĐăngCóCácLựaChọnVịTríChưaCóIdVàPhươngThứcTạo,
-  tạoNơiĐăngCóCácLựaChọnVịTrí,
-} from "../../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
-import { tạoSlugBàiĐăng } from "../Chuỗi, slug/Tạo slug.ts";
 import { lấyURLChínhTắc, UrlChưaChínhTắc } from "./Hàm và kiểu cho URL và fetch.ts";
 import {
   cóTênNềnTảngTrongHostname,
@@ -28,6 +22,9 @@ import {
   lấyĐơnVịQuảnLý,
   tạoTiêuĐề,
 } from "./Hàm và kiểu cho dữ liệu meta.ts";
+import { NơiĐăngCóCácLựaChọnVịTríChưaCóIdVàPhươngThứcTạo, tạoNơiĐăngCóCácLựaChọnVịTrí } from "../Hàm và kiểu cho vị trí.ts";
+import { BàiĐăngChưaCóIdVàPhươngThứcTạo } from "../../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
+import { tạoSlugBàiĐăng } from "../../Code chạy trên local, server, KV/Nơi đăng/Tạo slug.ts";
 
 export function tạoThôngTinNơiĐăngTừURL(url: URL) {
   let loạiNềnTảng: LoạiNềnTảng | undefined = undefined;
@@ -50,7 +47,7 @@ export function tạoThôngTinNơiĐăngTừURL(url: URL) {
         if (hostname.includes("youtube") || url.href.includes("youtu.be")) {
           if (pathname.includes("playlist")) {
             loạiNơiĐăng = ["Danh sách phát"];
-          } else if (pathname.includes("/@")) {
+          } else if (pathname.startsWith("/@") || pathname.startsWith("/channel")) {
             loạiNơiĐăng = ["Kênh"];
           } else {
             loạiNơiĐăng = ["Video"];
@@ -111,7 +108,7 @@ export async function tạoBàiĐăngTừURL(
   const metaTagUrlVàDocument = await lấyMetaTagVàTạoDocument(urlString, HTML);
   const { meta, url } = metaTagUrlVàDocument;
   return {
-    "Tiêu đề": await tạoTiêuĐề(urlString, HTML),
+    "Tiêu đề": tạoTiêuĐề(metaTagUrlVàDocument),
     URL: await lấyURLChínhTắc(urlString, HTML),
     "Nội dung bài đăng": {
       "Mô tả bài đăng": lấyMôTả(metaTagUrlVàDocument),

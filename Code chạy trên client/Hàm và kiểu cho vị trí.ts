@@ -1,4 +1,4 @@
-import { CấuHìnhChung, lấyCấuHìnhChung } from "../Hàm và kiểu cho cấu hình.ts";
+import { CấuHìnhChung, lấyCấuHìnhChung } from "../Code chạy trên local, server, KV/Hàm và kiểu cho cấu hình.ts";
 import {
   LoạiNơiĐăng,
   LoạiNềnTảng,
@@ -6,7 +6,7 @@ import {
   ThôngTinNơiĐăngChưaCóId,
   ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo,
   TênNềnTảng,
-} from "./Kiểu cho nơi đăng.ts";
+} from "../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
 
 export type VịTríThànhPhần = string;
 

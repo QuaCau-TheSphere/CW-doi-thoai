@@ -3,8 +3,8 @@ import { useEffect, useState } from "preact/hooks";
 import { queryNơiĐăngSignal } from "../Tìm bài đăng hoặc nơi đăng/Signal tìm bài đăng hoặc nơi đăng.ts";
 import { lấyHTML } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL và fetch.ts";
 import { tạoNơiĐăngTừURL } from "../../Code chạy trên client/URL, HTML/Tạo bài đăng hoặc nơi đăng từ URL.ts";
-import { tạoNơiĐăngCóCácLựaChọnVịTrí } from "../../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
-import { NơiĐăngCóCácLựaChọnVịTríChưaCóId } from "../../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
+import { tạoNơiĐăngCóCácLựaChọnVịTrí } from "../../Code chạy trên client/Hàm và kiểu cho vị trí.ts";
+import { NơiĐăngCóCácLựaChọnVịTríChưaCóId } from "../../Code chạy trên client/Hàm và kiểu cho vị trí.ts";
 import { ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo, TênNơiĐăng } from "../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
 
 /** Các dữ liệu người dùng nhập trong form */
@@ -71,7 +71,7 @@ export default function ModalNơiĐăng() {
         Slug: slug,
         "Mô tả nơi đăng": môTảNơiĐăng,
       } = nơiĐăng;
-      setUrlHoặcEmail(urlHoặcEmail?.toString() || "⌛Đang tải dữ liệu...");
+      setUrlHoặcEmail(urlHoặcEmail?.toString() || "⌛Đang kéo dữ liệu meta từ URL...");
       setTênNơiĐăng(tênNơiĐăng?.join(", "));
       setSlug(slug);
       setMôTảNơiĐăng(môTảNơiĐăng);

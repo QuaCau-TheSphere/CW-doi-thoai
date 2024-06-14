@@ -1,6 +1,6 @@
-import { lấyMetaTagVàTạoDocument, tạoTiêuĐề } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho dữ liệu meta.ts";
-import { TẬP_TIN_CACHE_HTML, TẬP_TIN_DANH_SÁCH_NƠI_ĐĂNG } from "../ĐƯỜNG_DẪN.ts";
-import { CacheHTML } from "../Hàm cho cache.ts";
+import { lấyMetaTagVàTạoDocument, tạoTiêuĐề } from "./Hàm và kiểu cho dữ liệu meta.ts";
+import { TẬP_TIN_CACHE_HTML, TẬP_TIN_DANH_SÁCH_NƠI_ĐĂNG } from "../../Code chạy trên local, server, KV/ĐƯỜNG_DẪN.ts";
+import { CacheHTML, lấyHTMLTừLocal, lấyMetaTagVàTạoDocumentTrênLocal } from "../../Code chạy trên local, server, KV/Hàm cho cache.ts";
 
 const urls = [
   "https://www.facebook.com/quacau.sphere/",
@@ -15,11 +15,13 @@ const urls = [
   "https://tranky.deno.dev",
   "https://www.facebook.com/quacau.sphere",
   "https://www.facebook.com/groups/562933844569060/",
+  "https://www.youtube.com/channel/UCReU_XcmJlp9ORWi8U2O-Fg",
 ];
-// const url = "https://www.facebook.com/quacau.sphere/";
+// const url = urls[3];
+// const url = "https://www.youtube.com/channel/UCReU_XcmJlp9ORWi8U2O-Fg";
 // await chạyMộtUrl(url);
-// await chạyHếtUrls();
-await chạyToànBộCache();
+await chạyHếtUrls();
+// await chạyToànBộCache();
 
 async function chạyHếtUrls() {
   for (const url of urls) {
@@ -37,11 +39,16 @@ async function chạyToànBộCache() {
 
 async function chạyMộtUrl(url: string) {
   console.log(url);
-  const metaTagUrlVàDocument = await lấyMetaTagVàTạoDocument(url);
+  const metaTagUrlVàDocument = await lấyMetaTagVàTạoDocumentTrênLocal(url);
   const { meta, document } = metaTagUrlVàDocument;
-  console.log("title:", await tạoTiêuĐề(url));
-  console.log("meta:", meta.og?.title);
+  const metaTitle = meta.og?.title;
   const htmlTitle = document.querySelector("title")?.textContent;
-  console.log("html:", htmlTitle);
-  console.log("sitename:", meta.og?.site_name);
+  const htmlTitleSplit = htmlTitle?.split(/ [-–—|·] /g) || [];
+  const siteName = meta.og?.site_name;
+
+  console.log("title:", await tạoTiêuĐề(metaTagUrlVàDocument));
+  console.log("metaTitle:", metaTitle);
+  console.log("htmlTitleSplit:", htmlTitleSplit);
+  console.log("siteName:", siteName);
+  console.log();
 }

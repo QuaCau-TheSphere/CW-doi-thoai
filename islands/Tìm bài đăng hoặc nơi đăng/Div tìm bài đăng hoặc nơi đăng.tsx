@@ -14,7 +14,7 @@ import {
 } from "../../Code chạy trên client/Hàm và kiểu cho khung nhập.ts";
 import { kiểuKebab } from "../../Code chạy trên client/Chuỗi, slug/Hàm xử lý chuỗi.ts";
 import { BàiĐăng } from "../../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
-import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
+import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Code chạy trên client/Hàm và kiểu cho vị trí.ts";
 
 /** Những signal được tạo ở ngoài rồi import vào đây là có được sử dụng ở ngoài div. Những signal được tạo trong đây chỉ cần dùng trong div này */
 export default function DivTìmBàiĐăngHoặcNơiĐăng({ tênDanhSách }: { tênDanhSách: TênDanhSách }) {

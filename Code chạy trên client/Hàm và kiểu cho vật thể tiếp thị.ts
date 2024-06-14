@@ -1,4 +1,4 @@
-import { NơiĐăngCóMộtVịTríCụThể } from "../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
+import { NơiĐăngCóMộtVịTríCụThể } from "./Hàm và kiểu cho vị trí.ts";
 import { BàiĐăng } from "../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import { CấuHìnhViếtTắt } from "../Code chạy trên local, server, KV/Hàm và kiểu cho cấu hình.ts";
 import ThamSốUTM, { ĐuôiRútGọn } from "./Tham số UTM và liên kết rút gọn/Kiểu cho tham số UTM.ts";

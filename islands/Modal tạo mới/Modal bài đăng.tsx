@@ -59,7 +59,7 @@ export default function ModalBàiĐăng() {
       "Dự án": dựÁn,
       Slug: slug,
     } = bàiĐăng || {};
-    setUrl(url?.toString() || "⌛Đang tải dữ liệu...");
+    setUrl(url?.toString() || "⌛Đang kéo dữ liệu meta từ URL...");
     setTiêuĐề(tiêuĐề || "");
     setMôTảBàiĐăng(nộiDungBàiĐăng?.["Mô tả bài đăng"] || undefined);
     setTênDựÁn(dựÁn?.["Tên dự án"]);

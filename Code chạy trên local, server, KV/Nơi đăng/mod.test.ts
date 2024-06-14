@@ -1,18 +1,15 @@
 import { parse } from "$std/yaml/mod.ts";
 import { join } from "$std/path/join.ts";
-import tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí from "../Tạo bài đăng và nơi đăng/B. Tạo kết quả/2. Tạo danh sách nơi đăng từ cấu hình./../../Tạo nơi đăng/module nơi đăng.ts";
-import { assertArrayIncludes } from "https://deno.land/std@0.219.0/assert/assert_array_includes.ts";
-import { assert } from "$std/assert/assert.ts";
-import CấuHìnhNơiĐăng, {
-  tạoDanhSáchThôngTinCấuHìnhNơiĐăng,
-} from "../../Code%20h%E1%BB%97%20tr%E1%BB%A3%20cho%20server/H%C3%A0m%20v%C3%A0%20ki%E1%BB%83u%20cho%20c%E1%BA%A5u%20h%C3%ACnh.ts";
+import { assertArrayIncludes } from "https://deno.land/std@0.216.0/assert/assert_array_includes.ts";
+import { CấuHìnhChung, tạoDanhSáchThôngTinCấuHìnhNơiĐăng } from "../H%C3%A0m%20v%C3%A0%20ki%E1%BB%83u%20cho%20c%E1%BA%A5u%20h%C3%ACnh.ts";
 import {
   NơiĐăngCóCácLựaChọnVịTríChưaCóId,
-  NơiĐăngCóMộtVịTríCụThể,
+  NơiĐăngCóCácLựaChọnVịTríChưaCóIdVàPhươngThứcTạo,
   tạoDanhSáchVịTríCóThểĐăng,
   VậtThểCấuHìnhVịTrí,
-} from "../../Code%20h%E1%BB%97%20tr%E1%BB%A3%20cho%20server/H%C3%A0m%20v%C3%A0%20ki%E1%BB%83u%20cho%20v%E1%BB%8B%20tr%C3%AD.ts";
-import { ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo } from "../../Code hỗ trợ cho server/Kiểu cho nơi đăng.ts";
+} from "../../Code chạy trên client/Hàm và kiểu cho vị trí.ts";
+import { ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo, TênNơiĐăng } from "./Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
+import tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí from "./mod.ts";
 
 const nơiĐăng1 = {
   "Tên nơi đăng": ["Lý Minh Nhật"],
@@ -66,18 +63,11 @@ const vậtThểVịTrí2 = {
 } satisfies VậtThểCấuHìnhVịTrí;
 
 //deno-fmt-ignore
-const cấuHìnhThiếtLậpChung = parse(Deno.readTextFileSync('./core/A. Cấu hình/Nơi đăng/Thiết lập chung (processed).yaml')) as CấuHìnhThiếtLậpChung
+const cấuHìnhThiếtLậpChung = parse(Deno.readTextFileSync('./core/A. Cấu hình/Nơi đăng/Thiết lập chung (processed).yaml')) as CấuHìnhChung
 Deno.test("Thêm vị trí nhỏ hơn", () => {
   assertArrayIncludes(
     //deno-fmt-ignore
-    tạoDanhSáchVịTríCóThểĐăng(["Bài đăng", "Bio" , "About", "Website" , "Ảnh đại diện", "Ảnh bìa", "Bài đăng được ghim", "Album ảnh"], cấuHìnhThiếtLậpChung["Vị trí nhỏ hơn"]),
-    [{
-      "Tên nơi đăng": ["Lý Minh Nhật"],
-      "Loại nơi đăng": ["Tài khoản"],
-      "Tên nền tảng": "Facebook",
-      "Loại nền tảng": "Diễn đàn",
-      "Vị trí": ["Bài đăng được ghim", "Nội dung chính"],
-    }],
+    tạoDanhSáchVịTríCóThểĐăng(["Bài đăng", "Bio" , "About", "Website" , "Ảnh đại diện", "Ảnh bìa", "Bài đăng được ghim", "Album ảnh"], cấuHìnhThiếtLậpChung["Vị trí thành phần"]),
   );
 });
 
@@ -96,7 +86,7 @@ for (const file of Deno.readDirSync(folder)) {
   const danhSáchThôngTinCấuHìnhNơiĐăng = await tạoDanhSáchThôngTinCấuHìnhNơiĐăng();
 
   for (const thôngTinCấuHìnhNơiĐăng of danhSáchThôngTinCấuHìnhNơiĐăng) {
-    danhSáchNơiĐăng.push(...tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí(thôngTinCấuHìnhNơiĐăng));
+    danhSáchNơiĐăng.push(...await tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí(thôngTinCấuHìnhNơiĐăng));
   }
 }
 console.log("🚀 ~ danhSáchNơiĐăng:", danhSáchNơiĐăng);

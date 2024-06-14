@@ -14,7 +14,7 @@ import {
 } from "./Kiểu cho tham số UTM.ts";
 import { LoạiNơiĐăngChat, LoạiNềnTảng } from "../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
 import VậtThểThamSốUTM from "./Kiểu cho tham số UTM.ts";
-import { NơiĐăngCóMộtVịTríCụThể } from "../../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
+import { NơiĐăngCóMộtVịTríCụThể } from "../Hàm và kiểu cho vị trí.ts";
 import { CấuHìnhViếtTắt } from "../../Code chạy trên local, server, KV/Hàm và kiểu cho cấu hình.ts";
 import { BốiCảnh } from "../Hàm và kiểu cho khung nhập.ts";
 import { lấyKýHiệuViếtTắt } from "../Chuỗi, slug/Hàm xử lý chuỗi.ts";

@@ -84,6 +84,10 @@ export interface MetaTagUrlVàDocument {
   html: string;
 }
 
+/**
+ * @param HTML không bỏ tham số này dù thấy là đã có lấy HTML rồi. Vì hàm lấyHTML này chỉ chạy trên client được, trong khi có thể cần lấyMetaTagVàTạoDocument trên local (VD trong test).
+ * @returns
+ */
 export async function lấyMetaTagVàTạoDocument(urlString: Url, HTML: string | undefined = undefined): Promise<MetaTagUrlVàDocument> {
   const html = HTML ? HTML : await lấyHTML(urlString);
   const url = await lấyURLChínhTắc(urlString, html);
@@ -101,18 +105,16 @@ export function lấyUsername(hostname: string) {
   return domainWithoutSuffix;
 }
 
-export function lấyTitle({ meta, url, document }: MetaTagUrlVàDocument): string | undefined {
+export function lấyTitle({ meta, document }: MetaTagUrlVàDocument): string {
   const metaTitle = meta.og?.title;
   const htmlTitle = document.querySelector("title")?.textContent;
 
-  if (!metaTitle && !htmlTitle) return "";
-  if (metaTitle && !htmlTitle) return metaTitle;
-  if (!metaTitle && htmlTitle) return htmlTitle;
-  if (metaTitle && htmlTitle) {
-    if (metaTitle.length <= htmlTitle.length) return htmlTitle;
-    if (metaTitle.length > htmlTitle.length) return metaTitle;
+  switch (metaTitle) {
+    case undefined:
+      return !htmlTitle ? "" : htmlTitle;
+    default:
+      return !htmlTitle ? metaTitle : metaTitle.length <= htmlTitle.length ? htmlTitle : metaTitle;
   }
-  return undefined;
 }
 
 export function lấyMôTả({ meta, document }: MetaTagUrlVàDocument): string | null | undefined {
@@ -157,12 +159,11 @@ export function lấyTácGiả(meta: MetaTags): string | undefined {
   return meta?.author || meta.article?.author || meta.creator;
 }
 
-export async function tạoTiêuĐề(urlString: UrlChưaChínhTắc, HTML: string | undefined = undefined): Promise<string> {
-  const metaTagUrlVàDocument = await lấyMetaTagVàTạoDocument(urlString, HTML);
+export function tạoTiêuĐề(metaTagUrlVàDocument: MetaTagUrlVàDocument): string {
   const { meta, url, document } = metaTagUrlVàDocument;
   const metaTitle = meta.og?.title;
   const htmlTitle = document.querySelector("title")?.textContent;
-  const htmlTitleSplit = htmlTitle?.split(/ [-–—|·] /g) || [];
+  const htmlTitleSplit = htmlTitle?.split(/ [--–—|·] /g) || [];
   const siteName = meta.og?.site_name;
 
   const { loạiNềnTảng, loạiNơiĐăng, tênNềnTảng } = tạoThôngTinNơiĐăngTừURL(url);
@@ -174,6 +175,7 @@ export async function tạoTiêuĐề(urlString: UrlChưaChínhTắc, HTML: stri
     case "Chat":
       switch (tênNềnTảng) {
         case "Facebook":
+        case "YouTube":
           tên = metaTitle;
           break;
         case "Discord":
@@ -184,10 +186,8 @@ export async function tạoTiêuĐề(urlString: UrlChưaChínhTắc, HTML: stri
             case "GitHub":
               return `Org GitHub ${htmlTitleSplit[0]}`;
             default:
-              /** Repo bình thường */
-              tên = htmlTitleSplit[1];
+              return `Repo GitHub ${htmlTitleSplit[1]}`;
           }
-          break;
         default:
           tên = siteName;
           break;

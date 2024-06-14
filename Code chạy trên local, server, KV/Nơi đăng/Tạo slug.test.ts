@@ -1,4 +1,4 @@
-import { tạoSlugNơiĐăng, tạoTừĐiểnSlugNơiĐăng } from "./T%E1%BA%A1o%20slug.ts";
+import { tạoSlugNơiĐăng, tạoTừĐiểnSlugNơiĐăng } from "./Tạo slug.ts";
 
 const nơiĐăngList: ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo[] = [
   {

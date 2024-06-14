@@ -1,4 +1,4 @@
-import { VịTrí } from "../../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
+import { VịTrí } from "../Hàm và kiểu cho vị trí.ts";
 import { ThôngTinNơiĐăng, TênNơiĐăng } from "../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
 import { CấuHìnhViếtTắt } from "../../Code chạy trên local, server, KV/Hàm và kiểu cho cấu hình.ts";
 

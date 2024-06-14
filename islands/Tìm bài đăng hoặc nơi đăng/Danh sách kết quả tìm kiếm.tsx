@@ -6,7 +6,7 @@ import { DanhSáchKếtQuảTìmKiếmType, MụcĐượcChọn, TênDanhSách, 
 import { xửLýPunycode } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL và fetch.ts";
 import { kiểuKebab, tạoLoạiNơiĐăngString, tạoTênNơiĐăngString } from "../../Code chạy trên client/Chuỗi, slug/Hàm xử lý chuỗi.ts";
 import { BàiĐăng } from "../../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
-import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Code chạy trên local, server, KV/Nơi đăng/Hàm và kiểu cho vị trí.ts";
+import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Code chạy trên client/Hàm và kiểu cho vị trí.ts";
 
 function tạoDòngPhụCủaBàiĐăng(bàiĐăng: BàiĐăng) {
   const { "Dự án": dựÁn, "Kho thông tin": vault, URL } = bàiĐăng;

@@ -1,8 +1,20 @@
+import { DOMParser, HTMLDocument } from "jsr:@b-fuze/deno-dom";
 import { tạoDanhSáchThôngTinCấuHìnhNơiĐăng } from "./Hàm và kiểu cho cấu hình.ts";
+import { getMetaTags } from "https://deno.land/x/opengraph@v1.0.0/mod.ts";
 import { TẬP_TIN_CACHE_HTML, TẬP_TIN_CACHE_URL_CHÍNH_TẮC } from "./ĐƯỜNG_DẪN.ts";
-import { lấyURLTrongJSON, Url, UrlChínhTắc } from "../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL và fetch.ts";
-import { lấyURLChínhTắc } from "../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL và fetch.ts";
+import {
+  lấyHTML,
+  lấyURLKhôngSlashVàCóSlash,
+  lấyURLTrongJSON,
+  Url,
+  UrlChínhTắc,
+  UrlChưaChínhTắc,
+} from "../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL và fetch.ts";
 import { load } from "$std/dotenv/mod.ts";
+import {
+  MetaTags,
+  MetaTagUrlVàDocument,
+} from "../Code%20ch%E1%BA%A1y%20tr%C3%AAn%20client/URL,%20HTML/H%C3%A0m%20v%C3%A0%20ki%E1%BB%83u%20cho%20d%E1%BB%AF%20li%E1%BB%87u%20meta.ts";
 
 export type CacheUrlChínhTắc = Map<string, string>;
 export type CacheHTML = Map<UrlChínhTắc["href"], string>;
@@ -24,7 +36,15 @@ export async function lấyHTMLTừLocal(urL: Url, originCủaCorsProxy: URL["or
   return html;
 }
 
-async function lấyURLChínhTắcVàHTMLTừCache(urL: Url): Promise<[string, string | ""]> {
+export function lấyURLChínhTắc(urL: UrlChưaChínhTắc, html: string): string {
+  const url = urL.toString();
+  const document = new DOMParser().parseFromString(html, "text/html");
+  const canonical = document.querySelector("link[rel='canonical']") as HTMLLinkElement | null;
+  return canonical?.getAttribute("href") || url.toString();
+}
+
+export async function lấyURLChínhTắcVàHTMLTừLocal(urL: Url): Promise<[string, string | ""]> {
+  const env = await load();
   const url = urL.toString();
   const cacheUrlChínhTắc = new Map(Object.entries(JSON.parse(await Deno.readTextFile(TẬP_TIN_CACHE_URL_CHÍNH_TẮC)))) as CacheHTML;
   let html;
@@ -32,20 +52,23 @@ async function lấyURLChínhTắcVàHTMLTừCache(urL: Url): Promise<[string, s
   if (!urlChínhTắc) {
     /** Nếu không có cache cho URL chính tắc thì coi như cache HTML là không có */
     console.info("Không có sẵn cache URL chính tắc cho URL này");
-    html = await lấyHTMLTừLocal(url);
-    urlChínhTắc = await lấyURLChínhTắc(url, html);
+    html = await lấyHTMLTừLocal(url, env["ORIGIN"]);
+    urlChínhTắc = lấyURLChínhTắc(url, html);
   }
-  console.log("urlChínhTắc lấy được:", urlChínhTắc);
+  console.log("URL chính tắc lấy được:", urlChínhTắc);
   const urlChínhTắcThật = urlChínhTắc !== "https://www.facebook.com/login/web/";
   if (!urlChínhTắcThật) {
     console.info("Facebook chặn IP này. Lấy trên CORS proxy");
-    const env = await load();
     html = await lấyHTMLTừLocal(url, env["ORIGIN"]);
-    urlChínhTắc = await lấyURLChínhTắc(url, html);
+    urlChínhTắc = lấyURLChínhTắc(url, html);
   }
   if (!urlChínhTắc) {
     console.info("Không tìm thấy URL chính tắc. Dùng URL được nhập vào làm URL chính tắc");
     urlChínhTắc = url;
+  }
+
+  if (urlChínhTắc && !html) {
+    html = await lấyHTML(urlChínhTắc);
   }
   html = html ? html : "";
   return [urlChínhTắc, html];
@@ -63,9 +86,11 @@ export async function tạoCache(): Promise<CacheHTML> {
     for (const urL of uniqueUrls) {
       const url = urL.href;
       console.log(url);
-      const [urlChínhTắc, html] = await lấyURLChínhTắcVàHTMLTừCache(url);
+      const [urlKhôngSlash, urlCóSlash] = lấyURLKhôngSlashVàCóSlash(url);
+      const [urlChínhTắc, html] = await lấyURLChínhTắcVàHTMLTừLocal(url);
 
-      cacheUrlChínhTắc.set(url, urlChínhTắc);
+      cacheUrlChínhTắc.set(urlKhôngSlash, urlChínhTắc);
+      cacheUrlChínhTắc.set(urlCóSlash, urlChínhTắc);
       cacheHTML.set(urlChínhTắc, html);
     }
   }
@@ -73,4 +98,13 @@ export async function tạoCache(): Promise<CacheHTML> {
   await Deno.writeTextFile(TẬP_TIN_CACHE_URL_CHÍNH_TẮC, JSON.stringify(Object.fromEntries(cacheUrlChínhTắc.entries()), null, 2));
   console.log();
   return cacheHTML;
+}
+
+export async function lấyMetaTagVàTạoDocumentTrênLocal(urlString: Url): Promise<MetaTagUrlVàDocument> {
+  const [url, html] = await lấyURLChínhTắcVàHTMLTừLocal(urlString);
+  const meta = await getMetaTags(html) as MetaTags;
+  if (!meta?.og) console.warn(`Không lấy được các thẻ Open Graph cho ${url}`);
+  const document = new DOMParser().parseFromString(html, "text/html");
+
+  return { meta, url: new URL(url), document, html };
 }
