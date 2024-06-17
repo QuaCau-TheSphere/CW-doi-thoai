@@ -232,11 +232,11 @@ export type CấuHìnhSaaS = Record<TênNềnTảngSaaS, VậtThểLàmGiáTrị
 /**
  * KHÁC
  */
-export const DanhSáchNơiĐăngKhác = ["Vault", "Website", "Email", "Ảnh"] as const;
-export type LoạiNơiĐăngKhác = [typeof DanhSáchNơiĐăngKhác[number]];
+export const danhSáchNơiĐăngKhác = ["Vault", "Website", "Email", "Ảnh"] as const;
+export type LoạiNơiĐăngKhác = [typeof danhSáchNơiĐăngKhác[number]];
 /** Tên nền tảng của vault, website, email, CV, ảnh, dịch vụ lưu trữ không quan trọng, không phức tạp, không làm ảnh hưởng tới cách gọi các cấp bậc nhỏ hơn nên để null cũng được */
-type TênNềnTảngKhác = typeof DanhSáchNơiĐăngKhác[number];
-type LoạiNềnTảngKhác = typeof DanhSáchNơiĐăngKhác[number];
+type TênNềnTảngKhác = typeof danhSáchNơiĐăngKhác[number];
+type LoạiNềnTảngKhác = typeof danhSáchNơiĐăngKhác[number];
 type TênNơiĐăngKhác = [string];
 
 export type CấuHìnhVault = string[];
@@ -252,4 +252,13 @@ export function làCùngNơiĐăng(nơiĐăng1: ThôngTinNơiĐăng, nơiĐăng2
     if (JSON.stringify(nơiĐăng1[key]) !== JSON.stringify(nơiĐăng2[key])) return false;
   }
   return true;
+}
+
+export function xácĐịnhLoạiNềnTảngTừTênNềnTảng(tênNềnTảng: TênNềnTảng): LoạiNềnTảng {
+  if ((danhSáchDiễnĐàn as unknown as string[]).includes(tênNềnTảng)) return "Diễn đàn";
+  if ((danhSáchNềnTảngChat as unknown as string[]).includes(tênNềnTảng)) return "Chat";
+  return tênNềnTảng as LoạiNềnTảng;
+  // for (const nơiĐăngKhác of danhSáchNơiĐăngKhác) {
+  //   if (tênNềnTảng === nơiĐăngKhác ) return nơiĐăngKhác
+  // }
 }

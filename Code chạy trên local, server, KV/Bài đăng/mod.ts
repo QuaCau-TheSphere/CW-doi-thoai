@@ -8,8 +8,8 @@ import { đổiTừCơSố10SangCơSố64 } from "../../Code chạy trên client
 export default async function tạoDanhSáchBàiĐăng(): Promise<BàiĐăng[]> {
   const danhSáchBàiĐăngĐãCóId: BàiĐăng[] = [];
   const danhSáchBàiĐăngChưaCóId = [
-    // ...await tạoDanhSáchBàiĐăngTrênVault(),
-    // ...await tạoDanhSáchBàiĐăngTừCSV(),
+    ...await tạoDanhSáchBàiĐăngTrênVault(),
+    ...await tạoDanhSáchBàiĐăngTừCSV(),
   ];
   const danhSáchThôngTinCấuHìnhNơiĐăng = await tạoDanhSáchThôngTinCấuHìnhNơiĐăng();
   for (const thôngTinCấuHình of danhSáchThôngTinCấuHìnhNơiĐăng) {
@@ -28,5 +28,4 @@ export default async function tạoDanhSáchBàiĐăng(): Promise<BàiĐăng[]> 
   return danhSáchBàiĐăngĐãCóId;
 }
 
-console.log(await tạoDanhSáchBàiĐăng());
-debugger;
+// console.log(await tạoDanhSáchBàiĐăng());

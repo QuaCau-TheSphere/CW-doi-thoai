@@ -1,74 +1,23 @@
 /**
  * @fileoverview Bài đăng và nơi đăng được tạo ở đây ko có id. Id chỉ thêm vào ngay trước lúc nhập vào KV
  */
+import { LoạiNơiĐăng, ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo } from "../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
+import { UrlChưaChínhTắc } from "./Hàm và kiểu cho URL và fetch.ts";
 import {
-  danhSáchDiễnĐàn,
-  danhSáchNềnTảngChat,
-  LoạiNơiĐăng,
-  LoạiNềnTảng,
-  ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo,
-  TênNềnTảng,
-} from "../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
-import { lấyURLChínhTắc, UrlChưaChínhTắc } from "./Hàm và kiểu cho URL và fetch.ts";
-import {
-  cóTênNềnTảngTrongHostname,
   lấyLĩnhVực,
   lấyMetaTagVàTạoDocument,
   lấyMôTả,
   lấyNgàyCậpNhật,
   lấyNgàyTạo,
-  lấyTitle,
   lấyTácGiả,
   lấyĐơnVịQuảnLý,
-  tạoTiêuĐề,
+  tạoSlugBàiĐăng,
+  tạoTiêuĐềBàiĐăng,
+  tạoTênNơiĐăng,
 } from "./Hàm và kiểu cho dữ liệu meta.ts";
 import { NơiĐăngCóCácLựaChọnVịTríChưaCóIdVàPhươngThứcTạo, tạoNơiĐăngCóCácLựaChọnVịTrí } from "../Hàm và kiểu cho vị trí.ts";
 import { BàiĐăngChưaCóIdVàPhươngThứcTạo } from "../../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
-import { tạoSlugBàiĐăng } from "../../Code chạy trên local, server, KV/Nơi đăng/Tạo slug.ts";
-
-export function tạoThôngTinNơiĐăngTừURL(url: URL) {
-  let loạiNềnTảng: LoạiNềnTảng | undefined = undefined;
-  let tênNềnTảng: TênNềnTảng | undefined = undefined;
-  let loạiNơiĐăng: LoạiNơiĐăng | undefined = undefined;
-
-  const { hostname, pathname } = url;
-  const danhSáchNềnTảng = (danhSáchDiễnĐàn as unknown as TênNềnTảng[]).concat(danhSáchNềnTảngChat);
-  for (const nềnTảng of danhSáchNềnTảng) {
-    if (cóTênNềnTảngTrongHostname(hostname, nềnTảng)) {
-      tênNềnTảng = nềnTảng;
-      if ((danhSáchDiễnĐàn as unknown as TênNềnTảng[]).includes(nềnTảng)) {
-        loạiNềnTảng = "Diễn đàn";
-        if (hostname.includes("github")) {
-          loạiNơiĐăng = ["Repo"];
-        }
-        if (hostname.includes("facebook") || hostname.includes("linkedin")) {
-          pathname.includes("group") ? loạiNơiĐăng = ["Nhóm"] : loạiNơiĐăng = ["Trang"];
-        }
-        if (hostname.includes("youtube") || url.href.includes("youtu.be")) {
-          if (pathname.includes("playlist")) {
-            loạiNơiĐăng = ["Danh sách phát"];
-          } else if (pathname.startsWith("/@") || pathname.startsWith("/channel")) {
-            loạiNơiĐăng = ["Kênh"];
-          } else {
-            loạiNơiĐăng = ["Video"];
-          }
-        }
-      } else {
-        loạiNềnTảng = "Chat";
-        if (hostname.includes("discord")) {
-          loạiNơiĐăng = ["Máy chủ", "Kênh thường"];
-        }
-        if (hostname.includes("telegram")) {
-          loạiNơiĐăng = ["Nhóm", "Chủ đề"];
-        }
-      }
-    }
-  }
-  loạiNềnTảng = loạiNềnTảng ?? "Website";
-  tênNềnTảng = tênNềnTảng ?? "Website";
-  loạiNơiĐăng = loạiNơiĐăng ?? ["Website"];
-  return { loạiNềnTảng, tênNềnTảng, loạiNơiĐăng };
-}
+import { lấyThôngTinTừUrl } from "./Lấy dữ liệu từ URL/mod.ts";
 
 /**
  * @param [slug=undefined] nếu là undefined nghĩa là URL là do người dùng nhập chứ không phải được khai báo sẵn, nên từ đầu đã không có slug
@@ -81,15 +30,17 @@ export async function tạoNơiĐăngTừURL(
   console.trace("Tạo nơi đăng mới từ URL:", urlString.toString());
   const metaTagUrlVàDocument = await lấyMetaTagVàTạoDocument(urlString, HTML);
   const { meta, url } = metaTagUrlVàDocument;
-  const { loạiNềnTảng, tênNềnTảng, loạiNơiĐăng } = tạoThôngTinNơiĐăngTừURL(url);
+  const thôngTinUrl = lấyThôngTinTừUrl(metaTagUrlVàDocument);
+  const { loạiNềnTảng, tênNềnTảng, ...temp } = thôngTinUrl;
+  const loạiNơiĐăng = Object.entries(temp)[0][0];
 
   const thôngTinNơiĐăngChưaCóId: ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo = {
-    "Tên nơi đăng": [lấyTitle(metaTagUrlVàDocument) || ""],
-    URL: await lấyURLChínhTắc(urlString, HTML),
-    "Mô tả nơi đăng": lấyMôTả(metaTagUrlVàDocument),
+    "Tên nơi đăng": tạoTênNơiĐăng(thôngTinUrl),
+    URL: url.href,
+    "Mô tả nơi đăng": lấyMôTả(thôngTinUrl),
     "Loại nền tảng": loạiNềnTảng,
     "Tên nền tảng": tênNềnTảng,
-    "Loại nơi đăng": loạiNơiĐăng,
+    "Loại nơi đăng": [loạiNơiĐăng] as LoạiNơiĐăng,
     "Lĩnh vực": lấyLĩnhVực(meta),
     "Đơn vị quản lý": lấyĐơnVịQuảnLý(metaTagUrlVàDocument, loạiNềnTảng),
   };
@@ -107,13 +58,14 @@ export async function tạoBàiĐăngTừURL(
   console.info("Tạo bài đăng mới từ URL:", urlString.toString());
   const metaTagUrlVàDocument = await lấyMetaTagVàTạoDocument(urlString, HTML);
   const { meta, url } = metaTagUrlVàDocument;
+  const thôngTinUrl = lấyThôngTinTừUrl(metaTagUrlVàDocument);
   return {
-    "Tiêu đề": tạoTiêuĐề(metaTagUrlVàDocument),
-    URL: await lấyURLChínhTắc(urlString, HTML),
+    "Tiêu đề": tạoTiêuĐềBàiĐăng(thôngTinUrl),
+    URL: url.href,
     "Nội dung bài đăng": {
-      "Mô tả bài đăng": lấyMôTả(metaTagUrlVàDocument),
+      "Mô tả bài đăng": lấyMôTả(thôngTinUrl),
     },
-    Slug: tạoSlugBàiĐăng(url),
+    Slug: tạoSlugBàiĐăng(url, thôngTinUrl),
     "Tác giả": lấyTácGiả(meta),
     "Ngày tạo": lấyNgàyTạo(meta),
     "Ngày cập nhật": lấyNgàyCậpNhật(meta),

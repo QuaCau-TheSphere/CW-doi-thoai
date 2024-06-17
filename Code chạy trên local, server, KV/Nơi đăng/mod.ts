@@ -1,6 +1,6 @@
 import {
   CấuHìnhNơiĐăngDiễnĐàn,
-  DanhSáchNơiĐăngKhác,
+  danhSáchNơiĐăngKhác,
   LoạiNơiĐăngDiễnĐàn,
   ThôngTinNơiĐăngChưaCóId,
   TênChứcNăngTrongSaaS,
@@ -84,7 +84,7 @@ async function tạoDanhSáchSaaS(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, da
 }
 
 async function tạoDanhSáchKhác(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
-  for (const loạiNơiĐăngKhác of DanhSáchNơiĐăngKhác) {
+  for (const loạiNơiĐăngKhác of danhSáchNơiĐăngKhác) {
     const cấuHìnhLoạiNơiĐăngKhác = cấuHìnhNơiĐăng[loạiNơiĐăngKhác];
     if (!cấuHìnhLoạiNơiĐăngKhác) continue;
     for (const tênNơiĐăngKhácUrl of Object.values(cấuHìnhLoạiNơiĐăngKhác)) {
@@ -138,7 +138,7 @@ export default async function tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí
         break;
     }
     const { "Tên nơi đăng": tênNơiĐăng, URL: url } = thôngTinNơiĐăng;
-    thôngTinNơiĐăng["Slug"] = await tạoSlugNơiĐăng(tênNơiĐăng, url, từĐiểnSlugNơiĐăng);
+    thôngTinNơiĐăng["Slug"] = tạoSlugNơiĐăng(tênNơiĐăng, url, từĐiểnSlugNơiĐăng);
   }
   return danhSáchNơiĐăng;
 }

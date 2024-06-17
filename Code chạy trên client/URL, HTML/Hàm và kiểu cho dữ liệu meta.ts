@@ -2,10 +2,12 @@ import { parse } from "npm:tldts";
 import punycode from "npm:punycode";
 import { DOMParser, HTMLDocument } from "jsr:@b-fuze/deno-dom";
 import { getMetaTags } from "https://deno.land/x/opengraph@v1.0.0/mod.ts";
-import { tạoThôngTinNơiĐăngTừURL } from "./Tạo bài đăng hoặc nơi đăng từ URL.ts";
-import { lấyHTML, lấyURLChínhTắc, Url, UrlChínhTắc, UrlChưaChínhTắc } from "./Hàm và kiểu cho URL và fetch.ts";
-import { viếtThường } from "../Chuỗi, slug/Hàm xử lý chuỗi.ts";
-import { LoạiNềnTảng, TênNềnTảng } from "../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
+import { lấyHTML, lấyURLChínhTắc, Url, UrlChínhTắc } from "./Hàm và kiểu cho URL và fetch.ts";
+import { LoạiNềnTảng } from "../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
+import { remark } from "https://esm.sh/remark";
+import stripMarkdown from "https://esm.sh/strip-markdown@6";
+import { lấyThôngTinLoạiUrl, ThôngTinUrl } from "./Lấy dữ liệu từ URL/mod.ts";
+import { TênNơiĐăng } from "../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
 
 export type MetaTags = {
   /**
@@ -105,29 +107,6 @@ export function lấyUsername(hostname: string) {
   return domainWithoutSuffix;
 }
 
-export function lấyTitle({ meta, document }: MetaTagUrlVàDocument): string {
-  const metaTitle = meta.og?.title;
-  const htmlTitle = document.querySelector("title")?.textContent;
-
-  switch (metaTitle) {
-    case undefined:
-      return !htmlTitle ? "" : htmlTitle;
-    default:
-      return !htmlTitle ? metaTitle : metaTitle.length <= htmlTitle.length ? htmlTitle : metaTitle;
-  }
-}
-
-export function lấyMôTả({ meta, document }: MetaTagUrlVàDocument): string | null | undefined {
-  return meta?.description || document.querySelector("p")?.textContent || meta.og?.description;
-}
-
-export function cóTênNềnTảngTrongHostname(hostname: string, nềnTảng: TênNềnTảng) {
-  if (hostname.includes("youtu.be") && nềnTảng === "YouTube") return true;
-
-  const tênNềnTảngViếtThườngKhôngCách = viếtThường(nềnTảng).replaceAll(" ", "");
-  return hostname.includes(tênNềnTảngViếtThườngKhôngCách);
-}
-
 export function lấyLĩnhVực(meta: MetaTags): string[] | undefined {
   if (meta?.keywords) return meta.keywords.split(",");
   if (meta?.article?.tag) return [meta.article?.tag];
@@ -159,47 +138,50 @@ export function lấyTácGiả(meta: MetaTags): string | undefined {
   return meta?.author || meta.article?.author || meta.creator;
 }
 
-export function tạoTiêuĐề(metaTagUrlVàDocument: MetaTagUrlVàDocument): string {
-  const { meta, url, document } = metaTagUrlVàDocument;
-  const metaTitle = meta.og?.title;
-  const htmlTitle = document.querySelector("title")?.textContent;
-  const htmlTitleSplit = htmlTitle?.split(/ [--–—|·] /g) || [];
-  const siteName = meta.og?.site_name;
+export function tạoTiêuĐềBàiĐăng({ tênNềnTảng, loạiNềnTảng: _, ...temp1 }: ThôngTinUrl): string {
+  const [loạiNơiĐăng, temp2] = Object.entries(temp1)[0];
+  const tên = temp2.tên;
+  if (loạiNơiĐăng === "Trang chủ") {
+    return `Trang chủ ${tên}`;
+  }
+  switch (tênNềnTảng) {
+    case "Discord":
+      return `Liên kết mời tham gia Discord ${tên}`;
 
-  const { loạiNềnTảng, loạiNơiĐăng, tênNềnTảng } = tạoThôngTinNơiĐăngTừURL(url);
-  const title = lấyTitle(metaTagUrlVàDocument);
+    default:
+      return tên || "";
+  }
+}
 
-  let tên;
+export function lấyMôTả({ tênNềnTảng: _, loạiNềnTảng: __, ...temp1 }: ThôngTinUrl): string | null | undefined {
+  const [_loạiNơiĐăng, temp2] = Object.entries(temp1)[0];
+  return "môTả" in temp2 ? temp2.môTả : undefined;
+}
+
+export function tạoSlugBàiĐăng({ hostname, pathname }: URL, { tênNềnTảng: _, loạiNềnTảng, ...temp1 }: ThôngTinUrl) {
+  const [_loạiNơiĐăng, temp2] = Object.entries(temp1)[0];
   switch (loạiNềnTảng) {
     case "Diễn đàn":
     case "Chat":
-      switch (tênNềnTảng) {
-        case "Facebook":
-        case "YouTube":
-          tên = metaTitle;
-          break;
-        case "Discord":
-          tên = htmlTitle;
-          break;
-        case "GitHub":
-          switch (htmlTitleSplit[1]) {
-            case "GitHub":
-              return `Org GitHub ${htmlTitleSplit[0]}`;
-            default:
-              return `Repo GitHub ${htmlTitleSplit[1]}`;
-          }
-        default:
-          tên = siteName;
-          break;
-      }
-      return `${loạiNơiĐăng[0]} ${tênNềnTảng} ${tên}`;
-    case "Website":
-      if (url.pathname === "/") {
-        const tênTrang = siteName ? siteName : htmlTitleSplit[htmlTitleSplit.length - 1];
-        return `Trang chủ ${tênTrang}`;
-      }
-      return title || "";
-    default:
-      return `${tênNềnTảng} ${title}`;
+      return temp2.slug;
+
+    default: {
+      let slugWebsiteCóSẵn = pathname.substring(1);
+      slugWebsiteCóSẵn = slugWebsiteCóSẵn.slice(-1) === "/" ? slugWebsiteCóSẵn.slice(0, -1) : slugWebsiteCóSẵn;
+      if (slugWebsiteCóSẵn.startsWith("blog/")) slugWebsiteCóSẵn = slugWebsiteCóSẵn.replace("blog/", "");
+      if (slugWebsiteCóSẵn.includes("/")) return undefined;
+      return slugWebsiteCóSẵn ? slugWebsiteCóSẵn : lấyUsername(hostname);
+    }
   }
+}
+
+export function lấyTitle({ meta, document }: MetaTagUrlVàDocument): string | undefined {
+  const htmlTitle = document.querySelector("title")?.textContent;
+  const metaTitle = meta.og?.title;
+  return metaTitle || htmlTitle;
+}
+
+export function tạoTênNơiĐăng(thôngTinUrl: ThôngTinUrl): TênNơiĐăng {
+  const thôngTinLoạiUrl = lấyThôngTinLoạiUrl(thôngTinUrl);
+  return [thôngTinLoạiUrl.tên || ""];
 }

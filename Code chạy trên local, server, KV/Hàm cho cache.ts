@@ -21,6 +21,7 @@ export type CacheHTML = Map<UrlChínhTắc["href"], string>;
 
 /** Không dùng hàm này trên server, vì nó sẽ tạo URL cho CORS proxy trên server. Nếu dùng nó thì URL nào gửi đến CORS proxy sẽ bị circular */
 export async function lấyHTMLTừLocal(urL: Url, originCủaCorsProxy: URL["origin"] | undefined = undefined) {
+  console.log("🚀 ~ lấyHTMLTừLocal ~ originCủaCorsProxy:", originCủaCorsProxy);
   const url = urL.toString();
   let html;
   if (!originCủaCorsProxy) {
@@ -43,23 +44,24 @@ export function lấyURLChínhTắc(urL: UrlChưaChínhTắc, html: string): str
   return canonical?.getAttribute("href") || url.toString();
 }
 
-export async function lấyURLChínhTắcVàHTMLTừLocal(urL: Url): Promise<[string, string | ""]> {
+export async function lấyURLChínhTắcVàHTMLTừLocal(urL: Url, HTML: string | undefined = undefined): Promise<[string, string | ""]> {
   const env = await load();
   const url = urL.toString();
   const cacheUrlChínhTắc = new Map(Object.entries(JSON.parse(await Deno.readTextFile(TẬP_TIN_CACHE_URL_CHÍNH_TẮC)))) as CacheHTML;
-  let html;
+  let html = HTML;
   let urlChínhTắc = cacheUrlChínhTắc.get(url);
   if (!urlChínhTắc) {
     /** Nếu không có cache cho URL chính tắc thì coi như cache HTML là không có */
     console.info("Không có sẵn cache URL chính tắc cho URL này");
-    html = await lấyHTMLTừLocal(url, env["ORIGIN"]);
+    // html = await lấyHTMLTừLocal(url, env["ORIGIN"]);
+    html = await lấyHTMLTừLocal(url, env["CORS_PROXY"]);
     urlChínhTắc = lấyURLChínhTắc(url, html);
   }
   console.log("URL chính tắc lấy được:", urlChínhTắc);
   const urlChínhTắcThật = urlChínhTắc !== "https://www.facebook.com/login/web/";
   if (!urlChínhTắcThật) {
     console.info("Facebook chặn IP này. Lấy trên CORS proxy");
-    html = await lấyHTMLTừLocal(url, env["ORIGIN"]);
+    html = await lấyHTMLTừLocal(url, env["CORS_PROXY"]);
     urlChínhTắc = lấyURLChínhTắc(url, html);
   }
   if (!urlChínhTắc) {
@@ -100,8 +102,8 @@ export async function tạoCache(): Promise<CacheHTML> {
   return cacheHTML;
 }
 
-export async function lấyMetaTagVàTạoDocumentTrênLocal(urlString: Url): Promise<MetaTagUrlVàDocument> {
-  const [url, html] = await lấyURLChínhTắcVàHTMLTừLocal(urlString);
+export async function lấyMetaTagVàTạoDocumentTrênLocal(urlString: Url, HTML: string | undefined = undefined): Promise<MetaTagUrlVàDocument> {
+  const [url, html] = await lấyURLChínhTắcVàHTMLTừLocal(urlString, HTML);
   const meta = await getMetaTags(html) as MetaTags;
   if (!meta?.og) console.warn(`Không lấy được các thẻ Open Graph cho ${url}`);
   const document = new DOMParser().parseFromString(html, "text/html");

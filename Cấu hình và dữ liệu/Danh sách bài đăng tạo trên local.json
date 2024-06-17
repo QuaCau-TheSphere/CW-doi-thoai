@@ -28085,6 +28085,22 @@
     "id": "R3"
   },
   {
+    "Tiêu đề": "toString hoặc href sẽ luôn thêm slash vào sau",
+    "URL": "https://lậptrình.quảcầu.cc/✍️Lập trình/Khái niệm cơ bản và nguyên lý lập trình/toString hoặc href sẽ luôn thêm slash vào sau",
+    "Kho thông tin": "Tiếp thị số, xử lý dữ liệu và lập trình",
+    "Dự án": {
+      "Mã dự án": "C2"
+    },
+    "Nội dung bài đăng": {
+      "Toàn bộ nội dung": "Nguồn:: \n[[String(x) giống x.tostring(), nhưng không gây ra lỗi nếu x là null hoặc undefined]]] ] ",
+      "Định dạng nội dung": "md"
+    },
+    "Phương thức tạo": "Cào vault",
+    "Ngày tạo": "2023-10-30T07:29:00.000Z",
+    "Ngày cập nhật": "2024-06-14T08:39:00.000Z",
+    "id": "R4"
+  },
+  {
     "Tiêu đề": "Việc biến đổi dữ liệu chủ yếu là để người dùng đọc cho tiện, và để máy kiểm tra dữ liệu",
     "URL": "https://lậptrình.quảcầu.cc/✍️Lập trình/Khái niệm cơ bản và nguyên lý lập trình/Việc biến đổi dữ liệu chủ yếu là để người dùng đọc cho tiện, và để máy kiểm tra dữ liệu",
     "Kho thông tin": "Tiếp thị số, xử lý dữ liệu và lập trình",
@@ -28098,7 +28114,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-04T06:51:00.000Z",
-    "id": "R4"
+    "id": "R5"
   },
   {
     "Tiêu đề": "VIệc đặt tên không có tiền tố gì sẽ tiện khi nó thường được dùng thường xuyên ở những nơi khác, ở trong một danh sách, hoặc liệt kê các thuộc tính",
@@ -28114,7 +28130,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-06-13T16:30:00.000Z",
-    "id": "R5"
+    "id": "R6"
   },
   {
     "Tiêu đề": "AutoHotkey combines 3 concepts into 1 built-in basic object type",
@@ -28130,7 +28146,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "R6"
+    "id": "R7"
   },
   {
     "Tiêu đề": "Tạo phím tắt bằng AutoHotKey",
@@ -28146,7 +28162,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-05-30T08:56:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:56:00.000Z",
-    "id": "R7"
+    "id": "R8"
   },
   {
     "Tiêu đề": "Các ngôn ngữ lập trình tiến hoá dần để trở thành Lisp",
@@ -28162,7 +28178,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "R8"
+    "id": "R9"
   },
   {
     "Tiêu đề": "Biến được so sánh với nhau bằng địa chỉ bộ nhớ, không phải giá trị thực sự của biến",
@@ -28178,7 +28194,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-21T10:58:00.000Z",
     "Ngày cập nhật": "2024-04-27T06:20:00.000Z",
-    "id": "R9"
+    "id": "RA"
   },
   {
     "Tiêu đề": "Biến được tạo mà không có từ khoá khai báo (var, let, const) luôn là biến toàn cục, kể cả khi được tạo trong hàm",
@@ -28194,7 +28210,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-04-27T06:20:00.000Z",
-    "id": "RA"
+    "id": "RB"
   },
   {
     "Tiêu đề": "await với async là cách để viết hàm bất đồng bộ với tư duy khi viết hàm tuần tự",
@@ -28210,7 +28226,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-06T15:14:00.000Z",
-    "id": "RB"
+    "id": "RC"
   },
   {
     "Tiêu đề": "callback là một hàm được truyền vào một hàm khác giống như một tham số bình thường",
@@ -28226,7 +28242,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-01T15:10:00.000Z",
-    "id": "RC"
+    "id": "RD"
   },
   {
     "Tiêu đề": "Callback là những hàm được dùng như đối số của hàm khác",
@@ -28242,7 +28258,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-06-12T09:43:00.000Z",
-    "id": "RD"
+    "id": "RE"
   },
   {
     "Tiêu đề": "Dùng await trong filter sẽ chẳng filter được gì",
@@ -28258,7 +28274,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-27T09:19:00.000Z",
-    "id": "RE"
+    "id": "RF"
   },
   {
     "Tiêu đề": "Hàm gọi hàm callback đã xác định sẵn tham số truyền vào cho callback. Callback bắt buộc phải có đúng thứ tự và kiểu biến được hàm gọi cho trước",
@@ -28274,7 +28290,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-27T09:19:00.000Z",
-    "id": "RF"
+    "id": "RG"
   },
   {
     "Tiêu đề": "Promise chỉ là một vật thể để việc lập trình được tiện hơn, không phải là một tính năng mà những phiên bản JS trước không làm được",
@@ -28290,7 +28306,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-04-27T09:19:00.000Z",
-    "id": "RG"
+    "id": "RH"
   },
   {
     "Tiêu đề": "Promise được sinh ra là để không phải dùng if lồng quá nhiều",
@@ -28306,7 +28322,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-04-27T09:19:00.000Z",
-    "id": "RH"
+    "id": "RI"
   },
   {
     "Tiêu đề": "Thực chất promise không giải quyết được chuyện lồng, vì promise cũng lồng vào nhau như if thôi. Thứ nó giải quyết là việc các giá trị trả về từ promise trông như không lồng vào nhau gì cả",
@@ -28322,7 +28338,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-27T09:19:00.000Z",
-    "id": "RI"
+    "id": "RJ"
   },
   {
     "Tiêu đề": "JSON.stringify(new Error()) trả về một vật thể rỗng",
@@ -28338,7 +28354,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-05T13:40:00.000Z",
-    "id": "RJ"
+    "id": "RK"
   },
   {
     "Tiêu đề": "object Object xảy ra khi một vật thể bị chuyển sang dạng chuỗi",
@@ -28354,7 +28370,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-05-05T13:40:00.000Z",
-    "id": "RK"
+    "id": "RL"
   },
   {
     "Tiêu đề": "String(x) giống x.tostring(), nhưng không gây ra lỗi nếu x là null hoặc undefined",
@@ -28370,7 +28386,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-05T13:40:00.000Z",
-    "id": "RL"
+    "id": "RM"
   },
   {
     "Tiêu đề": "Dùng map tiện hơn dùng for vì nó tạo ra một mảng mới cho mình và không cần phải lo mảng cũ bị sửa đổi",
@@ -28386,7 +28402,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-27T06:20:00.000Z",
-    "id": "RM"
+    "id": "RN"
   },
   {
     "Tiêu đề": "f(a)(b) để gọi hàm f(a) có chứa hàm con f1(b)",
@@ -28402,7 +28418,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-05-03T09:51:00.000Z",
-    "id": "RN"
+    "id": "RO"
   },
   {
     "Tiêu đề": "Luôn dùng for of, đừng dùng for in",
@@ -28418,7 +28434,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-04-27T06:20:00.000Z",
-    "id": "RO"
+    "id": "RP"
   },
   {
     "Tiêu đề": "Named export thường dùng cho các file lưu trữ nhiều function, object như utils, constant, api, store… Export default thường dùng cho class, function component",
@@ -28434,7 +28450,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "RP"
+    "id": "RQ"
   },
   {
     "Tiêu đề": "Phương thức json() của Request và Response là để chuyển từ dạng chuỗi sang vật thể",
@@ -28450,7 +28466,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-16T13:12:00.000Z",
-    "id": "RQ"
+    "id": "RR"
   },
   {
     "Tiêu đề": "Mọi sự kiện đều capture và target, nhưng không phải sự kiện nào cũng bubble",
@@ -28466,7 +28482,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-27T09:19:00.000Z",
-    "id": "RR"
+    "id": "RS"
   },
   {
     "Tiêu đề": "Sự kiện",
@@ -28482,7 +28498,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-27T09:19:00.000Z",
-    "id": "RS"
+    "id": "RT"
   },
   {
     "Tiêu đề": "Với ||, `0, '', NaN` sẽ trả về false. Với ??, chúng sẽ trả về true",
@@ -28498,7 +28514,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-05T14:14:00.000Z",
-    "id": "RT"
+    "id": "RU"
   },
   {
     "Tiêu đề": "Luôn dùng ===. Nếu không có lý do hợp lý thì đừng dùng ==",
@@ -28514,7 +28530,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-04-27T09:19:00.000Z",
-    "id": "RU"
+    "id": "RV"
   },
   {
     "Tiêu đề": "Mọi phép so sánh với NaN đều trả về false",
@@ -28530,7 +28546,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-27T09:19:00.000Z",
-    "id": "RV"
+    "id": "RW"
   },
   {
     "Tiêu đề": "Lịch sử phát triển của JavaScript",
@@ -28546,7 +28562,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "RW"
+    "id": "RX"
   },
   {
     "Tiêu đề": "Bundler dùng để gom hết tất cả các script lại vào làm một",
@@ -28562,7 +28578,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-31T09:31:00.000Z",
-    "id": "RX"
+    "id": "RY"
   },
   {
     "Tiêu đề": "Các chương trình dùng electron ngốn ram",
@@ -28578,7 +28594,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-04-27T09:20:00.000Z",
-    "id": "RY"
+    "id": "RZ"
   },
   {
     "Tiêu đề": "Cứ 4kb thì tạo thành một read unit, chứ không phải là một lần chạy lệnh",
@@ -28594,7 +28610,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-26T07:03:00.000Z",
-    "id": "RZ"
+    "id": "Ra"
   },
   {
     "Tiêu đề": "deno info giúp thấy chỗ script được chuyển sang JS",
@@ -28610,7 +28626,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "Ra"
+    "id": "Rb"
   },
   {
     "Tiêu đề": "Dùng Array.fromAsync để việc lấy dữ liệu từ KV không phải chờ tải về hết rồi mới bắt đầu lọc",
@@ -28626,7 +28642,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-13T15:08:00.000Z",
-    "id": "Rb"
+    "id": "Rc"
   },
   {
     "Tiêu đề": "Làm quen Deno cho người mới",
@@ -28642,7 +28658,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-01T09:30:00.000Z",
-    "id": "Rc"
+    "id": "Rd"
   },
   {
     "Tiêu đề": "Sau một thập kỷ phát triển, tác giả của Node viết Deno để khắc phục những thiếu sót của Node",
@@ -28658,7 +28674,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "Rd"
+    "id": "Re"
   },
   {
     "Tiêu đề": "Những API của môi trường thực thi không chạy được trên trình duyệt",
@@ -28674,7 +28690,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-26T07:29:00.000Z",
-    "id": "Re"
+    "id": "Rf"
   },
   {
     "Tiêu đề": "Cần thiết lập EMS cho node trước khi chạy",
@@ -28690,7 +28706,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "Rf"
+    "id": "Rg"
   },
   {
     "Tiêu đề": "node.js là cách để dùng JS ở backend",
@@ -28706,7 +28722,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "Rg"
+    "id": "Rh"
   },
   {
     "Tiêu đề": "npm là chương trình quản lý package cho node.js",
@@ -28722,7 +28738,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "Rh"
+    "id": "Ri"
   },
   {
     "Tiêu đề": "package.json dùng để thiết lập node",
@@ -28738,7 +28754,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-03-22T09:47:00.000Z",
-    "id": "Ri"
+    "id": "Rj"
   },
   {
     "Tiêu đề": "strick mode là chế độ code nghiêm ngặt, nó bắt buộc lập trình viên phải tuân thủ theo quy tắc mà javascript đưa ra",
@@ -28754,7 +28770,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-04-27T06:39:00.000Z",
-    "id": "Rj"
+    "id": "Rk"
   },
   {
     "Tiêu đề": "Temporal được sinh ra để giải quyết rắc rối của Date",
@@ -28770,7 +28786,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-28T17:46:00.000Z",
-    "id": "Rk"
+    "id": "Rl"
   },
   {
     "Tiêu đề": "VanillaJS chỉ là JS bình thường",
@@ -28786,7 +28802,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-27T09:20:00.000Z",
-    "id": "Rl"
+    "id": "Rm"
   },
   {
     "Tiêu đề": "as, is là những cách để nói cho TS biết là mình hiểu nhiều hơn nó",
@@ -28802,7 +28818,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-03T14:13:00.000Z",
-    "id": "Rm"
+    "id": "Rn"
   },
   {
     "Tiêu đề": "/// cung cấp chỉ dẫn cho TS",
@@ -28818,7 +28834,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-23T16:48:00.000Z",
-    "id": "Rn"
+    "id": "Ro"
   },
   {
     "Tiêu đề": "Các ký hiệu trong TS",
@@ -28834,7 +28850,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-21T10:48:00.000Z",
     "Ngày cập nhật": "2024-03-22T09:45:00.000Z",
-    "id": "Ro"
+    "id": "Rp"
   },
   {
     "Tiêu đề": "generic là biến dành cho kiểu",
@@ -28850,7 +28866,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-03-22T09:35:00.000Z",
-    "id": "Rp"
+    "id": "Rq"
   },
   {
     "Tiêu đề": "generic là cách để giữ được tính chung chung mà vẫn không bị mất thông tin",
@@ -28866,7 +28882,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-06-09T06:29:00.000Z",
-    "id": "Rq"
+    "id": "Rr"
   },
   {
     "Tiêu đề": "generic là tính từ, không phải danh từ",
@@ -28882,7 +28898,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-03-22T09:35:00.000Z",
-    "id": "Rr"
+    "id": "Rs"
   },
   {
     "Tiêu đề": "Index signature giúp khai báo kiểu của tên thuộc tính và giá trị của nó trong vật thể, dù không biết vật thể đó có cấu trúc thế nào",
@@ -28898,7 +28914,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "Rs"
+    "id": "Rt"
   },
   {
     "Tiêu đề": "Index signature và record là các cách khai báo kiểu vật thể",
@@ -28914,7 +28930,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "Rt"
+    "id": "Ru"
   },
   {
     "Tiêu đề": "Nếu dữ liệu không nhất thiết ở dạng vật thể thì type gọn hơn và linh hoạt hơn.  Nếu đã xác định dữ liệu cần ở dạng vật thể thì interface sẽ thể hiện tốt ý tưởng của người viết hơn",
@@ -28930,7 +28946,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "Ru"
+    "id": "Rv"
   },
   {
     "Tiêu đề": "satisfied là để kiểm tra xem dữ liệu mình nhập bằng tay có thoả kiểu hay không",
@@ -28946,7 +28962,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-03T14:13:00.000Z",
-    "id": "Rv"
+    "id": "Rw"
   },
   {
     "Tiêu đề": "DefinitelyTyped",
@@ -28962,7 +28978,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-26T15:02:00.000Z",
-    "id": "Rw"
+    "id": "Rx"
   },
   {
     "Tiêu đề": "Dùng string-ts để bắt kiểu cho chuỗi được tốt hơn",
@@ -28978,7 +28994,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-22T09:37:00.000Z",
-    "id": "Rx"
+    "id": "Ry"
   },
   {
     "Tiêu đề": "Dùng ts-reset để sửa những lỗi kỳ lạ của TS",
@@ -28994,7 +29010,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-22T09:37:00.000Z",
-    "id": "Ry"
+    "id": "Rz"
   },
   {
     "Tiêu đề": "Người mới học TS thì nên cài extension Total TypeScript để bớt sợ",
@@ -29010,7 +29026,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-03-26T14:59:00.000Z",
-    "id": "Rz"
+    "id": "R-"
   },
   {
     "Tiêu đề": "Thay vì dùng Copilot để gợi ý code, có thể dùng 30 seconds of TypeScript",
@@ -29026,7 +29042,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-31T06:14:00.000Z",
-    "id": "R-"
+    "id": "R_"
   },
   {
     "Tiêu đề": "TS chỉ có thể bắt lỗi kiểu dữ liệu trong lúc viết code. Zod giúp bắt lỗi kiểu do người dùng trả về",
@@ -29042,7 +29058,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-23T16:11:00.000Z",
-    "id": "R_"
+    "id": "S0"
   },
   {
     "Tiêu đề": "tsc là TypeScript compiler, là thứ dịch TypeScript sang JavaScript",
@@ -29058,7 +29074,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "S0"
+    "id": "S1"
   },
   {
     "Tiêu đề": "tsconfig",
@@ -29074,7 +29090,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "S1"
+    "id": "S2"
   },
   {
     "Tiêu đề": "TypeScript",
@@ -29090,7 +29106,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "S2"
+    "id": "S3"
   },
   {
     "Tiêu đề": "void là kết quả của những hàm không trả kết quả nào",
@@ -29106,7 +29122,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "S3"
+    "id": "S4"
   },
   {
     "Tiêu đề": "Khác biệt giữa JS và Python",
@@ -29122,7 +29138,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-08-25T07:20:00.000Z",
     "Ngày cập nhật": "2024-03-21T14:41:00.000Z",
-    "id": "S4"
+    "id": "S5"
   },
   {
     "Tiêu đề": "JS uses {} syntax for object literals, Python uses it for dictionary and set literals",
@@ -29138,7 +29154,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "S5"
+    "id": "S6"
   },
   {
     "Tiêu đề": "Map trong JS tương đương với dictionary trong Python",
@@ -29154,7 +29170,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-13T06:42:00.000Z",
-    "id": "S6"
+    "id": "S7"
   },
   {
     "Tiêu đề": "Trong JS, console.log() sẽ hiển thị toàn bộ nội dung vật thể mà không phải làm gì. Trong Python, print() sẽ chỉ hiển thị nội dung vật thể nếu __str__() đã được định nghĩa",
@@ -29170,7 +29186,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-16T13:13:00.000Z",
-    "id": "S7"
+    "id": "S8"
   },
   {
     "Tiêu đề": "Từ điển dùng để chứa và thao tác với dữ liệu, trong khi JSON về bản chất dùng để mã hóa và giải mã dữ liệu",
@@ -29186,7 +29202,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-08-25T07:20:00.000Z",
     "Ngày cập nhật": "2024-03-25T12:39:00.000Z",
-    "id": "S8"
+    "id": "S9"
   },
   {
     "Tiêu đề": "Ý nghĩa tên folder",
@@ -29202,7 +29218,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-17T15:09:00.000Z",
-    "id": "S9"
+    "id": "SA"
   },
   {
     "Tiêu đề": "Ở JS, nếu một biến có giá trị là một chuỗi JSON thì nó sẽ được hiểu là vật thể. Ở Python, nó được hiểu là từ điển",
@@ -29218,7 +29234,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "SA"
+    "id": "SB"
   },
   {
     "Tiêu đề": "JS và Python đều không yêu cầu phải khai báo kiểu ngay lúc viết",
@@ -29234,7 +29250,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "SB"
+    "id": "SC"
   },
   {
     "Tiêu đề": "JS được sinh ra để chạy trên trình duyệt và không được dùng để làm việc với lượng code lớn",
@@ -29250,7 +29266,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "SC"
+    "id": "SD"
   },
   {
     "Tiêu đề": "Python tách bạch từ điển và vật thể, còn JS không làm vậy",
@@ -29266,7 +29282,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-27T08:21:00.000Z",
     "Ngày cập nhật": "2024-05-25T07:26:00.000Z",
-    "id": "SD"
+    "id": "SE"
   },
   {
     "Tiêu đề": "Python tập trung vào việc cung cấp một ngôn ngữ lập trình tổng quát, dễ đọc và dễ viết",
@@ -29282,7 +29298,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "SE"
+    "id": "SF"
   },
   {
     "Tiêu đề": "Nếu lớp không định nghĩa cả __repr__() và __str__() thì kết quả trả về có dạng __main__.Class_name object at 0x1025c4ed0",
@@ -29298,7 +29314,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-27T15:34:00.000Z",
     "Ngày cập nhật": "2024-03-21T14:49:00.000Z",
-    "id": "SF"
+    "id": "SG"
   },
   {
     "Tiêu đề": "Trong REPL, gọi trực tiếp vật thể ra thì kết quả là __repr__(). Nếu dùng print thì kết quả là __str__()",
@@ -29314,7 +29330,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-26T14:04:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "SG"
+    "id": "SH"
   },
   {
     "Tiêu đề": "__repr__() trả về mô tả chi tiết để người lập trình bảo trì và sửa lỗi. __str__() trả về mô tả đơn giản cho người dùng sử dụng",
@@ -29330,7 +29346,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-27T08:07:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "SH"
+    "id": "SI"
   },
   {
     "Tiêu đề": "elif là để phân biệt else thuộc if nào",
@@ -29346,7 +29362,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-27T06:58:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "SI"
+    "id": "SJ"
   },
   {
     "Tiêu đề": "Exception",
@@ -29362,7 +29378,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "SJ"
+    "id": "SK"
   },
   {
     "Tiêu đề": "IPython",
@@ -29378,7 +29394,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "SK"
+    "id": "SL"
   },
   {
     "Tiêu đề": "Jupyter notebook giúp chạy lệnh theo từng ô kèm diễn giải",
@@ -29394,7 +29410,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "SL"
+    "id": "SM"
   },
   {
     "Tiêu đề": "Không thể thay đổi tuple một khi đã được tạo ra",
@@ -29410,7 +29426,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-22T14:50:00.000Z",
     "Ngày cập nhật": "2024-04-26T14:34:00.000Z",
-    "id": "SM"
+    "id": "SN"
   },
   {
     "Tiêu đề": "Những phương thức có hai dấu gạch dưới hai bên được gọi là dunder (double underscore)",
@@ -29426,7 +29442,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-27T08:15:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "SN"
+    "id": "SO"
   },
   {
     "Tiêu đề": "Anaconda giống như một fork Python có bổ sung thêm nhiều công cụ cho khoa học dữ liệu",
@@ -29442,7 +29458,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "SO"
+    "id": "SP"
   },
   {
     "Tiêu đề": "Conda là trình quản lý thư viện, không chỉ của Python mà còn của các ngôn ngữ khác",
@@ -29458,7 +29474,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "SP"
+    "id": "SQ"
   },
   {
     "Tiêu đề": "venv chỉ tạo môi trường ảo cho phiên bản hiện tại. Miniconda tạo môi trường ảo cho nhiều phiên bản",
@@ -29474,7 +29490,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "SQ"
+    "id": "SR"
   },
   {
     "Tiêu đề": "Với những người chỉ cần dùng Python để làm dữ liệu chứ không lập trình, chỉ cần cài Anaconda là đủ. Không cần và không nên cài Python riêng",
@@ -29490,7 +29506,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "SR"
+    "id": "SS"
   },
   {
     "Tiêu đề": "Khi chạy Python trong VS Code, thư mục được chạy không phải là thư mục chứa script",
@@ -29506,7 +29522,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "SS"
+    "id": "ST"
   },
   {
     "Tiêu đề": "Nên cài Python bằng bộ cài tải từ website nếu muốn lập trình",
@@ -29522,7 +29538,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "ST"
+    "id": "SU"
   },
   {
     "Tiêu đề": "Pip là chương trình quản lý package của Python",
@@ -29538,7 +29554,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "SU"
+    "id": "SV"
   },
   {
     "Tiêu đề": "py là chương trình hỗ trợ việc quản lý phiên bản trên Windows",
@@ -29554,7 +29570,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "SV"
+    "id": "SW"
   },
   {
     "Tiêu đề": "venv tạo môi trường ảo để tránh trường hợp chồng chéo các gói và xung đột phiên bản giữa các thư viện",
@@ -29570,7 +29586,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "SW"
+    "id": "SX"
   },
   {
     "Tiêu đề": "Việc cài phiên bản mới không xoá phiên bản cũ đi khiến cho người mới hay bị lẫn lộn phiên bản",
@@ -29586,7 +29602,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "SX"
+    "id": "SY"
   },
   {
     "Tiêu đề": "Python",
@@ -29602,7 +29618,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-12-19T15:34:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "SY"
+    "id": "SZ"
   },
   {
     "Tiêu đề": "shell=True cần cho",
@@ -29618,7 +29634,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "SZ"
+    "id": "Sa"
   },
   {
     "Tiêu đề": "Tuple là mảng nhưng không thay đổi được số lượng phần tử",
@@ -29634,7 +29650,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-27T16:11:00.000Z",
-    "id": "Sa"
+    "id": "Sb"
   },
   {
     "Tiêu đề": "__init__() chỉ tạo giá trị cho lớp. __new__() mới thực sự là hàm tạo",
@@ -29650,7 +29666,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-26T14:52:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "Sb"
+    "id": "Sc"
   },
   {
     "Tiêu đề": "__init__.py nói cho Python biết folder chứa nó là một package",
@@ -29666,7 +29682,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "Sc"
+    "id": "Sd"
   },
   {
     "Tiêu đề": "Map, dictionary, associative array, hash, hash table là những cái tên cho cùng một thứ",
@@ -29682,7 +29698,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-13T06:44:00.000Z",
-    "id": "Sd"
+    "id": "Se"
   },
   {
     "Tiêu đề": "Nên để dư một dấu phẩy ở phần tử cuối cùng khi tạo vật thể hoặc mảng",
@@ -29698,7 +29714,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "Se"
+    "id": "Sf"
   },
   {
     "Tiêu đề": "cargo giống npm hay pip",
@@ -29714,7 +29730,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "Sf"
+    "id": "Sg"
   },
   {
     "Tiêu đề": "Crate là file, package là tập hợp nhiều crate",
@@ -29730,7 +29746,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "Sg"
+    "id": "Sh"
   },
   {
     "Tiêu đề": "Mỗi lần refactor là một cực hình",
@@ -29746,7 +29762,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:37:00.000Z",
-    "id": "Sh"
+    "id": "Si"
   },
   {
     "Tiêu đề": "Nếu compiler không làm cho lập trình viên thấy rõ lỗi của họ là gì, thì đó là lỗi của Rust, không phải của họ",
@@ -29762,7 +29778,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "Si"
+    "id": "Sj"
   },
   {
     "Tiêu đề": "Rust phù hợp khi code đã ổn định rồi",
@@ -29778,7 +29794,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "Sj"
+    "id": "Sk"
   },
   {
     "Tiêu đề": "Rust",
@@ -29794,7 +29810,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2024-01-02T08:35:00.000Z",
     "Ngày cập nhật": "2024-03-17T07:36:00.000Z",
-    "id": "Sk"
+    "id": "Sl"
   },
   {
     "Tiêu đề": "TS là để thêm kiểu vào một ngôn ngữ từ đầu đã không muốn có kiểu. Rust được sinh ra với ý định có kiểu ngay từ đầu",
@@ -29810,7 +29826,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "Sl"
+    "id": "Sm"
   },
   {
     "Tiêu đề": "Viết chương trình bằng Rust giống như sống trong mối quan hệ bạo hành",
@@ -29826,7 +29842,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-01T14:39:00.000Z",
-    "id": "Sm"
+    "id": "Sn"
   },
   {
     "Tiêu đề": "Việc hiển thị nội dung dữ liệu như thế nào là do công cụ quyết định, không phải ngôn ngữ quyết định",
@@ -29842,7 +29858,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-08-25T07:20:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:39:00.000Z",
-    "id": "Sn"
+    "id": "So"
   },
   {
     "Tiêu đề": "Ngôn ngữ scripting sinh ra là để xử lý văn bản, không nhấn mạnh về kiểu, khai báo",
@@ -29858,7 +29874,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-12T06:28:00.000Z",
-    "id": "So"
+    "id": "Sp"
   },
   {
     "Tiêu đề": "Chữ ML trong HTML, XML, YAML, TOML là viết tắt của markup language",
@@ -29874,7 +29890,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-04T09:08:00.000Z",
-    "id": "Sp"
+    "id": "Sq"
   },
   {
     "Tiêu đề": "JSON hữu ích trong việc truyền dữ liệu vì nó hướng đến việc trở thành phần giao của các ngôn ngữ, chứ không phải phần hợp của chúng",
@@ -29890,7 +29906,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-14T07:14:00.000Z",
-    "id": "Sq"
+    "id": "Sr"
   },
   {
     "Tiêu đề": "JSON là cách để biểu diễn vật thể ra chữ, chứ tự nó không phải là vật thể",
@@ -29906,7 +29922,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-20T05:08:00.000Z",
-    "id": "Sr"
+    "id": "Ss"
   },
   {
     "Tiêu đề": "JSON Schema dùng để đảm bảo file JSON được viết đúng",
@@ -29922,7 +29938,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-17T10:58:00.000Z",
-    "id": "Ss"
+    "id": "St"
   },
   {
     "Tiêu đề": "Ngôn ngữ đánh dấu",
@@ -29938,7 +29954,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2024-01-14T08:32:00.000Z",
     "Ngày cập nhật": "2024-02-04T09:11:00.000Z",
-    "id": "St"
+    "id": "Su"
   },
   {
     "Tiêu đề": "Chuyển từ YAML sang JSON",
@@ -29954,7 +29970,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-20T14:47:00.000Z",
-    "id": "Su"
+    "id": "Sv"
   },
   {
     "Tiêu đề": "YAML thì để con người dễ đọc, còn JSON là để máy dễ đọc",
@@ -29970,7 +29986,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-22T14:46:00.000Z",
     "Ngày cập nhật": "2024-02-01T15:07:00.000Z",
-    "id": "Sv"
+    "id": "Sw"
   },
   {
     "Tiêu đề": "YAML được sinh ra để con người đọc và viết metadata một cách dễ dàng",
@@ -29986,7 +30002,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-26T08:16:00.000Z",
     "Ngày cập nhật": "2024-01-17T14:28:00.000Z",
-    "id": "Sw"
+    "id": "Sx"
   },
   {
     "Tiêu đề": "Bộ gõ tiếng Việt",
@@ -30002,7 +30018,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-12-09T05:12:00.000Z",
-    "id": "Sx"
+    "id": "Sy"
   },
   {
     "Tiêu đề": "Các quy chuẩn thời gian ISO và RFC",
@@ -30019,7 +30035,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:41:00.000Z",
-    "id": "Sy"
+    "id": "Sz"
   },
   {
     "Tiêu đề": "Các ký tự ASCII có 1 điểm mã",
@@ -30035,7 +30051,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:39:00.000Z",
-    "id": "Sz"
+    "id": "S-"
   },
   {
     "Tiêu đề": "Cách máy tính hiểu ký tự khác với cách con người hiểu ký tự",
@@ -30051,7 +30067,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-22T14:08:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:39:00.000Z",
-    "id": "S-"
+    "id": "S_"
   },
   {
     "Tiêu đề": "Không gian mã là không gian chứa tất cả các điểm mã của Unicode",
@@ -30067,7 +30083,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:40:00.000Z",
-    "id": "S_"
+    "id": "T0"
   },
   {
     "Tiêu đề": "Kể cả khi viết nội dung bằng ngôn ngữ khác thì số ký tự ASCII vẫn nhiều hơn",
@@ -30083,7 +30099,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:40:00.000Z",
-    "id": "T0"
+    "id": "T1"
   },
   {
     "Tiêu đề": "Lý thuyết Unicode",
@@ -30099,7 +30115,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-22T07:54:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:39:00.000Z",
-    "id": "T1"
+    "id": "T2"
   },
   {
     "Tiêu đề": "Mỗi điểm mã được biểu diễn dưới dạng U+XXYYYY",
@@ -30115,7 +30131,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:40:00.000Z",
-    "id": "T2"
+    "id": "T3"
   },
   {
     "Tiêu đề": "Những số bắt đầu bằng 0x là những số hex",
@@ -30131,7 +30147,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:40:00.000Z",
-    "id": "T3"
+    "id": "T4"
   },
   {
     "Tiêu đề": "Tuỳ vào phương thức mã hoá mà mỗi ký tự Unicode sẽ được biểu diễn bởi 1-4 đơn vị mã, 1-2 đơn vị mã, hoặc chỉ một đơn vị mã duy nhất",
@@ -30147,7 +30163,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-14T07:02:00.000Z",
-    "id": "T4"
+    "id": "T5"
   },
   {
     "Tiêu đề": "Unicode chia thành 17 plane, mỗi plane chứa 65,536 (= 16⁴) điểm mã",
@@ -30163,7 +30179,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:40:00.000Z",
-    "id": "T5"
+    "id": "T6"
   },
   {
     "Tiêu đề": "UTF là cách thức để chuyển đổi từ điểm mã sang hệ nhị phân",
@@ -30179,7 +30195,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-22T14:39:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:40:00.000Z",
-    "id": "T6"
+    "id": "T7"
   },
   {
     "Tiêu đề": "Điểm mã không phải là cách để máy tính lưu ký tự",
@@ -30195,7 +30211,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:40:00.000Z",
-    "id": "T7"
+    "id": "T8"
   },
   {
     "Tiêu đề": "Điểm mã liên quan đến việc con người đánh số thứ tự của ký tự thế nào. Đơn vị mã liên quan đến việc máy tính dùng phương thức nào để biết tìm ký tự đó ở đâu",
@@ -30211,7 +30227,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:40:00.000Z",
-    "id": "T8"
+    "id": "T9"
   },
   {
     "Tiêu đề": "Cần escape regex",
@@ -30227,7 +30243,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "T9"
+    "id": "TA"
   },
   {
     "Tiêu đề": "Dùng regex.exec() với while dễ vào vòng lặp vô hạn",
@@ -30243,7 +30259,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-23T14:42:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:40:00.000Z",
-    "id": "TA"
+    "id": "TB"
   },
   {
     "Tiêu đề": "Dùng regex.test(string) trực tiếp ngay trong if có thể ra sai",
@@ -30259,7 +30275,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-08-25T07:20:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:40:00.000Z",
-    "id": "TB"
+    "id": "TC"
   },
   {
     "Tiêu đề": "regex.exec(), regex.test() thay đổi kết quả sau những lần gọi mới",
@@ -30275,7 +30291,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-08-25T07:20:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "TC"
+    "id": "TD"
   },
   {
     "Tiêu đề": "Ký tự unicode nếu dùng \\b ngay sau thì không được",
@@ -30291,7 +30307,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-08-25T07:20:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:41:00.000Z",
-    "id": "TD"
+    "id": "TE"
   },
   {
     "Tiêu đề": "Lazy quantifier chỉ lười về bên phải, chứ không lười về bên trái",
@@ -30307,7 +30323,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T09:28:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:42:00.000Z",
-    "id": "TE"
+    "id": "TF"
   },
   {
     "Tiêu đề": "Regex giúp tìm kiếm những chuỗi phức tạp",
@@ -30323,7 +30339,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-08-25T07:20:00.000Z",
     "Ngày cập nhật": "2024-03-22T16:24:00.000Z",
-    "id": "TF"
+    "id": "TG"
   },
   {
     "Tiêu đề": "Tiếng Việt có 2 cách đặt dấu thanh, căn cứ vào thẩm mỹ hoặc vào ngữ âm",
@@ -30339,7 +30355,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-08-25T07:20:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:43:00.000Z",
-    "id": "TG"
+    "id": "TH"
   },
   {
     "Tiêu đề": "Tự học regex",
@@ -30355,7 +30371,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-21T07:19:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:42:00.000Z",
-    "id": "TH"
+    "id": "TI"
   },
   {
     "Tiêu đề": "Under the hood, hệ điều hành và trình duyệt chỉ sử dụng đường dẫn ASCII",
@@ -30371,7 +30387,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:41:00.000Z",
-    "id": "TI"
+    "id": "TJ"
   },
   {
     "Tiêu đề": "Cài PangoCairo trước khi dùng unicode trong Graphviz",
@@ -30387,7 +30403,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:41:00.000Z",
-    "id": "TJ"
+    "id": "TK"
   },
   {
     "Tiêu đề": "Cache giúp giảm thời gian tải trang",
@@ -30404,7 +30420,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-11-29T06:55:00.000Z",
-    "id": "TK"
+    "id": "TL"
   },
   {
     "Tiêu đề": "Cookie lưu thông tin cá nhân để server nhận dạng được ai với ai",
@@ -30420,7 +30436,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-25T08:15:00.000Z",
-    "id": "TL"
+    "id": "TM"
   },
   {
     "Tiêu đề": "Có 4 loại vật thể (4 lớp): Tag, NavigableString, BeautifulSoup, và Comment",
@@ -30436,7 +30452,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:45:00.000Z",
-    "id": "TM"
+    "id": "TN"
   },
   {
     "Tiêu đề": "find() chỉ kiếm tag đầu tiên, find_all() mới kiếm tất cả các tag",
@@ -30452,7 +30468,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-19T05:15:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:45:00.000Z",
-    "id": "TN"
+    "id": "TO"
   },
   {
     "Tiêu đề": "NavigableString là những chữ có trong tag",
@@ -30468,7 +30484,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-12-14T05:47:00.000Z",
-    "id": "TO"
+    "id": "TP"
   },
   {
     "Tiêu đề": "Tag là từ điển",
@@ -30484,7 +30500,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:46:00.000Z",
-    "id": "TP"
+    "id": "TQ"
   },
   {
     "Tiêu đề": "Cào web",
@@ -30500,7 +30516,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-12-21T13:49:00.000Z",
-    "id": "TQ"
+    "id": "TR"
   },
   {
     "Tiêu đề": "Kiếm backend API trước hơn là cào bằng frontend",
@@ -30516,7 +30532,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-12-21T13:48:00.000Z",
-    "id": "TR"
+    "id": "TS"
   },
   {
     "Tiêu đề": "Remote Control được sinh ra để giải quyết vấn đề Same-Origin Policy",
@@ -30532,7 +30548,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:47:00.000Z",
-    "id": "TS"
+    "id": "TT"
   },
   {
     "Tiêu đề": "Selenium bao gồm IDE, Remote Control, WebDriver và Grid. Selenium 1 thực ra là Remote Control. Selenium 2 thực ra là Remote Control có thêm WebDriver",
@@ -30548,7 +30564,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-11-29T08:06:00.000Z",
-    "id": "TT"
+    "id": "TU"
   },
   {
     "Tiêu đề": "Component hàm không có trạng thái (stateless). Component lớp có trạng thái (stateful)",
@@ -30564,7 +30580,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-12T06:26:00.000Z",
-    "id": "TU"
+    "id": "TV"
   },
   {
     "Tiêu đề": "Component là những hàm hoặc lớp trả về một khối JSX",
@@ -30580,7 +30596,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-12T06:26:00.000Z",
-    "id": "TV"
+    "id": "TW"
   },
   {
     "Tiêu đề": "Dùng fetch dạng promise chứ đừng await trong component",
@@ -30596,7 +30612,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-14T06:15:00.000Z",
-    "id": "TW"
+    "id": "TX"
   },
   {
     "Tiêu đề": "JSX là cách để viết JS như thể viết HTML",
@@ -30612,7 +30628,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-12T06:26:00.000Z",
-    "id": "TX"
+    "id": "TY"
   },
   {
     "Tiêu đề": "key là một thuộc tính đặc biệt của vật thể props để việc render được hiệu quả hơn",
@@ -30628,7 +30644,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-12T06:33:00.000Z",
-    "id": "TY"
+    "id": "TZ"
   },
   {
     "Tiêu đề": "Phải viết JSX trong .jsx hoặc .tsx",
@@ -30644,7 +30660,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-12T06:26:00.000Z",
-    "id": "TZ"
+    "id": "Ta"
   },
   {
     "Tiêu đề": "Props giúp việc thêm property cho DOM giống như thêm attribute cho HTML",
@@ -30660,7 +30676,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-12T06:36:00.000Z",
-    "id": "Ta"
+    "id": "Tb"
   },
   {
     "Tiêu đề": "Props là viết tắt của property, nghĩa gốc là tài sản. Tài sản của cha mẹ thì con dùng được, nhưng tài sản của con thì cha mẹ không đụng được",
@@ -30676,7 +30692,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-12T06:26:00.000Z",
-    "id": "Tb"
+    "id": "Tc"
   },
   {
     "Tiêu đề": "Props là đối số đầu tiên của hàm component, dùng để truyền giá trị các thuộc tính của nó",
@@ -30692,7 +30708,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-12T06:34:00.000Z",
-    "id": "Tc"
+    "id": "Td"
   },
   {
     "Tiêu đề": "Không có async component vì hiệu suất quá tệ",
@@ -30708,7 +30724,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-12T06:26:00.000Z",
-    "id": "Td"
+    "id": "Te"
   },
   {
     "Tiêu đề": "Những hàm được export default và được viết hoa ký tự đầu tiên là component",
@@ -30724,7 +30740,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-12T06:26:00.000Z",
-    "id": "Te"
+    "id": "Tf"
   },
   {
     "Tiêu đề": "Nếu truyền HTML làm giá trị biến thì cần dùng dangerouslySetInnerHTML, nếu không thì sẽ bị mã hoá hết",
@@ -30740,7 +30756,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-12T06:26:00.000Z",
-    "id": "Tf"
+    "id": "Tg"
   },
   {
     "Tiêu đề": "Render là quá trình chuyển đổi dữ liệu và code sang HTML",
@@ -30756,7 +30772,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-12T06:26:00.000Z",
-    "id": "Tg"
+    "id": "Th"
   },
   {
     "Tiêu đề": "Edge là sự kết hợp giữa CDN và serverless",
@@ -30772,7 +30788,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-17T07:29:00.000Z",
-    "id": "Th"
+    "id": "Ti"
   },
   {
     "Tiêu đề": "Framework",
@@ -30788,7 +30804,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2024-01-12T10:36:00.000Z",
     "Ngày cập nhật": "2024-04-27T05:47:00.000Z",
-    "id": "Ti"
+    "id": "Tj"
   },
   {
     "Tiêu đề": "form",
@@ -30804,7 +30820,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-11T08:59:00.000Z",
-    "id": "Tj"
+    "id": "Tk"
   },
   {
     "Tiêu đề": "Fresh dùng Preact cho UI",
@@ -30820,7 +30836,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-20T08:33:00.000Z",
-    "id": "Tk"
+    "id": "Tl"
   },
   {
     "Tiêu đề": "Fresh và Astro đều cung cấp khả năng render island lần đầu tại server và những lần sau tại client",
@@ -30836,7 +30852,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-13T15:20:00.000Z",
-    "id": "Tl"
+    "id": "Tm"
   },
   {
     "Tiêu đề": "Fresh đối với Preact cũng giống như Next.js đối với React. React với Preact cung cấp khả năng render (làm framework), còn Fresh hay Next xử lý những thứ còn lại (làm meta-framework)",
@@ -30852,7 +30868,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-01T04:08:00.000Z",
-    "id": "Tm"
+    "id": "Tn"
   },
   {
     "Tiêu đề": "JS là để tăng trải nghiệm người dùng. Framework là để tăng trải nghiệm lập trình viên",
@@ -30868,7 +30884,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-08T13:32:00.000Z",
-    "id": "Tn"
+    "id": "To"
   },
   {
     "Tiêu đề": "Lịch sử phát triển framework JavaScript",
@@ -30884,7 +30900,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-05T04:26:00.000Z",
-    "id": "To"
+    "id": "Tp"
   },
   {
     "Tiêu đề": "Next.js, Remix, Gatsby là những framework mà chính React giới thiệu là nên dùng",
@@ -30900,7 +30916,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-13T11:29:00.000Z",
-    "id": "Tp"
+    "id": "Tq"
   },
   {
     "Tiêu đề": "Preact chỉ là một thư viện render. Nó không có biết gì về server hay routing cả",
@@ -30916,7 +30932,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-25T12:12:00.000Z",
-    "id": "Tq"
+    "id": "Tr"
   },
   {
     "Tiêu đề": "React nên được alias thành preact/compat",
@@ -30932,7 +30948,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-24T15:48:00.000Z",
-    "id": "Tr"
+    "id": "Ts"
   },
   {
     "Tiêu đề": "React được sinh ra để làm việc với trạng thái",
@@ -30948,7 +30964,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-01T04:10:00.000Z",
-    "id": "Ts"
+    "id": "Tt"
   },
   {
     "Tiêu đề": "Vì Node, Deno viết trên V8 chứ không phải Gecko, nên chỉ có Chrome mới debug được chứ Firefox thì không",
@@ -30964,7 +30980,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-10T13:02:00.000Z",
-    "id": "Tt"
+    "id": "Tu"
   },
   {
     "Tiêu đề": "Ở Preact, onInput sẽ kích hoạt ngay trong lúc nhập, còn onChange chỉ kích hoạt khi người dùng đổi focus",
@@ -30980,7 +30996,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-10T16:17:00.000Z",
-    "id": "Tu"
+    "id": "Tv"
   },
   {
     "Tiêu đề": "Component nằm trong thư mục island sẽ được render lần đầu ở server, còn những lần sau đều ở client",
@@ -30996,7 +31012,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-10T09:34:00.000Z",
-    "id": "Tv"
+    "id": "Tw"
   },
   {
     "Tiêu đề": "Các hàm được môi trường thực thi cung cấp không hoạt động được ở island",
@@ -31012,7 +31028,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-10T13:52:00.000Z",
-    "id": "Tw"
+    "id": "Tx"
   },
   {
     "Tiêu đề": "Island là những component ở trong thư mục islands",
@@ -31028,7 +31044,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-08T13:32:00.000Z",
-    "id": "Tx"
+    "id": "Ty"
   },
   {
     "Tiêu đề": "Island với partial hydration là một",
@@ -31044,7 +31060,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-20T07:53:00.000Z",
-    "id": "Ty"
+    "id": "Tz"
   },
   {
     "Tiêu đề": "Khi một vật thể được đổ dữ liệu vào, nó được gọi là được tưới nước",
@@ -31060,7 +31076,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-13T05:22:00.000Z",
-    "id": "Tz"
+    "id": "T-"
   },
   {
     "Tiêu đề": "Mỗi khi state thay đổi thì islands được render lại",
@@ -31076,7 +31092,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-25T12:09:00.000Z",
-    "id": "T-"
+    "id": "T_"
   },
   {
     "Tiêu đề": "State giúp cập nhật dữ liệu mà không cần tải lại trang",
@@ -31092,7 +31108,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-01T04:11:00.000Z",
-    "id": "T_"
+    "id": "U0"
   },
   {
     "Tiêu đề": "Nói cho đến cùng thì trang web chỉ là form",
@@ -31108,7 +31124,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-11T09:31:00.000Z",
-    "id": "U0"
+    "id": "U1"
   },
   {
     "Tiêu đề": "createContext() nằm ngoài global, useContext() nằm trong component",
@@ -31124,7 +31140,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-08T09:39:00.000Z",
-    "id": "U1"
+    "id": "U2"
   },
   {
     "Tiêu đề": "Giá trị trả về của useContext() là giá trị được truyền vào thuộc tính value của provider",
@@ -31140,7 +31156,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-03T07:34:00.000Z",
-    "id": "U2"
+    "id": "U3"
   },
   {
     "Tiêu đề": "useContext() là cách để không phải dùng Consumer",
@@ -31156,7 +31172,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-06T15:29:00.000Z",
-    "id": "U3"
+    "id": "U4"
   },
   {
     "Tiêu đề": "Đối số của createContext() quyết định kiểu của value của Context.Provider",
@@ -31172,7 +31188,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-03T07:34:00.000Z",
-    "id": "U4"
+    "id": "U5"
   },
   {
     "Tiêu đề": "Chính vì setState render lại cả component, nên với những file component muốn tách ra nhiều hàm độc lập, và state",
@@ -31188,7 +31204,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-14T14:33:00.000Z",
-    "id": "U5"
+    "id": "U6"
   },
   {
     "Tiêu đề": "Các hàm set của hook sẽ kích hoạt việc render lại component nơi nó được khai báo",
@@ -31204,7 +31220,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-14T05:21:00.000Z",
-    "id": "U6"
+    "id": "U7"
   },
   {
     "Tiêu đề": "Cách dùng useEffect với useState",
@@ -31220,7 +31236,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-14T06:12:00.000Z",
-    "id": "U7"
+    "id": "U8"
   },
   {
     "Tiêu đề": "Dùng setState gọn hơn signal nếu không phải truyền setter qua nhiều hàm khác nhau",
@@ -31236,7 +31252,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-18T15:00:00.000Z",
-    "id": "U8"
+    "id": "U9"
   },
   {
     "Tiêu đề": "Không dùng mảng hoặc vật thể trong setState được",
@@ -31252,7 +31268,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-10T13:47:00.000Z",
-    "id": "U9"
+    "id": "UA"
   },
   {
     "Tiêu đề": "Phải viết hook trong component. Không viết trong loop hoặc if được",
@@ -31268,7 +31284,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-10T16:17:00.000Z",
-    "id": "UA"
+    "id": "UB"
   },
   {
     "Tiêu đề": "Trong useEffect chỉ dùng được promise, không dùng async được",
@@ -31284,7 +31300,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-14T06:15:00.000Z",
-    "id": "UB"
+    "id": "UC"
   },
   {
     "Tiêu đề": "useEffect được sinh ra là để side effect không tự động chạy mỗi khi component được render",
@@ -31300,7 +31316,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-10T16:17:00.000Z",
-    "id": "UC"
+    "id": "UD"
   },
   {
     "Tiêu đề": "effect khác computed ở chỗ một cái có return, một cái không có return",
@@ -31316,7 +31332,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-14T05:21:00.000Z",
-    "id": "UD"
+    "id": "UE"
   },
   {
     "Tiêu đề": "Signal chỉ render lại mỗi phần tử HTML chứa giá trị của nó",
@@ -31332,7 +31348,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-14T05:21:00.000Z",
-    "id": "UE"
+    "id": "UF"
   },
   {
     "Tiêu đề": "Signal giúp giải quyết các vấn đề do useState hoặc Context tạo ra",
@@ -31348,7 +31364,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-18T15:01:00.000Z",
-    "id": "UF"
+    "id": "UG"
   },
   {
     "Tiêu đề": "Route là code viết cho server. Island là code viết cho client",
@@ -31364,7 +31380,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-13T15:20:00.000Z",
-    "id": "UG"
+    "id": "UH"
   },
   {
     "Tiêu đề": "Có một số hàm ở server sẽ không serialize được",
@@ -31380,7 +31396,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-20T05:08:00.000Z",
-    "id": "UH"
+    "id": "UI"
   },
   {
     "Tiêu đề": "Khi có một yêu cầu tới một route, handler được gọi trước, sau đó tới component",
@@ -31396,7 +31412,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-17T06:54:00.000Z",
-    "id": "UI"
+    "id": "UJ"
   },
   {
     "Tiêu đề": "Kết quả được trả về ctx.render(arg) của handler sẽ được truyền lại vào props.data của component",
@@ -31412,7 +31428,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-24T13:23:00.000Z",
-    "id": "UJ"
+    "id": "UK"
   },
   {
     "Tiêu đề": "Route cần có ít nhất một handler hoặc một component",
@@ -31428,7 +31444,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-23T17:37:00.000Z",
-    "id": "UK"
+    "id": "UL"
   },
   {
     "Tiêu đề": "Route không bao giờ được gửi đến client. Island được chạy ở cả server và client",
@@ -31444,7 +31460,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-26T07:14:00.000Z",
-    "id": "UL"
+    "id": "UM"
   },
   {
     "Tiêu đề": "Serialize là cách duy nhất để truyền dữ liệu từ server tới client và ngược lại",
@@ -31460,7 +31476,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-20T06:42:00.000Z",
-    "id": "UM"
+    "id": "UN"
   },
   {
     "Tiêu đề": "Serverless là loại server tự khởi động mỗi lần có người truy cập thay vì luôn trực sẵn chờ người truy cập",
@@ -31476,7 +31492,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-14T05:08:00.000Z",
-    "id": "UN"
+    "id": "UO"
   },
   {
     "Tiêu đề": "So sánh Single Page App (SPA) vs Progressive Web App (PWA)",
@@ -31492,7 +31508,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-03T06:36:00.000Z",
-    "id": "UO"
+    "id": "UP"
   },
   {
     "Tiêu đề": "UI là kết quả của state và data. State nằm ở client, data nằm ở server",
@@ -31508,7 +31524,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-09T12:54:00.000Z",
-    "id": "UP"
+    "id": "UQ"
   },
   {
     "Tiêu đề": "DOM là kết quả của việc parse HTML",
@@ -31524,7 +31540,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-12T06:36:00.000Z",
-    "id": "UQ"
+    "id": "UR"
   },
   {
     "Tiêu đề": "DOM property khác HTML attribute",
@@ -31540,7 +31556,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-12T06:36:00.000Z",
-    "id": "UR"
+    "id": "US"
   },
   {
     "Tiêu đề": "Dùng tag ngữ nghĩa thay vì dùng div",
@@ -31556,7 +31572,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-11T14:26:00.000Z",
-    "id": "US"
+    "id": "UT"
   },
   {
     "Tiêu đề": "HTML giống như từng thành phần trong bộ đồ như quần, áo, nón, giày. CSS giống như màu sắc, kích thước của quần, áo. JS là thứ giúp thay đổi màu sắc, kích thước của quần, áo",
@@ -31572,7 +31588,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-05-11T14:27:00.000Z",
-    "id": "UT"
+    "id": "UU"
   },
   {
     "Tiêu đề": "Khi chỉnh CSS mà thấy không thay đổi, thử xoá cache xem",
@@ -31588,7 +31604,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-05-11T14:26:00.000Z",
-    "id": "UU"
+    "id": "UV"
   },
   {
     "Tiêu đề": "Property nghĩa gốc là tài sản. Attribute nghĩa gốc là thêm vào",
@@ -31604,7 +31620,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-11T18:36:00.000Z",
-    "id": "UV"
+    "id": "UW"
   },
   {
     "Tiêu đề": "Nếu tạo CORS proxy thì chỉ trả về đúng HTML thôi, đừng xử lý gì hết trên đó",
@@ -31620,7 +31636,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-06-02T09:43:00.000Z",
-    "id": "UW"
+    "id": "UX"
   },
   {
     "Tiêu đề": "CDN tạo ra điểm truy cập gần nhất dựa vào vị trí địa lý của người dùng, để thời gian tải  web không chịu ảnh hưởng bởi việc nó được đặt ở đâu",
@@ -31636,7 +31652,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-04-25T08:17:00.000Z",
-    "id": "UX"
+    "id": "UY"
   },
   {
     "Tiêu đề": "Cloudflare",
@@ -31652,7 +31668,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "UY"
+    "id": "UZ"
   },
   {
     "Tiêu đề": "CNAME là",
@@ -31668,7 +31684,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "UZ"
+    "id": "Ua"
   },
   {
     "Tiêu đề": "CORS là để trình duyệt bảo vệ người dùng, không phải để bảo vệ máy chủ",
@@ -31684,7 +31700,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-06T06:29:00.000Z",
-    "id": "Ua"
+    "id": "Ub"
   },
   {
     "Tiêu đề": "Cpanel là",
@@ -31700,7 +31716,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "Ub"
+    "id": "Uc"
   },
   {
     "Tiêu đề": "Apache, Nginx là những web server phổ biến",
@@ -31716,7 +31732,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-13T07:19:00.000Z",
-    "id": "Uc"
+    "id": "Ud"
   },
   {
     "Tiêu đề": "Default gateway là IP của router",
@@ -31732,7 +31748,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-17T15:14:00.000Z",
-    "id": "Ud"
+    "id": "Ue"
   },
   {
     "Tiêu đề": "DHCP giúp thiết bị có được những thông số cần thiết để kết nối mạng",
@@ -31748,7 +31764,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-17T15:43:00.000Z",
-    "id": "Ue"
+    "id": "Uf"
   },
   {
     "Tiêu đề": "DNS giúp chuyển tên miền mà con người hiểu được thành IP mà máy tính hiểu được",
@@ -31764,7 +31780,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-03-13T07:42:00.000Z",
-    "id": "Uf"
+    "id": "Ug"
   },
   {
     "Tiêu đề": "Subnet mask là độ lớn của host network",
@@ -31780,7 +31796,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-17T15:13:00.000Z",
-    "id": "Ug"
+    "id": "Uh"
   },
   {
     "Tiêu đề": "Switch là cái bưu điện. Mọi thư từ đều được gửi đến đó chứ không gửi đến địa chỉ người nhận",
@@ -31796,7 +31812,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-17T16:10:00.000Z",
-    "id": "Uh"
+    "id": "Ui"
   },
   {
     "Tiêu đề": "HTTP là ngôn ngữ để trình duyệt và webserver nói chuyện với nhau",
@@ -31812,7 +31828,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-17T13:08:00.000Z",
-    "id": "Ui"
+    "id": "Uj"
   },
   {
     "Tiêu đề": "request là thứ client gửi cho server, response là thứ server gửi cho client",
@@ -31828,7 +31844,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-07T06:17:00.000Z",
-    "id": "Uj"
+    "id": "Uk"
   },
   {
     "Tiêu đề": "Trình duyệt chỉ gửi yêu cầu và nhận phản hồi ở dạng HTTP",
@@ -31844,7 +31860,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-02T14:26:00.000Z",
-    "id": "Uk"
+    "id": "Ul"
   },
   {
     "Tiêu đề": "Yêu cầu HTTP chỉ là một file text",
@@ -31860,7 +31876,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-02T14:25:00.000Z",
-    "id": "Ul"
+    "id": "Um"
   },
   {
     "Tiêu đề": "Port là số hiệu của chương trình cụ thể được nhận gói tin",
@@ -31876,7 +31892,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-06T06:24:00.000Z",
-    "id": "Um"
+    "id": "Un"
   },
   {
     "Tiêu đề": "Protocol là cách để các bên nhận và gửi dữ liệu hiểu nhau",
@@ -31892,7 +31908,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-17T13:10:00.000Z",
-    "id": "Un"
+    "id": "Uo"
   },
   {
     "Tiêu đề": "Server là phần mềm cung cấp dữ liệu cho phần mềm khác. Client là phần mềm đòi hỏi phần mềm khác cung cấp dữ liệu cho mình",
@@ -31908,7 +31924,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-17T13:09:00.000Z",
-    "id": "Uo"
+    "id": "Up"
   },
   {
     "Tiêu đề": "SSL và TLS tạo một ống bảo vệ cho HTTP",
@@ -31924,7 +31940,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-17T15:00:00.000Z",
-    "id": "Up"
+    "id": "Uq"
   },
   {
     "Tiêu đề": "Mọi URL đều là URI",
@@ -31940,7 +31956,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-06-10T10:33:00.000Z",
-    "id": "Uq"
+    "id": "Ur"
   },
   {
     "Tiêu đề": "nameserver",
@@ -31956,7 +31972,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "Ur"
+    "id": "Us"
   },
   {
     "Tiêu đề": "Namespace là",
@@ -31972,7 +31988,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-03-13T07:19:00.000Z",
-    "id": "Us"
+    "id": "Ut"
   },
   {
     "Tiêu đề": "Origin là sự kết hợp của protocol, hostname và port",
@@ -31988,7 +32004,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-06T06:30:00.000Z",
-    "id": "Ut"
+    "id": "Uu"
   },
   {
     "Tiêu đề": "Quản trị mạng",
@@ -32004,7 +32020,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-08-25T07:38:00.000Z",
     "Ngày cập nhật": "2024-05-06T06:27:00.000Z",
-    "id": "Uu"
+    "id": "Uv"
   },
   {
     "Tiêu đề": "Same-origin policy ngăn chặn việc script ở tab này điều khiển tab kia",
@@ -32020,7 +32036,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-06T06:29:00.000Z",
-    "id": "Uv"
+    "id": "Uw"
   },
   {
     "Tiêu đề": "127.0.0.1 và localhost là một",
@@ -32036,7 +32052,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-13T08:09:00.000Z",
-    "id": "Uw"
+    "id": "Ux"
   },
   {
     "Tiêu đề": "URL",
@@ -32052,7 +32068,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-27T15:04:00.000Z",
     "Ngày cập nhật": "2024-03-23T17:29:00.000Z",
-    "id": "Ux"
+    "id": "Uy"
   },
   {
     "Tiêu đề": "www thực ra chỉ là một tên miền thứ cấp như bao tên miền thứ cấp bình thường khác",
@@ -32068,7 +32084,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-12-01T08:09:00.000Z",
-    "id": "Uy"
+    "id": "Uz"
   },
   {
     "Tiêu đề": "URN giống như tên người, còn URL giống như địa chỉ nhà",
@@ -32084,7 +32100,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-06-11T08:00:00.000Z",
-    "id": "Uz"
+    "id": "U-"
   },
   {
     "Tiêu đề": "Render phía máy chủ nhanh và SEO tốt. Render phía người dùng phù hợp cho những ứng dụng cần tương tác nhiều",
@@ -32100,7 +32116,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-04T13:45:00.000Z",
-    "id": "U-"
+    "id": "U_"
   },
   {
     "Tiêu đề": "Github Page, Netlifier, Verxel là những",
@@ -32116,7 +32132,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-08T15:45:00.000Z",
-    "id": "U_"
+    "id": "V0"
   },
   {
     "Tiêu đề": "Bất cứ một tệp nào trong overrides sẽ thay thế tệp ở theme gốc",
@@ -32132,7 +32148,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-19T14:00:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "V0"
+    "id": "V1"
   },
   {
     "Tiêu đề": "main.html là template",
@@ -32148,7 +32164,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-19T11:16:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "V1"
+    "id": "V2"
   },
   {
     "Tiêu đề": "main.html mở rộng base.html",
@@ -32164,7 +32180,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-19T13:37:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "V2"
+    "id": "V3"
   },
   {
     "Tiêu đề": "Plugin ezlinks vừa nhiều lỗi vừa không cần thiết",
@@ -32180,7 +32196,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-19T16:29:00.000Z",
     "Ngày cập nhật": "2023-11-15T14:50:00.000Z",
-    "id": "V3"
+    "id": "V4"
   },
   {
     "Tiêu đề": "py-obsidianmd gặp lỗi khi chuyển từ ALL sang FRONTMATTER",
@@ -32196,7 +32212,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-19T17:18:00.000Z",
     "Ngày cập nhật": "2023-10-31T15:26:00.000Z",
-    "id": "V4"
+    "id": "V5"
   },
   {
     "Tiêu đề": "Mkdocs giúp dựng một web tĩnh từ các file markdown",
@@ -32212,7 +32228,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-21T13:49:00.000Z",
     "Ngày cập nhật": "2024-01-08T15:45:00.000Z",
-    "id": "V5"
+    "id": "V6"
   },
   {
     "Tiêu đề": "Muốn cái nào làm trang chủ thì để tên là index.html",
@@ -32228,7 +32244,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "V6"
+    "id": "V7"
   },
   {
     "Tiêu đề": "Nội dung của một website WordPress được lưu trữ trong cơ sở dữ liệu dạng bảng",
@@ -32244,7 +32260,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-08T15:45:00.000Z",
-    "id": "V7"
+    "id": "V8"
   },
   {
     "Tiêu đề": "Nội dung trong cơ sở dữ liệu được PHP hiển thị thành HTML",
@@ -32260,7 +32276,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-08T15:45:00.000Z",
-    "id": "V8"
+    "id": "V9"
   },
   {
     "Tiêu đề": "PHP là một ngôn ngữ lập trình cho web",
@@ -32276,7 +32292,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-08T15:45:00.000Z",
-    "id": "V9"
+    "id": "VA"
   },
   {
     "Tiêu đề": "phpMyAdmin là GUI để dùng MySQL",
@@ -32292,7 +32308,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-03-13T07:27:00.000Z",
-    "id": "VA"
+    "id": "VB"
   },
   {
     "Tiêu đề": "WordPress là một hệ thống quản lý nội dung",
@@ -32308,7 +32324,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-08T15:45:00.000Z",
-    "id": "VB"
+    "id": "VC"
   },
   {
     "Tiêu đề": "WordPress viết trên nền PHP",
@@ -32324,7 +32340,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-13T07:26:00.000Z",
-    "id": "VC"
+    "id": "VD"
   },
   {
     "Tiêu đề": "WordPress.org là phần mềm mã nguồn mở. WordPress.com là dịch vụ hosting",
@@ -32340,7 +32356,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-08T15:45:00.000Z",
-    "id": "VD"
+    "id": "VE"
   },
   {
     "Tiêu đề": "Web",
@@ -32356,7 +32372,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-26T06:55:00.000Z",
     "Ngày cập nhật": "2024-01-08T15:02:00.000Z",
-    "id": "VE"
+    "id": "VF"
   },
   {
     "Tiêu đề": "Khoa học máy tính",
@@ -32372,7 +32388,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-03T05:00:00.000Z",
-    "id": "VF"
+    "id": "VG"
   },
   {
     "Tiêu đề": "MDN chất lượng hơn W3School",
@@ -32388,7 +32404,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-08T14:59:00.000Z",
-    "id": "VG"
+    "id": "VH"
   },
   {
     "Tiêu đề": "Stack Overflow",
@@ -32404,7 +32420,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "VH"
+    "id": "VI"
   },
   {
     "Tiêu đề": "CodeAnalogies",
@@ -32420,7 +32436,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-11-29T06:55:00.000Z",
-    "id": "VI"
+    "id": "VJ"
   },
   {
     "Tiêu đề": "freeCodeCamp",
@@ -32436,7 +32452,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "VJ"
+    "id": "VK"
   },
   {
     "Tiêu đề": "Google Support",
@@ -32452,7 +32468,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "VK"
+    "id": "VL"
   },
   {
     "Tiêu đề": "IBM",
@@ -32468,7 +32484,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "VL"
+    "id": "VM"
   },
   {
     "Tiêu đề": "MDN",
@@ -32484,7 +32500,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-23T14:42:00.000Z",
     "Ngày cập nhật": "2024-01-08T14:58:00.000Z",
-    "id": "VM"
+    "id": "VN"
   },
   {
     "Tiêu đề": "Phạm Đình Khánh",
@@ -32500,7 +32516,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "VN"
+    "id": "VO"
   },
   {
     "Tiêu đề": "Real Python",
@@ -32516,7 +32532,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-27T08:14:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "VO"
+    "id": "VP"
   },
   {
     "Tiêu đề": "Refactoring.Guru",
@@ -32532,7 +32548,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-05-14T14:16:00.000Z",
-    "id": "VP"
+    "id": "VQ"
   },
   {
     "Tiêu đề": "Stack Overflow",
@@ -32548,7 +32564,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:41:00.000Z",
-    "id": "VQ"
+    "id": "VR"
   },
   {
     "Tiêu đề": "tuhocict",
@@ -32564,7 +32580,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "VR"
+    "id": "VS"
   },
   {
     "Tiêu đề": "Tự ngẫm nghĩ, trải nghiệm",
@@ -32580,7 +32596,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-05-04T06:50:00.000Z",
-    "id": "VS"
+    "id": "VT"
   },
   {
     "Tiêu đề": "Viblo",
@@ -32596,7 +32612,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-11-29T06:20:00.000Z",
-    "id": "VT"
+    "id": "VU"
   },
   {
     "Tiêu đề": "Wikipedia",
@@ -32612,7 +32628,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-06-09T15:30:00.000Z",
-    "id": "VU"
+    "id": "VV"
   },
   {
     "Tiêu đề": "✍️Lập trình",
@@ -32628,7 +32644,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-08-25T07:20:00.000Z",
     "Ngày cập nhật": "2023-11-07T15:03:00.000Z",
-    "id": "VV"
+    "id": "VW"
   },
   {
     "Tiêu đề": "Cách để AI không bị ảo giác là kêu nó viết query cho Wikidata",
@@ -32644,7 +32660,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "VW"
+    "id": "VX"
   },
   {
     "Tiêu đề": "Numpy và Pandas",
@@ -32660,7 +32676,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "VX"
+    "id": "VY"
   },
   {
     "Tiêu đề": "Ontology",
@@ -32676,7 +32692,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-15T07:19:00.000Z",
-    "id": "VY"
+    "id": "VZ"
   },
   {
     "Tiêu đề": "Phân tích dữ liệu",
@@ -32692,7 +32708,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-12-01T06:04:00.000Z",
     "Ngày cập nhật": "2023-12-01T06:06:00.000Z",
-    "id": "VZ"
+    "id": "Va"
   },
   {
     "Tiêu đề": "Concept map, knowledge graph",
@@ -32708,7 +32724,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "Va"
+    "id": "Vb"
   },
   {
     "Tiêu đề": "The Semantic Web is essentially a distributed-objects framework",
@@ -32724,7 +32740,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-31T15:26:00.000Z",
-    "id": "Vb"
+    "id": "Vc"
   },
   {
     "Tiêu đề": "Thế mạnh của RDF triplestore là tạo ra những liên kết mới không có sẵn lúc nhập vào",
@@ -32740,7 +32756,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-05-26T07:51:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "Vc"
+    "id": "Vd"
   },
   {
     "Tiêu đề": "Các công cụ lắng nghe xã hội có sẵn giống như một ảnh chụp màn hình nhanh về những gì đang diễn ra",
@@ -32756,7 +32772,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "Vd"
+    "id": "Ve"
   },
   {
     "Tiêu đề": "Feature Extraction, Text Representation, Text Extraction, Text Vectorization là những cái tên khác nhau cho cùng một thứ",
@@ -32772,7 +32788,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-03-22T04:20:00.000Z",
-    "id": "Ve"
+    "id": "Vf"
   },
   {
     "Tiêu đề": "Gensim tập trung vào mô hình chủ đề",
@@ -32788,7 +32804,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-12-19T15:34:00.000Z",
-    "id": "Vf"
+    "id": "Vg"
   },
   {
     "Tiêu đề": "Không giám sát nghĩa là giả định rằng người huấn luyện không có giả định nào",
@@ -32804,7 +32820,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "Vg"
+    "id": "Vh"
   },
   {
     "Tiêu đề": "Bản chất của mô hình chủ đề là tô màu cho văn bản và từ",
@@ -32820,7 +32836,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-03-10T13:59:00.000Z",
-    "id": "Vh"
+    "id": "Vi"
   },
   {
     "Tiêu đề": "Mô hình bản chất là một phép biến đổi không gian vector",
@@ -32836,7 +32852,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-03-10T09:12:00.000Z",
-    "id": "Vi"
+    "id": "Vj"
   },
   {
     "Tiêu đề": "Mô hình chủ đề rất hữu dụng cho việc diễn giải",
@@ -32852,7 +32868,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-03-10T09:12:00.000Z",
-    "id": "Vj"
+    "id": "Vk"
   },
   {
     "Tiêu đề": "SVD ban đầu là để tìm ra một phép xoay không gian mà vẫn giữ nguyên tích vô hướng của các vector",
@@ -32868,7 +32884,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-03-10T09:12:00.000Z",
-    "id": "Vk"
+    "id": "Vl"
   },
   {
     "Tiêu đề": "tf-idf giúp xác định độ quan trọng của một từ trong một văn bản trong bộ văn bản",
@@ -32884,7 +32900,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "Vl"
+    "id": "Vm"
   },
   {
     "Tiêu đề": "tf-idf mạnh hơn count vector",
@@ -32900,7 +32916,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "Vm"
+    "id": "Vn"
   },
   {
     "Tiêu đề": "Mô hình trích chọn từ",
@@ -32916,7 +32932,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "Vn"
+    "id": "Vo"
   },
   {
     "Tiêu đề": "Phân tích xu hướng, NLP",
@@ -32932,7 +32948,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-15T07:19:00.000Z",
-    "id": "Vo"
+    "id": "Vp"
   },
   {
     "Tiêu đề": "Tổng quan về mô hình chủ đề",
@@ -32948,7 +32964,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "Vp"
+    "id": "Vq"
   },
   {
     "Tiêu đề": "Tổng quan về xử lý tiếng Việt",
@@ -32964,7 +32980,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-15T07:19:00.000Z",
-    "id": "Vq"
+    "id": "Vr"
   },
   {
     "Tiêu đề": "Bộ từ trong dictionary sẽ quyết định bộ vector",
@@ -32980,7 +32996,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "Vr"
+    "id": "Vs"
   },
   {
     "Tiêu đề": "Túi từ không phân biệt được những câu có cùng các từ bởi nó không phân biệt thứ tự trước sau của các từ trong một câu",
@@ -32996,7 +33012,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "Vs"
+    "id": "Vt"
   },
   {
     "Tiêu đề": "Việc biểu diễn các từ dưới dạng các vector one-hot chỉ đáp ứng được khả năng huấn luyện mà chưa phản ảnh được mối liên hệ về mặt ngữ nghĩa của các từ",
@@ -33012,7 +33028,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "Vt"
+    "id": "Vu"
   },
   {
     "Tiêu đề": "Việc vector hoá các văn bản là để máy tính có thể xử lý được",
@@ -33028,7 +33044,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "Vu"
+    "id": "Vv"
   },
   {
     "Tiêu đề": "Độ tương đồng của hai vector chính là tích vô hướng vừa nó",
@@ -33044,7 +33060,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "Vv"
+    "id": "Vw"
   },
   {
     "Tiêu đề": "Xử lý ngôn ngữ tự nhiên chính là một công cụ nghĩ",
@@ -33060,7 +33076,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-15T07:19:00.000Z",
-    "id": "Vw"
+    "id": "Vx"
   },
   {
     "Tiêu đề": "Python, R",
@@ -33076,7 +33092,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "Vx"
+    "id": "Vy"
   },
   {
     "Tiêu đề": "Nếu xem ma trận giống như dãy số thì cũng giống như xem sách giống như dãy chữ",
@@ -33092,7 +33108,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-12-29T03:02:00.000Z",
-    "id": "Vy"
+    "id": "Vz"
   },
   {
     "Tiêu đề": "Phép cộng và phép nhân thể hiện sức mạnh của dữ liệu. Phép trừ và phép chia thể hiện tương quan dữ liệu",
@@ -33108,7 +33124,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-12-29T03:01:00.000Z",
-    "id": "Vz"
+    "id": "V-"
   },
   {
     "Tiêu đề": "Khi các xác suất độc lập với nhau thì dùng phép nhân",
@@ -33124,7 +33140,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-03-22T04:20:00.000Z",
-    "id": "V-"
+    "id": "V_"
   },
   {
     "Tiêu đề": "Phương sai là để biết mức độ phân tán của dữ liệu so với giá trị trung bình",
@@ -33140,7 +33156,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-06-09T15:30:00.000Z",
-    "id": "V_"
+    "id": "W0"
   },
   {
     "Tiêu đề": "❓Không dùng vật thể mà chỉ dùng khối",
@@ -33156,7 +33172,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-29T12:36:00.000Z",
-    "id": "W0"
+    "id": "W1"
   },
   {
     "Tiêu đề": "Syncthing dành cho đồng bộ dữ liệu giữa các thiết bị của cùng một người. Git chuyên cho việc hợp tác làm việc giữa nhiều người",
@@ -33172,7 +33188,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-02T14:15:00.000Z",
-    "id": "W1"
+    "id": "W2"
   },
   {
     "Tiêu đề": "Các chương trình ứng dụng không giao tiếp trực tiếp với CSDL mà qua một trung gian gọi là hệ quản trị cơ sở dữ liệu",
@@ -33188,7 +33204,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-05T09:30:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "W2"
+    "id": "W3"
   },
   {
     "Tiêu đề": "DBMS cấu trúc những cách ta tổ chức và tương tác với mọi dữ liệu được lưu trữ",
@@ -33204,7 +33220,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-17T15:13:00.000Z",
-    "id": "W3"
+    "id": "W4"
   },
   {
     "Tiêu đề": "Dữ liệu dưới dạng cơ sở dữ liệu đảm bảo các bên tham gia nhập dữ liệu cùng một định dạng",
@@ -33220,7 +33236,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "W4"
+    "id": "W5"
   },
   {
     "Tiêu đề": "Excel không phù hợp cho việc lập cơ sở dữ liệu",
@@ -33236,7 +33252,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "W5"
+    "id": "W6"
   },
   {
     "Tiêu đề": "File Google Docs không thực sự là file",
@@ -33252,7 +33268,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-08-25T07:21:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "W6"
+    "id": "W7"
   },
   {
     "Tiêu đề": "Giao diện block cho phép người dùng linh hoạt hơn mà vẫn giữ được sự cấu trúc",
@@ -33268,7 +33284,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "W7"
+    "id": "W8"
   },
   {
     "Tiêu đề": "Khó có thể copy dữ liệu dạng block giữa các app khác nhau",
@@ -33284,7 +33300,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-11-02T08:34:00.000Z",
-    "id": "W8"
+    "id": "W9"
   },
   {
     "Tiêu đề": "Mở rộng quy mô bằng việc nâng cấp RAM, CPU dễ hơn với SQL. Mở rộng quy mô bằng việc chạy cùng lúc nhiều máy dễ hơn với NoSQL",
@@ -33300,7 +33316,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-06-03T08:01:00.000Z",
-    "id": "W9"
+    "id": "WA"
   },
   {
     "Tiêu đề": "Việc phân loại SQL và NoSQL giống như việc phân loại người dị tính hợp giới và người không dị tính hợp giới, hoặc phân loại người Kinh và người không Kinh",
@@ -33316,7 +33332,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-06-03T07:41:00.000Z",
-    "id": "WA"
+    "id": "WB"
   },
   {
     "Tiêu đề": "Ứng dụng quản lý là một dạng giao diện giữa người dùng và cơ sở dữ liệu",
@@ -33332,7 +33348,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-11-02T08:36:00.000Z",
-    "id": "WB"
+    "id": "WC"
   },
   {
     "Tiêu đề": "Dữ liệu dưới dạng văn bản phù hợp cho việc quản lý kiến thức",
@@ -33348,7 +33364,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "WC"
+    "id": "WD"
   },
   {
     "Tiêu đề": "Khi merge, ours là branch hiện tại. Khi rebase, theirs là branch hiện tại",
@@ -33364,7 +33380,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-06-01T15:12:00.000Z",
-    "id": "WD"
+    "id": "WE"
   },
   {
     "Tiêu đề": "Khi viết tính năng mới nên tạo branch mới",
@@ -33380,7 +33396,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-06-01T15:16:00.000Z",
-    "id": "WE"
+    "id": "WF"
   },
   {
     "Tiêu đề": "@ là viết tắt của HEAD",
@@ -33396,7 +33412,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-10-31T15:27:00.000Z",
-    "id": "WF"
+    "id": "WG"
   },
   {
     "Tiêu đề": "Các lệnh git thường sử dụng",
@@ -33412,7 +33428,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-06-01T15:15:00.000Z",
-    "id": "WG"
+    "id": "WH"
   },
   {
     "Tiêu đề": "git log giúp xem lịch sử các commit",
@@ -33428,7 +33444,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-11-02T08:38:00.000Z",
-    "id": "WH"
+    "id": "WI"
   },
   {
     "Tiêu đề": "HEAD là commit hiện tại",
@@ -33444,7 +33460,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-11-01T06:51:00.000Z",
-    "id": "WI"
+    "id": "WJ"
   },
   {
     "Tiêu đề": "~ và ^ là để chỉ các commit trước đó",
@@ -33460,7 +33476,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:41:00.000Z",
-    "id": "WJ"
+    "id": "WK"
   },
   {
     "Tiêu đề": "Dùng git tag -n liệt kê tất cả các tag",
@@ -33476,7 +33492,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-12-29T03:00:00.000Z",
-    "id": "WK"
+    "id": "WL"
   },
   {
     "Tiêu đề": "Facebook chuyển sang Mercurial vì nhóm phát triển Git năm 2012 không mặn mà với monorepo",
@@ -33492,7 +33508,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-12T06:10:00.000Z",
-    "id": "WL"
+    "id": "WM"
   },
   {
     "Tiêu đề": "diff does not take into account untracked files",
@@ -33508,7 +33524,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-05T17:04:00.000Z",
     "Ngày cập nhật": "2023-11-02T08:38:00.000Z",
-    "id": "WM"
+    "id": "WN"
   },
   {
     "Tiêu đề": "git diff",
@@ -33524,7 +33540,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-11-03T06:58:00.000Z",
-    "id": "WN"
+    "id": "WO"
   },
   {
     "Tiêu đề": "git status giúp xem những file nào đã được vào stage",
@@ -33540,7 +33556,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-05T17:04:00.000Z",
     "Ngày cập nhật": "2023-11-02T08:38:00.000Z",
-    "id": "WO"
+    "id": "WP"
   },
   {
     "Tiêu đề": "ls-files chỉ làm việc với index",
@@ -33556,7 +33572,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:20:00.000Z",
-    "id": "WP"
+    "id": "WQ"
   },
   {
     "Tiêu đề": "pathspecs giúp chọn đường dẫn một cách linh hoạt và tinh tế hơn",
@@ -33572,7 +33588,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "WQ"
+    "id": "WR"
   },
   {
     "Tiêu đề": "Git giúp ta du hành thời gian",
@@ -33588,7 +33604,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-11-11T16:04:00.000Z",
-    "id": "WR"
+    "id": "WS"
   },
   {
     "Tiêu đề": "Git không biết gì về folder",
@@ -33604,7 +33620,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-06-01T15:14:00.000Z",
-    "id": "WS"
+    "id": "WT"
   },
   {
     "Tiêu đề": "Git",
@@ -33620,7 +33636,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2024-01-27T06:38:00.000Z",
     "Ngày cập nhật": "2024-01-27T06:38:00.000Z",
-    "id": "WT"
+    "id": "WU"
   },
   {
     "Tiêu đề": "Bấm dấu . để mở VS Code web ngay trên GitHub",
@@ -33636,7 +33652,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-27T07:01:00.000Z",
-    "id": "WU"
+    "id": "WV"
   },
   {
     "Tiêu đề": "pull không lấy file mới về, mà lấy commit mới về",
@@ -33652,7 +33668,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-12-17T08:34:00.000Z",
-    "id": "WV"
+    "id": "WW"
   },
   {
     "Tiêu đề": "Template và fork",
@@ -33668,7 +33684,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-10T13:51:00.000Z",
     "Ngày cập nhật": "2023-12-03T14:08:00.000Z",
-    "id": "WW"
+    "id": "WX"
   },
   {
     "Tiêu đề": "Website GitHub giống như để remote control máy của GitHub",
@@ -33684,7 +33700,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-12-03T06:51:00.000Z",
-    "id": "WX"
+    "id": "WY"
   },
   {
     "Tiêu đề": "Real-time collaboration isn't necessary in most cases, but asynchronous collaboration",
@@ -33700,7 +33716,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "WY"
+    "id": "WZ"
   },
   {
     "Tiêu đề": "git add -A làm cho index giống như ở working directory. git commit -am chỉ áp dụng cho những file đã có sẵn trong index",
@@ -33716,7 +33732,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-11-11T16:04:00.000Z",
-    "id": "WZ"
+    "id": "Wa"
   },
   {
     "Tiêu đề": "Stage, cache, index là những cái tên khác nhau cho cùng một thứ",
@@ -33732,7 +33748,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-11-11T16:04:00.000Z",
-    "id": "Wa"
+    "id": "Wb"
   },
   {
     "Tiêu đề": "Untracked, staged, unchanged và unstaged là 4 trạng thái chính của một file",
@@ -33748,7 +33764,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:41:00.000Z",
-    "id": "Wb"
+    "id": "Wc"
   },
   {
     "Tiêu đề": "Thứ ta đang trực tiếp chỉnh sửa mà ta tưởng là dữ liệu của mình thực chất là thứ được vay mượn từ commit",
@@ -33764,7 +33780,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-12-17T08:34:00.000Z",
-    "id": "Wc"
+    "id": "Wd"
   },
   {
     "Tiêu đề": "Việc commit giúp ta phá code mà không sợ gì, giống như có đồ bảo hộ rồi thì tha hồ nghịch điện cao thế",
@@ -33780,7 +33796,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-23T07:09:00.000Z",
-    "id": "Wd"
+    "id": "We"
   },
   {
     "Tiêu đề": "Vấn đề hay gặp khi dùng Git",
@@ -33796,7 +33812,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-05-26T07:51:00.000Z",
     "Ngày cập nhật": "2024-06-01T15:14:00.000Z",
-    "id": "We"
+    "id": "Wf"
   },
   {
     "Tiêu đề": "Vật thể git",
@@ -33812,7 +33828,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-09T07:46:00.000Z",
     "Ngày cập nhật": "2023-11-02T08:36:00.000Z",
-    "id": "Wf"
+    "id": "Wg"
   },
   {
     "Tiêu đề": "Cấu trúc phân cấp thường cứng nhắc và nhân tạo",
@@ -33828,7 +33844,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-03-12T12:03:00.000Z",
-    "id": "Wg"
+    "id": "Wh"
   },
   {
     "Tiêu đề": "Dữ liệu dưới dạng văn bản là dạng dữ liệu phi cấu trúc",
@@ -33844,7 +33860,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-11-02T08:34:00.000Z",
-    "id": "Wh"
+    "id": "Wi"
   },
   {
     "Tiêu đề": "File là thứ mà nhiều chương trình khác nhau đều đọc được",
@@ -33860,7 +33876,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-03-21T13:23:00.000Z",
-    "id": "Wi"
+    "id": "Wj"
   },
   {
     "Tiêu đề": "Sự sắp xếp thư mục khác nhau theo chức năng và theo sản phẩm",
@@ -33876,7 +33892,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-03-21T13:23:00.000Z",
-    "id": "Wj"
+    "id": "Wk"
   },
   {
     "Tiêu đề": "Văn bản thuần là dạng tổ chức dữ liệu đơn giản nhất",
@@ -33892,7 +33908,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-05T09:17:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "Wk"
+    "id": "Wl"
   },
   {
     "Tiêu đề": "Đánh số phiên bản",
@@ -33908,7 +33924,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-03-17T15:06:00.000Z",
-    "id": "Wl"
+    "id": "Wm"
   },
   {
     "Tiêu đề": "Việc lưu dữ liệu ở các công cụ khác nhau tạo thành các đảo thông tin",
@@ -33924,7 +33940,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "Wm"
+    "id": "Wn"
   },
   {
     "Tiêu đề": "❓Tại sao không cho người chưa biết gì  về công nghệ thông tin bắt đầu bằng việc học cơ sở dữ liệu trước thay vì học lập trình？",
@@ -33940,7 +33956,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:19:00.000Z",
-    "id": "Wn"
+    "id": "Wo"
   },
   {
     "Tiêu đề": "📊Tổ chức dữ liệu. Phân tích dữ liệu",
@@ -33956,7 +33972,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T08:20:00.000Z",
     "Ngày cập nhật": "2023-11-06T17:28:00.000Z",
-    "id": "Wo"
+    "id": "Wp"
   },
   {
     "Tiêu đề": "Có những người mình mong họ like nhưng họ lại không phải là người mình cần",
@@ -33972,7 +33988,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-27T12:33:00.000Z",
     "Ngày cập nhật": "2023-11-28T15:27:00.000Z",
-    "id": "Wp"
+    "id": "Wq"
   },
   {
     "Tiêu đề": "Có vẻ như để bài viết dưới dạng link hay dạng ảnh thì fb cũng đều phân phối như nhau",
@@ -33988,7 +34004,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-06-09T06:07:00.000Z",
-    "id": "Wq"
+    "id": "Wr"
   },
   {
     "Tiêu đề": "Quảng cáo trên Facebook",
@@ -34004,7 +34020,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-11-28T15:27:00.000Z",
-    "id": "Wr"
+    "id": "Ws"
   },
   {
     "Tiêu đề": "Seeding",
@@ -34020,7 +34036,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-08T08:25:00.000Z",
-    "id": "Ws"
+    "id": "Wt"
   },
   {
     "Tiêu đề": "Share like từ page thì thấy được số tương tác trên Facebook",
@@ -34036,7 +34052,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-27T12:32:00.000Z",
     "Ngày cập nhật": "2024-05-16T10:02:00.000Z",
-    "id": "Wt"
+    "id": "Wu"
   },
   {
     "Tiêu đề": "Tất cả like, share từ các phiên bản URL khác nhau sẽ được đổ hết về og:url",
@@ -34052,7 +34068,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-01T06:38:00.000Z",
-    "id": "Wu"
+    "id": "Wv"
   },
   {
     "Tiêu đề": "Để biết được bài đăng của mình tiếp cận được bao nhiêu người, vào Business Suite",
@@ -34068,7 +34084,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-02-21T14:00:00.000Z",
-    "id": "Wv"
+    "id": "Ww"
   },
   {
     "Tiêu đề": "❓Vai trò của các chỉ số trên Facebook trong phân tích web",
@@ -34084,7 +34100,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-26T07:59:00.000Z",
     "Ngày cập nhật": "2024-02-08T08:24:00.000Z",
-    "id": "Ww"
+    "id": "Wx"
   },
   {
     "Tiêu đề": "Quảng cáo trên Facebook",
@@ -34100,7 +34116,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "Wx"
+    "id": "Wy"
   },
   {
     "Tiêu đề": "Rút gọn link",
@@ -34116,7 +34132,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "Wy"
+    "id": "Wz"
   },
   {
     "Tiêu đề": "JSON-LD là một cách để tạo schema",
@@ -34132,7 +34148,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:41:00.000Z",
-    "id": "Wz"
+    "id": "W-"
   },
   {
     "Tiêu đề": "Open Graph chuyên cho việc chia sẻ trên mạng xã hội. Schema chuyên cho việc tìm kiếm trên Google",
@@ -34148,7 +34164,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2023-12-15T10:45:00.000Z",
-    "id": "W-"
+    "id": "W_"
   },
   {
     "Tiêu đề": "Open Graph và Schema.org là từ vựng. JSON-LD, RDFa và Microdata là ngữ pháp",
@@ -34164,7 +34180,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-22T18:41:00.000Z",
-    "id": "W_"
+    "id": "X0"
   },
   {
     "Tiêu đề": "SEO",
@@ -34180,7 +34196,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-12-15T10:37:00.000Z",
-    "id": "X0"
+    "id": "X1"
   },
   {
     "Tiêu đề": "Tiếp thị số",
@@ -34196,7 +34212,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-26T06:45:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "X1"
+    "id": "X2"
   },
   {
     "Tiêu đề": "Tên miền có dấu",
@@ -34212,7 +34228,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "X2"
+    "id": "X3"
   },
   {
     "Tiêu đề": "Chiến dịch là sản phẩm",
@@ -34228,7 +34244,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-05T09:17:00.000Z",
     "Ngày cập nhật": "2024-04-07T04:52:00.000Z",
-    "id": "X3"
+    "id": "X4"
   },
   {
     "Tiêu đề": "Client-side tracking thiếu chính xác",
@@ -34244,7 +34260,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-07T04:09:00.000Z",
-    "id": "X4"
+    "id": "X5"
   },
   {
     "Tiêu đề": "Có thể có tới 40% người dùng dùng adblock. Số độc giả rành công nghệ có thể lên tới 58%",
@@ -34260,7 +34276,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-24T08:23:00.000Z",
-    "id": "X5"
+    "id": "X6"
   },
   {
     "Tiêu đề": "Dự án là sản phẩm",
@@ -34276,7 +34292,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-05T09:17:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "X6"
+    "id": "X7"
   },
   {
     "Tiêu đề": "Chỉ cần dùng một measurement ID cho các subdomain",
@@ -34292,7 +34308,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-09-05T09:17:00.000Z",
     "Ngày cập nhật": "2024-01-27T14:09:00.000Z",
-    "id": "X7"
+    "id": "X8"
   },
   {
     "Tiêu đề": "Google Analytics dùng cookie để theo dõi hoạt động",
@@ -34308,7 +34324,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-14T04:01:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "X8"
+    "id": "X9"
   },
   {
     "Tiêu đề": "Google Analytics",
@@ -34324,7 +34340,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-27T14:12:00.000Z",
-    "id": "X9"
+    "id": "XA"
   },
   {
     "Tiêu đề": "Nếu web có ít người sử dụng thì một số dữ liệu sẽ bị giấu đi để đảm bảo tính riêng tư cho người dùng",
@@ -34340,7 +34356,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "XA"
+    "id": "XB"
   },
   {
     "Tiêu đề": "Các organic branded traffic nên được xem như là direct traffic",
@@ -34356,7 +34372,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-06-30T05:52:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "XB"
+    "id": "XC"
   },
   {
     "Tiêu đề": "Các URL dài có thể là organic traffic chứ không phải direct traffic",
@@ -34372,7 +34388,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-06-30T06:05:00.000Z",
     "Ngày cập nhật": "2024-04-07T07:17:00.000Z",
-    "id": "XC"
+    "id": "XD"
   },
   {
     "Tiêu đề": "GA xem zalo, wordpress, stackexchange là social",
@@ -34388,7 +34404,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-26T07:59:00.000Z",
     "Ngày cập nhật": "2024-01-27T14:02:00.000Z",
-    "id": "XD"
+    "id": "XE"
   },
   {
     "Tiêu đề": "Nếu medium không có gì đặc biệt thì cứ để trống để google tự phân loại",
@@ -34404,7 +34420,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-26T06:41:00.000Z",
     "Ngày cập nhật": "2024-03-13T06:38:00.000Z",
-    "id": "XE"
+    "id": "XF"
   },
   {
     "Tiêu đề": "Referral channel group bao gồm organic social trong đó",
@@ -34420,7 +34436,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-26T07:59:00.000Z",
     "Ngày cập nhật": "2023-10-30T18:19:00.000Z",
-    "id": "XF"
+    "id": "XG"
   },
   {
     "Tiêu đề": "Social về bản chất là referral, nhưng được tách ra để phân tích sâu hơn",
@@ -34436,7 +34452,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-06-30T06:12:00.000Z",
     "Ngày cập nhật": "2023-10-30T18:19:00.000Z",
-    "id": "XG"
+    "id": "XH"
   },
   {
     "Tiêu đề": "Google Marketing Platform",
@@ -34452,7 +34468,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "XH"
+    "id": "XI"
   },
   {
     "Tiêu đề": "Google Search Console chỉ lưu dữ liệu trong 16 tháng",
@@ -34468,7 +34484,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-27T14:02:00.000Z",
-    "id": "XI"
+    "id": "XJ"
   },
   {
     "Tiêu đề": "Google Search Console dùng để biết thiên hạ đang google web mình thế nào",
@@ -34484,7 +34500,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-27T14:02:00.000Z",
-    "id": "XJ"
+    "id": "XK"
   },
   {
     "Tiêu đề": "App điện thoại có thể trở thành data stream, nhưng không thể trở thành destination",
@@ -34500,7 +34516,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-28T10:19:00.000Z",
-    "id": "XK"
+    "id": "XL"
   },
   {
     "Tiêu đề": "Các dữ liệu cần xử lý chung một chỗ cần được đổ về cùng một property",
@@ -34516,7 +34532,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-28T10:37:00.000Z",
-    "id": "XL"
+    "id": "XM"
   },
   {
     "Tiêu đề": "Các tag có thể thêm vào",
@@ -34532,7 +34548,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-28T10:27:00.000Z",
-    "id": "XM"
+    "id": "XN"
   },
   {
     "Tiêu đề": "Destination ID cho GA trùng với Measurement ID của web data stream",
@@ -34548,7 +34564,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-07-01T11:04:00.000Z",
     "Ngày cập nhật": "2024-01-28T10:27:00.000Z",
-    "id": "XN"
+    "id": "XO"
   },
   {
     "Tiêu đề": "Destination là nơi nhận dữ liệu của Google tag",
@@ -34564,7 +34580,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-28T10:27:00.000Z",
-    "id": "XO"
+    "id": "XP"
   },
   {
     "Tiêu đề": "Container",
@@ -34580,7 +34596,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "XP"
+    "id": "XQ"
   },
   {
     "Tiêu đề": "data layer tập trung mọi dữ liệu lại vào một chỗ rồi truyền đến container",
@@ -34596,7 +34612,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-19T12:13:00.000Z",
-    "id": "XQ"
+    "id": "XR"
   },
   {
     "Tiêu đề": "Data layer variable là",
@@ -34612,7 +34628,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "XR"
+    "id": "XS"
   },
   {
     "Tiêu đề": "Google Tag Manager là một trình quản lý các mã JavaScript được gắn vào web",
@@ -34628,7 +34644,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-28T10:11:00.000Z",
-    "id": "XS"
+    "id": "XT"
   },
   {
     "Tiêu đề": "Workspace",
@@ -34644,7 +34660,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "XT"
+    "id": "XU"
   },
   {
     "Tiêu đề": "Để kích hoạt một tag trước tất cả các tag khác, chọn ❝Initialization – All Pages❞",
@@ -34660,7 +34676,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "XU"
+    "id": "XV"
   },
   {
     "Tiêu đề": "Google tag đổ dữ liệu về Google Analytics, không phải Google Tag Manager",
@@ -34676,7 +34692,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-28T10:31:00.000Z",
-    "id": "XV"
+    "id": "XW"
   },
   {
     "Tiêu đề": "Google tag, global site tag, gtag là những cái tên khác nhau cho đoạn script theo dõi người dùng của Google Analytics",
@@ -34692,7 +34708,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-28T10:37:00.000Z",
-    "id": "XW"
+    "id": "XX"
   },
   {
     "Tiêu đề": "Một Google tag có thể có nhiều ID",
@@ -34708,7 +34724,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-28T10:36:00.000Z",
-    "id": "XX"
+    "id": "XY"
   },
   {
     "Tiêu đề": "Một tag có thể có nhiều destination, nhưng một destination chỉ thuộc về một tag",
@@ -34724,7 +34740,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-01-28T10:21:00.000Z",
-    "id": "XY"
+    "id": "XZ"
   },
   {
     "Tiêu đề": "Nên cài Google tag trong Google Tag Manager thay vì cài trực tiếp trên web hoặc qua plugin",
@@ -34740,7 +34756,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2024-01-28T10:36:00.000Z",
-    "id": "XZ"
+    "id": "Xa"
   },
   {
     "Tiêu đề": "❓Measurement ID của web data stream chính là Google tag ID",
@@ -34756,7 +34772,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-24T11:26:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:24:00.000Z",
-    "id": "Xa"
+    "id": "Xb"
   },
   {
     "Tiêu đề": "Link referrer không hiện đầy đủ mà chỉ có tên miền vì URL có thể chứa thông tin cá nhân",
@@ -34772,7 +34788,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-30T07:29:00.000Z",
     "Ngày cập nhật": "2024-04-24T03:58:00.000Z",
-    "id": "Xb"
+    "id": "Xc"
   },
   {
     "Tiêu đề": "Web analytics đã thay đổi trong nhiều năm qua",
@@ -34788,7 +34804,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-07-02T14:06:00.000Z",
     "Ngày cập nhật": "2024-04-07T04:05:00.000Z",
-    "id": "Xc"
+    "id": "Xd"
   },
   {
     "Tiêu đề": "🗯️Tiếp thị số",
@@ -34804,7 +34820,7 @@
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2023-10-27T12:32:00.000Z",
     "Ngày cập nhật": "2023-10-30T11:25:00.000Z",
-    "id": "Xd"
+    "id": "Xe"
   },
   {
     "Tiêu đề": "Chuyện Tiểu Cúc",
@@ -34817,7 +34833,7 @@
     "Slug": "chuyen-tieu-cuc",
     "Ngày tạo": "2019-08-08T14:58:56.000Z",
     "Ngày cập nhật": "2021-05-13T10:48:36.000Z",
-    "id": "Xe"
+    "id": "Xf"
   },
   {
     "Tiêu đề": "Tại sao Đạo gia lại đề cao sự học?",
@@ -34830,7 +34846,7 @@
     "Slug": "tai-sao-dao-gia-lai-de-cao-su-hoc",
     "Ngày tạo": "2019-08-08T15:53:57.000Z",
     "Ngày cập nhật": "2020-05-31T07:19:55.000Z",
-    "id": "Xf"
+    "id": "Xg"
   },
   {
     "Tiêu đề": "Con mắt lạnh như băng",
@@ -34843,7 +34859,7 @@
     "Slug": "con-mat-lanh-nhu-bang",
     "Ngày tạo": "2019-08-08T17:08:49.000Z",
     "Ngày cập nhật": "2021-11-26T12:13:30.000Z",
-    "id": "Xg"
+    "id": "Xh"
   },
   {
     "Tiêu đề": "Chuyện gì sẽ xảy ra nếu...?",
@@ -34856,7 +34872,7 @@
     "Slug": "chuyen-gi-se-xay-ra-neu",
     "Ngày tạo": "2019-08-08T18:59:39.000Z",
     "Ngày cập nhật": "2021-04-09T08:22:13.000Z",
-    "id": "Xh"
+    "id": "Xi"
   },
   {
     "Tiêu đề": "Rối loạn nhân cách tâm trạng không ổn định",
@@ -34869,7 +34885,7 @@
     "Slug": "roi-loan-nhan-cach-tam-trang-khong-on-dinh",
     "Ngày tạo": "2019-08-09T05:08:18.000Z",
     "Ngày cập nhật": "2020-06-02T07:02:27.000Z",
-    "id": "Xi"
+    "id": "Xj"
   },
   {
     "Tiêu đề": "Tranh luận hiền hòa",
@@ -34882,7 +34898,7 @@
     "Slug": "tranh-luan-hien-hoa",
     "Ngày tạo": "2019-08-09T05:20:49.000Z",
     "Ngày cập nhật": "2021-08-23T17:42:18.000Z",
-    "id": "Xj"
+    "id": "Xk"
   },
   {
     "Tiêu đề": "Nơi cuối trời",
@@ -34895,7 +34911,7 @@
     "Slug": "noi-cuoi-troi",
     "Ngày tạo": "2019-08-09T05:27:27.000Z",
     "Ngày cập nhật": "2021-02-23T13:10:57.000Z",
-    "id": "Xk"
+    "id": "Xl"
   },
   {
     "Tiêu đề": "Truyện cười vật lý",
@@ -34908,7 +34924,7 @@
     "Slug": "truyen-cuoi-vat-ly",
     "Ngày tạo": "2019-08-09T05:37:20.000Z",
     "Ngày cập nhật": "2021-02-24T16:19:06.000Z",
-    "id": "Xl"
+    "id": "Xm"
   },
   {
     "Tiêu đề": "EUPD: xem thêm",
@@ -34921,7 +34937,7 @@
     "Slug": "eupd-xem-them",
     "Ngày tạo": "2019-08-09T18:13:49.000Z",
     "Ngày cập nhật": "2023-11-08T14:23:48.000Z",
-    "id": "Xm"
+    "id": "Xn"
   },
   {
     "Tiêu đề": "Bộ sưu tập từ điển chuyên ngành",
@@ -34934,7 +34950,7 @@
     "Slug": "tu-dien-chuyen-nganh",
     "Ngày tạo": "2019-08-11T09:23:46.000Z",
     "Ngày cập nhật": "2024-01-10T07:21:34.000Z",
-    "id": "Xn"
+    "id": "Xo"
   },
   {
     "Tiêu đề": "Máy trợ thính",
@@ -34947,7 +34963,7 @@
     "Slug": "may-tro-thinh",
     "Ngày tạo": "2019-08-11T17:59:21.000Z",
     "Ngày cập nhật": "2021-02-24T16:18:30.000Z",
-    "id": "Xo"
+    "id": "Xp"
   },
   {
     "Tiêu đề": "Ru em ngủ",
@@ -34960,7 +34976,7 @@
     "Slug": "ru-em-ngu",
     "Ngày tạo": "2019-08-23T14:42:48.000Z",
     "Ngày cập nhật": "2021-02-23T13:11:23.000Z",
-    "id": "Xp"
+    "id": "Xq"
   },
   {
     "Tiêu đề": "Kết luận",
@@ -34973,7 +34989,7 @@
     "Slug": "ccmmcr-ket-luan",
     "Ngày tạo": "2019-08-25T18:00:54.000Z",
     "Ngày cập nhật": "2021-04-16T16:18:54.000Z",
-    "id": "Xq"
+    "id": "Xr"
   },
   {
     "Tiêu đề": "Phần 3: Khoa học có trong những triết lý của ông ấy",
@@ -34986,7 +35002,7 @@
     "Slug": "phan-3-khoa-hoc-co-trong-nhung-triet-ly-cua-ong-ay",
     "Ngày tạo": "2019-08-26T13:32:08.000Z",
     "Ngày cập nhật": "2021-03-31T08:49:58.000Z",
-    "id": "Xr"
+    "id": "Xs"
   },
   {
     "Tiêu đề": "Phần 2: Thứ ông ấy làm lại là khoa học đúng nghĩa",
@@ -34999,7 +35015,7 @@
     "Slug": "phan-2-thu-ong-ay-lam-lai-la-khoa-hoc-dung-nghia",
     "Ngày tạo": "2019-08-26T14:44:31.000Z",
     "Ngày cập nhật": "2021-03-31T08:44:31.000Z",
-    "id": "Xs"
+    "id": "Xt"
   },
   {
     "Tiêu đề": "Phần 1: Thứ ông ấy nghĩ không phải là khoa học đúng nghĩa",
@@ -35012,7 +35028,7 @@
     "Slug": "phan-1-thu-ong-ay-nghi-khong-phai-la-khoa-hoc-dung-nghia",
     "Ngày tạo": "2019-08-26T15:03:57.000Z",
     "Ngày cập nhật": "2021-04-12T22:24:04.000Z",
-    "id": "Xt"
+    "id": "Xu"
   },
   {
     "Tiêu đề": "Phản biện cuốn <em>Cuộc cách mạng một-cọng-rơm</em>",
@@ -35025,7 +35041,7 @@
     "Slug": "phan-bien-cuon-cuoc-cach-mang-mot-cong-rom",
     "Ngày tạo": "2019-08-27T07:41:30.000Z",
     "Ngày cập nhật": "2021-03-22T09:48:42.000Z",
-    "id": "Xu"
+    "id": "Xv"
   },
   {
     "Tiêu đề": "Cần bạn trợ giúp: kháng nghị Facebook",
@@ -35038,7 +35054,7 @@
     "Slug": "can-ban-tro-giup-khang-nghi-facebook",
     "Ngày tạo": "2019-09-06T08:29:04.000Z",
     "Ngày cập nhật": "2019-09-06T08:29:04.000Z",
-    "id": "Xv"
+    "id": "Xw"
   },
   {
     "Tiêu đề": "Phản hồi của người dịch: bạn đọc sách không thấm rồi",
@@ -35051,7 +35067,7 @@
     "Slug": "phan-hoi-cua-nguoi-dich-ban-doc-sach-khong-tham-roi",
     "Ngày tạo": "2019-09-06T16:52:24.000Z",
     "Ngày cập nhật": "2021-04-16T16:11:11.000Z",
-    "id": "Xw"
+    "id": "Xx"
   },
   {
     "Tiêu đề": "Rắc rối của từ bi (bản ngắn)",
@@ -35064,7 +35080,7 @@
     "Slug": "rac-roi-cua-tu-bi-ban-ngan",
     "Ngày tạo": "2019-09-23T13:45:27.000Z",
     "Ngày cập nhật": "2020-05-27T13:41:44.000Z",
-    "id": "Xx"
+    "id": "Xy"
   },
   {
     "Tiêu đề": "Khi đạo sĩ gặp rối loạn tâm lý",
@@ -35077,7 +35093,7 @@
     "Slug": "khi-dao-si-gap-roi-loan-tam-ly",
     "Ngày tạo": "2019-10-01T17:32:06.000Z",
     "Ngày cập nhật": "2020-08-10T14:02:59.000Z",
-    "id": "Xy"
+    "id": "Xz"
   },
   {
     "Tiêu đề": "Ví dụ về sự tương tác giữa Đạo gia và rối loạn tâm lý",
@@ -35090,7 +35106,7 @@
     "Slug": "vi-du-ve-su-tuong-tac-giua-dao-gia-va-roi-loan-tam-ly",
     "Ngày tạo": "2019-10-01T17:51:53.000Z",
     "Ngày cập nhật": "2020-12-11T17:26:57.000Z",
-    "id": "Xz"
+    "id": "X-"
   },
   {
     "Tiêu đề": "Mối quan hệ của một bông hoa chết",
@@ -35103,7 +35119,7 @@
     "Slug": "moi-quan-he-cua-mot-bong-hoa-chet",
     "Ngày tạo": "2019-10-01T18:14:55.000Z",
     "Ngày cập nhật": "2020-11-05T17:56:09.000Z",
-    "id": "X-"
+    "id": "X_"
   },
   {
     "Tiêu đề": "Kết luận",
@@ -35116,7 +35132,7 @@
     "Slug": "bong-hoa-chet-ket-luan",
     "Ngày tạo": "2019-10-01T18:20:23.000Z",
     "Ngày cập nhật": "2020-05-27T14:13:57.000Z",
-    "id": "X_"
+    "id": "Y0"
   },
   {
     "Tiêu đề": "Trăm năm khép lại",
@@ -35129,7 +35145,7 @@
     "Slug": "tram-nam-khep-lai",
     "Ngày tạo": "2019-10-13T15:32:24.000Z",
     "Ngày cập nhật": "2021-02-24T16:17:28.000Z",
-    "id": "Y0"
+    "id": "Y1"
   },
   {
     "Tiêu đề": "Nghiên cứu khoa học phong cách truyện tranh",
@@ -35142,7 +35158,7 @@
     "Slug": "nghien-cuu-khoa-hoc-phong-cach-truyen-tranh",
     "Ngày tạo": "2019-10-20T17:19:29.000Z",
     "Ngày cập nhật": "2021-02-24T16:17:18.000Z",
-    "id": "Y1"
+    "id": "Y2"
   },
   {
     "Tiêu đề": "Rắc rối của từ bi",
@@ -35155,7 +35171,7 @@
     "Slug": "rac-roi-cua-tu-bi",
     "Ngày tạo": "2019-10-27T08:34:42.000Z",
     "Ngày cập nhật": "2021-05-09T07:05:41.000Z",
-    "id": "Y2"
+    "id": "Y3"
   },
   {
     "Tiêu đề": "Giải pháp",
@@ -35168,7 +35184,7 @@
     "Slug": "giai-phap",
     "Ngày tạo": "2019-10-27T08:43:44.000Z",
     "Ngày cập nhật": "2020-05-28T10:26:09.000Z",
-    "id": "Y3"
+    "id": "Y4"
   },
   {
     "Tiêu đề": "Rắc rối 3: Người ngoài không hiểu bạn",
@@ -35181,7 +35197,7 @@
     "Slug": "rac-roi-3-nguoi-ngoai-khong-hieu-ban",
     "Ngày tạo": "2019-10-27T09:03:58.000Z",
     "Ngày cập nhật": "2020-05-28T10:38:12.000Z",
-    "id": "Y4"
+    "id": "Y5"
   },
   {
     "Tiêu đề": "Rắc rối 2: Phải chịu những hậu quả của dính mắc mặc dù mình không có",
@@ -35194,7 +35210,7 @@
     "Slug": "rac-roi-2-phai-chiu-nhung-hau-qua-cua-dinh-mac-mac-du-minh-khong-co",
     "Ngày tạo": "2019-10-27T11:46:52.000Z",
     "Ngày cập nhật": "2020-05-28T10:46:38.000Z",
-    "id": "Y5"
+    "id": "Y6"
   },
   {
     "Tiêu đề": "Rắc rối 1: Bị nói là không biết tôn trọng sự khó chịu của họ",
@@ -35207,7 +35223,7 @@
     "Slug": "rac-roi-1-bi-noi-la-khong-biet-ton-trong-su-kho-chiu-cua-ho",
     "Ngày tạo": "2019-10-27T11:50:54.000Z",
     "Ngày cập nhật": "2021-03-05T19:54:20.000Z",
-    "id": "Y6"
+    "id": "Y7"
   },
   {
     "Tiêu đề": "Độc giả Quả Cầu là ai?",
@@ -35220,7 +35236,7 @@
     "Slug": "doc-gia-qua-cau-la-ai",
     "Ngày tạo": "2019-11-01T15:13:02.000Z",
     "Ngày cập nhật": "2021-02-23T01:01:25.000Z",
-    "id": "Y7"
+    "id": "Y8"
   },
   {
     "Tiêu đề": "Bộ thẻ học từ vựng tiếng Anh nâng cao (GRE)",
@@ -35233,7 +35249,7 @@
     "Slug": "bo-the-hoc-tu-vung-tieng-anh-nang-cao",
     "Ngày tạo": "2019-11-21T06:54:39.000Z",
     "Ngày cập nhật": "2022-04-08T17:47:41.000Z",
-    "id": "Y8"
+    "id": "Y9"
   },
   {
     "Tiêu đề": "Tại sao Nho gia cũng là một trường phái để đạt tới vô vi?",
@@ -35246,7 +35262,7 @@
     "Slug": "tai-sao-nho-gia-cung-la-mot-truong-phai-de-dat-toi-vo-vi",
     "Ngày tạo": "2019-11-25T10:17:14.000Z",
     "Ngày cập nhật": "2021-09-20T08:43:33.000Z",
-    "id": "Y9"
+    "id": "YA"
   },
   {
     "Tiêu đề": "Tại sao \"đúng sai miễn bàn\" lại không phải là quan điểm của Đạo giáo?",
@@ -35259,7 +35275,7 @@
     "Slug": "tai-sao-dung-sai-mien-ban-lai-khong-phai-la-quan-diem-cua-dao-giao",
     "Ngày tạo": "2019-12-05T05:53:03.000Z",
     "Ngày cập nhật": "2020-05-28T17:32:30.000Z",
-    "id": "YA"
+    "id": "YB"
   },
   {
     "Tiêu đề": "Các phần mềm hữu ích",
@@ -35272,7 +35288,7 @@
     "Slug": "cac-phan-mem-huu-ich",
     "Ngày tạo": "2019-12-09T14:35:02.000Z",
     "Ngày cập nhật": "2022-03-14T19:07:31.000Z",
-    "id": "YB"
+    "id": "YC"
   },
   {
     "Tiêu đề": "500 nhóm Facebook hay",
@@ -35285,7 +35301,7 @@
     "Slug": "cac-nhom-facebook-hay",
     "Ngày tạo": "2019-12-17T13:57:36.000Z",
     "Ngày cập nhật": "2021-08-30T05:21:20.000Z",
-    "id": "YC"
+    "id": "YD"
   },
   {
     "Tiêu đề": "Duy vật lý dưới góc nhìn của vật lý và tâm lý học nhận thức",
@@ -35298,7 +35314,7 @@
     "Slug": "duy-vat-ly-duoi-goc-nhin-cua-vat-ly-va-tam-ly-hoc-nhan-thuc",
     "Ngày tạo": "2019-12-22T16:29:58.000Z",
     "Ngày cập nhật": "2021-03-31T13:00:42.000Z",
-    "id": "YD"
+    "id": "YE"
   },
   {
     "Tiêu đề": "Câu chuyện của Tiểu Cúc với người trăm năm",
@@ -35311,7 +35327,7 @@
     "Slug": "cau-chuyen-cua-tieu-cuc-voi-nguoi-tram-nam",
     "Ngày tạo": "2019-12-25T20:34:20.000Z",
     "Ngày cập nhật": "2021-05-13T11:19:05.000Z",
-    "id": "YE"
+    "id": "YF"
   },
   {
     "Tiêu đề": "Khi sự giúp đỡ trông như cưỡng ép",
@@ -35324,7 +35340,7 @@
     "Slug": "khi-su-giup-do-trong-nhu-cuong-ep",
     "Ngày tạo": "2019-12-31T06:30:04.000Z",
     "Ngày cập nhật": "2021-02-22T17:06:22.000Z",
-    "id": "YF"
+    "id": "YG"
   },
   {
     "Tiêu đề": "Anh Nguyễn Dương Minh gửi: Rắc rối của từ bi",
@@ -35337,7 +35353,7 @@
     "Slug": "anh-nguyen-duong-minh-gui-rac-roi-cua-tu-bi",
     "Ngày tạo": "2020-01-06T06:22:21.000Z",
     "Ngày cập nhật": "2022-04-21T10:43:22.000Z",
-    "id": "YG"
+    "id": "YH"
   },
   {
     "Tiêu đề": "Bạn Đoàn Phương Thảo gửi: Chuyện Tiểu Cúc",
@@ -35350,7 +35366,7 @@
     "Slug": "ban-doan-phuong-thao-gui-chuyen-tieu-cuc",
     "Ngày tạo": "2020-01-05T16:57:39.000Z",
     "Ngày cập nhật": "2021-02-24T16:14:37.000Z",
-    "id": "YH"
+    "id": "YI"
   },
   {
     "Tiêu đề": "Giải quyết nhiều hiểu lầm, ngộ nhận và niềm tin sai phổ biến, một lần cho mãi mãi",
@@ -35363,7 +35379,7 @@
     "Slug": "giai-quyet-nhieu-hieu-lam-ngo-nhan-va-niem-tin-sai-pho-bien-mot-lan-cho-mai-mai",
     "Ngày tạo": "2020-01-09T18:10:27.000Z",
     "Ngày cập nhật": "2021-03-31T07:54:05.000Z",
-    "id": "YI"
+    "id": "YJ"
   },
   {
     "Tiêu đề": "Bản ngã là gì nếu không phải là sự chú ý?",
@@ -35376,7 +35392,7 @@
     "Slug": "ban-nga-la-gi-neu-khong-phai-la-su-chu-y",
     "Ngày tạo": "2020-01-10T15:36:44.000Z",
     "Ngày cập nhật": "2021-03-06T20:05:27.000Z",
-    "id": "YJ"
+    "id": "YK"
   },
   {
     "Tiêu đề": "Thử xây dựng lại Đạo giáo từ khoa học hiện đại",
@@ -35389,7 +35405,7 @@
     "Slug": "thu-xay-dung-lai-dao-giao-tu-khoa-hoc-hien-dai",
     "Ngày tạo": "2020-01-10T15:58:45.000Z",
     "Ngày cập nhật": "2021-12-21T09:07:18.000Z",
-    "id": "YK"
+    "id": "YL"
   },
   {
     "Tiêu đề": "Bạn Nguyễn Trần Anh gửi: Chuyện Tiểu Cúc | Một lời đáp",
@@ -35402,7 +35418,7 @@
     "Slug": "ban-nguyen-tran-anh-gui-chuyen-tieu-cuc-mot-loi-dap",
     "Ngày tạo": "2020-01-13T08:46:48.000Z",
     "Ngày cập nhật": "2021-02-24T15:48:57.000Z",
-    "id": "YL"
+    "id": "YM"
   },
   {
     "Tiêu đề": "Hướng dẫn trợ giúp",
@@ -35415,7 +35431,7 @@
     "Slug": "huong-dan-tro-giup",
     "Ngày tạo": "2020-01-14T17:44:38.000Z",
     "Ngày cập nhật": "2020-01-14T17:44:38.000Z",
-    "id": "YM"
+    "id": "YN"
   },
   {
     "Tiêu đề": "Ratatouille – những góc nhìn chưa từng có",
@@ -35428,7 +35444,7 @@
     "Slug": "ratatouille",
     "Ngày tạo": "2020-01-31T16:44:43.000Z",
     "Ngày cập nhật": "2021-12-28T15:11:41.000Z",
-    "id": "YN"
+    "id": "YO"
   },
   {
     "Tiêu đề": "CV người sáng lập",
@@ -35441,7 +35457,7 @@
     "Slug": "cv",
     "Ngày tạo": "2020-02-10T15:11:35.000Z",
     "Ngày cập nhật": "2022-09-16T09:41:02.000Z",
-    "id": "YO"
+    "id": "YP"
   },
   {
     "Tiêu đề": "Xưng hô trong tình yêu",
@@ -35454,7 +35470,7 @@
     "Slug": "xung-ho-trong-tinh-yeu",
     "Ngày tạo": "2020-02-14T13:40:06.000Z",
     "Ngày cập nhật": "2021-03-05T11:37:36.000Z",
-    "id": "YP"
+    "id": "YQ"
   },
   {
     "Tiêu đề": "Đôi khi",
@@ -35467,7 +35483,7 @@
     "Slug": "doi-khi",
     "Ngày tạo": "2020-02-26T04:58:48.000Z",
     "Ngày cập nhật": "2021-02-23T13:16:53.000Z",
-    "id": "YQ"
+    "id": "YR"
   },
   {
     "Tiêu đề": "Biết chửi thề trước khi biết nói",
@@ -35480,7 +35496,7 @@
     "Slug": "biet-chui-the-truoc-khi-biet-noi",
     "Ngày tạo": "2020-03-05T13:33:21.000Z",
     "Ngày cập nhật": "2021-03-31T12:41:26.000Z",
-    "id": "YR"
+    "id": "YS"
   },
   {
     "Tiêu đề": "Tham gia cùng Quả Cầu",
@@ -35493,7 +35509,7 @@
     "Slug": "tham-gia-cung-qua-cau",
     "Ngày tạo": "2020-03-07T16:01:43.000Z",
     "Ngày cập nhật": "2023-07-03T14:47:26.000Z",
-    "id": "YS"
+    "id": "YT"
   },
   {
     "Tiêu đề": "Khi nào ta cần phải tác động? Khi nào sự cứng rắn là cần thiết?",
@@ -35506,7 +35522,7 @@
     "Slug": "khi-nao-su-tac-dong-la-can-thiet",
     "Ngày tạo": "2020-03-15T15:42:23.000Z",
     "Ngày cập nhật": "2021-06-29T10:54:29.000Z",
-    "id": "YT"
+    "id": "YU"
   },
   {
     "Tiêu đề": "Làm sao để biết chắc chắn mình đúng? Nhỡ đâu chính mình mới có bóp méo?",
@@ -35519,7 +35535,7 @@
     "Slug": "lam-sao-de-biet-chac-chan-minh-dung",
     "Ngày tạo": "2020-03-15T15:54:35.000Z",
     "Ngày cập nhật": "2021-02-24T15:11:12.000Z",
-    "id": "YU"
+    "id": "YV"
   },
   {
     "Tiêu đề": "Quyền thay đổi niềm tin của người khác",
@@ -35532,7 +35548,7 @@
     "Slug": "quyen-thay-doi-niem-tin-cua-nguoi-khac",
     "Ngày tạo": "2020-03-15T18:38:05.000Z",
     "Ngày cập nhật": "2021-02-24T15:10:49.000Z",
-    "id": "YV"
+    "id": "YW"
   },
   {
     "Tiêu đề": "Làm sao để không cảm thấy ngại khi hành động?",
@@ -35545,7 +35561,7 @@
     "Slug": "lam-sao-de-khong-cam-thay-ngai-khi-hanh-dong",
     "Ngày tạo": "2020-03-24T16:19:12.000Z",
     "Ngày cập nhật": "2021-02-24T15:11:07.000Z",
-    "id": "YW"
+    "id": "YX"
   },
   {
     "Tiêu đề": "Bản kế hoạch chiến lược dự án Quả Cầu",
@@ -35558,7 +35574,7 @@
     "Slug": "ban-ke-hoach-chien-luoc-du-an-qua-cau",
     "Ngày tạo": "2020-03-25T08:00:21.000Z",
     "Ngày cập nhật": "2023-07-03T13:59:51.000Z",
-    "id": "YX"
+    "id": "YY"
   },
   {
     "Tiêu đề": "love is more thicker than forget",
@@ -35571,7 +35587,7 @@
     "Slug": "love-is-more-thicker-than-forget",
     "Ngày tạo": "2020-04-02T15:35:48.000Z",
     "Ngày cập nhật": "2020-04-02T15:35:48.000Z",
-    "id": "YY"
+    "id": "YZ"
   },
   {
     "Tiêu đề": "<em>Trung Quán Minh Cú Luận</em>, bản tiếng Pháp",
@@ -35584,7 +35600,7 @@
     "Slug": "trung-quan-minh-cu-luan-ban-tieng-phap",
     "Ngày tạo": "2020-04-06T07:08:07.000Z",
     "Ngày cập nhật": "2021-02-23T13:17:09.000Z",
-    "id": "YZ"
+    "id": "Ya"
   },
   {
     "Tiêu đề": "Một số suy nghĩ từ dự án Chữ VN Song Song",
@@ -35597,7 +35613,7 @@
     "Slug": "mot-so-suy-nghi-tu-du-an-chu-vn-song-song",
     "Ngày tạo": "2020-04-07T16:02:57.000Z",
     "Ngày cập nhật": "2021-05-20T10:17:21.000Z",
-    "id": "Ya"
+    "id": "Yb"
   },
   {
     "Tiêu đề": "Chìa khóa học cách phát âm",
@@ -35610,7 +35626,7 @@
     "Slug": "chia-khoa-hoc-cach-phat-am",
     "Ngày tạo": "2020-04-07T17:33:51.000Z",
     "Ngày cập nhật": "2021-03-31T12:59:23.000Z",
-    "id": "Yb"
+    "id": "Yc"
   },
   {
     "Tiêu đề": "Một suy nghĩ về lập trình ngôn ngữ tư duy (NLP)",
@@ -35623,7 +35639,7 @@
     "Slug": "lap-trinh-ngon-ngu-tu-duy-nlp",
     "Ngày tạo": "2020-04-11T16:39:19.000Z",
     "Ngày cập nhật": "2021-09-13T11:23:14.000Z",
-    "id": "Yc"
+    "id": "Yd"
   },
   {
     "Tiêu đề": "Tinh thần Quả Cầu",
@@ -35636,7 +35652,7 @@
     "Slug": "tinh-than-qua-cau",
     "Ngày tạo": "2020-05-26T17:09:06.000Z",
     "Ngày cập nhật": "2022-03-31T15:51:35.000Z",
-    "id": "Yd"
+    "id": "Ye"
   },
   {
     "Tiêu đề": "12 người đàn ông giận dữ",
@@ -35649,7 +35665,7 @@
     "Slug": "12-nguoi-dan-ong-gian-du",
     "Ngày tạo": "2020-05-26T15:21:06.000Z",
     "Ngày cập nhật": "2021-07-12T17:36:35.000Z",
-    "id": "Ye"
+    "id": "Yf"
   },
   {
     "Tiêu đề": "Sự bất lực học được là gì?",
@@ -35662,7 +35678,7 @@
     "Slug": "su-bat-luc-hoc-duoc",
     "Ngày tạo": "2020-05-26T16:47:00.000Z",
     "Ngày cập nhật": "2021-09-26T14:47:17.000Z",
-    "id": "Yf"
+    "id": "Yg"
   },
   {
     "Tiêu đề": "Tại sao không nên dùng ngực thay cho vú?",
@@ -35675,7 +35691,7 @@
     "Slug": "tai-sao-khong-nen-dung-nguc-thay-cho-vu",
     "Ngày tạo": "2020-05-26T18:41:04.000Z",
     "Ngày cập nhật": "2022-04-22T18:24:21.000Z",
-    "id": "Yg"
+    "id": "Yh"
   },
   {
     "Tiêu đề": "Chị Nguyễn Đan Khanh gửi: hãy giữ niềm tin sống như một người trẻ mới bước vào đời",
@@ -35688,7 +35704,7 @@
     "Slug": "chi-nguyen-dan-khanh-gui-hay-giu-niem-tin-song-nhu-mot-nguoi-tre-moi-buoc-vao-doi",
     "Ngày tạo": "2020-05-26T18:53:51.000Z",
     "Ngày cập nhật": "2021-02-24T15:09:35.000Z",
-    "id": "Yh"
+    "id": "Yi"
   },
   {
     "Tiêu đề": "Đạo không thể giải thích được qua sự độc thoại, nhưng có thể thấy nó được qua sự đối thoại",
@@ -35701,7 +35717,7 @@
     "Slug": "dao-khong-the-giai-thich-duoc-qua-su-doc-thoai-nhung-co-the-thay-no-duoc-qua-su-doi-thoai",
     "Ngày tạo": "2020-05-27T12:55:44.000Z",
     "Ngày cập nhật": "2020-06-21T09:54:09.000Z",
-    "id": "Yi"
+    "id": "Yj"
   },
   {
     "Tiêu đề": "Cảm xúc trong mỹ học",
@@ -35714,7 +35730,7 @@
     "Slug": "cam-xuc-trong-my-hoc",
     "Ngày tạo": "2020-06-01T10:15:31.000Z",
     "Ngày cập nhật": "2021-02-23T13:22:16.000Z",
-    "id": "Yj"
+    "id": "Yk"
   },
   {
     "Tiêu đề": "Vượn trần trụi - Vườn thú người",
@@ -35727,7 +35743,7 @@
     "Slug": "vuon-tran-trui-vuon-thu-nguoi",
     "Ngày tạo": "2020-06-01T10:17:46.000Z",
     "Ngày cập nhật": "2021-02-23T13:04:28.000Z",
-    "id": "Yk"
+    "id": "Yl"
   },
   {
     "Tiêu đề": "Những bức ảnh muốn gì?",
@@ -35740,7 +35756,7 @@
     "Slug": "nhung-buc-anh-muon-gi",
     "Ngày tạo": "2020-06-02T06:46:48.000Z",
     "Ngày cập nhật": "2021-03-31T12:41:07.000Z",
-    "id": "Yl"
+    "id": "Ym"
   },
   {
     "Tiêu đề": "Một suy nghĩ về sự cộng hưởng",
@@ -35753,7 +35769,7 @@
     "Slug": "mot-suy-nghi-ve-su-cong-huong",
     "Ngày tạo": "2020-06-06T11:34:59.000Z",
     "Ngày cập nhật": "2021-02-23T13:27:59.000Z",
-    "id": "Ym"
+    "id": "Yn"
   },
   {
     "Tiêu đề": "Kinh nghiệm dịch: google thuật ngữ tiếng Việt",
@@ -35766,7 +35782,7 @@
     "Slug": "kinh-nghiem-google-thuat-ngu",
     "Ngày tạo": "2020-06-07T08:09:32.000Z",
     "Ngày cập nhật": "2020-10-19T06:16:39.000Z",
-    "id": "Yn"
+    "id": "Yo"
   },
   {
     "Tiêu đề": "Kinh nghiệm dịch: công cụ dịch",
@@ -35779,7 +35795,7 @@
     "Slug": "kinh-nghiem-dich-cong-cu-dich",
     "Ngày tạo": "2020-06-07T08:16:15.000Z",
     "Ngày cập nhật": "2020-10-19T06:38:12.000Z",
-    "id": "Yo"
+    "id": "Yp"
   },
   {
     "Tiêu đề": "Tại sao cảm xúc không phải là đúng nhất?",
@@ -35792,7 +35808,7 @@
     "Slug": "tai-sao-cam-xuc-khong-phai-la-dung-nhat",
     "Ngày tạo": "2020-06-20T09:00:23.000Z",
     "Ngày cập nhật": "2021-02-23T13:22:45.000Z",
-    "id": "Yp"
+    "id": "Yq"
   },
   {
     "Tiêu đề": "Tại sao cái đẹp không nhất thiết đi cùng với cái tốt?",
@@ -35805,7 +35821,7 @@
     "Slug": "tai-sao-cai-dep-khong-nhat-thiet-di-cung-voi-cai-tot",
     "Ngày tạo": "2020-06-20T12:58:39.000Z",
     "Ngày cập nhật": "2021-03-22T13:05:54.000Z",
-    "id": "Yq"
+    "id": "Yr"
   },
   {
     "Tiêu đề": "Khi sự bất lực trở thành cái đẹp",
@@ -35818,7 +35834,7 @@
     "Slug": "khi-su-bat-luc-tro-thanh-cai-dep",
     "Ngày tạo": "2020-06-20T14:17:40.000Z",
     "Ngày cập nhật": "2020-11-05T17:55:45.000Z",
-    "id": "Yr"
+    "id": "Ys"
   },
   {
     "Tiêu đề": "Khi sự nuông chiều trở thành cái \"đẹp\"",
@@ -35831,7 +35847,7 @@
     "Slug": "khi-su-nuong-chieu-tro-thanh-cai-dep",
     "Ngày tạo": "2020-06-20T14:37:20.000Z",
     "Ngày cập nhật": "2021-02-23T13:30:00.000Z",
-    "id": "Ys"
+    "id": "Yt"
   },
   {
     "Tiêu đề": "Ai nhớ ngàn năm một ngón tay",
@@ -35844,7 +35860,7 @@
     "Slug": "ai-nho-ngan-nam-mot-ngon-tay",
     "Ngày tạo": "2020-06-20T15:51:50.000Z",
     "Ngày cập nhật": "2020-06-29T18:32:48.000Z",
-    "id": "Yt"
+    "id": "Yu"
   },
   {
     "Tiêu đề": "Hiện tượng đồng âm khác nghĩa, đồng nghĩa khác âm, và đảo nghĩa trong quá trình hình thành niềm tin: 2",
@@ -35857,7 +35873,7 @@
     "Slug": "hien-tuong-dong-am-khac-nghia-2",
     "Ngày tạo": "2020-06-21T09:48:15.000Z",
     "Ngày cập nhật": "2021-05-08T08:34:01.000Z",
-    "id": "Yu"
+    "id": "Yv"
   },
   {
     "Tiêu đề": "Naïve realism và người sử dụng logic",
@@ -35870,7 +35886,7 @@
     "Slug": "naive-realism-va-nguoi-su-dung-logic",
     "Ngày tạo": "2020-06-29T18:09:06.000Z",
     "Ngày cập nhật": "2021-02-24T08:10:27.000Z",
-    "id": "Yv"
+    "id": "Yw"
   },
   {
     "Tiêu đề": "Chọn làm điều đúng hay chọn làm điều tốt?",
@@ -35883,7 +35899,7 @@
     "Slug": "chon-lam-dieu-dung-hay-chon-lam-dieu-tot",
     "Ngày tạo": "2020-07-15T17:56:12.000Z",
     "Ngày cập nhật": "2021-03-08T17:53:53.000Z",
-    "id": "Yw"
+    "id": "Yx"
   },
   {
     "Tiêu đề": "Bạn ngoen gửi: Chuyện Lão Ong",
@@ -35896,7 +35912,7 @@
     "Slug": "ban-ngoen-gui-chuyen-lao-ong",
     "Ngày tạo": "2020-07-19T16:52:41.000Z",
     "Ngày cập nhật": "2021-02-24T08:08:00.000Z",
-    "id": "Yx"
+    "id": "Yy"
   },
   {
     "Tiêu đề": "Lời mời khơi dậy sự hồn nhiên và lòng dũng cảm ở một con người",
@@ -35909,7 +35925,7 @@
     "Slug": "loi-moi-khoi-day-su-hon-nhien-va-long-dung-cam-o-mot-con-nguoi",
     "Ngày tạo": "2020-07-22T09:27:40.000Z",
     "Ngày cập nhật": "2021-08-06T12:25:03.000Z",
-    "id": "Yy"
+    "id": "Yz"
   },
   {
     "Tiêu đề": "Não của bạn đã ngăn bạn xem việc biến đổi khí hậu là nghiêm trọng như thế nào?",
@@ -35922,7 +35938,7 @@
     "Slug": "nao-cua-ban-da-ngan-ban-xem-viec-bien-doi-khi-hau-la-nghiem-trong-nhu-the-nao",
     "Ngày tạo": "2020-07-22T11:13:36.000Z",
     "Ngày cập nhật": "2021-09-24T15:31:44.000Z",
-    "id": "Yz"
+    "id": "Y-"
   },
   {
     "Tiêu đề": "Lời mời phản biện và hợp tác nghiên cứu",
@@ -35935,7 +35951,7 @@
     "Slug": "loi-moi-phan-bien-va-hop-tac-nghien-cuu",
     "Ngày tạo": "2020-07-30T07:35:10.000Z",
     "Ngày cập nhật": "2021-12-21T09:17:52.000Z",
-    "id": "Y-"
+    "id": "Y_"
   },
   {
     "Tiêu đề": "Bản kế hoạch hành động dự án Quả Cầu",
@@ -35948,7 +35964,7 @@
     "Slug": "ban-ke-hoach-hanh-dong-du-an-qua-cau",
     "Ngày tạo": "2020-08-14T12:36:59.000Z",
     "Ngày cập nhật": "2023-07-03T13:59:11.000Z",
-    "id": "Y_"
+    "id": "Z0"
   },
   {
     "Tiêu đề": "Giải đáp chất vấn",
@@ -35961,7 +35977,7 @@
     "Slug": "giai-dap-chat-van",
     "Ngày tạo": "2020-08-18T11:44:54.000Z",
     "Ngày cập nhật": "2022-03-17T09:33:10.000Z",
-    "id": "Z0"
+    "id": "Z1"
   },
   {
     "Tiêu đề": "Thay đổi niềm tin của người có niềm tin tiêu cực: rào cản và giải pháp",
@@ -35974,7 +35990,7 @@
     "Slug": "thay-doi-niem-tin-cua-nguoi-co-niem-tin-tieu-cuc",
     "Ngày tạo": "2020-08-27T14:08:00.000Z",
     "Ngày cập nhật": "2021-05-12T07:35:43.000Z",
-    "id": "Z1"
+    "id": "Z2"
   },
   {
     "Tiêu đề": "Bạn nghĩ gì về Quả Cầu?",
@@ -35987,7 +36003,7 @@
     "Slug": "ban-nghi-gi-ve-qua-cau",
     "Ngày tạo": "2020-09-06T05:23:11.000Z",
     "Ngày cập nhật": "2021-05-21T18:43:19.000Z",
-    "id": "Z2"
+    "id": "Z3"
   },
   {
     "Tiêu đề": "Tại sao những sự bất tiện nhỏ, chứ không phải bức tường lớn, lại là thứ định hướng hành vi trên mạng?",
@@ -36000,7 +36016,7 @@
     "Slug": "dinh-huong-hanh-vi-tren-mang",
     "Ngày tạo": "2020-09-10T16:10:52.000Z",
     "Ngày cập nhật": "2021-02-24T15:07:48.000Z",
-    "id": "Z3"
+    "id": "Z4"
   },
   {
     "Tiêu đề": "Một quan điểm về loại bỏ từ Hán Việt trong tiếng Việt",
@@ -36013,7 +36029,7 @@
     "Slug": "loai-bo-tu-han-viet",
     "Ngày tạo": "2020-09-16T16:06:40.000Z",
     "Ngày cập nhật": "2024-02-18T16:05:05.000Z",
-    "id": "Z4"
+    "id": "Z5"
   },
   {
     "Tiêu đề": "Thông tin ủng hộ",
@@ -36026,7 +36042,7 @@
     "Slug": "ung-ho",
     "Ngày tạo": "2020-10-09T09:12:21.000Z",
     "Ngày cập nhật": "2022-03-19T10:14:36.000Z",
-    "id": "Z5"
+    "id": "Z6"
   },
   {
     "Tiêu đề": "Cá trích đỏ trong toán học",
@@ -36039,7 +36055,7 @@
     "Slug": "ca-trich-do-trong-toan-hoc",
     "Ngày tạo": "2020-10-15T07:01:39.000Z",
     "Ngày cập nhật": "2021-09-10T17:31:38.000Z",
-    "id": "Z6"
+    "id": "Z7"
   },
   {
     "Tiêu đề": "Ý tưởng nền tảng dịch thuật ngữ",
@@ -36052,7 +36068,7 @@
     "Slug": "y-tuong-nen-tang-dich-thuat-ngu",
     "Ngày tạo": "2020-10-17T08:21:38.000Z",
     "Ngày cập nhật": "2021-12-02T09:07:39.000Z",
-    "id": "Z7"
+    "id": "Z8"
   },
   {
     "Tiêu đề": "Độc giả Quả Cầu nói gì?",
@@ -36065,7 +36081,7 @@
     "Slug": "doc-gia-qua-cau-noi-gi",
     "Ngày tạo": "2020-11-02T11:22:22.000Z",
     "Ngày cập nhật": "2021-06-17T18:51:46.000Z",
-    "id": "Z8"
+    "id": "Z9"
   },
   {
     "Tiêu đề": "Clip về bạo hành, bắt nạt, và quấy rối",
@@ -36078,7 +36094,7 @@
     "Slug": "clip-ve-bao-hanh-bat-nat-va-quay-roi",
     "Ngày tạo": "2020-11-04T17:48:02.000Z",
     "Ngày cập nhật": "2021-02-22T17:39:45.000Z",
-    "id": "Z9"
+    "id": "ZA"
   },
   {
     "Tiêu đề": "Tại sao nói tự nhiên giao cho con người công việc phá hủy nó? (nháp)",
@@ -36091,7 +36107,7 @@
     "Slug": "tai-sao-noi-tu-nhien-giao-cho-con-nguoi-cong-viec-pha-huy-no",
     "Ngày tạo": "2020-11-08T06:26:21.000Z",
     "Ngày cập nhật": "2021-02-23T16:29:53.000Z",
-    "id": "ZA"
+    "id": "ZB"
   },
   {
     "Tiêu đề": "Liệu sự thao túng là luôn sai?",
@@ -36104,7 +36120,7 @@
     "Slug": "lieu-su-thao-tung-la-luon-sai",
     "Ngày tạo": "2020-12-01T06:51:33.000Z",
     "Ngày cập nhật": "2021-02-23T16:29:42.000Z",
-    "id": "ZB"
+    "id": "ZC"
   },
   {
     "Tiêu đề": "Liệu sự yêu cầu về sự đồng thuận có thực sự có cơ sở?",
@@ -36117,7 +36133,7 @@
     "Slug": "lieu-su-yeu-cau-ve-su-dong-thuan-co-thuc-su-co-co-so",
     "Ngày tạo": "2020-12-01T07:30:26.000Z",
     "Ngày cập nhật": "2021-02-23T16:29:33.000Z",
-    "id": "ZC"
+    "id": "ZD"
   },
   {
     "Tiêu đề": "Tại sao mong muốn của một người không nhất thiết là sự tự chủ của người đó?",
@@ -36130,7 +36146,7 @@
     "Slug": "khi-nao-thi-mong-muon-cua-mot-nguoi-la-su-tu-chu-cua-nguoi-do",
     "Ngày tạo": "2020-12-01T08:32:35.000Z",
     "Ngày cập nhật": "2021-02-23T16:29:20.000Z",
-    "id": "ZD"
+    "id": "ZE"
   },
   {
     "Tiêu đề": "Hỗ trợ người gây bạo hành: liệu ta có đang bỏ qua một nguồn lực quan trọng nhất?",
@@ -36143,7 +36159,7 @@
     "Slug": "ho-tro-nguoi-gay-bao-hanh",
     "Ngày tạo": "2020-12-13T13:47:34.000Z",
     "Ngày cập nhật": "2021-07-14T04:56:39.000Z",
-    "id": "ZE"
+    "id": "ZF"
   },
   {
     "Tiêu đề": "Khi nào thì sự từ chối trợ giúp của một người không có hiệu lực?",
@@ -36156,7 +36172,7 @@
     "Slug": "khi-nao-thi-su-tu-choi-tro-giup-cua-mot-nguoi-khong-co-hieu-luc",
     "Ngày tạo": "2020-12-13T14:23:38.000Z",
     "Ngày cập nhật": "2021-02-22T17:38:04.000Z",
-    "id": "ZF"
+    "id": "ZG"
   },
   {
     "Tiêu đề": "Hiện tượng đồng âm khác nghĩa, đồng nghĩa khác âm, và đảo nghĩa trong quá trình hình thành niềm tin",
@@ -36169,7 +36185,7 @@
     "Slug": "hien-tuong-dong-am-khac-nghia-1",
     "Ngày tạo": "2020-12-30T12:13:47.000Z",
     "Ngày cập nhật": "2021-05-27T18:01:27.000Z",
-    "id": "ZG"
+    "id": "ZH"
   },
   {
     "Tiêu đề": "Hiện tượng đồng âm khác nghĩa, đồng nghĩa khác âm, và đảo nghĩa trong quá trình hình thành niềm tin: 3",
@@ -36182,7 +36198,7 @@
     "Slug": "hien-tuong-dong-am-khac-nghia-3",
     "Ngày tạo": "2020-12-30T13:18:12.000Z",
     "Ngày cập nhật": "2021-05-13T10:22:09.000Z",
-    "id": "ZH"
+    "id": "ZI"
   },
   {
     "Tiêu đề": "Bản câu hỏi dành cho người muốn thay đổi quan niệm của bạn mình",
@@ -36195,7 +36211,7 @@
     "Slug": "ban-cau-hoi-danh-cho-nguoi-muon-thay-doi-quan-niem-cua-ban-minh",
     "Ngày tạo": "2021-01-19T17:33:21.000Z",
     "Ngày cập nhật": "2021-07-14T10:57:14.000Z",
-    "id": "ZI"
+    "id": "ZJ"
   },
   {
     "Tiêu đề": "Cảm ơn bạn đã ủng hộ Quả Cầu",
@@ -36208,7 +36224,7 @@
     "Slug": "cam-on-ban-da-ung-ho-qua-cau",
     "Ngày tạo": "2020-01-22T11:47:00.000Z",
     "Ngày cập nhật": "2021-01-22T11:49:25.000Z",
-    "id": "ZJ"
+    "id": "ZK"
   },
   {
     "Tiêu đề": "Lời mời cùng dịch các bài viết về tự trị",
@@ -36221,7 +36237,7 @@
     "Slug": "loi-moi-cung-dich-cac-bai-viet-ve-tu-tri",
     "Ngày tạo": "2021-02-21T02:05:29.000Z",
     "Ngày cập nhật": "2021-08-11T17:52:48.000Z",
-    "id": "ZK"
+    "id": "ZL"
   },
   {
     "Tiêu đề": "Là dơi thì như thế nào?",
@@ -36234,7 +36250,7 @@
     "Slug": "la-doi-thi-nhu-the-nao",
     "Ngày tạo": "2021-02-21T10:04:34.000Z",
     "Ngày cập nhật": "2021-02-21T12:38:57.000Z",
-    "id": "ZL"
+    "id": "ZM"
   },
   {
     "Tiêu đề": "Lý thuyết về góc nhìn",
@@ -36247,7 +36263,7 @@
     "Slug": "ly-thuyet-ve-goc-nhin",
     "Ngày tạo": "2021-02-21T13:00:25.000Z",
     "Ngày cập nhật": "2021-02-24T15:41:22.000Z",
-    "id": "ZM"
+    "id": "ZN"
   },
   {
     "Tiêu đề": "Test",
@@ -36260,7 +36276,7 @@
     "Slug": "test",
     "Ngày tạo": "2019-02-24T11:16:00.000Z",
     "Ngày cập nhật": "2021-03-02T10:48:52.000Z",
-    "id": "ZN"
+    "id": "ZO"
   },
   {
     "Tiêu đề": "Những hashtag chính trị như #MeToo hay #BlackLivesMatter có thể khiến mọi người ít tin vào tin tức hơn",
@@ -36273,7 +36289,7 @@
     "Slug": "hashtag-khien-moi-nguoi-it-tin-vao-tin-tuc-hon",
     "Ngày tạo": "2021-03-22T09:09:50.000Z",
     "Ngày cập nhật": "2021-04-08T17:25:37.000Z",
-    "id": "ZO"
+    "id": "ZP"
   },
   {
     "Tiêu đề": "Khảo sát thành viên nhóm <em>Nghiên cứu triết học phương Đông</em>",
@@ -36286,7 +36302,7 @@
     "Slug": "khao-sat-thanh-vien-nhom-nghien-cuu-triet-hoc-phuong-dong",
     "Ngày tạo": "2021-03-31T18:16:54.000Z",
     "Ngày cập nhật": "2021-05-27T15:54:09.000Z",
-    "id": "ZP"
+    "id": "ZQ"
   },
   {
     "Tiêu đề": "Toán học còn có nhiều thứ hơn là mỗi sự chặt chẽ và chứng minh",
@@ -36299,7 +36315,7 @@
     "Slug": "toan-hoc-con-co-nhieu-thu-hon-la-moi-su-chat-che-va-chung-minh",
     "Ngày tạo": "2021-04-08T09:32:44.000Z",
     "Ngày cập nhật": "2021-04-28T07:55:31.000Z",
-    "id": "ZQ"
+    "id": "ZR"
   },
   {
     "Tiêu đề": "Những câu hỏi về nữ quyền",
@@ -36312,7 +36328,7 @@
     "Slug": "nhung-cau-hoi-ve-nu-quyen",
     "Ngày tạo": "2021-04-09T08:22:20.000Z",
     "Ngày cập nhật": "2021-10-16T07:54:09.000Z",
-    "id": "ZR"
+    "id": "ZS"
   },
   {
     "Tiêu đề": "Nước cờ thông minh: chúng ta học được nhiều hơn bằng việc tin tưởng hơn là không tin",
@@ -36325,7 +36341,7 @@
     "Slug": "chung-ta-hoc-duoc-nhieu-hon-bang-viec-tin-tuong-hon-la-khong-tin",
     "Ngày tạo": "2021-04-14T09:17:47.000Z",
     "Ngày cập nhật": "2022-03-06T15:19:11.000Z",
-    "id": "ZS"
+    "id": "ZT"
   },
   {
     "Tiêu đề": "Tổng hợp một số nghịch lý",
@@ -36338,7 +36354,7 @@
     "Slug": "tong-hop-mot-so-nghich-ly",
     "Ngày tạo": "2021-04-15T11:21:52.000Z",
     "Ngày cập nhật": "2021-04-15T11:31:53.000Z",
-    "id": "ZT"
+    "id": "ZU"
   },
   {
     "Tiêu đề": "Câu chuyện <em>Người mù sờ voi</em>: những góc nhìn chưa từng có",
@@ -36351,7 +36367,7 @@
     "Slug": "nguoi-mu-so-voi",
     "Ngày tạo": "2021-04-17T09:31:39.000Z",
     "Ngày cập nhật": "2022-12-22T14:12:59.000Z",
-    "id": "ZU"
+    "id": "ZV"
   },
   {
     "Tiêu đề": "Hoàng Lan",
@@ -36364,7 +36380,7 @@
     "Slug": "hoang-lan",
     "Ngày tạo": "2021-04-27T17:04:00.000Z",
     "Ngày cập nhật": "2021-04-27T17:24:42.000Z",
-    "id": "ZV"
+    "id": "ZW"
   },
   {
     "Tiêu đề": "Mạng lưới người thân, bạn bè của người có niềm tin tiêu cực",
@@ -36377,7 +36393,7 @@
     "Slug": "mang-luoi-nguoi-than-ban-be-nguoi-co-niem-tin-tieu-cuc",
     "Ngày tạo": "2021-05-01T11:48:15.000Z",
     "Ngày cập nhật": "2022-01-01T16:00:53.000Z",
-    "id": "ZW"
+    "id": "ZX"
   },
   {
     "Tiêu đề": "Thông tin liên hệ",
@@ -36390,7 +36406,7 @@
     "Slug": "lien-he",
     "Ngày tạo": "2021-05-18T07:38:51.000Z",
     "Ngày cập nhật": "2022-03-20T17:14:12.000Z",
-    "id": "ZX"
+    "id": "ZY"
   },
   {
     "Tiêu đề": "Khảo sát quan điểm về sự tác động",
@@ -36403,7 +36419,7 @@
     "Slug": "khao-sat-quan-diem-ve-su-tac-dong",
     "Ngày tạo": "2020-05-21T15:30:00.000Z",
     "Ngày cập nhật": "2021-07-15T12:29:49.000Z",
-    "id": "ZY"
+    "id": "ZZ"
   },
   {
     "Tiêu đề": "Phiếu đăng ký tham gia <em>Mạng lưới người thân, bạn bè của người có niềm tin tiêu cực</em>",
@@ -36416,7 +36432,7 @@
     "Slug": "dang-ky-tham-gia-mang-luoi",
     "Ngày tạo": "2020-05-21T15:33:00.000Z",
     "Ngày cập nhật": "2021-09-04T10:35:33.000Z",
-    "id": "ZZ"
+    "id": "Za"
   },
   {
     "Tiêu đề": "Khảo sát người tu tập Phật giáo",
@@ -36429,7 +36445,7 @@
     "Slug": "khao-sat-nguoi-tu-tap-phat-giao",
     "Ngày tạo": "2020-05-22T08:42:00.000Z",
     "Ngày cập nhật": "2021-09-10T10:11:40.000Z",
-    "id": "Za"
+    "id": "Zb"
   },
   {
     "Tiêu đề": "Nhờ người thứ 3 tác động người có niềm tin tiêu cực",
@@ -36442,7 +36458,7 @@
     "Slug": "nho-nguoi-thu-3-tac-dong-nguoi-co-niem-tin-tieu-cuc",
     "Ngày tạo": "2021-05-27T11:41:47.000Z",
     "Ngày cập nhật": "2021-08-06T12:44:44.000Z",
-    "id": "Zb"
+    "id": "Zc"
   },
   {
     "Tiêu đề": "4 câu hỏi để giúp người khác thay đổi tốt hơn (Phỏng vấn tạo động lực)",
@@ -36455,7 +36471,7 @@
     "Slug": "phong-van-tao-dong-luc",
     "Ngày tạo": "2021-06-05T03:49:49.000Z",
     "Ngày cập nhật": "2021-08-06T11:10:19.000Z",
-    "id": "Zc"
+    "id": "Zd"
   },
   {
     "Tiêu đề": "Chấp thuận sau khi được giải thích",
@@ -36468,7 +36484,7 @@
     "Slug": "chap-thuan-sau-khi-duoc-giai-thich",
     "Ngày tạo": "2021-06-11T08:57:30.000Z",
     "Ngày cập nhật": "2021-08-15T14:13:25.000Z",
-    "id": "Zd"
+    "id": "Ze"
   },
   {
     "Tiêu đề": "Các câu hỏi thường gặp",
@@ -36481,7 +36497,7 @@
     "Slug": "cac-cau-hoi-thuong-gap",
     "Ngày tạo": "2021-06-16T16:31:41.000Z",
     "Ngày cập nhật": "2022-08-14T13:05:55.000Z",
-    "id": "Ze"
+    "id": "Zf"
   },
   {
     "Tiêu đề": "Lộ trình thay đổi người có niềm tin tiêu cực",
@@ -36494,7 +36510,7 @@
     "Slug": "lo-trinh-thay-doi-nguoi-co-niem-tin-tieu-cuc",
     "Ngày tạo": "2021-06-27T08:00:00.000Z",
     "Ngày cập nhật": "2022-04-10T16:24:13.000Z",
-    "id": "Zf"
+    "id": "Zg"
   },
   {
     "Tiêu đề": "Giới thiệu người sáng lập",
@@ -36507,7 +36523,7 @@
     "Slug": "gioi-thieu-nguoi-sang-lap",
     "Ngày tạo": "2021-08-04T11:16:45.000Z",
     "Ngày cập nhật": "2022-06-07T18:46:09.000Z",
-    "id": "Zg"
+    "id": "Zh"
   },
   {
     "Tiêu đề": "Sự tối ưu hoá trong vũ trụ",
@@ -36520,7 +36536,7 @@
     "Slug": "su-toi-uu-hoa-trong-vu-tru",
     "Ngày tạo": "2021-08-04T11:04:11.000Z",
     "Ngày cập nhật": "2021-08-04T11:06:27.000Z",
-    "id": "Zh"
+    "id": "Zi"
   },
   {
     "Tiêu đề": "Né tránh bằng tâm linh (spiritual bypassing)",
@@ -36533,7 +36549,7 @@
     "Slug": "ne-tranh-bang-tam-linh-spiritual-bypassing",
     "Ngày tạo": "2021-08-06T16:09:34.000Z",
     "Ngày cập nhật": "2021-08-06T16:09:40.000Z",
-    "id": "Zi"
+    "id": "Zj"
   },
   {
     "Tiêu đề": "Về nguỵ biện",
@@ -36546,7 +36562,7 @@
     "Slug": "ve-nguy-bien",
     "Ngày tạo": "2021-08-09T09:02:13.000Z",
     "Ngày cập nhật": "2021-08-09T09:37:26.000Z",
-    "id": "Zj"
+    "id": "Zk"
   },
   {
     "Tiêu đề": "Sự riêng tư",
@@ -36559,7 +36575,7 @@
     "Slug": "su-rieng-tu",
     "Ngày tạo": "2021-08-11T17:45:52.000Z",
     "Ngày cập nhật": "2021-08-15T14:19:02.000Z",
-    "id": "Zk"
+    "id": "Zl"
   },
   {
     "Tiêu đề": "Bộ quy tắc đạo đức cho thành viên <i>Mạng lưới người thân, bạn bè của người có niềm tin tiêu cực</i>",
@@ -36572,7 +36588,7 @@
     "Slug": "bo-quy-tac-dao-duc",
     "Ngày tạo": "2021-09-03T11:32:10.000Z",
     "Ngày cập nhật": "2021-09-04T10:44:21.000Z",
-    "id": "Zl"
+    "id": "Zm"
   },
   {
     "Tiêu đề": "Tên miền có dấu?",
@@ -36585,7 +36601,7 @@
     "Slug": "ten-mien-co-dau",
     "Ngày tạo": "2021-09-08T07:45:08.000Z",
     "Ngày cập nhật": "2021-12-14T15:47:41.000Z",
-    "id": "Zm"
+    "id": "Zn"
   },
   {
     "Tiêu đề": "Sao mà hỏi lắm thế?",
@@ -36598,7 +36614,7 @@
     "Slug": "sao-ma-hoi-lam-the",
     "Ngày tạo": "2021-09-19T18:20:08.000Z",
     "Ngày cập nhật": "2022-08-05T14:01:36.000Z",
-    "id": "Zn"
+    "id": "Zo"
   },
   {
     "Tiêu đề": "\"The best way to learn vocabulary is from context.\" Why is that sometime not true?",
@@ -36611,7 +36627,7 @@
     "Slug": "learn-vocab-from-context",
     "Ngày tạo": "2021-10-24T10:06:38.000Z",
     "Ngày cập nhật": "2022-07-19T17:44:36.000Z",
-    "id": "Zo"
+    "id": "Zp"
   },
   {
     "Tiêu đề": "Phân tích một mạng lưới 100+ niềm tin",
@@ -36624,7 +36640,7 @@
     "Slug": "phan-tich-mot-mang-luoi-100-niem-tin",
     "Ngày tạo": "2022-01-01T13:23:46.000Z",
     "Ngày cập nhật": "2022-01-24T10:06:02.000Z",
-    "id": "Zp"
+    "id": "Zq"
   },
   {
     "Tiêu đề": "test",
@@ -36637,7 +36653,7 @@
     "Slug": "test-2",
     "Ngày tạo": "2021-01-07T08:47:54.000Z",
     "Ngày cập nhật": "2022-01-23T15:12:54.000Z",
-    "id": "Zq"
+    "id": "Zr"
   },
   {
     "Tiêu đề": "",
@@ -36650,7 +36666,7 @@
     "Slug": "6788-2",
     "Ngày tạo": "2021-01-07T09:26:00.000Z",
     "Ngày cập nhật": "2022-01-07T10:52:15.000Z",
-    "id": "Zr"
+    "id": "Zs"
   },
   {
     "Tiêu đề": "Phân tích một mạng lưới 100+ niềm tin (phần 2)",
@@ -36663,7 +36679,7 @@
     "Slug": "phan-tich-mot-mang-luoi-100-niem-tin-phan-2",
     "Ngày tạo": "2022-01-22T09:16:20.000Z",
     "Ngày cập nhật": "2022-01-24T08:58:45.000Z",
-    "id": "Zs"
+    "id": "Zt"
   },
   {
     "Tiêu đề": "Danh sách các niềm tin trong đồ thị mạng lưới niềm tin",
@@ -36676,7 +36692,7 @@
     "Slug": "danh-sach-cac-niem-tin-trong-do-thi-mang-luoi-niem-tin",
     "Ngày tạo": "2022-01-24T07:47:51.000Z",
     "Ngày cập nhật": "2022-01-24T09:46:45.000Z",
-    "id": "Zt"
+    "id": "Zu"
   },
   {
     "Tiêu đề": "Obsidian, cây vấn đề, hệ thống quản lý công việc, và nỗi sợ chết",
@@ -36689,7 +36705,7 @@
     "Slug": "obsidian",
     "Ngày tạo": "2022-03-14T18:54:19.000Z",
     "Ngày cập nhật": "2022-04-12T11:20:26.000Z",
-    "id": "Zu"
+    "id": "Zv"
   },
   {
     "Tiêu đề": "Cửa hàng",
@@ -36702,7 +36718,7 @@
     "Slug": "cua-hang",
     "Ngày tạo": "2021-03-20T14:40:00.000Z",
     "Ngày cập nhật": "2022-03-20T17:20:37.000Z",
-    "id": "Zv"
+    "id": "Zw"
   },
   {
     "Tiêu đề": "Các cấp độ tham gia Quả Cầu",
@@ -36715,7 +36731,7 @@
     "Slug": "cac-cap-do-tham-gia-qua-cau",
     "Ngày tạo": "2022-04-11T10:11:14.000Z",
     "Ngày cập nhật": "2023-07-03T14:03:41.000Z",
-    "id": "Zw"
+    "id": "Zx"
   },
   {
     "Tiêu đề": "Vấn đề Quả Cầu",
@@ -36728,7 +36744,7 @@
     "Slug": "van-de-qua-cau",
     "Ngày tạo": "2022-04-21T10:05:23.000Z",
     "Ngày cập nhật": "2022-04-21T10:33:29.000Z",
-    "id": "Zx"
+    "id": "Zy"
   },
   {
     "Tiêu đề": "Bản câu hỏi dành cho việc xây dựng nhóm người thân bạn bè của người có niềm tin tiêu cực",
@@ -36741,7 +36757,7 @@
     "Slug": "ban-cau-hoi-danh-cho-viec-xay-dung-nhom-nguoi-than-ban-be-cua-nguoi-co-niem-tin-tieu-cuc",
     "Ngày tạo": "2022-05-06T10:04:49.000Z",
     "Ngày cập nhật": "2022-05-06T10:06:14.000Z",
-    "id": "Zy"
+    "id": "Zz"
   },
   {
     "Tiêu đề": "Về cặp phạm trù “cái phổ quát - cái đặc thù - cái đơn nhất” trong phép biện chứng của Hegel",
@@ -36754,7 +36770,7 @@
     "Slug": "ve-cap-pham-tru-cai-pho-quat-cai-dac-thu-cai-don-nhat-trong-phep-bien-chung-cua-hegel",
     "Ngày tạo": "2021-05-21T09:40:00.000Z",
     "Ngày cập nhật": "2022-05-21T18:03:25.000Z",
-    "id": "Zz"
+    "id": "Z-"
   },
   {
     "Tiêu đề": "Mẹo tóm tắt các bài viết đọc chẳng hiểu gì hết",
@@ -36767,7 +36783,7 @@
     "Slug": "meo-tom-tat-cac-bai-viet-doc-chang-hieu-gi-het",
     "Ngày tạo": "2022-05-22T07:16:33.000Z",
     "Ngày cập nhật": "2022-05-22T08:22:51.000Z",
-    "id": "Z-"
+    "id": "Z_"
   },
   {
     "Tiêu đề": "Hợp nhất hai cách nhìn về thông tin",
@@ -36780,7 +36796,7 @@
     "Slug": "hop-nhat-hai-cach-nhin-ve-thong-tin",
     "Ngày tạo": "2022-06-14T09:39:27.000Z",
     "Ngày cập nhật": "2022-06-19T13:53:46.000Z",
-    "id": "Z_"
+    "id": "a0"
   },
   {
     "Tiêu đề": "Một đám mây chim sáo",
@@ -36793,7 +36809,7 @@
     "Slug": "mot-dam-may-chim-sao",
     "Ngày tạo": "2022-08-09T08:56:55.000Z",
     "Ngày cập nhật": "2022-09-14T16:23:44.000Z",
-    "id": "a0"
+    "id": "a1"
   },
   {
     "Tiêu đề": "Một đám mây chim sáo (phần 2)",
@@ -36806,7 +36822,7 @@
     "Slug": "mot-dam-may-chim-sao-phan-2",
     "Ngày tạo": "2022-09-14T16:20:45.000Z",
     "Ngày cập nhật": "2022-10-03T15:09:18.000Z",
-    "id": "a1"
+    "id": "a2"
   },
   {
     "Tiêu đề": "Truyện ngụ ngôn về những người mong đợi",
@@ -36819,7 +36835,7 @@
     "Slug": "truyen-ngu-ngon-ve-nhung-nguoi-mong-doi",
     "Ngày tạo": "2022-10-03T14:57:51.000Z",
     "Ngày cập nhật": "2022-10-03T15:07:48.000Z",
-    "id": "a2"
+    "id": "a3"
   },
   {
     "Tiêu đề": "Chú thích cho bài <em>Người mù sờ voi</em>",
@@ -36832,7 +36848,7 @@
     "Slug": "chu-thich-cho-bai-nguoi-mu-so-voi",
     "Ngày tạo": "2022-12-22T14:15:19.000Z",
     "Ngày cập nhật": "2022-12-22T14:20:35.000Z",
-    "id": "a3"
+    "id": "a4"
   },
   {
     "Tiêu đề": "Khảo sát người dùng vault Nhập môn Obsidian",
@@ -36845,7 +36861,7 @@
     "Slug": "khao-sat-nguoi-dung-vault-nhap-mon-obsidian",
     "Ngày tạo": "2023-02-06T09:55:53.000Z",
     "Ngày cập nhật": "2023-02-06T09:56:16.000Z",
-    "id": "a4"
+    "id": "a5"
   },
   {
     "Tiêu đề": "Truyện Ngụ Ngôn về Người Nhật – Phần Một (chưa chắc có Phần Hai)",
@@ -36858,7 +36874,7 @@
     "Slug": "truyen-ngu-ngon-ve-nguoi-nhat",
     "Ngày tạo": "2023-03-26T06:13:48.000Z",
     "Ngày cập nhật": "2023-03-26T06:17:32.000Z",
-    "id": "a5"
+    "id": "a6"
   },
   {
     "Tiêu đề": "Từ việc hỗ trợ Kendy đến Patreon và tâm lý của con người về tiền",
@@ -36871,7 +36887,7 @@
     "Slug": "tu-viec-ho-tro-kendy-den-patreon-va-tam-ly-cua-con-nguoi-ve-tien",
     "Ngày tạo": "2023-06-07T17:05:05.000Z",
     "Ngày cập nhật": "2023-06-07T17:27:16.000Z",
-    "id": "a6"
+    "id": "a7"
   },
   {
     "Tiêu đề": "Câu hỏi thường gặp về mô hình tổ chức chim sáo",
@@ -36884,7 +36900,7 @@
     "Slug": "cau-hoi-thuong-gap-ve-mo-hinh-to-chuc-chim-sao",
     "Ngày tạo": "2023-06-14T18:37:29.000Z",
     "Ngày cập nhật": "2023-06-20T10:01:32.000Z",
-    "id": "a7"
+    "id": "a8"
   },
   {
     "Tiêu đề": "Phiếu khảo sát sau buổi nói chuyện \"Một đám mây chim sáo\"",
@@ -36897,7 +36913,7 @@
     "Slug": "phieu-khao-sat-sau-buoi-noi-chuyen-mot-dam-may-chim-sao",
     "Ngày tạo": "2023-06-20T10:36:49.000Z",
     "Ngày cập nhật": "2023-06-20T10:37:00.000Z",
-    "id": "a8"
+    "id": "a9"
   },
   {
     "Tiêu đề": "Từ cách một từ được đổ nghĩa đến việc dịch khái niệm philanthropy sang tiếng Việt",
@@ -36910,7 +36926,7 @@
     "Slug": "tu-cach-mot-tu-duoc-do-nghia-den-viec-dich-khai-niem-philanthropy-sang-tieng-viet",
     "Ngày tạo": "2023-06-23T08:20:06.000Z",
     "Ngày cập nhật": "2023-06-23T13:33:54.000Z",
-    "id": "a9"
+    "id": "aA"
   },
   {
     "Tiêu đề": "Các buổi chia sẻ kỹ năng miễn phí với nhau",
@@ -36923,7 +36939,7 @@
     "Slug": "cac-buoi-chia-se-ky-nang-mien-phi-voi-nhau",
     "Ngày tạo": "2023-06-27T10:22:15.000Z",
     "Ngày cập nhật": "2023-06-27T15:02:32.000Z",
-    "id": "aA"
+    "id": "aB"
   },
   {
     "Tiêu đề": "Bộ cài đặt Vùng đất Quả Cầu",
@@ -36936,7 +36952,7 @@
     "Slug": "bo-cai-dat-vung-dat-qua-cau",
     "Ngày tạo": "2023-07-03T14:17:25.000Z",
     "Ngày cập nhật": "2023-07-03T14:20:01.000Z",
-    "id": "aB"
+    "id": "aC"
   },
   {
     "Tiêu đề": "Khảo sát nhu cầu phân loại tự động và lập trình",
@@ -36949,7 +36965,7 @@
     "Slug": "khao-sat-nhu-cau-phan-loai-tu-dong-va-lap-trinh",
     "Ngày tạo": "2023-11-08T12:39:34.000Z",
     "Ngày cập nhật": "2023-11-08T14:17:42.000Z",
-    "id": "aC"
+    "id": "aD"
   },
   {
     "Tiêu đề": "Bàn làm việc Google Calendar",
@@ -36962,7 +36978,7 @@
     "Slug": "ban-lam-viec-google-calendar",
     "Ngày tạo": "2023-12-29T08:40:45.000Z",
     "Ngày cập nhật": "2023-12-31T05:59:13.000Z",
-    "id": "aD"
+    "id": "aE"
   },
   {
     "Tiêu đề": "Các buổi đáp ứng nhu cầu học cách sử dụng công cụ và tư duy lập trình cho nhu cầu công việc",
@@ -36975,7 +36991,7 @@
     "Slug": "cac-buoi-dap-ung-nhu-cau-hoc-cach-su-dung-cong-cu-va-tu-duy-lap-trinh-cho-nhu-cau-ca-nhan-hoac-nghien-cuu",
     "Ngày tạo": "2023-12-29T14:15:32.000Z",
     "Ngày cập nhật": "2024-03-02T16:10:36.000Z",
-    "id": "aE"
+    "id": "aF"
   },
   {
     "Tiêu đề": "Khi nào thì chiến lược định giá \"trả tuỳ tâm\" đạt được sự bền vững?",
@@ -36988,7 +37004,7 @@
     "Slug": "khi-nao-thi-chien-luoc-dinh-gia-tra-tuy-tam-dat-duoc-su-ben-vung",
     "Ngày tạo": "2023-12-31T05:47:50.000Z",
     "Ngày cập nhật": "2023-12-31T12:11:55.000Z",
-    "id": "aF"
+    "id": "aG"
   },
   {
     "Tiêu đề": "Tích hợp Trấn Kỳ vào hệ thống của bạn",
@@ -37001,7 +37017,7 @@
     "Slug": "tich-hop-tran-ky-vao-he-thong-cua-ban",
     "Ngày tạo": "2024-02-02T10:25:32.000Z",
     "Ngày cập nhật": "2024-02-19T19:31:57.000Z",
-    "id": "aG"
+    "id": "aH"
   },
   {
     "Tiêu đề": "Kiếm tiền từ Trấn Kỳ",
@@ -37014,7 +37030,7 @@
     "Slug": "kiem-tien-tu-tran-ky",
     "Ngày tạo": "2024-02-14T10:41:22.000Z",
     "Ngày cập nhật": "2024-02-14T10:41:33.000Z",
-    "id": "aH"
+    "id": "aI"
   },
   {
     "Tiêu đề": "tesst",
@@ -37027,7 +37043,7 @@
     "Slug": "tesst",
     "Ngày tạo": "2024-02-25T13:28:40.000Z",
     "Ngày cập nhật": "2024-02-25T13:28:40.000Z",
-    "id": "aI"
+    "id": "aJ"
   },
   {
     "Tiêu đề": "Khảo sát nhu cầu học lập trình",
@@ -37040,303 +37056,375 @@
     "Slug": "khao-sat-nhu-cau-hoc-lap-trinh",
     "Ngày tạo": "2024-02-25T15:18:17.000Z",
     "Ngày cập nhật": "2024-02-25T16:14:27.000Z",
-    "id": "aJ"
+    "id": "aK"
   },
   {
     "Tiêu đề": "Trang chủ Lý Minh Nhật",
     "URL": "https://lyminhnhat.com/",
     "Slug": "lmn",
-    "Nội dung bài đăng": {},
-    "Tác giả": "lyminhnhat.com",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aK"
-  },
-  {
-    "Tiêu đề": "Trang Facebook Quả Cầu",
-    "URL": "https://www.facebook.com/quacau.sphere",
-    "Slug": "pagefbQC",
-    "Nội dung bài đăng": {},
-    "Tác giả": "www.facebook.com",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Lý Minh Nhật"
+    },
+    "Tác giả": "Lý Minh Nhật – Human after all",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "aL"
   },
   {
     "Tiêu đề": "Trang Facebook Quả Cầu",
-    "URL": "https://www.facebook.com/qua.cau.the.sphere",
-    "Slug": "profilefbQC",
-    "Nội dung bài đăng": {},
-    "Tác giả": "www.facebook.com",
+    "URL": "https://www.facebook.com/quacau.sphere/",
+    "Slug": "pagefbQC",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Quả Cầu. 1.721 lượt thích · 4 người đang nói về điều này. Bằng trí tưởng tượng và logic thuần túy, ta dựng một quả cầu lên trên thế giới thực"
+    },
+    "Tác giả": "Quả Cầu",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "aM"
+  },
+  {
+    "Tiêu đề": "Trang Facebook Quả Cầu",
+    "URL": "https://www.facebook.com/qua.cau.the.sphere/",
+    "Slug": "profilefbQC",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Quả Cầu đang ở trên Facebook. Tham gia Facebook để kết nối với Quả Cầu và những người khác mà có thể bạn biết. Facebook trao cho mọi người quyền chia sẻ..."
+    },
+    "Tác giả": "Quả Cầu",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "id": "aN"
   },
   {
     "Tiêu đề": "Kênh YouTube Quả Cầu",
     "URL": "https://www.youtube.com/channel/UCReU_XcmJlp9ORWi8U2O-Fg",
     "Slug": "youtubeQC",
-    "Nội dung bài đăng": {},
-    "Tác giả": "www.youtube.com",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aN"
-  },
-  {
-    "Tiêu đề": "Org GitHub Quả Cầu",
-    "URL": "https://github.com/QuaCau-TheSphere",
-    "Slug": "githubQC",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Quả Cầu hướng đến việc trở thành một tổ chức không có sự phân cấp và người tham gia không làm vì trách nhiệm, lấy nhu cầu của thành viên (vốn nhiều vô kể và ..."
+    },
+    "Tác giả": "Quả Cầu - YouTube",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "aO"
   },
   {
-    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/CW-doi-thoai",
-    "URL": "https://github.com/QuaCau-TheSphere/CW-doi-thoai",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Org GitHub Quả Cầu",
+    "URL": "https://github.com/QuaCau-TheSphere/",
+    "Slug": "githubQC",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Bằng trí tưởng tượng và logic thuần tuý, ta dựng một quả cầu lên trên thế giới thực - Quả Cầu"
+    },
+    "Tác giả": "Quả Cầu · GitHub",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "aP"
   },
   {
-    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/CW-obsidian-quan-ly-du-an-va-cong-cu-nghi",
-    "URL": "https://github.com/QuaCau-TheSphere/CW-obsidian-quan-ly-du-an-va-cong-cu-nghi",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/CW-doi-thoai",
+    "URL": "https://github.com/QuaCau-TheSphere/CW-doi-thoai/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/CW-doi-thoai development by creating an account on GitHub."
+    },
+    "Tác giả": "GitHub - QuaCau-TheSphere/CW-doi-thoai",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "aQ"
   },
   {
-    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/CW-xu-ly-du-lieu-va-lap-trinh",
-    "URL": "https://github.com/QuaCau-TheSphere/CW-xu-ly-du-lieu-va-lap-trinh",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/CW-obsidian-quan-ly-du-an-va-cong-cu-nghi",
+    "URL": "https://github.com/QuaCau-TheSphere/CW-obsidian-quan-ly-du-an-va-cong-cu-nghi/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/CW-obsidian-quan-ly-du-an-va-cong-cu-nghi development by creating an account on GitHub."
+    },
+    "Tác giả": "GitHub - QuaCau-TheSphere/CW-obsidian-quan-ly-du-an-va-cong-cu-nghi",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "aR"
   },
   {
-    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/CV-obsidian-quan-ly-du-an-va-cong-cu-nghi: Vault hướng dẫn ứng dụng Obsidian và Git vào việc quản lý dự án và kết nối nguồn lực cộng đồng dành riêng cho người Việt",
-    "URL": "https://github.com/QuaCau-TheSphere/CV-obsidian-quan-ly-du-an-va-cong-cu-nghi",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/CW-xu-ly-du-lieu-va-lap-trinh",
+    "URL": "https://github.com/QuaCau-TheSphere/CW-xu-ly-du-lieu-va-lap-trinh/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/CW-xu-ly-du-lieu-va-lap-trinh development by creating an account on GitHub."
+    },
+    "Tác giả": "GitHub - QuaCau-TheSphere/CW-xu-ly-du-lieu-va-lap-trinh",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "aS"
   },
   {
-    "Tiêu đề": "Org GitHub Page not found",
-    "URL": "https://github.com/QuaCau-TheSphere/EV-HeavyT",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/CV-obsidian-quan-ly-du-an-va-cong-cu-nghi: Vault hướng dẫn ứng dụng Obsidian và Git vào việc quản lý dự án và kết nối nguồn lực cộng đồng dành riêng cho người Việt",
+    "URL": "https://github.com/QuaCau-TheSphere/CV-obsidian-quan-ly-du-an-va-cong-cu-nghi/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Vault hướng dẫn ứng dụng Obsidian và Git vào việc quản lý dự án và kết nối nguồn lực cộng đồng dành riêng cho người Việt - QuaCau-TheSphere/CV-obsidian-quan-ly-du-an-va-cong-cu-nghi"
+    },
+    "Tác giả": "GitHub - QuaCau-TheSphere/CV-obsidian-quan-ly-du-an-va-cong-cu-nghi: Vault hướng dẫn ứng dụng Obsidian và Git vào việc quản lý dự án và kết nối nguồn lực cộng đồng dành riêng cho người Việt",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "aT"
   },
   {
-    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/FV-khoa-hoc-xa-hoi",
-    "URL": "https://github.com/QuaCau-TheSphere/FV-khoa-hoc-xa-hoi",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Org GitHub Page not found",
+    "URL": "https://github.com/QuaCau-TheSphere/EV-HeavyT/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "GitHub is where people build software. More than 100 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+    },
+    "Tác giả": "Page not found · GitHub · GitHub",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "aU"
   },
   {
-    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/LandofSpheres: Vault Obsidian chứa mọi dữ liệu hoạt động của Quả Cầu",
-    "URL": "https://github.com/QuaCau-TheSphere/LandofSpheres",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/FV-khoa-hoc-xa-hoi",
+    "URL": "https://github.com/QuaCau-TheSphere/FV-khoa-hoc-xa-hoi/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/FV-khoa-hoc-xa-hoi development by creating an account on GitHub."
+    },
+    "Tác giả": "GitHub - QuaCau-TheSphere/FV-khoa-hoc-xa-hoi",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "aV"
   },
   {
-    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/CV-tiep-thi-so-xu-ly-du-lieu-va-lap-trinh",
-    "URL": "https://github.com/QuaCau-TheSphere/CV-tiep-thi-so-xu-ly-du-lieu-va-lap-trinh",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/LandofSpheres: Vault Obsidian chứa mọi dữ liệu hoạt động của Quả Cầu",
+    "URL": "https://github.com/QuaCau-TheSphere/LandofSpheres/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Vault Obsidian chứa mọi dữ liệu hoạt động của Quả Cầu - QuaCau-TheSphere/LandofSpheres"
+    },
+    "Tác giả": "GitHub - QuaCau-TheSphere/LandofSpheres: Vault Obsidian chứa mọi dữ liệu hoạt động của Quả Cầu",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "aW"
   },
   {
-    "Tiêu đề": "Org GitHub Page not found",
-    "URL": "https://github.com/QuaCau-TheSphere/tran-ky",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/CV-tiep-thi-so-xu-ly-du-lieu-va-lap-trinh",
+    "URL": "https://github.com/QuaCau-TheSphere/CV-tiep-thi-so-xu-ly-du-lieu-va-lap-trinh/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/CV-tiep-thi-so-xu-ly-du-lieu-va-lap-trinh development by creating an account on GitHub."
+    },
+    "Tác giả": "GitHub - QuaCau-TheSphere/CV-tiep-thi-so-xu-ly-du-lieu-va-lap-trinh",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "aX"
   },
   {
-    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/tranky-test",
-    "URL": "https://github.com/QuaCau-TheSphere/tranky-test",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Org GitHub Page not found",
+    "URL": "https://github.com/QuaCau-TheSphere/tran-ky/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "GitHub is where people build software. More than 100 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+    },
+    "Tác giả": "Page not found · GitHub · GitHub",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "aY"
   },
   {
-    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/meetup-ticketbox-to-google-calendar",
-    "URL": "https://github.com/QuaCau-TheSphere/meetup-ticketbox-to-google-calendar",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/tranky-test",
+    "URL": "https://github.com/QuaCau-TheSphere/tranky-test/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/tranky-test development by creating an account on GitHub."
+    },
+    "Tác giả": "GitHub - QuaCau-TheSphere/tranky-test",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "aZ"
   },
   {
-    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/EW-heavyT",
-    "URL": "https://github.com/QuaCau-TheSphere/EW-heavyT",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/meetup-ticketbox-to-google-calendar",
+    "URL": "https://github.com/QuaCau-TheSphere/meetup-ticketbox-to-google-calendar/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/meetup-ticketbox-to-google-calendar development by creating an account on GitHub."
+    },
+    "Tác giả": "GitHub - QuaCau-TheSphere/meetup-ticketbox-to-google-calendar",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "aa"
   },
   {
-    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/ObsidianPulisherTest",
-    "URL": "https://github.com/QuaCau-TheSphere/ObsidianPulisherTest",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/EW-heavyT",
+    "URL": "https://github.com/QuaCau-TheSphere/EW-heavyT/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/EW-heavyT development by creating an account on GitHub."
+    },
+    "Tác giả": "GitHub - QuaCau-TheSphere/EW-heavyT",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "ab"
   },
   {
-    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/belief-network",
-    "URL": "https://github.com/QuaCau-TheSphere/belief-network",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/ObsidianPulisherTest",
+    "URL": "https://github.com/QuaCau-TheSphere/ObsidianPulisherTest/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/ObsidianPulisherTest development by creating an account on GitHub."
+    },
+    "Tác giả": "GitHub - QuaCau-TheSphere/ObsidianPulisherTest",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "ac"
   },
   {
-    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/DV-phat-trien-ban-than",
-    "URL": "https://github.com/QuaCau-TheSphere/DV-phat-trien-ban-than",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/belief-network",
+    "URL": "https://github.com/QuaCau-TheSphere/belief-network/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/belief-network development by creating an account on GitHub."
+    },
+    "Tác giả": "GitHub - QuaCau-TheSphere/belief-network",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "ad"
   },
   {
-    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/NeedExchange",
-    "URL": "https://github.com/QuaCau-TheSphere/NeedExchange",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/DV-phat-trien-ban-than",
+    "URL": "https://github.com/QuaCau-TheSphere/DV-phat-trien-ban-than/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/DV-phat-trien-ban-than development by creating an account on GitHub."
+    },
+    "Tác giả": "GitHub - QuaCau-TheSphere/DV-phat-trien-ban-than",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "ae"
   },
   {
-    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/DW-phat-trien-ban-than",
-    "URL": "https://github.com/QuaCau-TheSphere/DW-phat-trien-ban-than",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/NeedExchange",
+    "URL": "https://github.com/QuaCau-TheSphere/NeedExchange/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/NeedExchange development by creating an account on GitHub."
+    },
+    "Tác giả": "GitHub - QuaCau-TheSphere/NeedExchange",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "af"
+  },
+  {
+    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/DW-phat-trien-ban-than",
+    "URL": "https://github.com/QuaCau-TheSphere/DW-phat-trien-ban-than/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/DW-phat-trien-ban-than development by creating an account on GitHub."
+    },
+    "Tác giả": "GitHub - QuaCau-TheSphere/DW-phat-trien-ban-than",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "id": "ag"
   },
   {
     "Tiêu đề": "Repo GitHub Quả Cầu",
     "URL": "http://quacau-thesphere.github.io/",
     "Nội dung bài đăng": {},
-    "Tác giả": "quacau-thesphere.github.io",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "ag"
-  },
-  {
-    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/quacau-thesphere.github.io",
-    "URL": "https://github.com/QuaCau-TheSphere/quacau-thesphere.github.io",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tác giả": "Đồ thị mạng lưới 100 niềm tin phổ biến – Quả Cầu",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "ah"
   },
   {
-    "Tiêu đề": "Org GitHub QuaCau-TheSphere/ONB",
-    "URL": "https://github.com/QuaCau-TheSphere/ONB",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/quacau-thesphere.github.io",
+    "URL": "https://github.com/QuaCau-TheSphere/quacau-thesphere.github.io/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/quacau-thesphere.github.io development by creating an account on GitHub."
+    },
+    "Tác giả": "GitHub - QuaCau-TheSphere/quacau-thesphere.github.io",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "ai"
   },
   {
-    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/Buoc-Chan",
-    "URL": "https://github.com/QuaCau-TheSphere/Buoc-Chan",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Org GitHub QuaCau-TheSphere/ONB",
+    "URL": "https://github.com/QuaCau-TheSphere/ONB/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/ONB development by creating an account on GitHub."
+    },
+    "Tác giả": "QuaCau-TheSphere/ONB · GitHub",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "aj"
   },
   {
-    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/LOS-Installer: Bộ cài đặt các phần mềm cần thiết cho LOS",
-    "URL": "https://github.com/QuaCau-TheSphere/LOS-Installer",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/Buoc-Chan",
+    "URL": "https://github.com/QuaCau-TheSphere/Buoc-Chan/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/Buoc-Chan development by creating an account on GitHub."
+    },
+    "Tác giả": "GitHub - QuaCau-TheSphere/Buoc-Chan",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "ak"
   },
   {
-    "Tiêu đề": "Org GitHub Page not found",
-    "URL": "https://github.com/QuaCau-TheSphere/Ca-nhan-khac",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/LOS-Installer: Bộ cài đặt các phần mềm cần thiết cho LOS",
+    "URL": "https://github.com/QuaCau-TheSphere/LOS-Installer/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Bộ cài đặt các phần mềm cần thiết cho LOS. Contribute to QuaCau-TheSphere/LOS-Installer development by creating an account on GitHub."
+    },
+    "Tác giả": "GitHub - QuaCau-TheSphere/LOS-Installer: Bộ cài đặt các phần mềm cần thiết cho LOS",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "al"
   },
   {
-    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/SampleVault",
-    "URL": "https://github.com/QuaCau-TheSphere/SampleVault",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Org GitHub Page not found",
+    "URL": "https://github.com/QuaCau-TheSphere/Ca-nhan-khac/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "GitHub is where people build software. More than 100 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+    },
+    "Tác giả": "Page not found · GitHub · GitHub",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "am"
   },
   {
-    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/Graphvidian: Obsidian plugin to export Graphviz graphs from vault's notes",
-    "URL": "https://github.com/QuaCau-TheSphere/Graphvidian",
-    "Nội dung bài đăng": {},
-    "Tác giả": "github.com",
+    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/SampleVault",
+    "URL": "https://github.com/QuaCau-TheSphere/SampleVault/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Contribute to QuaCau-TheSphere/SampleVault development by creating an account on GitHub."
+    },
+    "Tác giả": "GitHub - QuaCau-TheSphere/SampleVault",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "an"
+  },
+  {
+    "Tiêu đề": "Repo GitHub QuaCau-TheSphere/Graphvidian: Obsidian plugin to export Graphviz graphs from vault's notes",
+    "URL": "https://github.com/QuaCau-TheSphere/Graphvidian/",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Obsidian plugin to export Graphviz graphs from vault's notes - QuaCau-TheSphere/Graphvidian"
+    },
+    "Tác giả": "GitHub - QuaCau-TheSphere/Graphvidian: Obsidian plugin to export Graphviz graphs from vault's notes",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "id": "ao"
   },
   {
     "Tiêu đề": "Máy chủ Discord Quả Cầu",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Slug": "discordQC",
-    "Nội dung bài đăng": {},
-    "Tác giả": "discord.com",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Check out the Quả Cầu community on Discord - hang out with 150 other members and enjoy free voice and text chat."
+    },
+    "Tác giả": "Quả Cầu",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "ao"
+    "id": "ap"
   },
   {
     "Tiêu đề": "Trang chủ Quả Cầu",
     "URL": "https://xn--qucu-hr5aza.cc/",
     "Slug": "trangchủQC",
-    "Nội dung bài đăng": {},
-    "Tác giả": "xn--qucu-hr5aza.cc",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Dự án Quả Cầu được lập ra để lan tỏa tinh thần:"
+    },
+    "Tác giả": "Quả Cầu – Lan tỏa và bảo vệ các tinh thần phản tư, tò mò, dũng cảm, trân trọng người khác",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "ap"
+    "id": "aq"
   },
   {
     "Tiêu đề": "Trang chủ Obsidian, quản lý dự án và công cụ nghĩ",
     "URL": "https://obsidian.xn--qucu-hr5aza.cc/",
     "Slug": "obsidianQC",
-    "Nội dung bài đăng": {},
-    "Tác giả": "obsidian.xn--qucu-hr5aza.cc",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Hiểu biết sâu về các môi trường nơi sự suy nghĩ diễn ra, và cách ứng dụng chúng vào quản lý dự án"
+    },
+    "Tác giả": "🌟 Mở đầu - Obsidian, quản lý dự án và công cụ nghĩ",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "aq"
+    "id": "ar"
   },
   {
     "Tiêu đề": "Trang chủ Tiếp thị số, xử lý dữ liệu và lập trình",
     "URL": "https://xn--lptrnh-zva6402d.xn--qucu-hr5aza.cc/",
     "Slug": "lậptrìnhQC",
-    "Nội dung bài đăng": {},
-    "Tác giả": "xn--lptrnh-zva6402d.xn--qucu-hr5aza.cc",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "id": "ar"
-  },
-  {
-    "Tiêu đề": "Trang chủ đối ⊷ thoại",
-    "URL": "https://doi-thoai.deno.dev/",
-    "Nội dung bài đăng": {},
-    "Tác giả": "doi-thoai.deno.dev",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Đây là vault bổ sung cho Obsidian, quản lý dự án và công cụ nghĩ, tập trung vào việc xử lý dữ liệu và lập trình. Nó được sinh ra trong quá trình bọn mình viết Trấn Kỳ, và cũng được sử dụng như tài liệu hướng dẫn cho nó. Nếu bạn muốn tìm một nguồn tài liệu để học một cách bài bản thì không nên vào đây. Nhưng nếu mục tiêu của bạn là làm xong những công việc khác, mà để làm được chúng trôi chảy bạn phải học lập trình, và bạn muốn tìm những bài viết thật ngắn nhưng đủ để hiểu khái niệm để còn làm việc được tiếp (như khi bọn mình cần phải học để còn viết xong Trấn Kỳ), thì có thể một số thứ trong đây sẽ hữu ích cho bạn."
+    },
+    "Tác giả": "Nơi này là nơi nào - Tiếp thị số, xử lý dữ liệu và lập trình",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "as"
   },
   {
-    "Tiêu đề": "Trang chủ Trấn Kỳ",
-    "URL": "https://tranky.deno.dev/",
-    "Nội dung bài đăng": {},
-    "Tác giả": "tranky.deno.dev",
+    "Tiêu đề": "Trang chủ đối ⊷ thoại",
+    "URL": "https://doi-thoai.deno.dev/",
+    "Slug": "webđốithoại",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Nhanh chóng tìm lại các cuộc thảo luận đã từng có trước đây và nắm được mức độ quan tâm của các bên liên quan"
+    },
+    "Tác giả": "đối ⊷ thoại",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "at"
+  },
+  {
+    "Tiêu đề": "Trang chủ Trấn Kỳ",
+    "URL": "https://tranky.deno.dev/",
+    "Slug": "webtrấnkỳ",
+    "Nội dung bài đăng": {
+      "Mô tả bài đăng": "Tự động phân loại, gắn nhãn thông tin theo thói quen và cách sắp xếp của riêng bạn bằng tiếng Việt tự nhiên"
+    },
+    "Tác giả": "Trấn Kỳ",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "id": "au"
   }
 ]

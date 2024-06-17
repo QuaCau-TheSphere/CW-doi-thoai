@@ -10,6 +10,8 @@ import {
 } from "../../Code chạy trên client/Hàm và kiểu cho vị trí.ts";
 import { ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo, TênNơiĐăng } from "./Ki%E1%BB%83u%20cho%20n%C6%A1i%20%C4%91%C4%83ng.ts";
 import tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí from "./mod.ts";
+import { HTMLDocument } from "https://deno.land/x/deno_dom@v0.1.43/deno-dom-wasm-noinit.ts";
+import { DOM } from "https://deno.land/x/deno_dom@v0.1.43/src/dom/selectors/nwsapi-types.ts";
 
 const nơiĐăng1 = {
   "Tên nơi đăng": ["Lý Minh Nhật"],
@@ -95,5 +97,3 @@ console.log("🚀 ~ danhSáchNơiĐăng:", danhSáchNơiĐăng);
 //   assertArrayIncludes(danhSáchNơiĐăngTổng, [nơiĐăng1]);
 //   assertArrayIncludes(danhSáchNơiĐăngTổng, [nơiĐăng2]);
 // });
-
-console.log("done");

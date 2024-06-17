@@ -4,7 +4,7 @@ import * as linkify from "npm:linkifyjs";
 import isURL from "npm:validator/lib/isURL.js";
 import isEmail from "npm:validator/lib/isEmail.js";
 import { IS_BROWSER } from "$fresh/src/runtime/utils.ts";
-import { lấyURLChínhTắcVàHTMLTừLocal } from "../../Code%20ch%E1%BA%A1y%20tr%C3%AAn%20local,%20server,%20KV/H%C3%A0m%20cho%20cache.ts";
+// import { lấyURLChínhTắcVàHTMLTừLocal } from "../../Code%20ch%E1%BA%A1y%20tr%C3%AAn%20local,%20server,%20KV/H%C3%A0m%20cho%20cache.ts";
 
 export type UrlChưaChínhTắc = string | URL;
 export type UrlChínhTắc = URL;
@@ -64,7 +64,7 @@ export function lấyEmailTrongJSON(vậtThể: Record<any, any>) {
 export async function lấyURLChínhTắc(url: UrlChưaChínhTắc, HTML: string | undefined = undefined): Promise<string> {
   let urlChínhTắc;
   if (!IS_BROWSER) {
-    urlChínhTắc = (await lấyURLChínhTắcVàHTMLTừLocal(url))[0];
+    // urlChínhTắc = (await lấyURLChínhTắcVàHTMLTừLocal(url))[0];
   } else {
     const html = HTML ? HTML : await lấyHTML(url);
     const document = new DOMParser().parseFromString(html, "text/html");
