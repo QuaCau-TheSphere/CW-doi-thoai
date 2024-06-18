@@ -100,9 +100,9 @@ export async function lấyMetaTagVàTạoDocument(urlString: Url, HTML: string 
   return { meta, url: new URL(url), document, html };
 }
 
-export function lấyUsername(hostname: string) {
+export function lấyTênMiềnCấpNhỏ(hostname: string) {
   const { domainWithoutSuffix, subdomain } = parse(punycode.toUnicode(hostname));
-  const platforms = ["deno", "wordpress", "medium", "tumplr", "wix", "blogger", "substack"];
+  const platforms = ["deno", "wordpress", "medium", "tumplr", "wix", "blogger", "substack", "notion"];
   if (platforms.includes(domainWithoutSuffix)) return subdomain;
   return domainWithoutSuffix;
 }
@@ -134,13 +134,15 @@ export function lấyNgàyTạo(meta: MetaTags): Date | undefined {
   return meta?.article?.publish_time ? new Date(meta.article.publish_time) : undefined;
 }
 
-export function lấyTácGiả(meta: MetaTags): string | undefined {
-  return meta?.author || meta.article?.author || meta.creator;
+export function lấyTácGiả(meta: MetaTags, thôngTinUrl: ThôngTinUrl): string | undefined {
+  const username = lấyThôngTinLoạiUrl(thôngTinUrl).username;
+  return meta?.author || meta.article?.author || meta.creator || username;
 }
 
 export function tạoTiêuĐềBàiĐăng({ tênNềnTảng, loạiNềnTảng: _, ...temp1 }: ThôngTinUrl): string {
   const [loạiNơiĐăng, temp2] = Object.entries(temp1)[0];
   const tên = temp2.tên;
+  const username = (temp2 as any).username;
   if (loạiNơiĐăng === "Trang chủ") {
     return `Trang chủ ${tên}`;
   }
@@ -149,7 +151,7 @@ export function tạoTiêuĐềBàiĐăng({ tênNềnTảng, loạiNềnTảng: 
       return `Liên kết mời tham gia Discord ${tên}`;
 
     default:
-      return tên || "";
+      return tên || username || "";
   }
 }
 
@@ -160,17 +162,20 @@ export function lấyMôTả({ tênNềnTảng: _, loạiNềnTảng: __, ...tem
 
 export function tạoSlugBàiĐăng({ hostname, pathname }: URL, { tênNềnTảng: _, loạiNềnTảng, ...temp1 }: ThôngTinUrl) {
   const [_loạiNơiĐăng, temp2] = Object.entries(temp1)[0];
+  console.log("🚀 ~ tạoSlugBàiĐăng ~ temp2:", temp2);
+  const { tên, slug, username } = temp2;
   switch (loạiNềnTảng) {
     case "Diễn đàn":
     case "Chat":
-      return temp2.slug;
+    case "SaaS":
+      return slug || username || tên;
 
     default: {
       let slugWebsiteCóSẵn = pathname.substring(1);
       slugWebsiteCóSẵn = slugWebsiteCóSẵn.slice(-1) === "/" ? slugWebsiteCóSẵn.slice(0, -1) : slugWebsiteCóSẵn;
       if (slugWebsiteCóSẵn.startsWith("blog/")) slugWebsiteCóSẵn = slugWebsiteCóSẵn.replace("blog/", "");
       if (slugWebsiteCóSẵn.includes("/")) return undefined;
-      return slugWebsiteCóSẵn ? slugWebsiteCóSẵn : lấyUsername(hostname);
+      return slugWebsiteCóSẵn ? slugWebsiteCóSẵn : lấyTênMiềnCấpNhỏ(hostname);
     }
   }
 }

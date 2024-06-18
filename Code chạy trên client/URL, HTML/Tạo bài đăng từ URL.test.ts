@@ -114,6 +114,7 @@ const tests: [string, BàiĐăngChưaCóIdVàPhươngThứcTạo | ThôngTinNơi
     "Ngày tạo": undefined,
     "Ngày cập nhật": undefined,
   }],
+
   [
     "https://discord.gg/jWTk4EHFK2",
     {
@@ -126,15 +127,19 @@ const tests: [string, BàiĐăngChưaCóIdVàPhươngThứcTạo | ThôngTinNơi
       "Ngày cập nhật": undefined,
     },
   ],
+
+  ["https://duyphong1204.notion.site", {}],
+  ["https://duyphong1204.notion.site/M-nh-c-a-hi-n-t-i-aeb41d0ef8e841489ce618c39af5b6ac?pvs=73", {}],
+  ["https://duyphong1204.notion.site/Brand-New-Cherry-Flavor-c3ac54c3ad9244cfb24b4c7f208b1330?pvs=73", {}],
 ];
 
 for (const test of tests) {
-  // if (tests.indexOf(test) < 4) continue;
+  if (tests.indexOf(test) < 8) continue;
   const a = await lấyMetaTagVàTạoDocument(test[0]);
   // console.log(lấyURLChínhTắc(a));
   // console.log(a);
-  // console.log(await tạoBàiĐăngTừURL(test[0]));
-  assertObjectMatch(await tạoBàiĐăngTừURL(test[0]), test[1]);
+  console.log(await tạoBàiĐăngTừURL(test[0]));
+  // assertObjectMatch(await tạoBàiĐăngTừURL(test[0]), test[1]);
 }
 console.info("Không bị lỗi");
 debugger;

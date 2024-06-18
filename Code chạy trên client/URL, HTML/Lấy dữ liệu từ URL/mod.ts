@@ -1,9 +1,9 @@
 import { parse } from "npm:tldts";
-import { MetaTagUrlVàDocument } from "../Hàm và kiểu cho dữ liệu meta.ts";
+import { lấyTênMiềnCấpNhỏ, MetaTagUrlVàDocument } from "../Hàm và kiểu cho dữ liệu meta.ts";
 import { NhómFacebook, SựKiệnFacebook, thôngTinUrlFacebook, TrangFacebook, TàiKhoảnFacebook } from "./Facebook.ts";
 import { LoạiNềnTảng, TênNềnTảng, xácĐịnhLoạiNềnTảngTừTênNềnTảng } from "../../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
 import { viếtHoa } from "../../Chuỗi, slug/Hàm xử lý chuỗi.ts";
-export interface OrgHoặcRepoGitHub {
+interface OrgHoặcRepoGitHub {
   tên?: string;
   slug?: string;
   avatar?: string;
@@ -14,7 +14,7 @@ interface GitHub {
   Repo?: OrgHoặcRepoGitHub;
 }
 
-export function thôngTinUrlGitHub({ meta, url, document }: MetaTagUrlVàDocument): GitHub {
+function thôngTinUrlGitHub({ meta, url, document }: MetaTagUrlVàDocument): GitHub {
   const htmlTitle = document.querySelector("title")?.textContent;
   const htmlTitleSplit = htmlTitle?.split(/ - /g) || [];
   let tên;
@@ -39,7 +39,7 @@ export function thôngTinUrlGitHub({ meta, url, document }: MetaTagUrlVàDocumen
     },
   };
 }
-export function thôngTinUrlYouTube({ meta, url }: MetaTagUrlVàDocument) {
+function thôngTinUrlYouTube({ meta, url }: MetaTagUrlVàDocument) {
   const pathname = url.pathname;
   const làKênh = pathname.startsWith("/@") || pathname.startsWith("/channel");
   const làDanhSáchPhát = pathname.includes("playlist");
@@ -70,14 +70,50 @@ export function thôngTinUrlYouTube({ meta, url }: MetaTagUrlVàDocument) {
   };
 }
 
-export interface MáyChủDiscord {
+interface MáyChủDiscord {
   tên: string | undefined;
 }
 
-export function thôngTinUrlDiscord({ document }: MetaTagUrlVàDocument): { "Máy chủ"?: MáyChủDiscord } {
+function thôngTinUrlDiscord({ document }: MetaTagUrlVàDocument): { "Máy chủ"?: MáyChủDiscord } {
   return {
     "Máy chủ": {
       tên: document.querySelector("title")?.textContent,
+    },
+  };
+}
+
+interface CơSởDữLiệuNotion {
+  tên: string;
+  username: string;
+  slug: string;
+}
+
+interface WorkspaceNotion {
+  username: string;
+}
+
+interface Notion {
+  "Cơ sở dữ liệu"?: CơSởDữLiệuNotion;
+  "Workspace"?: WorkspaceNotion;
+}
+function thôngTinUrlNotion({ url }: MetaTagUrlVàDocument): Notion {
+  const { pathname, hostname } = url;
+  const username = lấyTênMiềnCấpNhỏ(hostname);
+  const temp = pathname.slice(1).split("-");
+  temp.pop();
+  const tênCơSởDữLiệu = temp.join(" ");
+  if (tênCơSởDữLiệu) {
+    return {
+      "Cơ sở dữ liệu": {
+        tên: tênCơSởDữLiệu,
+        username: username,
+        slug: temp.join("-"),
+      },
+    };
+  }
+  return {
+    "Workspace": {
+      username: username,
     },
   };
 }
@@ -92,7 +128,8 @@ interface Website {
   "Trang chủ"?: ThôngTinWebsiteCơBản;
   "Bài đăng"?: ThôngTinWebsiteCơBản;
 }
-export function thôngTinWebsite(metaTagUrlVàDocument: MetaTagUrlVàDocument): Website {
+
+function thôngTinWebsite(metaTagUrlVàDocument: MetaTagUrlVàDocument): Website {
   const { meta, document, url } = metaTagUrlVàDocument;
   const { pathname } = url;
   const htmlTitle = document.querySelector("title")?.textContent;
@@ -142,9 +179,15 @@ export interface ThôngTinUrl {
   Repo?: OrgHoặcRepoGitHub;
 
   "Máy chủ"?: MáyChủDiscord;
+
+  "Cơ sở dữ liệu"?: CơSởDữLiệuNotion;
+  "Workspace"?: WorkspaceNotion;
+
+  "Trang chủ"?: ThôngTinWebsiteCơBản;
+  "Bài đăng"?: ThôngTinWebsiteCơBản;
 }
 
-export function lấyThôngTinLoạiUrl(thôngTinUrl: ThôngTinUrl) {
+export function lấyThôngTinLoạiUrl(thôngTinUrl: ThôngTinUrl): Record<any, string> {
   const { loạiNềnTảng: _, tênNềnTảng: __, ...temp } = thôngTinUrl;
   return Object.entries(temp)[0][1];
 }
@@ -170,6 +213,8 @@ export function lấyThôngTinTừUrl(metaTagUrlVàDocument: MetaTagUrlVàDocume
         return thôngTinUrlYouTube(metaTagUrlVàDocument);
       case "Discord":
         return thôngTinUrlDiscord(metaTagUrlVàDocument);
+      case "Notion":
+        return thôngTinUrlNotion(metaTagUrlVàDocument);
       default:
         return thôngTinWebsite(metaTagUrlVàDocument);
     }

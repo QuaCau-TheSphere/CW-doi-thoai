@@ -66,7 +66,7 @@ export async function tạoBàiĐăngTừURL(
       "Mô tả bài đăng": lấyMôTả(thôngTinUrl),
     },
     Slug: tạoSlugBàiĐăng(url, thôngTinUrl),
-    "Tác giả": lấyTácGiả(meta),
+    "Tác giả": lấyTácGiả(meta, thôngTinUrl),
     "Ngày tạo": lấyNgàyTạo(meta),
     "Ngày cập nhật": lấyNgàyCậpNhật(meta),
   };

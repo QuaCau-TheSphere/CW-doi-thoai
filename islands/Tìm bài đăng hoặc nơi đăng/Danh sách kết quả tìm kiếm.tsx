@@ -60,7 +60,7 @@ export function DanhSáchKếtQuảTìmKiếm(
     return (
       <ul class="cursor border-2 rounded border-secondary">
         <li class="bg-secondary p-2">
-          <IconPlus class="w-5 h-5" /> Tạo mới
+          <IconPlus class="w-5 h-5" /> Tạo mới <kbd class="kbd bg-secondary">Enter</kbd>
         </li>
       </ul>
     );

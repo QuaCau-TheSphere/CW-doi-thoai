@@ -220,7 +220,8 @@ export type CấuHìnhTậpTin = Record<ĐịnhDạngTậpTin, string[]> | null;
 /**
  * SaaS
  */
-export type TênSaaS = "Google" | "Zoom" | "Notion";
+export const danhSáchSaaS = ["Google", "Zoom", "Notion"] as const;
+export type TênSaaS = typeof danhSáchSaaS[number];
 export type TênChứcNăngTrongSaaS = "Forms" | "Docs" | "Sheets" | "Slides" | "Meet" | "Drive" | "Calendar";
 export type TênNềnTảngSaaS = TênSaaS;
 export type LoạiNơiĐăngSaaS = [TênChứcNăngTrongSaaS];
@@ -257,6 +258,8 @@ export function làCùngNơiĐăng(nơiĐăng1: ThôngTinNơiĐăng, nơiĐăng2
 export function xácĐịnhLoạiNềnTảngTừTênNềnTảng(tênNềnTảng: TênNềnTảng): LoạiNềnTảng {
   if ((danhSáchDiễnĐàn as unknown as string[]).includes(tênNềnTảng)) return "Diễn đàn";
   if ((danhSáchNềnTảngChat as unknown as string[]).includes(tênNềnTảng)) return "Chat";
+  if ((danhSáchĐịnhDạngTậpTin as unknown as string[]).includes(tênNềnTảng)) return "Tập tin";
+  if ((danhSáchSaaS as unknown as string[]).includes(tênNềnTảng)) return "SaaS";
   return tênNềnTảng as LoạiNềnTảng;
   // for (const nơiĐăngKhác of danhSáchNơiĐăngKhác) {
   //   if (tênNềnTảng === nơiĐăngKhác ) return nơiĐăngKhác
