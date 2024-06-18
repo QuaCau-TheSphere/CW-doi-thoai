@@ -82,20 +82,32 @@ export function thôngTinUrlDiscord({ document }: MetaTagUrlVàDocument): { "Má
   };
 }
 
-export function thôngTinWebsite(metaTagUrlVàDocument: MetaTagUrlVàDocument) {
+interface ThôngTinWebsiteCơBản {
+  tên?: string;
+  slug?: string;
+  môTả?: string;
+  ảnh?: string;
+}
+interface Website {
+  "Trang chủ"?: ThôngTinWebsiteCơBản;
+  "Bài đăng"?: ThôngTinWebsiteCơBản;
+}
+export function thôngTinWebsite(metaTagUrlVàDocument: MetaTagUrlVàDocument): Website {
   const { meta, document, url } = metaTagUrlVàDocument;
   const { pathname } = url;
-  console.log(meta);
   const htmlTitle = document.querySelector("title")?.textContent;
   const htmlTitleSplit = htmlTitle?.split(" - ");
   const metaTitle = meta.og?.title;
 
+  const tênWebsite = meta.og?.site_name || htmlTitleSplit?.[1].trim() || metaTitle;
+
   if (pathname === "/") {
     return {
       "Trang chủ": {
-        tên: meta.og?.site_name || htmlTitleSplit?.[1].trim() || metaTitle,
+        tên: tênWebsite,
         môTả: meta.og?.description || meta?.description || document.querySelector("p")?.textContent,
-        ảnh: meta.og?.image,
+        ảnh: meta.og?.image as string,
+        slug: tênWebsite?.replace(/\s/g, ""),
       },
     };
   }
@@ -103,9 +115,18 @@ export function thôngTinWebsite(metaTagUrlVàDocument: MetaTagUrlVàDocument) {
     "Bài đăng": {
       tên: metaTitle || htmlTitleSplit?.[0].trim(),
       môTả: meta.og?.description || meta?.description || document.querySelector("p")?.textContent,
-      ảnh: meta.og?.image,
+      ảnh: meta.og?.image as string,
+      slug: tạoSlugWebsite(pathname.split("/").slice(-1)[0]),
     },
   };
+
+  function tạoSlugWebsite(chuỗi: string) {
+    const đuôiHTML = /\.(htm|html|php)$/;
+    const đuôiTậpTin = /\.(jpg|png|gif|pdf|doc|docx)$/;
+    if (đuôiHTML.test(chuỗi)) return chuỗi.replace(đuôiHTML, "");
+    if (đuôiTậpTin.test(chuỗi)) return chuỗi.replace(".", "");
+    return chuỗi;
+  }
 }
 
 export interface ThôngTinUrl {
