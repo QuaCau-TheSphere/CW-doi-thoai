@@ -8,6 +8,7 @@ export const handler: Handlers = {
   /** Người dùng truy cập để tới liên kết thực sự */
   async GET(req, ctx) {
     const slug = ctx.params.slug;
+    console.log("🚀:", ["renderer.js.map", "installHook.js.map"].includes(slug));
     if (!["renderer.js.map", "installHook.js.map"].includes(slug)) {
       const đuôiRútGọn = decodeURIComponent(slug);
       console.log("Đuôi rút gọn được truy cập:", đuôiRútGọn);

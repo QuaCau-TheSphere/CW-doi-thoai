@@ -69,7 +69,8 @@ export async function chạyTrênDeployChứKhôngChạyTrênLocal() {
 }
 
 export async function copyDữLiệuTrênDeployXuốngLocal() {
-  console.log("thayDữLiệuTrênLocalBằngDữLiệuTrênDeploy");
+  const env = await load();
+  Deno.env.set("DENO_KV_ACCESS_TOKEN", env["DENO_KV_ACCESS_TOKEN"]);
   const remoteKvUrl = `https://api.deno.com/databases/${env["KV_UUID"]}/connect`;
   const result = await replaceLocalDataWithRemote(remoteKvUrl);
 

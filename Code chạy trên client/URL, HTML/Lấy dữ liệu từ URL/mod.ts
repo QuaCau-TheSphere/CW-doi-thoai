@@ -17,22 +17,25 @@ interface GitHub {
 export function thôngTinUrlGitHub({ meta, url, document }: MetaTagUrlVàDocument): GitHub {
   const htmlTitle = document.querySelector("title")?.textContent;
   const htmlTitleSplit = htmlTitle?.split(/ - /g) || [];
+  let tên;
   if (htmlTitleSplit[1] === "GitHub") {
+    tên = meta.og?.title;
     return {
       Org: {
-        tên: meta.og?.title,
-        môTả: meta.og?.description?.replace(" - ${tên}", ""),
+        tên: tên,
+        môTả: meta.og?.description?.replace(` - ${tên}`, ""),
         slug: url.pathname.slice(1),
-        avatar: meta.twitter.image,
+        avatar: meta.twitter?.image,
       },
     };
   }
+  tên = htmlTitleSplit[1];
   return {
     Repo: {
-      tên: htmlTitleSplit[1],
-      môTả: meta.og?.description?.replace(" - ${tên}", ""),
+      tên: tên,
+      môTả: meta.og?.description?.replace(` - ${tên}`, ""),
       slug: url.pathname.slice(1),
-      avatar: meta.twitter.image,
+      avatar: meta.twitter?.image,
     },
   };
 }

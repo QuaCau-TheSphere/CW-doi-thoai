@@ -10,8 +10,11 @@ import { kvGet } from "../../Code chạy trên local, server, KV/Hàm cho KV.ts"
 
 export const handler: Handlers = {
   async GET(req, ctx) {
-    const đuôiRútGọn = ctx.params.slug;
-    const serverGet = await kvGet(["Đuôi rút gọn", đuôiRútGọn], "GET hander trong chart.tsx");
+    const slug = ctx.params.slug;
+    const đuôiRútGọn = decodeURIComponent(slug);
+    console.log("Đuôi rút gọn được truy cập:", đuôiRútGọn);
+    const key = ["Đuôi rút gọn", đuôiRútGọn];
+    const serverGet = await kvGet(key, "GET hander trong chart.tsx");
     const vậtThểTiếpThị = serverGet.value as VậtThểTiếpThị;
 
     if (vậtThểTiếpThị) {
@@ -23,8 +26,8 @@ export const handler: Handlers = {
 };
 
 export function chartOption(dữLiệuTruyCậpCácNăm: DữLiệuTruyCậpCácNăm) {
-  // const data = tạoDữLiệuBiểuĐồ(dữLiệuTruyCậpCácNăm).giờ; //todo;
-  const data = tạoDữLiệuBiểuĐồ(dữLiệuTruyCậpCácNămTest).giờ; //todo;
+  const data = tạoDữLiệuBiểuĐồ(dữLiệuTruyCậpCácNăm).giờ; //todo;
+  // const data = tạoDữLiệuBiểuĐồ(dữLiệuTruyCậpCácNămTest).giờ; //todo;
   return {
     tooltip: {
       trigger: "axis",
