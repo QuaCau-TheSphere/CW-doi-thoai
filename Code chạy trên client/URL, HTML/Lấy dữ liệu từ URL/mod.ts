@@ -136,7 +136,7 @@ function thôngTinWebsite(metaTagUrlVàDocument: MetaTagUrlVàDocument): Website
   const htmlTitleSplit = htmlTitle?.split(" - ");
   const metaTitle = meta.og?.title;
 
-  const tênWebsite = meta.og?.site_name || htmlTitleSplit?.[1].trim() || metaTitle;
+  const tênWebsite = meta.og?.site_name || htmlTitleSplit?.[1]?.trim() || metaTitle;
 
   if (pathname === "/") {
     return {

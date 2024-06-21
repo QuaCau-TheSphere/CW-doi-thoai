@@ -23,23 +23,22 @@ Diễn đàn:
   GitHub:
     Repo:
       - orgs/QuaCau-TheSphere https://github.com/QuaCau-TheSphere
+      - BW-ton-tai-trong-the-gioi-tu-ban https://github.com/QuaCau-TheSphere/BW-ton-tai-trong-the-gioi-tu-ban
       - CW-doi-thoai https://github.com/QuaCau-TheSphere/CW-doi-thoai
       - CW-obsidian-quan-ly-du-an-va-cong-cu-nghi https://github.com/QuaCau-TheSphere/CW-obsidian-quan-ly-du-an-va-cong-cu-nghi
       - CW-xu-ly-du-lieu-va-lap-trinh https://github.com/QuaCau-TheSphere/CW-xu-ly-du-lieu-va-lap-trinh
+      - CV-tiep-thi-so-xu-ly-du-lieu-va-lap-trinh https://github.com/QuaCau-TheSphere/CV-tiep-thi-so-xu-ly-du-lieu-va-lap-trinh
       - CV-obsidian-quan-ly-du-an-va-cong-cu-nghi https://github.com/QuaCau-TheSphere/CV-obsidian-quan-ly-du-an-va-cong-cu-nghi
+      - DW-phat-trien-ban-than https://github.com/QuaCau-TheSphere/DW-phat-trien-ban-than
+      - DV-phat-trien-ban-than https://github.com/QuaCau-TheSphere/DV-phat-trien-ban-than
       - EV-HeavyT https://github.com/QuaCau-TheSphere/EV-HeavyT
       - FV-khoa-hoc-xa-hoi https://github.com/QuaCau-TheSphere/FV-khoa-hoc-xa-hoi
       - LandofSpheres https://github.com/QuaCau-TheSphere/LandofSpheres
-      - CV-tiep-thi-so-xu-ly-du-lieu-va-lap-trinh https://github.com/QuaCau-TheSphere/CV-tiep-thi-so-xu-ly-du-lieu-va-lap-trinh
       - tran-ky https://github.com/QuaCau-TheSphere/tran-ky
-      - tranky-test https://github.com/QuaCau-TheSphere/tranky-test
       - meetup-ticketbox-to-google-calendar https://github.com/QuaCau-TheSphere/meetup-ticketbox-to-google-calendar
       - EW-heavyT https://github.com/QuaCau-TheSphere/EW-heavyT
-      - ObsidianPulisherTest https://github.com/QuaCau-TheSphere/ObsidianPulisherTest
       - belief-network https://github.com/QuaCau-TheSphere/belief-network
-      - DV-phat-trien-ban-than https://github.com/QuaCau-TheSphere/DV-phat-trien-ban-than
       - NeedExchange https://github.com/QuaCau-TheSphere/NeedExchange
-      - DW-phat-trien-ban-than https://github.com/QuaCau-TheSphere/DW-phat-trien-ban-than
       - quacau-thesphere.github.io https://github.com/QuaCau-TheSphere/quacau-thesphere.github.io
       - ONB https://github.com/QuaCau-TheSphere/ONB
       - Buoc-Chan https://github.com/QuaCau-TheSphere/Buoc-Chan
@@ -120,6 +119,7 @@ Chat:
 Vault:
   - A Vùng đất Quả Cầu
   - B Mạng kết nối nhu cầu
+  - B Tồn tại trong thế giới tư bản
   - C Obsidian, quản lý dự án và công cụ nghĩ
   - C Tiếp thị số, xử lý dữ liệu và lập trình
   - D Học kỹ năng, phát triển bản thân
@@ -130,6 +130,7 @@ Website:
   - Quả Cầu https://quảcầu.cc
   - Obsidian, quản lý dự án và công cụ nghĩ https://obsidian.quảcầu.cc
   - Tiếp thị số, xử lý dữ liệu và lập trình https://lậptrình.quảcầu.cc
+  - Tồn tại trong thế giới tư bản https://kiếmtiền.quảcầu.cc
   - đối ⊷ thoại https://doi-thoai.deno.dev
   - Trấn Kỳ https://tranky.deno.dev
 Email:
@@ -179,6 +180,7 @@ Slug:
 
   obsidianQC: https://obsidian.quảcầu.cc
   lậptrìnhQC: https://lậptrình.quảcầu.cc
+  tồntạitrongthếgiớitưbản: https://kiếmtiền.quảcầu.cc
   webđốithoại: https://doi-thoai.deno.dev
   webtrấnkỳ: https://tranky.deno.dev
 

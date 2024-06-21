@@ -9,14 +9,14 @@ import { BàiĐăng } from "../../Code chạy trên local, server, KV/Bài đăn
 import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Code chạy trên client/Hàm và kiểu cho vị trí.ts";
 
 function tạoDòngPhụCủaBàiĐăng(bàiĐăng: BàiĐăng) {
-  const { "Dự án": dựÁn, "Kho thông tin": vault, URL } = bàiĐăng;
+  const { "Dự án": dựÁn, "Kho thông tin": khoThôngTin, URL } = bàiĐăng;
   let key, value;
   if (dựÁn && dựÁn["Tên dự án"]) {
     key = "Dự án";
     value = dựÁn["Tên dự án"];
-  } else if (vault) {
-    key = "Vault";
-    value = vault;
+  } else if (khoThôngTin) {
+    key = "Kho thông tin";
+    value = khoThôngTin;
   }
   if (value) return <>{key}: {value}</>;
   return <>URL: {xửLýPunycode(URL, true)}</>;

@@ -11,18 +11,18 @@ import { VậtThểTiếpThị } from "../Code chạy trên client/Hàm và ki�
 // console.log("🚀 ~ await kvList({ prefix: [] }):", await kvList({ prefix: [] }));
 
 // await tạoCache();
-// await tạoBàiĐăng();
-// await tạoNơiĐăng();
+await tạoBàiĐăng();
+await tạoNơiĐăng();
 
 // console.log("Số read unit", readUnitSignal.value);
 // console.log("Số write unit", writeUnitSignal.value);
 
-const a = await kvList({ prefix: ["Đuôi rút gọn"] }) as Deno.KvEntry<VậtThểTiếpThị>[];
-for (const entry of a) {
-  if (entry.value["Đuôi rút gọn"] !== "webđốithoại.SNPO.1") continue;
-  console.log(entry.key);
-  // console.log(entry.value["Đuôi rút gọn"]);
-  console.log(entry.value["Các lần truy cập"]["2024"]);
-}
+// const a = await kvList({ prefix: ["Đuôi rút gọn"] }) as Deno.KvEntry<VậtThểTiếpThị>[];
+// for (const entry of a) {
+//   if (entry.value["Đuôi rút gọn"] !== "webđốithoại.SNPO.1") continue;
+//   console.log(entry.key);
+//   // console.log(entry.value["Đuôi rút gọn"]);
+//   console.log(entry.value["Các lần truy cập"]["2024"]);
+// }
 
-debugger;
+// debugger;
