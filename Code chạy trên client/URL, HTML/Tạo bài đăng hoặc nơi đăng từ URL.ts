@@ -61,7 +61,6 @@ export async function tạoBàiĐăngTừURL(
   const metaTagUrlVàDocument = await lấyMetaTagVàTạoDocument(urlString, HTML);
   const { meta, url } = metaTagUrlVàDocument;
   const thôngTinUrl = lấyThôngTinTừUrl(metaTagUrlVàDocument);
-  console.log("🚀 ~ thôngTinUrl:", thôngTinUrl);
   return {
     "Tiêu đề": tạoTiêuĐềBàiĐăng(thôngTinUrl),
     URL: url.href,

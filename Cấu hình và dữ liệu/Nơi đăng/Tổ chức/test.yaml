@@ -25,51 +25,48 @@
 #               - Tiền bạc
 #               - Nơi chốn
 
-Vault:
-  - A Vùng đất Quả Cầu
-  - B Mạng kết nối nhu cầu
-  - B Tồn tại trong thế giới tư bản
-  - C Obsidian, quản lý dự án và công cụ nghĩ
-  - C Tiếp thị số, xử lý dữ liệu và lập trình
-  - D Học kỹ năng, phát triển bản thân
-  # - E
-  # - F
-# Website:
-#   - Quả Cầu https://quảcầu.cc
-#   - Obsidian, quản lý dự án và công cụ nghĩ https://obsidian.quảcầu.cc
-#   - Tiếp thị số, xử lý dữ liệu và lập trình https://lậptrình.quảcầu.cc
-#   - đối ⊷ thoại https://doi-thoai.deno.dev
-#   - Trấn Kỳ https://tranky.deno.dev
+# Vault:
+#   - A Vùng đất Quả Cầu
+#   - B Mạng kết nối nhu cầu
+#   - B Tồn tại trong thế giới tư bản
+#   - C Obsidian, quản lý dự án và công cụ nghĩ
+#   - C Tiếp thị số, xử lý dữ liệu và lập trình
+#   - D Học kỹ năng, phát triển bản thân
+Website:
+  - Quả Cầu https://quảcầu.cc
+  - Obsidian, quản lý dự án và công cụ nghĩ https://obsidian.quảcầu.cc
+  - Tiếp thị số, xử lý dữ liệu và lập trình https://lậptrình.quảcầu.cc
+  - đối ⊷ thoại https://doi-thoai.deno.dev
+  - Trấn Kỳ https://tranky.deno.dev
+Slug:
+  trangchủQC: https://quảcầu.cc
+  profilefbQC: https://www.facebook.com/qua.cau.the.sphere
+  pagefbQC: https://www.facebook.com/quacau.sphere
+  emailQC: quacau.thesphere@gmail.com
+  obsidianQC: https://obsidian.quảcầu.cc
+  lậptrìnhQC: https://lậptrình.quảcầu.cc
+  discordQC: https://discord.gg/jWTk4EHFK2
 
-# Slug:
-#   trangchủQC: https://quảcầu.cc
-#   profilefbQC: https://www.facebook.com/qua.cau.the.sphere
-#   pagefbQC: https://www.facebook.com/quacau.sphere
-#   emailQC: quacau.thesphere@gmail.com
-#   obsidianQC: https://obsidian.quảcầu.cc
-#   lậptrìnhQC: https://lậptrình.quảcầu.cc
-#   discordQC: https://discord.gg/jWTk4EHFK2
+  chimsáo: Một đám mây chim sáo
+  vđqc: [Vùng đất Quả Cầu, A Vùng đất Quả Cầu]
+  bpd: Rối loạn nhân cách tâm trạng không ổn định - BPD
+  triếtphươngđông: Nghiên cứu triết học phương Đông
+  nhậnthứcphứchợp: Khoa học nhận thức. Khoa học phức hợp
+  giácquankèm: Giác quan kèm
+  đốithoại: https://doi-thoai.deno.dev
+  trấnkỳ: https://tranky.deno.dev
 
-#   chimsáo: Một đám mây chim sáo
-#   vđqc: [Vùng đất Quả Cầu, A Vùng đất Quả Cầu]
-#   bpd: Rối loạn nhân cách tâm trạng không ổn định - BPD
-#   triếtphươngđông: Nghiên cứu triết học phương Đông
-#   nhậnthứcphứchợp: Khoa học nhận thức. Khoa học phức hợp
-#   giácquankèm: Giác quan kèm
-#   đốithoại: https://doi-thoai.deno.dev
-#   trấnkỳ: https://tranky.deno.dev
+  zalo321: 0979437321
 
-#   zalo321: 0979437321
-
-#   "discordQC#a": "#a-vùng-đất-quả-cầu"
-#   "discordQC#b1": "#b-nền-kinh-tế-không-dùng-tiền"
-#   "discordQC#b2": "#b-nhu-cầu-thường-gặp"
-#   "discordQC#b3": "#b-sự-kiện-cơ-hội-tuyển-dụng-rao-vặt"
-#   "discordQC#c1": "#c-hệ-thống-tri-thức-cộng-đồng"
-#   "discordQC#c2": "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ"
-#   "discordQC#d": "#d-phát-triển-bản-thân-học-kỹ-năng"
-#   "discordQC#e": "#e-mạng-lưới-người-thân-bạn-bè-của-người-có-niềm-tin-tiêu-cực"
-#   "discordQC#f1": "#f-cùng-suy-tư"
-#   "discordQC#f2": "#f-tạo-môi-trường-thúc-đẩy-sự-đối-thoại-và-khoẻ-mạnh"
-#   "discordQC#g": "#g-nghiên-cứu-liên-ngành"
-#   cvLộc: CV Nguyễn Hữu Lộc
+  "discordQC#a": "#a-vùng-đất-quả-cầu"
+  "discordQC#b1": "#b-nền-kinh-tế-không-dùng-tiền"
+  "discordQC#b2": "#b-nhu-cầu-thường-gặp"
+  "discordQC#b3": "#b-sự-kiện-cơ-hội-tuyển-dụng-rao-vặt"
+  "discordQC#c1": "#c-hệ-thống-tri-thức-cộng-đồng"
+  "discordQC#c2": "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ"
+  "discordQC#d": "#d-phát-triển-bản-thân-học-kỹ-năng"
+  "discordQC#e": "#e-mạng-lưới-người-thân-bạn-bè-của-người-có-niềm-tin-tiêu-cực"
+  "discordQC#f1": "#f-cùng-suy-tư"
+  "discordQC#f2": "#f-tạo-môi-trường-thúc-đẩy-sự-đối-thoại-và-khoẻ-mạnh"
+  "discordQC#g": "#g-nghiên-cứu-liên-ngành"
+  cvLộc: CV Nguyễn Hữu Lộc

@@ -100,9 +100,9 @@ export async function lấyMetaTagVàTạoDocument(urlString: Url, HTML: string 
   return { meta, url: new URL(url), document, html };
 }
 
-export function lấyTênMiềnCấpNhỏ(hostname: string) {
+export function lấySubdomain(hostname: string) {
   const { domainWithoutSuffix, subdomain } = parse(punycode.toUnicode(hostname));
-  const platforms = ["deno", "wordpress", "medium", "tumplr", "wix", "blogger", "substack", "notion"];
+  const platforms = ["deno", "wordpress", "medium", "tumplr", "wix", "blogger", "substack", "notion", "quảcầu"];
   if (platforms.includes(domainWithoutSuffix)) return subdomain;
   return domainWithoutSuffix;
 }
@@ -180,7 +180,7 @@ export function tạoSlugBàiĐăng({ hostname, pathname }: URL, thôngTinUrl: T
       slugWebsiteCóSẵn = slugWebsiteCóSẵn.slice(-1) === "/" ? slugWebsiteCóSẵn.slice(0, -1) : slugWebsiteCóSẵn;
       if (slugWebsiteCóSẵn.startsWith("blog/")) slugWebsiteCóSẵn = slugWebsiteCóSẵn.replace("blog/", "");
       if (slugWebsiteCóSẵn.includes("/")) return undefined;
-      return slugWebsiteCóSẵn ? slugWebsiteCóSẵn : lấyTênMiềnCấpNhỏ(hostname);
+      return slugWebsiteCóSẵn ? slugWebsiteCóSẵn : lấySubdomain(hostname);
     }
   }
 }

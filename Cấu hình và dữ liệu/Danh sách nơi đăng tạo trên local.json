@@ -816,7 +816,6 @@
       ]
     ],
     "Đơn vị quản lý": "Nhật",
-    "Slug": "lmn",
     "id": "P"
   },
   {
@@ -1484,6 +1483,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
+    "Slug": "pagefbQC",
     "id": "Y"
   },
   {
@@ -1589,7 +1589,6 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "profilefbQC",
     "id": "Z"
   },
   {
@@ -1641,7 +1640,6 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "youtubeQC",
     "id": "b"
   },
   {
@@ -1670,7 +1668,6 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "githubQC",
     "id": "c"
   },
   {
@@ -2486,7 +2483,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#a",
     "id": "11"
   },
   {
@@ -2532,7 +2529,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b1",
     "id": "12"
   },
   {
@@ -2580,7 +2577,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "13"
   },
   {
@@ -2628,7 +2625,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "14"
   },
   {
@@ -2676,7 +2673,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "15"
   },
   {
@@ -2724,7 +2721,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "16"
   },
   {
@@ -2772,7 +2769,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "17"
   },
   {
@@ -2820,7 +2817,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "18"
   },
   {
@@ -2868,7 +2865,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "19"
   },
   {
@@ -2916,7 +2913,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "1A"
   },
   {
@@ -2964,7 +2961,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "1B"
   },
   {
@@ -3012,7 +3009,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "1C"
   },
   {
@@ -3060,7 +3057,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "1D"
   },
   {
@@ -3108,7 +3105,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "1E"
   },
   {
@@ -3154,7 +3151,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b3",
     "id": "1F"
   },
   {
@@ -3200,7 +3197,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c1",
     "id": "1G"
   },
   {
@@ -3248,7 +3245,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c2",
     "id": "1H"
   },
   {
@@ -3296,7 +3293,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c2",
     "id": "1I"
   },
   {
@@ -3344,7 +3341,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c2",
     "id": "1J"
   },
   {
@@ -3392,7 +3389,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c2",
     "id": "1K"
   },
   {
@@ -3440,7 +3437,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c2",
     "id": "1L"
   },
   {
@@ -3488,7 +3485,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c2",
     "id": "1M"
   },
   {
@@ -3536,7 +3533,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c2",
     "id": "1N"
   },
   {
@@ -3584,7 +3581,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#d",
     "id": "1O"
   },
   {
@@ -3630,7 +3627,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#e",
     "id": "1P"
   },
   {
@@ -3676,7 +3673,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#f1",
     "id": "1Q"
   },
   {
@@ -3722,7 +3719,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#f2",
     "id": "1R"
   },
   {
@@ -3770,7 +3767,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#g",
     "id": "1S"
   },
   {
@@ -3818,7 +3815,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#g",
     "id": "1T"
   },
   {
@@ -3866,7 +3863,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#g",
     "id": "1U"
   },
   {
@@ -3914,7 +3911,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#g",
     "id": "1V"
   },
   {
@@ -4086,7 +4083,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#a",
     "id": "1Z"
   },
   {
@@ -4132,7 +4129,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b1",
     "id": "1a"
   },
   {
@@ -4180,7 +4177,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "1b"
   },
   {
@@ -4228,7 +4225,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "1c"
   },
   {
@@ -4276,7 +4273,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "1d"
   },
   {
@@ -4324,7 +4321,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "1e"
   },
   {
@@ -4372,7 +4369,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "1f"
   },
   {
@@ -4420,7 +4417,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "1g"
   },
   {
@@ -4468,7 +4465,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "1h"
   },
   {
@@ -4516,7 +4513,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "1i"
   },
   {
@@ -4564,7 +4561,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "1j"
   },
   {
@@ -4612,7 +4609,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "1k"
   },
   {
@@ -4660,7 +4657,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "1l"
   },
   {
@@ -4708,7 +4705,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "1m"
   },
   {
@@ -4754,7 +4751,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b3",
     "id": "1n"
   },
   {
@@ -4800,7 +4797,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c1",
     "id": "1o"
   },
   {
@@ -4848,7 +4845,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c2",
     "id": "1p"
   },
   {
@@ -4896,7 +4893,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c2",
     "id": "1q"
   },
   {
@@ -4944,7 +4941,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c2",
     "id": "1r"
   },
   {
@@ -4992,7 +4989,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c2",
     "id": "1s"
   },
   {
@@ -5040,7 +5037,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c2",
     "id": "1t"
   },
   {
@@ -5088,7 +5085,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c2",
     "id": "1u"
   },
   {
@@ -5136,7 +5133,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c2",
     "id": "1v"
   },
   {
@@ -5184,7 +5181,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#d",
     "id": "1w"
   },
   {
@@ -5230,7 +5227,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#e",
     "id": "1x"
   },
   {
@@ -5276,7 +5273,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#f1",
     "id": "1y"
   },
   {
@@ -5322,7 +5319,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#f2",
     "id": "1z"
   },
   {
@@ -5370,7 +5367,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#g",
     "id": "1-"
   },
   {
@@ -5418,7 +5415,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#g",
     "id": "1_"
   },
   {
@@ -5466,7 +5463,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#g",
     "id": "20"
   },
   {
@@ -5514,7 +5511,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#g",
     "id": "21"
   },
   {
@@ -5686,7 +5683,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#a",
     "id": "25"
   },
   {
@@ -5732,7 +5729,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b1",
     "id": "26"
   },
   {
@@ -5780,7 +5777,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "27"
   },
   {
@@ -5828,7 +5825,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "28"
   },
   {
@@ -5876,7 +5873,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "29"
   },
   {
@@ -5924,7 +5921,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "2A"
   },
   {
@@ -5972,7 +5969,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "2B"
   },
   {
@@ -6020,7 +6017,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "2C"
   },
   {
@@ -6068,7 +6065,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "2D"
   },
   {
@@ -6116,7 +6113,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "2E"
   },
   {
@@ -6164,7 +6161,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "2F"
   },
   {
@@ -6212,7 +6209,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "2G"
   },
   {
@@ -6260,7 +6257,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "2H"
   },
   {
@@ -6308,7 +6305,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b2",
     "id": "2I"
   },
   {
@@ -6354,7 +6351,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#b3",
     "id": "2J"
   },
   {
@@ -6400,7 +6397,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c1",
     "id": "2K"
   },
   {
@@ -6448,7 +6445,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c2",
     "id": "2L"
   },
   {
@@ -6496,7 +6493,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c2",
     "id": "2M"
   },
   {
@@ -6544,7 +6541,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c2",
     "id": "2N"
   },
   {
@@ -6592,7 +6589,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c2",
     "id": "2O"
   },
   {
@@ -6640,7 +6637,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c2",
     "id": "2P"
   },
   {
@@ -6688,7 +6685,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c2",
     "id": "2Q"
   },
   {
@@ -6736,7 +6733,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#c2",
     "id": "2R"
   },
   {
@@ -6784,7 +6781,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#d",
     "id": "2S"
   },
   {
@@ -6830,7 +6827,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#e",
     "id": "2T"
   },
   {
@@ -6876,7 +6873,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#f1",
     "id": "2U"
   },
   {
@@ -6922,7 +6919,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#f2",
     "id": "2V"
   },
   {
@@ -6970,7 +6967,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#g",
     "id": "2W"
   },
   {
@@ -7018,7 +7015,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#g",
     "id": "2X"
   },
   {
@@ -7066,7 +7063,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#g",
     "id": "2Y"
   },
   {
@@ -7114,7 +7111,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC",
+    "Slug": "discordQC#g",
     "id": "2Z"
   },
   {
@@ -7333,7 +7330,6 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "trangchủQC",
     "id": "2i"
   },
   {
@@ -7389,7 +7385,6 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "obsidianQC",
     "id": "2k"
   },
   {
@@ -7417,7 +7412,6 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "lậptrìnhQC",
     "id": "2l"
   },
   {
@@ -7445,7 +7439,6 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "pháttriểnbảnthânQC",
     "id": "2m"
   },
   {
@@ -7473,7 +7466,6 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "webđốithoại",
     "id": "2n"
   },
   {
@@ -7501,7 +7493,6 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "webtrấnkỳ",
     "id": "2o"
   },
   {

@@ -1,6 +1,7 @@
 import { táchUrlHoặcEmailĐầuTiênTrongChuỗi, Url } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL và fetch.ts";
 import { TênNơiĐăng } from "./Kiểu cho nơi đăng.ts";
 import CấuHìnhNơiĐăng from "../Hàm và kiểu cho cấu hình.ts";
+import { lấyURLChínhTắcVàHTMLTừLocal } from "../H%C3%A0m%20cho%20cache.ts";
 
 export type TừĐiểnSlugNơiĐăng = Map<string, string>;
 
@@ -25,7 +26,8 @@ export async function tạoTừĐiểnSlugNơiĐăng(cấuHìnhSlug: CấuHìnhN
     if (tênNơiĐăngThànhPhần !== url) {
       từĐiển.set(tênNơiĐăngThànhPhần.toLowerCase(), slug);
     } else {
-      từĐiển.set(url, slug);
+      const urlChínhTắc = (await lấyURLChínhTắcVàHTMLTừLocal(url))[0];
+      từĐiển.set(urlChínhTắc, slug);
     }
   }
 }

@@ -1,4 +1,4 @@
-import { lấyTênMiềnCấpNhỏ, MetaTagUrlVàDocument } from "../Hàm và kiểu cho dữ liệu meta.ts";
+import { lấySubdomain, MetaTagUrlVàDocument } from "../Hàm và kiểu cho dữ liệu meta.ts";
 
 export interface CơSởDữLiệuNotion {
   tên: string;
@@ -14,7 +14,7 @@ interface Notion {
 }
 export function thôngTinUrlNotion({ url }: MetaTagUrlVàDocument): Notion {
   const { pathname, hostname } = url;
-  const username = lấyTênMiềnCấpNhỏ(hostname);
+  const username = lấySubdomain(hostname);
   const temp = pathname.slice(1).split("-");
   temp.pop();
   const tênCơSởDữLiệu = temp.join(" ");

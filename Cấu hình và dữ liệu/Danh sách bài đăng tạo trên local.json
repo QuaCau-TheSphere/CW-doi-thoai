@@ -1032,12 +1032,12 @@
       "Mã dự án": "B2"
     },
     "Nội dung bài đăng": {
-      "Toàn bộ nội dung": "Một số việc ở đây có tính hơi ăn gian, luồn lách quy định của quản lý, công ty, nền tảng (gọi tắt là người trả tiền), có thể bị đuổi khi bị phát hiện, nhưng chắc là không phạm luật. Chắc là thôi, không phải chắc chắn. Tuy nhiên, trong số chúng có những công việc thực ra người trả tiền cũng biết nhân viên mình có làm nhưng vẫn nhắm mắt làm ngơ, vì chính bản thân họ cũng có những lợi ích từ việc làm này. Ví dụ, công việc [[Phát triển thị trường, lương 60k∕h#Đổi tiền|đổi tiền]] về thực chất là gian lận công ty, và nếu bị phát hiện thì công ty sẽ phải phạt bạn. Nhưng vì [[Nhà đầu tư cho các công ty tài chính cần tiền được lưu thông]], nên [[RSM chỉ gây áp lực mồm cho ASM về việc ngăn nhân viên chạy ảo, chứ không gây áp lực qua KPI]], từ đó khiến cho [[ASM không có lợi ích gì trong việc phát hiện nhân viên có chạy ảo hay không]]. Vấn đề là nhà đầu tư chỉ quan tâm đến việc tối đa hoá lợi nhuận, chứ không quan tâm đến chất lượng sống của bạn một cách thực chất.\n\nChỉ nên làm các công việc khi bạn không tìm được một công việc tốt hơn. Nếu bạn đang không quá khó khăn về tiền bạc thì bọn mình khuyến khích bạn học thêm những kỹ năng khác để có những công việc khác chất lượng hơn.\n\n```dataview\nLIST rows.file.link\nFROM \"Tài nguyên hỗ trợ/Việc thời vụ kiếm tiền nhanh\" \nWHERE file.name!=this.file.name\nGROUP BY split(file.folder, \"/\")[2]\n```",
+      "Toàn bộ nội dung": "Một số việc ở đây có tính hơi ăn gian, luồn lách quy định của quản lý, công ty, nền tảng (gọi tắt là người trả tiền), có thể bị đuổi khi bị phát hiện, nhưng chắc là không phạm luật. Chắc là thôi, không phải chắc chắn. Tuy nhiên, trong số chúng có những công việc thực ra người trả tiền cũng biết nhân viên mình có làm nhưng vẫn nhắm mắt làm ngơ, vì chính bản thân họ cũng có những lợi ích từ việc làm này. Ví dụ, công việc [[Phát triển thị trường, lương 60k∕h#Đổi tiền|đổi tiền]] về thực chất là gian lận công ty, và nếu bị phát hiện thì công ty sẽ phải phạt bạn. Nhưng vì [[Nhà đầu tư cho các công ty tài chính cần tiền được lưu thông]], nên [[RSM chỉ gây áp lực mồm cho ASM về việc ngăn nhân viên chạy ảo, chứ không gây áp lực qua KPI]], từ đó khiến cho [[ASM không có lợi ích gì trong việc phát hiện nhân viên có chạy ảo hay không]]. Vấn đề là nhà đầu tư chỉ quan tâm đến việc tối đa hoá lợi nhuận, chứ không quan tâm đến chất lượng sống của bạn một cách thực chất.\n\nChỉ nên làm các công việc này khi bạn không tìm được một công việc tốt hơn. Nếu bạn đang không quá khó khăn về tiền bạc thì bọn mình khuyến khích bạn dành thời gian học thêm những kỹ năng khác để phát triển bản thân và có những công việc khác chất lượng hơn.\n\n```dataview\nLIST rows.file.link\nFROM \"Tài nguyên hỗ trợ/Việc thời vụ kiếm tiền nhanh\" \nWHERE file.name!=this.file.name\nGROUP BY split(file.folder, \"/\")[2]\n```",
       "Định dạng nội dung": "md"
     },
     "Phương thức tạo": "Cào vault",
     "Ngày tạo": "2024-06-22T11:55:00.000Z",
-    "Ngày cập nhật": "2024-06-22T12:26:00.000Z",
+    "Ngày cập nhật": "2024-06-23T15:20:00.000Z",
     "id": "10"
   },
   {
@@ -38265,6 +38265,7 @@
     "Nội dung bài đăng": {
       "Mô tả bài đăng": "Bằng trí tưởng tượng và logic thuần túy, ta dựng một quả cầu lên trên thế giới thực"
     },
+    "Slug": "pagefbQC",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "bW"
   },
@@ -38272,6 +38273,7 @@
     "Tiêu đề": "Quả Cầu",
     "URL": "https://www.facebook.com/qua.cau.the.sphere/",
     "Nội dung bài đăng": {},
+    "Slug": "profilefbQC",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "bX"
   },
@@ -38281,6 +38283,7 @@
     "Nội dung bài đăng": {
       "Mô tả bài đăng": "Quả Cầu hướng đến việc trở thành một tổ chức không có sự phân cấp và người tham gia không làm vì trách nhiệm, lấy nhu cầu của thành viên (vốn nhiều vô kể và thay đổi liên tục) làm mục tiêu của tổ chức, để họ trở thành những người có kỹ năng đa dạng, tư duy liên ngành, và sự khoẻ mạnh và hạnh phúc toàn diện, dựa trên triết học của Deleuze và Guattari, khoa học phức hợp, game phiêu lưu nhập vai, nền kinh tế không dùng tiền, và web ngữ nghĩ."
     },
+    "Slug": "youtubeQC",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "bY"
   },
@@ -38290,6 +38293,7 @@
     "Nội dung bài đăng": {
       "Mô tả bài đăng": "Bằng trí tưởng tượng và logic thuần tuý, ta dựng một quả cầu lên trên thế giới thực - Quả Cầu"
     },
+    "Slug": "githubQC",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "bZ"
   },
@@ -38511,6 +38515,7 @@
     "Tiêu đề": "Liên kết mời tham gia Discord Quả Cầu",
     "URL": "https://discord.com/invite/jWTk4EHFK2",
     "Nội dung bài đăng": {},
+    "Slug": "discordQC",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "by"
   },
@@ -38520,6 +38525,7 @@
     "Nội dung bài đăng": {
       "Mô tả bài đăng": "Lan tỏa và bảo vệ các tinh thần phản tư, tò mò, dũng cảm, trân trọng người khác"
     },
+    "Slug": "trangchủQC",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "bz"
   },
@@ -38538,6 +38544,7 @@
     "Nội dung bài đăng": {
       "Mô tả bài đăng": "Hiểu biết sâu về các môi trường nơi sự suy nghĩ diễn ra, và cách ứng dụng chúng vào quản lý dự án"
     },
+    "Slug": "obsidianQC",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "b_"
   },
@@ -38547,6 +38554,7 @@
     "Nội dung bài đăng": {
       "Mô tả bài đăng": "Những thứ giúp xây dựng mental model khi phải code một cái gì đó"
     },
+    "Slug": "lậptrìnhQC",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "c0"
   },
@@ -38565,6 +38573,7 @@
     "Nội dung bài đăng": {
       "Mô tả bài đăng": "Nhanh chóng tìm lại các cuộc thảo luận đã từng có trước đây và nắm được mức độ quan tâm của các bên liên quan"
     },
+    "Slug": "webđốithoại",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "c2"
   },
@@ -38574,6 +38583,7 @@
     "Nội dung bài đăng": {
       "Mô tả bài đăng": "Tự động phân loại, gắn nhãn thông tin theo thói quen và cách sắp xếp của riêng bạn bằng tiếng Việt tự nhiên"
     },
+    "Slug": "webtrấnkỳ",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "id": "c3"
   }
