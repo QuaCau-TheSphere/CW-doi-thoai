@@ -7338,6 +7338,34 @@
   },
   {
     "Tên nơi đăng": [
+      "Tồn tại trong thế giới tư bản"
+    ],
+    "Loại nơi đăng": [
+      "Website"
+    ],
+    "Tên nền tảng": "Website",
+    "Loại nền tảng": "Website",
+    "URL": "https://kiếmtiền.quảcầu.cc",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Trang chủ"
+      ]
+    ],
+    "Đơn vị quản lý": "Quả Cầu",
+    "Slug": "tồntạitrongthếgiớitưbản",
+    "id": "2j"
+  },
+  {
+    "Tên nơi đăng": [
       "Obsidian, quản lý dự án và công cụ nghĩ"
     ],
     "Loại nơi đăng": [
@@ -7362,7 +7390,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "obsidianQC",
-    "id": "2j"
+    "id": "2k"
   },
   {
     "Tên nơi đăng": [
@@ -7390,18 +7418,18 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "lậptrìnhQC",
-    "id": "2k"
+    "id": "2l"
   },
   {
     "Tên nơi đăng": [
-      "Tồn tại trong thế giới tư bản"
+      "Học kỹ năng, phát triển bản thân"
     ],
     "Loại nơi đăng": [
       "Website"
     ],
     "Tên nền tảng": "Website",
     "Loại nền tảng": "Website",
-    "URL": "https://kiếmtiền.quảcầu.cc",
+    "URL": "https://pháttriểnbảnthân.quảcầu.cc/",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
@@ -7417,8 +7445,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "tồntạitrongthếgiớitưbản",
-    "id": "2l"
+    "Slug": "pháttriểnbảnthânQC",
+    "id": "2m"
   },
   {
     "Tên nơi đăng": [
@@ -7446,7 +7474,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "webđốithoại",
-    "id": "2m"
+    "id": "2n"
   },
   {
     "Tên nơi đăng": [
@@ -7474,7 +7502,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "webtrấnkỳ",
-    "id": "2n"
+    "id": "2o"
   },
   {
     "Tên nơi đăng": [
@@ -7497,7 +7525,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "emailQC",
-    "id": "2o"
+    "id": "2p"
   },
   {
     "Tên nơi đăng": [
@@ -7583,7 +7611,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": "uan",
-    "id": "2p"
+    "id": "2q"
   },
   {
     "Tên nơi đăng": [
@@ -7624,7 +7652,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": "uan",
-    "id": "2q"
+    "id": "2r"
   },
   {
     "Tên nơi đăng": [
@@ -7665,6 +7693,6 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": "uan",
-    "id": "2r"
+    "id": "2s"
   }
 ]
