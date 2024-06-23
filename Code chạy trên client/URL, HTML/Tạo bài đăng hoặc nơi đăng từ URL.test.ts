@@ -1,6 +1,6 @@
 import { tạoBàiĐăngTừURL, tạoNơiĐăngTừURL } from "./Tạo bài đăng hoặc nơi đăng từ URL.ts";
 import { assertObjectMatch } from "https://deno.land/std@0.216.0/assert/assert_object_match.ts";
-import { lấyMetaTagVàTạoDocument } from "./Hàm và kiểu cho dữ liệu meta.ts";
+import { lấyMetaTagVàTạoDocument } from "./Hàm cho việc tạo bài đăng hoặc nơi đăng từ URL.ts";
 import { ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo } from "../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
 import { assertEquals } from "https://deno.land/std@0.216.0/assert/assert_equals.ts";
 import { BàiĐăngChưaCóIdVàPhươngThứcTạo } from "../../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
@@ -135,15 +135,19 @@ const tests: [string, BàiĐăngChưaCóIdVàPhươngThứcTạo | ThôngTinNơi
     "https://www.facebook.com/quangdong.ta/posts/cr7-kh%C3%B4ng-ph%E1%BA%A3i-l%C3%A0-x%C3%AA-r%E1%BB%9D-b%E1%BA%A9y-m%C3%A0-l%C3%A0-x%C3%AA-e-r%E1%BB%9D-b%E1%BA%A9y-t%C3%AAn-c%E1%BB%A7a-ch%E1%BB%AF-r-l%C3%A0-e-r%E1%BB%9D-kh%C3%B4ng-ph%E1%BA%A3i-r/8164875740191224/",
     {},
   ],
+  [
+    "https://xn--kimtin-xi8bta.xn--qucu-hr5aza.cc/T%C3%A0i-nguy%C3%AAn-h%E1%BB%97-tr%E1%BB%A3/Vi%E1%BB%87c-th%E1%BB%9Di-v%E1%BB%A5-ki%E1%BA%BFm-ti%E1%BB%81n-nhanh/",
+    {},
+  ],
 ];
 
 for (const test of tests) {
-  if (tests.indexOf(test) < 11) continue;
+  if (tests.indexOf(test) < 12) continue;
   const a = await lấyMetaTagVàTạoDocument(test[0]);
   // console.log(lấyURLChínhTắc(a));
   // console.log(a);
   // console.log(await tạoBàiĐăngTừURL(test[0]));
-  console.log(await tạoNơiĐăngTừURL(test[0], undefined));
+  console.log(await tạoNơiĐăngTừURL(test[0]));
   // assertObjectMatch(await tạoBàiĐăngTừURL(test[0]), test[1]);
 }
 console.info("Không bị lỗi");

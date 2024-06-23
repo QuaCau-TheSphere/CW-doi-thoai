@@ -6,7 +6,7 @@ import { lấyHTML, lấyURLChínhTắc, Url, UrlChínhTắc } from "./Hàm và 
 import { LoạiNềnTảng } from "../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
 import { remark } from "https://esm.sh/remark";
 import stripMarkdown from "https://esm.sh/strip-markdown@6";
-import { lấyThôngTinLoạiUrl, ThôngTinUrl } from "./Lấy dữ liệu từ URL/mod.ts";
+import { lấyThôngTinLoạiUrl, ThôngTinUrl } from "./Lấy thông tin từ URL/mod.ts";
 import { TênNơiĐăng } from "../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
 
 export type MetaTags = {
@@ -164,8 +164,8 @@ export function lấyMôTả(thôngTinUrl: ThôngTinUrl): string | null | undefi
   return thôngTinLoạiUrl.môTả || thôngTinLoạiUrl.nộiDung;
 }
 
-/** Không dùng tiêu đề làm slug */
-export function tạoSlugBàiĐăng({ hostname, pathname }: URL, thôngTinUrl: ThôngTinUrl) {
+/** Không dùng tiêu đề làm slug. (Nhưng nếu tiêu đề được làm slug trong url nhập vào thì lấy slug đó)  */
+export function tạoSlugTừUrl({ hostname, pathname }: URL, thôngTinUrl: ThôngTinUrl) {
   const [_, thôngTinLoạiUrl] = lấyThôngTinLoạiUrl(thôngTinUrl);
   switch (thôngTinUrl.loạiNềnTảng) {
     case "Diễn đàn":
@@ -178,9 +178,11 @@ export function tạoSlugBàiĐăng({ hostname, pathname }: URL, thôngTinUrl: T
     default: {
       let slugWebsiteCóSẵn = pathname.substring(1);
       slugWebsiteCóSẵn = slugWebsiteCóSẵn.slice(-1) === "/" ? slugWebsiteCóSẵn.slice(0, -1) : slugWebsiteCóSẵn;
-      if (slugWebsiteCóSẵn.startsWith("blog/")) slugWebsiteCóSẵn = slugWebsiteCóSẵn.replace("blog/", "");
-      if (slugWebsiteCóSẵn.includes("/")) return undefined;
-      return slugWebsiteCóSẵn ? slugWebsiteCóSẵn : lấySubdomain(hostname);
+      if (slugWebsiteCóSẵn.includes("/")) {
+        const slugWebsiteCóSẵnSplit = slugWebsiteCóSẵn.split("/");
+        slugWebsiteCóSẵn = slugWebsiteCóSẵnSplit[slugWebsiteCóSẵnSplit.length - 1];
+      }
+      return slugWebsiteCóSẵn ? decodeURIComponent(slugWebsiteCóSẵn) : lấySubdomain(hostname);
     }
   }
 }

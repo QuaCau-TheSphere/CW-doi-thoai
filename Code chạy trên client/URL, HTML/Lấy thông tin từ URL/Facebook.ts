@@ -2,7 +2,7 @@
  * Tên chỉ có ở nhóm, trang, tài khoản, sự kiện. Nó có thể được dùng làm slug.
  * Tiêu đề chỉ có ở bài đăng, bình luận, video. Nó không dùng làm slug được.
  */
-import { MetaTagUrlVàDocument } from "../Hàm và kiểu cho dữ liệu meta.ts";
+import { MetaTagUrlVàDocument } from "../Hàm cho việc tạo bài đăng hoặc nơi đăng từ URL.ts";
 
 interface ThôngTinNhómTrangTàiKhoảnSựKiệnFacebook {
   tên?: string;

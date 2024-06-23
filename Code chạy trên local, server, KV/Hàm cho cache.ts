@@ -11,10 +11,7 @@ import {
   UrlChưaChínhTắc,
 } from "../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL và fetch.ts";
 import { load } from "$std/dotenv/mod.ts";
-import {
-  MetaTags,
-  MetaTagUrlVàDocument,
-} from "../Code%20ch%E1%BA%A1y%20tr%C3%AAn%20client/URL,%20HTML/H%C3%A0m%20v%C3%A0%20ki%E1%BB%83u%20cho%20d%E1%BB%AF%20li%E1%BB%87u%20meta.ts";
+import { MetaTags, MetaTagUrlVàDocument } from "../Code chạy trên client/URL, HTML/Hàm cho việc tạo bài đăng hoặc nơi đăng từ URL.ts";
 
 export type CacheUrlChínhTắc = Map<string, string>;
 export type CacheHTML = Map<UrlChínhTắc["href"], string>;

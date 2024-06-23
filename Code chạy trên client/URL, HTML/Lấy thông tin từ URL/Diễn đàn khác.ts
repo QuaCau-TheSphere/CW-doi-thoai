@@ -1,4 +1,4 @@
-import { MetaTagUrlVàDocument } from "../Hàm và kiểu cho dữ liệu meta.ts";
+import { MetaTagUrlVàDocument } from "../Hàm cho việc tạo bài đăng hoặc nơi đăng từ URL.ts";
 
 export interface OrgHoặcRepoGitHub {
   tên?: string;

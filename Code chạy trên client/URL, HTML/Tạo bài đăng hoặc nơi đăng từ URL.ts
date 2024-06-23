@@ -11,20 +11,19 @@ import {
   lấyNgàyTạo,
   lấyTácGiả,
   lấyĐơnVịQuảnLý,
-  tạoSlugBàiĐăng,
+  tạoSlugTừUrl,
   tạoTiêuĐềBàiĐăng,
   tạoTênNơiĐăng,
-} from "./Hàm và kiểu cho dữ liệu meta.ts";
+} from "./Hàm cho việc tạo bài đăng hoặc nơi đăng từ URL.ts";
 import { NơiĐăngCóCácLựaChọnVịTríChưaCóIdVàPhươngThứcTạo, tạoNơiĐăngCóCácLựaChọnVịTrí } from "../Hàm và kiểu cho vị trí.ts";
 import { BàiĐăngChưaCóIdVàPhươngThứcTạo } from "../../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
-import { lấyThôngTinTừUrl } from "./Lấy dữ liệu từ URL/mod.ts";
+import { lấyThôngTinTừUrl } from "./Lấy thông tin từ URL/mod.ts";
 
 /**
  * @param [slug=undefined] nếu là undefined nghĩa là URL là do người dùng nhập chứ không phải được khai báo sẵn, nên từ đầu đã không có slug
  */
 export async function tạoNơiĐăngTừURL(
   urlString: UrlChưaChínhTắc,
-  slug: string | undefined,
   HTML: string | undefined = undefined,
 ): Promise<NơiĐăngCóCácLựaChọnVịTríChưaCóIdVàPhươngThứcTạo> {
   console.info("Tạo nơi đăng mới từ URL:", urlString.toString());
@@ -35,7 +34,7 @@ export async function tạoNơiĐăngTừURL(
   console.log("🚀 ~ thôngTinUrl:", thôngTinUrl);
   const loạiNơiĐăng = Object.entries(temp)[0][0];
 
-  const thôngTinNơiĐăngChưaCóId: ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo = {
+  const thôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo = {
     "Tên nơi đăng": tạoTênNơiĐăng(thôngTinUrl),
     URL: url.href,
     "Mô tả nơi đăng": lấyMôTả(thôngTinUrl),
@@ -44,10 +43,7 @@ export async function tạoNơiĐăngTừURL(
     "Loại nơi đăng": [loạiNơiĐăng] as LoạiNơiĐăng,
     "Lĩnh vực": lấyLĩnhVực(meta),
     "Đơn vị quản lý": lấyĐơnVịQuảnLý(metaTagUrlVàDocument, thôngTinUrl),
-  };
-  const thôngTinNơiĐăng = {
-    ...thôngTinNơiĐăngChưaCóId,
-    "Slug": slug,
+    Slug: tạoSlugTừUrl(url, thôngTinUrl),
   };
   const nơiĐăngCóCácLựaChọnVịTrí = tạoNơiĐăngCóCácLựaChọnVịTrí(thôngTinNơiĐăng);
   return nơiĐăngCóCácLựaChọnVịTrí;
@@ -67,7 +63,7 @@ export async function tạoBàiĐăngTừURL(
     "Nội dung bài đăng": {
       "Mô tả bài đăng": lấyMôTả(thôngTinUrl),
     },
-    Slug: tạoSlugBàiĐăng(url, thôngTinUrl),
+    Slug: tạoSlugTừUrl(url, thôngTinUrl),
     "Tác giả": lấyTácGiả(meta, thôngTinUrl),
     "Ngày tạo": lấyNgàyTạo(meta),
     "Ngày cập nhật": lấyNgàyCậpNhật(meta),

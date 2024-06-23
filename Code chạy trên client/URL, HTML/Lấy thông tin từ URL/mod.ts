@@ -1,5 +1,5 @@
 import { parse } from "npm:tldts";
-import { MetaTagUrlVàDocument } from "../Hàm và kiểu cho dữ liệu meta.ts";
+import { MetaTagUrlVàDocument } from "../Hàm cho việc tạo bài đăng hoặc nơi đăng từ URL.ts";
 import { NhómFacebook, SựKiệnFacebook, thôngTinUrlFacebook, TrangFacebook, TàiKhoảnFacebook } from "./Facebook.ts";
 import {
   danhSáchDiễnĐàn,

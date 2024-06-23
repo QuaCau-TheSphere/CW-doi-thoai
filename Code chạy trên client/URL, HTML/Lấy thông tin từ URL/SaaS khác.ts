@@ -1,4 +1,4 @@
-import { lấySubdomain, MetaTagUrlVàDocument } from "../Hàm và kiểu cho dữ liệu meta.ts";
+import { lấySubdomain, MetaTagUrlVàDocument } from "../Hàm cho việc tạo bài đăng hoặc nơi đăng từ URL.ts";
 
 export interface CơSởDữLiệuNotion {
   tên: string;

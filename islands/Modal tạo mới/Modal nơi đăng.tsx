@@ -33,7 +33,7 @@ export default function ModalNơiĐăng() {
         const urlNgườiDùngNhập = linkĐầuTiên.href;
         const html = await lấyHTML(urlNgườiDùngNhập);
         setNơiĐăng({
-          ...await tạoNơiĐăngTừURL(urlNgườiDùngNhập, undefined, html),
+          ...await tạoNơiĐăngTừURL(urlNgườiDùngNhập, html),
           "Phương thức tạo": "Nhập tay trên web",
         });
       } else if (type === "email" || linkĐầuTiên?.value.startsWith("mailto:")) {

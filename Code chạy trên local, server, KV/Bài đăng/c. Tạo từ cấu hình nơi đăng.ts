@@ -2,10 +2,10 @@ import { BàiĐăngChưaCóId, BàiĐăngChưaCóIdVàPhươngThứcTạo } from
 import CấuHìnhNơiĐăng, { tạoDanhSáchThôngTinCấuHìnhNơiĐăng } from "../Hàm và kiểu cho cấu hình.ts";
 import { lấyURLTrongJSON } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL và fetch.ts";
 import { tạoSlugNơiĐăng, tạoTừĐiểnSlugNơiĐăng } from "../Nơi đăng/Tạo slug.ts";
-import { tạoTênNơiĐăng } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho dữ liệu meta.ts";
+import { tạoTênNơiĐăng } from "../../Code chạy trên client/URL, HTML/Hàm cho việc tạo bài đăng hoặc nơi đăng từ URL.ts";
 import { lấyMetaTagVàTạoDocumentTrênLocal } from "../Hàm cho cache.ts";
 import { tạoBàiĐăngTừURL } from "../../Code chạy trên client/URL, HTML/Tạo bài đăng hoặc nơi đăng từ URL.ts";
-import { lấyThôngTinTừUrl } from "../../Code chạy trên client/URL, HTML/Lấy dữ liệu từ URL/mod.ts";
+import { lấyThôngTinTừUrl } from "../../Code chạy trên client/URL, HTML/Lấy thông tin từ URL/mod.ts";
 
 async function tạoDanhSáchBàiĐăngTừCấuHìnhNơiĐăng(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng): Promise<BàiĐăngChưaCóId[]> {
   const danhSáchBàiĐăng: BàiĐăngChưaCóId[] = [];
