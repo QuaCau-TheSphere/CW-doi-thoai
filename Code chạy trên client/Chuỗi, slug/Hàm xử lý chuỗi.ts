@@ -51,7 +51,6 @@ export function tạoLoạiNơiĐăngString(thôngTinNơiĐăng: ThôngTinNơiĐ
   }
 }
 
-// export function
 /* ====
 ID
 */
