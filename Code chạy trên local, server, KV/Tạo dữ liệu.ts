@@ -31,7 +31,7 @@ export async function tạoNơiĐăng(cóĐẩyLênKv: boolean = false) {
   await Deno.writeTextFile(TẬP_TIN_DANH_SÁCH_NƠI_ĐĂNG, JSON.stringify(danhSáchNơiĐăng, null, 2));
 
   for (const nơiĐăng of danhSáchNơiĐăng) {
-    console.log(tạoTênNơiĐăngString(nơiĐăng["Tên nơi đăng"]));
+    console.log(tạoTênNơiĐăngString(nơiĐăng["Tên nơi đăng"]) || "Không có tên nơi đăng");
     console.log("• Slug:", nơiĐăng.Slug);
     console.log("• ID:", nơiĐăng.id);
     console.log("• URL:", nơiĐăng.URL);

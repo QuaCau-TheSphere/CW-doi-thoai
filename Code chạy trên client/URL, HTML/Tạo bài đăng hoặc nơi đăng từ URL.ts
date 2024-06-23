@@ -50,7 +50,6 @@ export async function tạoNơiĐăngTừURL(
     "Slug": slug,
   };
   const nơiĐăngCóCácLựaChọnVịTrí = tạoNơiĐăngCóCácLựaChọnVịTrí(thôngTinNơiĐăng);
-  // console.log("🚀 ~ nơiĐăngCóCácLựaChọnVịTrí:", nơiĐăngCóCácLựaChọnVịTrí);
   return nơiĐăngCóCácLựaChọnVịTrí;
 }
 

@@ -131,6 +131,7 @@ export function tạoNơiĐăngCóCácLựaChọnVịTrí(
   } = lấyCấuHìnhChung();
   for (const VTCHVT of danhSáchVậtThểCấuHìnhVịTrí) {
     const danhSáchVịTríThànhPhần = VTCHVT["Danh sách vị trí"];
+    console.log("🚀 ~ danhSáchVịTríThànhPhần:", danhSáchVịTríThànhPhần);
     if (cóThôngTinNơiĐăngTrongVậtThểVịTrí(thôngTinNơiĐăng, VTCHVT)) {
       danhSáchVịTríCóThểĐăng = tạoDanhSáchVịTríCóThểĐăng(danhSáchVịTríThànhPhần, cấuHìnhVịTríThànhPhần);
     }

@@ -12,9 +12,10 @@ import {
 import CấuHìnhNơiĐăng from "../Hàm và kiểu cho cấu hình.ts";
 import { táchUrlHoặcEmailĐầuTiênTrongChuỗi } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL và fetch.ts";
 
-async function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
+async function lấyDanhSáchMessengerDiscordTelegram(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng): Promise<ThôngTinNơiĐăngChưaCóId[]> {
   const cấuHìnhNơiĐăngChat = cấuHìnhNơiĐăng.Chat;
-  if (!cấuHìnhNơiĐăngChat) return;
+  const danhSáchMessengerDiscordTelegram: ThôngTinNơiĐăngChưaCóId[] = [];
+  if (!cấuHìnhNơiĐăngChat) return [];
   for (const tênNềnTảng of ["Messenger", "Discord", "Telegram"] as const) {
     if (!cấuHìnhNơiĐăngChat[tênNềnTảng]) continue;
     const loạiNơiĐăng = lấyLoạiNơiĐăng(tênNềnTảng);
@@ -30,7 +31,7 @@ async function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng:
           /** Trường hợp người dùng chỉ khai báo kênh chứ không khai báo thread hoặc topic nhỏ hơn, và không để dấu `:` đằng sau tên kênh */
           if (typeof cấuHìnhKênh === "string") {
             const [kênh, urlKênh] = await táchUrlHoặcEmailĐầuTiênTrongChuỗi(cấuHìnhKênh);
-            danhSáchThôngTinNơiĐăng.push({
+            danhSáchMessengerDiscordTelegram.push({
               "Tên nơi đăng": [tênMáyChủ, kênh],
               "Loại nơi đăng": loạiNơiĐăng,
               "Tên nền tảng": tênNềnTảng,
@@ -43,7 +44,7 @@ async function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng:
               /** Trường hợp người dùng chỉ khai báo kênh chứ không khai báo thread hoặc topic nhỏ hơn, nhưng vẫn để dấu `:` đằng sau tên kênh */
               const [kênh, urlKênh] = await táchUrlHoặcEmailĐầuTiênTrongChuỗi(kênhUrl);
               if (danhSáchThreadHoặcTopic === null) {
-                danhSáchThôngTinNơiĐăng.push({
+                danhSáchMessengerDiscordTelegram.push({
                   "Tên nơi đăng": [tênMáyChủ, kênh],
                   "Loại nơi đăng": loạiNơiĐăng,
                   "Tên nền tảng": tênNềnTảng,
@@ -56,7 +57,7 @@ async function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng:
               } else {
                 for (const threadHoặcTopicUrl of danhSáchThreadHoặcTopic) {
                   const [threadHoặcTopic, urlThreadHoặcTopic] = await táchUrlHoặcEmailĐầuTiênTrongChuỗi(threadHoặcTopicUrl);
-                  danhSáchThôngTinNơiĐăng.push({
+                  danhSáchMessengerDiscordTelegram.push({
                     "Tên nơi đăng": [tênMáyChủ, kênh, threadHoặcTopic],
                     "Loại nơi đăng": lấyLoạiNơiĐăng(tênNềnTảng, threadHoặcTopic),
                     "Tên nền tảng": tênNềnTảng,
@@ -72,6 +73,7 @@ async function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng:
       }
     }
   }
+  return danhSáchMessengerDiscordTelegram;
   function lấyLoạiNơiĐăng(
     tênNềnTảng: "Messenger" | "Discord" | "Telegram",
     tênThreadHoặcTopic: TênThreadHoặcTopic | undefined = undefined,
@@ -95,11 +97,11 @@ async function lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng:
   }
 }
 
-async function lấyNơiĐăngTừNềnTảngChatKhác(
+async function lấyDanhSáchChatKhác(
   vậtThểNơiĐăng: CấuHìnhNơiĐăngChatThôngThường,
   tênNềnTảng: TênNềnTảng,
-  danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[],
-) {
+): Promise<ThôngTinNơiĐăngChưaCóId[]> {
+  const danhSáchChatKhác: ThôngTinNơiĐăngChưaCóId[] = [];
   for (const [loạiNơiĐăng, danhSáchTênNơiĐăng] of Object.entries(vậtThểNơiĐăng) as [LoạiNơiĐăngChat[0], string[]][]) {
     /** Loại hết cộng đồng chat trên Messenger, Discord, Telegram để chỉ còn lại loại nơi đăng chat thông thường (tài khoản, cá nhân hoặc nhóm) */
     if (
@@ -110,7 +112,7 @@ async function lấyNơiĐăngTừNềnTảngChatKhác(
 
     for (const tênNơiĐăngUrl of danhSáchTênNơiĐăng) {
       const [tênNơiĐăng, url] = await táchUrlHoặcEmailĐầuTiênTrongChuỗi(tênNơiĐăngUrl);
-      danhSáchThôngTinNơiĐăng.push({
+      danhSáchChatKhác.push({
         "Tên nơi đăng": [tênNơiĐăng],
         "Loại nơi đăng": [loạiNơiĐăng],
         "Tên nền tảng": tênNềnTảng,
@@ -120,15 +122,20 @@ async function lấyNơiĐăngTừNềnTảngChatKhác(
       });
     }
   }
+  return danhSáchChatKhác;
 }
 
-export default async function tạoDanhSáchChat(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng: ThôngTinNơiĐăngChưaCóId[]) {
+export default async function tạoDanhSáchChat(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng): Promise<ThôngTinNơiĐăngChưaCóId[]> {
   const cấuHìnhNơiĐăngChat = cấuHìnhNơiĐăng.Chat;
-  if (!cấuHìnhNơiĐăngChat) return;
+  const danhSáchChat: ThôngTinNơiĐăngChưaCóId[] = [];
+  if (!cấuHìnhNơiĐăngChat) return [];
 
   for (const [tênNềnTảng, vậtThểNơiĐăng] of Object.entries(cấuHìnhNơiĐăngChat) as [TênNềnTảngChat, CấuHìnhNơiĐăngChatThôngThường][]) {
     if (!vậtThểNơiĐăng) continue;
-    await lấyNơiĐăngTừMessengerDiscordTelegram(cấuHìnhNơiĐăng, danhSáchThôngTinNơiĐăng);
-    await lấyNơiĐăngTừNềnTảngChatKhác(vậtThểNơiĐăng, tênNềnTảng, danhSáchThôngTinNơiĐăng);
+    danhSáchChat.push(
+      ...await lấyDanhSáchMessengerDiscordTelegram(cấuHìnhNơiĐăng),
+      ...await lấyDanhSáchChatKhác(vậtThểNơiĐăng, tênNềnTảng),
+    );
   }
+  return danhSáchChat;
 }

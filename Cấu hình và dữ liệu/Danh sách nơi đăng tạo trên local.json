@@ -773,6 +773,20 @@
     "Tên nền tảng": "Vault",
     "Loại nền tảng": "Vault",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Trang chủ"
+      ],
+      [
+        "Hiểu biết sâu"
+      ],
+      [
+        "Tài nguyên"
+      ],
+      [
+        "Dự án"
+      ]
+    ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
     "id": "O"
@@ -7141,6 +7155,20 @@
     "Tên nền tảng": "Vault",
     "Loại nền tảng": "Vault",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Trang chủ"
+      ],
+      [
+        "Hiểu biết sâu"
+      ],
+      [
+        "Tài nguyên"
+      ],
+      [
+        "Dự án"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "vđqc",
     "id": "2c"
@@ -7155,6 +7183,20 @@
     "Tên nền tảng": "Vault",
     "Loại nền tảng": "Vault",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Trang chủ"
+      ],
+      [
+        "Hiểu biết sâu"
+      ],
+      [
+        "Tài nguyên"
+      ],
+      [
+        "Dự án"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "2d"
   },
@@ -7168,6 +7210,20 @@
     "Tên nền tảng": "Vault",
     "Loại nền tảng": "Vault",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Trang chủ"
+      ],
+      [
+        "Hiểu biết sâu"
+      ],
+      [
+        "Tài nguyên"
+      ],
+      [
+        "Dự án"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "2e"
   },
@@ -7181,6 +7237,20 @@
     "Tên nền tảng": "Vault",
     "Loại nền tảng": "Vault",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Trang chủ"
+      ],
+      [
+        "Hiểu biết sâu"
+      ],
+      [
+        "Tài nguyên"
+      ],
+      [
+        "Dự án"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "2f"
   },
@@ -7194,6 +7264,20 @@
     "Tên nền tảng": "Vault",
     "Loại nền tảng": "Vault",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Trang chủ"
+      ],
+      [
+        "Hiểu biết sâu"
+      ],
+      [
+        "Tài nguyên"
+      ],
+      [
+        "Dự án"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "2g"
   },
@@ -7207,6 +7291,20 @@
     "Tên nền tảng": "Vault",
     "Loại nền tảng": "Vault",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Trang chủ"
+      ],
+      [
+        "Hiểu biết sâu"
+      ],
+      [
+        "Tài nguyên"
+      ],
+      [
+        "Dự án"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "id": "2h"
   },

@@ -68,7 +68,7 @@ export default function NơiĐăngĐượcChọn() {
     "Đơn vị quản lý": đơnVịQuảnLý,
     "Lĩnh vực": lĩnhVực,
     "Slug": mãNơiĐăng,
-    id,
+    "Mô tả nơi đăng": môTảNơiĐăng,
   } = nơiĐăng;
   const danhSáchLựaChọnVịTrí = tạoDanhSáchLựaChọnVịTrí(nơiĐăng);
   const tênNơiĐăngString = tạoTênNơiĐăngString(tênNơiĐăng);
@@ -82,7 +82,7 @@ export default function NơiĐăngĐượcChọn() {
       <div class="card-body">
         <h2 id="tên-nơi-đăng" class="card-title">{tênNơiĐăngString}</h2>
         <ul class="font-xs text-slate-400">
-          <li id="loại-nơi-đăng" class="hover:text-primary-content">Loại nơi đăng: {loạiNơiĐăngString}</li>
+          <li id="loại-nơi-đăng" class="hover:text-primary-content">Loại nơi đăng: {loạiNơiĐăngString || môTảNơiĐăng}</li>
           <li id="liên-kết" class="hover:text-primary-content">Liên kết: {liênKết ? <a href={liênKết}>{liênKết}</a> : "∅"}</li>
           <li id="đơn-vị-quản-lý" class="hover:text-primary-content">Đơn vị quản lý: {đơnVịQuảnLý || "∅"}</li>
           <li id="lĩnh-vực" class="hover:text-primary-content">Lĩnh vực: {lĩnhVực || "∅"}</li>

@@ -28,8 +28,8 @@ export function tạoVịTríString(vịTrí: VịTrí): string {
   }
   return vịTrí[0];
 }
-export function tạoTênNơiĐăngString(tênNơiĐăng: TênNơiĐăng | undefined): string {
-  if (!tênNơiĐăng) return "";
+export function tạoTênNơiĐăngString(tênNơiĐăng: TênNơiĐăng | undefined): string | undefined {
+  if (!tênNơiĐăng) return;
   if (typeof tênNơiĐăng === "string") {
     return tênNơiĐăng;
   }

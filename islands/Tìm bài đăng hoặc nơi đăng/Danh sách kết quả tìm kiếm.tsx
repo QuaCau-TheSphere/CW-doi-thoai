@@ -33,9 +33,12 @@ function Item({ item, tênDanhSách }: { item: BàiĐăng | NơiĐăngCóCácL�
     }
     case "nơi đăng": {
       item = item as NơiĐăngCóCácLựaChọnVịTrí;
-      const tênNơiĐăng = item["Tên nơi đăng"];
+      const {
+        "Tên nơi đăng": tênNơiĐăng,
+        "Mô tả nơi đăng": môTảNơiĐăng,
+      } = item;
       if (!Array.isArray(tênNơiĐăng)) return <></>;
-      dòngChính = tạoTênNơiĐăngString(tênNơiĐăng);
+      dòngChính = tạoTênNơiĐăngString(tênNơiĐăng) || môTảNơiĐăng;
       dòngPhụ = <span id="loại-nơi-đăng">{tạoLoạiNơiĐăngString(item)}</span>;
     }
   }

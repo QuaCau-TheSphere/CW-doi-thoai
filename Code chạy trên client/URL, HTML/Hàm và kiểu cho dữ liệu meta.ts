@@ -193,6 +193,6 @@ export function lấyTitle({ meta, document }: MetaTagUrlVàDocument): string | 
 
 export function tạoTênNơiĐăng(thôngTinUrl: ThôngTinUrl): TênNơiĐăng {
   const [_, thôngTinLoạiUrl] = lấyThôngTinLoạiUrl(thôngTinUrl);
-  const { tên, tiêuĐề, môTả, nộiDung } = thôngTinLoạiUrl;
-  return [tên || tiêuĐề || môTả || nộiDung];
+  const { tên, tiêuĐề } = thôngTinLoạiUrl;
+  return [tên || tiêuĐề || undefined];
 }
