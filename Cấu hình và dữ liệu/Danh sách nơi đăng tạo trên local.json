@@ -717,6 +717,32 @@
     "Tên nền tảng": "Zalo",
     "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
     "id": "K"
@@ -7124,9 +7150,152 @@
     "Tên nền tảng": "Zalo",
     "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "zalo321",
     "id": "2a"
+  },
+  {
+    "Tên nơi đăng": [
+      "Tuyết Nhi"
+    ],
+    "Loại nơi đăng": [
+      "Tài khoản"
+    ],
+    "Tên nền tảng": "Zalo",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "Quả Cầu",
+    "id": "2b"
+  },
+  {
+    "Tên nơi đăng": [
+      "Cao Thị Thuỳ Trang"
+    ],
+    "Loại nơi đăng": [
+      "Tài khoản"
+    ],
+    "Tên nền tảng": "Zalo",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "Quả Cầu",
+    "id": "2c"
+  },
+  {
+    "Tên nơi đăng": [
+      "Mama"
+    ],
+    "Loại nơi đăng": [
+      "Tài khoản"
+    ],
+    "Tên nền tảng": "Zalo",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "Quả Cầu",
+    "id": "2d"
   },
   {
     "Tên nơi đăng": [
@@ -7140,7 +7309,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "cvLộc",
-    "id": "2b"
+    "id": "2e"
   },
   {
     "Tên nơi đăng": [
@@ -7168,7 +7337,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "vđqc",
-    "id": "2c"
+    "id": "2f"
   },
   {
     "Tên nơi đăng": [
@@ -7195,7 +7364,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2d"
+    "id": "2g"
   },
   {
     "Tên nơi đăng": [
@@ -7222,7 +7391,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2e"
+    "id": "2h"
   },
   {
     "Tên nơi đăng": [
@@ -7249,7 +7418,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2f"
+    "id": "2i"
   },
   {
     "Tên nơi đăng": [
@@ -7276,7 +7445,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2g"
+    "id": "2j"
   },
   {
     "Tên nơi đăng": [
@@ -7303,7 +7472,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2h"
+    "id": "2k"
   },
   {
     "Tên nơi đăng": [
@@ -7330,7 +7499,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2i"
+    "id": "2l"
   },
   {
     "Tên nơi đăng": [
@@ -7358,7 +7527,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "tồntạitrongthếgiớitưbản",
-    "id": "2j"
+    "id": "2m"
   },
   {
     "Tên nơi đăng": [
@@ -7385,7 +7554,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2k"
+    "id": "2n"
   },
   {
     "Tên nơi đăng": [
@@ -7412,7 +7581,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2l"
+    "id": "2o"
   },
   {
     "Tên nơi đăng": [
@@ -7439,7 +7608,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2m"
+    "id": "2p"
   },
   {
     "Tên nơi đăng": [
@@ -7466,7 +7635,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2n"
+    "id": "2q"
   },
   {
     "Tên nơi đăng": [
@@ -7493,7 +7662,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2o"
+    "id": "2r"
   },
   {
     "Tên nơi đăng": [
@@ -7516,7 +7685,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "emailQC",
-    "id": "2p"
+    "id": "2s"
   },
   {
     "Tên nơi đăng": [
@@ -7602,7 +7771,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": "uan",
-    "id": "2q"
+    "id": "2t"
   },
   {
     "Tên nơi đăng": [
@@ -7643,7 +7812,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": "uan",
-    "id": "2r"
+    "id": "2u"
   },
   {
     "Tên nơi đăng": [
@@ -7684,6 +7853,128 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": "uan",
-    "id": "2s"
+    "id": "2v"
+  },
+  {
+    "Tên nơi đăng": [
+      "UAN Marketing",
+      "Tự giới thiệu dịch vụ"
+    ],
+    "Loại nơi đăng": [
+      "Nhóm"
+    ],
+    "Tên nền tảng": "Telegram",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "UAN",
+    "Slug": "uan",
+    "id": "2w"
+  },
+  {
+    "Tên nơi đăng": [
+      "UAN Marketing",
+      "General"
+    ],
+    "Loại nơi đăng": [
+      "Nhóm"
+    ],
+    "Tên nền tảng": "Telegram",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "UAN",
+    "Slug": "uan",
+    "id": "2x"
+  },
+  {
+    "Tên nơi đăng": [
+      "Common Good Alliance"
+    ],
+    "Loại nơi đăng": [
+      "Nhóm"
+    ],
+    "Tên nền tảng": "Zalo",
+    "Loại nền tảng": "Chat",
+    "URL": "https://zalo.me/g/rfthsv401",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "UAN",
+    "id": "2y"
   }
 ]

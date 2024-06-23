@@ -60,8 +60,10 @@ export default function ModalNơiĐăng() {
       "Tên nơi đăng": tênNơiĐăng.split(", ") as TênNơiĐăng,
       Slug: slug,
       "Mô tả nơi đăng": môTảNơiĐăng,
+      "Đơn vị quản lý": đơnVịQuảnLý,
+      "Lĩnh vực": lĩnhVực?.split(", "),
     });
-  }, [tênNơiĐăng, slug, môTảNơiĐăng]);
+  }, [tênNơiĐăng, slug, môTảNơiĐăng, đơnVịQuảnLý, lĩnhVực]);
 
   useEffect(() => {
     if (nơiĐăng) {

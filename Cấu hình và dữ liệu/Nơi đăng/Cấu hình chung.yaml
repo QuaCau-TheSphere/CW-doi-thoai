@@ -142,6 +142,17 @@ Vị trí đặt liên kết ở nơi đăng:
     Loại nơi đăng: [Nhóm, Chủ đề]
     Danh sách vị trí: [Tin nhắn, Tin nhắn ghim]
 
+  ## Zalo
+  - Loại nền tảng: Chat
+    Tên nền tảng: Zalo
+    Loại nơi đăng: [Tài khoản]
+    Danh sách vị trí: [Tin nhắn, Tin nhắn ghim]
+
+  - Loại nền tảng: Chat
+    Tên nền tảng: Zalo
+    Loại nơi đăng: [Nhóm]
+    Danh sách vị trí: [Tin nhắn, Tin nhắn ghim]
+
   # Website
   - Loại nền tảng: Website
     Tên nền tảng: Website
