@@ -1,7 +1,14 @@
 import { parse } from "npm:tldts";
 import { lấyTênMiềnCấpNhỏ, MetaTagUrlVàDocument } from "../Hàm và kiểu cho dữ liệu meta.ts";
 import { NhómFacebook, SựKiệnFacebook, thôngTinUrlFacebook, TrangFacebook, TàiKhoảnFacebook } from "./Facebook.ts";
-import { LoạiNềnTảng, TênNềnTảng, xácĐịnhLoạiNềnTảngTừTênNềnTảng } from "../../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
+import {
+  danhSáchDiễnĐàn,
+  danhSáchNềnTảngChat,
+  danhSáchSaaS,
+  danhSáchĐịnhDạngTậpTin,
+  LoạiNềnTảng,
+  TênNềnTảng,
+} from "../../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
 import { viếtHoa } from "../../Chuỗi, slug/Hàm xử lý chuỗi.ts";
 interface OrgHoặcRepoGitHub {
   tên?: string;
@@ -187,15 +194,23 @@ export interface ThôngTinUrl {
   "Bài đăng"?: ThôngTinWebsiteCơBản;
 }
 
+function xácĐịnhTênNềnTảngVàLoạiNềnTảngTừUrl(metaTagUrlVàDocument: MetaTagUrlVàDocument): [TênNềnTảng, LoạiNềnTảng] {
+  const domainNameWithoutSuffix = parse(metaTagUrlVàDocument.url.href).domainWithoutSuffix;
+  const tênMiềnViếtHoa = viếtHoa(domainNameWithoutSuffix) as TênNềnTảng;
+  if ((danhSáchDiễnĐàn as unknown as string[]).includes(tênMiềnViếtHoa)) return [tênMiềnViếtHoa, "Diễn đàn"];
+  if ((danhSáchNềnTảngChat as unknown as string[]).includes(tênMiềnViếtHoa)) return [tênMiềnViếtHoa, "Chat"];
+  if ((danhSáchĐịnhDạngTậpTin as unknown as string[]).includes(tênMiềnViếtHoa)) return [tênMiềnViếtHoa, "Tập tin"];
+  if ((danhSáchSaaS as unknown as string[]).includes(tênMiềnViếtHoa)) return [tênMiềnViếtHoa, "SaaS"];
+  return ["Website", "Website"];
+}
+
 export function lấyThôngTinLoạiUrl(thôngTinUrl: ThôngTinUrl): Record<any, string> {
   const { loạiNềnTảng: _, tênNềnTảng: __, ...temp } = thôngTinUrl;
   return Object.entries(temp)[0][1];
 }
 
 export function lấyThôngTinTừUrl(metaTagUrlVàDocument: MetaTagUrlVàDocument): ThôngTinUrl {
-  const domainNameWithoutSuffix = parse(metaTagUrlVàDocument.url.href).domainWithoutSuffix;
-  const tênNềnTảng = viếtHoa(domainNameWithoutSuffix) as TênNềnTảng;
-  const loạiNềnTảng = xácĐịnhLoạiNềnTảngTừTênNềnTảng(tênNềnTảng);
+  const [tênNềnTảng, loạiNềnTảng] = xácĐịnhTênNềnTảngVàLoạiNềnTảngTừUrl(metaTagUrlVàDocument);
   const loạiUrl = lấyLoạiUrl();
   return {
     tênNềnTảng: tênNềnTảng,

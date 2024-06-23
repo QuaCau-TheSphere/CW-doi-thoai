@@ -28,6 +28,16 @@ interface ThôngTinBàiĐăngBìnhLuậnFacebook {
   id?: string | null;
 }
 
+interface Video {
+  Video: {
+    tiêuĐề?: string;
+    môTả?: string;
+    tácGiảNộiDung?: string;
+    tàiKhoảnĐăng?: string;
+    ngàyĐăng?: string;
+    id?: string | null;
+  };
+}
 interface BàiĐăng {
   "Bài đăng": ThôngTinBàiĐăngBìnhLuậnFacebook;
 }
@@ -35,7 +45,7 @@ interface BìnhLuận {
   "Bình luận": ThôngTinBàiĐăngBìnhLuậnFacebook;
 }
 
-type ThôngTinUrlFacebook = NhómTrangTàiKhoảnSựKiệnFacebook | BàiĐăng | BìnhLuận;
+type ThôngTinUrlFacebook = NhómTrangTàiKhoảnSựKiệnFacebook | BàiĐăng | BìnhLuận | Video;
 
 function xửLýNhómTrangTàiKhoản(metaTagUrlVàDocument: MetaTagUrlVàDocument): NhómTrangTàiKhoảnSựKiệnFacebook {
   const { meta, url } = metaTagUrlVàDocument;
@@ -103,14 +113,7 @@ function xửLýBàiĐăng(metaTagUrlVàDocument: MetaTagUrlVàDocument): BàiĐ
   const description = meta.og?.description!;
   const ogImage = meta.og?.image as string;
 
-  const descriptionSplitByNewLine = description?.split("\n");
-  let tiêuĐề = "";
-  let nộiDung = description;
-  if (description?.includes("\n")) {
-    tiêuĐề = descriptionSplitByNewLine[0].replace(/^#/g, "").trim();
-    descriptionSplitByNewLine.shift()!;
-    nộiDung = descriptionSplitByNewLine.join(" ").replace(/\s\s+/g, " ").trim();
-  }
+  const { tiêuĐề, nộiDung } = táchTiêuĐềVàNộiDungTừDescription(description);
   return {
     "Bài đăng": {
       tiêuĐề: tiêuĐề,
@@ -119,6 +122,18 @@ function xửLýBàiĐăng(metaTagUrlVàDocument: MetaTagUrlVàDocument): BàiĐ
       id: lấyIdBàiĐăngFacebook(searchParams, pathnameSplitBySlash),
     },
   };
+}
+
+function táchTiêuĐềVàNộiDungTừDescription(description?: string) {
+  const descriptionSplitByNewLine = description?.split("\n");
+  let tiêuĐề = undefined;
+  let nộiDung = description;
+  if (descriptionSplitByNewLine) {
+    tiêuĐề = descriptionSplitByNewLine[0].replace(/^#*?/g, "").trim();
+    descriptionSplitByNewLine.shift();
+    nộiDung = descriptionSplitByNewLine.join(" ").replace(/\s\s+/g, " ").trim();
+  }
+  return { tiêuĐề, nộiDung };
 }
 
 function lấyIdBàiĐăngFacebook(searchParams: URLSearchParams, pathnameSplitBySlash: string[]): string | null | undefined {
@@ -152,13 +167,30 @@ function xửLýBìnhLuận(metaTagUrlVàDocument: MetaTagUrlVàDocument): Thôn
   };
 }
 
+function xửLýVideo({ meta, url }: MetaTagUrlVàDocument): Video {
+  const { description, title } = meta.og!;
+  const pathnameSplitBySlash = url.pathname.split("/");
+  const { tiêuĐề, nộiDung } = táchTiêuĐềVàNộiDungTừDescription(description);
+
+  return {
+    Video: {
+      tiêuĐề: title?.split("|")[0].trim() || description,
+      môTả: description,
+      id: pathnameSplitBySlash[4],
+      tàiKhoảnĐăng: pathnameSplitBySlash[1],
+    },
+  };
+}
+
 export function thôngTinUrlFacebook(metaTagUrlVàDocument: MetaTagUrlVàDocument): ThôngTinUrlFacebook {
   const { pathname, searchParams } = metaTagUrlVàDocument.url;
 
   const làBìnhLuận = searchParams.has("comment_id");
   const làBàiĐăng = pathname.includes("posts") || searchParams.has("story_fbid");
+  const làVideo = pathname.includes("videos");
 
   if (làBìnhLuận) return xửLýBìnhLuận(metaTagUrlVàDocument);
   if (làBàiĐăng) return xửLýBàiĐăng(metaTagUrlVàDocument);
+  if (làVideo) return xửLýVideo(metaTagUrlVàDocument);
   return xửLýNhómTrangTàiKhoản(metaTagUrlVàDocument);
 }

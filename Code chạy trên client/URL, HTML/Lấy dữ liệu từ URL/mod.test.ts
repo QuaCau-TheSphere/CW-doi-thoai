@@ -1,11 +1,11 @@
-import { TẬP_TIN_CACHE_HTML } from "../../Code chạy trên local, server, KV/ĐƯỜNG_DẪN.ts";
+import { TẬP_TIN_CACHE_HTML } from "../../../Code chạy trên local, server, KV/ĐƯỜNG_DẪN.ts";
 import {
   CacheHTML,
   lấyHTMLTừLocal,
   lấyMetaTagVàTạoDocumentTrênLocal,
   lấyURLChínhTắcVàHTMLTừLocal,
-} from "../../Code chạy trên local, server, KV/Hàm cho cache.ts";
-import { lấyThôngTinTừUrl } from "./Lấy dữ liệu từ URL/mod.ts";
+} from "../../../Code chạy trên local, server, KV/Hàm cho cache.ts";
+import { lấyThôngTinTừUrl } from "./mod.ts";
 
 //deno-fmt-ignore
 const urls = [
@@ -20,13 +20,16 @@ const urls = [
   // "https://www.facebook.com/permalink.php?story_fbid=pfbid024Y2xvTL1vgRQejd3whAJfkKgFSVWTqCHJpa8ugPMT672mGe1DDMzhqfdphF3pK8Ml&id=100037812854278",
   // "https://m.facebook.com/story.php?story_fbid=pfbid02VDEJXmeoLGcoeREbJm2V1BQRiGpNVQ2nYGurhQgXa7XQFbNSJE1LD7ZU6EZzK2kxl&id=512837615",
   // "https://www.facebook.com/huylt88/posts/%C4%91%C6%B0a-s%E1%BB%9Bt-b%C3%A1t-v%C3%A0o-l%E1%BA%A1i-cu%E1%BB%99c-s%E1%BB%91ng864-t%E1%BB%AB-3-ph%C3%BAt-%C4%91%E1%BB%8Dct%C3%B4i-l%E1%BB%9Bn-l%C3%AAn-%E1%BB%9F-ch%E1%BB%A3-l%E1%BB%9Bn-trong-k%C3%BD-%E1%BB%A9c-/10160352347137616/",
-  'https://www.facebook.com/cat.tiensinh/videos/1003254044066366',
-  'https://www.facebook.com/share/v/Chvakc2K9q777WKy/',
-  "https://duyphong1204.notion.site",
-"https://duyphong1204.notion.site/M-nh-c-a-hi-n-t-i-aeb41d0ef8e841489ce618c39af5b6ac?pvs=73",
-"https://duyphong1204.notion.site/Brand-New-Cherry-Flavor-c3ac54c3ad9244cfb24b4c7f208b1330?pvs=73",
+  // 'https://www.facebook.com/quangdong.ta/posts/pfbid027p4eUygg1MAZ8dmvPeWHkR5ETQ49hjyDh7MgTZTGBzNW8sK2sr1tb4cHwtLd3Em4l',
+//   'https://www.facebook.com/cat.tiensinh/videos/1003254044066366',
+// 'https://www.facebook.com/khanhvyofficial/videos/1534519627339156',
+//   'https://www.facebook.com/share/v/Chvakc2K9q777WKy/',
+
+//   "https://duyphong1204.notion.site",
+// "https://duyphong1204.notion.site/M-nh-c-a-hi-n-t-i-aeb41d0ef8e841489ce618c39af5b6ac?pvs=73",
+// "https://duyphong1204.notion.site/Brand-New-Cherry-Flavor-c3ac54c3ad9244cfb24b4c7f208b1330?pvs=73",
   'https://kiếmtiền.quảcầu.cc/',
-  'https://zalo.me/412965979141442805',
+//   'https://zalo.me/412965979141442805',
   // "https://github.com/orgs/QuaCau-TheSphere",
   // "https://github.com/QuaCau-TheSphere/CW-obsidian-quan-ly-du-an-va-cong-cu-nghi",
   // "https://discord.gg/jWTk4EHFK2",
