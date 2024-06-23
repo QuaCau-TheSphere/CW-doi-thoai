@@ -142,7 +142,8 @@ for (const test of tests) {
   const a = await lấyMetaTagVàTạoDocument(test[0]);
   // console.log(lấyURLChínhTắc(a));
   // console.log(a);
-  console.log(await tạoBàiĐăngTừURL(test[0]));
+  // console.log(await tạoBàiĐăngTừURL(test[0]));
+  console.log(await tạoNơiĐăngTừURL(test[0], undefined));
   // assertObjectMatch(await tạoBàiĐăngTừURL(test[0]), test[1]);
 }
 console.info("Không bị lỗi");

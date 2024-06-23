@@ -70,11 +70,15 @@ export default function ModalNơiĐăng() {
         "Tên nơi đăng": tênNơiĐăng,
         Slug: slug,
         "Mô tả nơi đăng": môTảNơiĐăng,
+        "Đơn vị quản lý": đơnVịQuảnLý,
+        "Lĩnh vực": lĩnhVực,
       } = nơiĐăng;
       setUrlHoặcEmail(urlHoặcEmail?.toString() || "⌛Đang kéo dữ liệu meta từ URL...");
       setTênNơiĐăng(tênNơiĐăng?.join(", "));
       setSlug(slug);
       setMôTảNơiĐăng(môTảNơiĐăng);
+      setĐơnVịQuảnLý(đơnVịQuảnLý);
+      setLĩnhVực(lĩnhVực?.join(", "));
     }
   }, [nơiĐăng]);
 

@@ -32,6 +32,7 @@ export async function tạoNơiĐăngTừURL(
   const { meta, url } = metaTagUrlVàDocument;
   const thôngTinUrl = lấyThôngTinTừUrl(metaTagUrlVàDocument);
   const { loạiNềnTảng, tênNềnTảng, ...temp } = thôngTinUrl;
+  console.log("🚀 ~ thôngTinUrl:", thôngTinUrl);
   const loạiNơiĐăng = Object.entries(temp)[0][0];
 
   const thôngTinNơiĐăngChưaCóId: ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo = {
@@ -42,14 +43,14 @@ export async function tạoNơiĐăngTừURL(
     "Tên nền tảng": tênNềnTảng,
     "Loại nơi đăng": [loạiNơiĐăng] as LoạiNơiĐăng,
     "Lĩnh vực": lấyLĩnhVực(meta),
-    "Đơn vị quản lý": lấyĐơnVịQuảnLý(metaTagUrlVàDocument, loạiNềnTảng),
+    "Đơn vị quản lý": lấyĐơnVịQuảnLý(metaTagUrlVàDocument, thôngTinUrl),
   };
   const thôngTinNơiĐăng = {
     ...thôngTinNơiĐăngChưaCóId,
     "Slug": slug,
   };
   const nơiĐăngCóCácLựaChọnVịTrí = tạoNơiĐăngCóCácLựaChọnVịTrí(thôngTinNơiĐăng);
-  console.log("🚀 ~ nơiĐăngCóCácLựaChọnVịTrí:", nơiĐăngCóCácLựaChọnVịTrí);
+  // console.log("🚀 ~ nơiĐăngCóCácLựaChọnVịTrí:", nơiĐăngCóCácLựaChọnVịTrí);
   return nơiĐăngCóCácLựaChọnVịTrí;
 }
 

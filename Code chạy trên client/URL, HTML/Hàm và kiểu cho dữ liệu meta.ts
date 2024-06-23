@@ -110,10 +110,12 @@ export function lấyTênMiềnCấpNhỏ(hostname: string) {
 export function lấyLĩnhVực(meta: MetaTags): string[] | undefined {
   if (meta?.keywords) return meta.keywords.split(",");
   if (meta?.article?.tag) return [meta.article?.tag];
-  return undefined;
+  return undefined; //todo: dùng gpt dán nhãn
 }
 
-export function lấyĐơnVịQuảnLý({ meta, url, document }: MetaTagUrlVàDocument, loạiNềnTảng: LoạiNềnTảng = "Website"): string | undefined {
+export function lấyĐơnVịQuảnLý({ meta, url, document }: MetaTagUrlVàDocument, thôngTinUrl: ThôngTinUrl): string | undefined {
+  const { loạiNềnTảng, tênNềnTảng } = thôngTinUrl;
+
   switch (loạiNềnTảng) {
     case "Website": {
       const title = document.querySelector("title")?.textContent || meta.og?.title;
@@ -121,8 +123,10 @@ export function lấyĐơnVịQuảnLý({ meta, url, document }: MetaTagUrlVàDo
       const titleSplit = title.split(" | ");
       return titleSplit[titleSplit.length - 1];
     }
-    default:
-      break;
+    default: {
+      const { username, tàiKhoảnĐăng } = lấyThôngTinLoạiUrl(thôngTinUrl)[1];
+      return username || tàiKhoảnĐăng;
+    }
   }
 }
 
@@ -189,5 +193,6 @@ export function lấyTitle({ meta, document }: MetaTagUrlVàDocument): string | 
 
 export function tạoTênNơiĐăng(thôngTinUrl: ThôngTinUrl): TênNơiĐăng {
   const [_, thôngTinLoạiUrl] = lấyThôngTinLoạiUrl(thôngTinUrl);
-  return [thôngTinLoạiUrl.tên || ""];
+  const { tên, tiêuĐề, môTả, nộiDung } = thôngTinLoạiUrl;
+  return [tên || tiêuĐề || môTả || nộiDung];
 }
