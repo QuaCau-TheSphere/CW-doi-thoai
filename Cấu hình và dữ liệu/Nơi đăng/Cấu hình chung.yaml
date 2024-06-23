@@ -160,6 +160,12 @@ Vị trí đặt liên kết ở nơi đăng:
     Loại nơi đăng: [Tập tin]
     Danh sách vị trí: [Link dự án, Website]
 
+  # Vault
+  - Loại nền tảng: Vault
+    Tên nền tảng: Vault
+    Loại nơi đăng: [Vault]
+    Danh sách vị trí: [Hiểu biết sâu, Tài nguyên, Dự án]
+
   # Ảnh
   - Loại nền tảng: Ảnh
     Tên nền tảng: Ảnh
