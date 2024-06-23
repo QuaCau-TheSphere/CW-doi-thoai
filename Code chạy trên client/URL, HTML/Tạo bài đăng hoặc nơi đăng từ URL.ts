@@ -27,7 +27,7 @@ export async function tạoNơiĐăngTừURL(
   slug: string | undefined,
   HTML: string | undefined = undefined,
 ): Promise<NơiĐăngCóCácLựaChọnVịTríChưaCóIdVàPhươngThứcTạo> {
-  console.trace("Tạo nơi đăng mới từ URL:", urlString.toString());
+  console.info("Tạo nơi đăng mới từ URL:", urlString.toString());
   const metaTagUrlVàDocument = await lấyMetaTagVàTạoDocument(urlString, HTML);
   const { meta, url } = metaTagUrlVàDocument;
   const thôngTinUrl = lấyThôngTinTừUrl(metaTagUrlVàDocument);
@@ -48,7 +48,9 @@ export async function tạoNơiĐăngTừURL(
     ...thôngTinNơiĐăngChưaCóId,
     "Slug": slug,
   };
-  return tạoNơiĐăngCóCácLựaChọnVịTrí(thôngTinNơiĐăng);
+  const nơiĐăngCóCácLựaChọnVịTrí = tạoNơiĐăngCóCácLựaChọnVịTrí(thôngTinNơiĐăng);
+  console.log("🚀 ~ nơiĐăngCóCácLựaChọnVịTrí:", nơiĐăngCóCácLựaChọnVịTrí);
+  return nơiĐăngCóCácLựaChọnVịTrí;
 }
 
 export async function tạoBàiĐăngTừURL(
@@ -59,6 +61,7 @@ export async function tạoBàiĐăngTừURL(
   const metaTagUrlVàDocument = await lấyMetaTagVàTạoDocument(urlString, HTML);
   const { meta, url } = metaTagUrlVàDocument;
   const thôngTinUrl = lấyThôngTinTừUrl(metaTagUrlVàDocument);
+  console.log("🚀 ~ thôngTinUrl:", thôngTinUrl);
   return {
     "Tiêu đề": tạoTiêuĐềBàiĐăng(thôngTinUrl),
     URL: url.href,

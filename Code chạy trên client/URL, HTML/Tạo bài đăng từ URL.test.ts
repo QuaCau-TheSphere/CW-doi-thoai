@@ -131,10 +131,14 @@ const tests: [string, BàiĐăngChưaCóIdVàPhươngThứcTạo | ThôngTinNơi
   ["https://duyphong1204.notion.site", {}],
   ["https://duyphong1204.notion.site/M-nh-c-a-hi-n-t-i-aeb41d0ef8e841489ce618c39af5b6ac?pvs=73", {}],
   ["https://duyphong1204.notion.site/Brand-New-Cherry-Flavor-c3ac54c3ad9244cfb24b4c7f208b1330?pvs=73", {}],
+  [
+    "https://www.facebook.com/quangdong.ta/posts/cr7-kh%C3%B4ng-ph%E1%BA%A3i-l%C3%A0-x%C3%AA-r%E1%BB%9D-b%E1%BA%A9y-m%C3%A0-l%C3%A0-x%C3%AA-e-r%E1%BB%9D-b%E1%BA%A9y-t%C3%AAn-c%E1%BB%A7a-ch%E1%BB%AF-r-l%C3%A0-e-r%E1%BB%9D-kh%C3%B4ng-ph%E1%BA%A3i-r/8164875740191224/",
+    {},
+  ],
 ];
 
 for (const test of tests) {
-  if (tests.indexOf(test) < 8) continue;
+  if (tests.indexOf(test) < 11) continue;
   const a = await lấyMetaTagVàTạoDocument(test[0]);
   // console.log(lấyURLChínhTắc(a));
   // console.log(a);

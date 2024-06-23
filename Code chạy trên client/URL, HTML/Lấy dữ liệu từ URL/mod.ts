@@ -1,5 +1,5 @@
 import { parse } from "npm:tldts";
-import { lấyTênMiềnCấpNhỏ, MetaTagUrlVàDocument } from "../Hàm và kiểu cho dữ liệu meta.ts";
+import { MetaTagUrlVàDocument } from "../Hàm và kiểu cho dữ liệu meta.ts";
 import { NhómFacebook, SựKiệnFacebook, thôngTinUrlFacebook, TrangFacebook, TàiKhoảnFacebook } from "./Facebook.ts";
 import {
   danhSáchDiễnĐàn,
@@ -10,121 +10,9 @@ import {
   TênNềnTảng,
 } from "../../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
 import { viếtHoa } from "../../Chuỗi, slug/Hàm xử lý chuỗi.ts";
-interface OrgHoặcRepoGitHub {
-  tên?: string;
-  slug?: string;
-  avatar?: string;
-  môTả?: string;
-}
-interface GitHub {
-  Org?: OrgHoặcRepoGitHub;
-  Repo?: OrgHoặcRepoGitHub;
-}
-
-function thôngTinUrlGitHub({ meta, url, document }: MetaTagUrlVàDocument): GitHub {
-  const htmlTitle = document.querySelector("title")?.textContent;
-  const htmlTitleSplit = htmlTitle?.split(/ - /g) || [];
-  let tên;
-  if (htmlTitleSplit[1] === "GitHub") {
-    tên = meta.og?.title;
-    return {
-      Org: {
-        tên: tên,
-        môTả: meta.og?.description?.replace(` - ${tên}`, ""),
-        slug: url.pathname.slice(1),
-        avatar: meta.twitter?.image,
-      },
-    };
-  }
-  tên = htmlTitleSplit[1];
-  return {
-    Repo: {
-      tên: tên,
-      môTả: meta.og?.description?.replace(` - ${tên}`, ""),
-      slug: url.pathname.slice(1),
-      avatar: meta.twitter?.image,
-    },
-  };
-}
-function thôngTinUrlYouTube({ meta, url }: MetaTagUrlVàDocument) {
-  const pathname = url.pathname;
-  const làKênh = pathname.startsWith("/@") || pathname.startsWith("/channel");
-  const làDanhSáchPhát = pathname.includes("playlist");
-
-  if (làKênh) {
-    return {
-      Kênh: {
-        tên: meta.og?.title,
-        môTả: meta.og?.description,
-        avatar: meta.twitter?.image,
-      },
-    };
-  }
-  if (làDanhSáchPhát) {
-    return {
-      "Danh sách video": {
-        tên: meta.og?.title,
-        môTả: meta.og?.description,
-        avatar: meta.twitter?.image,
-      },
-    };
-  }
-  return {
-    Video: {
-      tên: meta.og?.title,
-      môTả: meta.og?.description,
-    },
-  };
-}
-
-interface MáyChủDiscord {
-  tên: string | undefined;
-}
-
-function thôngTinUrlDiscord({ document }: MetaTagUrlVàDocument): { "Máy chủ"?: MáyChủDiscord } {
-  return {
-    "Máy chủ": {
-      tên: document.querySelector("title")?.textContent,
-    },
-  };
-}
-
-interface CơSởDữLiệuNotion {
-  tên: string;
-  username: string;
-  slug: string;
-}
-
-interface WorkspaceNotion {
-  username: string;
-}
-
-interface Notion {
-  "Cơ sở dữ liệu"?: CơSởDữLiệuNotion;
-  "Workspace"?: WorkspaceNotion;
-}
-function thôngTinUrlNotion({ url }: MetaTagUrlVàDocument): Notion {
-  const { pathname, hostname } = url;
-  const username = lấyTênMiềnCấpNhỏ(hostname);
-  const temp = pathname.slice(1).split("-");
-  temp.pop();
-  const tênCơSởDữLiệu = temp.join(" ");
-  if (tênCơSởDữLiệu) {
-    return {
-      "Cơ sở dữ liệu": {
-        tên: tênCơSởDữLiệu,
-        username: username,
-        slug: temp.join("-"),
-      },
-    };
-  }
-  return {
-    "Workspace": {
-      username: username,
-    },
-  };
-}
-
+import { OrgHoặcRepoGitHub, thôngTinUrlGitHub, thôngTinUrlYouTube } from "./Diễn đàn khác.ts";
+import { MáyChủDiscord, thôngTinUrlDiscord } from "./Chat khác.ts";
+import { CơSởDữLiệuNotion, thôngTinUrlNotion, WorkspaceNotion } from "./SaaS khác.ts";
 interface ThôngTinWebsiteCơBản {
   tên?: string;
   slug?: string;
@@ -204,9 +92,23 @@ function xácĐịnhTênNềnTảngVàLoạiNềnTảngTừUrl(metaTagUrlVàDocu
   return ["Website", "Website"];
 }
 
-export function lấyThôngTinLoạiUrl(thôngTinUrl: ThôngTinUrl): Record<any, string> {
+type LoạiUrl = "Sự kiện" | "Org" | "Repo" | "Máy chủ" | "Cơ sở dữ liệu" | "Workspace" | "Trang chủ" | "Bài đăng";
+type ThôngTinLoạiUrl =
+  | NhómFacebook
+  | TrangFacebook
+  | TàiKhoảnFacebook
+  | SựKiệnFacebook
+  | OrgHoặcRepoGitHub
+  | OrgHoặcRepoGitHub
+  | MáyChủDiscord
+  | CơSởDữLiệuNotion
+  | WorkspaceNotion
+  | ThôngTinWebsiteCơBản
+  | ThôngTinWebsiteCơBản;
+
+export function lấyThôngTinLoạiUrl(thôngTinUrl: ThôngTinUrl): [LoạiUrl, any] {
   const { loạiNềnTảng: _, tênNềnTảng: __, ...temp } = thôngTinUrl;
-  return Object.entries(temp)[0][1];
+  return Object.entries(temp)[0] as [LoạiUrl, any];
 }
 
 export function lấyThôngTinTừUrl(metaTagUrlVàDocument: MetaTagUrlVàDocument): ThôngTinUrl {

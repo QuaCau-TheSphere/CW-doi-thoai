@@ -1,3 +1,7 @@
+/**
+ * Tên chỉ có ở nhóm, trang, tài khoản, sự kiện. Nó có thể được dùng làm slug.
+ * Tiêu đề chỉ có ở bài đăng, bình luận, video. Nó không dùng làm slug được.
+ */
 import { MetaTagUrlVàDocument } from "../Hàm và kiểu cho dữ liệu meta.ts";
 
 interface ThôngTinNhómTrangTàiKhoảnSựKiệnFacebook {
@@ -119,16 +123,17 @@ function xửLýBàiĐăng(metaTagUrlVàDocument: MetaTagUrlVàDocument): BàiĐ
       tiêuĐề: tiêuĐề,
       nộiDung: nộiDung,
       ảnh: ogImage,
+      tàiKhoảnĐăng: pathnameSplitBySlash[1],
       id: lấyIdBàiĐăngFacebook(searchParams, pathnameSplitBySlash),
     },
   };
 }
 
 function táchTiêuĐềVàNộiDungTừDescription(description?: string) {
-  const descriptionSplitByNewLine = description?.split("\n");
+  const descriptionSplitByNewLine = description?.trim().split("\n");
   let tiêuĐề = undefined;
   let nộiDung = description;
-  if (descriptionSplitByNewLine) {
+  if (descriptionSplitByNewLine && descriptionSplitByNewLine.length > 1) {
     tiêuĐề = descriptionSplitByNewLine[0].replace(/^#*?/g, "").trim();
     descriptionSplitByNewLine.shift();
     nộiDung = descriptionSplitByNewLine.join(" ").replace(/\s\s+/g, " ").trim();

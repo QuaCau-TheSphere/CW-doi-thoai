@@ -55,7 +55,7 @@ export type MetaTags = {
     username: string;
     gender: string;
   };
-
+  al: Record<string, string>;
   [extraKeys: string]: unknown;
 };
 export type OpenGraphTags = {
@@ -135,40 +135,41 @@ export function lấyNgàyTạo(meta: MetaTags): Date | undefined {
 }
 
 export function lấyTácGiả(meta: MetaTags, thôngTinUrl: ThôngTinUrl): string | undefined {
-  const username = lấyThôngTinLoạiUrl(thôngTinUrl).username;
-  return meta?.author || meta.article?.author || meta.creator || username;
+  const username = lấyThôngTinLoạiUrl(thôngTinUrl)[1].username;
+  const tàiKhoảnĐăng = lấyThôngTinLoạiUrl(thôngTinUrl)[1].tàiKhoảnĐăng;
+  return meta?.author || meta.article?.author || meta.creator || username || tàiKhoảnĐăng;
 }
 
-export function tạoTiêuĐềBàiĐăng({ tênNềnTảng, loạiNềnTảng: _, ...temp1 }: ThôngTinUrl): string {
-  const [loạiNơiĐăng, temp2] = Object.entries(temp1)[0];
-  const tên = temp2.tên;
-  const username = (temp2 as any).username;
-  if (loạiNơiĐăng === "Trang chủ") {
+export function tạoTiêuĐềBàiĐăng(thôngTinUrl: ThôngTinUrl): string {
+  const [loạiUrl, thôngTinLoạiUrl] = lấyThôngTinLoạiUrl(thôngTinUrl);
+  const { tên, tiêuĐề, username } = thôngTinLoạiUrl;
+  if (loạiUrl === "Trang chủ") {
     return `Trang chủ ${tên}`;
   }
-  switch (tênNềnTảng) {
+  switch (thôngTinUrl.tênNềnTảng) {
     case "Discord":
       return `Liên kết mời tham gia Discord ${tên}`;
 
     default:
-      return tên || username || "";
+      return tên || tiêuĐề || username || "";
   }
 }
 
-export function lấyMôTả({ tênNềnTảng: _, loạiNềnTảng: __, ...temp1 }: ThôngTinUrl): string | null | undefined {
-  const [_loạiNơiĐăng, temp2] = Object.entries(temp1)[0];
-  return "môTả" in temp2 ? temp2.môTả : undefined;
+export function lấyMôTả(thôngTinUrl: ThôngTinUrl): string | null | undefined {
+  const [_, thôngTinLoạiUrl] = lấyThôngTinLoạiUrl(thôngTinUrl);
+  return thôngTinLoạiUrl.môTả || thôngTinLoạiUrl.nộiDung;
 }
 
-export function tạoSlugBàiĐăng({ hostname, pathname }: URL, { tênNềnTảng: _, loạiNềnTảng, ...temp1 }: ThôngTinUrl) {
-  const [_loạiNơiĐăng, temp2] = Object.entries(temp1)[0];
-  console.log("🚀 ~ tạoSlugBàiĐăng ~ temp2:", temp2);
-  const { tên, slug, username } = temp2;
-  switch (loạiNềnTảng) {
+/** Không dùng tiêu đề làm slug */
+export function tạoSlugBàiĐăng({ hostname, pathname }: URL, thôngTinUrl: ThôngTinUrl) {
+  const [_, thôngTinLoạiUrl] = lấyThôngTinLoạiUrl(thôngTinUrl);
+  switch (thôngTinUrl.loạiNềnTảng) {
     case "Diễn đàn":
     case "Chat":
-    case "SaaS":
+    case "SaaS": {
+      const { tên, slug, username } = thôngTinLoạiUrl;
       return slug || username || tên;
+    }
 
     default: {
       let slugWebsiteCóSẵn = pathname.substring(1);
@@ -187,6 +188,6 @@ export function lấyTitle({ meta, document }: MetaTagUrlVàDocument): string | 
 }
 
 export function tạoTênNơiĐăng(thôngTinUrl: ThôngTinUrl): TênNơiĐăng {
-  const thôngTinLoạiUrl = lấyThôngTinLoạiUrl(thôngTinUrl);
+  const [_, thôngTinLoạiUrl] = lấyThôngTinLoạiUrl(thôngTinUrl);
   return [thôngTinLoạiUrl.tên || ""];
 }
