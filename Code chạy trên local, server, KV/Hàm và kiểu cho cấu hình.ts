@@ -41,7 +41,7 @@ export default interface CấuHìnhNơiĐăng {
   Email?: CấuHìnhEmail | null;
   "Tập tin"?: CấuHìnhTậpTin | null;
   SaaS?: CấuHìnhSaaS | null;
-  "Kênh forum Discord"?: string[] | null;
+  "Kênh diễn đàn Discord"?: string[] | null;
   "Slug"?: CấuHìnhSlug;
 }
 export type CấuHìnhSlug = Record<Slug, URL["href"] | string | string[]>;

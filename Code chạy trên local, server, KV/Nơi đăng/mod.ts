@@ -159,6 +159,7 @@ export async function tạoDanhSáchNơiĐăngTừTấtCảCấuHình() {
 
   for (const thôngTinCấuHình of danhSáchThôngTinCấuHìnhNơiĐăng) {
     if (thôngTinCấuHình.tênCấuHình === "test") continue;
+    // if (thôngTinCấuHình.tênCấuHình !== "Quả Cầu") continue;
     // if (thôngTinCấuHình.tênCấuHình !== "test") continue;
     danhSáchNơiĐăngChưaCóIdTừTấtCảCấuHình.push(...await tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí(thôngTinCấuHình));
   }

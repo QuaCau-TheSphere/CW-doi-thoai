@@ -51,8 +51,10 @@ export function tạoLoạiNơiĐăngString(thôngTinNơiĐăng: ThôngTinNơiĐ
   }
 }
 
-/* ====
+/*
+==
 ID
+==
 */
 
 /** Tìm trong cấu hình nơi đăng xem từ được kiểm tra có ký hiệu viết tắt không. Nếu không thì trả về undefined */
@@ -84,6 +86,12 @@ export function tạoChuỗiNgẫuNhiên(sốKýTự: number): string {
 function đổiTừCơSố64SangCơSố10(x: string) {
   return x.split("").reduce((s, v) => s * 64 + digit.indexOf(v), 0);
 }
+
+/*
+=========
+Thời gian
+=========
+*/
 
 export function lấyGiờVN(thờiĐiểm: Date | string | undefined) {
   if (!thờiĐiểm) return undefined;

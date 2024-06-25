@@ -5,6 +5,7 @@ import {
   LoạiNơiĐăngMessengerDiscordTelegram,
   ThôngTinNơiĐăngChưaCóId,
   TênMáyChủ,
+  TênNơiĐăng,
   TênNềnTảng,
   TênNềnTảngChat,
   TênThreadHoặcTopic,
@@ -57,9 +58,10 @@ async function lấyDanhSáchMessengerDiscordTelegram(cấuHìnhNơiĐăng: Cấ
               } else {
                 for (const threadHoặcTopicUrl of danhSáchThreadHoặcTopic) {
                   const [threadHoặcTopic, urlThreadHoặcTopic] = await táchUrlHoặcEmailĐầuTiênTrongChuỗi(threadHoặcTopicUrl);
+                  const tênNơiĐăng = [tênMáyChủ, kênh, threadHoặcTopic];
                   danhSáchMessengerDiscordTelegram.push({
-                    "Tên nơi đăng": [tênMáyChủ, kênh, threadHoặcTopic],
-                    "Loại nơi đăng": lấyLoạiNơiĐăng(tênNềnTảng, threadHoặcTopic),
+                    "Tên nơi đăng": tênNơiĐăng,
+                    "Loại nơi đăng": lấyLoạiNơiĐăng(tênNềnTảng, tênNơiĐăng),
                     "Tên nền tảng": tênNềnTảng,
                     "Loại nền tảng": "Chat",
                     URL: urlThreadHoặcTopic || urlKênh || urlMáyChủ,
@@ -76,22 +78,24 @@ async function lấyDanhSáchMessengerDiscordTelegram(cấuHìnhNơiĐăng: Cấ
   return danhSáchMessengerDiscordTelegram;
   function lấyLoạiNơiĐăng(
     tênNềnTảng: "Messenger" | "Discord" | "Telegram",
-    tênThreadHoặcTopic: TênThreadHoặcTopic | undefined = undefined,
+    tênNơiĐăng: TênNơiĐăng | undefined = undefined,
   ): LoạiNơiĐăngMessengerDiscordTelegram {
     switch (tênNềnTảng) {
       case "Messenger":
-        if (!tênThreadHoặcTopic) return ["Cộng đồng", "Chat cộng đồng"];
+        if (!tênNơiĐăng) return ["Cộng đồng", "Chat cộng đồng"];
         return ["Cộng đồng", "Chat cộng đồng", "Sidechat"];
 
       case "Discord":
-        if (!tênThreadHoặcTopic) return ["Máy chủ", "Kênh thường"];
-        if (cấuHìnhNơiĐăng["Kênh forum Discord"]?.includes(tênThreadHoặcTopic)) {
-          return ["Máy chủ", "Kênh diễn đàn", "Bài diễn đàn"];
+        if (!tênNơiĐăng) return ["Máy chủ", "Kênh thường"];
+        for (const tênNơiĐăngThànhPhần of tênNơiĐăng.slice(0, -1).toReversed()) {
+          if (cấuHìnhNơiĐăng["Kênh diễn đàn Discord"]?.includes(tênNơiĐăngThànhPhần)) {
+            return ["Máy chủ", "Kênh diễn đàn", "Bài diễn đàn"];
+          }
         }
         return ["Máy chủ", "Kênh thường", "Thread"];
 
       case "Telegram":
-        if (!tênThreadHoặcTopic) return ["Nhóm"];
+        if (!tênNơiĐăng) return ["Nhóm"];
         return ["Nhóm", "Chủ đề"];
     }
   }
