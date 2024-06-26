@@ -13,6 +13,7 @@ import { viếtHoa } from "../../Chuỗi, slug/Hàm xử lý chuỗi.ts";
 import { OrgHoặcRepoGitHub, thôngTinUrlGitHub, thôngTinUrlYouTube } from "./Diễn đàn khác.ts";
 import { MáyChủDiscord, thôngTinUrlDiscord } from "./Chat khác.ts";
 import { CơSởDữLiệuNotion, thôngTinUrlNotion, WorkspaceNotion } from "./SaaS khác.ts";
+import { kiểuKebab } from "../../Chuỗi, slug/Hàm xử lý chuỗi.ts";
 interface ThôngTinWebsiteCơBản {
   tên?: string;
   slug?: string;
@@ -43,21 +44,27 @@ function thôngTinWebsite(metaTagUrlVàDocument: MetaTagUrlVàDocument): Website
       },
     };
   }
+  const tênBàiĐăng = metaTitle || htmlTitleSplit?.[0].trim();
   return {
     "Bài đăng": {
-      tên: metaTitle || htmlTitleSplit?.[0].trim(),
+      tên: tênBàiĐăng,
       môTả: meta.og?.description || meta?.description || document.querySelector("p")?.textContent,
       ảnh: meta.og?.image as string,
-      slug: tạoSlugWebsite(pathname.split("/").slice(-1)[0]),
+      slug: tạoSlugWebsite(url, tênBàiĐăng),
     },
   };
 
-  function tạoSlugWebsite(chuỗi: string) {
+  function tạoSlugWebsite(url: URL, tênBàiĐăng: string | undefined) {
+    const { pathname, hostname } = url;
+    const pathnameLastSection = pathname.split("/").slice(-1)[0];
+
+    if (hostname === "docs.google.com" && pathnameLastSection === "viewform") return kiểuKebab(tênBàiĐăng);
+
     const đuôiHTML = /\.(htm|html|php)$/;
     const đuôiTậpTin = /\.(jpg|png|gif|pdf|doc|docx)$/;
-    if (đuôiHTML.test(chuỗi)) return chuỗi.replace(đuôiHTML, "");
-    if (đuôiTậpTin.test(chuỗi)) return chuỗi.replace(".", "");
-    return chuỗi;
+    if (đuôiHTML.test(pathnameLastSection)) return pathnameLastSection.replace(đuôiHTML, "");
+    if (đuôiTậpTin.test(pathnameLastSection)) return pathnameLastSection.replace(".", "");
+    return pathnameLastSection;
   }
 }
 
