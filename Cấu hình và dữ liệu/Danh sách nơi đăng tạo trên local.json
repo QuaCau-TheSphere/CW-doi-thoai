@@ -5409,6 +5409,19 @@
   },
   {
     "Tên nơi đăng": [
+      "Đỗ Hàng Minh Trí"
+    ],
+    "Loại nơi đăng": [
+      "Tài khoản"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Đơn vị quản lý": "Quả Cầu",
+    "id": "23"
+  },
+  {
+    "Tên nơi đăng": [
       "Rối loạn nhân cách tâm trạng không ổn định - BPD",
       "Đoạn chat chung"
     ],
@@ -5447,7 +5460,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "bpd",
-    "id": "23"
+    "id": "24"
   },
   {
     "Tên nơi đăng": [
@@ -5489,7 +5502,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "triếtphươngđông",
-    "id": "24"
+    "id": "25"
   },
   {
     "Tên nơi đăng": [
@@ -5531,7 +5544,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "nhậnthứcphứchợp",
-    "id": "25"
+    "id": "26"
   },
   {
     "Tên nơi đăng": [
@@ -5577,7 +5590,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#a",
-    "id": "26"
+    "id": "27"
   },
   {
     "Tên nơi đăng": [
@@ -5623,7 +5636,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b1",
-    "id": "27"
+    "id": "28"
   },
   {
     "Tên nơi đăng": [
@@ -5668,7 +5681,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b2",
-    "id": "28"
+    "id": "29"
   },
   {
     "Tên nơi đăng": [
@@ -5713,7 +5726,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b2",
-    "id": "29"
+    "id": "2A"
   },
   {
     "Tên nơi đăng": [
@@ -5758,7 +5771,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b2",
-    "id": "2A"
+    "id": "2B"
   },
   {
     "Tên nơi đăng": [
@@ -5803,7 +5816,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b2",
-    "id": "2B"
+    "id": "2C"
   },
   {
     "Tên nơi đăng": [
@@ -5848,7 +5861,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b2",
-    "id": "2C"
+    "id": "2D"
   },
   {
     "Tên nơi đăng": [
@@ -5893,7 +5906,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b2",
-    "id": "2D"
+    "id": "2E"
   },
   {
     "Tên nơi đăng": [
@@ -5938,7 +5951,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b2",
-    "id": "2E"
+    "id": "2F"
   },
   {
     "Tên nơi đăng": [
@@ -5983,7 +5996,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b2",
-    "id": "2F"
+    "id": "2G"
   },
   {
     "Tên nơi đăng": [
@@ -6028,7 +6041,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b2",
-    "id": "2G"
+    "id": "2H"
   },
   {
     "Tên nơi đăng": [
@@ -6073,7 +6086,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b2",
-    "id": "2H"
+    "id": "2I"
   },
   {
     "Tên nơi đăng": [
@@ -6118,7 +6131,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b2",
-    "id": "2I"
+    "id": "2J"
   },
   {
     "Tên nơi đăng": [
@@ -6163,7 +6176,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b2",
-    "id": "2J"
+    "id": "2K"
   },
   {
     "Tên nơi đăng": [
@@ -6208,7 +6221,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b3",
-    "id": "2K"
+    "id": "2L"
   },
   {
     "Tên nơi đăng": [
@@ -6254,7 +6267,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c1",
-    "id": "2L"
+    "id": "2M"
   },
   {
     "Tên nơi đăng": [
@@ -6299,7 +6312,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c2",
-    "id": "2M"
+    "id": "2N"
   },
   {
     "Tên nơi đăng": [
@@ -6344,7 +6357,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c2",
-    "id": "2N"
+    "id": "2O"
   },
   {
     "Tên nơi đăng": [
@@ -6389,7 +6402,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c2",
-    "id": "2O"
+    "id": "2P"
   },
   {
     "Tên nơi đăng": [
@@ -6434,7 +6447,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c2",
-    "id": "2P"
+    "id": "2Q"
   },
   {
     "Tên nơi đăng": [
@@ -6479,7 +6492,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c2",
-    "id": "2Q"
+    "id": "2R"
   },
   {
     "Tên nơi đăng": [
@@ -6524,7 +6537,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c2",
-    "id": "2R"
+    "id": "2S"
   },
   {
     "Tên nơi đăng": [
@@ -6569,7 +6582,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c2",
-    "id": "2S"
+    "id": "2T"
   },
   {
     "Tên nơi đăng": [
@@ -6614,7 +6627,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#d",
-    "id": "2T"
+    "id": "2U"
   },
   {
     "Tên nơi đăng": [
@@ -6660,7 +6673,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#e",
-    "id": "2U"
+    "id": "2V"
   },
   {
     "Tên nơi đăng": [
@@ -6706,7 +6719,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#f1",
-    "id": "2V"
+    "id": "2W"
   },
   {
     "Tên nơi đăng": [
@@ -6752,7 +6765,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#f2",
-    "id": "2W"
+    "id": "2X"
   },
   {
     "Tên nơi đăng": [
@@ -6797,7 +6810,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#g",
-    "id": "2X"
+    "id": "2Y"
   },
   {
     "Tên nơi đăng": [
@@ -6842,7 +6855,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#g",
-    "id": "2Y"
+    "id": "2Z"
   },
   {
     "Tên nơi đăng": [
@@ -6887,7 +6900,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#g",
-    "id": "2Z"
+    "id": "2a"
   },
   {
     "Tên nơi đăng": [
@@ -6932,7 +6945,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#g",
-    "id": "2a"
+    "id": "2b"
   },
   {
     "Tên nơi đăng": [
@@ -6972,7 +6985,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "zalo321",
-    "id": "2b"
+    "id": "2c"
   },
   {
     "Tên nơi đăng": [
@@ -7011,7 +7024,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2c"
+    "id": "2d"
   },
   {
     "Tên nơi đăng": [
@@ -7050,7 +7063,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2d"
+    "id": "2e"
   },
   {
     "Tên nơi đăng": [
@@ -7089,7 +7102,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2e"
+    "id": "2f"
   },
   {
     "Tên nơi đăng": [
@@ -7103,7 +7116,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "cvLộc",
-    "id": "2f"
+    "id": "2g"
   },
   {
     "Tên nơi đăng": [
@@ -7131,7 +7144,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "vđqc",
-    "id": "2g"
+    "id": "2h"
   },
   {
     "Tên nơi đăng": [
@@ -7158,7 +7171,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2h"
+    "id": "2i"
   },
   {
     "Tên nơi đăng": [
@@ -7185,7 +7198,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2i"
+    "id": "2j"
   },
   {
     "Tên nơi đăng": [
@@ -7212,7 +7225,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2j"
+    "id": "2k"
   },
   {
     "Tên nơi đăng": [
@@ -7239,7 +7252,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2k"
+    "id": "2l"
   },
   {
     "Tên nơi đăng": [
@@ -7266,7 +7279,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2l"
+    "id": "2m"
   },
   {
     "Tên nơi đăng": [
@@ -7293,7 +7306,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2m"
+    "id": "2n"
   },
   {
     "Tên nơi đăng": [
@@ -7321,7 +7334,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "tồntạitrongthếgiớitưbản",
-    "id": "2n"
+    "id": "2o"
   },
   {
     "Tên nơi đăng": [
@@ -7348,7 +7361,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2o"
+    "id": "2p"
   },
   {
     "Tên nơi đăng": [
@@ -7375,7 +7388,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2p"
+    "id": "2q"
   },
   {
     "Tên nơi đăng": [
@@ -7402,7 +7415,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2q"
+    "id": "2r"
   },
   {
     "Tên nơi đăng": [
@@ -7429,7 +7442,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2r"
+    "id": "2s"
   },
   {
     "Tên nơi đăng": [
@@ -7456,7 +7469,7 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2s"
+    "id": "2t"
   },
   {
     "Tên nơi đăng": [
@@ -7479,7 +7492,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "emailQC",
-    "id": "2t"
+    "id": "2u"
   },
   {
     "Tên nơi đăng": [
@@ -7565,53 +7578,12 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": "uan",
-    "id": "2u"
-  },
-  {
-    "Tên nơi đăng": [
-      "UAN Marketing",
-      "Tự giới thiệu dịch vụ"
-    ],
-    "Loại nơi đăng": [
-      "Nhóm"
-    ],
-    "Tên nền tảng": "Telegram",
-    "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "UAN",
-    "Slug": "uan",
     "id": "2v"
   },
   {
     "Tên nơi đăng": [
       "UAN Marketing",
-      "General"
+      "Tự giới thiệu dịch vụ"
     ],
     "Loại nơi đăng": [
       "Nhóm"
@@ -7652,7 +7624,7 @@
   {
     "Tên nơi đăng": [
       "UAN Marketing",
-      "Tự giới thiệu dịch vụ"
+      "General"
     ],
     "Loại nơi đăng": [
       "Nhóm"
@@ -7693,7 +7665,7 @@
   {
     "Tên nơi đăng": [
       "UAN Marketing",
-      "General"
+      "Tự giới thiệu dịch vụ"
     ],
     "Loại nơi đăng": [
       "Nhóm"
@@ -7733,6 +7705,47 @@
   },
   {
     "Tên nơi đăng": [
+      "UAN Marketing",
+      "General"
+    ],
+    "Loại nơi đăng": [
+      "Nhóm"
+    ],
+    "Tên nền tảng": "Telegram",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "UAN",
+    "Slug": "uan",
+    "id": "2z"
+  },
+  {
+    "Tên nơi đăng": [
       "Common Good Alliance"
     ],
     "Loại nơi đăng": [
@@ -7769,6 +7782,6 @@
       ]
     ],
     "Đơn vị quản lý": "UAN",
-    "id": "2z"
+    "id": "2-"
   }
 ]
