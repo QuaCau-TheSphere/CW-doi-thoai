@@ -12,8 +12,8 @@ import {
 import { viếtHoa } from "../../Chuỗi, slug/Hàm xử lý chuỗi.ts";
 import { OrgHoặcRepoGitHub, thôngTinUrlGitHub, thôngTinUrlYouTube } from "./Diễn đàn khác.ts";
 import { MáyChủDiscord, thôngTinUrlDiscord } from "./Chat khác.ts";
-import { CơSởDữLiệuNotion, thôngTinUrlNotion, WorkspaceNotion } from "./SaaS khác.ts";
-import { kiểuKebab } from "../../Chuỗi, slug/Hàm xử lý chuỗi.ts";
+import { CơSởDữLiệuNotion, thôngTinUrlGoogle, thôngTinUrlNotion, WorkspaceNotion } from "./SaaS khác.ts";
+
 interface ThôngTinWebsiteCơBản {
   tên?: string;
   slug?: string;
@@ -57,9 +57,6 @@ function thôngTinWebsite(metaTagUrlVàDocument: MetaTagUrlVàDocument): Website
   function tạoSlugWebsite(url: URL, tênBàiĐăng: string | undefined) {
     const { pathname, hostname } = url;
     const pathnameLastSection = pathname.split("/").slice(-1)[0];
-
-    if (hostname === "docs.google.com" && pathnameLastSection === "viewform") return kiểuKebab(tênBàiĐăng);
-
     const đuôiHTML = /\.(htm|html|php)$/;
     const đuôiTậpTin = /\.(jpg|png|gif|pdf|doc|docx)$/;
     if (đuôiHTML.test(pathnameLastSection)) return pathnameLastSection.replace(đuôiHTML, "");
@@ -139,6 +136,8 @@ export function lấyThôngTinTừUrl(metaTagUrlVàDocument: MetaTagUrlVàDocume
         return thôngTinUrlDiscord(metaTagUrlVàDocument);
       case "Notion":
         return thôngTinUrlNotion(metaTagUrlVàDocument);
+      case "Google":
+        return thôngTinUrlGoogle(metaTagUrlVàDocument);
       default:
         return thôngTinWebsite(metaTagUrlVàDocument);
     }

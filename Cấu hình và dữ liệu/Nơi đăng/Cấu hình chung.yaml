@@ -169,6 +169,17 @@ Vị trí đặt liên kết ở nơi đăng:
     Loại nơi đăng: [Bài đăng]
     Danh sách vị trí: [Bài đăng]
 
+  # SaaS
+  - Loại nền tảng: SaaS
+    Tên nền tảng: Google
+    Loại nơi đăng: [Forms]
+    Danh sách vị trí: [Mô tả, Câu hỏi, Câu trả lời]
+
+  - Loại nền tảng: SaaS
+    Tên nền tảng: Google
+    Loại nơi đăng: [Spreadsheets]
+    Danh sách vị trí: [Ô, Bình luận]
+
   # Email
   - Loại nền tảng: Email
     Tên nền tảng: Email
