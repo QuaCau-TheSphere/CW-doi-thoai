@@ -6,6 +6,7 @@ import {
   lấyHTML,
   lấyURLKhôngSlashVàCóSlash,
   lấyURLTrongJSON,
+  tạoCorsURL,
   Url,
   UrlChínhTắc,
   UrlChưaChínhTắc,
@@ -27,8 +28,8 @@ export async function lấyHTMLTừLocal(urL: Url, originCủaCorsProxy: URL["or
   }
 
   if (!html || originCủaCorsProxy) {
-    const urlCorsProxy = new URL(`${originCủaCorsProxy}/api/cors-proxy/`);
-    urlCorsProxy.search = new URLSearchParams({ url: url.toString() });
+    const urlCorsProxy = tạoCorsURL(originCủaCorsProxy!);
+    urlCorsProxy.search = new URLSearchParams({ url: url.toString() }).toString();
     html = await (await fetch(urlCorsProxy)).text();
   }
   return html;
@@ -51,14 +52,14 @@ export async function lấyURLChínhTắcVàHTMLTừLocal(urL: Url, HTML: string
     /** Nếu không có cache cho URL chính tắc thì coi như cache HTML là không có */
     console.info("Không có sẵn cache URL chính tắc cho URL này");
     // html = await lấyHTMLTừLocal(url, env["ORIGIN"]);
-    html = await lấyHTMLTừLocal(url, env["CORS_PROXY"]);
+    html = await lấyHTMLTừLocal(url, env["CORS_API"]);
     urlChínhTắc = lấyURLChínhTắc(url, html);
   }
   console.log("URL chính tắc lấy được:", urlChínhTắc);
   const urlChínhTắcThật = urlChínhTắc !== "https://www.facebook.com/login/web/";
   if (!urlChínhTắcThật) {
     console.info("Facebook chặn IP này. Lấy trên CORS proxy");
-    html = await lấyHTMLTừLocal(url, env["CORS_PROXY"]);
+    html = await lấyHTMLTừLocal(url, env["CORS_API"]);
     urlChínhTắc = lấyURLChínhTắc(url, html);
   }
   if (!urlChínhTắc) {

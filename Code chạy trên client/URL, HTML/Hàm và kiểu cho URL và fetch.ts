@@ -82,12 +82,16 @@ export async function lấyHTML(url: Url) {
      * @see lấyHTMLTừCache
      */
     const origin = globalThis.location.origin;
-    urlĐểFetch = new URL(`${origin}/api/cors-proxy/`);
-    urlĐểFetch.search = new URLSearchParams({ url: url.toString() });
+    urlĐểFetch = tạoCorsURL(origin);
+    urlĐểFetch.search = new URLSearchParams({ url: url.toString() }).toString();
   } else {
     urlĐểFetch = url;
   }
   return await (await fetch(urlĐểFetch)).text();
+}
+
+export function tạoCorsURL(origin: string) {
+  return new URL(`${origin}/api/cors/`);
 }
 
 /**

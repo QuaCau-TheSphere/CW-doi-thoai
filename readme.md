@@ -46,7 +46,7 @@ DENO_KV_ACCESS_TOKEN = XXX
 KV_UUID = YYY
 
 ORIGIN = https://localhost:8000
-CORS_PROXY = https://mywebsite.deno.dev
+CORS_API = https://mywebsite.deno.dev
 ```
 
 ## Tạo dữ liệu 
