@@ -116,6 +116,7 @@
     "Lĩnh vực": [
       "Công cụ ghi chú"
     ],
+    "Slug": null,
     "id": "2"
   },
   {
@@ -211,97 +212,6 @@
   },
   {
     "Tên nơi đăng": [
-      "Obsidian - Second Brain",
-      "Não hai 🧠"
-    ],
-    "Loại nơi đăng": [
-      "Cộng đồng",
-      "Chat cộng đồng"
-    ],
-    "Tên nền tảng": "Messenger",
-    "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Lĩnh vực": [
-      "Công cụ ghi chú"
-    ],
-    "Slug": "obsvn",
-    "id": "5"
-  },
-  {
-    "Tên nơi đăng": [
-      "Obsidian",
-      "#tiếng-việt"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh thường"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Chủ đề kênh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Lĩnh vực": [
-      "Công cụ ghi chú"
-    ],
-    "Slug": "obs",
-    "id": "6"
-  },
-  {
-    "Tên nơi đăng": [
       "Cộng đồng SNPO"
     ],
     "Loại nơi đăng": [
@@ -386,7 +296,7 @@
       "Phi lợi nhuận"
     ],
     "Slug": "SNPO",
-    "id": "7"
+    "id": "5"
   },
   {
     "Tên nơi đăng": [
@@ -430,7 +340,7 @@
       "Phi lợi nhuận"
     ],
     "Slug": "SNPO",
-    "id": "8"
+    "id": "6"
   },
   {
     "Tên nơi đăng": [
@@ -474,7 +384,7 @@
       "Phi lợi nhuận"
     ],
     "Slug": "SNPO",
-    "id": "9"
+    "id": "7"
   },
   {
     "Tên nơi đăng": [
@@ -579,7 +489,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "A"
+    "id": "8"
   },
   {
     "Tên nơi đăng": [
@@ -593,7 +503,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "B"
+    "id": "9"
   },
   {
     "Tên nơi đăng": [
@@ -607,7 +517,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "ooker",
-    "id": "C"
+    "id": "A"
   },
   {
     "Tên nơi đăng": [
@@ -621,7 +531,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "ooker",
-    "id": "D"
+    "id": "B"
   },
   {
     "Tên nơi đăng": [
@@ -635,7 +545,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "E"
+    "id": "C"
   },
   {
     "Tên nơi đăng": [
@@ -649,7 +559,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "ooker",
-    "id": "F"
+    "id": "D"
   },
   {
     "Tên nơi đăng": [
@@ -663,7 +573,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "ooker",
-    "id": "G"
+    "id": "E"
   },
   {
     "Tên nơi đăng": [
@@ -677,7 +587,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "ooker",
-    "id": "H"
+    "id": "F"
   },
   {
     "Tên nơi đăng": [
@@ -691,7 +601,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "I"
+    "id": "G"
   },
   {
     "Tên nơi đăng": [
@@ -731,7 +641,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "ooker",
-    "id": "J"
+    "id": "H"
   },
   {
     "Tên nơi đăng": [
@@ -771,7 +681,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "K"
+    "id": "I"
   },
   {
     "Tên nơi đăng": [
@@ -785,7 +695,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "ooker",
-    "id": "L"
+    "id": "J"
   },
   {
     "Tên nơi đăng": [
@@ -799,7 +709,21 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "M"
+    "id": "K"
+  },
+  {
+    "Tên nơi đăng": [
+      "ooker777"
+    ],
+    "Loại nơi đăng": [
+      "Cá nhân"
+    ],
+    "Tên nền tảng": "Telegram",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Đơn vị quản lý": "Nhật",
+    "Slug": "ooker",
+    "id": "L"
   },
   {
     "Tên nơi đăng": [
@@ -813,7 +737,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "cv",
-    "id": "N"
+    "id": "M"
   },
   {
     "Tên nơi đăng": [
@@ -841,7 +765,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "O"
+    "id": "N"
   },
   {
     "Tên nơi đăng": [
@@ -868,7 +792,8 @@
       ]
     ],
     "Đơn vị quản lý": "Nhật",
-    "id": "P"
+    "Slug": null,
+    "id": "O"
   },
   {
     "Tên nơi đăng": [
@@ -891,7 +816,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "ganu",
-    "id": "Q"
+    "id": "P"
   },
   {
     "Tên nơi đăng": [
@@ -914,7 +839,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "R"
+    "id": "Q"
   },
   {
     "Tên nơi đăng": [
@@ -1000,7 +925,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "chimsáo",
-    "id": "S"
+    "id": "R"
   },
   {
     "Tên nơi đăng": [
@@ -1086,7 +1011,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "vđqc",
-    "id": "T"
+    "id": "S"
   },
   {
     "Tên nơi đăng": [
@@ -1172,7 +1097,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "bpd",
-    "id": "U"
+    "id": "T"
   },
   {
     "Tên nơi đăng": [
@@ -1258,7 +1183,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "triếtphươngđông",
-    "id": "V"
+    "id": "U"
   },
   {
     "Tên nơi đăng": [
@@ -1344,7 +1269,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "nhậnthứcphứchợp",
-    "id": "W"
+    "id": "V"
   },
   {
     "Tên nơi đăng": [
@@ -1430,7 +1355,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "giácquankèm",
-    "id": "X"
+    "id": "W"
   },
   {
     "Tên nơi đăng": [
@@ -1536,7 +1461,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "pagefbQC",
-    "id": "Y"
+    "id": "X"
   },
   {
     "Tên nơi đăng": [
@@ -1641,7 +1566,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "Z"
+    "Slug": null,
+    "id": "Y"
   },
   {
     "Tên nơi đăng": [
@@ -1654,7 +1580,8 @@
     "Loại nền tảng": "Diễn đàn",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "a"
+    "Slug": null,
+    "id": "Z"
   },
   {
     "Tên nơi đăng": [
@@ -1692,7 +1619,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "b"
+    "Slug": null,
+    "id": "a"
   },
   {
     "Tên nơi đăng": [
@@ -1720,7 +1648,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "c"
+    "Slug": null,
+    "id": "b"
   },
   {
     "Tên nơi đăng": [
@@ -1748,7 +1677,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "d"
+    "Slug": null,
+    "id": "c"
   },
   {
     "Tên nơi đăng": [
@@ -1776,7 +1706,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "e"
+    "Slug": null,
+    "id": "d"
   },
   {
     "Tên nơi đăng": [
@@ -1804,7 +1735,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "f"
+    "Slug": null,
+    "id": "e"
   },
   {
     "Tên nơi đăng": [
@@ -1832,7 +1764,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "g"
+    "Slug": null,
+    "id": "f"
   },
   {
     "Tên nơi đăng": [
@@ -1860,7 +1793,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "h"
+    "Slug": null,
+    "id": "g"
   },
   {
     "Tên nơi đăng": [
@@ -1888,7 +1822,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "i"
+    "Slug": null,
+    "id": "h"
   },
   {
     "Tên nơi đăng": [
@@ -1916,7 +1851,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "j"
+    "Slug": null,
+    "id": "i"
   },
   {
     "Tên nơi đăng": [
@@ -1944,7 +1880,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "k"
+    "Slug": null,
+    "id": "j"
   },
   {
     "Tên nơi đăng": [
@@ -1972,7 +1909,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "l"
+    "Slug": null,
+    "id": "k"
   },
   {
     "Tên nơi đăng": [
@@ -2000,7 +1938,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "m"
+    "Slug": null,
+    "id": "l"
   },
   {
     "Tên nơi đăng": [
@@ -2028,7 +1967,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "n"
+    "Slug": null,
+    "id": "m"
   },
   {
     "Tên nơi đăng": [
@@ -2056,7 +1996,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "o"
+    "Slug": null,
+    "id": "n"
   },
   {
     "Tên nơi đăng": [
@@ -2084,7 +2025,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "p"
+    "Slug": null,
+    "id": "o"
   },
   {
     "Tên nơi đăng": [
@@ -2112,7 +2054,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "q"
+    "Slug": null,
+    "id": "p"
   },
   {
     "Tên nơi đăng": [
@@ -2140,7 +2083,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "r"
+    "Slug": null,
+    "id": "q"
   },
   {
     "Tên nơi đăng": [
@@ -2168,7 +2112,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "s"
+    "Slug": null,
+    "id": "r"
   },
   {
     "Tên nơi đăng": [
@@ -2196,7 +2141,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "t"
+    "Slug": null,
+    "id": "s"
   },
   {
     "Tên nơi đăng": [
@@ -2224,7 +2170,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "u"
+    "Slug": null,
+    "id": "t"
   },
   {
     "Tên nơi đăng": [
@@ -2252,7 +2199,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "v"
+    "Slug": null,
+    "id": "u"
   },
   {
     "Tên nơi đăng": [
@@ -2280,7 +2228,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "w"
+    "Slug": null,
+    "id": "v"
   },
   {
     "Tên nơi đăng": [
@@ -2308,7 +2257,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "x"
+    "Slug": null,
+    "id": "w"
   },
   {
     "Tên nơi đăng": [
@@ -2336,7 +2286,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "y"
+    "Slug": null,
+    "id": "x"
   },
   {
     "Tên nơi đăng": [
@@ -2364,7 +2315,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "z"
+    "Slug": null,
+    "id": "y"
   },
   {
     "Tên nơi đăng": [
@@ -2406,7 +2358,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "bpd",
-    "id": "-"
+    "id": "z"
   },
   {
     "Tên nơi đăng": [
@@ -2448,7 +2400,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "triếtphươngđông",
-    "id": "_"
+    "id": "-"
   },
   {
     "Tên nơi đăng": [
@@ -2490,7 +2442,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "nhậnthứcphứchợp",
-    "id": "10"
+    "id": "_"
   },
   {
     "Tên nơi đăng": [
@@ -2536,7 +2488,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#a",
-    "id": "11"
+    "id": "10"
   },
   {
     "Tên nơi đăng": [
@@ -2582,13 +2534,58 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b1",
-    "id": "12"
+    "id": "11"
   },
   {
     "Tên nơi đăng": [
       "Quả Cầu",
       "#b-nhu-cầu-thường-gặp",
       "Kiếm tiền nhanh"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh diễn đàn",
+      "Bài diễn đàn"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "URL": "https://discord.gg/jWTk4EHFK2",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "Quả Cầu",
+    "Slug": "discordQC#b2",
+    "id": "12"
+  },
+  {
+    "Tên nơi đăng": [
+      "Quả Cầu",
+      "#b-nhu-cầu-thường-gặp",
+      "Tự trị dữ liệu"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -2633,7 +2630,7 @@
     "Tên nơi đăng": [
       "Quả Cầu",
       "#b-nhu-cầu-thường-gặp",
-      "Tự trị dữ liệu"
+      "Có người dành thời gian hỗ trợ"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -2678,7 +2675,7 @@
     "Tên nơi đăng": [
       "Quả Cầu",
       "#b-nhu-cầu-thường-gặp",
-      "Có người dành thời gian hỗ trợ"
+      "Đầu tư, thu nhập thụ động"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -2723,7 +2720,7 @@
     "Tên nơi đăng": [
       "Quả Cầu",
       "#b-nhu-cầu-thường-gặp",
-      "Đầu tư, thu nhập thụ động"
+      "Tụ họp"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -2768,7 +2765,7 @@
     "Tên nơi đăng": [
       "Quả Cầu",
       "#b-nhu-cầu-thường-gặp",
-      "Tụ họp"
+      "Sức khoẻ"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -2813,7 +2810,7 @@
     "Tên nơi đăng": [
       "Quả Cầu",
       "#b-nhu-cầu-thường-gặp",
-      "Sức khoẻ"
+      "Thị trường tài chính"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -2858,7 +2855,7 @@
     "Tên nơi đăng": [
       "Quả Cầu",
       "#b-nhu-cầu-thường-gặp",
-      "Thị trường tài chính"
+      "Đồ đạc"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -2903,7 +2900,7 @@
     "Tên nơi đăng": [
       "Quả Cầu",
       "#b-nhu-cầu-thường-gặp",
-      "Đồ đạc"
+      "Kho lưu trữ dung lượng lớn"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -2948,7 +2945,7 @@
     "Tên nơi đăng": [
       "Quả Cầu",
       "#b-nhu-cầu-thường-gặp",
-      "Kho lưu trữ dung lượng lớn"
+      "Làm cha mẹ"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -2993,7 +2990,7 @@
     "Tên nơi đăng": [
       "Quả Cầu",
       "#b-nhu-cầu-thường-gặp",
-      "Làm cha mẹ"
+      "Ăn uống"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -3038,51 +3035,6 @@
     "Tên nơi đăng": [
       "Quả Cầu",
       "#b-nhu-cầu-thường-gặp",
-      "Ăn uống"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "1D"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
       "Nơi chốn"
     ],
     "Loại nơi đăng": [
@@ -3122,7 +3074,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b2",
-    "id": "1E"
+    "id": "1D"
   },
   {
     "Tên nơi đăng": [
@@ -3167,7 +3119,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b3",
-    "id": "1F"
+    "id": "1E"
   },
   {
     "Tên nơi đăng": [
@@ -3213,13 +3165,58 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c1",
-    "id": "1G"
+    "id": "1F"
   },
   {
     "Tên nơi đăng": [
       "Quả Cầu",
       "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ",
       "Các buổi đáp ứng nhu cầu học lập trình hoặc quản lý dự án"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh diễn đàn",
+      "Bài diễn đàn"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "URL": "https://discord.gg/jWTk4EHFK2",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "Quả Cầu",
+    "Slug": "discordQC#c2",
+    "id": "1G"
+  },
+  {
+    "Tên nơi đăng": [
+      "Quả Cầu",
+      "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ",
+      "Tạo liên kết tiếp thị và báo cáo lượng truy cập"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -3264,7 +3261,7 @@
     "Tên nơi đăng": [
       "Quả Cầu",
       "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ",
-      "Tạo liên kết tiếp thị và báo cáo lượng truy cập"
+      "Quản lý chi tiêu cá nhân. Tạo hạch toán kế toán và báo công nợ tự động"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -3309,7 +3306,7 @@
     "Tên nơi đăng": [
       "Quả Cầu",
       "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ",
-      "Quản lý chi tiêu cá nhân. Tạo hạch toán kế toán và báo công nợ tự động"
+      "Quản lý công việc, quản lý tổ chức"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -3354,7 +3351,7 @@
     "Tên nơi đăng": [
       "Quả Cầu",
       "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ",
-      "Quản lý công việc, quản lý tổ chức"
+      "Tự động hoá"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -3399,7 +3396,7 @@
     "Tên nơi đăng": [
       "Quả Cầu",
       "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ",
-      "Tự động hoá"
+      "Tạo plugin"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -3444,51 +3441,6 @@
     "Tên nơi đăng": [
       "Quả Cầu",
       "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ",
-      "Tạo plugin"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#c2",
-    "id": "1M"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ",
       "Tổng hợp những sự kiện sẽ diễn ra"
     ],
     "Loại nơi đăng": [
@@ -3528,7 +3480,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c2",
-    "id": "1N"
+    "id": "1M"
   },
   {
     "Tên nơi đăng": [
@@ -3573,7 +3525,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#d",
-    "id": "1O"
+    "id": "1N"
   },
   {
     "Tên nơi đăng": [
@@ -3619,7 +3571,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#e",
-    "id": "1P"
+    "id": "1O"
   },
   {
     "Tên nơi đăng": [
@@ -3665,7 +3617,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#f1",
-    "id": "1Q"
+    "id": "1P"
   },
   {
     "Tên nơi đăng": [
@@ -3711,13 +3663,58 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#f2",
-    "id": "1R"
+    "id": "1Q"
   },
   {
     "Tên nơi đăng": [
       "Quả Cầu",
       "#g-nghiên-cứu-liên-ngành",
       "Dịch thuật"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh diễn đàn",
+      "Bài diễn đàn"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "URL": "https://discord.gg/jWTk4EHFK2",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "Quả Cầu",
+    "Slug": "discordQC#g",
+    "id": "1R"
+  },
+  {
+    "Tên nơi đăng": [
+      "Quả Cầu",
+      "#g-nghiên-cứu-liên-ngành",
+      "Lý tính, khoa học, diễn ngôn"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -3762,7 +3759,7 @@
     "Tên nơi đăng": [
       "Quả Cầu",
       "#g-nghiên-cứu-liên-ngành",
-      "Lý tính, khoa học, diễn ngôn"
+      "Khoa học sự sống, khoa học nhận thức, khoa học phức hợp"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -3807,7 +3804,7 @@
     "Tên nơi đăng": [
       "Quả Cầu",
       "#g-nghiên-cứu-liên-ngành",
-      "Khoa học sự sống, khoa học nhận thức, khoa học phức hợp"
+      "Vật lý"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -3850,51 +3847,6 @@
   },
   {
     "Tên nơi đăng": [
-      "Quả Cầu",
-      "#g-nghiên-cứu-liên-ngành",
-      "Vật lý"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#g",
-    "id": "1V"
-  },
-  {
-    "Tên nơi đăng": [
       "Hoàng Thu Trang"
     ],
     "Loại nơi đăng": [
@@ -3904,1534 +3856,8 @@
     "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "1W"
-  },
-  {
-    "Tên nơi đăng": [
-      "Rối loạn nhân cách tâm trạng không ổn định - BPD",
-      "Đoạn chat chung"
-    ],
-    "Loại nơi đăng": [
-      "Cộng đồng",
-      "Chat cộng đồng"
-    ],
-    "Tên nền tảng": "Messenger",
-    "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "bpd",
-    "id": "1X"
-  },
-  {
-    "Tên nơi đăng": [
-      "Nghiên cứu triết học phương Đông",
-      "Đoạn chat chung"
-    ],
-    "Loại nơi đăng": [
-      "Cộng đồng",
-      "Chat cộng đồng"
-    ],
-    "Tên nền tảng": "Messenger",
-    "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "triếtphươngđông",
-    "id": "1Y"
-  },
-  {
-    "Tên nơi đăng": [
-      "Khoa học nhận thức. Khoa học phức hợp",
-      "Đoạn chat chung"
-    ],
-    "Loại nơi đăng": [
-      "Cộng đồng",
-      "Chat cộng đồng"
-    ],
-    "Tên nền tảng": "Messenger",
-    "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "nhậnthứcphứchợp",
-    "id": "1Z"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#a-vùng-đất-quả-cầu"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh thường"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Chủ đề kênh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#a",
-    "id": "1a"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nền-kinh-tế-không-dùng-tiền"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh thường"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Chủ đề kênh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b1",
-    "id": "1b"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Kiếm tiền nhanh"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "1c"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Tự trị dữ liệu"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "1d"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Có người dành thời gian hỗ trợ"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "1e"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Đầu tư, thu nhập thụ động"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "1f"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Tụ họp"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "1g"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Sức khoẻ"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "1h"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Thị trường tài chính"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "1i"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Đồ đạc"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "1j"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Kho lưu trữ dung lượng lớn"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "1k"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Làm cha mẹ"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "1l"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Ăn uống"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "1m"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Nơi chốn"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "1n"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-sự-kiện-cơ-hội-tuyển-dụng-rao-vặt",
-      "Làm đại lý bảo hiểm"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b3",
-    "id": "1o"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#c-hệ-thống-tri-thức-cộng-đồng"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh thường"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Chủ đề kênh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#c1",
-    "id": "1p"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ",
-      "Các buổi đáp ứng nhu cầu học lập trình hoặc quản lý dự án"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#c2",
-    "id": "1q"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ",
-      "Tạo liên kết tiếp thị và báo cáo lượng truy cập"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#c2",
-    "id": "1r"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ",
-      "Quản lý chi tiêu cá nhân. Tạo hạch toán kế toán và báo công nợ tự động"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#c2",
-    "id": "1s"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ",
-      "Quản lý công việc, quản lý tổ chức"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#c2",
-    "id": "1t"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ",
-      "Tự động hoá"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#c2",
-    "id": "1u"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ",
-      "Tạo plugin"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#c2",
-    "id": "1v"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ",
-      "Tổng hợp những sự kiện sẽ diễn ra"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#c2",
-    "id": "1w"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#d-phát-triển-bản-thân-học-kỹ-năng",
-      "Học tiếng Anh"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#d",
-    "id": "1x"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#e-mạng-lưới-người-thân-bạn-bè-của-người-có-niềm-tin-tiêu-cực"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh thường"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Chủ đề kênh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#e",
-    "id": "1y"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#f-cùng-suy-tư"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh thường"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Chủ đề kênh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#f1",
-    "id": "1z"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#f-tạo-môi-trường-thúc-đẩy-sự-đối-thoại-và-khoẻ-mạnh"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh thường"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Chủ đề kênh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#f2",
-    "id": "1-"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#g-nghiên-cứu-liên-ngành",
-      "Dịch thuật"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#g",
-    "id": "1_"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#g-nghiên-cứu-liên-ngành",
-      "Lý tính, khoa học, diễn ngôn"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#g",
-    "id": "20"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#g-nghiên-cứu-liên-ngành",
-      "Khoa học sự sống, khoa học nhận thức, khoa học phức hợp"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#g",
-    "id": "21"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#g-nghiên-cứu-liên-ngành",
-      "Vật lý"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#g",
-    "id": "22"
+    "Slug": null,
+    "id": "1V"
   },
   {
     "Tên nơi đăng": [
@@ -5470,1534 +3896,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "23"
-  },
-  {
-    "Tên nơi đăng": [
-      "Rối loạn nhân cách tâm trạng không ổn định - BPD",
-      "Đoạn chat chung"
-    ],
-    "Loại nơi đăng": [
-      "Cộng đồng",
-      "Chat cộng đồng"
-    ],
-    "Tên nền tảng": "Messenger",
-    "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "bpd",
-    "id": "24"
-  },
-  {
-    "Tên nơi đăng": [
-      "Nghiên cứu triết học phương Đông",
-      "Đoạn chat chung"
-    ],
-    "Loại nơi đăng": [
-      "Cộng đồng",
-      "Chat cộng đồng"
-    ],
-    "Tên nền tảng": "Messenger",
-    "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "triếtphươngđông",
-    "id": "25"
-  },
-  {
-    "Tên nơi đăng": [
-      "Khoa học nhận thức. Khoa học phức hợp",
-      "Đoạn chat chung"
-    ],
-    "Loại nơi đăng": [
-      "Cộng đồng",
-      "Chat cộng đồng"
-    ],
-    "Tên nền tảng": "Messenger",
-    "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "nhậnthứcphứchợp",
-    "id": "26"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#a-vùng-đất-quả-cầu"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh thường"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Chủ đề kênh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#a",
-    "id": "27"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nền-kinh-tế-không-dùng-tiền"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh thường"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Chủ đề kênh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b1",
-    "id": "28"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Kiếm tiền nhanh"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "29"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Tự trị dữ liệu"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "2A"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Có người dành thời gian hỗ trợ"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "2B"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Đầu tư, thu nhập thụ động"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "2C"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Tụ họp"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "2D"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Sức khoẻ"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "2E"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Thị trường tài chính"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "2F"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Đồ đạc"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "2G"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Kho lưu trữ dung lượng lớn"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "2H"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Làm cha mẹ"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "2I"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Ăn uống"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "2J"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-nhu-cầu-thường-gặp",
-      "Nơi chốn"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b2",
-    "id": "2K"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#b-sự-kiện-cơ-hội-tuyển-dụng-rao-vặt",
-      "Làm đại lý bảo hiểm"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#b3",
-    "id": "2L"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#c-hệ-thống-tri-thức-cộng-đồng"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh thường"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Chủ đề kênh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#c1",
-    "id": "2M"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ",
-      "Các buổi đáp ứng nhu cầu học lập trình hoặc quản lý dự án"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#c2",
-    "id": "2N"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ",
-      "Tạo liên kết tiếp thị và báo cáo lượng truy cập"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#c2",
-    "id": "2O"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ",
-      "Quản lý chi tiêu cá nhân. Tạo hạch toán kế toán và báo công nợ tự động"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#c2",
-    "id": "2P"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ",
-      "Quản lý công việc, quản lý tổ chức"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#c2",
-    "id": "2Q"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ",
-      "Tự động hoá"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#c2",
-    "id": "2R"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ",
-      "Tạo plugin"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#c2",
-    "id": "2S"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#c-nhu-cầu-công-việc-và-nhu-cầu-công-nghệ",
-      "Tổng hợp những sự kiện sẽ diễn ra"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#c2",
-    "id": "2T"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#d-phát-triển-bản-thân-học-kỹ-năng",
-      "Học tiếng Anh"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#d",
-    "id": "2U"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#e-mạng-lưới-người-thân-bạn-bè-của-người-có-niềm-tin-tiêu-cực"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh thường"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Chủ đề kênh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#e",
-    "id": "2V"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#f-cùng-suy-tư"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh thường"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Chủ đề kênh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#f1",
-    "id": "2W"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#f-tạo-môi-trường-thúc-đẩy-sự-đối-thoại-và-khoẻ-mạnh"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh thường"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Chủ đề kênh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#f2",
-    "id": "2X"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#g-nghiên-cứu-liên-ngành",
-      "Dịch thuật"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#g",
-    "id": "2Y"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#g-nghiên-cứu-liên-ngành",
-      "Lý tính, khoa học, diễn ngôn"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#g",
-    "id": "2Z"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#g-nghiên-cứu-liên-ngành",
-      "Khoa học sự sống, khoa học nhận thức, khoa học phức hợp"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#g",
-    "id": "2a"
-  },
-  {
-    "Tên nơi đăng": [
-      "Quả Cầu",
-      "#g-nghiên-cứu-liên-ngành",
-      "Vật lý"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh diễn đàn",
-      "Bài diễn đàn"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "URL": "https://discord.gg/jWTk4EHFK2",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "Quả Cầu",
-    "Slug": "discordQC#g",
-    "id": "2b"
+    "Slug": null,
+    "id": "1W"
   },
   {
     "Tên nơi đăng": [
@@ -7037,7 +3937,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "zalo321",
-    "id": "2c"
+    "id": "1X"
   },
   {
     "Tên nơi đăng": [
@@ -7076,7 +3976,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2d"
+    "Slug": null,
+    "id": "1Y"
   },
   {
     "Tên nơi đăng": [
@@ -7115,7 +4016,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2e"
+    "Slug": null,
+    "id": "1Z"
   },
   {
     "Tên nơi đăng": [
@@ -7154,7 +4056,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2f"
+    "Slug": null,
+    "id": "1a"
   },
   {
     "Tên nơi đăng": [
@@ -7168,7 +4071,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "cvLộc",
-    "id": "2g"
+    "id": "1b"
   },
   {
     "Tên nơi đăng": [
@@ -7196,7 +4099,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "vđqc",
-    "id": "2h"
+    "id": "1c"
   },
   {
     "Tên nơi đăng": [
@@ -7223,7 +4126,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2i"
+    "Slug": null,
+    "id": "1d"
   },
   {
     "Tên nơi đăng": [
@@ -7250,7 +4154,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2j"
+    "Slug": null,
+    "id": "1e"
   },
   {
     "Tên nơi đăng": [
@@ -7277,7 +4182,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2k"
+    "Slug": null,
+    "id": "1f"
   },
   {
     "Tên nơi đăng": [
@@ -7304,7 +4210,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2l"
+    "Slug": null,
+    "id": "1g"
   },
   {
     "Tên nơi đăng": [
@@ -7331,7 +4238,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2m"
+    "Slug": null,
+    "id": "1h"
   },
   {
     "Tên nơi đăng": [
@@ -7358,7 +4266,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2n"
+    "Slug": null,
+    "id": "1i"
   },
   {
     "Tên nơi đăng": [
@@ -7386,7 +4295,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "tồntạitrongthếgiớitưbản",
-    "id": "2o"
+    "id": "1j"
   },
   {
     "Tên nơi đăng": [
@@ -7413,7 +4322,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2p"
+    "Slug": null,
+    "id": "1k"
   },
   {
     "Tên nơi đăng": [
@@ -7440,7 +4350,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2q"
+    "Slug": null,
+    "id": "1l"
   },
   {
     "Tên nơi đăng": [
@@ -7467,7 +4378,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2r"
+    "Slug": null,
+    "id": "1m"
   },
   {
     "Tên nơi đăng": [
@@ -7494,7 +4406,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2s"
+    "Slug": null,
+    "id": "1n"
   },
   {
     "Tên nơi đăng": [
@@ -7521,7 +4434,8 @@
       ]
     ],
     "Đơn vị quản lý": "Quả Cầu",
-    "id": "2t"
+    "Slug": null,
+    "id": "1o"
   },
   {
     "Tên nơi đăng": [
@@ -7544,7 +4458,113 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "emailQC",
-    "id": "2u"
+    "id": "1p"
+  },
+  {
+    "Tên nơi đăng": [
+      "Bui Quang Tinh Tu"
+    ],
+    "Loại nơi đăng": [
+      "Tài khoản"
+    ],
+    "Tên nền tảng": "Facebook",
+    "Loại nền tảng": "Diễn đàn",
+    "URL": "https://fb.com/buiquangtinhtu",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Album ảnh",
+        "Mô tả album"
+      ],
+      [
+        "Album ảnh",
+        "Bình luận"
+      ],
+      [
+        "Video",
+        "Mô tả video"
+      ],
+      [
+        "Video",
+        "QR trong video"
+      ],
+      [
+        "Video",
+        "Chữ trong video"
+      ],
+      [
+        "Video",
+        "Bình luận"
+      ],
+      [
+        "Bio"
+      ],
+      [
+        "About"
+      ],
+      [
+        "Website"
+      ],
+      [
+        "Ảnh đại diện",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "Bình luận"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Bài ghim",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Bài ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "UAN",
+    "Slug": null,
+    "id": "1q"
   },
   {
     "Tên nơi đăng": [
@@ -7555,6 +4575,7 @@
     ],
     "Tên nền tảng": "Facebook",
     "Loại nền tảng": "Diễn đàn",
+    "URL": "https://www.facebook.com/groups/uanvn/",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
@@ -7629,8 +4650,819 @@
       ]
     ],
     "Đơn vị quản lý": "UAN",
-    "Slug": "uan",
-    "id": "2v"
+    "Slug": null,
+    "id": "1r"
+  },
+  {
+    "Tên nơi đăng": [
+      "DigiFin - Cộng Đồng Tài Chính Doanh Nghiệp"
+    ],
+    "Loại nơi đăng": [
+      "Nhóm"
+    ],
+    "Tên nền tảng": "Facebook",
+    "Loại nền tảng": "Diễn đàn",
+    "URL": "https://www.facebook.com/groups/digifin",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Album ảnh",
+        "Mô tả album"
+      ],
+      [
+        "Album ảnh",
+        "Bình luận"
+      ],
+      [
+        "Video",
+        "Mô tả video"
+      ],
+      [
+        "Video",
+        "QR trong video"
+      ],
+      [
+        "Video",
+        "Chữ trong video"
+      ],
+      [
+        "Video",
+        "Bình luận"
+      ],
+      [
+        "About"
+      ],
+      [
+        "Câu hỏi xét thành viên"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Bài ghim",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Bài ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "UAN",
+    "Slug": null,
+    "id": "1s"
+  },
+  {
+    "Tên nơi đăng": [
+      "EDU★INFLUENCE - Cộng Đồng Cải Tiến Giáo Dục"
+    ],
+    "Loại nơi đăng": [
+      "Nhóm"
+    ],
+    "Tên nền tảng": "Facebook",
+    "Loại nền tảng": "Diễn đàn",
+    "URL": "https://www.facebook.com/groups/eduinfluence",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Album ảnh",
+        "Mô tả album"
+      ],
+      [
+        "Album ảnh",
+        "Bình luận"
+      ],
+      [
+        "Video",
+        "Mô tả video"
+      ],
+      [
+        "Video",
+        "QR trong video"
+      ],
+      [
+        "Video",
+        "Chữ trong video"
+      ],
+      [
+        "Video",
+        "Bình luận"
+      ],
+      [
+        "About"
+      ],
+      [
+        "Câu hỏi xét thành viên"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Bài ghim",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Bài ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "UAN",
+    "Slug": null,
+    "id": "1t"
+  },
+  {
+    "Tên nơi đăng": [
+      "Người Hướng Nội Hiện Đại"
+    ],
+    "Loại nơi đăng": [
+      "Nhóm"
+    ],
+    "Tên nền tảng": "Facebook",
+    "Loại nền tảng": "Diễn đàn",
+    "URL": "https://www.facebook.com/groups/huongnoihiendai",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Album ảnh",
+        "Mô tả album"
+      ],
+      [
+        "Album ảnh",
+        "Bình luận"
+      ],
+      [
+        "Video",
+        "Mô tả video"
+      ],
+      [
+        "Video",
+        "QR trong video"
+      ],
+      [
+        "Video",
+        "Chữ trong video"
+      ],
+      [
+        "Video",
+        "Bình luận"
+      ],
+      [
+        "About"
+      ],
+      [
+        "Câu hỏi xét thành viên"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Bài ghim",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Bài ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "UAN",
+    "Slug": null,
+    "id": "1u"
+  },
+  {
+    "Tên nơi đăng": [
+      "Mẹ Đơn Thân Vui Vẻ"
+    ],
+    "Loại nơi đăng": [
+      "Nhóm"
+    ],
+    "Tên nền tảng": "Facebook",
+    "Loại nền tảng": "Diễn đàn",
+    "URL": "https://www.facebook.com/groups/medonthantainhat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Album ảnh",
+        "Mô tả album"
+      ],
+      [
+        "Album ảnh",
+        "Bình luận"
+      ],
+      [
+        "Video",
+        "Mô tả video"
+      ],
+      [
+        "Video",
+        "QR trong video"
+      ],
+      [
+        "Video",
+        "Chữ trong video"
+      ],
+      [
+        "Video",
+        "Bình luận"
+      ],
+      [
+        "About"
+      ],
+      [
+        "Câu hỏi xét thành viên"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Bài ghim",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Bài ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "UAN",
+    "Slug": null,
+    "id": "1v"
+  },
+  {
+    "Tên nơi đăng": [
+      "Edu Influence"
+    ],
+    "Loại nơi đăng": [
+      "Trang"
+    ],
+    "Tên nền tảng": "Facebook",
+    "Loại nền tảng": "Diễn đàn",
+    "URL": "https://www.facebook.com/eduinfluence.official",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Album ảnh",
+        "Mô tả album"
+      ],
+      [
+        "Album ảnh",
+        "Bình luận"
+      ],
+      [
+        "Video",
+        "Mô tả video"
+      ],
+      [
+        "Video",
+        "QR trong video"
+      ],
+      [
+        "Video",
+        "Chữ trong video"
+      ],
+      [
+        "Video",
+        "Bình luận"
+      ],
+      [
+        "Bio"
+      ],
+      [
+        "About"
+      ],
+      [
+        "Website"
+      ],
+      [
+        "Ảnh đại diện",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "Bình luận"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Bài ghim",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Bài ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "UAN",
+    "Slug": null,
+    "id": "1w"
+  },
+  {
+    "Tên nơi đăng": [
+      "UAN Marketing"
+    ],
+    "Loại nơi đăng": [
+      "Trang"
+    ],
+    "Tên nền tảng": "Facebook",
+    "Loại nền tảng": "Diễn đàn",
+    "URL": "https://www.facebook.com/uanvietnam",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Album ảnh",
+        "Mô tả album"
+      ],
+      [
+        "Album ảnh",
+        "Bình luận"
+      ],
+      [
+        "Video",
+        "Mô tả video"
+      ],
+      [
+        "Video",
+        "QR trong video"
+      ],
+      [
+        "Video",
+        "Chữ trong video"
+      ],
+      [
+        "Video",
+        "Bình luận"
+      ],
+      [
+        "Bio"
+      ],
+      [
+        "About"
+      ],
+      [
+        "Website"
+      ],
+      [
+        "Ảnh đại diện",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "Bình luận"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Bài ghim",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Bài ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "UAN",
+    "Slug": null,
+    "id": "1x"
+  },
+  {
+    "Tên nơi đăng": [
+      "DigiFin"
+    ],
+    "Loại nơi đăng": [
+      "Trang"
+    ],
+    "Tên nền tảng": "Facebook",
+    "Loại nền tảng": "Diễn đàn",
+    "URL": "https://www.facebook.com/digifin.official",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Album ảnh",
+        "Mô tả album"
+      ],
+      [
+        "Album ảnh",
+        "Bình luận"
+      ],
+      [
+        "Video",
+        "Mô tả video"
+      ],
+      [
+        "Video",
+        "QR trong video"
+      ],
+      [
+        "Video",
+        "Chữ trong video"
+      ],
+      [
+        "Video",
+        "Bình luận"
+      ],
+      [
+        "Bio"
+      ],
+      [
+        "About"
+      ],
+      [
+        "Website"
+      ],
+      [
+        "Ảnh đại diện",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "Bình luận"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Bài ghim",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Bài ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "UAN",
+    "Slug": null,
+    "id": "1y"
+  },
+  {
+    "Tên nơi đăng": [
+      "The Modern Introvert - Người Hướng Nội Hiện Đại"
+    ],
+    "Loại nơi đăng": [
+      "Trang"
+    ],
+    "Tên nền tảng": "Facebook",
+    "Loại nền tảng": "Diễn đàn",
+    "URL": "https://www.facebook.com/huongnoihiendai",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Album ảnh",
+        "Mô tả album"
+      ],
+      [
+        "Album ảnh",
+        "Bình luận"
+      ],
+      [
+        "Video",
+        "Mô tả video"
+      ],
+      [
+        "Video",
+        "QR trong video"
+      ],
+      [
+        "Video",
+        "Chữ trong video"
+      ],
+      [
+        "Video",
+        "Bình luận"
+      ],
+      [
+        "Bio"
+      ],
+      [
+        "About"
+      ],
+      [
+        "Website"
+      ],
+      [
+        "Ảnh đại diện",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh đại diện",
+        "Bình luận"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Bài ghim",
+        "Bình luận"
+      ],
+      [
+        "Bài ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Bài ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "UAN",
+    "Slug": null,
+    "id": "1z"
+  },
+  {
+    "Tên nơi đăng": [
+      "UAN Marketing"
+    ],
+    "Loại nơi đăng": [
+      "Kênh"
+    ],
+    "Tên nền tảng": "YouTube",
+    "Loại nền tảng": "Diễn đàn",
+    "URL": "https://www.youtube.com/@UANMarketing",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "About"
+      ],
+      [
+        "Links"
+      ],
+      [
+        "Ảnh bìa",
+        "Mô tả ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "QR trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Ảnh bìa",
+        "Bình luận"
+      ]
+    ],
+    "Đơn vị quản lý": "UAN",
+    "Slug": null,
+    "id": "1-"
   },
   {
     "Tên nơi đăng": [
@@ -7642,6 +5474,7 @@
     ],
     "Tên nền tảng": "Telegram",
     "Loại nền tảng": "Chat",
+    "URL": "https://t.me/uan_mkt/864",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
@@ -7670,8 +5503,8 @@
       ]
     ],
     "Đơn vị quản lý": "UAN",
-    "Slug": "uan",
-    "id": "2w"
+    "Slug": null,
+    "id": "1_"
   },
   {
     "Tên nơi đăng": [
@@ -7683,6 +5516,7 @@
     ],
     "Tên nền tảng": "Telegram",
     "Loại nền tảng": "Chat",
+    "URL": "https://t.me/uan_mkt/1",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
@@ -7711,90 +5545,8 @@
       ]
     ],
     "Đơn vị quản lý": "UAN",
-    "Slug": "uan",
-    "id": "2x"
-  },
-  {
-    "Tên nơi đăng": [
-      "UAN Marketing",
-      "Tự giới thiệu dịch vụ"
-    ],
-    "Loại nơi đăng": [
-      "Nhóm"
-    ],
-    "Tên nền tảng": "Telegram",
-    "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "UAN",
-    "Slug": "uan",
-    "id": "2y"
-  },
-  {
-    "Tên nơi đăng": [
-      "UAN Marketing",
-      "General"
-    ],
-    "Loại nơi đăng": [
-      "Nhóm"
-    ],
-    "Tên nền tảng": "Telegram",
-    "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Đơn vị quản lý": "UAN",
-    "Slug": "uan",
-    "id": "2z"
+    "Slug": null,
+    "id": "20"
   },
   {
     "Tên nơi đăng": [
@@ -7834,6 +5586,64 @@
       ]
     ],
     "Đơn vị quản lý": "UAN",
-    "id": "2-"
+    "Slug": null,
+    "id": "21"
+  },
+  {
+    "Tên nơi đăng": [
+      "Social Impact Member Group"
+    ],
+    "Loại nơi đăng": [
+      "Nhóm"
+    ],
+    "Tên nền tảng": "Messenger",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Đơn vị quản lý": "UAN",
+    "Slug": null,
+    "id": "22"
+  },
+  {
+    "Tên nơi đăng": [
+      "Community Registration Form"
+    ],
+    "Loại nơi đăng": [
+      "Form"
+    ],
+    "Tên nền tảng": "Google",
+    "Loại nền tảng": "SaaS",
+    "URL": "https://docs.google.com/forms/d/e/1FAIpQLSeT6QlGtAtTknBInCT6nmxRJLEm1S_jU6Fb30ub9JsYAQZknw/viewform",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Đơn vị quản lý": "UAN",
+    "Slug": null,
+    "id": "23"
+  },
+  {
+    "Tên nơi đăng": [
+      "Common Good Alliance"
+    ],
+    "Loại nơi đăng": [
+      "Website"
+    ],
+    "Tên nền tảng": "Website",
+    "Loại nền tảng": "Website",
+    "URL": "https://good.uan.vn/",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Trang chủ"
+      ]
+    ],
+    "Đơn vị quản lý": "UAN",
+    "Slug": null,
+    "id": "24"
   }
 ]

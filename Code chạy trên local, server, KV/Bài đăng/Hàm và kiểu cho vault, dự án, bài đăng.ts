@@ -44,7 +44,7 @@ export interface BàiĐăng {
   URL: UrlChưaChínhTắc;
   "Dự án"?: DựÁn;
   "Kho thông tin"?: string;
-  "Slug"?: string;
+  Slug?: string | null;
   "Nội dung bài đăng"?: NộiDungBàiĐăng;
   "Tác giả"?: string;
   "Ngày tạo"?: Date;

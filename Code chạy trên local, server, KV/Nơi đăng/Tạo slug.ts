@@ -33,21 +33,24 @@ export async function tạoTừĐiểnSlugNơiĐăng(cấuHìnhSlug: CấuHìnhN
 }
 
 /**
- * @param [từĐiểnSlugNơiĐăng=undefined] nếu là undefined nghĩa là URL là do người dùng nhập chứ không phải được khai báo sẵn, nên từ đầu đã không có từ điển slug. Lúc này trả về tên nơi đăng dạng kebab
+ * Không tự động tạo slug nếu trong từ điển không có sẵn, vì slug nơi đăng có thể không quan trọng với người dùng, và họ chỉ cần id là đủ.
+ *
+ * @param từĐiểnSlugNơiĐăng nếu từĐiểnSlugNơiĐăng là undefined nghĩa là URL là do người dùng nhập chứ không phải được khai báo sẵn, nên từ đầu đã không có từ điển slug. Lúc này trả về undefined. Nếu có từĐiểnSlugNơiĐăng nhưng vẫn không có slug nào được khai báo bên trong thì trả về null
  */
-export function tạoSlugNơiĐăng(
-  tênNơiĐăng: TênNơiĐăng,
+export function lấySlugTrongTừĐiểnSlug(
+  tênNơiĐăng: TênNơiĐăng | [undefined],
   url: Url | undefined,
-  từĐiểnSlugNơiĐăng: TừĐiểnSlugNơiĐăng,
-): string | undefined {
+  từĐiểnSlugNơiĐăng: TừĐiểnSlugNơiĐăng | undefined,
+): string | undefined | null {
+  if (từĐiểnSlugNơiĐăng === undefined) return undefined;
   if (url) {
     const slug = từĐiểnSlugNơiĐăng.get(url.toString());
     if (slug) return slug;
   }
-  console.log("🚀 ~ tênNơiĐăng:", tênNơiĐăng);
   for (const tênNơiĐăngThànhPhần of tênNơiĐăng.toReversed()) {
-    console.log("🚀 ~ tênNơiĐăngThànhPhần:", tênNơiĐăngThànhPhần);
+    if (tênNơiĐăngThànhPhần === undefined) continue;
     const slugNơiĐăngĐượcKhaiBáo = từĐiểnSlugNơiĐăng.get(tênNơiĐăngThànhPhần.toLowerCase());
     if (slugNơiĐăngĐượcKhaiBáo) return slugNơiĐăngĐượcKhaiBáo;
   }
+  return null;
 }

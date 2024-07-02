@@ -6,9 +6,9 @@ import {
   ThôngTinNơiĐăngChưaCóId,
   TênMáyChủ,
   TênNơiĐăng,
+  TênNơiĐăngMessengerDiscordTelegram,
   TênNềnTảng,
   TênNềnTảngChat,
-  TênThreadHoặcTopic,
 } from "./Kiểu cho nơi đăng.ts";
 import CấuHìnhNơiĐăng from "../Hàm và kiểu cho cấu hình.ts";
 import { táchUrlHoặcEmailĐầuTiênTrongChuỗi } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL và fetch.ts";
@@ -23,7 +23,6 @@ async function lấyDanhSáchMessengerDiscordTelegram(cấuHìnhNơiĐăng: Cấ
     // @ts-ignore:
     const danhSáchMáyChủ = cấuHìnhNơiĐăngChat[tênNềnTảng][loạiNơiĐăng[0]];
     if (!danhSáchMáyChủ) continue;
-
     for (const MáyChủ of danhSáchMáyChủ) {
       for (const [tênMáyChủUrl, cấuHìnhMáyChủ] of Object.entries(MáyChủ) as [TênMáyChủ, CấuHìnhMáyChủ | null][]) {
         if (!cấuHìnhMáyChủ) continue;
@@ -58,7 +57,7 @@ async function lấyDanhSáchMessengerDiscordTelegram(cấuHìnhNơiĐăng: Cấ
               } else {
                 for (const threadHoặcTopicUrl of danhSáchThreadHoặcTopic) {
                   const [threadHoặcTopic, urlThreadHoặcTopic] = await táchUrlHoặcEmailĐầuTiênTrongChuỗi(threadHoặcTopicUrl);
-                  const tênNơiĐăng = [tênMáyChủ, kênh, threadHoặcTopic];
+                  const tênNơiĐăng = [tênMáyChủ, kênh, threadHoặcTopic] as TênNơiĐăngMessengerDiscordTelegram;
                   danhSáchMessengerDiscordTelegram.push({
                     "Tên nơi đăng": tênNơiĐăng,
                     "Loại nơi đăng": lấyLoạiNơiĐăng(tênNềnTảng, tênNơiĐăng),
@@ -131,15 +130,12 @@ async function lấyDanhSáchChatKhác(
 
 export default async function tạoDanhSáchChat(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng): Promise<ThôngTinNơiĐăngChưaCóId[]> {
   const cấuHìnhNơiĐăngChat = cấuHìnhNơiĐăng.Chat;
-  const danhSáchChat: ThôngTinNơiĐăngChưaCóId[] = [];
+  const danhSáchChat: ThôngTinNơiĐăngChưaCóId[] = await lấyDanhSáchMessengerDiscordTelegram(cấuHìnhNơiĐăng);
   if (!cấuHìnhNơiĐăngChat) return [];
 
   for (const [tênNềnTảng, vậtThểNơiĐăng] of Object.entries(cấuHìnhNơiĐăngChat) as [TênNềnTảngChat, CấuHìnhNơiĐăngChatThôngThường][]) {
     if (!vậtThểNơiĐăng) continue;
-    danhSáchChat.push(
-      ...await lấyDanhSáchMessengerDiscordTelegram(cấuHìnhNơiĐăng),
-      ...await lấyDanhSáchChatKhác(vậtThểNơiĐăng, tênNềnTảng),
-    );
+    danhSáchChat.push(...await lấyDanhSáchChatKhác(vậtThểNơiĐăng, tênNềnTảng));
   }
   return danhSáchChat;
 }

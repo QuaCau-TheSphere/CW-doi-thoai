@@ -25,14 +25,13 @@ Chat:
   Zalo:
     Nhóm:
       - Common Good Alliance https://zalo.me/g/rfthsv401
-
   Messenger:
     Nhóm:
       - Social Impact Member Group
-
 Website:
   - Common Good Alliance https://good.uan.vn/
 
 SaaS:
   Google:
-    Form: Community Registration Form https://docs.google.com/forms/d/e/1FAIpQLSeT6QlGtAtTknBInCT6nmxRJLEm1S_jU6Fb30ub9JsYAQZknw/viewform
+    Form:
+      - Community Registration Form https://docs.google.com/forms/d/e/1FAIpQLSeT6QlGtAtTknBInCT6nmxRJLEm1S_jU6Fb30ub9JsYAQZknw/viewform

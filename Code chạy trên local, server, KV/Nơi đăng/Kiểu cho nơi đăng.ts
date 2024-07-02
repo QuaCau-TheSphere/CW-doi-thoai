@@ -60,7 +60,7 @@ export interface ThôngTinNơiĐăng {
   URL?: UrlChưaChínhTắc;
   "Lĩnh vực"?: string[];
   "Mô tả nơi đăng"?: string | null;
-  "Slug"?: string;
+  "Slug"?: string | null;
   "Đơn vị quản lý"?: string;
   "Vị trí có thể đăng"?: DanhSáchVịTríCóThểĐăng;
   id: string;
@@ -150,7 +150,7 @@ type TênNơiĐăngChatThôngThường = [string];
 export type TênMáyChủ = string;
 type TênKênh = string;
 export type TênThreadHoặcTopic = string;
-type TênNơiĐăngMessengerDiscordTelegram =
+export type TênNơiĐăngMessengerDiscordTelegram =
   | [TênMáyChủ, TênKênh]
   | [TênMáyChủ, TênKênh, TênThreadHoặcTopic];
 /**
