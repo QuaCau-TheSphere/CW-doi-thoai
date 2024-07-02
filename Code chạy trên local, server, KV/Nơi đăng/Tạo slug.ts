@@ -44,7 +44,9 @@ export function tạoSlugNơiĐăng(
     const slug = từĐiểnSlugNơiĐăng.get(url.toString());
     if (slug) return slug;
   }
+  console.log("🚀 ~ tênNơiĐăng:", tênNơiĐăng);
   for (const tênNơiĐăngThànhPhần of tênNơiĐăng.toReversed()) {
+    console.log("🚀 ~ tênNơiĐăngThànhPhần:", tênNơiĐăngThànhPhần);
     const slugNơiĐăngĐượcKhaiBáo = từĐiểnSlugNơiĐăng.get(tênNơiĐăngThànhPhần.toLowerCase());
     if (slugNơiĐăngĐượcKhaiBáo) return slugNơiĐăngĐượcKhaiBáo;
   }

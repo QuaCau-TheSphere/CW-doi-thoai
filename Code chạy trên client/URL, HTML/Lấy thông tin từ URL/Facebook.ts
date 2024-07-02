@@ -67,13 +67,14 @@ function xửLýNhómTrangTàiKhoản(metaTagUrlVàDocument: MetaTagUrlVàDocume
   const làTrang = làProfile && descriptionSplitByDot?.length > 0 ? descriptionSplitByDot[1]?.includes("lượt thích") : false;
 
   if (làNhóm) {
+    const id = alUrl ? new URL(alUrl).searchParams.get("id") : undefined;
     return {
       Nhóm: {
         tên: ogTitle?.replace(" | Facebook", "") || "",
         môTả: description,
         avatar: ogImage,
         slug: pathnameSplitBySlash[2],
-        id: new URL(alUrl).searchParams.get("id"),
+        id: id,
       },
     };
   }

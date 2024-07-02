@@ -17,6 +17,7 @@ async function tạoDanhSáchBàiĐăngTừCấuHìnhNơiĐăng(cấuHìnhNơiĐ
     const { url, html } = metaTagUrlVàDocument;
     const bàiĐăng = await tạoBàiĐăngTừURL(url, html);
     const thôngTinUrl = lấyThôngTinTừUrl(metaTagUrlVàDocument);
+    console.log("🚀 ~ tạoDanhSáchBàiĐăngTừCấuHìnhNơiĐăng ~ thôngTinUrl:", thôngTinUrl);
     const tênNơiĐăng = tạoTênNơiĐăng(thôngTinUrl);
     const slug = tạoSlugNơiĐăng(tênNơiĐăng, url, từĐiểnSlugNơiĐăng);
 

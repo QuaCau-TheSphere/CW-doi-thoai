@@ -30,6 +30,8 @@ export async function lấyHTMLTừLocal(urL: Url, originCủaCorsProxy: URL["or
   if (!html || originCủaCorsProxy) {
     const urlCorsProxy = tạoCorsURL(originCủaCorsProxy!);
     urlCorsProxy.search = new URLSearchParams({ url: url.toString() }).toString();
+    console.log("🚀 ~ lấyHTMLTừLocal ~ url:", url);
+    console.log("🚀 ~ lấyHTMLTừLocal ~ urlCorsProxy:", urlCorsProxy.toString());
     html = await (await fetch(urlCorsProxy)).text();
   }
   return html;
