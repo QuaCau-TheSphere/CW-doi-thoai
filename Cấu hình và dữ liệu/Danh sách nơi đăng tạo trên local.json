@@ -100,7 +100,7 @@
     "Lĩnh vực": [
       "Công cụ ghi chú"
     ],
-    "Slug": "obs",
+    "Slug": "obsdc",
     "id": "1"
   },
   {
@@ -207,7 +207,7 @@
     "Lĩnh vực": [
       "Công cụ ghi chú"
     ],
-    "Slug": "obs",
+    "Slug": "obsdc",
     "id": "4"
   },
   {
@@ -5430,6 +5430,21 @@
       "UAN Marketing"
     ],
     "Loại nơi đăng": [
+      "Trang"
+    ],
+    "Tên nền tảng": "LinkedIn",
+    "Loại nền tảng": "Diễn đàn",
+    "URL": "https://www.linkedin.com/company/uan-vn/",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Đơn vị quản lý": "UAN",
+    "Slug": null,
+    "id": "1-"
+  },
+  {
+    "Tên nơi đăng": [
+      "UAN Marketing"
+    ],
+    "Loại nơi đăng": [
       "Kênh"
     ],
     "Tên nền tảng": "YouTube",
@@ -5462,7 +5477,22 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "1-"
+    "id": "1_"
+  },
+  {
+    "Tên nơi đăng": [
+      "UAN Marketing"
+    ],
+    "Loại nơi đăng": [
+      "Kênh"
+    ],
+    "Tên nền tảng": "Spotify",
+    "Loại nền tảng": "Diễn đàn",
+    "URL": "https://open.spotify.com/show/5HcCuRlemSUQBSpE01jyLb?si=3b7c240a728743c4",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Đơn vị quản lý": "UAN",
+    "Slug": null,
+    "id": "20"
   },
   {
     "Tên nơi đăng": [
@@ -5504,7 +5534,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "1_"
+    "id": "21"
   },
   {
     "Tên nơi đăng": [
@@ -5546,7 +5576,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "20"
+    "id": "22"
   },
   {
     "Tên nơi đăng": [
@@ -5587,7 +5617,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "21"
+    "id": "23"
   },
   {
     "Tên nơi đăng": [
@@ -5601,7 +5631,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "22"
+    "id": "24"
   },
   {
     "Tên nơi đăng": [
@@ -5616,7 +5646,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "23"
+    "id": "25"
   },
   {
     "Tên nơi đăng": [
@@ -5644,6 +5674,34 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "24"
+    "id": "26"
+  },
+  {
+    "Tên nơi đăng": [
+      "Conversion"
+    ],
+    "Loại nơi đăng": [
+      "Website"
+    ],
+    "Tên nền tảng": "Website",
+    "Loại nền tảng": "Website",
+    "URL": "https://conversion.vn/",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Trang chủ"
+      ]
+    ],
+    "Đơn vị quản lý": "UAN",
+    "Slug": null,
+    "id": "27"
   }
 ]
