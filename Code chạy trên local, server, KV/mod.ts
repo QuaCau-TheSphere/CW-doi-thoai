@@ -10,7 +10,7 @@ import { VậtThểTiếpThị } from "../Code chạy trên client/Hàm và ki�
 // await xoáDữLiệuTrênKv();
 // console.log("🚀 ~ await kvList({ prefix: [] }):", await kvList({ prefix: [] }));
 
-// await tạoCache();
+await tạoCache();
 await tạoBàiĐăng();
 await tạoNơiĐăng();
 

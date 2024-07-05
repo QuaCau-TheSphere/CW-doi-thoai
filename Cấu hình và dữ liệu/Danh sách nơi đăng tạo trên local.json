@@ -4734,7 +4734,7 @@
       ]
     ],
     "Đơn vị quản lý": "UAN",
-    "Slug": null,
+    "Slug": "NhómUAN",
     "id": "1u"
   },
   {
@@ -5514,21 +5514,6 @@
       "UAN Marketing"
     ],
     "Loại nơi đăng": [
-      "Trang"
-    ],
-    "Tên nền tảng": "LinkedIn",
-    "Loại nền tảng": "Diễn đàn",
-    "URL": "https://www.linkedin.com/company/uan-vn/",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Đơn vị quản lý": "UAN",
-    "Slug": null,
-    "id": "21"
-  },
-  {
-    "Tên nơi đăng": [
-      "UAN Marketing"
-    ],
-    "Loại nơi đăng": [
       "Kênh"
     ],
     "Tên nền tảng": "YouTube",
@@ -5561,7 +5546,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "22"
+    "id": "21"
   },
   {
     "Tên nơi đăng": [
@@ -5576,7 +5561,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "23"
+    "id": "22"
   },
   {
     "Tên nơi đăng": [
@@ -5618,7 +5603,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "24"
+    "id": "23"
   },
   {
     "Tên nơi đăng": [
@@ -5660,7 +5645,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "25"
+    "id": "24"
   },
   {
     "Tên nơi đăng": [
@@ -5701,7 +5686,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "26"
+    "id": "25"
   },
   {
     "Tên nơi đăng": [
@@ -5715,7 +5700,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "27"
+    "id": "26"
   },
   {
     "Tên nơi đăng": [
@@ -5730,7 +5715,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "28"
+    "id": "27"
   },
   {
     "Tên nơi đăng": [
@@ -5758,7 +5743,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "29"
+    "id": "28"
   },
   {
     "Tên nơi đăng": [
@@ -5786,6 +5771,6 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "2A"
+    "id": "29"
   }
 ]

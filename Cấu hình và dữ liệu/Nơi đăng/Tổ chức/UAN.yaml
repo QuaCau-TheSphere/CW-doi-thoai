@@ -15,7 +15,7 @@ Diễn đàn:
       - The Modern Introvert - Người Hướng Nội Hiện Đại https://www.facebook.com/huongnoihiendai
   LinkedIn:
     Trang:
-      - UAN Marketing https://www.linkedin.com/company/uan-vn/
+      # - UAN Marketing https://www.linkedin.com/company/uan-vn/
   YouTube:
     Kênh:
       - UAN Marketing https://www.youtube.com/@UANMarketing
@@ -42,3 +42,6 @@ SaaS:
   Google:
     Form:
       - Community Registration Form https://docs.google.com/forms/d/e/1FAIpQLSeT6QlGtAtTknBInCT6nmxRJLEm1S_jU6Fb30ub9JsYAQZknw/viewform
+
+Slug:
+  "NhómUAN": https://www.facebook.com/groups/uanvn/
