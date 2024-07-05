@@ -62,6 +62,7 @@
         "italic": false
       }
     ],
-    "better-comments.highlightPlainText": false
+    "better-comments.highlightPlainText": false,
+    "git.postCommitCommand": "push"
   }
 }

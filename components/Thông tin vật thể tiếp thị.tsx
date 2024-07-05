@@ -1,10 +1,18 @@
 import { VậtThểTiếpThị } from "../Code chạy trên client/Hàm và kiểu cho vật thể tiếp thị.ts";
 import { kiểuKebab, lấyGiờVN, viếtHoa } from "../Code chạy trên client/Chuỗi, slug/Hàm xử lý chuỗi.ts";
 
+function ListItem({ loạiDữLiệu, dữLiệu }: { loạiDữLiệu: string; dữLiệu: any }) {
+  return (
+    <li id={kiểuKebab(loạiDữLiệu)}>
+      <strong class="font-bold">{loạiDữLiệu}:</strong> {String(dữLiệu)}
+    </li>
+  );
+}
+
 export function VậtThểKhác({ vậtThể, loạiVậtThể, cóTiêuĐề }: { vậtThể: Record<string, any>; loạiVậtThể: string; cóTiêuĐề?: boolean }) {
   const danhSáchPhầnTử = [];
   for (const [key, value] of Object.entries(vậtThể)) {
-    if (typeof value === "object") {
+    if (typeof value === "object" && value) {
       danhSáchPhầnTử.push(
         <details>
           <summary>{key}</summary>
@@ -14,6 +22,7 @@ export function VậtThểKhác({ vậtThể, loạiVậtThể, cóTiêuĐề }:
     } else {
       danhSáchPhầnTử.push(<ListItem loạiDữLiệu={key} dữLiệu={value} />);
     }
+    console.log("dsfdf");
   }
   return (
     <article id={kiểuKebab(loạiVậtThể)} class="card w-full bg-base-200 shadow-xl">
@@ -23,16 +32,10 @@ export function VậtThểKhác({ vậtThể, loạiVậtThể, cóTiêuĐề }:
       </div>
     </article>
   );
-  function ListItem({ loạiDữLiệu, dữLiệu }: { loạiDữLiệu: string; dữLiệu: any }) {
-    return (
-      <li id={kiểuKebab(loạiDữLiệu)}>
-        <strong class="font-bold">{loạiDữLiệu}:</strong> {String(dữLiệu)}
-      </li>
-    );
-  }
 }
 
 export default function ThôngTinVậtThểTiếpThị({ vậtThểTiếpThị }: { vậtThểTiếpThị: VậtThểTiếpThị }) {
+  console.log("🚀 ~ vậtThểTiếpThị:", vậtThểTiếpThị);
   const {
     "Bài đăng": bàiĐăng,
     "Nơi đăng": nơiĐăng,
