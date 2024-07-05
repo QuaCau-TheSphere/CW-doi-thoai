@@ -78,7 +78,7 @@ export async function lấyHTML(url: Url) {
   let urlĐểFetch;
   if (IS_BROWSER) {
     /**
-     * Ở trên client thì không bao giờ fetch trực tiếp hết, mà đều phải fetch qua CORS proxy. Chỉ có trên server thì mới có cơ hội được fetch trực tiếp
+     * Ở trên client thì không bao giờ fetch trực tiếp hết, mà đều phải fetch server. Chỉ có trên server thì mới có cơ hội được fetch trực tiếp
      * @see lấyHTMLTừCache
      */
     const origin = globalThis.location.origin;

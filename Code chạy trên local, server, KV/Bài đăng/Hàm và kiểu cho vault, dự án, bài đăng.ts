@@ -37,7 +37,7 @@ export interface NộiDungBàiĐăng {
 }
 export type BàiĐăngChưaCóId = Omit<BàiĐăng, "id">;
 export type BàiĐăngChưaCóIdVàPhươngThứcTạo = Omit<BàiĐăng, "id" | "Phương thức tạo">;
-export type PhươngThứcTạoBàiĐăng = "Cào vault" | "Cào web" | "Nhập từ CSV" | "Lấy trong cấu hình nơi đăng" | "Nhập tay trên web";
+export type PhươngThứcTạoBàiĐăng = "Cào vault" | "Cào web" | "Nhập từ CSV" | "Lấy trong cấu hình nơi đăng" | "Nhập tay trên web" | "Hotfix";
 
 export interface BàiĐăng {
   "Tiêu đề": string;

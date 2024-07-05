@@ -45,7 +45,8 @@ const urls = [
   // 'https://docs.google.com/spreadsheets/d/1Ahec-7viw04abKIz-x2FzMByux8N_41OoLp0qiRLm5E/edit?gid=0#gid=0',
   // 'https://drive.google.com/file/d/1gIxbgTjeP3XcfAfUU_WlUHdAo5ntFydK/view?usp=drive_link',
   // 'https://drive.google.com/file/d/1gIxbgTjeP3XcfAfUU_WlUHdAo5ntFydK/view?usp=sharing',
-  'https://docs.google.com/forms/d/e/1FAIpQLSeT6QlGtAtTknBInCT6nmxRJLEm1S_jU6Fb30ub9JsYAQZknw/viewform'
+  // 'https://docs.google.com/forms/d/e/1FAIpQLSeT6QlGtAtTknBInCT6nmxRJLEm1S_jU6Fb30ub9JsYAQZknw/viewform',
+  'https://doi-thoai.deno.dev/blog/NhiềuNềnTảng'
 ];
 // const url = urls[3];
 // const url = "https://www.youtube.com/channel/UCReU_XcmJlp9ORWi8U2O-Fg";
@@ -80,9 +81,9 @@ async function chạyMộtUrl(url: string) {
   const { meta } = metaTagUrlVàDocument;
   const a = lấyThôngTinTừUrl(metaTagUrlVàDocument);
   // console.clear();
-  console.log(JSON.stringify(meta, null, 2));
+  console.log("Meta:", JSON.stringify(meta, null, 2));
   console.log();
-  console.info(JSON.stringify(a, null, 2));
+  console.info("Thông tin URL:", JSON.stringify(a, null, 2));
   console.log("\n\n");
 }
 

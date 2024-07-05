@@ -4411,6 +4411,90 @@
   },
   {
     "Tên nơi đăng": [
+      "Giới thiệu đối ⊷ thoại"
+    ],
+    "Loại nơi đăng": [
+      "Website"
+    ],
+    "Tên nền tảng": "Website",
+    "Loại nền tảng": "Website",
+    "URL": "https://doi-thoai.deno.dev/blog",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Trang chủ"
+      ]
+    ],
+    "Đơn vị quản lý": "Quả Cầu",
+    "Slug": "webđốithoạiblog",
+    "id": "1o"
+  },
+  {
+    "Tên nơi đăng": [
+      "Chia sẻ kho kiến thức, tài nguyên đến với mọi người"
+    ],
+    "Loại nơi đăng": [
+      "Website"
+    ],
+    "Tên nền tảng": "Website",
+    "Loại nền tảng": "Website",
+    "URL": "https://doi-thoai.deno.dev/blog/ChiaSẻKhoThôngTin",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Trang chủ"
+      ]
+    ],
+    "Đơn vị quản lý": "Quả Cầu",
+    "Slug": "ChiaSẻKhoThôngTin",
+    "id": "1p"
+  },
+  {
+    "Tên nơi đăng": [
+      "Hiện diện trên nhiều nền tảng"
+    ],
+    "Loại nơi đăng": [
+      "Website"
+    ],
+    "Tên nền tảng": "Website",
+    "Loại nền tảng": "Website",
+    "URL": "https://doi-thoai.deno.dev/blog/NhiềuNềnTảng",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Bài đăng",
+        "Nội dung chính"
+      ],
+      [
+        "Bài đăng",
+        "Bình luận"
+      ],
+      [
+        "Trang chủ"
+      ]
+    ],
+    "Đơn vị quản lý": "Quả Cầu",
+    "Slug": "NhiềuNềnTảng",
+    "id": "1q"
+  },
+  {
+    "Tên nơi đăng": [
       "Trấn Kỳ"
     ],
     "Loại nơi đăng": [
@@ -4435,7 +4519,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "1o"
+    "id": "1r"
   },
   {
     "Tên nơi đăng": [
@@ -4458,7 +4542,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "emailQC",
-    "id": "1p"
+    "id": "1s"
   },
   {
     "Tên nơi đăng": [
@@ -4564,7 +4648,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "1q"
+    "id": "1t"
   },
   {
     "Tên nơi đăng": [
@@ -4651,7 +4735,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "1r"
+    "id": "1u"
   },
   {
     "Tên nơi đăng": [
@@ -4738,7 +4822,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "1s"
+    "id": "1v"
   },
   {
     "Tên nơi đăng": [
@@ -4825,7 +4909,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "1t"
+    "id": "1w"
   },
   {
     "Tên nơi đăng": [
@@ -4912,7 +4996,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "1u"
+    "id": "1x"
   },
   {
     "Tên nơi đăng": [
@@ -4999,7 +5083,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "1v"
+    "id": "1y"
   },
   {
     "Tên nơi đăng": [
@@ -5105,7 +5189,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "1w"
+    "id": "1z"
   },
   {
     "Tên nơi đăng": [
@@ -5211,7 +5295,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "1x"
+    "id": "1-"
   },
   {
     "Tên nơi đăng": [
@@ -5317,7 +5401,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "1y"
+    "id": "1_"
   },
   {
     "Tên nơi đăng": [
@@ -5423,7 +5507,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "1z"
+    "id": "20"
   },
   {
     "Tên nơi đăng": [
@@ -5438,7 +5522,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "1-"
+    "id": "21"
   },
   {
     "Tên nơi đăng": [
@@ -5477,7 +5561,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "1_"
+    "id": "22"
   },
   {
     "Tên nơi đăng": [
@@ -5492,7 +5576,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "20"
+    "id": "23"
   },
   {
     "Tên nơi đăng": [
@@ -5534,7 +5618,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "21"
+    "id": "24"
   },
   {
     "Tên nơi đăng": [
@@ -5576,7 +5660,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "22"
+    "id": "25"
   },
   {
     "Tên nơi đăng": [
@@ -5617,7 +5701,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "23"
+    "id": "26"
   },
   {
     "Tên nơi đăng": [
@@ -5631,7 +5715,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "24"
+    "id": "27"
   },
   {
     "Tên nơi đăng": [
@@ -5646,7 +5730,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "25"
+    "id": "28"
   },
   {
     "Tên nơi đăng": [
@@ -5674,7 +5758,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "26"
+    "id": "29"
   },
   {
     "Tên nơi đăng": [
@@ -5702,6 +5786,6 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "27"
+    "id": "2A"
   }
 ]
