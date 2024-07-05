@@ -1,21 +1,21 @@
 //refactor: không chỉ trả về html mà trả luôn bài đăng hoặc nơi đăng
 
-import { DOMParser, HTMLDocument } from "jsr:@b-fuze/deno-dom";
+import { DOMParser } from "jsr:@b-fuze/deno-dom";
 import { Handlers } from "$fresh/server.ts";
 import esthetic from "npm:esthetic";
 import { load } from "$std/dotenv/mod.ts";
-
-async function htmlTừProxy(url: string) {
-  const env = await load();
-  const urlProxy = new URL(env["PROXY"]);
-  urlProxy.search = new URLSearchParams({ url: url.toString() }).toString();
-  return (await fetch(urlProxy)).text();
-}
 
 function bịChặn(html: string) {
   const document = new DOMParser().parseFromString(html, "text/html");
   const title = document.querySelector("title")?.textContent;
   return title === "Log in to Facebook";
+}
+
+async function lấyHtmlTừProxy(url: string) {
+  const env = await load();
+  const urlProxy = new URL(env["PROXY"]);
+  urlProxy.search = new URLSearchParams({ url: url.toString() }).toString();
+  return (await fetch(urlProxy)).text();
 }
 
 export const handler: Handlers = {
@@ -25,7 +25,7 @@ export const handler: Handlers = {
     console.log("URL được gửi lên server:", url);
     let html = await (await fetch(url)).text();
     if (bịChặn(html)) {
-      html = await htmlTừProxy(url);
+      html = await lấyHtmlTừProxy(url);
     }
     return new Response(html);
     // return new Response(esthetic.html(html));

@@ -15,6 +15,10 @@ updated: 2024-06-08T15:35
 
 Liên lạc với chúng tôi để thêm bài đăng và nơi đăng của bạn vào chương trình với số lượng lớn, hoặc tải [mã nguồn](https://doi-thoai.deno.dev/aI.đốithoại.1) để dùng với tên miền và hệ thống của bạn. Trong tương lai chúng tôi cũng sẽ tạo một plugin Obsidian để bạn có thể tạo nội dung chia sẻ ngay trên kho thông tin của mình. Chúng tôi hướng tới việc đem lại [sự tự do và tự trị dữ liệu](https://doi-thoai.deno.dev/local-first.đốithoại.1) cho bạn.
 
+
+Tìm hiểu thêm:
+<a href="/blog" target="_blank"><button class="btn">*đối ⊷ thoại* dành cho ai? *đối ⊷ thoại* giúp được gì?</button></a>
+
 Sản phẩm khác:
 - [Trấn Kỳ — Phân loại dữ liệu bằng tiếng Việt tự nhiên](https://tranky.deno.dev/?utm_source=doi-thoai.deno.dev+(Trang+chủ)&utm_medium=Website&utm_campaign=&utm_content=&utm_term=)
 - [Các buổi đáp ứng nhu cầu học cách sử dụng công cụ và tư duy lập trình cho nhu cầu cá nhân hoặc nghiên cứu](https://quảcầu.cc/cac-buoi-dap-ung-nhu-cau-hoc-cach-su-dung-cong-cu-va-tu-duy-lap-trinh-cho-nhu-cau-ca-nhan-hoac-nghien-cuu?utm_source=doi-thoai.deno.dev+(Trang+chủ)&utm_medium=Website&utm_campaign=Các+buổi+đáp+ứng+nhu+cầu+học+lập+trình&utm_content=&utm_term=)
