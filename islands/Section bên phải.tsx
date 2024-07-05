@@ -1,6 +1,6 @@
 import { cóRútGọn, vậtThểTiếpThịSignal } from "./Signals tổng.ts";
 import { VậtThểKhác } from "../components/Thông tin vật thể tiếp thị.tsx";
-import KhungThôngTinKhiKhôngCóKếtQuả from "../components/Phần giới thiệu ở trang chủ khi chưa tạo kết quả.tsx";
+import PhầnGiớiThiệuỞTrangChủKhiChưaTạoKếtQuả from "../components/Phần giới thiệu ở trang chủ khi chưa tạo kết quả.tsx";
 import { ThamSốUTM } from "../Code chạy trên client/Tham số UTM và liên kết rút gọn/Kiểu cho tham số UTM.ts";
 import { VậtThểTiếpThị } from "../Code chạy trên client/Hàm và kiểu cho vật thể tiếp thị.ts";
 import { xửLýPunycode } from "../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL và fetch.ts";
@@ -8,7 +8,7 @@ import { xửLýPunycode } from "../Code chạy trên client/URL, HTML/Hàm và 
 export default function SectionBênPhải({ textTrangChủ }: { textTrangChủ: string }) {
   return (
     <section id="section-bên-phải" class="basis-1/2 p-5 md:p-10">
-      {vậtThểTiếpThịSignal.value ? <KhungThôngTinKhiCóKếtQuả /> : <KhungThôngTinKhiKhôngCóKếtQuả textTrangChủ={textTrangChủ} />}
+      {vậtThểTiếpThịSignal.value ? <KhungThôngTinKhiCóKếtQuả /> : <PhầnGiớiThiệuỞTrangChủKhiChưaTạoKếtQuả textTrangChủ={textTrangChủ} />}
     </section>
   );
 }

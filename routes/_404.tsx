@@ -1,11 +1,11 @@
 import { PageProps } from "$fresh/server.ts";
-import Meta, { TÊN_TRANG } from "../components/Meta.tsx";
+import HeadVàMeta from "../components/Meta.tsx";
 
 export default function Error404(props: PageProps<{ đuôiRútGọn: string }>) {
   const đuôiRútGọn = props.data?.đuôiRútGọn;
   return (
     <>
-      <Meta title="404 – Không tìm thấy trang" description="404 – Không tìm thấy trang" url="/404" imageUrl="Linh Rab.jpg" />
+      <HeadVàMeta title="404 – Không tìm thấy trang" description="404 – Không tìm thấy trang" url="/404" imageUrl="Linh Rab.jpg" />
       <body class="flex flex-col md:flex-row bg-base-300 items-center max-w-none space-x-10 px-10 h-screen">
         <section class="align-middle justify-center">
           <article class="prose py-10">

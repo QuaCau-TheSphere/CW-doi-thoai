@@ -2,8 +2,9 @@
 share: true
 created: 2023-09-05T16:17
 updated: 2024-07-03T21:03
+title: Chia sẻ kho kiến thức, tài nguyên đến với mọi người
 ---
-# **đối ⊷ thoại**: Chương trình tìm và chia sẻ tài nguyên từ kho thông tin dành cho người Việt
+# Chia sẻ kho kiến thức, tài nguyên đến với mọi người
 Nếu bạn cần chia sẻ kho thông tin (vault) của mình tới người khác, đặc biệt là khi bạn đang dùng điện thoại còn người nhận thì không quen dùng Obsidian, thì giải pháp thường là sao chép nội dung ghi chú rồi gửi qua tin nhắn. Nhưng việc đó làm mất liên kết tới các ghi chú khác. Nếu bạn muốn họ có trải nghiệm tương tự như khi dùng Obsidian thì bạn cần tạo website từ kho của mình. Bạn có thể mua gói Publish của Obsidian, hoặc sử dụng các plugin tạo website khác. Nếu nhu cầu bạn dừng ở đó và bạn không thấy có vấn đề gì cả thì bạn cũng không cần đọc tiếp bài này.
 
 Riêng với mình, thì mình gặp những vấn đề sau:
@@ -21,7 +22,7 @@ Riêng với mình, thì mình gặp những vấn đề sau:
 
 Quá mệt mỏi với những vấn đề này, mình đã viết ra **đối ⊷ thoại**.
 
-# Tính năng
+## Tính năng
 - Là phần mềm tự do và mã nguồn mở
 - Không cần đăng nhập
 - Tìm nhanh những ghi chú được chia sẻ công khai trong kho dữ liệu của bạn, hoặc các bài đăng trên các website, diễn đàn
@@ -32,15 +33,11 @@ Quá mệt mỏi với những vấn đề này, mình đã viết ra **đối �
 - Thống kê số lượng truy cập tới liên kết được chia sẻ
 - Mọi khai báo cấu hình đều trên tệp văn bản thuần
 
-# Triết lý phát triển
+## Triết lý phát triển
 - **Lấy nhu cầu của các tổ chức phi lợi nhuận làm trung tâm:** thúc đẩy các cuộc đối thoại trong cộng đồng theo các mục tiêu phát triển bền vững, thúc đẩy sự hợp tác đa bên, liên ngành
 - **Dành cho người Việt:** không gặp vấn đề với các ký tự tiếng Việt và kết quả được viết theo cách người Việt dùng ngôn ngữ
 - **Đảm bảo sự tự do và tự trị dữ liệu của người dùng:** dễ dàng tích hợp với các hệ thống bạn đang dùng (VD: Obsidian)
 - **Hướng đến việc nâng đỡ người còn cảm thấy lập trình là một thứ đáng sợ**
 
-# Cách dùng
+## Cách dùng
 Bạn có thể ghé thăm trang web của chương trình và dùng nó ngay lập tức như các dịch vụ như Bitly. Nếu bạn muốn nhập dữ liệu với số lượng lớn thì có thể gửi mình danh sách bài đăng và nơi đăng của bạn. Hoặc nếu muốn sử dụng bằng tên miền và hệ thống riêng của bạn thì làm theo hướng dẫn ở readme trong GitHub. Nếu bạn có thắc mắc gì thì cứ hỏi mình.
-
-Ảnh: cách mình đã tạo ra liên kết ở dưới này 👇 
-
-👉 Liên kết:

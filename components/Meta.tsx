@@ -9,9 +9,9 @@ interface MetaProps {
 }
 const env = await load();
 const ORIGIN = env["ORIGIN"];
-export const TÊN_TRANG = "đối ⊷ thoại";
+const TÊN_TRANG = "đối ⊷ thoại | Rút gọn liên kết dành cho người Việt";
 const MÔ_TẢ_TRANG = "Nhanh chóng tìm lại các cuộc thảo luận đã từng có trước đây và nắm được mức độ quan tâm của các bên liên quan";
-export const GA = "GTM - MWZ4WG7";
+const GA = "GTM - MWZ4WG7";
 
 function StandardTags({ title, description }: { title: string; description: string }) {
   return (
@@ -71,7 +71,7 @@ function GoogleAnalytics() {
   );
 }
 
-export default function Meta({
+export default function HeadVàMeta({
   title = TÊN_TRANG,
   description = MÔ_TẢ_TRANG,
   url = ORIGIN,

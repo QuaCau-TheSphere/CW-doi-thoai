@@ -5,7 +5,7 @@ import ReactECharts from "../../islands/Biểu đồ/echart.tsx";
 import { dữLiệuTruyCậpCácNămTest } from "../../Code chạy trên client/Hàm cho biểu đồ.test.ts";
 import { DữLiệuTruyCậpCácNăm, tạoDữLiệuBiểuĐồ } from "../../Code chạy trên client/Hàm và kiểu cho biểu đồ.ts";
 import ThôngTinVậtThểTiếpThị from "../../components/Thông tin vật thể tiếp thị.tsx";
-import Meta from "../../components/Meta.tsx";
+import HeadVàMeta from "../../components/Meta.tsx";
 import { kvGet } from "../../Code chạy trên local, server, KV/Hàm cho KV.ts";
 
 export const handler: Handlers = {
@@ -73,15 +73,14 @@ export default function ChartPage(props: PageProps<{ vậtThểTiếpThị: Vậ
   const chartData = chartOption(dữLiệuTruyCậpCácNăm);
 
   return (
-    <main>
-      <Head>
-        <title>Lượt truy cập vào {đuôiRútGọn}</title>
-      </Head>
-      <Meta imageUrl="Linh Rab.jpg" />
-      <div class="p-4 mx-auto max-w-screen-md">
-        <ReactECharts option={chartData} />
-        <ThôngTinVậtThểTiếpThị vậtThểTiếpThị={vậtThểTiếpThị} />
-      </div>
-    </main>
+    <>
+      <HeadVàMeta title={`Lượt truy cập vào ${đuôiRútGọn}`} imageUrl="Linh Rab.jpg" />
+      <main>
+        <div class="p-4 mx-auto max-w-screen-md">
+          <ReactECharts option={chartData} />
+          <ThôngTinVậtThểTiếpThị vậtThểTiếpThị={vậtThểTiếpThị} />
+        </div>
+      </main>
+    </>
   );
 }

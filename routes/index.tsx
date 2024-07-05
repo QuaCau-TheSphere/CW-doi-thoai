@@ -11,6 +11,7 @@ import {
   SốLượngNơiĐăng,
 } from "../Code chạy trên local, server, KV/Hàm và kiểu cho id và số lượng dữ liệu.ts";
 import { TẬP_TIN_DANH_SÁCH_BÀI_ĐĂNG, TẬP_TIN_DANH_SÁCH_NƠI_ĐĂNG } from "../Code chạy trên local, server, KV/ĐƯỜNG_DẪN.ts";
+import HeadVàMeta from "../components/Meta.tsx";
 
 async function cậpNhậtSốLượngDữLiệu({ dsBàiĐăng, dsNơiĐăng }: DanhSáchBàiĐăngVàNơiĐăng) {
   const phânLoạiBàiĐăng = Object.groupBy(dsBàiĐăng, ({ "Phương thức tạo": phươngThứcTạo }) => phươngThứcTạo);
@@ -44,16 +45,20 @@ export default async function App() {
   console.info("%cChương trình được khởi động", "color: green; font-style: italic");
   const dsBàiĐăngVàNơiĐăng = await tạoDanhSáchBàiĐăngVàNơiĐăng();
   await cậpNhậtSốLượngDữLiệu(dsBàiĐăngVàNơiĐăng);
-  const textTrangChủ = await Deno.readTextFile("docs/Trang chủ.md");
+  const textTrangChủ = await Deno.readTextFile("docs/Trang chủ.html");
+  // const textTrangChủ = await Deno.readTextFile("docs/Trang chủ.md");
 
   return (
-    <body class="">
-      <Main
-        dsBàiĐăngVàNơiĐăng={dsBàiĐăngVàNơiĐăng}
-        danhSáchThôngTinCấuHìnhNơiĐăng={await tạoDanhSáchThôngTinCấuHìnhNơiĐăng()}
-        cấuHìnhChung={lấyCấuHìnhChung()}
-        textTrangChủ={textTrangChủ}
-      />
-    </body>
+    <>
+      <HeadVàMeta imageUrl="Linh Rab.jpg" />
+      <body class="">
+        <Main
+          dsBàiĐăngVàNơiĐăng={dsBàiĐăngVàNơiĐăng}
+          danhSáchThôngTinCấuHìnhNơiĐăng={await tạoDanhSáchThôngTinCấuHìnhNơiĐăng()}
+          cấuHìnhChung={lấyCấuHìnhChung()}
+          textTrangChủ={textTrangChủ}
+        />
+      </body>
+    </>
   );
 }

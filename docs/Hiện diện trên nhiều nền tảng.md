@@ -1,7 +1,8 @@
 ---
 share: true
 created: 2023-09-05T16:17
-updated: 2024-07-03T21:03
+updated: 2024-07-05T16:53
+title: Rút gọn liên kết và thống kê lưu lượng truy cập cho các dự án, tổ chức hiện diện trên nhiều nền tảng
 ---
 # Rút gọn liên kết và thống kê lưu lượng truy cập cho các dự án, tổ chức hiện diện trên nhiều nền tảng
 Một tổ chức, mạng lưới có nhiều dự án, sản phẩm khác nhau giống như một vùng đất có nhiều lối vào và lối ra. Những người đến vùng đất đó có những lộ trình khác nhau. Việc cải thiện trải nghiệm của họ đòi hỏi những người đang xây dựng vùng đất đó biết được họ đã đến nơi này như thế nào.
@@ -66,7 +67,7 @@ Với hai vấn đề đầu tiên, các dịch vụ như Bitly, Rebrandly sẽ 
 
 Quá mệt mỏi với những vấn đề này, mình đã viết ra **đối ⊷ thoại**.
 
-# Tính năng
+## Tính năng
 - Là phần mềm tự do và mã nguồn mở
 - Không cần đăng nhập
 - Tìm nhanh những ghi chú được chia sẻ công khai trong kho dữ liệu của bạn, hoặc các bài đăng trên các website, diễn đàn
@@ -77,15 +78,11 @@ Quá mệt mỏi với những vấn đề này, mình đã viết ra **đối �
 - Thống kê số lượng truy cập tới liên kết được chia sẻ
 - Mọi khai báo cấu hình đều trên tệp văn bản thuần
 
-# Triết lý phát triển
+## Triết lý phát triển
 - **Lấy nhu cầu của các tổ chức phi lợi nhuận làm trung tâm:** thúc đẩy các cuộc đối thoại trong cộng đồng theo các mục tiêu phát triển bền vững, thúc đẩy sự hợp tác đa bên, liên ngành
 - **Dành cho người Việt:** không gặp vấn đề với các ký tự tiếng Việt và kết quả được viết theo cách người Việt dùng ngôn ngữ
 - **Đảm bảo sự tự do và tự trị dữ liệu của người dùng:** dễ dàng tích hợp với các hệ thống bạn đang dùng (VD: Obsidian)
 - **Hướng đến việc nâng đỡ người còn cảm thấy lập trình là một thứ đáng sợ**
 
-# Cách dùng
+## Cách dùng
 Bạn có thể ghé thăm trang web của chương trình và dùng nó ngay lập tức như các dịch vụ như Bitly. Nếu bạn muốn nhập dữ liệu với số lượng lớn thì có thể gửi mình danh sách bài đăng và nơi đăng của bạn. Hoặc nếu muốn sử dụng bằng tên miền và hệ thống riêng của bạn thì làm theo hướng dẫn ở readme trong GitHub. Nếu bạn có thắc mắc gì thì cứ hỏi mình.
-
-Ảnh: cách mình đã tạo ra liên kết ở dưới này 👇 
-
-👉 Liên kết:

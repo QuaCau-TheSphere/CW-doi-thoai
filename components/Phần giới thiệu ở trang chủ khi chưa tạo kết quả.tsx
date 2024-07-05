@@ -4,14 +4,13 @@ import IconBrandDiscord from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/bra
 import IconBrandFacebook from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/brand-facebook.tsx";
 import IconSphere from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/sphere.tsx";
 
-export default function KhungThôngTinKhiKhôngCóKếtQuả({ textTrangChủ }: { textTrangChủ: string }) {
-  const bàiViết = extract(textTrangChủ);
-  const tênBàiViết = bàiViết.attrs.title;
-  const môTảBàiViết = bàiViết.attrs.description;
-  const nộiDungBàiViết = render(bàiViết.body);
+export default function PhầnGiớiThiệuỞTrangChủKhiChưaTạoKếtQuả({ textTrangChủ }: { textTrangChủ: string }) {
+  // const {body} = extract(textTrangChủ);
+  // const html = render(body);
+  const html = textTrangChủ;
   return (
     <article id="khung-thông-tin-khi-không-có-kết-quả" class="prose">
-      <div dangerouslySetInnerHTML={{ __html: nộiDungBàiViết }} />
+      <div dangerouslySetInnerHTML={{ __html: html }} />
 
       <nav class="flex gap-5">
         <a href="https://quảcầu.cc/?utm_source=đối+⊷+thoại+(Trang+chủ)&utm_medium=Website&utm_campaign=&utm_content=&utm_term=">
