@@ -210,12 +210,12 @@ export interface CấuHìnhChat {
 /**
  * TẬP TIN
  */
-export const danhSáchĐịnhDạngTậpTin = ["PDF", "Word", "PowerPoint", "Excel"] as const;
-export type ĐịnhDạngTậpTin = typeof danhSáchĐịnhDạngTậpTin[number];
-export type TênNềnTảngTậpTin = ĐịnhDạngTậpTin;
-type LoạiNơiĐăngTậpTin = [ĐịnhDạngTậpTin];
+export const danhSáchTậpTin = ["PDF", "Văn bản", "Bảng tính", "Booklet", "Slide"] as const;
+export type TênTậpTin = typeof danhSáchTậpTin[number];
+export type TênNềnTảngTậpTin = TênTậpTin;
+type LoạiNơiĐăngTậpTin = [TênTậpTin];
 type TênNơiĐăngTậpTin = [string];
-export type CấuHìnhTậpTin = Record<ĐịnhDạngTậpTin, string[]> | null;
+export type CấuHìnhTậpTin = Record<TênTậpTin, string[]> | null;
 
 /**
  * SaaS

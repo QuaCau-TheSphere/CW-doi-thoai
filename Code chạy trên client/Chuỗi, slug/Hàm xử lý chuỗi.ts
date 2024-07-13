@@ -36,10 +36,15 @@ export function tạoTênNơiĐăngString(tênNơiĐăng: TênNơiĐăng | undef
   return tênNơiĐăng.join(" ➯ ");
 }
 
+/**
+ * @param thôngTinNơiĐăng
+ * @returns
+ */
 export function tạoLoạiNơiĐăngString(thôngTinNơiĐăng: ThôngTinNơiĐăng): string {
   const {
     "Loại nơi đăng": loạiNơiĐăng,
     "Tên nền tảng": tênNềnTảng,
+    "Loại nền tảng": loạiNềnTảng,
   } = thôngTinNơiĐăng;
   if (!loạiNơiĐăng) return tênNềnTảng || "";
   if (loạiNơiĐăng[0] !== tênNềnTảng) {
@@ -47,6 +52,7 @@ export function tạoLoạiNơiĐăngString(thôngTinNơiĐăng: ThôngTinNơiĐ
     array[0] = `${loạiNơiĐăng[0]} ${tênNềnTảng}`;
     return `${array.join(" → ")}`;
   } else {
+    if (loạiNềnTảng === "Tập tin") return `(Tập tin) ${tênNềnTảng}`;
     return loạiNơiĐăng[0];
   }
 }

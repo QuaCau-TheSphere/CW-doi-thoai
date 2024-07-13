@@ -1,4 +1,7 @@
 - [ ] fetch 'https://doi-thoai.deno.dev/blog/NhiềuNềnTảng' bị lỗi Recursive requests to the same deployment cannot be processed.
 - [ ] Thêm nơi đăng mới không cần url 
 - [ ] YAML schema
-- [ ] chỉ lấy cache thông tin url 
+- [ ] cache và api trả về chỉ cần là thông tin url chứ không phải toàn bộ html
+- [ ] Tuỳ chỉnh output text: chỉ cần link, markdown, html
+- [ ] kết quả tổng hợp của một nơi đăng, bài đăng
+- [ ] Cá nhân, tài khoản

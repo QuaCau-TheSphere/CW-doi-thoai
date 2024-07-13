@@ -5,7 +5,7 @@ import {
   danhSáchDiễnĐàn,
   danhSáchNềnTảngChat,
   danhSáchSaaS,
-  danhSáchĐịnhDạngTậpTin,
+  danhSáchTậpTin,
   LoạiNềnTảng,
   TênNềnTảng,
 } from "../../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
@@ -94,7 +94,7 @@ function xácĐịnhTênNềnTảngVàLoạiNềnTảngTừUrl(metaTagUrlVàDocu
   const tênMiềnViếtHoa = viếtHoa(domainNameWithoutSuffix) as TênNềnTảng;
   if ((danhSáchDiễnĐàn as unknown as string[]).includes(tênMiềnViếtHoa)) return [tênMiềnViếtHoa, "Diễn đàn"];
   if ((danhSáchNềnTảngChat as unknown as string[]).includes(tênMiềnViếtHoa)) return [tênMiềnViếtHoa, "Chat"];
-  if ((danhSáchĐịnhDạngTậpTin as unknown as string[]).includes(tênMiềnViếtHoa)) return [tênMiềnViếtHoa, "Tập tin"];
+  if ((danhSáchTậpTin as unknown as string[]).includes(tênMiềnViếtHoa)) return [tênMiềnViếtHoa, "Tập tin"];
   if ((danhSáchSaaS as unknown as string[]).includes(tênMiềnViếtHoa)) return [tênMiềnViếtHoa, "SaaS"];
   return ["Website", "Website"];
 }

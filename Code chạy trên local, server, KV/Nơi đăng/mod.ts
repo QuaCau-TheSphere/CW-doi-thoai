@@ -6,8 +6,8 @@ import {
   TênChứcNăngTrongSaaS,
   TênDiễnĐàn,
   TênNềnTảngSaaS,
+  TênTậpTin,
   VậtThểLàmGiáTrịChoTênSaaS,
-  ĐịnhDạngTậpTin,
 } from "./Kiểu cho nơi đăng.ts";
 import tạoDanhSáchChat from "./Tạo danh sách nơi đăng chat.ts";
 import {
@@ -49,7 +49,7 @@ async function tạoDanhSáchTậpTin(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng
   const cấuHìnhTậpTin = cấuHìnhNơiĐăng["Tập tin"];
   const danhSáchTậpTin: ThôngTinNơiĐăngChưaCóId[] = [];
   if (!cấuHìnhTậpTin) return [];
-  for (const [địnhĐạngTậpTin, danhSáchTênNơiĐăng] of Object.entries(cấuHìnhTậpTin) as [ĐịnhDạngTậpTin, string[]][]) {
+  for (const [địnhĐạngTậpTin, danhSáchTênNơiĐăng] of Object.entries(cấuHìnhTậpTin) as [TênTậpTin, string[]][]) {
     for (const tênNơiĐăngUrl of danhSáchTênNơiĐăng) {
       const [tênNơiĐăng, url] = await táchUrlHoặcEmailĐầuTiênTrongChuỗi(tênNơiĐăngUrl);
       danhSáchTậpTin.push({
