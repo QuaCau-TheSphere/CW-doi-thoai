@@ -139,10 +139,12 @@ const tests: [string, BàiĐăngChưaCóIdVàPhươngThứcTạo | ThôngTinNơi
     "https://xn--kimtin-xi8bta.xn--qucu-hr5aza.cc/T%C3%A0i-nguy%C3%AAn-h%E1%BB%97-tr%E1%BB%A3/Vi%E1%BB%87c-th%E1%BB%9Di-v%E1%BB%A5-ki%E1%BA%BFm-ti%E1%BB%81n-nhanh/",
     {},
   ],
+  ["https://slide.xn--qucu-hr5aza.cc/%C4%90%C3%A1p%20%E1%BB%A9ng%20nhu%20c%E1%BA%A7u%20doanh%20nghi%E1%BB%87p/VNPAY.html", {}],
 ];
 
 for (const test of tests) {
-  if (tests.indexOf(test) < 12) continue;
+  // if (tests.indexOf(test) < 12) continue;
+  if (tests.indexOf(test) !== tests.length - 1) continue;
   const a = await lấyMetaTagVàTạoDocument(test[0]);
   // console.log(lấyURLChínhTắc(a));
   // console.log(a);

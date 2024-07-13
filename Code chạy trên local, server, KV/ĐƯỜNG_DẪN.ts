@@ -1,4 +1,3 @@
-//deno-fmt-ignore-file
 import { parse, ParsedPath } from "$std/path/mod.ts";
 
 export type ĐườngDẫnTuyệtĐối = string;

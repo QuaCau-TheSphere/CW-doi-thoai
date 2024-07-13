@@ -9,6 +9,8 @@ interface MetaProps {
 }
 const env = await load();
 const ORIGIN = env["ORIGIN"];
+
+/** Không để mấy cái hằng này vào env hay ./ĐƯỜNG_DẪN.ts được, tại vì tất cả đều chạy ở server, trong khi mô đun này cần chạy trên client */
 const TÊN_TRANG = "đối ⊷ thoại | Rút gọn liên kết dành cho người Việt";
 const MÔ_TẢ_TRANG = "Nhanh chóng tìm lại các cuộc thảo luận đã từng có trước đây và nắm được mức độ quan tâm của các bên liên quan";
 const GA = "GTM - MWZ4WG7";

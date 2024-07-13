@@ -32,11 +32,11 @@ Diễn đàn:
       - DW-phat-trien-ban-than https://github.com/QuaCau-TheSphere/DW-phat-trien-ban-than
       - DV-phat-trien-ban-than https://github.com/QuaCau-TheSphere/DV-phat-trien-ban-than
       - EV-HeavyT https://github.com/QuaCau-TheSphere/EV-HeavyT
+      - EW-heavyT https://github.com/QuaCau-TheSphere/EW-heavyT
       - FV-khoa-hoc-xa-hoi https://github.com/QuaCau-TheSphere/FV-khoa-hoc-xa-hoi
       - LandofSpheres https://github.com/QuaCau-TheSphere/LandofSpheres
       - tran-ky https://github.com/QuaCau-TheSphere/tran-ky
       - meetup-ticketbox-to-google-calendar https://github.com/QuaCau-TheSphere/meetup-ticketbox-to-google-calendar
-      - EW-heavyT https://github.com/QuaCau-TheSphere/EW-heavyT
       - belief-network https://github.com/QuaCau-TheSphere/belief-network
       - NeedExchange https://github.com/QuaCau-TheSphere/NeedExchange
       - quacau-thesphere.github.io https://github.com/QuaCau-TheSphere/quacau-thesphere.github.io
@@ -121,7 +121,6 @@ Chat:
       - 0979437321
       - Tuyết Nhi
       - Cao Thị Thuỳ Trang
-      - Mama
 
 Vault:
   - A Vùng đất Quả Cầu
@@ -137,6 +136,7 @@ Website:
   - Tồn tại trong thế giới tư bản https://kiếmtiền.quảcầu.cc
   - Obsidian, quản lý dự án và công cụ nghĩ https://obsidian.quảcầu.cc
   - Tiếp thị số, xử lý dữ liệu và lập trình https://lậptrình.quảcầu.cc
+  - Các slide của Quả Cầu https://slide.quảcầu.cc
   - Học kỹ năng, phát triển bản thân https://pháttriểnbảnthân.quảcầu.cc/
 
   - đối ⊷ thoại https://doi-thoai.deno.dev
@@ -154,6 +154,8 @@ Tập tin:
   # Word:
   # PowerPoint:
   # Excel:
+  Slide:
+    - VNPAY
 
 SaaS:
   Google:
@@ -218,6 +220,6 @@ Slug:
   "discordQC#g": "#g-nghiên-cứu-liên-ngành"
   cvLộc: CV Nguyễn Hữu Lộc
 
-  "webđốithoạiblog": https://doi-thoai.deno.dev/blog
-  "ChiaSẻKhoThôngTin": https://doi-thoai.deno.dev/blog/ChiaSẻKhoThôngTin
-  "NhiềuNềnTảng": https://doi-thoai.deno.dev/blog/NhiềuNềnTảng
+  webđốithoạiblog: https://doi-thoai.deno.dev/blog
+  ChiaSẻKhoThôngTin: https://doi-thoai.deno.dev/blog/ChiaSẻKhoThôngTin
+  NhiềuNềnTảng: https://doi-thoai.deno.dev/blog/NhiềuNềnTảng

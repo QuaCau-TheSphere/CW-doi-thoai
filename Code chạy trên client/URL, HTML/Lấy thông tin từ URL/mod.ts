@@ -50,18 +50,21 @@ function thôngTinWebsite(metaTagUrlVàDocument: MetaTagUrlVàDocument): Website
       tên: tênBàiĐăng,
       môTả: meta.og?.description || meta?.description || document.querySelector("p")?.textContent,
       ảnh: meta.og?.image as string,
-      slug: tạoSlugWebsite(url, tênBàiĐăng),
+      slug: tạoSlugTừUrlWebsite(url),
     },
   };
-
-  function tạoSlugWebsite(url: URL, tênBàiĐăng: string | undefined) {
-    const { pathname, hostname } = url;
-    const pathnameLastSection = pathname.split("/").slice(-1)[0];
+  /** Nếu  */
+  function tạoSlugTừUrlWebsite(url: URL) {
+    const { pathname } = url;
+    const pathnameWithoutTrailingSlash = pathname.slice(-1) === "/" ? pathname.slice(0, -1) : pathname;
+    const pathnameLastSection = pathnameWithoutTrailingSlash.split("/").slice(-1)[0];
     const đuôiHTML = /\.(htm|html|php)$/;
     const đuôiTậpTin = /\.(jpg|png|gif|pdf|doc|docx)$/;
-    if (đuôiHTML.test(pathnameLastSection)) return pathnameLastSection.replace(đuôiHTML, "");
-    if (đuôiTậpTin.test(pathnameLastSection)) return pathnameLastSection.replace(".", "");
-    return pathnameLastSection;
+
+    let slug = pathnameLastSection;
+    if (đuôiHTML.test(pathnameLastSection)) slug = pathnameLastSection.replace(đuôiHTML, "");
+    if (đuôiTậpTin.test(pathnameLastSection)) slug = pathnameLastSection.replace(".", "");
+    return decodeURIComponent(slug);
   }
 }
 

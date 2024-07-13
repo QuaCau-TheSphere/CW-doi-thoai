@@ -167,24 +167,8 @@ export function lấyMôTả(thôngTinUrl: ThôngTinUrl): string | null | undefi
 /** Không dùng tiêu đề làm slug. (Nhưng nếu tiêu đề được làm slug trong url nhập vào thì lấy slug đó)  */
 export function tạoSlugTừUrl({ hostname, pathname }: URL, thôngTinUrl: ThôngTinUrl) {
   const [_, thôngTinLoạiUrl] = lấyThôngTinLoạiUrl(thôngTinUrl);
-  switch (thôngTinUrl.loạiNềnTảng) {
-    case "Diễn đàn":
-    case "Chat":
-    case "SaaS": {
-      const { tên, slug, username } = thôngTinLoạiUrl;
-      return slug || username || tên;
-    }
-
-    default: {
-      let slugWebsiteCóSẵn = pathname.substring(1);
-      slugWebsiteCóSẵn = slugWebsiteCóSẵn.slice(-1) === "/" ? slugWebsiteCóSẵn.slice(0, -1) : slugWebsiteCóSẵn;
-      if (slugWebsiteCóSẵn.includes("/")) {
-        const slugWebsiteCóSẵnSplit = slugWebsiteCóSẵn.split("/");
-        slugWebsiteCóSẵn = slugWebsiteCóSẵnSplit[slugWebsiteCóSẵnSplit.length - 1];
-      }
-      return slugWebsiteCóSẵn ? decodeURIComponent(slugWebsiteCóSẵn) : lấySubdomain(hostname);
-    }
-  }
+  const { slug, username, tên } = thôngTinLoạiUrl;
+  return slug || username || tên;
 }
 
 export function lấyTitle({ meta, document }: MetaTagUrlVàDocument): string | undefined {

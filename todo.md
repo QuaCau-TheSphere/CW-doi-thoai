@@ -1,1 +1,4 @@
-- fetch 'https://doi-thoai.deno.dev/blog/NhiềuNềnTảng' bị lỗi Recursive requests to the same deployment cannot be processed.
+- [ ] fetch 'https://doi-thoai.deno.dev/blog/NhiềuNềnTảng' bị lỗi Recursive requests to the same deployment cannot be processed.
+- [ ] Thêm nơi đăng mới không cần url 
+- [ ] YAML schema
+- [ ] chỉ lấy cache thông tin url 

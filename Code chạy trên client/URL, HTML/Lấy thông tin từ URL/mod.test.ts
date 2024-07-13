@@ -46,7 +46,8 @@ const urls = [
   // 'https://drive.google.com/file/d/1gIxbgTjeP3XcfAfUU_WlUHdAo5ntFydK/view?usp=drive_link',
   // 'https://drive.google.com/file/d/1gIxbgTjeP3XcfAfUU_WlUHdAo5ntFydK/view?usp=sharing',
   // 'https://docs.google.com/forms/d/e/1FAIpQLSeT6QlGtAtTknBInCT6nmxRJLEm1S_jU6Fb30ub9JsYAQZknw/viewform',
-  'https://doi-thoai.deno.dev/blog/NhiềuNềnTảng'
+  // 'https://doi-thoai.deno.dev/blog/NhiềuNềnTảng',
+  'https://slide.quảcầu.cc/Đáp ứng nhu cầu doanh nghiệp/VNPAY.html'
 ];
 // const url = urls[3];
 // const url = "https://www.youtube.com/channel/UCReU_XcmJlp9ORWi8U2O-Fg";

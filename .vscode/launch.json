@@ -37,7 +37,8 @@
         // "--inspect-wait",
         "--inspect-brk",
         "--allow-all",
-        "--unstable-kv"
+        "--unstable-kv",
+        "--unstable-temporal"
       ],
       "attachSimplePort": 9229,
       "env": {
