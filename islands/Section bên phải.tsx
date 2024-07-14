@@ -45,6 +45,9 @@ function KếtQuảSaoChép({ vậtThểTiếpThị }: { vậtThểTiếpThị: 
   if (!bàiĐăng) return <></>;
   const tiêuĐề = bàiĐăng["Tiêu đề"];
   if (!bàiĐăng["Nội dung bài đăng"]) {
+    if (globalThis.location.hostname !== "localhost") {
+      navigator.clipboard.writeText(liênKếtĐượcDùng || "");
+    }
     return (
       <p id="nội-dung-tạo-sẵn">
         Không tìm thấy nội dung hoặc mô tả ngắn ở bài đăng. Liên kết {cóRútGọn.value ? "rút gọn" : "UTM"}: <pre>{liênKếtĐượcDùng}</pre>

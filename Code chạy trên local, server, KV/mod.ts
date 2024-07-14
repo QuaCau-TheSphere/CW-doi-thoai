@@ -15,7 +15,7 @@ const currentTime = Temporal.Now.plainTimeISO();
 // console.log("🚀 ~ await kvList({ prefix: [] }):", await kvList({ prefix: [] }));
 
 // await tạoCache();
-// await tạoBàiĐăng();
+await tạoBàiĐăng();
 await tạoNơiĐăng();
 
 // console.log("Số read unit", readUnitSignal.value);
