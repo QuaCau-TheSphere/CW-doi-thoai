@@ -87,7 +87,7 @@ export default function InputTìmBàiĐăngHoặcNơiĐăng(
         required
         value={querySignal.value}
         id={`khung-nhập-${kiểuKebab(tênDanhSách)}`}
-        placeholder={`Tìm ${tênDanhSách} hoặc dán URL để tạo mới`}
+        placeholder={`Tìm ${tênDanhSách} đã có hoặc dán URL để tạo mới trên hệ thống`}
         onInput={(e: InputEvent) => handleInput(e, tênDanhSách, flexSearch, querySignal, danhSáchGợiÝSignal)}
         onFocus={() => element.value = tênDanhSách}
         onKeyDown={(e: KeyboardEvent) => handleKeyDown(e, mụcĐượcChọnSignal, tênDanhSách, danhSáchGợiÝSignal)}

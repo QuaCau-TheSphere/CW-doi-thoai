@@ -13,3 +13,8 @@
 - [ ] Tạo vị trí nơi đăng dễ quản lý hơn
 - [ ] Tự động redirect khi thay đổi đường dẫn
 - [ ] Debugger Facebook 
+- [ ] Nếu nơi đăng là vault thì vị trí đăng ghi thêm đường dẫn cụ thể
+- [ ] tạo utm với những link trong kết quả bài đăng được chọn
+
+# Cả hệ thống
+- [ ] Chỉ cần trigger là push ở cả vault

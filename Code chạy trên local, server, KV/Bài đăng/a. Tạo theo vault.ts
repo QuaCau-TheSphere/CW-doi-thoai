@@ -113,8 +113,8 @@ function xácĐịnhURLCủaGhiChú(
     đườngDẫnTươngĐốiTớiTậpTinHTMLCủaGhiChú.pop();
     đườngDẫnTươngĐốiTớiTậpTinHTMLCủaGhiChú.push(tênTậpTin);
   } else đườngDẫnTươngĐốiTớiTậpTinHTMLCủaGhiChú.pop();
-  if (typeof urlVault === "object") urlVault = urlVault.href;
-  const url = buildUrl(urlVault, { path: đườngDẫnTươngĐốiTớiTậpTinHTMLCủaGhiChú });
+  if (typeof urlVault === "object" && urlVault) urlVault = urlVault.href;
+  const url = buildUrl(urlVault || "", { path: đườngDẫnTươngĐốiTớiTậpTinHTMLCủaGhiChú });
   // console.log("Đường dẫn:", đườngDẫnTớiGhiChú);
   // console.log('URL:', url);
   return url;

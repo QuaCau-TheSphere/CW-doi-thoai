@@ -1,5 +1,4 @@
 import { Signal } from "@preact/signals";
-import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/plus.tsx";
 import { element } from "../Signals tổng.ts";
 import { cursor } from "./Signal tìm bài đăng hoặc nơi đăng.ts";
 import { DanhSáchKếtQuảTìmKiếmType, MụcĐượcChọn, TênDanhSách, đổiKhungNhập } from "../../Code chạy trên client/Hàm và kiểu cho khung nhập.ts";
@@ -7,6 +6,16 @@ import { xửLýPunycode } from "../../Code chạy trên client/URL, HTML/Hàm v
 import { kiểuKebab, tạoLoạiNơiĐăngString, tạoTênNơiĐăngString } from "../../Code chạy trên client/Chuỗi, slug/Hàm xử lý chuỗi.ts";
 import { BàiĐăng } from "../../Code chạy trên local, server, KV/Bài đăng/Hàm và kiểu cho vault, dự án, bài đăng.ts";
 import { NơiĐăngCóCácLựaChọnVịTrí } from "../../Code chạy trên client/Hàm và kiểu cho vị trí.ts";
+import { JSX } from "preact";
+
+function ChữHiểnThị({ dòngChính, dòngPhụ }: { dòngChính: JSX.Element | string | undefined | null; dòngPhụ: JSX.Element }) {
+  return (
+    <>
+      <h2 class="dòng-chính text-lg">{dòngChính}</h2>
+      <span class="dòng-phụ text-slate-400">{dòngPhụ}</span>
+    </>
+  );
+}
 
 function tạoDòngPhụCủaBàiĐăng(bàiĐăng: BàiĐăng) {
   const { "Dự án": dựÁn, "Kho thông tin": khoThôngTin, URL } = bàiĐăng;
@@ -28,7 +37,7 @@ function Item({ item, tênDanhSách }: { item: BàiĐăng | NơiĐăngCóCácL�
     case "bài đăng": {
       item = item as BàiĐăng;
       dòngChính = item["Tiêu đề"];
-      dòngPhụ = <span id="nơi-lưu-bài-đăng">{tạoDòngPhụCủaBàiĐăng(item)}</span>;
+      dòngPhụ = <span class="nơi-lưu-bài-đăng">{tạoDòngPhụCủaBàiĐăng(item)}</span>;
       break;
     }
     case "nơi đăng": {
@@ -39,15 +48,10 @@ function Item({ item, tênDanhSách }: { item: BàiĐăng | NơiĐăngCóCácL�
       } = item;
       if (!Array.isArray(tênNơiĐăng)) return <></>;
       dòngChính = tạoTênNơiĐăngString(tênNơiĐăng) || môTảNơiĐăng;
-      dòngPhụ = <span id="loại-nơi-đăng">{tạoLoạiNơiĐăngString(item)}</span>;
+      dòngPhụ = <span class="loại-nơi-đăng">{tạoLoạiNơiĐăngString(item)}</span>;
     }
   }
-  return (
-    <>
-      <h2 id="dòng-chính" class="text-lg">{dòngChính}</h2>
-      <span id="dòng-phụ" class="text-slate-400">{dòngPhụ}</span>
-    </>
-  );
+  return <ChữHiểnThị dòngChính={dòngChính} dòngPhụ={dòngPhụ} />;
 }
 
 export function DanhSáchKếtQuảTìmKiếm(
@@ -60,10 +64,16 @@ export function DanhSáchKếtQuảTìmKiếm(
 ) {
   if (tênDanhSách !== element.value || !danhSáchKếtQuảTìmKiếm || !querySignal.value) return <></>;
   if (danhSáchKếtQuảTìmKiếm.length === 0) {
+    const dòngChính = <>❗Danh sách {tênDanhSách} hiện tại chưa có từ khoá hoặc URL này</>;
+    const dòngPhụ = (
+      <>
+        Để lưu {tênDanhSách} mới vào hệ thống, hãy dán URL vào ô nhập rồi bấm <kbd class="kbd bg-secondary">Enter</kbd>
+      </>
+    );
     return (
       <ul class="cursor border-2 rounded border-secondary">
         <li class="bg-secondary p-2">
-          <IconPlus class="w-5 h-5" /> Tạo mới <kbd class="kbd bg-secondary">Enter</kbd>
+          <ChữHiểnThị dòngChính={dòngChính} dòngPhụ={dòngPhụ} />
         </li>
       </ul>
     );

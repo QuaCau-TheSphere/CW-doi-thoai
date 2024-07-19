@@ -45,7 +45,13 @@ Vị trí đặt liên kết ở nơi đăng:
   - Loại nền tảng: Diễn đàn
     Tên nền tảng: Facebook
     Loại nơi đăng: [Bài đăng]
-    Danh sách vị trí: [Bình luận, QR trong ảnh, Chữ trong ảnh]
+    Danh sách vị trí:
+      [
+        Bình luận về bài viết,
+        Bình luận trả lời bình luận,
+        QR trong ảnh,
+        Chữ trong ảnh,
+      ]
 
   - Loại nền tảng: Diễn đàn
     Tên nền tảng: Facebook
