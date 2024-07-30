@@ -18,7 +18,8 @@ export function xửLýPunycode(
   đểDấuCáchTrongLiênKết: boolean = false,
 ): string | undefined {
   if (!encodedUrl) return undefined;
-  const decodedUri = decodeURI(encodedUrl.toString().replace(/%(?![0-9][0-9a-fA-F]+)/g, "%25"));
+  // const decodedUri = decodeURI(encodedUrl.toString().replace(/%(?![0-9][0-9a-fA-F]+)/g, "%25"));
+  const decodedUri = decodeURI(encodedUrl.toString());
   const hostname = (new URL(encodedUrl)).hostname;
   const decodedHostname = punycode.toUnicode(hostname);
   const decodedString = decodedUri.toString().replace(hostname, decodedHostname);
