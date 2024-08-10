@@ -88,7 +88,11 @@ export async function lấyHTML(url: Url) {
   } else {
     urlĐểFetch = url;
   }
-  return await (await fetch(urlĐểFetch)).text();
+  try {
+    return await (await fetch(urlĐểFetch)).text();
+  } catch {
+    return `Không lấy được HTML cho ${urlĐểFetch}`;
+  }
 }
 
 export function tạoCorsURL(origin: string) {

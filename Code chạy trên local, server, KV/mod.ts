@@ -1,5 +1,5 @@
 /**
- * @fileoverview chạy bằng lệnh `deno run --allow-all 'Code chạy trên local, server, KV\mod.ts'`
+ * @fileoverview chạy bằng lệnh `deno run --allow-all --unstable-kv --unstable-temporal 'Code chạy trên local, server, KV\mod.ts'`
  */
 import { kvSignal, readUnitSignal, writeUnitSignal } from "./Signal KV.ts";
 import { kvGet, kvList } from "./Hàm cho KV.ts";

@@ -37,6 +37,7 @@ Diễn đàn:
       - EV-HeavyT https://github.com/QuaCau-TheSphere/EV-HeavyT
       - EW-heavyT https://github.com/QuaCau-TheSphere/EW-heavyT
       - FV-khoa-hoc-xa-hoi https://github.com/QuaCau-TheSphere/FV-khoa-hoc-xa-hoi
+      - GW-vat-ly-an-du-trong-triet-hoc https://github.com/QuaCau-TheSphere/GW-vat-ly-an-du-trong-triet-hoc
       - LandofSpheres https://github.com/QuaCau-TheSphere/LandofSpheres
       - tran-ky https://github.com/QuaCau-TheSphere/tran-ky
       - meetup-ticketbox-to-google-calendar https://github.com/QuaCau-TheSphere/meetup-ticketbox-to-google-calendar
@@ -48,10 +49,13 @@ Diễn đàn:
       - LOS-Installer https://github.com/QuaCau-TheSphere/LOS-Installer
       - Ca-nhan-khac https://github.com/QuaCau-TheSphere/Ca-nhan-khac
       - Graphvidian https://github.com/QuaCau-TheSphere/Graphvidian
-      - Presnetaion https://github.com/QuaCau-TheSphere/Presentation
+      - Presentation https://github.com/QuaCau-TheSphere/Presentation
   Spiderum:
 
 Chat:
+  Telegram:
+    Tài khoản:
+      - Nguyễn Hữu Lộc
   Messenger:
     Tài khoản:
     Nhóm:
@@ -89,9 +93,11 @@ Chat:
               - Làm cha mẹ
               - Ăn uống
               - Nơi chốn
+              - Ôn thi đại học
 
           - "#b-sự-kiện-cơ-hội-tuyển-dụng-rao-vặt":
               - Làm đại lý bảo hiểm
+              - Tặng bảo hiểm
 
           ## C Quản lý dự án và công cụ nghĩ:
           - "#c-hệ-thống-tri-thức-cộng-đồng":
@@ -103,6 +109,7 @@ Chat:
               - JavaScript, app script
               - Tổng hợp những sự kiện sẽ diễn ra
               - Phân loại dữ liệu. Trấn Kỳ
+              - Tạo website
 
           ## D Học kỹ năng, phát triển bản thân:
           - "#d-phát-triển-bản-thân-học-kỹ-năng":
@@ -121,9 +128,19 @@ Chat:
               - Lý tính, khoa học, diễn ngôn
               - Khoa học sự sống, khoa học nhận thức, khoa học phức hợp
               - AI
-              - Vật lý
+              - Vật lý, triết học vật lý
+              - Toán học, triết học toán học
               - Cảm xúc
               - Dịch thuật
+              - Tác động của mạng xã hội
+              - Khoa học phức hợp trong xã hội loài người
+              - Cảm xúc
+              - Cách con người phân loại mọi thứ
+              - Khoa học xã hội
+              - Con người đưa ra quyết định thế nào?
+              - Ra quyết định trong sự không chắc chắn
+              - Giao tiếp và thông diễn học
+              - Nữ quyền
   LinkedIn:
   Zalo:
     Tài khoản:
@@ -136,6 +153,7 @@ Vault:
   - C Obsidian, quản lý dự án và công cụ nghĩ
   - C Tiếp thị số, xử lý dữ liệu và lập trình
   - D Học kỹ năng, phát triển bản thân
+  - G Vật lý và ẩn dụ
 
 Website:
   - Quả Cầu https://quảcầu.cc
@@ -145,6 +163,7 @@ Website:
   - Tiếp thị số, xử lý dữ liệu và lập trình https://lậptrình.quảcầu.cc
   - Các slide của Quả Cầu https://slide.quảcầu.cc
   - Học kỹ năng, phát triển bản thân https://pháttriểnbảnthân.quảcầu.cc/
+  - Vật lý và ẩn dụ https://vậtlý.quảcầu.cc/
 
   - đối ⊷ thoại https://doi-thoai.deno.dev
   - Giới thiệu đối ⊷ thoại https://doi-thoai.deno.dev/blog

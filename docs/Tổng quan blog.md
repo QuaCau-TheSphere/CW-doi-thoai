@@ -22,6 +22,7 @@ updated: 2024-07-14T22:26
 - [Obsidian, quản lý dự án và công cụ nghĩ](https://obsidian.quảcầu.cc/?utm_source=W+Giới+thiệu+đối+⊷+thoại&utm_medium=Website&utm_campaign=&utm_content=&utm_term=)
 - [Lập trình và các công cụ số](https://lậptrình.quảcầu.cc/?utm_source=W+Giới+thiệu+đối+⊷+thoại&utm_medium=Website&utm_campaign=&utm_content=&utm_term=)
 - [Tồn tại trong thế giới tư bản](https://kiếmtiền.quảcầu.cc/?utm_source=W+Giới+thiệu+đối+⊷+thoại&utm_medium=Website&utm_campaign=&utm_content=&utm_term=)
+- [Vật lý và ẩn dụ](https://vậtlý.quảcầu.cc/?utm_source=W+Giới+thiệu+đối+⊷+thoại&utm_medium=Website&utm_campaign=&utm_content=&utm_term=)
 
 Sẽ ra mắt:
 - Vùng đất Quả Cầu
