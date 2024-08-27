@@ -140,6 +140,7 @@ const tests: [string, BàiĐăngChưaCóIdVàPhươngThứcTạo | ThôngTinNơi
     {},
   ],
   ["https://slide.xn--qucu-hr5aza.cc/%C4%90%C3%A1p%20%E1%BB%A9ng%20nhu%20c%E1%BA%A7u%20doanh%20nghi%E1%BB%87p/VNPAY.html", {}],
+  ["https://conversion.sg.larksuite.com/share/base/form/shrlgMhHV7o2tfvi8p3p4cn5llb", {}],
 ];
 
 for (const test of tests) {
@@ -147,7 +148,8 @@ for (const test of tests) {
   if (tests.indexOf(test) !== tests.length - 1) continue;
   const a = await lấyMetaTagVàTạoDocument(test[0]);
   // console.log(lấyURLChínhTắc(a));
-  // console.log(a);
+  console.log(a);
+  // Deno.writeTextFileSync("./dfsdf.html", a.html);
   // console.log(await tạoBàiĐăngTừURL(test[0]));
   console.log(await tạoNơiĐăngTừURL(test[0]));
   // assertObjectMatch(await tạoBàiĐăngTừURL(test[0]), test[1]);

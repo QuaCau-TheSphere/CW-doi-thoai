@@ -5,9 +5,9 @@ import { ĐườngDẫnTuyệtĐối } from "../ĐƯỜNG_DẪN.ts";
 export type TênVault = string;
 export type MãVault = string;
 export interface Vault {
-  "Tên vault": TênVault;
-  "Mã vault": MãVault;
-  URL: UrlChưaChínhTắc;
+  "Tên vault"?: TênVault;
+  "Mã vault"?: MãVault;
+  URL?: UrlChưaChínhTắc;
   "Nơi lưu vault": ĐườngDẫnTuyệtĐối;
   "Mô tả vault"?: string;
 }

@@ -139,6 +139,8 @@ export default async function tạoDanhSáchBàiĐăngTrênVault(): Promise<Bài
   const danhSáchBàiĐăng: Omit<BàiĐăng, "id">[] = [];
   const danhSáchTấtCảCácVault = await tạoDanhSáchThôngTinTấtCảCácVault();
   for (const vault of danhSáchTấtCảCácVault) {
+    if (!vault.URL) continue;
+
     /** Bài đăng là những ghi chú được chia sẻ (có `share: true` trên frontmatter) */
     const danhSáchĐườngDẫnTấtCảCácBàiĐăngTrongVault: ĐườngDẫnTuyệtĐối[] = await tạoDanhSáchĐườngDẫnTấtCảCácBàiĐăngTrongVault(vault["Nơi lưu vault"]);
 

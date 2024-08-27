@@ -19,6 +19,7 @@
 - [ ] tạo utm với những link trong kết quả bài đăng được chọn
 - [ ] Nếu discord chỉ có link mời tham gia máy chủ thì vẫn lấy được ở nơi đăng
 - [ ] Thay đổi vài chữ trong bài theo cách xưng hô hoặc ví dụ cụ thể mà bối cảnh đang nói đến chứ không phải là một ví dụ chung chung
+- [ ] Test web local 
 
 # Cả hệ thống/plugin Obsidian
 - [ ] Chỉ cần trigger là push ở cả vault
