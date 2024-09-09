@@ -85,7 +85,14 @@ export async function tạoDanhSáchĐườngDẫnTấtCảCácBàiĐăngTrongVa
           /** Lọc file có frontmatter và có share: true*/
           try {
             const frontmatter = extract(text).attrs;
-            if (frontmatter.share === true) danhSáchĐườngDẫnTấtCảCácBàiĐăngTrongVault.push(đườngDẫnTớiGhiChú);
+            if (frontmatter.share === true) {
+              // if (frontmatter.filename) {
+              //   //todo
+              // } else {
+              //   danhSáchĐườngDẫnTấtCảCácBàiĐăngTrongVault.push(đườngDẫnTớiGhiChú)
+              // }
+              danhSáchĐườngDẫnTấtCảCácBàiĐăngTrongVault.push(đườngDẫnTớiGhiChú);
+            }
           } catch {
             continue;
           }
@@ -98,23 +105,32 @@ export async function tạoDanhSáchĐườngDẫnTấtCảCácBàiĐăngTrongVa
   return danhSáchĐườngDẫnTấtCảCácBàiĐăngTrongVault;
 }
 
-function xácĐịnhURLCủaGhiChú(
+/**
+ * Nếu đường dẫn tới ghi chú là `a/a.md`, thì đường dẫn tới tệp HTML được tạo ra từ ghi chú là `a`.
+ * Nếu đường dẫn tới ghi chú là `a/b.md`, thì đường dẫn tới tệp HTML được tạo ra từ ghi chú là `a/b`.
+ */
+function tạoĐườngDẫnTớiTệpHtml(đườngDẫnTớiGhiChú: ĐườngDẫnTuyệtĐối, đườngDẫnTớiVault: ĐườngDẫnTuyệtĐối): string[] {
+  const đườngDẫnTrongKho: ĐườngDẫnTươngĐối = đườngDẫnTớiGhiChú.replace(đườngDẫnTớiVault, "");
+  const tênTậpTin = basename(đườngDẫnTớiGhiChú, ".md");
+  const thưMụcMẹTrựcTiếp = đườngDẫnTrongKho.split(SEPARATOR_PATTERN).slice(-2)[0];
+
+  const đườngDẫnTớiTệpHtml: string[] = đườngDẫnTrongKho.split(SEPARATOR_PATTERN);
+  const làTệpIndex = tênTậpTin === thưMụcMẹTrựcTiếp;
+  if (!làTệpIndex) {
+    đườngDẫnTớiTệpHtml.pop();
+    đườngDẫnTớiTệpHtml.push(tênTậpTin);
+  } else đườngDẫnTớiTệpHtml.pop();
+  return đườngDẫnTớiTệpHtml;
+}
+
+function xácĐịnhUrlCủaGhiChú(
   đườngDẫnTớiGhiChú: ĐườngDẫnTuyệtĐối,
   đườngDẫnTớiVault: ĐườngDẫnTuyệtĐối,
   urlVault: UrlChưaChínhTắc,
 ) {
-  const đườngDẫnTươngĐốiCủaGhiChúTrongVault: ĐườngDẫnTươngĐối = đườngDẫnTớiGhiChú.replace(đườngDẫnTớiVault, "");
-  const tênTậpTin = basename(đườngDẫnTớiGhiChú, ".md");
-  const thưMụcMẹTrựcTiếp = đườngDẫnTươngĐốiCủaGhiChúTrongVault.split(SEPARATOR_PATTERN).slice(-1)[0];
-
-  /** Nếu đường dẫn bài viết là a/a.md, thì url là a. Nếu đường dẫn bài viết là a/b.md, thì url là a/b */
-  const đườngDẫnTươngĐốiTớiTậpTinHTMLCủaGhiChú: string[] = đườngDẫnTươngĐốiCủaGhiChúTrongVault.split(SEPARATOR_PATTERN);
-  if (tênTậpTin !== thưMụcMẹTrựcTiếp) {
-    đườngDẫnTươngĐốiTớiTậpTinHTMLCủaGhiChú.pop();
-    đườngDẫnTươngĐốiTớiTậpTinHTMLCủaGhiChú.push(tênTậpTin);
-  } else đườngDẫnTươngĐốiTớiTậpTinHTMLCủaGhiChú.pop();
+  const đườngDẫnTớiTệpHtml: string[] = tạoĐườngDẫnTớiTệpHtml(đườngDẫnTớiGhiChú, đườngDẫnTớiVault);
   if (typeof urlVault === "object" && urlVault) urlVault = urlVault.href;
-  const url = buildUrl(urlVault || "", { path: đườngDẫnTươngĐốiTớiTậpTinHTMLCủaGhiChú });
+  const url = buildUrl(urlVault || "", { path: đườngDẫnTớiTệpHtml });
   // console.log("Đường dẫn:", đườngDẫnTớiGhiChú);
   // console.log('URL:', url);
   return url;
@@ -150,7 +166,7 @@ export default async function tạoDanhSáchBàiĐăngTrênVault(): Promise<Bài
 
       danhSáchBàiĐăng.push({
         "Tiêu đề": xácĐịnhTiêuĐềGhiChú(đườngDẫnTớiGhiChú, frontmatter),
-        URL: xácĐịnhURLCủaGhiChú(đườngDẫnTớiGhiChú, vault["Nơi lưu vault"], vault.URL),
+        URL: xácĐịnhUrlCủaGhiChú(đườngDẫnTớiGhiChú, vault["Nơi lưu vault"], vault.URL),
         "Kho thông tin": vault["Tên vault"],
         "Dự án": {
           "Tên dự án": xácĐịnhTênDựÁn(đườngDẫnTớiGhiChú),

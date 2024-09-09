@@ -1,5 +1,17 @@
 /**
- * @fileoverview chạy bằng lệnh `deno run --allow-all --unstable-kv --unstable-temporal 'Code chạy trên local, server, KV\mod.ts'`
+ * @fileoverview bấm F5 để chạy bằng debugger, hoặc chạy lệnh sau trên terminal:
+ * ```PowerShell
+ * deno task run
+ * ```
+ * Nó là viết tắt của cái sau:
+ * ```PowerShell
+ * deno run --allow-all --unstable-kv --unstable-temporal "Code chạy trên local, server, KV\mod.ts"
+ * ```
+ * Nếu muốn lưu log thì chạy:
+ * ```PowerShell
+ * deno task runLog
+ * ```
+ * Mở tệp deno.json để xem còn những lựa chọn chạy nào khác
  */
 import { kvSignal, readUnitSignal, writeUnitSignal } from "./Signal KV.ts";
 import { kvGet, kvList } from "./Hàm cho KV.ts";

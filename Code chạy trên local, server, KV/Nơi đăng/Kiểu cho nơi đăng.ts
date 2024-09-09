@@ -89,7 +89,7 @@ export const danhSáchDiễnĐàn = [
   "Twitter", "Mastodon",
   "YouTube", "TikTok",
   "Instagram", "Pinterest",
-  "Reddit", "Stack Exchange", "Quora", "Tinh tế", "Spiderum", "Medium",
+  "Reddit", "Stack Exchange", "Quora", "Tinh tế", "Spiderum", "Medium", "Substack",
   "GitHub", "GitLab",
   "Zalo",
 ] as const;
