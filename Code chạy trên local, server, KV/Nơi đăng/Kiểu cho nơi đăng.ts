@@ -215,7 +215,7 @@ export type TênTậpTin = typeof danhSáchTậpTin[number];
 export type TênNềnTảngTậpTin = TênTậpTin;
 type LoạiNơiĐăngTậpTin = [TênTậpTin];
 type TênNơiĐăngTậpTin = [string];
-export type CấuHìnhTậpTin = Record<TênTậpTin, string[]> | null;
+export type CấuHìnhTậpTin = Record<TênTậpTin, string[] | null> | null;
 
 /**
  * SaaS
