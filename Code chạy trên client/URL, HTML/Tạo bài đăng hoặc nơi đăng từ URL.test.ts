@@ -142,6 +142,7 @@ const tests: [string, BàiĐăngChưaCóIdVàPhươngThứcTạo | ThôngTinNơi
   ["https://slide.xn--qucu-hr5aza.cc/%C4%90%C3%A1p%20%E1%BB%A9ng%20nhu%20c%E1%BA%A7u%20doanh%20nghi%E1%BB%87p/VNPAY.html", {}],
   ["https://conversion.sg.larksuite.com/share/base/form/shrlgMhHV7o2tfvi8p3p4cn5llb", {}],
   ["https://ducanhwriter.substack.com/p/ai-sang-tac-van-chuong/comments#comment-69418680", {}],
+  ["https://www.facebook.com/quacau.sphere/posts/pfbid02aDMNAynJcwmRKMkcqDevWL321zWDibviKexY9D3UmvhZFP55neQ3mwHB7wKuztoXl", {}],
 ];
 
 for (const test of tests) {
