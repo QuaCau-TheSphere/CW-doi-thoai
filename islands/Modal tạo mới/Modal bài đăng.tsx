@@ -37,19 +37,19 @@ export default function ModalBàiĐăng() {
     xửLýUrlMới();
   }, [url]);
 
-  useEffect(() => {
-    setBàiĐăng({
-      ...bàiĐăng as BàiĐăngChưaCóId,
-      "Tiêu đề": tiêuĐề,
-      "Nội dung bài đăng": {
-        "Mô tả bài đăng": môTảBàiĐăng,
-      },
-      "Dự án": {
-        "Tên dự án": tênDựÁn,
-      },
-      Slug: slug,
-    });
-  }, [tiêuĐề, môTảBàiĐăng, tênDựÁn, slug]);
+  // useEffect(() => {
+  //   setBàiĐăng({
+  //     ...bàiĐăng as BàiĐăngChưaCóId,
+  //     "Tiêu đề": tiêuĐề,
+  //     "Nội dung bài đăng": {
+  //       "Mô tả bài đăng": môTảBàiĐăng,
+  //     },
+  //     "Dự án": {
+  //       "Tên dự án": tênDựÁn,
+  //     },
+  //     Slug: slug,
+  //   });
+  // }, [tiêuĐề, môTảBàiĐăng, tênDựÁn, slug]);
 
   useEffect(() => {
     const {

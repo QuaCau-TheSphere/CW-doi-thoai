@@ -17,7 +17,7 @@ export default function ModalNơiĐăng() {
    */
   const [urlHoặcEmail, setUrlHoặcEmail] = useState(queryNơiĐăngSignal.value);
   const [tênNơiĐăng, setTênNơiĐăng] = useState("");
-  const [slug, setSlug] = useState<string | undefined>();
+  const [slug, setSlug] = useState<string | undefined | null>();
   const [môTảNơiĐăng, setMôTảNơiĐăng] = useState<string | undefined | null>();
   const [lĩnhVực, setLĩnhVực] = useState<string | undefined>();
   const [đơnVịQuảnLý, setĐơnVịQuảnLý] = useState<string | undefined>();
@@ -54,16 +54,16 @@ export default function ModalNơiĐăng() {
     tạoNơiĐăngTừUrlHoặcEmail();
   }, [urlHoặcEmail]);
 
-  useEffect(() => {
-    setNơiĐăng({
-      ...nơiĐăng as NơiĐăngCóCácLựaChọnVịTríChưaCóId,
-      "Tên nơi đăng": tênNơiĐăng.split(", ") as TênNơiĐăng,
-      Slug: slug,
-      "Mô tả nơi đăng": môTảNơiĐăng,
-      "Đơn vị quản lý": đơnVịQuảnLý,
-      "Lĩnh vực": lĩnhVực?.split(", "),
-    });
-  }, [tênNơiĐăng, slug, môTảNơiĐăng, đơnVịQuảnLý, lĩnhVực]);
+  // useEffect(() => {
+  //   setNơiĐăng({
+  //     ...nơiĐăng as NơiĐăngCóCácLựaChọnVịTríChưaCóId,
+  //     "Tên nơi đăng": tênNơiĐăng.split(", ") as TênNơiĐăng,
+  //     Slug: slug,
+  //     "Mô tả nơi đăng": môTảNơiĐăng,
+  //     "Đơn vị quản lý": đơnVịQuảnLý,
+  //     "Lĩnh vực": lĩnhVực?.split(", "),
+  //   });
+  // }, [tênNơiĐăng, slug, môTảNơiĐăng, đơnVịQuảnLý, lĩnhVực]);
 
   useEffect(() => {
     if (nơiĐăng) {
