@@ -1,4 +1,4 @@
-import { parse } from "npm:tldts";
+import { getDomainWithoutSuffix } from "npm:tldts";
 import { MetaTagUrlVàDocument } from "../Hàm cho việc tạo bài đăng hoặc nơi đăng từ URL.ts";
 import { NhómFacebook, SựKiệnFacebook, thôngTinUrlFacebook, TrangFacebook, TàiKhoảnFacebook } from "./Facebook.ts";
 import {
@@ -13,60 +13,7 @@ import { viếtHoa } from "../../Chuỗi, slug/Hàm xử lý chuỗi.ts";
 import { OrgHoặcRepoGitHub, thôngTinUrlGitHub, thôngTinUrlYouTube } from "./Diễn đàn khác.ts";
 import { MáyChủDiscord, thôngTinUrlDiscord } from "./Chat khác.ts";
 import { CơSởDữLiệuNotion, thôngTinUrlGoogle, thôngTinUrlNotion, WorkspaceNotion } from "./SaaS khác.ts";
-
-interface ThôngTinWebsiteCơBản {
-  tên?: string;
-  slug?: string;
-  môTả?: string;
-  ảnh?: string;
-}
-interface Website {
-  "Trang chủ"?: ThôngTinWebsiteCơBản;
-  "Bài đăng"?: ThôngTinWebsiteCơBản;
-}
-
-function thôngTinWebsite(metaTagUrlVàDocument: MetaTagUrlVàDocument): Website {
-  const { meta, document, url } = metaTagUrlVàDocument;
-  const { pathname } = url;
-  const htmlTitle = document.querySelector("title")?.textContent;
-  const htmlTitleSplit = htmlTitle?.split(" - ");
-  const metaTitle = meta.og?.title;
-
-  const tênWebsite = meta.og?.site_name || htmlTitleSplit?.[1]?.trim() || metaTitle;
-
-  if (pathname === "/") {
-    return {
-      "Trang chủ": {
-        tên: tênWebsite,
-        môTả: meta.og?.description || meta?.description || document.querySelector("p")?.textContent,
-        ảnh: meta.og?.image as string,
-        slug: tênWebsite?.replace(/\s/g, ""),
-      },
-    };
-  }
-  const tênBàiĐăng = metaTitle || htmlTitleSplit?.[0].trim();
-  return {
-    "Bài đăng": {
-      tên: tênBàiĐăng,
-      môTả: meta.og?.description || meta?.description || document.querySelector("p")?.textContent,
-      ảnh: meta.og?.image as string,
-      slug: tạoSlugTừUrlWebsite(url),
-    },
-  };
-  /** Nếu  */
-  function tạoSlugTừUrlWebsite(url: URL) {
-    const { pathname } = url;
-    const pathnameWithoutTrailingSlash = pathname.slice(-1) === "/" ? pathname.slice(0, -1) : pathname;
-    const pathnameLastSection = pathnameWithoutTrailingSlash.split("/").slice(-1)[0];
-    const đuôiHTML = /\.(htm|html|php)$/;
-    const đuôiTậpTin = /\.(jpg|png|gif|pdf|doc|docx)$/;
-
-    let slug = pathnameLastSection;
-    if (đuôiHTML.test(pathnameLastSection)) slug = pathnameLastSection.replace(đuôiHTML, "");
-    if (đuôiTậpTin.test(pathnameLastSection)) slug = pathnameLastSection.replace(".", "");
-    return decodeURIComponent(slug);
-  }
-}
+import { thôngTinWebsite, ThôngTinWebsiteCơBản } from "./Website khác.ts";
 
 export interface ThôngTinUrl {
   tênNềnTảng: TênNềnTảng;
@@ -90,7 +37,7 @@ export interface ThôngTinUrl {
 }
 
 function xácĐịnhTênNềnTảngVàLoạiNềnTảngTừUrl(metaTagUrlVàDocument: MetaTagUrlVàDocument): [TênNềnTảng, LoạiNềnTảng] {
-  const domainNameWithoutSuffix = parse(metaTagUrlVàDocument.url.href).domainWithoutSuffix;
+  const domainNameWithoutSuffix = getDomainWithoutSuffix(metaTagUrlVàDocument.url.href) || "";
   const tênMiềnViếtHoa = viếtHoa(domainNameWithoutSuffix) as TênNềnTảng;
   if ((danhSáchDiễnĐàn as unknown as string[]).includes(tênMiềnViếtHoa)) return [tênMiềnViếtHoa, "Diễn đàn"];
   if ((danhSáchNềnTảngChat as unknown as string[]).includes(tênMiềnViếtHoa)) return [tênMiềnViếtHoa, "Chat"];

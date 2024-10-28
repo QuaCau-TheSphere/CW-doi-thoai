@@ -127,7 +127,7 @@ export default function ModalNơiĐăng() {
           type="text"
           class="input input-bordered w-full max-w-xs"
           id="slug"
-          value={slug}
+          value={slug || ""}
           onInput={(e: InputEvent) => setSlug((e.target as HTMLTextAreaElement).value)}
           placeholder="Slug sẽ được dùng để tạo đuôi rút gọn"
         />
