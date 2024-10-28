@@ -15,11 +15,12 @@
  */
 import { kvSignal, readUnitSignal, writeUnitSignal } from "./Signal KV.ts";
 import { kvGet, kvList } from "./Hàm cho KV.ts";
-import { copyDữLiệuTrênDeployXuốngLocal, tạoBàiĐăng, tạoNơiĐăng, xoáDữLiệuTrênKv } from "./Tạo dữ liệu.ts";
+import { tạoBàiĐăng, tạoNơiĐăng } from "./Tạo dữ liệu.ts";
 import { tạoCache } from "./Hàm cho cache.ts";
 import { VậtThểTiếpThị } from "../Code chạy trên client/Hàm và kiểu cho vật thể tiếp thị.ts";
 
 const currentTime = Temporal.Now.plainTimeISO();
+// import { chạyTrênDeployChứKhôngChạyTrênLocal, copyDữLiệuTrênDeployXuốngLocal, xoáDữLiệuTrênKv } from "./Tạo dữ liệu.ts";
 // await chạyTrênDeployChứKhôngChạyTrênLocal();
 // await copyDữLiệuTrênDeployXuốngLocal();
 

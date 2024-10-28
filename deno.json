@@ -10,6 +10,7 @@
     "update": "deno run -A --unstable-kv -r https://fresh.deno.dev/update .",
     "test": "deno run -A --unstable-kv --watch ",
     "run": "deno run --allow-all --unstable-kv --unstable-temporal 'Code chạy trên local, server, KV\\mod.ts'",
+    "runPush": "deno run --allow-all --unstable-kv --unstable-temporal 'Code chạy trên local, server, KV\\mod.ts' && git add -A && git commit --amend --no-edit && git push -f",
     "runLog": "deno run --allow-all --unstable-kv --unstable-temporal 'Code chạy trên local, server, KV\\mod.ts' > log.txt",
     "baiDang": "deno run -A --unstable-kv --watch '.\\Code chạy trên local, server, KV\\Bài đăng\\c. Tạo từ cấu hình nơi đăng.ts'",
     "testurl": "deno run -A --unstable-kv --watch '.\\Code chạy trên client\\URL, HTML\\Lấy thông tin từ URL\\mod.test.ts'"
@@ -41,5 +42,5 @@
     "typography": "npm:@tailwindcss/typography"
   },
   "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" },
-  "nodeModulesDir": true
+  "nodeModulesDir": "auto"
 }

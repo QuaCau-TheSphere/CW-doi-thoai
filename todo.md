@@ -2,11 +2,12 @@
 - [1] YAML schema
 - [1] Tự động tạo danh sách bài đăng và nơi đăng mới mỗi khi cấu hình thay đổi. Mỗi lần push thì cào lại vault một lần rồi chạy mod.ts trên github 
 - [1] Tuỳ chỉnh output text dựa vào nơi đăng: chỉ cần link, plain text, markdown, html
+- [1] Lỗi malform URI khi trong url có %
+- [1] Tự lấy url trên WordPress 
 - [ ] Tự lấy thread trong discord
 - [ ] Tự lấy repo trên github
-- [1] Tự lấy url trên WordPress 
+- [ ] Title không dùng h1
 - [ ] Tạo cơ sở dữ liệu cho các dự án, tổ chức. (Tên dự án dùng để làm campaign) 
-- [ ] Lỗi malform URI khi trong url có %
 
 - [1] Tự động redirect khi thay đổi đường dẫn
 - [ ] fetch 'https://doi-thoai.deno.dev/blog/NhiềuNềnTảng' bị lỗi Recursive requests to the same deployment cannot be processed.
@@ -22,6 +23,7 @@
 - [ ] Test web local 
 - [ ] Đọc filename
 - [ ] Slug dùng luôn source?
+- [ ] Dùng AI để tạo tiêu đề cho những bài đăng không có tiêu đề
 
 # Cả hệ thống/plugin Obsidian
 - [ ] Chỉ cần trigger là push ở cả vault
@@ -29,3 +31,9 @@
 
 # Plugin trình duyệt
 - [ ] Thêm bài đăng, nơi đăng, liên kết ngay trong lúc duyệt web
+
+# SSG
+## Lume
+- [ ] % trong filename
+- [ ] og title, social card không dùng h1
+- [ ] callout

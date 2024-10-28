@@ -21,7 +21,8 @@ Diễn đàn:
     Kênh:
       - Quả Cầu https://youtube.com/@quacau9726?si=8lh_D3EPQE73YU28
     Video:
-      - Công nghệ và ký ức. Nhận thức tăng cường https://youtu.be/anEPsQCBPKI
+      - "Công nghệ và ký ức: trí nhớ của ta có còn nằm trong não của ta nữa không? https://youtu.be/anEPsQCBPKI"
+      - "Giới hạn của PKM nằm ở đâu: máy móc mình sử dụng hay chính người sử dụng nó? https://www.youtube.com/watch?v=DIKNl3nVSxw"
   GitHub:
     Repo:
       - orgs/QuaCau-TheSphere https://github.com/QuaCau-TheSphere
@@ -76,7 +77,8 @@ Chat:
           - "#a-vùng-đất-quả-cầu":
           - "#quỹ":
               - Ý tưởng gây quỹ
-
+          - "#phòng-chat-chung":
+              - Cách Quả Cầu hoạt động
           ## B Mạng kết nối nhu cầu:
           - "#b-nền-kinh-tế-không-dùng-tiền":
               - Phỏng vấn người làm phi lợi nhuận
@@ -116,6 +118,7 @@ Chat:
               - Phân loại dữ liệu. Trấn Kỳ
               - Tạo website
               - Minh hoạ, sơ đồ hóa kiến thức
+              - Ghi chú, sắp xếp, quản lý thông tin
 
           ## D Học kỹ năng, phát triển bản thân:
           - "#d-phát-triển-bản-thân-học-kỹ-năng":
@@ -261,3 +264,5 @@ Slug:
   webđốithoạiblog: https://doi-thoai.deno.dev/blog
   ChiaSẻKhoThôngTin: https://doi-thoai.deno.dev/blog/ChiaSẻKhoThôngTin
   NhiềuNềnTảng: https://doi-thoai.deno.dev/blog/NhiềuNềnTảng
+
+
