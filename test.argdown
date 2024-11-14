@@ -1,0 +1,27 @@
+t the argument map
+
+Click on the Map button in the upper right corner to see the resulting argument map.
+
+This will work for all Argdown examples in this documentation.
+#
+2 Premise-conclusion-structures
+
+Let's logically reconstruct an additional argument in detail:
+
+<Word Analogy>
+
+(1) [Word @#*%!]: It is much easier to write
+    and format a text with Markdown than it is with Word.
+(2) Markdown and Word are comparable in their ease of use
+    to Argdown and argument map editors respectively.
+----
+(3) It is much easier to analyze complex argumentation and
+    create argument maps with Argdown than it is with
+    argument map editors.
+    -> <Editors easier>
+
+
+[Argdown is the best]
+  - <Editors easier> #pro-editor
+    + <WYSIWYG> #pro-editor
+  + <Pure Data>
