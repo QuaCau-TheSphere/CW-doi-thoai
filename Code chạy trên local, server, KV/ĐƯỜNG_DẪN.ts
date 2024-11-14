@@ -15,7 +15,7 @@ export function đọcĐườngDẫn(path: string): VậtThểĐườngDẫnTuy�
 export const THƯ_MỤC_DỰ_ÁN: ĐườngDẫnTươngĐối = "📐 Dự án";
 export const THƯ_MỤC_THIẾT_LẬP: ĐườngDẫnTươngĐối = "Ξ Thiết lập";
 export const TẬP_TIN_THIẾT_LẬP: ĐườngDẫnTươngĐối = "Ξ Thiết lập\\Ξ Thiết lập.md";
-export const THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT: ĐườngDẫnTuyệtĐối = "D:\\QC supplements\\Vaults";
+export const THƯ_MỤC_CHỨA_TẤT_CẢ_CÁC_VAULT: ĐườngDẫnTuyệtĐối = "D:\\Quả Cầu\\Vaults";
 
 /** Trong thư mục dự án */
 export const TẬP_TIN_CSV: ĐườngDẫnTươngĐối = "Cấu hình và dữ liệu/Bài đăng/quảcầu.cc.csv";

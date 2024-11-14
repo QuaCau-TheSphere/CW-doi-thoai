@@ -83,22 +83,13 @@ Chat:
           - "#b-nền-kinh-tế-không-dùng-tiền":
               - Phỏng vấn người làm phi lợi nhuận
           - "#b-nhu-cầu-thường-gặp":
-              - Vay
+              - Vay mượn
               - Kiếm tiền nhanh
               - Thị trường tài chính, tài chính định lượng
               - Tạo dòng tiền, đầu tư, tạo thu nhập thụ động, kinh doanh
               - Mua, bán bảo hiểm
-
-              - Tự trị dữ liệu
-              - Có người dành thời gian hỗ trợ
               - Tụ họp
-              - Sức khoẻ
-              - Đồ đạc
               - Kho lưu trữ dung lượng lớn
-              - Làm cha mẹ
-              - Ăn uống
-              - Nơi chốn
-              - Ôn thi đại học
               - Xuất bản sách
 
           - "#b-sự-kiện-cơ-hội-tuyển-dụng-rao-vặt":
@@ -127,6 +118,14 @@ Chat:
               - Viết lách
               - Tìm người định hướng
               - Trải nghiệm
+              - Thời trang, ăn mặc, ngoại hình
+              - Tự trị dữ liệu
+              - Sức khoẻ
+              - Đồ đạc
+              - Làm cha mẹ
+              - Ăn uống
+              - Nơi chốn
+              - Ôn thi đại học
 
           ## E Giải quyết sự bất lực học được:
           - "#e-mạng-lưới-người-thân-bạn-bè-của-người-có-niềm-tin-tiêu-cực":
@@ -184,7 +183,7 @@ Website:
   - Hiện diện trên nhiều nền tảng https://doi-thoai.deno.dev/blog/NhiềuNềnTảng
   - Trấn Kỳ https://tranky.deno.dev
 
-  - Bộ sưu tập từ điển chuyên ngành http://gofile.me/726r9/eBNGTxutb
+  - Bộ sưu tập từ điển chuyên ngành https://nextcloud.webo.hosting/s/bPZjiJRNtq3gxxG
 Email:
   - quacau.thesphere@gmail.com
 Ảnh:
@@ -264,5 +263,3 @@ Slug:
   webđốithoạiblog: https://doi-thoai.deno.dev/blog
   ChiaSẻKhoThôngTin: https://doi-thoai.deno.dev/blog/ChiaSẻKhoThôngTin
   NhiềuNềnTảng: https://doi-thoai.deno.dev/blog/NhiềuNềnTảng
-
-
