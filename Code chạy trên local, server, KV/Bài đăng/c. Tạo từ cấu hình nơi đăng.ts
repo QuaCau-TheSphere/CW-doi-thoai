@@ -7,8 +7,9 @@ import { lấyMetaTagVàTạoDocumentTrênLocal } from "../Hàm cho cache.ts";
 import { tạoBàiĐăngTừURL } from "../../Code chạy trên client/URL, HTML/Tạo bài đăng hoặc nơi đăng từ URL.ts";
 import { lấyThôngTinTừUrl } from "../../Code chạy trên client/URL, HTML/Lấy thông tin từ URL/mod.ts";
 
-async function tạoDanhSáchBàiĐăngTừCấuHìnhNơiĐăng(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng): Promise<BàiĐăngChưaCóId[]> {
+async function tạoDanhSáchBàiĐăngTừCấuHìnhNơiĐăng(cấuHìnhNơiĐăng: CấuHìnhNơiĐăng | null): Promise<BàiĐăngChưaCóId[]> {
   const danhSáchBàiĐăng: BàiĐăngChưaCóId[] = [];
+  if (!cấuHìnhNơiĐăng) return [];
   const { Slug: cấuHìnhSlug, ...cấuHìnhĐãBỏSlug } = cấuHìnhNơiĐăng;
   const từĐiểnSlugNơiĐăng = await tạoTừĐiểnSlugNơiĐăng(cấuHìnhSlug);
   const danhSáchUrl = lấyURLTrongJSON(cấuHìnhĐãBỏSlug);

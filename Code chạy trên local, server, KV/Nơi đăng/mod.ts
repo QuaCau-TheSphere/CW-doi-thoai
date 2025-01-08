@@ -117,6 +117,8 @@ export default async function tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí
   thôngTinCấuHìnhNơiĐăng: ThôngTinCấuHìnhNơiĐăng,
 ): Promise<NơiĐăngCóCácLựaChọnVịTríChưaCóId[]> {
   const { cấuHình, loạiCấuHình, tênCấuHình } = thôngTinCấuHìnhNơiĐăng;
+  if (!cấuHình) return [];
+
   const danhSáchNơiĐăng: ThôngTinNơiĐăngChưaCóId[] = [
     ...await tạoDanhSáchDiễnĐàn(cấuHình),
     ...await tạoDanhSáchChat(cấuHình),

@@ -26,7 +26,7 @@ export interface CấuHìnhChung {
 
 export type LoạiCấuHình = "Cá nhân" | "Tổ chức" | "Chủ đề";
 export type ThôngTinCấuHìnhNơiĐăng = {
-  cấuHình: CấuHìnhNơiĐăng;
+  cấuHình: CấuHìnhNơiĐăng | null;
   loạiCấuHình: LoạiCấuHình;
   tênCấuHình: string;
 };

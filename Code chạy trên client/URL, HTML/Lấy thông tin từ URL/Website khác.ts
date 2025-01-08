@@ -24,7 +24,7 @@ function táchTênTrongHtmlTitle(htmlTitle: string | undefined): string[] | [und
  */
 function tạoSlugTừUrlWebsite(nguồn: URL | string | undefined, làTrangChủ = false) {
   if (làTrangChủ && typeof nguồn === "string") return nguồn?.replace(/\s/g, "");
-  if (!nguồn) return "TOFIX";
+  if (!nguồn) return String(nguồn);
   const { pathname } = new URL(nguồn);
   const pathnameWithoutTrailingSlash = pathname.slice(-1) === "/" ? pathname.slice(0, -1) : pathname;
   const pathnameLastSection = pathnameWithoutTrailingSlash.split("/").slice(-1)[0];
@@ -52,7 +52,6 @@ export function thôngTinWebsite(metaTagUrlVàDocument: MetaTagUrlVàDocument): 
 
   if (làTrangChủ) {
     const tênWebsite = meta.og?.site_name || phầnTênWebsiteTrongHtmlTitle?.trim() || metaTitle || htmlTitle;
-    console.log("🚀 ~ file: Website khác.ts:54 ~ làTrangChủ:", làTrangChủ);
     return {
       "Trang chủ": {
         tên: tênWebsite || hostname,
