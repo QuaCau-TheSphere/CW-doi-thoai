@@ -9,11 +9,14 @@
 - [ ] Title không dùng h1
 - [ ] Tạo cơ sở dữ liệu cho các dự án, tổ chức. (Tên dự án dùng để làm campaign) 
 
+
+- [ ] Cấu trúc lại thư mục "Nơi đăng"
+- [ ] Cá nhân, tài khoản
+
 - [1] Tự động redirect khi thay đổi đường dẫn
 - [ ] fetch 'https://doi-thoai.deno.dev/blog/NhiềuNềnTảng' bị lỗi Recursive requests to the same deployment cannot be processed.
 - [ ] cache và api trả về chỉ cần là thông tin url chứ không phải toàn bộ html
 - [ ] kết quả tổng hợp của một nơi đăng, bài đăng
-- [ ] Cá nhân, tài khoản
 - [ ] Tạo vị trí nơi đăng dễ quản lý hơn
 - [ ] Debugger Facebook 
 - [ ] Nếu nơi đăng là vault thì vị trí đăng ghi thêm đường dẫn cụ thể
