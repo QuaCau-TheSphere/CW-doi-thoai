@@ -48,7 +48,8 @@ const urls = [
   // 'https://docs.google.com/forms/d/e/1FAIpQLSeT6QlGtAtTknBInCT6nmxRJLEm1S_jU6Fb30ub9JsYAQZknw/viewform',
   // 'https://doi-thoai.deno.dev/blog/NhiềuNềnTảng',
   // 'https://slide.quảcầu.cc/Đáp ứng nhu cầu doanh nghiệp/VNPAY.html',
-  'https://membership.ciovn.org/',
+  // 'https://membership.ciovn.org/',
+  'https://docs.google.com/forms/d/e/1FAIpQLSczb_Mw6Hw4MsUyTk8SaSsOeIp65KSBuhiCc3K9fHDnHJJ8qw/viewform'
 ];
 // const url = urls[3];
 // const url = "https://www.youtube.com/channel/UCReU_XcmJlp9ORWi8U2O-Fg";

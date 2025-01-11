@@ -1,6 +1,7 @@
 import { UrlChưaChínhTắc } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL và fetch.ts";
 import { ĐườngDẫnTuyệtĐối } from "../ĐƯỜNG_DẪN.ts";
 
+//refactor: dùng hàm bên util tổng
 /** Vault */
 export type TênVault = string;
 export type MãVault = string;

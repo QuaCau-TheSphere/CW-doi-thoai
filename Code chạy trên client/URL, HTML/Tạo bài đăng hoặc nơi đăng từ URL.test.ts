@@ -1,4 +1,4 @@
-import { tạoBàiĐăngTừURL, tạoNơiĐăngTừURL } from "./Tạo bài đăng hoặc nơi đăng từ URL.ts";
+// import { tạoBàiĐăngTừURL, tạoNơiĐăngTừURL } from "./Tạo bài đăng hoặc nơi đăng từ URL.ts";
 import { assertObjectMatch } from "https://deno.land/std@0.216.0/assert/assert_object_match.ts";
 import { lấyMetaTagVàTạoDocument } from "./Hàm cho việc tạo bài đăng hoặc nơi đăng từ URL.ts";
 import { ThôngTinNơiĐăngChưaCóIdVàPhươngThứcTạo } from "../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";
@@ -143,11 +143,14 @@ const tests: [string, BàiĐăngChưaCóIdVàPhươngThứcTạo | ThôngTinNơi
   ["https://conversion.sg.larksuite.com/share/base/form/shrlgMhHV7o2tfvi8p3p4cn5llb", {}],
   ["https://ducanhwriter.substack.com/p/ai-sang-tac-van-chuong/comments#comment-69418680", {}],
   ["https://www.facebook.com/quacau.sphere/posts/pfbid02aDMNAynJcwmRKMkcqDevWL321zWDibviKexY9D3UmvhZFP55neQ3mwHB7wKuztoXl", {}],
+  ["https://docs.google.com/forms/d/e/1FAIpQLSczb_Mw6Hw4MsUyTk8SaSsOeIp65KSBuhiCc3K9fHDnHJJ8qw/viewform", {}],
 ];
 
 for (const test of tests) {
+  const khôngLàCáiCuối = tests.indexOf(test) !== tests.length - 1;
+
   // if (tests.indexOf(test) < 12) continue;
-  if (tests.indexOf(test) !== tests.length - 1) continue;
+  if (khôngLàCáiCuối) continue;
   const a = await lấyMetaTagVàTạoDocument(test[0]);
   // console.log(lấyURLChínhTắc(a));
   console.log(a);

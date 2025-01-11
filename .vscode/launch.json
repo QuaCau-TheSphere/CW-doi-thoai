@@ -30,7 +30,8 @@
       // "program": "${workspaceFolder}/main.ts",
       "program": "${file}",
       "cwd": "${workspaceFolder}",
-      "runtimeExecutable": "C:\\Users\\ganuo\\AppData\\Local\\Microsoft\\WinGet\\Links\\deno.EXE",
+      "runtimeExecutable": "deno",
+      // "runtimeExecutable": "C:\\Users\\ganuo\\.deno\\bin\\deno.exe",
       "runtimeArgs": [
         "run",
         // "test",

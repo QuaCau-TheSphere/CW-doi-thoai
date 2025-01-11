@@ -6,6 +6,7 @@ import isEmail from "npm:validator/lib/isEmail.js";
 import { IS_BROWSER } from "$fresh/src/runtime/utils.ts";
 // import { lấyURLChínhTắcVàHTMLTừLocal } from "../../Code%20ch%E1%BA%A1y%20tr%C3%AAn%20local,%20server,%20KV/H%C3%A0m%20cho%20cache.ts";
 
+//refactor: dùng hàm bên util tổng
 export type UrlChưaChínhTắc = string | URL;
 export type UrlChínhTắc = URL;
 export type Url = UrlChưaChínhTắc | UrlChínhTắc;

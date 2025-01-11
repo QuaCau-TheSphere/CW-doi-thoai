@@ -131,7 +131,7 @@ export default async function tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí
     "Vị trí đặt liên kết ở nơi đăng": danhSáchVậtThểVịTrí,
     "Vị trí thành phần": cấuHìnhVịTríNhỏHơn,
   } = lấyCấuHìnhChung();
-  const từĐiểnSlugNơiĐăng = await tạoTừĐiểnSlugNơiĐăng(thôngTinCấuHìnhNơiĐăng.cấuHình["Slug"]);
+  const từĐiểnSlugNơiĐăng = await tạoTừĐiểnSlugNơiĐăng(cấuHình["Slug"]);
 
   for (const thôngTinNơiĐăng of danhSáchNơiĐăng) {
     for (const vậtThểVịTrí of danhSáchVậtThểVịTrí) {

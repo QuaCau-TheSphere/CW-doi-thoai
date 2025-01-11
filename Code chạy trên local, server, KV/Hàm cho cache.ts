@@ -100,6 +100,7 @@ export async function tạoCache(): Promise<CacheHTML> {
   return cacheHTML;
 }
 
+//todo xử lý trường hợp url trả về undefined
 export async function lấyMetaTagVàTạoDocumentTrênLocal(urlString: Url, HTML: string | undefined = undefined): Promise<MetaTagUrlVàDocument> {
   const [url, html] = await lấyURLChínhTắcVàHTMLTừLocal(urlString, HTML);
   const meta = await getMetaTags(html) as MetaTags;
