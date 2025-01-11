@@ -1,4 +1,4 @@
-- [2] Thêm nơi đăng mới không cần url. Nếu không có url thì chỉnh sửa trong khai báo yaml luôn
+- [3] Thêm nơi đăng mới không cần url. Nếu không có url thì chỉnh sửa trong khai báo yaml luôn
 - [1] YAML schema
 - [1] Tự động tạo danh sách bài đăng và nơi đăng mới mỗi khi cấu hình thay đổi. Mỗi lần push thì cào lại vault một lần rồi chạy mod.ts trên github 
 - [1] Tuỳ chỉnh output text dựa vào nơi đăng: chỉ cần link, plain text, markdown, html
@@ -8,12 +8,15 @@
 - [ ] Tự lấy repo trên github
 - [ ] Title không dùng h1
 - [ ] Tạo cơ sở dữ liệu cho các dự án, tổ chức. (Tên dự án dùng để làm campaign) 
+- [ ] Thêm WhatsApp 
 
+- [ ] Cấu trúc lại thư mục "Nơi đăng"
+- [ ] Cá nhân, tài khoản
+- [ ] Không cần phải cào web nếu không cần
 - [1] Tự động redirect khi thay đổi đường dẫn
 - [ ] fetch 'https://doi-thoai.deno.dev/blog/NhiềuNềnTảng' bị lỗi Recursive requests to the same deployment cannot be processed.
 - [ ] cache và api trả về chỉ cần là thông tin url chứ không phải toàn bộ html
 - [ ] kết quả tổng hợp của một nơi đăng, bài đăng
-- [ ] Cá nhân, tài khoản
 - [ ] Tạo vị trí nơi đăng dễ quản lý hơn
 - [ ] Debugger Facebook 
 - [ ] Nếu nơi đăng là vault thì vị trí đăng ghi thêm đường dẫn cụ thể
@@ -24,10 +27,13 @@
 - [ ] Đọc filename
 - [ ] Slug dùng luôn source?
 - [ ] Dùng AI để tạo tiêu đề cho những bài đăng không có tiêu đề
+- [ ] Xử lý trường hợp url trả về undefined (những comment //todo) 
 
 # Cả hệ thống/plugin Obsidian
 - [ ] Chỉ cần trigger là push ở cả vault
 - [ ] Tạo nội dung cho WordPress 
+- [ ] Tự gắn UTM trong vault
+- [ ] Link mà nếu bên vault kia rename thì vẫn redirect được
 
 # Plugin trình duyệt
 - [ ] Thêm bài đăng, nơi đăng, liên kết ngay trong lúc duyệt web
