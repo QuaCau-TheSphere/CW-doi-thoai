@@ -15,7 +15,8 @@ import {
 } from "../ĐƯỜNG_DẪN.ts";
 import { UrlChưaChínhTắc } from "../../Code chạy trên client/URL, HTML/Hàm và kiểu cho URL và fetch.ts";
 
-async function cóThưMụcObsidianBênTrong(thưMục: string) {
+//refactor: dùng hàm bên util tổng
+async function cóThưMụcObsidianBênTrong(thưMục: ĐườngDẫnTuyệtĐối) {
   try {
     for await (const dirEntry of Deno.readDir(thưMục)) {
       if (dirEntry.isDirectory && dirEntry.name === ".obsidian") return true;
