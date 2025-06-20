@@ -1,6 +1,6 @@
 import { parse } from "npm:tldts";
 import punycode from "npm:punycode";
-import { DOMParser, HTMLDocument } from "jsr:@b-fuze/deno-dom";
+import { DOMParser, HTMLDocument } from "@b-fuze/deno-dom";
 import { getMetaTags } from "https://deno.land/x/opengraph@v1.0.0/mod.ts";
 import { lấyHTML, lấyURLChínhTắc, Url, UrlChínhTắc } from "./Hàm và kiểu cho URL và fetch.ts";
 import { LoạiNềnTảng } from "../../Code chạy trên local, server, KV/Nơi đăng/Kiểu cho nơi đăng.ts";

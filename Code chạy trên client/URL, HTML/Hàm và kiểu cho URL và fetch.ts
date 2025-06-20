@@ -1,4 +1,4 @@
-import { DOMParser, HTMLDocument } from "jsr:@b-fuze/deno-dom";
+import { DOMParser, HTMLDocument } from "@b-fuze/deno-dom";
 import punycode from "npm:punycode";
 import * as linkify from "npm:linkifyjs";
 import isURL from "npm:validator/lib/isURL.js";

@@ -23,5 +23,8 @@
     "editor.formatOnSave": false
   },
   "editor.tabSize": 2,
-  "editor.tabCompletion": "on"
+  "editor.tabCompletion": "on",
+  "[hledger]": {
+    "editor.defaultFormatter": "iiatlas.hledger-formatter"
+  }
 }

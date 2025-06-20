@@ -39,7 +39,8 @@
     "tailwindcss": "npm:tailwindcss@3.4.1",
     "tailwindcss/": "npm:/tailwindcss@3.4.1/",
     "tailwindcss/plugin": "npm:/tailwindcss@3.4.1/plugin.js",
-    "typography": "npm:@tailwindcss/typography"
+    "typography": "npm:@tailwindcss/typography",
+    "@b-fuze/deno-dom": "jsr:@b-fuze/deno-dom@0.1.49"
   },
   "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" },
   "nodeModulesDir": true
