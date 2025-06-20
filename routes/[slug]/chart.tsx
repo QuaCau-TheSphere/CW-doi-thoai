@@ -77,7 +77,8 @@ export default function ChartPage(props: PageProps<{ vậtThểTiếpThị: Vậ
       <HeadVàMeta title={`Lượt truy cập vào ${đuôiRútGọn}`} imageUrl="Linh Rab.jpg" />
       <main>
         <div class="p-4 mx-auto max-w-screen-md">
-          <ReactECharts option={chartData} />
+          {/* <ReactECharts option={chartData} /> */}
+          (Lỗi ECharts không hiển thị được)
           <ThôngTinVậtThểTiếpThị vậtThểTiếpThị={vậtThểTiếpThị} />
         </div>
       </main>
