@@ -1,4 +1,4 @@
-import { DOMParser, HTMLDocument } from "jsr:@b-fuze/deno-dom";
+import { DOMParser, HTMLDocument } from "@b-fuze/deno-dom";
 import { tạoDanhSáchThôngTinCấuHìnhNơiĐăng } from "./Hàm và kiểu cho cấu hình.ts";
 import { getMetaTags } from "https://deno.land/x/opengraph@v1.0.0/mod.ts";
 import { TẬP_TIN_CACHE_HTML, TẬP_TIN_CACHE_URL_CHÍNH_TẮC } from "./ĐƯỜNG_DẪN.ts";

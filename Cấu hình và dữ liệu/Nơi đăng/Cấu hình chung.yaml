@@ -144,6 +144,22 @@ Vị trí đặt liên kết ở nơi đăng:
     Loại nơi đăng: [Cộng đồng, Chat cộng đồng, Sidechat]
     Danh sách vị trí: [Tin nhắn, Tin nhắn ghim]
 
+  ## WhatsApp
+  - Loại nền tảng: Chat
+    Tên nền tảng: WhatsApp
+    Loại nơi đăng: [Tài khoản]
+    Danh sách vị trí: [Tin nhắn, Tin nhắn ghim]
+
+  - Loại nền tảng: Chat
+    Tên nền tảng: WhatsApp
+    Loại nơi đăng: [Nhóm]
+    Danh sách vị trí: [Tin nhắn, Tin nhắn ghim]
+
+  - Loại nền tảng: Chat
+    Tên nền tảng: WhatsApp
+    Loại nơi đăng: [Cộng đồng, Nhóm]
+    Danh sách vị trí: [Tin nhắn, About, Tin nhắn ghim]
+
   ## Discord
   - Loại nền tảng: Chat
     Tên nền tảng: Discord
