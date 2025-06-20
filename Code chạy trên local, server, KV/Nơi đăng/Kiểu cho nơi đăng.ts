@@ -132,6 +132,7 @@ export type CấuHìnhDiễnĐàn = Record<TênDiễnĐàn, CấuHìnhNơiĐăng
 export const danhSáchNềnTảngChat = [
   "Messenger",
   "Discord",
+  "WhatsApp",
   "Telegram",
   "Zalo",
   "Viber",
@@ -146,13 +147,22 @@ export type LoạiNơiĐăngChatThôngThường = ["Cá nhân" | "Tài khoản" 
 export type CấuHìnhNơiĐăngChatThôngThường = Record<LoạiNơiĐăngChatThôngThường[0], string[] | null>;
 type TênNơiĐăngChatThôngThường = [string];
 
-/** Messenger, Discord, Telegram */
-export type TênMáyChủ = string;
-type TênKênh = string;
-export type TênThreadHoặcTopic = string;
-export type TênNơiĐăngMessengerDiscordTelegram =
-  | [TênMáyChủ, TênKênh]
-  | [TênMáyChủ, TênKênh, TênThreadHoặcTopic];
+/**
+ *  Chat đa cấp là những nền tảng mà ở dưới nó còn có nhiều cấp nhỏ hơn. Ví dụ như Messenger, Discord, Telegram, WhatsApp
+ *
+ * | Cấp | Tên gọi các cấp chat | Lý do xuất hiện                                  | Discord                    | Messenger      | Telegram | WhatsApp  |
+ * | --- | -------------------- | ------------------------------------------------ | -------------------------- | -------------- | -------- | --------- |
+ * | 1   | Cộng đồng            | Từ nhu cầu xây dựng cộng đồng của người sáng lập | Server                     | Community      | Group    | Community |
+ * | 2   | Nhóm/mối quan tâm    | Từ nhu cầu phân loại của quản trị viên           | Text Channel/Forum Channel | Community Chat | Topic    | Group     |
+ * | 3   | Chủ đề               | Từ nhu cầu bảo vệ sự tập trung của thành viên    | Channel Thread/Forum Post  | Sidechat       | ❌       | ❌       |
+ */
+export type TênCấp1 = string;
+type TênCấp2 = string;
+export type TênCấp3 = string;
+
+export type TênNơiĐăngChatĐaCấp =
+  | [TênCấp1, TênCấp2]
+  | [TênCấp1, TênCấp2, TênCấp3];
 /**
  * Cấu hình máy chủ cũng chính là danh sách kênh của máy chủ đó
  *
@@ -164,8 +174,8 @@ export type TênNơiĐăngMessengerDiscordTelegram =
  * - Kênh 3:         # `Record<TênKênh, null>`
  * ```
  */
-export type CấuHìnhMáyChủ = (TênKênh | Record<TênKênh, TênThreadHoặcTopic[] | null>)[];
-type MáyChủ = OneKey<TênMáyChủ, CấuHìnhMáyChủ | null>;
+export type CấuHìnhCấp1 = (TênCấp2 | Record<TênCấp2, TênCấp3[] | null>)[];
+type Cấp1 = OneKey<TênCấp1, CấuHìnhCấp1 | null>;
 
 type LoạiNơiĐăngMessenger =
   | ["Cộng đồng", "Chat cộng đồng"]
@@ -175,30 +185,36 @@ type LoạiNơiĐăngDiscord =
   | ["Máy chủ", "Kênh thường", "Thread"]
   | ["Máy chủ", "Kênh diễn đàn", "Bài diễn đàn"];
 type LoạiNơiĐăngTelegram = ["Nhóm"] | ["Nhóm", "Chủ đề"];
-export type LoạiNơiĐăngMessengerDiscordTelegram =
+type LoạiNơiĐăngWhatsApp = ["Cộng đồng", "Nhóm"];
+
+export type LoạiNơiĐăngChatĐaCấp =
   | LoạiNơiĐăngMessenger
   | LoạiNơiĐăngDiscord
-  | LoạiNơiĐăngTelegram;
+  | LoạiNơiĐăngTelegram
+  | LoạiNơiĐăngWhatsApp;
 
 /** Tổng hợp */
 type TênNơiĐăngChat =
   | TênNơiĐăngChatThôngThường
-  | TênNơiĐăngMessengerDiscordTelegram;
+  | TênNơiĐăngChatĐaCấp;
 export type LoạiNơiĐăngChat =
   | LoạiNơiĐăngChatThôngThường
-  | LoạiNơiĐăngMessengerDiscordTelegram;
+  | LoạiNơiĐăngChatĐaCấp;
 
 export interface CấuHìnhChat {
   Messenger:
-    | CấuHìnhNơiĐăngChatThôngThường & { "Cộng đồng": MáyChủ[] | null }
+    | CấuHìnhNơiĐăngChatThôngThường & { "Cộng đồng": Cấp1[] | null }
+    | null;
+  WhatsApp:
+    | CấuHìnhNơiĐăngChatThôngThường & { "Cộng đồng": Cấp1[] | null }
     | null;
   Discord:
-    | CấuHìnhNơiĐăngChatThôngThường & { "Máy chủ": MáyChủ[] | null }
+    | CấuHìnhNơiĐăngChatThôngThường & { "Máy chủ": Cấp1[] | null }
     | null;
   Telegram:
     | CấuHìnhNơiĐăngChatThôngThường & {
       Kênh: string[] | null;
-      Nhóm: MáyChủ[] | null;
+      Nhóm: Cấp1[] | null;
     }
     | null;
   Zalo: CấuHìnhNơiĐăngChatThôngThường | null;

@@ -1,7 +1,8 @@
 ## Tính năng
 - [3] Thêm nơi đăng mới không cần url. Nếu không có url thì chỉnh sửa trong khai báo yaml luôn
 - [ ] Tạo cơ sở dữ liệu cho các dự án, tổ chức. (Tên dự án dùng để làm campaign) 
-- [ ] Thêm WhatsApp 
+- [x] Thêm WhatsApp 
+  - [ ] Khi thêm một nền tảng chat mới thì chỉ cần thêm một lần là xong
 - [ ] Các cách rút gọn: ngắn tối đa, chỉ có tên bài đăng/tên nơi đăng, có cả tên bài đăng và tên kho 
 - [ ] Cá nhân, tài khoản là như nhau
 - [ ] Thay đổi vài chữ trong bài theo cách xưng hô hoặc ví dụ cụ thể mà bối cảnh đang nói đến chứ không phải là một ví dụ chung chung
