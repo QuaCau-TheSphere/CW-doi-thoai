@@ -1,6 +1,6 @@
 //refactor: không chỉ trả về html mà trả luôn bài đăng hoặc nơi đăng
 
-import { DOMParser } from "jsr:@b-fuze/deno-dom";
+import { DOMParser } from "@b-fuze/deno-dom";
 import { Handlers } from "$fresh/server.ts";
 import esthetic from "npm:esthetic";
 import { load } from "$std/dotenv/mod.ts";
