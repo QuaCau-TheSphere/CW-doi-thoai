@@ -6,8 +6,15 @@ Chat:
   #   - Kulavietnam:
   Messenger:
     Cá nhân:
+  Zalo:
+    Cá nhân:
+      - Thanh Thanh
+      - Khoa
+    Nhóm:
+      - "[Info] Trại Hè Triết học 2026"
 Email:
   - van.le@fulbright.edu.vn Lê Nguyễn Tường Vân
 
 SaaS:
   Zoom:
+    Tin nhắn:
