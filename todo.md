@@ -19,6 +19,7 @@
 - [ ] Tự lấy repo trên github
 - [ ] Title không dùng h1
 - [ ] Dùng lib utils
+- [ ] Tạo trang chủ mới không cần tại cấu hình nơi đăng
 
 - [ ] Cấu trúc lại thư mục "Nơi đăng"
 - [ ] Không cần phải cào web nếu không cần
@@ -38,6 +39,7 @@
 - [1] Lỗi malform URI khi trong url có %
 - [ ] fetch 'https://doi-thoai.deno.dev/blog/NhiềuNềnTảng' bị lỗi Recursive requests to the same deployment cannot be processed.
 - [ ] không hiểu sao để component echart.tsx trong routes/[slug] thì bị lỗi, phải comment bỏ đi
+- [ ] Vị trí thành phần đầu tiên không lấy được
 
 # Cả hệ thống/plugin Obsidian
 - [ ] Chỉ cần trigger là push ở cả vault
