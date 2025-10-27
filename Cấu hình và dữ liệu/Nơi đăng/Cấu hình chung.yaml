@@ -37,7 +37,22 @@ Vị trí đặt liên kết ở nơi đăng:
         Ảnh bìa,
         Bài ghim,
       ]
-
+  ## Zalo
+  - Loại nền tảng: Diễn đàn
+    Tên nền tảng: Zalo
+    Loại nơi đăng: [Tài khoản]
+    Danh sách vị trí:
+      [
+        Bài đăng,
+        Album ảnh,
+        Video,
+        Bio,
+        About,
+        Website,
+        Ảnh đại diện,
+        Ảnh bìa,
+        Bài ghim,
+      ]
   ## Facebook
   - Loại nền tảng: Diễn đàn
     Tên nền tảng: Facebook
@@ -222,7 +237,7 @@ Vị trí đặt liên kết ở nơi đăng:
   - Loại nền tảng: Website
     Tên nền tảng: Website
     Loại nơi đăng: [Website]
-    Danh sách vị trí: [Bài đăng, Trang chủ, Liên kết repo, Liên kết MXH]
+    Danh sách vị trí: [Bài đăng, Trang chủ, Liên kết repo, Liên kết MXH, Cột trái, Cột phải, Dưới mỗi bài]
 
   - Loại nền tảng: Website
     Tên nền tảng: Website
