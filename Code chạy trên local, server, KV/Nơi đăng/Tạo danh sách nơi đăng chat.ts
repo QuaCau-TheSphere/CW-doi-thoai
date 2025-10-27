@@ -53,7 +53,7 @@ async function lấyDanhSáchChatĐaCấp(cấuHìnhNơiĐăng: CấuHìnhNơiĐ
                   "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
                 });
 
-                /** Trường hợp cấp 2 có cấp 3*/
+                /** Trường hợp cấp 2 có cấp 3 */
               } else {
                 for (const cấp3Url of danhSáchCấp3) {
                   const [cấp3, urlCấp3] = await táchUrlHoặcEmailĐầuTiênTrongChuỗi(cấp3Url);
@@ -64,6 +64,19 @@ async function lấyDanhSáchChatĐaCấp(cấuHìnhNơiĐăng: CấuHìnhNơiĐ
                     "Tên nền tảng": tênNềnTảng,
                     "Loại nền tảng": "Chat",
                     URL: urlCấp3 || urlCấp2 || urlCấp1,
+                    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+                  });
+                }
+
+                /** Do ở Discord có Text Channel nên phải thêm riêng */
+                if (tênNềnTảng === "Discord" && !cấuHìnhNơiĐăng["Kênh diễn đàn Discord"]?.includes(cấp2)) {
+                  const tênNơiĐăng = [tênCấp1, cấp2] as TênNơiĐăngChatĐaCấp;
+                  danhSáchChatĐaCấp.push({
+                    "Tên nơi đăng": tênNơiĐăng,
+                    "Loại nơi đăng": lấyLoạiNơiĐăng(tênNềnTảng),
+                    "Tên nền tảng": tênNềnTảng,
+                    "Loại nền tảng": "Chat",
+                    URL: urlCấp2 || urlCấp1,
                     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
                   });
                 }
