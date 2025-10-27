@@ -13,6 +13,10 @@ Diễn đàn:
     Tài khoản:
       - Quả Cầu https://www.facebook.com/qua.cau.the.sphere
 
+  Zalo:
+    Tài khoản:
+      - Quả Cầu
+
   LinkedIn:
     Nhóm:
     Trang:
@@ -22,8 +26,9 @@ Diễn đàn:
     Kênh:
       - Quả Cầu https://youtube.com/@quacau9726?si=8lh_D3EPQE73YU28
     Video:
-  # - "Công nghệ và ký ức: trí nhớ của ta có còn nằm trong não của ta nữa không? https://www.youtube.com/watch?v=anEPsQCBPKI"
-  # - "Giới hạn của PKM nằm ở đâu: máy móc mình sử dụng hay chính người sử dụng nó? https://www.youtube.com/watch?v=DIKNl3nVSxw"
+      # - "Công nghệ và ký ức: trí nhớ của ta có còn nằm trong não của ta nữa không? https://www.youtube.com/watch?v=anEPsQCBPKI"
+      # - "Giới hạn của PKM nằm ở đâu: máy móc mình sử dụng hay chính người sử dụng nó? https://www.youtube.com/watch?v=DIKNl3nVSxw"
+      - Thảo luận về công cụ và tư duy lập trình cho nhu cầu công việc https://youtu.be/By_xf7OpOSY
   GitHub:
     Repo:
       - orgs/QuaCau-TheSphere https://github.com/QuaCau-TheSphere
@@ -157,13 +162,10 @@ Chat:
               - Giao tiếp và thông diễn học
               - Nữ quyền
   LinkedIn:
-  Zalo:
-    Tài khoản:
-      - Quả Cầu
 
 Vault:
   - A Vùng đất Quả Cầu
-  - B Mạng kết nối nhu cầu
+  - A Mạng kết nối nhu cầu
   - B Tồn tại trong thế giới tư bản
   - C Obsidian, quản lý dự án và công cụ nghĩ
   - C Tiếp thị số, xử lý dữ liệu và lập trình
@@ -172,7 +174,7 @@ Vault:
 
 Website:
   - Quả Cầu https://quảcầu.cc
-  - URL không xử lý được https://example.com
+  - Mạng kết nối nhu cầu https://nhucầu.quảcầu.cc
   - Tồn tại trong thế giới tư bản https://kiếmtiền.quảcầu.cc
   - Obsidian, quản lý dự án và công cụ nghĩ https://obsidian.quảcầu.cc
   - Tiếp thị số, xử lý dữ liệu và lập trình https://lậptrình.quảcầu.cc
@@ -185,6 +187,7 @@ Website:
   - Chia sẻ kho kiến thức, tài nguyên đến với mọi người https://doi-thoai.deno.dev/blog/ChiaSẻKhoThôngTin
   - Hiện diện trên nhiều nền tảng https://doi-thoai.deno.dev/blog/NhiềuNềnTảng
   - Trấn Kỳ https://tranky.deno.dev
+  - URL không xử lý được https://example.com
 
   - Bộ sưu tập từ điển chuyên ngành https://nextcloud.webo.hosting/s/bPZjiJRNtq3gxxG
 Email:
@@ -252,7 +255,7 @@ Slug:
   zalo321: 0979437321
 
   "discordQC#a": "#a-vùng-đất-quả-cầu"
-  "discordQC#b1": "#b-nền-kinh-tế-không-dùng-tiền"
+  "discordQC#b1": "#b-các-hình-thức-kinh-tế-thay-thế"
   "discordQC#b2": "#b-nhu-cầu-thường-gặp"
   "discordQC#b3": "#b-sự-kiện-cơ-hội-tuyển-dụng-rao-vặt"
   "discordQC#c1": "#c-hệ-thống-tri-thức-cộng-đồng"
