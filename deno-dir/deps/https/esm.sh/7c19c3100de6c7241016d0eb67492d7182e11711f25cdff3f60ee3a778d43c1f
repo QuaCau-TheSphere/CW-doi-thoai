@@ -1,0 +1,3 @@
+/* esm.sh - unist-util-visit@5.1.0 */
+import "/unist-util-visit-parents@^6.0.0?target=denonext";
+export * from "/unist-util-visit@5.1.0/denonext/unist-util-visit.mjs";

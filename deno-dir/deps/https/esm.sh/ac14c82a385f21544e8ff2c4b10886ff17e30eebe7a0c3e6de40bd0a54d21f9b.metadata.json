@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "date": "Thu, 13 Aug 2026 08:02:50 GMT",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "last-modified": "Thu, 13 Aug 2026 08:02:50 GMT",
+    "server": "cloudflare",
+    "cache-control": "public, max-age=600",
+    "content-type": "application/javascript; charset=utf-8",
+    "x-typescript-types": "https://esm.sh/domhandler@5.0.3/lib/index.d.ts",
+    "access-control-allow-origin": "*",
+    "x-esm-path": "/domhandler@5.0.3/esnext/domhandler.mjs",
+    "cf-cache-status": "EXPIRED",
+    "cf-ray": "a2a63328e8420bc2-AMS"
+  },
+  "url": "https://esm.sh/domhandler@^5.0.3?target=esnext",
+  "now": {
+    "secs_since_epoch": 1786608171,
+    "nanos_since_epoch": 910137300
+  }
+}

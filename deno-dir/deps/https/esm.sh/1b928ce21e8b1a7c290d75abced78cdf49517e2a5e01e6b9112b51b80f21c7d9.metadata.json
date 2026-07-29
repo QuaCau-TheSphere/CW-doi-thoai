@@ -1,0 +1,21 @@
+{
+  "headers": {
+    "x-typescript-types": "https://esm.sh/micromark-util-decode-numeric-character-reference@2.0.2/index.d.ts",
+    "age": "1020497",
+    "content-type": "application/javascript; charset=utf-8",
+    "access-control-allow-origin": "*",
+    "last-modified": "Thu, 13 Aug 2026 07:54:11 GMT",
+    "cf-cache-status": "HIT",
+    "cf-ray": "a2a634298d460bc2-AMS",
+    "x-esm-path": "/micromark-util-decode-numeric-character-reference@2.0.2/denonext/micromark-util-decode-numeric-character-reference.mjs",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "date": "Thu, 13 Aug 2026 08:03:31 GMT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "server": "cloudflare"
+  },
+  "url": "https://esm.sh/micromark-util-decode-numeric-character-reference@2.0.2?target=denonext",
+  "now": {
+    "secs_since_epoch": 1786608211,
+    "nanos_since_epoch": 943721300
+  }
+}

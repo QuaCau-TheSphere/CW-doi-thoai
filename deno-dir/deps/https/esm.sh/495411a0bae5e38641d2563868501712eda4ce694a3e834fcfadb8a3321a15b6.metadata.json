@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "access-control-allow-origin": "*",
+    "vary": "User-Agent",
+    "date": "Thu, 13 Aug 2026 08:02:46 GMT",
+    "content-length": "0",
+    "cf-ray": "a2a63312481f0bc2-AMS",
+    "location": "https://esm.sh/remark@15.0.1",
+    "cf-cache-status": "DYNAMIC",
+    "server": "cloudflare",
+    "cache-control": "public, max-age=600"
+  },
+  "url": "https://esm.sh/remark",
+  "now": {
+    "secs_since_epoch": 1786608168,
+    "nanos_since_epoch": 966513700
+  }
+}

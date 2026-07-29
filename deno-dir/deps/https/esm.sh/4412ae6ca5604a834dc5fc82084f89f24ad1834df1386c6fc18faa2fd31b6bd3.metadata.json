@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "date": "Thu, 13 Aug 2026 08:03:33 GMT",
+    "content-length": "0",
+    "access-control-allow-origin": "*",
+    "age": "561",
+    "cf-ray": "a2a63434eea90bc2-AMS",
+    "server": "cloudflare",
+    "location": "https://esm.sh/micromark-util-encode@2.0.1?target=denonext",
+    "cache-control": "public, max-age=600",
+    "cf-cache-status": "HIT"
+  },
+  "url": "https://esm.sh/micromark-util-encode@^2.0.0?target=denonext",
+  "now": {
+    "secs_since_epoch": 1786608213,
+    "nanos_since_epoch": 731749900
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "location": "https://esm.sh/micromark-util-decode-numeric-character-reference@2.0.2?target=denonext",
+    "access-control-allow-origin": "*",
+    "cache-control": "public, max-age=600",
+    "content-length": "0",
+    "cf-ray": "a2a6341d4a930bc2-AMS",
+    "server": "cloudflare",
+    "age": "559",
+    "cf-cache-status": "HIT",
+    "date": "Thu, 13 Aug 2026 08:03:29 GMT"
+  },
+  "url": "https://esm.sh/micromark-util-decode-numeric-character-reference@^2.0.0?target=denonext",
+  "now": {
+    "secs_since_epoch": 1786608209,
+    "nanos_since_epoch": 871209200
+  }
+}

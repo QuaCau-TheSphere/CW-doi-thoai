@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "cf-ray": "a2a634298d510bc2-AMS",
+    "cf-cache-status": "HIT",
+    "content-length": "5717",
+    "access-control-allow-origin": "*",
+    "server": "cloudflare",
+    "accept-ranges": "bytes",
+    "age": "685006",
+    "content-type": "application/typescript; charset=utf-8",
+    "cache-control": "public, max-age=31536000, immutable",
+    "last-modified": "Sat, 21 Feb 2026 17:28:22 GMT",
+    "date": "Thu, 13 Aug 2026 08:03:31 GMT"
+  },
+  "url": "https://esm.sh/mdast-util-from-markdown@2.0.3/lib/types.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608212,
+    "nanos_since_epoch": 113793400
+  }
+}

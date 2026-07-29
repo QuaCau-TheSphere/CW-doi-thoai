@@ -1,0 +1,2 @@
+/* esm.sh - micromark-util-chunked@2.0.1 */
+export * from "/micromark-util-chunked@2.0.1/denonext/micromark-util-chunked.mjs";

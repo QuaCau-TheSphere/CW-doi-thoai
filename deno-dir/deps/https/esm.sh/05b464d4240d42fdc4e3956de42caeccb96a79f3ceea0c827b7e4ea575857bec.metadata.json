@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "age": "1281611",
+    "content-type": "application/typescript; charset=utf-8",
+    "cache-control": "public, max-age=31536000, immutable",
+    "cf-ray": "a2a63328e82c0bc2-AMS",
+    "last-modified": "Tue, 09 Dec 2025 19:50:17 GMT",
+    "content-length": "801",
+    "date": "Thu, 13 Aug 2026 08:02:50 GMT",
+    "accept-ranges": "bytes",
+    "cf-cache-status": "HIT",
+    "server": "cloudflare",
+    "access-control-allow-origin": "*"
+  },
+  "url": "https://esm.sh/@preact/signals-core@1.5.1/dist/signals-core.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608170,
+    "nanos_since_epoch": 565778000
+  }
+}

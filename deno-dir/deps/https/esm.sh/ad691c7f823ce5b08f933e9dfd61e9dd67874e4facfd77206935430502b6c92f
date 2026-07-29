@@ -1,0 +1,5 @@
+export type Check = import("./lib/index.d.ts").Check;
+export type Test = import("./lib/index.d.ts").Test;
+export type TestFunction = import("./lib/index.d.ts").TestFunction;
+export { is, convert } from "./lib/index.d.ts";
+//# sourceMappingURL=index.d.ts.map

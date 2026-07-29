@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "cache-control": "public, max-age=31536000, immutable",
+    "server": "cloudflare",
+    "cf-cache-status": "HIT",
+    "cf-ray": "a2a633ad08af0bc2-AMS",
+    "age": "484483",
+    "date": "Thu, 13 Aug 2026 08:03:11 GMT",
+    "content-type": "application/javascript; charset=utf-8",
+    "access-control-allow-origin": "*",
+    "last-modified": "Fri, 07 Aug 2026 17:28:26 GMT"
+  },
+  "url": "https://esm.sh/nanoid@3.3.18/esnext/non-secure.mjs",
+  "now": {
+    "secs_since_epoch": 1786608192,
+    "nanos_since_epoch": 415575700
+  }
+}

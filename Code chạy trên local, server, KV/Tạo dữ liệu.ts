@@ -61,6 +61,7 @@ export async function xoáDữLiệuTrênKv() {
   console.log("Đã xoá sạch dữ liệu hiện có trên KV");
 }
 
+//todo: đổi URL
 export async function chạyTrênDeployChứKhôngChạyTrênLocal() {
   const env = await load();
   Deno.env.set("DENO_KV_ACCESS_TOKEN", env["DENO_KV_ACCESS_TOKEN"]);

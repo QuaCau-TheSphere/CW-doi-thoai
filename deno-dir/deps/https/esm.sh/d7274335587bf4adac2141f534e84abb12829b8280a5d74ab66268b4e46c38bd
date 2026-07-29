@@ -1,0 +1,9 @@
+/**
+ * @param {Array<Event>} events
+ *   Events.
+ * @returns {Array<Event>}
+ *   Events.
+ */
+export function postprocess(events: Array<Event>): Array<Event>;
+import type { Event } from 'https://esm.sh/micromark-util-types@2.0.2/index.d.ts';
+//# sourceMappingURL=postprocess.d.ts.map

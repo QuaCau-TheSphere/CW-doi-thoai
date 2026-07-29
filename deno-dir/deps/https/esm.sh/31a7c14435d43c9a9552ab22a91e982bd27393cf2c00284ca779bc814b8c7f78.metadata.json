@@ -1,0 +1,19 @@
+{
+  "headers": {
+    "content-type": "application/javascript; charset=utf-8",
+    "cache-control": "public, max-age=31536000, immutable",
+    "age": "1275006",
+    "vary": "Accept-Encoding",
+    "access-control-allow-origin": "*",
+    "cf-ray": "a2a6343bbc060bc2-AMS",
+    "date": "Thu, 13 Aug 2026 08:03:34 GMT",
+    "last-modified": "Fri, 21 Nov 2025 03:52:06 GMT",
+    "cf-cache-status": "HIT",
+    "server": "cloudflare"
+  },
+  "url": "https://esm.sh/character-entities@2.0.2/denonext/character-entities.mjs",
+  "now": {
+    "secs_since_epoch": 1786608214,
+    "nanos_since_epoch": 519998400
+  }
+}

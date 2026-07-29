@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "content-type": "application/javascript; charset=utf-8",
+    "cf-ray": "a2a632ea4f770bc2-AMS",
+    "vary": "User-Agent",
+    "access-control-allow-origin": "*",
+    "cache-control": "public, max-age=31536000, immutable",
+    "server": "cloudflare",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "x-esm-path": "/*preact-render-to-string@6.3.1/denonext/preact-render-to-string.mjs",
+    "cf-cache-status": "DYNAMIC",
+    "date": "Thu, 13 Aug 2026 08:02:40 GMT",
+    "x-typescript-types": "https://esm.sh/preact-render-to-string@6.3.1/src/index.d.ts"
+  },
+  "url": "https://esm.sh/*preact-render-to-string@6.3.1",
+  "now": {
+    "secs_since_epoch": 1786608161,
+    "nanos_since_epoch": 296269100
+  }
+}

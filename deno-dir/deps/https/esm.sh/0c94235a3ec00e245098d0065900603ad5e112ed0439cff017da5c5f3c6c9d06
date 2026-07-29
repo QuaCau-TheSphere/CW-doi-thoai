@@ -1,0 +1,4 @@
+/** @type {Construct} */
+export const attention: Construct;
+import type { Construct } from 'https://esm.sh/micromark-util-types@2.0.2/index.d.ts';
+//# sourceMappingURL=attention.d.ts.map

@@ -1,0 +1,3 @@
+/* esm.sh - remark@15.0.1 */
+import r from"/remark-parse@^11.0.0?target=denonext";import e from"/remark-stringify@^11.0.0?target=denonext";import{unified as m}from"/unified@^11.0.0?target=denonext";var t=m().use(r).use(e).freeze();export{t as remark};
+//# sourceMappingURL=remark.mjs.map

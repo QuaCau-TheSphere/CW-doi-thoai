@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "cf-cache-status": "HIT",
+    "server": "cloudflare",
+    "cache-control": "public, max-age=31536000, immutable",
+    "access-control-allow-origin": "*",
+    "age": "1076939",
+    "cf-ray": "a2a6341e1b590bc2-AMS",
+    "date": "Thu, 13 Aug 2026 08:03:29 GMT",
+    "content-type": "application/javascript; charset=utf-8",
+    "last-modified": "Fri, 21 Nov 2025 09:35:35 GMT"
+  },
+  "url": "https://esm.sh/bail@2.0.2/denonext/bail.mjs",
+  "now": {
+    "secs_since_epoch": 1786608210,
+    "nanos_since_epoch": 35215100
+  }
+}

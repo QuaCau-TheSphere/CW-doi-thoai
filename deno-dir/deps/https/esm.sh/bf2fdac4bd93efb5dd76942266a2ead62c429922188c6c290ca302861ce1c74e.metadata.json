@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "access-control-allow-origin": "*",
+    "content-length": "1363",
+    "content-type": "application/typescript; charset=utf-8",
+    "server": "cloudflare",
+    "cache-control": "public, max-age=31536000, immutable",
+    "accept-ranges": "bytes",
+    "age": "602656",
+    "cf-ray": "a2a633ad08b20bc2-AMS",
+    "cf-cache-status": "HIT",
+    "date": "Thu, 13 Aug 2026 08:03:11 GMT",
+    "last-modified": "Thu, 13 Aug 2026 07:56:23 GMT"
+  },
+  "url": "https://esm.sh/postcss@8.5.26/lib/stringifier.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608192,
+    "nanos_since_epoch": 340274900
+  }
+}

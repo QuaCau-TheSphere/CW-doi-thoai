@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "content-type": "application/javascript; charset=utf-8",
+    "server": "cloudflare",
+    "age": "524",
+    "cf-cache-status": "HIT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "cf-ray": "a2a63328e82f0bc2-AMS",
+    "access-control-allow-origin": "*",
+    "last-modified": "Tue, 18 Nov 2025 01:38:11 GMT",
+    "date": "Thu, 13 Aug 2026 08:02:50 GMT"
+  },
+  "url": "https://esm.sh/marked-mangle@1.1.0/denonext/marked-mangle.mjs",
+  "now": {
+    "secs_since_epoch": 1786608170,
+    "nanos_since_epoch": 627614700
+  }
+}

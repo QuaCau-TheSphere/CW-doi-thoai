@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "server": "cloudflare",
+    "content-type": "application/typescript; charset=utf-8",
+    "accept-ranges": "bytes",
+    "cf-ray": "a2a633ad08ae0bc2-AMS",
+    "access-control-allow-origin": "*",
+    "cache-control": "public, max-age=31536000, immutable",
+    "age": "511012",
+    "cf-cache-status": "HIT",
+    "content-length": "1797",
+    "date": "Thu, 13 Aug 2026 08:03:11 GMT",
+    "last-modified": "Thu, 06 Aug 2026 08:38:53 GMT"
+  },
+  "url": "https://esm.sh/postcss@8.5.26/lib/previous-map.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608192,
+    "nanos_since_epoch": 129267100
+  }
+}

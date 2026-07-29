@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "last-modified": "Thu, 27 Nov 2025 19:36:36 GMT",
+    "server": "cloudflare",
+    "cache-control": "public, max-age=31536000, immutable",
+    "access-control-allow-origin": "*",
+    "age": "1225402",
+    "date": "Thu, 13 Aug 2026 08:03:35 GMT",
+    "cf-cache-status": "HIT",
+    "cf-ray": "a2a6344349c80bc2-AMS",
+    "content-type": "application/javascript; charset=utf-8"
+  },
+  "url": "https://esm.sh/micromark-factory-space@2.0.1/denonext/micromark-factory-space.mjs",
+  "now": {
+    "secs_since_epoch": 1786608216,
+    "nanos_since_epoch": 117252800
+  }
+}

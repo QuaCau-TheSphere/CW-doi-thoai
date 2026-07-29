@@ -1,0 +1,21 @@
+.deno_dir
+node_modules
+_fresh
+# .env
+.DS_Store
+LICENSE
+.idea
+*.log
+dist
+build
+
+.git
+.gitignore
+.github
+
+.vscode
+*.code-workspace
+
+todo.md
+readme.md 
+log.txt

@@ -1,0 +1,22 @@
+{
+  "headers": {
+    "date": "Thu, 13 Aug 2026 08:02:50 GMT",
+    "server": "cloudflare",
+    "x-typescript-types": "https://esm.sh/postcss@8.5.26/lib/document.d.ts",
+    "accept-ranges": "bytes",
+    "age": "597270",
+    "cf-cache-status": "HIT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "content-type": "application/javascript; charset=utf-8",
+    "access-control-allow-origin": "*",
+    "cf-ray": "a2a63328e8620bc2-AMS",
+    "last-modified": "Thu, 06 Aug 2026 10:08:19 GMT",
+    "vary": "Accept-Encoding",
+    "access-control-expose-headers": "X-TypeScript-Types"
+  },
+  "url": "https://esm.sh/postcss@8.5.26/esnext/lib/document.mjs",
+  "now": {
+    "secs_since_epoch": 1786608171,
+    "nanos_since_epoch": 136461400
+  }
+}

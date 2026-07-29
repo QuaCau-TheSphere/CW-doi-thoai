@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "access-control-allow-origin": "*",
+    "x-esm-path": "/parse-srcset@1.0.2/esnext/parse-srcset.mjs",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "date": "Thu, 13 Aug 2026 08:02:46 GMT",
+    "x-typescript-types": "https://esm.sh/@types/parse-srcset@~1.0.0/index.d.ts",
+    "server": "cloudflare",
+    "cache-control": "public, max-age=600",
+    "last-modified": "Thu, 13 Aug 2026 08:02:46 GMT",
+    "content-type": "application/javascript; charset=utf-8",
+    "cf-ray": "a2a6331248370bc2-AMS",
+    "cf-cache-status": "EXPIRED"
+  },
+  "url": "https://esm.sh/parse-srcset@^1.0.2?target=esnext",
+  "now": {
+    "secs_since_epoch": 1786608169,
+    "nanos_since_epoch": 29521200
+  }
+}

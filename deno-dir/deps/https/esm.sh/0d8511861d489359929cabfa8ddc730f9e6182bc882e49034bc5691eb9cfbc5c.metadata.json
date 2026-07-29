@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "cf-ray": "a2a633ad08ab0bc2-AMS",
+    "accept-ranges": "bytes",
+    "access-control-allow-origin": "*",
+    "content-type": "application/typescript; charset=utf-8",
+    "server": "cloudflare",
+    "content-length": "143",
+    "last-modified": "Tue, 09 Dec 2025 21:16:48 GMT",
+    "date": "Thu, 13 Aug 2026 08:03:11 GMT",
+    "cf-cache-status": "HIT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "age": "1144743"
+  },
+  "url": "https://esm.sh/picocolors@1.1.1/picocolors.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608192,
+    "nanos_since_epoch": 93423500
+  }
+}

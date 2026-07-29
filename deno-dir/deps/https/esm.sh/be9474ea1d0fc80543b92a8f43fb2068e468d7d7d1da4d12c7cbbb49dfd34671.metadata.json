@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "server": "cloudflare",
+    "access-control-allow-origin": "*",
+    "content-length": "0",
+    "cache-control": "public, max-age=600",
+    "date": "Thu, 13 Aug 2026 08:02:41 GMT",
+    "age": "386",
+    "location": "https://esm.sh/@types/babel__helper-validator-identifier@7.15.2/index.d.ts",
+    "cf-cache-status": "HIT",
+    "cf-ray": "a2a632f23e6c0bc2-AMS"
+  },
+  "url": "https://esm.sh/@types/babel__helper-validator-identifier@~7.15.2/index.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608164,
+    "nanos_since_epoch": 757046600
+  }
+}

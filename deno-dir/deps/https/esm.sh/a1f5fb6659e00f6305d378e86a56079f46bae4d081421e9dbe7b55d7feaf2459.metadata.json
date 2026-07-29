@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "age": "558",
+    "cf-ray": "a2a6341d4aaa0bc2-AMS",
+    "cf-cache-status": "HIT",
+    "access-control-allow-origin": "*",
+    "cache-control": "public, max-age=600",
+    "content-length": "0",
+    "location": "https://esm.sh/mdast-util-phrasing@4.1.0?target=denonext",
+    "server": "cloudflare",
+    "date": "Thu, 13 Aug 2026 08:03:29 GMT"
+  },
+  "url": "https://esm.sh/mdast-util-phrasing@^4.0.0?target=denonext",
+  "now": {
+    "secs_since_epoch": 1786608209,
+    "nanos_since_epoch": 952744400
+  }
+}

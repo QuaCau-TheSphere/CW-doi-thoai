@@ -1,0 +1,9 @@
+/* esm.sh - mdast-util-to-markdown@2.1.2 */
+import "/longest-streak@^3.0.0?target=denonext";
+import "/mdast-util-phrasing@^4.0.0?target=denonext";
+import "/mdast-util-to-string@^4.0.0?target=denonext";
+import "/micromark-util-classify-character@^2.0.0?target=denonext";
+import "/micromark-util-decode-string@^2.0.0?target=denonext";
+import "/unist-util-visit@^5.0.0?target=denonext";
+import "/zwitch@^2.0.0?target=denonext";
+export * from "/mdast-util-to-markdown@2.1.2/denonext/mdast-util-to-markdown.mjs";

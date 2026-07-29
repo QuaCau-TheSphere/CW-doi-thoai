@@ -1,0 +1,10 @@
+/**
+ * @param {ParseOptions | null | undefined} [options]
+ *   Configuration (optional).
+ * @returns {ParseContext}
+ *   Parser.
+ */
+export function parse(options?: ParseOptions | null | undefined): ParseContext;
+import type { ParseOptions } from 'https://esm.sh/micromark-util-types@2.0.2/index.d.ts';
+import type { ParseContext } from 'https://esm.sh/micromark-util-types@2.0.2/index.d.ts';
+//# sourceMappingURL=parse.d.ts.map

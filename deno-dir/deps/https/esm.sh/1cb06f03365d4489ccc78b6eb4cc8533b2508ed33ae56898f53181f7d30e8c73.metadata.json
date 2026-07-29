@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "cache-control": "public, max-age=31536000, immutable",
+    "content-type": "application/javascript; charset=utf-8",
+    "age": "1225607",
+    "last-modified": "Tue, 25 Nov 2025 18:05:21 GMT",
+    "access-control-allow-origin": "*",
+    "cf-cache-status": "HIT",
+    "cf-ray": "a2a6344349bc0bc2-AMS",
+    "date": "Thu, 13 Aug 2026 08:03:35 GMT",
+    "server": "cloudflare"
+  },
+  "url": "https://esm.sh/micromark-util-chunked@2.0.1/denonext/micromark-util-chunked.mjs",
+  "now": {
+    "secs_since_epoch": 1786608215,
+    "nanos_since_epoch": 862541500
+  }
+}

@@ -1,0 +1,55 @@
+import type {Root} from 'https://esm.sh/@types/mdast@4.0.4/index.d.ts'
+import type {Extension as FromMarkdownExtension} from 'https://esm.sh/mdast-util-from-markdown@2.0.2/index.d.ts'
+import type {Extension as MicromarkExtension} from 'https://esm.sh/micromark-util-types@2.0.1/index.d.ts'
+import type {Plugin} from 'https://esm.sh/unified@11.0.5/index.d.ts'
+import type {Options} from './lib/index.d.ts'
+
+export type {Options} from './lib/index.d.ts'
+
+/**
+ * Add support for parsing from markdown.
+ *
+ * @this
+ *   Unified processor.
+ * @param
+ *   Configuration (optional).
+ * @returns
+ *   Nothing.
+ */
+declare const remarkParse: Plugin<
+  [(Readonly<Options> | null | undefined)?],
+  string,
+  Root
+>
+export default remarkParse
+
+// Add custom settings supported when `remark-parse` is added.
+declare module 'https://esm.sh/unified@11.0.5/index.d.ts' {
+  interface Settings extends Options {}
+
+  interface Data {
+    /**
+     * List of `micromark` extensions to use.
+     *
+     * This type is registered by `remark-parse`.
+     * Values can be registered by remark plugins that extend `micromark` and
+     * `mdast-util-from-markdown`.
+     * See {@link MicromarkExtension | `Extension`} from
+     * {@link https://github.com/micromark/micromark/tree/main/packages/micromark-util-types | `micromark-util-types`}.
+     */
+    micromarkExtensions?: MicromarkExtension[]
+
+    /**
+     * List of `mdast-util-from-markdown` extensions to use.
+     *
+     * This type is registered by `remark-parse`.
+     * Values can be registered by remark plugins that extend `micromark` and
+     * `mdast-util-from-markdown`.
+     * See {@link FromMarkdownExtension | `Extension`} from
+     * {@link https://github.com/syntax-tree/mdast-util-from-markdown#extension | `mdast-util-from-markdown`}.
+     */
+    fromMarkdownExtensions?: Array<
+      FromMarkdownExtension[] | FromMarkdownExtension
+    >
+  }
+}

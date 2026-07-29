@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "content-type": "application/javascript; charset=utf-8",
+    "server": "cloudflare",
+    "age": "1277304",
+    "last-modified": "Fri, 21 Nov 2025 03:52:05 GMT",
+    "cf-ray": "a2a6344349c50bc2-AMS",
+    "cache-control": "public, max-age=31536000, immutable",
+    "date": "Thu, 13 Aug 2026 08:03:35 GMT",
+    "cf-cache-status": "HIT",
+    "access-control-allow-origin": "*"
+  },
+  "url": "https://esm.sh/micromark-util-sanitize-uri@2.0.1/denonext/micromark-util-sanitize-uri.mjs",
+  "now": {
+    "secs_since_epoch": 1786608215,
+    "nanos_since_epoch": 946271300
+  }
+}

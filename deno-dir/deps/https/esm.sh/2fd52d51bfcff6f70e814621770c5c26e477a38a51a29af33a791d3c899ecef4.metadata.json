@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "accept-ranges": "bytes",
+    "access-control-allow-origin": "*",
+    "last-modified": "Tue, 09 Dec 2025 20:48:20 GMT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "cf-cache-status": "HIT",
+    "cf-ray": "a2a633ad089d0bc2-AMS",
+    "content-type": "application/typescript; charset=utf-8",
+    "content-length": "2833",
+    "server": "cloudflare",
+    "date": "Thu, 13 Aug 2026 08:03:11 GMT",
+    "age": "1232286"
+  },
+  "url": "https://esm.sh/domutils@3.2.2/lib/querying.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608191,
+    "nanos_since_epoch": 783964200
+  }
+}

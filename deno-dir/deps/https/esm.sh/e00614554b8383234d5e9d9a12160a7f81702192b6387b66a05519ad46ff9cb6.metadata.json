@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "cf-cache-status": "HIT",
+    "content-length": "0",
+    "access-control-allow-origin": "*",
+    "location": "https://esm.sh/github-slugger@2.0.0?target=denonext",
+    "cache-control": "public, max-age=600",
+    "server": "cloudflare",
+    "date": "Thu, 13 Aug 2026 08:02:46 GMT",
+    "cf-ray": "a2a63312482a0bc2-AMS"
+  },
+  "url": "https://esm.sh/github-slugger@^2.0.0?target=denonext",
+  "now": {
+    "secs_since_epoch": 1786608169,
+    "nanos_since_epoch": 86332100
+  }
+}

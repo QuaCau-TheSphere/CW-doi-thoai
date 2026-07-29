@@ -22,7 +22,6 @@ export function VậtThểKhác({ vậtThể, loạiVậtThể, cóTiêuĐề }:
     } else {
       danhSáchPhầnTử.push(<ListItem loạiDữLiệu={key} dữLiệu={value} />);
     }
-    console.log("dsfdf");
   }
   return (
     <article id={kiểuKebab(loạiVậtThể)} class="card w-full bg-base-200 shadow-xl">

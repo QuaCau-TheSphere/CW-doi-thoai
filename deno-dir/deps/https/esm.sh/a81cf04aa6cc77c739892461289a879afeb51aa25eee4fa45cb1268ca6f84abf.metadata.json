@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "accept-ranges": "bytes",
+    "server": "cloudflare",
+    "age": "406",
+    "cf-cache-status": "HIT",
+    "content-length": "468",
+    "content-type": "application/typescript; charset=utf-8",
+    "last-modified": "Tue, 09 Dec 2025 21:26:05 GMT",
+    "cf-ray": "a2a6339299d60bc2-AMS",
+    "cache-control": "public, max-age=31536000, immutable",
+    "access-control-allow-origin": "*",
+    "date": "Thu, 13 Aug 2026 08:03:07 GMT"
+  },
+  "url": "https://esm.sh/remark@15.0.1/index.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608187,
+    "nanos_since_epoch": 570352800
+  }
+}

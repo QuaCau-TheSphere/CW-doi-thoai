@@ -1,0 +1,21 @@
+{
+  "headers": {
+    "date": "Thu, 13 Aug 2026 08:03:33 GMT",
+    "access-control-allow-origin": "*",
+    "cf-ray": "a2a63434eea20bc2-AMS",
+    "age": "1275005",
+    "x-typescript-types": "https://esm.sh/character-entities@2.0.2/index.d.ts",
+    "content-type": "application/javascript; charset=utf-8",
+    "cf-cache-status": "HIT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "server": "cloudflare",
+    "x-esm-path": "/character-entities@2.0.2/denonext/character-entities.mjs",
+    "last-modified": "Thu, 13 Aug 2026 07:54:12 GMT",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types"
+  },
+  "url": "https://esm.sh/character-entities@2.0.2?target=denonext",
+  "now": {
+    "secs_since_epoch": 1786608213,
+    "nanos_since_epoch": 671198900
+  }
+}

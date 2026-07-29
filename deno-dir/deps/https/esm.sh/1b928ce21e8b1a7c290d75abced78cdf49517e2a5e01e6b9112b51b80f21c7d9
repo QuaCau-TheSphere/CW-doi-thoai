@@ -1,0 +1,2 @@
+/* esm.sh - micromark-util-decode-numeric-character-reference@2.0.2 */
+export * from "/micromark-util-decode-numeric-character-reference@2.0.2/denonext/micromark-util-decode-numeric-character-reference.mjs";

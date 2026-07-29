@@ -1,0 +1,21 @@
+{
+  "headers": {
+    "server": "cloudflare",
+    "last-modified": "Thu, 13 Aug 2026 07:54:13 GMT",
+    "cf-cache-status": "HIT",
+    "access-control-allow-origin": "*",
+    "cache-control": "public, max-age=31536000, immutable",
+    "age": "1225431",
+    "content-type": "application/javascript; charset=utf-8",
+    "x-typescript-types": "https://esm.sh/micromark-factory-title@2.0.1/index.d.ts",
+    "cf-ray": "a2a634f80dec0bc2-AMS",
+    "x-esm-path": "/micromark-factory-title@2.0.1/denonext/micromark-factory-title.mjs",
+    "date": "Thu, 13 Aug 2026 08:04:04 GMT",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types"
+  },
+  "url": "https://esm.sh/micromark-factory-title@2.0.1?target=denonext",
+  "now": {
+    "secs_since_epoch": 1786608244,
+    "nanos_since_epoch": 679141400
+  }
+}

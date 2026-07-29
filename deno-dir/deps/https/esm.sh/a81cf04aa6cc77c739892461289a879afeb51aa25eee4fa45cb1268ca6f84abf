@@ -1,0 +1,11 @@
+/// <reference types="https://esm.sh/remark-parse@11.0.0/index.d.ts" />
+/// <reference types="https://esm.sh/remark-stringify@11.0.0/index.d.ts" />
+
+import type {Root} from 'https://esm.sh/@types/mdast@4.0.4/index.d.ts'
+import type {Processor} from 'https://esm.sh/unified@11.0.5/index.d.ts'
+
+/**
+ * Create a new unified processor that already uses `remark-parse` and
+ * `remark-stringify`.
+ */
+export const remark: Processor<Root, undefined, undefined, Root, string>

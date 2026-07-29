@@ -1,0 +1,22 @@
+/* esm.sh - postcss@8.5.26 */
+import "/node/process.mjs";
+import "/postcss@8.5.26/esnext/lib/at-rule.mjs";
+import "/postcss@8.5.26/esnext/lib/comment.mjs";
+import "/postcss@8.5.26/esnext/lib/container.mjs";
+import "/postcss@8.5.26/esnext/lib/css-syntax-error.mjs";
+import "/postcss@8.5.26/esnext/lib/declaration.mjs";
+import "/postcss@8.5.26/esnext/lib/document.mjs";
+import "/postcss@8.5.26/esnext/lib/fromJSON.mjs";
+import "/postcss@8.5.26/esnext/lib/input.mjs";
+import "/postcss@8.5.26/esnext/lib/lazy-result.mjs";
+import "/postcss@8.5.26/esnext/lib/list.mjs";
+import "/postcss@8.5.26/esnext/lib/node.mjs";
+import "/postcss@8.5.26/esnext/lib/parse.mjs";
+import "/postcss@8.5.26/esnext/lib/processor.mjs";
+import "/postcss@8.5.26/esnext/lib/result.mjs";
+import "/postcss@8.5.26/esnext/lib/root.mjs";
+import "/postcss@8.5.26/esnext/lib/rule.mjs";
+import "/postcss@8.5.26/esnext/lib/stringify.mjs";
+import "/postcss@8.5.26/esnext/lib/warning.mjs";
+export * from "/postcss@8.5.26/esnext/postcss.mjs";
+export { default } from "/postcss@8.5.26/esnext/postcss.mjs";

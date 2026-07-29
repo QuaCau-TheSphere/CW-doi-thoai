@@ -1,0 +1,19 @@
+{
+  "headers": {
+    "age": "22626",
+    "content-type": "application/javascript; charset=utf-8",
+    "server": "cloudflare",
+    "vary": "Accept-Encoding",
+    "cf-cache-status": "HIT",
+    "access-control-allow-origin": "*",
+    "cache-control": "public, max-age=86400",
+    "cf-ray": "a2a63392aa010bc2-AMS",
+    "etag": "W/\"v137_8\"",
+    "date": "Thu, 13 Aug 2026 08:03:07 GMT"
+  },
+  "url": "https://esm.sh/node/events.mjs",
+  "now": {
+    "secs_since_epoch": 1786608188,
+    "nanos_since_epoch": 24935400
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "age": "1281744",
+    "cf-cache-status": "HIT",
+    "date": "Thu, 13 Aug 2026 08:03:11 GMT",
+    "server": "cloudflare",
+    "last-modified": "Tue, 09 Dec 2025 20:48:20 GMT",
+    "cf-ray": "a2a633ad089a0bc2-AMS",
+    "content-length": "2305",
+    "content-type": "application/typescript; charset=utf-8",
+    "access-control-allow-origin": "*",
+    "cache-control": "public, max-age=31536000, immutable",
+    "accept-ranges": "bytes"
+  },
+  "url": "https://esm.sh/domutils@3.2.2/lib/traversal.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608191,
+    "nanos_since_epoch": 806526700
+  }
+}

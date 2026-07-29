@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "content-length": "4633",
+    "date": "Thu, 13 Aug 2026 08:03:35 GMT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "content-type": "application/typescript; charset=utf-8",
+    "cf-ray": "a2a63441b8830bc2-AMS",
+    "last-modified": "Tue, 09 Dec 2025 21:10:53 GMT",
+    "cf-cache-status": "HIT",
+    "age": "685007",
+    "server": "cloudflare",
+    "access-control-allow-origin": "*",
+    "accept-ranges": "bytes"
+  },
+  "url": "https://esm.sh/micromark-util-symbol@2.0.1/lib/types.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608215,
+    "nanos_since_epoch": 592084800
+  }
+}

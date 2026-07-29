@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "cf-cache-status": "HIT",
+    "age": "554",
+    "access-control-allow-origin": "*",
+    "vary": "Accept-Encoding",
+    "content-type": "application/javascript; charset=utf-8",
+    "cache-control": "public, max-age=31536000, immutable",
+    "date": "Thu, 13 Aug 2026 08:03:35 GMT",
+    "cf-ray": "a2a6344349d90bc2-AMS",
+    "last-modified": "Thu, 27 Nov 2025 19:36:36 GMT",
+    "server": "cloudflare",
+    "accept-ranges": "bytes"
+  },
+  "url": "https://esm.sh/micromark-util-subtokenize@2.1.0/denonext/micromark-util-subtokenize.mjs",
+  "now": {
+    "secs_since_epoch": 1786608216,
+    "nanos_since_epoch": 294284600
+  }
+}

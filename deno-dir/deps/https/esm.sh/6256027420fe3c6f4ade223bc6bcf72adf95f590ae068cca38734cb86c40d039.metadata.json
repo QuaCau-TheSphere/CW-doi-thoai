@@ -1,0 +1,21 @@
+{
+  "headers": {
+    "age": "1277300",
+    "access-control-allow-origin": "*",
+    "cf-cache-status": "HIT",
+    "date": "Thu, 13 Aug 2026 08:03:31 GMT",
+    "content-type": "application/javascript; charset=utf-8",
+    "x-esm-path": "/zwitch@2.0.4/denonext/zwitch.mjs",
+    "server": "cloudflare",
+    "cache-control": "public, max-age=31536000, immutable",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "last-modified": "Thu, 13 Aug 2026 07:54:11 GMT",
+    "cf-ray": "a2a634298d5e0bc2-AMS",
+    "x-typescript-types": "https://esm.sh/zwitch@2.0.4/index.d.ts"
+  },
+  "url": "https://esm.sh/zwitch@2.0.4?target=denonext",
+  "now": {
+    "secs_since_epoch": 1786608212,
+    "nanos_since_epoch": 333471000
+  }
+}

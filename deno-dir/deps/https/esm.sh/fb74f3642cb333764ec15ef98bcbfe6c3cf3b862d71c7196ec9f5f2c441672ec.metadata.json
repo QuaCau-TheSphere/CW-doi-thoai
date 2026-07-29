@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "last-modified": "Tue, 09 Dec 2025 21:27:20 GMT",
+    "content-length": "575",
+    "access-control-allow-origin": "*",
+    "cf-ray": "a2a63312482d0bc2-AMS",
+    "accept-ranges": "bytes",
+    "cache-control": "public, max-age=31536000, immutable",
+    "content-type": "application/typescript; charset=utf-8",
+    "server": "cloudflare",
+    "date": "Thu, 13 Aug 2026 08:02:46 GMT",
+    "age": "388",
+    "cf-cache-status": "HIT"
+  },
+  "url": "https://esm.sh/marked-gfm-heading-id@3.0.4/src/index.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608166,
+    "nanos_since_epoch": 954147100
+  }
+}

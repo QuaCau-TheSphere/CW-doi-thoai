@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "date": "Thu, 13 Aug 2026 08:02:50 GMT",
+    "last-modified": "Tue, 18 Nov 2025 01:38:11 GMT",
+    "vary": "Accept-Encoding",
+    "age": "696451",
+    "cache-control": "public, max-age=31536000, immutable",
+    "cf-cache-status": "HIT",
+    "access-control-allow-origin": "*",
+    "accept-ranges": "bytes",
+    "content-type": "application/javascript; charset=utf-8",
+    "server": "cloudflare",
+    "cf-ray": "a2a63328e8520bc2-AMS"
+  },
+  "url": "https://esm.sh/parse-srcset@1.0.2/esnext/parse-srcset.mjs",
+  "now": {
+    "secs_since_epoch": 1786608170,
+    "nanos_since_epoch": 903922500
+  }
+}

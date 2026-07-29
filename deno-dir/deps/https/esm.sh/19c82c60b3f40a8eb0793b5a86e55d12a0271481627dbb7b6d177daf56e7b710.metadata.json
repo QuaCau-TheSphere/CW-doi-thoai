@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "cf-ray": "a2a63328e8870bc2-AMS",
+    "date": "Thu, 13 Aug 2026 08:02:50 GMT",
+    "last-modified": "Sun, 11 Jan 2026 00:53:42 GMT",
+    "access-control-allow-origin": "*",
+    "age": "1279147",
+    "cache-control": "public, max-age=31536000, immutable",
+    "content-length": "4500",
+    "content-type": "application/typescript; charset=utf-8",
+    "server": "cloudflare",
+    "accept-ranges": "bytes",
+    "cf-cache-status": "HIT"
+  },
+  "url": "https://esm.sh/@types/katex@0.16.8/index.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608171,
+    "nanos_since_epoch": 668375500
+  }
+}

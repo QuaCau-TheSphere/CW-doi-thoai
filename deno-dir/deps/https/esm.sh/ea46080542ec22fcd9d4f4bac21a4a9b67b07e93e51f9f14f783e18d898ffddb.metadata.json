@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "accept-ranges": "bytes",
+    "access-control-allow-origin": "*",
+    "last-modified": "Tue, 09 Dec 2025 20:52:16 GMT",
+    "date": "Thu, 13 Aug 2026 08:03:31 GMT",
+    "content-type": "application/typescript; charset=utf-8",
+    "cache-control": "public, max-age=31536000, immutable",
+    "age": "1143722",
+    "cf-cache-status": "HIT",
+    "server": "cloudflare",
+    "cf-ray": "a2a634298d3e0bc2-AMS",
+    "content-length": "766"
+  },
+  "url": "https://esm.sh/entities@4.5.0/lib/decode_codepoint.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608211,
+    "nanos_since_epoch": 895951100
+  }
+}

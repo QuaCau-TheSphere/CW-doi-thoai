@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "last-modified": "Thu, 20 Nov 2025 15:39:32 GMT",
+    "server": "cloudflare",
+    "date": "Thu, 13 Aug 2026 08:03:32 GMT",
+    "age": "678480",
+    "cf-cache-status": "HIT",
+    "access-control-allow-origin": "*",
+    "cf-ray": "a2a634301b0c0bc2-AMS",
+    "content-type": "application/javascript; charset=utf-8",
+    "cache-control": "public, max-age=31536000, immutable"
+  },
+  "url": "https://esm.sh/zwitch@2.0.4/denonext/zwitch.mjs",
+  "now": {
+    "secs_since_epoch": 1786608213,
+    "nanos_since_epoch": 452648600
+  }
+}

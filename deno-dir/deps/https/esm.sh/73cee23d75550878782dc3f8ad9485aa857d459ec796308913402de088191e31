@@ -1,0 +1,5 @@
+/* esm.sh - domutils@3.2.2 */
+import "/dom-serializer@^2.0.0?target=esnext";
+import "/domelementtype@^2.3.0?target=esnext";
+import "/domhandler@^5.0.3?target=esnext";
+export * from "/domutils@3.2.2/esnext/domutils.mjs";

@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "vary": "Accept-Encoding",
+    "accept-ranges": "bytes",
+    "age": "14890",
+    "content-type": "application/javascript; charset=utf-8",
+    "cache-control": "public, max-age=31536000, immutable",
+    "server": "cloudflare",
+    "access-control-allow-origin": "*",
+    "cf-ray": "a2a632f01ca20bc2-AMS",
+    "date": "Thu, 13 Aug 2026 08:02:41 GMT",
+    "last-modified": "Mon, 17 Nov 2025 23:08:47 GMT",
+    "cf-cache-status": "HIT"
+  },
+  "url": "https://esm.sh/preact@10.19.6/denonext/jsx-runtime.mjs",
+  "now": {
+    "secs_since_epoch": 1786608161,
+    "nanos_since_epoch": 544394800
+  }
+}

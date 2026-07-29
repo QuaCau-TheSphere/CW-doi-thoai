@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "age": "561",
+    "cf-cache-status": "HIT",
+    "location": "https://esm.sh/micromark-util-chunked@2.0.1?target=denonext",
+    "access-control-allow-origin": "*",
+    "cache-control": "public, max-age=600",
+    "server": "cloudflare",
+    "date": "Thu, 13 Aug 2026 08:03:33 GMT",
+    "content-length": "0",
+    "cf-ray": "a2a63434eea50bc2-AMS"
+  },
+  "url": "https://esm.sh/micromark-util-chunked@^2.0.0?target=denonext",
+  "now": {
+    "secs_since_epoch": 1786608213,
+    "nanos_since_epoch": 784364500
+  }
+}

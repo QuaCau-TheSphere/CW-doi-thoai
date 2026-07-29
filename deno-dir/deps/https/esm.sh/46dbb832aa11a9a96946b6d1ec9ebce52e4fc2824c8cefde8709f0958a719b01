@@ -1,0 +1,9 @@
+import { Parser } from './postcss.d.mts'
+
+interface Parse extends Parser {
+  default: Parse
+}
+
+declare let parse: Parse
+
+export = parse

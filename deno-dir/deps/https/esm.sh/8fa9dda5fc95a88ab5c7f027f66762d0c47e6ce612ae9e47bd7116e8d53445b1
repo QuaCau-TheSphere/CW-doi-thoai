@@ -1,0 +1,22 @@
+/**
+ * Combine multiple syntax extensions into one.
+ *
+ * @param {ReadonlyArray<Extension>} extensions
+ *   List of syntax extensions.
+ * @returns {NormalizedExtension}
+ *   A single combined extension.
+ */
+export function combineExtensions(extensions: ReadonlyArray<Extension>): NormalizedExtension;
+/**
+ * Combine multiple HTML extensions into one.
+ *
+ * @param {ReadonlyArray<HtmlExtension>} htmlExtensions
+ *   List of HTML extensions.
+ * @returns {HtmlExtension}
+ *   Single combined HTML extension.
+ */
+export function combineHtmlExtensions(htmlExtensions: ReadonlyArray<HtmlExtension>): HtmlExtension;
+import type { Extension } from 'https://esm.sh/micromark-util-types@2.0.1/index.d.ts';
+import type { NormalizedExtension } from 'https://esm.sh/micromark-util-types@2.0.1/index.d.ts';
+import type { HtmlExtension } from 'https://esm.sh/micromark-util-types@2.0.1/index.d.ts';
+//# sourceMappingURL=index.d.ts.map

@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "x-esm-path": "/he@1.2.0/denonext/he.mjs",
+    "x-typescript-types": "https://esm.sh/@types/he@~1.2.3/index.d.ts",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a2a633067f400bc2-AMS",
+    "content-type": "application/javascript; charset=utf-8",
+    "date": "Thu, 13 Aug 2026 08:02:44 GMT",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "cache-control": "public, max-age=31536000, immutable",
+    "server": "cloudflare",
+    "vary": "User-Agent",
+    "access-control-allow-origin": "*"
+  },
+  "url": "https://esm.sh/he@1.2.0",
+  "now": {
+    "secs_since_epoch": 1786608165,
+    "nanos_since_epoch": 356681700
+  }
+}

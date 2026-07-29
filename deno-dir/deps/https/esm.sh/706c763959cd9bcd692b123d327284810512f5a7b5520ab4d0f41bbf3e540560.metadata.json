@@ -1,0 +1,21 @@
+{
+  "headers": {
+    "date": "Thu, 13 Aug 2026 08:03:28 GMT",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "cf-cache-status": "HIT",
+    "cf-ray": "a2a634180e440bc2-AMS",
+    "cache-control": "public, max-age=31536000, immutable",
+    "content-type": "application/javascript; charset=utf-8",
+    "x-typescript-types": "https://esm.sh/mdast-util-from-markdown@2.0.3/index.d.ts",
+    "server": "cloudflare",
+    "x-esm-path": "/mdast-util-from-markdown@2.0.3/denonext/mdast-util-from-markdown.mjs",
+    "access-control-allow-origin": "*",
+    "last-modified": "Thu, 13 Aug 2026 07:54:09 GMT",
+    "age": "558"
+  },
+  "url": "https://esm.sh/mdast-util-from-markdown@2.0.3?target=denonext",
+  "now": {
+    "secs_since_epoch": 1786608209,
+    "nanos_since_epoch": 26837800
+  }
+}

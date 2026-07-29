@@ -1,0 +1,4 @@
+/** @type {Construct} */
+export const labelStartLink: Construct;
+import type { Construct } from 'https://esm.sh/micromark-util-types@2.0.2/index.d.ts';
+//# sourceMappingURL=label-start-link.d.ts.map

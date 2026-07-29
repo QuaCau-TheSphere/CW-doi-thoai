@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "cf-cache-status": "HIT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "content-length": "107",
+    "access-control-allow-origin": "*",
+    "cf-ray": "a2a634301b100bc2-AMS",
+    "content-type": "application/typescript; charset=utf-8",
+    "last-modified": "Sat, 14 Mar 2026 04:04:16 GMT",
+    "age": "685007",
+    "accept-ranges": "bytes",
+    "server": "cloudflare",
+    "date": "Thu, 13 Aug 2026 08:03:32 GMT"
+  },
+  "url": "https://esm.sh/vfile-message@4.0.3/index.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608213,
+    "nanos_since_epoch": 553559200
+  }
+}

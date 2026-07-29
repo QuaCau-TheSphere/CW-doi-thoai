@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "x-typescript-types": "https://esm.sh/htmlparser2@8.0.2/lib/index.d.ts",
+    "content-type": "application/javascript; charset=utf-8",
+    "x-esm-path": "/htmlparser2@8.0.2/esnext/htmlparser2.mjs",
+    "date": "Thu, 13 Aug 2026 08:02:46 GMT",
+    "last-modified": "Thu, 13 Aug 2026 08:02:46 GMT",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "cf-cache-status": "EXPIRED",
+    "cf-ray": "a2a6331248350bc2-AMS",
+    "cache-control": "public, max-age=600",
+    "access-control-allow-origin": "*",
+    "server": "cloudflare"
+  },
+  "url": "https://esm.sh/htmlparser2@^8.0.0?target=esnext",
+  "now": {
+    "secs_since_epoch": 1786608169,
+    "nanos_since_epoch": 11479000
+  }
+}

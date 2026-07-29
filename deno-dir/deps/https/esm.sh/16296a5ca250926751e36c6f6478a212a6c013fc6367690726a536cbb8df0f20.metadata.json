@@ -1,0 +1,19 @@
+{
+  "headers": {
+    "cache-control": "public, max-age=86400",
+    "server": "cloudflare",
+    "cf-ray": "a2a632f23e640bc2-AMS",
+    "vary": "Accept-Encoding",
+    "cf-cache-status": "HIT",
+    "date": "Thu, 13 Aug 2026 08:02:41 GMT",
+    "access-control-allow-origin": "*",
+    "etag": "W/\"v137_8\"",
+    "content-type": "application/javascript; charset=utf-8",
+    "age": "70336"
+  },
+  "url": "https://esm.sh/node/buffer.mjs",
+  "now": {
+    "secs_since_epoch": 1786608161,
+    "nanos_since_epoch": 833877500
+  }
+}

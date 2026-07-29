@@ -1,0 +1,13 @@
+/**
+ * @returns {Preprocessor}
+ *   Preprocess a value.
+ */
+export function preprocess(): Preprocessor;
+/**
+ * Preprocess a value.
+ */
+export type Preprocessor = (value: Value, encoding?: Encoding | null | undefined, end?: boolean | null | undefined) => Array<Chunk>;
+import type { Value } from 'https://esm.sh/micromark-util-types@2.0.2/index.d.ts';
+import type { Encoding } from 'https://esm.sh/micromark-util-types@2.0.2/index.d.ts';
+import type { Chunk } from 'https://esm.sh/micromark-util-types@2.0.2/index.d.ts';
+//# sourceMappingURL=preprocess.d.ts.map

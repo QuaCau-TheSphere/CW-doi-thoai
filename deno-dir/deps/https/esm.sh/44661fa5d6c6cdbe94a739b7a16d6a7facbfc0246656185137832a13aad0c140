@@ -1,0 +1,2 @@
+/* esm.sh - micromark-util-normalize-identifier@2.0.1 */
+export * from "/micromark-util-normalize-identifier@2.0.1/denonext/micromark-util-normalize-identifier.mjs";

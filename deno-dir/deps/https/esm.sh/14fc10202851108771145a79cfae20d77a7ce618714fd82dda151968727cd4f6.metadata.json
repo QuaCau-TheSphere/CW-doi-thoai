@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "date": "Thu, 13 Aug 2026 08:02:46 GMT",
+    "x-esm-path": "/escape-string-regexp@4.0.0/esnext/escape-string-regexp.mjs",
+    "cf-ray": "a2a6331248330bc2-AMS",
+    "cf-cache-status": "EXPIRED",
+    "x-typescript-types": "https://esm.sh/escape-string-regexp@4.0.0/index.d.ts",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "access-control-allow-origin": "*",
+    "content-type": "application/javascript; charset=utf-8",
+    "cache-control": "public, max-age=600",
+    "server": "cloudflare",
+    "last-modified": "Thu, 13 Aug 2026 08:02:46 GMT"
+  },
+  "url": "https://esm.sh/escape-string-regexp@^4.0.0?target=esnext",
+  "now": {
+    "secs_since_epoch": 1786608168,
+    "nanos_since_epoch": 991595600
+  }
+}

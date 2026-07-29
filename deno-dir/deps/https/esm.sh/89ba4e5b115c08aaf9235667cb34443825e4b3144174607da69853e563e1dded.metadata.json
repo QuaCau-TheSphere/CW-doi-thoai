@@ -1,0 +1,19 @@
+{
+  "headers": {
+    "cf-cache-status": "HIT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "server": "cloudflare",
+    "access-control-allow-origin": "*",
+    "date": "Thu, 13 Aug 2026 08:02:41 GMT",
+    "vary": "Accept-Encoding",
+    "age": "1281667",
+    "last-modified": "Mon, 17 Nov 2025 23:08:56 GMT",
+    "content-type": "application/javascript; charset=utf-8",
+    "cf-ray": "a2a632f23e680bc2-AMS"
+  },
+  "url": "https://esm.sh/*preact-render-to-string@6.3.1/denonext/preact-render-to-string.mjs",
+  "now": {
+    "secs_since_epoch": 1786608162,
+    "nanos_since_epoch": 11006600
+  }
+}

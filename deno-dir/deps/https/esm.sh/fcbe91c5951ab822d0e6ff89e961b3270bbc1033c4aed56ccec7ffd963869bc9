@@ -1,0 +1,45 @@
+/**
+ * Remove markdown formatting.
+ *
+ * * remove `code`, `html`, `horizontalRule`, `table`, `toml`, `yaml`, and
+ *   their content
+ * * render everything else as simple paragraphs without formatting
+ * * uses `alt` text for images
+ *
+ * @param {Readonly<Options> | null | undefined} [options]
+ *   Configuration (optional).
+ * @returns
+ *   Transform.
+ */
+export default function stripMarkdown(options?: Readonly<Options> | null | undefined): (tree: Root) => Root;
+export type Heading = import('https://esm.sh/@types/mdast@4.0.4/index.d.ts').Heading;
+export type Image = import('https://esm.sh/@types/mdast@4.0.4/index.d.ts').Image;
+export type ImageReference = import('https://esm.sh/@types/mdast@4.0.4/index.d.ts').ImageReference;
+export type InlineCode = import('https://esm.sh/@types/mdast@4.0.4/index.d.ts').InlineCode;
+export type Nodes = import('https://esm.sh/@types/mdast@4.0.4/index.d.ts').Nodes;
+export type Paragraph = import('https://esm.sh/@types/mdast@4.0.4/index.d.ts').Paragraph;
+export type Parents = import('https://esm.sh/@types/mdast@4.0.4/index.d.ts').Parents;
+export type Root = import('https://esm.sh/@types/mdast@4.0.4/index.d.ts').Root;
+export type RootContent = import('https://esm.sh/@types/mdast@4.0.4/index.d.ts').RootContent;
+export type Text = import('https://esm.sh/@types/mdast@4.0.4/index.d.ts').Text;
+/**
+ * Transform a node.
+ */
+export type Handler = (node: any) => Array<Nodes> | Nodes | null | undefined;
+/**
+ * Handlers.
+ */
+export type Handlers = Partial<Record<Nodes['type'], Handler>>;
+/**
+ * Configuration.
+ */
+export type Options = {
+    /**
+     * List of node types to leave unchanged (optional).
+     */
+    keep?: ReadonlyArray<Nodes['type']> | null | undefined;
+    /**
+     * List of node types to remove (or replace, with handlers) (optional).
+     */
+    remove?: ReadonlyArray<readonly [Nodes['type'], Handler] | Nodes['type']> | null | undefined;
+};

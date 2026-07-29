@@ -1,0 +1,4 @@
+/* esm.sh - preact@10.19.6/debug */
+import "/preact@10.19.6/denonext/devtools.mjs";
+import "/preact@10.19.6/denonext/preact.mjs";
+export * from "/preact@10.19.6/denonext/debug.mjs";

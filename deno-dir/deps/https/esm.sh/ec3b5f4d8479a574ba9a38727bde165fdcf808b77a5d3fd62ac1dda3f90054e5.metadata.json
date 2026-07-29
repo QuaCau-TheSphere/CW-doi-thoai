@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "content-type": "application/typescript; charset=utf-8",
+    "last-modified": "Tue, 09 Dec 2025 21:11:27 GMT",
+    "server": "cloudflare",
+    "cf-cache-status": "HIT",
+    "access-control-allow-origin": "*",
+    "age": "685007",
+    "date": "Thu, 13 Aug 2026 08:03:33 GMT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "accept-ranges": "bytes",
+    "cf-ray": "a2a63434eea40bc2-AMS",
+    "content-length": "872"
+  },
+  "url": "https://esm.sh/mdast-util-to-string@4.0.0/lib/index.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608213,
+    "nanos_since_epoch": 776599800
+  }
+}

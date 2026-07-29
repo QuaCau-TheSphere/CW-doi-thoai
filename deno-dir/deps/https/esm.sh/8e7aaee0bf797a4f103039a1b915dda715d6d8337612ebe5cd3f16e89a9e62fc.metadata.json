@@ -1,0 +1,19 @@
+{
+  "headers": {
+    "cf-ray": "a2a632f23e6a0bc2-AMS",
+    "date": "Thu, 13 Aug 2026 08:02:41 GMT",
+    "vary": "Accept-Encoding",
+    "last-modified": "Mon, 17 Nov 2025 23:03:59 GMT",
+    "server": "cloudflare",
+    "cf-cache-status": "HIT",
+    "age": "1281667",
+    "cache-control": "public, max-age=31536000, immutable",
+    "content-type": "application/javascript; charset=utf-8",
+    "access-control-allow-origin": "*"
+  },
+  "url": "https://esm.sh/@babel/helper-validator-identifier@7.22.20/denonext/helper-validator-identifier.mjs",
+  "now": {
+    "secs_since_epoch": 1786608164,
+    "nanos_since_epoch": 854163200
+  }
+}

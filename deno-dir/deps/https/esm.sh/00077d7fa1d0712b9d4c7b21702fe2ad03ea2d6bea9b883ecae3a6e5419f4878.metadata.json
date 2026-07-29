@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "x-typescript-types": "https://esm.sh/@types/prismjs@~1.26.5/index.d.ts",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a2a633067f3d0bc2-AMS",
+    "x-esm-path": "/prismjs@1.29.0/denonext/prismjs.mjs",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "content-type": "application/javascript; charset=utf-8",
+    "server": "cloudflare",
+    "vary": "User-Agent",
+    "cache-control": "public, max-age=31536000, immutable",
+    "access-control-allow-origin": "*",
+    "date": "Thu, 13 Aug 2026 08:02:44 GMT"
+  },
+  "url": "https://esm.sh/prismjs@1.29.0",
+  "now": {
+    "secs_since_epoch": 1786608165,
+    "nanos_since_epoch": 434400900
+  }
+}

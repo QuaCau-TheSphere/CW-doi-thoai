@@ -1,0 +1,3 @@
+/* esm.sh - vfile-message@4.0.3 */
+import "/unist-util-stringify-position@^4.0.0?target=denonext";
+export * from "/vfile-message@4.0.3/denonext/vfile-message.mjs";

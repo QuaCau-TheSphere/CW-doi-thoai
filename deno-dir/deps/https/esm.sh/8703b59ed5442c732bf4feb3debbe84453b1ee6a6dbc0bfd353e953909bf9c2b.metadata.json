@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "last-modified": "Tue, 09 Dec 2025 20:48:20 GMT",
+    "age": "1281744",
+    "content-type": "application/typescript; charset=utf-8",
+    "server": "cloudflare",
+    "date": "Thu, 13 Aug 2026 08:03:11 GMT",
+    "access-control-allow-origin": "*",
+    "accept-ranges": "bytes",
+    "cf-ray": "a2a633ad08950bc2-AMS",
+    "cf-cache-status": "HIT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "content-length": "1863"
+  },
+  "url": "https://esm.sh/dom-serializer@2.0.0/lib/index.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608191,
+    "nanos_since_epoch": 711948900
+  }
+}

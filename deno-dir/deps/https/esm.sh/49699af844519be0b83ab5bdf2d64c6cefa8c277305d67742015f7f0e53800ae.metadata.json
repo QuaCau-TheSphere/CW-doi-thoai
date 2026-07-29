@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "cache-control": "public, max-age=31536000, immutable",
+    "accept-ranges": "bytes",
+    "age": "14890",
+    "cf-cache-status": "HIT",
+    "date": "Thu, 13 Aug 2026 08:02:41 GMT",
+    "cf-ray": "a2a632f3bffe0bc2-AMS",
+    "content-length": "101869",
+    "content-type": "application/typescript; charset=utf-8",
+    "server": "cloudflare",
+    "access-control-allow-origin": "*",
+    "last-modified": "Tue, 09 Dec 2025 21:20:09 GMT"
+  },
+  "url": "https://esm.sh/preact@10.19.6/src/jsx.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608164,
+    "nanos_since_epoch": 889208700
+  }
+}

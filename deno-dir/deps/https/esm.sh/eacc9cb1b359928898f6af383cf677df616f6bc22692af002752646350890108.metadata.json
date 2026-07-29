@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "cache-control": "public, max-age=600",
+    "content-type": "application/javascript; charset=utf-8",
+    "x-esm-path": "/nanoid@3.3.18/esnext/non-secure.mjs",
+    "cf-ray": "a2a63392aa1b0bc2-AMS",
+    "access-control-allow-origin": "*",
+    "x-typescript-types": "https://esm.sh/nanoid@3.3.18/index.d.ts",
+    "date": "Thu, 13 Aug 2026 08:03:07 GMT",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "server": "cloudflare",
+    "last-modified": "Thu, 13 Aug 2026 08:03:07 GMT",
+    "cf-cache-status": "EXPIRED"
+  },
+  "url": "https://esm.sh/nanoid@^3.3.17/non-secure?target=esnext",
+  "now": {
+    "secs_since_epoch": 1786608191,
+    "nanos_since_epoch": 73338100
+  }
+}

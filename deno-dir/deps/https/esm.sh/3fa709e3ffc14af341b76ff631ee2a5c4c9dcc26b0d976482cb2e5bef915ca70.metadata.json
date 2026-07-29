@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "cache-control": "public, max-age=600",
+    "content-length": "0",
+    "access-control-allow-origin": "*",
+    "cf-cache-status": "HIT",
+    "cf-ray": "a2a6331248400bc2-AMS",
+    "location": "https://esm.sh/@types/katex@0.16.8/index.d.ts",
+    "server": "cloudflare",
+    "date": "Thu, 13 Aug 2026 08:02:46 GMT"
+  },
+  "url": "https://esm.sh/@types/katex@~0.16.7/index.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608169,
+    "nanos_since_epoch": 62816500
+  }
+}

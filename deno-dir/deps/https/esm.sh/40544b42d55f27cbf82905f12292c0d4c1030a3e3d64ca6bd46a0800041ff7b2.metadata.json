@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "server": "cloudflare",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "cf-cache-status": "DYNAMIC",
+    "date": "Thu, 13 Aug 2026 08:02:44 GMT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "vary": "User-Agent",
+    "access-control-allow-origin": "*",
+    "cf-ray": "a2a633067f380bc2-AMS",
+    "content-type": "application/javascript; charset=utf-8",
+    "x-typescript-types": "https://esm.sh/@types/marked@~5.0.2/index.d.mts",
+    "x-esm-path": "/marked@5.1.0/denonext/marked.mjs"
+  },
+  "url": "https://esm.sh/marked@5.1.0/",
+  "now": {
+    "secs_since_epoch": 1786608165,
+    "nanos_since_epoch": 338514400
+  }
+}

@@ -1,0 +1,5 @@
+/* esm.sh - remark@15.0.1 */
+import "/remark-parse@^11.0.0?target=denonext";
+import "/remark-stringify@^11.0.0?target=denonext";
+import "/unified@^11.0.0?target=denonext";
+export * from "/remark@15.0.1/denonext/remark.mjs";

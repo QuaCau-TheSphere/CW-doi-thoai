@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "age": "1010835",
+    "server": "cloudflare",
+    "cache-control": "public, max-age=31536000, immutable",
+    "last-modified": "Tue, 09 Dec 2025 21:11:27 GMT",
+    "content-type": "application/typescript; charset=utf-8",
+    "date": "Thu, 13 Aug 2026 08:03:35 GMT",
+    "content-length": "1370",
+    "accept-ranges": "bytes",
+    "cf-cache-status": "HIT",
+    "access-control-allow-origin": "*",
+    "cf-ray": "a2a6344349be0bc2-AMS"
+  },
+  "url": "https://esm.sh/micromark-util-chunked@2.0.1/index.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608216,
+    "nanos_since_epoch": 21848400
+  }
+}

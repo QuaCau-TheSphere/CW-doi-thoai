@@ -1,0 +1,4 @@
+/* esm.sh - unist-util-visit-parents@6.0.2 */
+import "/unist-util-is@^6.0.0?target=denonext";
+import "/unist-util-visit-parents@6.0.2/denonext/do-not-use-color.mjs";
+export * from "/unist-util-visit-parents@6.0.2/denonext/unist-util-visit-parents.mjs";

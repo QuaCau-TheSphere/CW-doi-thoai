@@ -1,0 +1,3 @@
+/* esm.sh - nanoid@3.3.18/non-secure */
+var i="useandom-26T198340PX75pxJACKVERYMINDBUSHWOLF_GQZbfghjklqvwyzrict",h=(t,e=21)=>(l=e)=>{let r="",n=l|0;for(;n-- >0;)r+=t[Math.random()*t.length|0];return r},a=(t=21)=>{let e="",l=t|0;for(;l-- >0;)e+=i[Math.random()*64|0];return e};export{h as customAlphabet,a as nanoid};
+//# sourceMappingURL=non-secure.mjs.map

@@ -1,0 +1,8 @@
+/* esm.sh - sanitize-html@2.8.1 */
+import "/deepmerge@^4.2.2?target=esnext";
+import "/escape-string-regexp@^4.0.0?target=esnext";
+import "/htmlparser2@^8.0.0?target=esnext";
+import "/parse-srcset@^1.0.2?target=esnext";
+import "/postcss@^8.3.11?target=esnext";
+export * from "/sanitize-html@2.8.1/esnext/sanitize-html.mjs";
+export { default } from "/sanitize-html@2.8.1/esnext/sanitize-html.mjs";

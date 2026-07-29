@@ -1,0 +1,7 @@
+export type Callback = import('./lib/index.d.ts').Callback;
+export type Middleware = import('./lib/index.d.ts').Middleware;
+export type Pipeline = import('./lib/index.d.ts').Pipeline;
+export type Run = import('./lib/index.d.ts').Run;
+export type Use = import('./lib/index.d.ts').Use;
+export { trough, wrap } from "./lib/index.d.ts";
+//# sourceMappingURL=index.d.ts.map

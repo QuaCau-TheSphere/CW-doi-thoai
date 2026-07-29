@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "cache-control": "public, max-age=600",
+    "location": "https://esm.sh/marked-mangle@1.1.0",
+    "date": "Thu, 13 Aug 2026 08:02:45 GMT",
+    "vary": "User-Agent",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a2a633067f3b0bc2-AMS",
+    "content-length": "0",
+    "server": "cloudflare",
+    "access-control-allow-origin": "*"
+  },
+  "url": "https://esm.sh/marked-mangle@v1.1.0/",
+  "now": {
+    "secs_since_epoch": 1786608165,
+    "nanos_since_epoch": 477381100
+  }
+}

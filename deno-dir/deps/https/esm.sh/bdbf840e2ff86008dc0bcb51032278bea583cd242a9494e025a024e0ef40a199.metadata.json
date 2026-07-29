@@ -1,0 +1,22 @@
+{
+  "headers": {
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "cache-control": "public, max-age=600",
+    "x-typescript-types": "https://esm.sh/postcss@8.5.26/lib/postcss.d.ts",
+    "access-control-allow-origin": "*",
+    "content-type": "application/javascript; charset=utf-8",
+    "accept-ranges": "bytes",
+    "cf-cache-status": "EXPIRED",
+    "server": "cloudflare",
+    "last-modified": "Thu, 13 Aug 2026 08:02:46 GMT",
+    "x-esm-path": "/postcss@8.5.26/esnext/postcss.mjs",
+    "vary": "Accept-Encoding",
+    "cf-ray": "a2a6331248380bc2-AMS",
+    "date": "Thu, 13 Aug 2026 08:02:46 GMT"
+  },
+  "url": "https://esm.sh/postcss@^8.3.11?target=esnext",
+  "now": {
+    "secs_since_epoch": 1786608169,
+    "nanos_since_epoch": 111354500
+  }
+}

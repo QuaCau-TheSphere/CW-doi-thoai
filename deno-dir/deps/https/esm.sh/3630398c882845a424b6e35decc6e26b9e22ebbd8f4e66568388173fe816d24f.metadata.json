@@ -1,0 +1,19 @@
+{
+  "headers": {
+    "last-modified": "Tue, 18 Nov 2025 01:38:11 GMT",
+    "age": "1279124",
+    "cache-control": "public, max-age=31536000, immutable",
+    "access-control-allow-origin": "*",
+    "server": "cloudflare",
+    "date": "Thu, 13 Aug 2026 08:03:07 GMT",
+    "content-type": "application/javascript; charset=utf-8",
+    "vary": "Accept-Encoding",
+    "cf-cache-status": "HIT",
+    "cf-ray": "a2a63392a9f40bc2-AMS"
+  },
+  "url": "https://esm.sh/domhandler@5.0.3/esnext/domhandler.mjs",
+  "now": {
+    "secs_since_epoch": 1786608187,
+    "nanos_since_epoch": 784339700
+  }
+}

@@ -1,0 +1,26 @@
+/**
+ * Aadd support for parsing from markdown.
+ *
+ * @param {Readonly<Options> | null | undefined} [options]
+ *   Configuration (optional).
+ * @returns {undefined}
+ *   Nothing.
+ */
+export default function remarkParse(options?: Readonly<Options> | null | undefined): undefined;
+export default class remarkParse {
+    /**
+     * Aadd support for parsing from markdown.
+     *
+     * @param {Readonly<Options> | null | undefined} [options]
+     *   Configuration (optional).
+     * @returns {undefined}
+     *   Nothing.
+     */
+    constructor(options?: Readonly<Options> | null | undefined);
+    parser: (document: string, file: import("https://esm.sh/vfile@6.0.3/index.d.ts").VFile) => import("https://esm.sh/@types/mdast@4.0.4/index.d.ts").Root;
+}
+export type Root = import('https://esm.sh/@types/mdast@4.0.4/index.d.ts').Root;
+export type FromMarkdownOptions = import('https://esm.sh/mdast-util-from-markdown@2.0.2/index.d.ts').Options;
+export type Parser = import('https://esm.sh/unified@11.0.5/index.d.ts').Parser<Root>;
+export type Processor = import('https://esm.sh/unified@11.0.5/index.d.ts').Processor<Root>;
+export type Options = Omit<FromMarkdownOptions, 'extensions' | 'mdastExtensions'>;

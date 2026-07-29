@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "cf-ray": "a2a633ad08920bc2-AMS",
+    "x-esm-path": "/entities@4.5.0/esnext/entities.mjs",
+    "cache-control": "public, max-age=600",
+    "x-typescript-types": "https://esm.sh/entities@4.5.0/lib/index.d.ts",
+    "access-control-allow-origin": "*",
+    "content-type": "application/javascript; charset=utf-8",
+    "last-modified": "Thu, 13 Aug 2026 08:03:11 GMT",
+    "date": "Thu, 13 Aug 2026 08:03:11 GMT",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "server": "cloudflare",
+    "cf-cache-status": "EXPIRED"
+  },
+  "url": "https://esm.sh/entities@^4.2.0?target=esnext",
+  "now": {
+    "secs_since_epoch": 1786608192,
+    "nanos_since_epoch": 785618600
+  }
+}

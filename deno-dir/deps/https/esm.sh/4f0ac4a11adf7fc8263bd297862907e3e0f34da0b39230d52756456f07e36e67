@@ -1,0 +1,4 @@
+/* esm.sh - entities@4.5.0 */
+import "/entities@4.5.0/esnext/lib/decode.mjs";
+import "/entities@4.5.0/esnext/lib/escape.mjs";
+export * from "/entities@4.5.0/esnext/entities.mjs";

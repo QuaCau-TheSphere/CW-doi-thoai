@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "date": "Thu, 13 Aug 2026 08:04:04 GMT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "last-modified": "Tue, 09 Dec 2025 21:10:54 GMT",
+    "content-type": "application/typescript; charset=utf-8",
+    "access-control-allow-origin": "*",
+    "server": "cloudflare",
+    "accept-ranges": "bytes",
+    "content-length": "199",
+    "cf-ray": "a2a634f80e070bc2-AMS",
+    "age": "685037",
+    "cf-cache-status": "HIT"
+  },
+  "url": "https://esm.sh/micromark-core-commonmark@2.0.3/lib/label-start-link.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608246,
+    "nanos_since_epoch": 136047200
+  }
+}

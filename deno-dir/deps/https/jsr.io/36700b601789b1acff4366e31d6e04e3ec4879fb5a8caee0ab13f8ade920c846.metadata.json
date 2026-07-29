@@ -1,0 +1,31 @@
+{
+  "headers": {
+    "content-security-policy": "default-src 'none'; script-src 'none'; style-src 'none'; img-src 'none'; font-src 'none'; connect-src 'none'; frame-src 'none'; object-src 'none'; frame-ancestors 'none'; sandbox; form-action 'none';",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "age": "767",
+    "accept-ranges": "bytes",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "*",
+    "content-type": "text/typescript",
+    "server": "cloudflare",
+    "vary": "Origin",
+    "cross-origin-resource-policy": "cross-origin",
+    "content-length": "301",
+    "x-robots-tag": "noindex",
+    "cf-ray": "a2a635a2ed8a2d8e-AMS",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=GlCEh5UxDrYpk%2BUSCNwnFd4mP6O2q8dPuMDovHT%2BNj0twvmGt6do2DU4m5cg1tIZ6Kv5ZNYio8Yc3YxGS8MN2BX9EmYuBjYXVaXso%2BS5yMmwx1szKGy8jXQ%3D\"}]}",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "set-cookie": "__cf_bm=lNxxa6X1r_yoLB.h3BkZYKcs1OmLR_Q.URm9NudttFk-1786608271.827767-1.0.1.1-JCVM92uZh31xJhAyIMP5SlF3UEQRN8nIjaPqXhFU_tINcZTJ9FEboWpK7g2eC8UDlLIqODlaWyODR2B.qsnkGgH_6O9bnEqA9mFnGP_t.dgFgl8cICu1izqtyV9tTfua; HttpOnly; SameSite=None; Secure; Path=/; Domain=jsr.io; Expires=Thu, 13 Aug 2026 08:34:31 GMT",
+    "etag": "\"2c323bf67b31b38fdd4560c291aa17c3\"",
+    "x-content-type-options": "nosniff",
+    "x-jsr-backend": "modules",
+    "cf-cache-status": "HIT",
+    "date": "Thu, 13 Aug 2026 08:04:31 GMT",
+    "cache-control": "public, max-age=31536000, immutable"
+  },
+  "url": "https://jsr.io/@std/path/0.213.1/posix/to_namespaced_path.ts",
+  "now": {
+    "secs_since_epoch": 1786608274,
+    "nanos_since_epoch": 713449500
+  }
+}

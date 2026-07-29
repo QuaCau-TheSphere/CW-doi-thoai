@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "cache-control": "public, max-age=31536000, immutable",
+    "access-control-allow-origin": "*",
+    "content-type": "application/javascript; charset=utf-8",
+    "cf-ray": "a2a634301af90bc2-AMS",
+    "last-modified": "Tue, 02 Dec 2025 16:38:06 GMT",
+    "server": "cloudflare",
+    "date": "Thu, 13 Aug 2026 08:03:32 GMT",
+    "cf-cache-status": "HIT",
+    "age": "1076942"
+  },
+  "url": "https://esm.sh/longest-streak@3.1.0/denonext/longest-streak.mjs",
+  "now": {
+    "secs_since_epoch": 1786608213,
+    "nanos_since_epoch": 202752600
+  }
+}

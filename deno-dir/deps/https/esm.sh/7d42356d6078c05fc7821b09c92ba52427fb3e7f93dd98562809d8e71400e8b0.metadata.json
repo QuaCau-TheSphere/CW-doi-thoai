@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "content-length": "200",
+    "date": "Thu, 13 Aug 2026 08:04:04 GMT",
+    "server": "cloudflare",
+    "accept-ranges": "bytes",
+    "last-modified": "Tue, 09 Dec 2025 21:11:29 GMT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "content-type": "application/typescript; charset=utf-8",
+    "age": "685037",
+    "cf-cache-status": "HIT",
+    "access-control-allow-origin": "*",
+    "cf-ray": "a2a634f80e0a0bc2-AMS"
+  },
+  "url": "https://esm.sh/micromark-core-commonmark@2.0.3/lib/setext-underline.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608246,
+    "nanos_since_epoch": 44768500
+  }
+}

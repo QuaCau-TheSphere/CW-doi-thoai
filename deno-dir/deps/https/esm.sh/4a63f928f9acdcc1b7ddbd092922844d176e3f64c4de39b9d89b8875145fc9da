@@ -1,0 +1,18 @@
+/**
+ * Classify whether a code represents whitespace, punctuation, or something
+ * else.
+ *
+ * Used for attention (emphasis, strong), whose sequences can open or close
+ * based on the class of surrounding characters.
+ *
+ * > 👉 **Note**: eof (`null`) is seen as whitespace.
+ *
+ * @param {Code} code
+ *   Code.
+ * @returns {typeof constants.characterGroupWhitespace | typeof constants.characterGroupPunctuation | undefined}
+ *   Group.
+ */
+export function classifyCharacter(code: Code): typeof constants.characterGroupWhitespace | typeof constants.characterGroupPunctuation | undefined;
+import type { Code } from 'https://esm.sh/micromark-util-types@2.0.1/index.d.ts';
+import { constants } from 'https://esm.sh/micromark-util-symbol@2.0.1/lib/default.d.ts';
+//# sourceMappingURL=index.d.ts.map

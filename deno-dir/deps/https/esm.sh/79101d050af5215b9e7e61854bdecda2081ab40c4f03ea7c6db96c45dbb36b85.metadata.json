@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "age": "685037",
+    "server": "cloudflare",
+    "date": "Thu, 13 Aug 2026 08:04:04 GMT",
+    "content-type": "application/typescript; charset=utf-8",
+    "access-control-allow-origin": "*",
+    "last-modified": "Tue, 09 Dec 2025 21:11:26 GMT",
+    "accept-ranges": "bytes",
+    "content-length": "201",
+    "cache-control": "public, max-age=31536000, immutable",
+    "cf-cache-status": "HIT",
+    "cf-ray": "a2a634f80dff0bc2-AMS"
+  },
+  "url": "https://esm.sh/micromark-core-commonmark@2.0.3/lib/hard-break-escape.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608244,
+    "nanos_since_epoch": 952289700
+  }
+}

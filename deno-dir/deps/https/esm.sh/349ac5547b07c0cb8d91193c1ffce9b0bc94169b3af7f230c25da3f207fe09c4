@@ -1,0 +1,5 @@
+/* esm.sh - dom-serializer@2.0.0 */
+import "/domelementtype@^2.3.0?target=esnext";
+import "/entities@^4.2.0?target=esnext";
+export * from "/dom-serializer@2.0.0/esnext/dom-serializer.mjs";
+export { default } from "/dom-serializer@2.0.0/esnext/dom-serializer.mjs";

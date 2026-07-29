@@ -1,0 +1,21 @@
+{
+  "headers": {
+    "age": "1225397",
+    "date": "Thu, 13 Aug 2026 08:03:28 GMT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "x-typescript-types": "https://esm.sh/trough@2.2.0/index.d.ts",
+    "last-modified": "Thu, 13 Aug 2026 07:54:09 GMT",
+    "cf-cache-status": "HIT",
+    "server": "cloudflare",
+    "content-type": "application/javascript; charset=utf-8",
+    "access-control-allow-origin": "*",
+    "cf-ray": "a2a634199f840bc2-AMS",
+    "x-esm-path": "/trough@2.2.0/denonext/trough.mjs"
+  },
+  "url": "https://esm.sh/trough@2.2.0?target=denonext",
+  "now": {
+    "secs_since_epoch": 1786608209,
+    "nanos_since_epoch": 63973100
+  }
+}

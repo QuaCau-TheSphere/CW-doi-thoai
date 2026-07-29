@@ -1,0 +1,4 @@
+/* esm.sh - micromark-util-sanitize-uri@2.0.1 */
+import "/micromark-util-character@^2.0.0?target=denonext";
+import "/micromark-util-encode@^2.0.0?target=denonext";
+export * from "/micromark-util-sanitize-uri@2.0.1/denonext/micromark-util-sanitize-uri.mjs";

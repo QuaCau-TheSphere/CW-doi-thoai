@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "accept-ranges": "bytes",
+    "date": "Thu, 13 Aug 2026 08:03:11 GMT",
+    "server": "cloudflare",
+    "content-length": "2419",
+    "last-modified": "Tue, 09 Dec 2025 20:48:20 GMT",
+    "age": "1281744",
+    "cf-ray": "a2a633ad089f0bc2-AMS",
+    "cf-cache-status": "HIT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "content-type": "application/typescript; charset=utf-8",
+    "access-control-allow-origin": "*"
+  },
+  "url": "https://esm.sh/domutils@3.2.2/lib/helpers.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608191,
+    "nanos_since_epoch": 872765100
+  }
+}

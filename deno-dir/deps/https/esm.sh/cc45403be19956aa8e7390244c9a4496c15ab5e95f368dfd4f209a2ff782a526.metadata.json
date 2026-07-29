@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "age": "559",
+    "cf-cache-status": "HIT",
+    "access-control-allow-origin": "*",
+    "date": "Thu, 13 Aug 2026 08:03:28 GMT",
+    "server": "cloudflare",
+    "location": "https://esm.sh/devlop@1.1.0?target=denonext",
+    "cf-ray": "a2a634167cca0bc2-AMS",
+    "cache-control": "public, max-age=600",
+    "content-length": "0"
+  },
+  "url": "https://esm.sh/devlop@^1.0.0?target=denonext",
+  "now": {
+    "secs_since_epoch": 1786608208,
+    "nanos_since_epoch": 591367200
+  }
+}

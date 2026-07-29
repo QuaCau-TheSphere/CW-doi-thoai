@@ -1,0 +1,22 @@
+{
+  "headers": {
+    "server": "cloudflare",
+    "content-type": "application/javascript; charset=utf-8",
+    "access-control-expose-headers": "X-TypeScript-Types",
+    "cache-control": "public, max-age=31536000, immutable",
+    "vary": "Accept-Encoding",
+    "age": "597270",
+    "cf-cache-status": "HIT",
+    "date": "Thu, 13 Aug 2026 08:02:50 GMT",
+    "x-typescript-types": "https://esm.sh/postcss@8.5.26/lib/css-syntax-error.d.ts",
+    "accept-ranges": "bytes",
+    "cf-ray": "a2a63328e85e0bc2-AMS",
+    "access-control-allow-origin": "*",
+    "last-modified": "Thu, 06 Aug 2026 10:08:19 GMT"
+  },
+  "url": "https://esm.sh/postcss@8.5.26/esnext/lib/css-syntax-error.mjs",
+  "now": {
+    "secs_since_epoch": 1786608171,
+    "nanos_since_epoch": 52405500
+  }
+}

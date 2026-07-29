@@ -1,0 +1,8 @@
+/* esm.sh - unified@11.0.5 */
+import "/bail@^2.0.0?target=denonext";
+import "/devlop@^1.0.0?target=denonext";
+import "/extend@^3.0.0?target=denonext";
+import "/is-plain-obj@^4.0.0?target=denonext";
+import "/trough@^2.0.0?target=denonext";
+import "/vfile@^6.0.0?target=denonext";
+export * from "/unified@11.0.5/denonext/unified.mjs";

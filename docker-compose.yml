@@ -1,0 +1,25 @@
+services:
+  main:
+    build: .
+    image: ooker/doi-thoai
+    container_name: doi-thoai
+    ports:
+      - "8000:8000"
+    volumes:
+      - deno_dir:/deno_dir/
+      - ./Cấu hình và dữ liệu:/app/Cấu hình và dữ liệu
+    env_file: ".env"
+    restart: unless-stopped
+    develop:
+      watch:
+        - action: sync
+          path: ./
+          target: /app
+          ignore:
+            - node_modules/
+        - action: rebuild
+          path: deno.json
+
+volumes:
+  deno_dir:
+    driver: local

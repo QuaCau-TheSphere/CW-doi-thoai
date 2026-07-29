@@ -1,0 +1,21 @@
+{
+  "headers": {
+    "x-esm-path": "/devlop@1.1.0/denonext/devlop.mjs",
+    "server": "cloudflare",
+    "date": "Thu, 13 Aug 2026 08:03:28 GMT",
+    "x-typescript-types": "https://esm.sh/devlop@1.1.0/lib/development.d.ts",
+    "age": "1076939",
+    "content-type": "application/javascript; charset=utf-8",
+    "cache-control": "public, max-age=31536000, immutable",
+    "last-modified": "Thu, 13 Aug 2026 07:54:09 GMT",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "access-control-allow-origin": "*",
+    "cf-cache-status": "HIT",
+    "cf-ray": "a2a634199f7f0bc2-AMS"
+  },
+  "url": "https://esm.sh/devlop@1.1.0?target=denonext",
+  "now": {
+    "secs_since_epoch": 1786608209,
+    "nanos_since_epoch": 80432500
+  }
+}

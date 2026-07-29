@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "x-typescript-types": "https://esm.sh/deepmerge@4.3.1/index.d.ts",
+    "cache-control": "public, max-age=600",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "server": "cloudflare",
+    "content-type": "application/javascript; charset=utf-8",
+    "x-esm-path": "/deepmerge@4.3.1/esnext/deepmerge.mjs",
+    "date": "Thu, 13 Aug 2026 08:02:46 GMT",
+    "last-modified": "Thu, 13 Aug 2026 08:02:46 GMT",
+    "cf-cache-status": "EXPIRED",
+    "cf-ray": "a2a6331248310bc2-AMS"
+  },
+  "url": "https://esm.sh/deepmerge@^4.2.2?target=esnext",
+  "now": {
+    "secs_since_epoch": 1786608169,
+    "nanos_since_epoch": 48109500
+  }
+}

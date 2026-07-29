@@ -1,0 +1,21 @@
+{
+  "headers": {
+    "cache-control": "public, max-age=31536000, immutable",
+    "server": "cloudflare",
+    "age": "540",
+    "x-esm-path": "/remark-stringify@11.0.0/denonext/remark-stringify.mjs",
+    "content-type": "application/javascript; charset=utf-8",
+    "last-modified": "Thu, 13 Aug 2026 07:54:08 GMT",
+    "date": "Thu, 13 Aug 2026 08:03:08 GMT",
+    "cf-cache-status": "HIT",
+    "access-control-allow-origin": "*",
+    "cf-ray": "a2a6339b691e0bc2-AMS",
+    "x-typescript-types": "https://esm.sh/remark-stringify@11.0.0/index.d.ts",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types"
+  },
+  "url": "https://esm.sh/remark-stringify@11.0.0?target=denonext",
+  "now": {
+    "secs_since_epoch": 1786608191,
+    "nanos_since_epoch": 492480500
+  }
+}

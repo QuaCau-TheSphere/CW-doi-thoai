@@ -1,0 +1,4 @@
+/* esm.sh - micromark-factory-title@2.0.1 */
+import "/micromark-factory-space@^2.0.0?target=denonext";
+import "/micromark-util-character@^2.0.0?target=denonext";
+export * from "/micromark-factory-title@2.0.1/denonext/micromark-factory-title.mjs";

@@ -1,0 +1,7 @@
+/* esm.sh - htmlparser2@8.0.2 */
+import "/domelementtype@^2.3.0?target=esnext";
+import "/domhandler@^5.0.3?target=esnext";
+import "/domutils@^3.0.1?target=esnext";
+import "/htmlparser2@8.0.2/esnext/lib/esm/Parser.mjs";
+import "/htmlparser2@8.0.2/esnext/lib/esm/Tokenizer.mjs";
+export * from "/htmlparser2@8.0.2/esnext/htmlparser2.mjs";

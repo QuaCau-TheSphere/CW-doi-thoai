@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "last-modified": "Tue, 09 Dec 2025 21:11:26 GMT",
+    "content-type": "application/typescript; charset=utf-8",
+    "age": "685037",
+    "cache-control": "public, max-age=31536000, immutable",
+    "access-control-allow-origin": "*",
+    "cf-cache-status": "HIT",
+    "date": "Thu, 13 Aug 2026 08:04:04 GMT",
+    "content-length": "5486",
+    "accept-ranges": "bytes",
+    "cf-ray": "a2a634f80e0d0bc2-AMS",
+    "server": "cloudflare"
+  },
+  "url": "https://esm.sh/micromark-util-subtokenize@2.1.0/lib/splice-buffer.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608246,
+    "nanos_since_epoch": 276008600
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "headers": {
+    "access-control-allow-origin": "*",
+    "cf-cache-status": "HIT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "age": "1260485",
+    "date": "Thu, 13 Aug 2026 08:03:29 GMT",
+    "content-type": "application/javascript; charset=utf-8",
+    "vary": "Accept-Encoding",
+    "cf-ray": "a2a6341f1c250bc2-AMS",
+    "server": "cloudflare",
+    "last-modified": "Wed, 19 Nov 2025 18:07:58 GMT"
+  },
+  "url": "https://esm.sh/vfile@6.0.3/denonext/vfile.mjs",
+  "now": {
+    "secs_since_epoch": 1786608210,
+    "nanos_since_epoch": 195895100
+  }
+}

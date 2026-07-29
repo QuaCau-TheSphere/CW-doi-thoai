@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "date": "Thu, 13 Aug 2026 08:02:46 GMT",
+    "cache-control": "public, max-age=600",
+    "server": "cloudflare",
+    "access-control-allow-origin": "*",
+    "content-length": "0",
+    "location": "https://esm.sh/@types/marked@5.0.2/index.d.mts",
+    "cf-ray": "a2a6331248280bc2-AMS",
+    "cf-cache-status": "HIT"
+  },
+  "url": "https://esm.sh/@types/marked@~5.0.2/index.d.mts",
+  "now": {
+    "secs_since_epoch": 1786608168,
+    "nanos_since_epoch": 948173700
+  }
+}

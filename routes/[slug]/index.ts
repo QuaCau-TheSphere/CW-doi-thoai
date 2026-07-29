@@ -8,8 +8,10 @@ export const handler: Handlers = {
   /** Người dùng truy cập để tới liên kết thực sự */
   async GET(req, ctx) {
     const slug = ctx.params.slug;
-    console.log("🚀:", ["renderer.js.map", "installHook.js.map"].includes(slug));
-    if (!["renderer.js.map", "installHook.js.map"].includes(slug)) {
+    console.log("Slug:", slug);
+    const sourceMaps = ["renderer.js.map", "installHook.js.map", "robots.txt"];
+    const slugLàSourceMap = sourceMaps.includes(slug);
+    if (!slugLàSourceMap) {
       const đuôiRútGọn = decodeURIComponent(slug);
       console.log("Đuôi rút gọn được truy cập:", đuôiRútGọn);
       const key = ["Đuôi rút gọn", đuôiRútGọn];
@@ -24,6 +26,9 @@ export const handler: Handlers = {
       } else {
         return ctx.renderNotFound({ đuôiRútGọn: đuôiRútGọn });
       }
+    } else {
+      console.log(`Source map được truy cập: ${slug}`);
+      return Response.redirect("https://google.com");
     }
   },
 

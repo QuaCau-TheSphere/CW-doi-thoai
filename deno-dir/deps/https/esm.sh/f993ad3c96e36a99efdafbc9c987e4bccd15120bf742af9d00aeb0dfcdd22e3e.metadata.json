@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "cf-ray": "a2a63328e82b0bc2-AMS",
+    "cf-cache-status": "HIT",
+    "access-control-allow-origin": "*",
+    "cache-control": "public, max-age=31536000, immutable",
+    "date": "Thu, 13 Aug 2026 08:02:50 GMT",
+    "vary": "Accept-Encoding",
+    "accept-ranges": "bytes",
+    "server": "cloudflare",
+    "age": "1280477",
+    "content-type": "application/javascript; charset=utf-8",
+    "last-modified": "Mon, 17 Nov 2025 23:04:20 GMT"
+  },
+  "url": "https://esm.sh/*@preact/signals-core@1.5.1/denonext/signals-core.mjs",
+  "now": {
+    "secs_since_epoch": 1786608170,
+    "nanos_since_epoch": 551874900
+  }
+}

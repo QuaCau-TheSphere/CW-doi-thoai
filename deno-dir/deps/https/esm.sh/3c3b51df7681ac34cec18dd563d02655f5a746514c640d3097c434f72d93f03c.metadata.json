@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "accept-ranges": "bytes",
+    "age": "1281761",
+    "content-type": "application/typescript; charset=utf-8",
+    "access-control-allow-origin": "*",
+    "cf-ray": "a2a634167cec0bc2-AMS",
+    "cache-control": "public, max-age=31536000, immutable",
+    "cf-cache-status": "HIT",
+    "last-modified": "Tue, 09 Dec 2025 20:52:16 GMT",
+    "server": "cloudflare",
+    "date": "Thu, 13 Aug 2026 08:03:28 GMT",
+    "content-length": "109"
+  },
+  "url": "https://esm.sh/entities@4.5.0/lib/esm/generated/decode-data-html.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608208,
+    "nanos_since_epoch": 823922700
+  }
+}

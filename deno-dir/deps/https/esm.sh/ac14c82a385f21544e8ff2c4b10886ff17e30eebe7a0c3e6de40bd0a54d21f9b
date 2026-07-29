@@ -1,0 +1,4 @@
+/* esm.sh - domhandler@5.0.3 */
+import "/domelementtype@^2.3.0?target=esnext";
+export * from "/domhandler@5.0.3/esnext/domhandler.mjs";
+export { default } from "/domhandler@5.0.3/esnext/domhandler.mjs";

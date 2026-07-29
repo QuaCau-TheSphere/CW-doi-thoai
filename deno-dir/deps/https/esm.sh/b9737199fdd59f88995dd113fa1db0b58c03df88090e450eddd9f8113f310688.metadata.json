@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "cache-control": "public, max-age=86400",
+    "age": "72240",
+    "date": "Thu, 13 Aug 2026 08:03:11 GMT",
+    "cf-ray": "a2a633ad08a60bc2-AMS",
+    "etag": "W/\"v137_8\"",
+    "vary": "Accept-Encoding",
+    "accept-ranges": "bytes",
+    "content-type": "application/javascript; charset=utf-8",
+    "access-control-allow-origin": "*",
+    "cf-cache-status": "HIT",
+    "server": "cloudflare"
+  },
+  "url": "https://esm.sh/node/async_hooks.mjs",
+  "now": {
+    "secs_since_epoch": 1786608191,
+    "nanos_since_epoch": 927944200
+  }
+}

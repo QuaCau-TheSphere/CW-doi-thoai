@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "x-typescript-types": "https://esm.sh/@preact/signals-core@1.5.1/dist/signals-core.d.ts",
+    "cache-control": "public, max-age=31536000, immutable",
+    "content-type": "application/javascript; charset=utf-8",
+    "server": "cloudflare",
+    "vary": "User-Agent",
+    "x-esm-path": "/*@preact/signals-core@1.5.1/denonext/signals-core.mjs",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a2a6331248210bc2-AMS",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "date": "Thu, 13 Aug 2026 08:02:46 GMT",
+    "access-control-allow-origin": "*"
+  },
+  "url": "https://esm.sh/*@preact/signals-core@1.5.1",
+  "now": {
+    "secs_since_epoch": 1786608168,
+    "nanos_since_epoch": 935089200
+  }
+}

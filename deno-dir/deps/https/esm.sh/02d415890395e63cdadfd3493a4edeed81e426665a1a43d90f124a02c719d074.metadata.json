@@ -1,0 +1,19 @@
+{
+  "headers": {
+    "cache-control": "public, max-age=31536000, immutable",
+    "date": "Thu, 13 Aug 2026 08:02:46 GMT",
+    "last-modified": "Mon, 17 Nov 2025 23:38:53 GMT",
+    "server": "cloudflare",
+    "age": "1231807",
+    "content-type": "application/javascript; charset=utf-8",
+    "cf-cache-status": "HIT",
+    "cf-ray": "a2a63312482e0bc2-AMS",
+    "vary": "Accept-Encoding",
+    "access-control-allow-origin": "*"
+  },
+  "url": "https://esm.sh/prismjs@1.29.0/denonext/prismjs.mjs",
+  "now": {
+    "secs_since_epoch": 1786608167,
+    "nanos_since_epoch": 99699200
+  }
+}

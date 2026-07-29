@@ -1,0 +1,82 @@
+/**
+ * Compile markdown to HTML.
+ *
+ * > Note: which encodings are supported depends on the engine.
+ * > For info on Node.js, see:
+ * > <https://nodejs.org/api/util.html#whatwg-supported-encodings>.
+ *
+ * @overload
+ * @param {Value} value
+ *   Markdown to parse (`string` or `Uint8Array`).
+ * @param {Encoding | null | undefined} encoding
+ *   Character encoding to understand `value` as when it’s a `Uint8Array`
+ *   (`string`, default: `'utf8'`).
+ * @param {Options | null | undefined} [options]
+ *   Configuration.
+ * @returns {string}
+ *   Compiled HTML.
+ *
+ * @overload
+ * @param {Value} value
+ *   Markdown to parse (`string` or `Uint8Array`).
+ * @param {Options | null | undefined} [options]
+ *   Configuration.
+ * @returns {string}
+ *   Compiled HTML.
+ *
+ * @param {Value} value
+ *   Markdown to parse (`string` or `Uint8Array`).
+ * @param {Encoding | Options | null | undefined} [encoding]
+ *   Character encoding to understand `value` as when it’s a `Uint8Array`
+ *   (`string`, default: `'utf8'`).
+ * @param {Options | null | undefined} [options]
+ *   Configuration.
+ * @returns {string}
+ *   Compiled HTML.
+ */
+export function micromark(value: Value, encoding: Encoding | null | undefined, options?: Options | null | undefined): string;
+/**
+ * Compile markdown to HTML.
+ *
+ * > Note: which encodings are supported depends on the engine.
+ * > For info on Node.js, see:
+ * > <https://nodejs.org/api/util.html#whatwg-supported-encodings>.
+ *
+ * @overload
+ * @param {Value} value
+ *   Markdown to parse (`string` or `Uint8Array`).
+ * @param {Encoding | null | undefined} encoding
+ *   Character encoding to understand `value` as when it’s a `Uint8Array`
+ *   (`string`, default: `'utf8'`).
+ * @param {Options | null | undefined} [options]
+ *   Configuration.
+ * @returns {string}
+ *   Compiled HTML.
+ *
+ * @overload
+ * @param {Value} value
+ *   Markdown to parse (`string` or `Uint8Array`).
+ * @param {Options | null | undefined} [options]
+ *   Configuration.
+ * @returns {string}
+ *   Compiled HTML.
+ *
+ * @param {Value} value
+ *   Markdown to parse (`string` or `Uint8Array`).
+ * @param {Encoding | Options | null | undefined} [encoding]
+ *   Character encoding to understand `value` as when it’s a `Uint8Array`
+ *   (`string`, default: `'utf8'`).
+ * @param {Options | null | undefined} [options]
+ *   Configuration.
+ * @returns {string}
+ *   Compiled HTML.
+ */
+export function micromark(value: Value, options?: Options | null | undefined): string;
+export { compile } from "./lib/compile.d.ts";
+export { parse } from "./lib/parse.d.ts";
+export { postprocess } from "./lib/postprocess.d.ts";
+export { preprocess } from "./lib/preprocess.d.ts";
+export type Options = import("https://esm.sh/micromark-util-types@2.0.2/index.d.ts").Options;
+import type { Value } from 'https://esm.sh/micromark-util-types@2.0.2/index.d.ts';
+import type { Encoding } from 'https://esm.sh/micromark-util-types@2.0.2/index.d.ts';
+//# sourceMappingURL=index.d.ts.map

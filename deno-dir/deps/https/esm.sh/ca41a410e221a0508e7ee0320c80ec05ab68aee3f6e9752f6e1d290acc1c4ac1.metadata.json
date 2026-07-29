@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "cache-control": "public, max-age=31536000, immutable",
+    "cf-cache-status": "HIT",
+    "date": "Thu, 13 Aug 2026 08:02:46 GMT",
+    "server": "cloudflare",
+    "cf-ray": "a2a63312482b0bc2-AMS",
+    "access-control-allow-origin": "*",
+    "content-type": "application/javascript; charset=utf-8",
+    "last-modified": "Tue, 18 Nov 2025 01:38:09 GMT",
+    "age": "522"
+  },
+  "url": "https://esm.sh/marked-gfm-heading-id@3.0.4/denonext/marked-gfm-heading-id.mjs",
+  "now": {
+    "secs_since_epoch": 1786608166,
+    "nanos_since_epoch": 926526200
+  }
+}

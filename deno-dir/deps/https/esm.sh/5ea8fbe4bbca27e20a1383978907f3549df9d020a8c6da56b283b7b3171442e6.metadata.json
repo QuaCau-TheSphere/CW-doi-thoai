@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "x-esm-path": "/marked-gfm-heading-id@3.0.4/denonext/marked-gfm-heading-id.mjs",
+    "cf-cache-status": "DYNAMIC",
+    "date": "Thu, 13 Aug 2026 08:02:44 GMT",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "vary": "User-Agent",
+    "server": "cloudflare",
+    "cache-control": "public, max-age=31536000, immutable",
+    "access-control-allow-origin": "*",
+    "cf-ray": "a2a633067f3c0bc2-AMS",
+    "x-typescript-types": "https://esm.sh/marked-gfm-heading-id@3.0.4/src/index.d.ts",
+    "content-type": "application/javascript; charset=utf-8"
+  },
+  "url": "https://esm.sh/marked-gfm-heading-id@3.0.4/",
+  "now": {
+    "secs_since_epoch": 1786608165,
+    "nanos_since_epoch": 403153300
+  }
+}

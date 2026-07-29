@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "cache-control": "public, max-age=31536000, immutable",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "x-esm-path": "/remark@15.0.1/denonext/remark.mjs",
+    "x-typescript-types": "https://esm.sh/remark@15.0.1/index.d.ts",
+    "cf-cache-status": "DYNAMIC",
+    "content-type": "application/javascript; charset=utf-8",
+    "cf-ray": "a2a63328e8280bc2-AMS",
+    "access-control-allow-origin": "*",
+    "server": "cloudflare",
+    "date": "Thu, 13 Aug 2026 08:02:50 GMT",
+    "vary": "User-Agent"
+  },
+  "url": "https://esm.sh/remark@15.0.1",
+  "now": {
+    "secs_since_epoch": 1786608171,
+    "nanos_since_epoch": 873551100
+  }
+}

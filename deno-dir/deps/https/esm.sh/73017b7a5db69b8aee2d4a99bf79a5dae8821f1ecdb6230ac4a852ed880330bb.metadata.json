@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "cache-control": "public, max-age=31536000, immutable",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "x-typescript-types": "https://esm.sh/@types/katex@~0.16.7/index.d.ts",
+    "content-type": "application/javascript; charset=utf-8",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a2a633067f410bc2-AMS",
+    "access-control-allow-origin": "*",
+    "date": "Thu, 13 Aug 2026 08:02:45 GMT",
+    "server": "cloudflare",
+    "vary": "User-Agent",
+    "x-esm-path": "/katex@0.16.8/denonext/katex.mjs"
+  },
+  "url": "https://esm.sh/katex@0.16.8/dist/katex.mjs",
+  "now": {
+    "secs_since_epoch": 1786608165,
+    "nanos_since_epoch": 453799300
+  }
+}

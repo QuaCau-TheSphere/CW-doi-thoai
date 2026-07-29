@@ -1,0 +1,21 @@
+{
+  "headers": {
+    "x-typescript-types": "https://esm.sh/remark-parse@11.0.0/index.d.ts",
+    "content-type": "application/javascript; charset=utf-8",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "age": "540",
+    "cf-cache-status": "HIT",
+    "date": "Thu, 13 Aug 2026 08:03:08 GMT",
+    "access-control-allow-origin": "*",
+    "cache-control": "public, max-age=31536000, immutable",
+    "server": "cloudflare",
+    "x-esm-path": "/remark-parse@11.0.0/denonext/remark-parse.mjs",
+    "last-modified": "Thu, 13 Aug 2026 07:54:08 GMT",
+    "cf-ray": "a2a6339b691c0bc2-AMS"
+  },
+  "url": "https://esm.sh/remark-parse@11.0.0?target=denonext",
+  "now": {
+    "secs_since_epoch": 1786608191,
+    "nanos_since_epoch": 436007100
+  }
+}

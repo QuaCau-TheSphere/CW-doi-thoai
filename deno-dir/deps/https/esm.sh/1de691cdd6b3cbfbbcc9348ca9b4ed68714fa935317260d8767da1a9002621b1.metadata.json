@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "date": "Thu, 13 Aug 2026 08:03:32 GMT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "age": "1260488",
+    "access-control-allow-origin": "*",
+    "cf-ray": "a2a634301b000bc2-AMS",
+    "last-modified": "Wed, 19 Nov 2025 23:55:07 GMT",
+    "content-type": "application/javascript; charset=utf-8",
+    "server": "cloudflare",
+    "cf-cache-status": "HIT"
+  },
+  "url": "https://esm.sh/mdast-util-phrasing@4.1.0/denonext/mdast-util-phrasing.mjs",
+  "now": {
+    "secs_since_epoch": 1786608213,
+    "nanos_since_epoch": 304177500
+  }
+}

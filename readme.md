@@ -84,8 +84,9 @@ deno task start
 Truy cập `http://localhost:8000` để xem kết quả
 
 ### Deploy
-
-Dùng Deno Deploy và liên kết tới GitHub của bạn.
+#### Deno Deploy
+### Docker
+ooker/doi-thoai
 
 ## Giấy phép
 

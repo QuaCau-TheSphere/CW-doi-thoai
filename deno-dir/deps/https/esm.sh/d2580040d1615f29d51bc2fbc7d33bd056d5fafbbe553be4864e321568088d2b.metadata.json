@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "cache-control": "public, max-age=31536000, immutable",
+    "access-control-allow-origin": "*",
+    "content-length": "1544",
+    "accept-ranges": "bytes",
+    "content-type": "application/typescript; charset=utf-8",
+    "last-modified": "Tue, 09 Dec 2025 20:52:16 GMT",
+    "age": "1281762",
+    "date": "Thu, 13 Aug 2026 08:03:29 GMT",
+    "server": "cloudflare",
+    "cf-cache-status": "HIT",
+    "cf-ray": "a2a6341d4a8f0bc2-AMS"
+  },
+  "url": "https://esm.sh/entities@4.5.0/lib/escape.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608209,
+    "nanos_since_epoch": 841577000
+  }
+}

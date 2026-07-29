@@ -1,0 +1,15 @@
+/* esm.sh - micromark-core-commonmark@2.0.3 */
+import "/decode-named-character-reference@^1.0.0?target=denonext";
+import "/micromark-factory-destination@^2.0.0?target=denonext";
+import "/micromark-factory-label@^2.0.0?target=denonext";
+import "/micromark-factory-space@^2.0.0?target=denonext";
+import "/micromark-factory-title@^2.0.0?target=denonext";
+import "/micromark-factory-whitespace@^2.0.0?target=denonext";
+import "/micromark-util-character@^2.0.0?target=denonext";
+import "/micromark-util-chunked@^2.0.0?target=denonext";
+import "/micromark-util-classify-character@^2.0.0?target=denonext";
+import "/micromark-util-html-tag-name@^2.0.0?target=denonext";
+import "/micromark-util-normalize-identifier@^2.0.0?target=denonext";
+import "/micromark-util-resolve-all@^2.0.0?target=denonext";
+import "/micromark-util-subtokenize@^2.0.0?target=denonext";
+export * from "/micromark-core-commonmark@2.0.3/denonext/micromark-core-commonmark.mjs";

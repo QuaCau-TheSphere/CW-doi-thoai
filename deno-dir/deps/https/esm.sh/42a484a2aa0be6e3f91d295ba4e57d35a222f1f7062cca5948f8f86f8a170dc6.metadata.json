@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "content-type": "application/javascript; charset=utf-8",
+    "vary": "Accept-Encoding",
+    "cf-cache-status": "HIT",
+    "accept-ranges": "bytes",
+    "cache-control": "public, max-age=31536000, immutable",
+    "age": "1279128",
+    "last-modified": "Tue, 18 Nov 2025 01:38:12 GMT",
+    "cf-ray": "a2a633ad08aa0bc2-AMS",
+    "date": "Thu, 13 Aug 2026 08:03:11 GMT",
+    "access-control-allow-origin": "*",
+    "server": "cloudflare"
+  },
+  "url": "https://esm.sh/picocolors@1.1.1/esnext/picocolors.mjs",
+  "now": {
+    "secs_since_epoch": 1786608192,
+    "nanos_since_epoch": 224101300
+  }
+}

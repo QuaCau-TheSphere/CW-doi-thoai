@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "cache-control": "public, max-age=600",
+    "location": "https://esm.sh/unist-util-is@6.0.1?target=denonext",
+    "cf-ray": "a2a634301afd0bc2-AMS",
+    "content-length": "0",
+    "access-control-allow-origin": "*",
+    "age": "560",
+    "server": "cloudflare",
+    "cf-cache-status": "HIT",
+    "date": "Thu, 13 Aug 2026 08:03:32 GMT"
+  },
+  "url": "https://esm.sh/unist-util-is@^6.0.0?target=denonext",
+  "now": {
+    "secs_since_epoch": 1786608213,
+    "nanos_since_epoch": 217704900
+  }
+}

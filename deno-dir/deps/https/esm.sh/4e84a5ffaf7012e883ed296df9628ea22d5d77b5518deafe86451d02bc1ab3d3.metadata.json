@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "access-control-allow-origin": "*",
+    "cf-ray": "a2a63441b88c0bc2-AMS",
+    "cache-control": "public, max-age=31536000, immutable",
+    "last-modified": "Sat, 14 Mar 2026 16:42:07 GMT",
+    "content-length": "9067",
+    "server": "cloudflare",
+    "cf-cache-status": "HIT",
+    "content-type": "application/typescript; charset=utf-8",
+    "accept-ranges": "bytes",
+    "age": "685010",
+    "date": "Thu, 13 Aug 2026 08:03:35 GMT"
+  },
+  "url": "https://esm.sh/unist-util-visit-parents@6.0.2/lib/index.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608215,
+    "nanos_since_epoch": 823812000
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "cf-ray": "a2a63328e8320bc2-AMS",
+    "last-modified": "Tue, 09 Dec 2025 21:27:20 GMT",
+    "server": "cloudflare",
+    "access-control-allow-origin": "*",
+    "date": "Thu, 13 Aug 2026 08:02:50 GMT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "content-length": "279",
+    "content-type": "application/typescript; charset=utf-8",
+    "age": "389",
+    "accept-ranges": "bytes",
+    "cf-cache-status": "HIT"
+  },
+  "url": "https://esm.sh/marked-mangle@1.1.0/src/index.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608170,
+    "nanos_since_epoch": 665235200
+  }
+}

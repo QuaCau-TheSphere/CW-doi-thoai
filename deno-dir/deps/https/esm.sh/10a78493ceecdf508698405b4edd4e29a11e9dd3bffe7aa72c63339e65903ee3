@@ -1,0 +1,3 @@
+/* esm.sh - vfile@6.0.3 */
+import "/vfile-message@^4.0.0?target=denonext";
+export * from "/vfile@6.0.3/denonext/vfile.mjs";

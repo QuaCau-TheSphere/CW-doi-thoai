@@ -1,0 +1,16 @@
+/**
+ * @param {CompileOptions | null | undefined} [options]
+ * @returns {Compile}
+ */
+export function compile(options?: CompileOptions | null | undefined): Compile;
+export type Media = {
+    image?: boolean | undefined;
+    labelId?: string | undefined;
+    label?: string | undefined;
+    referenceId?: string | undefined;
+    destination?: string | undefined;
+    title?: string | undefined;
+};
+import type { CompileOptions } from 'https://esm.sh/micromark-util-types@2.0.2/index.d.ts';
+import type { Compile } from 'https://esm.sh/micromark-util-types@2.0.2/index.d.ts';
+//# sourceMappingURL=compile.d.ts.map

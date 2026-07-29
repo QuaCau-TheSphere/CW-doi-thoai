@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "date": "Thu, 13 Aug 2026 08:03:07 GMT",
+    "content-type": "application/typescript; charset=utf-8",
+    "server": "cloudflare",
+    "accept-ranges": "bytes",
+    "last-modified": "Thu, 06 Aug 2026 08:38:53 GMT",
+    "age": "602653",
+    "content-length": "2262",
+    "access-control-allow-origin": "*",
+    "cf-cache-status": "HIT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "cf-ray": "a2a63392aa2f0bc2-AMS"
+  },
+  "url": "https://esm.sh/postcss@8.5.26/lib/root.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608190,
+    "nanos_since_epoch": 233352900
+  }
+}

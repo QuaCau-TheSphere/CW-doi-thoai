@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "content-type": "application/javascript; charset=utf-8",
+    "date": "Thu, 13 Aug 2026 08:02:40 GMT",
+    "vary": "User-Agent",
+    "access-control-allow-origin": "*",
+    "cf-ray": "a2a632ea4f7a0bc2-AMS",
+    "x-esm-path": "/@babel/helper-validator-identifier@7.22.20/denonext/helper-validator-identifier.mjs",
+    "cf-cache-status": "DYNAMIC",
+    "cache-control": "public, max-age=31536000, immutable",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "server": "cloudflare",
+    "x-typescript-types": "https://esm.sh/@types/babel__helper-validator-identifier@~7.15.2/index.d.ts"
+  },
+  "url": "https://esm.sh/@babel/helper-validator-identifier@7.22.20",
+  "now": {
+    "secs_since_epoch": 1786608161,
+    "nanos_since_epoch": 234157200
+  }
+}

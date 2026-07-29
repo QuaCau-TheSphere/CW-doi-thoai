@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "accept-ranges": "bytes",
+    "cf-cache-status": "HIT",
+    "date": "Thu, 13 Aug 2026 08:03:35 GMT",
+    "content-length": "391",
+    "cf-ray": "a2a6344349db0bc2-AMS",
+    "content-type": "application/typescript; charset=utf-8",
+    "access-control-allow-origin": "*",
+    "server": "cloudflare",
+    "last-modified": "Tue, 09 Dec 2025 21:11:27 GMT",
+    "age": "1273643",
+    "cache-control": "public, max-age=31536000, immutable"
+  },
+  "url": "https://esm.sh/micromark-util-subtokenize@2.1.0/index.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608216,
+    "nanos_since_epoch": 215991600
+  }
+}

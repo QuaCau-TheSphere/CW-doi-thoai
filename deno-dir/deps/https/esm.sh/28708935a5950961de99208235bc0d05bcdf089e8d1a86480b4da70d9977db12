@@ -1,0 +1,23 @@
+export type {Encoding, Token, Value} from 'https://esm.sh/micromark-util-types@2.0.2/index.d.ts'
+export type {
+  CompileContext,
+  CompileData,
+  Extension,
+  Handles,
+  Handle,
+  OnEnterError,
+  OnExitError,
+  Options,
+  Transform
+} from './lib/types.d.ts'
+export {fromMarkdown} from './lib/index.d.ts'
+
+declare module 'https://esm.sh/micromark-util-types@2.0.2/index.d.ts' {
+  interface TokenTypeMap {
+    listItem: 'listItem'
+  }
+
+  interface Token {
+    _spread?: boolean
+  }
+}

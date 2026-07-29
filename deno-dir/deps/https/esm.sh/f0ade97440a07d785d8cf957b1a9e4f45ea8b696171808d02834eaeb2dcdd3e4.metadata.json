@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "server": "cloudflare",
+    "cf-cache-status": "EXPIRED",
+    "date": "Thu, 13 Aug 2026 08:03:07 GMT",
+    "x-esm-path": "/picocolors@1.1.1/esnext/picocolors.mjs",
+    "cf-ray": "a2a63392aa0b0bc2-AMS",
+    "access-control-expose-headers": "X-ESM-Path, X-TypeScript-Types",
+    "content-type": "application/javascript; charset=utf-8",
+    "x-typescript-types": "https://esm.sh/picocolors@1.1.1/picocolors.d.ts",
+    "last-modified": "Thu, 13 Aug 2026 08:03:07 GMT",
+    "access-control-allow-origin": "*",
+    "cache-control": "public, max-age=600"
+  },
+  "url": "https://esm.sh/picocolors@^1.1.1?target=esnext",
+  "now": {
+    "secs_since_epoch": 1786608190,
+    "nanos_since_epoch": 904104600
+  }
+}

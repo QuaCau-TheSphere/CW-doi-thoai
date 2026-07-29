@@ -1,0 +1,3 @@
+/* esm.sh - preact@10.19.6/devtools */
+import{options as o,Fragment as _,Component as a}from"/preact@10.19.6/denonext/preact.mjs";function r(n,t){return o.__a&&o.__a(t),n}typeof globalThis<"u"&&globalThis.__PREACT_DEVTOOLS__&&globalThis.__PREACT_DEVTOOLS__.attachPreact("10.19.6",o,{Fragment:_,Component:a});export{r as addHookName};
+//# sourceMappingURL=devtools.mjs.map

@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "server": "cloudflare",
+    "content-length": "1809",
+    "access-control-allow-origin": "*",
+    "last-modified": "Tue, 09 Dec 2025 19:50:16 GMT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "date": "Thu, 13 Aug 2026 08:02:41 GMT",
+    "content-type": "application/typescript; charset=utf-8",
+    "age": "1281603",
+    "cf-cache-status": "HIT",
+    "cf-ray": "a2a632f23e670bc2-AMS",
+    "accept-ranges": "bytes"
+  },
+  "url": "https://esm.sh/@preact/signals@1.2.2/dist/signals.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608162,
+    "nanos_since_epoch": 35859200
+  }
+}

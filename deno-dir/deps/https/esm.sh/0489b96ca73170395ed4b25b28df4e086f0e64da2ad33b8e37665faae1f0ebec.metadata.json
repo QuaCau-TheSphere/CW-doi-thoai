@@ -1,0 +1,19 @@
+{
+  "headers": {
+    "server": "cloudflare",
+    "vary": "Accept-Encoding",
+    "cache-control": "public, max-age=31536000, immutable",
+    "cf-cache-status": "HIT",
+    "cf-ray": "a2a63312483f0bc2-AMS",
+    "content-type": "application/javascript; charset=utf-8",
+    "last-modified": "Tue, 18 Nov 2025 01:38:09 GMT",
+    "age": "522",
+    "access-control-allow-origin": "*",
+    "date": "Thu, 13 Aug 2026 08:02:46 GMT"
+  },
+  "url": "https://esm.sh/katex@0.16.8/denonext/katex.mjs",
+  "now": {
+    "secs_since_epoch": 1786608168,
+    "nanos_since_epoch": 906220100
+  }
+}

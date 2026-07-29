@@ -1,0 +1,3 @@
+/* esm.sh - escape-string-regexp@4.0.0 */
+export * from "/escape-string-regexp@4.0.0/esnext/escape-string-regexp.mjs";
+export { default } from "/escape-string-regexp@4.0.0/esnext/escape-string-regexp.mjs";

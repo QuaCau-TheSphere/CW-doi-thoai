@@ -1,0 +1,2 @@
+/* esm.sh - unist-util-is@6.0.1 */
+export * from "/unist-util-is@6.0.1/denonext/unist-util-is.mjs";

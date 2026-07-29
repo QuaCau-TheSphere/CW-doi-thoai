@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "access-control-allow-origin": "*",
+    "cf-ray": "a2a634f80df60bc2-AMS",
+    "accept-ranges": "bytes",
+    "cf-cache-status": "HIT",
+    "content-type": "application/typescript; charset=utf-8",
+    "date": "Thu, 13 Aug 2026 08:04:04 GMT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "last-modified": "Tue, 09 Dec 2025 21:11:25 GMT",
+    "age": "685037",
+    "content-length": "200",
+    "server": "cloudflare"
+  },
+  "url": "https://esm.sh/micromark-core-commonmark@2.0.3/lib/character-escape.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608245,
+    "nanos_since_epoch": 379570000
+  }
+}

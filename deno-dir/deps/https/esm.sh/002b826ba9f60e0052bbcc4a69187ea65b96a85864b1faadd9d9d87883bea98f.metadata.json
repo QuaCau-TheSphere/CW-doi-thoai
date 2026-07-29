@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "cf-ray": "a2a6344349d80bc2-AMS",
+    "date": "Thu, 13 Aug 2026 08:03:35 GMT",
+    "content-type": "application/typescript; charset=utf-8",
+    "access-control-allow-origin": "*",
+    "accept-ranges": "bytes",
+    "age": "685009",
+    "server": "cloudflare",
+    "last-modified": "Tue, 09 Dec 2025 21:11:27 GMT",
+    "cf-cache-status": "HIT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "content-length": "879"
+  },
+  "url": "https://esm.sh/micromark-util-resolve-all@2.0.1/index.d.ts",
+  "now": {
+    "secs_since_epoch": 1786608216,
+    "nanos_since_epoch": 233922500
+  }
+}
