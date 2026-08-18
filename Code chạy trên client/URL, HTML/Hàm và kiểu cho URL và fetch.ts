@@ -30,20 +30,25 @@ export function xửLýPunycode(
 }
 
 /**
- * Nếu chuỗi chỉ hoàn toàn có URL thì trả về [url, url]. Còn nếu có thì phần tử đầu là những chữ còn lại sau khi loc url. Việc này là để khi người dùng chỉ nhập đúng url mà không nhập gì khác thì dùng url này làm tên nơi đăng luôn cho tiện
+ * @description Đưa vào một chuỗi. Nếu trong chuỗi đó có URL hoặc email thì trả về mảng [chuỗiSauĐượcLọcBỏUrlHoặcEmailĐầuTiên, urlHoặcEmailĐầuTiên]. Nếu chuỗi chỉ hoàn toàn có URL thì trả về [url, url]. Việc này là để khi người dùng chỉ nhập đúng url mà không nhập gì khác thì dùng url này làm tên nơi đăng luôn cho tiện
  */
 export async function táchUrlHoặcEmailĐầuTiênTrongChuỗi(chuỗi: string): Promise<[string, string | undefined]> {
   if (!chuỗi) return ["", ""];
   let chuỗiĐượcLọc = chuỗi;
   let urlHoặcEmail = undefined;
-  const urls = linkify.find(chuỗi);
-  if (urls.length > 0) {
-    const { href, type } = urls[0];
-    chuỗiĐượcLọc = chuỗi.replace(href, "").trim();
-    urlHoặcEmail = type === "email" ? href : (await lấyURLChínhTắc(href));
-    if (chuỗiĐượcLọc === "") chuỗiĐượcLọc = urlHoặcEmail;
+  try {
+    const urls = linkify.find(chuỗi);
+    if (urls.length > 0) {
+      const { href, type } = urls[0];
+      chuỗiĐượcLọc = chuỗi.replace(href, "").trim();
+      urlHoặcEmail = type === "email" ? href : (await lấyURLChínhTắc(href));
+      if (chuỗiĐượcLọc === "") chuỗiĐượcLọc = urlHoặcEmail;
+    }
+    return [chuỗiĐượcLọc, urlHoặcEmail];
+  } catch (error) {
+    console.error("Lỗi ở mô đun Hàm và kiểu cho URL và fetch:", chuỗi);
+    return [chuỗi, chuỗi];
   }
-  return [chuỗiĐượcLọc, urlHoặcEmail];
 }
 
 export function lấyURLTrongJSON(vậtThể: Record<any, any>) {

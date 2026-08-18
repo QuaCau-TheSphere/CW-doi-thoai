@@ -17,19 +17,28 @@ Diễn đàn:
 #       - CW-obsidian-quan-ly-du-an-va-cong-cu-nghi https://github.com/QuaCau-TheSphere/CW-obsidian-quan-ly-du-an-va-cong-cu-nghi
 #   Spiderum:
 
-# Chat:
-#   Discord:
-#     Máy chủ:
-#       - Quả Cầu https://discord.gg/jWTk4EHFK2:
-#           ## A Một đám mây chim sáo:
-#           - "#a-vùng-đất-quả-cầu":
+Chat:
+  Discord:
+    Máy chủ:
+      - Quả Cầu https://discord.gg/jWTk4EHFK2:
+          ## A Một đám mây chim sáo:
+          - "#a-vùng-đất-quả-cầu":
 
-#           ## B Mạng kết nối nhu cầu:
-#           - "#b-nền-kinh-tế-không-dùng-tiền":
-#           - "#b-nhu-cầu-thường-gặp":
-#               - Tiền bạc
-#               - Nơi chốn
-
+          ## B Mạng kết nối nhu cầu:
+          - "#b-nền-kinh-tế-không-dùng-tiền":
+          - "#b-nhu-cầu-thường-gặp":
+              - Tiền bạc
+              - Nơi chốn
+      - "ABG Alumni - Discord Group":
+          - "#thông-báo-chung"
+          - "#tài-chính-đầu-tư"
+          - "#kinh-danh-khởi-nghiệp"
+          - "#tuyển-dụng"
+          - "#sách-nội-dung-hay"
+          - "#công-nghệ-ai"
+          - "#sức-khỏe-thể-thao"
+          - "#giáo-dục"
+          - "#xác-thực-thành-viên"
 # Vault:
 #   - A Vùng đất Quả Cầu
 #   - B Mạng kết nối nhu cầu

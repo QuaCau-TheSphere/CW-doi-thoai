@@ -286,6 +286,9 @@
       [
         "Tin nhắn ghim",
         "Chữ trong ảnh"
+      ],
+      [
+        "Bio"
       ]
     ],
     "Lĩnh vực": [
@@ -1046,6 +1049,22 @@
   },
   {
     "Tên nơi đăng": [
+      "Duy Anh"
+    ],
+    "Loại nơi đăng": [
+      "Cá nhân"
+    ],
+    "Tên nền tảng": "Messenger",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Lĩnh vực": [
+      "Học thuật"
+    ],
+    "Slug": null,
+    "id": "L"
+  },
+  {
+    "Tên nơi đăng": [
       "Thanh Thanh"
     ],
     "Loại nơi đăng": [
@@ -1058,7 +1077,7 @@
       "Học thuật"
     ],
     "Slug": null,
-    "id": "L"
+    "id": "M"
   },
   {
     "Tên nơi đăng": [
@@ -1074,7 +1093,7 @@
       "Học thuật"
     ],
     "Slug": null,
-    "id": "M"
+    "id": "N"
   },
   {
     "Tên nơi đăng": [
@@ -1116,7 +1135,7 @@
       "Học thuật"
     ],
     "Slug": null,
-    "id": "N"
+    "id": "O"
   },
   {
     "Tên nơi đăng": [
@@ -1141,7 +1160,7 @@
       "Học thuật"
     ],
     "Slug": null,
-    "id": "O"
+    "id": "P"
   },
   {
     "Tên nơi đăng": [
@@ -1230,7 +1249,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "P"
+    "id": "Q"
   },
   {
     "Tên nơi đăng": [
@@ -1337,7 +1356,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "Q"
+    "id": "R"
   },
   {
     "Tên nơi đăng": [
@@ -1379,7 +1398,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "R"
+    "id": "S"
   },
   {
     "Tên nơi đăng": [
@@ -1421,7 +1440,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "S"
+    "id": "T"
   },
   {
     "Tên nơi đăng": [
@@ -1463,7 +1482,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "T"
+    "id": "U"
   },
   {
     "Tên nơi đăng": [
@@ -1505,7 +1524,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "U"
+    "id": "V"
   },
   {
     "Tên nơi đăng": [
@@ -1547,7 +1566,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "V"
+    "id": "W"
   },
   {
     "Tên nơi đăng": [
@@ -1589,7 +1608,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "W"
+    "id": "X"
   },
   {
     "Tên nơi đăng": [
@@ -1631,7 +1650,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "X"
+    "id": "Y"
   },
   {
     "Tên nơi đăng": [
@@ -1673,7 +1692,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "Y"
+    "id": "Z"
   },
   {
     "Tên nơi đăng": [
@@ -1715,7 +1734,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "Z"
+    "id": "a"
   },
   {
     "Tên nơi đăng": [
@@ -1757,7 +1776,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "a"
+    "id": "b"
   },
   {
     "Tên nơi đăng": [
@@ -1799,7 +1818,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "b"
+    "id": "c"
   },
   {
     "Tên nơi đăng": [
@@ -1841,7 +1860,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "c"
+    "id": "d"
   },
   {
     "Tên nơi đăng": [
@@ -1883,7 +1902,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "d"
+    "id": "e"
   },
   {
     "Tên nơi đăng": [
@@ -1925,7 +1944,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "e"
+    "id": "f"
   },
   {
     "Tên nơi đăng": [
@@ -1967,7 +1986,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "f"
+    "id": "g"
   },
   {
     "Tên nơi đăng": [
@@ -2009,7 +2028,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "g"
+    "id": "h"
   },
   {
     "Tên nơi đăng": [
@@ -2051,7 +2070,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "h"
+    "id": "i"
   },
   {
     "Tên nơi đăng": [
@@ -2093,7 +2112,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "i"
+    "id": "j"
   },
   {
     "Tên nơi đăng": [
@@ -2135,7 +2154,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "j"
+    "id": "k"
   },
   {
     "Tên nơi đăng": [
@@ -2177,7 +2196,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "k"
+    "id": "l"
   },
   {
     "Tên nơi đăng": [
@@ -2219,7 +2238,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "l"
+    "id": "m"
   },
   {
     "Tên nơi đăng": [
@@ -2261,7 +2280,7 @@
       "Kiếm tiền"
     ],
     "Slug": null,
-    "id": "m"
+    "id": "n"
   },
   {
     "Tên nơi đăng": [
@@ -2350,7 +2369,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "n"
+    "id": "o"
   },
   {
     "Tên nơi đăng": [
@@ -2439,7 +2458,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "o"
+    "id": "p"
   },
   {
     "Tên nơi đăng": [
@@ -2486,7 +2505,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "p"
+    "id": "q"
   },
   {
     "Tên nơi đăng": [
@@ -2533,7 +2552,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "q"
+    "id": "r"
   },
   {
     "Tên nơi đăng": [
@@ -2580,7 +2599,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "r"
+    "id": "s"
   },
   {
     "Tên nơi đăng": [
@@ -2627,7 +2646,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "s"
+    "id": "t"
   },
   {
     "Tên nơi đăng": [
@@ -2674,7 +2693,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "t"
+    "id": "u"
   },
   {
     "Tên nơi đăng": [
@@ -2721,7 +2740,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "u"
+    "id": "v"
   },
   {
     "Tên nơi đăng": [
@@ -2768,7 +2787,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "v"
+    "id": "w"
   },
   {
     "Tên nơi đăng": [
@@ -2815,7 +2834,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "w"
+    "id": "x"
   },
   {
     "Tên nơi đăng": [
@@ -2862,7 +2881,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "x"
+    "id": "y"
   },
   {
     "Tên nơi đăng": [
@@ -2909,7 +2928,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "y"
+    "id": "z"
   },
   {
     "Tên nơi đăng": [
@@ -2956,7 +2975,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "z"
+    "id": "-"
   },
   {
     "Tên nơi đăng": [
@@ -3003,7 +3022,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "-"
+    "id": "_"
   },
   {
     "Tên nơi đăng": [
@@ -3050,7 +3069,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "_"
+    "id": "10"
   },
   {
     "Tên nơi đăng": [
@@ -3097,58 +3116,11 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "10"
-  },
-  {
-    "Tên nơi đăng": [
-      "14",
-      "t"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh thường"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Chủ đề kênh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Lĩnh vực": [
-      "Lập trình"
-    ],
-    "Slug": null,
     "id": "11"
   },
   {
     "Tên nơi đăng": [
-      "15",
+      "14",
       "t"
     ],
     "Loại nơi đăng": [
@@ -3195,6 +3167,53 @@
   },
   {
     "Tên nơi đăng": [
+      "15",
+      "t"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "13"
+  },
+  {
+    "Tên nơi đăng": [
       "16",
       "p"
     ],
@@ -3238,7 +3257,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "13"
+    "id": "14"
   },
   {
     "Tên nơi đăng": [
@@ -3285,7 +3304,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "14"
+    "id": "15"
   },
   {
     "Tên nơi đăng": [
@@ -3332,58 +3351,11 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "15"
-  },
-  {
-    "Tên nơi đăng": [
-      "19",
-      "/"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh thường"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Chủ đề kênh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Lĩnh vực": [
-      "Lập trình"
-    ],
-    "Slug": null,
     "id": "16"
   },
   {
     "Tên nơi đăng": [
-      "20",
+      "19",
       "/"
     ],
     "Loại nơi đăng": [
@@ -3430,6 +3402,53 @@
   },
   {
     "Tên nơi đăng": [
+      "20",
+      "/"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "18"
+  },
+  {
+    "Tên nơi đăng": [
       "21",
       "d"
     ],
@@ -3473,7 +3492,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "18"
+    "id": "19"
   },
   {
     "Tên nơi đăng": [
@@ -3520,7 +3539,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "19"
+    "id": "1A"
   },
   {
     "Tên nơi đăng": [
@@ -3567,7 +3586,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1A"
+    "id": "1B"
   },
   {
     "Tên nơi đăng": [
@@ -3614,7 +3633,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1B"
+    "id": "1C"
   },
   {
     "Tên nơi đăng": [
@@ -3661,7 +3680,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1C"
+    "id": "1D"
   },
   {
     "Tên nơi đăng": [
@@ -3708,7 +3727,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1D"
+    "id": "1E"
   },
   {
     "Tên nơi đăng": [
@@ -3755,7 +3774,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1E"
+    "id": "1F"
   },
   {
     "Tên nơi đăng": [
@@ -3802,7 +3821,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1F"
+    "id": "1G"
   },
   {
     "Tên nơi đăng": [
@@ -3849,7 +3868,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1G"
+    "id": "1H"
   },
   {
     "Tên nơi đăng": [
@@ -3896,7 +3915,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1H"
+    "id": "1I"
   },
   {
     "Tên nơi đăng": [
@@ -3943,7 +3962,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1I"
+    "id": "1J"
   },
   {
     "Tên nơi đăng": [
@@ -3990,7 +4009,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1J"
+    "id": "1K"
   },
   {
     "Tên nơi đăng": [
@@ -4037,7 +4056,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1K"
+    "id": "1L"
   },
   {
     "Tên nơi đăng": [
@@ -4084,7 +4103,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1L"
+    "id": "1M"
   },
   {
     "Tên nơi đăng": [
@@ -4131,7 +4150,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1M"
+    "id": "1N"
   },
   {
     "Tên nơi đăng": [
@@ -4178,7 +4197,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1N"
+    "id": "1O"
   },
   {
     "Tên nơi đăng": [
@@ -4225,7 +4244,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1O"
+    "id": "1P"
   },
   {
     "Tên nơi đăng": [
@@ -4272,7 +4291,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1P"
+    "id": "1Q"
   },
   {
     "Tên nơi đăng": [
@@ -4319,7 +4338,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1Q"
+    "id": "1R"
   },
   {
     "Tên nơi đăng": [
@@ -4366,7 +4385,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1R"
+    "id": "1S"
   },
   {
     "Tên nơi đăng": [
@@ -4413,7 +4432,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1S"
+    "id": "1T"
   },
   {
     "Tên nơi đăng": [
@@ -4460,7 +4479,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1T"
+    "id": "1U"
   },
   {
     "Tên nơi đăng": [
@@ -4507,7 +4526,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1U"
+    "id": "1V"
   },
   {
     "Tên nơi đăng": [
@@ -4554,7 +4573,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1V"
+    "id": "1W"
   },
   {
     "Tên nơi đăng": [
@@ -4601,7 +4620,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1W"
+    "id": "1X"
   },
   {
     "Tên nơi đăng": [
@@ -4648,59 +4667,12 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "1X"
-  },
-  {
-    "Tên nơi đăng": [
-      "0",
-      "S"
-    ],
-    "Loại nơi đăng": [
-      "Máy chủ",
-      "Kênh thường"
-    ],
-    "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Chat",
-    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
-    "Vị trí có thể đăng": [
-      [
-        "Tin nhắn",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Chủ đề kênh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Nội dung chính"
-      ],
-      [
-        "Tin nhắn ghim",
-        "QR trong ảnh"
-      ],
-      [
-        "Tin nhắn ghim",
-        "Chữ trong ảnh"
-      ]
-    ],
-    "Lĩnh vực": [
-      "Lập trình"
-    ],
-    "Slug": null,
     "id": "1Y"
   },
   {
     "Tên nơi đăng": [
-      "1",
-      "y"
+      "47",
+      " "
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -4746,8 +4718,8 @@
   },
   {
     "Tên nơi đăng": [
-      "2",
-      "m"
+      "48",
+      "-"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -4793,8 +4765,8 @@
   },
   {
     "Tên nơi đăng": [
-      "3",
-      "a"
+      "49",
+      " "
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -4840,8 +4812,8 @@
   },
   {
     "Tên nơi đăng": [
-      "4",
-      "t"
+      "50",
+      "\""
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -4887,8 +4859,8 @@
   },
   {
     "Tên nơi đăng": [
-      "5",
-      "o"
+      "51",
+      "#"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -4934,8 +4906,8 @@
   },
   {
     "Tên nơi đăng": [
-      "6",
-      ":"
+      "52",
+      "w"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -4981,8 +4953,8 @@
   },
   {
     "Tên nơi đăng": [
-      "7",
-      " "
+      "53",
+      "e"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -5028,8 +5000,8 @@
   },
   {
     "Tên nơi đăng": [
-      "8",
-      "M"
+      "54",
+      "b"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -5075,8 +5047,8 @@
   },
   {
     "Tên nơi đăng": [
-      "9",
-      "ô"
+      "55",
+      "\""
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -5122,7 +5094,7 @@
   },
   {
     "Tên nơi đăng": [
-      "10",
+      "56",
       " "
     ],
     "Loại nơi đăng": [
@@ -5169,8 +5141,8 @@
   },
   {
     "Tên nơi đăng": [
-      "11",
-      "h"
+      "57",
+      "-"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -5216,8 +5188,8 @@
   },
   {
     "Tên nơi đăng": [
-      "12",
-      "ì"
+      "58",
+      " "
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -5263,8 +5235,8 @@
   },
   {
     "Tên nơi đăng": [
-      "13",
-      "n"
+      "59",
+      "\""
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -5310,8 +5282,8 @@
   },
   {
     "Tên nơi đăng": [
-      "14",
-      "h"
+      "60",
+      "#"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -5357,8 +5329,8 @@
   },
   {
     "Tên nơi đăng": [
-      "15",
-      " "
+      "61",
+      "j"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -5404,8 +5376,8 @@
   },
   {
     "Tên nơi đăng": [
-      "16",
-      "n"
+      "62",
+      "a"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -5451,8 +5423,8 @@
   },
   {
     "Tên nơi đăng": [
-      "17",
-      "g"
+      "63",
+      "v"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -5498,8 +5470,8 @@
   },
   {
     "Tên nơi đăng": [
-      "18",
-      "ô"
+      "64",
+      "a"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -5545,8 +5517,8 @@
   },
   {
     "Tên nơi đăng": [
-      "19",
-      "n"
+      "65",
+      "s"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -5592,8 +5564,8 @@
   },
   {
     "Tên nơi đăng": [
-      "20",
-      " "
+      "66",
+      "c"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -5639,8 +5611,8 @@
   },
   {
     "Tên nơi đăng": [
-      "21",
-      "n"
+      "67",
+      "r"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -5686,8 +5658,8 @@
   },
   {
     "Tên nơi đăng": [
-      "22",
-      "g"
+      "68",
+      "i"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -5733,8 +5705,8 @@
   },
   {
     "Tên nơi đăng": [
-      "23",
-      "ữ"
+      "69",
+      "p"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -5780,8 +5752,8 @@
   },
   {
     "Tên nơi đăng": [
-      "24",
-      " "
+      "70",
+      "t"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -5827,8 +5799,8 @@
   },
   {
     "Tên nơi đăng": [
-      "25",
-      "c"
+      "71",
+      "\""
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -5874,8 +5846,8 @@
   },
   {
     "Tên nơi đăng": [
-      "26",
-      "ủ"
+      "72",
+      " "
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -5921,8 +5893,8 @@
   },
   {
     "Tên nơi đăng": [
-      "27",
-      "a"
+      "73",
+      "-"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -5968,7 +5940,7 @@
   },
   {
     "Tên nơi đăng": [
-      "28",
+      "74",
       " "
     ],
     "Loại nơi đăng": [
@@ -6015,8 +5987,8 @@
   },
   {
     "Tên nơi đăng": [
-      "29",
-      "n"
+      "75",
+      "\""
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -6062,8 +6034,8 @@
   },
   {
     "Tên nơi đăng": [
-      "30",
-      "g"
+      "76",
+      "#"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -6109,8 +6081,8 @@
   },
   {
     "Tên nơi đăng": [
-      "31",
-      "ư"
+      "77",
+      "s"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -6156,8 +6128,8 @@
   },
   {
     "Tên nơi đăng": [
-      "32",
-      "ờ"
+      "78",
+      "h"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -6203,8 +6175,8 @@
   },
   {
     "Tên nơi đăng": [
-      "33",
-      "i"
+      "79",
+      "a"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -6250,8 +6222,8 @@
   },
   {
     "Tên nơi đăng": [
-      "34",
-      " "
+      "80",
+      "r"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -6297,8 +6269,8 @@
   },
   {
     "Tên nơi đăng": [
-      "35",
-      "V"
+      "81",
+      "e"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -6344,8 +6316,8 @@
   },
   {
     "Tên nơi đăng": [
-      "36",
-      "i"
+      "82",
+      "\""
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -6391,8 +6363,8 @@
   },
   {
     "Tên nơi đăng": [
-      "37",
-      "ệ"
+      "83",
+      " "
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -6438,8 +6410,8 @@
   },
   {
     "Tên nơi đăng": [
-      "38",
-      "t"
+      "84",
+      "-"
     ],
     "Loại nơi đăng": [
       "Máy chủ",
@@ -6485,7 +6457,7 @@
   },
   {
     "Tên nơi đăng": [
-      "39",
+      "85",
       " "
     ],
     "Loại nơi đăng": [
@@ -6532,6 +6504,4565 @@
   },
   {
     "Tên nơi đăng": [
+      "86",
+      "\""
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2A"
+  },
+  {
+    "Tên nơi đăng": [
+      "87",
+      "#"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2B"
+  },
+  {
+    "Tên nơi đăng": [
+      "88",
+      "c"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2C"
+  },
+  {
+    "Tên nơi đăng": [
+      "89",
+      "h"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2D"
+  },
+  {
+    "Tên nơi đăng": [
+      "90",
+      "a"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2E"
+  },
+  {
+    "Tên nơi đăng": [
+      "91",
+      "t"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2F"
+  },
+  {
+    "Tên nơi đăng": [
+      "92",
+      "-"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2G"
+  },
+  {
+    "Tên nơi đăng": [
+      "93",
+      "r"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2H"
+  },
+  {
+    "Tên nơi đăng": [
+      "94",
+      "o"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2I"
+  },
+  {
+    "Tên nơi đăng": [
+      "95",
+      "o"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2J"
+  },
+  {
+    "Tên nơi đăng": [
+      "96",
+      "m"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2K"
+  },
+  {
+    "Tên nơi đăng": [
+      "97",
+      "\""
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2L"
+  },
+  {
+    "Tên nơi đăng": [
+      "98",
+      " "
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2M"
+  },
+  {
+    "Tên nơi đăng": [
+      "99",
+      "-"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2N"
+  },
+  {
+    "Tên nơi đăng": [
+      "100",
+      " "
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2O"
+  },
+  {
+    "Tên nơi đăng": [
+      "101",
+      "\""
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2P"
+  },
+  {
+    "Tên nơi đăng": [
+      "102",
+      "#"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2Q"
+  },
+  {
+    "Tên nơi đăng": [
+      "103",
+      "d"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2R"
+  },
+  {
+    "Tên nơi đăng": [
+      "104",
+      "e"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2S"
+  },
+  {
+    "Tên nơi đăng": [
+      "105",
+      "v"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2T"
+  },
+  {
+    "Tên nơi đăng": [
+      "106",
+      "o"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2U"
+  },
+  {
+    "Tên nơi đăng": [
+      "107",
+      "p"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2V"
+  },
+  {
+    "Tên nơi đăng": [
+      "108",
+      "s"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2W"
+  },
+  {
+    "Tên nơi đăng": [
+      "109",
+      "\""
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2X"
+  },
+  {
+    "Tên nơi đăng": [
+      "110",
+      " "
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2Y"
+  },
+  {
+    "Tên nơi đăng": [
+      "111",
+      "-"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2Z"
+  },
+  {
+    "Tên nơi đăng": [
+      "112",
+      " "
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2a"
+  },
+  {
+    "Tên nơi đăng": [
+      "113",
+      "\""
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2b"
+  },
+  {
+    "Tên nơi đăng": [
+      "114",
+      "#"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2c"
+  },
+  {
+    "Tên nơi đăng": [
+      "115",
+      "s"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2d"
+  },
+  {
+    "Tên nơi đăng": [
+      "116",
+      "e"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2e"
+  },
+  {
+    "Tên nơi đăng": [
+      "117",
+      "c"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2f"
+  },
+  {
+    "Tên nơi đăng": [
+      "118",
+      "u"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2g"
+  },
+  {
+    "Tên nơi đăng": [
+      "119",
+      "r"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2h"
+  },
+  {
+    "Tên nơi đăng": [
+      "120",
+      "i"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2i"
+  },
+  {
+    "Tên nơi đăng": [
+      "121",
+      "t"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2j"
+  },
+  {
+    "Tên nơi đăng": [
+      "122",
+      "y"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2k"
+  },
+  {
+    "Tên nơi đăng": [
+      "123",
+      "\""
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2l"
+  },
+  {
+    "Tên nơi đăng": [
+      "124",
+      " "
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2m"
+  },
+  {
+    "Tên nơi đăng": [
+      "125",
+      "-"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2n"
+  },
+  {
+    "Tên nơi đăng": [
+      "126",
+      " "
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2o"
+  },
+  {
+    "Tên nơi đăng": [
+      "127",
+      "\""
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2p"
+  },
+  {
+    "Tên nơi đăng": [
+      "128",
+      "#"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2q"
+  },
+  {
+    "Tên nơi đăng": [
+      "129",
+      "d"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2r"
+  },
+  {
+    "Tên nơi đăng": [
+      "130",
+      "b"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2s"
+  },
+  {
+    "Tên nơi đăng": [
+      "131",
+      "a"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2t"
+  },
+  {
+    "Tên nơi đăng": [
+      "132",
+      "\""
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2u"
+  },
+  {
+    "Tên nơi đăng": [
+      "133",
+      " "
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2v"
+  },
+  {
+    "Tên nơi đăng": [
+      "134",
+      "-"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2w"
+  },
+  {
+    "Tên nơi đăng": [
+      "135",
+      " "
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2x"
+  },
+  {
+    "Tên nơi đăng": [
+      "136",
+      "\""
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2y"
+  },
+  {
+    "Tên nơi đăng": [
+      "137",
+      "#"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2z"
+  },
+  {
+    "Tên nơi đăng": [
+      "138",
+      "m"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2-"
+  },
+  {
+    "Tên nơi đăng": [
+      "139",
+      "a"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "2_"
+  },
+  {
+    "Tên nơi đăng": [
+      "140",
+      "t"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "30"
+  },
+  {
+    "Tên nơi đăng": [
+      "141",
+      "h"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "31"
+  },
+  {
+    "Tên nơi đăng": [
+      "142",
+      "\""
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "32"
+  },
+  {
+    "Tên nơi đăng": [
+      "0",
+      "S"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "33"
+  },
+  {
+    "Tên nơi đăng": [
+      "1",
+      "y"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "34"
+  },
+  {
+    "Tên nơi đăng": [
+      "2",
+      "m"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "35"
+  },
+  {
+    "Tên nơi đăng": [
+      "3",
+      "a"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "36"
+  },
+  {
+    "Tên nơi đăng": [
+      "4",
+      "t"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "37"
+  },
+  {
+    "Tên nơi đăng": [
+      "5",
+      "o"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "38"
+  },
+  {
+    "Tên nơi đăng": [
+      "6",
+      ":"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "39"
+  },
+  {
+    "Tên nơi đăng": [
+      "7",
+      " "
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3A"
+  },
+  {
+    "Tên nơi đăng": [
+      "8",
+      "M"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3B"
+  },
+  {
+    "Tên nơi đăng": [
+      "9",
+      "ô"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3C"
+  },
+  {
+    "Tên nơi đăng": [
+      "10",
+      " "
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3D"
+  },
+  {
+    "Tên nơi đăng": [
+      "11",
+      "h"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3E"
+  },
+  {
+    "Tên nơi đăng": [
+      "12",
+      "ì"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3F"
+  },
+  {
+    "Tên nơi đăng": [
+      "13",
+      "n"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3G"
+  },
+  {
+    "Tên nơi đăng": [
+      "14",
+      "h"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3H"
+  },
+  {
+    "Tên nơi đăng": [
+      "15",
+      " "
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3I"
+  },
+  {
+    "Tên nơi đăng": [
+      "16",
+      "n"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3J"
+  },
+  {
+    "Tên nơi đăng": [
+      "17",
+      "g"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3K"
+  },
+  {
+    "Tên nơi đăng": [
+      "18",
+      "ô"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3L"
+  },
+  {
+    "Tên nơi đăng": [
+      "19",
+      "n"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3M"
+  },
+  {
+    "Tên nơi đăng": [
+      "20",
+      " "
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3N"
+  },
+  {
+    "Tên nơi đăng": [
+      "21",
+      "n"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3O"
+  },
+  {
+    "Tên nơi đăng": [
+      "22",
+      "g"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3P"
+  },
+  {
+    "Tên nơi đăng": [
+      "23",
+      "ữ"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3Q"
+  },
+  {
+    "Tên nơi đăng": [
+      "24",
+      " "
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3R"
+  },
+  {
+    "Tên nơi đăng": [
+      "25",
+      "c"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3S"
+  },
+  {
+    "Tên nơi đăng": [
+      "26",
+      "ủ"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3T"
+  },
+  {
+    "Tên nơi đăng": [
+      "27",
+      "a"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3U"
+  },
+  {
+    "Tên nơi đăng": [
+      "28",
+      " "
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3V"
+  },
+  {
+    "Tên nơi đăng": [
+      "29",
+      "n"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3W"
+  },
+  {
+    "Tên nơi đăng": [
+      "30",
+      "g"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3X"
+  },
+  {
+    "Tên nơi đăng": [
+      "31",
+      "ư"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3Y"
+  },
+  {
+    "Tên nơi đăng": [
+      "32",
+      "ờ"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3Z"
+  },
+  {
+    "Tên nơi đăng": [
+      "33",
+      "i"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3a"
+  },
+  {
+    "Tên nơi đăng": [
+      "34",
+      " "
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3b"
+  },
+  {
+    "Tên nơi đăng": [
+      "35",
+      "V"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3c"
+  },
+  {
+    "Tên nơi đăng": [
+      "36",
+      "i"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3d"
+  },
+  {
+    "Tên nơi đăng": [
+      "37",
+      "ệ"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3e"
+  },
+  {
+    "Tên nơi đăng": [
+      "38",
+      "t"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3f"
+  },
+  {
+    "Tên nơi đăng": [
+      "39",
+      " "
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Lập trình"
+    ],
+    "Slug": null,
+    "id": "3g"
+  },
+  {
+    "Tên nơi đăng": [
       "40",
       "h"
     ],
@@ -6575,7 +11106,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2A"
+    "id": "3h"
   },
   {
     "Tên nơi đăng": [
@@ -6622,7 +11153,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2B"
+    "id": "3i"
   },
   {
     "Tên nơi đăng": [
@@ -6669,7 +11200,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2C"
+    "id": "3j"
   },
   {
     "Tên nơi đăng": [
@@ -6716,7 +11247,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2D"
+    "id": "3k"
   },
   {
     "Tên nơi đăng": [
@@ -6763,7 +11294,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2E"
+    "id": "3l"
   },
   {
     "Tên nơi đăng": [
@@ -6810,7 +11341,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2F"
+    "id": "3m"
   },
   {
     "Tên nơi đăng": [
@@ -6857,7 +11388,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2G"
+    "id": "3n"
   },
   {
     "Tên nơi đăng": [
@@ -6904,7 +11435,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2H"
+    "id": "3o"
   },
   {
     "Tên nơi đăng": [
@@ -6951,7 +11482,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2I"
+    "id": "3p"
   },
   {
     "Tên nơi đăng": [
@@ -6998,7 +11529,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2J"
+    "id": "3q"
   },
   {
     "Tên nơi đăng": [
@@ -7045,7 +11576,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2K"
+    "id": "3r"
   },
   {
     "Tên nơi đăng": [
@@ -7092,7 +11623,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2L"
+    "id": "3s"
   },
   {
     "Tên nơi đăng": [
@@ -7139,7 +11670,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2M"
+    "id": "3t"
   },
   {
     "Tên nơi đăng": [
@@ -7186,7 +11717,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2N"
+    "id": "3u"
   },
   {
     "Tên nơi đăng": [
@@ -7233,7 +11764,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2O"
+    "id": "3v"
   },
   {
     "Tên nơi đăng": [
@@ -7280,7 +11811,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2P"
+    "id": "3w"
   },
   {
     "Tên nơi đăng": [
@@ -7327,7 +11858,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2Q"
+    "id": "3x"
   },
   {
     "Tên nơi đăng": [
@@ -7374,7 +11905,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2R"
+    "id": "3y"
   },
   {
     "Tên nơi đăng": [
@@ -7421,7 +11952,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2S"
+    "id": "3z"
   },
   {
     "Tên nơi đăng": [
@@ -7468,7 +11999,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2T"
+    "id": "3-"
   },
   {
     "Tên nơi đăng": [
@@ -7515,7 +12046,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2U"
+    "id": "3_"
   },
   {
     "Tên nơi đăng": [
@@ -7562,7 +12093,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2V"
+    "id": "40"
   },
   {
     "Tên nơi đăng": [
@@ -7609,7 +12140,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2W"
+    "id": "41"
   },
   {
     "Tên nơi đăng": [
@@ -7656,7 +12187,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2X"
+    "id": "42"
   },
   {
     "Tên nơi đăng": [
@@ -7703,7 +12234,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2Y"
+    "id": "43"
   },
   {
     "Tên nơi đăng": [
@@ -7750,7 +12281,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2Z"
+    "id": "44"
   },
   {
     "Tên nơi đăng": [
@@ -7797,7 +12328,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2a"
+    "id": "45"
   },
   {
     "Tên nơi đăng": [
@@ -7844,7 +12375,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2b"
+    "id": "46"
   },
   {
     "Tên nơi đăng": [
@@ -7891,7 +12422,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2c"
+    "id": "47"
   },
   {
     "Tên nơi đăng": [
@@ -7939,7 +12470,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2d"
+    "id": "48"
   },
   {
     "Tên nơi đăng": [
@@ -7987,7 +12518,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2e"
+    "id": "49"
   },
   {
     "Tên nơi đăng": [
@@ -8035,7 +12566,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2f"
+    "id": "4A"
   },
   {
     "Tên nơi đăng": [
@@ -8080,7 +12611,7 @@
       "Lập trình"
     ],
     "Slug": null,
-    "id": "2g"
+    "id": "4B"
   },
   {
     "Tên nơi đăng": [
@@ -8168,7 +12699,7 @@
       "Phát triển bền vững"
     ],
     "Slug": null,
-    "id": "2h"
+    "id": "4C"
   },
   {
     "Tên nơi đăng": [
@@ -8257,7 +12788,7 @@
       "Phát triển bền vững"
     ],
     "Slug": null,
-    "id": "2i"
+    "id": "4D"
   },
   {
     "Tên nơi đăng": [
@@ -8346,7 +12877,7 @@
       "Phát triển bền vững"
     ],
     "Slug": null,
-    "id": "2j"
+    "id": "4E"
   },
   {
     "Tên nơi đăng": [
@@ -8454,7 +12985,7 @@
       "Phát triển bền vững"
     ],
     "Slug": null,
-    "id": "2k"
+    "id": "4F"
   },
   {
     "Tên nơi đăng": [
@@ -8496,7 +13027,7 @@
       "Phát triển bền vững"
     ],
     "Slug": null,
-    "id": "2l"
+    "id": "4G"
   },
   {
     "Tên nơi đăng": [
@@ -8538,7 +13069,7 @@
       "Phát triển bền vững"
     ],
     "Slug": null,
-    "id": "2m"
+    "id": "4H"
   },
   {
     "Tên nơi đăng": [
@@ -8580,7 +13111,7 @@
       "Phát triển bền vững"
     ],
     "Slug": null,
-    "id": "2n"
+    "id": "4I"
   },
   {
     "Tên nơi đăng": [
@@ -8622,7 +13153,7 @@
       "Phát triển bền vững"
     ],
     "Slug": null,
-    "id": "2o"
+    "id": "4J"
   },
   {
     "Tên nơi đăng": [
@@ -8664,7 +13195,7 @@
       "Phát triển bền vững"
     ],
     "Slug": null,
-    "id": "2p"
+    "id": "4K"
   },
   {
     "Tên nơi đăng": [
@@ -8706,7 +13237,7 @@
       "Phát triển bền vững"
     ],
     "Slug": null,
-    "id": "2q"
+    "id": "4L"
   },
   {
     "Tên nơi đăng": [
@@ -8748,7 +13279,7 @@
       "Phát triển bền vững"
     ],
     "Slug": null,
-    "id": "2r"
+    "id": "4M"
   },
   {
     "Tên nơi đăng": [
@@ -8790,7 +13321,7 @@
       "Phát triển bền vững"
     ],
     "Slug": null,
-    "id": "2s"
+    "id": "4N"
   },
   {
     "Tên nơi đăng": [
@@ -8832,7 +13363,7 @@
       "Phát triển bền vững"
     ],
     "Slug": null,
-    "id": "2t"
+    "id": "4O"
   },
   {
     "Tên nơi đăng": [
@@ -8874,7 +13405,7 @@
       "Phát triển bền vững"
     ],
     "Slug": null,
-    "id": "2u"
+    "id": "4P"
   },
   {
     "Tên nơi đăng": [
@@ -8916,7 +13447,7 @@
       "Phát triển bền vững"
     ],
     "Slug": null,
-    "id": "2v"
+    "id": "4Q"
   },
   {
     "Tên nơi đăng": [
@@ -8958,7 +13489,7 @@
       "Phát triển bền vững"
     ],
     "Slug": null,
-    "id": "2w"
+    "id": "4R"
   },
   {
     "Tên nơi đăng": [
@@ -9000,7 +13531,7 @@
       "Phát triển bền vững"
     ],
     "Slug": null,
-    "id": "2x"
+    "id": "4S"
   },
   {
     "Tên nơi đăng": [
@@ -9042,7 +13573,7 @@
       "Phát triển bền vững"
     ],
     "Slug": null,
-    "id": "2y"
+    "id": "4T"
   },
   {
     "Tên nơi đăng": [
@@ -9084,7 +13615,7 @@
       "Phát triển bền vững"
     ],
     "Slug": null,
-    "id": "2z"
+    "id": "4U"
   },
   {
     "Tên nơi đăng": [
@@ -9126,7 +13657,7 @@
       "Phát triển bền vững"
     ],
     "Slug": null,
-    "id": "2-"
+    "id": "4V"
   },
   {
     "Tên nơi đăng": [
@@ -9143,7 +13674,7 @@
       "Phát triển bền vững"
     ],
     "Slug": null,
-    "id": "2_"
+    "id": "4W"
   },
   {
     "Tên nơi đăng": [
@@ -9168,7 +13699,7 @@
       "Phát triển bền vững"
     ],
     "Slug": null,
-    "id": "30"
+    "id": "4X"
   },
   {
     "Tên nơi đăng": [
@@ -9275,7 +13806,7 @@
       "Phát triển sản phẩm"
     ],
     "Slug": null,
-    "id": "31"
+    "id": "4Y"
   },
   {
     "Tên nơi đăng": [
@@ -9363,7 +13894,7 @@
       "Phát triển sản phẩm"
     ],
     "Slug": null,
-    "id": "32"
+    "id": "4Z"
   },
   {
     "Tên nơi đăng": [
@@ -9405,7 +13936,7 @@
       "Phát triển sản phẩm"
     ],
     "Slug": null,
-    "id": "33"
+    "id": "4a"
   },
   {
     "Tên nơi đăng": [
@@ -9447,7 +13978,7 @@
       "Phát triển sản phẩm"
     ],
     "Slug": null,
-    "id": "34"
+    "id": "4b"
   },
   {
     "Tên nơi đăng": [
@@ -9489,7 +14020,7 @@
       "Phát triển sản phẩm"
     ],
     "Slug": null,
-    "id": "35"
+    "id": "4c"
   },
   {
     "Tên nơi đăng": [
@@ -9531,7 +14062,148 @@
       "Phát triển sản phẩm"
     ],
     "Slug": null,
-    "id": "36"
+    "id": "4d"
+  },
+  {
+    "Tên nơi đăng": [
+      "Ludo School",
+      "#sân-tập-thể"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Thú vui"
+    ],
+    "Slug": null,
+    "id": "4e"
+  },
+  {
+    "Tên nơi đăng": [
+      "Ludo School",
+      "#chuyên-đề"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Thú vui"
+    ],
+    "Slug": null,
+    "id": "4f"
+  },
+  {
+    "Tên nơi đăng": [
+      "Ludo School",
+      "#tài-liệu"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Lĩnh vực": [
+      "Thú vui"
+    ],
+    "Slug": null,
+    "id": "4g"
   },
   {
     "Tên nơi đăng": [
@@ -9573,7 +14245,7 @@
       "Thú vui"
     ],
     "Slug": null,
-    "id": "37"
+    "id": "4h"
   },
   {
     "Tên nơi đăng": [
@@ -9615,7 +14287,7 @@
       "Thú vui"
     ],
     "Slug": null,
-    "id": "38"
+    "id": "4i"
   },
   {
     "Tên nơi đăng": [
@@ -9657,7 +14329,7 @@
       "Thú vui"
     ],
     "Slug": null,
-    "id": "39"
+    "id": "4j"
   },
   {
     "Tên nơi đăng": [
@@ -9699,7 +14371,7 @@
       "Thú vui"
     ],
     "Slug": null,
-    "id": "3A"
+    "id": "4k"
   },
   {
     "Tên nơi đăng": [
@@ -9741,7 +14413,7 @@
       "Thú vui"
     ],
     "Slug": null,
-    "id": "3B"
+    "id": "4l"
   },
   {
     "Tên nơi đăng": [
@@ -9829,7 +14501,7 @@
       "Xây dựng cộng đồng, mạng lưới, hệ sinh thái"
     ],
     "Slug": "SNPO",
-    "id": "3C"
+    "id": "4m"
   },
   {
     "Tên nơi đăng": [
@@ -9917,7 +14589,7 @@
       "Xây dựng cộng đồng, mạng lưới, hệ sinh thái"
     ],
     "Slug": null,
-    "id": "3D"
+    "id": "4n"
   },
   {
     "Tên nơi đăng": [
@@ -9961,7 +14633,7 @@
       "Xây dựng cộng đồng, mạng lưới, hệ sinh thái"
     ],
     "Slug": "SNPO",
-    "id": "3E"
+    "id": "4o"
   },
   {
     "Tên nơi đăng": [
@@ -10005,7 +14677,7 @@
       "Xây dựng cộng đồng, mạng lưới, hệ sinh thái"
     ],
     "Slug": "SNPO",
-    "id": "3F"
+    "id": "4p"
   },
   {
     "Tên nơi đăng": [
@@ -10049,7 +14721,7 @@
       "Xây dựng cộng đồng, mạng lưới, hệ sinh thái"
     ],
     "Slug": null,
-    "id": "3G"
+    "id": "4q"
   },
   {
     "Tên nơi đăng": [
@@ -10093,7 +14765,7 @@
       "Xây dựng cộng đồng, mạng lưới, hệ sinh thái"
     ],
     "Slug": null,
-    "id": "3H"
+    "id": "4r"
   },
   {
     "Tên nơi đăng": [
@@ -10137,7 +14809,7 @@
       "Xây dựng cộng đồng, mạng lưới, hệ sinh thái"
     ],
     "Slug": null,
-    "id": "3I"
+    "id": "4s"
   },
   {
     "Tên nơi đăng": [
@@ -10181,7 +14853,7 @@
       "Xây dựng cộng đồng, mạng lưới, hệ sinh thái"
     ],
     "Slug": null,
-    "id": "3J"
+    "id": "4t"
   },
   {
     "Tên nơi đăng": [
@@ -10225,7 +14897,7 @@
       "Xây dựng cộng đồng, mạng lưới, hệ sinh thái"
     ],
     "Slug": null,
-    "id": "3K"
+    "id": "4u"
   },
   {
     "Tên nơi đăng": [
@@ -10272,7 +14944,7 @@
       "Xây dựng cộng đồng, mạng lưới, hệ sinh thái"
     ],
     "Slug": null,
-    "id": "3L"
+    "id": "4v"
   },
   {
     "Tên nơi đăng": [
@@ -10319,7 +14991,7 @@
       "Xây dựng cộng đồng, mạng lưới, hệ sinh thái"
     ],
     "Slug": null,
-    "id": "3M"
+    "id": "4w"
   },
   {
     "Tên nơi đăng": [
@@ -10366,7 +15038,7 @@
       "Xây dựng cộng đồng, mạng lưới, hệ sinh thái"
     ],
     "Slug": null,
-    "id": "3N"
+    "id": "4x"
   },
   {
     "Tên nơi đăng": [
@@ -10408,7 +15080,7 @@
       "Xây dựng cộng đồng, mạng lưới, hệ sinh thái"
     ],
     "Slug": null,
-    "id": "3O"
+    "id": "4y"
   },
   {
     "Tên nơi đăng": [
@@ -10450,7 +15122,7 @@
       "Xây dựng cộng đồng, mạng lưới, hệ sinh thái"
     ],
     "Slug": null,
-    "id": "3P"
+    "id": "4z"
   },
   {
     "Tên nơi đăng": [
@@ -10492,7 +15164,7 @@
       "Xây dựng cộng đồng, mạng lưới, hệ sinh thái"
     ],
     "Slug": null,
-    "id": "3Q"
+    "id": "4-"
   },
   {
     "Tên nơi đăng": [
@@ -10534,7 +15206,7 @@
       "Xây dựng cộng đồng, mạng lưới, hệ sinh thái"
     ],
     "Slug": null,
-    "id": "3R"
+    "id": "4_"
   },
   {
     "Tên nơi đăng": [
@@ -10576,7 +15248,7 @@
       "Xây dựng cộng đồng, mạng lưới, hệ sinh thái"
     ],
     "Slug": null,
-    "id": "3S"
+    "id": "50"
   },
   {
     "Tên nơi đăng": [
@@ -10618,7 +15290,7 @@
       "Xây dựng cộng đồng, mạng lưới, hệ sinh thái"
     ],
     "Slug": null,
-    "id": "3T"
+    "id": "51"
   },
   {
     "Tên nơi đăng": [
@@ -10661,7 +15333,7 @@
       "Xây dựng cộng đồng, mạng lưới, hệ sinh thái"
     ],
     "Slug": null,
-    "id": "3U"
+    "id": "52"
   },
   {
     "Tên nơi đăng": [
@@ -10703,7 +15375,7 @@
       "Xây dựng cộng đồng, mạng lưới, hệ sinh thái"
     ],
     "Slug": null,
-    "id": "3V"
+    "id": "53"
   },
   {
     "Tên nơi đăng": [
@@ -10749,7 +15421,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3W"
+    "id": "54"
   },
   {
     "Tên nơi đăng": [
@@ -10854,7 +15526,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "3X"
+    "id": "55"
   },
   {
     "Tên nơi đăng": [
@@ -10963,7 +15635,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "3Y"
+    "id": "56"
   },
   {
     "Tên nơi đăng": [
@@ -10977,7 +15649,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3Z"
+    "id": "57"
   },
   {
     "Tên nơi đăng": [
@@ -10991,7 +15663,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3a"
+    "id": "58"
   },
   {
     "Tên nơi đăng": [
@@ -11096,7 +15768,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "3b"
+    "id": "59"
   },
   {
     "Tên nơi đăng": [
@@ -11110,7 +15782,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3c"
+    "id": "5A"
   },
   {
     "Tên nơi đăng": [
@@ -11124,7 +15796,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3d"
+    "id": "5B"
   },
   {
     "Tên nơi đăng": [
@@ -11138,7 +15810,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3e"
+    "id": "5C"
   },
   {
     "Tên nơi đăng": [
@@ -11178,7 +15850,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3f"
+    "id": "5D"
   },
   {
     "Tên nơi đăng": [
@@ -11218,7 +15890,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3g"
+    "id": "5E"
   },
   {
     "Tên nơi đăng": [
@@ -11258,7 +15930,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3h"
+    "id": "5F"
   },
   {
     "Tên nơi đăng": [
@@ -11298,7 +15970,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "3i"
+    "id": "5G"
   },
   {
     "Tên nơi đăng": [
@@ -11338,7 +16010,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3j"
+    "id": "5H"
   },
   {
     "Tên nơi đăng": [
@@ -11378,7 +16050,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3k"
+    "id": "5I"
   },
   {
     "Tên nơi đăng": [
@@ -11418,7 +16090,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3l"
+    "id": "5J"
   },
   {
     "Tên nơi đăng": [
@@ -11458,7 +16130,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3m"
+    "id": "5K"
   },
   {
     "Tên nơi đăng": [
@@ -11498,7 +16170,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3n"
+    "id": "5L"
   },
   {
     "Tên nơi đăng": [
@@ -11534,11 +16206,14 @@
       [
         "Tin nhắn ghim",
         "Chữ trong ảnh"
+      ],
+      [
+        "Bio"
       ]
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3o"
+    "id": "5M"
   },
   {
     "Tên nơi đăng": [
@@ -11578,7 +16253,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "3p"
+    "id": "5N"
   },
   {
     "Tên nơi đăng": [
@@ -11618,7 +16293,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3q"
+    "id": "5O"
   },
   {
     "Tên nơi đăng": [
@@ -11658,7 +16333,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3r"
+    "id": "5P"
   },
   {
     "Tên nơi đăng": [
@@ -11672,7 +16347,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3s"
+    "id": "5Q"
   },
   {
     "Tên nơi đăng": [
@@ -11686,7 +16361,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "3t"
+    "id": "5R"
   },
   {
     "Tên nơi đăng": [
@@ -11700,7 +16375,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3u"
+    "id": "5S"
   },
   {
     "Tên nơi đăng": [
@@ -11714,7 +16389,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3v"
+    "id": "5T"
   },
   {
     "Tên nơi đăng": [
@@ -11728,7 +16403,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3w"
+    "id": "5U"
   },
   {
     "Tên nơi đăng": [
@@ -11742,7 +16417,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3x"
+    "id": "5V"
   },
   {
     "Tên nơi đăng": [
@@ -11756,7 +16431,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3y"
+    "id": "5W"
   },
   {
     "Tên nơi đăng": [
@@ -11770,7 +16445,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3z"
+    "id": "5X"
   },
   {
     "Tên nơi đăng": [
@@ -11784,7 +16459,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3-"
+    "id": "5Y"
   },
   {
     "Tên nơi đăng": [
@@ -11798,7 +16473,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "3_"
+    "id": "5Z"
   },
   {
     "Tên nơi đăng": [
@@ -11847,7 +16522,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "40"
+    "id": "5a"
   },
   {
     "Tên nơi đăng": [
@@ -11896,7 +16571,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "41"
+    "id": "5b"
   },
   {
     "Tên nơi đăng": [
@@ -11924,7 +16599,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "lmn",
-    "id": "42"
+    "id": "5c"
   },
   {
     "Tên nơi đăng": [
@@ -11967,7 +16642,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "43"
+    "id": "5d"
   },
   {
     "Tên nơi đăng": [
@@ -11990,7 +16665,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": "ganu",
-    "id": "44"
+    "id": "5e"
   },
   {
     "Tên nơi đăng": [
@@ -12013,7 +16688,7 @@
     ],
     "Đơn vị quản lý": "Nhật",
     "Slug": null,
-    "id": "45"
+    "id": "5f"
   },
   {
     "Tên nơi đăng": [
@@ -12119,7 +16794,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "46"
+    "id": "5g"
   },
   {
     "Tên nơi đăng": [
@@ -12206,7 +16881,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": "NhómUAN",
-    "id": "47"
+    "id": "5h"
   },
   {
     "Tên nơi đăng": [
@@ -12293,7 +16968,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "48"
+    "id": "5i"
   },
   {
     "Tên nơi đăng": [
@@ -12380,7 +17055,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "49"
+    "id": "5j"
   },
   {
     "Tên nơi đăng": [
@@ -12467,7 +17142,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "4A"
+    "id": "5k"
   },
   {
     "Tên nơi đăng": [
@@ -12554,7 +17229,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "4B"
+    "id": "5l"
   },
   {
     "Tên nơi đăng": [
@@ -12660,7 +17335,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "4C"
+    "id": "5m"
   },
   {
     "Tên nơi đăng": [
@@ -12766,7 +17441,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "4D"
+    "id": "5n"
   },
   {
     "Tên nơi đăng": [
@@ -12872,7 +17547,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "4E"
+    "id": "5o"
   },
   {
     "Tên nơi đăng": [
@@ -12978,7 +17653,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "4F"
+    "id": "5p"
   },
   {
     "Tên nơi đăng": [
@@ -13017,7 +17692,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "4G"
+    "id": "5q"
   },
   {
     "Tên nơi đăng": [
@@ -13032,7 +17707,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "4H"
+    "id": "5r"
   },
   {
     "Tên nơi đăng": [
@@ -13074,7 +17749,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "4I"
+    "id": "5s"
   },
   {
     "Tên nơi đăng": [
@@ -13116,7 +17791,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "4J"
+    "id": "5t"
   },
   {
     "Tên nơi đăng": [
@@ -13157,7 +17832,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "4K"
+    "id": "5u"
   },
   {
     "Tên nơi đăng": [
@@ -13197,7 +17872,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "4L"
+    "id": "5v"
   },
   {
     "Tên nơi đăng": [
@@ -13238,7 +17913,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "4M"
+    "id": "5w"
   },
   {
     "Tên nơi đăng": [
@@ -13253,7 +17928,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "4N"
+    "id": "5x"
   },
   {
     "Tên nơi đăng": [
@@ -13296,7 +17971,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "4O"
+    "id": "5y"
   },
   {
     "Tên nơi đăng": [
@@ -13339,7 +18014,7 @@
     ],
     "Đơn vị quản lý": "UAN",
     "Slug": null,
-    "id": "4P"
+    "id": "5z"
   },
   {
     "Tên nơi đăng": [
@@ -13425,7 +18100,7 @@
     ],
     "Đơn vị quản lý": "ABG",
     "Slug": null,
-    "id": "4Q"
+    "id": "5-"
   },
   {
     "Tên nơi đăng": [
@@ -13439,7 +18114,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "ABG",
     "Slug": null,
-    "id": "4R"
+    "id": "5_"
   },
   {
     "Tên nơi đăng": [
@@ -13453,7 +18128,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "ABG",
     "Slug": null,
-    "id": "4S"
+    "id": "60"
   },
   {
     "Tên nơi đăng": [
@@ -13467,21 +18142,412 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "ABG",
     "Slug": null,
-    "id": "4T"
+    "id": "61"
   },
   {
     "Tên nơi đăng": [
-      "ABG Alumni - Discord Group - \"#thông-báo-chung\" - \"#tài-chính-đầu-tư\" - \"#kinh-danh-khởi-nghiệp\" - \"#tuyển-dụng\" - \"#sách-nội-dung-hay\" - \"#công-nghệ-ai\" - \"#sức-khỏe-thể-thao\" - \"#giáo-dục\" - \"#xác-thực-thành-viên\""
+      "ABG Alumni - Discord Group",
+      "#thông-báo-chung"
     ],
     "Loại nơi đăng": [
-      "Máy chủ"
+      "Máy chủ",
+      "Kênh thường"
     ],
     "Tên nền tảng": "Discord",
-    "Loại nền tảng": "Diễn đàn",
+    "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "ABG",
     "Slug": null,
-    "id": "4U"
+    "id": "62"
+  },
+  {
+    "Tên nơi đăng": [
+      "ABG Alumni - Discord Group",
+      "#tài-chính-đầu-tư"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "ABG",
+    "Slug": null,
+    "id": "63"
+  },
+  {
+    "Tên nơi đăng": [
+      "ABG Alumni - Discord Group",
+      "#kinh-danh-khởi-nghiệp"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "ABG",
+    "Slug": null,
+    "id": "64"
+  },
+  {
+    "Tên nơi đăng": [
+      "ABG Alumni - Discord Group",
+      "#tuyển-dụng"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "ABG",
+    "Slug": null,
+    "id": "65"
+  },
+  {
+    "Tên nơi đăng": [
+      "ABG Alumni - Discord Group",
+      "#sách-nội-dung-hay"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "ABG",
+    "Slug": null,
+    "id": "66"
+  },
+  {
+    "Tên nơi đăng": [
+      "ABG Alumni - Discord Group",
+      "#công-nghệ-ai"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "ABG",
+    "Slug": null,
+    "id": "67"
+  },
+  {
+    "Tên nơi đăng": [
+      "ABG Alumni - Discord Group",
+      "#sức-khỏe-thể-thao"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "ABG",
+    "Slug": null,
+    "id": "68"
+  },
+  {
+    "Tên nơi đăng": [
+      "ABG Alumni - Discord Group",
+      "#giáo-dục"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "ABG",
+    "Slug": null,
+    "id": "69"
+  },
+  {
+    "Tên nơi đăng": [
+      "ABG Alumni - Discord Group",
+      "#xác-thực-thành-viên"
+    ],
+    "Loại nơi đăng": [
+      "Máy chủ",
+      "Kênh thường"
+    ],
+    "Tên nền tảng": "Discord",
+    "Loại nền tảng": "Chat",
+    "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Chủ đề kênh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
+    "Đơn vị quản lý": "ABG",
+    "Slug": null,
+    "id": "6A"
   },
   {
     "Tên nơi đăng": [
@@ -13491,102 +18557,37 @@
       "Tài khoản"
     ],
     "Tên nền tảng": "Zalo",
-    "Loại nền tảng": "Diễn đàn",
+    "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
-        "Bài đăng",
+        "Tin nhắn",
         "Nội dung chính"
       ],
       [
-        "Bài đăng",
-        "Bình luận"
-      ],
-      [
-        "Album ảnh",
-        "Mô tả album"
-      ],
-      [
-        "Album ảnh",
-        "Bình luận"
-      ],
-      [
-        "Video",
-        "Mô tả video"
-      ],
-      [
-        "Video",
-        "QR trong video"
-      ],
-      [
-        "Video",
-        "Chữ trong video"
-      ],
-      [
-        "Video",
-        "Bình luận"
-      ],
-      [
-        "Bio"
-      ],
-      [
-        "About"
-      ],
-      [
-        "Website"
-      ],
-      [
-        "Ảnh đại diện",
-        "Mô tả ảnh"
-      ],
-      [
-        "Ảnh đại diện",
+        "Tin nhắn",
         "QR trong ảnh"
       ],
       [
-        "Ảnh đại diện",
+        "Tin nhắn",
         "Chữ trong ảnh"
       ],
       [
-        "Ảnh đại diện",
-        "Bình luận"
-      ],
-      [
-        "Ảnh bìa",
-        "Mô tả ảnh"
-      ],
-      [
-        "Ảnh bìa",
-        "QR trong ảnh"
-      ],
-      [
-        "Ảnh bìa",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Ảnh bìa",
-        "Bình luận"
-      ],
-      [
-        "Bài ghim",
+        "Tin nhắn ghim",
         "Nội dung chính"
       ],
       [
-        "Bài ghim",
-        "Bình luận"
-      ],
-      [
-        "Bài ghim",
+        "Tin nhắn ghim",
         "QR trong ảnh"
       ],
       [
-        "Bài ghim",
+        "Tin nhắn ghim",
         "Chữ trong ảnh"
       ]
     ],
     "Đơn vị quản lý": "ABG",
     "Slug": null,
-    "id": "4V"
+    "id": "6B"
   },
   {
     "Tên nơi đăng": [
@@ -13596,102 +18597,37 @@
       "Tài khoản"
     ],
     "Tên nền tảng": "Zalo",
-    "Loại nền tảng": "Diễn đàn",
+    "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
-        "Bài đăng",
+        "Tin nhắn",
         "Nội dung chính"
       ],
       [
-        "Bài đăng",
-        "Bình luận"
-      ],
-      [
-        "Album ảnh",
-        "Mô tả album"
-      ],
-      [
-        "Album ảnh",
-        "Bình luận"
-      ],
-      [
-        "Video",
-        "Mô tả video"
-      ],
-      [
-        "Video",
-        "QR trong video"
-      ],
-      [
-        "Video",
-        "Chữ trong video"
-      ],
-      [
-        "Video",
-        "Bình luận"
-      ],
-      [
-        "Bio"
-      ],
-      [
-        "About"
-      ],
-      [
-        "Website"
-      ],
-      [
-        "Ảnh đại diện",
-        "Mô tả ảnh"
-      ],
-      [
-        "Ảnh đại diện",
+        "Tin nhắn",
         "QR trong ảnh"
       ],
       [
-        "Ảnh đại diện",
+        "Tin nhắn",
         "Chữ trong ảnh"
       ],
       [
-        "Ảnh đại diện",
-        "Bình luận"
-      ],
-      [
-        "Ảnh bìa",
-        "Mô tả ảnh"
-      ],
-      [
-        "Ảnh bìa",
-        "QR trong ảnh"
-      ],
-      [
-        "Ảnh bìa",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Ảnh bìa",
-        "Bình luận"
-      ],
-      [
-        "Bài ghim",
+        "Tin nhắn ghim",
         "Nội dung chính"
       ],
       [
-        "Bài ghim",
-        "Bình luận"
-      ],
-      [
-        "Bài ghim",
+        "Tin nhắn ghim",
         "QR trong ảnh"
       ],
       [
-        "Bài ghim",
+        "Tin nhắn ghim",
         "Chữ trong ảnh"
       ]
     ],
     "Đơn vị quản lý": "ABG",
     "Slug": null,
-    "id": "4W"
+    "id": "6C"
   },
   {
     "Tên nơi đăng": [
@@ -13701,102 +18637,37 @@
       "Tài khoản"
     ],
     "Tên nền tảng": "Zalo",
-    "Loại nền tảng": "Diễn đàn",
+    "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
-        "Bài đăng",
+        "Tin nhắn",
         "Nội dung chính"
       ],
       [
-        "Bài đăng",
-        "Bình luận"
-      ],
-      [
-        "Album ảnh",
-        "Mô tả album"
-      ],
-      [
-        "Album ảnh",
-        "Bình luận"
-      ],
-      [
-        "Video",
-        "Mô tả video"
-      ],
-      [
-        "Video",
-        "QR trong video"
-      ],
-      [
-        "Video",
-        "Chữ trong video"
-      ],
-      [
-        "Video",
-        "Bình luận"
-      ],
-      [
-        "Bio"
-      ],
-      [
-        "About"
-      ],
-      [
-        "Website"
-      ],
-      [
-        "Ảnh đại diện",
-        "Mô tả ảnh"
-      ],
-      [
-        "Ảnh đại diện",
+        "Tin nhắn",
         "QR trong ảnh"
       ],
       [
-        "Ảnh đại diện",
+        "Tin nhắn",
         "Chữ trong ảnh"
       ],
       [
-        "Ảnh đại diện",
-        "Bình luận"
-      ],
-      [
-        "Ảnh bìa",
-        "Mô tả ảnh"
-      ],
-      [
-        "Ảnh bìa",
-        "QR trong ảnh"
-      ],
-      [
-        "Ảnh bìa",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Ảnh bìa",
-        "Bình luận"
-      ],
-      [
-        "Bài ghim",
+        "Tin nhắn ghim",
         "Nội dung chính"
       ],
       [
-        "Bài ghim",
-        "Bình luận"
-      ],
-      [
-        "Bài ghim",
+        "Tin nhắn ghim",
         "QR trong ảnh"
       ],
       [
-        "Bài ghim",
+        "Tin nhắn ghim",
         "Chữ trong ảnh"
       ]
     ],
     "Đơn vị quản lý": "ABG",
     "Slug": null,
-    "id": "4X"
+    "id": "6D"
   },
   {
     "Tên nơi đăng": [
@@ -13806,102 +18677,37 @@
       "Tài khoản"
     ],
     "Tên nền tảng": "Zalo",
-    "Loại nền tảng": "Diễn đàn",
+    "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
-        "Bài đăng",
+        "Tin nhắn",
         "Nội dung chính"
       ],
       [
-        "Bài đăng",
-        "Bình luận"
-      ],
-      [
-        "Album ảnh",
-        "Mô tả album"
-      ],
-      [
-        "Album ảnh",
-        "Bình luận"
-      ],
-      [
-        "Video",
-        "Mô tả video"
-      ],
-      [
-        "Video",
-        "QR trong video"
-      ],
-      [
-        "Video",
-        "Chữ trong video"
-      ],
-      [
-        "Video",
-        "Bình luận"
-      ],
-      [
-        "Bio"
-      ],
-      [
-        "About"
-      ],
-      [
-        "Website"
-      ],
-      [
-        "Ảnh đại diện",
-        "Mô tả ảnh"
-      ],
-      [
-        "Ảnh đại diện",
+        "Tin nhắn",
         "QR trong ảnh"
       ],
       [
-        "Ảnh đại diện",
+        "Tin nhắn",
         "Chữ trong ảnh"
       ],
       [
-        "Ảnh đại diện",
-        "Bình luận"
-      ],
-      [
-        "Ảnh bìa",
-        "Mô tả ảnh"
-      ],
-      [
-        "Ảnh bìa",
-        "QR trong ảnh"
-      ],
-      [
-        "Ảnh bìa",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Ảnh bìa",
-        "Bình luận"
-      ],
-      [
-        "Bài ghim",
+        "Tin nhắn ghim",
         "Nội dung chính"
       ],
       [
-        "Bài ghim",
-        "Bình luận"
-      ],
-      [
-        "Bài ghim",
+        "Tin nhắn ghim",
         "QR trong ảnh"
       ],
       [
-        "Bài ghim",
+        "Tin nhắn ghim",
         "Chữ trong ảnh"
       ]
     ],
     "Đơn vị quản lý": "ABG",
     "Slug": null,
-    "id": "4Y"
+    "id": "6E"
   },
   {
     "Tên nơi đăng": [
@@ -13911,102 +18717,37 @@
       "Tài khoản"
     ],
     "Tên nền tảng": "Zalo",
-    "Loại nền tảng": "Diễn đàn",
+    "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
-        "Bài đăng",
+        "Tin nhắn",
         "Nội dung chính"
       ],
       [
-        "Bài đăng",
-        "Bình luận"
-      ],
-      [
-        "Album ảnh",
-        "Mô tả album"
-      ],
-      [
-        "Album ảnh",
-        "Bình luận"
-      ],
-      [
-        "Video",
-        "Mô tả video"
-      ],
-      [
-        "Video",
-        "QR trong video"
-      ],
-      [
-        "Video",
-        "Chữ trong video"
-      ],
-      [
-        "Video",
-        "Bình luận"
-      ],
-      [
-        "Bio"
-      ],
-      [
-        "About"
-      ],
-      [
-        "Website"
-      ],
-      [
-        "Ảnh đại diện",
-        "Mô tả ảnh"
-      ],
-      [
-        "Ảnh đại diện",
+        "Tin nhắn",
         "QR trong ảnh"
       ],
       [
-        "Ảnh đại diện",
+        "Tin nhắn",
         "Chữ trong ảnh"
       ],
       [
-        "Ảnh đại diện",
-        "Bình luận"
-      ],
-      [
-        "Ảnh bìa",
-        "Mô tả ảnh"
-      ],
-      [
-        "Ảnh bìa",
-        "QR trong ảnh"
-      ],
-      [
-        "Ảnh bìa",
-        "Chữ trong ảnh"
-      ],
-      [
-        "Ảnh bìa",
-        "Bình luận"
-      ],
-      [
-        "Bài ghim",
+        "Tin nhắn ghim",
         "Nội dung chính"
       ],
       [
-        "Bài ghim",
-        "Bình luận"
-      ],
-      [
-        "Bài ghim",
+        "Tin nhắn ghim",
         "QR trong ảnh"
       ],
       [
-        "Bài ghim",
+        "Tin nhắn ghim",
         "Chữ trong ảnh"
       ]
     ],
     "Đơn vị quản lý": "ABG",
     "Slug": null,
-    "id": "4Z"
+    "id": "6F"
   },
   {
     "Tên nơi đăng": [
@@ -14016,12 +18757,38 @@
       "Nhóm"
     ],
     "Tên nền tảng": "Zalo",
-    "Loại nền tảng": "Diễn đàn",
+    "Loại nền tảng": "Chat",
     "URL": "https://zalo.me/g/zxwhfx840",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "ABG",
     "Slug": null,
-    "id": "4a"
+    "id": "6G"
   },
   {
     "Tên nơi đăng": [
@@ -14031,11 +18798,37 @@
       "Nhóm"
     ],
     "Tên nền tảng": "Zalo",
-    "Loại nền tảng": "Diễn đàn",
+    "Loại nền tảng": "Chat",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "ABG",
     "Slug": null,
-    "id": "4b"
+    "id": "6H"
   },
   {
     "Tên nơi đăng": [
@@ -14045,12 +18838,38 @@
       "Nhóm"
     ],
     "Tên nền tảng": "Zalo",
-    "Loại nền tảng": "Diễn đàn",
+    "Loại nền tảng": "Chat",
     "URL": "https://zalo.me/g/qpnuzw552",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "ABG",
     "Slug": null,
-    "id": "4c"
+    "id": "6I"
   },
   {
     "Tên nơi đăng": [
@@ -14060,12 +18879,38 @@
       "Nhóm"
     ],
     "Tên nền tảng": "Zalo",
-    "Loại nền tảng": "Diễn đàn",
+    "Loại nền tảng": "Chat",
     "URL": "https://zalo.me/g/foeplh747",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "ABG",
     "Slug": null,
-    "id": "4d"
+    "id": "6J"
   },
   {
     "Tên nơi đăng": [
@@ -14075,12 +18920,38 @@
       "Nhóm"
     ],
     "Tên nền tảng": "Zalo",
-    "Loại nền tảng": "Diễn đàn",
+    "Loại nền tảng": "Chat",
     "URL": "https://zalo.me/g/rwlrjr441",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
+    "Vị trí có thể đăng": [
+      [
+        "Tin nhắn",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn",
+        "Chữ trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Nội dung chính"
+      ],
+      [
+        "Tin nhắn ghim",
+        "QR trong ảnh"
+      ],
+      [
+        "Tin nhắn ghim",
+        "Chữ trong ảnh"
+      ]
+    ],
     "Đơn vị quản lý": "ABG",
     "Slug": null,
-    "id": "4e"
+    "id": "6K"
   },
   {
     "Tên nơi đăng": [
@@ -14091,7 +18962,7 @@
     ],
     "Tên nền tảng": "Website",
     "Loại nền tảng": "Website",
-    "URL": "https://www.abgalumni.vn/events?tab=proposals",
+    "URL": "https://www.abgalumni.vn/",
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Vị trí có thể đăng": [
       [
@@ -14123,7 +18994,7 @@
     ],
     "Đơn vị quản lý": "ABG",
     "Slug": null,
-    "id": "4f"
+    "id": "6L"
   },
   {
     "Tên nơi đăng": [
@@ -14146,7 +19017,7 @@
     ],
     "Đơn vị quản lý": "ABG",
     "Slug": null,
-    "id": "4g"
+    "id": "6M"
   },
   {
     "Tên nơi đăng": [
@@ -14233,7 +19104,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "4h"
+    "id": "6N"
   },
   {
     "Tên nơi đăng": [
@@ -14278,7 +19149,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "4i"
+    "id": "6O"
   },
   {
     "Tên nơi đăng": [
@@ -14323,7 +19194,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "4j"
+    "id": "6P"
   },
   {
     "Tên nơi đăng": [
@@ -14368,7 +19239,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "4k"
+    "id": "6Q"
   },
   {
     "Tên nơi đăng": [
@@ -14413,7 +19284,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "4l"
+    "id": "6R"
   },
   {
     "Tên nơi đăng": [
@@ -14458,7 +19329,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "4m"
+    "id": "6S"
   },
   {
     "Tên nơi đăng": [
@@ -14503,7 +19374,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "4n"
+    "id": "6T"
   },
   {
     "Tên nơi đăng": [
@@ -14548,7 +19419,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "4o"
+    "id": "6U"
   },
   {
     "Tên nơi đăng": [
@@ -14593,7 +19464,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "4p"
+    "id": "6V"
   },
   {
     "Tên nơi đăng": [
@@ -14633,7 +19504,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "4q"
+    "id": "6W"
   },
   {
     "Tên nơi đăng": [
@@ -14673,7 +19544,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "4r"
+    "id": "6X"
   },
   {
     "Tên nơi đăng": [
@@ -14713,7 +19584,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "4s"
+    "id": "6Y"
   },
   {
     "Tên nơi đăng": [
@@ -14753,7 +19624,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "4t"
+    "id": "6Z"
   },
   {
     "Tên nơi đăng": [
@@ -14793,7 +19664,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "4u"
+    "id": "6a"
   },
   {
     "Tên nơi đăng": [
@@ -14833,7 +19704,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "4v"
+    "id": "6b"
   },
   {
     "Tên nơi đăng": [
@@ -14873,7 +19744,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "4w"
+    "id": "6c"
   },
   {
     "Tên nơi đăng": [
@@ -14913,7 +19784,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "4x"
+    "id": "6d"
   },
   {
     "Tên nơi đăng": [
@@ -14953,7 +19824,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "4y"
+    "id": "6e"
   },
   {
     "Tên nơi đăng": [
@@ -14993,7 +19864,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "4z"
+    "id": "6f"
   },
   {
     "Tên nơi đăng": [
@@ -15033,7 +19904,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "4-"
+    "id": "6g"
   },
   {
     "Tên nơi đăng": [
@@ -15073,7 +19944,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "4_"
+    "id": "6h"
   },
   {
     "Tên nơi đăng": [
@@ -15113,7 +19984,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "50"
+    "id": "6i"
   },
   {
     "Tên nơi đăng": [
@@ -15153,7 +20024,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "51"
+    "id": "6j"
   },
   {
     "Tên nơi đăng": [
@@ -15193,7 +20064,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "52"
+    "id": "6k"
   },
   {
     "Tên nơi đăng": [
@@ -15233,7 +20104,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "53"
+    "id": "6l"
   },
   {
     "Tên nơi đăng": [
@@ -15273,7 +20144,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "54"
+    "id": "6m"
   },
   {
     "Tên nơi đăng": [
@@ -15313,7 +20184,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "55"
+    "id": "6n"
   },
   {
     "Tên nơi đăng": [
@@ -15353,7 +20224,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "56"
+    "id": "6o"
   },
   {
     "Tên nơi đăng": [
@@ -15393,7 +20264,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "57"
+    "id": "6p"
   },
   {
     "Tên nơi đăng": [
@@ -15433,7 +20304,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "58"
+    "id": "6q"
   },
   {
     "Tên nơi đăng": [
@@ -15473,7 +20344,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "59"
+    "id": "6r"
   },
   {
     "Tên nơi đăng": [
@@ -15513,7 +20384,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5A"
+    "id": "6s"
   },
   {
     "Tên nơi đăng": [
@@ -15553,7 +20424,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5B"
+    "id": "6t"
   },
   {
     "Tên nơi đăng": [
@@ -15593,7 +20464,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5C"
+    "id": "6u"
   },
   {
     "Tên nơi đăng": [
@@ -15633,7 +20504,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5D"
+    "id": "6v"
   },
   {
     "Tên nơi đăng": [
@@ -15673,7 +20544,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5E"
+    "id": "6w"
   },
   {
     "Tên nơi đăng": [
@@ -15713,7 +20584,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5F"
+    "id": "6x"
   },
   {
     "Tên nơi đăng": [
@@ -15753,7 +20624,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5G"
+    "id": "6y"
   },
   {
     "Tên nơi đăng": [
@@ -15793,7 +20664,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5H"
+    "id": "6z"
   },
   {
     "Tên nơi đăng": [
@@ -15833,7 +20704,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5I"
+    "id": "6-"
   },
   {
     "Tên nơi đăng": [
@@ -15873,7 +20744,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5J"
+    "id": "6_"
   },
   {
     "Tên nơi đăng": [
@@ -15913,7 +20784,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5K"
+    "id": "70"
   },
   {
     "Tên nơi đăng": [
@@ -15953,7 +20824,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5L"
+    "id": "71"
   },
   {
     "Tên nơi đăng": [
@@ -15989,11 +20860,14 @@
       [
         "Tin nhắn ghim",
         "Chữ trong ảnh"
+      ],
+      [
+        "Bio"
       ]
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5M"
+    "id": "72"
   },
   {
     "Tên nơi đăng": [
@@ -16029,11 +20903,14 @@
       [
         "Tin nhắn ghim",
         "Chữ trong ảnh"
+      ],
+      [
+        "Bio"
       ]
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5N"
+    "id": "73"
   },
   {
     "Tên nơi đăng": [
@@ -16069,11 +20946,14 @@
       [
         "Tin nhắn ghim",
         "Chữ trong ảnh"
+      ],
+      [
+        "Bio"
       ]
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5O"
+    "id": "74"
   },
   {
     "Tên nơi đăng": [
@@ -16116,7 +20996,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5P"
+    "id": "75"
   },
   {
     "Tên nơi đăng": [
@@ -16156,7 +21036,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5Q"
+    "id": "76"
   },
   {
     "Tên nơi đăng": [
@@ -16196,7 +21076,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5R"
+    "id": "77"
   },
   {
     "Tên nơi đăng": [
@@ -16236,7 +21116,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5S"
+    "id": "78"
   },
   {
     "Tên nơi đăng": [
@@ -16276,7 +21156,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5T"
+    "id": "79"
   },
   {
     "Tên nơi đăng": [
@@ -16316,7 +21196,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5U"
+    "id": "7A"
   },
   {
     "Tên nơi đăng": [
@@ -16356,7 +21236,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5V"
+    "id": "7B"
   },
   {
     "Tên nơi đăng": [
@@ -16396,7 +21276,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5W"
+    "id": "7C"
   },
   {
     "Tên nơi đăng": [
@@ -16436,7 +21316,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5X"
+    "id": "7D"
   },
   {
     "Tên nơi đăng": [
@@ -16476,7 +21356,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5Y"
+    "id": "7E"
   },
   {
     "Tên nơi đăng": [
@@ -16516,7 +21396,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5Z"
+    "id": "7F"
   },
   {
     "Tên nơi đăng": [
@@ -16556,7 +21436,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5a"
+    "id": "7G"
   },
   {
     "Tên nơi đăng": [
@@ -16605,7 +21485,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5b"
+    "id": "7H"
   },
   {
     "Tên nơi đăng": [
@@ -16648,7 +21528,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5c"
+    "id": "7I"
   },
   {
     "Tên nơi đăng": [
@@ -16671,7 +21551,7 @@
     ],
     "Đơn vị quản lý": "Bạn bè Quả Cầu",
     "Slug": null,
-    "id": "5d"
+    "id": "7J"
   },
   {
     "Tên nơi đăng": [
@@ -16757,7 +21637,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "chimsáo",
-    "id": "5e"
+    "id": "7K"
   },
   {
     "Tên nơi đăng": [
@@ -16843,7 +21723,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "vđqc",
-    "id": "5f"
+    "id": "7L"
   },
   {
     "Tên nơi đăng": [
@@ -16929,7 +21809,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "bpd",
-    "id": "5g"
+    "id": "7M"
   },
   {
     "Tên nơi đăng": [
@@ -17015,7 +21895,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "triếtphươngđông",
-    "id": "5h"
+    "id": "7N"
   },
   {
     "Tên nơi đăng": [
@@ -17101,7 +21981,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "nhậnthứcphứchợp",
-    "id": "5i"
+    "id": "7O"
   },
   {
     "Tên nơi đăng": [
@@ -17187,7 +22067,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "giácquankèm",
-    "id": "5j"
+    "id": "7P"
   },
   {
     "Tên nơi đăng": [
@@ -17293,7 +22173,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "pagefbQC",
-    "id": "5k"
+    "id": "7Q"
   },
   {
     "Tên nơi đăng": [
@@ -17399,7 +22279,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "5l"
+    "id": "7R"
   },
   {
     "Tên nơi đăng": [
@@ -17504,7 +22384,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "5m"
+    "id": "7S"
   },
   {
     "Tên nơi đăng": [
@@ -17519,7 +22399,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "5n"
+    "id": "7T"
   },
   {
     "Tên nơi đăng": [
@@ -17548,7 +22428,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "5o"
+    "id": "7U"
   },
   {
     "Tên nơi đăng": [
@@ -17577,7 +22457,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "5p"
+    "id": "7V"
   },
   {
     "Tên nơi đăng": [
@@ -17606,7 +22486,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "5q"
+    "id": "7W"
   },
   {
     "Tên nơi đăng": [
@@ -17635,7 +22515,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "5r"
+    "id": "7X"
   },
   {
     "Tên nơi đăng": [
@@ -17664,7 +22544,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "5s"
+    "id": "7Y"
   },
   {
     "Tên nơi đăng": [
@@ -17693,7 +22573,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "5t"
+    "id": "7Z"
   },
   {
     "Tên nơi đăng": [
@@ -17722,7 +22602,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "5u"
+    "id": "7a"
   },
   {
     "Tên nơi đăng": [
@@ -17751,7 +22631,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "5v"
+    "id": "7b"
   },
   {
     "Tên nơi đăng": [
@@ -17780,7 +22660,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "5w"
+    "id": "7c"
   },
   {
     "Tên nơi đăng": [
@@ -17809,7 +22689,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "5x"
+    "id": "7d"
   },
   {
     "Tên nơi đăng": [
@@ -17838,7 +22718,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "5y"
+    "id": "7e"
   },
   {
     "Tên nơi đăng": [
@@ -17867,7 +22747,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "5z"
+    "id": "7f"
   },
   {
     "Tên nơi đăng": [
@@ -17896,7 +22776,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "5-"
+    "id": "7g"
   },
   {
     "Tên nơi đăng": [
@@ -17925,7 +22805,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "5_"
+    "id": "7h"
   },
   {
     "Tên nơi đăng": [
@@ -17954,7 +22834,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "60"
+    "id": "7i"
   },
   {
     "Tên nơi đăng": [
@@ -17983,7 +22863,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "61"
+    "id": "7j"
   },
   {
     "Tên nơi đăng": [
@@ -18012,7 +22892,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "62"
+    "id": "7k"
   },
   {
     "Tên nơi đăng": [
@@ -18041,7 +22921,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "63"
+    "id": "7l"
   },
   {
     "Tên nơi đăng": [
@@ -18070,7 +22950,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "64"
+    "id": "7m"
   },
   {
     "Tên nơi đăng": [
@@ -18099,7 +22979,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "65"
+    "id": "7n"
   },
   {
     "Tên nơi đăng": [
@@ -18128,7 +23008,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "66"
+    "id": "7o"
   },
   {
     "Tên nơi đăng": [
@@ -18157,7 +23037,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "67"
+    "id": "7p"
   },
   {
     "Tên nơi đăng": [
@@ -18186,7 +23066,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "68"
+    "id": "7q"
   },
   {
     "Tên nơi đăng": [
@@ -18215,7 +23095,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "69"
+    "id": "7r"
   },
   {
     "Tên nơi đăng": [
@@ -18244,7 +23124,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "6A"
+    "id": "7s"
   },
   {
     "Tên nơi đăng": [
@@ -18273,7 +23153,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "6B"
+    "id": "7t"
   },
   {
     "Tên nơi đăng": [
@@ -18315,7 +23195,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "bpd",
-    "id": "6C"
+    "id": "7u"
   },
   {
     "Tên nơi đăng": [
@@ -18357,7 +23237,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "triếtphươngđông",
-    "id": "6D"
+    "id": "7v"
   },
   {
     "Tên nơi đăng": [
@@ -18399,7 +23279,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "nhậnthứcphứchợp",
-    "id": "6E"
+    "id": "7w"
   },
   {
     "Tên nơi đăng": [
@@ -18447,7 +23327,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "6F"
+    "id": "7x"
   },
   {
     "Tên nơi đăng": [
@@ -18493,7 +23373,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "6G"
+    "id": "7y"
   },
   {
     "Tên nơi đăng": [
@@ -18541,7 +23421,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "6H"
+    "id": "7z"
   },
   {
     "Tên nơi đăng": [
@@ -18587,7 +23467,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "6I"
+    "id": "7-"
   },
   {
     "Tên nơi đăng": [
@@ -18633,7 +23513,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "6J"
+    "id": "7_"
   },
   {
     "Tên nơi đăng": [
@@ -18679,7 +23559,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "6K"
+    "id": "80"
   },
   {
     "Tên nơi đăng": [
@@ -18727,7 +23607,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "6L"
+    "id": "81"
   },
   {
     "Tên nơi đăng": [
@@ -18775,7 +23655,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "6M"
+    "id": "82"
   },
   {
     "Tên nơi đăng": [
@@ -18823,7 +23703,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "6N"
+    "id": "83"
   },
   {
     "Tên nơi đăng": [
@@ -18871,7 +23751,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "6O"
+    "id": "84"
   },
   {
     "Tên nơi đăng": [
@@ -18919,7 +23799,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "6P"
+    "id": "85"
   },
   {
     "Tên nơi đăng": [
@@ -18965,7 +23845,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "6Q"
+    "id": "86"
   },
   {
     "Tên nơi đăng": [
@@ -19011,7 +23891,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "6R"
+    "id": "87"
   },
   {
     "Tên nơi đăng": [
@@ -19057,7 +23937,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "6S"
+    "id": "88"
   },
   {
     "Tên nơi đăng": [
@@ -19103,7 +23983,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "6T"
+    "id": "89"
   },
   {
     "Tên nơi đăng": [
@@ -19151,7 +24031,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b1",
-    "id": "6U"
+    "id": "8A"
   },
   {
     "Tên nơi đăng": [
@@ -19199,7 +24079,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b1",
-    "id": "6V"
+    "id": "8B"
   },
   {
     "Tên nơi đăng": [
@@ -19245,7 +24125,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b1",
-    "id": "6W"
+    "id": "8C"
   },
   {
     "Tên nơi đăng": [
@@ -19290,7 +24170,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b2",
-    "id": "6X"
+    "id": "8D"
   },
   {
     "Tên nơi đăng": [
@@ -19335,7 +24215,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b2",
-    "id": "6Y"
+    "id": "8E"
   },
   {
     "Tên nơi đăng": [
@@ -19380,7 +24260,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b2",
-    "id": "6Z"
+    "id": "8F"
   },
   {
     "Tên nơi đăng": [
@@ -19425,7 +24305,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b2",
-    "id": "6a"
+    "id": "8G"
   },
   {
     "Tên nơi đăng": [
@@ -19470,7 +24350,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b2",
-    "id": "6b"
+    "id": "8H"
   },
   {
     "Tên nơi đăng": [
@@ -19515,7 +24395,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b2",
-    "id": "6c"
+    "id": "8I"
   },
   {
     "Tên nơi đăng": [
@@ -19560,7 +24440,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b2",
-    "id": "6d"
+    "id": "8J"
   },
   {
     "Tên nơi đăng": [
@@ -19605,7 +24485,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b2",
-    "id": "6e"
+    "id": "8K"
   },
   {
     "Tên nơi đăng": [
@@ -19650,7 +24530,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b2",
-    "id": "6f"
+    "id": "8L"
   },
   {
     "Tên nơi đăng": [
@@ -19698,7 +24578,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "6g"
+    "id": "8M"
   },
   {
     "Tên nơi đăng": [
@@ -19746,7 +24626,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "6h"
+    "id": "8N"
   },
   {
     "Tên nơi đăng": [
@@ -19794,7 +24674,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "6i"
+    "id": "8O"
   },
   {
     "Tên nơi đăng": [
@@ -19840,7 +24720,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "6j"
+    "id": "8P"
   },
   {
     "Tên nơi đăng": [
@@ -19885,7 +24765,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b3",
-    "id": "6k"
+    "id": "8Q"
   },
   {
     "Tên nơi đăng": [
@@ -19930,7 +24810,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b3",
-    "id": "6l"
+    "id": "8R"
   },
   {
     "Tên nơi đăng": [
@@ -19975,7 +24855,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b3",
-    "id": "6m"
+    "id": "8S"
   },
   {
     "Tên nơi đăng": [
@@ -20020,7 +24900,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#b3",
-    "id": "6n"
+    "id": "8T"
   },
   {
     "Tên nơi đăng": [
@@ -20066,7 +24946,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "6o"
+    "id": "8U"
   },
   {
     "Tên nơi đăng": [
@@ -20114,7 +24994,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c1",
-    "id": "6p"
+    "id": "8V"
   },
   {
     "Tên nơi đăng": [
@@ -20162,7 +25042,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c1",
-    "id": "6q"
+    "id": "8W"
   },
   {
     "Tên nơi đăng": [
@@ -20208,7 +25088,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c1",
-    "id": "6r"
+    "id": "8X"
   },
   {
     "Tên nơi đăng": [
@@ -20253,7 +25133,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c2",
-    "id": "6s"
+    "id": "8Y"
   },
   {
     "Tên nơi đăng": [
@@ -20298,7 +25178,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c2",
-    "id": "6t"
+    "id": "8Z"
   },
   {
     "Tên nơi đăng": [
@@ -20343,7 +25223,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c2",
-    "id": "6u"
+    "id": "8a"
   },
   {
     "Tên nơi đăng": [
@@ -20388,7 +25268,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c2",
-    "id": "6v"
+    "id": "8b"
   },
   {
     "Tên nơi đăng": [
@@ -20433,7 +25313,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c2",
-    "id": "6w"
+    "id": "8c"
   },
   {
     "Tên nơi đăng": [
@@ -20478,7 +25358,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c2",
-    "id": "6x"
+    "id": "8d"
   },
   {
     "Tên nơi đăng": [
@@ -20523,7 +25403,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c2",
-    "id": "6y"
+    "id": "8e"
   },
   {
     "Tên nơi đăng": [
@@ -20568,7 +25448,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c2",
-    "id": "6z"
+    "id": "8f"
   },
   {
     "Tên nơi đăng": [
@@ -20613,7 +25493,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c2",
-    "id": "6-"
+    "id": "8g"
   },
   {
     "Tên nơi đăng": [
@@ -20658,7 +25538,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c2",
-    "id": "6_"
+    "id": "8h"
   },
   {
     "Tên nơi đăng": [
@@ -20703,7 +25583,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#c2",
-    "id": "70"
+    "id": "8i"
   },
   {
     "Tên nơi đăng": [
@@ -20748,7 +25628,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#d",
-    "id": "71"
+    "id": "8j"
   },
   {
     "Tên nơi đăng": [
@@ -20793,7 +25673,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#d",
-    "id": "72"
+    "id": "8k"
   },
   {
     "Tên nơi đăng": [
@@ -20838,7 +25718,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#d",
-    "id": "73"
+    "id": "8l"
   },
   {
     "Tên nơi đăng": [
@@ -20883,7 +25763,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#d",
-    "id": "74"
+    "id": "8m"
   },
   {
     "Tên nơi đăng": [
@@ -20928,7 +25808,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#d",
-    "id": "75"
+    "id": "8n"
   },
   {
     "Tên nơi đăng": [
@@ -20973,7 +25853,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#d",
-    "id": "76"
+    "id": "8o"
   },
   {
     "Tên nơi đăng": [
@@ -21018,7 +25898,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#d",
-    "id": "77"
+    "id": "8p"
   },
   {
     "Tên nơi đăng": [
@@ -21063,7 +25943,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#d",
-    "id": "78"
+    "id": "8q"
   },
   {
     "Tên nơi đăng": [
@@ -21108,7 +25988,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#d",
-    "id": "79"
+    "id": "8r"
   },
   {
     "Tên nơi đăng": [
@@ -21153,7 +26033,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#d",
-    "id": "7A"
+    "id": "8s"
   },
   {
     "Tên nơi đăng": [
@@ -21198,7 +26078,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#d",
-    "id": "7B"
+    "id": "8t"
   },
   {
     "Tên nơi đăng": [
@@ -21243,7 +26123,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#d",
-    "id": "7C"
+    "id": "8u"
   },
   {
     "Tên nơi đăng": [
@@ -21288,7 +26168,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#d",
-    "id": "7D"
+    "id": "8v"
   },
   {
     "Tên nơi đăng": [
@@ -21334,7 +26214,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#e",
-    "id": "7E"
+    "id": "8w"
   },
   {
     "Tên nơi đăng": [
@@ -21379,7 +26259,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#f1",
-    "id": "7F"
+    "id": "8x"
   },
   {
     "Tên nơi đăng": [
@@ -21424,7 +26304,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#f1",
-    "id": "7G"
+    "id": "8y"
   },
   {
     "Tên nơi đăng": [
@@ -21469,7 +26349,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#f1",
-    "id": "7H"
+    "id": "8z"
   },
   {
     "Tên nơi đăng": [
@@ -21514,7 +26394,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#f1",
-    "id": "7I"
+    "id": "8-"
   },
   {
     "Tên nơi đăng": [
@@ -21559,7 +26439,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#f1",
-    "id": "7J"
+    "id": "8_"
   },
   {
     "Tên nơi đăng": [
@@ -21604,7 +26484,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#f1",
-    "id": "7K"
+    "id": "90"
   },
   {
     "Tên nơi đăng": [
@@ -21649,7 +26529,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#f1",
-    "id": "7L"
+    "id": "91"
   },
   {
     "Tên nơi đăng": [
@@ -21695,7 +26575,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#f2",
-    "id": "7M"
+    "id": "92"
   },
   {
     "Tên nơi đăng": [
@@ -21741,7 +26621,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "7N"
+    "id": "93"
   },
   {
     "Tên nơi đăng": [
@@ -21786,7 +26666,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#g",
-    "id": "7O"
+    "id": "94"
   },
   {
     "Tên nơi đăng": [
@@ -21831,7 +26711,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#g",
-    "id": "7P"
+    "id": "95"
   },
   {
     "Tên nơi đăng": [
@@ -21876,7 +26756,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#g",
-    "id": "7Q"
+    "id": "96"
   },
   {
     "Tên nơi đăng": [
@@ -21921,7 +26801,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#g",
-    "id": "7R"
+    "id": "97"
   },
   {
     "Tên nơi đăng": [
@@ -21966,7 +26846,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#g",
-    "id": "7S"
+    "id": "98"
   },
   {
     "Tên nơi đăng": [
@@ -22011,7 +26891,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#g",
-    "id": "7T"
+    "id": "99"
   },
   {
     "Tên nơi đăng": [
@@ -22056,7 +26936,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#g",
-    "id": "7U"
+    "id": "9A"
   },
   {
     "Tên nơi đăng": [
@@ -22101,7 +26981,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#g",
-    "id": "7V"
+    "id": "9B"
   },
   {
     "Tên nơi đăng": [
@@ -22146,7 +27026,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#g",
-    "id": "7W"
+    "id": "9C"
   },
   {
     "Tên nơi đăng": [
@@ -22191,7 +27071,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#g",
-    "id": "7X"
+    "id": "9D"
   },
   {
     "Tên nơi đăng": [
@@ -22236,7 +27116,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#g",
-    "id": "7Y"
+    "id": "9E"
   },
   {
     "Tên nơi đăng": [
@@ -22281,7 +27161,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#g",
-    "id": "7Z"
+    "id": "9F"
   },
   {
     "Tên nơi đăng": [
@@ -22326,7 +27206,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#g",
-    "id": "7a"
+    "id": "9G"
   },
   {
     "Tên nơi đăng": [
@@ -22371,7 +27251,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#g",
-    "id": "7b"
+    "id": "9H"
   },
   {
     "Tên nơi đăng": [
@@ -22416,7 +27296,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#g",
-    "id": "7c"
+    "id": "9I"
   },
   {
     "Tên nơi đăng": [
@@ -22461,7 +27341,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#g",
-    "id": "7d"
+    "id": "9J"
   },
   {
     "Tên nơi đăng": [
@@ -22506,7 +27386,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "discordQC#g",
-    "id": "7e"
+    "id": "9K"
   },
   {
     "Tên nơi đăng": [
@@ -22546,7 +27426,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "7f"
+    "id": "9L"
   },
   {
     "Tên nơi đăng": [
@@ -22595,7 +27475,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "cvLộc",
-    "id": "7g"
+    "id": "9M"
   },
   {
     "Tên nơi đăng": [
@@ -22644,7 +27524,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "7h"
+    "id": "9N"
   },
   {
     "Tên nơi đăng": [
@@ -22666,7 +27546,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "7i"
+    "id": "9O"
   },
   {
     "Tên nơi đăng": [
@@ -22692,7 +27572,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "7j"
+    "id": "9P"
   },
   {
     "Tên nơi đăng": [
@@ -22720,7 +27600,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "vđqc",
-    "id": "7k"
+    "id": "9Q"
   },
   {
     "Tên nơi đăng": [
@@ -22748,7 +27628,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "7l"
+    "id": "9R"
   },
   {
     "Tên nơi đăng": [
@@ -22776,7 +27656,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "7m"
+    "id": "9S"
   },
   {
     "Tên nơi đăng": [
@@ -22804,7 +27684,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "7n"
+    "id": "9T"
   },
   {
     "Tên nơi đăng": [
@@ -22832,7 +27712,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "7o"
+    "id": "9U"
   },
   {
     "Tên nơi đăng": [
@@ -22860,7 +27740,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "7p"
+    "id": "9V"
   },
   {
     "Tên nơi đăng": [
@@ -22888,7 +27768,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "7q"
+    "id": "9W"
   },
   {
     "Tên nơi đăng": [
@@ -22931,7 +27811,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "7r"
+    "id": "9X"
   },
   {
     "Tên nơi đăng": [
@@ -22974,7 +27854,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "vùngđất",
-    "id": "7s"
+    "id": "9Y"
   },
   {
     "Tên nơi đăng": [
@@ -23017,7 +27897,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "7t"
+    "id": "9Z"
   },
   {
     "Tên nơi đăng": [
@@ -23060,7 +27940,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "7u"
+    "id": "9a"
   },
   {
     "Tên nơi đăng": [
@@ -23103,7 +27983,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "tồntạitrongthếgiớitưbản",
-    "id": "7v"
+    "id": "9b"
   },
   {
     "Tên nơi đăng": [
@@ -23146,7 +28026,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "7w"
+    "id": "9c"
   },
   {
     "Tên nơi đăng": [
@@ -23189,7 +28069,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "7x"
+    "id": "9d"
   },
   {
     "Tên nơi đăng": [
@@ -23232,7 +28112,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "7y"
+    "id": "9e"
   },
   {
     "Tên nơi đăng": [
@@ -23275,7 +28155,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "7z"
+    "id": "9f"
   },
   {
     "Tên nơi đăng": [
@@ -23318,7 +28198,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "7-"
+    "id": "9g"
   },
   {
     "Tên nơi đăng": [
@@ -23361,7 +28241,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "7_"
+    "id": "9h"
   },
   {
     "Tên nơi đăng": [
@@ -23404,7 +28284,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "webđốithoạiblog",
-    "id": "80"
+    "id": "9i"
   },
   {
     "Tên nơi đăng": [
@@ -23447,7 +28327,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "ChiaSẻKhoThôngTin",
-    "id": "81"
+    "id": "9j"
   },
   {
     "Tên nơi đăng": [
@@ -23490,7 +28370,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "NhiềuNềnTảng",
-    "id": "82"
+    "id": "9k"
   },
   {
     "Tên nơi đăng": [
@@ -23533,7 +28413,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "83"
+    "id": "9l"
   },
   {
     "Tên nơi đăng": [
@@ -23576,7 +28456,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "84"
+    "id": "9m"
   },
   {
     "Tên nơi đăng": [
@@ -23619,7 +28499,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": null,
-    "id": "85"
+    "id": "9n"
   },
   {
     "Tên nơi đăng": [
@@ -23642,7 +28522,7 @@
     ],
     "Đơn vị quản lý": "Quả Cầu",
     "Slug": "emailQC",
-    "id": "86"
+    "id": "9o"
   },
   {
     "Tên nơi đăng": [
@@ -23748,7 +28628,7 @@
     ],
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "87"
+    "id": "9p"
   },
   {
     "Tên nơi đăng": [
@@ -23788,7 +28668,7 @@
     ],
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "88"
+    "id": "9q"
   },
   {
     "Tên nơi đăng": [
@@ -23828,7 +28708,7 @@
     ],
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "89"
+    "id": "9r"
   },
   {
     "Tên nơi đăng": [
@@ -23868,7 +28748,7 @@
     ],
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8A"
+    "id": "9s"
   },
   {
     "Tên nơi đăng": [
@@ -23908,7 +28788,7 @@
     ],
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8B"
+    "id": "9t"
   },
   {
     "Tên nơi đăng": [
@@ -23948,7 +28828,7 @@
     ],
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8C"
+    "id": "9u"
   },
   {
     "Tên nơi đăng": [
@@ -23988,7 +28868,7 @@
     ],
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8D"
+    "id": "9v"
   },
   {
     "Tên nơi đăng": [
@@ -24028,7 +28908,7 @@
     ],
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8E"
+    "id": "9w"
   },
   {
     "Tên nơi đăng": [
@@ -24068,7 +28948,7 @@
     ],
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8F"
+    "id": "9x"
   },
   {
     "Tên nơi đăng": [
@@ -24108,7 +28988,7 @@
     ],
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8G"
+    "id": "9y"
   },
   {
     "Tên nơi đăng": [
@@ -24148,7 +29028,7 @@
     ],
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8H"
+    "id": "9z"
   },
   {
     "Tên nơi đăng": [
@@ -24188,7 +29068,7 @@
     ],
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8I"
+    "id": "9-"
   },
   {
     "Tên nơi đăng": [
@@ -24228,7 +29108,7 @@
     ],
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8J"
+    "id": "9_"
   },
   {
     "Tên nơi đăng": [
@@ -24268,7 +29148,7 @@
     ],
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8K"
+    "id": "A0"
   },
   {
     "Tên nơi đăng": [
@@ -24308,7 +29188,7 @@
     ],
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8L"
+    "id": "A1"
   },
   {
     "Tên nơi đăng": [
@@ -24322,7 +29202,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8M"
+    "id": "A2"
   },
   {
     "Tên nơi đăng": [
@@ -24336,7 +29216,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8N"
+    "id": "A3"
   },
   {
     "Tên nơi đăng": [
@@ -24350,7 +29230,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8O"
+    "id": "A4"
   },
   {
     "Tên nơi đăng": [
@@ -24364,7 +29244,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8P"
+    "id": "A5"
   },
   {
     "Tên nơi đăng": [
@@ -24378,7 +29258,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8Q"
+    "id": "A6"
   },
   {
     "Tên nơi đăng": [
@@ -24392,7 +29272,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8R"
+    "id": "A7"
   },
   {
     "Tên nơi đăng": [
@@ -24406,7 +29286,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8S"
+    "id": "A8"
   },
   {
     "Tên nơi đăng": [
@@ -24420,7 +29300,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8T"
+    "id": "A9"
   },
   {
     "Tên nơi đăng": [
@@ -24434,7 +29314,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8U"
+    "id": "AA"
   },
   {
     "Tên nơi đăng": [
@@ -24448,7 +29328,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8V"
+    "id": "AB"
   },
   {
     "Tên nơi đăng": [
@@ -24462,7 +29342,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8W"
+    "id": "AC"
   },
   {
     "Tên nơi đăng": [
@@ -24476,7 +29356,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8X"
+    "id": "AD"
   },
   {
     "Tên nơi đăng": [
@@ -24490,7 +29370,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8Y"
+    "id": "AE"
   },
   {
     "Tên nơi đăng": [
@@ -24504,7 +29384,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8Z"
+    "id": "AF"
   },
   {
     "Tên nơi đăng": [
@@ -24518,7 +29398,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8a"
+    "id": "AG"
   },
   {
     "Tên nơi đăng": [
@@ -24532,7 +29412,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8b"
+    "id": "AH"
   },
   {
     "Tên nơi đăng": [
@@ -24546,7 +29426,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8c"
+    "id": "AI"
   },
   {
     "Tên nơi đăng": [
@@ -24560,7 +29440,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8d"
+    "id": "AJ"
   },
   {
     "Tên nơi đăng": [
@@ -24574,7 +29454,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8e"
+    "id": "AK"
   },
   {
     "Tên nơi đăng": [
@@ -24588,7 +29468,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8f"
+    "id": "AL"
   },
   {
     "Tên nơi đăng": [
@@ -24602,7 +29482,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8g"
+    "id": "AM"
   },
   {
     "Tên nơi đăng": [
@@ -24616,7 +29496,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8h"
+    "id": "AN"
   },
   {
     "Tên nơi đăng": [
@@ -24630,7 +29510,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8i"
+    "id": "AO"
   },
   {
     "Tên nơi đăng": [
@@ -24644,7 +29524,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8j"
+    "id": "AP"
   },
   {
     "Tên nơi đăng": [
@@ -24658,7 +29538,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8k"
+    "id": "AQ"
   },
   {
     "Tên nơi đăng": [
@@ -24672,7 +29552,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8l"
+    "id": "AR"
   },
   {
     "Tên nơi đăng": [
@@ -24686,7 +29566,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8m"
+    "id": "AS"
   },
   {
     "Tên nơi đăng": [
@@ -24700,7 +29580,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8n"
+    "id": "AT"
   },
   {
     "Tên nơi đăng": [
@@ -24714,7 +29594,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8o"
+    "id": "AU"
   },
   {
     "Tên nơi đăng": [
@@ -24728,7 +29608,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8p"
+    "id": "AV"
   },
   {
     "Tên nơi đăng": [
@@ -24742,7 +29622,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8q"
+    "id": "AW"
   },
   {
     "Tên nơi đăng": [
@@ -24756,7 +29636,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8r"
+    "id": "AX"
   },
   {
     "Tên nơi đăng": [
@@ -24770,7 +29650,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8s"
+    "id": "AY"
   },
   {
     "Tên nơi đăng": [
@@ -24784,7 +29664,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8t"
+    "id": "AZ"
   },
   {
     "Tên nơi đăng": [
@@ -24798,7 +29678,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8u"
+    "id": "Aa"
   },
   {
     "Tên nơi đăng": [
@@ -24812,7 +29692,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8v"
+    "id": "Ab"
   },
   {
     "Tên nơi đăng": [
@@ -24826,7 +29706,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8w"
+    "id": "Ac"
   },
   {
     "Tên nơi đăng": [
@@ -24840,7 +29720,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8x"
+    "id": "Ad"
   },
   {
     "Tên nơi đăng": [
@@ -24854,7 +29734,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8y"
+    "id": "Ae"
   },
   {
     "Tên nơi đăng": [
@@ -24868,7 +29748,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8z"
+    "id": "Af"
   },
   {
     "Tên nơi đăng": [
@@ -24882,7 +29762,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8-"
+    "id": "Ag"
   },
   {
     "Tên nơi đăng": [
@@ -24896,7 +29776,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "8_"
+    "id": "Ah"
   },
   {
     "Tên nơi đăng": [
@@ -24910,7 +29790,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "90"
+    "id": "Ai"
   },
   {
     "Tên nơi đăng": [
@@ -24924,7 +29804,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "91"
+    "id": "Aj"
   },
   {
     "Tên nơi đăng": [
@@ -24938,7 +29818,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "92"
+    "id": "Ak"
   },
   {
     "Tên nơi đăng": [
@@ -24952,7 +29832,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "93"
+    "id": "Al"
   },
   {
     "Tên nơi đăng": [
@@ -24966,7 +29846,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "94"
+    "id": "Am"
   },
   {
     "Tên nơi đăng": [
@@ -24980,7 +29860,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "95"
+    "id": "An"
   },
   {
     "Tên nơi đăng": [
@@ -24994,7 +29874,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "96"
+    "id": "Ao"
   },
   {
     "Tên nơi đăng": [
@@ -25008,7 +29888,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "97"
+    "id": "Ap"
   },
   {
     "Tên nơi đăng": [
@@ -25022,7 +29902,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "98"
+    "id": "Aq"
   },
   {
     "Tên nơi đăng": [
@@ -25036,7 +29916,7 @@
     "Phương thức tạo": "Lấy trong cấu hình nơi đăng",
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "99"
+    "id": "Ar"
   },
   {
     "Tên nơi đăng": [
@@ -25079,6 +29959,6 @@
     ],
     "Đơn vị quản lý": "VCIL",
     "Slug": null,
-    "id": "9A"
+    "id": "As"
   }
 ]

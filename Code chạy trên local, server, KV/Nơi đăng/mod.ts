@@ -161,10 +161,11 @@ export async function tạoDanhSáchNơiĐăngTừTấtCảCấuHình() {
   const danhSáchThôngTinCấuHìnhNơiĐăng = await tạoDanhSáchThôngTinCấuHìnhNơiĐăng();
 
   for (const thôngTinCấuHình of danhSáchThôngTinCấuHìnhNơiĐăng) {
+    // console.log("🚀 thôngTinCấuHình:", JSON.stringify(thôngTinCấuHình, null, 2));
     if (thôngTinCấuHình.tênCấuHình === "test") continue;
+    // if (thôngTinCấuHình.tênCấuHình !== "test") continue;
     // if (thôngTinCấuHình.tênCấuHình !== "UAN") continue;
     // if (thôngTinCấuHình.tênCấuHình !== "Quả Cầu") continue;
-    // if (thôngTinCấuHình.tênCấuHình !== "test") continue;
     danhSáchNơiĐăngChưaCóIdTừTấtCảCấuHình.push(...await tạoDanhSáchNơiĐăngCóCácLựaChọnVịTrí(thôngTinCấuHình));
   }
   let sốNơiĐăngChưaCóId = 0;
