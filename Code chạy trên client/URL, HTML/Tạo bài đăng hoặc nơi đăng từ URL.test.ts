@@ -38,10 +38,10 @@ const tests: [string, BàiĐăngChưaCóIdVàPhươngThứcTạo | ThôngTinNơi
   ],
 
   [
-    "https://doi-thoai.deno.dev",
+    "https://doi-thoai.fly.dev",
     {
       "Tiêu đề": "Trang chủ đối ⊷ thoại",
-      URL: "https://doi-thoai.deno.dev/",
+      URL: "https://doi-thoai.fly.dev/",
       "Ngày cập nhật": undefined,
       "Ngày tạo": undefined,
       "Nội dung bài đăng": {

@@ -16,10 +16,10 @@ export default function PhầnGiớiThiệuỞTrangChủKhiChưaTạoKếtQuả(
         <a href="https://quảcầu.cc/?utm_source=đối+⊷+thoại+(Trang+chủ)&utm_medium=Website&utm_campaign=&utm_content=&utm_term=">
           <IconSphere class="w-6 h-6" />
         </a>
-        <a href="https://doi-thoai.deno.dev/discordQC.đốithoại.1">
+        <a href="https://doi-thoai.fly.dev/discordQC.đốithoại.1">
           <IconBrandDiscord class="w-6 h-6" />
         </a>
-        <a href="https://doi-thoai.deno.dev/pagefbQC.đốithoại.1">
+        <a href="https://doi-thoai.fly.dev/pagefbQC.đốithoại.1">
           <IconBrandFacebook class="w-6 h-6" />
         </a>
       </nav>

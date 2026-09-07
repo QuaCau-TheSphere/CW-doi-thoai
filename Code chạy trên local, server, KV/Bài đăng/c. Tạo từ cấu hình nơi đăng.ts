@@ -15,11 +15,11 @@ async function tạoDanhSáchBàiĐăngTừCấuHìnhNơiĐăng(cấuHìnhNơiĐ
   const danhSáchUrl = lấyURLTrongJSON(cấuHìnhĐãBỏSlug);
   for (const urlTrongDanhSáchUrl of danhSáchUrl) {
     //hotfix
-    if (urlTrongDanhSáchUrl.href === "https://doi-thoai.deno.dev/blog") {
+    if (urlTrongDanhSáchUrl.href === "https://doi-thoai.fly.dev/blog") {
       danhSáchBàiĐăng.push({
         "Tiêu đề": "Giới thiệu đối ⊷ thoại",
         "Phương thức tạo": "Hotfix",
-        URL: "https://doi-thoai.deno.dev/blog",
+        URL: "https://doi-thoai.fly.dev/blog",
         Slug: "webđốithoạiblog",
         "Dự án": {
           "Tên dự án": "đối ⊷ thoại",
@@ -28,11 +28,11 @@ async function tạoDanhSáchBàiĐăngTừCấuHìnhNơiĐăng(cấuHìnhNơiĐ
       });
       continue;
     }
-    if (urlTrongDanhSáchUrl.href === "https://doi-thoai.deno.dev/blog/ChiaSẻKhoThôngTin") {
+    if (urlTrongDanhSáchUrl.href === "https://doi-thoai.fly.dev/blog/ChiaSẻKhoThôngTin") {
       danhSáchBàiĐăng.push({
         "Tiêu đề": "Chia sẻ kho kiến thức, tài nguyên đến với mọi người",
         "Phương thức tạo": "Hotfix",
-        URL: "https://doi-thoai.deno.dev/blog/ChiaSẻKhoThôngTin",
+        URL: "https://doi-thoai.fly.dev/blog/ChiaSẻKhoThôngTin",
         Slug: "ChiaSẻKhoThôngTin",
         "Dự án": {
           "Tên dự án": "đối ⊷ thoại",
@@ -41,11 +41,11 @@ async function tạoDanhSáchBàiĐăngTừCấuHìnhNơiĐăng(cấuHìnhNơiĐ
       });
       continue;
     }
-    if (urlTrongDanhSáchUrl.href === "https://doi-thoai.deno.dev/blog/ChiaSẻKhoThôngTin") {
+    if (urlTrongDanhSáchUrl.href === "https://doi-thoai.fly.dev/blog/ChiaSẻKhoThôngTin") {
       danhSáchBàiĐăng.push({
         "Tiêu đề": "Chia sẻ kho kiến thức, tài nguyên đến với mọi người",
         "Phương thức tạo": "Hotfix",
-        URL: "https://doi-thoai.deno.dev/blog/ChiaSẻKhoThôngTin",
+        URL: "https://doi-thoai.fly.dev/blog/ChiaSẻKhoThôngTin",
         Slug: "ChiaSẻKhoThôngTin",
         "Dự án": {
           "Tên dự án": "đối ⊷ thoại",
@@ -54,11 +54,11 @@ async function tạoDanhSáchBàiĐăngTừCấuHìnhNơiĐăng(cấuHìnhNơiĐ
       });
       continue;
     }
-    if (urlTrongDanhSáchUrl.href === "https://doi-thoai.deno.dev/blog/NhiềuNềnTảng") {
+    if (urlTrongDanhSáchUrl.href === "https://doi-thoai.fly.dev/blog/NhiềuNềnTảng") {
       danhSáchBàiĐăng.push({
         "Tiêu đề": "Hiện diện trên nhiều nền tảng",
         "Phương thức tạo": "Hotfix",
-        URL: "https://doi-thoai.deno.dev/blog/NhiềuNềnTảng",
+        URL: "https://doi-thoai.fly.dev/blog/NhiềuNềnTảng",
         Slug: "NhiềuNềnTảng",
         "Dự án": {
           "Tên dự án": "đối ⊷ thoại",

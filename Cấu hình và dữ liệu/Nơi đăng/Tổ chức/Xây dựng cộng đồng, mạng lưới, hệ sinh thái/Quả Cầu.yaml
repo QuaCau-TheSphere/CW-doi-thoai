@@ -92,6 +92,10 @@ Chat:
               - Phụ đề cho video truyền thông
           - "#nội-bộ"
           - "#hệ-thống-thông-tin"
+          - "#các-dự-án-được-đề-xuất":
+              - Gọi vốn đám đông, cộng đồng
+              - Đối tượng phục vụ
+              - Kho ý tưởng
           - "#nhật-ký-thay-đổi"
           ## B Mạng kết nối nhu cầu:
           - "#b-các-hình-thức-kinh-tế-thay-thế":
@@ -107,16 +111,12 @@ Chat:
               - Tụ họp
               - Kho lưu trữ dung lượng lớn
               - Xuất bản sách
-          - "#dự-án-need":
-              - Lập quỹ cộng đồng
-              - Đối tượng phục vụ
-              - Kho ý tưởng
           - "#b-sự-kiện-cơ-hội-tuyển-dụng-rao-vặt":
               - Làm nhân sự ảo
               - Tặng bảo hiểm
               - Bao nuôi
               - Phim, hội thảo, triển lãm
-          - địa-điểm-kết-nối-không-thu-phí
+          - "#địa-điểm-kết-nối-không-thu-phí"
 
           ## C Quản lý dự án và công cụ nghĩ:
           - "#c-hệ-thống-tri-thức-cộng-đồng":
@@ -188,7 +188,7 @@ Chat:
 
 Vault:
   - A Vùng đất Quả Cầu
-  - A Mạng kết nối nhu cầu
+  - A Mạng kết nối nhu cầu - nguồn lực
   - B Tư bản và các hình thái kinh tế thay thế
   - C Obsidian, quản lý dự án và công cụ nghĩ
   - C Làm chủ máy tính, làm chủ dữ liệu
@@ -198,7 +198,7 @@ Vault:
 Website:
   - Quả Cầu https://quảcầu.cc
   - Vùng đất Quả Cầu https://vùngđất.quảcầu.cc
-  - Mạng kết nối nhu cầu https://nhucầu.quảcầu.cc
+  - Mạng kết nối nhu cầu - nguồn lực https://nhucầu.quảcầu.cc
   - Kho địa điểm để chọn nơi gặp mặt https://địađiểm.quảcầu.cc
   - Tư bản và các hình thái kinh tế thay thế https://kiếmtiền.quảcầu.cc
   - Obsidian, quản lý dự án và công cụ nghĩ https://obsidian.quảcầu.cc
@@ -207,11 +207,11 @@ Website:
   - Học kỹ năng, phát triển bản thân https://pháttriểnbảnthân.quảcầu.cc/
   - Vật lý và ẩn dụ https://vậtlý.quảcầu.cc/
 
-  - đối ⊷ thoại https://doi-thoai.deno.dev
-  - Giới thiệu đối ⊷ thoại https://doi-thoai.deno.dev/blog
-  - Chia sẻ kho kiến thức, tài nguyên đến với mọi người https://doi-thoai.deno.dev/blog/ChiaSẻKhoThôngTin
-  - Hiện diện trên nhiều nền tảng https://doi-thoai.deno.dev/blog/NhiềuNềnTảng
-  - Trấn Kỳ https://tranky.deno.dev
+  - đối ⊷ thoại https://doi-thoai.fly.dev
+  - Giới thiệu đối ⊷ thoại https://doi-thoai.fly.dev/blog
+  - Chia sẻ kho kiến thức, tài nguyên đến với mọi người https://doi-thoai.fly.dev/blog/ChiaSẻKhoThôngTin
+  - Hiện diện trên nhiều nền tảng https://doi-thoai.fly.dev/blog/NhiềuNềnTảng
+  - Trấn Kỳ https://tranky.fly.dev
   - URL không xử lý được https://example.com
 
   - Bộ sưu tập từ điển chuyên ngành https://nextcloud.webo.hosting/s/bPZjiJRNtq3gxxG
@@ -221,8 +221,6 @@ Email:
 
 Tập tin:
   PDF:
-    - CV Nguyễn Hữu Lộc
-    - Đề xuất vay nợ của Nguyễn Đức Thịnh
   # Word:
   # PowerPoint:
   # Excel:
@@ -265,12 +263,13 @@ Slug:
   discordQC: https://discord.gg/jWTk4EHFK2
 
   vùngđất: https://vùngđất.quảcầu.cc
+  nhucầu: https://nhucầu.quảcầu.cc
   tồntạitrongthếgiớitưbản: https://kiếmtiền.quảcầu.cc
   obsidianQC: https://obsidian.quảcầu.cc
   lậptrìnhQC: https://lậptrình.quảcầu.cc
   pháttriểnbảnthânQC: https://pháttriểnbảnthân.quảcầu.cc/
-  webđốithoại: https://doi-thoai.deno.dev
-  webtrấnkỳ: https://tranky.deno.dev
+  webđốithoại: https://doi-thoai.fly.dev
+  webtrấnkỳ: https://tranky.fly.dev
 
   chimsáo: Một đám mây chim sáo
   vđqc: [Vùng đất Quả Cầu, A Vùng đất Quả Cầu]
@@ -294,6 +293,6 @@ Slug:
   "discordQC#g": "#g-nghiên-cứu-liên-ngành"
   cvLộc: CV Nguyễn Hữu Lộc
 
-  webđốithoạiblog: https://doi-thoai.deno.dev/blog
-  ChiaSẻKhoThôngTin: https://doi-thoai.deno.dev/blog/ChiaSẻKhoThôngTin
-  NhiềuNềnTảng: https://doi-thoai.deno.dev/blog/NhiềuNềnTảng
+  webđốithoạiblog: https://doi-thoai.fly.dev/blog
+  ChiaSẻKhoThôngTin: https://doi-thoai.fly.dev/blog/ChiaSẻKhoThôngTin
+  NhiềuNềnTảng: https://doi-thoai.fly.dev/blog/NhiềuNềnTảng

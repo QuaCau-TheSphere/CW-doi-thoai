@@ -23,7 +23,7 @@ export default function Error404(props: PageProps<{ đuôiRútGọn: string }>) 
           <figure class="max-h-screen flex flex-col items-start">
             <img class="flex-1 min-h-0" src="Linh Rab.jpg" alt="Tranh vẽ hai nguời đang tán gẫu với nhau ở quán nước vỉa hè" />
             <figcaption>
-              Tranh: <a class="underline" href="https://doi-thoai.deno.dev/TheLinhRab.doi-thoai.1">Linh Rab</a>
+              Tranh: <a class="underline" href="https://doi-thoai.fly.dev/TheLinhRab.doi-thoai.1">Linh Rab</a>
             </figcaption>
           </figure>
         </section>

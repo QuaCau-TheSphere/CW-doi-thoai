@@ -34,5 +34,5 @@ Sẽ ra mắt:
 - Niềm tin và đối thoại
 - Nghiên cứu liên ngành
 
-Liên lạc với chúng tôi để thêm kho thông tin của bạn vào *đối ⊷ thoại*. Bạn có thể vào thư mục [Cấu hình và dữ liệu](https://doi-thoai.deno.dev/Cấu%20hình%20và%20dữ%20liệu.1n.1) để xem toàn bộ danh sách bài đăng và nơi đăng đã được nạp sẵn.
+Liên lạc với chúng tôi để thêm kho thông tin của bạn vào *đối ⊷ thoại*. Bạn có thể vào thư mục [Cấu hình và dữ liệu](https://doi-thoai.fly.dev/Cấu%20hình%20và%20dữ%20liệu.1n.1) để xem toàn bộ danh sách bài đăng và nơi đăng đã được nạp sẵn.
 

@@ -253,7 +253,12 @@ Vị trí đặt liên kết ở nơi đăng:
   - Loại nền tảng: SaaS
     Tên nền tảng: Google
     Loại nơi đăng: [Spreadsheets]
-    Danh sách vị trí: [Ô, Bình luận]
+    Danh sách vị trí: [Trong bảng tính, Bình luận]
+  
+  - Loại nền tảng: SaaS
+    Tên nền tảng: Google
+    Loại nơi đăng: [Document]
+    Danh sách vị trí: [Trong tài liệu, Bình luận]
 
   # Email
   - Loại nền tảng: Email

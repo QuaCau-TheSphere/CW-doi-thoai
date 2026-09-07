@@ -38,7 +38,7 @@
 ## Lỗi
 - [ ] Xử lý trường hợp url trả về undefined (những comment //todo) 
 - [1] Lỗi malform URI khi trong url có %
-- [ ] fetch 'https://doi-thoai.deno.dev/blog/NhiềuNềnTảng' bị lỗi Recursive requests to the same deployment cannot be processed.
+- [ ] fetch 'https://doi-thoai.fly.dev/blog/NhiềuNềnTảng' bị lỗi Recursive requests to the same deployment cannot be processed.
 - [ ] không hiểu sao để component echart.tsx trong routes/[slug] thì bị lỗi, phải comment bỏ đi
 - [ ] Vị trí thành phần đầu tiên không lấy được
 
